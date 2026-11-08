@@ -1,0 +1,57 @@
+# 设备迁移与开发接续
+
+整理日期：2026-11-09。版本 0.5.0+8。仓库 `jtaoss/EnglishLearning`，主分支 `main`。本记录优先于阶段设计中较早的“Android 暂停／尚未实现”等历史描述。
+
+## 当前状态
+
+Windows 与 Android 持续开发。词库、复习、SQLite、音频与 Notion 读取业务共用 Flutter；平台安全存储分别采用 Windows Credential Manager 和 Android Keystore。Android 无手动导入／导出入口，Windows 保留 CSV。
+
+P1-A、本地质量加固、P1-B 六词发音、Windows P1-C/P1-D 已完成。P2-A 的 24 条模拟事件只在独立测试库验证；P2-B1 的迁移、事件队列和回传只在隔离副本验证。正式个人库继续 schema v3，不自动迁移为隔离副本的 schema v4。
+
+Android 实体机的隔离 100 词、去重、词义评级、六词音频、发音独立保存、进程重启、后台恢复和安全存储已验收。用户确认听到正常音频。正常手机应用与隔离验收包不同，不能复制模拟评级冒充个人历史。
+
+Android 已创建专用 **EnglishLearning Android Read Only**，仅 Read content，仅授权既有 100 词库；关闭写入、评论、用户信息和代理权限。密钥保存在当前手机，电脑端只读请求验证返回 200。手机实际请求连接失败／超时，用户明确选择“先保存配置，稍后再同步”。因此正常手机仍为 **0 词**；真实下载 100 词、重复同步和下载后的重启验收尚未通过。不要继续自动重试，等用户恢复该工作。
+
+**P2-B2 尚未授权。** 不创建正式学习事件库，不上传真实个人事件，不把模拟库数据混入正式记录。没有自建服务器、账号系统、AI 聊天、多设备冲突合并或全量词库导入。
+
+## 新电脑恢复
+
+1. 克隆仓库，使用 Flutter 3.47.7／Dart 3.13.5 恢复锁文件依赖。先运行 `flutter doctor -v`，不要先升级依赖或改 NDK。
+2. Windows 安装 C++ 桌面工作负载、MSVC、CMake 和 Windows SDK；按系统正常流程处理符号链接权限，不擅自改变安全设置。
+3. Android 使用 JDK 21、SDK 36、NDK 28.2.13676358；需要的许可由用户接受，不自动开启模拟器。
+4. 运行下列质量检查；缺少真实设备的项目标记未执行，不用模拟结果冒充。
+
+```powershell
+flutter pub get --enforce-lockfile
+dart analyze --fatal-infos
+flutter test --no-pub
+flutter run -d windows --dart-define-from-file=config/dev.json
+```
+
+上一轮构建已通过 Windows Debug／Release 和 Android Debug。此次从 Git 暂存内容导出的干净源码目录重新恢复锁文件依赖，静态分析通过，179 项单元／组件测试全部通过。测试不需要旧电脑的原始审计目录。此次业务代码不变，未重复构建安装包。
+
+## 个人学习记录迁移
+
+个人数据库、Token 和测试审计不在公开仓库或 Release 中。旧电脑已有只读 SQLite 备份，换机前把本次个人备份目录通过 U 盘或私有方式携带，不能提交到公开 GitHub。
+
+数据库文件名为 `english_learning_v1.sqlite3`，由 path_provider 的应用支持目录确定。普通 Windows 启动通常在 `%APPDATA%\Personal\English Learning`；从 Codex/MSIX 等宿主启动时可能有路径重定向，应确认实际位置。
+
+新电脑恢复时先关闭应用并备份新电脑已有数据库，再将受保护的正式备份放入实际支持目录。不要把 `*.acceptance`、测试目录或 P2-B1 的 schema v4 隔离副本替换为正式库。恢复后核对 100 个稳定 ID、评级、发音状态和复习日期，再开始学习。
+
+Windows 系统凭据和 Android Keystore 密钥不能靠复制源码或 SQLite 跨设备恢复。新设备应单独授权只读集成，在软件隐藏输入框中安全保存；不通过聊天、Git、`.env`、Dart define 或日志传递密钥。换电脑不会改变原手机已保存的凭据；若换手机则需重新配置。
+
+本次本地私有迁移备份另包含与现有 APK 证书匹配的 `android-debug.keystore`，供新电脑继续更新原手机应用，未上传 GitHub。新电脑恢复调试签名文件前先保留其已有文件；不要用卸载原应用来处理签名不匹配，以免丢失手机数据与凭据。原始词书、完整 5,552 词台账及完整审计仍需另行私下携带。
+
+## 数据与测试约定
+
+- 保留现有稳定 Word ID、原书分类、来源和独立的 PETS-3 2015／2025 状态；2025 保持待核实。
+- 100 词样本中主学习 86、扩展 5、暂缓 9。新词默认未测试，不从最终评级补造过去的学习事件。
+- 词义评级和发音自评分别保存，词库内容更新不能覆盖个人状态或复习日期。
+- 自然拼读提示依照已核对读音；无法可靠推导时建议听音记忆，不显示 IPA 或中文谐音。
+- `test/fixtures/vocabulary/verified100_baseline_ids.json` 是从原有基线摘出的既有 ID，不是重新生成 ID。
+- `test/fixtures/notion/verified100_snapshot.json` 使用已公开的 100 词内容、合成页面 ID 和固定测试时间；不包含真实云端快照或个人历史。
+- 原生测试保持统一入口，并顺序执行 Windows／Android。需要真实库、设备或跨进程文件的用例只在隔离验收目录运行。
+
+## 下一步
+
+先在用户就绪的手机网络下补验 Notion 真实 100 词下载、重复同步、进程恢复和物理断网。然后再由用户决定后续功能；不要自行进入 P2-B2 正式事件试写。

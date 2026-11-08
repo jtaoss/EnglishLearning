@@ -1,0 +1,114 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+
+# Secrets, signing material, and generated packages
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.jks
+key.properties
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
+**/*.store.json
+*.apk
+*.aab
+*.ipa
+
+# Local databases, private review history, automation captures, and machine caches.
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite*
+*.db-wal
+*.db-shm
+*.db-journal
+*.enc
+*.upload.lock
+*.journal-sync.lock
+*.copy-permit.json
+*.zip
+*.pdf
+*.exe
+*.dll
+*.pdb
+**/private/
+**/__pycache__/
+**/.gradle/
+**/.kotlin/
+**/.cxx/
+**/build/
+.playwright-mcp/
+output/
+*.store.json
+
+# Public source contains selected design docs; raw local audits stay on this PC.
+/docs/**
+!/docs/**/
+!/docs/DEVICE_HANDOFF.md
+!/docs/RECOVERY.md
+!/docs/ARCHITECTURE.md
+!/docs/PLATFORM_SCOPE.md
+!/docs/p05/TEST_COVERAGE_AUDIT.md
+!/docs/p1a/LOCAL_DESIGN.md
+!/docs/p1b/IMPLEMENTATION.md
+!/docs/p1c/NOTION_SCHEMA.md
+!/docs/p1c/SYNC_DESIGN.md
+!/docs/p2a/SYNC_DESIGN.md
+!/docs/p2a/RISK_AND_CAPACITY.md
+!/docs/p2b1/MIGRATION_DESIGN.md
+!/docs/p2b1/P2B2_WRITE_PLAN.md
+
+# One-off local audit/package/device scripts are retained locally.
+/tool/**
+!/tool/check_config.dart
+/scripts/verify_android_acceptance.ps1
