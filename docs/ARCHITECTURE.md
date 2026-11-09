@@ -1,5 +1,7 @@
 # 模块边界
 
+P3 当前范围：Windows 唯一正式客户端，Android 暂停但保留适配。词库解析上限为阶段性 500 词；Notion 用已核验稳定 ID 清单分组读取，全部校验后一次事务提交。扩容会触发完整核对，旧 100 词结构仍兼容。词义与发音独立保存；发音到期时间由已有评级及自评时间计算，正式 SQLite 继续 schema v3，不为本轮功能迁移到事件副本 schema v4。下文保留模块形成过程。
+
 P1-C 在本地词库、复习和 P1-B 发音能力上增加 Notion → SQLite 只读同步。首页、设置、主题及路由错误页沿用 Starter。Windows 为主学习端，Android 为移动复习端；Android 已有 Keystore 安全凭据和共享读取逻辑，真实手机同步因网络错误／超时仍待验收。当前状态见 [开发接续](DEVICE_HANDOFF.md) 和 [平台约定](PLATFORM_SCOPE.md)。下表保留 P0 起点，当前实现见模块 README 与阶段设计。
 
 ```mermaid

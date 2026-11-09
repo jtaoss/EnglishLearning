@@ -19,6 +19,11 @@ import 'specs/p1d_sync.dart' as p1d_sync;
 import 'specs/p2a_events.dart' as p2a_events;
 import 'specs/p2b1_copy.dart' as p2b1_copy;
 import 'specs/android_live.dart' as android_live;
+import 'specs/p3_windows.dart' as p3_windows;
+import 'specs/p3_live.dart' as p3_live;
+import 'specs/p3_cloud_snapshot.dart' as p3_cloud_snapshot;
+import 'specs/p4_learning.dart' as p4_learning;
+import 'specs/p41_trial.dart' as p41_trial;
 
 /// One native launch avoids reusing Flutter 3.47.7's closed desktop log reader.
 /// Original assertions remain in separate specification modules.
@@ -42,4 +47,9 @@ void main() {
   group('P2-A events', p2a_events.main);
   group('P2-B1 copy', p2b1_copy.main);
   group('Android device', android_live.main);
+  group('P3 Windows', p3_windows.main);
+  group('P3 live Notion', p3_live.main);
+  group('P3 cloud snapshot', p3_cloud_snapshot.main);
+  group('P4 actual learning', p4_learning.main);
+  group('P4.1 personal trial', p41_trial.main);
 }

@@ -1,0 +1,48 @@
+{
+  "entry_id": "28171f83-01fb-5cf2-943d-ee61b96942c5",
+  "word": "texture",
+  "source_record": "R4983",
+  "original_exclusion_record": {
+    "源记录ID": "R4983",
+    "原始索引": "n t/599 texture/631",
+    "清洗后词头": "n t",
+    "书内页码": "599",
+    "PDF页码": "610",
+    "索引PDF页码": "766",
+    "处理": "排除跨栏碎片",
+    "说明": "temperament尾部跨栏，被重复识别；由X006还原完整词头"
+  },
+  "before": "原5552台账无当前词头/ID直接行；恢复词映射待补证",
+  "after": "补充映射已核验；原5552条台账与排除行保持原样",
+  "mapping": {
+    "raw_second_item": "texture/631",
+    "index_pdf_page": 766,
+    "body_pdf_page": 642,
+    "printed_page": 631,
+    "book_category": "偶考词",
+    "contents_pdf_page": 10,
+    "category_start_printed": 589,
+    "next_category_start_printed": 640
+  },
+  "evidence": [
+    "原书索引PDF766图像：texture/631；文本层独立命中texture/631",
+    "原书正文PDF642图像：词头texture、名词标注，页脚631",
+    "目录PDF10图像：偶考词589，基础词640；631处于偶考分区",
+    "P3导入前快照已保存相同稳定ID与R4983恢复说明，未新造ID"
+  ],
+  "do_not_reuse_fragment_pages": "R4983中的599/610属于排除的n t碎片，不是texture页码",
+  "pdf_sha256": "5e4501eb7237e59ddbc6a2ba0d83bfc3874c963ded439e6394b711afd2ba192a",
+  "original_exclusions_sha256": "ac0a190a9b88db6c4e2d47a91209c35387b2575e111ab9dfc9e02c0d0575b7b8",
+  "p3_restoration_snapshot": "private/p3/notion-authorized-before.json",
+  "p3_restoration_snapshot_sha256": "8043b6d11f3ea39c6c20ea6165ef41dec37a5e41f0458484728ba0d1c8dd3b3c",
+  "private_evidence_files": [
+    "private/p41/texture-642-0.png",
+    "private/p41/texture-footer.png",
+    "private/p41/texture-766-0.png",
+    "private/p41/book-contents.png",
+    "private/p41/book-page-642.txt",
+    "private/p41/book-page-766.txt"
+  ],
+  "review_method": "agent逐页图像及已有文本层核对；无OCR；不冒充用户或教师终审",
+  "content_or_cloud_write": false
+}

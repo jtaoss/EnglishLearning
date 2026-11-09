@@ -33,11 +33,41 @@ final class VocabularyController extends ChangeNotifier {
     return null;
   }
 
-  List<StudyWord> dueWords(DateTime now, {String libraryClass = '主学习'}) => words
-      .where(
-        (word) => word.entry.libraryClass == libraryClass && word.isDue(now),
-      )
-      .toList();
+  List<StudyWord> dueWords(DateTime now, {String? libraryClass = '主学习'}) =>
+      (words
+          .where(
+            (word) =>
+                (libraryClass == null
+                    ? word.entry.libraryClass != '暂缓'
+                    : word.entry.libraryClass == libraryClass) &&
+                (word.isDue(now) || word.isPronunciationDue(now)),
+          )
+          .toList()
+        ..sort((a, b) {
+          DateTime? earliest(StudyWord word) {
+            final meaning = word.dueAt;
+            final reading = word.pronunciationProgress?.dueAt;
+            if (meaning == null) return reading;
+            return reading == null || meaning.isBefore(reading)
+                ? meaning
+                : reading;
+          }
+
+          final aDue = earliest(a), bDue = earliest(b);
+          if (aDue != null && bDue != null) {
+            final order = aDue.compareTo(bDue);
+            if (order != 0) return order;
+          } else if (aDue != null) {
+            return -1;
+          } else if (bDue != null) {
+            return 1;
+          }
+          final priority = (a.entry.fields['learning_priority'] ?? 'P2')
+              .compareTo(b.entry.fields['learning_priority'] ?? 'P2');
+          return priority != 0
+              ? priority
+              : a.entry.word.compareTo(b.entry.word);
+        }));
 
   Future<bool> refresh() => _perform(() async {});
   Future<bool> importCsv(Future<String?> Function() load) => _perform(() async {
@@ -65,6 +95,7 @@ final class VocabularyController extends ChangeNotifier {
                     reviewCount: previous.reviewCount + 1,
                     lastReviewedAt: at.toUtc(),
                     dueAt: ReviewSchedule.nextDue(grade, at),
+                    pronunciationProgress: previous.pronunciationProgress,
                   ),
           ),
         );

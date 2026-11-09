@@ -26,6 +26,7 @@ final class VocabularyPage extends StatefulWidget {
 class _VocabularyPageState extends State<VocabularyPage> {
   String _class = '主学习';
   bool _dueOnly = false;
+  String _search = '';
 
   @override
   Widget build(BuildContext context) => ListenableBuilder(
@@ -37,7 +38,8 @@ class _VocabularyPageState extends State<VocabularyPage> {
           .where(
             (w) =>
                 (_class == '全部' || w.entry.libraryClass == _class) &&
-                (!_dueOnly || w.isDue(now)),
+                (!_dueOnly || w.isDue(now) || w.isPronunciationDue(now)) &&
+                w.entry.word.toLowerCase().contains(_search.toLowerCase()),
           )
           .toList();
       return Scaffold(
@@ -61,7 +63,7 @@ class _VocabularyPageState extends State<VocabularyPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text('100 词试用 · 词义与词性的复核状态请查看词卡。'),
+                              Text('本地 ${c.words.length} 词 · 词义与发音状态分别保存。'),
                               const SizedBox(height: 12),
                               Wrap(
                                 spacing: 12,
@@ -93,7 +95,7 @@ class _VocabularyPageState extends State<VocabularyPage> {
                                       onPressed: () =>
                                           context.push(AppRouter.pronunciation),
                                       icon: const Icon(Icons.hearing_outlined),
-                                      label: const Text('6 词发音练习'),
+                                      label: const Text('自主认读与听音'),
                                     ),
                                   if (widget.hasNotion)
                                     OutlinedButton.icon(
@@ -106,6 +108,16 @@ class _VocabularyPageState extends State<VocabularyPage> {
                                       label: const Text('Notion 只读同步'),
                                     ),
                                 ],
+                              ),
+                              const SizedBox(height: 12),
+                              TextField(
+                                key: const Key('vocabulary-search'),
+                                decoration: const InputDecoration(
+                                  labelText: '查找英文单词',
+                                  prefixIcon: Icon(Icons.search),
+                                ),
+                                onChanged: (value) =>
+                                    setState(() => _search = value),
                               ),
                               const SizedBox(height: 12),
                               Wrap(

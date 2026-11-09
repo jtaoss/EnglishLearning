@@ -4,16 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_services.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_session.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_store.dart';
+import 'package:english_learning/features/vocabulary/vocabulary_entry.dart';
+import 'package:english_learning/features/pronunciation/word_reading_practice.dart';
 
 final class PronunciationPage extends StatefulWidget {
   const PronunciationPage({
     required this.entryId,
     required this.word,
     required this.services,
+    this.entry,
+    this.onSaved,
     super.key,
   });
   final String entryId, word;
   final PronunciationServices services;
+  final VocabularyEntry? entry;
+  final Future<void> Function()? onSaved;
   @override
   State<PronunciationPage> createState() => _PronunciationPageState();
 }
@@ -23,6 +29,26 @@ class _PronunciationPageState extends State<PronunciationPage>
   PronunciationSession? _session;
   bool _loading = true;
   String? _loadError;
+  bool _savedNotified = false;
+
+  void _changed() {
+    final saved = _session?.saved ?? false;
+    final callback = widget.onSaved;
+    final logger = widget.services.logger;
+    if (saved && !_savedNotified && callback != null) {
+      unawaited(
+        callback().catchError((Object error, StackTrace stack) {
+          logger.error(
+            'Reading saved; refresh failed',
+            error: error,
+            stackTrace: stack,
+          );
+        }),
+      );
+    }
+    _savedNotified = saved;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -43,6 +69,7 @@ class _PronunciationPageState extends State<PronunciationPage>
       }
       setState(() {
         _session = session;
+        session?.addListener(_changed);
         _loading = false;
       });
     } catch (e, stack) {
@@ -71,6 +98,7 @@ class _PronunciationPageState extends State<PronunciationPage>
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _session?.removeListener(_changed);
     _session?.dispose();
     super.dispose();
   }
@@ -93,12 +121,20 @@ class _PronunciationPageState extends State<PronunciationPage>
                   ],
                 )
               : _session == null
-              ? const Padding(
-                  padding: EdgeInsets.all(24),
-                  child: Text(
-                    '此词尚未配置已授权音频。词义学习仍可继续。',
-                    key: Key('audio-missing'),
-                  ),
+              ? Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: widget.entry != null
+                      ? SingleChildScrollView(
+                          child: WordReadingPractice(
+                            entry: widget.entry!,
+                            services: widget.services,
+                            onSaved: widget.onSaved,
+                          ),
+                        )
+                      : const Text(
+                          '此词尚未配置已授权音频。词义学习仍可继续。',
+                          key: Key('audio-missing'),
+                        ),
                 )
               : PronunciationPractice(session: _session!),
         ),
@@ -130,6 +166,10 @@ final class PronunciationPractice extends StatelessWidget {
               '发音自评：${c.progress.label}',
               key: const Key('pronunciation-status'),
             ),
+            if (c.progress.dueAt != null)
+              Text('下次认读复习：${c.progress.dueAt!.toLocal()}'),
+            if (c.progress.grade != null)
+              Text('上次核对来源：${c.progress.sourceLabel}'),
             const Text('自评用于个人练习，不是自动发音评分；词义复习记录单独保存。'),
             const SizedBox(height: 24),
             if (!c.triedReading) ...[

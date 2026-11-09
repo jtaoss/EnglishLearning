@@ -65,9 +65,33 @@ final class HomePage extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            '本地 ${vocabulary!.words.length} 词 · 主学习未测试 / 到期 ${vocabulary!.dueWords(vocabulary!.nowUtc).length} 词',
+                            '本地 ${vocabulary!.words.length} 词 · 可学习未测试 / 到期 ${vocabulary!.dueWords(vocabulary!.nowUtc, libraryClass: null).length} 词',
                           ),
                           const SizedBox(height: 24),
+                          if (vocabulary!
+                              .dueWords(vocabulary!.nowUtc, libraryClass: null)
+                              .isNotEmpty) ...[
+                            FilledButton.icon(
+                              key: const Key('start-due-review'),
+                              onPressed: vocabulary!.busy
+                                  ? null
+                                  : () => context.push(
+                                      AppRouter.wordPath(
+                                        vocabulary!
+                                            .dueWords(
+                                              vocabulary!.nowUtc,
+                                              libraryClass: null,
+                                            )
+                                            .first
+                                            .entry
+                                            .id,
+                                      ),
+                                    ),
+                              icon: const Icon(Icons.play_arrow),
+                              label: const Text('开始今日学习 / 到期复习'),
+                            ),
+                            const SizedBox(height: 12),
+                          ],
                           FilledButton(
                             key: const Key('open-vocabulary'),
                             onPressed: () => context.push(AppRouter.vocabulary),

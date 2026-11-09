@@ -22,6 +22,7 @@ import 'package:english_learning/core/error/app_error_handler.dart';
 import 'package:english_learning/core/logging/app_logger.dart';
 import 'package:english_learning/core/settings/settings_repository.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_services.dart';
+import 'package:english_learning/features/pronunciation/local_speech.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -70,6 +71,7 @@ Future<void> _start(AppConfig config, AppLogger logger) async {
         pronunciationServices: PronunciationServices(
           store: learningRepository,
           logger: logger,
+          speechFactory: defaultLocalSpeech,
         ),
         notionService: Platform.isWindows || Platform.isAndroid
             ? NotionSyncService(
@@ -80,7 +82,9 @@ Future<void> _start(AppConfig config, AppLogger logger) async {
                 api: NotionReadApi(http.Client()),
                 loadScope: () async => NotionScope(
                   await rootBundle.loadString(
-                    'assets/vocabulary/verified100.csv',
+                    Platform.isWindows
+                        ? 'assets/vocabulary/reviewed500.csv'
+                        : 'assets/vocabulary/verified100.csv',
                   ),
                 ),
               )

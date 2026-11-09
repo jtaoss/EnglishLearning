@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-09",
+  "version": "0.7.0+10",
+  "words": 500,
+  "input_flags": 94,
+  "flagged_words": 72,
+  "input_flags_sha256": "013cdf6d7eb0da6fec849ec20a272645e2be9545db20306f26951952e2d3ba58",
+  "categories": {
+    "普通警告": 7,
+    "词性歧义": 47,
+    "自然拼读提示错误候选": 39,
+    "数据来源问题": 1
+  },
+  "priorities": {
+    "P3": 6,
+    "P2": 68,
+    "P1": 20
+  },
+  "confirmed_incorrect_definitions": 0,
+  "confirmed_phonics_errors": 0,
+  "definition_coverage_limit": "500词结构检查；26词依据对照，不等于500词全部经教师终审",
+  "evidence_reviewed_words": 26,
+  "texture_mapping": "resolved in supplementary ledger",
+  "vocabulary_content_changes": 0,
+  "vocabulary_sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+  "all_required_fields_present": true,
+  "duplicate_ids": 0,
+  "human_audio": 6,
+  "local_tts_fallback_candidates": 494,
+  "pets2025_states": {
+    "待核实": 500
+  },
+  "hint_definition_substring_flags": [],
+  "hint_check_limit": "自动子串检查只作补充；原生界面另查答案/双语例句隐藏",
+  "starter_files_unchanged": 417,
+  "notion_content_writes": 0,
+  "real_events_uploaded": 0
+}

@@ -329,7 +329,9 @@ Object? _execute(
             throw const NotionFailure('数据源 ID 无效。');
           }
           final rows = (args[1] as List).cast<Map<String, Object?>>();
-          if (rows.length > 100) throw const NotionFailure('同步超出 100 词范围。');
+          if (rows.length > VocabularyCsv.maxEntries) {
+            throw const NotionFailure('同步超出本阶段 500 词范围。');
+          }
           final previous = db.select(
             'SELECT watermark_utc FROM notion_sync_state WHERE source_id=?',
             [sourceId],
@@ -414,6 +416,7 @@ Object? _execute(
             rows.single['status'] as String,
           ),
           assessedAt: _date(rows.single['assessed_utc']),
+          sourceId: rows.single['audio_asset_id'] as String,
         );
       case 'pronunciation-assess':
         _transaction<void>(db, () {
@@ -476,10 +479,11 @@ Object? _execute(
         return _transaction(db, () => _importFields(db, fields));
       case 'read':
         return db
-            .select(
-              '''SELECT v.content_json, p.* FROM vocabulary v
-          JOIN learning_progress p USING(entry_id) ORDER BY v.word_key COLLATE NOCASE, v.word_key''',
-            )
+            .select('''SELECT v.content_json, p.*, a.status AS reading_grade,
+              a.assessed_utc AS reading_assessed_utc FROM vocabulary v
+          JOIN learning_progress p USING(entry_id)
+          LEFT JOIN pronunciation_progress a USING(entry_id)
+          ORDER BY v.word_key COLLATE NOCASE, v.word_key''')
             .map(
               (row) => StudyWord(
                 entry: VocabularyEntry(
@@ -492,6 +496,14 @@ Object? _execute(
                 reviewCount: row['review_count'] as int,
                 lastReviewedAt: _date(row['last_reviewed_utc']),
                 dueAt: _date(row['due_utc']),
+                pronunciationProgress: row['reading_grade'] == null
+                    ? null
+                    : PronunciationProgress(
+                        grade: PronunciationGrade.values.byName(
+                          row['reading_grade'] as String,
+                        ),
+                        assessedAt: _date(row['reading_assessed_utc']),
+                      ),
               ),
             )
             .toList();

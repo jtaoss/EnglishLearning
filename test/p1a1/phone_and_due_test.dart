@@ -144,7 +144,19 @@ void main() {
         now = now.add(const Duration(seconds: 20));
         if (resume) {
           tester.binding.handleAppLifecycleStateChanged(
+            AppLifecycleState.inactive,
+          );
+          tester.binding.handleAppLifecycleStateChanged(
+            AppLifecycleState.hidden,
+          );
+          tester.binding.handleAppLifecycleStateChanged(
             AppLifecycleState.paused,
+          );
+          tester.binding.handleAppLifecycleStateChanged(
+            AppLifecycleState.hidden,
+          );
+          tester.binding.handleAppLifecycleStateChanged(
+            AppLifecycleState.inactive,
           );
           tester.binding.handleAppLifecycleStateChanged(
             AppLifecycleState.resumed,

@@ -36,10 +36,27 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                   Text(
                     c.isMobile
                         ? '将云端 100 词样本缓存到这台手机，断网后继续学习。'
-                        : '将云端 100 词样本缓存到这台电脑，断网后继续学习。',
+                        : '将已验收的云端词库缓存到这台电脑，断网后继续学习。',
                   ),
                   const SizedBox(height: 12),
                   const Text('只更新词条内容；词义学习记录和发音自评独立保存在本机。'),
+                  if (!c.isMobile) ...[
+                    const SizedBox(height: 12),
+                    DropdownButton<int>(
+                      key: const Key('notion-target-size'),
+                      value: c.targetSize,
+                      items: [
+                        for (final size in [100, 200, 500])
+                          DropdownMenuItem(value: size, child: Text('$size 词')),
+                      ],
+                      onChanged: c.busy
+                          ? null
+                          : (size) {
+                              if (size != null) c.selectSize(size);
+                            },
+                    ),
+                    const Text('请选择已完成云端导入验收的规模。此操作只读取词库，不会向 Notion 写入。'),
+                  ],
                   const SizedBox(height: 20),
                   Text(
                     c.configured ? '连接凭据：已安全保存' : '连接凭据：尚未配置',
@@ -92,14 +109,16 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                             ? null
                             : () => c.sync(),
                         icon: const Icon(Icons.sync),
-                        label: const Text('同步 100 词'),
+                        label: Text('同步 ${c.isMobile ? 100 : c.targetSize} 词'),
                       ),
                       OutlinedButton(
                         key: const Key('notion-full-sync'),
                         onPressed: c.busy || !c.configured
                             ? null
                             : () => c.sync(full: true),
-                        child: const Text('重新核对 100 词'),
+                        child: Text(
+                          '重新核对 ${c.isMobile ? 100 : c.targetSize} 词',
+                        ),
                       ),
                       TextButton(
                         key: const Key('notion-forget'),
@@ -117,7 +136,7 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                     ),
                   const SizedBox(height: 16),
                   Text(
-                    '已关联缓存：${c.state.linkedWords} / 100 词',
+                    '已关联缓存：${c.state.linkedWords} 词',
                     key: const Key('notion-cache-count'),
                   ),
                   Text(
@@ -149,7 +168,7 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                           '1. 在 notion.so/profile/integrations 创建个人内部集成，仅启用 Read content。\n'
                           '2. 在目标数据库右上角菜单中连接该集成。\n'
                           '3. 将密钥粘贴到上方输入框，点击安全保存配置。\n'
-                          '4. 点击同步；首次需要返回全部 100 个已核验稳定 ID。\n\n'
+                          '4. 点击同步；首次及扩容后需要完整返回所选规模的已核验稳定 ID。\n\n'
                           '密钥不要发送到聊天或保存到普通文件。删除凭据不会删除本地词库。\n'
                           '云端归档或删除的词不会自动删除本地学习历史；请人工核对。',
                         ),

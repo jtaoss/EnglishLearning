@@ -1,0 +1,27 @@
+{
+  "backup_integrity": "ok",
+  "backup_sha256": "3c1ed2c1d1338f3cf5ee98122eedfdf00479a913c206480d1578863dce1a4e31",
+  "foreign_key_check": "no violations",
+  "schema_version": 3,
+  "restore_rehearsal": "private new SQLite file; all tables equal on copy and reopened connection",
+  "formal_table_row_counts": {
+    "learning_progress": 500,
+    "notion_sync_state": 1,
+    "notion_word_links": 500,
+    "pronunciation_events": 0,
+    "pronunciation_progress": 0,
+    "review_events": 0,
+    "vocabulary": 500
+  },
+  "formal_tables_equal_before_after": {
+    "vocabulary": true,
+    "learning_progress": true,
+    "review_events": true,
+    "pronunciation_progress": true,
+    "pronunciation_events": true,
+    "notion_sync_state": true,
+    "notion_word_links": true
+  },
+  "formal_database_replaced": false,
+  "credentials_copied": false
+}

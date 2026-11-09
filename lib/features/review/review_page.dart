@@ -3,17 +3,21 @@ import 'package:go_router/go_router.dart';
 import 'package:english_learning/app/app_router.dart';
 import 'package:english_learning/features/review/review_schedule.dart';
 import 'package:english_learning/features/vocabulary/vocabulary_controller.dart';
+import 'package:english_learning/features/pronunciation/pronunciation_services.dart';
+import 'package:english_learning/features/pronunciation/word_reading_practice.dart';
 
 final class ReviewPage extends StatefulWidget {
   const ReviewPage({
     required this.controller,
     required this.entryId,
     this.hasPronunciation = false,
+    this.pronunciationServices,
     super.key,
   });
   final VocabularyController controller;
   final String entryId;
   final bool hasPronunciation;
+  final PronunciationServices? pronunciationServices;
   static const revealKey = Key('reveal-answer');
   static Key gradeKey(ReviewGrade grade) => ValueKey('grade-${grade.name}');
   @override
@@ -24,6 +28,8 @@ class _ReviewPageState extends State<ReviewPage> {
   bool _revealed = false;
   bool _saved = false;
   bool _saving = false;
+  int _readingGeneration = 0;
+  bool _readingBusy = false;
 
   Future<void> _grade(ReviewGrade grade) async {
     if (!_revealed || _saved || _saving) return;
@@ -55,10 +61,21 @@ class _ReviewPageState extends State<ReviewPage> {
       }
       final entry = word.entry;
       final paused = entry.libraryClass == '暂缓';
-      final next = c
-          .dueWords(c.nowUtc, libraryClass: entry.libraryClass)
-          .where((w) => w.entry.id != entry.id)
+      final overdue = c
+          .dueWords(c.nowUtc, libraryClass: null)
+          .where(
+            (w) =>
+                w.entry.id != entry.id &&
+                ((w.dueAt != null && !w.dueAt!.isAfter(c.nowUtc)) ||
+                    w.isPronunciationDue(c.nowUtc)),
+          )
           .firstOrNull;
+      final next =
+          overdue ??
+          c
+              .dueWords(c.nowUtc, libraryClass: entry.libraryClass)
+              .where((w) => w.entry.id != entry.id)
+              .firstOrNull;
       return Scaffold(
         appBar: AppBar(title: const Text('词卡')),
         body: SafeArea(
@@ -84,9 +101,21 @@ class _ReviewPageState extends State<ReviewPage> {
                     if (widget.hasPronunciation)
                       TextButton.icon(
                         key: const Key('word-pronunciation'),
-                        onPressed: () => context.push(
-                          AppRouter.pronunciationWordPath(entry.id),
-                        ),
+                        onPressed: _readingBusy
+                            ? null
+                            : () async {
+                                if (_readingBusy) {
+                                  return;
+                                }
+                                await context.push(
+                                  AppRouter.pronunciationWordPath(entry.id),
+                                );
+                                if (!mounted) return;
+                                await c.refresh();
+                                if (mounted) {
+                                  setState(() => _readingGeneration++);
+                                }
+                              },
                         icon: const Icon(Icons.volume_up_outlined),
                         label: const Text('自主认读与听音'),
                       ),
@@ -96,6 +125,23 @@ class _ReviewPageState extends State<ReviewPage> {
                         key: const Key('persisted-due'),
                       ),
                     const SizedBox(height: 24),
+                    if (widget.pronunciationServices != null) ...[
+                      WordReadingPractice(
+                        key: ValueKey(
+                          'reading-${entry.id}-$_readingGeneration',
+                        ),
+                        entry: entry,
+                        services: widget.pronunciationServices!,
+                        clock: () => c.nowUtc,
+                        onPlaybackBusyChanged: (busy) {
+                          if (mounted) setState(() => _readingBusy = busy);
+                        },
+                        onSaved: () async {
+                          await c.refresh();
+                        },
+                      ),
+                      const SizedBox(height: 16),
+                    ],
                     if (!_revealed)
                       FilledButton(
                         key: ReviewPage.revealKey,
@@ -115,6 +161,17 @@ class _ReviewPageState extends State<ReviewPage> {
                       ),
                       const SizedBox(height: 8),
                       Text(entry.fields['meaning_review_status']!),
+                      if (entry.fields['example_en']?.isNotEmpty == true) ...[
+                        const SizedBox(height: 12),
+                        Text(
+                          entry.fields['example_en']!,
+                          key: const Key('example-en'),
+                        ),
+                        Text(
+                          entry.fields['example_zh'] ?? '',
+                          key: const Key('example-zh'),
+                        ),
+                      ],
                       if (entry.fields['usage_note']?.isNotEmpty ?? false)
                         Padding(
                           padding: const EdgeInsets.only(top: 8),

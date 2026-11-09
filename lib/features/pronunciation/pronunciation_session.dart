@@ -33,6 +33,7 @@ final class PronunciationSession extends ChangeNotifier {
   bool _disposed = false;
   int _generation = 0;
   String? error, _attemptId;
+  DateTime? _assessedAt;
   bool get busy =>
       phase == PlaybackPhase.loading || phase == PlaybackPhase.playing;
   bool get canAssess => phase == PlaybackPhase.completed && !saving && !saved;
@@ -51,6 +52,7 @@ final class PronunciationSession extends ChangeNotifier {
     if (_disposed || !triedReading || busy || saving) return;
     final generation = ++_generation;
     saved = false;
+    _assessedAt = null;
     error = null;
     phase = PlaybackPhase.loading;
     _attemptId = List.generate(
@@ -108,7 +110,7 @@ final class PronunciationSession extends ChangeNotifier {
     saving = true;
     error = null;
     _notify();
-    final at = _clock().toUtc();
+    final at = _assessedAt ??= _clock().toUtc();
     try {
       await store.recordPronunciation(
         entryId: content.id,
@@ -117,7 +119,11 @@ final class PronunciationSession extends ChangeNotifier {
         attemptId: _attemptId!,
         at: at,
       );
-      progress = PronunciationProgress(grade: grade, assessedAt: at);
+      progress = PronunciationProgress(
+        grade: grade,
+        assessedAt: at,
+        sourceId: content.assetId,
+      );
       saved = true;
       return true;
     } catch (e, stack) {

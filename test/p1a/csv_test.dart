@@ -91,7 +91,7 @@ void main() {
       expect(
         () => VocabularyCsv.parse(
           encodeEntries(
-            List.generate(101, (i) => entryFields(id: 'id-$i', word: 'word$i')),
+            List.generate(501, (i) => entryFields(id: 'id-$i', word: 'word$i')),
           ),
         ),
         throwsFormatException,

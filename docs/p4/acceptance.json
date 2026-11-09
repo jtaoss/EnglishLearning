@@ -1,0 +1,41 @@
+{
+  "version": "0.7.0+10",
+  "date": "2026-11-09",
+  "vocabulary_count": 500,
+  "vocabulary_content_changes": 0,
+  "static_analysis": "PASS",
+  "unit_widget_tests_passed": 191,
+  "windows_builds": {
+    "debug": "PASS",
+    "release": "PASS"
+  },
+  "native_sample_count": 34,
+  "native_categories": {
+    "基础词": 12,
+    "高频词": 8,
+    "中频词": 6,
+    "低频词": 6,
+    "偶考词": 2
+  },
+  "human_recording_samples": 6,
+  "local_tts_samples": 28,
+  "cold_process_restore": "PASS",
+  "overdue_34_before_466_new_after_restart": true,
+  "notion_actual_500_full_repeat_incremental": "PASS",
+  "formal_personal_tables_preserved": true,
+  "human_recordings": 6,
+  "local_tts_fallback_candidates": 494,
+  "installed_tts_voice": "Microsoft Zira Desktop - English (United States)",
+  "tts_subjective_human_review": "not confirmed; native completion and source/stress references checked",
+  "quality_structural_blockers": 0,
+  "quality_words_flagged": 72,
+  "individual_high_risk_source_checks": 17,
+  "real_personal_events_created": 0,
+  "real_learning_events_uploaded": 0,
+  "production_sqlite_schema": 3,
+  "android_build_or_device_work": false,
+  "starter_changed": false,
+  "ocr_performed": false,
+  "vocabulary_sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+  "normal_release_ui": "PASS"
+}

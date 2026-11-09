@@ -1,0 +1,123 @@
+{
+  "version": "0.7.0+10",
+  "original_candidates": 5552,
+  "unique_case_sensitive_heads": 5552,
+  "original_category_counts": {
+    "高频词": 977,
+    "中频词": 635,
+    "低频词": 670,
+    "偶考词": 1475,
+    "基础词": 1795
+  },
+  "selected_original": 5331,
+  "deferred_original": 27,
+  "manual_original": 194,
+  "conservation": true,
+  "category_dispositions": {
+    "高频词": {
+      "正式入选": 951,
+      "待人工核实": 26
+    },
+    "中频词": {
+      "正式入选": 586,
+      "待人工核实": 49
+    },
+    "基础词": {
+      "正式入选": 1780,
+      "待人工核实": 15
+    },
+    "低频词": {
+      "正式入选": 576,
+      "待人工核实": 94
+    },
+    "偶考词": {
+      "正式入选": 1438,
+      "暂缓学习": 27,
+      "待人工核实": 10
+    },
+    "补充词": {}
+  },
+  "mandatory_recommended_keep": 3407,
+  "mandatory_deferred": 0,
+  "subjective_value_reviewed": 1145,
+  "subjective_value_outcomes": {
+    "建议保留": 1116,
+    "暂缓": 27,
+    "待核实": 2
+  },
+  "ai_selected_original": 1059,
+  "semantic_new_reviewed": 5053,
+  "cow_draft_reviewed": 2144,
+  "independently_written_remaining": 2909,
+  "semantic_new_approved": 5036,
+  "semantic_new_held": 17,
+  "source_draft_rewrites": 639,
+  "new_meaning_fields_added": 2909,
+  "semantic_second_pass": 16,
+  "pets2015_exact_matches": 3962,
+  "pets2015_not_explicitly_listed": 1590,
+  "pets2025_pending": 5552,
+  "existing_notion": 500,
+  "existing_original_candidates": 499,
+  "retained_supplemental": 1,
+  "formal_total_with_texture": 5332,
+  "notion_expected_new": 4832,
+  "notion_expected_updates": 0,
+  "notion_unchanged": 500,
+  "duplicate_ids": 0,
+  "duplicate_exact_heads": 0,
+  "case_accent_collision_groups": [
+    [
+      "May",
+      "may"
+    ],
+    [
+      "March",
+      "march"
+    ],
+    [
+      "resume",
+      "résumé"
+    ]
+  ],
+  "source_new_pending_checked": 406,
+  "source_new_pending_remaining": 177,
+  "anomaly_entries": 492,
+  "manual_issue_counts": {
+    "小写复兴义与专名文艺复兴需区分，保留原词头": 1,
+    "原书正文词头仍待核实": 177,
+    "大小写及圣经/权威著作义需核对，不从词网大小写折叠自动定义": 1,
+    "限定词/代词标签和语境需核对": 1,
+    "称人用法和贬义风险需核对": 1,
+    "不利条件与残障旧称的语域需审定，不直接使用过时称人释义": 1,
+    "身体状态义与贬义修辞需标签复核": 1,
+    "称人名词与矮小品种/天体、动词义需用法审定": 1,
+    "暴力犯罪常用义与植物名同形义的呈现需审定": 1,
+    "侮辱性及过时标签不能作为中性称人释义": 1,
+    "现代身份用法、旧义和贬义标签需可靠词典/人工核实": 1,
+    "常用于irrespective of": 1,
+    "独立词头的词性标注及固定结构需统一": 1,
+    "身份义与旧式快乐义需语域审定，避免采用词网过时称人表述": 1,
+    "公鸡义与粗俗义需加标签并决定教材呈现范围": 1,
+    "用过的/二手的与be used to结构需分开，词网草稿不足": 1,
+    "常用介词/连词缺义，不能只采用少用动词": 1,
+    "常用连词义未覆盖，不能只列名词一会儿": 1,
+    "限定词/代词/副词结构需区分": 1,
+    "限定词/代词标签需区分": 1
+  },
+  "notion_direct_fields_equal_existing_pack": 29,
+  "personal_sqlite_unchanged": true,
+  "cloud_writes": 0,
+  "events_uploaded": 0,
+  "ocr_performed": false,
+  "dry_run_first": {
+    "inserted": 4832
+  },
+  "dry_run_repeat": {
+    "unchanged": 4832
+  },
+  "synthetic_update_idempotency": true,
+  "selected_missing_required": 0,
+  "original_ledger_sha256": "1a3a36c78795729992e4e441fa7c0cc4eb267a3fb1bb0753497cd66ec3a4a113",
+  "unchanged_pack_sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "conservation": true,
+  "unique_ids": true,
+  "existing500_unchanged": true,
+  "notion_direct29_fields_match": true,
+  "sqlite_all_tables_equal": true,
+  "idempotent_local_upsert": true,
+  "synthetic_update_preserves_personal_field": true,
+  "remote_write_functions_implemented": false,
+  "all_data_ready": false,
+  "all_candidates_have_exclusive_processing_status": true
+}

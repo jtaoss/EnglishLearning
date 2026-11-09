@@ -1,0 +1,18 @@
+[
+  {"word":"intelligence","meaning_zh":"智力；情报","reason":"补入不能从单纯智力义推得的常用情报义","evidence":"WordNet3.0 05617606-n,08339454-n,06642672-n"},
+  {"word":"security","meaning_zh":"安全；保障；证券（常用复数）","reason":"保留安全及经济保障义，补入独立常用金融义；独立编写，非直接翻译单一词元","evidence":"WordNet3.0 security概念组；会话内常用义自检"},
+  {"word":"generation","meaning_zh":"一代人；产生；发电","reason":"避免只留世代义，补入产生与发电的常见用法","evidence":"WordNet3.0 generation概念组；会话内常用义自检"},
+  {"word":"foundation","meaning_zh":"基础；基金会","reason":"补入基金会这一重要常用义","evidence":"WordNet3.0 13790712-n,08406486-n"},
+  {"word":"occupation","meaning_zh":"职业；占领","reason":"保留职业并补入军事占领义","evidence":"WordNet3.0 00582388-n,01133106-n"},
+  {"word":"invest","meaning_zh":"投资；投入","reason":"去掉过窄的买进表述，保留资金及时间精力投入的常用义","evidence":"WordNet3.0 invest概念组；会话内常用义自检"},
+  {"word":"revenue","meaning_zh":"收入；财政收入","reason":"原COW草稿毛利不等于收入，删除错误混同","evidence":"WordNet3.0 13256691-n,13261916-n"},
+  {"word":"division","meaning_zh":"划分；分歧；部门；除法","reason":"补入基础数学常用义，避免只留组织或军事义","evidence":"WordNet3.0 division概念组；会话内常用义自检"},
+  {"word":"deliver","meaning_zh":"递送；发表；履行","reason":"避免多个递送近义词挤占不同常用义项","evidence":"WordNet3.0 00989602-v,01438304-v；会话内常用义自检"},
+  {"word":"robust","meaning_zh":"健壮的；稳健的","reason":"保留身体/结构义并覆盖论证及系统稳健语境","evidence":"WordNet3.0 02037708-a,02323521-a"},
+  {"word":"peculiar","meaning_zh":"奇怪的；特有的","reason":"区分异常义和某人某物特有义","evidence":"WordNet3.0 00968010-a,01104026-a"},
+  {"word":"gender","meaning_zh":"性别；语法性","reason":"补入语法类别义，不只列生物性别","evidence":"WordNet3.0 06328643-n,05006898-n"},
+  {"word":"impressive","meaning_zh":"令人印象深刻的","reason":"清除不自然词元和多余空格，精简重复说法","evidence":"WordNet3.0 01282014-a,00835292-a"},
+  {"word":"feasible","meaning_zh":"可行的；可实行的","reason":"把不自然的可做改为常用中文表达","evidence":"WordNet3.0 01822563-a"},
+  {"word":"viable","meaning_zh":"可行的；能存活的","reason":"区分实践可行及生命存活两义","evidence":"WordNet3.0 01822563-a,00094941-a"},
+  {"word":"exotic","meaning_zh":"异国的；奇异的","reason":"去掉舶来品的这一不自然形容词表述","evidence":"WordNet3.0 exotic概念组；会话内语义自检"}
+]

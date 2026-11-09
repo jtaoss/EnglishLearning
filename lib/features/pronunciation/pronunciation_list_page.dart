@@ -21,7 +21,7 @@ class _PronunciationListPageState extends State<PronunciationListPage> {
   late Future<PronunciationCatalog> _catalog = widget.services.catalog();
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('6 词发音练习')),
+    appBar: AppBar(title: const Text('自主认读与听音')),
     body: FutureBuilder(
       future: _catalog,
       builder: (context, snapshot) {
@@ -40,29 +40,33 @@ class _PronunciationListPageState extends State<PronunciationListPage> {
         return ListenableBuilder(
           listenable: widget.vocabulary,
           builder: (context, _) {
-            final words = widget.vocabulary.words
-                .where((w) => snapshot.data!.entries.containsKey(w.entry.id))
-                .toList();
-            return ListView(
+            final words = widget.vocabulary.words;
+            return ListView.builder(
               padding: const EdgeInsets.all(16),
-              children: [
-                const Text('先自主认读，再听音核对。发音自评与词义学习分开保存。'),
-                if (words.isEmpty)
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 24),
-                    child: Text('本地还没有这些样本词。可返回词库手动导入现有 100 词样本；这里不会自动导入。'),
+              itemCount: words.length + 1,
+              itemBuilder: (context, index) {
+                if (index == 0) {
+                  return Text(
+                    words.isEmpty
+                        ? '本地词库为空，请先返回词库同步。'
+                        : '先自主认读，再听音核对。缺少音频也可保存自主认读自评。',
+                  );
+                }
+                final word = words[index - 1];
+                return ListTile(
+                  key: ValueKey('pronunciation-word-${word.entry.id}'),
+                  title: Text(word.entry.word),
+                  subtitle: Text(
+                    snapshot.data!.entries.containsKey(word.entry.id)
+                        ? '美式真人录音 · 可离线播放'
+                        : '自主认读 · 标准音频待补充',
                   ),
-                for (final word in words)
-                  ListTile(
-                    key: ValueKey('pronunciation-word-${word.entry.id}'),
-                    title: Text(word.entry.word),
-                    subtitle: const Text('美式真人录音 · 可离线播放'),
-                    trailing: const Icon(Icons.chevron_right),
-                    onTap: () => context.push(
-                      AppRouter.pronunciationWordPath(word.entry.id),
-                    ),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => context.push(
+                    AppRouter.pronunciationWordPath(word.entry.id),
                   ),
-              ],
+                );
+              },
             );
           },
         );

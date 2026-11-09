@@ -4,6 +4,7 @@ import 'package:english_learning/features/pronunciation/pronunciation_content.da
 import 'package:english_learning/features/pronunciation/pronunciation_session.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_store.dart';
 import 'package:english_learning/features/pronunciation/standard_audio_player.dart';
+import 'package:english_learning/features/pronunciation/local_speech.dart';
 
 final class PronunciationServices {
   PronunciationServices({
@@ -12,14 +13,17 @@ final class PronunciationServices {
     Future<PronunciationCatalog> Function()? catalogLoader,
     PronunciationAudioCache? cache,
     StandardAudioPlayer Function()? playerFactory,
+    LocalSpeech? Function()? speechFactory,
   }) : _load = catalogLoader ?? PronunciationCatalog.load,
        cache = cache ?? LocalAudioCache(),
-       playerFactory = playerFactory ?? AudioplayersStandardAudioPlayer.new;
+       playerFactory = playerFactory ?? AudioplayersStandardAudioPlayer.new,
+       speechFactory = speechFactory ?? (() => null);
   final PronunciationStore store;
   final AppLogger logger;
   final Future<PronunciationCatalog> Function() _load;
   final PronunciationAudioCache cache;
   final StandardAudioPlayer Function() playerFactory;
+  final LocalSpeech? Function() speechFactory;
   PronunciationCatalog? _catalog;
   Future<PronunciationCatalog> catalog() async => _catalog ??= await _load();
   Future<PronunciationSession?> open(String id, String word) async {

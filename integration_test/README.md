@@ -1,5 +1,14 @@
 # 原生测试入口
 
+P3 Windows 500 词隔离验收仍使用统一入口。工具链就绪后执行：
+
+```powershell
+flutter test integration_test/app_acceptance_test.dart -d windows --no-pub --dart-define-from-file=config/dev.json --dart-define=P3_WINDOWS=true --dart-define=P3_REPORT_DIR=E:/desktop/EnglishLearning-main/build/reports/p3-native --plain-name="P3 Windows"
+flutter test integration_test/app_acceptance_test.dart -d windows --no-pub --dart-define-from-file=config/dev.json --dart-define=P3_COLD_REPORT=E:/desktop/EnglishLearning-main/build/reports/p3-native/native-report.json --dart-define=P3_REPORT_DIR=E:/desktop/EnglishLearning-main/build/reports/p3-native --plain-name="P3 Windows cold"
+```
+
+首个规格新建隔离 SQLite、禁止 Dart HTTP、验证无音频自评及词义学习、播放既有合法音频两次并输出截图/报告。第二条命令启动独立新进程，读取前次隔离库，验证评级/日期/发音恢复、发音到期进入首页队列、历史数量不变；两个报告保存不同 PID。它们不打开个人库、不连接真实 Notion。真实 200／500 词同步须经批量写入批准后另行验收。未设置参数时明确跳过，不表示通过。Android 本轮暂停。完成集成验收后重新构建普通 Debug，避免将测试入口留在 Debug 运行目录。
+
 当前 Flutter 3.47.7 的 DesktopLogReader 在多入口之间复用已关闭流；调查与复现见 docs/p1a1/TEST_STABILITY_INVESTIGATION.md。
 
 所有原生用例放在 specs/*.dart，由唯一的 app_acceptance_test.dart 注册。新增规格不要命名为独立 *_test.dart，以免触发第二次原生启动。默认整目录命令：

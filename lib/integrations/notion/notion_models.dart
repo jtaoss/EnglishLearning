@@ -80,15 +80,25 @@ abstract interface class NotionSyncStore {
   });
 }
 
-/// Same 100 stable identities as CSV. This is an explicit scope, not a full dump.
+/// Reviewed stable identities only. Expansion does not authorize remote writes.
 final class NotionScope {
   NotionScope(String csv) : entries = VocabularyCsv.parse(csv) {
-    if (entries.length != 100) {
-      throw const NotionFailure('本轮样本范围须为 100 个既有稳定 ID。');
+    if (entries.isEmpty) {
+      throw const NotionFailure('词库范围不能为空。');
     }
   }
   final List<VocabularyEntry> entries;
-  Map<String, String> get heads => {for (final e in entries) e.id: e.word};
+  late final Map<String, String> heads = Map.unmodifiable({
+    for (final e in entries) e.id: e.word,
+  });
+
+  NotionScope._(this.entries);
+  NotionScope take(int count) {
+    if (!const {100, 200, 500}.contains(count) || count > entries.length) {
+      throw const NotionFailure('当前已核验词库尚不支持该规模。');
+    }
+    return NotionScope._(List.unmodifiable(entries.take(count)));
+  }
 }
 
 abstract final class NotionFields {
@@ -116,6 +126,24 @@ abstract final class NotionFields {
     'pets2015_status',
     'pets2025_status',
     'library_class',
+    'learning_priority',
+  };
+
+  // Older 100-word sources remain readable before schema expansion approval.
+  static const extensions = <String, String>{
+    'example_en': '原创例句',
+    'example_zh': '例句译文',
+    'learning_priority': '学习优先级',
+    'selection_reason': '筛选理由',
+    'phonics_note': '拼读提示',
+    'syllables': '音节说明',
+    'stress': '重音说明',
+    'reading_review_status': '拼读复核说明',
+    'audio_status': '音频许可状态',
+    'audio_source': '标准音频来源',
+    'audio_license': '标准音频许可',
+    'pets2015_evidence': 'PETS3 2015证据',
+    'pets2015_match_method': 'PETS3 2015匹配方法',
   };
 
   static String type(String field) => field == 'word'
@@ -138,6 +166,13 @@ abstract final class NotionFields {
         throw NotionFailure('Notion 字段“${mapping[field]}”缺失或类型不符，原数据已保留。');
       }
     }
+    for (final field in extensions.keys) {
+      final property = properties[extensions[field]];
+      if (property != null &&
+          (property is! Map || property['type'] != type(field))) {
+        throw NotionFailure('Notion 扩展字段“${extensions[field]}”类型不符，原数据已保留。');
+      }
+    }
   }
 
   static NotionWord read(
@@ -157,8 +192,12 @@ abstract final class NotionFields {
       }
       final properties = page['properties'] as Map;
       final fields = <String, String>{};
-      for (final field in mapping.keys) {
-        final property = properties[mapping[field]] as Map;
+      for (final field in [...mapping.keys, ...extensions.keys]) {
+        final name = mapping[field] ?? extensions[field]!;
+        if (extensions.containsKey(field) && !properties.containsKey(name)) {
+          continue;
+        }
+        final property = properties[name] as Map;
         final expected = type(field);
         if (property['type'] != expected || property['has_more'] == true) {
           throw const NotionFailure('词条字段类型不符或内容未完整返回，整批未同步。');
@@ -186,7 +225,7 @@ abstract final class NotionFields {
       }
       final columns = [
         ...VocabularyCsv.columns,
-        ...VocabularyCsv.optionalColumns,
+        ...VocabularyCsv.optionalColumns.where(fields.containsKey),
       ];
       final entry = VocabularyCsv.parse(
         Csv().encode([

@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-09",
+  "raw_candidates": 5552,
+  "raw_category_counts": {
+    "高频词": 977,
+    "中频词": 635,
+    "低频词": 670,
+    "偶考词": 1475,
+    "基础词": 1795
+  },
+  "mandatory_retained": 3407,
+  "screened_candidate_retained": 4392,
+  "raw_rows_deleted": 0,
+  "notion_actual_count": 100,
+  "notion_writes_performed": 0,
+  "reviewed_pack_count": 500,
+  "selected_category_counts": {
+    "高频词": 58,
+    "中频词": 18,
+    "基础词": 391,
+    "低频词": 23,
+    "偶考词": 10
+  },
+  "all_selected_learnable": true,
+  "existing_class_changes": [
+    {
+      "id": "SG25-7c4a23e0f78b",
+      "word": "oriental",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-eba8dcd606bd",
+      "word": "compile",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-d0c4a7ff52c6",
+      "word": "imaginary",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-29f02fa6bd9a",
+      "word": "menace",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-cb91f54317e8",
+      "word": "shove",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-0c2f83b43384",
+      "word": "pottery",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-e9f7b5b69666",
+      "word": "résumé",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-4f6cad53cf3e",
+      "word": "anecdote",
+      "from": "暂缓",
+      "to": "扩展"
+    },
+    {
+      "id": "SG25-31d58043e5d0",
+      "word": "splash",
+      "from": "暂缓",
+      "to": "扩展"
+    }
+  ],
+  "audio_ready": 6,
+  "audio_pending": 494,
+  "reading_verified": 500,
+  "new_words_with_body_title_support": 400,
+  "word_specific_phonics_hints": 500,
+  "pets2015_matches": 473,
+  "pets2025_pending": 500,
+  "official_2015_url": "https://pets.neea.edu.cn/res/Home/2507/7186495d90963d37a36afccbfb505cc9.pdf",
+  "official_pdf_sha256": "ff2190a4584bab5b31356cf4de597c3ca3c7a0319a68435b5741d39142212817",
+  "ledger_sha256": "1a3a36c78795729992e4e441fa7c0cc4eb267a3fb1bb0753497cd66ec3a4a113",
+  "cmudict_sha256": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+  "wordnet_sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a",
+  "editorial_sha256": "cf858a66266cefa5d04f7275ae886cbf327ebc49744b05a3f7d8c84f5b1fc6cf",
+  "phonics_hints_sha256": "1cc82d20a08522c9da3ee1750ae596a2c08caff0c93f64232b0bdc9d65a8fdb6",
+  "reviewed_pack_sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+  "reference_limits": "Exact printed forms only; no stemming, no inference of official exclusion, no PETS frequency claim.",
+  "content_review_limits": "AI editorial/semantic review and lexical cross-check, not personal confirmation or official definitions."
+}

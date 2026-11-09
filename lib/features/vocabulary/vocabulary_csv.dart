@@ -19,11 +19,24 @@ abstract final class VocabularyCsv {
     'pets2025_status',
     'library_class',
   ];
-  static const maxEntries = 100;
+  static const maxEntries = 500;
   static const optionalColumns = [
     'part_of_speech',
     'usage_note',
     'lexical_sources',
+    'example_en',
+    'example_zh',
+    'learning_priority',
+    'selection_reason',
+    'phonics_note',
+    'syllables',
+    'stress',
+    'reading_review_status',
+    'audio_status',
+    'audio_source',
+    'audio_license',
+    'pets2015_evidence',
+    'pets2015_match_method',
   ];
 
   static List<VocabularyEntry> parse(String input) {
@@ -46,10 +59,10 @@ abstract final class VocabularyCsv {
         header.any(
           (key) => !columns.contains(key) && !optionalColumns.contains(key),
         )) {
-      throw const FormatException('CSV 表头与 100 词样本格式不一致。');
+      throw const FormatException('CSV 表头与词库格式不一致。');
     }
     if (rows.length - 1 > maxEntries) {
-      throw const FormatException('本阶段单次最多导入 100 词。');
+      throw const FormatException('本阶段单次最多导入 500 词。');
     }
     final ids = <String>{};
     final words = <String>{};
@@ -81,6 +94,10 @@ abstract final class VocabularyCsv {
       }
       if (!const {'主学习', '扩展', '暂缓'}.contains(fields['library_class'])) {
         throw FormatException('CSV 第 ${i + 1} 条记录的词库分类无效。');
+      }
+      if (fields['learning_priority']?.isNotEmpty == true &&
+          !const {'P1', 'P2', '未分配'}.contains(fields['learning_priority'])) {
+        throw FormatException('CSV 第 ${i + 1} 条记录的学习优先级无效。');
       }
       final entry = VocabularyEntry(fields);
       if (!ids.add(entry.id) || !words.add(entry.wordKey)) {

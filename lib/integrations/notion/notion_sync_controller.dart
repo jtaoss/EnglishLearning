@@ -15,14 +15,31 @@ final class NotionSyncController extends ChangeNotifier {
   final Future<bool> Function() refreshVocabulary;
   bool busy = false, configured = false, _disposed = false;
   String sourceId = notionPilotSource;
+  int targetSize = 100;
   String? message, error;
   NotionSyncState state = const NotionSyncState();
+
+  void selectSize(int size) {
+    if (busy || _disposed || !const {100, 200, 500}.contains(size)) return;
+    targetSize = size;
+    _notify();
+  }
 
   Future<void> restore() => _perform(() async {
     final account = await service.credentials.read();
     configured = account != null;
     if (account != null) sourceId = account.dataSourceId;
     state = await service.store.readNotionState(sourceId);
+    if (!isMobile) {
+      final available = state.linkedWords == 0
+          ? (await service.loadScope()).entries.length
+          : state.linkedWords;
+      targetSize = available > 200
+          ? 500
+          : available > 100
+          ? 200
+          : 100;
+    }
   });
 
   Future<void> save(String source, String token) => _perform(() async {
@@ -44,7 +61,10 @@ final class NotionSyncController extends ChangeNotifier {
   });
 
   Future<void> sync({bool full = false}) => _perform(() async {
-    final result = await service.sync(full: full);
+    final result = await service.sync(
+      full: full,
+      limit: isMobile ? 100 : targetSize,
+    );
     state = await service.store.readNotionState(sourceId);
     message = '${result.message}。本地共关联 ${state.linkedWords} 词。';
     final refreshed = await refreshVocabulary();

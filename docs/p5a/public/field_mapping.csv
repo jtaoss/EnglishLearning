@@ -1,0 +1,39 @@
+﻿csv_field,notion_property,notion_type,policy
+entry_id,词条ID,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+word,单词,title,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+meaning_zh,中文词义,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+book_category,原书分类,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+source_file,来源文件,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+source_id,来源ID,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+source_pdf_pages,原书PDF页码,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+source_index_pages,索引PDF页码,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+book_verification,原书核验状态,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+meaning_review_status,释义复核说明,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+pets2015_status,PETS3 2015收录状态,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+pets2025_status,PETS3 2025收录状态,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+library_class,学习词库分类,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+part_of_speech,词性,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+usage_note,用法说明,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+lexical_sources,释义来源,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+example_en,原创例句,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+example_zh,例句译文,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+learning_priority,学习优先级,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+selection_reason,筛选理由,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+phonics_note,拼读提示,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+syllables,音节说明,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+stress,重音说明,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+reading_review_status,拼读复核说明,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+audio_status,音频许可状态,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+audio_source,标准音频来源,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+audio_license,标准音频许可,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+pets2015_evidence,PETS3 2015证据,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+pets2015_match_method,PETS3 2015匹配方法,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+ai_reason,AI 筛选理由,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+ai_confidence,筛选置信度,select,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+original_源记录ID,原记录ID,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+original_原始词头,原始词头,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+original_清洗记录,清洗记录,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+original_书内页码,原书书内页码,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+book_category_evidence,分类依据,rich_text,只预览内容；已有条目无变化则不更新；禁止个人状态/日期字段
+candidate_scope,原5552台账内,select,仅新增原5552候选写入是；texture既有恢复历史原样保留
+pronunciation_resource_status,发音资源状态,select,新增词未配置独立真人录音：未配置；本地TTS备用另记音频许可状态/来源，不等同真人

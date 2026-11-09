@@ -70,6 +70,7 @@ abstract final class AppRouter {
             controller: vocabularyController,
             entryId: state.pathParameters['entryId']!,
             hasPronunciation: pronunciationServices != null,
+            pronunciationServices: pronunciationServices,
           ),
         ),
         if (pronunciationServices != null) ...[
@@ -92,6 +93,10 @@ abstract final class AppRouter {
                       entryId: id,
                       word: word.entry.word,
                       services: pronunciationServices,
+                      entry: word.entry,
+                      onSaved: () async {
+                        await vocabularyController.refresh();
+                      },
                     );
             },
           ),

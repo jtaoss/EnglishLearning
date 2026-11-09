@@ -26,6 +26,7 @@ bool FlutterWindow::OnCreate() {
   }
   RegisterPlugins(flutter_controller_->engine());
   notion_credentials_ = std::make_unique<NotionCredentials>(flutter_controller_->engine()->messenger());
+  local_speech_ = std::make_unique<LocalSpeech>(flutter_controller_->engine()->messenger());
   SetChildContent(flutter_controller_->view()->GetNativeWindow());
 
   flutter_controller_->engine()->SetNextFrameCallback([&]() {
@@ -41,6 +42,7 @@ bool FlutterWindow::OnCreate() {
 }
 
 void FlutterWindow::OnDestroy() {
+  local_speech_ = nullptr;
   notion_credentials_ = nullptr;
   if (flutter_controller_) {
     flutter_controller_ = nullptr;

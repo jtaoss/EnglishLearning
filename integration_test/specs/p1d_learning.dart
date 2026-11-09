@@ -198,6 +198,11 @@ void main() {
               pronunciation,
             );
           } else {
+            await waitP1d(
+              tester,
+              find.byKey(const Key('confirm-self-reading')),
+            );
+            await tester.tap(find.byKey(const Key('confirm-self-reading')));
             await waitP1d(tester, find.byKey(const Key('audio-missing')));
             expect(find.byKey(const Key('play-pronunciation')), findsNothing);
             missing.add(word.entry.word);

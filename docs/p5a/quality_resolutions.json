@@ -1,0 +1,13 @@
+[
+  {"word":"at","pos":"介词","meaning_zh":"在……处；在……时；以某种状态","decision":"拒绝元素符号At的词网匹配，独立编写常用介词义。","evidence":"https://dictionary.cambridge.org/grammar/british-grammar/at","status":"approved"},
+  {"word":"he","pos":"代词","meaning_zh":"他","decision":"拒绝元素符号He的词网匹配；出版社词典明确列代词。","evidence":"https://dictionary.cambridge.org/dictionary/english/he?topic=personal-pronouns","status":"approved"},
+  {"word":"intercourse","pos":"n","meaning_zh":"性交；交往（较正式或旧式用法）","decision":"核对现代常用性行为义与旧式正式交流义，不只保留交流这一狭窄含义。","evidence":"https://dictionary.cambridge.org/dictionary/english/intercourse ; https://www.collinsdictionary.com/dictionary/english/intercourse","status":"approved"},
+  {"word":"coronavirus","pos":"n","meaning_zh":"冠状病毒","decision":"官方公共卫生来源区分冠状病毒家族和COVID-19，不把词头缩窄为单指新冠疾病。只核词义，不提供诊疗建议。","evidence":"https://health.nih.gov/health-topics-a-z/coronaviruses","status":"approved"},
+  {"word":"despite","pos":"介词","meaning_zh":"尽管；不顾","decision":"补入词网未覆盖的常用介词义，不采用少用名词草稿。","evidence":"https://dictionary.cambridge.org/dictionary/english/despite","status":"approved"},
+  {"word":"unlike","pos":"介词；形容词","meaning_zh":"与……不同；不相似的","decision":"出版社词条支持常用介词及形容词，独立编写简洁中文。","evidence":"https://dictionary.cambridge.org/dictionary/english/unlike","status":"approved"},
+  {"word":"every","pos":"限定词","meaning_zh":"每一个；每一","decision":"采用出版社限定词标签，去除机器词网笼统形容词标签。","evidence":"https://dictionary.cambridge.org/dictionary/english/every","status":"approved"},
+  {"word":"someone","pos":"代词","meaning_zh":"某人；有人","decision":"采用不定代词常用义，不采用普通名词个体草稿。","evidence":"https://dictionary.cambridge.org/us/dictionary/english/someone","status":"approved"},
+  {"word":"another","pos":"限定词；代词","meaning_zh":"另一个；再一个","decision":"核对额外一个和不同一个的常用义。","evidence":"https://dictionary.cambridge.org/dictionary/english/another","status":"approved"},
+  {"word":"whatever","pos":"代词；限定词","meaning_zh":"无论什么；任何事物","decision":"保留主要代词和限定词用法，不由词网单一形容词标签推断。","evidence":"https://dictionary.cambridge.org/dictionary/english/whatever","status":"approved"},
+  {"word":"but","pos":"连词；介词；副词","meaning_zh":"但是；除了；仅仅（正式副词用法）","decision":"保留连词和介词主用法，副词义明确标为正式用法。","evidence":"https://dictionary.cambridge.org/dictionary/learner-english/but ; https://dictionary.cambridge.org/grammar/british-grammar/but","status":"approved"}
+]

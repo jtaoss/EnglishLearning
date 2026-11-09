@@ -1,4 +1,5 @@
 import 'package:english_learning/features/vocabulary/vocabulary_entry.dart';
+import 'package:english_learning/features/pronunciation/pronunciation_store.dart';
 
 final class StudyWord {
   const StudyWord({
@@ -8,6 +9,7 @@ final class StudyWord {
     required this.reviewCount,
     this.lastReviewedAt,
     this.dueAt,
+    this.pronunciationProgress,
   });
   final VocabularyEntry entry;
   final String status;
@@ -15,6 +17,11 @@ final class StudyWord {
   final int reviewCount;
   final DateTime? lastReviewedAt;
   final DateTime? dueAt;
+  final PronunciationProgress? pronunciationProgress;
+  bool isPronunciationDue(DateTime now) {
+    final due = pronunciationProgress?.dueAt;
+    return due != null && !due.isAfter(now.toUtc());
+  }
 
   String get statusLabel => switch (status) {
     'mastered' => '掌握',
