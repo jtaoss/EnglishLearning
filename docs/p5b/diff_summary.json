@@ -1,0 +1,53 @@
+{
+  "version": "0.7.0+10",
+  "stage": "P5-B",
+  "remote_writes": 0,
+  "events_uploaded": 0,
+  "live_notion_queried": false,
+  "ocr_performed": false,
+  "source_pdf_rechecked": false,
+  "formal_library": 5332,
+  "selected_original": 5331,
+  "retained_texture": 1,
+  "existing_reviewed": 500,
+  "content_field_updates": 0,
+  "updated_entry_ids": [],
+  "preview_actions": {
+    "保持不变": 500,
+    "新增": 4832,
+    "跳过-待核实": 194,
+    "跳过-暂缓": 27
+  },
+  "pending_remaining": 194,
+  "pending_promoted": 0,
+  "deferred_remaining": 27,
+  "duplicate_formal_ids": 0,
+  "client_field_count": 29,
+  "formal_columns_match_client": true,
+  "mapping_properties_not_read_by_client": [
+    "AI 筛选理由",
+    "分类依据",
+    "原5552台账内",
+    "原书书内页码",
+    "原始词头",
+    "原记录ID",
+    "发音资源状态",
+    "清洗记录",
+    "筛选置信度"
+  ],
+  "client_properties_missing_from_mapping_file": [],
+  "personal_fields_excluded": [
+    "学习状态",
+    "发音状态",
+    "自然拼读状态",
+    "听音学习状态",
+    "笔记",
+    "评级",
+    "复习日期",
+    "学习事件"
+  ],
+  "notion_query_groups": 54,
+  "notion_page_size": 100,
+  "notion_max_pages_per_group": 10,
+  "notion_spacing_milliseconds": 350
+}

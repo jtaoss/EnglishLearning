@@ -19,7 +19,11 @@ abstract final class VocabularyCsv {
     'pets2025_status',
     'library_class',
   ];
-  static const maxEntries = 500;
+
+  /// P5-A formal library: 5,331 selected heads plus the retained texture.
+  /// The 194 pending and 27 deferred heads stay outside this cap.
+  static const maxEntries = 5332;
+  static const maxBytes = 8 * 1024 * 1024;
   static const optionalColumns = [
     'part_of_speech',
     'usage_note',
@@ -40,8 +44,8 @@ abstract final class VocabularyCsv {
   ];
 
   static List<VocabularyEntry> parse(String input) {
-    if (utf8.encode(input).length > 1024 * 1024) {
-      throw const FormatException('CSV 超过 1 MB，未导入。');
+    if (utf8.encode(input).length > maxBytes) {
+      throw FormatException('CSV 超过 ${maxBytes ~/ (1024 * 1024)} MB，未导入。');
     }
     final text = input.startsWith('\uFEFF') ? input.substring(1) : input;
     _checkQuotes(text);
@@ -62,7 +66,7 @@ abstract final class VocabularyCsv {
       throw const FormatException('CSV 表头与词库格式不一致。');
     }
     if (rows.length - 1 > maxEntries) {
-      throw const FormatException('本阶段单次最多导入 500 词。');
+      throw FormatException('本阶段单次最多导入 $maxEntries 词。');
     }
     final ids = <String>{};
     final words = <String>{};

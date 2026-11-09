@@ -330,7 +330,7 @@ Object? _execute(
           }
           final rows = (args[1] as List).cast<Map<String, Object?>>();
           if (rows.length > VocabularyCsv.maxEntries) {
-            throw const NotionFailure('同步超出本阶段 500 词范围。');
+            throw NotionFailure('同步超出本阶段 ${VocabularyCsv.maxEntries} 词范围。');
           }
           final previous = db.select(
             'SELECT watermark_utc FROM notion_sync_state WHERE source_id=?',

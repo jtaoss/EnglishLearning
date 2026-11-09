@@ -73,31 +73,30 @@ void main() {
       expect(() => VocabularyCsv.parse(damaged), throwsFormatException);
     }
   });
-  test(
-    'unverified heads, bad categories and full-library imports are rejected',
-    () {
-      expect(
-        () => VocabularyCsv.parse(
-          encodeEntries([entryFields()..['book_verification'] = '待核实']),
-        ),
-        throwsFormatException,
-      );
-      expect(
-        () => VocabularyCsv.parse(
-          encodeEntries([entryFields(library: 'unknown')]),
-        ),
-        throwsFormatException,
-      );
-      expect(
-        () => VocabularyCsv.parse(
-          encodeEntries(
-            List.generate(501, (i) => entryFields(id: 'id-$i', word: 'word$i')),
+  test('unverified heads, bad categories and imports above the formal cap are rejected', () {
+    expect(
+      () => VocabularyCsv.parse(
+        encodeEntries([entryFields()..['book_verification'] = '待核实']),
+      ),
+      throwsFormatException,
+    );
+    expect(
+      () =>
+          VocabularyCsv.parse(encodeEntries([entryFields(library: 'unknown')])),
+      throwsFormatException,
+    );
+    expect(
+      () => VocabularyCsv.parse(
+        encodeEntries(
+          List.generate(
+            VocabularyCsv.maxEntries + 1,
+            (i) => entryFields(id: 'id-$i', word: 'word$i'),
           ),
         ),
-        throwsFormatException,
-      );
-    },
-  );
+      ),
+      throwsFormatException,
+    );
+  });
   test('2025 official claims are refused in this unverified phase', () {
     final row = entryFields()..['pets2025_status'] = '已收录';
     expect(

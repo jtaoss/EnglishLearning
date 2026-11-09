@@ -65,9 +65,11 @@ void main() {
     },
   );
   test('the import size limit counts UTF-8 bytes rather than characters', () {
-    final text = encodeEntries([entryFields(meaning: '中' * 400000)]);
-    expect(text.length, lessThan(1024 * 1024));
-    expect(utf8.encode(text).length, greaterThan(1024 * 1024));
+    final text = encodeEntries([
+      entryFields(meaning: '中' * (VocabularyCsv.maxBytes ~/ 3)),
+    ]);
+    expect(text.length, lessThan(VocabularyCsv.maxBytes));
+    expect(utf8.encode(text).length, greaterThan(VocabularyCsv.maxBytes));
     expect(() => VocabularyCsv.parse(text), throwsFormatException);
   });
   test(
@@ -111,7 +113,10 @@ void main() {
       );
       await expectLater(
         readVocabularyCsvFile(
-          XFile.fromData(Uint8List(1024 * 1024 + 1), name: 'large.csv'),
+          XFile.fromData(
+            Uint8List(VocabularyCsv.maxBytes + 1),
+            name: 'large.csv',
+          ),
         ),
         throwsFormatException,
       );
