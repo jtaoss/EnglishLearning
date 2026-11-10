@@ -1,0 +1,113 @@
+{
+  "phase": "P5-C.4A",
+  "version": "0.7.0+10",
+  "mode": "dry-run",
+  "content_writes": 0,
+  "event_uploads": 0,
+  "sqlite_opened": false,
+  "ready": true,
+  "formal_sha256": "9965dab5fdc1d3008ae8b687d21dce18839fe0137f43579e800a180be24025eb",
+  "counts": {
+    "formal": 5332,
+    "unchanged": 500,
+    "create": 4832,
+    "update": 0,
+    "conflict": 0,
+    "pending": 194,
+    "deferred": 27
+  },
+  "conflicts": [],
+  "errors": [],
+  "casefold_collision_groups": 2,
+  "max_rich_text_length": 212,
+  "trial10": [
+    {
+      "entry_id": "SG25-6a651134eb4b",
+      "word": "ambiguous"
+    },
+    {
+      "entry_id": "SG25-110c08f1fbfc",
+      "word": "interact"
+    },
+    {
+      "entry_id": "SG25-275976081ce1",
+      "word": "react"
+    },
+    {
+      "entry_id": "SG25-ce922519a3c3",
+      "word": "transaction"
+    },
+    {
+      "entry_id": "SG25-27747689baf9",
+      "word": "alternative"
+    },
+    {
+      "entry_id": "SG25-ee5e2878c485",
+      "word": "annual"
+    },
+    {
+      "entry_id": "SG25-41dda3b2113b",
+      "word": "ancient"
+    },
+    {
+      "entry_id": "SG25-8dd9ed10798d",
+      "word": "amateur"
+    },
+    {
+      "entry_id": "SG25-20dd3be4a3b1",
+      "word": "temptation"
+    },
+    {
+      "entry_id": "SG25-f1f61cc7216e",
+      "word": "adapt"
+    }
+  ],
+  "create_ids_sha256": "6f013aa5a4379fb16105ba362c930157e65ea87d808d5a754a860e83a635f3d8",
+  "create_property_count": 31,
+  "create_only_audit": {
+    "原5552台账内": "是",
+    "发音资源状态": "未配置"
+  },
+  "preserved_audit_not_sent": [
+    "AI 筛选理由",
+    "筛选置信度",
+    "原记录ID",
+    "原始词头",
+    "清洗记录",
+    "原书书内页码",
+    "分类依据"
+  ],
+  "personal_fields_excluded": [
+    "发音状态",
+    "听音学习状态",
+    "听音学习笔记",
+    "复习日期",
+    "学习事件",
+    "学习状态",
+    "笔记",
+    "自然拼读状态",
+    "自然拼读笔记",
+    "评级"
+  ],
+  "batch_size": 10,
+  "spacing_seconds": 0.35,
+  "live": {
+    "ok": true,
+    "pages": 500,
+    "unique_ids": 500,
+    "errors": [],
+    "preserved_nonempty": {
+      "AI 筛选理由": 100,
+      "筛选置信度": 100,
+      "原记录ID": 100,
+      "原始词头": 100,
+      "清洗记录": 20,
+      "原书书内页码": 100,
+      "分类依据": 100,
+      "原5552台账内": 100,
+      "发音资源状态": 100
+    },
+    "content_writes": 0,
+    "read_only": true
+  }
+}
