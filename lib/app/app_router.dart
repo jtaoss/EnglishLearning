@@ -45,13 +45,20 @@ abstract final class AppRouter {
         builder: (context, state) => HomePage(
           environmentLabel: environmentLabel,
           vocabulary: vocabularyController,
+          notion: notionController,
+          hasPronunciation: pronunciationServices != null,
           hasEventSandbox: eventController != null,
           allowCsvImport: allowCsvImport,
         ),
       ),
       GoRoute(
         path: settings,
-        builder: (context, state) => SettingsPage(settings: appSettings),
+        builder: (context, state) => SettingsPage(
+          settings: appSettings,
+          vocabulary: vocabularyController,
+          notion: notionController,
+          hasPronunciation: pronunciationServices != null,
+        ),
       ),
       if (vocabularyController != null) ...[
         GoRoute(

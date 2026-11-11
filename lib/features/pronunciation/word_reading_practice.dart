@@ -2,12 +2,14 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:english_learning/app/app_theme.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_page.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_services.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_session.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_store.dart';
 import 'package:english_learning/features/vocabulary/vocabulary_entry.dart';
 import 'package:english_learning/features/pronunciation/local_speech.dart';
+import 'package:english_learning/ui/status_badge.dart';
 
 /// Self-reading remains available when no licensed recording exists.
 final class WordReadingPractice extends StatefulWidget {
@@ -230,138 +232,409 @@ class _WordReadingPracticeState extends State<WordReadingPractice>
   @override
   Widget build(BuildContext context) {
     if (_loading) return const LinearProgressIndicator();
-    if (_audio != null) return PronunciationPractice(session: _audio!);
+    if (_audio != null) {
+      return PronunciationPractice(session: _audio!, embedded: true);
+    }
     if (_error != null && !_read) {
-      return Column(
-        children: [
-          Text(_error!),
-          TextButton(onPressed: _load, child: const Text('重试读取')),
-        ],
+      return SectionCard(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            StatusBanner(message: _error!, tone: BannerTone.danger),
+            const SizedBox(height: 8),
+            TextButton.icon(
+              onPressed: _load,
+              icon: const Icon(Icons.refresh, size: 16),
+              label: const Text('重试读取'),
+            ),
+          ],
+        ),
       );
     }
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final brightness = theme.brightness;
     final fields = widget.entry.fields;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text('发音自评：${_progress.label}', key: const Key('pronunciation-status')),
-        if (_progress.grade != null)
-          Text(
-            '上次核对来源：${_progress.sourceLabel}',
-            key: const Key('reading-source'),
-          ),
-        if (_progress.dueAt != null)
-          Text('下次认读复习：${_progress.dueAt!.toLocal()}'),
-        if (_error != null)
-          Text(_error!, key: const Key('pronunciation-error')),
-        if (!_read) ...[
-          const Text('先看英文，自主读一遍，再查看拼读、音节与重音提示。'),
-          OutlinedButton(
-            key: const Key('confirm-self-reading'),
-            onPressed: () {
-              _attemptAt = null;
-              _attempt = List.generate(
-                16,
-                (_) => Random.secure()
-                    .nextInt(256)
-                    .toRadixString(16)
-                    .padLeft(2, '0'),
-              ).join();
-              setState(() {
-                _read = true;
-                _saved = false;
-                _ttsCompleted = false;
-              });
-            },
-            child: const Text('我已自主认读'),
-          ),
-        ] else ...[
-          Text(
-            fields['phonics_note']?.isNotEmpty == true
-                ? fields['phonics_note']!
-                : '拼读提示待核验，请勿仅凭拼写猜测读音。',
-            key: const Key('phonics-note'),
-          ),
-          Text(
-            '音节：${fields['syllables']?.isNotEmpty == true ? fields['syllables'] : '待补充'}',
-          ),
-          Text(
-            '重音：${fields['stress']?.isNotEmpty == true ? fields['stress'] : '待核验'}',
-            key: const Key('word-stress'),
-          ),
-          Text(fields['reading_review_status'] ?? '认读提示待核验'),
-          const SizedBox(height: 8),
-          const Text('此词尚未配置已授权音频。词义学习仍可继续。', key: Key('audio-missing')),
-          if (_voice != null) ...[
-            Text(
-              'Windows 本地 TTS（合成语音）· ${_voice!.name} · ${_voice!.locale}',
-              key: const Key('tts-source'),
-            ),
-            const Text('系统合成语音用于备用核对，不是真人录音；多读音请结合词性和提示。'),
-            Wrap(
-              spacing: 12,
-              children: [
-                OutlinedButton(
-                  key: const Key('play-local-tts'),
-                  onPressed: _ttsPlaying || _saving ? null : () => _playTts(),
-                  child: Text(_ttsCompleted ? '再次播放系统 TTS' : '播放系统 TTS'),
-                ),
-                if (fields['example_en']?.isNotEmpty == true)
-                  OutlinedButton(
-                    key: const Key('play-local-tts-context'),
-                    onPressed: _ttsPlaying || _saving
-                        ? null
-                        : () => _playTts(contextSentence: true),
-                    child: const Text('播放例句核对多音'),
-                  ),
-                if (_ttsPlaying)
-                  TextButton(
-                    key: const Key('stop-local-tts'),
-                    onPressed: _stopTts,
-                    child: const Text('停止'),
-                  ),
-              ],
-            ),
-            Text(
-              _ttsPlaying
-                  ? '正在播放系统 TTS…'
-                  : _ttsCompleted
-                  ? '系统 TTS 已完整播放，可评发音。'
-                  : '完整播放后再评发音；也可跳过听音，仅完成词义复习。',
-              key: const Key('tts-playback-status'),
-            ),
-          ] else ...[
-            const Text('本机未提供可用的美式英语本地 TTS。下面仅保存自主认读自评，未经过录音核对。'),
-          ],
+    final canGrade =
+        !_saving &&
+        !_saved &&
+        !_ttsPlaying &&
+        (_voice == null || _ttsCompleted);
+
+    return SectionCard(
+      backgroundColor: scheme.surface,
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
           Wrap(
-            spacing: 8,
-            runSpacing: 8,
+            spacing: 10,
+            runSpacing: 6,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            alignment: WrapAlignment.spaceBetween,
             children: [
-              for (final grade in PronunciationGrade.values)
-                OutlinedButton(
-                  key: ValueKey('pronunciation-grade-${grade.name}'),
-                  onPressed:
-                      _saving ||
-                          _saved ||
-                          _ttsPlaying ||
-                          (_voice != null && !_ttsCompleted)
-                      ? null
-                      : () => _assess(grade),
-                  child: Text(grade.label),
-                ),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.record_voice_over_outlined,
+                    size: 18,
+                    color: scheme.primary,
+                  ),
+                  const SizedBox(width: 8),
+                  Flexible(
+                    child: Text(
+                      '自然拼读与发音练习',
+                      style: theme.textTheme.titleMedium,
+                    ),
+                  ),
+                ],
+              ),
+              Wrap(
+                spacing: 10,
+                runSpacing: 4,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  if (_progress.grade != null)
+                    Text(
+                      '上次核对来源：${_progress.sourceLabel}',
+                      key: const Key('reading-source'),
+                      style: theme.textTheme.bodySmall,
+                    ),
+                  if (_progress.dueAt != null)
+                    Text(
+                      '下次认读复习：${formatLocalDateTime(_progress.dueAt!)}',
+                      style: theme.textTheme.bodySmall,
+                    ),
+                  StatusBadge(
+                    label: '发音自评：${_progress.label}',
+                    status: _progress.grade?.name ?? _progress.label,
+                    textKey: const Key('pronunciation-status'),
+                  ),
+                ],
+              ),
             ],
           ),
-          if (_saving) const LinearProgressIndicator(),
-          if (_saved) ...[
-            const Text('发音自评已保存', key: Key('pronunciation-saved')),
-            TextButton(
-              onPressed: () => setState(() {
-                _read = false;
-              }),
-              child: const Text('再练习一次'),
+          if (_error != null) ...[
+            const SizedBox(height: 10),
+            StatusBanner(
+              message: _error!,
+              tone: BannerTone.danger,
+              textKey: const Key('pronunciation-error'),
             ),
           ],
+          const SizedBox(height: 10),
+          if (!_read)
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+              decoration: BoxDecoration(
+                color: scheme.surfaceContainerLow,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: scheme.outlineVariant),
+              ),
+              child: Wrap(
+                spacing: 16,
+                runSpacing: 10,
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 440),
+                    child: Text(
+                      '先看英文，自主读一遍，再查看拼读、音节与重音提示。',
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                  OutlinedButton.icon(
+                    key: const Key('confirm-self-reading'),
+                    onPressed: () {
+                      _attemptAt = null;
+                      _attempt = List.generate(
+                        16,
+                        (_) => Random.secure()
+                            .nextInt(256)
+                            .toRadixString(16)
+                            .padLeft(2, '0'),
+                      ).join();
+                      setState(() {
+                        _read = true;
+                        _saved = false;
+                        _ttsCompleted = false;
+                      });
+                    },
+                    icon: const Icon(Icons.visibility_outlined, size: 18),
+                    label: const Text('我已自主认读'),
+                  ),
+                ],
+              ),
+            )
+          else ...[
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+              decoration: BoxDecoration(
+                color: scheme.surfaceContainerLow,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: scheme.outlineVariant),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Wrap(
+                    spacing: 10,
+                    runSpacing: 6,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 9,
+                          vertical: 3,
+                        ),
+                        decoration: BoxDecoration(
+                          color: scheme.surface,
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(color: scheme.outlineVariant),
+                        ),
+                        child: Text(
+                          '音节：${fields['syllables']?.isNotEmpty == true ? fields['syllables'] : '待补充'}',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 9,
+                          vertical: 3,
+                        ),
+                        decoration: BoxDecoration(
+                          color: scheme.surface,
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(color: scheme.outlineVariant),
+                        ),
+                        child: Text(
+                          '重音：${fields['stress']?.isNotEmpty == true ? fields['stress'] : '待核验'}',
+                          key: const Key('word-stress'),
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        fields['reading_review_status'] ?? '认读提示待核验',
+                        style: theme.textTheme.bodySmall,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    fields['phonics_note']?.isNotEmpty == true
+                        ? fields['phonics_note']!
+                        : '拼读提示待核验，请勿仅凭拼写猜测读音。',
+                    key: const Key('phonics-note'),
+                    style: theme.textTheme.bodyMedium,
+                  ),
+                  const Divider(height: 16),
+                  Wrap(
+                    spacing: 12,
+                    runSpacing: 4,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            Icons.graphic_eq_outlined,
+                            size: 15,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                          const SizedBox(width: 4),
+                          Flexible(
+                            child: Text(
+                              '此词尚未配置已授权音频。词义学习仍可继续。',
+                              key: const Key('audio-missing'),
+                              style: theme.textTheme.bodySmall,
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (_voice != null)
+                        Text(
+                          'Windows 本地 TTS（合成语音）· ${_voice!.name} · ${_voice!.locale}',
+                          key: const Key('tts-source'),
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            fontWeight: FontWeight.w600,
+                            color: scheme.onSurface,
+                          ),
+                        ),
+                    ],
+                  ),
+                  if (_voice != null) ...[
+                    const SizedBox(height: 2),
+                    Text(
+                      '系统合成语音用于备用核对，不是真人录音；多读音请结合词性和提示。',
+                      style: theme.textTheme.bodySmall,
+                    ),
+                    const SizedBox(height: 8),
+                    Wrap(
+                      spacing: 10,
+                      runSpacing: 6,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [
+                        OutlinedButton.icon(
+                          key: const Key('play-local-tts'),
+                          style: OutlinedButton.styleFrom(
+                            visualDensity: VisualDensity.compact,
+                          ),
+                          onPressed: _ttsPlaying || _saving
+                              ? null
+                              : () => _playTts(),
+                          icon: Icon(
+                            _ttsCompleted
+                                ? Icons.replay_outlined
+                                : Icons.volume_up_outlined,
+                            size: 17,
+                          ),
+                          label: Text(
+                            _ttsCompleted ? '再次播放系统 TTS' : '播放系统 TTS',
+                          ),
+                        ),
+                        if (fields['example_en']?.isNotEmpty == true)
+                          OutlinedButton.icon(
+                            key: const Key('play-local-tts-context'),
+                            style: OutlinedButton.styleFrom(
+                              visualDensity: VisualDensity.compact,
+                            ),
+                            onPressed: _ttsPlaying || _saving
+                                ? null
+                                : () => _playTts(contextSentence: true),
+                            icon: const Icon(
+                              Icons.record_voice_over_outlined,
+                              size: 17,
+                            ),
+                            label: const Text('播放例句核对多音'),
+                          ),
+                        if (_ttsPlaying)
+                          TextButton.icon(
+                            key: const Key('stop-local-tts'),
+                            style: TextButton.styleFrom(
+                              visualDensity: VisualDensity.compact,
+                            ),
+                            onPressed: _stopTts,
+                            icon: const Icon(
+                              Icons.stop_circle_outlined,
+                              size: 17,
+                            ),
+                            label: const Text('停止'),
+                          ),
+                        Text(
+                          _ttsPlaying
+                              ? '正在播放系统 TTS…'
+                              : _ttsCompleted
+                              ? '系统 TTS 已完整播放，可评发音。'
+                              : '完整播放后再评发音；也可跳过听音，仅完成词义复习。',
+                          key: const Key('tts-playback-status'),
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: _ttsCompleted
+                                ? AppTheme.masteredColors(brightness).foreground
+                                : scheme.onSurfaceVariant,
+                            fontWeight: _ttsCompleted
+                                ? FontWeight.w600
+                                : FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ] else ...[
+                    const SizedBox(height: 4),
+                    Text(
+                      '本机未提供可用的美式英语本地 TTS。下面仅保存自主认读自评，未经过录音核对。',
+                      style: theme.textTheme.bodySmall,
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 12,
+              runSpacing: 8,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              alignment: WrapAlignment.spaceBetween,
+              children: [
+                Text(
+                  '发音自评（与下方词义评级独立保存）',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 6,
+                  children: [
+                    for (final grade in PronunciationGrade.values)
+                      _buildPronunciationGradeButton(
+                        context: context,
+                        grade: grade,
+                        enabled: canGrade,
+                      ),
+                  ],
+                ),
+              ],
+            ),
+            if (_saving) ...[
+              const SizedBox(height: 10),
+              const LinearProgressIndicator(),
+            ],
+            if (_saved) ...[
+              const SizedBox(height: 10),
+              Wrap(
+                spacing: 12,
+                runSpacing: 8,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  StatusBadge(
+                    label: '发音自评已保存',
+                    status: 'mastered',
+                    icon: Icons.check_circle_outline,
+                    textKey: const Key('pronunciation-saved'),
+                  ),
+                  TextButton.icon(
+                    onPressed: () => setState(() {
+                      _read = false;
+                    }),
+                    icon: const Icon(Icons.refresh, size: 16),
+                    label: const Text('再练习一次'),
+                  ),
+                ],
+              ),
+            ],
+          ],
         ],
-      ],
+      ),
+    );
+  }
+
+  Widget _buildPronunciationGradeButton({
+    required BuildContext context,
+    required PronunciationGrade grade,
+    required bool enabled,
+  }) {
+    final brightness = Theme.of(context).brightness;
+    final palette = AppTheme.statusColorsFor(grade.name, brightness);
+    return OutlinedButton(
+      key: ValueKey('pronunciation-grade-${grade.name}'),
+      style: enabled
+          ? OutlinedButton.styleFrom(
+              foregroundColor: palette.foreground,
+              backgroundColor: palette.background.withValues(alpha: 0.55),
+              side: BorderSide(color: palette.border, width: 1.2),
+              visualDensity: VisualDensity.compact,
+            )
+          : OutlinedButton.styleFrom(visualDensity: VisualDensity.compact),
+      onPressed: enabled ? () => _assess(grade) : null,
+      child: Text(grade.label),
     );
   }
 }
