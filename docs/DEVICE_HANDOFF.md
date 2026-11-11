@@ -1,6 +1,14 @@
 # 设备迁移与开发接续
 
-> 2026-11-10 P5-C.4C：剩余 4,822 词的导入已暂停，没有最终完成报告。只读核对为 1,054 页、1,053 个唯一稳定 ID；已核对 553，待创建 4,277，`pollution` 与 `highlight` 仍待对账。空白页 `414cd5b5-d6b9-80db-ac03-d94e99d65e61` 来源未确定。检查点是 `private/p5c/p5c4c-checkpoint.json`。不要另开导入进程，续跑需要另行授权。见 [P5-C.4C.1 恢复调查](p5c/P5C4C_RECOVERY_AUDIT.md)。
+> 2026-11-11 P5-C.4C.3：授权的 4,277 个未发送词已确认 4,272 个。只读核对为 5,326 页、5,325 个有效唯一稳定 ID。另有 5 个本轮新待对账词，加上原先的 `pollution`、`highlight`，共 7 个待对账，都未再次创建。空白页 `414cd5b5-d6b9-80db-ac03-d94e99d65e61` 仍隔离。不要另开导入进程，也不要自动处理待对账词或空白页。见 [P5-C.4C.3 续传报告](p5c/P5C4C3_RESUME_REPORT.md)。
+
+> 2026-11-11 P5-C.4C.4：7 个待对账词再次只读核查，全库分页和按稳定 ID 查询都是 0 页，也没有同名词头。结果仍不明，检查点未改。补录名单只是建议，尚未授权。见 [P5-C.4C.4 对账报告](p5c/P5C4C4_RECONCILE_REPORT.md)。
+
+> 2026-11-11 P5-C.4C.5：只补录了 pollution（`SG25-de2c2dcff9ee`）一次，已核对。有效唯一稳定 ID 5,326，页面 5,327。其余 6 个待对账词未创建。见 [P5-C.4C.5 报告](p5c/P5C4C5_POLLUTION_REPORT.md)。
+
+> 2026-11-11 P5-C.4C.5：随后只补录了 highlight（`SG25-dc2c5be187f6`）一次，已核对。有效唯一稳定 ID 5,327，页面 5,328。其余 5 个待对账词未创建。见 [P5-C.4C.5 highlight 报告](p5c/P5C4C5_HIGHLIGHT_REPORT.md)。
+
+> 2026-11-11 P5-C.4C.6：architect、concise、seemingly、educate、finally 各补录一次，均已核对。有效唯一稳定 ID 5,332，页面 5,333。空白页仍隔离。不要另开导入进程，也不要启动 Windows 全量同步。见 [P5-C.4C.6 报告](p5c/P5C4C6_FINAL_FIVE_REPORT.md)。
 
 > 2026-11-10 P5-C.4B：正式词库已新增授权的 10 个词，总数 510。更新 0，删除 0，学习事件 0。见 [P5-C.4B 报告](p5c/P5C4B_REPORT.md)。
 

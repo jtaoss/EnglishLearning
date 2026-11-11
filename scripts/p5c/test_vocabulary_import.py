@@ -9,9 +9,11 @@ import hashlib
 import json
 import os
 import pathlib
+import shutil
 import sys
 import tempfile
 import unittest
+import unittest.mock
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
@@ -33,8 +35,13 @@ from vocabulary_import import (
     WRITE_ENV_VALUE,
     WRITE_FULL_ENV,
     WRITE_FULL_ENV_VALUE,
+    WRITE_RESUME_ENV,
+    WRITE_RESUME_ENV_VALUE,
     WRITE_STATEMENT,
+    ISOLATED_PENDING_IDS,
+    KNOWN_BLANK_PAGE_ID,
     authorize_write,
+    compare_protected_library,
     remaining_create_ids,
     remaining_sha,
     DefinitiveReject,
@@ -470,6 +477,285 @@ class ImporterTests(unittest.TestCase):
         self.assertFalse(report['ok'])
         self.assertEqual(report['content_writes'], 0)
         self.assertEqual(report['pages'], 0)
+
+    def blank_page(self, **overrides):
+        values = {name: '' for name in CONTENT_PROPERTIES}
+        values['学习词库分类'] = '主学习'
+        values.update(overrides)
+        return PageView(KNOWN_BLANK_PAGE_ID, '', values)
+
+    def test_known_blank_page_is_not_a_vocabulary_success(self):
+        kept = row('id-1', 'cat')
+        added = row('id-2', 'dog')
+        plan = plan_from_rows([kept, added], [kept])
+        pages = [
+            PageView('page-id-1', 'id-1', create_payload(kept)),
+            PageView('page-id-2', 'id-2', create_payload(added)),
+        ]
+        report = compare_protected_library(plan, pages + [self.blank_page()])
+        self.assertTrue(report['ok'], report['errors'])
+        self.assertEqual(report['isolated_blank_pages'], 1)
+        self.assertEqual(report['vocabulary_pages'], 2)
+        self.assertEqual(report['unique_ids'], 2)
+        self.assertEqual(report['content_writes'], 0)
+        changed = compare_protected_library(plan, pages + [self.blank_page(**{'单词': 'pollution'})])
+        self.assertFalse(changed['ok'])
+        self.assertIn('blank_page_changed', [item['kind'] for item in changed['errors']])
+        shifted = compare_protected_library(plan, pages + [self.blank_page(**{'中文词义': '污染'})])
+        self.assertFalse(shifted['ok'])
+        self.assertIn('blank_page_changed', [item['kind'] for item in shifted['errors']])
+        other = PageView('414cd5b5-d6b9-80db-ac03-d94e99d65e62', '', {'单词': '', '学习词库分类': '主学习'})
+        extra = compare_protected_library(plan, pages + [self.blank_page(), other])
+        self.assertFalse(extra['ok'])
+        self.assertIn('unexpected_blank_page', [item['kind'] for item in extra['errors']])
+        clear = compare_protected_library(plan, pages)
+        self.assertTrue(clear['ok'], clear['errors'])
+        self.assertEqual(clear['isolated_blank_pages'], 0)
+
+    def test_resume_keeps_existing_pages_and_ignores_only_the_known_blank(self):
+        items = [row('id-1', 'cat'), row('id-2', 'dog')]
+        plan = plan_from_rows(items, [])
+        transport = MemoryNotion()
+        transport.pages[''] = [self.blank_page()]
+        session, result = self.session(plan, transport)
+        self.assertTrue(result['ok'])
+        self.assertEqual(transport.create_calls, ['id-1', 'id-2'])
+        self.assertEqual(transport.pages[''][0].page_id, KNOWN_BLANK_PAGE_ID)
+        self.assertEqual(transport.pages[''][0].values.get('单词', ''), '')
+        again = ImportSession(plan, transport, session.checkpoint, phase='simulation', spacing_seconds=0, sleeper=lambda _seconds: None)
+        self.assertTrue(again.run()['ok'])
+        self.assertEqual(transport.create_calls, ['id-1', 'id-2'])
+        transport.pages[''].append(PageView('other-blank', '', {'单词': '', '学习词库分类': '主学习'}))
+        blocked = ImportSession(plan, transport, session.checkpoint, phase='simulation', spacing_seconds=0, sleeper=lambda _seconds: None)
+        self.assertEqual(blocked.run()['stopped'], 'blank_page_refused')
+        self.assertEqual(transport.create_calls, ['id-1', 'id-2'])
+
+    def test_second_writer_creates_nothing(self):
+        plan = plan_from_rows([row('id-1', 'cat')], [])
+        checkpoint = pathlib.Path(self.enterContext(tempfile.TemporaryDirectory())) / 'checkpoint.json'
+        holder = ImportSession(plan, MemoryNotion(), checkpoint, phase='simulation', spacing_seconds=0, sleeper=lambda _seconds: None)
+        self.assertTrue(holder._acquire_writer_lock())
+        try:
+            transport = MemoryNotion()
+            other = ImportSession(plan, transport, checkpoint, phase='simulation', spacing_seconds=0, sleeper=lambda _seconds: None)
+            result = other.run()
+            self.assertEqual(result['stopped'], 'writer_already_running')
+            self.assertEqual(transport.create_calls, [])
+        finally:
+            holder._release_writer_lock()
+
+    def test_official_resume_queue_stays_isolated_from_the_original_checkpoint(self):
+        source = importer.ROOT / 'private' / 'p5c' / 'p5c4c-checkpoint.json'
+        audit = source.with_suffix('.audit.jsonl')
+        whitelist_path = source.with_name('p5c4c-whitelist.txt')
+        backup = source.with_name('p5c4c-checkpoint.pre-4c2.json')
+        before = fingerprint(source)
+        audit_before = fingerprint(audit)
+        self.assertTrue(backup.exists())
+        plan = load_official_plan()
+        saved = json.loads(backup.read_text(encoding='utf-8'))
+        records = saved['records']
+        planned = {entry_id for entry_id, record in records.items() if record['state'] == 'planned_create'}
+        pending = {entry_id for entry_id, record in records.items() if record['state'] == 'pending_reconciliation'}
+        verified = {entry_id for entry_id, record in records.items() if record['state'] == 'verified'}
+        whitelist = [line for line in whitelist_path.read_text(encoding='utf-8').splitlines() if line]
+        self.assertEqual(pending, set(ISOLATED_PENDING_IDS))
+        self.assertEqual(len(planned), 4277)
+        self.assertTrue(planned <= set(whitelist))
+        self.assertEqual(len(planned & pending), 0)
+        self.assertEqual(len(planned & verified), 0)
+        self.assertEqual(len(set(plan.trial_ids) & set(whitelist)), 0)
+        self.assertEqual(planned | pending | (verified - set(plan.trial_ids)), set(whitelist))
+        folder = pathlib.Path(self.enterContext(tempfile.TemporaryDirectory()))
+        checkpoint = folder / 'checkpoint.json'
+        shutil.copy2(backup, checkpoint)
+        transport = MemoryNotion()
+        for entry_id, record in records.items():
+            if record['state'] in ('verified', 'skipped_existing'):
+                transport.pages[entry_id] = [PageView('page-' + entry_id, entry_id, dict(plan.payloads[entry_id]))]
+        transport.pages[''] = [self.blank_page()]
+        planned_order = [
+            row['entry_id'] for row in plan.rows
+            if records[row['entry_id']]['state'] == 'planned_create'
+        ]
+        transport.scripts[planned_order[10]] = [RateLimited(1), 'ok']
+        transport.scripts[planned_order[11]] = ['lost']
+        session = ImportSession(
+            plan, transport, checkpoint, phase='full', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4822,
+        )
+        self.assertEqual(session._queue(), planned_order)
+        interrupted = session.run(limit_batches=1)
+        self.assertEqual(interrupted['stopped'], 'operator_stop')
+        self.assertEqual(transport.create_calls, planned_order[:10])
+        lost = ImportSession(
+            plan, transport, checkpoint, phase='full', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4822,
+        )
+        lost_result = lost.run()
+        self.assertEqual(lost_result['stopped'], 'pending_reconciliation')
+        self.assertEqual(lost.records[planned_order[11]].state, 'pending_reconciliation')
+        self.assertEqual(transport.create_calls.count(planned_order[11]), 1)
+        self.assertEqual(transport.create_calls.count(planned_order[10]), 2)
+        continued = ImportSession(
+            plan, transport, checkpoint, phase='full', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4822,
+        )
+        self.assertEqual(continued._queue()[:10], planned_order[12:22])
+        finished = continued.run(limit_batches=1)
+        self.assertEqual(finished['stopped'], 'operator_stop')
+        self.assertEqual(transport.create_calls.count(planned_order[11]), 1)
+        self.assertEqual(transport.create_calls[len(planned_order[:10]) + 3:], planned_order[12:22])
+        for entry_id in ISOLATED_PENDING_IDS:
+            self.assertEqual(continued.records[entry_id].state, 'pending_reconciliation')
+            self.assertNotIn(entry_id, transport.create_calls)
+        self.assertEqual(transport.pages[''][0].values.get('单词', ''), '')
+        self.assertEqual(transport.pages[''][0].entry_id, '')
+        sent = set(transport.create_calls)
+        self.assertTrue(sent <= planned)
+        self.assertEqual(len([entry_id for entry_id, record in continued.records.items() if record.state == 'planned_create']), 4255)
+        repeated = ImportSession(
+            plan, transport, checkpoint, phase='full', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4822,
+        )
+        before_repeat = list(transport.create_calls)
+        repeated_result = repeated.run(limit_batches=1)
+        self.assertEqual(repeated_result['stopped'], 'operator_stop')
+        self.assertEqual(transport.create_calls[:len(before_repeat)], before_repeat)
+        self.assertEqual(transport.create_calls[len(before_repeat):], planned_order[22:32])
+        self.assertEqual(transport.create_calls.count(planned_order[11]), 1)
+        tampered = json.loads(checkpoint.read_text(encoding='utf-8'))
+        for entry_id in ISOLATED_PENDING_IDS:
+            tampered['records'][entry_id]['state'] = 'planned_create'
+        tampered_path = folder / 'tampered.json'
+        tampered_path.write_text(json.dumps(tampered), encoding='utf-8')
+        refused = ImportSession(
+            plan, MemoryNotion(), tampered_path, phase='full', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4822,
+        )
+        self.assertEqual(refused.run()['stopped'], 'isolated_pending')
+        self.assertEqual(refused.transport.create_calls, [])
+        self.assertEqual(fingerprint(source), before)
+        self.assertEqual(fingerprint(audit), audit_before)
+        self.assertTrue(backup.exists())
+
+    def test_resume_authorization_rejects_the_broader_import(self):
+        ids = [f'SG25-{index:012x}' for index in range(importer.RESUME_CREATE)]
+        digest = remaining_sha(ids)
+        kwargs = dict(
+            phase='resume4277',
+            statement=WRITE_STATEMENT,
+            formal_sha256=FORMAL_SHA,
+            create_ids_sha256='queue',
+            entry_ids=ids,
+            expected_create_sha='queue',
+            expected_trial_ids=['trial-1'],
+            remaining_ids=ids,
+            expected_remaining_sha=digest,
+        )
+        self.assertTrue(authorize_write(**kwargs, environ={WRITE_RESUME_ENV: WRITE_RESUME_ENV_VALUE}))
+        with self.assertRaises(PlanError):
+            authorize_write(**kwargs, environ={
+                WRITE_RESUME_ENV: WRITE_RESUME_ENV_VALUE,
+                WRITE_FULL_ENV: WRITE_FULL_ENV_VALUE,
+            })
+        overlapped = list(ids)
+        overlapped[0] = ISOLATED_PENDING_IDS[0]
+        with self.assertRaises(PlanError):
+            authorize_write(
+                **{**kwargs, 'entry_ids': overlapped, 'remaining_ids': overlapped, 'expected_remaining_sha': remaining_sha(overlapped)},
+                environ={WRITE_RESUME_ENV: WRITE_RESUME_ENV_VALUE},
+            )
+
+    def test_resume_baseline_counts_only_confirmed_progress(self):
+        folder = pathlib.Path(self.enterContext(tempfile.TemporaryDirectory()))
+        checkpoint = folder / 'checkpoint.json'
+        done = 'SG25-0000000000aa'
+        saved = 'SG25-0000000000bb'
+        waiting = 'SG25-0000000000cc'
+        checkpoint.write_text(json.dumps({'records': {
+            done: {'state': 'verified'},
+            saved: {'state': 'created_unverified'},
+            waiting: {'state': 'planned_create'},
+        }}), encoding='utf-8')
+        whitelist = [done, saved, waiting]
+        report = {
+            'unique_ids': 1055,
+            'pages': 1056,
+            'isolated_blank_pages': 1,
+            'protected': 510,
+            'remaining_present': 545,
+            'present_ids': {done, saved},
+        }
+        import_vocabulary._confirm_resume_baseline(report, whitelist, checkpoint)
+        report['present_ids'] = {done, saved, waiting}
+        with self.assertRaises(PlanError):
+            import_vocabulary._confirm_resume_baseline(report, whitelist, checkpoint)
+
+    def test_checkpoint_replace_retries_a_transient_lock(self):
+        items = [row('SG25-000000000001', 'alpha'), row('SG25-000000000002', 'beta')]
+        plan = plan_from_rows(items, [])
+        folder = pathlib.Path(self.enterContext(tempfile.TemporaryDirectory()))
+        session = ImportSession(
+            plan, MemoryNotion(), folder / 'checkpoint.json', phase='simulation',
+            spacing_seconds=0, sleeper=lambda _seconds: None,
+        )
+        real_replace = os.replace
+        calls = {'count': 0}
+
+        def flaky_replace(source, destination):
+            calls['count'] += 1
+            if calls['count'] == 1:
+                raise PermissionError(5, 'denied')
+            return real_replace(source, destination)
+
+        with unittest.mock.patch('vocabulary_import.os.replace', flaky_replace):
+            with unittest.mock.patch('vocabulary_import.time.sleep', lambda _seconds: None):
+                session._flush()
+        self.assertGreaterEqual(calls['count'], 2)
+        saved = json.loads((folder / 'checkpoint.json').read_text(encoding='utf-8'))
+        self.assertEqual(saved['records']['SG25-000000000001']['state'], 'planned_create')
+
+    def test_resume_allow_list_continues_only_unsent_ids(self):
+        items = [row(f'SG25-{index:012x}', f'word{index}') for index in range(4)]
+        plan = plan_from_rows(items, [])
+        transport = MemoryNotion()
+        folder = pathlib.Path(self.enterContext(tempfile.TemporaryDirectory()))
+        checkpoint = folder / 'checkpoint.json'
+        first = ImportSession(
+            plan, transport, checkpoint, phase='simulation',
+            spacing_seconds=0, sleeper=lambda _seconds: None,
+        )
+        done, pending_save, left_a, left_b = [item['entry_id'] for item in items]
+        first._set(done, 'verified', 'reconciled', page_id='page-done')
+        first._set(pending_save, 'created_unverified', 'response_received_not_verified', page_id='page-save')
+        transport.pages[done] = [PageView('page-done', done, create_payload(items[0]))]
+        transport.pages[pending_save] = [PageView('page-save', pending_save, create_payload(items[1]))]
+        resumed = ImportSession(
+            plan, transport, checkpoint, phase='simulation', spacing_seconds=0,
+            sleeper=lambda _seconds: None, max_creates=4,
+            allowed_create_ids=tuple(item['entry_id'] for item in items),
+        )
+        result = resumed.run()
+        self.assertEqual(transport.create_calls, [left_a, left_b])
+        self.assertEqual(resumed.records[done].state, 'verified')
+        self.assertEqual(resumed.records[pending_save].state, 'verified')
+        self.assertTrue(result['ok'])
+        self.assertIsNone(result['stopped'])
+
+    def test_isolated_pending_state_is_not_rewritten_when_a_page_exists(self):
+        pending_id = ISOLATED_PENDING_IDS[0]
+        items = [row(pending_id, 'pollution'), row('id-2', 'dog')]
+        plan = plan_from_rows(items, [])
+        transport = MemoryNotion()
+        session, _stopped = self.session(plan, transport, limit_batches=0)
+        session._set(pending_id, 'pending_reconciliation', 'not_found_after_uncertain_result')
+        transport.pages[pending_id] = [PageView('page-pending', pending_id, create_payload(items[0]))]
+        resumed = ImportSession(plan, transport, session.checkpoint, phase='simulation', spacing_seconds=0, sleeper=lambda _seconds: None)
+        result = resumed.run(limit_batches=0)
+        self.assertEqual(resumed.records[pending_id].state, 'pending_reconciliation')
+        self.assertEqual(transport.create_calls, [])
+        self.assertEqual(result['stopped'], 'operator_stop')
 
 
 if __name__ == '__main__':
