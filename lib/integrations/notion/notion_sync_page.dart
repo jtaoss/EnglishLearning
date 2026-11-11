@@ -46,7 +46,7 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                       key: const Key('notion-target-size'),
                       value: c.targetSize,
                       items: [
-                        for (final size in [100, 200, 500])
+                        for (final size in c.selectableSizes)
                           DropdownMenuItem(value: size, child: Text('$size 词')),
                       ],
                       onChanged: c.busy
@@ -55,7 +55,9 @@ class _NotionSyncPageState extends State<NotionSyncPage> {
                               if (size != null) c.selectSize(size);
                             },
                     ),
-                    const Text('请选择已完成云端导入验收的规模。此操作只读取词库，不会向 Notion 写入。'),
+                    const Text(
+                      '正式范围是 5,332 词。100、200、500 仍保留给旧版已验收样本。此操作只读取词库，不会向 Notion 写入。',
+                    ),
                   ],
                   const SizedBox(height: 20),
                   Text(

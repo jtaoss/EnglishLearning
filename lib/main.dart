@@ -80,13 +80,23 @@ Future<void> _start(AppConfig config, AppLogger logger) async {
                     ? AndroidNotionCredentials()
                     : WindowsNotionCredentials(),
                 api: NotionReadApi(http.Client()),
-                loadScope: () async => NotionScope(
-                  await rootBundle.loadString(
-                    Platform.isWindows
-                        ? 'assets/vocabulary/reviewed500.csv'
-                        : 'assets/vocabulary/verified100.csv',
-                  ),
-                ),
+                loadScope: () async {
+                  if (!Platform.isWindows) {
+                    return NotionScope(
+                      await rootBundle.loadString(
+                        'assets/vocabulary/verified100.csv',
+                      ),
+                    );
+                  }
+                  return NotionScope.withHistoricalPrefix(
+                    await rootBundle.loadString(
+                      'docs/p5a/public/formal_learning_vocabulary.csv',
+                    ),
+                    await rootBundle.loadString(
+                      'assets/vocabulary/reviewed500.csv',
+                    ),
+                  );
+                },
               )
             : null,
       ),

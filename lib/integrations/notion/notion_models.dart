@@ -87,14 +87,52 @@ final class NotionScope {
       throw const NotionFailure('词库范围不能为空。');
     }
   }
+
+  /// Keeps the accepted 100/200/500 sample order in front of the formal library.
+  factory NotionScope.withHistoricalPrefix(
+    String formalCsv,
+    String historicalCsv,
+  ) {
+    final formal = VocabularyCsv.parse(formalCsv);
+    final historical = VocabularyCsv.parse(historicalCsv);
+    final formalById = {for (final entry in formal) entry.id: entry};
+    final historicalIds = <String>{};
+    for (final entry in historical) {
+      final current = formalById[entry.id];
+      if (current == null ||
+          current.word != entry.word ||
+          !historicalIds.add(entry.id)) {
+        throw const NotionFailure('旧版样本与正式词库不一致，整批未同步。');
+      }
+    }
+    return NotionScope._([
+      for (final entry in historical) formalById[entry.id]!,
+      for (final entry in formal)
+        if (!historicalIds.contains(entry.id)) entry,
+    ]);
+  }
   final List<VocabularyEntry> entries;
   late final Map<String, String> heads = Map.unmodifiable({
     for (final e in entries) e.id: e.word,
   });
 
   NotionScope._(this.entries);
+
+  /// 100/200/500 remain valid for the older accepted samples.
+  /// 5,332 is valid only for the formal library itself.
+  static List<int> selectableSizes(int scopeLength) => [
+    100,
+    200,
+    500,
+    if (scopeLength == VocabularyCsv.maxEntries) VocabularyCsv.maxEntries,
+  ];
+
   NotionScope take(int count) {
-    if (!const {100, 200, 500}.contains(count) || count > entries.length) {
+    final formal =
+        count == VocabularyCsv.maxEntries &&
+        entries.length == VocabularyCsv.maxEntries;
+    if ((!formal && !const {100, 200, 500}.contains(count)) ||
+        count > entries.length) {
       throw const NotionFailure('当前已核验词库尚不支持该规模。');
     }
     return NotionScope._(List.unmodifiable(entries.take(count)));

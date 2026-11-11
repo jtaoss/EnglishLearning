@@ -168,8 +168,14 @@ void main() {
         ),
         throwsFormatException,
       );
+      final mainSource = File('lib/main.dart').readAsStringSync();
       expect(
-        File('lib/main.dart')
+        mainSource.contains('docs/p5a/public/formal_learning_vocabulary.csv'),
+        isTrue,
+      );
+      expect(mainSource.contains('assets/vocabulary/verified100.csv'), isTrue);
+      expect(
+        File('pubspec.yaml')
             .readAsStringSync()
             .contains('assets/vocabulary/reviewed500.csv'),
         isTrue,

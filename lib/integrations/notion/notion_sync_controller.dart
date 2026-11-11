@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:english_learning/features/vocabulary/vocabulary_csv.dart';
 import 'package:english_learning/integrations/notion/notion_models.dart';
 import 'package:english_learning/integrations/notion/notion_sync_service.dart';
 
@@ -15,12 +16,14 @@ final class NotionSyncController extends ChangeNotifier {
   final Future<bool> Function() refreshVocabulary;
   bool busy = false, configured = false, _disposed = false;
   String sourceId = notionPilotSource;
+  int scopeLength = 500;
   int targetSize = 100;
   String? message, error;
   NotionSyncState state = const NotionSyncState();
+  List<int> get selectableSizes => NotionScope.selectableSizes(scopeLength);
 
   void selectSize(int size) {
-    if (busy || _disposed || !const {100, 200, 500}.contains(size)) return;
+    if (busy || _disposed || !selectableSizes.contains(size)) return;
     targetSize = size;
     _notify();
   }
@@ -30,15 +33,21 @@ final class NotionSyncController extends ChangeNotifier {
     configured = account != null;
     if (account != null) sourceId = account.dataSourceId;
     state = await service.store.readNotionState(sourceId);
+    final scope = await service.loadScope();
+    scopeLength = scope.entries.length;
     if (!isMobile) {
-      final available = state.linkedWords == 0
-          ? (await service.loadScope()).entries.length
-          : state.linkedWords;
-      targetSize = available > 200
-          ? 500
-          : available > 100
-          ? 200
-          : 100;
+      if (scopeLength == VocabularyCsv.maxEntries) {
+        targetSize = VocabularyCsv.maxEntries;
+      } else {
+        final available = state.linkedWords == 0
+            ? scopeLength
+            : state.linkedWords;
+        targetSize = available > 200
+            ? 500
+            : available > 100
+            ? 200
+            : 100;
+      }
     }
   });
 
