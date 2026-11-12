@@ -24,11 +24,17 @@ FORMAL_SOURCE = '157d89e5-71fb-4e68-9640-1b04dbb1e627'
 EVENT_SANDBOX_SOURCE = '3bf5dab6-53fc-4ba8-bcf4-cec0be0addd8'
 READ_ONLY_TARGET = 'EnglishLearning.Notion.ReadOnly.v1'
 WRITE_TARGET = 'EnglishLearning.Notion.VocabularyWrite.v1'
+KNOWN_BLANK_PAGE_ID = '414cd5b5-d6b9-80db-ac03-d94e99d65e61'
+KNOWN_BLANK_CLASS = '主学习'
+ISOLATED_PENDING_IDS = ('SG25-de2c2dcff9ee', 'SG25-dc2c5be187f6')
 API_VERSION = '2026-03-11'
 WRITE_ENV = 'ENGLISHLEARNING_P5C4_WRITE_AUTHORIZATION'
 WRITE_ENV_VALUE = 'authorize-p5c4-notion-vocabulary-write'
 WRITE_FULL_ENV = 'ENGLISHLEARNING_P5C4C_WRITE_AUTHORIZATION'
 WRITE_FULL_ENV_VALUE = 'authorize-p5c4c-notion-vocabulary-write'
+WRITE_RESUME_ENV = 'ENGLISHLEARNING_P5C4C3_WRITE_AUTHORIZATION'
+WRITE_RESUME_ENV_VALUE = 'authorize-p5c4c3-notion-vocabulary-write'
+RESUME_CREATE = 4277
 WRITE_STATEMENT = '我授权本次 Notion 词库写入'
 EXPECTED = {
     'formal': 5332,
@@ -491,7 +497,7 @@ def classify_pages(payload, pages, *, require_audit):
 class ImportSession:
     """Create-only importer. A lost response is never treated as success."""
 
-    def __init__(self, plan, transport, checkpoint, *, phase, batch_size=BATCH_SIZE, spacing_seconds=SPACING_SECONDS, sleeper=time.sleep, max_creates=None):
+    def __init__(self, plan, transport, checkpoint, *, phase, batch_size=BATCH_SIZE, spacing_seconds=SPACING_SECONDS, sleeper=time.sleep, max_creates=None, allowed_create_ids=None):
         if phase not in ('trial10', 'full', 'simulation'):
             raise PlanError('phase refused')
         self.plan = plan
@@ -501,12 +507,15 @@ class ImportSession:
         self.phase = phase
         self.batch_size = batch_size
         self.max_creates = max_creates
+        self.allowed_create_ids = None if allowed_create_ids is None else tuple(allowed_create_ids)
         self.spacing_seconds = spacing_seconds
         self.sleeper = sleeper
         self.records = {}
         self.stopped = None
         self.batches = []
         self.attempted = set()
+        self._lock_fd = None
+        self._lock_path = None
         assert_checkpoint_path(self.checkpoint)
         self._load()
 
@@ -579,12 +588,19 @@ class ImportSession:
             'batches': self.batches,
         }
         temporary = self.checkpoint.with_suffix('.tmp')
-        with temporary.open('w', encoding='utf-8', newline='\n') as handle:
-            json.dump(payload, handle, ensure_ascii=False, indent=2)
-            handle.write('\n')
-            handle.flush()
-            os.fsync(handle.fileno())
-        os.replace(temporary, self.checkpoint)
+        text = json.dumps(payload, ensure_ascii=False, indent=2) + '\n'
+        for attempt in range(6):
+            try:
+                with temporary.open('w', encoding='utf-8', newline='\n') as handle:
+                    handle.write(text)
+                    handle.flush()
+                    os.fsync(handle.fileno())
+                os.replace(temporary, self.checkpoint)
+                return
+            except PermissionError:
+                if attempt == 5:
+                    raise
+                time.sleep(0.25 * (2 ** attempt))
 
     def _audit(self, entry_id, previous, state, reason):
         event = {
@@ -648,6 +664,7 @@ class ImportSession:
             for row in self.plan.rows
             if self.records.get(row['entry_id'])
             and self.records[row['entry_id']].state == 'planned_create'
+            and (self.allowed_create_ids is None or row['entry_id'] in self.allowed_create_ids)
             and (allowed is None or row['entry_id'] in allowed)
         ]
 
@@ -656,6 +673,8 @@ class ImportSession:
 
     def _recover_uncertain(self):
         for entry_id, record in list(self.records.items()):
+            if entry_id in ISOLATED_PENDING_IDS:
+                continue
             if record.state not in UNCERTAIN:
                 continue
             self._reconcile(entry_id)
@@ -703,7 +722,13 @@ class ImportSession:
         record = self.records[entry_id]
         record.batch_index = batch_index
         if record.state in UNCERTAIN:
+            if entry_id in ISOLATED_PENDING_IDS:
+                self.stop('isolated_pending')
+                return False
             return self._reconcile(entry_id)
+        if self.allowed_create_ids is not None and entry_id not in self.allowed_create_ids:
+            self.stop('outside_authorization')
+            return False
         found = self._query([entry_id])
         if found is None:
             self.stop('query_failed')
@@ -828,20 +853,80 @@ class ImportSession:
         except QueryFailed:
             self.stop('final_query_failed')
             return False
+        isolated, blank_errors = classify_blank_pages(everyone)
+        if blank_errors:
+            self.stop('blank_page_refused')
+            return False
+        isolated_ids = {id(page) for page in isolated}
         present = [entry_id for entry_id, record in self.records.items() if record.state in ('verified', 'skipped_existing')]
-        actual = [page.entry_id for page in everyone]
-        if any(page.archived for page in everyone) or sorted(actual) != sorted(present):
+        actual = [page.entry_id for page in everyone if id(page) not in isolated_ids]
+        archived = any(page.archived for page in everyone if id(page) not in isolated_ids)
+        if archived or sorted(actual) != sorted(present):
             self.stop('final_reconciliation_failed')
             return False
         return True
 
+    def _acquire_writer_lock(self):
+        import msvcrt
+        path = self.checkpoint.with_suffix('.writer.lock')
+        fd = os.open(str(path), os.O_CREAT | os.O_RDWR)
+        try:
+            if os.path.getsize(path) < 1:
+                os.write(fd, b'1')
+            os.lseek(fd, 0, os.SEEK_SET)
+            msvcrt.locking(fd, msvcrt.LK_NBLCK, 1)
+        except OSError:
+            os.close(fd)
+            return False
+        self._lock_fd = fd
+        self._lock_path = path
+        return True
+
+    def _release_writer_lock(self):
+        if self._lock_fd is None:
+            return
+        import msvcrt
+        try:
+            os.lseek(self._lock_fd, 0, os.SEEK_SET)
+            msvcrt.locking(self._lock_fd, msvcrt.LK_UNLCK, 1)
+        finally:
+            os.close(self._lock_fd)
+            self._lock_fd = None
+
     def run(self, *, limit_batches=None):
+        if not self._acquire_writer_lock():
+            self.stop('writer_already_running')
+            return self.result()
+        try:
+            return self._run_locked(limit_batches=limit_batches)
+        finally:
+            self._release_writer_lock()
+
+    def _run_locked(self, *, limit_batches=None):
         if self.plan.blocked:
             self.stop('conflict' if self.plan.conflicts else 'plan_error')
             return self.result()
         if self.phase == 'full' and not self._trial_verified():
             self.stop('trial_not_verified')
             return self.result()
+        for entry_id in ISOLATED_PENDING_IDS:
+            record = self.records.get(entry_id)
+            if record and record.state == 'planned_create':
+                self.stop('isolated_pending')
+                return self.result()
+        if self.allowed_create_ids is not None:
+            allowed = set(self.allowed_create_ids)
+            if len(allowed) != len(self.allowed_create_ids) or allowed & set(ISOLATED_PENDING_IDS):
+                self.stop('outside_authorization')
+                return self.result()
+            resumable = {'planned_create', 'verified', 'awaiting_result', 'created_unverified', 'pending_reconciliation'}
+            planned = {entry_id for entry_id, record in self.records.items() if record.state == 'planned_create'}
+            if planned - allowed or not allowed <= set(self.records):
+                self.stop('resume_whitelist_mismatch')
+                return self.result()
+            if any(self.records[entry_id].state not in resumable for entry_id in allowed):
+                self.stop('resume_whitelist_mismatch')
+                return self.result()
         self._recover_uncertain()
         if self.stopped:
             return self.result()
@@ -852,6 +937,9 @@ class ImportSession:
                 break
             chunk = self._queue()[:self.batch_size]
             for entry_id in chunk:
+                if entry_id in ISOLATED_PENDING_IDS:
+                    self.stop('isolated_pending')
+                    return self.result()
                 if not self._import_one(entry_id, len(self.batches)):
                     return self.result()
             if not self._verify_batch(chunk):
@@ -913,6 +1001,20 @@ def authorize_write(*, phase, statement, formal_sha256, create_ids_sha256, entry
             raise PlanError('write authorization env refused')
         if list(entry_ids) != list(expected_trial_ids):
             raise PlanError('trial ids refused')
+        return True
+    if phase == 'resume4277':
+        if environ.get(WRITE_RESUME_ENV) != WRITE_RESUME_ENV_VALUE:
+            raise PlanError('write authorization env refused')
+        if environ.get(WRITE_ENV) == WRITE_ENV_VALUE or environ.get(WRITE_FULL_ENV) == WRITE_FULL_ENV_VALUE:
+            raise PlanError('another authorization cannot authorize the resume')
+        if remaining_ids is None or list(entry_ids) != list(remaining_ids):
+            raise PlanError('resume ids refused')
+        if len(remaining_ids) != RESUME_CREATE or len(set(remaining_ids)) != RESUME_CREATE:
+            raise PlanError('resume count refused')
+        if remaining_sha(remaining_ids) != expected_remaining_sha:
+            raise PlanError('resume sha refused')
+        if set(remaining_ids) & set(ISOLATED_PENDING_IDS) or set(remaining_ids) & set(expected_trial_ids):
+            raise PlanError('resume ids overlap a protected record')
         return True
     if phase != 'full':
         raise PlanError('phase refused')
@@ -1194,6 +1296,48 @@ def open_read_only(credential_reader=read_windows_credential):
     return ReadOnlyNotion(token, source)
 
 
+def known_blank_status(page):
+    """Classify one page against the single known blank page.
+
+    isolated: the exact page still has an empty word and empty stable ID.
+    changed: that same page ID no longer matches the recorded blank signature.
+    other: a different page has no stable ID.
+    unrelated: a normal vocabulary page.
+    """
+    if normalize_id(page.page_id) != normalize_id(KNOWN_BLANK_PAGE_ID):
+        if not (page.entry_id or ''):
+            return 'other'
+        return 'unrelated'
+    if page.archived or (page.entry_id or '') or (page.values.get('单词', '') or ''):
+        return 'changed'
+    for name in list(CONTENT_PROPERTIES) + list(PRESERVED_AUDIT) + list(CREATE_AUDIT) + sorted(FORBIDDEN):
+        expected = KNOWN_BLANK_CLASS if name == '学习词库分类' else ''
+        if (page.values.get(name, '') or '') != expected:
+            return 'changed'
+    return 'isolated'
+
+
+def classify_blank_pages(pages):
+    """Allow only the one recorded blank page. Any other blank or change fails."""
+    errors = []
+    isolated = []
+    for page in pages:
+        status = known_blank_status(page)
+        if status == 'unrelated':
+            continue
+        if status == 'isolated':
+            isolated.append(page)
+        elif status == 'changed':
+            errors.append({'kind': 'blank_page_changed', 'page_id': page.page_id})
+        else:
+            errors.append({'kind': 'unexpected_blank_page', 'page_id': page.page_id})
+    if len(isolated) > 1:
+        errors.append({'kind': 'unexpected_blank_page', 'count': len(isolated)})
+    if errors:
+        return [], errors
+    return isolated, []
+
+
 def compare_live(plan, pages, schema=None):
     if schema is not None:
         validate_schema(schema, FORMAL_SOURCE)
@@ -1263,12 +1407,30 @@ def compare_protected_library(plan, pages, schema=None):
             errors.append({'kind': kind, 'entry_id': entry_id, 'fields': fields})
         else:
             matched += 1
-    extras = [entry_id for entry_id in grouped if entry_id not in plan.states]
+    isolated, blank_errors = classify_blank_pages(pages)
+    errors.extend(blank_errors)
+    isolated_ids = {id(page) for page in isolated}
+    extras = []
+    vocabulary_groups = 0
+    for entry_id, found in grouped.items():
+        remaining_pages = [page for page in found if id(page) not in isolated_ids]
+        if not remaining_pages:
+            continue
+        vocabulary_groups += 1
+        if entry_id not in plan.states:
+            extras.append(entry_id)
     if extras:
         errors.append({'kind': 'extra_ids', 'count': len(extras)})
     protected_count = plan.counts['unchanged'] + len(plan.trial_ids)
-    if matched < protected_count or len(pages) != matched or len(grouped) != matched:
-        errors.append({'kind': 'page_count', 'pages': len(pages), 'unique': len(grouped), 'matched': matched})
+    vocabulary_pages = len(pages) - len(isolated)
+    if matched < protected_count or vocabulary_pages != matched or vocabulary_groups != matched:
+        errors.append({
+            'kind': 'page_count',
+            'pages': len(pages),
+            'vocabulary_pages': vocabulary_pages,
+            'unique': vocabulary_groups,
+            'matched': matched,
+        })
     preserved = {
         name: sum(1 for page in pages if page.values.get(name))
         for name in list(PRESERVED_AUDIT) + list(CREATE_AUDIT)
@@ -1276,7 +1438,9 @@ def compare_protected_library(plan, pages, schema=None):
     return {
         'ok': not errors,
         'pages': len(pages),
-        'unique_ids': len(grouped),
+        'unique_ids': vocabulary_groups,
+        'vocabulary_pages': vocabulary_pages,
+        'isolated_blank_pages': len(isolated),
         'protected': plan.counts['unchanged'] + len(plan.trial_ids),
         'remaining_present': matched - (plan.counts['unchanged'] + len(plan.trial_ids)),
         'errors': errors,

@@ -12,7 +12,7 @@
 
 **P5-B 客户端容量已放开，云端尚未写入**：本地 CSV 导入上限改为正式库 5,332 词 / 8 MB。Windows 随包的 Notion 同步范围仍是已验收的 500 词，界面仍只提供 100／200／500。194 个待核实词没有并入正式库。见 [P5-B 报告](docs/p5b/REPORT.md)。
 
-**P5-C 正式导入已暂停**：先完成 10 个试写词，云端达到 510；随后授权的 4,822 词只完成一部分。最近一次只读核对是 1,054 页、1,053 个唯一稳定 ID，已核对 553，还有 4,277 个未发送。`pollution` 和 `highlight` 待对账，一张无稳定 ID 的空白页来源未确定。194 个待核实词和 27 个暂缓词没有导入，个人 SQLite 未改。见 [P5-C.4C.1 恢复调查](docs/p5c/P5C4C_RECOVERY_AUDIT.md)。不要自动续跑。
+**P5-C.4C.3 续传已停在待对账边界**：授权的 4,277 个未发送词确认写入 4,272 个。只读核对为 5,326 页、5,325 个有效唯一稳定 ID。5 个新待对账词和原先的 `pollution`、`highlight` 都未再次创建，空白页仍隔离。194 个待核实词和 27 个暂缓词没有导入，个人 SQLite 未改。见 [P5-C.4C.3 续传报告](docs/p5c/P5C4C3_RESUME_REPORT.md)。[P5-C.4C.4](docs/p5c/P5C4C4_RECONCILE_REPORT.md) 再次只读核查这 7 个词，仍未找到页面。[P5-C.4C.5](docs/p5c/P5C4C5_POLLUTION_REPORT.md) 已单独补录 pollution，[highlight](docs/p5c/P5C4C5_HIGHLIGHT_REPORT.md) 也已单独补录。[P5-C.4C.6](docs/p5c/P5C4C6_FINAL_FIVE_REPORT.md) 已将最后 5 个待对账词各补录一次，核对为 5,333 页、5,332 个有效唯一稳定 ID。
 
 ## 已有功能
 

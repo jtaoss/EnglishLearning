@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:english_learning/app/app_theme.dart';
+import 'package:english_learning/ui/status_badge.dart';
 
 import 'event_model.dart';
 import 'event_sandbox_controller.dart';
@@ -30,6 +32,10 @@ class _EventSandboxPageState extends State<EventSandboxPage> {
     listenable: widget.controller,
     builder: (context, _) {
       final c = widget.controller;
+      final theme = Theme.of(context);
+      final scheme = theme.colorScheme;
+      final brightness = theme.brightness;
+
       return Scaffold(
         appBar: AppBar(title: const Text('同步实验 · 模拟学习事件')),
         body: SafeArea(
@@ -39,87 +45,142 @@ class _EventSandboxPageState extends State<EventSandboxPage> {
               child: ListView(
                 padding: const EdgeInsets.all(24),
                 children: [
-                  const Text('本页只生成并上传 24 条模拟事件，不上传你的真实学习历史。'),
-                  const SizedBox(height: 12),
-                  const SelectableText('独立测试库：$eventSandboxSource'),
-                  const Text('正式词库继续只读同步；词义和发音自评不受本实验影响。'),
-                  const SizedBox(height: 20),
-                  Text(
-                    c.configured ? '测试凭据：已安全保存' : '测试凭据：尚未配置',
-                    key: const Key('event-config'),
-                  ),
-                  TextField(
-                    key: const Key('event-token'),
-                    controller: _token,
-                    obscureText: true,
-                    autocorrect: false,
-                    enableSuggestions: false,
-                    enableIMEPersonalizedLearning: false,
-                    enabled: !c.busy,
-                    decoration: const InputDecoration(
-                      labelText: '独立测试集成密钥',
-                      helperText: '只存入 Windows 凭据管理器，不显示已存密钥。',
+                  SectionCard(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Wrap(
+                          spacing: 12,
+                          runSpacing: 8,
+                          alignment: WrapAlignment.spaceBetween,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            Text(
+                              '本页只生成并上传 24 条模拟事件，不上传你的真实学习历史。',
+                              style: theme.textTheme.titleMedium,
+                            ),
+                            StatusBadge(
+                              label: c.configured ? '测试凭据：已安全保存' : '测试凭据：尚未配置',
+                              colors: c.configured
+                                  ? AppTheme.masteredColors(brightness)
+                                  : AppTheme.neutralColors(brightness),
+                              textKey: const Key('event-config'),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 8),
+                        const SelectableText('独立测试库：$eventSandboxSource'),
+                        const SizedBox(height: 4),
+                        Text(
+                          '正式词库继续只读同步；词义和发音自评不受本实验影响。',
+                          style: theme.textTheme.bodySmall,
+                        ),
+                        const SizedBox(height: 16),
+                        TextField(
+                          key: const Key('event-token'),
+                          controller: _token,
+                          obscureText: true,
+                          autocorrect: false,
+                          enableSuggestions: false,
+                          enableIMEPersonalizedLearning: false,
+                          enabled: !c.busy,
+                          decoration: const InputDecoration(
+                            labelText: '独立测试集成密钥',
+                            helperText: '只存入 Windows 凭据管理器，不显示已存密钥。',
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        Wrap(
+                          spacing: 12,
+                          runSpacing: 12,
+                          children: [
+                            OutlinedButton(
+                              key: const Key('event-save'),
+                              onPressed: c.busy
+                                  ? null
+                                  : () {
+                                      final v = _token.text;
+                                      _token.clear();
+                                      c.save(v);
+                                    },
+                              child: const Text('安全保存测试凭据'),
+                            ),
+                            OutlinedButton(
+                              key: const Key('event-seed'),
+                              onPressed: c.busy ? null : c.seed,
+                              child: const Text('本地生成 24 条模拟事件'),
+                            ),
+                            FilledButton(
+                              key: const Key('event-sync'),
+                              onPressed:
+                                  c.busy || !c.configured || c.rows.isEmpty
+                                  ? null
+                                  : c.sync,
+                              child: const Text('上传 / 对账 / 恢复'),
+                            ),
+                          ],
+                        ),
+                        if (c.busy)
+                          const Padding(
+                            padding: EdgeInsets.only(top: 14),
+                            child: LinearProgressIndicator(),
+                          ),
+                        if (c.message != null)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 14),
+                            child: StatusBanner(
+                              message: c.message!,
+                              tone: BannerTone.success,
+                              textKey: const Key('event-result'),
+                            ),
+                          ),
+                        if (c.error != null)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 14),
+                            child: StatusBanner(
+                              message: c.error!,
+                              tone: BannerTone.danger,
+                              textKey: const Key('event-error'),
+                            ),
+                          ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 16),
-                  Wrap(
-                    spacing: 12,
-                    runSpacing: 12,
-                    children: [
-                      OutlinedButton(
-                        key: const Key('event-save'),
-                        onPressed: c.busy
-                            ? null
-                            : () {
-                                final v = _token.text;
-                                _token.clear();
-                                c.save(v);
-                              },
-                        child: const Text('安全保存测试凭据'),
-                      ),
-                      OutlinedButton(
-                        key: const Key('event-seed'),
-                        onPressed: c.busy ? null : c.seed,
-                        child: const Text('本地生成 24 条模拟事件'),
-                      ),
-                      FilledButton(
-                        key: const Key('event-sync'),
-                        onPressed: c.busy || !c.configured || c.rows.isEmpty
-                            ? null
-                            : c.sync,
-                        child: const Text('上传 / 对账 / 恢复'),
-                      ),
-                    ],
-                  ),
-                  if (c.busy) const LinearProgressIndicator(),
-                  if (c.message != null)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16),
-                      child: Text(c.message!, key: const Key('event-result')),
+                  SectionCard(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '本地模拟事件 ${c.rows.length} 条 · 已同步 ${c.rows.where((r) => r.state == 'synced').length} 条',
+                          key: const Key('event-count'),
+                          style: theme.textTheme.titleMedium,
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          '结果不明的创建只查询对账。暂时查不到不会自动重建；冲突保留原始事件，等待复核。重试会遵守已保存的等待时间。',
+                          style: theme.textTheme.bodySmall,
+                        ),
+                        if (c.rows.isNotEmpty) ...[
+                          const SizedBox(height: 12),
+                          Divider(color: scheme.outlineVariant),
+                          for (final r in c.rows)
+                            ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.zero,
+                              title: Text(
+                                '${r.event.sequence}. ${r.event.type} · ${r.event.grade}',
+                              ),
+                              subtitle: Text(
+                                '${r.event.id}\n${_label(r.state)}${r.nextAttempt == null ? '' : ' · 下次检查 ${formatLocalDateTime(r.nextAttempt!)}'}',
+                              ),
+                            ),
+                        ],
+                      ],
                     ),
-                  if (c.error != null)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16),
-                      child: Text(c.error!, key: const Key('event-error')),
-                    ),
-                  const SizedBox(height: 20),
-                  Text(
-                    '本地模拟事件 ${c.rows.length} 条 · 已同步 ${c.rows.where((r) => r.state == 'synced').length} 条',
-                    key: const Key('event-count'),
                   ),
-                  const Text(
-                    '结果不明的创建只查询对账。暂时查不到不会自动重建；冲突保留原始事件，等待复核。重试会遵守已保存的等待时间。',
-                  ),
-                  for (final r in c.rows)
-                    ListTile(
-                      dense: true,
-                      title: Text(
-                        '${r.event.sequence}. ${r.event.type} · ${r.event.grade}',
-                      ),
-                      subtitle: Text(
-                        '${r.event.id}\n${_label(r.state)}${r.nextAttempt == null ? '' : ' · 下次检查 ${r.nextAttempt!.toLocal()}'}',
-                      ),
-                    ),
                 ],
               ),
             ),
