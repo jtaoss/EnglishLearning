@@ -5,6 +5,8 @@ import 'package:english_learning/app/app_theme.dart';
 import 'package:english_learning/ui/empty_state.dart';
 import 'package:english_learning/ui/status_badge.dart';
 import 'package:go_router/go_router.dart';
+import 'package:english_learning/features/learning_progress/study_word.dart';
+import 'package:english_learning/features/review/study_queue.dart';
 import 'package:english_learning/features/vocabulary/vocabulary_controller.dart';
 import 'package:english_learning/integrations/notion/notion_sync_controller.dart';
 
@@ -78,30 +80,40 @@ final class HomePage extends StatelessWidget {
                         final v = vocabulary!;
                         final now = v.nowUtc;
                         final words = v.words;
+                        final stats = v.dashboardStats(now);
                         final allDue = v.dueWords(now, libraryClass: null);
-                        final dueReviewCount = allDue
-                            .where(
-                              (w) =>
-                                  w.status != 'untested' ||
-                                  w.reviewCount > 0 ||
-                                  w.isPronunciationDue(now),
-                            )
-                            .length;
-                        final newLearnableCount =
-                            allDue.length - dueReviewCount;
+                        final dueReviewCount = stats.dueReviewCount;
+                        final newLearnableCount = stats.newLearnableCount;
+                        final studiedCount = stats.studiedCount;
+                        final untestedCount = stats.untestedCount;
+                        final weakWordsCount = stats.weakWordsCount;
+                        final completedTodayCount = stats.completedTodayCount;
+                        final remainingReviewCount = stats.remainingReviewCount;
+                        final notYetDueCount = stats.notYetDueCount;
 
-                        final masteredCount = words
-                            .where((w) => w.status == 'mastered')
-                            .length;
-                        final familiarCount = words
-                            .where((w) => w.status == 'familiar')
-                            .length;
-                        final forgottenCount = words
-                            .where((w) => w.status == 'forgotten')
-                            .length;
-                        final studiedCount =
-                            masteredCount + familiarCount + forgottenCount;
-                        final untestedCount = words.length - studiedCount;
+                        StudyWord? nextNew;
+                        for (final word in allDue) {
+                          if (!isScheduledReview(word, now)) {
+                            nextNew = word;
+                            break;
+                          }
+                        }
+                        final mainCount = stats.coreCount;
+                        final extensionCount = stats.extensionCount;
+                        final pausedCount =
+                            words.length - mainCount - extensionCount;
+                        // Scope size comes from the bundled, accepted sync
+                        // scope; local size comes from SQLite. Never invented.
+                        final scopeKnown = notion?.scopeLoaded ?? false;
+                        final scopeLength = notion?.scopeLength ?? 0;
+                        final libraryIncomplete =
+                            scopeKnown &&
+                            words.isNotEmpty &&
+                            words.length < scopeLength;
+                        final libraryComplete =
+                            scopeKnown &&
+                            words.isNotEmpty &&
+                            words.length >= scopeLength;
 
                         return SingleChildScrollView(
                           padding: const EdgeInsets.all(24),
@@ -151,20 +163,51 @@ final class HomePage extends StatelessWidget {
                                               style:
                                                   theme.textTheme.headlineSmall,
                                             ),
-                                            const SizedBox(height: 6),
+                                            const SizedBox(height: 8),
                                             Text(
-                                              '本地 ${words.length} 词 · 可学习未测试 / 到期 ${allDue.length} 词',
+                                              '本地词库：${formatCount(words.length)} 词',
+                                              key: const Key('local-total'),
+                                              style: theme.textTheme.titleMedium
+                                                  ?.copyWith(
+                                                    color: scheme.primary,
+                                                    fontWeight: FontWeight.w700,
+                                                  ),
+                                            ),
+                                            const SizedBox(height: 4),
+                                            Text(
+                                              '主学习 ${formatCount(mainCount)} · 扩展 ${formatCount(extensionCount)}'
+                                              '${pausedCount > 0 ? ' · 暂缓 ${formatCount(pausedCount)}' : ''}'
+                                              ' · 可学习未测试 / 到期 ${formatCount(allDue.length)} 词',
+                                              key: const Key(
+                                                'library-class-counts',
+                                              ),
                                               style: theme.textTheme.bodyMedium
                                                   ?.copyWith(
                                                     color:
                                                         scheme.onSurfaceVariant,
                                                   ),
                                             ),
+                                            if (nextNew != null) ...[
+                                              const SizedBox(height: 4),
+                                              Text(
+                                                '当前新词阶段：${BookStudyOrder.stageLabel(nextNew.entry.fields['book_category'])}',
+                                                key: const Key(
+                                                  'new-word-stage',
+                                                ),
+                                                style: theme
+                                                    .textTheme
+                                                    .bodyMedium
+                                                    ?.copyWith(
+                                                      color: scheme
+                                                          .onSurfaceVariant,
+                                                    ),
+                                              ),
+                                            ],
                                           ],
                                         ),
                                         StatusBadge(
                                           label: allDue.isNotEmpty
-                                              ? '待处理 ${allDue.length} 词'
+                                              ? '待处理 ${formatCount(allDue.length)} 词'
                                               : words.isEmpty
                                               ? '词库待导入'
                                               : '今日已完成',
@@ -189,7 +232,10 @@ final class HomePage extends StatelessWidget {
                                         final cards = <Widget>[
                                           _MetricTile(
                                             label: '今日待复习（到期）',
-                                            value: '$dueReviewCount',
+                                            value: formatCount(dueReviewCount),
+                                            valueKey: const Key(
+                                              'metric-due-review',
+                                            ),
                                             unit: '词',
                                             caption: dueReviewCount > 0
                                                 ? '优先复习已学到期与发音待练词'
@@ -201,19 +247,25 @@ final class HomePage extends StatelessWidget {
                                                 : scheme.onSurface,
                                           ),
                                           _MetricTile(
-                                            label: '可学新词（未测试）',
-                                            value: '$newLearnableCount',
+                                            label: '未测试单词',
+                                            value: formatCount(untestedCount),
+                                            valueKey: const Key(
+                                              'metric-untested',
+                                            ),
                                             unit: '词',
-                                            caption: '先独立回忆词义与读音，再查看答案',
+                                            caption:
+                                                '可学新词 ${formatCount(newLearnableCount)} 词 · 未到期 ${formatCount(notYetDueCount)} 词',
                                             accent: scheme.primary,
                                           ),
                                           _MetricTile(
-                                            label: '已学 / 未学概况',
-                                            value:
-                                                '$studiedCount / $untestedCount',
+                                            label: '已学单词',
+                                            value: formatCount(studiedCount),
+                                            valueKey: const Key(
+                                              'metric-studied',
+                                            ),
                                             unit: '词',
                                             caption:
-                                                '掌握 $masteredCount · 眼熟 $familiarCount · 遗忘 $forgottenCount',
+                                                '掌握 ${formatCount(stats.masteredCount)} · 眼熟 ${formatCount(stats.familiarCount)} · 遗忘 ${formatCount(stats.forgottenCount)}',
                                             accent: AppTheme.masteredColors(
                                               brightness,
                                             ).foreground,
@@ -243,36 +295,170 @@ final class HomePage extends StatelessWidget {
                                         );
                                       },
                                     ),
-                                    const SizedBox(height: 22),
+                                    const SizedBox(height: 12),
+
+                                    // Review Center Detail Badges
+                                    Wrap(
+                                      spacing: 8,
+                                      runSpacing: 6,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.center,
+                                      children: [
+                                        StatusBadge(
+                                          label:
+                                              '今日已完成：${formatCount(completedTodayCount)} 词',
+                                          status: completedTodayCount > 0
+                                              ? 'mastered'
+                                              : 'neutral',
+                                          textKey: const Key(
+                                            'metric-completed-today',
+                                          ),
+                                        ),
+                                        StatusBadge(
+                                          label:
+                                              '今日剩余：${formatCount(remainingReviewCount)} 词',
+                                          status: remainingReviewCount > 0
+                                              ? 'familiar'
+                                              : 'neutral',
+                                          textKey: const Key(
+                                            'metric-remaining-review',
+                                          ),
+                                        ),
+                                        StatusBadge(
+                                          label:
+                                              '未到期：${formatCount(notYetDueCount)} 词',
+                                          status: 'neutral',
+                                          textKey: const Key(
+                                            'metric-not-yet-due',
+                                          ),
+                                        ),
+                                        StatusBadge(
+                                          label:
+                                              '薄弱词：${formatCount(weakWordsCount)} 词',
+                                          status: weakWordsCount > 0
+                                              ? 'forgotten'
+                                              : 'neutral',
+                                          textKey: const Key(
+                                            'metric-weak-words',
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 12),
+
+                                    if (dueReviewCount == 0 &&
+                                        words.isNotEmpty) ...[
+                                      Text(
+                                        '今天暂无到期复习，先去学习一些新词吧。',
+                                        key: const Key('no-due-review-hint'),
+                                        style: theme.textTheme.bodyMedium
+                                            ?.copyWith(
+                                              color: scheme.primary,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                      ),
+                                      const SizedBox(height: 10),
+                                    ],
 
                                     // Primary & Secondary Action Bar
                                     Wrap(
                                       spacing: 12,
-                                      runSpacing: 12,
+                                      runSpacing: 10,
                                       crossAxisAlignment:
                                           WrapCrossAlignment.center,
                                       children: [
-                                        if (allDue.isNotEmpty)
+                                        if (dueReviewCount > 0)
                                           FilledButton.icon(
                                             key: const Key('start-due-review'),
                                             style: FilledButton.styleFrom(
                                               padding:
                                                   const EdgeInsets.symmetric(
-                                                    horizontal: 26,
-                                                    vertical: 16,
+                                                    horizontal: 24,
+                                                    vertical: 14,
                                                   ),
                                             ),
                                             onPressed: v.busy
                                                 ? null
                                                 : () => context.push(
-                                                    AppRouter.wordPath(
-                                                      allDue.first.entry.id,
-                                                    ),
+                                                    AppRouter.reviewDue,
                                                   ),
+                                            icon: const Icon(
+                                              Icons
+                                                  .replay_circle_filled_outlined,
+                                            ),
+                                            label: Text(
+                                              '开始今日到期复习（$dueReviewCount 词）',
+                                            ),
+                                          )
+                                        else
+                                          OutlinedButton.icon(
+                                            key: const Key('start-due-review'),
+                                            onPressed: v.busy
+                                                ? null
+                                                : () => context.push(
+                                                    AppRouter.reviewDue,
+                                                  ),
+                                            icon: const Icon(
+                                              Icons.event_available_outlined,
+                                              size: 18,
+                                            ),
+                                            label: const Text('今日到期复习（0 词）'),
+                                          ),
+                                        if (newLearnableCount > 0)
+                                          FilledButton.icon(
+                                            key: const Key('start-new-words'),
+                                            style: FilledButton.styleFrom(
+                                              backgroundColor:
+                                                  dueReviewCount == 0
+                                                  ? scheme.primary
+                                                  : scheme.secondaryContainer,
+                                              foregroundColor:
+                                                  dueReviewCount == 0
+                                                  ? scheme.onPrimary
+                                                  : scheme.onSecondaryContainer,
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                    horizontal: 20,
+                                                    vertical: 14,
+                                                  ),
+                                            ),
+                                            onPressed: v.busy
+                                                ? null
+                                                : () {
+                                                    if (nextNew != null) {
+                                                      context.push(
+                                                        AppRouter.wordPath(
+                                                          nextNew.entry.id,
+                                                        ),
+                                                      );
+                                                    } else {
+                                                      context.push(
+                                                        AppRouter.vocabulary,
+                                                      );
+                                                    }
+                                                  },
                                             icon: const Icon(
                                               Icons.play_arrow_rounded,
                                             ),
-                                            label: const Text('开始今日学习 / 到期复习'),
+                                            label: Text(
+                                              '学习新词（$newLearnableCount 词）',
+                                            ),
+                                          ),
+                                        if (weakWordsCount > 0)
+                                          OutlinedButton.icon(
+                                            key: const Key('start-weak-review'),
+                                            onPressed: v.busy
+                                                ? null
+                                                : () => context.push(
+                                                    AppRouter.reviewWeak,
+                                                  ),
+                                            icon: const Icon(
+                                              Icons.fitness_center_outlined,
+                                              size: 18,
+                                            ),
+                                            label: Text(
+                                              '薄弱词巩固（$weakWordsCount 词）',
+                                            ),
                                           ),
                                         FilledButton(
                                           key: const Key('open-vocabulary'),
@@ -349,7 +535,7 @@ final class HomePage extends StatelessWidget {
                                             children: [
                                               StatusBadge(
                                                 label: notion!.configured
-                                                    ? 'Notion 已配置 · 缓存 ${notion!.state.linkedWords} 词'
+                                                    ? 'Notion 已配置 · 缓存 ${formatCount(notion!.state.linkedWords)} 词'
                                                     : 'Notion 尚未配置',
                                                 colors: notion!.configured
                                                     ? AppTheme.masteredColors(
@@ -359,6 +545,17 @@ final class HomePage extends StatelessWidget {
                                                         brightness,
                                                       ),
                                               ),
+                                              if (libraryComplete)
+                                                StatusBadge(
+                                                  label: '完整词库已在本地',
+                                                  colors: AppTheme.infoColors(
+                                                    brightness,
+                                                  ),
+                                                  icon: Icons.verified_outlined,
+                                                  textKey: const Key(
+                                                    'library-complete',
+                                                  ),
+                                                ),
                                               TextButton.icon(
                                                 onPressed: () => context.push(
                                                   AppRouter.notion,
@@ -374,6 +571,32 @@ final class HomePage extends StatelessWidget {
                                       ],
                                     ),
                                     const SizedBox(height: 8),
+                                    if (libraryIncomplete) ...[
+                                      StatusBanner(
+                                        message:
+                                            '本地词库目前只有 ${formatCount(words.length)} 词，正式词库共 ${formatCount(scopeLength)} 词，尚未完整同步。'
+                                            '全量同步只读取 Notion，已有评级和复习日期会保留。',
+                                        tone: BannerTone.warning,
+                                        textKey: const Key('full-sync-needed'),
+                                      ),
+                                      const SizedBox(height: 8),
+                                      Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: FilledButton.tonalIcon(
+                                          key: const Key('open-full-sync'),
+                                          onPressed: () =>
+                                              context.push(AppRouter.notion),
+                                          icon: const Icon(
+                                            Icons.cloud_download_outlined,
+                                            size: 18,
+                                          ),
+                                          label: Text(
+                                            '前往全量同步（${formatCount(scopeLength)} 词）',
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(height: 8),
+                                    ],
                                     Text(
                                       allowCsvImport
                                           ? '首次使用可导入 100 词 CSV 样本。词义与词性复核状态见词卡；新词学习与发音状态从未测试开始。'
@@ -429,6 +652,7 @@ final class _MetricTile extends StatelessWidget {
     required this.unit,
     required this.caption,
     required this.accent,
+    this.valueKey,
   });
 
   final String label;
@@ -436,6 +660,7 @@ final class _MetricTile extends StatelessWidget {
   final String unit;
   final String caption;
   final Color accent;
+  final Key? valueKey;
 
   @override
   Widget build(BuildContext context) {
@@ -465,6 +690,7 @@ final class _MetricTile extends StatelessWidget {
               Flexible(
                 child: Text(
                   value,
+                  key: valueKey,
                   style: theme.textTheme.headlineMedium?.copyWith(
                     color: accent,
                     fontWeight: FontWeight.w700,

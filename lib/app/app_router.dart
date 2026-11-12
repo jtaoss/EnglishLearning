@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import 'package:english_learning/features/vocabulary/vocabulary_controller.dart';
 import 'package:english_learning/features/vocabulary/vocabulary_page.dart';
 import 'package:english_learning/features/review/review_page.dart';
+import 'package:english_learning/features/review/review_session_page.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_services.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_page.dart';
 import 'package:english_learning/features/pronunciation/pronunciation_list_page.dart';
@@ -19,6 +20,8 @@ abstract final class AppRouter {
   static const String home = '/';
   static const String settings = '/settings';
   static const String vocabulary = '/vocabulary';
+  static const String reviewDue = '/review/due';
+  static const String reviewWeak = '/review/weak';
   static const String pronunciation = '/pronunciation';
   static const String notion = '/notion-sync';
   static const String eventSandbox = '/event-sandbox';
@@ -61,6 +64,24 @@ abstract final class AppRouter {
         ),
       ),
       if (vocabularyController != null) ...[
+        GoRoute(
+          path: reviewDue,
+          builder: (context, state) => ReviewSessionPage(
+            key: const ValueKey('review-session-due'),
+            controller: vocabularyController,
+            mode: ReviewSessionMode.due,
+            pronunciation: pronunciationServices,
+          ),
+        ),
+        GoRoute(
+          path: reviewWeak,
+          builder: (context, state) => ReviewSessionPage(
+            key: const ValueKey('review-session-weak'),
+            controller: vocabularyController,
+            mode: ReviewSessionMode.weak,
+            pronunciation: pronunciationServices,
+          ),
+        ),
         GoRoute(
           path: vocabulary,
           builder: (context, state) => VocabularyPage(

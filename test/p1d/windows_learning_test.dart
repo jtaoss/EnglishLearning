@@ -71,7 +71,7 @@ void main() {
   );
 
   testWidgets(
-    'Windows next word stays in the current learning library and hides the answer',
+    'Windows next word follows the remaining book queue and hides the answer',
     (tester) async {
       final repo = MemoryLearningRepository();
       repo.words = [
@@ -88,7 +88,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(
         tester.widget<Text>(find.byKey(const Key('review-word'))).data,
-        'gamma',
+        'alpha',
       );
       expect(find.byKey(const Key('meaning')), findsNothing);
       expect(

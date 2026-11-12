@@ -5,6 +5,7 @@ import 'package:english_learning/core/logging/app_logger.dart';
 import 'package:english_learning/core/storage/learning_repository.dart';
 import 'package:english_learning/features/learning_progress/study_word.dart';
 import 'package:english_learning/features/review/review_schedule.dart';
+import 'package:english_learning/features/review/study_queue.dart';
 
 final class VocabularyController extends ChangeNotifier {
   VocabularyController(
@@ -17,7 +18,7 @@ final class VocabularyController extends ChangeNotifier {
   final LearningRepository repository;
   final AppLogger logger;
   final DateTime Function() _clock;
-  late final Timer _clockTimer;
+  Timer? _clockTimer;
   DateTime get nowUtc => _clock().toUtc();
   List<StudyWord> words = const [];
   bool busy = false;
@@ -34,40 +35,22 @@ final class VocabularyController extends ChangeNotifier {
   }
 
   List<StudyWord> dueWords(DateTime now, {String? libraryClass = '主学习'}) =>
-      (words
-          .where(
-            (word) =>
-                (libraryClass == null
-                    ? word.entry.libraryClass != '暂缓'
-                    : word.entry.libraryClass == libraryClass) &&
-                (word.isDue(now) || word.isPronunciationDue(now)),
-          )
-          .toList()
-        ..sort((a, b) {
-          DateTime? earliest(StudyWord word) {
-            final meaning = word.dueAt;
-            final reading = word.pronunciationProgress?.dueAt;
-            if (meaning == null) return reading;
-            return reading == null || meaning.isBefore(reading)
-                ? meaning
-                : reading;
-          }
+      orderedDueWords(words, now, libraryClass: libraryClass);
 
-          final aDue = earliest(a), bDue = earliest(b);
-          if (aDue != null && bDue != null) {
-            final order = aDue.compareTo(bDue);
-            if (order != 0) return order;
-          } else if (aDue != null) {
-            return -1;
-          } else if (bDue != null) {
-            return 1;
-          }
-          final priority = (a.entry.fields['learning_priority'] ?? 'P2')
-              .compareTo(b.entry.fields['learning_priority'] ?? 'P2');
-          return priority != 0
-              ? priority
-              : a.entry.word.compareTo(b.entry.word);
-        }));
+  List<StudyWord> dueReviewWords(DateTime now, {String? libraryClass}) =>
+      dueMeaningReviewQueue(words, now, libraryClass: libraryClass);
+
+  List<StudyWord> weakReviewWords(DateTime now, {String? libraryClass}) =>
+      weakMeaningWordQueue(words, now, libraryClass: libraryClass);
+
+  List<StudyWord> newLearnableWords({String? libraryClass}) =>
+      newLearnableWordQueue(words, libraryClass: libraryClass);
+
+  List<StudyWord> pronunciationReviewWords(DateTime now) =>
+      pronunciationReviewQueue(words, now);
+
+  ReviewDashboardStats dashboardStats([DateTime? now]) =>
+      ReviewDashboardStats.fromWords(words, now ?? _clock());
 
   Future<bool> refresh() => _perform(() async {});
   Future<bool> importCsv(Future<String?> Function() load) => _perform(() async {
@@ -138,8 +121,9 @@ final class VocabularyController extends ChangeNotifier {
 
   @override
   void dispose() {
+    if (_disposed) return;
     _disposed = true;
-    _clockTimer.cancel();
+    _clockTimer?.cancel();
     super.dispose();
   }
 }

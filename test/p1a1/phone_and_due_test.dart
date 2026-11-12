@@ -53,6 +53,7 @@ void main() {
           ),
           findsOneWidget,
         );
+        await tester.ensureVisible(find.byKey(const Key('open-vocabulary')));
         await tester.tap(find.byKey(const Key('open-vocabulary')));
         await tester.pumpAndSettle();
         for (final key in ['import-csv-file', 'import-verified100']) {

@@ -7,6 +7,17 @@ String formatLocalDateTime(DateTime value) {
   return '${date.year}-${two(date.month)}-${two(date.day)} ${two(date.hour)}:${two(date.minute)}';
 }
 
+/// Formats a real count with thousands separators, e.g. 5332 -> 5,332.
+String formatCount(int value) {
+  final digits = value.abs().toString();
+  final buffer = StringBuffer(value < 0 ? '-' : '');
+  for (var i = 0; i < digits.length; i++) {
+    if (i > 0 && (digits.length - i) % 3 == 0) buffer.write(',');
+    buffer.write(digits[i]);
+  }
+  return buffer.toString();
+}
+
 final class StatusBadge extends StatelessWidget {
   const StatusBadge({
     required this.label,

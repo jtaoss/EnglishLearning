@@ -21,14 +21,33 @@ final class VocabularyPage extends StatefulWidget {
   static const sampleImportKey = Key('import-verified100');
   static const fileImportKey = Key('import-csv-file');
   static const classFilterKey = Key('library-class-filter');
+  static const statusFilterKey = Key('learning-status-filter');
+  static const statusOptions = ['全部状态', '未学', '已学', '掌握', '眼熟', '遗忘'];
   @override
   State<VocabularyPage> createState() => _VocabularyPageState();
 }
 
 class _VocabularyPageState extends State<VocabularyPage> {
   String _class = '主学习';
+  String _status = '全部状态';
   bool _dueOnly = false;
   String _search = '';
+  final _listController = ScrollController();
+
+  @override
+  void dispose() {
+    _listController.dispose();
+    super.dispose();
+  }
+
+  bool _matchesStatus(String status) => switch (_status) {
+    '未学' => status == 'untested',
+    '已学' => status != 'untested',
+    '掌握' => status == 'mastered',
+    '眼熟' => status == 'familiar',
+    '遗忘' => status == 'forgotten',
+    _ => true,
+  };
 
   @override
   Widget build(BuildContext context) => ListenableBuilder(
@@ -39,12 +58,14 @@ class _VocabularyPageState extends State<VocabularyPage> {
       final brightness = theme.brightness;
       final c = widget.controller;
       final now = c.nowUtc;
+      final query = _search.trim().toLowerCase();
       final words = c.words
           .where(
             (w) =>
                 (_class == '全部' || w.entry.libraryClass == _class) &&
+                _matchesStatus(w.status) &&
                 (!_dueOnly || w.isDue(now) || w.isPronunciationDue(now)) &&
-                w.entry.word.toLowerCase().contains(_search.toLowerCase()),
+                w.entry.word.toLowerCase().contains(query),
           )
           .toList();
 
@@ -191,6 +212,35 @@ class _VocabularyPageState extends State<VocabularyPage> {
                                               .toList(),
                                           onChanged: (value) =>
                                               setState(() => _class = value!),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal: 12,
+                                      ),
+                                      decoration: BoxDecoration(
+                                        color: scheme.surfaceContainerLow,
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(
+                                          color: scheme.outlineVariant,
+                                        ),
+                                      ),
+                                      child: DropdownButtonHideUnderline(
+                                        child: DropdownButton<String>(
+                                          key: VocabularyPage.statusFilterKey,
+                                          isDense: true,
+                                          value: _status,
+                                          items: VocabularyPage.statusOptions
+                                              .map(
+                                                (label) => DropdownMenuItem(
+                                                  value: label,
+                                                  child: Text(label),
+                                                ),
+                                              )
+                                              .toList(),
+                                          onChanged: (value) =>
+                                              setState(() => _status = value!),
                                         ),
                                       ),
                                     ),

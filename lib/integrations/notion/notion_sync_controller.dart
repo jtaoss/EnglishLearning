@@ -17,6 +17,7 @@ final class NotionSyncController extends ChangeNotifier {
   bool busy = false, configured = false, _disposed = false;
   String sourceId = notionPilotSource;
   int scopeLength = 500;
+  bool scopeLoaded = false;
   int targetSize = 100;
   String? message, error;
   NotionSyncState state = const NotionSyncState();
@@ -35,6 +36,7 @@ final class NotionSyncController extends ChangeNotifier {
     state = await service.store.readNotionState(sourceId);
     final scope = await service.loadScope();
     scopeLength = scope.entries.length;
+    scopeLoaded = true;
     if (!isMobile) {
       if (scopeLength == VocabularyCsv.maxEntries) {
         targetSize = VocabularyCsv.maxEntries;

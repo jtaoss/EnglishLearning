@@ -197,6 +197,7 @@ void main() {
       );
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('start-due-review')), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('open-vocabulary')));
       await tester.tap(find.byKey(const Key('open-vocabulary')));
       await tester.pumpAndSettle();
       expect(find.byType(ListTile).evaluate().length, lessThan(100));

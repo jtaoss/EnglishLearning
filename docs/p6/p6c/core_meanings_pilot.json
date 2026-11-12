@@ -1,0 +1,4847 @@
+{
+  "model_version": "p6c-core-1",
+  "prompt_version": "p6c-prompt-1",
+  "source": "docs/p5a/public/formal_learning_vocabulary.csv",
+  "record_count": 100,
+  "cohort_counts": {
+    "complex_pos": 20,
+    "polyseme": 20,
+    "high_frequency": 20,
+    "simple": 20,
+    "random": 20
+  },
+  "rules": [
+    "不覆盖正式 meaning_zh。",
+    "每个正式义项目都必须出现在核心、扩展或其他层。",
+    "模型没有新增义项。model_added_senses 为空。",
+    "不把考研词频当作义项使用频率。",
+    "不标记官方考试重点。",
+    "排序没有独立语料证据时 review_required 为 true。",
+    "confidence 只是模型自评，不能单独证明释义正确。"
+  ],
+  "records": [
+    {
+      "stable_id": "SG25-2ce06a9e7f8c",
+      "headword": "double",
+      "part_of_speech": "形容词；动词；名词；副词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：双倍的，成双的；动词：使加倍；名词：两倍，替身；副词：加倍地",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "双倍的",
+            "成双的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使加倍"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "两倍"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "副词",
+          "glosses": [
+            "加倍地"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "替身"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "The shop expects sales to double in summer.",
+        "zh": "这家店预计夏季销售额会翻倍。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "rare_sense_not_first"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "386a555d4e7fcae4dc4a71047b51572c5e4c1030a66fa3049763c29a8987bece",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-29a8825bd242",
+      "headword": "brief",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：简短的；名词：概要；动词：向……介绍情况",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "简短的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "概要"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "向……介绍情况"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "79a5d0261786885dd5f6b5bc2f4da4079cacc06d77b3362f9f59b4f7b3dcda6f",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06543781-n;06468640-n;00831273-v;01442826-a;00547166-a;01436432-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-310ff200149b",
+      "headword": "close",
+      "part_of_speech": "动词；形容词；副词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "动词：关闭；形容词：近的，亲密的；副词：靠近",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "关闭"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "近的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "副词",
+          "glosses": [
+            "靠近"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "亲密的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "“近的”和“亲密的”相关但范围不同，没有按原文字段合成一个义项。",
+      "usage_example": null,
+      "selection_reason": "“近的”和“亲密的”相关但范围不同，没有按原文字段合成一个义项。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "1ab890a574d141c63ec0dab5878e9d23d982c6926e8d249f7b23ae789056c134",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 15267536-n;06398401-n;00210797-n;01345109-v;01346978-v;02426395-v;00446921-a;00451510-a;00444519-a;00409709-r;00505226-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-32b36ae43a5e",
+      "headword": "rear",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：后部；形容词：后面的；动词：养育",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "后部"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "后面的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "养育"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "动词“养育”和名词“后部”无关。词性分开后，“养育”不进入优先记忆。",
+      "usage_example": null,
+      "selection_reason": "动词“养育”和名词“后部”无关。词性分开后，“养育”不进入优先记忆。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9aac018e9772fa9b93828cea50d84a26103c3f6f22a0ca11dee464fe8be059ff",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 08482700-n;08629508-n;08625846-n;01981623-v;02539788-v;02696801-v;00197891-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-3c482346f375",
+      "headword": "back",
+      "part_of_speech": "名词；动词；副词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：背部，后面；动词：支持；副词：返回，向后",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "背部",
+            "后面"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "副词",
+          "glosses": [
+            "返回",
+            "向后"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "支持"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "e040de75591fa0f257e0e41011f2bbdb6028ce0fa6ed5d1349d205d1fac5f145",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 05558717-n;04059701-n;08625846-n;02453889-v;01997119-v;02556817-v;00197576-a;00131692-a;00668816-a;00075161-r;00074407-r;00075269-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-445be54d48a2",
+      "headword": "void",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：无效的，空的；名词：空白；动词：使无效",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "无效的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "空的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使无效"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "空白"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "“无效的”和“空的”在正式字段里用逗号连在一起，语义不同，不能合并。",
+      "usage_example": null,
+      "selection_reason": "“无效的”和“空的”在正式字段里用逗号连在一起，语义不同，不能合并。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "635dda4c099a222c8452d9d18e2f96a11d60c71a24c1b0d85a3eb0e10eafb0c7",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 14455700-n;13910116-n;02478059-v;00450303-v;00448440-v;02500590-a;01088351-a",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-4d4c7eee2e28",
+      "headword": "present",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：在场的，当前的；名词：礼物，现在；动词：呈交，展示",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "礼物"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "当前的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "现在"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "在场的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "呈交",
+            "展示"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "礼物、当前、在场、呈交不是一个意思。优先记忆先放礼物和“当前的”，因为这是面向初学的建议，不是考纲结论。",
+      "usage_example": null,
+      "selection_reason": "礼物、当前、在场、呈交不是一个意思。优先记忆先放礼物和“当前的”，因为这是面向初学的建议，不是考纲结论。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses",
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "db9ce91f4909b815592b263506e4fbda8df97014375b425628e5e13ea546b9e3",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 15119536-n;13268842-n;06329734-n;02148788-v;00772967-v;01711445-v;01731351-a;01846413-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6558a6a3379d",
+      "headword": "major",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：主要的；名词：专业；动词：主修",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "主要的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "专业"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "主修"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "49928befca8b109ff7bc820fe49a417956b753dec51d85c027f3b47bc0775fbf",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 10283170-n;11150634-n;10283366-n;00607609-v;01472628-a;01471538-a;01471002-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-82523faea1b0",
+      "headword": "mean",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "动词：意味着，打算；形容词：吝啬的，平均的；名词：平均数",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "意味着"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "打算"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "平均的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "平均数"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "吝啬的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "动词的“意味着”和“打算”、形容词的“吝啬的”和“平均的”都是不同意思。平均义放在扩展层，吝啬义保留在其他层。",
+      "usage_example": null,
+      "selection_reason": "动词的“意味着”和“打算”、形容词的“吝啬的”和“平均的”都是不同意思。平均义放在扩展层，吝啬义保留在其他层。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses",
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "b6133b45271e259ae456b4c273c23c89d6be5762c349627975527214df18eeaf",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06023969-n;00955148-v;02635189-v;00931852-v;01594146-a;01587787-a;01589650-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-83a00300ad6a",
+      "headword": "parallel",
+      "part_of_speech": "形容词；名词；动词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：平行的，相似的；名词：相似情况；动词：与……相似或并行",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "平行的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "相似的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "相似情况"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "与……相似或并行"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "The two paths run parallel to the river.",
+        "zh": "这两条小路与河流平行。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "4a6ab222f1c6bc5d89271f8a2cc939b9f4ec1cc086c8f8f0bd2faf6ead067f0a",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-877c3aec832c",
+      "headword": "slack",
+      "part_of_speech": "形容词；名词；动词",
+      "book_category": "低频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：松弛的，不严格的；名词：松弛部分；动词：懈怠，放松",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "松弛的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "不严格的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "懈怠",
+            "放松"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "松弛部分"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "Leave a little slack in the cable.",
+        "zh": "让电缆保留一点松弛余量。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "41ff8d656b1528b37e2c1261e429b8767afeedcfa3782516f1d622c566ef93bd",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-9372c470eead",
+      "headword": "model",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：模型，模特，典范；动词：建模，模仿；形容词：模范的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "模型"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "模特"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "典范"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "模范的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "建模",
+            "模仿"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "模型、模特、典范是三个名词义，正式字段用逗号连写。试点分开，不把模特当成模型的同义词。",
+      "usage_example": null,
+      "selection_reason": "模型、模特、典范是三个名词义，正式字段用逗号连写。试点分开，不把模特当成模型的同义词。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "36ce008678154b765ef7c18b5fbab8093587ba7858ba69a4c08c7de0902a5b56",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 05890249-n;05845652-n;10324560-n;01743784-v;01697027-v;02142775-v;02586446-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-99a7026172d4",
+      "headword": "light",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：光，灯；形容词：轻的，明亮的；动词：点燃",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "光",
+            "灯"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "轻的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "明亮的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "点燃"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "正式释义把形容词“轻的，明亮的”写在同一组，但重量和亮度不是同一个意思，试点拆开。优先记忆保留“光、灯”和“轻的”。这不是使用频率统计。",
+      "usage_example": null,
+      "selection_reason": "正式释义把形容词“轻的，明亮的”写在同一组，但重量和亮度不是同一个意思，试点拆开。优先记忆保留“光、灯”和“轻的”。这不是使用频率统计。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "ed9507b085144055222dde663069e4cafd89946bbe5b3a1edbfa3220b1369a39",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 11473954-n;03665366-n;06210791-n;00291873-v;01199881-v;01978700-v;01186408-a;00408660-a;01193046-a;00390941-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a7722b765d15",
+      "headword": "well",
+      "part_of_speech": "名词；形容词；副词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：井；副词：好地；形容词：健康的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "副词",
+          "glosses": [
+            "好地"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "健康的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "井"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "好地、健康的、井是三个不同词性的常用义。优先记忆只先放副词，另外两个进入扩展层。排序没有频率证据。",
+      "usage_example": null,
+      "selection_reason": "好地、健康的、井是三个不同词性的常用义。优先记忆只先放副词，另外两个进入扩展层。排序没有频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "f66ad1836813e4a3a1f97676019a49dbde4a1e67dd21bcd68a572e8776f23ae0",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 04572344-n;04572935-n;06675979-n;01991204-v;02540578-a;01048762-a;00067638-a;00011093-r;00012779-r;00012531-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a9491f4c1bf7",
+      "headword": "subject",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "名词：主题，学科，对象；动词：使遭受；形容词：受……约束的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "学科"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "主题"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "对象"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使遭受"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "other",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "受……约束的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "0afd778c7c1d7a83662d6054e5a785c0cf0486f802ee6141109e2d7c91b70778",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06599788-n;04347225-n;05996646-n;02110927-v;01118292-v;02496816-v;02361540-a;02329864-a;00071559-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a9eba7c405ea",
+      "headword": "tender",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "偶考词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：温柔的，嫩的；名词：投标；动词：提出，投标",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "温柔的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "嫩的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "投标"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "提出",
+            "投标"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "f8095ed86d2e4cbe72eb43a567e4b08f0dd37d88e98887ab479b51da9bac6740",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13374008-n;09821831-n;07165086-n;02296615-v;02298632-v;02296495-v;02448889-a;01712753-a;01649561-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-b2d7f24e8330",
+      "headword": "reverse",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "动词：颠倒，倒车；名词：反面，倒退；形容词：相反的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "相反的"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "颠倒"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "倒车"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "反面"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "倒退"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "3b11d6b8140dc9da6f485ae15e902dcfeafca4b3a01cbd787ec2fae6c1d4e9ef",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13858604-n;04085017-n;07475870-n;00138508-v;00386715-v;00716130-v;00202250-a;00203917-a;00202095-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-b5d54c39e666",
+      "headword": "fake",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：假的；名词：赝品；动词：伪造",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "假的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "赝品"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "伪造"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "da9a4bfb4798a2add29d8e3ab6696dbd1b0c034e756fdeb48873062db5f9f9f0",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03318438-n;10201535-n;00172217-n;01654271-v;02576921-v;00839526-v;01117477-a;01573238-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-c59ddd3f7ba6",
+      "headword": "abstract",
+      "part_of_speech": "名词；动词；形容词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：抽象的；名词：摘要；动词：提取，概括",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "抽象的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "摘要"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "概括"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "提取"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "b216d91700dbe0015bf7d6917d60af314e2e4ae3a37bb9338b33bc61573c7ec9",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 05854150-n;06468951-n;00692329-v;02276866-v;00734587-v;00011757-a;01980557-a;00862526-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-cabd786ac52d",
+      "headword": "minor",
+      "part_of_speech": "形容词；名词；动词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "complex_pos",
+      "original_meaning_zh": "形容词：较小的，次要的；名词：未成年人；动词：辅修",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "较小的",
+            "次要的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "未成年人"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "辅修"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "We fixed a minor error in the table.",
+        "zh": "我们修正了表格中的一个小错误。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "3eb4af597cd891d1bfb97ae94ffd3882714dd7000dc4356cb4cc83cd2c5f15d8",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-62d7a6b1211d",
+      "headword": "volume",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "体积；音量；卷册",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "体积"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "音量"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "卷册"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "60ee6b13cc8f6bafdba7be2e9e84558dd2f6ef70fbfb152f5a2c98efc1374283",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13779032-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-4381dc2ab142",
+      "headword": "bank",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "银行；河岸",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "银行"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "河岸"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "银行和河岸都保留。银行放在前面沿用了正式字段顺序，并按日常英语教学里更常见的义项来建议；不是考研词频，也不是官方重点。",
+      "usage_example": null,
+      "selection_reason": "银行和河岸都保留。银行放在前面沿用了正式字段顺序，并按日常英语教学里更常见的义项来建议；不是考研词频，也不是官方重点。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "310aeb9fc6701da653b1012cd6972e24c2a6d167e29ea4f1c2c20a82d372b025",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 09213565-n;08420278-n;09213434-n;02039413-v;01587705-v;02343374-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-acba25512100",
+      "headword": "run",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "跑；经营",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "跑"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "经营"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "I run in the park every morning.",
+        "zh": "我每天早晨在公园跑步。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "23605a389e4c3e6f4bb20f559b2a154823b2fc022abd1cd9b52111ecfb61e532",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-0e87632cd46b",
+      "headword": "date",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "日期；约会",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "日期"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "约会"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "What is the date today?",
+        "zh": "今天是几号？",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "615bba55a398f7cd9243b1bfbd52034ccf2c002fe02ffc515ce0ac5002ecf8d3",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-7ae4b7c7678e",
+      "headword": "yard",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "院子；码",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "院子"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "码"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "0efe06d60848a7db2db34f7777ad20d46e90217c067ba0b6b20194e06e140b8f",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13650447-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-80688fc3d5f8",
+      "headword": "miss",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "错过；想念",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "错过"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "想念"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "错过和想念都是常用且不同的动词义，所以优先记忆放了两组。",
+      "usage_example": {
+        "en": "Hurry, or we will miss the train.",
+        "zh": "快点，否则我们会赶不上火车。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "错过和想念都是常用且不同的动词义，所以优先记忆放了两组。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "ee617d75c8d43a0b37ab5c453bea717d061595aa02c10ce39be43a3c797892ec",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-16b60e9de607",
+      "headword": "quarter",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "四分之一；一刻钟；季度；地区",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "四分之一"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "一刻钟"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "季度"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "地区"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "四分之一和一刻钟都保留为优先记忆。地区义较窄，放到其他层，不删除。",
+      "usage_example": null,
+      "selection_reason": "四分之一和一刻钟都保留为优先记忆。地区义较窄，放到其他层，不删除。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "rare_sense_not_first",
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "c54448cf97b11699616bd17a3b3193e4732e84a416bfab75153563e9b0fa3b7c",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13737480-n;08627919-n;15258450-n;02653159-v;02483564-v;01563575-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-2998b3232d29",
+      "headword": "get",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "得到；到达；变得；理解",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "得到"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "变得"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "到达"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "理解"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "得到、变得、到达、理解都保留。优先两项是模型对初学适用性的判断，没有语料频率证据。",
+      "usage_example": null,
+      "selection_reason": "得到、变得、到达、理解都保留。优先两项是模型对初学适用性的判断，没有语料频率证据。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "f2574d01b08ffba81cddfacdb359389194fb93d1d438b0d31fe77df3557b90be",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00567896-n;02210855-v;00149583-v;00120796-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-599f7703547e",
+      "headword": "term",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "术语；学期；期限；条款",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "术语"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "学期"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "期限"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "条款"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "8c815a85977982b9a9d16c11a6018ff57b24b221e8dc9feb0dbf711ddb2b1bd2",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06303888-n;15224486-n;06770875-n;01029642-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-623210167553",
+      "headword": "bill",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "账单；法案；钞票；鸟嘴",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "账单"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "钞票"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "法案"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "鸟嘴"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "“鸟嘴”保留，但不放在优先记忆。正式字段把它和账单、法案、钞票并列，试点认为它不是 PETS-3 初学时首先要记的义项。这一排序需要人工确认。",
+      "usage_example": null,
+      "selection_reason": "“鸟嘴”保留，但不放在优先记忆。正式字段把它和账单、法案、钞票并列，试点认为它不是 PETS-3 初学时首先要记的义项。这一排序需要人工确认。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "rare_sense_not_first",
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "02336378bf4e49f477e9688df1df78654f8885b2b70bbe11b279b66a90a8c01e",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06536853-n;06516955-n;13393762-n;02320374-v;00977153-v;00991900-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6ca7ea2feefc",
+      "headword": "keep",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "保持；保管；饲养；继续",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "保持"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "继续"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "保管"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "饲养"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "747a6e26b89e1c10187c9fabd8b077342143e9080e754d2a6e81e9327292c3b4",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13365286-n;03610098-n;03525252-n;02681795-v;02684924-v;02202384-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-8dccea521790",
+      "headword": "shot",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "射击；照片；注射；尝试",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "射击"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "照片"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "尝试"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "注射"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "382ceaeb170c9b5b81f189afe10e337ccc67fa320338050085a43cf3b2a51649",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00122661-n;04205759-n;00565302-n;00403072-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-990b23e81455",
+      "headword": "division",
+      "part_of_speech": "名词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "划分；分歧；部门；除法",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "划分"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "部门"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "除法"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "分歧"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "cd871621458abf5b9cb3b0b6907e752f35a0f8042cc6f5fc161d41be8b5acafb",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 08213205-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a908043ed469",
+      "headword": "course",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "课程；过程；路线；一道菜",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "课程"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "过程"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "路线"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "一道菜"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "94bf0af8d4460e1cbb6b0581d78b8691d173b4465086fa715f4fee4e487e1b3d",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00884466-n;08377085-n;08681222-n;02067540-v;02066939-v;01144873-v;00038625-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-bbfcd4160a1e",
+      "headword": "case",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "情况；案例；箱子；案件",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "情况"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "箱子"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "案例"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "案件"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "66d664ed77dd7d7a5fe6ae132763d315686648583eb0eb34252c965ce2038163",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 07308889-n;13943400-n;01182654-n;02165982-v;01486312-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-e49b5c7a9e73",
+      "headword": "raise",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "举起；提高；养育；筹集",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "举起"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "提高"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "养育"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "筹集"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "618065fca805b4e4c6b4a21e3b4a714ec0d70f3c5f85d3baa4d48d04f45c753e",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 05110185-n;09206985-n;00803208-n;00158503-v;01974062-v;00941166-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-e8b22d83b417",
+      "headword": "hold",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "握住；保持；举行；容纳",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "握住"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "保持"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "举行"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "容纳"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "921a3288e6831d1991c0b2005bead479932f8fe1a55849308db1af55341b2d0c",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00812526-n;05806623-n;05197232-n;02681795-v;01216670-v;01733477-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-f7fbd5853d11",
+      "headword": "resolution",
+      "part_of_speech": "名词",
+      "book_category": "低频词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "决心；决议；分辨率；解决",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "决心"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "解决"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "决议"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "分辨率"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9fb99b57a581f45226b9e1af6c5cda538bbb82c98f3ba8e046038539f86f4830",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06511874-n;11505769-n;04861486-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-00cf4ce3935c",
+      "headword": "tone",
+      "part_of_speech": "名词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "polyseme",
+      "original_meaning_zh": "语气；音调；色调",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "语气"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "音调"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "色调"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "cf79922030d5987d97b7606a3b27f47e223a9ed849d5a0445e16efe267bcf707",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 07082573-n;04986883-n;04987620-n;01066775-v;00982293-v;00290132-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-0145be012aa0",
+      "headword": "aisle",
+      "part_of_speech": "名词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "polyseme",
+      "original_meaning_zh": "林中小径；狭长通道；过道",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "过道",
+            "狭长通道"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "林中小径"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "正式字段把“林中小径”写在最前。试点改把更通用的“过道”放进优先记忆，并把“林中小径”放到其他层。这是相对原文字段顺序的调整，必须人工审核。",
+      "usage_example": null,
+      "selection_reason": "正式字段把“林中小径”写在最前。试点改把更通用的“过道”放进优先记忆，并把“林中小径”放到其他层。这是相对原文字段顺序的调整，必须人工审核。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "reordered_from_source",
+        "rare_sense_not_first"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "c896b7c90720b85523b7e5f0f12cccb5329149fb601e9704ff8551ff684b3633",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 02694182-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-e5c6fde86910",
+      "headword": "actual",
+      "part_of_speech": "形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "实际的；真实的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "实际的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "真实的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "The actual cost was lower than our estimate.",
+        "zh": "实际费用比我们的估计低。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "ac0884f613efe6e64c0d28a6a7cc498328761a9ce5d6b27f78b05cbcdbe2f753",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-0487c249731a",
+      "headword": "procedure",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "手续；程序；过程",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "程序",
+            "手续"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "过程"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "27360ac40c7fd9364262ad32b7b2925555626600c0a06dc10ecc6c8b1d6ad4c3",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01023820-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-652d75f9bafb",
+      "headword": "debt",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "债务；欠款",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "债务"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "欠款"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "29b3f801a4c34888da9318aa600f71862c57101dcd35cd2b2cc05d6882c93fa1",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 14490564-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-4c4ed1afbfda",
+      "headword": "definition",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "定义；释义",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "定义"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "释义"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "38f1b63401ac4a482f076f829abde19361e579f3baad7916d17678c30a57ab75",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06744396-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-003c443ef278",
+      "headword": "imitate",
+      "part_of_speech": "动词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "仿效；学样；摹拟",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "仿效"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "学样"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "动词",
+          "glosses": [
+            "摹拟"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "7364fbea5c9121b64538faf59b5b8f143575bc4e99083fb192823dd50090adb7",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01742886-v",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-113b67b03b8b",
+      "headword": "remarkable",
+      "part_of_speech": "形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "值得注意的；值得注目的；显著的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "值得注意的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "值得注目的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "显著的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "c35e9df48b98ad67d8d0e36019f0aff301e806b9839e7d7400a3032e2ee18f08",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 02163602-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a3cca0ced5ec",
+      "headword": "obesity",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "肥胖；肥胖症",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "肥胖"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "肥胖症"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "The lecture discussed several factors linked to obesity.",
+        "zh": "这场讲座讨论了与肥胖相关的几个因素。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "92492ec7dcc0efab513319f6c81684f08c885b3f6b6c43378ec3b8fcea6e3f28",
+      "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-742b27454919",
+      "headword": "physics",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "物理学",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "物理学"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“物理学”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "65dd118b8338a0e1d6f92518f7213fac1e0d783bdec1c12d9c6a0620b731f39c",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06090869-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-3092a5f0dba0",
+      "headword": "priority",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "优先；优先地位；在先",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "优先"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "优先地位"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "在先"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "37cbfc67b95495c41c0f9e6e3e5848b60f2f9cac1fd9f64e747fb80495d778bc",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13949802-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-dff0669b4df4",
+      "headword": "presence",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "出席；存在",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "存在"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "出席"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "出席和存在不是同义词。",
+      "usage_example": null,
+      "selection_reason": "出席和存在不是同义词。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "3e969a9404f859e8e09a2f47633e68fec7a4a0562f5e94b7df528e6860798b93",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13957601-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-5e8c03a94c78",
+      "headword": "instance",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "例子；实例",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "例子"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "实例"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "67d8472593df0b275df71f0e9be092cf8e8ea954cb686408f2c667b6e24db1da",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 07308889-n;05820620-n;01021128-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-26f1de33979d",
+      "headword": "extension",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "扩展；延长；分机",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "扩展",
+            "延长"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "分机"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "分机和扩展不是同义词。分机留在其他层。",
+      "usage_example": null,
+      "selection_reason": "分机和扩展不是同义词。分机留在其他层。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "76db8fcb84b66bd43213bb22981ed97a6646264bc18b92d4dd6ed88a7d23cb29",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 15272382-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-81dcf73d9805",
+      "headword": "obvious",
+      "part_of_speech": "形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "无疑的；明明白白的；明显的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "无疑的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "明明白白的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "明显的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "522172caa3c83da9f91ea44c58bd25e570770085c651ee7daab0cf8c5585f23a",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01618053-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-d811aa2ea4fe",
+      "headword": "widespread",
+      "part_of_speech": "形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "广泛的；普遍的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "广泛的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "普遍的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "15133c30e36fb813021b84532443a5c6dae0e3dab9f0c84e3797adda9b0c6ded",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 01102876-a;00541614-a",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-2374d91794b7",
+      "headword": "cancel",
+      "part_of_speech": "动词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "取消；撤销",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "取消"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "撤销"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "21c5eec66d4085e41c28db86c9ea6c1b42f76dfb14012e35083b12e234579492",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06867218-n;02477755-v;02717831-v;02477334-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-fac6a3243ed4",
+      "headword": "engage",
+      "part_of_speech": "动词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "从事；从事于；实行",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "从事",
+            "从事于"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "实行"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "d2a844d58460fb96a2eb69aa25a7fed552f287f2282194eb72082d90bf8e8327",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 02375131-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-d888a3e4ea95",
+      "headword": "indeed",
+      "part_of_speech": "副词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "确实；的确",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "副词",
+          "glosses": [
+            "确实"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "副词",
+          "glosses": [
+            "的确"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "69123be048342bd51e329ae3a59d7977c581224b021130e135c0ccdedd839dd8",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00037641-r;00037470-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-040ffd5925d4",
+      "headword": "payment",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "付款；报酬",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "付款"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "报酬"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "3b4636e623a9c680b37b2e5da893ddce8a1317dfe97bc38f69aa3df0b773ec47",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13278375-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a75c433ab2ae",
+      "headword": "settlement",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "定居点；解决；结算",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "解决"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "结算"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "定居点"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "定居点、解决、结算是三个名词义。解决放在优先记忆是建议，另外两个都保留。",
+      "usage_example": null,
+      "selection_reason": "定居点、解决、结算是三个名词义。解决放在优先记忆是建议，另外两个都保留。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9d04e0b9b9b790c7c0e04d985b9bed1357596ffc78ac1b2435b2c677314e9baa",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 08374049-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-200afd0641fa",
+      "headword": "worthy",
+      "part_of_speech": "形容词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "high_frequency",
+      "original_meaning_zh": "值得的；值得尊敬的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "值得的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "值得尊敬的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "b5c563ae7583ddb743a5d93ca7d3116881cab14e4a5afb2d36cf1dfb4c3f5e74",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 10792506-n;02584981-a;00852197-a;01021120-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-000c285457fc",
+      "headword": "monkey",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "猴子",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "猴子"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“猴子”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "4ef6de9f136a8495337f2f327656176835714c72a96913c6c910d6c192de647f",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 02484322-n;10200047-n;01586018-v;01473346-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-0a5a9bb73d93",
+      "headword": "furniture",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "家具",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "家具"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“家具”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "6eeaada575a1972fea56b707fadade8731b1da85d0c8a955965bd449dc2c4dd6",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 03405725-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-1351d52cee6c",
+      "headword": "noun",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "名词",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "名词"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“名词”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "85626c34a81b2f19e53e02e58f40cb767ce0d6ae743e3095a2bd9a29a89e89c0",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06319293-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-222b0bd51fce",
+      "headword": "five",
+      "part_of_speech": "数词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "五",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "数词",
+          "glosses": [
+            "五"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“五”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "bd3cb9dc4a40fc9222e8d23102531613f25c2d63695932bcfcac59a21c2a80e5",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13744521-n;08079852-n;03353783-n;02186750-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-3171d89ad005",
+      "headword": "kitchen",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "厨房",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "厨房"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“厨房”，核心层原样保留。",
+      "usage_example": {
+        "en": "My father is cooking in the kitchen.",
+        "zh": "我爸爸正在厨房做饭。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "f5229dd0d7340b7b169a9c0d036718a5a5ed2fe581f2a2d26f181cca4c9642e3",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-3d7eb3d3dab1",
+      "headword": "chair",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "椅子",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "椅子"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“椅子”，核心层原样保留。",
+      "usage_example": {
+        "en": "Please sit on this chair.",
+        "zh": "请坐这把椅子。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "2ad9fc013bce7fa3e6e806b39bfba40dd82b9c9008032672919f689e836fbc46",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-4cb4ea25583c",
+      "headword": "year",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "年",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "年"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“年”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "2390d2aadb21b1d249dd2edb3053fa34e0a223871debadb0b51c4eb28f2698c6",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 15203791-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6008c26f4452",
+      "headword": "street",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "街道",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "街道"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“街道”，核心层原样保留。",
+      "usage_example": {
+        "en": "The street is quiet at night.",
+        "zh": "这条街夜里很安静。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "a00f193e752120185ba364eaf1c1229837585a057979851a95d5f66777724eef",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6c86df9c018e",
+      "headword": "misunderstand",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "误解",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "误解"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“误解”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "049ab0b73b31cd6ccf218c9a245b36fe6b64551f0dcae76c812781e6794a8d9d",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00619869-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-795b6904e54f",
+      "headword": "garbage",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "垃圾",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "垃圾"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“垃圾”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "8d4f9656ed403a0904518bb6e6f8c6a3f8674d0129f467aa500c28c0055e9069",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 14857151-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-873ac9ffea4d",
+      "headword": "cheese",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "奶酪",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "奶酪"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“奶酪”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "2b7d4258205eb3bf0413863533ea855c786f493ec8e741fafb7fc97eb29dc40c",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 07850329-n;12171503-n;02680691-v;01523004-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-94d5c9d96025",
+      "headword": "agree",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "同意",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "同意"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“同意”，核心层原样保留。",
+      "usage_example": {
+        "en": "I agree with your suggestion.",
+        "zh": "我同意你的建议。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "78fbd0ad848bf2d7dbbd7523abfb2c5a9ff00b9539ff768a14aed811bd5d9383",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-a0af3a48cfad",
+      "headword": "thousand",
+      "part_of_speech": "数词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "一千",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "数词",
+          "glosses": [
+            "一千"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“一千”，核心层原样保留。",
+      "usage_example": {
+        "en": "The hall can hold a thousand people.",
+        "zh": "大厅可以容纳一千人。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "dbc72c7c3aaed19338766e1f2a392ee964b014ec32e304b7006b126cbe419d6f",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-ab91a82d14cf",
+      "headword": "animal",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "动物",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "动物"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“动物”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "702a7b7c45338c067bc9842a4abdbde6b69fb86c50dccbd4cb8a6f7514af73c6",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00015388-n;01778572-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-bc020a35b7f9",
+      "headword": "machine",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "机器",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "机器"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“机器”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "a9112d8bbdc25c73f42ef92430901d42996f24946b99378cd520872667be9cb9",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03699975-n;10278666-n;08264759-n;01624169-v;01623967-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-c8ce96a5ba0d",
+      "headword": "million",
+      "part_of_speech": "数词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "百万",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "数词",
+          "glosses": [
+            "百万"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“百万”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "ade6cbcc528c2912578fa2fd32576c137b7b9993713e66ee5cc1c77c4eb1eddd",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13751533-n;13776432-n;02199177-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-d1a0d6f47074",
+      "headword": "roof",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "屋顶",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "屋顶"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“屋顶”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "572d523529319a11f67805050e8ee2492697c475415b1b0e138a3dab48ed7e31",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 04105068-n;04105438-n;09416890-n;01233993-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-e0c08c2b1f53",
+      "headword": "soldier",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "士兵",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "士兵"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“士兵”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9434cb7953648f52200d5969e5cda4d982050d8db341ad013aa163c3ed777208",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 10622053-n;02207647-n;01097031-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-f2ce341fdaa6",
+      "headword": "sixteen",
+      "part_of_speech": "数词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "十六",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "数词",
+          "glosses": [
+            "十六"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“十六”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "c21b491b750ff24805e9109843c5ee76723698bedb61532c6dca39a3b1298008",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13747606-n;02187903-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-fef8f41cdcd2",
+      "headword": "fourteen",
+      "part_of_speech": "数词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "simple",
+      "original_meaning_zh": "十四",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "数词",
+          "glosses": [
+            "十四"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“十四”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "968b687607434b1235706d1f8b5bba7ef5c1ec42b070ce714e9dab8d69c0db14",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13747348-n;02187699-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-8517fce0bb21",
+      "headword": "vulgar",
+      "part_of_speech": "形容词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "粗俗的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "粗俗的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“粗俗的”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "1a16dce548d24665407d958bfdb73bdc5a98f6c95540a74bb19e0cfbec62a0f0",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01950198-a",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-c465a314b762",
+      "headword": "graphic",
+      "part_of_speech": "形容词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "图形的；生动的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "图形的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "生动的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "4c3c75f44f4392cba41349ea6a381fbe42a33bcfa5f66a0ba079146ae0683e7f",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03453696-n;02285278-a;00941242-a;02736983-a",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-bcffaab67df4",
+      "headword": "ability",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "才能；能力；能耐",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "才能"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "能力"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [
+        {
+          "layer": "other",
+          "part_of_speech": "名词",
+          "glosses": [
+            "能耐"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "013f8787befa7b925328af0a258e89db2925995e87b41a36f4fab773ccaf5b62",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 05200169-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-0e1637f032b1",
+      "headword": "chamber",
+      "part_of_speech": "名词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "室；议院",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "室"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "议院"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "d5a273bccbddd5f6537bdfa2801aec2b3722ac0182a1ff5ee21fab0dcfe10c9d",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03003730-n;05392744-n;03004146-n;02656062-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-d4f568b800c6",
+      "headword": "finite",
+      "part_of_speech": "形容词",
+      "book_category": "低频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "有限的",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "形容词",
+          "glosses": [
+            "有限的"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“有限的”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "1cefab1ccedb02e16825d0fd8578c02b64644ed067b1f9477d606571d82d3cf7",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 01006566-a;01008439-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-d4ab04449fe1",
+      "headword": "carve",
+      "part_of_speech": "动词",
+      "book_category": "低频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "雕刻；切开",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "雕刻"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "切开"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "464e4c72cbcbc0a4847869838415a85198e96a5e3318ece2b6e20f8ef93a9157",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01255967-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-f2a6aa97adb2",
+      "headword": "tomb",
+      "part_of_speech": "名词",
+      "book_category": "低频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "坟墓",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "坟墓"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“坟墓”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9debd2bfef03974d13d3db33d2955b90318be55b6f0c17b9f3bdab0077afc09d",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 03455033-n",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-f56175f2116f",
+      "headword": "flush",
+      "part_of_speech": "名词；动词",
+      "book_category": "偶考词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "动词：脸红，冲洗；名词：红晕，冲洗",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "冲洗"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "脸红"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "红晕"
+          ],
+          "origin": "formal_gloss"
+        },
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "冲洗"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "脸红和冲洗不是同一个动词义。正式字段用逗号连写，试点拆开，冲洗放在优先记忆只是建议。",
+      "usage_example": null,
+      "selection_reason": "脸红和冲洗不是同一个动词义。正式字段用逗号连写，试点拆开，冲洗放在优先记忆只是建议。",
+      "confidence": 0.55,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "source_merged_different_senses",
+        "uncertain_rank"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "8a45ec79c6e876c0b0cc9c822cb6adb95857985ecd7a8457d2a14bff93a4ac9a",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 15295045-n;14050871-n;14336169-n;00103317-v;00455212-v;02199435-v;00910542-a;02022167-a;00087367-r;00087449-r",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-392245974134",
+      "headword": "knock",
+      "part_of_speech": "名词；动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "敲；碰撞",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "敲"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "碰撞"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "pos_not_marked_on_gloss"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "994b9047965738a327574df7bb8c37b421d3b3b6ccd7ade1f8364992fd8be617",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 07386370-n;05734381-n;07410207-n;01238640-v;01414467-v;01239619-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6cf382fca2a1",
+      "headword": "couple",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "一对；夫妇",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "一对"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "夫妇"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": {
+        "en": "The couple moved to a new house.",
+        "zh": "这对夫妇搬进了新房。",
+        "origin": "formal_example"
+      },
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "c155fe3edb5fec96b5e37051bb34462923fa4fbff846d1c09c237d181c8ba0af",
+      "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-4b18aefe826a",
+      "headword": "cripple",
+      "part_of_speech": "动词",
+      "book_category": "低频词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "使残疾；使瘫痪",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使残疾"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使瘫痪"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "99b2a37bf959418ffe6b448d2ae5aa8c0bcb606e8ee18d9c985ee3180c11b584",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 09978889-n;00225832-v;00091647-v",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-574432331453",
+      "headword": "chop",
+      "part_of_speech": "名词；动词",
+      "book_category": "低频词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "动词：砍，切；名词：排骨",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "砍",
+            "切"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "排骨"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "9feee86b902e8b8d90515a67f4d4dcb74fb3ca9ad0e22f2cb5a204626ffc3bee",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 11527767-n;07653982-n;05546298-n;01258091-v;01871471-v;01758410-v",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-dac1d7cfa950",
+      "headword": "layer",
+      "part_of_speech": "名词；动词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "名词：层；动词：分层放置",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "层"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "分层放置"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "8ffd872ddbdcb05124cbc31f4e52743e3ff2e81ee82d7de41cd0ebae9e18684f",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03650173-n;08591680-n;06246896-n;01262113-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-f300f10844ec",
+      "headword": "greenhouse",
+      "part_of_speech": "名词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "温室",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "温室"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "正式释义只有“温室”，核心层原样保留。",
+      "usage_example": null,
+      "selection_reason": "正式字段只有一个义项和一个词性。核心层复制该义项，不另造含义。",
+      "confidence": 0.8,
+      "review_required": false,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "00f7230e81e89adceeb2c52f8910004bfb0e972eb35f955ca2e666913d901a15",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03457902-n;03070101-a",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-230b4397685e",
+      "headword": "generalize",
+      "part_of_speech": "动词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "概括；归纳",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "概括"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "归纳"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "8ac73ce64a87f3a3b6cb8771b93943f1c09be90f56621ac7566630182eb2eec6",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 01022420-v;01022906-v;00970215-v",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-ad8c6f6e417a",
+      "headword": "consumption",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "消费；消耗；摄入量",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "消费",
+            "消耗"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "名词",
+          "glosses": [
+            "摄入量"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "1e5c796e82c58e072490ce0da35b4861f3e5ee6d84039a2e57e14b5d5ade2a70",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00838098-n",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-476994559e87",
+      "headword": "wash",
+      "part_of_speech": "动词",
+      "book_category": "基础词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "洗；清洗",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "洗"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "清洗"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "6b8f4950245113ba4597435bbd9c4de1f152c3606b531c037f85b6c2b09212f5",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 04553389-n;00255710-n;09474895-n;01270199-v;00036362-v;01535246-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-6cd6f41455d7",
+      "headword": "notify",
+      "part_of_speech": "动词",
+      "book_category": "偶考词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "使注意；通知",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "通知"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使注意"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "正式字段先写“使注意”。试点把更直接的“通知”放到优先记忆，这是顺序调整，需要审核。",
+      "usage_example": null,
+      "selection_reason": "正式字段先写“使注意”。试点把更直接的“通知”放到优先记忆，这是顺序调整，需要审核。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [
+        "reordered_from_source"
+      ],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "aae2b48da1639f490cf6c700d2660ca5bbc8d4e9fcef051f8f33d8dbc7796dc7",
+      "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00873682-v",
+      "pets2015_status": "已收录",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-839be5813487",
+      "headword": "fuss",
+      "part_of_speech": "名词；动词",
+      "book_category": "偶考词",
+      "library_class": "扩展",
+      "cohort": "random",
+      "original_meaning_zh": "名词：大惊小怪；动词：过分操心",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "名词",
+          "glosses": [
+            "大惊小怪"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "过分操心"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "e68c855cf6da1d1e5b175fb35bb36aa1a0e69512d418a152b3f16d45edb20a45",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 14403772-n;07372565-n;07184735-n;01793933-v;02550516-v",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    },
+    {
+      "stable_id": "SG25-735b841b230d",
+      "headword": "correlate",
+      "part_of_speech": "动词",
+      "book_category": "中频词",
+      "library_class": "主学习",
+      "cohort": "random",
+      "original_meaning_zh": "相关；使相互关联",
+      "core_meanings": [
+        {
+          "layer": "core",
+          "part_of_speech": "动词",
+          "glosses": [
+            "相关"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "layer": "extended",
+          "part_of_speech": "动词",
+          "glosses": [
+            "使相互关联"
+          ],
+          "origin": "formal_gloss"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "优先记忆采用上面的核心义。其余义项仍保留在扩展或其他层，正式释义原文没有删除。",
+      "usage_example": null,
+      "selection_reason": "多项义项都保留。未单独写明的排序沿用正式字段顺序，只作为建议，不是使用频率证据。",
+      "confidence": 0.6,
+      "review_required": true,
+      "model_added_senses": [],
+      "risk_flags": [],
+      "model_version": "p6c-core-1",
+      "prompt_version": "p6c-prompt-1",
+      "source_hash": "3aaf1ad071d5b8137d8e3846f32940af6b1cb3ef3c056471c74108ff78f46236",
+      "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 05858407-n;02658979-v;00713996-v;01974298-a",
+      "pets2015_status": "未直接列出",
+      "official_exam_focus": false
+    }
+  ]
+}
