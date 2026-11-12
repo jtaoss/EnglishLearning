@@ -79,7 +79,11 @@ def main():
     }
     # These single-POS heads have visibly different senses in the formal gloss.
     # They replace semicolon lists that are only near-synonyms.
-    explicit_polysemes = ["volume", "bank", "run", "date", "yard", "miss"]
+    explicit_polysemes = [
+        "volume", "bank", "run", "date", "yard", "miss", "quarter", "get",
+        "term", "bill", "keep", "shot", "division", "course", "case", "raise",
+        "hold", "resolution", "tone", "aisle",
+    ]
     by_word = {row["word"].lower(): row for row in rows}
     poly_rest = [
         row
@@ -90,7 +94,9 @@ def main():
         and row["word"].lower() not in explicit_polysemes
     ]
     poly_rest.sort(key=lambda row: (-len(row["_segs"]), row["entry_id"]))
-    poly_pool = [by_word[word] for word in explicit_polysemes] + poly_rest
+    # AI-inspected, genuinely distinct meanings. Semicolon counts are not proof
+    # of polysemy; this fixed list keeps the existing 100-word pilot unchanged.
+    poly_pool = [by_word[word] for word in explicit_polysemes]
     high_pool = [
         row
         for row in rows
@@ -135,17 +141,29 @@ def main():
         }
 
     payload = {
+        "selection_version": "p6c-selection-2-preserved-ids",
+        "selection_order": ["complex_pos", "polyseme", "high_frequency", "simple", "random"],
+        "selection_basis": {
+            "complex_pos": "正式 part_of_speech 至少两种，优先词性数量多者；不是难度或义项频次证明。",
+            "polyseme": "AI逐词识别20个具有不同中文语义的既有样本；常用性为教学判断，没有语料频率或PETS官方证据。",
+            "high_frequency": "正式 book_category=高频词且单一词性，扣除前组后按原书页码排列等距取20；仅代表原书考研词头分类。",
+            "simple": "正式 book_category=基础词、单一词性、单一未标号解释，扣除前组后按稳定ID等距取20；是可复现简单词代理，不宣称测得学习难度。",
+            "random": "扣除前80词，按SHA256('p6c-pilot-1:'+stable_id)排序取20；确定性伪随机，seed=p6c-pilot-1。",
+        },
         "formal_rows": len(rows),
         "pool_sizes": {
             "simple_single_gloss_basic": len(simple_pool),
             "complex_pos": len(complex_pool),
-            "single_pos_three_or_more_segments": len(poly_pool),
+            "single_pos_three_or_more_segments_candidate_pool": sum(len(r["_pos"]) == 1 and len(r["_segs"]) >= 3 for r in rows),
+            "ai_inspected_polysemes": len(poly_pool),
             "high_frequency": len(high_pool),
         },
         "groups": {
             name: [pack(row, name) for row in chosen] for name, chosen in groups.items()
         },
     }
+    if any(len(chosen) != 20 for chosen in groups.values()) or len(used) != 100:
+        raise ValueError("Cohort shortage/overlap: do not silently substitute or duplicate")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print("wrote", OUT)

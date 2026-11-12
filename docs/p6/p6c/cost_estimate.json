@@ -1,0 +1,29 @@
+{
+  "status": "estimate_only_no_model_API_calls_made",
+  "word_count": 5332,
+  "assumed_input_tokens_per_word": 1000,
+  "assumed_output_tokens_per_word": 700,
+  "token_estimates_not_tokenizer_measurements": true,
+  "assumptions": "10-word chunks with shared prompt, compact AI decisions only; local traces not billed. No cache/batch discount. 20% review is a hypothetical planning scenario, not extrapolation of the deliberately stratified sample.",
+  "excludes": [
+    "reasoning_tokens_if_billed_separately_or_in_output",
+    "retries",
+    "human_review",
+    "Codex subscription/session usage",
+    "tax_and_currency_conversion"
+  ],
+  "rates_source": "pricing_reference.json",
+  "scenarios": {
+    "gpt-6.1-sol": {
+      "single_pass_usd": 47.99,
+      "two_full_passes_usd": 95.98,
+      "single_plus_20_percent_review_usd": 57.59
+    },
+    "gpt-6-luna": {
+      "single_pass_usd": 2.4,
+      "two_full_passes_usd": 4.8,
+      "single_plus_20_percent_review_usd": 2.88
+    }
+  },
+  "source_manifest_sha256": "79efef50628e8a4f502d905db3022f4091016c3da18b1a7d1b910fb38352a278"
+}

@@ -1,9 +1,25 @@
 {
+  "selection_version": "p6c-selection-2-preserved-ids",
+  "selection_order": [
+    "complex_pos",
+    "polyseme",
+    "high_frequency",
+    "simple",
+    "random"
+  ],
+  "selection_basis": {
+    "complex_pos": "正式 part_of_speech 至少两种，优先词性数量多者；不是难度或义项频次证明。",
+    "polyseme": "AI逐词识别20个具有不同中文语义的既有样本；常用性为教学判断，没有语料频率或PETS官方证据。",
+    "high_frequency": "正式 book_category=高频词且单一词性，扣除前组后按原书页码排列等距取20；仅代表原书考研词头分类。",
+    "simple": "正式 book_category=基础词、单一词性、单一未标号解释，扣除前组后按稳定ID等距取20；是可复现简单词代理，不宣称测得学习难度。",
+    "random": "扣除前80词，按SHA256('p6c-pilot-1:'+stable_id)排序取20；确定性伪随机，seed=p6c-pilot-1。"
+  },
   "formal_rows": 5332,
   "pool_sizes": {
     "simple_single_gloss_basic": 388,
     "complex_pos": 1394,
-    "single_pos_three_or_more_segments": 1147,
+    "single_pos_three_or_more_segments_candidate_pool": 1148,
+    "ai_inspected_polysemes": 20,
     "high_frequency": 702
   },
   "groups": {

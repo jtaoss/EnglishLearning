@@ -1,0 +1,545 @@
+{
+  "reviewer_type": "AI_semantic_audit_not_human_approval",
+  "draft_v1_sha256": "edf501c8f9df35bfcbdac3b7cc7f3b6f07a130af6efef6b3aac3dcad3aa3bfa0",
+  "finding_type": "AI_review_of_possible_over_merges_in_old_draft_including_negative_controls",
+  "status": "corrected_in_v2_pending_human_review",
+  "records": [
+    {
+      "stable_id": "SG25-2ce06a9e7f8c",
+      "headword": "double",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "双倍的",
+              "成双的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "动词",
+            "glosses": [
+              "使加倍"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "两倍"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "副词",
+            "glosses": [
+              "加倍地"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "名词",
+            "glosses": [
+              "替身"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-3c482346f375",
+      "headword": "back",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "背部",
+              "后面"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "副词",
+            "glosses": [
+              "返回",
+              "向后"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "动词",
+            "glosses": [
+              "支持"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-4d4c7eee2e28",
+      "headword": "present",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "礼物"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "当前的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "现在"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "在场的"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "动词",
+            "glosses": [
+              "呈交",
+              "展示"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-877c3aec832c",
+      "headword": "slack",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "松弛的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "不严格的"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "动词",
+            "glosses": [
+              "懈怠",
+              "放松"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "名词",
+            "glosses": [
+              "松弛部分"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-9372c470eead",
+      "headword": "model",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "模型"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "模特"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "典范"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "模范的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "动词",
+            "glosses": [
+              "建模",
+              "模仿"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-99a7026172d4",
+      "headword": "light",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "光",
+              "灯"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "轻的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "明亮的"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "extended",
+            "part_of_speech": "动词",
+            "glosses": [
+              "点燃"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-a9eba7c405ea",
+      "headword": "tender",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "温柔的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "嫩的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "名词",
+            "glosses": [
+              "投标"
+            ],
+            "origin": "formal_gloss"
+          },
+          {
+            "layer": "other",
+            "part_of_speech": "动词",
+            "glosses": [
+              "提出",
+              "投标"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-cabd786ac52d",
+      "headword": "minor",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "形容词",
+            "glosses": [
+              "较小的",
+              "次要的"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "未成年人"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "动词",
+            "glosses": [
+              "辅修"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-26f1de33979d",
+      "headword": "extension",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "扩展",
+              "延长"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [
+          {
+            "layer": "other",
+            "part_of_speech": "名词",
+            "glosses": [
+              "分机"
+            ],
+            "origin": "formal_gloss"
+          }
+        ]
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-6cf382fca2a1",
+      "headword": "couple",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "一对"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "夫妇"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "control_old_draft_already_separated_no_merge_issue_observed"
+    },
+    {
+      "stable_id": "SG25-574432331453",
+      "headword": "chop",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "动词",
+            "glosses": [
+              "砍",
+              "切"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "排骨"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-ad8c6f6e417a",
+      "headword": "consumption",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "名词",
+            "glosses": [
+              "消费",
+              "消耗"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "名词",
+            "glosses": [
+              "摄入量"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "AI_suspected_over_merge_split_in_v2_pending_human"
+    },
+    {
+      "stable_id": "SG25-735b841b230d",
+      "headword": "correlate",
+      "before": {
+        "core_meanings": [
+          {
+            "layer": "core",
+            "part_of_speech": "动词",
+            "glosses": [
+              "相关"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "layer": "extended",
+            "part_of_speech": "动词",
+            "glosses": [
+              "使相互关联"
+            ],
+            "origin": "formal_gloss"
+          }
+        ],
+        "other_meanings": []
+      },
+      "finding_status": "control_old_draft_already_separated_no_merge_issue_observed"
+    }
+  ],
+  "audit_summary": {
+    "split_candidates": [
+      "double",
+      "back",
+      "present",
+      "slack",
+      "model",
+      "light",
+      "tender",
+      "minor",
+      "extension",
+      "chop",
+      "consumption"
+    ],
+    "negative_controls": [
+      "couple",
+      "correlate"
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "method": "file hashes and metadata only; no SQL connection",
+  "before": {
+    "docs/p6/p6c/core_meanings_pilot.json": {
+      "exists": true,
+      "sha256": "46e2dd5e572a76789e3c81439708fbfd77373dc0865c08469f7275a601607851",
+      "bytes": 626200,
+      "mtime_ns": 1794490176155425900
+    },
+    "docs/p6/p6c/cost_estimate.json": {
+      "exists": true,
+      "sha256": "1ba8d0c6e06f5c6f42a4fb917cf30fcd13266d83f8718d858339d7359883c0d7",
+      "bytes": 1113,
+      "mtime_ns": 1794490415500271400
+    },
+    "docs/p6/p6c/data_protection.json": {
+      "exists": true,
+      "sha256": "465ce9eb9baa54e3d74a560fec61f23ca7413a7c4cd5e62cd57e40d1b44c2238",
+      "bytes": 1679,
+      "mtime_ns": 1794489925710363100
+    },
+    "docs/p6/p6c/draft_v1_findings.json": {
+      "exists": true,
+      "sha256": "59f022001bce9026c7ca13622b7abdc093b111f1574ed53b5a5d5950751933a5",
+      "bytes": 13825,
+      "mtime_ns": 1794490415474222300
+    },
+    "docs/p6/p6c/human_review.json": {
+      "exists": true,
+      "sha256": "6319858fbcf80b64b270aac1187f78a9db7fc0405d9552897b4a2c263ac6630e",
+      "bytes": 66572,
+      "mtime_ns": 1794490176365720500
+    },
+    "docs/p6/p6c/pricing_reference.json": {
+      "exists": true,
+      "sha256": "79efef50628e8a4f502d905db3022f4091016c3da18b1a7d1b910fb38352a278",
+      "bytes": 514,
+      "mtime_ns": 1794489451121022900
+    },
+    "docs/p6/p6c/PROMPT_V2.md": {
+      "exists": true,
+      "sha256": "0e02adf7dde6e4585ae7c0435902d030cf413e02c8b71ed39f08c549dccb8649",
+      "bytes": 2976,
+      "mtime_ns": 1794489509943580300
+    },
+    "docs/p6/p6c/README.md": {
+      "exists": true,
+      "sha256": "74024507383967e6c50c38d8c34fd785d3b5bfdf18aca1cff0db8d29c1e99b76",
+      "bytes": 2368,
+      "mtime_ns": 1794490872259719000
+    },
+    "docs/p6/p6c/REVIEW_WORKSHEET.md": {
+      "exists": true,
+      "sha256": "5bc448e3f65d5ff594548c15794587e2e24a820979cd13c8d91324a17f999389",
+      "bytes": 24167,
+      "mtime_ns": 1794490415488006800
+    },
+    "docs/p6/p6c/selection.json": {
+      "exists": true,
+      "sha256": "b8ecafb9ed9950e5b407df4c8ad7832c6f293fa2f4a438bd285c14ae3bce5bf2",
+      "bytes": 99268,
+      "mtime_ns": 1794489999989341900
+    },
+    "docs/p6/p6c/semantic_audit.json": {
+      "exists": true,
+      "sha256": "36240e811d9e5810ea78abdf261641a5264f5a243caf9a2121120636a265a10e",
+      "bytes": 48867,
+      "mtime_ns": 1794490415485944900
+    },
+    "docs/p6/p6c/ui_hidden.png": {
+      "exists": true,
+      "sha256": "f7206cab61035d4644dfb1534f45757b08aa70d82a197b73ac73f8c38d03765b",
+      "bytes": 30160,
+      "mtime_ns": 1794490521146916400
+    },
+    "docs/p6/p6c/ui_revealed.png": {
+      "exists": true,
+      "sha256": "bb4bdc59d21d8fb4d0d8dd7774a726fb10e6d3de20ac0ad478fec4daf72e3c79",
+      "bytes": 50541,
+      "mtime_ns": 1794490521227526300
+    },
+    "docs/p6/p6c/validation_results.json": {
+      "exists": true,
+      "sha256": "7d52777057411ec0de37b82707cdfe795dd15fb30b9749e7447a2360f76f1bc2",
+      "bytes": 3823,
+      "mtime_ns": 1794491071800315400
+    },
+    "docs/p6/p6c/wordnet_evidence.json": {
+      "exists": true,
+      "sha256": "0453896eead1af6ece3564a07c5eea811005f81105c145146554ed5af510a4b0",
+      "bytes": 215176,
+      "mtime_ns": 1794489450644802900
+    },
+    "scripts/p6c/audit_pilot.py": {
+      "exists": true,
+      "sha256": "d731cf56205d9e75f01a3ae7834361f5a0379b8f2af2d5ccc2fedb5284c25eab",
+      "bytes": 6192,
+      "mtime_ns": 1794490414484934800
+    },
+    "scripts/p6c/build_core_pilot.py": {
+      "exists": true,
+      "sha256": "86937d0f356d85f7041b4fcdadfa36dbf141594be8bf0372f945034551437219",
+      "bytes": 11373,
+      "mtime_ns": 1794489875830374700
+    },
+    "scripts/p6c/collect_reference_evidence.py": {
+      "exists": true,
+      "sha256": "19d288b062aa784b23c584d8d921ce67cacbfae6ee36f798dffbbce4bba7e920",
+      "bytes": 3935,
+      "mtime_ns": 1794489401661443700
+    },
+    "scripts/p6c/protect_data.py": {
+      "exists": true,
+      "sha256": "c0227215760d20535641c780ea70825e63078eb936e4c7199d0699f0c3339908",
+      "bytes": 2177,
+      "mtime_ns": 1794489924625782300
+    },
+    "scripts/p6c/select_pilot.py": {
+      "exists": true,
+      "sha256": "dfc554454954a3c5bd1d407ba94ce06ab0bf73aca04540dc86510a2037b634a8",
+      "bytes": 7317,
+      "mtime_ns": 1794489997635119600
+    },
+    "scripts/p6c/semantic_decisions.py": {
+      "exists": true,
+      "sha256": "01e348e5fa42cd872f62294c10da474576ef927b42c94e83974dd5bec72411be",
+      "bytes": 21319,
+      "mtime_ns": 1794490147109402900
+    },
+    "scripts/p6c/test_pilot.py": {
+      "exists": true,
+      "sha256": "6c94ab6a930dc2d291c3b399a43c94f0e1d09a2735b76756bd642624bfd0d4b9",
+      "bytes": 3573,
+      "mtime_ns": 1794490269588905400
+    },
+    "scripts/p6c/validate_pilot.py": {
+      "exists": true,
+      "sha256": "142ecbdf000e9a02f12a82e37523e1c49da2142ce971aa83e9059ad80d94eb48",
+      "bytes": 6895,
+      "mtime_ns": 1794490320816429200
+    },
+    "lib/features/core_meanings_pilot/core_meanings_pilot_page.dart": {
+      "exists": true,
+      "sha256": "6f083aeae66e102152342558b1a13d6e14dc5d2bbbfb9297c5ad3c77e4c74a74",
+      "bytes": 11233,
+      "mtime_ns": 1794490179638072600
+    },
+    "lib/features/core_meanings_pilot/core_meaning_sample.dart": {
+      "exists": true,
+      "sha256": "ceb5aa4e39266138f1c832fcbea4243bf0ce0c338b4b18e6eafc4df14f4dd5c6",
+      "bytes": 4829,
+      "mtime_ns": 1794490179610596800
+    },
+    "docs/p6/P6C_CORE_MEANINGS_PILOT_REPORT.md": {
+      "exists": true,
+      "sha256": "c9058e3a560276da4e6f9c744df14bfb57a582f2db6c4558e65985b3a9e13e2b",
+      "bytes": 20344,
+      "mtime_ns": 1794491070968476300
+    },
+    "lib/p6c_pilot_main.dart": {
+      "exists": true,
+      "sha256": "ee07fbd53a8c701b0012b0b228a863476577acf2a8dcbff2a8e85807a5623aba",
+      "bytes": 1371,
+      "mtime_ns": 1794490179648517300
+    },
+    "test/p6/core_meanings_pilot_test.dart": {
+      "exists": true,
+      "sha256": "dabc38f84d9343ea7e5cdcf52e46ce778395a45c2e316102639771ae0222cbce",
+      "bytes": 7810,
+      "mtime_ns": 1794490504181666200
+    },
+    "test/p6/review_system_test.dart": {
+      "exists": true,
+      "sha256": "4bfdb2994a836558bd0326c44efe3dab1b87165f2cf9b016c059a4bb909f08a0",
+      "bytes": 21833,
+      "mtime_ns": 1794490899770252100
+    },
+    "docs/p5a/public/formal_learning_vocabulary.csv": {
+      "exists": true,
+      "sha256": "508007c44f272f71df0ed918f17c006b263a1320fef1ada48e411a6aed3ba619",
+      "bytes": 5376339,
+      "mtime_ns": 1794231525270162600
+    },
+    "assets/vocabulary/verified100.csv": {
+      "exists": true,
+      "sha256": "124834712346be60b151218217727171071e29371518c41dced7b3fabd561571",
+      "bytes": 33218,
+      "mtime_ns": 1794059948884525300
+    },
+    "assets/vocabulary/reviewed500.csv": {
+      "exists": true,
+      "sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+      "bytes": 492174,
+      "mtime_ns": 1794231524789160400
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3": {
+      "exists": true,
+      "sha256": "083ff7bfd85ecacd1d183f070c84076390c6e31dcbc041a7dd5d948be08bcbf3",
+      "bytes": 192512,
+      "mtime_ns": 1794125920797711800
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-wal": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-shm": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-journal": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    }
+  }
+}

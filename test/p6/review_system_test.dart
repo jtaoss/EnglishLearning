@@ -557,7 +557,10 @@ void main() {
           await tester.pumpAndSettle();
 
           expect(repo.events, 1);
-          expect(find.byKey(const Key('review-session-complete')), findsOneWidget);
+          expect(
+            find.byKey(const Key('review-session-complete')),
+            findsOneWidget,
+          );
           expect(tester.takeException(), isNull);
         } finally {
           controller.dispose();

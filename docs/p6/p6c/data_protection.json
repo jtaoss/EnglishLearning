@@ -1,0 +1,48 @@
+{
+  "method": "file-byte hashes + metadata only; no SQLite connection",
+  "scope_limitation": "Only the explicitly known personal path and its sidecars; no disk/path discovery",
+  "before": {
+    "docs/p5a/public/formal_learning_vocabulary.csv": {
+      "exists": true,
+      "sha256": "508007c44f272f71df0ed918f17c006b263a1320fef1ada48e411a6aed3ba619",
+      "bytes": 5376339,
+      "mtime_ns": 1794231525270162600
+    },
+    "assets/vocabulary/verified100.csv": {
+      "exists": true,
+      "sha256": "124834712346be60b151218217727171071e29371518c41dced7b3fabd561571",
+      "bytes": 33218,
+      "mtime_ns": 1794059948884525300
+    },
+    "assets/vocabulary/reviewed500.csv": {
+      "exists": true,
+      "sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+      "bytes": 492174,
+      "mtime_ns": 1794231524789160400
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3": {
+      "exists": true,
+      "sha256": "083ff7bfd85ecacd1d183f070c84076390c6e31dcbc041a7dd5d948be08bcbf3",
+      "bytes": 192512,
+      "mtime_ns": 1794125920797711800
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-wal": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-shm": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    },
+    "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-journal": {
+      "exists": false,
+      "sha256": null,
+      "bytes": null,
+      "mtime_ns": null
+    }
+  }
+}

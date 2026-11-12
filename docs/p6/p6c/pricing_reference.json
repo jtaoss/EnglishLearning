@@ -1,0 +1,16 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "accessed_date_asia_shanghai": "2026-11-12",
+  "page_sha256": "a755fb82e35dd6876346f7de0742704822879816554d948d560800809d7dc9da",
+  "mode": "Standard, short context; no caching, batch, or promotional assumptions",
+  "rates": {
+    "gpt-6.1-sol": {
+      "input_usd_per_million": 2.0,
+      "output_usd_per_million": 10.0
+    },
+    "gpt-6-luna": {
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0.5
+    }
+  }
+}

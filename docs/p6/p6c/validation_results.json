@@ -1,0 +1,127 @@
+{
+  "date_asia_shanghai": "2026-11-12",
+  "source_validation": {
+    "records": 100,
+    "cohort_counts": {
+      "complex_pos": 20,
+      "polyseme": 20,
+      "high_frequency": 20,
+      "simple": 20,
+      "random": 20
+    },
+    "source_atoms": 263,
+    "high_risk": 48,
+    "risk_flag_counts": {
+      "false_merge_corrected": 11,
+      "rank_not_corpus_verified": 61,
+      "core_over_two": 5,
+      "source_compound_gloss": 1,
+      "source_inventory_limited": 3,
+      "rank_revised": 4,
+      "synonym_group_needs_review": 18,
+      "source_translation_nuance": 3,
+      "pos_unresolved": 1,
+      "usage_sensitivity": 1
+    },
+    "human_status_counts": {
+      "pending": 100
+    },
+    "semantic_accuracy": "not_measured_no_human_ground_truth",
+    "status": "structurally_valid_pending_human_review"
+  },
+  "dart_analyze": {
+    "status": "passed",
+    "fatal_infos": true
+  },
+  "dart_format": {
+    "status": "passed",
+    "files": 136,
+    "changes_needed": 0
+  },
+  "configuration": {
+    "status": "passed",
+    "environments": [
+      "dev",
+      "staging",
+      "prod"
+    ]
+  },
+  "python_tests": {
+    "status": "passed",
+    "count": 12
+  },
+  "flutter_pilot_tests_with_capture": {
+    "status": "passed",
+    "count": 7
+  },
+  "flutter_full_regression": {
+    "status": "passed",
+    "passed": 240,
+    "skipped": 1,
+    "skip_reason": "opt-in local screenshot capture already run separately",
+    "local_log": "build/p6c/flutter_full_test.log",
+    "log_sha256": "94bb022eecc2426b33516fe45722f1415acd05184b85f2e57fcf00ccb8ef0f5a"
+  },
+  "windows_debug_pilot_build": {
+    "status": "passed",
+    "seconds": 44,
+    "entry": "lib/p6c_pilot_main.dart",
+    "artifact": "build/windows/x64/runner/Debug/english_learning.exe",
+    "sha256": "29a15f3071be8dab2c9730cb353beddd50ff69b07b15c4acb8b147dcd093ccdc",
+    "desktop_launch": "not_performed"
+  },
+  "data_protection": {
+    "status": "unchanged",
+    "method": "file-byte hashes and metadata; no SQL connection",
+    "before_manifest": "data_protection.json",
+    "after": {
+      "docs/p5a/public/formal_learning_vocabulary.csv": {
+        "exists": true,
+        "sha256": "508007c44f272f71df0ed918f17c006b263a1320fef1ada48e411a6aed3ba619",
+        "bytes": 5376339,
+        "mtime_ns": 1794231525270162600
+      },
+      "assets/vocabulary/verified100.csv": {
+        "exists": true,
+        "sha256": "124834712346be60b151218217727171071e29371518c41dced7b3fabd561571",
+        "bytes": 33218,
+        "mtime_ns": 1794059948884525300
+      },
+      "assets/vocabulary/reviewed500.csv": {
+        "exists": true,
+        "sha256": "09cd736d61c40f9614239e451f5894ad464f2ff69a863d50bde95b03b87f651d",
+        "bytes": 492174,
+        "mtime_ns": 1794231524789160400
+      },
+      "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3": {
+        "exists": true,
+        "sha256": "083ff7bfd85ecacd1d183f070c84076390c6e31dcbc041a7dd5d948be08bcbf3",
+        "bytes": 192512,
+        "mtime_ns": 1794125920797711800
+      },
+      "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-wal": {
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "mtime_ns": null
+      },
+      "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-shm": {
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "mtime_ns": null
+      },
+      "%APPDATA%/Personal/English Learning/english_learning_v1.sqlite3-journal": {
+        "exists": false,
+        "sha256": null,
+        "bytes": null,
+        "mtime_ns": null
+      }
+    }
+  },
+  "human_content_review": {
+    "approved": 0,
+    "pending": 100,
+    "state": "not_completed_no_AI_signoff"
+  }
+}

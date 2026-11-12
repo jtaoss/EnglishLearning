@@ -1,0 +1,1297 @@
+{
+  "records": 100,
+  "cohort_counts": {
+    "complex_pos": 20,
+    "polyseme": 20,
+    "high_frequency": 20,
+    "simple": 20,
+    "random": 20
+  },
+  "source_atoms": 263,
+  "high_risk": 48,
+  "risk_flag_counts": {
+    "false_merge_corrected": 11,
+    "rank_not_corpus_verified": 61,
+    "core_over_two": 5,
+    "source_compound_gloss": 1,
+    "source_inventory_limited": 3,
+    "rank_revised": 4,
+    "synonym_group_needs_review": 18,
+    "source_translation_nuance": 3,
+    "pos_unresolved": 1,
+    "usage_sensitivity": 1
+  },
+  "human_status_counts": {
+    "pending": 100
+  },
+  "semantic_accuracy": "not_measured_no_human_ground_truth",
+  "status": "structurally_valid_pending_human_review",
+  "formal_schema": {
+    "rows": 5332,
+    "columns": [
+      "entry_id",
+      "word",
+      "meaning_zh",
+      "book_category",
+      "source_file",
+      "source_id",
+      "source_pdf_pages",
+      "source_index_pages",
+      "book_verification",
+      "meaning_review_status",
+      "pets2015_status",
+      "pets2025_status",
+      "library_class",
+      "part_of_speech",
+      "usage_note",
+      "lexical_sources",
+      "example_en",
+      "example_zh",
+      "learning_priority",
+      "selection_reason",
+      "phonics_note",
+      "syllables",
+      "stress",
+      "reading_review_status",
+      "audio_status",
+      "audio_source",
+      "audio_license",
+      "pets2015_evidence",
+      "pets2015_match_method"
+    ],
+    "library_counts": {
+      "主学习": 4259,
+      "扩展": 1073
+    },
+    "book_category_counts": {
+      "高频词": 951,
+      "中频词": 586,
+      "低频词": 576,
+      "偶考词": 1439,
+      "基础词": 1780
+    },
+    "missing_meaning": 0,
+    "missing_pos": 0
+  },
+  "old_draft_AI_findings": {
+    "over_merge_split_candidates": 11,
+    "headwords": [
+      "double",
+      "back",
+      "present",
+      "slack",
+      "model",
+      "light",
+      "tender",
+      "minor",
+      "extension",
+      "chop",
+      "consumption"
+    ],
+    "negative_controls": [
+      "couple",
+      "correlate"
+    ],
+    "limitation": "AI semantic judgments, not adjudicated human error counts"
+  },
+  "source_coverage": "263/263 formal lexical slices retained; does not prove completeness against all English dictionary senses",
+  "lexical_reference_coverage": {
+    "matched_headwords": 100,
+    "scope": "headword/POS references only; per-Chinese-sense translation and ranking not automatically verified"
+  },
+  "review_dimensions": [
+    "important_sense_omission",
+    "rare_sense_first",
+    "pos_confusion",
+    "invented_meaning",
+    "false_merge",
+    "source_traceability",
+    "beginner_PETS3_suitability"
+  ],
+  "record_reviews": [
+    {
+      "stable_id": "SG25-2ce06a9e7f8c",
+      "headword": "double",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "双倍是数量关系，成双是配对关系，不能合并；动词使加倍单列，替身保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-29a8825bd242",
+      "headword": "brief",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "篇幅短与内容概要相关但词性不同；介绍情况是动作，不与形容词合组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-310ff200149b",
+      "headword": "close",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "保留常见的动作与空间两义；关系亲密虽相关仍独立，副词不混入形容词。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-32b36ae43a5e",
+      "headword": "rear",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "后部与后面的分属名词和形容词；养育没有被删去，也不与方位义合并。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-3c482346f375",
+      "headword": "back",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "背部不是所有物体的后面；返回和向后也不完全等同，五个原文解释各自保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-445be54d48a2",
+      "headword": "void",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "法律效力与有无内容不同；使无效保留动词身份，空白作为名词另存。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-4d4c7eee2e28",
+      "headword": "present",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "core_over_two",
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "三种日常理解均有用，因此核心超过两组；呈交和展示也不是严格同义，不强行压成一组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6558a6a3379d",
+      "headword": "major",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "core_over_two",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "日常说明和教育语境都适合初学者，三组独立保留，不因两组目标挤掉一种词性。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-82523faea1b0",
+      "headword": "mean",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "意图与含义是两个动词义，性格与数学义保留在扩展层，不能混成一个平均义组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-83a00300ad6a",
+      "headword": "parallel",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "source_compound_gloss",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "几何平行与相似不是同义；原文动词短语本身并列了两种关系，原样留存，待人工细分。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-877c3aec832c",
+      "headword": "slack",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "身体状态、规则严格程度和行为懈怠有关联但不等义；懈怠与放松拆开。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-9372c470eead",
+      "headword": "model",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "物体模型、展示者、典范是不同名词义；建模与模仿也分别保存，不把同词性当作同义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-99a7026172d4",
+      "headword": "light",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "core_over_two",
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "保留三个独立的重要学习入口，核心允许三组；明亮与轻重无关，点燃仍是动词。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a7722b765d15",
+      "headword": "well",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "健康义不降为偏僻义；井是独立具体名词，三种词性不互相合并。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a9491f4c1bf7",
+      "headword": "subject",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "对象不必等于主题；使遭受和受约束按动词、形容词分别保留，不能用主题概括全部义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a9eba7c405ea",
+      "headword": "tender",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "保留两个日常形容词义；投标的名词和动词以及提出均保留，属于需语境说明的商务用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-b2d7f24e8330",
+      "headword": "reverse",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "倒车、事物反面、倒退是不同语境，不把方向相关的所有表达并为同义组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-b5d54c39e666",
+      "headword": "fake",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "概念相近不能跨词性合并；先记形容词，再保留物品名词和制造假物的动词。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-c59ddd3f7ba6",
+      "headword": "abstract",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "抽象性质与文本摘要都适于学习；提取的具体含义需语境，保留原文而不删去。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-cabd786ac52d",
+      "headword": "minor",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "旧草稿合并了大小与重要性，这里拆开；未成年人和辅修不能用次要的替代。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-62d7a6b1211d",
+      "headword": "volume",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "空间大小与声音大小不同；不能只留下体积而漏掉日常音量用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-4381dc2ab142",
+      "headword": "bank",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "两义都可用于基础阅读；没有独立频率证据支持忽略河岸，故都列为优先记忆。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-acba25512100",
+      "headword": "run",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "source_inventory_limited",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "运动与管理业务不是一个动作含义；保留正式原文两义，词典其他用法不在本轮暗中补入。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-0e87632cd46b",
+      "headword": "date",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "时间标记和会面安排都是日常概念，两个名词义分别保留，不挤掉任一义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-7ae4b7c7678e",
+      "headword": "yard",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "场所和计量单位不相关，按学习情境分层；没有声称单位义罕见。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-80688fc3d5f8",
+      "headword": "miss",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "两个重要的动词义不等同，优先层保留两组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-16b60e9de607",
+      "headword": "quarter",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "分数、钟点、季度、地区四个概念全部保留；地区需更具体语境，不由词头频次决定顺序。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-2998b3232d29",
+      "headword": "get",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "core_over_two",
+        "source_inventory_limited",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "三个基础表达均不宜遗漏，所以核心超过两组；理解仍保留，不能把所有含义合成得到。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-599f7703547e",
+      "headword": "term",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "期限与学期有关但不等同；条款另列，排序是教学建议，不是考试命中率。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-623210167553",
+      "headword": "bill",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "付款、货币、法律文本与动物器官不同；鸟嘴完整保留但不作为本试点首次背诵入口。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6ca7ea2feefc",
+      "headword": "keep",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "继续活动、饲养动物均有独立语境，不能都合并为保持，也没有删除。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-8dccea521790",
+      "headword": "shot",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_revised",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "注射不因旧草稿放在末尾就被视为罕见；照片、尝试也保留供扩展学习。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-990b23e81455",
+      "headword": "division",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "数学运算与意见分歧不是划分的同义解释，分别保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a908043ed469",
+      "headword": "course",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "教育场景便于首次记忆，其余三义都有独立意义，不删除也不混成一个过程。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-bbfcd4160a1e",
+      "headword": "case",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "案例与案件仍分别保留，避免把所有抽象名词义都混成情况。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-e49b5c7a9e73",
+      "headword": "raise",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "养育人与筹集资金是独立用法，不能仅按中文都有使上升的联想合并。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-e8b22d83b417",
+      "headword": "hold",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "core_over_two",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "三个基础搭配场景均保留在核心；容纳仍可见，不把举行降为不重要。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-f7fbd5853d11",
+      "headword": "resolution",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "心理、组织、图像和问题处理四义不同；解决不因字形相似就与决心合并。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-00cf4ce3935c",
+      "headword": "tone",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "保留交际中的两义；视觉色调不混入声音的义组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-0145be012aa0",
+      "headword": "aisle",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "rank_revised",
+        "rank_not_corpus_verified",
+        "synonym_group_needs_review"
+      ],
+      "notes": "WordNet 同时保留林中狭长通道；它不是捏造义，但本试点先学过道，排序仍待人工确认。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-e5c6fde86910",
+      "headword": "actual",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "两种中文解释在此接近同一真实性概念，可归为一组；不是因为高频分类而证明此义更常考。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-0487c249731a",
+      "headword": "procedure",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified",
+        "synonym_group_needs_review"
+      ],
+      "notes": "程序与手续在办事语境接近；过程的范围更宽，单列以免学习者当成处处可替换。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-652d75f9bafb",
+      "headword": "debt",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "原文的债务与欠款可作同组近义表达，保留两种说法，不新增义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-4c4ed1afbfda",
+      "headword": "definition",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "定义与释义都说明含义，适合合为首次记忆组；不把它扩展为原文没有的清晰度。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-003c443ef278",
+      "headword": "imitate",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "三种中文是相近的模仿表达，合成一组可减少重复背诵，所有原文解释仍可追溯。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-113b67b03b8b",
+      "headword": "remarkable",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "注意与显著在此共同表达引人注意的性质，可作近义组，未据考研分类断言义项频率。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a3cca0ced5ec",
+      "headword": "obesity",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "原文一般描述与疾病名称围绕同一肥胖概念，本次合为近义记忆组；临床用词的边界仍可人工确认。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-742b27454919",
+      "headword": "physics",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式释义只有物理学，保留该单一名词义，不另造义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-3092a5f0dba0",
+      "headword": "priority",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "原文三种说法指向先于其他事项的地位，可合组，但不能据此增加优先事项一义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-dff0669b4df4",
+      "headword": "presence",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "两者不是处处可替换的近义词，都保留为核心而不只背存在。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-5e8c03a94c78",
+      "headword": "instance",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "例子与实例在正式字段里属于近义表达，合并记忆而保留各自原文字。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-26f1de33979d",
+      "headword": "extension",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "扩展与延长关联但不等义，旧草稿的一组拆成两组；电话分机保留扩展层。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-81dcf73d9805",
+      "headword": "obvious",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "source_translation_nuance",
+        "rank_not_corpus_verified",
+        "synonym_group_needs_review"
+      ],
+      "notes": "明显与明白接近；无疑涉及确定性而非可见性，单列并提示中文翻译边界待审核。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-d811aa2ea4fe",
+      "headword": "widespread",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "两种正式中文都围绕广泛分布，可作近义学习组，未新增其他含义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-2374d91794b7",
+      "headword": "cancel",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "原文的取消、撤销是相近动作，合组便于初记，具体搭配差异由后续语境说明。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-fac6a3243ed4",
+      "headword": "engage",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "source_translation_nuance",
+        "rank_not_corpus_verified",
+        "synonym_group_needs_review"
+      ],
+      "notes": "从事与从事于是近义；实行的中文范围可能过宽，保留但标注待核对，不声称已证实任意实行用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-d888a3e4ea95",
+      "headword": "indeed",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "两个中文副词可作同组近义，不增加原文没有的其他话语功能。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-040ffd5925d4",
+      "headword": "payment",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "支付行为与所得酬劳不同，不因都涉及钱而合并成同义组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a75c433ab2ae",
+      "headword": "settlement",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "选解决是面向本次阅读学习的建议；定居点没有被判为错义或罕见义，三义全部保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-200afd0641fa",
+      "headword": "worthy",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "值得的较宽，值得尊敬的是具体评价，分别保留，未将相关含义误当完全同义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-000c285457fc",
+      "headword": "monkey",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "样本只有猴子这一名词义，直接保留，不添加词典里的其他用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-0a5a9bb73d93",
+      "headword": "furniture",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文只有家具，保持名词信息，不增补没有来源的中文义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-1351d52cee6c",
+      "headword": "noun",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式字段单一释义为名词，优先层原样保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-222b0bd51fce",
+      "headword": "five",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "明确保留数词身份，不把数字词猜测成其他词性。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-3171d89ad005",
+      "headword": "kitchen",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文仅有厨房，单独列入核心而不添加其他解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-3d7eb3d3dab1",
+      "headword": "chair",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "source_inventory_limited"
+      ],
+      "notes": "正式样本仅有椅子；完整英语词条还可能有其他词性和义项，本轮不越过原文补入。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-4cb4ea25583c",
+      "headword": "year",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "原文单一名词义年足以构成当前核心组，不补造额外历史。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6008c26f4452",
+      "headword": "street",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式释义只有街道，核心层按原文保留这一场所名词。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6c86df9c018e",
+      "headword": "misunderstand",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "误解是样本中唯一的动词义，本次不推导或补写其他解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-795b6904e54f",
+      "headword": "garbage",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "原文只有垃圾，保持该名词义；不自动加入比喻或口语用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-873ac9ffea4d",
+      "headword": "cheese",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "样本仅有奶酪这一名词义，核心直接保留，未新增义项。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-94d5c9d96025",
+      "headword": "agree",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文只给同意，当前输出限于这一动词义，不暗中补入其他搭配含义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-a0af3a48cfad",
+      "headword": "thousand",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "单一数词义直接保留，避免凭中文解释补写其他词性。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-ab91a82d14cf",
+      "headword": "animal",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "原文单义动物完整保留，未将其他比喻含义混入。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-bc020a35b7f9",
+      "headword": "machine",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文只有机器，当前名词义足以作为首次记忆组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-c8ce96a5ba0d",
+      "headword": "million",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "保留原文百万和数词身份，说明仅是中文改述，不是新增词义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-d1a0d6f47074",
+      "headword": "roof",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "原文单一名词义屋顶直接进入核心，不扩展为未经输入提供的用法。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-e0c08c2b1f53",
+      "headword": "soldier",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文只有士兵这一名词义，本次原样保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-f2ce341fdaa6",
+      "headword": "sixteen",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "明确的单一数词释义十六，无需人为拆成多组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-fef8f41cdcd2",
+      "headword": "fourteen",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式字段只给十四，核心保留该数词义，不新增解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-8517fce0bb21",
+      "headword": "vulgar",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "当前正式原文只有粗俗的这一形容词义，直接保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-c465a314b762",
+      "headword": "graphic",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "形式类别与表达效果不同，不能因为同为形容词便合成一组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-bcffaab67df4",
+      "headword": "ability",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "三个中文围绕能力或才干，可作近义组；具体程度差别并不被声称为完全相同。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-0e1637f032b1",
+      "headword": "chamber",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "空间与议事机构并非同义，保留两个独立的原文名词义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-d4f568b800c6",
+      "headword": "finite",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式输入只有有限的这一形容词义，不推导其他专业解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-d4ab04449fe1",
+      "headword": "carve",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "雕刻与一般切开不能完全互换，所以保留两组而不合为同义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-f2a6aa97adb2",
+      "headword": "tomb",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "单一原文名词义坟墓直接进入核心，不增加其他解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-f56175f2116f",
+      "headword": "flush",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "动作、身体变化、一次冲洗、红晕不能跨词性合并；两种动词义都保留为学习重点。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-392245974134",
+      "headword": "knock",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "pos_unresolved",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "part_of_speech 同时列名词和动词，但敲、碰撞没有标签，不能按顺序猜配；需人工补齐对应词性。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6cf382fca2a1",
+      "headword": "couple",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "数量配对与婚姻关系不等同，继续保留两个独立义组，不将夫妇当作所有配对的同义词。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-4b18aefe826a",
+      "headword": "cripple",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "usage_sensitivity",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "保留具体与引申的两个动作义；涉及人时用词敏感，需人工确认适用例句，原词义不改。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-574432331453",
+      "headword": "chop",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "同一动作范围的不同方式仍单列，避免粗略同义合并；食品名词不会混入动词组。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-dac1d7cfa950",
+      "headword": "layer",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "概念有联系但词性和句中作用不同，分别保留。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-f300f10844ec",
+      "headword": "greenhouse",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [],
+      "notes": "正式原文只有温室，保留单一名词义，不从其他搭配推造词义。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-230b4397685e",
+      "headword": "generalize",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "这两种中文在归纳概括语境接近，可形成近义组；不添加原文之外的泛化解释。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-ad8c6f6e417a",
+      "headword": "consumption",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "false_merge_corrected",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "经济消费、资源消耗和饮食摄入不完全相同，旧草稿将前两义合并，这里拆开。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-476994559e87",
+      "headword": "wash",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "synonym_group_needs_review"
+      ],
+      "notes": "洗与清洗是相近动作表达，可以合组但仍保留两处原文来源。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-6cd6f41455d7",
+      "headword": "notify",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "high",
+      "findings": [
+        "source_translation_nuance",
+        "rank_revised",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "WordNet 的通知义有直接对应；使注意容易被误读为吸引注意，原文保留但应人工核对翻译边界。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-839be5813487",
+      "headword": "fuss",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_not_corpus_verified"
+      ],
+      "notes": "情绪概念相关但词性不同，不能因为中文接近而合并。",
+      "human_status": "pending"
+    },
+    {
+      "stable_id": "SG25-735b841b230d",
+      "headword": "correlate",
+      "reviewer_type": "AI_session_editorial_audit",
+      "AI_checked_dimensions": "all_seven_with_limits_no_accuracy_claim",
+      "risk_level": "standard",
+      "findings": [
+        "rank_revised",
+        "rank_not_corpus_verified"
+      ],
+      "notes": "不及物与及物方向不同，保留两组，不把状态与使动关系压成一个解释；本轮将两组都列入核心。",
+      "human_status": "pending"
+    }
+  ]
+}

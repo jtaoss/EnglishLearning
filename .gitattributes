@@ -14,3 +14,13 @@ pubspec.lock text eol=lf
 *.png binary
 *.ico binary
 *.wav binary
+
+# Audit snapshots and source plans bind exact bytes through SHA-256.
+# Preserve them across Windows/Linux checkouts instead of normalizing newlines.
+# Allow intentional CRLF endings while retaining ordinary whitespace checks.
+docs/p6/p6c/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/p6/p6c1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/p6c/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/p6c1/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/p6/P6C_CORE_MEANINGS_PILOT_REPORT.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/p6/P6C1_INDEPENDENT_REVIEW_REPORT.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

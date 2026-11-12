@@ -1,0 +1,71 @@
+{
+  "date_asia_shanghai": "2026-11-12",
+  "structural_validation": {
+    "status": "structurally_valid_AI_review_not_human_adjudication",
+    "records": 100,
+    "preserved_original_glosses": 263,
+    "addition_candidates": 26,
+    "evidence_entries": 286,
+    "human_approvals_added": 0
+  },
+  "deterministic_rebuild_check": "passed",
+  "python_tests": {
+    "passed": 13,
+    "suite": "scripts/p6c1/test_review.py",
+    "network_or_DB_used": false
+  },
+  "preservation": {
+    "status": "unchanged",
+    "protected_paths": 36,
+    "manifest": "preservation_manifest.json",
+    "snapshot_equals_old_result": true
+  },
+  "reference_access_counts": {
+    "direct_page_retrieved": 2,
+    "public_search_index_excerpt": 17,
+    "existing_licensed_local_reference": 267
+  },
+  "artifacts": {
+    "docs/p6/p6c1/evidence_catalog.json": {
+      "bytes": 155540,
+      "sha256": "c5c63e9f09ae19e229162b78e21f9c808ab0d6efecf158f7dd49264f48a27d35"
+    },
+    "docs/p6/p6c1/independent_review.json": {
+      "bytes": 610743,
+      "sha256": "db762e1392433e77aa24ce8bbc71999905347408408a39f77a0783768974ce41"
+    },
+    "docs/p6/p6c1/input_p6c_snapshot.json": {
+      "bytes": 626200,
+      "sha256": "46e2dd5e572a76789e3c81439708fbfd77373dc0865c08469f7275a601607851"
+    },
+    "docs/p6/p6c1/preservation_manifest.json": {
+      "bytes": 7971,
+      "sha256": "053fd89ea93ac50852ecb6e2a5db929d61559e81a57fd44c6fd567b67eab0e4f"
+    },
+    "docs/p6/p6c1/README.md": {
+      "bytes": 1290,
+      "sha256": "37f20a359dbdca7742eb2463fe2be5681de1474b04b098130e7268cd22b361f1"
+    },
+    "docs/p6/p6c1/REVIEW_COMPARISON.md": {
+      "bytes": 22461,
+      "sha256": "1b00baf3c69f2234fd38b69a9ca880ba9b6aa28822cdd03cdbc406675451715c"
+    },
+    "docs/p6/p6c1/RULES_V3.md": {
+      "bytes": 4938,
+      "sha256": "09a10f3926f5dd780b92582654d1313cef796f070c36ffc74d02882f627ff7a6"
+    },
+    "docs/p6/P6C1_INDEPENDENT_REVIEW_REPORT.md": {
+      "bytes": 13922,
+      "sha256": "7455b90bef8b48cb5bf3f9e95ca0ac95c0b654bd6669a4c1b52ff5861ace3078"
+    }
+  },
+  "human_approvals_added": 0,
+  "not_executed": [
+    "Flutter_UI_changes_or_build",
+    "Notion_requests",
+    "SQL_connection",
+    "full_5332_AI_processing",
+    "Git_commit_or_push"
+  ],
+  "limitations": "Evidence-based AI review, same assistant non-blind; structural consistency is not independently measured semantic accuracy."
+}
