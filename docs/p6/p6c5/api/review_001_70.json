@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_70",
+  "request_hash": "6effd03a3082eeb0437c65316ed8f681dc7cbea086c71e73c5740eccc8081d5d",
+  "started_utc": "2026-11-13T08:17:16.696522+00:00",
+  "completed_utc": "2026-11-13T08:19:00.577944+00:00",
+  "elapsed_seconds": 103.89,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "31c3d011-8cb5-47b6-8b5f-fb51b2e559a1",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3461,
+    "completion_tokens": 5422,
+    "total_tokens": 8883,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4922
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1413
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-96f39e3569ec\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"false_merging\",\n          \"reason\": \"核心义1将源义‘消耗’(s001)与‘消费’(s002)合并为一组，共用同一证据 wn31:v:01159815（耗尽资源/材料）。但s002的典型义是经济上的购买并使用商品/服务，该义并未被该证据覆盖，候选自身的usage_note也承认证据不足。然而source_subsenses中仍将s002与该证据关联，造成证据标注与实际支持不一致。将未证实的经济消费义当作核心合并，可能使学习者误解‘consume’在经济语境中的确切用法。\",\n          \"evidence_ids\": [\n            \"wn31:v:01159815\",\n            \"source:SG25-96f39e3569ec:s002\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\",\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"SG25-96f39e3569ec:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"将s002单独列为pending/未证实义或外部候选，仅当有明确词典证据支持经济购买义时再纳入核心；s001保留‘耗尽资源’核心；现有候选的source_subsenses中移除s002对wn31:v:01159815的直接关联，或添加明确证据。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学建议：先学‘消耗/耗费’与‘吃喝’两个稳定核心，经济‘消费’义可作为扩展或待定，强调其与一般耗尽的不同对象（金钱/商品）。\"\n      ],\n      \"note\": \"候选正确识别了‘吃喝’和‘消耗’两个主要动词用法，外部词典的毁灭、专注、挥霍义也合理标为不采用。主要问题在于s002经济消费义被并入资源耗尽义，且证据指向不一致；由于候选已注明该义未经词典直接验证，但未将其移出核心，故提出纠正建议。其余部分无确认错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

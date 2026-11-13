@@ -1,0 +1,51 @@
+{
+  "recorded_utc": "2026-11-13T08:47:21.171452+00:00",
+  "workdir": "E:\\desktop\\EnglishLearning-main",
+  "unique_Python_tests_passed": 37,
+  "unique_Dart_Flutter_tests_passed": 20,
+  "checks": [
+    {
+      "command": "python -X utf8 scripts/p6c5/validate.py",
+      "exit_code": 0,
+      "scope": "700条数据契约通过；full5332_count_passed=false，semantic_quality_gate_passed=false"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s test/p6c5 -p test_*.py -v",
+      "exit_code": 0,
+      "scope": "20项；最终700词快照、原文保护、无假签审、停止后禁止模型调用及独立修订契约"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s test/p6c4 -p test_*.py -v",
+      "exit_code": 0,
+      "scope": "17项；旧600不变与历史风险/门槛回归"
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded test/p6c2/core_meanings_500_contract_test.dart test/p6c3/core_quality_review_contract_test.dart test/p6c4/v4_isolated_contract_test.dart test/p6c5/full_candidates_contract_test.dart",
+      "exit_code": 0,
+      "scope": "20项；C2/C3/C4/C5数据契约"
+    },
+    {
+      "command": "flutter test --no-pub --reporter expanded test/p6c5/full_candidates_contract_test.dart",
+      "exit_code": 0,
+      "scope": "最终700条快照5项复验；不重复计唯一测试数"
+    },
+    {
+      "command": "dart analyze test/p6c5/full_candidates_contract_test.dart",
+      "exit_code": 0,
+      "scope": "No issues found"
+    }
+  ],
+  "full_quantity_acceptance_passed": false,
+  "semantic_quality_gate": "C",
+  "data_integrity_test_success_is_not_full_task_success": true,
+  "resolved_test_and_transport_issues": [
+    "新增Dart测试最初3项严格泛型警告，补全类型后静态分析与5项测试通过。",
+    "旧证据对象不全部内嵌lemma，按许可词头证据目录核验；旧暂存可仅引用完整原文ID，没有改写旧文件。",
+    "审查严重程度大小写仅格式正规化；原始输入回显/空响应均保留，最多1次同模型修复。pursue二审仍失败，未伪造审查。"
+  ],
+  "limitations": [
+    "已生成700/5332，并未全量完成。",
+    "数据测试不证明词义准确率或学习效果。",
+    "当前Codex父会话用量与费用不可获取。"
+  ]
+}

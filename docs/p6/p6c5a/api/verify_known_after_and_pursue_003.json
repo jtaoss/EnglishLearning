@@ -1,0 +1,32 @@
+{
+  "tag": "verify_known_after_and_pursue_003",
+  "kind": "verify",
+  "request_hash": "099272096b317c1287b800984cf70c24c0c03d072174a00d5d3f61d139f6b046",
+  "input_ids": [
+    "SG25-0f571e7c2d33"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "697c904a-1e4b-41d3-8572-0a343cb5ecb9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-0f571e7c2d33\",\"scope_checks\":[{\"sid\":\"s001\",\"relation\":\"合理概括\",\"reason\":\"原义“追求”宽泛，目标组以“追求；寻找”并注明词典搜求/猎取，属于用宽义改述保留原语境，未增加排他限制；但若把“追求目标”仅限定为搜索/猎取则可能收窄，需结合 unresolved 与已确认问题。\",\"evidence_ids\":[\"wn31:v:01320193\"]},{\"sid\":\"s002\",\"relation\":\"语义等价\",\"reason\":\"“追赶；追捕”对应 follow in or as if in pursuit，方向、对象和意图均匹配原义。\",\"evidence_ids\":[\"wn31:v:02004900\"]},{\"sid\":\"s003\",\"relation\":\"语义等价\",\"reason\":\"“从事；参与”对应 carry out or participate in an activity，词性、对象范围与原义一致。\",\"evidence_ids\":[\"wn31:v:02380222\"]}],\"confirmed_within_supplied_evidence\":[{\"severity\":\"moderate\",\"kind\":\"scope_narrowing\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-0f571e7c2d33:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:v:01320193\",\"pub:p6c5a:collins:pursue\"],\"reason\":\"核心组注释把 s001 的证据唯一限定为 WordNet 'go in search of or hunt for'，并注明“词典定义为搜求/猎取”。原中文“追求”在常见语境还包括“努力实现/达到目标”，Collins 观察也写明“可努力实现目标或结果”。该含义未被该证据或注释明确保留，可能造成范围收窄。\",\"counterexample\":\"追求理想/目标（strive to achieve a goal）不一定只是 search/hunt；Collins 和 WordNet 02381520 可作旁证。\",\"repair_suggestion\":\"在 group 1 的注释中补充“含努力实现目标”并关联 Collins 观察或 wn31:v:02381520，或另设扩展组承载该义，避免把追求目标窄化为搜索/猎取。\"}],\"unresolved\":[\"s001 的“追求”是否包含“努力实现目标”，现有证据 wn31:v:01320193 仅覆盖搜索/猎取；Collins 观察支持该义但未链接；需人工确认是否需要在核心组补充或作为扩展。\",\"原文只有单个源词性动词，没有例句，无法进一步确定对象范围；所有判断基于通用词典。\"],\"preferences\":[\"如果保留核心组1，可考虑把 Collins 观察证据链接到该组，并在注释中并列“努力实现”与“寻找”，使人不误以为只限于搜索/猎取。\"],\"note\":\"独立审阅认为三组核心映射总体覆盖原中文三个动作，但 s001 的“追求”可能因注释和证据聚焦搜索/猎取而未明确保留“努力实现目标”义；其余两组未见明显缺陷。未采用的外部义“推进”不属于原文，无需纳入。\"}]}",
+  "usage": {
+    "prompt_tokens": 2644,
+    "completion_tokens": 5758,
+    "total_tokens": 8402,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5082
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2644
+  },
+  "started_utc": "2026-11-13T09:42:30.405671+00:00",
+  "completed_utc": "2026-11-13T09:43:54.489515+00:00",
+  "elapsed_seconds": 84.094,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

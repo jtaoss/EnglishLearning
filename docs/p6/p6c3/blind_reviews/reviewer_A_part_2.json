@@ -1,0 +1,1620 @@
+{
+  "protocol": "source_first_blind_review_A_v1",
+  "reviewer_config_model": "gpt-6-astra",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "edabab5d59f9f5e07a8ab51ba338e33bcfc4da436d8ae56a32fc96ff7e0f8b14",
+  "backend_snapshot": null,
+  "cost": null,
+  "priority_basis": "基于教学辨义的建议；未使用语料频率或考试官方权重。",
+  "external_access_failures": [
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/bias",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/flush",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/civilization",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/enquiry",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/appreciate",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/import",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/stewardess",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/decrease",
+      "status": 403,
+      "used_as_evidence": false
+    }
+  ],
+  "record_count": 15,
+  "records": [
+    {
+      "stable_id": "SG25-48f8106bb7de",
+      "headword": "participate",
+      "source_hash": "d8124a76ff1d1acf939b32fbedfbe0ee6e9a18e2078db05a104afa9d0a3f873d",
+      "original_meaning_zh": "参加；参与",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "参加",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "参与",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "参加；参与（participate in）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01084999",
+            "wn31:v:02455121"
+          ],
+          "reason": "两个片段都表示成为活动的参与者。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "参与某项活动可连接参加与参与，动词结构适合一并提示。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01084999",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "become a participant; be involved in; \"enter a race\"; \"enter an agreement\"; \"enter a drug treatment program\"; \"enter negotiations\"",
+          "selected_headwords": [
+            "participate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02455121",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "share in something",
+          "selected_headwords": [
+            "participate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-4b60d190e95e",
+      "headword": "physical",
+      "source_hash": "2df0ab7df3b5857990c8e63490ed1d11bf737feacdb1f0ab62033322fe94d3c5",
+      "original_meaning_zh": "肉体的；身体的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "肉体的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "身体的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "身体的；肉体的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:01782757"
+          ],
+          "reason": "两个中文片段可互释。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "物质的；有形的",
+          "evidence_ids": [
+            "wn31:s:00629845",
+            "wn31:s:00630045"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "物理学的",
+          "evidence_ids": [
+            "wn31:a:02790581"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "原文围绕身体与精神的区分，物质存在的含义另列。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:01782757",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "involving the body as distinguished from the mind or spirit; \"physical exercise\"; \"physical suffering\"; \"was sloppy about everything but her physical appearance\"",
+          "selected_headwords": [
+            "physical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00629845",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "having substance or material existence; perceptible to the senses; \"a physical manifestation\"; \"surrounded by tangible objects\"",
+          "selected_headwords": [
+            "physical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00630045",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "concerned with material things; \"physical properties\"; \"the physical characteristics of the earth\"; \"the physical size of a computer\"",
+          "selected_headwords": [
+            "physical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02790581",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "relating to the sciences dealing with matter and energy; especially physics; \"physical sciences\"; \"physical laws\"",
+          "selected_headwords": [
+            "physical"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-fa4824e83746",
+      "headword": "bias",
+      "source_hash": "37902d247c5f918e3d8ecbc6761ad1090598174d6ed2a85a7eb64cebce51620e",
+      "original_meaning_zh": "名词：偏见，偏差；动词：使产生偏见",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "偏见",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "偏差",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使产生偏见",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "偏见；偏向",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06211643"
+          ],
+          "reason": "指妨碍客观判断的倾向。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使产生偏见；使偏向",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00682265",
+            "wn31:v:01088088"
+          ],
+          "reason": "强调外部影响改变判断的动作。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（统计等的）系统性偏差",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "collins:bias"
+          ],
+          "reason": "抽样或测量的偏差可不涉及个人态度。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "缺少限定",
+          "observation": "“偏差”在统计义有方向性或系统性，不是每次偶然误差。",
+          "evidence_ids": [
+            "collins:bias"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "人的偏见、统计过程的偏差以及使判断偏向的动词有不同的搭配。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06211643",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a partiality that prevents objective consideration of an issue or situation",
+          "selected_headwords": [
+            "bias"
+          ]
+        },
+        {
+          "evidence_id": "collins:bias",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/bias",
+          "observation_zh": "统计义指抽样等造成的系统性偏差。",
+          "selected_headwords": [
+            "bias"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00682265",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "cause to be biased",
+          "selected_headwords": [
+            "bias"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01088088",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "influence in an unfair way; \"you are biasing my choice by telling me yours\"",
+          "selected_headwords": [
+            "bias"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-2f1fd9f37ede",
+      "headword": "cultivate",
+      "source_hash": "1695c33c633ada0571d91e3ac90c94228f24d66df92361731d993964f784bb99",
+      "original_meaning_zh": "培养；教育；磨炼",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "培养",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "教育",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "磨炼",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "培养（兴趣、能力等）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01746607",
+            "collins:cultivate"
+          ],
+          "reason": "着力使某种品质或本领逐步发展。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "陶冶；通过训练磨炼（能力、品味）",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02393545",
+            "collins:cultivate"
+          ],
+          "reason": "两个译词在增进修养或训练本领的条件下成立。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "耕作（土地）；种植（作物）",
+          "evidence_ids": [
+            "wn31:v:01745327",
+            "collins:cultivate"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "搭配范围",
+          "observation": "教育、磨炼单独出现容易误导为任意教学行为或经受艰难。",
+          "evidence_ids": [
+            "wn31:v:02393545",
+            "collins:cultivate"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先记培养能力或兴趣，教育和磨炼都要说明所培养的对象。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01746607",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "foster the growth of",
+          "selected_headwords": [
+            "cultivate"
+          ]
+        },
+        {
+          "evidence_id": "collins:cultivate",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/cultivate",
+          "observation_zh": "可耕作土地、种植作物，也可通过训练增进技能、涵养心智。",
+          "selected_headwords": [
+            "cultivate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02393545",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "teach or refine to be discriminative in taste or judgment; \"Cultivate your musical taste\"; \"Train your tastebuds\"; \"She is well schooled in poetry\"",
+          "selected_headwords": [
+            "cultivate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01745327",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "prepare for crops; \"Work the soil\"; \"cultivate the land\"",
+          "selected_headwords": [
+            "cultivate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-4c4ed1afbfda",
+      "headword": "definition",
+      "source_hash": "4a32b291f33a5c8ad88740686f2c78741e6d4c5ebc89306ccf36e3a698ceaac7",
+      "original_meaning_zh": "定义；释义",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "定义",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "释义",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "定义；释义",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06757091"
+          ],
+          "reason": "给出概念的界定和解释词义共享说明意义的内核。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（图像、轮廓的）清晰度",
+          "evidence_ids": [
+            "wn31:n:04710305"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "由说明词或概念的含义建立记忆。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06757091",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a concise explanation of the meaning of a word or phrase or symbol",
+          "selected_headwords": [
+            "definition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:04710305",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "clarity of outline; \"exercise had given his muscles superior definition\"",
+          "selected_headwords": [
+            "definition"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-6b15713240e8",
+      "headword": "civilization",
+      "source_hash": "ff548279f9819dee801c1ae6599091aa91a22b7c6c14fc1223a75adbabfaf9ac",
+      "original_meaning_zh": "教化；文明；文明社会",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "教化",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "文明",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "文明社会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "文明（文化与社会发展的状态）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:08128749",
+            "collins:civilization"
+          ],
+          "reason": "抽象用法描写社会所达到的发展状态。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "文明社会；一种文明",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:08128749",
+            "wn31:n:08304765",
+            "collins:civilization"
+          ],
+          "reason": "可数时能指某一社会或历史文化。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "文明化；教化的过程",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13470143",
+            "collins:civilization"
+          ],
+          "reason": "过程义有据，原译容易被理解为个人说教。"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "译词语境",
+          "observation": "“教化”需要使社会或人群文明化的语境。",
+          "evidence_ids": [
+            "wn31:n:13470143",
+            "collins:civilization"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "“文明”可指发展状态，“文明社会”可指具有特定文化的社会实体。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:08128749",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a society in an advanced state of social development (e.g., with complex legal and political and religious organizations); \"the people slowly progressed from barbarism to civilization\"",
+          "selected_headwords": [
+            "civilization"
+          ]
+        },
+        {
+          "evidence_id": "collins:civilization",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/civilization",
+          "observation_zh": "词条分别说明文明状态、特定社会以及使社会文明化的过程。",
+          "selected_headwords": [
+            "civilization"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08304765",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a particular society at a particular time and place; \"early Mayan civilization\"",
+          "selected_headwords": [
+            "civilization"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13470143",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the social process whereby societies achieve an advanced stage of development and organization",
+          "selected_headwords": [
+            "civilization"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-52367a6622b1",
+      "headword": "reference",
+      "source_hash": "49775e4b79dd83198db417e43ef27ca96f8c240d45cd06c150b3fe188b67ae0a",
+      "original_meaning_zh": "提及；参考；推荐信",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "提及",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "参考",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "推荐信",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "提及；说到",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06778981"
+          ],
+          "reason": "指引起对某人某事注意的话。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "参考；查阅",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:01266543"
+          ],
+          "reason": "指使用资料取得信息。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "推荐信；推荐证明",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:06707541"
+          ],
+          "reason": "求职场景中证明资格或可靠性。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "引文出处；参考文献",
+          "evidence_ids": [
+            "wn31:n:06776392",
+            "wn31:n:07273332"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "言语里提到、查阅资料和求职推荐涉及三件不同的事。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06778981",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a remark that calls attention to something or someone; \"she made frequent mention of her promotion\"; \"there was no mention of it\"; \"the speaker made several references to his wife\"",
+          "selected_headwords": [
+            "reference"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:01266543",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of referring or consulting; \"reference to an encyclopedia produced the answer\"",
+          "selected_headwords": [
+            "reference"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06707541",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a formal recommendation by a former employer to a potential future employer describing the person's qualifications and dependability; \"requests for character references are all too often answered evasively\"",
+          "selected_headwords": [
+            "reference"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06776392",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a short note recognizing a source of information or of a quoted passage; \"the student's essay failed to list several important citations\"; \"the acknowledgments are usually printed at the front of a book\"; \"the article includes mention of similar clinical cases\"",
+          "selected_headwords": [
+            "reference"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07273332",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a publication (or a passage from a publication) that is referred to; \"he carried an armful of references back to his desk\"; \"he spent hours looking for the source of that quotation\"",
+          "selected_headwords": [
+            "reference"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-8975c9b4ea06",
+      "headword": "percentage",
+      "source_hash": "9a673355de69f323b78c97502d9095119655bc288d7ef6b3a1486b54acb06668",
+      "original_meaning_zh": "比率；百分之；百分数",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "比率",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "百分之",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "百分数",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "百分比；百分数",
+          "source_sense_ids": [
+            "s001",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "reason": "比率在此通常以每百份表示，须保留百分语境。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s002",
+          "text": "百分之",
+          "reason": "“百分之”后面需要数值，是中文表达的一部分，不能独立作名词释义。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "释义不完整",
+          "observation": "“百分之”缺少数值，也容易与跟数字连用的 percent 混淆。",
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先记百分比这一名词，再处理中文数值表达的断片。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:13839738",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a proportion in relation to a whole (which is usually the amount per hundred)",
+          "selected_headwords": [
+            "percentage"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-da7cc64ae8ad",
+      "headword": "mysterious",
+      "source_hash": "c5665a5ca5f691a719c0764a1714cbff86354b093bf5c771959c867fc0bb37e4",
+      "original_meaning_zh": "神秘的；难以解释的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "神秘的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "难以解释的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "神秘的；难以解释的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:00903364",
+            "wn31:s:00942713"
+          ],
+          "reason": "形容原因、性质等未能被理解。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "难以理解或说清楚就是神秘感的来源，两种译文能合记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:00903364",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "having an import not apparent to the senses nor obvious to the intelligence; beyond ordinary understanding; \"mysterious symbols\"; \"the mystical style of Blake\"; \"occult lore\"; \"the secret learning of the ancients\"",
+          "selected_headwords": [
+            "mysterious"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00942713",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of an obscure nature; \"the new insurance policy is written without cryptic or mysterious terms\"; \"a deep dark secret\"; \"the inscrutable workings of Providence\"; \"in its mysterious past it encompasses all the dim origins of life\"- Rachel Carson; \"rituals totally mystifying to visitors from other lands\"",
+          "selected_headwords": [
+            "mysterious"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-12df7f0ee89f",
+      "headword": "propose",
+      "source_hash": "4c579baafe1bf51372f93f069c608f8d4960bd7f9448f367a07c05d48a439332",
+      "original_meaning_zh": "建议；提议",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "建议",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "提议",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "提议；建议",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00708009",
+            "wn31:v:00876925"
+          ],
+          "reason": "两段均可用于提出某个行动方案。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "求婚",
+          "evidence_ids": [
+            "wn31:v:00881285"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "提名",
+          "evidence_ids": [
+            "wn31:v:02406665"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "先掌握把方案提出来供人考虑的动作。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00708009",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "present for consideration, examination, criticism, etc.; \"He proposed a new plan for dealing with terrorism\"; \"She proposed a new theory of relativity\"; \"The candidate projects himself as a moderate and a reformer\"",
+          "selected_headwords": [
+            "propose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00876925",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "make a proposal, declare a plan for something; \"the senator proposed to abolish the sales tax\"",
+          "selected_headwords": [
+            "propose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00881285",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "ask (someone) to marry you; \"he popped the question on Sunday night\"; \"she proposed marriage to the man she had known for only two months\"; \"The old bachelor finally declared himself to the young woman\"",
+          "selected_headwords": [
+            "propose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02406665",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "put forward; nominate for appointment to an office or for an honor or position; \"The President nominated her as head of the Civil Rights Commission\"",
+          "selected_headwords": [
+            "propose"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-d888a3e4ea95",
+      "headword": "indeed",
+      "source_hash": "55af5de9ceb849959b2699f0189397018ac40eb2297df1f3ec2900952217be45",
+      "original_meaning_zh": "确实；的确",
+      "source_part_of_speech": "副词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "确实",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "的确",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "的确；确实",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:r:00038035"
+          ],
+          "reason": "可用于对前述判断的肯定。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "（独立应答，带惊讶或怀疑）真的？",
+          "evidence_ids": [
+            "wn31:r:00037864"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "两个原译都表示确认或加强语气。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:r:00038035",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "in truth (often tends to intensify); \"they said the car would break down and indeed it did\"; \"it is very cold indeed\"; \"was indeed grateful\"; \"indeed, the rain may still come\"; \"he did so do it!\"",
+          "selected_headwords": [
+            "indeed"
+          ]
+        },
+        {
+          "evidence_id": "wn31:r:00037864",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(used as an interjection) an expression of surprise or skepticism or irony etc.; \"Wants to marry the butler? Indeed!\"",
+          "selected_headwords": [
+            "indeed"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-288965a1f2c8",
+      "headword": "management",
+      "source_hash": "6d21570768a20d9de96f4cff4970a537ba2cb3abbe4d099e13b397dae77a85d4",
+      "original_meaning_zh": "指导；指挥；管理",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "指导",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "指挥",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "管理",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "管理；经营",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "reason": "指对事务进行组织和掌控。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（管理中的）指导、指挥",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "reason": "两个词在主管事务的语境下是管理职能的表现。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "管理层；经营者",
+          "evidence_ids": [
+            "wn31:n:08397896"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "语境不足",
+          "observation": "“指导、指挥”过宽，单独理解可能偏向教学指导或发号施令。",
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "从组织、安排事务的管理职能出发，再理解具体情境的指导或指挥。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01135602",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of managing something; \"he was given overall management of the program\"; \"is the direction of the economy a function of government?\"",
+          "selected_headwords": [
+            "management"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08397896",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "those in charge of running a business",
+          "selected_headwords": [
+            "management"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-c3b290f1c5ba",
+      "headword": "imply",
+      "source_hash": "7f235f1a667c324d3fb33379225032a0acd57f5f0f5a8b51b9dfaff4e30de6fd",
+      "original_meaning_zh": "意味着；意思是；暗示",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "意味着",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "意思是",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "暗示",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "意味着；蕴含",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00932561",
+            "wn31:v:02641270",
+            "wn31:v:02642216"
+          ],
+          "reason": "事实或前提使人得出某个结论。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "暗示；言下之意是",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00931801"
+          ],
+          "reason": "言语间接传递含义。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s002",
+          "text": "意思是",
+          "reason": "“意思是”太宽，未说明是言外之意还是逻辑蕴含，不能泛指直接说明。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "语义特征丢失",
+          "observation": "“意思是”未显示间接表达或推论。",
+          "evidence_ids": [
+            "wn31:v:00931801",
+            "wn31:v:02641270"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "说话人含蓄示意与事实所蕴含的后果，需要看主语分辨。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00932561",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "suggest as a logically necessary consequence; in logic",
+          "selected_headwords": [
+            "imply"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02641270",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have as a logical consequence; \"The water shortage means that we have to stop taking long showers\"",
+          "selected_headwords": [
+            "imply"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02642216",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have as a necessary feature; \"This decision involves many changes\"",
+          "selected_headwords": [
+            "imply"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00931801",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "express or state indirectly",
+          "selected_headwords": [
+            "imply"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-b7012df75487",
+      "headword": "declare",
+      "source_hash": "f4410c936030fd91fa91dc0dcbe9cd635b4b5139160b900c9c4f3377d18f1973",
+      "original_meaning_zh": "公开声明；声明；宣告",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "公开声明",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "声明",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "宣告",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "声明；公开宣告",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00822462",
+            "wn31:v:00967903",
+            "wn31:v:01012145"
+          ],
+          "reason": "译词分别强调坚定表态或公开宣布，都可用于正式声明。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（在海关）申报",
+          "evidence_ids": [
+            "wn31:v:01012879"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "把正式、明确地宣布这一言语动作放在同一组。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00822462",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "state firmly; \"He declared that he was innocent\"",
+          "selected_headwords": [
+            "declare"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00967903",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "announce publicly or officially; \"The President declared war\"",
+          "selected_headwords": [
+            "declare"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01012145",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "state emphatically and authoritatively; \"He declared that he needed more money to carry out the task he was charged with\"",
+          "selected_headwords": [
+            "declare"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01012879",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "make a declaration (of dutiable goods) to a customs official; \"Do you have anything to declare?\"",
+          "selected_headwords": [
+            "declare"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-a9168392bbe5",
+      "headword": "deprive",
+      "source_hash": "ef57e875079253ce1cafa0361eba0ef985c6900e9cf9a73b0f2b9b3dcc8b72c8",
+      "original_meaning_zh": "丧失；剥夺；夺去",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "丧失",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "剥夺",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "夺去",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "剥夺；使……失去",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00172745",
+            "wn31:v:02318230",
+            "wn31:v:02319255"
+          ],
+          "reason": "当事人被夺去某物，施事者作主动主语。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "丧失",
+          "reason": "单说“丧失”颠倒通常主动结构中的语义角色。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "论元方向",
+          "observation": "deprive 强调使别人失去某物，“丧失”孤立呈现易被学成 lose。",
+          "evidence_ids": [
+            "wn31:v:00172745",
+            "wn31:v:02318230",
+            "wn31:v:02319255"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "从施事者剥夺某人所拥有之物的方向记住 deprive someone of something。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00172745",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take away",
+          "selected_headwords": [
+            "deprive"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02318230",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "keep from having, keeping, or obtaining",
+          "selected_headwords": [
+            "deprive"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02319255",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take away possessions from someone; \"The Nazis stripped the Jews of all their assets\"",
+          "selected_headwords": [
+            "deprive"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    }
+  ]
+}

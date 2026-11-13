@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_85",
+  "request_hash": "46d09e1e3fb1f28547396a6da76b229965ba0f0d4c13887294a6cd64b5f7bc25",
+  "started_utc": "2026-11-13T08:17:30.280883+00:00",
+  "completed_utc": "2026-11-13T08:19:18.622983+00:00",
+  "elapsed_seconds": 108.329,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "05717eb6-eeae-4027-b032-93ff6b2205f9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4138,
+    "completion_tokens": 5928,
+    "total_tokens": 10066,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5057
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 2090
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-bf0bb4ee60e2\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"important_source_use_omitted\",\n          \"reason\": \"Candidate restricts source s001 '伸展' to body/limbs only, but WordNet evidence v00027698 (thrust/hold out hand or object), v01371528 (straighten table legs), and v02058913 (unfold newspaper, extend antenna) show the same 'extend/stretch out' use applies to non-body objects. The original Chinese gloss does not limit it to body, so the core group omits a common and source-supported object-oriented use.\",\n          \"evidence_ids\": [\n            \"wn31:v:00027698\",\n            \"wn31:v:01371528\",\n            \"wn31:v:02058913\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-bf0bb4ee60e2:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"Broaden display to '伸展/展开（肢体或物体）' and usage_note to include extending non-body objects; cite all relevant evidence IDs in the group. Do not remove body-specific example, but do not make it the only object type.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source s002 '变宽' (intransitive become wider) is placed in reserved_original_items as pending, which is appropriate, but source_POS_coverage says 'source_derived_use_represented' for 动词, potentially obscuring that one source sub-sense is unresolved and not part of core. The evidence does not clearly show intransitive change-of-state 'become wider'; retained pending is correct.\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"\",\n          \"proposed_fix\": \"Change source_POS_coverage to indicate partial coverage with one pending original sub-sense, or add a core_coverage_incomplete_pending_addition_decision marker for s002. No change to reserved_original_items needed.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Candidate lists several important dictionary meanings (prolong time, give/provide, expand scope/influence) as AI_candidate_not_adopted. This is acceptable separation of external candidates from source-derived core, but the main record should not imply complete first-screen coverage of extend; the note already qualifies this. Keep as tracked additions.\",\n          \"evidence_ids\": [\n            \"wn31:v:00318689\",\n            \"wn31:v:00319127\",\n            \"wn31:v:02302703\",\n            \"wn31:v:02302909\",\n            \"wn31:v:00541315\",\n            \"wn31:v:00542026\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"\",\n          \"proposed_fix\": \"No correction required now; if future frequency evidence supports early teaching, promote relevant additions to extended with explicit reason.\"\n        }\n      ],\n      \"preferences\": [\n        \"Consider grouping the transitive scope/range expansion (evidence v00541315/v00542026) as an extended meaning if teaching later, since it is closely related to spatial extension but currently only in dictionary_additions.\"\n      ],\n      \"note\": \"The candidate correctly preserves s003 spatial/temporal extension and holds s002 as unresolved due lack of direct evidence. Main confirmed defect is the over-narrowing of s001 to body parts; object-oriented stretching/unfolding is supported by multiple WordNet verbs for extend and should be part of the first core. The dictionary additions are properly separated; no evidence of wrong POS or false merge.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

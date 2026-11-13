@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_007",
+  "kind": "verify",
+  "request_hash": "f7e41aba31aaefb159d4475596a3550541dd738032f3bac1c74462ae6069e333",
+  "input_ids": [
+    "SG25-25d9548a80c7",
+    "SG25-bfba7033571d"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d0b5f161-5cd2-4afc-aff3-17f950dcf8af",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-25d9548a80c7\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心“古典的”与源义一致，证据wn31:a:00414699、wn31:s:00414979、wn31:s:00415245覆盖早期重要时期、古希腊罗马及欧洲传统音乐等古典用法；未链接的物理/语言等细分义不构成当前源义缺口。\",\n          \"evidence_ids\": [\n            \"wn31:a:00414699\",\n            \"wn31:s:00414979\",\n            \"wn31:s:00415245\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源“传统的”宽于英语 classical；“长期确立的形式或风格”由 wn31:s:00613690 支持，一般 traditional 习俗/做法不属于本词英语证据范围，故收窄合理。\",\n          \"evidence_ids\": [\n            \"wn31:s:00613690\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 源“传统的”是否包含一般传统义未定；当前采用英语证据收窄至长期确立形式/风格，如需一般 traditional 义应另立词条。\",\n        \"s001 古典物理(wn31:s:00415419)及古典语言/学者细分义未明确纳入，但当前宽义可覆盖，待源语境确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"无确认范围缺陷；英语 classical 不能等同所有 traditional，已通过扩展限定避免扩大。\"\n    },\n    {\n      \"id\": \"SG25-bfba7033571d\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选核心“批评的（指出不足）”将源“批评的”限制为挑错子义，仅覆盖 wn31:a:00650564；但 wn31:a:00652608 和 wn31:a:02841530 显示英语 critical 还有审慎评价/批评界相关用法，未在候选层级中保留，构成真子集。\",\n          \"evidence_ids\": [\n            \"wn31:a:00650564\",\n            \"wn31:a:00652608\",\n            \"wn31:a:02841530\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心“关键的”与源义一致，证据 wn31:s:00659155、wn31:s:00907116 覆盖转折/危机关键点和必要、极重要义。\",\n          \"evidence_ids\": [\n            \"wn31:s:00659155\",\n            \"wn31:s:00907116\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选扩展“危急的”与源义一致，证据 wn31:a:00653599 覆盖处于或濒临危机/紧急状态。\",\n          \"evidence_ids\": [\n            \"wn31:a:00653599\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_narrowing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-bfba7033571d:core:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:a:00650564\",\n            \"wn31:a:00652608\",\n            \"wn31:a:02841530\"\n          ],\n          \"reason\": \"源 s001“批评的”被核心组限定为“指出不足”，仅覆盖 wn31:a:00650564；但 wn31:a:00652608（审慎评价/批判性思考）和 wn31:a:02841530（批评界的/评论的）显示该源义在英语中更宽，所有候选层级均未保留这些用法，造成范围收窄。\",\n          \"counterexample\": \"critical reading/analysis 或 critical acclaim 不是单纯指出不足，而是审慎评价或与批评界相关。\",\n          \"repair_suggestion\": \"保留“批评的”一般评价父级，或将“指出不足”标为子义/示例，并在扩展或暂存补充审慎评价/批评界用法。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001 源“批评的”中文精确范围是否仅指负面批评还是包括文学/学术批评待源语境确认；当前按英语证据认为存在收窄风险。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s002/s003覆盖良好；s001核心收窄，未采纳的“审慎评价的；批判性思考的”候选正好对应关键缺口，宜补入扩展或暂存。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4902,
+    "completion_tokens": 7196,
+    "total_tokens": 12098,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6089
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3238
+  },
+  "started_utc": "2026-11-13T09:56:48.965357+00:00",
+  "completed_utc": "2026-11-13T09:58:26.841706+00:00",
+  "elapsed_seconds": 97.875,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

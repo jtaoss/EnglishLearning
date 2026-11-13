@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_75",
+  "request_hash": "3ff3ab5b7c793f54b4cf8775fb36b761bc48275bc0f44daacba9838d8375abca",
+  "started_utc": "2026-11-13T08:17:21.721872+00:00",
+  "completed_utc": "2026-11-13T08:18:43.613933+00:00",
+  "elapsed_seconds": 81.891,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "98edb316-92ae-477e-ad5a-a8d8979856c0",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3876,
+    "completion_tokens": 4778,
+    "total_tokens": 8654,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4214
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1828
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-093e7d5fdbaa\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"important_external_use_omitted\",\n          \"reason\": \"The candidate's dictionary_additions includes three external WordNet senses but omits n:06271913 'a channel for communication between groups; liaison'. This is a distinct noun sense not covered by the core, and should be tracked as an unadopted external candidate.\",\n          \"evidence_ids\": [\n            \"wn31:n:06271913\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"Add to dictionary_additions: meaning_zh '联络渠道；联络人（提供沟通联系的人/渠道）', part_of_speech '名词', source_sense_ids [], evidence_ids ['wn31:n:06271913'], status 'AI_candidate_not_adopted'.\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"overly_narrow_gloss\",\n          \"reason\": \"The usage_note for core sense 4 (接触, verb) says '使某物与另一物发生物理接触', implying a causative agent bringing two things into contact. The cited evidence wn31:v:01208316 is not causative but simply 'be in direct physical contact with; make contact', with examples like 'The two buildings touch', 'Their hands touched', 'The surfaces contact at this point'. The note excludes intransitive/transitive non-causative use.\",\n          \"evidence_ids\": [\n            \"wn31:v:01208316\"\n          ],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"SG25-093e7d5fdbaa:p6c5:core_meanings:4\",\n          \"proposed_fix\": \"Change usage_note to '与某物/某人物理接触；相碰（可及物或不及物）' or remove the causative phrasing.\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"Source Chinese fragments are ambiguous in POS; candidate correctly assigns noun and verb senses based on independent WordNet evidence. Core meanings cover communication and physical contact in both POS. External senses (electronics contact, contact lens, person who assists) are appropriately placed in dictionary_additions, but the liaison/channel sense is missing. Minor issue with the verb '接触' usage note implying causation not supported by evidence.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

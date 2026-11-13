@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_21",
+  "request_hash": "274f27551659a743c030cb1e39c65be34d38a61c5a0433ea71d2d4da3e0289b1",
+  "started_utc": "2026-11-13T08:16:13.483669+00:00",
+  "completed_utc": "2026-11-13T08:18:00.930597+00:00",
+  "elapsed_seconds": 107.453,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c75b91f4-7aef-43a2-a9b4-ffed2ed0f37d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3205,
+    "completion_tokens": 5320,
+    "total_tokens": 8525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5102
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3205
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9cda38ea3a2b\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"Consider also listing mathematical series (WordNet n:05871305) and periodical series (n:06606007) as external dictionary additions for completeness, but do not promote them to core without source support.\",\n        \"Display_zh '序列；一系列' could be clarified as noun '序列' plus attributive phrase '一系列' to avoid implying '一系列' is a standalone noun.\"\n      ],\n      \"note\": \"Targeted-risk candidate correctly maps source s001 to generic ordered series sense and s002 to TV series sense. Both source senses are represented in core as noun uses, and sports/electronics senses are kept as separate unadopted additions, preserving source scope. No false merging or untraceable meaning found. Only optional completeness suggestions remain.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

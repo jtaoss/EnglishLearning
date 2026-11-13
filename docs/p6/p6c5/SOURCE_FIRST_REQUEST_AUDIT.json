@@ -1,0 +1,24 @@
+{
+  "sample_count": 2,
+  "pool_size": 14,
+  "records": [
+    {
+      "stable_id": "SG25-815fbec040e3",
+      "headword": "spouse",
+      "api_tag": "review_001_49",
+      "request_hash_matches_frozen_source_only_payload": true,
+      "generated_answer_in_request": false,
+      "response_sha256": "74b18c50a5271145aee228c959f4503712903eac83215f6f43fdabd2555ccafa"
+    },
+    {
+      "stable_id": "SG25-e1721557ff52",
+      "headword": "persuade",
+      "api_tag": "review_001_71",
+      "request_hash_matches_frozen_source_only_payload": true,
+      "generated_answer_in_request": false,
+      "response_sha256": "6b9fccea12133149a0b8ce68dc8fba4cba4c6d14d1eae36ee1d3dcc368f5248b"
+    }
+  ],
+  "not_a_population_accuracy_estimate": true,
+  "model_calls_in_audit": 0
+}

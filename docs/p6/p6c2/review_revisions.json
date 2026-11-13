@@ -1,0 +1,5817 @@
+[
+  {
+    "stable_id": "SG25-d4f0bc5a29de",
+    "headword": "agent",
+    "severity": "Minor",
+    "reason": "代表他人的通用角色与买卖经纪有上下位差别，首稿近义标签过强，改为相关子用法并列保留。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-d4f0bc5a29de:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "代理人／经纪人",
+          "glosses": [
+            "代理人",
+            "经纪人"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "代理人",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09796453",
+                "wn31:n:09796794"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "经纪人",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09796453",
+                "wn31:n:09796794"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:09796453",
+            "wn31:n:09796794"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-d4f0bc5a29de:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "起作用的因素",
+          "glosses": [
+            "起作用的因素"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "起作用的因素",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09213796",
+                "wn31:n:14802595"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:09213796",
+            "wn31:n:14802595"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-d4f0bc5a29de:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "代理人（含经纪等具体角色）",
+          "glosses": [
+            "代理人",
+            "经纪人"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "代理人",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09796794"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "经纪人",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09796453"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:09796453",
+            "wn31:n:09796794"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "distinct_roles_explicitly_preserved",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-d4f0bc5a29de:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "起作用的因素",
+          "glosses": [
+            "起作用的因素"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "起作用的因素",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:09213796",
+                "wn31:n:14802595"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:09213796",
+            "wn31:n:14802595"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记替他人办事的代理人或经纪人；起作用因素涵盖物质或原因，另组保留。"
+    }
+  },
+  {
+    "stable_id": "SG25-ce922519a3c3",
+    "headword": "transaction",
+    "severity": "Minor",
+    "reason": "词网指具体交易活动；生意仅作一笔生意的语境译法，显示需限定，不能扩大成整个事业。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ce922519a3c3:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "买卖／交易／生意",
+          "glosses": [
+            "买卖",
+            "交易",
+            "生意"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "买卖",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "交易",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "生意",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01108713"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "买卖、交易、生意在本原文指交易活动，压缩为交易（买卖），不泛指所有职业事业。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "买卖、交易、生意在本原文指交易活动，压缩为交易（买卖），不泛指所有职业事业。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ce922519a3c3:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "交易／买卖（生意限具体交易语境）",
+          "glosses": [
+            "买卖",
+            "交易",
+            "生意"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "买卖",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "交易",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "生意",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01108713"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01108713"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "买卖、交易、生意在本原文指交易活动，压缩为交易（买卖），不泛指所有职业事业。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "买卖、交易、生意在本原文指交易活动，压缩为交易（买卖），不泛指所有职业事业。"
+    }
+  },
+  {
+    "stable_id": "SG25-ee5e2878c485",
+    "headword": "annual",
+    "severity": "Minor",
+    "reason": "每年与年刊、植物生命周期各有独立定义；名词植物应明确一年内完成生命周期的领域。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "每年的／一年一次的",
+          "glosses": [
+            "每年的",
+            "一年一次的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "每年的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01976215"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "一年一次的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01976215"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01976215"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "年刊",
+          "glosses": [
+            "年刊"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "年刊",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06438138"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:06438138"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "other_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:other:1",
+          "part_of_speech": "名词",
+          "display_zh": "一年生植物",
+          "glosses": [
+            "一年生植物"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "一年生植物",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:11573257"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:11573257"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "core_explanation": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "每年的／一年一次的",
+          "glosses": [
+            "每年的",
+            "一年一次的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "每年的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01976215"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "一年一次的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01976215"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01976215"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "年刊",
+          "glosses": [
+            "年刊"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "年刊",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06438138"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:06438138"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "other_meanings": [
+        {
+          "sense_group_id": "SG25-ee5e2878c485:other:1",
+          "part_of_speech": "名词",
+          "display_zh": "一年生植物（生命周期在一年内完成）",
+          "glosses": [
+            "一年生植物"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "一年生植物",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:11573257"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:11573257"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+        }
+      ],
+      "core_explanation": "每年或一年一次先同组记；年刊是出版物，一年生植物是植物学用法，均按词性保留。"
+    }
+  },
+  {
+    "stable_id": "SG25-076ddffcfd3e",
+    "headword": "stewardess",
+    "severity": "Major",
+    "reason": "Collins另列船舶列车等女乘务员，反驳首稿只限飞机；拆清一般称谓与航空旧称并保持旧式标签。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-076ddffcfd3e:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "女乘务员／空中小姐（带性别色彩的旧称）",
+          "glosses": [
+            "女乘务员",
+            "空中小姐（带性别色彩的旧称）"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "女乘务员",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:10675314"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "空中小姐（带性别色彩的旧称）",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:10675314"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:10675314"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "两种中文都指女空乘；原女乘务员范围较宽，显示应限飞机场景并提示旧式性别称谓。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "两种中文都指女空乘；原女乘务员范围较宽，显示应限飞机场景并提示旧式性别称谓。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-076ddffcfd3e:review:core:s001",
+          "part_of_speech": "名词",
+          "display_zh": "女乘务员（旧式、性别化称谓）",
+          "glosses": [
+            "女乘务员"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "女乘务员",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:stewardess"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:stewardess"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "两种中文都指女空乘；原女乘务员范围较宽，显示应限飞机场景并提示旧式性别称谓。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-076ddffcfd3e:review:extended:s002",
+          "part_of_speech": "名词",
+          "display_zh": "空中小姐（航空语境的旧称）",
+          "glosses": [
+            "空中小姐（带性别色彩的旧称）"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "空中小姐（带性别色彩的旧称）",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:stewardess"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:stewardess"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "两种中文都指女空乘；原女乘务员范围较宽，显示应限飞机场景并提示旧式性别称谓。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "一般女乘务员可涉及船、列车等，航空旧称另留；不把全部用法限为飞机。"
+    }
+  },
+  {
+    "stable_id": "SG25-f1f61cc7216e",
+    "headword": "adapt",
+    "severity": "Major",
+    "reason": "原使适应是使动方向，词网第一条却是自身适应；改用make fit的证据，另列自身适应候选。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "使适应",
+          "glosses": [
+            "使适应"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "使适应",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00150107"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00150107"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        },
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "改编",
+          "glosses": [
+            "改编"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "改编",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300361"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "调整",
+          "glosses": [
+            "调整"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "调整",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300361"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "使适应",
+          "glosses": [
+            "使适应"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "使适应",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300361"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        },
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "改编",
+          "glosses": [
+            "改编"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "改编",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300361"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-f1f61cc7216e:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "调整",
+          "glosses": [
+            "调整"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "调整",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300361"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "适应新条件与改编作品是不同用法，调整在适合目的的框架另留；不把改编抹成适应。"
+    }
+  },
+  {
+    "stable_id": "SG25-fa4824e83746",
+    "headword": "bias",
+    "severity": "Minor",
+    "reason": "Cambridge数据条目补足偏差义；该译法须限系统性数据或方法偏向，不能泛作任何数值误差。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-fa4824e83746:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "偏见",
+          "glosses": [
+            "偏见"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "偏见",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06211643"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:06211643"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-fa4824e83746:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "偏差",
+          "glosses": [
+            "偏差"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "偏差",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-fa4824e83746:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "使产生偏见",
+          "glosses": [
+            "使产生偏见"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "使产生偏见",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00682265"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00682265"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-fa4824e83746:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "偏见",
+          "glosses": [
+            "偏见"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "偏见",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06211643"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:06211643"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-fa4824e83746:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "偏差（数据或方法的系统性偏向）",
+          "glosses": [
+            "偏差"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "偏差",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "web:bias"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:bias"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-fa4824e83746:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "使产生偏见",
+          "glosses": [
+            "使产生偏见"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "使产生偏见",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00682265"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00682265"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "偏见先作为看法偏向记；系统或统计偏差与使产生偏见另留，偏差义需正规词典补证。"
+    }
+  },
+  {
+    "stable_id": "SG25-8975c9b4ea06",
+    "headword": "percentage",
+    "severity": "Major",
+    "reason": "Cambridge名词与percent的每百表达提供对照，原百分之须保留为句法疑点；比率显示限定百分比。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-8975c9b4ea06:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "百分数",
+          "glosses": [
+            "百分数"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "百分数",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13839738"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-8975c9b4ea06:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "比率",
+          "glosses": [
+            "比率"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "比率",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13839738"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-8975c9b4ea06:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "百分数",
+          "glosses": [
+            "百分数"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "百分数",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13839738"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-8975c9b4ea06:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "比率（整体份额，常按百分数表示）",
+          "glosses": [
+            "比率"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "比率",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13839738"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13839738"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "百分数是明确名词核心；比率限按百计的比例，裸百分之不能直接当独立名词义，保留待核实。"
+    }
+  },
+  {
+    "stable_id": "SG25-cc57fc1903e4",
+    "headword": "chart",
+    "severity": "Minor",
+    "reason": "词网以图形表示支持跟踪记录而非任何笔录，保留记录片段但显示注明图示或变化范围。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "图表",
+          "glosses": [
+            "图表"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "图表",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:07012462"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:07012462"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        },
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "绘制图表",
+          "glosses": [
+            "绘制图表"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "绘制图表",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00712632"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00712632"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "记录",
+          "glosses": [
+            "记录"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "记录",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:01758945"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:01758945"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "图表",
+          "glosses": [
+            "图表"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "图表",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:07012462"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:07012462"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        },
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "绘制图表",
+          "glosses": [
+            "绘制图表"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "绘制图表",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00712632"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00712632"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-cc57fc1903e4:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "记录变化（以图表等方式）",
+          "glosses": [
+            "记录"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "记录",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:01758945"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:01758945"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "图表与绘制图表按词性分开；记录限跟踪图示或变化，不能误解为任何record行为。"
+    }
+  },
+  {
+    "stable_id": "SG25-25d9548a80c7",
+    "headword": "classical",
+    "severity": "Minor",
+    "reason": "古典时期或欧洲音乐之外，长期确立的风格有限语境支持传统；普通传统习惯不能都替换。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-25d9548a80c7:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "古典的",
+          "glosses": [
+            "古典的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "古典的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00414699",
+                "wn31:s:00414979",
+                "wn31:s:00415245"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00414699",
+            "wn31:s:00414979",
+            "wn31:s:00415245"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-25d9548a80c7:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "传统的",
+          "glosses": [
+            "传统的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "传统的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00613690"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00613690"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-25d9548a80c7:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "古典的",
+          "glosses": [
+            "古典的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "古典的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00414699",
+                "wn31:s:00414979",
+                "wn31:s:00415245"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00414699",
+            "wn31:s:00414979",
+            "wn31:s:00415245"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-25d9548a80c7:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "传统的（长期确立的形式或风格）",
+          "glosses": [
+            "传统的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "传统的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00613690"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00613690"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "古典用于文化音乐等传统，传统的限长期确立的形式风格，不能把所有traditional都等作classical。"
+    }
+  },
+  {
+    "stable_id": "SG25-65a07093bf15",
+    "headword": "corporation",
+    "severity": "Info",
+    "reason": "Collins依法独立法人定义补足词网商业公司范围，法人团体可保留，不能因单一词网缺失判不存在。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-65a07093bf15:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "公司",
+          "glosses": [
+            "公司"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "公司",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08076248"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:08076248"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-65a07093bf15:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "法人团体",
+          "glosses": [
+            "法人团体"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "法人团体",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-65a07093bf15:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "公司",
+          "glosses": [
+            "公司"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "公司",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08076248"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:08076248"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-65a07093bf15:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "法人团体（依法作为独立主体）",
+          "glosses": [
+            "法人团体"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "法人团体",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:corporation"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:corporation"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记依法成立的公司；法人团体可较商业公司更宽，需要正规词典补证，不能泛指任意团体。"
+    }
+  },
+  {
+    "stable_id": "SG25-bfba7033571d",
+    "headword": "critical",
+    "severity": "Major",
+    "reason": "批评的选责难类证据，审慎评价另有定义；不能把两条定义无说明全挂同一源片段，补候选并限缩引用。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-bfba7033571d:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "关键的",
+          "glosses": [
+            "关键的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "关键的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00659155",
+                "wn31:s:00907116"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00659155",
+            "wn31:s:00907116"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        },
+        {
+          "sense_group_id": "SG25-bfba7033571d:core:2",
+          "part_of_speech": "形容词",
+          "display_zh": "批评的",
+          "glosses": [
+            "批评的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "批评的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00650564",
+                "wn31:a:00652608"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00650564",
+            "wn31:a:00652608"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-bfba7033571d:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "危急的",
+          "glosses": [
+            "危急的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "危急的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00653599"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00653599"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-bfba7033571d:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "关键的",
+          "glosses": [
+            "关键的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "关键的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00659155",
+                "wn31:s:00907116"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00659155",
+            "wn31:s:00907116"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        },
+        {
+          "sense_group_id": "SG25-bfba7033571d:core:2",
+          "part_of_speech": "形容词",
+          "display_zh": "批评的（指出不足）",
+          "glosses": [
+            "批评的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "批评的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00650564"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00650564"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-bfba7033571d:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "危急的",
+          "glosses": [
+            "危急的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "危急的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00653599"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00653599"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "关键与批评评价是两个核心入口，危急描述紧急状态；不把critical thinking误成一味挑错。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "关键与批评指出不足分开；审慎评价是另列候选，危急仍保留。"
+    }
+  },
+  {
+    "stable_id": "SG25-0d45f5fd462b",
+    "headword": "core",
+    "severity": "Major",
+    "reason": "Collins水果中央含籽定义补足一般中心证据；果核需限苹果梨等，不泛指所有坚硬果核。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-0d45f5fd462b:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "核心",
+          "glosses": [
+            "核心"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "核心",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05929717",
+                "wn31:n:08541787"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05929717",
+            "wn31:n:08541787"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-0d45f5fd462b:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "果核",
+          "glosses": [
+            "果核"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "果核",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08541787"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:08541787"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-0d45f5fd462b:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "核心",
+          "glosses": [
+            "核心"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "核心",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05929717",
+                "wn31:n:08541787"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05929717",
+            "wn31:n:08541787"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-0d45f5fd462b:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "果核（苹果、梨等的中央含籽部分）",
+          "glosses": [
+            "果核"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "果核",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:core"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:core"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "核心与果核相关但场景不同，分别保留；词网中心义对果核只提供较宽参照，仍需具体词典核对。"
+    }
+  },
+  {
+    "stable_id": "SG25-3dbd9cd5e1fb",
+    "headword": "faculty",
+    "severity": "Info",
+    "reason": "Collins大学学科部门补足词网缺口；能力、教职人员、院系三个概念均可保留。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "能力",
+          "glosses": [
+            "能力"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "能力",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05658174"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05658174"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:core:2",
+          "part_of_speech": "名词",
+          "display_zh": "全体教员",
+          "glosses": [
+            "全体教员"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "全体教员",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08304507"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:08304507"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "院系",
+          "glosses": [
+            "院系"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "院系",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "能力",
+          "glosses": [
+            "能力"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "能力",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05658174"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05658174"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:core:2",
+          "part_of_speech": "名词",
+          "display_zh": "全体教员",
+          "glosses": [
+            "全体教员"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "全体教员",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08304507"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:08304507"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-3dbd9cd5e1fb:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "院系",
+          "glosses": [
+            "院系"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "院系",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:faculty"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:faculty"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "人的能力与学校全体教员分开；院系是地区性学校组织用法，词网未覆盖时需独立词典补证。"
+    }
+  },
+  {
+    "stable_id": "SG25-94f2fe083e1b",
+    "headword": "profitable",
+    "severity": "Info",
+    "reason": "Cambridge有取得好处的非金钱用法，不能用WordNet只列物质利润否定有益的。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-94f2fe083e1b:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "有利可图的",
+          "glosses": [
+            "有利可图的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "有利可图的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01876839"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01876839"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-94f2fe083e1b:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "有益的",
+          "glosses": [
+            "有益的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "有益的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-94f2fe083e1b:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "有利可图的",
+          "glosses": [
+            "有利可图的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "有利可图的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01876839"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01876839"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-94f2fe083e1b:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "有益的；有收获的（不限于经济利润）",
+          "glosses": [
+            "有益的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "有益的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:profitable"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:profitable"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记有利可图；有益的可指非金钱收益，但词网只列物质获利，需正规词典补证。"
+    }
+  },
+  {
+    "stable_id": "SG25-e97469619c0d",
+    "headword": "benefit",
+    "severity": "Major",
+    "reason": "使受益与得益分别对应beneficial for和derive benefit，首稿近义合组掩盖方向；拆开动词组并保留原片段。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-e97469619c0d:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "益处",
+          "glosses": [
+            "益处"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "益处",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:05149888"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05149888"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        },
+        {
+          "sense_group_id": "SG25-e97469619c0d:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "使受益／得益",
+          "glosses": [
+            "使受益",
+            "得益"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003",
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "使受益",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:02295422",
+                "wn31:v:02295917"
+              ]
+            },
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "得益",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:02295422",
+                "wn31:v:02295917"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02295422",
+            "wn31:v:02295917"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-e97469619c0d:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "福利",
+          "glosses": [
+            "福利"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "福利",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:13317922"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13317922"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-e97469619c0d:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "益处",
+          "glosses": [
+            "益处"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "益处",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:05149888"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05149888"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        },
+        {
+          "sense_group_id": "SG25-e97469619c0d:review:core:s004",
+          "part_of_speech": "动词",
+          "display_zh": "得益",
+          "glosses": [
+            "得益"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "得益",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:02295422"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02295422"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-e97469619c0d:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "福利",
+          "glosses": [
+            "福利"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "福利",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:13317922"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13317922"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        },
+        {
+          "sense_group_id": "SG25-e97469619c0d:review:extended:s003",
+          "part_of_speech": "动词",
+          "display_zh": "使受益",
+          "glosses": [
+            "使受益"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "使受益",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:02295917"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02295917"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "益处名词与受益动作分组，福利为援助待遇语境；使受益和得益的及物方向在原片段中保留。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "益处是名词，得益是主体获得好处；使受益是令他人获益，方向分开。"
+    }
+  },
+  {
+    "stable_id": "SG25-c215cc7ced6a",
+    "headword": "fundamental",
+    "severity": "Minor",
+    "reason": "Cambridge名词fundamentals证明基础原则，通常复数必须注明，不能只借商业基本面定义认证。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c215cc7ced6a:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "根本的／基本的",
+          "glosses": [
+            "根本的",
+            "基本的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "根本的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01280207",
+                "wn31:s:01862358"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "基本的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01280207",
+                "wn31:s:01862358"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01280207",
+            "wn31:s:01862358"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c215cc7ced6a:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "基本原则",
+          "glosses": [
+            "基本原则"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "基本原则",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c215cc7ced6a:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "根本的／基本的",
+          "glosses": [
+            "根本的",
+            "基本的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "根本的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01280207",
+                "wn31:s:01862358"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "基本的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01280207",
+                "wn31:s:01862358"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01280207",
+            "wn31:s:01862358"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c215cc7ced6a:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "基本原则（常用复数 fundamentals）",
+          "glosses": [
+            "基本原则"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "基本原则",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "web:fundamental"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:fundamental"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "根本或基本形容必要基础，基本原则是名词用法；词网名词证据较专门，普通原则需正规词典补证。"
+    }
+  },
+  {
+    "stable_id": "SG25-c61d02ef654a",
+    "headword": "locate",
+    "severity": "Minor",
+    "reason": "Cambridge确认be located in等结构，坐落译法可保留但不能教成裸locate加位置的静态句。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c61d02ef654a:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "确定位置",
+          "glosses": [
+            "确定位置"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "确定位置",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02291049",
+                "wn31:v:02700775"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02291049",
+            "wn31:v:02700775"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c61d02ef654a:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "坐落于",
+          "glosses": [
+            "坐落于"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "坐落于",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00414801",
+                "wn31:v:02338685"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00414801",
+            "wn31:v:02338685"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c61d02ef654a:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "确定位置",
+          "glosses": [
+            "确定位置"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "确定位置",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02291049",
+                "wn31:v:02700775"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02291049",
+            "wn31:v:02700775"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c61d02ef654a:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "坐落于（常用 be located in 等结构）",
+          "glosses": [
+            "坐落于"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "坐落于",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00414801",
+                "wn31:v:02338685"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00414801",
+            "wn31:v:02338685"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "确定位置先记；坐落于通常用be located in等结构，不能把裸locate当静态系词。"
+    }
+  },
+  {
+    "stable_id": "SG25-0dd1b6d5c52e",
+    "headword": "permanent",
+    "severity": "Minor",
+    "reason": "词网持续稳定不变不等于任何长时间；长期的显示需限定稳定非临时，原文字不删。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-0dd1b6d5c52e:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "永久的",
+          "glosses": [
+            "永久的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "永久的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01758923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01758923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-0dd1b6d5c52e:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "长期的",
+          "glosses": [
+            "长期的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "长期的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01758923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01758923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-0dd1b6d5c52e:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "永久的",
+          "glosses": [
+            "永久的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "永久的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01758923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01758923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-0dd1b6d5c52e:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "长期的（持续稳定、非临时的语境）",
+          "glosses": [
+            "长期的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "长期的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01758923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01758923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记永久持续，长期仅在稳定非临时语境可作近似译法，不表示任何持续很久都一定永久。"
+    }
+  },
+  {
+    "stable_id": "SG25-288965a1f2c8",
+    "headword": "management",
+    "severity": "Minor",
+    "reason": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-288965a1f2c8:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "管理",
+          "glosses": [
+            "管理"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "管理",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-288965a1f2c8:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "指导",
+          "glosses": [
+            "指导"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "指导",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        },
+        {
+          "sense_group_id": "SG25-288965a1f2c8:extended:2",
+          "part_of_speech": "名词",
+          "display_zh": "指挥",
+          "glosses": [
+            "指挥"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "指挥",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-288965a1f2c8:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "管理",
+          "glosses": [
+            "管理"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "管理",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-288965a1f2c8:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "指导（组织管理事务的语境）",
+          "glosses": [
+            "指导"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "指导",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        },
+        {
+          "sense_group_id": "SG25-288965a1f2c8:extended:2",
+          "part_of_speech": "名词",
+          "display_zh": "指挥（组织管理活动的语境）",
+          "glosses": [
+            "指挥"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "指挥",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:01135602"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+    }
+  },
+  {
+    "stable_id": "SG25-7cb194d9414f",
+    "headword": "machinery",
+    "severity": "Minor",
+    "reason": "词网为机器集合总称，不是单个可数机器；保留不可数提示而非用中文装置反推a machinery。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-7cb194d9414f:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "机器／机械／机械装置",
+          "glosses": [
+            "机器",
+            "机械",
+            "机械装置"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "机器",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "机械",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "机械装置",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:03706974"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "机器、机械、机械装置在此作设备总称合组；提醒通常不可数，不把一个机器误教成a machinery。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "机器、机械、机械装置在此作设备总称合组；提醒通常不可数，不把一个机器误教成a machinery。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-7cb194d9414f:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "机械设备（集合称呼，通常不可数）",
+          "glosses": [
+            "机器",
+            "机械",
+            "机械装置"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "机器",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "机械",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "机械装置",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:03706974"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:03706974"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "机器、机械、机械装置在此作设备总称合组；提醒通常不可数，不把一个机器误教成a machinery。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "机器、机械、机械装置在此作设备总称合组；提醒通常不可数，不把一个机器误教成a machinery。"
+    }
+  },
+  {
+    "stable_id": "SG25-901ad244ed23",
+    "headword": "nuclear",
+    "severity": "Minor",
+    "reason": "资料指原子核而非原子全部结构，原子的需限核能语境，原原子武器标签也单列。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-901ad244ed23:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "原子核的",
+          "glosses": [
+            "原子核的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "原子核的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:02873726"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:02873726"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-901ad244ed23:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "原子的",
+          "glosses": [
+            "原子的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "原子的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:02873726"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:02873726"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        },
+        {
+          "sense_group_id": "SG25-901ad244ed23:extended:2",
+          "part_of_speech": "形容词",
+          "display_zh": "原子武器的",
+          "glosses": [
+            "原子武器的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "原子武器的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00612923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00612923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-901ad244ed23:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "原子核的",
+          "glosses": [
+            "原子核的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "原子核的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:02873726"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:02873726"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-901ad244ed23:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "原子的（限核能、原子核相关语境）",
+          "glosses": [
+            "原子的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "原子的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:02873726"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:02873726"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        },
+        {
+          "sense_group_id": "SG25-901ad244ed23:extended:2",
+          "part_of_speech": "形容词",
+          "display_zh": "原子武器的",
+          "glosses": [
+            "原子武器的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "原子武器的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:00612923"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00612923"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记原子核相关，原子的只能在核能等语境近似使用，原子武器的是特定用途，不能混为所有原子结构。"
+    }
+  },
+  {
+    "stable_id": "SG25-6f61f46c23a6",
+    "headword": "impact",
+    "severity": "Info",
+    "reason": "Collins明确有碰撞动词，补足词网压入义不能证明撞击的空缺；资料差异不等于原义不存在。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "影响",
+          "glosses": [
+            "影响"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "影响",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:00158777"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:00158777"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "影响",
+          "glosses": [
+            "影响"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "影响",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00137133"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00137133"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "冲击",
+          "glosses": [
+            "冲击"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "冲击",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:07353152"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:07353152"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "撞击",
+          "glosses": [
+            "撞击"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "撞击",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "影响",
+          "glosses": [
+            "影响"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "影响",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:00158777"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:00158777"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "影响",
+          "glosses": [
+            "影响"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "影响",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00137133"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00137133"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "冲击",
+          "glosses": [
+            "冲击"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "冲击",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:07353152"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:07353152"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        },
+        {
+          "sense_group_id": "SG25-6f61f46c23a6:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "撞击",
+          "glosses": [
+            "撞击"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "撞击",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "web:impact"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:impact"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "影响的名词和动词分别记，冲击与撞击为物理场景；动词撞击的词网参照不足，需独立词典补证。"
+    }
+  },
+  {
+    "stable_id": "SG25-72f7c894ad6c",
+    "headword": "plastic",
+    "severity": "Info",
+    "reason": "Cambridge明确列材料制成的形容词，不能拿WordNet可塑性形容词覆盖或否定该原义。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-72f7c894ad6c:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "塑料",
+          "glosses": [
+            "塑料"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "塑料",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:14616790"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:14616790"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+          "usage_note": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+        },
+        {
+          "sense_group_id": "SG25-72f7c894ad6c:core:2",
+          "part_of_speech": "形容词",
+          "display_zh": "塑料制的",
+          "glosses": [
+            "塑料制的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "塑料制的",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+          "usage_note": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-72f7c894ad6c:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "塑料",
+          "glosses": [
+            "塑料"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "塑料",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:14616790"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:14616790"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+          "usage_note": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+        },
+        {
+          "sense_group_id": "SG25-72f7c894ad6c:core:2",
+          "part_of_speech": "形容词",
+          "display_zh": "塑料制的",
+          "glosses": [
+            "塑料制的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "塑料制的",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "web:plastic"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:plastic"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+          "usage_note": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "塑料名词与塑料制的形容词分开；词网形容词多指可塑性，不足直接证明制成材料义，须外证。"
+    }
+  },
+  {
+    "stable_id": "SG25-c3b290f1c5ba",
+    "headword": "imply",
+    "severity": "Minor",
+    "reason": "逻辑后果与间接表达均有资料，意思是必须限定含蓄或推知，不能当所有mean的无条件替换。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c3b290f1c5ba:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "意味着／意思是",
+          "glosses": [
+            "意味着",
+            "意思是"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "意味着",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00932561",
+                "wn31:v:02641270"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "意思是",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00932561",
+                "wn31:v:02641270"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00932561",
+            "wn31:v:02641270"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c3b290f1c5ba:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "暗示",
+          "glosses": [
+            "暗示"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "暗示",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00931801"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00931801"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c3b290f1c5ba:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "意味着（由此可推知）",
+          "glosses": [
+            "意味着",
+            "意思是"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "意味着",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00932561",
+                "wn31:v:02641270"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "意思是",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00932561",
+                "wn31:v:02641270"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00932561",
+            "wn31:v:02641270"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c3b290f1c5ba:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "暗示",
+          "glosses": [
+            "暗示"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "暗示",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00931801"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00931801"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "意味着或意思是限可推知的含义，暗示为间接表达；不把imply当所有明确直说的mean。"
+    }
+  },
+  {
+    "stable_id": "SG25-f3e8234402a3",
+    "headword": "appreciate",
+    "severity": "Minor",
+    "reason": "fully aware支持理解情况意义，不是任何读懂说明；显示限定意识到价值情况，欣赏感激仍独立。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "欣赏",
+          "glosses": [
+            "欣赏"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "欣赏",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02260917"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02260917"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        },
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "感激",
+          "glosses": [
+            "感激"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "感激",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:01809949"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:01809949"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        },
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:3",
+          "part_of_speech": "动词",
+          "display_zh": "理解",
+          "glosses": [
+            "理解"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "理解",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00593736"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00593736"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "欣赏",
+          "glosses": [
+            "欣赏"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "欣赏",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02260917"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02260917"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        },
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:2",
+          "part_of_speech": "动词",
+          "display_zh": "感激",
+          "glosses": [
+            "感激"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "感激",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:01809949"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:01809949"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        },
+        {
+          "sense_group_id": "SG25-f3e8234402a3:core:3",
+          "part_of_speech": "动词",
+          "display_zh": "理解（充分意识到情况或价值）",
+          "glosses": [
+            "理解"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "理解",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00593736"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00593736"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "core_explanation": "欣赏、感激、理解三个用法都适合首次接触，不能把感激误压成评价艺术的欣赏。"
+    }
+  },
+  {
+    "stable_id": "SG25-dd2638abd6cd",
+    "headword": "suppress",
+    "severity": "Major",
+    "reason": "Cambridge阻止表达或运作可支持限语境禁止，暴力平息不等于所有征服；后者原片段仍暂存。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-dd2638abd6cd:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "抑制",
+          "glosses": [
+            "抑制"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "抑制",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00153784"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00153784"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-dd2638abd6cd:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "禁止",
+          "glosses": [
+            "禁止"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "禁止",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-dd2638abd6cd:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "抑制",
+          "glosses": [
+            "抑制"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "抑制",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00153784"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00153784"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-dd2638abd6cd:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "禁止（限阻止表达、流通或运作等语境）",
+          "glosses": [
+            "禁止"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "禁止",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:suppress"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:suppress"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先记抑制，禁止限阻止表达或流通等语境需补证；裸征服易误作征服领土，原文暂存。"
+    }
+  },
+  {
+    "stable_id": "SG25-715dc8493c36",
+    "headword": "private",
+    "severity": "Minor",
+    "reason": "个体专属、非公开范围的参照相容，私有不是每一次private都在判财产所有权。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-715dc8493c36:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "私人的",
+          "glosses": [
+            "私人的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "私人的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01772598",
+                "wn31:s:01773890"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01772598",
+            "wn31:s:01773890"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-715dc8493c36:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "私有的",
+          "glosses": [
+            "私有的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "私有的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01864034"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01864034"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-715dc8493c36:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "私人的",
+          "glosses": [
+            "私人的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "私人的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01772598",
+                "wn31:s:01773890"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01772598",
+            "wn31:s:01773890"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-715dc8493c36:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "私有的（非公共、专属于个人或群体）",
+          "glosses": [
+            "私有的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "私有的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:a:01864034"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:01864034"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "私人涉及个体与非公开，私有侧重不属于公众的范围，原译保留但不把一切私人话都解释成财产权。"
+    }
+  },
+  {
+    "stable_id": "SG25-986a1b7135f4",
+    "headword": "primary",
+    "severity": "Minor",
+    "reason": "Cambridge先发生和儿童初级教育补足词网宽泛基本定义，最初初级主要仍保留区别。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-986a1b7135f4:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "主要的",
+          "glosses": [
+            "主要的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "主要的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01280536",
+                "wn31:a:01858102"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01280536",
+            "wn31:a:01858102"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-986a1b7135f4:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "初级的",
+          "glosses": [
+            "初级的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "初级的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01862151"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01862151"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        },
+        {
+          "sense_group_id": "SG25-986a1b7135f4:extended:2",
+          "part_of_speech": "形容词",
+          "display_zh": "最初的",
+          "glosses": [
+            "最初的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "最初的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00702966"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00702966"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-986a1b7135f4:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "主要的",
+          "glosses": [
+            "主要的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "主要的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01280536",
+                "wn31:a:01858102"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01280536",
+            "wn31:a:01858102"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-986a1b7135f4:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "初级的（如儿童初级教育）",
+          "glosses": [
+            "初级的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "初级的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:primary"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:primary"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        },
+        {
+          "sense_group_id": "SG25-986a1b7135f4:extended:2",
+          "part_of_speech": "形容词",
+          "display_zh": "最初的（首先发生的）",
+          "glosses": [
+            "最初的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "最初的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:primary"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:primary"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "主要的是明确核心，初级与最初需分别看教育或来源阶段；词网较宽参照不足证明所有时间用法。"
+    }
+  },
+  {
+    "stable_id": "SG25-e5bade0e979c",
+    "headword": "prior",
+    "severity": "Info",
+    "reason": "Merriam-Webster明确另列重要性优先，补足词网较早义覆盖空白，原优先的不应删除。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-e5bade0e979c:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "先前的",
+          "glosses": [
+            "先前的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "先前的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00122938"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00122938"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-e5bade0e979c:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "优先的",
+          "glosses": [
+            "优先的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "优先的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-e5bade0e979c:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "先前的",
+          "glosses": [
+            "先前的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "先前的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:00122938"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:00122938"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-e5bade0e979c:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "优先的",
+          "glosses": [
+            "优先的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "优先的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:prior"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:prior"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "先前的指时间较早，优先的可能涉及次序重要性，词网未列时须独立词典补证，不猜成先验哲学用法。"
+    }
+  },
+  {
+    "stable_id": "SG25-ffa2b8b37132",
+    "headword": "privilege",
+    "severity": "Info",
+    "reason": "Cambridge另有特殊愉快机会的定义，原荣幸有支持而不只是依据特权猜译。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ffa2b8b37132:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "特权",
+          "glosses": [
+            "特权"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "特权",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05165679",
+                "wn31:n:05186242"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05165679",
+            "wn31:n:05186242"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-ffa2b8b37132:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "特别的荣幸",
+          "glosses": [
+            "特别的荣幸"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "特别的荣幸",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-ffa2b8b37132:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "特权",
+          "glosses": [
+            "特权"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "特权",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:05165679",
+                "wn31:n:05186242"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:05165679",
+            "wn31:n:05186242"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-ffa2b8b37132:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "特别的荣幸",
+          "glosses": [
+            "特别的荣幸"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "特别的荣幸",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:privilege"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:privilege"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "特权先记，特别荣幸是不同的积极评价用法，词网未直接覆盖时补证，不擅自删掉。"
+    }
+  },
+  {
+    "stable_id": "SG25-c39a7d54f55b",
+    "headword": "appropriate",
+    "severity": "Info",
+    "reason": "Cambridge自取己用常未许可支持挪用语境，与分配资源的拨款不同，原两动词不能合义。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "适当的",
+          "glosses": [
+            "适当的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "适当的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:a:00135772"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00135772"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "拨款",
+          "glosses": [
+            "拨款"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "拨款",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00726112"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00726112"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        },
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "挪用",
+          "glosses": [
+            "挪用"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "挪用",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "适当的",
+          "glosses": [
+            "适当的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "适当的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:a:00135772"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:a:00135772"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "拨款",
+          "glosses": [
+            "拨款"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "拨款",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00726112"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00726112"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        },
+        {
+          "sense_group_id": "SG25-c39a7d54f55b:extended:2",
+          "part_of_speech": "动词",
+          "display_zh": "挪用；擅自拿来己用",
+          "glosses": [
+            "挪用"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "挪用",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "web:appropriate"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:appropriate"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "适当的是形容词，拨款与挪用是不同动词；挪用需补证，不能把正式拨款和非法占用当同义。"
+    }
+  },
+  {
+    "stable_id": "SG25-fc9184134ae5",
+    "headword": "property",
+    "severity": "Minor",
+    "reason": "Collins或Cambridge房地产补证可保地产，财产与所有物同一所有权框架可优化显示，属性另列候选。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-fc9184134ae5:core:1",
+          "part_of_speech": "名词",
+          "display_zh": "财产",
+          "glosses": [
+            "财产"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "财产",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13265007"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13265007"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-fc9184134ae5:extended:1",
+          "part_of_speech": "名词",
+          "display_zh": "所有物",
+          "glosses": [
+            "所有物"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "所有物",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13265007"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13265007"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+        },
+        {
+          "sense_group_id": "SG25-fc9184134ae5:extended:2",
+          "part_of_speech": "名词",
+          "display_zh": "地产",
+          "glosses": [
+            "地产"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "地产",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": []
+            }
+          ],
+          "evidence_ids": [],
+          "evidence_relation": "reference_gap_pending_independent_check",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-fc9184134ae5:review:core:s002,s003",
+          "part_of_speech": "名词",
+          "display_zh": "财产／所有物",
+          "glosses": [
+            "所有物",
+            "财产"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "所有物",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13265007"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "财产",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13265007"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:n:13265007"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-fc9184134ae5:extended:2",
+          "part_of_speech": "名词",
+          "display_zh": "地产",
+          "glosses": [
+            "地产"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "地产",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "web:property"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "web:property"
+          ],
+          "evidence_relation": "AI_selected_context_compatibility_not_human_gold_or_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "财产是较广核心，所有物与地产需对象区别；地产的具体土地建筑义需补证，性质属性缺口只列候选。"
+    }
+  },
+  {
+    "stable_id": "SG25-4bab36ce40d3",
+    "headword": "rigid",
+    "severity": "Minor",
+    "reason": "不可弯曲与不可妥协定义支持原两片段，但严格需限僵化不灵活，非所有严格都是rigid。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-4bab36ce40d3:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "僵硬的",
+          "glosses": [
+            "僵硬的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "僵硬的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01027321"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01027321"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-4bab36ce40d3:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "严格的",
+          "glosses": [
+            "严格的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "严格的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:02446199"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:02446199"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-4bab36ce40d3:core:1",
+          "part_of_speech": "形容词",
+          "display_zh": "僵硬的",
+          "glosses": [
+            "僵硬的"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "僵硬的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:01027321"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:01027321"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-4bab36ce40d3:extended:1",
+          "part_of_speech": "形容词",
+          "display_zh": "严格的（缺乏灵活性、不可妥协的语境）",
+          "glosses": [
+            "严格的"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "严格的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:s:02446199"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:s:02446199"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "僵硬是不易弯曲，严格的在不灵活不妥协语境成立，不等同所有认真守规则。"
+    }
+  },
+  {
+    "stable_id": "SG25-77ede212aeb4",
+    "headword": "regulate",
+    "severity": "Minor",
+    "reason": "调整时间程度与按规则使合规不同，管理控制合组须保留规范约束，不泛作所有manage。",
+    "before": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-77ede212aeb4:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "调节",
+          "glosses": [
+            "调节"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "调节",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300122"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300122"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-77ede212aeb4:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "管理／控制",
+          "glosses": [
+            "管理",
+            "控制"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "管理",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02517217"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "控制",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02517217"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02517217"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+    },
+    "after": {
+      "core_meanings": [
+        {
+          "sense_group_id": "SG25-77ede212aeb4:core:1",
+          "part_of_speech": "动词",
+          "display_zh": "调节",
+          "glosses": [
+            "调节"
+          ],
+          "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "调节",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:00300122"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:00300122"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "single_original_fragment",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "sense_group_id": "SG25-77ede212aeb4:extended:1",
+          "part_of_speech": "动词",
+          "display_zh": "管理／控制（按规则约束或使合规）",
+          "glosses": [
+            "管理",
+            "控制"
+          ],
+          "origin": "AI_review_rephrasing_not_original_wording",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "管理",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02517217"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "控制",
+              "original_pos": "动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:v:02517217"
+              ]
+            }
+          ],
+          "evidence_ids": [
+            "wn31:v:02517217"
+          ],
+          "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+          "grouping_relation": "near_synonym_display_candidate",
+          "pos_assignment": "source_explicit_or_single_POS",
+          "usage_note": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+        }
+      ],
+      "other_meanings": [],
+      "core_explanation": "调节数值先记，管理或控制限按规则使合规的框架，不能泛指任何组织管理活动。"
+    }
+  }
+]

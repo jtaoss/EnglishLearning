@@ -1,0 +1,16 @@
+{
+  "observed_date":"2026-11-13",
+  "scope":"隔离数据、追溯、封存顺序与门槛反例；未运行正式学习UI/SQLite/Notion",
+  "runs":[
+    {"command":"python -X utf8 scripts/p6c4/validate.py","exit_code":0,"result":"600个不同正式ID、1453个原文片段、48历史状态及全部输入/提案封存核对通过"},
+    {"command":"python -X utf8 -m unittest discover -s test/p6c4 -p \"test_*.py\" -v","exit_code":0,"tests":17,"failures":0,"result":"全部通过；含原文篡改、丢义、错误词头引用、无说明一对多、伪造签审/采用以及A/B/C门槛反例"},
+    {"command":"flutter test --no-pub --reporter expanded test/p6c2/core_meanings_500_contract_test.dart test/p6c3/core_quality_review_contract_test.dart test/p6c4/v4_isolated_contract_test.dart","exit_code":0,"tests":15,"failures":0,"result":"原C2四项、原C3五项、C4六项Dart/Flutter JSON及来源契约通过"},
+    {"command":"dart analyze test/p6c4/v4_isolated_contract_test.dart","exit_code":0,"result":"No issues found"}
+  ],
+  "recovered_implementation_events":[
+    "首次盲审封存读取器假设顶层core_meanings；审者A使用groups.core封装。增加只读结构适配，未改封存提案内容，随后全部100源字段/映射校验通过。",
+    "首次回归组装校验发现stewardess新引用缺少随附的出版社观察；补入审者实际提供的source记录，未改任何旧文件，重新校验通过。",
+    "补充来源intercourse的语体概述在生成及盲审之前显式勘误：保留原包与勘误，不将性交义formal标签套用到交往义。规则与放行标准未变。"
+  ],
+  "limits":["自动化测试不证明人工词典级准确率或记忆效果","没有可证明不同后端模型身份","600词人工签审均为0","未构建或发布UI，未执行剩余词汇全量任务"]
+}

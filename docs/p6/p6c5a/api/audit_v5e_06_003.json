@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_003",
+  "kind": "audit",
+  "request_hash": "54a4ef993cdb0b073c5aafec8b0e991f6f35ec33c0bba86d4714e7c4ae786b27",
+  "input_ids": [
+    "SG25-e91fadf24f78",
+    "SG25-4ca303a3bf7d",
+    "SG25-c7ce66d0fb14",
+    "SG25-b314ae60cb74",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "f37efa23-f18a-40e7-8b44-72d4cc066820",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-e91fadf24f78\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"技术（应用知识/工具改造环境）\",\"relation\":\"语义等价\",\"reason\":\"核心组以“技术”保留应用义，词典 n00951435 正为知识/工具/技艺的应用，未新增对象限制。\",\"evidence_ids\":[\"wn31:n:00951435\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"科技（科学与技术）\",\"relation\":\"无法确定\",\"reason\":\"“科技”含科学成分，所给 technology 证据不直接涵盖 science；候选暂存待核，未并入核心。\",\"evidence_ids\":[\"wn31:n:00951435\"],\"context\":\"uncertain\",\"residual_scope\":\"extra: 源中文含 science 范围，英语 technology 证据仅应用技术\",\"counterexample\":\"technology 的词典定义仅说应用知识/工具控制环境，不含 science 学科本身\",\"counterexample_evidence_ids\":[\"wn31:n:00951435\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_sense_held_source_uncertain\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:00951435\"],\"reason\":\"“科技”范围宽于所给 technology 证据；暂存待核是风险保留，不是已确认错误。\",\"repair_suggestion\":\"保留 s002 为待核；核原文语境是否仅指 technology，不要自动把 science 并入核心。\"}],\"note\":\"s001 技术应用义有核心覆盖；s002 科技因含科学待核；设备义为外部词典候选，未冒充原文。\"},{\"id\":\"SG25-4ca303a3bf7d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"建筑学（学科/学问）\",\"relation\":\"语义等价\",\"reason\":\"核心组为“建筑学”，词典 n06132970 为建筑设计、建造与装饰原则的学科，词性对象吻合。\",\"evidence_ids\":[\"wn31:n:06132970\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"建筑风格/样式\",\"relation\":\"无法确定\",\"reason\":\"“建筑风格”在候选和所给词典证据中均无对应风格义；不能改派为建筑作品或职业。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"missing: 建筑风格/样式义未在候选或所给证据中出现\",\"counterexample\":\"所给可支持的是建筑作品/职业/学科/计算机结构，不是建筑风格\",\"counterexample_evidence_ids\":[\"wn31:n:02737730\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"体系结构（通常指计算机体系结构）\",\"relation\":\"语义等价\",\"reason\":\"其他组明确限定为计算机体系结构，词典 n04939455 即计算机硬件或系统软件的结构与组织。\",\"evidence_ids\":[\"wn31:n:04939455\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_sense_held_no_dictionary_evidence\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[],\"reason\":\"原文“建筑风格”暂存，因所给证据无风格义；这是待证来源缺口，非已确认的生成器错误。\",\"repair_suggestion\":\"保留 s002 待核；补找 architecture 的风格/样式证据或核原文语境，不要用建筑作品义顶替。\"}],\"note\":\"s001 建筑学义在核心；s003 计算机体系结构在其他层；s002 建筑风格无证据暂存。\"},{\"id\":\"SG25-c7ce66d0fb14\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"尝试（源词性未定，名词/动词均可能）\",\"relation\":\"合理概括\",\"reason\":\"源义词性为 null；候选名词组和动词组均保留“尝试”，未把单一词性硬配给源义。\",\"evidence_ids\":[\"wn31:n:00787849\",\"wn31:v:02535833\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"企图（可含负面意图；源词性未定）\",\"relation\":\"合理概括\",\"reason\":\"源义词性为 null；名词和动词组均含“企图”，并提示英语 attempt 不必含贬义，未删并该用法。\",\"evidence_ids\":[\"wn31:n:00787849\",\"wn31:v:02535833\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-c7ce66d0fb14:p6c5:core_meanings:1\",\"SG25-c7ce66d0fb14:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:n:00787849\",\"wn31:v:02535833\"],\"reason\":\"两个源义 part_of_speech 为 null，仅词条级为名词/动词；当前用名词、动词双组覆盖，但源词性仍未核定。\",\"repair_suggestion\":\"保留名词/动词双组为可能覆盖，待源词性核定后再定首忆顺序；不要将 null 改成单一词性。\"}],\"note\":\"两义均出现在名词/动词核心组；源词性未定，按双 POS 保留风险，不硬配。\"},{\"id\":\"SG25-b314ae60cb74\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"温度（冷热程度）\",\"relation\":\"语义等价\",\"reason\":\"核心组“温度”对应词典 n05018974 的冷热程度物理量，未把躯体冷热感觉义混入。\",\"evidence_ids\":[\"wn31:n:05018974\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文仅“温度”一段，核心覆盖冷热程度义；冷热感觉义未作本段自然改述。\"},{\"id\":\"SG25-bf0bb4ee60e2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"伸展（肢体/物体伸展或展开）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留肢体伸展及可伸展物体展开义，证据覆盖 stretch limbs、straighten/unfold、stretch out 等。\",\"evidence_ids\":[\"wn31:v:00027261\",\"wn31:v:01371528\",\"wn31:v:02058913\",\"pub:p6c5:parent:extend\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"变宽（不及物，变得更宽）\",\"relation\":\"无法确定\",\"reason\":\"所给 extend 证据多为他动扩大范围或空间跨度，未直接证明不及物“become wider”；候选暂存待核。\",\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"context\":\"uncertain\",\"residual_scope\":\"missing: 不及物“变宽/变得更宽”无直接证据；扩大范围/空间跨度不是同一用法\",\"counterexample\":\"所给扩大范围证据为 widen the range 等他动用法，不是不及物 become wider\",\"counterexample_evidence_ids\":[\"wn31:v:00541315\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"延伸（空间/时间绵延）\",\"relation\":\"语义等价\",\"reason\":\"核心组“延伸（空间/时间）”对应词典 n02691775、n02693758、n02695935 的空间/时间绵延或向外伸出。\",\"evidence_ids\":[\"wn31:v:02691775\",\"wn31:v:02693758\",\"wn31:v:02695935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_sense_held_no_direct_evidence\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"reason\":\"“变宽”因证据方向/及物性不吻合而暂存，未强行并入核心；这是待证来源缺口。\",\"repair_suggestion\":\"保留 s002 待核；补找不及物 become wider 的证据或复核原文“变宽”是否对应其他英语词，不要硬塞进延伸组。\"}],\"note\":\"s001 伸展、s003 延伸有核心覆盖；s002 变宽因证据方向不合暂存；时间延长、给予/提供、扩大范围仅作外部候选。\"}]}",
+  "usage": {
+    "prompt_tokens": 6991,
+    "completion_tokens": 16263,
+    "total_tokens": 23254,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14181
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5071
+  },
+  "started_utc": "2026-11-13T09:50:57.552063+00:00",
+  "completed_utc": "2026-11-13T09:52:32.226855+00:00",
+  "elapsed_seconds": 94.672,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

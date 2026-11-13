@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_005",
+  "kind": "audit",
+  "request_hash": "9200f0f3247eea4e1fc42cc6ff83a0685a0a9ecc855309c12d58e59cc6b2648e",
+  "input_ids": [
+    "SG25-bd1b16004d22",
+    "SG25-46401dc068e7",
+    "SG25-73c76d56fd40",
+    "SG25-ae80c184961f",
+    "SG25-5e9ad751b5e6"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "bcdbe910-5400-41d7-a4be-4866ce558714",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-bd1b16004d22\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"产出能力/生产力（较一般的能力义）\",\"relation\":\"语义等价\",\"reason\":\"扩展组以“生产力”承接原文较一般的产出能力义，与 wn31:n:05155187 的 productive power/quality 定义相符；核心保留可计量的“生产率”义。\",\"evidence_ids\":[\"wn31:n:05155187\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"按投入产出的比率/生产率\",\"relation\":\"语义等价\",\"reason\":\"核心组“生产率”与 wn31:n:13846712 的经济学 ratio 定义一致，原文语境未要求额外对象限制。\",\"evidence_ids\":[\"wn31:n:13846712\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"两义均保留：核心先列可计量的“生产率”，扩展保留较一般的“生产力/产出能力”；核心压缩有明确说明。\"},{\"id\":\"SG25-46401dc068e7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"数量/程度减少（名词性）\",\"relation\":\"语义等价\",\"reason\":\"核心短语包含“减少”，与 wn31:n:00352464 的 act of decreasing/reducing something 相符。\",\"evidence_ids\":[\"wn31:n:00352464\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"缩减/削减（名词性）\",\"relation\":\"语义等价\",\"reason\":\"“缩减”可由核心组“减少／缩减／缩小”及 reducing something 证据覆盖，未加入额外的对象排他限制。\",\"evidence_ids\":[\"wn31:n:00352464\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"尺寸/范围变小（名词性概括）\",\"relation\":\"合理概括\",\"reason\":\"“缩小”与减少/缩减合并为近义记忆框架，由 reducing something 概括承接；具体对象差异仍可从原片段追溯。\",\"evidence_ids\":[\"wn31:n:00352464\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义片段合并为核心短语，共享“使/变少”的词典义；化学还原等外部义未塞入来源层。\"},{\"id\":\"SG25-73c76d56fd40\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"人或事物有活力、有行动力/有干劲\",\"relation\":\"语义等价\",\"reason\":\"核心组“充满活力的”对应 wn31:a:00811761 的 action/forcefulness/force of personality 用法。\",\"evidence_ids\":[\"wn31:a:00811761\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"处于变化、活动状态或与动力学相关（较宽）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组仅用 wn31:a:02991423“of or relating to dynamics”承接，技术域限制把原文较宽的“动态的”收窄；一般“变化/活跃”用法没有保留或暂存。\",\"evidence_ids\":[\"wn31:a:02991423\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少一般“不断变化/活跃的”动态义，仅留“动力学的”技术义\",\"counterexample\":\"dynamic market / dynamic speaker 的 active/forceful 用法见 a:00811761\",\"counterexample_evidence_ids\":[\"wn31:a:00811761\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"范围收窄\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-73c76d56fd40:extended:1\"],\"evidence_ids\":[\"wn31:a:02991423\",\"wn31:a:00811761\"],\"reason\":\"原文“动态的”未限定技术域；扩展组以“of or relating to dynamics”承接，缺少一般变化/活跃义。a:00811761 的 dynamic market 示例显示更广的 active 用法。\",\"repair_suggestion\":\"扩展组改为“动态的；不断变化的”，将“动力学的”作为语境限定或另列，并补一般动态义的证据或明确暂存剩余范围。\"}],\"note\":\"核心“充满活力的”匹配；扩展“动态的”被技术动力学义收窄，一般变化/活跃义未明确保留，需修正。\"},{\"id\":\"SG25-ae80c184961f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"物理电现象/电能（日常“电”）\",\"relation\":\"语义等价\",\"reason\":\"核心组“电”同时由 wn31:n:11470244 物理现象和 wn31:n:11470903 电能/电流两证据支持；未把情绪兴奋比喻义放入来源层。\",\"evidence_ids\":[\"wn31:n:11470244\",\"wn31:n:11470903\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文单义“电”已覆盖物理现象与电能/用电概念；情绪兴奋义作为外部词典义未升入核心。\"},{\"id\":\"SG25-5e9ad751b5e6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"经济学学科\",\"relation\":\"语义等价\",\"reason\":\"核心组与 wn31:n:06158935 的社会科学分支定义一致；未按词形误加“经济状况/多经济”。\",\"evidence_ids\":[\"wn31:n:06158935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“经济学”单一学科义与词典证据精确对应，无额外来源义缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 4375,
+    "completion_tokens": 9414,
+    "total_tokens": 13789,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7982
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2455
+  },
+  "started_utc": "2026-11-13T09:43:09.153826+00:00",
+  "completed_utc": "2026-11-13T09:44:03.559204+00:00",
+  "elapsed_seconds": 54.406,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

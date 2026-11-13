@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_041",
+  "kind": "verify",
+  "request_hash": "2c3502278073eb65f5179216e90cc0ea1c9d70302ed66db614ac974829bd21b0",
+  "input_ids": [
+    "SG25-13d853006f71",
+    "SG25-63e6ce93e1bc"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4ff65ec3-c560-4c19-963f-cb524a183da1",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-13d853006f71\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1保留“赞助；资助”，对应 assume sponsorship of；对象列举为示例，不是排他限制，原“赞助”作为提供赞助的义项得到覆盖。\",\n          \"evidence_ids\": [\"wn31:v:02224722\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心2加入“倡议；牵头”，原“发起”仅为启动/发起，不必然包含牵头负责或倡议；所给证据 v:02224930 支持 lead/responsibility，超出原文范围。\",\n          \"evidence_ids\": [\"wn31:v:02224930\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心3把“赞助者”写为“赞助者；支持者”，但证据 n:10427699 仅支持 broad supporter/champion，原文通常特指出资赞助方；宽泛 supporter 未被原文/证据单独限制。\",\n          \"evidence_ids\": [\"wn31:n:10427699\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-13d853006f71:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:02224930\"],\n          \"reason\": \"原文“发起”没有明确包含“倡议/牵头”的独立用途；候选将 v:02224930 的 lead/responsibility 义并入，形成范围扩大，可能让学习者把 sponsor 用于仅提倡或牵头而未发起的情形。\",\n          \"counterexample\": \"sponsor a plan 可以表示发起并负责，但仅“倡议”或“牵头”不等于“发起”。\",\n          \"repair_suggestion\": \"将“倡议；牵头”降为注释或扩展层，核心只保留“发起/倡议启动”对应的 v:02224930 用法；或补充原语境证明“发起”兼指牵头负责。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion_evidence_gap\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-13d853006f71:p6c5:core_meanings:3\"],\n          \"evidence_ids\": [\"wn31:n:10427699\"],\n          \"reason\": \"核心3并列“支持者”扩大原文“赞助者”，但证据仅证明 broad supporter/champion；出资赞助商窄义未被所给定义单独证实，核心首屏即引入原词未表达的宽义。\",\n          \"counterexample\": \"supporter/champion 可涵盖非出资的支持者，不能代替原文“赞助者”通常暗含的出资赞助义。\",\n          \"repair_suggestion\": \"补入明确支持 financial sponsor/出资赞助商的名词证据，或将“支持者”置于扩展并在核心注明窄义待核。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"动词赞助义与发起义分列合理；但“发起”义被扩大到倡议/牵头，名词赞助者被扩大到一般支持者，均为 Minor 范围扩大，核心需收紧或补证。\"\n    },\n    {\n      \"id\": \"SG25-63e6ce93e1bc\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原名词“距离”未限定空间/时间/抽象，候选只把空间距离放核心、时间间隔放扩展； emotional/mental distance 有词典证据但仅列外部候选，未进入来源层或暂存，故覆盖为真子集。\",\n          \"evidence_ids\": [\"wn31:n:07521110\", \"wn31:n:05091408\", \"wn31:n:05136830\", \"wn31:n:15197259\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"核心2使用 keep at a distance 来表达“使疏远”，但所给证据示例为 distance oneself from，方向是自我保持距离；他动/使役对象他人的直接用例未获证据，尚不能确定核心是否完整对应原文方向。\",\n          \"evidence_ids\": [\"wn31:v:02688950\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-63e6ce93e1bc:p6c5:core_meanings:1\", \"SG25-63e6ce93e1bc:p6c5:extended_meanings:1\"],\n          \"evidence_ids\": [\"wn31:n:07521110\"],\n          \"reason\": \"原文“距离”未限定领域，候选只将空间与时间距离编入核心/扩展；情感/心理距离有 WordNet 证据但被列为 external candidate，未由任何 source-linked 层或暂存承接，导致原义覆盖不全。\",\n          \"counterexample\": \"emotional distance 表示心理距离，是 distance 的独立用法；不能因已列空间/时间就认为一般“距离”覆盖完整。\",\n          \"repair_suggestion\": \"将情感/心理距离列入扩展层或 explicit 暂存待核，而非仅作 external candidate；或在核心/扩展注明“另有抽象距离义待证”。\"\n        }\n      ],\n      \"unresolved\": [\n        {\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-63e6ce93e1bc:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:02688950\"],\n          \"concern\": \"v:02688950 例证为 distance oneself from，只能确证自反/自我保持距离；原文“使疏远”的他动/使役方向（distance sb/sth）未被直接证实。\",\n          \"repair_suggestion\": \"补充 transitive/causative distance sb from 的可靠词典例证，或将核心动词组标注为待核并说明当前证据主要为自反用法。\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"空间/时间距离有证据，但情感距离遗漏是 source_scope 收窄；动词“使疏远”方向证据不足，先列未决而不确认为错误。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5129,
+    "completion_tokens": 8115,
+    "total_tokens": 13244,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6635
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3465
+  },
+  "started_utc": "2026-11-13T09:58:38.976342+00:00",
+  "completed_utc": "2026-11-13T10:00:29.219665+00:00",
+  "elapsed_seconds": 110.25,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

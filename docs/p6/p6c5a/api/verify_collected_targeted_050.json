@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_050",
+  "kind": "verify",
+  "request_hash": "8b9a5e6a73663fab6f06f3fd68f1b96fd9d6dd7cdda27c63915e8d9779180132",
+  "input_ids": [
+    "SG25-1431179c8c61",
+    "SG25-503acf004b50"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "3e65c181-f72c-4860-8974-a6e373c678f3",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-1431179c8c61\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"推动；使向前移动（物理）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组用 cause to move forward with force 对应源“推动”，保留物理推进方向，词性、对象与证据一致。\",\n          \"evidence_ids\": [\"wn31:v:01514338\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"驱使；促使行动（汉语可含较强驱动，但所给证据为提供动机）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“促使行动（提供动力或动机）”与 give an incentive for action 一致；注释澄清不等同于一切强迫，未额外扩大范围。\",\n          \"evidence_ids\": [\"wn31:v:01653541\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"“驱使”在汉语中可能含有命令或强迫义，所供 WordNet 证据仅覆盖“提供动机”；若来源教学意图含强迫驱动，则扩展层需要补充词典证据或暂存该剩余范围。\"\n      ],\n      \"preferences\": [\n        \"将物理“推动”置于核心、动机“驱使”置于扩展，属于教学排序差异，未影响覆盖。\"\n      ],\n      \"note\": \"独立审计认为两个源义均有对应证据覆盖；未确认范围收窄缺陷。强迫义待核不构成已证丢失。\"\n    },\n    {\n      \"id\": \"SG25-503acf004b50\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"法规（汉语可泛指法律、行政法规、部门规章等）\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选限定为“立法机关制定的成文法”，由 act passed by a legislative body 支持；但汉语“法规”可能宽于英语 statute，因此按英语证据收窄，需来源核验。\",\n          \"evidence_ids\": [\"wn31:n:06576378\", \"wn31:s:02294522\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"法令；立法机关制定之法\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选“法令（限立法机关制定的成文法）”与 WordNet 立法行为定义一致。\",\n          \"evidence_ids\": [\"wn31:n:06576378\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源“法规”的汉语范围可能含行政法规、部门规章等非立法机关规范；所供英语词典将 statute 限定为立法机关成文法，需确认原文是否意图泛指法规还是已按英语 statute 收窄。\"\n      ],\n      \"preferences\": [\n        \"将“法规/法令”合并在同一核心组的处理妥当，不改变每个源义的可追溯性。\"\n      ],\n      \"note\": \"候选通过英语立法机关成文法定义对宽泛的汉语“法规”作了必要限定；该源范围待核，不判为生成器覆盖错误。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3480,
+    "completion_tokens": 3639,
+    "total_tokens": 7119,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2913
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1816
+  },
+  "started_utc": "2026-11-13T09:59:39.960337+00:00",
+  "completed_utc": "2026-11-13T10:00:29.778390+00:00",
+  "elapsed_seconds": 49.813,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

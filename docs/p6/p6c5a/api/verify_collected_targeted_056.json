@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_056",
+  "kind": "verify",
+  "request_hash": "715440bfb0d7851f37407b0d3c4cf6c9aeaeebb8e80ff1ad6b18806c63cc0165",
+  "input_ids": [
+    "SG25-9550e70a7c36",
+    "SG25-392245974134"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "19fe6ad3-625f-4ef9-82cd-94eae33704c9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9550e70a7c36\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“碰撞”为名词，证据覆盖物理撞击事故与粒子相撞，未附加无来源限制；原文“碰撞”在该英语语境下对应物理碰撞义。\",\n          \"evidence_ids\": [\"wn31:n:07316161\", \"wn31:n:07317160\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“冲突（观点、目标等）”对应 WordNet 抽象冲突义，与原文“冲突”在英语 collision 义项范围内一致；虽然中文“冲突”可能更宽，但不构成英语证据内的缺损。\",\n          \"evidence_ids\": [\"wn31:n:07197660\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 来源“冲突”中文略宽，候选按英语 collision 抽象义限制为“观点、目标等”；若教材原意包含更宽冲突，则需额外源证据核验。当前无英语证据支持更宽义，故仅待核不判缺陷。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"collision 两个义项物理碰撞与抽象冲突分列，证据充分；语义等价。\"\n    },\n    {\n      \"id\": \"SG25-392245974134\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源义项词性为 null 且整词含名词、动词，候选仅以动词“敲；敲击”对应，证据为动词敲门；无法排除源片段还包含名词敲击声/一次敲击义，故不能判定等价。\",\n          \"evidence_ids\": [\"wn31:v:01417121\", \"wn31:n:07400970\", \"wn31:n:07424807\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源“碰撞”词性未定，候选仅以动词“碰；撞击”覆盖动词义；名词性一次撞击/碰撞义有英语证据但未在源派生层保留，也无法确认源是否要求该义，故无法确定。\",\n          \"evidence_ids\": [\"wn31:v:01242183\", \"wn31:n:07424807\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源词词性含名词，但两个源义项词性为 null；候选仅保留动词层，名词敲击声/一次撞击未被源派生层或暂存保留。需要根据原文语境/教材原意确认源是否包含名词义；若包含，则候选存在范围缺口。\",\n        \"若源片段只指动词用法，则当前动词覆盖成立；否则未采用外部名词候选需纳入源映射。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"knock 源词性未解析且两义项均未定词性；现有动词覆盖合理，但名词义缺口未决，不能判定为已完整覆盖。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4734,
+    "completion_tokens": 6865,
+    "total_tokens": 11599,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6132
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3070
+  },
+  "started_utc": "2026-11-13T10:00:00.705010+00:00",
+  "completed_utc": "2026-11-13T10:01:37.055839+00:00",
+  "elapsed_seconds": 96.344,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

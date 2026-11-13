@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_002",
+  "kind": "holdout",
+  "request_hash": "3a44f3ee7de1df7ecd277849b22f15a0acbaf9560058b6f7edff069c970428da",
+  "input_ids": [
+    "SG25-c59ddd3f7ba6",
+    "SG25-c7ce66d0fb14"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "13d6ff65-670c-4075-afc8-148f01d44ef8",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c59ddd3f7ba6\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"形容词，表示非具体、抽象的概念或性质\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"用于修饰概念、思想、品质等，不需特定对象限制；词典义含抽象科学、抽象画等示例，但来源未限定\",\n          \"evidence_ids\": [\n            \"wn31:a:00011776\",\n            \"wn31:s:00865713\",\n            \"wn31:s:01987622\"\n          ],\n          \"uncertainty\": \"来源仅“抽象的”一般义，英语证据含多个子类，保留一般义不排除子类。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词，指文章、论点等的主要内容摘要\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"通常指对文本、论述的简短总结；来源无额外对象限制\",\n          \"evidence_ids\": [\n            \"wn31:n:06480622\"\n          ],\n          \"uncertainty\": \"词典定义为“sketchy summary”，原中文“摘要”不一定强调粗略，但可接受概括。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"动词，提取；从某物中取出或分离\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要宾语，但提供的英语证据中没有对应义；暂无法确定匹配\",\n          \"evidence_ids\": [],\n          \"uncertainty\": \"高；WordNet提供的动词义不含extract/remove，可能缺失或不适用。\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"动词，概括；对内容作摘要或提炼要点\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"通常以文本、理论等为对象\",\n          \"evidence_ids\": [\n            \"wn31:v:01010315\"\n          ],\n          \"uncertainty\": \"低；与“give an abstract (of)”一致。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：抽象的\",\n        \"名词：摘要\",\n        \"动词：概括\"\n      ],\n      \"deferred_source_ids\": [\n        \"s003\"\n      ],\n      \"deferral_reason\": \"动词“提取”在提供的英语证据中无对应义项，暂不纳入核心。\",\n      \"note\": \"未采用词典中‘make off with belongings of others’（偷窃）及‘consider abstractly’等动词义，因其不在来源范围；s003待核。\"\n    },\n    {\n      \"id\": \"SG25-c7ce66d0fb14\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"尝试；名词或动词，指努力做某事或尝试的行为\",\n          \"recommended_pos\": \"名词/动词\",\n          \"required_context\": \"上下文决定词性；作名词如“一次尝试”，作动词如“尝试做”\",\n          \"evidence_ids\": [\n            \"wn31:n:00787849\",\n            \"wn31:v:02535833\"\n          ],\n          \"uncertainty\": \"低；来源未指定词性，英语证据区分名词/动词，需保留两者。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"企图；名词或动词，指带有意图的尝试（常含计划性）\",\n          \"recommended_pos\": \"名词/动词\",\n          \"required_context\": \"上下文决定词性；不额外添加贬义限制，来源仅给出该词\",\n          \"evidence_ids\": [\n            \"wn31:n:00787849\",\n            \"wn31:v:02535833\"\n          ],\n          \"uncertainty\": \"中；‘企图’在中文可能有计划或不良意图色彩，但来源未标明，保留中性尝试义。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词/动词：尝试\",\n        \"名词/动词：企图\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"未采用名词义‘act of attacking’（wn31:n:00775311），因不在来源范围。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3008,
+    "completion_tokens": 4628,
+    "total_tokens": 7636,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3678
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3008
+  },
+  "started_utc": "2026-11-13T09:33:06.506041+00:00",
+  "completed_utc": "2026-11-13T09:34:15.086722+00:00",
+  "elapsed_seconds": 68.578,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

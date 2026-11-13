@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_23",
+  "request_hash": "b3a06d2f5960bccfece145e1b5111d286c3fea0a5a0a34c8adbb99cec2f66cf9",
+  "started_utc": "2026-11-13T08:14:59.036319+00:00",
+  "completed_utc": "2026-11-13T08:15:33.466152+00:00",
+  "elapsed_seconds": 34.422,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "9149fb0c-b3e4-4145-b7a3-e7b361bf3406",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3677,
+    "completion_tokens": 5420,
+    "total_tokens": 9097,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4766
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 861
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-355ac7d4d962\",\"core\":[[\"推测；猜测\",\"动词\",[\"s001\"],[\"wn31:v:00635105\",\"wn31:v:00929020\"],\"基于不确定或暂定依据进行推断、议论，不强调确证\"],[\"投机；冒险投资\",\"动词\",[\"s002\"],[\"wn31:v:02276935\"],\"为获利承担风险进行投资或买卖\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"深思；思索\",\"动词\",[\"wn31:v:00632042\"],\"WordNet另列‘深入思考某主题’义；原中文‘推测’不必然表达该侧重，仅作外部候选\"]],\"reason\":\"原中文两片段分别对应‘推测’和金融‘投机’，均有独立动词证据；前者合并不确定推断与议论式猜测，不把‘深思’混入已确认义。\",\"flags\":[[\"Info\",\"external_candidate_unadopted\",\"‘深思；思索’为词典支持但未采用为原文义项的候选。\"]]},{\"id\":\"SG25-982776aa0b87\",\"core\":[[\"怀疑；不信任\",\"动词\",[\"s001\"],[\"wn31:v:00689827\"],\"对某人或某事的可信度存疑，不信任\"],[\"猜想；怀疑（认为可能）\",\"动词\",[\"s001\"],[\"wn31:v:00923043\",\"wn31:v:00926844\"],\"认为某事很可能属实，或怀疑某人有罪\"],[\"嫌疑人\",\"名词\",[\"s002\"],[\"wn31:n:10700830\"],\"处于被怀疑状态的人，不特指已被起诉者\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"中文‘怀疑’可表不信任或存疑，也可表认为很可能或猜想；两者宾语和语义方向不同，分别由不信任与推测或有罪怀疑证据支持。\"},\"additions\":[[\"可疑的；靠不住的\",\"形容词\",[\"wn31:s:01923975\"],\"WordNet提供形容词用法，指行为或交易等显得可疑；原中文仅列动词和名词，未表达该形容词用法。\"],[\"被告；被控告者\",\"名词\",[\"wn31:n:09781524\"],\"法律语境下指被起诉或被控告者；原中文‘嫌疑人’不特指被告，故不并入核心。\"]],\"reason\":\"原中文明确分列动词‘怀疑’和名词‘嫌疑人’；动词‘怀疑’按不信任与认为可能两种实际用法拆开，名词用‘处于被怀疑状态的人’证据，不把法律被告义混入。\",\"flags\":[[\"Minor\",\"source_fragment_ambiguous\",\"原文动词‘怀疑’同时可覆盖‘不信任’与‘猜想或认为可能’两类用法，已按证据拆分并标注。\"],[\"Info\",\"external_candidate_unadopted\",\"形容词‘可疑的’和法律名词‘被告；被控告者’为词典支持但未采用为原文义项的候选。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

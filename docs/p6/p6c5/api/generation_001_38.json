@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_38",
+  "request_hash": "97102fa8d52d36ec34da2e6a58d83427c004b8440ce9aee2e6bdd884477f6fd7",
+  "started_utc": "2026-11-13T08:14:59.536591+00:00",
+  "completed_utc": "2026-11-13T08:15:40.776607+00:00",
+  "elapsed_seconds": 41.235,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d73a32e3-1935-44d3-bb50-30f4be4caa44",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3569,
+    "completion_tokens": 6498,
+    "total_tokens": 10067,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5899
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 753
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-fd13d46bad4b\",\"word\":\"restrict\",\"pos\":\"动词\",\"core\":[[\"限制；约束\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:00234091\",\"wn31:v:00237442\"],\"对范围、数量、活动或行为设定界限；两个中文片段为同一动词近义改述。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"限制进入或使用；依法管制\",\"动词\",[\"wn31:v:02514936\"],\"法律或准入语境下的专门限制，原文宽泛“限制”未明确该对象，作为外部候选。\"],[\"限制信息传播或披露\",\"动词\",[\"wn31:v:02455890\"],\"信息管控语境的专门限制，原文未明确信息对象，作为外部候选。\"]],\"reason\":\"首记先取两个中文片段共有的“设定界限”动词义；准入管制和信息管控需要具体对象或语境，放补充候选，不把一般限制误扩成专门义。\",\"flags\":[]},{\"id\":\"SG25-49a25f9feefa\",\"word\":\"storage\",\"pos\":\"名词\",\"core\":[[\"储存；存放\",\"名词\",[\"s001\"],[\"wn31:n:00813016\",\"wn31:n:00373415\"],\"把物品或信息收存起来的行为、过程或存放状态；两个证据分别支持动作和存放状态。\"],[\"存储空间；存放场所\",\"名词\",[\"s002\"],[\"wn31:n:04336328\"],\"存放物品的场所或空间；证据为货物存放处、仓库类场所，抽象容量义未单独验证。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"仓储业；仓储业务\",\"名词\",[\"wn31:n:00813322\"],\"商业性存储货物和材料的行业活动，原文未明确行业义，作为外部候选。\"],[\"计算机存储过程\",\"名词\",[\"wn31:n:13583336\"],\"计算机科学中的信息保存过程，原文“存储空间”只覆盖空间侧，作为外部候选。\"],[\"存储设备；内存\",\"名词\",[\"wn31:n:03749767\"],\"计算机硬件存储器件，非原文字面“空间”，作为外部候选。\"]],\"reason\":\"首记先分“储存行为或状态”与“存放空间或场所”，因原中文两个片段分别指向过程与空间；计算机和仓储行业义只放补充候选，避免把具体领域塞入核心。\",\"flags\":[[\"Minor\",\"lexical_evidence_scope_gap\",\"s002“存储空间”仅由 wn31:n:04336328（货物存放处、仓库）宽义支持，抽象容量义未获独立定义验证。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_055",
+  "kind": "verify",
+  "request_hash": "0493a6985252455670d373cffec4212765b7b0a709a771531390b0859a470113",
+  "input_ids": [
+    "SG25-9d96e17fd46e",
+    "SG25-d29223721312"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5fbcbe79-a719-4b5d-8db9-592ba49ddbb5",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9d96e17fd46e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"候选未在任何已采用层级为该源义建立组；held仅记录未采用原因，unadopted_external_candidates中的“分句（可独立或从属）”也未生效。英语证据显示clause语法义不限于从属分句，原“从句”可能为下位或更窄，需明确目标映射或暂存；当前无法判定覆盖。\",\n          \"evidence_ids\": [\n            \"wn31:n:06325134\",\n            \"pub:B:clause\",\n            \"pub:parent:clause\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“条款（合同、法律文件等）”对应法律文件中独立条款义，源名词“条款”与WordNet legal document section义一致。\",\n          \"evidence_ids\": [\n            \"wn31:n:06404578\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"coverage_gap\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [],\n          \"evidence_ids\": [\n            \"wn31:n:06325134\",\n            \"pub:B:clause\",\n            \"pub:parent:clause\"\n          ],\n          \"reason\": \"原“从句”为源中独立语法义，但所有已采用层级只包含法律“条款”；语法义仅held且外部候选未采用，构成该源义在所有候选层级的丢失。\",\n          \"counterexample\": \"clause 的语法义包含主句/独立分句与从属分句，原“从句”至少对应从属分句这一受证据支持的下位；候选未保留任何语法分句组。\",\n          \"repair_suggestion\": \"在核心或扩展层增加语法组“分句（含独立/从属）”，或以“从句”作为受限下位分支并链接源s001，不能仅靠held视为覆盖。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原“从句”在中文教材中是否只指从属分句，还是希望用“从句”泛称英语clause？若只是下位，held不覆盖，需采用；若想泛称，则需明确为分句并注释独立/主分句。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"条款义映射完整；语法“从句/分句”义未进入任何层级，需处理。\"\n    },\n    {\n      \"id\": \"SG25-d29223721312\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“松树”对应名词植物义，与WordNet coniferous tree一致；未混入松木义。\",\n          \"evidence_ids\": [\n            \"wn31:n:11628701\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展层把“憔悴”限定为因悲伤、思念等渐渐消瘦衰弱并常用pine away；这符合英语证据且候选已注明不泛指任何外貌疲惫，但比原中文未限原因的“憔悴”窄。\",\n          \"evidence_ids\": [\n            \"pub:pine\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组保留“苦苦思念”，并补充“渴望（常接for）”作为同义概称，符合WordNet对不在场对象渴望及出版商观察；未扩大到无关紧要欲望。\",\n          \"evidence_ids\": [\n            \"wn31:v:01809651\",\n            \"pub:pine\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"原“憔悴”未限定原因，英语pine只限悲伤/思念导致的消瘦；候选已在注释说明不泛指，但未在来源映射中正式标记来源范围待核，是否需要添加？\",\n        \"s003“苦苦思念；渴望”未明确对象是否为不在场者；证据WordNet指出not present，候选只写常接for，可能允许对在场但想要的东西？但这与for短语实际不含此限制。是否需要在注释中写明不在场？\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词松树与思念义映射合理；憔悴义按英语证据收窄并注明，未发现覆盖缺口。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4339,
+    "completion_tokens": 5880,
+    "total_tokens": 10219,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4847
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2675
+  },
+  "started_utc": "2026-11-13T09:59:55.444721+00:00",
+  "completed_utc": "2026-11-13T10:01:15.207615+00:00",
+  "elapsed_seconds": 79.765,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

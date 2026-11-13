@@ -1,0 +1,2637 @@
+{
+  "targeted_ids": [
+    "SG25-03e71c6d7dc6",
+    "SG25-07f5b83f6cec",
+    "SG25-093e7d5fdbaa",
+    "SG25-0b514913789f",
+    "SG25-0f571e7c2d33",
+    "SG25-13d853006f71",
+    "SG25-178b6e061a04",
+    "SG25-1daf82f62247",
+    "SG25-2161403032b8",
+    "SG25-22b090dd46c7",
+    "SG25-2331eb33ce2c",
+    "SG25-27ce25259481",
+    "SG25-2d92fc5142e6",
+    "SG25-3165df34fcec",
+    "SG25-3426125bf109",
+    "SG25-355ac7d4d962",
+    "SG25-39d5ef92ac20",
+    "SG25-3a19589098bc",
+    "SG25-3bb61db1bc03",
+    "SG25-3d8eefab379d",
+    "SG25-3fb45623cb30",
+    "SG25-40542f7e6b9e",
+    "SG25-46023b2bfb8b",
+    "SG25-480a27af1dea",
+    "SG25-482a37dd98d9",
+    "SG25-49a25f9feefa",
+    "SG25-4c3200fefd8b",
+    "SG25-4ca303a3bf7d",
+    "SG25-542bce4a780c",
+    "SG25-54b759dba2de",
+    "SG25-5c097b19679a",
+    "SG25-5d3082f6a1fd",
+    "SG25-63e6ce93e1bc",
+    "SG25-63ebfab6ce4e",
+    "SG25-64e8937abc6d",
+    "SG25-68fcfd9b4d77",
+    "SG25-6b428ace0262",
+    "SG25-6df24c372c04",
+    "SG25-744254211165",
+    "SG25-74e892c91130",
+    "SG25-772c6953848b",
+    "SG25-7920fdeff9c5",
+    "SG25-7b0363b65576",
+    "SG25-8270f2824111",
+    "SG25-83e3b78f14e0",
+    "SG25-84bb160039a7",
+    "SG25-8698fb89e125",
+    "SG25-887270d0cbc5",
+    "SG25-8cfc12e7f780",
+    "SG25-9300b4d2567a",
+    "SG25-943ae60b331d",
+    "SG25-96f39e3569ec",
+    "SG25-982776aa0b87",
+    "SG25-9b4ef3e5b7b4",
+    "SG25-9cda38ea3a2b",
+    "SG25-a39a7ffad4a3",
+    "SG25-a77de8a6daa1",
+    "SG25-a919007637ab",
+    "SG25-a9f4b3d22a52",
+    "SG25-ab5e345f2c28",
+    "SG25-ac455671cf7f",
+    "SG25-ace72b3572c1",
+    "SG25-b72f4a8521c3",
+    "SG25-bce2966c0b0d",
+    "SG25-bf0bb4ee60e2",
+    "SG25-bfd5a8ed7357",
+    "SG25-c152d5bbb379",
+    "SG25-c7ce66d0fb14",
+    "SG25-c9046f7a37ad",
+    "SG25-c9195f094689",
+    "SG25-cac787df74af",
+    "SG25-cf3c3437a865",
+    "SG25-d0d092b83d4a",
+    "SG25-db6e2c6375d0",
+    "SG25-dd9245cc1ddc",
+    "SG25-e3f48726b892",
+    "SG25-e61db885bd6e",
+    "SG25-e62377847bbe",
+    "SG25-e91fadf24f78",
+    "SG25-eb9a7650cd53",
+    "SG25-ed7002b439e9",
+    "SG25-f329e3a317ee",
+    "SG25-f379ccb92b91",
+    "SG25-f4873b35ecfe",
+    "SG25-fd13d46bad4b",
+    "SG25-fdf09cdfc26c"
+  ],
+  "low_risk_pool": 14,
+  "source_first_sample_ids": [
+    "SG25-815fbec040e3",
+    "SG25-e1721557ff52"
+  ],
+  "records": [
+    {
+      "id": "SG25-887270d0cbc5",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Major",
+          "kind": "important_source_use_omitted",
+          "reason": "Source sense s003 '呈现' is broad (display/show/appear, including abstract uses). Candidate core 3 limits it to '以图像或画面表现、描绘' using only wn31:v:01690851, and its own usage_note explicitly states it does not cover abstract '呈现'. This omits the abstract source-supported meaning, and source_POS_coverage incorrectly claims full representation.",
+          "evidence_ids": [
+            "wn31:v:01690851"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "core_meanings:3",
+          "proposed_fix": "Expand core 3 to '呈现/显现/展示（含抽象）', keeping pictorial depiction as one example. Update usage_note to note that the Chinese gloss is broad and abstract uses are source-supported; if no reliable English evidence for abstract sense is supplied, mark it as pending rather than excluding it."
+        }
+      ],
+      "preferences": [
+        "For initial learning, introduce common abstract patterns like 'render sth + adj' (cause to become) and 'render a service/decision' as important contexts, but avoid presenting pictorial depiction as the sole meaning of 呈现."
+      ],
+      "note": "Candidate correctly separates the three source senses and keeps dictionary additions distinct. However, core 3 narrows '呈现' to pictorial depiction, missing the abstract 'present/show' meaning implied by the Chinese gloss. This is a source-coverage gap, not a dictionary-addition issue.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_01",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "eb8b164d-6f0a-4bd6-bfc3-d92a6aaa3194",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-7920fdeff9c5",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Major",
+          "kind": "important_source_use_omitted",
+          "reason": "Candidate maps source noun sense s001 '仪式' exclusively to WordNet sense wn31:n:01032852 'the prescribed procedure for conducting religious ceremonies', adding a religious restriction not present in the source. The source Chinese gloss '仪式' means ceremony/ritual in general, including non-religious formal events. Candidate's second noun group uses s002 '惯常程序', which does not cover the formal ceremony sense. The evidence list includes wn31:n:01029801 'any customary observance or practice', which supports a broader ceremonial sense for s001, but the candidate assigned that evidence to s002 instead. As a result, the core omits the important general ceremony meaning of the source noun.",
+          "evidence_ids": [
+            "wn31:n:01029801",
+            "wn31:n:01032852"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+          "proposed_fix": "Broaden the first noun core to display '仪式，典礼（正式仪式，包括宗教和非宗教）' and use both wn31:n:01029801 and wn31:n:01032852 as evidence, or add a separate core group for general ceremony. Do not restrict the core meaning to religious prescribed procedure; keep the religious procedure sense as a distinct sub-sense or extension if needed."
+        }
+      ],
+      "preferences": [
+        "For first memory, consider presenting the general noun '仪式/典礼' before the narrower religious procedure sense, using an example like '婚礼仪式' to avoid over-narrowing.",
+        "Keep the habitual/customary behavior sense distinct from the ceremonial sense, even though both are nouns, to preserve object and event type boundaries."
+      ],
+      "note": "Candidate covers the source's adjective sense and the second noun sense adequately, but the first noun sense is over-restricted to religious procedure, leaving the broad ceremonial meaning of '仪式' unrepresented. The evidence set supports a broader reading, so a correction is proposed for that core group.",
+      "transport_normalizations": [
+        {
+          "field": "findings[0].severity",
+          "before": "major",
+          "after": "Major",
+          "reason": "enum case normalization only"
+        }
+      ],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_02",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "e787ad36-c6d0-44d9-b92b-3ab0ce26b672",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-46023b2bfb8b",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可考虑在扩展义中补充 derive from 表示世系/血统来源（如 She derives from an old noble family，对应 WordNet v:02743062），与核心‘源自’兼容但更专门，作为后学建议即可；当前不采纳不构成错误。"
+      ],
+      "note": "候选将两个原文片段分别映射为及物‘从…获得；得到’（证据 wn31:v:02297086）和不及物‘源自；来自’（证据 wn31:v:00252677），词性、语义方向、来源/获得的对象区分均无误；推理义已独立列为外部候选，未混入核心。其余 WordNet 义项（如潜在状态发展、世系来源）与原片段‘源自’在宽义上可能兼容，但不属于当前必须覆盖的独立核心用法；已列为外部候选的推理义也正确标记为未采纳。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_03",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "56aeadaa-20d5-440e-90b6-2073047d7271",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-bce2966c0b0d",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "审查了原片段“满意；满足”两个名词义项，以及候选给出的两组核心：第一组对应“满意；满足感”（心理状态/情感），第二组对应“满足（需求或愿望得到实现）”（行为/过程）。两组均分别有对应的 WordNet 义项支持（第一组使用 wn31:n:07546643 和 wn31:n:14010164，第二组使用 wn31:n:01074489）。源词性为名词，候选词性均为名词，覆盖了所有源义项。外部候选“赔偿；补偿”和“法律清偿”已作为 dictionary_additions 未采用，符合双轨覆盖要求，未发现语义、词性、方向或对象方面的错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_04",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "6e6294d0-57cc-41da-b112-de3cf2d6e783",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-480a27af1dea",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source sense s003 '怀疑论的' may correspond to wn31:s:00650269 ('denying or questioning the tenets of especially a religion'), but that definition is narrower than general philosophical skepticism. The candidate has already placed this in reserved_original_items pending rather than adopting it, which is appropriate; the uncertainty remains for future resolution.",
+          "evidence_ids": [
+            "wn31:s:00650269"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": null,
+          "proposed_fix": "No change required; keep pending. If additional evidence supports broader philosophical skepticism, consider adding as core/other later."
+        }
+      ],
+      "preferences": [
+        "If s003 later resolved, consider placing under extended/other rather than core due to narrower religious/philosophical scope."
+      ],
+      "note": "Candidate correctly merged s001 and s002 under wn31:s:02473075; s003 is explicitly reserved pending due to scope mismatch with wn31:s:00650269. No other issues.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_05",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "5bbb3724-067c-44a9-8f51-b4c452b6f8b1",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-e3f48726b892",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "unsupported_prioritization",
+          "reason": "候选生成理由声称“首屏先给最常用的‘学者’”，但未提供任何频率证据。根据规则，没有可靠频率依据时不得宣称唯一正确排序。",
+          "evidence_ids": [],
+          "source_sense_ids": [],
+          "candidate_group_ref": "SG25-e3f48726b892:p6c5:core_meanings:1",
+          "proposed_fix": "删除“最常用”这一断言，或将其改为明确的教学偏好标注，例如“先呈现核心义‘学者’（无频率依据）”。"
+        }
+      ],
+      "preferences": [],
+      "note": "候选将‘学者’与‘文人’合并为同一核心组，两者均对应 learned person，名词性、指人、方向一致，合并不构成语义错误。‘学习者’单独成组，对应 learner，且已注明宽义改述。词典外部义 scholarship holder 已作为未采纳候选列出，处理恰当。唯一问题是生成理由中存在无证据的频率优先声明。",
+      "transport_normalizations": [
+        {
+          "field": "findings[0].severity",
+          "before": "minor",
+          "after": "Minor",
+          "reason": "enum case normalization only"
+        }
+      ],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_06",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "8e3abfd1-5f82-4448-a8bd-bb80c5beeaa1",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-db6e2c6375d0",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学提示：that 从句的感知用法在证据 wn31:a:00572854 中更贴近‘清醒/知觉’义，建议在 group1 或总注中说明，避免将其作为 s002 仅基于 of 的延展。"
+      ],
+      "note": "候选将原文两个片段分别对应清醒/知觉状态和知道/意识到某事实，均使用恰当的形容词证据；deliberate/intentional 义作为词典增收未采纳，未混入源义；未发现需修正的翻译、词性或源覆盖问题。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_07",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "cd6ca0a7-27b8-4f4b-bc87-a2b101207c71",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-c9046f7a37ad",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Mapping of source sense s002 '说明' to WordNet n:06737512 ('a statement that represents something in words') is broad and does not specifically capture the explanatory/instructional nuance often associated with 说明. Not a confirmed error because the source provides no context and no explanation-specific WordNet sense was supplied.",
+          "evidence_ids": [
+            "wn31:n:06737512"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-c9046f7a37ad:p6c5:core_meanings:1",
+          "proposed_fix": "If future evidence supports a distinct explanation sense, consider separating 说明 into its own core or extended group; otherwise retain the current broad mapping."
+        }
+      ],
+      "preferences": [
+        {
+          "type": "teaching_suggestion",
+          "note": "When presenting, consider noting that 说明 as a noun often implies an explanatory or instructional statement, even if the current core gloss remains broad."
+        }
+      ],
+      "note": "Candidate's core grouping of 描述 and 说明 under the WordNet 'statement' sense is acceptable given the limited source. The act-of-describing sense is correctly placed in extended. The 'sort/variety' sense is properly isolated as a non-adopted dictionary addition. No confirmed translation or POS errors.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_08",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "a149d9a4-d54e-43a8-90c7-c9ad3b40be01",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-63ebfab6ce4e",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "scope": "teaching",
+          "suggestion": "核心合并符合首次学习需求；保留‘收集’待审可接受，后续如有英语证据支持物品收集，可考虑列入扩展。"
+        }
+      ],
+      "note": "核心组将s001 '拼凑' 与s003 '组合' 合并，证据wn31:v:01660471 'create by putting components or members together' 同时支持两者，词性与对象方向一致，合并合理。s002 '收集' 因词典证据仅涉及人群聚集或使人群聚集，与中文通常指收集物品/资料的对象不匹配，候选将其置于reserved_original_items并标记证据待审，处理正确。外部词典新增 '集合；聚集；使聚集' 未采用为源外候选，状态AI_candidate_not_adopted，未偷渡新义。source_POS_coverage字段为粗粒度标记，reserved_original_items已显式记录pending，不影响语义正确性。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_09",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "08f5ff56-db95-46da-ad60-ee9db2e4c4af",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-03e71c6d7dc6",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "名词‘部分/片段’同组为近义部分义，证据覆盖两种名词用法；动词‘分割’限定及物切分，外部不及物‘分裂’已明确为未采用候选。源词性均已覆盖，无翻译、词性或合并错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_10",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "05e9db08-0b73-4830-85f6-aec1559a0966",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-2161403032b8",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source noun sense '资深者' (s003) lacks a matching noun evidence among supplied WordNet entries; adjective evidence wn31:a:02107054 cannot establish noun POS. Candidate correctly reserves it as original_preserved_evidence_pending; no correction is proposed until external evidence supports a noun 'veteran/senior person'.",
+          "evidence_ids": [
+            "wn31:a:02107054"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "reserved_original_items",
+          "proposed_fix": ""
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source noun sense '高年级学生' (s004) may include both high school and college final-year students. Supplied noun evidence wn31:n:10598514 only defines undergraduate college senior, while adjective satellite wn31:s:01017278 covers high school but is not noun. Candidate core3 restricts to college with parenthetical note; high-school senior noun use remains unrepresented pending noun evidence.",
+          "evidence_ids": [
+            "wn31:n:10598514",
+            "wn31:s:01017278"
+          ],
+          "source_sense_ids": [
+            "s004"
+          ],
+          "candidate_group_ref": "SG25-2161403032b8:p6c5:core_meanings:3",
+          "proposed_fix": ""
+        }
+      ],
+      "preferences": [
+        "The current separation of age-related and rank-related adjectives is pedagogically clear and well supported by the supplied evidence."
+      ],
+      "note": "Candidate correctly separates adjective '年长的' and '高级的' with distinct evidence. Noun '高年级学生' is correctly conditioned to college senior based on available noun evidence, though the source gloss is broader. Source noun '资深者' is appropriately reserved as evidence pending because no matching noun definition was supplied. Dictionary additions are explicitly marked as not adopted, which is consistentwith the rules.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_11",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b179e215-754f-4fda-af3c-c169452f206c",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3fb45623cb30",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可考虑在后续教学中引入几何剖面或动词用法作为扩展，但当前核心无需修改。"
+      ],
+      "note": "源片段“部分；章节；部门”均为名词，候选核心分为三组，分别对应整体中的部分、作品章节、机构部门，证据引用的WordNet义项恰当，未发现词性、对象或方向错误。外部词典中的几何剖面、区域、动词用法已被显式列入dictionary_additions且状态为AI_candidate_not_adopted，未混入核心，符合双轨覆盖要求。原片段全部覆盖，源词性为名词且已表示。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_12",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "35a55649-3aeb-4f85-b814-85a2ea2e48e2",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-8cfc12e7f780",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "important_external_use_omitted",
+          "reason": "可靠的 WordNet synset wn31:v:02587760 提供重要的独立用法：担任辩护律师/代理诉讼（'Ms. Smith will represent the defendant'），原文未含，且候选的 dictionary_additions 未列出该候选，未显式跟踪。",
+          "evidence_ids": [
+            "wn31:v:02587760"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions",
+          "proposed_fix": "在 dictionary_additions 中增加候选：meaning_zh: \"担任…的辩护律师；代理（诉讼）\"，source_sense_ids: []，evidence_ids: [\"wn31:v:02587760\"]，status: AI_candidate_not_adopted。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "dictionary_additions 中的候选 '构成；相当于' 引用了 wn31:v:02626667（构成/组成），但 '相当于' 更直接对应 wn31:v:02705339（take the place of or be parallel or equivalent to），该证据未被引用；当前候选的 '相当于' 部分缺少直接词典支持。",
+          "evidence_ids": [
+            "wn31:v:02626667",
+            "wn31:v:02705339"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions:candidate_id SG25-8cfc12e7f780:p6c5:addition:2",
+          "proposed_fix": "为该候选补加证据 wn31:v:02705339，或将 '相当于' 与 '构成' 拆为两个候选。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源义 s002 '表示' 仅一个词，候选将其实例化为 '表示；象征'（间接表达/象征），但中文 '表示' 也可直接表示 '表达、陈述、表明'（如 表示感谢/同意）。证据列表中的 wn31:v:00775012（bring forward and present to the mind）和 wn31:v:00989377（describe or present）可能支持直接表达，但候选未采用；由于缺少明确的对应用法证据，暂不判定为错误。",
+          "evidence_ids": [
+            "wn31:v:00775012",
+            "wn31:v:00989377"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "core_meanings:3",
+          "proposed_fix": "如需扩展，可考虑增加一个候选或使用说明：'表示（观点、情感等）直接表达'，或保持现状并在 usage_note 中说明仅限间接象征。"
+        }
+      ],
+      "preferences": [
+        "首屏三组已合理，但建议在后续扩展中明确法律代理义；首屏顺序可待真实频率数据确认。"
+      ],
+      "note": "候选核心三组将 s001 按代理/典型拆分，s002 按象征合并，基本覆盖原文常见用法；未发现核心层面的错误。主要缺口是外部法律义未跟踪，以及 s002 的边界不确定。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_13",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "fdefb2ca-748e-4bca-84d8-54bdd1dcb046",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-482a37dd98d9",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "原名词片段“代表”本身在汉语中可兼指“代表他人的人”和“典型例子”。候选将“典型例子”列为外部候选且 source_sense_ids=[]，但其注释称“可能涵盖但未明确”。若该义实为原片段已有，则溯源应挂到 s001；若视为未表达，则注释不应说“可能涵盖”。当前处理保守，未造成核心错误，但源覆盖状态含混。",
+          "evidence_ids": [
+            "wn31:n:05828980"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-482a37dd98d9:p6c5:addition:1",
+          "proposed_fix": "可考虑将 addition1 的 source_sense_ids 设为 [\"s001\"] 并加语义拆分说明，或明确该义暂视为外部，不称“可能涵盖”。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "WordNet 名词证据中尚有 wn31:n:09975260（美国众议员）和 wn31:n:10657783（代言人/提倡者）未被候选的 dictionary_additions 跟踪。这两个义项对阅读英语政治/职场材料可能有独立价值，但不确定是否必须为中文学习者首轮覆盖。属于重要外部用途缺口的待决项，不构成当前核心错误。",
+          "evidence_ids": [
+            "wn31:n:09975260",
+            "wn31:n:10657783"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "可在 dictionary_additions 中增加“（美国）众议员”和“代言人；提倡者”候选，并保持 AI_candidate_not_adopted 状态，等待人工决定。"
+        }
+      ],
+      "preferences": [
+        "首次教学可先教名词“代表（人）”和形容词“有代表性的/典型的”，与候选一致。",
+        "名词“典型例子”义建议作为扩展义，在语境中辨析。"
+      ],
+      "note": "候选核心义与原文词性和基本含义匹配，证据使用恰当。名词源义因单词“代表”本身多义而存在覆盖边界不清晰，但已通过外部候选部分处理。未发现需要立即修正的错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_15",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "e6732c09-b702-4a59-a12a-f10cb4d1d8d2",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-84bb160039a7",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Candidate core group 1 usage_note states '常指对个人或局面的（负面）后果', but none of the supplied English definitions (wn31:n:07308725, wn31:n:11430739) mention negative connotation. The Chinese source '后果' may carry negative connotation in some contexts, but this is not confirmed by the provided evidence. This could mislead learners about the neutrality of English 'consequence'. Please either provide evidence for this negative restriction or remove '（负面）' from the usage note.",
+          "evidence_ids": [
+            "wn31:n:07308725",
+            "wn31:n:11430739"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-84bb160039a7:p6c5:core_meanings:1",
+          "proposed_fix": "Remove '（负面）' or change to '（可指负面或中性结果，视语境而定）' with appropriate evidence."
+        }
+      ],
+      "preferences": [
+        {
+          "suggestion": "Consider noting that 'consequence' is neutral in English; '后果' often implies negativity but not always."
+        }
+      ],
+      "note": "The candidate correctly separates result/outcome sense from influence/effect and treats importance as external addition. Source POS noun is covered. The only concern is the unsupported negative gloss in usage note; awaiting evidence or removal.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_16",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c01ed0e7-370d-463d-b090-2f30c4b7b82c",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-68fcfd9b4d77",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可将核心一的对象提示进一步简化为“对爱、名声、财富等的寻求”，避免将‘目标’泛化；但当前表述可接受。",
+        "外部消遣义可考虑放入扩展组而非仅 dictionary_additions，但不是错误。"
+      ],
+      "note": "候选将源“追求”映射至 WordNet 05778388（抽象寻求/追求），将“追赶”映射至 00320765（追赶/追捕），词性与语义方向均匹配；消遣/爱好义被正确列为词典外部候选未并入核心；源原文均被覆盖，未发现确认缺陷。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_17",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "a043b17f-cc94-408f-b6f5-bb14b53f6516",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-2d92fc5142e6",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "候选将两个同义形容词片段合并为一个一般“适合/适宜”的核心义，证据 wn31:s:01024501 覆盖恰当；配偶特定义作为外部候选单列且未并入核心，未发现原文遗漏或词性错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_18",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "86434241-7d65-4f8e-83f6-8601c9545496",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-f4873b35ecfe",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源片段“保护”较宽，提供的三个WordNet义项中无直接表示一般性保护活动的名词义；n:07434199为事件/结果义，n:00820935为环境/资源专门义，故候选将其保留暂存合理，但该覆盖缺口仍属待定而非已解决。",
+          "evidence_ids": [
+            "wn31:n:07434199",
+            "wn31:n:00820935"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": null,
+          "proposed_fix": null
+        }
+      ],
+      "preferences": [],
+      "note": "候选核心义直接对应源片段“保护自然环境”，证据充分；宽泛“保护”因无直接匹配义项被放入暂存区而非错误合并，物理“守恒”作为外部候选单列且未自动提升，整体处理符合规则。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_19",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "ceeab6b9-d02a-4e30-a1b8-66261b2a9e80",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-c152d5bbb379",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "Consider adding a note in core adjective that the cautious/moderate sense (conservative estimate) is distinct and common, but extended placement is acceptable.",
+        "Could provide example phrases in Chinese for the extended sense to reinforce object restriction."
+      ],
+      "note": "Candidate covers both source POS: noun '保守主义者' and adjective '保守的' with appropriate WordNet evidence. Adjective core merges political/social resistance and conventionality under a broad Chinese gloss; this is acceptable given the source's single broad adjective gloss. Extended sense for 'conservative estimate' is supported by evidence and correctly placed as extended. No untraceable meanings; all evidence IDs used. Source scope gap (absence of additional adjective splits) is not a defect because source gloss is broad.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_20",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "db8ff489-fed7-4ab7-b5db-1663cfc01efd",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-9cda38ea3a2b",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "Consider also listing mathematical series (WordNet n:05871305) and periodical series (n:06606007) as external dictionary additions for completeness, but do not promote them to core without source support.",
+        "Display_zh '序列；一系列' could be clarified as noun '序列' plus attributive phrase '一系列' to avoid implying '一系列' is a standalone noun."
+      ],
+      "note": "Targeted-risk candidate correctly maps source s001 to generic ordered series sense and s002 to TV series sense. Both source senses are represented in core as noun uses, and sports/electronics senses are kept as separate unadopted additions, preserving source scope. No false merging or untraceable meaning found. Only optional completeness suggestions remain.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_21",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c75b91f4-7aef-43a2-a9b4-ffed2ed0f37d",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-772c6953848b",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Candidate's core group 1 for source sense s001 uses only wn31:n:00881437 ('act of observing'), but WordNet sense wn31:n:01004898 ('act of making and recording a measurement') and wn31:n:05711376 ('act of noticing or paying attention') are also plausible under Chinese '观察' and are not represented as covered or flagged. The candidate's usage note restricts to deliberate looking, so these senses may be omitted from coverage.",
+          "evidence_ids": [
+            "wn31:n:01004898",
+            "wn31:n:05711376"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-772c6953848b:p6c5:core_meanings:1",
+          "proposed_fix": "No correction required unless consistency demands explicit tracking; could optionally add these senses as extensions or dictionary_additions with source_sense_ids s001 and status AI_candidate_not_adopted."
+        }
+      ],
+      "preferences": [
+        "When teaching 'observation' as a noun, later mention that it can also refer to scientific measurement or to being noticed (e.g., 'under observation')."
+      ],
+      "note": "Core meanings map both source senses correctly and with appropriate POS. The dictionary addition for result sense is properly separated and not adopted. The only concern is that s001 is broad and candidate's evidence/usage note narrows it, but this is not a confirmed translation error.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_22",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "100251b2-c668-4672-840b-799e5918b548",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-74e892c91130",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "evidence_alignment",
+          "reason": "核心义 3 使用证据 wn31:v:02123398，该证据定义偏向‘仔细观察/注意’，但原片段‘注意到’通常还包含‘察觉/发现’义，现有证据未完全覆盖这一侧面。候选释义‘注意到；留意到’本身可接受，但建议补充更精确的证据。",
+          "evidence_ids": [
+            "wn31:v:02123398",
+            "wn31:v:02158938"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-74e892c91130:p6c5:core_meanings:3",
+          "proposed_fix": "在 s003 的证据列表中加入 wn31:v:02158938（discover or determine the existence...），或调整 usage_note 明确包含‘察觉/发现’义。"
+        }
+      ],
+      "preferences": [
+        "教学上可补充例句区分‘注意到’的‘注意/留意’与‘察觉/发现’两种读法，但无需拆分核心组。",
+        "保持外部候选‘指出；评论说’和‘奉行；庆祝’不提升为核心，符合原文范围。"
+      ],
+      "note": "三个源片段均为动词，候选分别对应且词性正确，无跨义合并或重要外部义擅自提升。核心义 3 的证据选择略有侧重，但不构成翻译错误，仅作为教学精化建议。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_23",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "792a2880-2f87-42c6-9e13-34df264b7d6f",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-1daf82f62247",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "suggestion": "可在扩展义中考虑补充动词义“为私人狩猎或垂钓而保留（土地、森林等）”，对应 wn31:v:02688596，以显式标记该特定义而非漏掉。",
+          "reason": "该义项在WordNet中存在且属于原词条内的动词用法，但原文“保存”未明确指向此特化对象；不构成核心错误，仅作为教学扩展建议。"
+        }
+      ],
+      "note": "候选将三个源片段分别映射到保护（免受伤害）、保存（防损/留存）、保持（维持状态），词性与证据对应准确；名词义作为外部候选正确未并入核心。无实际翻译或词性错误，源动词义覆盖完整。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_24",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b6f82f0f-f6e3-4e06-a5f5-004cb8f65465",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-6df24c372c04",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可将 v:00726112（指定用途）作为核心2内的细分子义，教学时用示例区分“保留不用”与“划拨专用”。",
+        "可考虑将 n:04907298（正式/矜持的举止）和 n:13781913（医学生理储备）补入 dictionary_additions，但优先级较低。"
+      ],
+      "note": "原片段四义：动词预订/保留、名词储备/保护区均有明确源词性和词典证据支撑。候选核心1用v:00797294和v:02503969覆盖预订（为自己/为他人），核心2用v:00726112和v:02219267覆盖保留/留出，核心3用n:13389225覆盖储备物，扩展用n:08604729覆盖保护区，POS与对象正确。名词储备与保护区未被错误合并；外部义（替补、后备部队、矜持）已单列为未采纳候选。未发现源义遗漏或词性错误。教学排序未以词典顺序冒充频率，来源覆盖矩阵填写完整。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_25",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "718fffd9-1e0a-458c-a2cb-d79372ba4f38",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3bb61db1bc03",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "WordNet sense wn31:s:01796896 ('severely simple; a stark interior') is present in the supplied evidence but not included in candidate core, extended, other, or dictionary_additions. The original Chinese only has 严重的/严厉的, so this is an external sense outside source scope. Importance for basic learning is uncertain; it may be a specialized stylistic sense (austere, plain) that could be tracked as an AI_candidate_not_adopted addition if deemed valuable.",
+          "evidence_ids": [
+            "wn31:s:01796896"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "Optionally add a dictionary_addition candidate for '朴素的；简朴的；无装饰的' (severely simple) with status AI_candidate_not_adopted, human_approved=false, auto_promoted_to_core=false, priority_basis=AI_teaching_suggestion_not_measured_frequency, and note that it is a separate external sense not in original."
+        }
+      ],
+      "preferences": [],
+      "note": "Candidate correctly separates source adjective senses s001 (严重的) and s002 (严厉的) into two core groups with appropriate WordNet evidence. Physical strength sense (wn31:s:02330284) is correctly placed as an external dictionary addition not adopted. One WordNet sense (severely simple) is untracked; importance uncertain, flagged as Info.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_26",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "a0995965-501f-4736-9795-f6b70b2b5796",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-9300b4d2567a",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "omitted_important_dictionary_addition",
+          "reason": "Evidence wn31:v:00742058 ('decide as to where something belongs in a scheme') represents a common external use of assign (classify/assign to a category), which is not present in the source Chinese but has independent value for reading academic or technical texts. It is absent from the candidate's dictionary_additions.",
+          "evidence_ids": [
+            "wn31:v:00742058"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions",
+          "proposed_fix": "Add a dictionary_addition candidate with meaning_zh '把…归入（类别/体系）；分类', part_of_speech '动词', evidence_ids ['wn31:v:00742058'], status 'AI_candidate_not_adopted'."
+        }
+      ],
+      "preferences": [
+        "可考虑将 'assign to a category/class' 作为后学扩展候选，不强制核心，用于学术/分类语境。"
+      ],
+      "note": "源文三个动词义项：委派（s002）和指定（s003）均有直接词典证据，已在核心中分组；委托（s001）缺乏直接英义，保留暂存合理。候选外部候选已涵盖分配、归因、转让，但遗漏了常见的分类归类义（wn31:v:00742058）。源词性覆盖标记为 source_derived_use_represented 虽整体成立，但 s001 未解决，后续可细化。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_27",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "bd5ae7e7-bc67-415b-8b2a-eed3272e40ee",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-a77de8a6daa1",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "For teaching clarity, consider separating the noun sense group for 设计 into process (wn31:n:00929892) and result/plan (wn31:n:03183984) if learners confuse activity vs. product; current combined group with usage note is acceptable.",
+        "Consider adding the use 'be designed for something' (wn31:v:00711454) as an extension or usage note for the source fragment 设计, since it is common but not currently shown."
+      ],
+      "note": "Candidate maps all three source fragments to appropriate POS and evidence: 设计 as verb (核心1) and noun (核心2), 图案 as noun (核心3), 计划 as noun (核心4) and verb (扩展1). The process/result distinction for noun 设计 is acknowledged in the usage note; merging with a note is acceptable for first learning. The dictionary addition for noun '意图/目的' (wn31:n:05991037) is correctly left unadopted because it is not expressed by the original Chinese fragments. No untraceable meanings, false merges across POS, or unsupported prioritization found.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_28",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "e2ba09e0-7fd4-4e5d-a371-b4ef4d22bd20",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-8698fb89e125",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source sense s003 '意义' in Chinese can denote both 'meaning' and 'significance/importance'. Candidate core group 1 maps s003 only to the meaning sense (wn31:n:06613680), while the importance sense (wn31:n:05177340) is listed as a dictionary addition with source_sense_ids=[], asserting that the source does not express that meaning. This is an unresolved source-scope question: if s003 was intended to cover importance, the addition should be tied to s003 or placed in reserved; if not, the current separation is correct.",
+          "evidence_ids": [
+            "wn31:n:05177340"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-8698fb89e125:p6c5:core_meanings:1",
+          "proposed_fix": "Either assign source_sense_ids [\"s003\"] to the dictionary addition with a note that it is a potential sense of 意义, or explicitly mark s003 as having an unresolved secondary sense and keep the addition external with a note that source ambiguity is under review."
+        },
+        {
+          "severity": "Info",
+          "kind": "unsupported_prioritization",
+          "reason": "The selection reason states that the importance sense is '英语更常见' without providing frequency evidence. This should be marked as an AI teaching suggestion, not a measured frequency claim.",
+          "evidence_ids": [],
+          "source_sense_ids": [],
+          "candidate_group_ref": "SG25-8698fb89e125:p6c5:dictionary_additions:1",
+          "proposed_fix": "Reword to indicate that the importance sense may be common in usage, but this is a pedagogical suggestion pending corpus evidence, or provide frequency data if available."
+        }
+      ],
+      "preferences": [
+        "Consider adding the importance sense to core or extended for learners, as it is a frequent meaning in English; this is a teaching suggestion.",
+        "Keep the distinction between 'meaning' and 'implied meaning' as separate core groups; they are pedagogically clear."
+      ],
+      "note": "The candidate's core groups are semantically accurate for the senses they cover. The main issue is the handling of the importance sense: it is not tied to source sense s003 despite '意义' potentially carrying that meaning, and the frequency assertion lacks evidence. This is not a confirmed error but requires evidence resolution.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_29",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "4fa678bf-5736-4fe2-9b74-854d54e58cbe",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-e61db885bd6e",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "候选将源片段 s002 '有意义的' 仅对应 WordNet s:01500681（rich in significance or implication），并显示为 '有意义的；意味深长的'，用法提示收窄到'富含意义或暗示'。该源词也可能表达一般 'important/meaningful' 义（WordNet a:02168847），候选未把 s002 关联到该一般义，导致可能的源义漏配或收窄。若无更多源例证，不宜判为已确认错误；但需显式拆分或标记待证据。",
+          "evidence_ids": [
+            "wn31:a:02168847",
+            "wn31:s:01500681"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-e61db885bd6e:p6c5:core_meanings:2",
+          "proposed_fix": "将 s002 拆分为一般'有意义的（重要的/有含义的）'与'意味深长的'两个用法；前者可关联 wn31:a:02168847 并与核心1或独立核心对应，后者保留为词典来源候选或标注源范围待确认；不要仅用一个窄义吞掉 s002。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "核心3 '值得注意的'仅以宽义 a:02168847 做兼容支持，候选也自注'按宽义兼容支持'；可靠词典未给出精确 'noteworthy' 独立 synset，因此该映射为近似而非完全确认。",
+          "evidence_ids": [
+            "wn31:a:02168847"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-e61db885bd6e:p6c5:core_meanings:3",
+          "proposed_fix": "保留暂存或注明证据为宽义兼容；如后续获得更精确 'noteworthy/remarkable' 义项证据，再确认；当前不作为错误。"
+        }
+      ],
+      "preferences": [
+        "教学展示中明确区别 '有意义的（重要/有价值）' 与 '意味深长的（暗示/丰富含义）'，不要用分号让学习者误以为等同。",
+        "不要优先宣称唯一正确顺序；若无频率数据，当前核心顺序只是教学选择。",
+        "可考虑把 '统计上显著的' 作为后学扩展；与日常'重大'分开。"
+      ],
+      "note": "目标风险词 significant。源三个形容词片段均在候选中有对应，但 s002 '有意义的' 对应证据过窄，且候选引入了未在原文出现的 '意味深长的'，该收窄或额外义需证据待确认。s003 和 s001 的映射基本合理；统计显著义已正确列为外部候选。当前无已确认的严重错误，但 s002 的源范围需要人工或进一步证据确认，故判 evidence_pending。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_30",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b6e3857f-cf40-4204-a71f-864feb051f43",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-178b6e061a04",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学中可将“同事”与词典中“机构内下级成员”的细微差异作为备注，无需拆分新义项，因为源文未区分。"
+      ],
+      "note": "候选逐条对应源文四个片段：动词“联系”与“交往”分别对应逻辑关联和人际交往；名词“同事”与“伙伴”分别对应工作/机构共事者和同伴。词性与证据匹配，未发现核心义缺失、虚假合并或未溯源义。外部形容词义已作为未采用候选单列，符合双轨规则。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_31",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "44f13662-a4da-4da4-a390-7e9a8b966aad",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-0b514913789f",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "WordNet act sense wn31:n:01083552 ('the act of consorting with or joining with others') is not explicitly mapped to 联系; candidate uses relation/state senses only. If 联系 is intended to include active contact/association, this may be an omitted nuance, but Chinese gloss 联系 commonly covers relation/connection, so this is not a confirmed defect.",
+          "evidence_ids": [
+            "wn31:n:01083552"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-0b514913789f:p6c5:core_meanings:2",
+          "proposed_fix": "Optionally add a note or dictionary_addition for the act sense; not required as core."
+        }
+      ],
+      "preferences": [],
+      "note": "Candidate correctly separates 协会 (formal organization) from 联系/关系 and 联想, with appropriate POS and dictionary support. 联系 is represented by relation and social/business relationship senses; the act-of-consorting sense is not separately shown but can be seen as covered by broad 联系. Chemistry and ecology senses are correctly demoted to external additions. No semantic inversion or wrong POS.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_32",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "084e428e-8e45-44b7-92ac-45b2fe74671b",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-fdf09cdfc26c",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源名词‘决心’在中文中也可指‘作出的决定/打算’，但候选仅采用 trait of being resolute (wn31:n:04868717)；现有证据中没有对应的个人决定名词义，无法确认是否应纳入核心或外部候选。",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-fdf09cdfc26c:p6c5:core_meanings:3",
+          "proposed_fix": "待审：如确认源词范围包含‘个人决定’义，可在 dictionary_additions 增加该名词义；目前不作为错误。"
+        }
+      ],
+      "preferences": [
+        {
+          "type": "teaching_suggestion",
+          "content": "核心1将‘解决争端/案件’与‘解方程’合并在一个提示中；教学时可分别举例，但当前不视为缺陷。"
+        }
+      ],
+      "note": "候选覆盖了源三个义项：动词解决、动词决心、名词决心；词性和证据匹配，无错误合并。外部决议义与技术解析义已显式列为未采用候选。仅名词‘决心’的可能‘个人决定’义因证据不足保留观察。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_33",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "3958e729-b15a-4a8e-b33b-7f5e8554f16b",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-22b090dd46c7",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "Keep the physical and mental absorption groups separate in teaching to avoid confusing object types.",
+        "When introducing the incorporation/assimilation group, include a concrete example such as 吸收新成员 or 吸收资金 to illustrate object range."
+      ],
+      "note": "Reviewed candidate against source Chinese 吸收 (verb) and supplied WordNet evidence. The three core groups are each supported by relevant evidence: physical intake via wn31:v:01541851 and wn31:v:02771422; mental intake via wn31:v:00603650; incorporation/assimilation via wn31:v:00396604 and wn31:v:01473153. Dictionary additions for attention absorption (wn31:v:00601765) and cost absorption (wn31:v:02221342) are explicitly separated as AI_candidate_not_adopted, so no false merging or untraceable meaning. No source-supported core use appears omitted; intransitive sense wn31:v:01542421 is not clearly required by the bare Chinese source and not treated as confirmed error. No publisher observations conflicting with WordNet were provided.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_34",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b5fca2ac-f9c1-4745-afc5-faa6ba5a9719",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-542bce4a780c",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可考虑在教学时提醒“philosopher”另有“冷静理性、生活智慧的人”义，当前作为外部候选不并入核心是稳妥的。"
+      ],
+      "note": "核心义“哲学家；哲学研究者”与原文“哲学家”及WordNet synset 10443334直接对应，词性为名词，无偏离。第二义项10445710已作为dictionary_additions标为AI_candidate_not_adopted，没有偷偷并入核心，符合源义范围不确定时的保守处理。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_35",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b941cc64-44ef-44bc-ba48-6f5b4cc0c7ce",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-2331eb33ce2c",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "Source has two noun senses: 哲学 and 人生观. Candidate core correctly maps 哲学 to WordNet wn31:n:06168062 (rational investigation of existence/knowledge/ethics) and 人生观 to wn31:n:05953535 (personal belief about how to live). Both are noun and match source POS. The additional WordNet sense wn31:n:05952149 (group/school belief system) is not represented in source text and is correctly placed as a dictionary addition with status AI_candidate_not_adopted; this does not contaminate the core. No source sense is omitted, no unsupported meaning is introduced, and no part-of-speech or directional mismatch is found.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_36",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "1be602b1-9fcc-4909-9385-0af28e84ddb4",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-8270f2824111",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "WordNet 00191632 defines solution as the successful action/process of solving a problem, which is distinct from the method sense used in the candidate core and from the answer/statement and mathematical senses already listed as dictionary additions. The Chinese source sense '解决办法' may or may not include this activity reading; the candidate neither adopts nor lists it as an external candidate, leaving its coverage undetermined.",
+          "evidence_ids": [
+            "wn31:n:00191632"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "Optionally add a low-priority dictionary addition candidate with meaning '解决过程/行为' and status AI_candidate_not_adopted, but do not promote to core without further source evidence or human approval. Alternatively, explicitly note that this activity sense is not covered by the current '解决办法' core."
+        }
+      ],
+      "preferences": [
+        "Keep the two core groups clearly separated as currently done.",
+        "Consider adding an explicit note in core group 1 that the process/activity sense is external and not included, if learners may encounter 'solution' as a duration/action noun.",
+        "Do not merge the mathematical answer sense with the general method sense; keep them separate as already done."
+      ],
+      "note": "The candidate correctly maps 解决办法 to the method definition and 溶液 to the homogeneous mixture definition. The answer/statement and mathematical senses are appropriately isolated as dictionary additions and not mixed into the source-derived core. The only residual item is WordNet's action/process sense, which is not clearly supported by the Chinese source but is not represented anywhere; this is noted as unresolved evidence, not a confirmed defect. No POS or translation errors found.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_37",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "7ebbe798-f533-4f2a-8688-d4005266611b",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-744254211165",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可考虑在后续教学中将视觉透视义作为扩展内容单独提示，但不纳入当前核心。"
+      ],
+      "note": "原文“见解；观点”为两个近义名词片段，均对应 WordNet 06218486“a way of regarding situations or topics”，合并为单一核心合理，未丢失源义。视觉透视义（04683665）已作为外部候选单列且状态为 AI_candidate_not_adopted，未混入核心，符合双轨覆盖要求。无实际翻译、词性或源覆盖缺陷。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_38",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "189d63d9-7805-4acc-9cce-d1535c2e0064",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-40542f7e6b9e",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source sense s002 '可能性' is a broad term for possibility; candidate maps it to WordNet belief about future (wn31:n:05953807), then display includes '预期' and usage note narrows to non-generic. This may be conditionally compatible but the mapping is not directly supported without additional context; it risks teaching 'expectation' instead of 'possibility'. Not confirmed as wrong, but evidence gap.",
+          "evidence_ids": [
+            "wn31:n:05953807"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-40542f7e6b9e:p6c5:core_meanings:2",
+          "proposed_fix": "Keep source gloss '可能性' as primary, and mark future/belief nuance as an additional condition; or hold s002 as evidence_pending until a general possibility sense is found."
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source sense s001 '前景' is broad and neutral; candidate uses only 'possibility of future success' which is narrower and includes success. Candidate flags this as conditional, but it may still mislead if learned as the only meaning. There is no clear evidence for the broad neutral sense; the visual sense is separate. Not a confirmed error.",
+          "evidence_ids": [
+            "wn31:n:14506552"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-40542f7e6b9e:p6c5:core_meanings:1",
+          "proposed_fix": "Either use a broader future outlook sense if available, or clearly separate this as a specific success nuance and keep the source '前景' as a broader headword with multiple sub-senses."
+        },
+        {
+          "severity": "Info",
+          "kind": "omitted_dictionary_sense",
+          "reason": "Candidate's dictionary_additions does not include the visual percept sense from wn31:n:05941982, which is a distinct noun meaning 'view/scene' and can be useful for reading. It is not in the source Chinese, so should not be core, but should be tracked as an external candidate.",
+          "evidence_ids": [
+            "wn31:n:05941982"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "Add dictionary_addition candidate: meaning_zh '景色，视野', evidence wn31:n:05941982, status AI_candidate_not_adopted."
+        }
+      ],
+      "preferences": [
+        "First teach future outlook and possibility, then potential customer/person considered, then verb exploration; consider adding visual sense as a later enrichment if reading classic texts."
+      ],
+      "note": "The candidate conservatively handles source s001/s002 with caveats, keeps s003 pending, and lists verb/person external additions. However the source glosses are broader than the specific WordNet senses used, and the visual prospect sense is missing from external tracking. Overall no confirmed core error, but evidence gaps remain.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_39",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "5a6fac49-3557-4ce1-979a-8fed70072644",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-355ac7d4d962",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "kind": "teaching_clarity",
+          "reason": "核心组‘推测；猜测’同时容纳‘凭不确定依据相信’与‘猜想式闲谈’，两者对象方向略有不同；可在扩展或子提示中分开标注，帮助学习者区分及物/不及物用法，但不属于当前生成缺陷。"
+        }
+      ],
+      "note": "原片段‘推测’逐词性对应WordNet不确定推断(00635105)与猜测议论(00929020)，候选将其合并为一个核心组并保留来源子证据；‘投机’对应风险投资(02276935)。反思深思义(00632042)未由原文明确表达，作为词典外部候选置于dictionary_additions，未混入核心，处理合理。未发现需要纠正的翻译、词性、漏义或合并错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_40",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "88491c6c-f4e5-462d-8a33-0724844d3989",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-982776aa0b87",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学提示：第二组动词核心将‘认为可能’（v:00923043）与‘认为有罪’（v:00926844）合并展示；两者同属正向怀疑，但为初学者可再细分为两个子用法。当前用法说明已区分，无需调整。"
+      ],
+      "note": "候选正确覆盖原中文动词和名词：动词拆为不信任（v:00689827）与认为可能/有罪（v:00923043,v:00926844），名词使用‘处于被怀疑状态的人’（n:10700830）。形容词和法律被告义作为 dictionary_additions 未并入核心，符合原中文范围；无确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_41",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "fdaaa6f6-3e16-4cb0-8f45-e53c98ba06d7",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-5d3082f6a1fd",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "核心第2组可在后续教学中细分‘拼命的英勇’与‘危险的鲁莽/暴力’语用色彩，但不属于当前语义错误。",
+        "危急/无望义已作为外部候选未采用；若日后教学需要，可列入扩展而非核心。"
+      ],
+      "note": "候选按三个中文片段分别映射，词性均为形容词，证据使用基本准确：s001↔s01232699（绝望/失去希望）匹配，s002↔s01997589/s02067030/s00264329（不顾一切/拼命）不矛盾，s003↔s00716816（极度渴望/迫切）匹配。源片段‘绝望的’未明确包含‘极端危险/危急’义，故将其作为外部增添未采用是保守且可接受的；源词性仅形容词，WordNet名词义不属原文支持范围，未计入核心不构成漏译。候选对‘绝望的’作了人感到绝望的限制，略窄于证据中可修饰行为/呼喊等，但不影响核心含义。未发现实际错误、重要来源用法遗漏、错误合并或无据义项。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_42",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "ccaaeb0e-5737-4a26-8050-6c366cab3060",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-ace72b3572c1",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "源词“专家”为通用名词，候选将一般专家义作为核心并以 wn31:n:10651303 支持，将医学专科医生义列为外部候选未采用，处理正确，无问题。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_43",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "1b20042b-da76-4d86-b3e4-6106b43adbf9",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-54b759dba2de",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "important_external_use_omitted",
+          "reason": "The supplied WordNet evidence includes a noun sense 'a fact about some part (as opposed to general)' (wn31:n:05826326), corresponding to common noun usage such as 'specifics/details'. The candidate's dictionary_additions include medicine and taxonomic uses but omit this important external noun use, leaving a significant usage untracked.",
+          "evidence_ids": [
+            "wn31:n:05826326"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions",
+          "proposed_fix": "Add a dictionary addition candidate with meaning_zh '细节；具体情况（名词）', part_of_speech '名词', source_sense_ids [], evidence_ids ['wn31:n:05826326'], status 'AI_candidate_not_adopted', and a reason noting common plural usage 'specifics'."
+        }
+      ],
+      "preferences": [
+        "Keep the two adjective core groups as they are; they correctly separate 'concrete/detailed' from 'particular'.",
+        "When introducing the noun detail use, use contextual examples like 'get down to specifics' rather than promoting it to core."
+      ],
+      "note": "Core adjective coverage is accurate: group1 maps 具体的 to explicit/detail (wn31:s:01103644), group2 maps 特定的 to particular/unique (wn31:a:01106714), both supported. The only gap is missing common noun sense in dictionary_additions; all other external uses (medicine noun, taxonomic adjective) are appropriately listed.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_44",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "5ab2fc5d-24c7-48f8-8417-c58ebc1a2f0f",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-bfd5a8ed7357",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "omitted_important_external_use",
+          "reason": "候选的外部补充中未包含 WordNet 中 weather/climate 义（wn31:n:14543880，定义：the weather or climate at some place），该义在阅读天气/气候描述时具有独立价值，且证据已提供但未被显式跟踪。",
+          "evidence_ids": [
+            "wn31:n:14543880"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions",
+          "proposed_fix": "增加一个 dictionary_additions 条目：\"天气；气候（局部气象条件）\"，词性名词，状态 AI_candidate_not_adopted，证据 wn31:n:14543880，不自动升为核心；同时在 source_POS_coverage 中记录该外部候选。"
+        }
+      ],
+      "preferences": [
+        "核心组 2 与 3 可考虑合并为“大气/大气圈”以减轻记忆负担，但需保留原片段追源；属于教学偏好，非错误。"
+      ],
+      "note": "原文三个名词片段分别对应“周围环境”“大气”“大气圈”，候选核心组均使用具体 WordNet 义项且词性正确，无错误合并或缺失核心源义。外部补充已包含“气氛/氛围”和“大气压单位”，但漏掉已供证据的“天气/气候”义，属于外部用途覆盖缺口，建议补为 dictionary_additions 待审。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_45",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "b930167f-7539-490f-aeab-309faa430f9a",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-a9f4b3d22a52",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "suggestion": "教学时可视需要区分 response 作为“答复的内容”与“答复的动作/对话应答”；当前核心合并两者，若后续发现混淆可拆分显示。"
+        }
+      ],
+      "note": "原文两个名词性片段“回答；答复”均被候选合并为一个名词核心，证据 06758700（针对问题/请求/批评/指控作出的陈述）与 07214225（对话中的言语行为）分别覆盖了答复的内容与动作侧面；两者在汉语中常由同一词语承担，未发现错误合并或源义遗漏。外部词典中表示“生理/设备反应”的义项被正确列为 dictionary_additions 且状态为 AI_candidate_not_adopted，未混入核心，符合双轨规则。未发现翻译错误、词性错误或未追踪意义。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_46",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "20a8f297-4cc7-47f8-a385-f47af9f6a5a2",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-c9195f094689",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "源三个形容词义分别对应责任/问责义（s001/s002）和因果义（s003）。候选核心组1合并s001/s002为同一用法，证据a:02003477匹配；组2单独处理因果义，证据s:00325776匹配。两者区分明确，无错误。信用评级义为外部词典候选但原文未明确，已按AI_candidate_not_adopted标记，不构成当前核心漏项。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_47",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "dc75d5f7-f659-4f68-85b3-724a2debe2c6",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-13d853006f71",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "名词义使用宽义 WordNet wn31:n:10427699 'someone who supports or champions something' 覆盖源片段 '赞助者'。源词在中文通常指提供赞助（常为资金）的人或机构，候选 display 同时列出 '支持者'，虽有 usage_note 说明窄义未证实，但并列可能使学习者把一般支持者等同于赞助者。该窄义是否为源义需人工确认。",
+          "evidence_ids": [
+            "wn31:n:10427699"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-13d853006f71:p6c5:core_meanings:3",
+          "proposed_fix": "将 display 保留为 '赞助者' 并在 usage_note 中提示可宽用为支持者；若确认金融赞助为源义，增加 '出资方/赞助商' 独立提示。"
+        },
+        {
+          "severity": "Info",
+          "kind": "missing_dictionary_addition",
+          "reason": "外部词典存在原文未包含但可能重要的独立用法未被 candidate 跟踪：wn31:n:10485764 'an advocate who presents a person (as for an award or a degree or an introduction etc.)' 与 wn31:v:02471557 'do one's shopping at; be a customer or client of'。规则要求重要外部用途显式挂到 dictionary_additions，而不是静默省略。",
+          "evidence_ids": [
+            "wn31:n:10485764",
+            "wn31:v:02471557"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "在 dictionary_additions 中增加这两条，状态 AI_candidate_not_adopted，层级建议 other/扩展；无需进入核心。"
+        }
+      ],
+      "preferences": [
+        "名词组中把 '支持者' 作为宽义注释而非并列核心，以免掩盖 '赞助者' 的出资含义。",
+        "动词 '赞助' 可保留 '资助' 作为同义提示，但教学时可说明 '资助' 更侧重资金支持，'赞助' 还可包含名义/设备等。",
+        "可把 sponsor 的 'advocate/presenter' 与 'patron/customer' 义列入扩展或 other，待后续人工决定是否采用。"
+      ],
+      "note": "候选覆盖源三个义项，词性无误；名词义采用宽 WordNet 支持者定义，窄义出资者待确认。外部词典两个独立义项未在 dictionary_additions 跟踪，需补挂。未发现 Critical/Major 错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_48",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "d1e05fa9-35ec-42c3-9002-07cf6a8655d6",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-815fbec040e3",
+      "independent_core": [
+        "名词：配偶；婚姻中的伴侣"
+      ],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "源词性为名词，片段“配偶”直接对应 WordNet 婚姻伴侣义，无需补充或修正。",
+      "transport_normalizations": [],
+      "review_role": "source_first_sample",
+      "api_tag": "review_001_49",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "64777de0-05a1-4cd7-aff7-5ae8a26a80bc",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-943ae60b331d",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "preference": "首次记忆可将具体“物质”作为最先记忆的义项，抽象“实质”“本旨”后置；但此仅为教学顺序建议，不代表实际频率排序。",
+          "type": "teaching_order"
+        }
+      ],
+      "note": "候选对应三个源义项，词性均为名词，证据引用合理。s001 实质映射至 WordNet 05929717（抽象本质/要点），s002 本旨映射至 05928460（意图/主旨），s003 物质映射至 00019793（物理实体），未发现错译或词性错误。源未明确表达的“财富/资产”义已作为 dictionary addition 单列，处理得当。其他 WordNet 义项（如特定种类物质、物质质地、通信主题等）与源中文片段含义重合或属较窄用法，未作为重要独立缺口强制列出。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_50",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "2d8851d8-0dbc-4d63-ba97-c3900d45c82b",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-63e6ce93e1bc",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源动词“使疏远”为及物使动（使某人/某物疏远），候选使用 WordNet v:02688950 “keep at a distance”，但该定义示例为 distance oneself（自身保持距离），与使动方向不完全一致；候选虽标注方向待复核，但未提供额外证据确认可涵盖外部使动用法。",
+          "evidence_ids": [
+            "wn31:v:02688950"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-63e6ce93e1bc:p6c5:core_meanings:2",
+          "proposed_fix": "候选可保留为“使疏远；使与…保持距离”，并在 usage_note 中明确该证据仅反映自身用法，外部使动用法需另寻权威例句或标注为待决，不宜作为已确认核心。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源名词“距离”为宽泛义，中文可含情感/关系上的距离（如“我们之间产生了距离”），且同词头动词“使疏远”暗示情感维度。候选将“情感冷淡；疏远”置于 dictionary_additions（status not adopted），理由是“原文仅动词“使疏远”，名词情感义未明示”，但该理由可能过度限制源名词的外延；需人工确认源义是否包含抽象情感距离。",
+          "evidence_ids": [
+            "wn31:n:07521110"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-63e6ce93e1bc:p6c5:addition:2",
+          "proposed_fix": "若源“距离”意图涵盖抽象/情感距离，应将该项从 dictionary_additions 移至 extended_meanings 并将 source_sense_ids 设为 [\"s001\"]；否则保持现状并记录源范围决定。"
+        }
+      ],
+      "preferences": [
+        "建议将空间距离的两个义项（属性与量度）在教学上合并，但可保留两条证据以帮助理解。",
+        "时间间隔作为扩展合理；情感距离若属源义，可列于扩展并在后学中提及。"
+      ],
+      "note": "未发现已确认的错误翻译或词性错误；主要问题为动词使动方向证据不足和名词情感距离归类不确定，均为待决项。候选对未采用的 far/distant region、outdistance 等处理谨慎，未混入核心。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_51",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "271f8357-4401-4923-876f-556820f7b97e",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3a19589098bc",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "候选将 s002“创立”与“创办”合并并限定对象为组织、机构，但“创立”在汉语中也可用于学说、制度等抽象对象；源字段仅提供单字词义，无例句，无法确认该限制是否遗漏源义。",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-3a19589098bc:p6c5:core_meanings:1",
+          "proposed_fix": "教学时补充说明“创立”在抽象对象上也可使用，或考虑将该用法并入第二组或单独提示。"
+        }
+      ],
+      "preferences": [
+        "教学时可将“创立”与“建立”的抽象用法做关联提示，避免学习者以为“创立”只能用于组织、机构。"
+      ],
+      "note": "候选核心两组基本合理：创办/创立针对组织、机构，建立针对抽象事物。创立在汉语中可兼用于抽象对象，但源字段无上下文，无法确认为遗漏；其余外部义如“证实”已作为未采用候选单列。无确认缺陷。",
+      "transport_normalizations": [
+        {
+          "field": "findings[0].severity",
+          "before": "info",
+          "after": "Info",
+          "reason": "enum case normalization only"
+        }
+      ],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_52",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "1ac658a2-908f-4fac-86f9-7d0459441287",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-f379ccb92b91",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学中可先以“稳定的价格/关系”等一般搭配呈现形容词义，再展示马厩实物图；化学义暂不要求首次记忆。"
+      ],
+      "note": "原文形容词“稳定的”与名词“马厩”分别由候选核心覆盖，词性与对象正确；化学稳定作为专业受限读法单列其他，符合来源未限定专业域的保守处理；动词入厩仅词典外部候选，未混入原文核心，无证据显示存在错误翻译、遗漏原文用途或不可追溯意义。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_53",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "65de559a-ea6f-4a3a-b732-0e59bb0dc523",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-7b0363b65576",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "原文两个片段均为动词近义，候选合并为一组核心并提供动词证据，用法说明中区分了帮助与协助的辅助/从属角色。名词义（体育助攻、帮助行为）作为外部候选正确未采纳，未混入核心。无确认问题。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_54",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c30d5594-8cff-4a0c-8418-bb8aba1e8391",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-9b4ef3e5b7b4",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "kind": "teaching_suggestion",
+          "text": "后续可把航海/舰队驻地义（wn31:n:08674221）加入其他或扩展，但非首要学习需求。"
+        }
+      ],
+      "note": "候选已覆盖全部源名词/动词义；用宽证据兼容“车站/站”并加限定，动词按“安排到岗位/驻地”收窄，同时对“驻扎”状态义和“安置”广义明确提醒，未发现错误翻译、词性或源用法遗漏。外部广播、哨位、社会地位义已单列候选，航海义未单列但优先级低；仅作教学建议。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_55",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "4f4c6a06-ab94-4f2f-8597-05bb51a9e666",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-a39a7ffad4a3",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "原中文两个名词义项“助手”和“助理”合并为一组核心名词用法，证据 wn31:n:09835195 支持；形容词用法已作为外部候选列入 dictionary_additions 且未混入核心，源词性仅为名词，处理正确。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_56",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "609ab445-f27d-44c9-ae4e-79c227d49021",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-ac455671cf7f",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学提示：可在扩展层补充 rare sense 'formal ceremony' (pomp and circumstance) 作为文化背景，但不影响核心。"
+      ],
+      "note": "候选将三个近义名词合并为一组，证据 wn31:n:13965927 与 wn31:n:14536419 覆盖条件/事实义，符合原文。外部词典义 'consideration' 已作为候选单列未采用，处理正确。无实际翻译/POS错误或重要漏报。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_57",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "a26f48b5-5d43-4b02-833c-c7d02ddd17d2",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3426125bf109",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "原文词性为动词且`对比/对照`片段未标注逐义词性；候选将及物与不及物动词分离，仅把及物义放入核心，不及物义(v:02672941)置于dictionary_additions未采用。词典定义独立存在但原文片段仅提供宽义，无法确认原文是否支持不及物义，属于源范围不确定，不是确认缺陷。",
+          "evidence_ids": [
+            "wn31:v:02672941"
+          ],
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-3426125bf109:p6c5:addition:1",
+          "proposed_fix": "保留不及物候选为AI未采用并在用法覆盖矩阵中显式标注“源片段动词范围未证实”，待源逐义证据或人工决定后再确认是否核心化。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "WordNet还提供名词义wn31:n:05719031（颜色之间的视觉对比效果）和wn31:n:05756783（概念性区分/差异），候选只把摄影反差(05133627)列为外部候选，未追踪其他外部名词义；这些义项不在原始片段中，但可能对阅读理解有独立价值，缺失追踪属外部用途覆盖不完整，重要程度为教学建议。",
+          "evidence_ids": [
+            "wn31:n:05719031",
+            "wn31:n:05756783"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "在dictionary_additions中增加这两个AI候选（状态AI_candidate_not_adopted），注明外部词典义，不自动并入核心。"
+        }
+      ],
+      "preferences": [
+        "首次学习可按候选顺序：名词比较动作、名词差异、及物动词；若源文确认不及物用法，可并入核心或扩展而不必单独外部候选。",
+        "摄影/视觉 contrast 适合列为扩展或其他专门义，首次不优先。"
+      ],
+      "note": "候选正确区分了名词比较行为与名词差异，及物动词与外部不及物区分明确；源片段逐义词性未知未冒充已证实。主要问题为不及物动词来源覆盖不确定及外部词典名词义追踪不全，均非确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_58",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c61652ae-3e94-49b4-b373-41433c91036e",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-cac787df74af",
+      "word": "consist",
+      "pos": "动词",
+      "raw": "由……组成；在于",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "由……组成",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "在于",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:02639437",
+          "pos": "v",
+          "definition": "be composed of; \"The land he conquered comprised several provinces\"; \"What does this dish consist of?\""
+        },
+        {
+          "id": "wn31:v:02659476",
+          "pos": "v",
+          "definition": "originate (in); \"The problems dwell in the social injustices in this country\""
+        },
+        {
+          "id": "wn31:v:02664128",
+          "pos": "v",
+          "definition": "be consistent in form, tenor, or character; be congruous; \"Desires are to be satisfied only so far as consists with an approved end\""
+        },
+        {
+          "id": "wn31:v:02756729",
+          "pos": "v",
+          "definition": "have its essential character; be comprised or contained in; be embodied in; \"The payment consists in food\"; \"What does love consist in?\""
+        }
+      ],
+      "review_role": "targeted_risk",
+      "candidate": {
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-cac787df74af:p6c5:core_meanings:1",
+            "display_zh": "由……组成；由……构成",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:02639437"
+            ],
+            "usage_note": "整体由若干部分组成；对应 consist of。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "由……组成",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:02639437"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-cac787df74af:p6c5:core_meanings:2",
+            "display_zh": "在于；本质是；存在于",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:02756729",
+              "wn31:v:02659476"
+            ],
+            "usage_note": "说明本质、内容或根源所在；对应 consist in，并兼容“originate in”的来源义。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "在于",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:02756729",
+                  "wn31:v:02659476"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-cac787df74af:p6c5:addition:1",
+            "meaning_zh": "（与……）一致；相符",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:02664128"
+            ],
+            "reason": "原中文未表达“consist with”的相容义；属正式或较少用搭配，仅列候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "源两个片段分别对应整体组成和本质/根源所在；consist of 与 consist in 的对象和句式不同，不能合并。consist with 未在原中文出现，只作候选。",
+        "source_POS_coverage": {
+          "动词": "source_derived_use_represented"
+        }
+      },
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "保持 consist of 与 consist in 的分组，并提示搭配对象差异；consist with 仅作为扩展候选不进入核心。"
+      ],
+      "note": "两个源义分别映射到精确的 WordNet 义项：s001 对应 be composed of，s002 对应 originate (in) 与 have essential character/be embodied in，词性均为动词，对象与方向正确。未发现错误翻译、POS 错误、原义遗漏或错误合并。未在原文出现的 consist with 已作为 dictionary_additions 明确标记为未采用候选，处理符合双轨规则。",
+      "transport_normalizations": [],
+      "api_tag": "review_001_59",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "ec39e822-191d-4310-8d94-a8e68ff68c95",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-b72f4a8521c3",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "kind": "teaching_suggestion",
+          "detail": "先教“区别；差异”义，再按需引入“区分行为”和“荣誉/优异成绩”等外部义。"
+        }
+      ],
+      "note": "源片段“区别”按名词差异义处理，有wn31:n:04756794支持；活动义“区分”已作为未采用外部候选单列，不强制进入核心。“卓越”按抽象杰出/显赫义处理，有wn31:n:14458911支持；荣誉义已单列。未发现源义丢失、词性错配或无据合并。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_60",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "43f9ad1e-fbf4-4567-b034-01433355fb91",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-39d5ef92ac20",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "候选将“分清”和“区别”合并为一个辨别义，证据 wn31:v:00652006 支持该概括用法；将“看清楚”对应感官辨认义，证据 wn31:v:02197640 支持。未采用的使动/特征义和使显著义已列入 dictionary_additions，来源原文未明确表达，不构成当前生成缺陷。未发现错误翻译、词性错误或重要源用途遗漏。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_61",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "43faaabc-1799-4763-a57d-f7ff8d7ceffe",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-e62377847bbe",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "核心义usage_note将“负债”纳入“财产”义，但源中文“财产”通常不含负债；WordNet义项虽包含liabilities，但源片段没有明确支持该扩展，需谨慎确认是否为源词宽义兼容还是英语义的外延。",
+          "evidence_ids": [
+            "wn31:n:13271829"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-e62377847bbe:p6c5:core_meanings:1",
+          "proposed_fix": "保留核心“财产；资产”，将usage_note改为“泛指个人拥有的全部资产（法律语境可能含负债）”或单独标记负债为未经源确认的外部细义。"
+        }
+      ],
+      "preferences": [
+        "首次记忆可先强调与“财产/资产”对应的宽泛义，避免过早引入历史社会阶层义。",
+        "扩展义“地产；庄园”可标注为“源词‘财产’的下位具体类型”，以免学习者误以为“财产”本身直接等于庄园。"
+      ],
+      "note": "源片段仅含名词“财产”，候选正确覆盖了财产/资产义与地产/庄园义，社会阶层义作为未采用候选单独列出，符合规范。唯一不确定点是核心usage_note引入“负债”，源中文可能不支持，故标为证据待定而非确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_62",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "fd50ac7f-c12e-4223-ad1c-9cb8960b95da",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-ab5e345f2c28",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "源三个动词义均被候选覆盖：s001 分用于核心1（警觉/兴奋）与核心2（情绪/食欲激起），s002 经 v00795741/v01648064 有条件支持为促进/推动，s003 与 s001 合并于情绪激发。外部促使义已作为未采用候选列出，未冒充原文。证据 v00504245 较宽但兼容核心1；“使迅速发生”与促进存在边界，但候选已标有条件支持且另有 v00795741 支撑，不构成确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_63_repair1",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "aaf80ed7-74ef-45d9-8182-feedaab89c21",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-5c097b19679a",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "候选将源义‘构成’映射为核心1（构成；组成），引用WordNet 02626667和02627475，两个释义均表达form/compose或compose/represent，与源‘构成’相符；源义‘设立’映射为核心2（设立；建立），引用01650771（set up or lay groundwork），符合。词典增义‘任命/委任’（02401347）未被误纳入核心，已作为未采用候选单独列出，符合保守分层。无源义遗漏、无跨词性合并、无词性错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_64",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "18665bf5-1294-4fa1-8aa3-5c38da3bbc5c",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-eb9a7650cd53",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "s002 '体质' is retained as pending because the available composition sense (wn31:n:04940721) is broad and does not independently confirm the body/health restriction. No confirmed error; additional evidence is needed to promote to core or refine.",
+          "evidence_ids": [
+            "wn31:n:04940721"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "reserved_original_items",
+          "proposed_fix": "If a separate dictionary sense for physical constitution (health) is available, add it as evidence; otherwise keep pending."
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "s003 '构成' may potentially support the activity sense (wn31:n:00237945 act of forming), but the candidate assigns it only to composition/way and places activity as dictionary addition without source link. Not a confirmed error if original is interpreted as result-only, but ambiguity should be tracked.",
+          "evidence_ids": [
+            "wn31:n:00237945"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "dictionary_additions (SG25-eb9a7650cd53:p6c5:addition:1)",
+          "proposed_fix": "If evidence supports activity as a possible reading of s003, create a semantic split or add source_sense_ids and status pending; otherwise keep current separation."
+        },
+        {
+          "severity": "Minor",
+          "kind": "internal_consistency",
+          "reason": "source_POS_coverage value 'source_derived_use_represented' for 名词 is inconsistent because s002 is in reserved_original_items with status original_preserved_evidence_pending, not represented in core. Coverage should reflect partial pending.",
+          "evidence_ids": [],
+          "source_sense_ids": [],
+          "candidate_group_ref": "source_POS_coverage",
+          "proposed_fix": "Change value to 'source_derived_use_represented_with_pending' or adjust to acknowledge pending source sense."
+        }
+      ],
+      "preferences": [
+        "If s002 is later confirmed, consider grouping body constitution with composition way but with a specific note about physical condition.",
+        "When teaching, clarify that '构成' as a noun typically refers to structure rather than the act of forming."
+      ],
+      "note": "Candidate correctly identifies the law sense and the composition/way sense; the body/health sense is preserved with pending status and not incorrectly promoted. The activity sense is separated as an unadopted dictionary addition, which is consistent with the conservative interpretation of the ambiguous Chinese noun. The only definite issue is the source_POS_coverage label not reflecting the pending status of s002.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_65",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "7fe839fd-a18d-4f62-96f1-cb362939f3a0",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3165df34fcec",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "名词义“研究所”和“学院”均挂靠 WordNet n:08424287（组织/协会），该释义为宽泛上位义，未直接列出研究机构或学院作为下位义。候选已用“宽义机构义可涵盖”的限定标注，语义没有错误，但具体下位对应缺乏逐义词典证据。",
+          "evidence_ids": [
+            "wn31:n:08424287"
+          ],
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-3165df34fcec:p6c5:core_meanings:1|SG25-3165df34fcec:p6c5:core_meanings:2",
+          "proposed_fix": "若后续人工确认需要更精确的英语义，可补充“研究所”为 research institute/专门研究机构，“学院”为 college/academy 的词典证据；本轮不必改变核心。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "动词义“实行”（s004）被保留为 pending，因为所提供的 WordNet v:01621566 为法律程序提起义，v:01650771 为建立/设立义，均不能支持“实施/实行”。候选未错误合并；此源义缺乏英语词典逐义证据。",
+          "evidence_ids": [
+            "wn31:v:01621566",
+            "wn31:v:01650771"
+          ],
+          "source_sense_ids": [
+            "s004"
+          ],
+          "candidate_group_ref": "SG25-3165df34fcec:p6c5:reserved_original_items",
+          "proposed_fix": "保持暂存；如后续获得可靠词典义（如 put into effect/implement），再考虑是否纳入名词外用法。"
+        }
+      ],
+      "preferences": [
+        "名词两个中方提示分开保留是可取的，但共享同一个宽泛 WordNet 释义可能让学习者误以为它们同义；教学中可提示“研究所”偏科研、“学院”偏教育。",
+        "核心“建立；设立”可继续使用，但可补充搭配 initiate/set up a policy 等以区分于法律程序义。"
+      ],
+      "note": "候选处理总体合理：名词按源义分两组并诚实标注宽义兼容，动词建立与源义吻合，实行因证据不匹配正确进入暂存，法律义作为外部候选未被偷渡进核心。未发现已确认的翻译、词性或合并错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_66",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "8918fe85-2573-40a4-9afc-8c597c0fb38e",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-f329e3a317ee",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Major",
+          "kind": "false_merging",
+          "reason": "候选将源义“复原”（s002）与“恢复”（s003）合并为一组，并把 wn31:v:02431646（bring back into original existence/use/function/position; restore law and order/reestablish peace/restore emperor to throne）同时分配给 s002 与 s003。中文“复原”不用于恢复法律秩序、和平或地位，仅适合恢复到原有具体状态/功能；该证据导致“复原”边界被扩大到抽象地位/秩序，属于用法合并错误。",
+          "evidence_ids": [
+            "wn31:v:02431646"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-f329e3a317ee:p6c5:core_meanings:2",
+          "proposed_fix": "将“复原”仅对应 wn31:v:02558146（恢复到原状/可用状态），把 wn31:v:02431646 从 s002 的 source_subsenses 中移除；“恢复”可同时保留 02431646 与 02558146，或进一步按抽象/具体对象拆分。"
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源义“恢复”（s003）字面宽泛，可搭配精力/体力表达“使恢复精力/复苏”，与 wn31:v:00168396（return to life; get or give new life or energy）可能兼容。候选将其作为 source_sense_ids=[] 的未采用外部候选，并称“原文未明确”。因源片段无对象限定，无法确认是否必须排除该义；需要源证据或人工判断。",
+          "evidence_ids": [
+            "wn31:v:00168396"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-f329e3a317ee:p6c5:addition:1",
+          "proposed_fix": "核实源“恢复”的范围；若可覆盖精力/生命义，应把该证据关联到 s003 并讨论是否进入核心；若不可，保持未采用但需补充依据。"
+        }
+      ],
+      "preferences": [
+        {
+          "suggestion": "教学提示可把“复原”限定为具体原状/功能（如复原生态/文物），“恢复”再区分抽象秩序/地位与具体状态，避免学生生成“复原秩序”。"
+        }
+      ],
+      "note": "修复组与 wn31:v:00261534 匹配准确；归还义 wn31:v:02315462 确为原文未列外部义，维持未采用合理。主要问题是“复原”被错误合并到抽象重建/地位义，需拆分证据归属；精力义是否源覆盖待证。",
+      "transport_normalizations": [
+        {
+          "field": "findings[0].severity",
+          "before": "major",
+          "after": "Major",
+          "reason": "enum case normalization only"
+        },
+        {
+          "field": "findings[1].severity",
+          "before": "info",
+          "after": "Info",
+          "reason": "enum case normalization only"
+        }
+      ],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_67",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "311aac2f-3561-45e0-8a0b-fb80745cbc54",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-fd13d46bad4b",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "原始两个动词近义片段“约束”和“限制”被候选合并为一个通用动词核心“限制；约束”，有 WordNet 定义支持（place limits on / place restrictions on）。两个更专门的义项（依法限制进入/使用、限制信息传播）已作为非来源外部候选单列，未混入核心，处理正确。未发现翻译、词性或覆盖缺陷。中文顺序调换属于教学偏好，不构成错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_68",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "828115fa-750d-4d66-adf0-ed7f38bf40cb",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-49a25f9feefa",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源片段“存储空间”常指抽象容量（如手机/电脑的存储空间），但候选核心组2的唯一证据 wn31:n:04336328 仅支持实体存放场所（仓库类），未单独验证抽象容量义；候选已备注但未将该义分离为暂存或独立候选。",
+          "evidence_ids": [
+            "wn31:n:04336328"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-49a25f9feefa:p6c5:core_meanings:2",
+          "proposed_fix": "可将抽象容量义标记为待验证或在 dictionary_additions 中单列，同时保留实体存放场所义；或补充支持容量义的证据。"
+        }
+      ],
+      "preferences": [
+        "教学上可优先呈现‘存储空间’的计算设备容量义，但在未有可靠频率证据前仅作为教学建议，不影响当前核心。"
+      ],
+      "note": "候选核心组1对“储存”的动作与状态处理基本合理，证据覆盖活动名词；核心组2覆盖了源片段字面，但抽象容量义的证据缺口已被候选备注，不构成当前翻译错误，仅属于待补强的证据不确定性。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_69",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c40dfc0b-d017-4880-8f3f-0fb6faf1269d",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-96f39e3569ec",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "false_merging",
+          "reason": "核心义1将源义‘消耗’(s001)与‘消费’(s002)合并为一组，共用同一证据 wn31:v:01159815（耗尽资源/材料）。但s002的典型义是经济上的购买并使用商品/服务，该义并未被该证据覆盖，候选自身的usage_note也承认证据不足。然而source_subsenses中仍将s002与该证据关联，造成证据标注与实际支持不一致。将未证实的经济消费义当作核心合并，可能使学习者误解‘consume’在经济语境中的确切用法。",
+          "evidence_ids": [
+            "wn31:v:01159815",
+            "source:SG25-96f39e3569ec:s002"
+          ],
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-96f39e3569ec:p6c5:core_meanings:1",
+          "proposed_fix": "将s002单独列为pending/未证实义或外部候选，仅当有明确词典证据支持经济购买义时再纳入核心；s001保留‘耗尽资源’核心；现有候选的source_subsenses中移除s002对wn31:v:01159815的直接关联，或添加明确证据。"
+        }
+      ],
+      "preferences": [
+        "教学建议：先学‘消耗/耗费’与‘吃喝’两个稳定核心，经济‘消费’义可作为扩展或待定，强调其与一般耗尽的不同对象（金钱/商品）。"
+      ],
+      "note": "候选正确识别了‘吃喝’和‘消耗’两个主要动词用法，外部词典的毁灭、专注、挥霍义也合理标为不采用。主要问题在于s002经济消费义被并入资源耗尽义，且证据指向不一致；由于候选已注明该义未经词典直接验证，但未将其移出核心，故提出纠正建议。其余部分无确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_70",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "31c3d011-8cb5-47b6-8b5f-fb51b2e559a1",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-e1721557ff52",
+      "independent_core": [
+        "动词：说服；使相信（使某人相信或采取行动）"
+      ],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "原始两片段“使相信”与“说服”为近义动词，可合并为一个核心用法，共同对应 WordNet 动词义 v:00768463（cause somebody to adopt a certain position, belief, or course of action）及 v:02592213（win approval or support for）等说服/使役义。词性与证据一致，无遗漏或误并。",
+      "transport_normalizations": [],
+      "review_role": "source_first_sample",
+      "api_tag": "review_001_71",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "502264b7-c2d0-4afd-8c4b-7d4e5bd9b986",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-27ce25259481",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "来源片段 s002 '担保' 未在所提供证据中体现。候选将其保留为 original_preserved_evidence_pending，不并入核心，处理正确，但该源义是否有对应英语用法仍待证据。",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": null,
+          "proposed_fix": null
+        }
+      ],
+      "preferences": [
+        {
+          "suggestion": "若后续获得 '担保/承诺' 义（如 assure/guarantee 的特定词典证据），可考虑作为扩展或单独暂存。教学上当前核心仅一组，合理。"
+        }
+      ],
+      "note": "候选将 s001 和 s003 合并为一组核心，语义覆盖 '使确定/确保'，与所供两个 WordNet 动词义相符。s002 无证据暂存，未错误混入承诺/担保义。无确认错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_72",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "1d93f326-848c-4715-b95d-9024b5d43535",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-64e8937abc6d",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "Candidate core correctly represents the source noun '保险' as generic insurance/guarantee using evidence wn31:n:13365819 and wn31:n:14563428. The policy/certificate sense (wn31:n:06535632) is properly isolated as a dictionary addition with status AI_candidate_not_adopted, not mixed into the core. No source-supported use is omitted; the source POS coverage is accurate.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_73",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "0a860f9f-c5e4-4e5d-b728-36c6dd21fb61",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-a919007637ab",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Major",
+          "kind": "important_external_use_not_tracked",
+          "reason": "Supplied WordNet sense wn31:v:02543752 (create social or emotional ties; e.g., attach to a child) is an important everyday use of 'attach' and is absent from source Chinese, but the candidate only lists legal seizure as a dictionary addition and does not include this emotional-bond sense in dictionary_additions. Under dual-track coverage, important external uses must be explicitly tracked even if not adopted.",
+          "evidence_ids": [
+            "wn31:v:02543752"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "dictionary_additions",
+          "proposed_fix": "Add dictionary_additions candidate: meaning_zh '建立情感联系；（使）产生亲近感/依恋', part_of_speech '动词', source_sense_ids [], evidence_ids ['wn31:v:02543752'], status 'AI_candidate_not_adopted', human_approved false, auto_promoted_to_core false."
+        }
+      ],
+      "preferences": [
+        {
+          "type": "teaching_order",
+          "note": "Consider separating stative 'be attached' (wn31:v:01292858) and dynamic 'become attached' (wn31:v:01293025) in the extended meaning into two distinct teaching notes for clarity, as state vs. change is a useful learner distinction."
+        }
+      ],
+      "note": "Candidate correctly separates transitive core from intransitive extended, preserves pending source sense s003 重视, and includes legal seizure as a non-adopted addition. However, it misses the supplied emotional-tie sense, which should be tracked as an external candidate. Source Chinese 附上 and 连接 can both be covered by the broad cause-to-be-attached evidence, so no core semantic error there.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_74",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "a461f78d-0a11-4361-9020-e0e568a9973d",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-093e7d5fdbaa",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "important_external_use_omitted",
+          "reason": "The candidate's dictionary_additions includes three external WordNet senses but omits n:06271913 'a channel for communication between groups; liaison'. This is a distinct noun sense not covered by the core, and should be tracked as an unadopted external candidate.",
+          "evidence_ids": [
+            "wn31:n:06271913"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "Add to dictionary_additions: meaning_zh '联络渠道；联络人（提供沟通联系的人/渠道）', part_of_speech '名词', source_sense_ids [], evidence_ids ['wn31:n:06271913'], status 'AI_candidate_not_adopted'."
+        },
+        {
+          "severity": "Minor",
+          "kind": "overly_narrow_gloss",
+          "reason": "The usage_note for core sense 4 (接触, verb) says '使某物与另一物发生物理接触', implying a causative agent bringing two things into contact. The cited evidence wn31:v:01208316 is not causative but simply 'be in direct physical contact with; make contact', with examples like 'The two buildings touch', 'Their hands touched', 'The surfaces contact at this point'. The note excludes intransitive/transitive non-causative use.",
+          "evidence_ids": [
+            "wn31:v:01208316"
+          ],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+          "proposed_fix": "Change usage_note to '与某物/某人物理接触；相碰（可及物或不及物）' or remove the causative phrasing."
+        }
+      ],
+      "preferences": [],
+      "note": "Source Chinese fragments are ambiguous in POS; candidate correctly assigns noun and verb senses based on independent WordNet evidence. Core meanings cover communication and physical contact in both POS. External senses (electronics contact, contact lens, person who assists) are appropriately placed in dictionary_additions, but the liaison/channel sense is missing. Minor issue with the verb '接触' usage note implying causation not supported by evidence.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_75",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "98edb316-92ae-477e-ad5a-a8d8979856c0",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-dd9245cc1ddc",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [],
+      "note": "原文三个动词义（包含、包括、容纳）均被候选核心准确覆盖：包含/包括合并为成分/内容义，证据 wn31:v:02635616 支持；容纳单列为容器/容量义，证据 wn31:v:02706727 与 wn31:v:02707070 支持。外部候选控制/遏制已显式标记为未采用，处理正确。WordNet 另有数学义“be divisible by”未被纳入任何层级，但属于专业/技术义，不作为当前缺陷。建议后续评估其教学必要性。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_76",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "4330f895-ffbb-451f-997a-6cd912751733",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-07f5b83f6cec",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源义「维持」语义宽度不确定：候选将「供养；维持生计」(wn31:v:01187158) 和「滋养；以…维持生命」(wn31:v:01205348) 列为外部候选，理由是原中文未明确宾语。但中文「维持」可构成「维持生计」「维持生命」，这两义可能仍属源义范围而非外部新增。需人工判断是否将其中一个/两个归入源义覆盖范围。",
+          "evidence_ids": [
+            "wn31:v:01187158",
+            "wn31:v:01205348"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-07f5b83f6cec:p6c5:addition:1, SG25-07f5b83f6cec:p6c5:addition:3",
+          "proposed_fix": "可考虑在源义覆盖矩阵中为 s001 标注可能覆盖的宾语类型（谈判/努力/生计/生命），或保留现有外部候选并等待人工审阅。"
+        }
+      ],
+      "preferences": [
+        "教学上可考虑将「支撑」的抽象证实义（扩展组）提前到核心，因为阅读中较常见；但无频率证据，仅作建议。",
+        "建议在 s002 的语义拆分中更明确物理支撑与抽象支持的对象差异，以帮助学习者区分。"
+      ],
+      "note": "本轮检查源义覆盖完整，未见实质错误；源义「维持」的范围与外部候选边界存在可审阅的不确定性，但不影响当前候选放行。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_77",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "fb831b04-8d66-4fe7-b75e-04bed58793e7",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-ed7002b439e9",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "omitted_important_dictionary_addition",
+          "reason": "The source raw contains only '内容/含量' for nouns and does not include the noun sense 'the state of being contented'. This sense is present in the supplied evidence (wn31:n:14436286) and has independent value (e.g., 'to one's heart's content'). The candidate lists two dictionary additions but omits this one, so the dual-track gap is not fully tracked.",
+          "evidence_ids": [
+            "wn31:n:14436286"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": null,
+          "proposed_fix": "Add a dictionary addition entry for the noun sense '满足；满意（状态）' with evidence wn31:n:14436286, status AI_candidate_not_adopted."
+        }
+      ],
+      "preferences": [],
+      "note": "All four source senses are correctly represented in core with matching POS and appropriate evidence. The two listed dictionary additions (physical contents and limited reflexive verb) are appropriately not promoted to core. However, the important noun sense of contentment (wn31:n:14436286) is missing from dictionary_additions and should be tracked as an external candidate.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_78",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "acd89668-0874-4516-b249-f1aa71e74570",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-cf3c3437a865",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "可考虑将词典中“（规则、条件、情况）存在；适用；通行”的正式用法在教学需要时纳入扩展或暂存列表，并明确标为词典外部候选，不默认进入首记核心。"
+      ],
+      "note": "源片段仅“获得”，动词，候选核心‘获得；得到’能覆盖具体事物/资格及抽象待遇、评价的获得方向，引用的两个WordNet义项与源义相符；第三个义项“（规则等）存在；适用”与源中文不同，候选已作为dictionary_additions且状态为AI_candidate_not_adopted，未混入核心，处理符合双轨规则。未发现错误翻译、词性误用或源用法遗漏。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_79",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "6e01bdd7-6e8c-4168-bd6d-109c236dd5cb",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-6b428ace0262",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "missed_external_usage",
+          "reason": "WordNet synset wn31:v:02415305 includes both maintaining a property/feature and allowing someone to remain in a place or position (e.g., retain a lawyer, retain staff). The candidate core1 narrows this to '保持；维持（状态、特征）' and does not track the employ/keep-in-service sub-sense, which is a distinct usage for professional/legal contexts. Source Chinese '保持' does not clearly include this, so it likely belongs in dictionary_additions as an external candidate, not in core, but its absence leaves the coverage matrix incomplete.",
+          "evidence_ids": [
+            "wn31:v:02415305"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "core_meanings:1",
+          "proposed_fix": "Add a dictionary_additions candidate for '留用；聘请（律师/员工）' with source_sense_ids=[], status AI_candidate_not_adopted, and note that it is not covered by s001."
+        }
+      ],
+      "preferences": [
+        "If teaching business/legal English, plan to introduce 'retain a lawyer/staff' as a separate collocation after the core meanings; not required for general vocabulary learning."
+      ],
+      "note": "The candidate correctly maps s001保持 to the maintain-state portion of wn31:v:02415305 and s002保留 to the keep-for-future-use sense. The extended memory sense is a plausible split of s002. s003容纳 is appropriately reserved as pending because the closest WordNet sense 02707488 ('hold back within') does not exactly match the Chinese capacity/contain meaning. The only coverage gap identified is the missed external sub-sense of employing/keeping in service from the same evidence, which should be tracked as an AI candidate not adopted.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_80",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "296a3609-4ed1-4b5b-8be5-55a77e489d57",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-83e3b78f14e0",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "The source sense '技术的' (s001) may include WordNet a:02820043 (of or relating to technique or proficiency in a practical skill), but the candidate restricts this source sense to applied science/industry/machinery (usage_note of core group 1) and lists the technique sense as dictionary addition 3 with no source_sense_ids. This could be a source-supported use omitted if the source gloss is broad, but evidence is insufficient to confirm.",
+          "evidence_ids": [
+            "wn31:a:02820043"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-83e3b78f14e0:p6c5:core_meanings:1 / SG25-83e3b78f14e0:p6c5:addition:3",
+          "proposed_fix": "Optionally add s001 to addition 3 or clarify whether '技术的' covers technique/proficiency; pending source scope review."
+        }
+      ],
+      "preferences": [],
+      "note": "Noun senses in evidence (wn31:n:00772845, wn31:n:04406404) are outside source POS adjective and correctly excluded from candidate. Core groups 1 and 2 appropriately separate applied scientific/machinery vs specialized knowledge. The only open question is whether source s001 also covers the technique/proficiency sense, which is currently treated as an external addition.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_81",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "86b4caa0-3945-4e80-a157-02267f330f14",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-e91fadf24f78",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Minor",
+          "kind": "important_external_use_omitted",
+          "reason": "WordNet sense wn31:n:06134474 (technology as an academic/engineering discipline) is a distinct and common use that is not present in the candidate's core or dictionary_additions. The candidate only tracks the equipment sense as an external addition, but this discipline sense is also independently valuable and should be explicitly listed as an unadopted external candidate.",
+          "evidence_ids": [
+            "wn31:n:06134474"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "SG25-e91fadf24f78:p6c5:dictionary_additions",
+          "proposed_fix": "Add a dictionary addition candidate for wn31:n:06134474 with meaning_zh '工程学；科技学科（作为学科/领域）', part_of_speech '名词', source_sense_ids [], status 'AI_candidate_not_adopted', human_approved false, auto_promoted_to_core false, priority_basis 'AI_teaching_suggestion_not_measured_frequency'."
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source sense s002 '科技' is held in reserved_original_items as evidence pending because it is broader than the supplied WordNet definitions. This is a conservative and acceptable handling, but the sense remains unresolved and no exact WordNet evidence is tied to it.",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "SG25-e91fadf24f78:p6c5:reserved_original_items",
+          "proposed_fix": null
+        }
+      ],
+      "preferences": [
+        "If future evidence supports '科技' as a common equivalent for technology, it could be added as an extended meaning; currently pending is acceptable.",
+        "When adding the discipline sense as an external candidate, avoid promoting it to core without source support."
+      ],
+      "note": "Candidate correctly maps source s001 to the application sense (wn31:n:00951435) and keeps source s002 as pending due to scope uncertainty. The main gap is the omission of the discipline/engineering sense (wn31:n:06134474) from the dictionary additions, which should be tracked as an unadopted external candidate. No confirmed wrong translation or POS error was found.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_82",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "564bf436-f82d-41ec-bd9d-df86594def51",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-4ca303a3bf7d",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源义 s003“体系结构”本身不带领域限定，候选将其收紧为“（计算机）体系结构”，仅依赖计算机领域证据 wn31:n:04939455；若原义为一般“系统结构/组织”，则当前候选过窄。需要额外证据确认源义是否为计算机专用，否则应保持未限定并挂起一般义。",
+          "evidence_ids": [
+            "wn31:n:04939455"
+          ],
+          "source_sense_ids": [
+            "s003"
+          ],
+          "candidate_group_ref": "SG25-4ca303a3bf7d:p6c5:other_meanings:1",
+          "proposed_fix": "将显示改为不带领域限定的“体系结构”，在用法说明中注明当前证据仅覆盖计算机领域，一般义待证据确认；或提供一般义的可靠词典证据后拆分。"
+        }
+      ],
+      "preferences": [],
+      "note": "核心“建筑学”正确匹配学科义证据；原文“建筑风格”无对应英语证据，已按规则保留在待定区，未用相近的建筑作品义冒充；外部职业义和建筑作品义正确列为未采用候选。s003 因领域限定存在过窄风险，列为证据待决。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_83",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "74b6da48-5771-4fe2-a953-8685bf52ef1d",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-c7ce66d0fb14",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        {
+          "suggestion": "Consider adding an extension note for the verb sense 'enter upon an activity or enterprise' (wn31:v:01654835) if needed for advanced learners, as it is slightly distinct from general attempt.",
+          "evidence_ids": [
+            "wn31:v:01654835"
+          ]
+        }
+      ],
+      "note": "The candidate correctly covers both noun and verb uses derived from the source Chinese, and appropriately uses the effort/attempt senses. The attack sense is correctly flagged as an external addition. No semantic or POS errors detected. The unresolved source POS is resolved reasonably by assigning both senses to both POS, which is acceptable given the lack of explicit mapping. The verb sense 'enter upon' is not covered by the source explicitly, but may be subsumed under general attempt; flagged as a teaching preference only.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_84",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "456bd8a9-4299-4c0d-be15-5b75307f6333",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-bf0bb4ee60e2",
+      "independent_core": [],
+      "verdict": "correction_proposed",
+      "findings": [
+        {
+          "severity": "Major",
+          "kind": "important_source_use_omitted",
+          "reason": "Candidate restricts source s001 '伸展' to body/limbs only, but WordNet evidence v00027698 (thrust/hold out hand or object), v01371528 (straighten table legs), and v02058913 (unfold newspaper, extend antenna) show the same 'extend/stretch out' use applies to non-body objects. The original Chinese gloss does not limit it to body, so the core group omits a common and source-supported object-oriented use.",
+          "evidence_ids": [
+            "wn31:v:00027698",
+            "wn31:v:01371528",
+            "wn31:v:02058913"
+          ],
+          "source_sense_ids": [
+            "s001"
+          ],
+          "candidate_group_ref": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+          "proposed_fix": "Broaden display to '伸展/展开（肢体或物体）' and usage_note to include extending non-body objects; cite all relevant evidence IDs in the group. Do not remove body-specific example, but do not make it the only object type."
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Source s002 '变宽' (intransitive become wider) is placed in reserved_original_items as pending, which is appropriate, but source_POS_coverage says 'source_derived_use_represented' for 动词, potentially obscuring that one source sub-sense is unresolved and not part of core. The evidence does not clearly show intransitive change-of-state 'become wider'; retained pending is correct.",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "",
+          "proposed_fix": "Change source_POS_coverage to indicate partial coverage with one pending original sub-sense, or add a core_coverage_incomplete_pending_addition_decision marker for s002. No change to reserved_original_items needed."
+        },
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "Candidate lists several important dictionary meanings (prolong time, give/provide, expand scope/influence) as AI_candidate_not_adopted. This is acceptable separation of external candidates from source-derived core, but the main record should not imply complete first-screen coverage of extend; the note already qualifies this. Keep as tracked additions.",
+          "evidence_ids": [
+            "wn31:v:00318689",
+            "wn31:v:00319127",
+            "wn31:v:02302703",
+            "wn31:v:02302909",
+            "wn31:v:00541315",
+            "wn31:v:00542026"
+          ],
+          "source_sense_ids": [],
+          "candidate_group_ref": "",
+          "proposed_fix": "No correction required now; if future frequency evidence supports early teaching, promote relevant additions to extended with explicit reason."
+        }
+      ],
+      "preferences": [
+        "Consider grouping the transitive scope/range expansion (evidence v00541315/v00542026) as an extended meaning if teaching later, since it is closely related to spatial extension but currently only in dictionary_additions."
+      ],
+      "note": "The candidate correctly preserves s003 spatial/temporal extension and holds s002 as unresolved due lack of direct evidence. Main confirmed defect is the over-narrowing of s001 to body parts; object-oriented stretching/unfolding is supported by multiple WordNet verbs for extend and should be part of the first core. The dictionary additions are properly separated; no evidence of wrong POS or false merge.",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_85",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "05717eb6-eeae-4027-b032-93ff6b2205f9",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-4c3200fefd8b",
+      "independent_core": [],
+      "verdict": "evidence_pending",
+      "findings": [
+        {
+          "severity": "Info",
+          "kind": "unresolved_evidence",
+          "reason": "源片段 '性情'（s002）可能指向更稳定的气质/性格义，但所供四个 WordNet 义项均为倾向、偏好、趋势或做某事的意向，未见独立稳定性情义。候选已将其挂起为 original_preserved_evidence_pending，属合理处理，但证据仍不确定，不能确认其为当前源义。",
+          "evidence_ids": [],
+          "source_sense_ids": [
+            "s002"
+          ],
+          "candidate_group_ref": "reserved_original_items",
+          "proposed_fix": "保持挂起，待补充支持 '性情' 作为独立 stable temperament 义的词典证据；当前所给 WordNet 四义均不覆盖该义。"
+        }
+      ],
+      "preferences": [
+        "教学上可将 '倾向（偏好）' 与 '趋势/动向' 的层级顺序根据目标学员调整，若一般趋势更常用可前移，但非错误。"
+      ],
+      "note": "逐源义检查：s001 '倾向' 被候选拆分为自然趋势/特征性可能（wn31:n:04951225）、心理偏好态度（wn31:n:06206319）和一般动向（wn31:n:08699515，放扩展），三者用法边界清楚，未发现假合并；s003 '意向' 与 wn31:n:07514352 做某事的意愿匹配；s002 '性情' 因所给证据未明确覆盖稳定气质，候选挂起，属于可接受的暂存，未误标为已证实。词典四义全部有覆盖，未发现遗漏原文义或重要外部义。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_86",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "5924fda9-f895-47e9-aeac-498630c50d9c",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-3d8eefab379d",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "首次记忆后，可将 “determine” 表示“确定边界/范围”（WordNet 00702474）和“成为决定因素/解决争议”（00765444）作为扩展提示，不必进入核心。"
+      ],
+      "note": "候选按原片段分别映射：s001“决定”→作出选择（wn31:v:00699355），s002“确定”→权威/明确固定（wn31:v:00701581, wn31:v:00949109），s003“查明”→调查弄清（wn31:v:00920843, wn31:v:00922307），词性、过程与对象区分合理。影响义（wn31:v:00702806）作为外部候选单独保留且未采用，未混入原文核心，符合分层规则。未纳入的边界固定义和解决争议义与源片段“确定”“决定”可能有一定兼容性，但并非首次理解必需的核心用法，故不作为当前问题。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_87",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "c1204d6c-462c-4d00-9926-d65e653ced1e",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    },
+    {
+      "id": "SG25-d0d092b83d4a",
+      "independent_core": [],
+      "verdict": "no_confirmed_problem",
+      "findings": [],
+      "preferences": [
+        "教学上可提示“剧烈的”多用于疼痛、运动等，“强烈的”多用于情感、气味等，“极度的”多用于程度极限，但同属一个核心义，不必拆分。",
+        "颜色饱和义已作为未采用候选列出，保持当前处理即可。"
+      ],
+      "note": "三个源片段均为形容词，近义表示强度高，合并为一个核心义合适。证据 wn31:a:01513206 覆盖广泛强度用法，s:00806846 支持疼痛/刺激的严重义，二者可共同支撑。颜色义确为源外专门用法，已单独列为 dictionary addition 且未混入核心，符合规则。未发现错误。",
+      "transport_normalizations": [],
+      "review_role": "targeted_risk",
+      "api_tag": "review_001_88",
+      "response_model": "deepseek-v4-pro",
+      "response_id": "ddee8e2d-bf57-44dd-9001-afbe56c1c903",
+      "different_model_identifier_from_generation": true,
+      "physical_served_weights_independently_verified": false
+    }
+  ],
+  "failed_review_ids": [
+    "SG25-0f571e7c2d33"
+  ],
+  "independence": "new stateless API requests; generation Flash and review Pro returned different model identifiers; internal deployed weights not independently verified",
+  "source_first_sample_has_no_generated_answers": true,
+  "transport_normalizations": [
+    {
+      "stable_id": "SG25-7920fdeff9c5",
+      "field": "findings[0].severity",
+      "before": "major",
+      "after": "Major",
+      "reason": "enum case normalization only"
+    },
+    {
+      "stable_id": "SG25-e3f48726b892",
+      "field": "findings[0].severity",
+      "before": "minor",
+      "after": "Minor",
+      "reason": "enum case normalization only"
+    },
+    {
+      "stable_id": "SG25-3a19589098bc",
+      "field": "findings[0].severity",
+      "before": "info",
+      "after": "Info",
+      "reason": "enum case normalization only"
+    },
+    {
+      "stable_id": "SG25-f329e3a317ee",
+      "field": "findings[0].severity",
+      "before": "major",
+      "after": "Major",
+      "reason": "enum case normalization only"
+    },
+    {
+      "stable_id": "SG25-f329e3a317ee",
+      "field": "findings[1].severity",
+      "before": "info",
+      "after": "Info",
+      "reason": "enum case normalization only"
+    }
+  ],
+  "invalid_original_responses_preserved": [
+    {
+      "stable_id": "SG25-0f571e7c2d33",
+      "api_tag": "review_001_14",
+      "error": "Review missing independent_core",
+      "response_sha256": "2eb679b6232055fea4325cec3c8f5a5500ddd87006284caaecbd3d2a3044e4fd"
+    },
+    {
+      "stable_id": "SG25-0f571e7c2d33",
+      "api_tag": "review_001_14_repair1",
+      "error": "Review missing independent_core",
+      "response_sha256": "761338a2e51700b4b0a78f3d251b1accb93757ca38ef5acf7f03ab6c9b03580f"
+    },
+    {
+      "stable_id": "SG25-0f571e7c2d33",
+      "status": "review_incomplete_after_existing_bounded_attempts_no_more_calls"
+    },
+    {
+      "stable_id": "SG25-ab5e345f2c28",
+      "api_tag": "review_001_63",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "response_sha256": "3452f12f5e704d34c317b9ece7547237c16a3b7d4011f8183068051910ea48be"
+    }
+  ],
+  "no_new_model_calls": true,
+  "adapter_sha256": "1119aa77c6b76211341bc62f68078ec17763b6c0548a1a5044925e52b1a6bbe7"
+}

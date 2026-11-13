@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_63",
+  "request_hash": "b1e1767e85a0919c0d94bc9fbba9e49b0b49fd303f1924245bbfe4aae37f5f3d",
+  "started_utc": "2026-11-13T08:16:59.570680+00:00",
+  "completed_utc": "2026-11-13T08:17:56.294621+00:00",
+  "elapsed_seconds": 56.718,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ab65ec97-6d6d-42f4-893b-cf6d33073604",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3375,
+    "completion_tokens": 2893,
+    "total_tokens": 6268,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2893
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1327
+  },
+  "content": "",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

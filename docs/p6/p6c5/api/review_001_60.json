@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_60",
+  "request_hash": "43468163b1c57467a8a30f473b75db6d535270231a4bb8c5604516c76e007911",
+  "started_utc": "2026-11-13T08:16:52.266035+00:00",
+  "completed_utc": "2026-11-13T08:18:01.093669+00:00",
+  "elapsed_seconds": 68.828,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "43f9ad1e-fbf4-4567-b034-01433355fb91",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3095,
+    "completion_tokens": 3572,
+    "total_tokens": 6667,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3407
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1047
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-b72f4a8521c3\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[{\"kind\":\"teaching_suggestion\",\"detail\":\"先教“区别；差异”义，再按需引入“区分行为”和“荣誉/优异成绩”等外部义。\"}],\"note\":\"源片段“区别”按名词差异义处理，有wn31:n:04756794支持；活动义“区分”已作为未采用外部候选单列，不强制进入核心。“卓越”按抽象杰出/显赫义处理，有wn31:n:14458911支持；荣誉义已单列。未发现源义丢失、词性错配或无据合并。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

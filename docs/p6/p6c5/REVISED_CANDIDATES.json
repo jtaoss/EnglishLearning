@@ -1,0 +1,2949 @@
+{
+  "AI_candidates_only": true,
+  "human_approved_count": 0,
+  "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+  "records": [
+    {
+      "issue_id": "P6C5-b001-confirmed-01",
+      "stable_id": "SG25-7920fdeff9c5",
+      "headword": "ritual",
+      "before_candidate_sha256": "f1c75af882e14dc7dea065a4d32ea44999f9205fd54a4fb9824c31add7645bff",
+      "before": {
+        "stable_id": "SG25-7920fdeff9c5",
+        "headword": "ritual",
+        "part_of_speech": "名词；形容词",
+        "source_fields": {
+          "entry_id": "SG25-7920fdeff9c5",
+          "word": "ritual",
+          "meaning_zh": "名词：仪式，惯常程序；形容词：仪式的",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "138",
+          "source_index_pages": "760",
+          "book_verification": "已核验",
+          "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "未直接列出",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词；形容词",
+          "usage_note": "",
+          "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 01027859-n;01030820-n;00414790-n;02892656-a;02892389-a",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[]",
+          "pets2015_match_method": "complete_explicit_form_lookup_no_hit"
+        },
+        "source_hash": "cb8ee4932cccf721f51ca3929cce75f07c0439fbd3833412f65cd806486e728d",
+        "original_meaning_zh": "名词：仪式，惯常程序；形容词：仪式的",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "仪式",
+            "part_of_speech": "名词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 3,
+            "end": 5
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "惯常程序",
+            "part_of_speech": "名词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 6,
+            "end": 10
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "仪式的",
+            "part_of_speech": "形容词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 15,
+            "end": 18
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+            "display_zh": "仪式（宗教仪式的规定程序）",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:01032852"
+            ],
+            "usage_note": "宗教仪式所规定的程序；比广义‘典礼’窄。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "仪式",
+                "original_pos": "名词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:n:01032852"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:2",
+            "display_zh": "惯常做法/固定行为（接近‘惯常程序’）",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:00415803",
+              "wn31:n:01029801"
+            ],
+            "usage_note": "固定行为或惯常做法；不专指步骤清单。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "惯常程序",
+                "original_pos": "名词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:n:00415803",
+                  "wn31:n:01029801"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:3",
+            "display_zh": "仪式的/与仪式有关的",
+            "part_of_speech": "形容词",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:a:02903641",
+              "wn31:a:02903908"
+            ],
+            "usage_note": "涵盖社会性礼仪和宗教仪式两类形容词用法。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "仪式的",
+                "original_pos": "形容词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:a:02903641",
+                  "wn31:a:02903908"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [],
+        "selection_reason": "ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。",
+        "core_explanation": "ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "仪式（宗教仪式的规定程序）",
+            "scope_and_roles": "宗教仪式所规定的程序；比广义‘典礼’窄。",
+            "evidence_ids": [
+              "wn31:n:01032852"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "惯常做法/固定行为（接近‘惯常程序’）",
+            "scope_and_roles": "固定行为或惯常做法；不专指步骤清单。",
+            "evidence_ids": [
+              "wn31:n:00415803",
+              "wn31:n:01029801"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:3",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "part_of_speech": "形容词",
+            "meaning_zh": "仪式的/与仪式有关的",
+            "scope_and_roles": "涵盖社会性礼仪和宗教仪式两类形容词用法。",
+            "evidence_ids": [
+              "wn31:a:02903641",
+              "wn31:a:02903908"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented",
+          "形容词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:a:02903641",
+            "part_of_speech": "a",
+            "definition_en": "of or relating to or employed in social rites or rituals; \"a ritual dance of Haiti\"; \"sedate little colonial tribe with its ritual tea parties\"- Nadine Gordimer",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:a:02903908",
+            "part_of_speech": "a",
+            "definition_en": "of or relating to or characteristic of religious rituals; \"ritual killing\"",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:00415803",
+            "part_of_speech": "n",
+            "definition_en": "stereotyped behavior",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:01029801",
+            "part_of_speech": "n",
+            "definition_en": "any customary observance or practice",
+            "lemmas": [
+              "ritual",
+              "rite"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:01032852",
+            "part_of_speech": "n",
+            "definition_en": "the prescribed procedure for conducting religious ceremonies",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "s001 证据特指宗教仪式的规定程序，原文‘仪式’可更广义；已用限定展示。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "s002 证据为刻板行为/惯常做法，原文‘惯常程序’更强调程序步骤；匹配有条件。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "multiple_source_POS",
+            "reason": "多词性需逐用途检查，不能按原片段位置分配。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "AI_processed_needs_human_review",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "deepseek-flash",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_01",
+          "response_id": "ce35e87f-bc13-4e5a-bc44-3437c1e2a247",
+          "request_hash": "5557f7e8ca56cae76025f08298be98a73e0008415e8b10dccddfe44f71e0feee",
+          "decision_hash": "dfac80b74a7dc899ce870a44c95aa2fff403ef97681d2239e7d2059249a3cb7b",
+          "response_file_sha256": "e3cce15a6534613f10aab15caeb63600ca85e53f060b9deadbb2c1c996ae7823"
+        },
+        "official_exam_sense_frequency": null
+      },
+      "candidate_revision": {
+        "stable_id": "SG25-7920fdeff9c5",
+        "headword": "ritual",
+        "part_of_speech": "名词；形容词",
+        "source_fields": {
+          "entry_id": "SG25-7920fdeff9c5",
+          "word": "ritual",
+          "meaning_zh": "名词：仪式，惯常程序；形容词：仪式的",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "138",
+          "source_index_pages": "760",
+          "book_verification": "已核验",
+          "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "未直接列出",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词；形容词",
+          "usage_note": "",
+          "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 01027859-n;01030820-n;00414790-n;02892656-a;02892389-a",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[]",
+          "pets2015_match_method": "complete_explicit_form_lookup_no_hit"
+        },
+        "source_hash": "cb8ee4932cccf721f51ca3929cce75f07c0439fbd3833412f65cd806486e728d",
+        "original_meaning_zh": "名词：仪式，惯常程序；形容词：仪式的",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "仪式",
+            "part_of_speech": "名词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 3,
+            "end": 5
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "惯常程序",
+            "part_of_speech": "名词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 6,
+            "end": 10
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "仪式的",
+            "part_of_speech": "形容词",
+            "pos_evidence": "explicit_gloss_label",
+            "start": 15,
+            "end": 18
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+            "display_zh": "仪式；礼仪程序（宗教或非宗教）",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:01029801",
+              "wn31:n:01032852",
+              "pub:p6c5:parent:ritual"
+            ],
+            "usage_note": "按既定程序进行的仪式，可属宗教或非宗教正式礼仪；与惯常反复行为的另一组分开。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "仪式",
+                "original_pos": "名词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:n:01029801",
+                  "wn31:n:01032852",
+                  "pub:p6c5:parent:ritual"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:2",
+            "display_zh": "惯常做法/固定行为（接近‘惯常程序’）",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:00415803",
+              "wn31:n:01029801"
+            ],
+            "usage_note": "固定行为或惯常做法；不专指步骤清单。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "惯常程序",
+                "original_pos": "名词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:n:00415803",
+                  "wn31:n:01029801"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-7920fdeff9c5:p6c5:core_meanings:3",
+            "display_zh": "仪式的/与仪式有关的",
+            "part_of_speech": "形容词",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:a:02903641",
+              "wn31:a:02903908"
+            ],
+            "usage_note": "涵盖社会性礼仪和宗教仪式两类形容词用法。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "仪式的",
+                "original_pos": "形容词",
+                "original_pos_evidence": "explicit_gloss_label",
+                "evidence_ids": [
+                  "wn31:a:02903641",
+                  "wn31:a:02903908"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [],
+        "selection_reason": "ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。",
+        "core_explanation": "ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "仪式；礼仪程序（宗教或非宗教）",
+            "scope_and_roles": "按既定程序进行的仪式，可属宗教或非宗教正式礼仪；与惯常反复行为的另一组分开。",
+            "evidence_ids": [
+              "wn31:n:01029801",
+              "wn31:n:01032852",
+              "pub:p6c5:parent:ritual"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "惯常做法/固定行为（接近‘惯常程序’）",
+            "scope_and_roles": "固定行为或惯常做法；不专指步骤清单。",
+            "evidence_ids": [
+              "wn31:n:00415803",
+              "wn31:n:01029801"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-7920fdeff9c5:p6c5:core_meanings:3",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "part_of_speech": "形容词",
+            "meaning_zh": "仪式的/与仪式有关的",
+            "scope_and_roles": "涵盖社会性礼仪和宗教仪式两类形容词用法。",
+            "evidence_ids": [
+              "wn31:a:02903641",
+              "wn31:a:02903908"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented",
+          "形容词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:a:02903641",
+            "part_of_speech": "a",
+            "definition_en": "of or relating to or employed in social rites or rituals; \"a ritual dance of Haiti\"; \"sedate little colonial tribe with its ritual tea parties\"- Nadine Gordimer",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:a:02903908",
+            "part_of_speech": "a",
+            "definition_en": "of or relating to or characteristic of religious rituals; \"ritual killing\"",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:00415803",
+            "part_of_speech": "n",
+            "definition_en": "stereotyped behavior",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:01029801",
+            "part_of_speech": "n",
+            "definition_en": "any customary observance or practice",
+            "lemmas": [
+              "ritual",
+              "rite"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:01032852",
+            "part_of_speech": "n",
+            "definition_en": "the prescribed procedure for conducting religious ceremonies",
+            "lemmas": [
+              "ritual"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "pub:p6c5:parent:ritual",
+            "headword": "ritual",
+            "url": "https://www.collinsdictionary.com/dictionary/english/ritual",
+            "publisher": "HarperCollins",
+            "access": "actually_opened_and_read_by_parent_this_round",
+            "locator": "COBUILD noun1 and British noun1, noun5",
+            "observation_zh": "仪式义同时包括宗教与非宗教的正式仪式；惯常反复行为另列。不能以宗教仪式程序代替全部一般仪式义。",
+            "pos_supported": [
+              "名词"
+            ],
+            "frequency_evidence": false
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "s001 证据特指宗教仪式的规定程序，原文‘仪式’可更广义；已用限定展示。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "s002 证据为刻板行为/惯常做法，原文‘惯常程序’更强调程序步骤；匹配有条件。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "multiple_source_POS",
+            "reason": "多词性需逐用途检查，不能按原片段位置分配。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "confirmed_problem_revision_pending",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "Codex-current-parent/backend-snapshot-unexposed",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_01",
+          "response_id": "ce35e87f-bc13-4e5a-bc44-3437c1e2a247",
+          "request_hash": "5557f7e8ca56cae76025f08298be98a73e0008415e8b10dccddfe44f71e0feee",
+          "decision_hash": "dfac80b74a7dc899ce870a44c95aa2fff403ef97681d2239e7d2059249a3cb7b",
+          "response_file_sha256": "e3cce15a6534613f10aab15caeb63600ca85e53f060b9deadbb2c1c996ae7823"
+        },
+        "official_exam_sense_frequency": null,
+        "prior_generation_model_version": "deepseek-flash",
+        "revision_provenance": {
+          "issue_id": "P6C5-b001-confirmed-01",
+          "before_candidate_sha256": "f1c75af882e14dc7dea065a4d32ea44999f9205fd54a4fb9824c31add7645bff",
+          "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+          "source_unchanged": true,
+          "formal_adoption": false,
+          "status": "AI_revision_proposed_after_evidence_check_not_independently_regression_validated"
+        }
+      },
+      "after_candidate_sha256": "de239f443e0ea75082542883751972dd84b2d0f2df3e528c74bf7aa835ed3375",
+      "original_input_hash": "cb8ee4932cccf721f51ca3929cce75f07c0439fbd3833412f65cd806486e728d",
+      "human_approved": false,
+      "active_merged_candidate_replaced": false
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-02",
+      "stable_id": "SG25-bf0bb4ee60e2",
+      "headword": "extend",
+      "before_candidate_sha256": "b51b6d21e88dd62a7a8f3da4578c241af45348de5778ffcce39c157b508aa4d2",
+      "before": {
+        "stable_id": "SG25-bf0bb4ee60e2",
+        "headword": "extend",
+        "part_of_speech": "动词",
+        "source_fields": {
+          "entry_id": "SG25-bf0bb4ee60e2",
+          "word": "extend",
+          "meaning_zh": "伸展；变宽；延伸",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "170",
+          "source_index_pages": "741",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "动词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00540235-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":109,\"printed_form\":\"extend\",\"printed_page\":105,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "2ebe1e6f8c0d726eb49a2ca5458ed24012e03cbde205a09d217373f5d3f960d7",
+        "original_meaning_zh": "伸展；变宽；延伸",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "伸展",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "变宽",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 3,
+            "end": 5
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "延伸",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 6,
+            "end": 8
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+            "display_zh": "伸展（肢体/身体）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:00027261"
+            ],
+            "usage_note": "主动伸展四肢、肌肉或身体；及物动作，对象为身体部位。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "伸展",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:00027261"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:2",
+            "display_zh": "延伸（空间/时间）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:02691775",
+              "wn31:v:02693758",
+              "wn31:v:02695935"
+            ],
+            "usage_note": "空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "延伸",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:02691775",
+                  "wn31:v:02693758",
+                  "wn31:v:02695935"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s002",
+            "text": "变宽",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 3,
+            "end": 5,
+            "reason": "原文‘变宽’为不及物变化义；所给 extend 证据多为及物‘使变宽/扩大范围’（如 v00541315）或空间跨度（v02693758），未直接证明‘become wider’，暂存待核。",
+            "status": "original_preserved_evidence_pending"
+          }
+        ],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:1",
+            "meaning_zh": "延长（时间）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:00318689",
+              "wn31:v:00319127"
+            ],
+            "reason": "原文偏空间/形体伸展；词典另有使时间延长、延期之义，原文未明确，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:2",
+            "meaning_zh": "给予；提供",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:02302703",
+              "wn31:v:02302909"
+            ],
+            "reason": "词典有口头表达问候/同情及提供贷款等义，与原文伸展/延伸不同，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:3",
+            "meaning_zh": "扩大（范围/影响）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:00541315",
+              "wn31:v:00542026"
+            ],
+            "reason": "词典有扩展范围、扩大影响之及物义；原文‘延伸’未明确及物范围扩大，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。",
+        "core_explanation": "先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "伸展（肢体/身体）",
+            "scope_and_roles": "主动伸展四肢、肌肉或身体；及物动作，对象为身体部位。",
+            "evidence_ids": [
+              "wn31:v:00027261"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "延伸（空间/时间）",
+            "scope_and_roles": "空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。",
+            "evidence_ids": [
+              "wn31:v:02691775",
+              "wn31:v:02693758",
+              "wn31:v:02695935"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "动词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:v:00027261",
+            "part_of_speech": "v",
+            "definition_en": "extend one's limbs or muscles, or the entire body; \"Stretch your legs!\"; \"Extend your right arm above your head\"",
+            "lemmas": [
+              "stretch",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00318689",
+            "part_of_speech": "v",
+            "definition_en": "lengthen in time; cause to be or last longer; \"We prolonged our stay\"; \"She extended her visit by another day\"; \"The meeting was drawn out until midnight\"",
+            "lemmas": [
+              "prolong",
+              "protract",
+              "extend",
+              "draw_out"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00319127",
+            "part_of_speech": "v",
+            "definition_en": "prolong the time allowed for payment of; \"extend the loan\"",
+            "lemmas": [
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00541315",
+            "part_of_speech": "v",
+            "definition_en": "extend in scope or range or area; \"The law was extended to all citizens\"; \"widen the range of applications\"; \"broaden your horizon\"; \"Extend your backyard\"",
+            "lemmas": [
+              "widen",
+              "broaden",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00542026",
+            "part_of_speech": "v",
+            "definition_en": "expand the influence of; \"The King extended his rule to the Eastern part of the continent\"",
+            "lemmas": [
+              "extend",
+              "expand"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02302703",
+            "part_of_speech": "v",
+            "definition_en": "offer verbally; \"extend my greetings\"; \"He offered his sympathy\"",
+            "lemmas": [
+              "offer",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02302909",
+            "part_of_speech": "v",
+            "definition_en": "make available; provide; \"extend a loan\"; \"The bank offers a good deal on new mortgages\"",
+            "lemmas": [
+              "extend",
+              "offer"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02691775",
+            "part_of_speech": "v",
+            "definition_en": "stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point; \"Service runs all the way to Cranbury\"; \"His knowledge doesn't go very far\"; \"My memory extends back to my fourth year of life\"; \"The facts extend beyond a consideration of her personal assets\"",
+            "lemmas": [
+              "run",
+              "go",
+              "pass",
+              "lead",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02693758",
+            "part_of_speech": "v",
+            "definition_en": "span an interval of distance, space or time; \"The war extended over five years\"; \"The period covered the turn of the century\"; \"My land extends over the hills on the horizon\"; \"This farm covers some 200 acres\"; \"The Archipelago continues for another 500 miles\"",
+            "lemmas": [
+              "cover",
+              "continue",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02695935",
+            "part_of_speech": "v",
+            "definition_en": "reach outward in space; \"The awning extends several feet over the sidewalk\"",
+            "lemmas": [
+              "extend",
+              "poke_out",
+              "reach_out"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Major",
+            "code": "lexical_evidence_insufficient",
+            "reason": "源片段 s002‘变宽’为不及物变化义，所给 extend 证据未直接覆盖‘become wider’，暂存待核。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "core_coverage_incomplete_pending_addition_decision",
+            "reason": "已识别时间延长、给予/提供、扩大范围/影响等外部常用义，但未采用为原文核心，需后续决定。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "source_fragment_held",
+            "reason": "原文片段保留暂存，不断言其错误或罕见。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "high",
+        "review_status": "AI_processed_needs_human_review",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "deepseek-flash",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_48",
+          "response_id": "74b91735-14f0-4bdc-bb73-768059d63833",
+          "request_hash": "8891a3c0857a281be6b5d509e719f9ff5a98f67b971cffd397cbd27971a2d514",
+          "decision_hash": "f8d1b3444c9c154a89f2eb3881d134850066cf9f87b9e0eddfeb25f2731a89c9",
+          "response_file_sha256": "180e257efd6a454200fcff4e17a44dea2597a224effb5c48015d30cadc33bc4a"
+        },
+        "official_exam_sense_frequency": null
+      },
+      "candidate_revision": {
+        "stable_id": "SG25-bf0bb4ee60e2",
+        "headword": "extend",
+        "part_of_speech": "动词",
+        "source_fields": {
+          "entry_id": "SG25-bf0bb4ee60e2",
+          "word": "extend",
+          "meaning_zh": "伸展；变宽；延伸",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "170",
+          "source_index_pages": "741",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "动词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00540235-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":109,\"printed_form\":\"extend\",\"printed_page\":105,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "2ebe1e6f8c0d726eb49a2ca5458ed24012e03cbde205a09d217373f5d3f960d7",
+        "original_meaning_zh": "伸展；变宽；延伸",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "伸展",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "变宽",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 3,
+            "end": 5
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "延伸",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 6,
+            "end": 8
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+            "display_zh": "伸展；展开（肢体或物体）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:00027261",
+              "wn31:v:01371528",
+              "wn31:v:02058913",
+              "pub:p6c5:parent:extend"
+            ],
+            "usage_note": "可指伸展肢体，也可指展开或伸出可伸展物体（如折叠桌腿、布料或天线）；与不及物空间/时间延伸分开。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "伸展",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:00027261",
+                  "wn31:v:01371528",
+                  "wn31:v:02058913",
+                  "pub:p6c5:parent:extend"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:2",
+            "display_zh": "延伸（空间/时间）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:02691775",
+              "wn31:v:02693758",
+              "wn31:v:02695935"
+            ],
+            "usage_note": "空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "延伸",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:02691775",
+                  "wn31:v:02693758",
+                  "wn31:v:02695935"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s002",
+            "text": "变宽",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 3,
+            "end": 5,
+            "reason": "原文‘变宽’为不及物变化义；所给 extend 证据多为及物‘使变宽/扩大范围’（如 v00541315）或空间跨度（v02693758），未直接证明‘become wider’，暂存待核。",
+            "status": "original_preserved_evidence_pending"
+          }
+        ],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:1",
+            "meaning_zh": "延长（时间）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:00318689",
+              "wn31:v:00319127"
+            ],
+            "reason": "原文偏空间/形体伸展；词典另有使时间延长、延期之义，原文未明确，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:2",
+            "meaning_zh": "给予；提供",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:02302703",
+              "wn31:v:02302909"
+            ],
+            "reason": "词典有口头表达问候/同情及提供贷款等义，与原文伸展/延伸不同，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-bf0bb4ee60e2:p6c5:addition:3",
+            "meaning_zh": "扩大（范围/影响）",
+            "part_of_speech": "动词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:v:00541315",
+              "wn31:v:00542026"
+            ],
+            "reason": "词典有扩展范围、扩大影响之及物义；原文‘延伸’未明确及物范围扩大，列为外部候选。",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。",
+        "core_explanation": "先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "伸展；展开（肢体或物体）",
+            "scope_and_roles": "可指伸展肢体，也可指展开或伸出可伸展物体（如折叠桌腿、布料或天线）；与不及物空间/时间延伸分开。",
+            "evidence_ids": [
+              "wn31:v:00027261",
+              "wn31:v:01371528",
+              "wn31:v:02058913",
+              "pub:p6c5:parent:extend"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "延伸（空间/时间）",
+            "scope_and_roles": "空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。",
+            "evidence_ids": [
+              "wn31:v:02691775",
+              "wn31:v:02693758",
+              "wn31:v:02695935"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "动词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:v:00027261",
+            "part_of_speech": "v",
+            "definition_en": "extend one's limbs or muscles, or the entire body; \"Stretch your legs!\"; \"Extend your right arm above your head\"",
+            "lemmas": [
+              "stretch",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00318689",
+            "part_of_speech": "v",
+            "definition_en": "lengthen in time; cause to be or last longer; \"We prolonged our stay\"; \"She extended her visit by another day\"; \"The meeting was drawn out until midnight\"",
+            "lemmas": [
+              "prolong",
+              "protract",
+              "extend",
+              "draw_out"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00319127",
+            "part_of_speech": "v",
+            "definition_en": "prolong the time allowed for payment of; \"extend the loan\"",
+            "lemmas": [
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00541315",
+            "part_of_speech": "v",
+            "definition_en": "extend in scope or range or area; \"The law was extended to all citizens\"; \"widen the range of applications\"; \"broaden your horizon\"; \"Extend your backyard\"",
+            "lemmas": [
+              "widen",
+              "broaden",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00542026",
+            "part_of_speech": "v",
+            "definition_en": "expand the influence of; \"The King extended his rule to the Eastern part of the continent\"",
+            "lemmas": [
+              "extend",
+              "expand"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02302703",
+            "part_of_speech": "v",
+            "definition_en": "offer verbally; \"extend my greetings\"; \"He offered his sympathy\"",
+            "lemmas": [
+              "offer",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02302909",
+            "part_of_speech": "v",
+            "definition_en": "make available; provide; \"extend a loan\"; \"The bank offers a good deal on new mortgages\"",
+            "lemmas": [
+              "extend",
+              "offer"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02691775",
+            "part_of_speech": "v",
+            "definition_en": "stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point; \"Service runs all the way to Cranbury\"; \"His knowledge doesn't go very far\"; \"My memory extends back to my fourth year of life\"; \"The facts extend beyond a consideration of her personal assets\"",
+            "lemmas": [
+              "run",
+              "go",
+              "pass",
+              "lead",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02693758",
+            "part_of_speech": "v",
+            "definition_en": "span an interval of distance, space or time; \"The war extended over five years\"; \"The period covered the turn of the century\"; \"My land extends over the hills on the horizon\"; \"This farm covers some 200 acres\"; \"The Archipelago continues for another 500 miles\"",
+            "lemmas": [
+              "cover",
+              "continue",
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02695935",
+            "part_of_speech": "v",
+            "definition_en": "reach outward in space; \"The awning extends several feet over the sidewalk\"",
+            "lemmas": [
+              "extend",
+              "poke_out",
+              "reach_out"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:01371528",
+            "part_of_speech": "v",
+            "definition_en": "open or straighten out; unbend; \"Can we extend the legs of this dining table?\"",
+            "lemmas": [
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02058913",
+            "part_of_speech": "v",
+            "definition_en": "extend or stretch out to a greater or the full length; \"Unfold the newspaper\"; \"stretch out that piece of cloth\"; \"extend the TV antenna\"",
+            "lemmas": [
+              "extend"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "pub:p6c5:parent:extend",
+            "headword": "extend",
+            "url": "https://www.collinsdictionary.com/dictionary/english/extend",
+            "publisher": "HarperCollins",
+            "access": "actually_opened_and_read_by_parent_this_round",
+            "locator": "COBUILD verb5/6/9 and British verb1; licensed WN v01371528/v02058913 supplies direct non-body unfolding objects",
+            "observation_zh": "伸展/展开适用于身体及非身体物体；可伸缩家具和伸出手分别成立。已提供的WordNet还直接列桌子折叠腿、布料、天线等展开对象。",
+            "pos_supported": [
+              "动词"
+            ],
+            "frequency_evidence": false
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Major",
+            "code": "lexical_evidence_insufficient",
+            "reason": "源片段 s002‘变宽’为不及物变化义，所给 extend 证据未直接覆盖‘become wider’，暂存待核。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "core_coverage_incomplete_pending_addition_decision",
+            "reason": "已识别时间延长、给予/提供、扩大范围/影响等外部常用义，但未采用为原文核心，需后续决定。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "source_fragment_held",
+            "reason": "原文片段保留暂存，不断言其错误或罕见。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "high",
+        "review_status": "confirmed_problem_revision_pending",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "Codex-current-parent/backend-snapshot-unexposed",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_48",
+          "response_id": "74b91735-14f0-4bdc-bb73-768059d63833",
+          "request_hash": "8891a3c0857a281be6b5d509e719f9ff5a98f67b971cffd397cbd27971a2d514",
+          "decision_hash": "f8d1b3444c9c154a89f2eb3881d134850066cf9f87b9e0eddfeb25f2731a89c9",
+          "response_file_sha256": "180e257efd6a454200fcff4e17a44dea2597a224effb5c48015d30cadc33bc4a"
+        },
+        "official_exam_sense_frequency": null,
+        "prior_generation_model_version": "deepseek-flash",
+        "revision_provenance": {
+          "issue_id": "P6C5-b001-confirmed-02",
+          "before_candidate_sha256": "b51b6d21e88dd62a7a8f3da4578c241af45348de5778ffcce39c157b508aa4d2",
+          "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+          "source_unchanged": true,
+          "formal_adoption": false,
+          "status": "AI_revision_proposed_after_evidence_check_not_independently_regression_validated"
+        }
+      },
+      "after_candidate_sha256": "cb0ef369302520a7e3034f7e85fb315ebfe56f35653119557700efa9a9eee0b0",
+      "original_input_hash": "2ebe1e6f8c0d726eb49a2ca5458ed24012e03cbde205a09d217373f5d3f960d7",
+      "human_approved": false,
+      "active_merged_candidate_replaced": false
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-03",
+      "stable_id": "SG25-e3f48726b892",
+      "headword": "scholar",
+      "before_candidate_sha256": "003273e38cca408c33b09aae8b48b60bad1a1a2ddc7c44e956320befff3cd1a0",
+      "before": {
+        "stable_id": "SG25-e3f48726b892",
+        "headword": "scholar",
+        "part_of_speech": "名词",
+        "source_fields": {
+          "entry_id": "SG25-e3f48726b892",
+          "word": "scholar",
+          "meaning_zh": "学习者；学者；文人",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "141",
+          "source_index_pages": "760",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 10557854-n",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":134,\"printed_form\":\"scholar\",\"printed_page\":130,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "e99ee02981f7574e09d400007935b59fab08d01d87bd5fddc17f103eb4029b10",
+        "original_meaning_zh": "学习者；学者；文人",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "学习者",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "学者",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "文人",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 7,
+            "end": 9
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-e3f48726b892:p6c5:core_meanings:1",
+            "display_zh": "学者；文人",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002",
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:10577282"
+            ],
+            "usage_note": "learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "学者",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10577282"
+                ]
+              },
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "文人",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10577282"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-e3f48726b892:p6c5:core_meanings:2",
+            "display_zh": "学习者",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:10271476"
+            ],
+            "usage_note": "learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "学习者",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10271476"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-e3f48726b892:p6c5:addition:1",
+            "meaning_zh": "奖学金获得者；领奖学金的学生",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:10578201"
+            ],
+            "reason": "外部独立义：持有奖学金的学生，原文未表达",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "首屏先给最常用的‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。",
+        "core_explanation": "首屏先给最常用的‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-e3f48726b892:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s002",
+              "s003"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "学者；文人",
+            "scope_and_roles": "learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法",
+            "evidence_ids": [
+              "wn31:n:10577282"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-e3f48726b892:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "学习者",
+            "scope_and_roles": "learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述",
+            "evidence_ids": [
+              "wn31:n:10271476"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:10271476",
+            "part_of_speech": "n",
+            "definition_en": "someone (especially a child) who learns (as from a teacher) or takes up knowledge or beliefs",
+            "lemmas": [
+              "learner",
+              "scholar",
+              "assimilator"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:10577282",
+            "part_of_speech": "n",
+            "definition_en": "a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines",
+            "lemmas": [
+              "scholar",
+              "scholarly_person",
+              "bookman",
+              "student"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:10578201",
+            "part_of_speech": "n",
+            "definition_en": "a student who holds a scholarship",
+            "lemmas": [
+              "scholar"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "‘学习者’对应义强调儿童学习者，中文泛指学习者，属宽义改述",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "AI_processed_needs_human_review",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "deepseek-flash",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_04",
+          "response_id": "9f9f46b3-2495-47de-b163-961acda47134",
+          "request_hash": "9eb749610f496f26acd4e6d1d09b43af7a084830c6b6f5426086679079e586c5",
+          "decision_hash": "eef796352aa2184cbe4fcf7faa953682d3b0d8ef1cdb9738524bdc03aa4ce876",
+          "response_file_sha256": "301934031f1441d19532ae92391ce889a126bd331491a07c1460b21bc8d09eab"
+        },
+        "official_exam_sense_frequency": null
+      },
+      "candidate_revision": {
+        "stable_id": "SG25-e3f48726b892",
+        "headword": "scholar",
+        "part_of_speech": "名词",
+        "source_fields": {
+          "entry_id": "SG25-e3f48726b892",
+          "word": "scholar",
+          "meaning_zh": "学习者；学者；文人",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "141",
+          "source_index_pages": "760",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 10557854-n",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":134,\"printed_form\":\"scholar\",\"printed_page\":130,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "e99ee02981f7574e09d400007935b59fab08d01d87bd5fddc17f103eb4029b10",
+        "original_meaning_zh": "学习者；学者；文人",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "学习者",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "学者",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 4,
+            "end": 6
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "文人",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 7,
+            "end": 9
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-e3f48726b892:p6c5:core_meanings:1",
+            "display_zh": "学者；文人",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002",
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:10577282"
+            ],
+            "usage_note": "learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "学者",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10577282"
+                ]
+              },
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "文人",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10577282"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-e3f48726b892:p6c5:core_meanings:2",
+            "display_zh": "学习者",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:10271476"
+            ],
+            "usage_note": "learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "学习者",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:10271476"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-e3f48726b892:p6c5:addition:1",
+            "meaning_zh": "奖学金获得者；领奖学金的学生",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:10578201"
+            ],
+            "reason": "外部独立义：持有奖学金的学生，原文未表达",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "AI教学建议首屏先给‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。",
+        "core_explanation": "AI教学建议首屏先给‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。",
+        "semantic_splits": [],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-e3f48726b892:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s002",
+              "s003"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "学者；文人",
+            "scope_and_roles": "learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法",
+            "evidence_ids": [
+              "wn31:n:10577282"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-e3f48726b892:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "学习者",
+            "scope_and_roles": "learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述",
+            "evidence_ids": [
+              "wn31:n:10271476"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:10271476",
+            "part_of_speech": "n",
+            "definition_en": "someone (especially a child) who learns (as from a teacher) or takes up knowledge or beliefs",
+            "lemmas": [
+              "learner",
+              "scholar",
+              "assimilator"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:10577282",
+            "part_of_speech": "n",
+            "definition_en": "a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines",
+            "lemmas": [
+              "scholar",
+              "scholarly_person",
+              "bookman",
+              "student"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:10578201",
+            "part_of_speech": "n",
+            "definition_en": "a student who holds a scholarship",
+            "lemmas": [
+              "scholar"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "scope_gap",
+            "reason": "‘学习者’对应义强调儿童学习者，中文泛指学习者，属宽义改述",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "confirmed_problem_revision_pending",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "Codex-current-parent/backend-snapshot-unexposed",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_04",
+          "response_id": "9f9f46b3-2495-47de-b163-961acda47134",
+          "request_hash": "9eb749610f496f26acd4e6d1d09b43af7a084830c6b6f5426086679079e586c5",
+          "decision_hash": "eef796352aa2184cbe4fcf7faa953682d3b0d8ef1cdb9738524bdc03aa4ce876",
+          "response_file_sha256": "301934031f1441d19532ae92391ce889a126bd331491a07c1460b21bc8d09eab"
+        },
+        "official_exam_sense_frequency": null,
+        "prior_generation_model_version": "deepseek-flash",
+        "revision_provenance": {
+          "issue_id": "P6C5-b001-confirmed-03",
+          "before_candidate_sha256": "003273e38cca408c33b09aae8b48b60bad1a1a2ddc7c44e956320befff3cd1a0",
+          "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+          "source_unchanged": true,
+          "formal_adoption": false,
+          "status": "AI_revision_proposed_after_evidence_check_not_independently_regression_validated"
+        }
+      },
+      "after_candidate_sha256": "852bdcb451967fffa1de99af0ec64618085ddc7b04e59c4b82d30feaba2f562a",
+      "original_input_hash": "e99ee02981f7574e09d400007935b59fab08d01d87bd5fddc17f103eb4029b10",
+      "human_approved": false,
+      "active_merged_candidate_replaced": false
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-04",
+      "stable_id": "SG25-093e7d5fdbaa",
+      "headword": "contact",
+      "before_candidate_sha256": "1a57c484f7a70fc4f7e57a438c0de1797b1c52e3b3fc4caea2fc3fdbc859790f",
+      "before": {
+        "stable_id": "SG25-093e7d5fdbaa",
+        "headword": "contact",
+        "part_of_speech": "名词；动词",
+        "source_fields": {
+          "entry_id": "SG25-093e7d5fdbaa",
+          "word": "contact",
+          "meaning_zh": "联系；接触",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "166",
+          "source_index_pages": "735",
+          "book_verification": "已核验",
+          "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词；动词",
+          "usage_note": "",
+          "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00039297-n;00124880-n;14419510-n;00743344-v;01205696-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":101,\"printed_form\":\"contact\",\"printed_page\":97,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "ca85497a814d00c0434bf1eb615becbfc8d7fce8fafdba71431638a859b66655",
+        "original_meaning_zh": "联系；接触",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "联系",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "接触",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+            "display_zh": "联系",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:07293990",
+              "wn31:n:00040035"
+            ],
+            "usage_note": "人际、群体或机构间的沟通互动/接触状态；名词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "联系",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:n:07293990",
+                  "wn31:n:00040035"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+            "display_zh": "接触",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:00125700",
+              "wn31:n:14442914",
+              "wn31:n:07353929"
+            ],
+            "usage_note": "物理触碰、紧邻或相碰的状态/动作；名词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "接触",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:n:00125700",
+                  "wn31:n:14442914",
+                  "wn31:n:07353929"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+            "display_zh": "联系",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:00745330"
+            ],
+            "usage_note": "与某人或机构建立/进行沟通；动词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "联系",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:00745330"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+            "display_zh": "接触",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01208316"
+            ],
+            "usage_note": "使某物与另一物发生物理接触；动词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "接触",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:01208316"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:1",
+            "meaning_zh": "（电）触点；接点",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:03098248"
+            ],
+            "reason": "外部专业义：电路导体相接处，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:2",
+            "meaning_zh": "隐形眼镜",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:03098615"
+            ],
+            "reason": "外部常见物品义：贴附角膜的镜片，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:3",
+            "meaning_zh": "（可提供帮助的）熟人；人脉",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:09979596"
+            ],
+            "reason": "外部社会关系义：能提供特殊帮助的人，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "原文两片段词性均未定；按独立证据保留名词“联系/接触”和动词“联系/接触”，不按中文片段位置硬配词性。隐形眼镜、电路触点、人脉义只作外部候选，不混入核心。",
+        "core_explanation": "原文两片段词性均未定；按独立证据保留名词“联系/接触”和动词“联系/接触”，不按中文片段位置硬配词性。隐形眼镜、电路触点、人脉义只作外部候选，不混入核心。",
+        "semantic_splits": [
+          {
+            "source_sense_id": "s001",
+            "reason": "原文词性未定；“联系”既可指沟通互动/接触状态，也可指建立沟通的动作，分别有名词和动词证据，故按词性拆分。",
+            "annotation": "AI语义/词性拆解，不新增原文片段"
+          },
+          {
+            "source_sense_id": "s002",
+            "reason": "原文词性未定；“接触”既可指物理触碰/紧邻状态，也可指发生物理接触的动作，分别有名词和动词证据，故按词性拆分。",
+            "annotation": "AI语义/词性拆解，不新增原文片段"
+          }
+        ],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "联系",
+            "scope_and_roles": "人际、群体或机构间的沟通互动/接触状态；名词用法",
+            "evidence_ids": [
+              "wn31:n:07293990",
+              "wn31:n:00040035"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "接触",
+            "scope_and_roles": "物理触碰、紧邻或相碰的状态/动作；名词用法",
+            "evidence_ids": [
+              "wn31:n:00125700",
+              "wn31:n:14442914",
+              "wn31:n:07353929"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "联系",
+            "scope_and_roles": "与某人或机构建立/进行沟通；动词用法",
+            "evidence_ids": [
+              "wn31:v:00745330"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "接触",
+            "scope_and_roles": "使某物与另一物发生物理接触；动词用法",
+            "evidence_ids": [
+              "wn31:v:01208316"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented",
+          "动词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:00040035",
+            "part_of_speech": "n",
+            "definition_en": "close interaction; \"they kept in daily contact\"; \"they claimed that they had been in contact with extraterrestrial beings\"",
+            "lemmas": [
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:00125700",
+            "part_of_speech": "n",
+            "definition_en": "the act of touching physically; \"her fingers came in contact with the light switch\"",
+            "lemmas": [
+              "contact",
+              "physical_contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:03098248",
+            "part_of_speech": "n",
+            "definition_en": "(electronics) a junction where things (as two electrical conductors) touch or are in physical contact; \"they forget to solder the contacts\"",
+            "lemmas": [
+              "contact",
+              "tangency"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:03098615",
+            "part_of_speech": "n",
+            "definition_en": "a thin curved glass or plastic lens designed to fit over the cornea in order to correct vision or to deliver medication",
+            "lemmas": [
+              "contact",
+              "contact_lens"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:07293990",
+            "part_of_speech": "n",
+            "definition_en": "a communicative interaction; \"the pilot made contact with the base\"; \"he got in touch with his colleagues\"",
+            "lemmas": [
+              "contact",
+              "touch"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:07353929",
+            "part_of_speech": "n",
+            "definition_en": "the physical coming together of two or more things; \"contact with the pier scraped paint from the hull\"",
+            "lemmas": [
+              "contact",
+              "impinging",
+              "striking"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:09979596",
+            "part_of_speech": "n",
+            "definition_en": "a person who is in a position to give you special assistance; \"he used his business contacts to get an introduction to the governor\"",
+            "lemmas": [
+              "contact",
+              "middleman"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:14442914",
+            "part_of_speech": "n",
+            "definition_en": "the state or condition of touching or of being in immediate proximity; \"litmus paper turns red on contact with an acid\"",
+            "lemmas": [
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00745330",
+            "part_of_speech": "v",
+            "definition_en": "be in or establish communication with; \"Our advertisements reach millions\"; \"He never contacted his children after he emigrated to Australia\"",
+            "lemmas": [
+              "reach",
+              "get_through",
+              "get_hold_of",
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:01208316",
+            "part_of_speech": "v",
+            "definition_en": "be in direct physical contact with; make contact; \"The two buildings touch\"; \"Their hands touched\"; \"The wire must not contact the metal cover\"; \"The surfaces contact at this point\"",
+            "lemmas": [
+              "touch",
+              "adjoin",
+              "meet",
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "pos_ambiguity",
+            "reason": "源字段part_of_speech为unresolved_multi_pos；本记录按独立证据拆为名词/动词用法，源词性本身仍未逐项标注。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Minor",
+            "code": "core_groups_over_3",
+            "reason": "核心含4组（名词联系、名词接触、动词联系、动词接触），因跨词性不能合并而保留，触发复核。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "source_coverage_gap",
+            "reason": "原文未表达隐形眼镜、电路触点、可提供帮助的熟人等外部义；已列入additions候选，未采用。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "multiple_source_POS",
+            "reason": "多词性需逐用途检查，不能按原片段位置分配。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "original_POS_correspondence_unknown",
+            "reason": "源释义与各词性对应未知；推荐标签不是原文已确认标签。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "more_than_three_core_groups",
+            "reason": "独立用途需复核；不为压缩指标删义。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "AI_processed_needs_human_review",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "deepseek-flash",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_42",
+          "response_id": "22f81529-416c-4278-9db1-bd45261a36e5",
+          "request_hash": "24e46850400933f795b3404b35cb89564b04e93b933dde7c6f5f73aadfd1f798",
+          "decision_hash": "32358fff8b3b76da5f29547ae4deb6ba97c9786afe6731a5793e91ac34bfeb3d",
+          "response_file_sha256": "904df2835a3687c16f185af5cfe12759812307a573380c34b45670ca355cc056"
+        },
+        "official_exam_sense_frequency": null
+      },
+      "candidate_revision": {
+        "stable_id": "SG25-093e7d5fdbaa",
+        "headword": "contact",
+        "part_of_speech": "名词；动词",
+        "source_fields": {
+          "entry_id": "SG25-093e7d5fdbaa",
+          "word": "contact",
+          "meaning_zh": "联系；接触",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "166",
+          "source_index_pages": "735",
+          "book_verification": "已核验",
+          "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词；动词",
+          "usage_note": "",
+          "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00039297-n;00124880-n;14419510-n;00743344-v;01205696-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":101,\"printed_form\":\"contact\",\"printed_page\":97,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "ca85497a814d00c0434bf1eb615becbfc8d7fce8fafdba71431638a859b66655",
+        "original_meaning_zh": "联系；接触",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "联系",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "接触",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+            "display_zh": "联系",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:07293990",
+              "wn31:n:00040035"
+            ],
+            "usage_note": "人际、群体或机构间的沟通互动/接触状态；名词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "联系",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:n:07293990",
+                  "wn31:n:00040035"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+            "display_zh": "接触",
+            "part_of_speech": "名词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:00125700",
+              "wn31:n:14442914",
+              "wn31:n:07353929"
+            ],
+            "usage_note": "物理触碰、紧邻或相碰的状态/动作；名词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "接触",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:n:00125700",
+                  "wn31:n:14442914",
+                  "wn31:n:07353929"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+            "display_zh": "联系",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:00745330"
+            ],
+            "usage_note": "与某人或机构建立/进行沟通；动词用法",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "联系",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:00745330"
+                ]
+              }
+            ]
+          },
+          {
+            "sense_group_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+            "display_zh": "接触",
+            "part_of_speech": "动词",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01208316"
+            ],
+            "usage_note": "与另一人或物直接发生物理接触；相碰。此证据为接触状态/动作，不据此断言使动。",
+            "origin": "AI_V4_1_source_derived_candidate",
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "接触",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:01208316"
+                ]
+              }
+            ]
+          }
+        ],
+        "extended_meanings": [],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:1",
+            "meaning_zh": "（电）触点；接点",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:03098248"
+            ],
+            "reason": "外部专业义：电路导体相接处，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:2",
+            "meaning_zh": "隐形眼镜",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:03098615"
+            ],
+            "reason": "外部常见物品义：贴附角膜的镜片，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          },
+          {
+            "candidate_id": "SG25-093e7d5fdbaa:p6c5:addition:3",
+            "meaning_zh": "（可提供帮助的）熟人；人脉",
+            "part_of_speech": "名词",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:09979596"
+            ],
+            "reason": "外部社会关系义：能提供特殊帮助的人，原文未表达；AI候选未采用",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false,
+            "priority_basis": "AI_teaching_suggestion_not_measured_frequency"
+          }
+        ],
+        "selection_reason": "原文两片段词性均未定；按独立证据保留名词“联系/接触”和动词“联系/接触”，不按中文片段位置硬配词性。隐形眼镜、电路触点、人脉义只作外部候选，不混入核心。",
+        "core_explanation": "原文两片段词性均未定；按独立证据保留名词“联系/接触”和动词“联系/接触”，不按中文片段位置硬配词性。隐形眼镜、电路触点、人脉义只作外部候选，不混入核心。",
+        "semantic_splits": [
+          {
+            "source_sense_id": "s001",
+            "reason": "原文词性未定；“联系”既可指沟通互动/接触状态，也可指建立沟通的动作，分别有名词和动词证据，故按词性拆分。",
+            "annotation": "AI语义/词性拆解，不新增原文片段"
+          },
+          {
+            "source_sense_id": "s002",
+            "reason": "原文词性未定；“接触”既可指物理触碰/紧邻状态，也可指发生物理接触的动作，分别有名词和动词证据，故按词性拆分。",
+            "annotation": "AI语义/词性拆解，不新增原文片段"
+          }
+        ],
+        "use_coverage_matrix": [
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "联系",
+            "scope_and_roles": "人际、群体或机构间的沟通互动/接触状态；名词用法",
+            "evidence_ids": [
+              "wn31:n:07293990",
+              "wn31:n:00040035"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "名词",
+            "meaning_zh": "接触",
+            "scope_and_roles": "物理触碰、紧邻或相碰的状态/动作；名词用法",
+            "evidence_ids": [
+              "wn31:n:00125700",
+              "wn31:n:14442914",
+              "wn31:n:07353929"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "联系",
+            "scope_and_roles": "与某人或机构建立/进行沟通；动词用法",
+            "evidence_ids": [
+              "wn31:v:00745330"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          },
+          {
+            "use_id": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "part_of_speech": "动词",
+            "meaning_zh": "接触",
+            "scope_and_roles": "与另一人或物直接发生物理接触；相碰。此证据为接触状态/动作，不据此断言使动。",
+            "evidence_ids": [
+              "wn31:v:01208316"
+            ],
+            "location": "core_meanings",
+            "evidence_status": "lexical_support_not_frequency"
+          }
+        ],
+        "source_POS_coverage": {
+          "名词": "source_derived_use_represented",
+          "动词": "source_derived_use_represented"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:00040035",
+            "part_of_speech": "n",
+            "definition_en": "close interaction; \"they kept in daily contact\"; \"they claimed that they had been in contact with extraterrestrial beings\"",
+            "lemmas": [
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:00125700",
+            "part_of_speech": "n",
+            "definition_en": "the act of touching physically; \"her fingers came in contact with the light switch\"",
+            "lemmas": [
+              "contact",
+              "physical_contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:03098248",
+            "part_of_speech": "n",
+            "definition_en": "(electronics) a junction where things (as two electrical conductors) touch or are in physical contact; \"they forget to solder the contacts\"",
+            "lemmas": [
+              "contact",
+              "tangency"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:03098615",
+            "part_of_speech": "n",
+            "definition_en": "a thin curved glass or plastic lens designed to fit over the cornea in order to correct vision or to deliver medication",
+            "lemmas": [
+              "contact",
+              "contact_lens"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:07293990",
+            "part_of_speech": "n",
+            "definition_en": "a communicative interaction; \"the pilot made contact with the base\"; \"he got in touch with his colleagues\"",
+            "lemmas": [
+              "contact",
+              "touch"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:07353929",
+            "part_of_speech": "n",
+            "definition_en": "the physical coming together of two or more things; \"contact with the pier scraped paint from the hull\"",
+            "lemmas": [
+              "contact",
+              "impinging",
+              "striking"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:09979596",
+            "part_of_speech": "n",
+            "definition_en": "a person who is in a position to give you special assistance; \"he used his business contacts to get an introduction to the governor\"",
+            "lemmas": [
+              "contact",
+              "middleman"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:n:14442914",
+            "part_of_speech": "n",
+            "definition_en": "the state or condition of touching or of being in immediate proximity; \"litmus paper turns red on contact with an acid\"",
+            "lemmas": [
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00745330",
+            "part_of_speech": "v",
+            "definition_en": "be in or establish communication with; \"Our advertisements reach millions\"; \"He never contacted his children after he emigrated to Australia\"",
+            "lemmas": [
+              "reach",
+              "get_through",
+              "get_hold_of",
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:01208316",
+            "part_of_speech": "v",
+            "definition_en": "be in direct physical contact with; make contact; \"The two buildings touch\"; \"Their hands touched\"; \"The wire must not contact the metal cover\"; \"The surfaces contact at this point\"",
+            "lemmas": [
+              "touch",
+              "adjoin",
+              "meet",
+              "contact"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "book_category": "高频词",
+        "risk_flags": [
+          {
+            "severity": "Minor",
+            "code": "pos_ambiguity",
+            "reason": "源字段part_of_speech为unresolved_multi_pos；本记录按独立证据拆为名词/动词用法，源词性本身仍未逐项标注。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Minor",
+            "code": "core_groups_over_3",
+            "reason": "核心含4组（名词联系、名词接触、动词联系、动词接触），因跨词性不能合并而保留，触发复核。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "source_coverage_gap",
+            "reason": "原文未表达隐形眼镜、电路触点、可提供帮助的熟人等外部义；已列入additions候选，未采用。",
+            "kind": "AI_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "multiple_source_POS",
+            "reason": "多词性需逐用途检查，不能按原片段位置分配。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "original_POS_correspondence_unknown",
+            "reason": "源释义与各词性对应未知；推荐标签不是原文已确认标签。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "more_than_three_core_groups",
+            "reason": "独立用途需复核；不为压缩指标删义。",
+            "kind": "automatic_risk_not_confirmed_error"
+          },
+          {
+            "severity": "Info",
+            "code": "dictionary_additions_pending",
+            "reason": "外部独立用途只列候选，未升级为核心。",
+            "kind": "automatic_risk_not_confirmed_error"
+          }
+        ],
+        "risk_level": "review",
+        "review_status": "confirmed_problem_revision_pending",
+        "needs_human_review": true,
+        "human_approved": false,
+        "publication_status": "isolated_not_published",
+        "model_version": "Codex-current-parent/backend-snapshot-unexposed",
+        "provider_snapshot_version": "DeepSeek-V4.1-Flash-1017 (official documentation; API exact snapshot not returned)",
+        "prompt_version": "P6C5-generation-v3",
+        "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+        "historical_risk_retained": false,
+        "confirmed_problems": [],
+        "review_preferences": [],
+        "generation_provenance": {
+          "cohort": "C_new4732",
+          "batch": 1,
+          "api_tag": "generation_001_42",
+          "response_id": "22f81529-416c-4278-9db1-bd45261a36e5",
+          "request_hash": "24e46850400933f795b3404b35cb89564b04e93b933dde7c6f5f73aadfd1f798",
+          "decision_hash": "32358fff8b3b76da5f29547ae4deb6ba97c9786afe6731a5793e91ac34bfeb3d",
+          "response_file_sha256": "904df2835a3687c16f185af5cfe12759812307a573380c34b45670ca355cc056"
+        },
+        "official_exam_sense_frequency": null,
+        "prior_generation_model_version": "deepseek-flash",
+        "revision_provenance": {
+          "issue_id": "P6C5-b001-confirmed-04",
+          "before_candidate_sha256": "1a57c484f7a70fc4f7e57a438c0de1797b1c52e3b3fc4caea2fc3fdbc859790f",
+          "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+          "source_unchanged": true,
+          "formal_adoption": false,
+          "status": "AI_revision_proposed_after_evidence_check_not_independently_regression_validated"
+        }
+      },
+      "after_candidate_sha256": "cfc65bd0da2b18068c9cbe9e4bbb61462e0777cc9abdfdd978b3c0093edcd536",
+      "original_input_hash": "ca85497a814d00c0434bf1eb615becbfc8d7fce8fafdba71431638a859b66655",
+      "human_approved": false,
+      "active_merged_candidate_replaced": false
+    }
+  ],
+  "not_adopted_into_active_merge": true
+}

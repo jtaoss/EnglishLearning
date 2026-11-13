@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_012",
+  "kind": "verify",
+  "request_hash": "7b9e7273690d2e1cbf86b3bc47227ab642c483c2b39fdc0f159db05f9de97e48",
+  "input_ids": [
+    "SG25-73c76d56fd40",
+    "SG25-3393b41eeeea"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "f5958c92-a849-4f26-ab23-3f674cf81685",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-73c76d56fd40\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 文本“充满活力的”与原义相同，证据 wn31:a:00811761 的 action/forcefulness/force of personality 支持有活力、有干劲的人或事。\",\n          \"evidence_ids\": [\"wn31:a:00811761\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"extended:1 文本“动态的”字面未变，但证据 wn31:a:02991423 仅为技术义“of or relating to dynamics”，没有提供一般“不断变化/活跃”义的证据。技术义可保留，但一般义在已供证据内无法确认是否覆盖。\",\n          \"evidence_ids\": [\"wn31:a:02991423\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002“动态的”可能包含一般“不断变化/活跃”义，但已供证据只有技术义 a:02991423；a:00811761 的 active/forceful 更接近核心“充满活力的”，不能直接证明 s002 仍覆盖一般变化义。若无额外证据，此缺口暂存未确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心“充满活力的”有据；“动态的”字面保留但证据偏技术域，一般动态义待核，尚未构成已确认范围缺陷。\"\n    },\n    {\n      \"id\": \"SG25-3393b41eeeea\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 形容词“极端的”与原义一致，证据 wn31:s:01515272 支持最大程度/强度，wn31:s:01539177 支持超出常规的观点或行动，覆盖常见性质用法。\",\n          \"evidence_ids\": [\"wn31:s:01515272\", \"wn31:s:01539177\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:1 名词“极端”由 wn31:n:05105361 的 furthest/highest degree 支持，含义相合。\",\n          \"evidence_ids\": [\"wn31:n:05105361\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"extended:2 文本“极限”字面未变，但所链证据 wn31:n:08586694 仅表示空间“离中心最远的点”，把源义中“最高限度/极限程度”的部分收窄为空间端点义。\",\n          \"evidence_ids\": [\"wn31:n:08586694\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_mismatch\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-3393b41eeeea:extended:2\"],\n          \"evidence_ids\": [\"wn31:n:08586694\", \"wn31:n:05105361\"],\n          \"reason\": \"“极限”通常表示最高限度或最大程度；已链证据 n08586694 是“离中心最远的点”，属于空间端点义，与源义不符，可能诱导用户把“极限”理解为空间末端。n05105361 的 furthest/highest degree 更贴合“极限程度”，但当前未链到 s003。\",\n          \"counterexample\": \"cf. n05105361 “carried it to extremes” 显示“extreme(s)”为程度/最高限度用法，可支持“极限”；n08586694 的“farthest from middle”例证不覆盖该核心义。\",\n          \"repair_suggestion\": \"将 s003 重链至 wn31:n:05105361（或并用程度义证据），删除/移出 n08586694 的空间端点义，或把 n08586694 列为独立“端点”义且不用于“极限”。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003证据不匹配已确认，但是否还缺少独立的物理极限义待核；当前原文仅列“极限”未说明对象，建议补充语境。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001、s002均匹配；s003文本正确但证据错误，需重链，当前按Minor处理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4469,
+    "completion_tokens": 6564,
+    "total_tokens": 11033,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5531
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2805
+  },
+  "started_utc": "2026-11-13T09:56:49.004389+00:00",
+  "completed_utc": "2026-11-13T09:58:22.403706+00:00",
+  "elapsed_seconds": 93.391,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

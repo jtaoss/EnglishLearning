@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_007",
+  "kind": "audit",
+  "request_hash": "c5ec7682949d2fe054df6ebf91304b627a631d69235465ef3ce1ce7682786a5a",
+  "input_ids": [
+    "SG25-0a60353a3fd8",
+    "SG25-c61d02ef654a",
+    "SG25-458defad73e0",
+    "SG25-ac9fa2503ffe",
+    "SG25-ac7f39a1e0b7"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "39ed89d4-0241-4e4b-8bbb-ea69b89ab41c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-0a60353a3fd8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"口语中干掉/除去某人某物，可含杀害、清除、击败等强语境\",\"relation\":\"范围收窄\",\"reason\":\"组文本保留“干掉”，但唯一链接证据是kill in large numbers（大规模杀死/消灭），只覆盖强杀害子集；未明确保留非大规模击败/清除等口语用法。\",\"evidence_ids\":[\"wn31:v:00471632\"],\"context\":\"none\",\"residual_scope\":\"缺少非大规模杀害的击败、淘汰、清除等口语用法证据；组文本未硬性排他但证据不足\",\"counterexample\":\"eliminate competitors（淘汰/击败对手）\",\"counterexample_evidence_ids\":[\"wn31:v:01105250\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"摆脱债务、负担等，把某物去掉/清除\",\"relation\":\"语义等价\",\"reason\":\"extended层“摆脱”与eliminate my debts的“去除债务/摆脱”用法相合，证据支持该具体对象用法，未添加排他限制。\",\"evidence_ids\":[\"wn31:v:00472642\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"消除某事物、使不存在\",\"relation\":\"语义等价\",\"reason\":\"core层“消除”对应do away with这一宽泛消除义，未把原文一般义收窄到特定对象或领域。\",\"evidence_ids\":[\"wn31:v:02635337\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-0a60353a3fd8:other:1\"],\"evidence_ids\":[\"wn31:v:00471632\",\"wn31:v:01105250\"],\"reason\":\"other层“干掉”仅链接kill in large numbers，未覆盖“干掉对手/击败淘汰”等非大规模杀害的口语范围；组文本虽保留“干掉”，证据不足以支撑一般口语义。\",\"repair_suggestion\":\"在other层注释或证据中补入remove from contest/do away with等非大规模杀害用法，或明确“干掉”此分支只指杀害并另设暂存剩余口语义。\"}],\"note\":\"核心“消除”和扩展“摆脱”有相应证据；“干掉”置other但仅以kill in large numbers为证，未覆盖非大规模击败/清除等口语范围。\"},{\"id\":\"SG25-c61d02ef654a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"通过搜寻、检查或测量确定某人某物的位置/范围\",\"relation\":\"语义等价\",\"reason\":\"core层“确定位置”对应discover/determine the location，未添加原文没有的对象或领域限制。\",\"evidence_ids\":[\"wn31:v:02291049\",\"wn31:v:02700775\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"建筑物、机构等位于某处，常用be located in等结构\",\"relation\":\"合理概括\",\"reason\":\"extended层用“坐落于（常用 be located in 等结构）”概括静态位置表达，正确提示英语通常用被动/分词结构而非裸locate作静态系词。\",\"evidence_ids\":[\"wn31:v:00414801\",\"wn31:v:02338685\",\"web:locate\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"确定位置核心有discover/determine location证据；坐落于扩展正确限定为be located in等被动结构，不能用裸locate。\"},{\"id\":\"SG25-458defad73e0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"与文学有关的、文学性的\",\"relation\":\"语义等价\",\"reason\":\"core层“文学的”与of/relating to literature的词典定义相合，且注释避免扩成识字或所有文字材料。\",\"evidence_ids\":[\"wn31:a:02841386\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“文学的”单一形容词义有of/relating to literature证据支持；未扩成识字/所有文字材料。\"},{\"id\":\"SG25-ac9fa2503ffe\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"文学（文学作品/文学创作）\",\"relation\":\"语义等价\",\"reason\":\"core层“文学”由creative writing of recognized artistic value支持，保留作品/创作层面，未把学科文献义混入。\",\"evidence_ids\":[\"wn31:n:06376048\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"某学科、某主题的文献/出版物\",\"relation\":\"语义等价\",\"reason\":\"core层“文献”由published writings in a particular style on a particular subject（technical literature）支持，对应学科文献义。\",\"evidence_ids\":[\"wn31:n:06376547\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“文学”与“文献”两个核心入口分别由creative writing和technical literature证据支持；未要求把literature全部词典用法纳入核心。\"},{\"id\":\"SG25-ac7f39a1e0b7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"论证、结论、行动等符合逻辑/可推理\",\"relation\":\"语义等价\",\"reason\":\"core组文本保留“合乎逻辑的”，与源义相合；但组链接证据偏向capable of reasoning（a logical mind），未明确列出论证/结论层面的依据。\",\"evidence_ids\":[\"wn31:a:01432984\",\"wn31:a:00466504\",\"wn31:s:02509114\"],\"context\":\"none\",\"residual_scope\":\"组链接证据只覆盖“logical mind”，未列合乎逻辑的论证/预期等条目；文本虽保留，证据链不完整\",\"counterexample\":\"a logical expectation/argument（合乎逻辑的预期/论证）\",\"counterexample_evidence_ids\":[\"wn31:s:02509114\",\"wn31:a:00466504\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"人有逻辑/能正确推理\",\"relation\":\"语义等价\",\"reason\":\"core层合并文本中的“有逻辑的”由capable of or reflecting correct and valid reasoning（a logical mind）支持。\",\"evidence_ids\":[\"wn31:a:01432984\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"有逻辑头脑、思路清晰\",\"relation\":\"语义等价\",\"reason\":\"extended层“有逻辑头脑的”由lucid/coherent thinker证据支持，主体为人，与s001/s002的文本合并保持可追溯。\",\"evidence_ids\":[\"wn31:s:01932107\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_gap\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-ac7f39a1e0b7:core:1\"],\"evidence_ids\":[\"wn31:a:01432984\",\"wn31:a:00466504\",\"wn31:s:02509114\"],\"reason\":\"核心组把s001/s002合为“合乎逻辑的／有逻辑的”，但组证据只列capable of reasoning（a logical mind），未列“合乎逻辑的论证/预期”的词典依据；文本虽保留，证据链不完整。\",\"repair_suggestion\":\"在核心组evidence/注释中补入coherent argument或logical expectation条目，区分人的推理能力与论证/结论的合乎逻辑。\"}],\"note\":\"核心合并“合乎逻辑的/有逻辑的”、扩展“有逻辑头脑的”方向正确；但核心证据只列logical mind，需补论证/结论的合乎逻辑用法。\"}]}",
+  "usage": {
+    "prompt_tokens": 5532,
+    "completion_tokens": 13758,
+    "total_tokens": 19290,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11850
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3612
+  },
+  "started_utc": "2026-11-13T09:44:50.713142+00:00",
+  "completed_utc": "2026-11-13T09:46:08.950219+00:00",
+  "elapsed_seconds": 78.235,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

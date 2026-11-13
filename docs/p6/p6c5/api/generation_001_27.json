@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_27",
+  "request_hash": "b66338ca406d3078ce58957c4cbfcca10c18bdcd8196ffae75cc38ad4925461f",
+  "started_utc": "2026-11-13T08:14:59.221328+00:00",
+  "completed_utc": "2026-11-13T08:15:28.870844+00:00",
+  "elapsed_seconds": 29.641,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "2c020b67-88a2-408f-a3c6-386fc73695fd",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3597,
+    "completion_tokens": 4653,
+    "total_tokens": 8250,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4135
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 781
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-c9195f094689\",\"word\":\"responsible\",\"pos\":\"形容词\",\"core\":[[\"负责的；有责任的\",\"形容词\",[\"s001\",\"s002\"],[\"wn31:a:02003477\"],\"对职责、行为负责，须问责或可信赖；不表示因果。\"],[\"造成某事的；是…的原因\",\"形容词\",[\"s003\"],[\"wn31:s:00325776\"],\"responsible for 表动因/因果，与责任、问责义区分。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"有偿还能力的；信用可靠的\",\"形容词\",[\"wn31:s:02474578\"],\"外部候选：财务/信用评级语域，原文未明确；不并入核心。\"]],\"reason\":\"首记先分责任/问责义与因果义：前者对应 accountable/be responsible，后者对应 be responsible for causing；信用评级义仅作外部候选。\",\"flags\":[[\"Info\",\"domain_restricted_candidate\",\"补充候选“有偿还能力的；信用可靠的”属财务/信用评级语域，未进入核心。\"]]},{\"id\":\"SG25-13d853006f71\",\"word\":\"sponsor\",\"pos\":\"名词；动词\",\"core\":[[\"赞助；资助\",\"动词\",[\"s001\"],[\"wn31:v:02224722\"],\"承担赞助、提供赞助身份；对象为活动、项目或人。\"],[\"发起；倡议；牵头\",\"动词\",[\"s002\"],[\"wn31:v:02224930\"],\"承担领导或责任，如发起计划、法案；与出资赞助区分。\"],[\"赞助者；支持者\",\"名词\",[\"s003\"],[\"wn31:n:10427699\"],\"宽义支持/拥护者；原文若特指出资赞助商，该窄义未由该定义单独证实。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"按动词出资赞助与发起/牵头分开，名词支持者/赞助者保留宽义并标明出资义待证；未把不重要的词典细分塞入核心。\",\"flags\":[[\"Minor\",\"source_scope_gap\",\"名词证据 wn31:n:10427699 定义为宽义支持/拥护者，原文“赞助者”通常指出资赞助者；出资赞助商窄义未获独立定义直接证实。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

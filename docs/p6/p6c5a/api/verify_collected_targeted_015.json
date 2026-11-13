@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_015",
+  "kind": "verify",
+  "request_hash": "595852c411d09f6779c15ea104adc0564fcb41ea74e5bdebaad4857caaf9a8f8",
+  "input_ids": [
+    "SG25-46e087617851",
+    "SG25-e2411f906450"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "43a6f7e6-4aa6-4a40-8f38-90170da85952",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-46e087617851\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标扩展组“有力的”并注释限“产生影响或生效”，与英语 effective 的“exerting force or influence”证据一致；原文“有力的”在此上下文中作为 effective 的译义，不应包括体力强壮（英语无此义）。\",\n          \"evidence_ids\": [\"wn31:s:00836323\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“有效的／有效果的”包含“有效的”，证据 producing intended result 支持。\",\n          \"evidence_ids\": [\"wn31:a:00837737\", \"wn31:s:00842764\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组与 s002 合并展示“有效的／有效果的”，“有效果的”义由 works well as a means or remedy 证据支持。\",\n          \"evidence_ids\": [\"wn31:a:00837737\", \"wn31:s:00842764\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [\n        \"核心组将“有效的”与“有效果的”合并展示，两者中文近乎同义，语感差异很小；如需区分可保留并列，但仅为教学顺序偏好。\"\n      ],\n      \"note\": \"候选组已覆盖来源三个中文义项，对“有力的”的限制符合英语有效词义，未发现确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-e2411f906450\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“有势力的／有影响的”保留了“有势力的”，英语证据 having or exercising influence or power 覆盖该义，注释说明不默认政治权势。\",\n          \"evidence_ids\": [\"wn31:a:01835852\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组包含“有影响的”，同一证据 supports 有影响。\",\n          \"evidence_ids\": [\"wn31:a:01835852\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [\n        \"有势力与有影响合并为同一组，未丢失各自字面；若希望强调“有势力”常带权力/财富隐含，可在教学中单独提示，但非范围问题。\"\n      ],\n      \"note\": \"核心组准确覆盖两个来源义项，英语证据支持，无确认缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3533,
+    "completion_tokens": 3457,
+    "total_tokens": 6990,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2813
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1869
+  },
+  "started_utc": "2026-11-13T09:56:49.224411+00:00",
+  "completed_utc": "2026-11-13T09:57:35.271783+00:00",
+  "elapsed_seconds": 46.047,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

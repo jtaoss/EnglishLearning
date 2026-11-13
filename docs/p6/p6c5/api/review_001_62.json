@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_62",
+  "request_hash": "5cfdd95f86eb36674f4e83f1436b323085e967e1dc4432d7637663971c163161",
+  "started_utc": "2026-11-13T08:16:58.985323+00:00",
+  "completed_utc": "2026-11-13T08:18:14.005892+00:00",
+  "elapsed_seconds": 75.015,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "fd50ac7f-c12e-4223-ad1c-9cb8960b95da",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2861,
+    "completion_tokens": 3841,
+    "total_tokens": 6702,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3517
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 813
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e62377847bbe\",\"independent_core\":[],\"verdict\":\"evidence_pending\",\"findings\":[{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"核心义usage_note将“负债”纳入“财产”义，但源中文“财产”通常不含负债；WordNet义项虽包含liabilities，但源片段没有明确支持该扩展，需谨慎确认是否为源词宽义兼容还是英语义的外延。\",\"evidence_ids\":[\"wn31:n:13271829\"],\"source_sense_ids\":[\"s001\"],\"candidate_group_ref\":\"SG25-e62377847bbe:p6c5:core_meanings:1\",\"proposed_fix\":\"保留核心“财产；资产”，将usage_note改为“泛指个人拥有的全部资产（法律语境可能含负债）”或单独标记负债为未经源确认的外部细义。\"}],\"preferences\":[\"首次记忆可先强调与“财产/资产”对应的宽泛义，避免过早引入历史社会阶层义。\",\"扩展义“地产；庄园”可标注为“源词‘财产’的下位具体类型”，以免学习者误以为“财产”本身直接等于庄园。\"],\"note\":\"源片段仅含名词“财产”，候选正确覆盖了财产/资产义与地产/庄园义，社会阶层义作为未采用候选单独列出，符合规范。唯一不确定点是核心usage_note引入“负债”，源中文可能不支持，故标为证据待定而非确认错误。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

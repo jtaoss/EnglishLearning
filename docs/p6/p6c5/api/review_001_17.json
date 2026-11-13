@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_17",
+  "request_hash": "60da50578de6ee02c96c0e956977472cdc098f9232aa540cf3709b237daf147d",
+  "started_utc": "2026-11-13T08:16:13.392985+00:00",
+  "completed_utc": "2026-11-13T08:17:30.263730+00:00",
+  "elapsed_seconds": 76.859,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a043b17f-cc94-408f-b6f5-bb14b53f6516",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3027,
+    "completion_tokens": 3869,
+    "total_tokens": 6896,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3673
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 979
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-68fcfd9b4d77\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"可将核心一的对象提示进一步简化为“对爱、名声、财富等的寻求”，避免将‘目标’泛化；但当前表述可接受。\",\n        \"外部消遣义可考虑放入扩展组而非仅 dictionary_additions，但不是错误。\"\n      ],\n      \"note\": \"候选将源“追求”映射至 WordNet 05778388（抽象寻求/追求），将“追赶”映射至 00320765（追赶/追捕），词性与语义方向均匹配；消遣/爱好义被正确列为词典外部候选未并入核心；源原文均被覆盖，未发现确认缺陷。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

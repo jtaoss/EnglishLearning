@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_012",
+  "kind": "audit",
+  "request_hash": "03599f844ff61f4a09e575637a4b4c2ecfe751c4be29655dcb06012567c8acea",
+  "input_ids": [
+    "SG25-b6451cc6dd81",
+    "SG25-c836905751e7",
+    "SG25-5489eb1d2a02",
+    "SG25-c633eb52f63c",
+    "SG25-6850ca355247"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c4346032-5f73-460e-a7e2-9f9c6b5376c2",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-b6451cc6dd81\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"必要性；处于必需或不可或缺的状态\",\"relation\":\"语义等价\",\"reason\":\"原义“必要性”指必需/不可或缺的状态或性质，与词典中表示“处于必需状态”的名词义一致。\",\"evidence_ids\":[\"wn31:n:14474157\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"必需品；不可或缺的物品\",\"relation\":\"语义等价\",\"reason\":\"原义“必需品”指不可缺少的物品，与“anything indispensable”以及“essentials/requirements”一致。\",\"evidence_ids\":[\"wn31:n:09390100\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别对应“必要性/状态”和“必需品/物品”，核心分组和证据都匹配，无待核缺口。\"},{\"id\":\"SG25-c836905751e7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"经济不景气；低迷状态\",\"relation\":\"语义等价\",\"reason\":\"原义指经济不景气或低迷，与词典中“经济下降、GDP与就业广泛下滑”的衰退义相容。\",\"evidence_ids\":[\"wn31:n:14036839\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"经济萧条；可能指比recession更严重的萧条\",\"relation\":\"无法确定\",\"reason\":\"原义“经济萧条”可能对应depression或更严重的萧条，而提供的证据只界定持续约六个月到一年的经济衰退，不能确认二者等同。\",\"evidence_ids\":[\"wn31:n:14036839\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少可确证的“萧条/严重经济危机”独立范围；现仅按recession证据处理。\",\"counterexample\":\"recession是持续数月到一年的GDP、就业和贸易下滑，未必等同大萧条/depression。\",\"counterexample_evidence_ids\":[\"wn31:n:14036839\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"衰退；经济下降\",\"relation\":\"语义等价\",\"reason\":\"原义“衰退”与词典中经济下降期的定义一致。\",\"evidence_ids\":[\"wn31:n:14036839\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"pending_term_range\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:14036839\"],\"reason\":\"s002“经济萧条”被暂存；提供证据只支持数月到一年的经济衰退，不能证明其等同更严重的depression/萧条。\",\"repair_suggestion\":\"保留held/待核；若需覆盖萧条义，应另找词典证据或明确标注待核，不与recession核心混同。\"}],\"note\":\"s003“衰退”和s001“不景气”由同一经济衰退证据支持；s002“经济萧条”因可能重于recession而暂存，属术语范围待核，不是自动生成错误。\"},{\"id\":\"SG25-5489eb1d2a02\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"事故；造成损伤的不幸事件\",\"relation\":\"语义等价\",\"reason\":\"原义“事故”指造成损害或伤害的不幸事件，与“unfortunate mishap causing damage or injury”一致。\",\"evidence_ids\":[\"wn31:n:07315954\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"意外；偶然发生的事\",\"relation\":\"语义等价\",\"reason\":\"原义“意外”指偶然发生、无明显原因的事件，与chance event义一致。\",\"evidence_ids\":[\"wn31:n:07315578\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"灾祸；可指一般灾难或大祸\",\"relation\":\"范围收窄\",\"reason\":\"原义“灾祸”可指一般灾难或大祸，但提供的accident证据仅覆盖不幸事故或偶然事件；若用accident覆盖“灾祸”，只剩较窄的事故/意外范围。\",\"evidence_ids\":[\"wn31:n:07315954\",\"wn31:n:07315578\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少“灾祸/一般灾难”独立范围；目前只保留事故和偶然意外。\",\"counterexample\":\"火灾、洪水等一般灾难可称灾祸，但不是accident的“不幸事故/偶然事件”核心义。\",\"counterexample_evidence_ids\":[\"wn31:n:07315954\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_overbroad\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:07315954\",\"wn31:n:07315578\"],\"reason\":\"“灾祸”范围宽于accident证据；held处理正确，但源译偏宽，不能反推accident覆盖一般灾难。\",\"repair_suggestion\":\"保持held/待核；不要把“灾祸”并入事故/意外；若需灾难义，应作为外部补充或另立条目处理。\"}],\"note\":\"事故与偶然意外分别有核心覆盖；灾祸因源译范围宽于accident而暂存，保留待核，不判为生成器Major。\"},{\"id\":\"SG25-c633eb52f63c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"随意的；漫不经心或自然不刻意的态度/方式\",\"relation\":\"语义等价\",\"reason\":\"原义“随意的”可指自然不刻意或offhand，与natural/unstudied及offhand证据一致。\",\"evidence_ids\":[\"wn31:s:01048429\",\"wn31:s:01802993\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"非正式的；非正式场合或日常穿着\",\"relation\":\"语义等价\",\"reason\":\"原义“非正式的”与表示日常/普通场合穿着、非正式服装的casual义一致；服装为典型示例而非唯一对象。\",\"evidence_ids\":[\"wn31:s:01048256\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"临时的；不定期的\",\"relation\":\"语义等价\",\"reason\":\"原义“临时的”与temporary/irregular basis的casual employment、occasional worker证据一致。\",\"evidence_ids\":[\"wn31:s:01968015\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“随意”和“非正式”保留在核心，“临时/不定期”作为独立用法放在扩展层且有证据；三义均有对应，无需判缺口。\"},{\"id\":\"SG25-6850ca355247\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"化学品；化学物质\",\"relation\":\"语义等价\",\"reason\":\"原义“化学品”指化学反应产生或使用的物质，与名词证据一致。\",\"evidence_ids\":[\"wn31:n:14831008\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"化学的；与化学有关的\",\"relation\":\"语义等价\",\"reason\":\"原义“化学的”表示与化学有关或用于化学的，与形容词证据一致。\",\"evidence_ids\":[\"wn31:a:02703361\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“化学品”和形容词“化学的”词性、对象均清楚，核心分组与证据匹配，无待核问题。\"}]}",
+  "usage": {
+    "prompt_tokens": 5618,
+    "completion_tokens": 8595,
+    "total_tokens": 14213,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6715
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3698
+  },
+  "started_utc": "2026-11-13T09:40:13.331431+00:00",
+  "completed_utc": "2026-11-13T09:41:01.201032+00:00",
+  "elapsed_seconds": 47.86,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

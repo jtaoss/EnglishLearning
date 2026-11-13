@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_16",
+  "request_hash": "ca22fa984d7e352c85a19e3ea7a1fe53097896977f4cc0f9f9e9b06bbcddd507",
+  "started_utc": "2026-11-13T08:16:13.603497+00:00",
+  "completed_utc": "2026-11-13T08:17:37.068895+00:00",
+  "elapsed_seconds": 83.469,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c01ed0e7-370d-463d-b090-2f30c4b7b82c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3039,
+    "completion_tokens": 4490,
+    "total_tokens": 7529,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4103
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3039
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-84bb160039a7\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Candidate core group 1 usage_note states '常指对个人或局面的（负面）后果', but none of the supplied English definitions (wn31:n:07308725, wn31:n:11430739) mention negative connotation. The Chinese source '后果' may carry negative connotation in some contexts, but this is not confirmed by the provided evidence. This could mislead learners about the neutrality of English 'consequence'. Please either provide evidence for this negative restriction or remove '（负面）' from the usage note.\",\n          \"evidence_ids\": [\n            \"wn31:n:07308725\",\n            \"wn31:n:11430739\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-84bb160039a7:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"Remove '（负面）' or change to '（可指负面或中性结果，视语境而定）' with appropriate evidence.\"\n        }\n      ],\n      \"preferences\": [\n        {\n          \"suggestion\": \"Consider noting that 'consequence' is neutral in English; '后果' often implies negativity but not always.\"\n        }\n      ],\n      \"note\": \"The candidate correctly separates result/outcome sense from influence/effect and treats importance as external addition. Source POS noun is covered. The only concern is the unsupported negative gloss in usage note; awaiting evidence or removal.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

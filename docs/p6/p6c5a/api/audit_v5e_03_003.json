@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_003",
+  "kind": "audit",
+  "request_hash": "149e8ad8e030a628a5c9fa834ebd92cf84e979a17a95da32f171c56d9ea09c09",
+  "input_ids": [
+    "SG25-512738161b2a",
+    "SG25-14a62b33decf",
+    "SG25-5e737f891db1",
+    "SG25-93bc5d02dc2a",
+    "SG25-b1a36d25d963"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "fda071d1-b1d4-4e1b-bf60-6a2a617808bc",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-512738161b2a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"实验室：科学研究工作场所\",\"relation\":\"语义等价\",\"reason\":\"核心组以“实验室／研究室／科研室”合并展示，词典“workplace for scientific research”支持该场所义。\",\"evidence_ids\":[\"wn31:n:03635277\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"研究室：科研工作房间\",\"relation\":\"语义等价\",\"reason\":\"“研究室”在科研场所语境下与 laboratory 的科学研究工作场所义一致，核心组已保留。\",\"evidence_ids\":[\"wn31:n:03635277\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"科研室：科研用途房间\",\"relation\":\"语义等价\",\"reason\":\"“科研室”与词典科学研究者工作场所义相符，核心组合并展示未丢失独立来源片段。\",\"evidence_ids\":[\"wn31:n:03635277\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个中文近义片段均指向科学研究场所，核心组合并保留，未发现源义缺失或明显范围外推。\"},{\"id\":\"SG25-14a62b33decf\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：偏见/成见态度\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“偏见”对应 partiality preventing objective consideration，词性与语义相符。\",\"evidence_ids\":[\"wn31:n:06211643\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：使某人预先形成看法/偏见\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“使产生偏见”对应 influence somebody's opinion in advance，方向和使动关系一致。\",\"evidence_ids\":[\"wn31:v:00682064\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：使不利/损害权益（字面未限定由偏见造成）\",\"relation\":\"范围收窄\",\"reason\":\"词典证据为 disadvantage by prejudice，只支持因偏见或不公正造成不利；来源字面“使不利”较宽，需保留来源范围待核。\",\"evidence_ids\":[\"wn31:v:02519408\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"非偏见造成的一般“不利”未获英语证据支持，作为来源过宽待核，不扩成一般损害义。\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-14a62b33decf:extended:1\"],\"evidence_ids\":[\"wn31:v:02519408\"],\"reason\":\"原“使不利”字面可泛指造成不利，词典证据限定为 disadvantage by prejudice；这是来源过宽待核，不自动判为生成器Major。\",\"repair_suggestion\":\"在扩展组注释中保留“因偏见/不公正造成不利”的词典限制，并标注来源字面范围待核；不要新增无证据的一般损害义。\"}],\"note\":\"名词和两个动词片段均已映射；s003保留在扩展层，但其来源字面宽于词典证据，需按待核处理而非直接通过。\"},{\"id\":\"SG25-5e737f891db1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"草莓：果实或草莓植物\",\"relation\":\"语义等价\",\"reason\":\"核心组“草莓”既可由 fruit 证据支持，也可由 strawberry plant 证据支持；词网胎记义未进入来源组。\",\"evidence_ids\":[\"wn31:n:07761916\",\"wn31:n:12650905\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一来源片段“草莓”同时覆盖果实和植物用法，核心组未把词典胎记义当作来源义，覆盖合理。\"},{\"id\":\"SG25-93bc5d02dc2a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"倒塌：物理坍塌事件/动作（源词性未定，可能名/动）\",\"relation\":\"无法确定\",\"reason\":\"源片段词性为 unresolved_multi_pos；核心1仅名词“倒塌”，核心2动词“崩溃”证据含物理崩塌但显示语不是“倒塌”，联合覆盖不能确认动词“倒塌”已保留。\",\"evidence_ids\":[\"wn31:n:07375728\",\"wn31:v:01993067\"],\"context\":\"uncertain\",\"residual_scope\":\"动词“倒塌”（建筑物/结构垮塌）是否在核心2被保留不明确；源词性未决。\",\"counterexample\":\"The wall/roof collapsed 支持动词物理崩塌用法。\",\"counterexample_evidence_ids\":[\"wn31:v:01993067\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"崩溃：功能/系统/精神失效（源词性未定，可能名/动）\",\"relation\":\"无法确定\",\"reason\":\"源词性未定；核心2仅动词“崩溃”，核心1名词仅“倒塌”；名词“崩溃/经济崩溃/功能崩溃”等有词典证据但未作为目标显示，联合覆盖不完整。\",\"evidence_ids\":[\"wn31:n:07493085\",\"wn31:n:14089685\",\"wn31:v:01789398\"],\"context\":\"uncertain\",\"residual_scope\":\"名词“崩溃”（经济/功能/精神崩溃）未明确保留；源词性未决。\",\"counterexample\":\"business/stock collapse 支持名词经济崩溃用法。\",\"counterexample_evidence_ids\":[\"wn31:n:07493085\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"unresolved_pos_cross_pos_coverage\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-93bc5d02dc2a:core:1\",\"SG25-93bc5d02dc2a:core:2\"],\"evidence_ids\":[\"wn31:n:07375728\",\"wn31:v:01993067\",\"wn31:n:07493085\",\"wn31:n:14089685\",\"wn31:v:01789398\"],\"reason\":\"源词性为 unresolved_multi_pos，却被按 s001→名词“倒塌”、s002→动词“崩溃”分配；联合层级未明确保留名词“崩溃”（经济/功能/精神崩溃）和/或动词“倒塌”（结构垮塌）等有词典支持的跨词性用途。\",\"repair_suggestion\":\"保持源词性待核，不把AI推荐词性当原文；在核心或明确暂存/扩展中分别保留名词崩溃、动词倒塌等有证据用途，或标注剩余范围待人工核。\"}],\"note\":\"倒塌和崩溃两个片段均有名/动词性未决问题；现有核心按名词倒塌/动词崩溃分配，跨词性覆盖不完整，需暂存而非视为通过。\"},{\"id\":\"SG25-b1a36d25d963\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：从多个选项中挑选\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“挑选”对应 pick out/select/choose from alternatives，动作方向一致。\",\"evidence_ids\":[\"wn31:v:00676526\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：精选的/优等的\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组“精选的”由 selected/chosen for special qualifications 与 superior grade 两条证据支持，词性相符。\",\"evidence_ids\":[\"wn31:s:02350415\",\"wn31:s:02351005\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词挑选与形容词精选的分列符合源词性标注，两个来源片段均在核心层有准确证据支持。\"}]}",
+  "usage": {
+    "prompt_tokens": 5360,
+    "completion_tokens": 11214,
+    "total_tokens": 16574,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9275
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3440
+  },
+  "started_utc": "2026-11-13T09:44:50.597022+00:00",
+  "completed_utc": "2026-11-13T09:45:56.578431+00:00",
+  "elapsed_seconds": 65.984,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

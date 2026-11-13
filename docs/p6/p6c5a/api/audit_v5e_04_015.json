@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_015",
+  "kind": "audit",
+  "request_hash": "d716e2ade0c981c0d17c698dbf9a9fb73936477bfdf22d46b04f2f7ae215da8f",
+  "input_ids": [
+    "SG25-5ab9dc11d7d0",
+    "SG25-4994ad9e4f40",
+    "SG25-154d763b6a25",
+    "SG25-b8bc0e4f01a0",
+    "SG25-763f2223af42"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5eadbfd7-66ed-4034-8092-084bad7b294c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-5ab9dc11d7d0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘理解’：理解行为/结果，源语境未另限\",\"relation\":\"语义等价\",\"reason\":\"核心组‘理解’与 wn31:n:05813910 的‘理解/所获知识’义相符，保留行为结果侧重。\",\"evidence_ids\":[\"wn31:n:05813910\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘理解力’：理解能力\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘理解力’对应同一词条的能力义，与核心行为结果义分列。\",\"evidence_ids\":[\"wn31:n:05813910\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别在核心/扩展保留；能力与理解结果有注释区分，未发现覆盖缺口。\"},{\"id\":\"SG25-4994ad9e4f40\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词‘全面的’：覆盖各方面/全部\",\"relation\":\"语义等价\",\"reason\":\"核心组‘全面的’对应 including all or everything，符合源义。\",\"evidence_ids\":[\"wn31:a:00527630\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词‘综合的’：按 comprehensive 的‘范围广、兼顾多方面’理解\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘综合的’按 broad in scope 理解，注释明确排除‘合成的/混合的’，与源文所列 comprehensive 义相符。\",\"evidence_ids\":[\"wn31:s:01869920\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"全面与综合两义分别保留；组注已限定‘综合的’不取合成/混合物义。\"},{\"id\":\"SG25-154d763b6a25\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"源词性未定；中文‘赞扬’（候选按名词推荐链接）\",\"relation\":\"无法确定\",\"reason\":\"源 s001 词性为 unresolved_multi_pos；核心名词组有词典支持，但不能确认原书此中文只作名词。\",\"evidence_ids\":[\"wn31:n:06705943\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定，不能确认‘赞扬’只对应名词；动词覆盖由另一源义组承担，源ID与词性对应待核。\",\"counterexample\":\"praise 名词可表‘赞扬/称赞’，动词也可表‘赞扬/称赞’；当前 s001→名词、s002→动词只是推荐性拆分。\",\"counterexample_evidence_ids\":[\"wn31:n:06705943\",\"wn31:v:00858506\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"源词性未定；中文‘称赞’（候选按动词推荐链接）\",\"relation\":\"无法确定\",\"reason\":\"源 s002 词性同为 unresolved_multi_pos；核心动词组有词典支持，但不能确认原书此中文只作动词。\",\"evidence_ids\":[\"wn31:v:00858506\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定，不能确认‘称赞’只对应动词；名词覆盖由另一源义组承担，源ID与词性对应待核。\",\"counterexample\":\"praise 作动词可表‘赞扬/称赞’，作名词也可表‘赞扬/称赞’；当前拆分只是推荐性对应。\",\"counterexample_evidence_ids\":[\"wn31:n:06705943\",\"wn31:v:00858506\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved_mapping\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-154d763b6a25:core:1\",\"SG25-154d763b6a25:core:2\"],\"evidence_ids\":[\"wn31:n:06705943\",\"wn31:v:00858506\"],\"reason\":\"原词性为名词；动词，但两个中文义项的词性均为 null；候选把‘赞扬’接名词、‘称赞’接动词，虽有词典支持且注释声明推荐，仍不能作为已核验的源词性对应。\",\"repair_suggestion\":\"将两组标注为词性推荐/待源语境核对，不声称原书逐项词性；保留名词与动词两个独立用法，待可核对原文后定对应。\"}],\"note\":\"名词/动词两组均存在且词典有据，但源义词性未解析，s001/s002 与词性组的对应只能待核。\"},{\"id\":\"SG25-b8bc0e4f01a0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘表达’：表达活动/交流（不取表情、数学式等）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘表达’对应言说/书面交流观点信念的用法，保留表达活动义。\",\"evidence_ids\":[\"wn31:n:07154581\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘表情’：脸上表现出的情绪\",\"relation\":\"语义等价\",\"reason\":\"核心组‘表情’对应 the feelings expressed on a person's face，与源义相符。\",\"evidence_ids\":[\"wn31:n:04687095\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词‘表达方式’：表达的风格/说法\",\"relation\":\"合理概括\",\"reason\":\"扩展组以‘表达方式’概括风格与说法两类表达形式，有相应词典依据，且未并入数学式、基因表达等原文未列义。\",\"evidence_ids\":[\"wn31:n:07083988\",\"wn31:n:07166088\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均保留；核心表达活动/表情，表达方式在扩展；数学式、基因表达等未误作原文义。\"},{\"id\":\"SG25-763f2223af42\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘原则’：行为/准则原则（与‘原理’分开）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘原则’对应行为准则、个人操守原则，与源义相符。\",\"evidence_ids\":[\"wn31:n:05964190\",\"wn31:n:06668133\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘原理’：基本规律/自然法则\",\"relation\":\"语义等价\",\"reason\":\"核心组‘原理’对应基本真理、法则及自然现象规律，与源义相符。\",\"evidence_ids\":[\"wn31:n:05881099\",\"wn31:n:05882839\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原则与原理分属行为准则和基本规律框架，均保留在核心，未发现覆盖缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 5656,
+    "completion_tokens": 13850,
+    "total_tokens": 19506,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12117
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3736
+  },
+  "started_utc": "2026-11-13T09:46:53.864918+00:00",
+  "completed_utc": "2026-11-13T09:48:14.488009+00:00",
+  "elapsed_seconds": 80.625,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

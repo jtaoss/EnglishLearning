@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_005",
+  "kind": "holdout",
+  "request_hash": "e102f57ea1703a21d99d4adb51c476d4f385db5c64b3ca90a002cc27498a8081",
+  "input_ids": [
+    "SG25-91bb720d0df3",
+    "SG25-3fb45623cb30"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2a401220-9f71-4a45-9804-da64efd39ba9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-91bb720d0df3\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"使某对象处于并继续保持某种状态、位置或活动（如保持清洁、保持原位）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为状态补语或表示状态/位置/活动的名词短语\",\n          \"evidence_ids\": [\"wn31:v:02687605\"],\n          \"uncertainty\": \"证据为及物动词，含使役含义，与原文匹配；但原文未限定对象类型，证据中示例含清洁、位置等，范围可能较宽，未发现非使役独立证据。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"保持（某状态、数量、记录等，一般及物）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要宾语，宾语可为状态/数量/记录等\",\n          \"evidence_ids\": [\"wn31:v:02687605\"],\n          \"uncertainty\": \"与s001高度重叠，可能为同义重复；中文‘保持’比‘使保持某状态’少显性使役，但英语证据已包含使役，未发现非使役独立证据。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"维持（某状态、活动等，常含持续努力）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要宾语，宾语可为状态/活动/机构等\",\n          \"evidence_ids\": [\"wn31:v:02687605\"],\n          \"uncertainty\": \"与s001/s002类似，但英语证据未区分‘维持’所需的持续投入，可能过于笼统。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：使保持某状态；保持；维持（使某对象继续处于某种状态、位置或活动）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"三个源义项高度同义，均映射至同一个使役性状态保持证据。其他字典义（如声称、供给、记录、持有、保护等）未在源中出现，不加为核心。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"声称、断言（maintain innocence）\",\n          \"evidence_ids\": [\"wn31:v:01019652\", \"wn31:v:01018787\"]\n        },\n        {\n          \"text\": \"供给必需品、赡养（sustain family）\",\n          \"evidence_ids\": [\"wn31:v:01187158\"]\n        },\n        {\n          \"text\": \"通过记录保持（keep a diary）\",\n          \"evidence_ids\": [\"wn31:v:01067899\"]\n        },\n        {\n          \"text\": \"为使用而保有（keep a car）\",\n          \"evidence_ids\": [\"wn31:v:02207950\"]\n        },\n        {\n          \"text\": \"行使（power/authority）\",\n          \"evidence_ids\": [\"wn31:v:02209346\"]\n        },\n        {\n          \"text\": \"保护以免损坏（preserve）\",\n          \"evidence_ids\": [\"wn31:v:02284977\"]\n        },\n        {\n          \"text\": \"正确坚持（keep time）\",\n          \"evidence_ids\": [\"wn31:v:00734575\"]\n        },\n        {\n          \"text\": \"支持反对者（uphold verdict）\",\n          \"evidence_ids\": [\"wn31:v:00898147\"]\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-3fb45623cb30\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"整体中的一个部分（可指物体部件或抽象划分）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"需明确指出所属整体；可用于具体物体或抽象概念\",\n          \"evidence_ids\": [\"wn31:n:04172050\", \"wn31:n:05876035\"],\n          \"uncertainty\": \"证据分别覆盖物体部件和抽象划分，基本对应中文‘部分’；但中文‘部分’可能更广泛，如可用于人群、地区等，未在所选证据中完全体现（另有地区义等未采用）。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"书籍、文章、音乐作品等中的独立部分（章节）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"指书面或音乐作品的组织部分\",\n          \"evidence_ids\": [\"wn31:n:06403644\"],\n          \"uncertainty\": \"证据定义包含书面或音乐作品，中文‘章节’通常限于书籍，但范围接近，可接受。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"大型组织中的一个专门分支（部门）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"指公司、政府、机构等组织内的分支\",\n          \"evidence_ids\": [\"wn31:n:08131836\", \"wn31:n:05876035\"],\n          \"uncertainty\": \"证据中‘finance section of the company’和‘specialized division of a large organization’均支持此义，基本匹配。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词：部分（整体中的一个部分，可指物体或抽象划分）\",\n        \"名词：章节（书籍、文章、音乐作品等的独立部分）\",\n        \"名词：部门（组织、机构中的一个专门分支）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"三个源义项分别对应证据中的一般部分、作品章节和组织部门，无覆盖缺口。其他字典义（如外科切口、警察小队、军队单位、管弦乐组、学生班级、几何截面、显微切片、土地单位、动词分割）未在源中出现，不加为核心。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"外科切口（cutting of body tissues）\",\n          \"evidence_ids\": [\"wn31:n:00679253\"]\n        },\n        {\n          \"text\": \"柑橘瓣（segment of citrus fruit）\",\n          \"evidence_ids\": [\"wn31:n:07763431\"]\n        },\n        {\n          \"text\": \"警察小队（small team of policemen）\",\n          \"evidence_ids\": [\"wn31:n:08231753\"]\n        },\n        {\n          \"text\": \"军队小队（small army unit）\",\n          \"evidence_ids\": [\"wn31:n:08233716\"]\n        },\n        {\n          \"text\": \"管弦乐组（division of orchestra）\",\n          \"evidence_ids\": [\"wn31:n:08233821\"]\n        },\n        {\n          \"text\": \"学生小组（small class of students）\",\n          \"evidence_ids\": [\"wn31:n:08256073\"]\n        },\n        {\n          \"text\": \"几何截面（area created by plane cutting solid）\",\n          \"evidence_ids\": [\"wn31:n:08665728\"]\n        },\n        {\n          \"text\": \"地区分区（distinct region/subdivision）\",\n          \"evidence_ids\": [\"wn31:n:08665897\"]\n        },\n        {\n          \"text\": \"显微薄片（thin slice for microscope）\",\n          \"evidence_ids\": [\"wn31:n:09451645\"]\n        },\n        {\n          \"text\": \"土地单位（land unit）\",\n          \"evidence_ids\": [\"wn31:n:13634785\"]\n        },\n        {\n          \"text\": \"动词：分割（divide into segments）\",\n          \"evidence_ids\": [\"wn31:v:01565786\"]\n        }\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4006,
+    "completion_tokens": 7183,
+    "total_tokens": 11189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5506
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4006
+  },
+  "started_utc": "2026-11-13T09:33:06.597535+00:00",
+  "completed_utc": "2026-11-13T09:34:36.714761+00:00",
+  "elapsed_seconds": 90.109,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

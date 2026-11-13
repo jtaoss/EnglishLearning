@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_009",
+  "kind": "audit",
+  "request_hash": "70ec536125b79bd7b8133d30faa09db6269b1d7bbd32920bc52200bcdd777377",
+  "input_ids": [
+    "SG25-bc5ece60fff8",
+    "SG25-cd340d1a5c41",
+    "SG25-4cf14180a81b",
+    "SG25-ff0139d07c59",
+    "SG25-c64bc36dfe56"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c0cb3a70-a97b-4b5e-81ed-4838e1c939c6",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-bc5ece60fff8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"偏好（相对其他选择更喜欢）\",\"relation\":\"语义等价\",\"reason\":\"preference 的“偏好/偏爱”义由 predisposition in favor 与 strong liking 证据支持，合组保留比较选择语境。\",\"evidence_ids\":[\"wn31:n:06210079\",\"wn31:n:07513449\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"偏爱（偏向某一方）\",\"relation\":\"语义等价\",\"reason\":\"“偏爱”对应 preference 的偏向性喜欢，合组不扩展到选择权或贸易优惠。\",\"evidence_ids\":[\"wn31:n:06210079\",\"wn31:n:07513449\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"喜爱（较强喜欢）\",\"relation\":\"合理概括\",\"reason\":\"将“喜爱”以“较强喜欢”的上位表达并入 preference 组，保留比较选择语境，不扩展为一般喜欢。\",\"evidence_ids\":[\"wn31:n:06210079\",\"wn31:n:07513449\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三片段合入一个核心组；证据覆盖相对选择/较强喜欢，未采用的选择权与贸易优惠不属原中文范围。\"},{\"id\":\"SG25-cd340d1a5c41\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"专业的（与专业/职业相关或符合职业特征）\",\"relation\":\"语义等价\",\"reason\":\"形容词“专业的”对应 professional 的“职业相关/符合职业特征”用法，核心组证据匹配。\",\"evidence_ids\":[\"wn31:a:01876050\",\"wn31:a:02850390\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"职业的（以职业为生/从事职业）\",\"relation\":\"语义等价\",\"reason\":\"“职业的”对应 engaged in a profession or means of livelihood 的形容词用法。\",\"evidence_ids\":[\"wn31:a:01874674\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"专业人士（从事专业职业的人）\",\"relation\":\"语义等价\",\"reason\":\"“专业人士”对应 person engaged in one of the learned professions；因词性为名词单列扩展层。\",\"evidence_ids\":[\"wn31:n:10499838\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"两个形容词义分列核心，名词“专业人士”在扩展层；词性分开，证据分别对应职业相关/以职业为生/从业者。\"},{\"id\":\"SG25-4cf14180a81b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"忍受（容忍不愉快的事）\",\"relation\":\"语义等价\",\"reason\":\"“忍受”对应 suffer 的 put up with something unpleasant 用法，因与“蒙受”方向不同单列扩展。\",\"evidence_ids\":[\"wn31:v:00670017\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"忍耐（克制地承受不愉快）\",\"relation\":\"语义等价\",\"reason\":\"“忍耐”与“忍受”同组，对应主动容忍不愉快，不混同于遭受负面事件。\",\"evidence_ids\":[\"wn31:v:00670017\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"蒙受（遭受伤害、处罚等负面经历）\",\"relation\":\"语义等价\",\"reason\":\"“蒙受”对应 undergo injuries/illnesses 或 be subjected to penalty 等遭受义，核心保留。\",\"evidence_ids\":[\"wn31:v:00065410\",\"wn31:v:02113644\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“蒙受”保留核心，“忍受/忍耐”在扩展层；证据区分遭受负面经历与主动容忍不愉快。\"},{\"id\":\"SG25-ff0139d07c59\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"信心（对他人/事物的信任或把握）\",\"relation\":\"语义等价\",\"reason\":\"“信心”覆盖对他人/事物的信任与把握，核心组证据含 trust 与 belief in abilities。\",\"evidence_ids\":[\"wn31:n:05705328\",\"wn31:n:07541744\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"自信（对自身能力/判断的信念）\",\"relation\":\"语义等价\",\"reason\":\"“自信”指向自身，对应 belief in yourself and your abilities；与一般“信心”分列扩展。\",\"evidence_ids\":[\"wn31:n:05705328\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"自信心（对自身的信心）\",\"relation\":\"语义等价\",\"reason\":\"“自信心”与“自信”同组，对应自身能力信念，不并入其他指向的“信心”。\",\"evidence_ids\":[\"wn31:n:05705328\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“信心”在核心，“自信/自信心”在扩展；证据区分对他人/事物的信任与对自身能力的信念。\"},{\"id\":\"SG25-c64bc36dfe56\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"限制（限定范围、数量或进入）\",\"relation\":\"语义等价\",\"reason\":\"“限制”对应 place limits on extent/amount/access 的一般设限义，核心组证据匹配。\",\"evidence_ids\":[\"wn31:v:00234091\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"禁闭（关押、剥夺自由）\",\"relation\":\"语义等价\",\"reason\":\"“禁闭”对应 close within bounds/deprive of freedom，因比一般限制更强而单列扩展。\",\"evidence_ids\":[\"wn31:v:01304044\",\"wn31:v:02500687\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“限制”在核心，“禁闭”在扩展；证据区分一般设限与剥夺自由/关押。\"}]}",
+  "usage": {
+    "prompt_tokens": 6493,
+    "completion_tokens": 13297,
+    "total_tokens": 19790,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11631
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4573
+  },
+  "started_utc": "2026-11-13T09:43:09.254463+00:00",
+  "completed_utc": "2026-11-13T09:44:21.369642+00:00",
+  "elapsed_seconds": 72.11,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

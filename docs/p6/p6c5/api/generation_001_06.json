@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_06",
+  "request_hash": "f55437011ad6c5839f85d4dd3c3ac00eccb8ee0d38fa66c46390b4ed7b7e8d10",
+  "started_utc": "2026-11-13T08:14:58.659842+00:00",
+  "completed_utc": "2026-11-13T08:15:34.363114+00:00",
+  "elapsed_seconds": 35.704,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "76fc58e2-3eaf-445b-ba71-dd4beceb0968",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3688,
+    "completion_tokens": 6116,
+    "total_tokens": 9804,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5352
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 872
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-03e71c6d7dc6\",\"word\":\"segment\",\"core\":[[\"部分；片段\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:04172050\",\"wn31:n:09452291\"],\"指整体中的一部分，或自然分出的片段，如路段、橘子瓣。\"],[\"分割；把…分成若干部分\",\"动词\",[\"s003\"],[\"wn31:v:01565786\"],\"及物用法：将整体分成若干段或若干部分。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（细胞等）分裂；分成若干部分\",\"动词\",[\"wn31:v:01561222\"],\"外部词典有不及物/自身变化用法；原中文‘分割’通常为及物动作，方向不确定，仅作候选不采用。\"]],\"reason\":\"先记名词‘整体中的部分/片段’，再记动词‘把…分成若干段’；两个名词近义合并同组，动词另组；不及物‘分裂’方向与原中文不明确对应，仅列候选。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"segment 的不及物/自身变化义仅在 additions，是否纳入核心待后续人工决定。\"]]},{\"id\":\"SG25-2161403032b8\",\"word\":\"senior\",\"core\":[[\"年长的；年纪较大的\",\"形容词\",[\"s001\"],[\"wn31:s:01648667\",\"wn31:a:02107054\"],\"指年龄较大，如 senior citizen 类用法。\"],[\"高级的；资历或级别较高的\",\"形容词\",[\"s002\"],[\"wn31:a:02107054\"],\"指职位、级别或服务年限较高，如 senior officer。\"],[\"高年级学生（尤指美国高中或大学最后一年级）\",\"名词\",[\"s004\"],[\"wn31:n:10598514\"],\"英语 senior 名词在教育语境中常专指毕业年级学生，比中文‘高年级’窄。\"],\"extended\":[],\"other\":[],\"hold\":[[\"s003\",\"‘资深者’侧重资历或职位较高；所供名词证据仅明确‘较年长的人’，未直接覆盖资历义，源译待核。\"]],\"splits\":{},\"additions\":[[\"较年长的人；年长者\",\"名词\",[\"wn31:n:10068026\"],\"外部名词证据指较年长的人；原中文‘资深者’侧重资历，未直接等同，仅作候选。\"]],\"reason\":\"先区分形容词‘年长的’与‘高级/资历高的’，再记名词‘毕业年级学生’；‘资深者’与所供名词证据不完全对应，暂存；‘年长者’外部名词义列候选。\",\"flags\":[[\"Major\",\"source_translation_uncertain\",\"s003‘资深者’侧重资历/职位，高于所供名词证据‘较年长的人’，未直接匹配，暂存。\"],[\"Major\",\"source_scope_gap\",\"s004‘高年级学生’较宽；英语 senior 名词证据主要指美国高中/大学最后一年级学生，核心采用条件化表述。\"],[\"Minor\",\"lexical_evidence_insufficient\",\"s003 的资历义没有独立名词证据覆盖，仅保留原片段待核。\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"senior 名词‘较年长的人/年长者’仅在 additions，与暂存的‘资深者’待人工合并决定。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

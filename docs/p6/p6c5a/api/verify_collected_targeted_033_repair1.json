@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_033_repair1",
+  "kind": "verify",
+  "request_hash": "552d17f75046770998664e9b4256d070123b470a3c976bf8a4f2faec3f030413",
+  "input_ids": [
+    "SG25-b093720ae253",
+    "SG25-16b60e9de607"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "618d1678-4be4-4c42-b21c-5b1d1667fa5c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-b093720ae253\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原中文“症状”在无额外语境时按常见医学义理解，指疾病等的可觉察表现；核心组保留该医学义并用 wn31:n:14323139 支持，英语证据充分。wn31:n:06811045 是英语更宽的“迹象/征兆”义，原释未列出也不构成来源义缺失。\",\n          \"evidence_ids\": [\"wn31:n:14323139\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"若教材语境要求“迹象/征兆”的泛化义，需要补充原句；在仅有“症状”词条下暂不视为缺失。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"原释在医学义上语义等价；泛指义未采用属未采用外部候选，不构成覆盖缺口。\"\n    },\n    {\n      \"id\": \"SG25-16b60e9de607\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“四分之一”直接对应 one of four equal parts，英语证据 wn31:n:13759620 支持该名词义。\",\n          \"evidence_ids\": [\"wn31:n:13759620\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“一刻钟”对应 a unit of time equal to 15 minutes，英语证据 wn31:n:15259739 支持。\",\n          \"evidence_ids\": [\"wn31:n:15259739\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“季度”对应 a fourth part of a year; three months，语义保留完整，只是置入扩展层，不构成语义缺口。\",\n          \"evidence_ids\": [\"wn31:n:15231386\"]\n        },\n        {\n          \"source_sense_id\": \"s004\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原中文“地区”为一般地域表述，候选其他层只保留“（城镇的）区”并注明“不泛指任意地区”，没有保留一般地区义。但英语证据 wn31:n:08645494 只支持城市中有特色的区，不支持任意地区/区域，因此该收窄反映英语语义范围，更像原中文译义过宽，而非候选丢失英语已支持的独立用途。\",\n          \"evidence_ids\": [\"wn31:n:08645494\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"原中文“地区”在教学词表中是否意在泛指地域还是已隐含城市分区，需要核实教材原文语境。\"\n      ],\n      \"preferences\": [\n        \"将“季度”放在扩展而非核心属于教学排序差异，不构成语义缺陷。\"\n      ],\n      \"note\": \"四分之一、一刻钟、季度均覆盖正确；地区仅保留“城镇中的区”，一般地区范围待核，但英语证据未支持该宽泛义，因此不作为已确认覆盖缺口。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6706,
+    "completion_tokens": 3515,
+    "total_tokens": 10221,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2769
+    },
+    "prompt_cache_hit_tokens": 4480,
+    "prompt_cache_miss_tokens": 2226
+  },
+  "started_utc": "2026-11-13T09:59:35.165676+00:00",
+  "completed_utc": "2026-11-13T10:00:23.319488+00:00",
+  "elapsed_seconds": 48.157,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

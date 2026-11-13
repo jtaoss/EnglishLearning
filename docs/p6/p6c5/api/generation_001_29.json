@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_29",
+  "request_hash": "90ddf9e1d2d55bcef2acacd6e491491375a0dd6b938b1612094b349b13746f2a",
+  "started_utc": "2026-11-13T08:14:59.299249+00:00",
+  "completed_utc": "2026-11-13T08:15:45.031147+00:00",
+  "elapsed_seconds": 45.734,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "00a3f33b-fb21-4b24-aa1b-cdda6bda0f35",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3823,
+    "completion_tokens": 7559,
+    "total_tokens": 11382,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6718
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1007
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-63e6ce93e1bc\",\"core\":[[\"距离（空间间隔）\",\"名词\",[\"s001\"],[\"wn31:n:05091408\",\"wn31:n:05136830\"],\"两点或两地之间的空间间隔；原文“距离”的具体核心义。\"],[\"使疏远；使保持心理距离\",\"动词\",[\"s002\"],[\"wn31:v:02688950\"],\"源“使疏远”；词典定义“keep at a distance”可兼容使动，但示例为 distance oneself，方向待复核。\"]],\"extended\":[[\"时间间隔\",\"名词\",[\"s001\"],[\"wn31:n:15197259\"],\"两时点之间的间隔；原“距离”可宽义兼容，但原文未限定为时间，列后学。\"]],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"核心为空间距离；扩展为时间间隔。原“距离”可兼容时间用法，但原文未明示，故保留源ID并显式拆分。\"},\"additions\":[[\"远处；远方\",\"名词\",[\"wn31:n:08573923\"],\"外部词典有“a distant region”义；原文“距离”不直接表示“远处”，候选未采用。\"],[\"（情感上的）冷淡；疏远\",\"名词\",[\"wn31:n:07521110\"],\"外部词典有“emotional distance”；原文仅动词“使疏远”，名词情感义未明示，候选未采用。\"],[\"远远领先；超过\",\"动词\",[\"wn31:v:02086042\"],\"外部词典有“outdistance”义；原文“使疏远”不含此义，候选未采用。\"]],\"reason\":\"先保留最具体的空间距离，再把动词“使疏远”作为同一词头的另一功能；时间间隔因原文未限定，放扩展而不混入核心。远处、情感冷淡、领先均为外部候选，不冒充原义。\",\"flags\":[[\"Minor\",\"semantic_role_direction_uncertain\",\"动词组依据 v:02688950，定义可兼容“使保持距离”，但示例 distance oneself 主要体现自我疏远，使动对象方向仍需复核。\"],[\"Info\",\"addition_candidates_not_adopted\",\"已列出远处、情感冷淡、远远领先三个外部候选，均未进入原文核心。\"],[\"Info\",\"source_scope_expanded_for_time\",\"时间间隔义以宽义改述进入扩展，原文“距离”未明确限定时间。\"]]},{\"id\":\"SG25-3a19589098bc\",\"core\":[[\"创办；创立（组织、机构）\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:02431950\",\"wn31:v:01650771\"],\"设立组织、机构或项目；“创办、创立”近义，对象为组织性实体。\"],[\"建立（制度、关系、基础、声誉等）\",\"动词\",[\"s003\"],[\"wn31:v:01659048\",\"wn31:v:00667394\",\"wn31:v:01650771\"],\"使抽象事物形成或确立；也可用于制度、法律等。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"证实；确认（观点、有效性）\",\"动词\",[\"wn31:v:00666706\"],\"外部词典有 establish validity/demonstrate 义；原文“创办、创立、建立”不直接表示“证实”，候选未采用。\"]],\"reason\":\"三个中文词都表“使成立”，但“创办/创立”典型对象是组织、机构，“建立”更常带制度、关系、基础等抽象对象；因此拆成两个核心组，不把对象差异合并掉。“证实”是外部独立义，留作候选。\",\"flags\":[[\"Info\",\"addition_candidate_not_adopted\",\"外部词典的“证实/确认”义重要但原文未含，已列 additions 待审。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

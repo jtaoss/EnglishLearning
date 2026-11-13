@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_after_001",
+  "kind": "audit",
+  "request_hash": "ba0690c5f50219d4d24ecee4839282a64d729e77410d657dce7558d78bb0eb5d",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a39c17a8-3a15-412b-8155-cb3ac2d6eb03",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7920fdeff9c5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘仪式/典礼’\",\"relation\":\"语义等价\",\"reason\":\"核心组1保留“仪式/礼仪程序”，宗教与非宗教均未排除；词典有宗教仪式程序及一般惯常礼仪证据。\",\"evidence_ids\":[\"wn31:n:01029801\",\"wn31:n:01032852\",\"pub:p6c5a:collins:ritual\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘惯常程序/固定做法’\",\"relation\":\"合理概括\",\"reason\":\"核心组2以“惯常做法/固定行为”概括原文程序义，并说明不专指步骤清单；词典有stereotyped behavior与customary practice支撑。\",\"evidence_ids\":[\"wn31:n:00415803\",\"wn31:n:01029801\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词‘仪式的/礼仪的’\",\"relation\":\"语义等价\",\"reason\":\"核心组3涵盖社会礼仪与宗教仪式两类形容词用法，与原文形容词义及两条形容词词典证据一致。\",\"evidence_ids\":[\"wn31:a:02903641\",\"wn31:a:02903908\",\"pub:p6c5a:collins:ritual\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个原文义项均进入核心：名词仪式、名词惯常做法、形容词仪式性的；核心覆盖完整，未把词典细分全部并入。\"},{\"id\":\"SG25-e3f48726b892\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘学习者’\",\"relation\":\"语义等价\",\"reason\":\"核心组2用“学习者”保留原文宽义，未把词典“尤指儿童”变成排他限制。\",\"evidence_ids\":[\"wn31:n:10271476\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘学者/有学问的人’\",\"relation\":\"语义等价\",\"reason\":\"核心组1“学者；文人”对应learned person（尤人文领域），保留原文学者义。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词‘文人/文学人’\",\"relation\":\"合理概括\",\"reason\":\"将“文人”并入“学者；文人”组，仍显示文人并落在人文学科有学问者范围内；未用“学者”单独替代。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个原文义项均有核心映射；“文人”与学者同组保留，奖学金获得者仅外部候选未进入来源层。\"}]}",
+  "usage": {
+    "prompt_tokens": 3675,
+    "completion_tokens": 6018,
+    "total_tokens": 9693,
+    "prompt_tokens_details": {
+      "cached_tokens": 2560
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5276
+    },
+    "prompt_cache_hit_tokens": 2560,
+    "prompt_cache_miss_tokens": 1115
+  },
+  "started_utc": "2026-11-13T09:33:57.789806+00:00",
+  "completed_utc": "2026-11-13T09:34:31.850251+00:00",
+  "elapsed_seconds": 34.063,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

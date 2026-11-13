@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_73",
+  "request_hash": "ce65b2c4dbd8e2d5c4045c8f7a8237d35bb976fee883babd432b377f35231d99",
+  "started_utc": "2026-11-13T08:17:20.632477+00:00",
+  "completed_utc": "2026-11-13T08:18:02.304262+00:00",
+  "elapsed_seconds": 41.672,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0a860f9f-c5e4-4e5d-b728-36c6dd21fb61",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2725,
+    "completion_tokens": 2047,
+    "total_tokens": 4772,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1895
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 677
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-64e8937abc6d\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"Candidate core correctly represents the source noun '保险' as generic insurance/guarantee using evidence wn31:n:13365819 and wn31:n:14563428. The policy/certificate sense (wn31:n:06535632) is properly isolated as a dictionary addition with status AI_candidate_not_adopted, not mixed into the core. No source-supported use is omitted; the source POS coverage is accurate.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,32 @@
+{
+  "tag": "verify_known_after_and_pursue_003_repair1",
+  "kind": "verify",
+  "request_hash": "8d61bae0a197d16ae1d23b153e1ac45037a8cba2a48a2ccecc5a4644c2b0de54",
+  "input_ids": [
+    "SG25-0f571e7c2d33"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e60c1ccb-89cd-4a6a-a0f2-0a69fdca529e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-0f571e7c2d33\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组1将s001的英文证据仅链接至WordNet“go in search of or hunt for”，注释称“词典定义为搜求/猎取，中文用‘追求’作宽义改述”。原中文“追求”常见包含“努力实现/达到目标”义，Collins观察明确列出“可努力实现目标或结果”，但该义未在该组文本、注释或证据中保留，也未在其他层出现，故s001被窄化为搜求/猎取。\",\n          \"evidence_ids\": [\"wn31:v:01320193\", \"pub:p6c5a:collins:pursue\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“追赶；追捕”对应WordNet“follow in or as if in pursuit”，方向、对象和意图均匹配原义。\",\n          \"evidence_ids\": [\"wn31:v:02004900\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“从事；参与”对应WordNet“carry out or participate in an activity”，词性、对象范围与原义一致。\",\n          \"evidence_ids\": [\"wn31:v:02380222\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"moderate\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-0f571e7c2d33:p6c5:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:v:01320193\", \"pub:p6c5a:collins:pursue\"],\n          \"reason\": \"核心组1的注释将s001的英文证据仅限定为WordNet“go in search of or hunt for”，并说明“词典定义为搜求/猎取，中文用‘追求’作宽义改述”。原中文“追求”常见包含“努力实现/达到目标”义，Collins观察明确列出“可努力实现目标或结果”，但该义未在该组文本或证据中保留，且未在其他层出现。因此s001被窄化为搜索/猎取，可能误导学习者忽略“追求理想/目标”的进取义。\",\n          \"counterexample\": \"“追求理想/目标”在英语中可用pursue a goal/ideal表示努力实现，仅按search/hunt无法覆盖；Collins观察支持该用法。\",\n          \"repair_suggestion\": \"在group1注释中加入“含努力实现目标、追求理想”并链接Collins观察或wn31:v:02381520作为补充证据；或者分裂出扩展组承载“努力实现目标”义，避免把“追求”窄化。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001的“追求”是否包含浪漫追求（court/woo）在原文无上下文，现有证据未提供对应义项；该用法未保留，需人工确认是否属于源语境。\",\n        \"原文只有单个源词性字段且无例句，无法确定各义项的对象范围；所有判断基于通用词典，不能完全排除源语境有意限于某子义。\"\n      ],\n      \"preferences\": [\n        \"如保留核心组1，可考虑在注释中把Collins观察与WordNet证据并列，明确“追求”含努力实现和寻找两义，避免学习者只按搜求/猎取理解。\"\n      ],\n      \"note\": \"独立审阅认为s002和s003语义等价，无缺陷。s001存在范围收窄：核心组注释和证据聚焦搜求/猎取，未保留原文“追求”的努力实现目标义，虽然组文本字面用了宽词“追求”，但注释将词典定义锁定为搜求/猎取，且未在其他层补足。外部候选wn31:v:02381520“推进；贯彻”不是原中文三个片段对应的必要含义，不纳入源缺口。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3432,
+    "completion_tokens": 5678,
+    "total_tokens": 9110,
+    "prompt_tokens_details": {
+      "cached_tokens": 2560
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4757
+    },
+    "prompt_cache_hit_tokens": 2560,
+    "prompt_cache_miss_tokens": 872
+  },
+  "started_utc": "2026-11-13T09:43:54.643621+00:00",
+  "completed_utc": "2026-11-13T09:45:14.246497+00:00",
+  "elapsed_seconds": 79.594,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

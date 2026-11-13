@@ -1,0 +1,2081 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "e4c67e6e73a2a72bade4c20835e7bba9c0b2b270d8ceeb0caf08502d8dfe3d38",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "part": 2,
+  "proposal_status": "AI_candidates_not_human_or_gold_standard",
+  "records": [
+    {
+      "stable_id": "SG25-4087b6426d9a",
+      "headword": "consultant",
+      "source_hash": "eabfce7ca5306685a19e3ae487a2644ebf5fa61eb6ff7337ab7bceafb7084c31",
+      "original_meaning_zh": "顾问",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "顾问",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "顾问",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:09793689"
+            ],
+            "usage_note": "以专业知识提供意见的人，不是所有普通建议者。",
+            "semantic_role_or_object": "以专业知识提供意见的人，不是所有普通建议者。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "顾问",
+          "semantic_role_or_object": "以专业知识提供意见的人，不是所有普通建议者。",
+          "evidence_ids": [
+            "wn31:n:09793689"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "原文为单一职业/角色用途，首次一组，专家提供建议的对象关系有证据。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:09793689",
+          "part_of_speech": "n",
+          "definition_en": "an expert who gives advice; \"an adviser helped students select their courses\"; \"the United States sent military advisors to Guatemala\"",
+          "lemmas": [
+            "adviser",
+            "advisor",
+            "consultant"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-3e64cc41cf8e",
+      "headword": "step",
+      "source_hash": "52221e73d95b42fc8e26072ee6138c347e23d98ca51418f0c384360e1aeed0b5",
+      "original_meaning_zh": "名词：步，步骤，台阶；动词：迈步",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "步",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "步骤",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "台阶",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "迈步",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "步；一步",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:00286401",
+              "wn31:n:13779389"
+            ],
+            "usage_note": "抬脚落脚的动作，或该动作走过的距离。",
+            "semantic_role_or_object": "抬脚落脚的动作，或该动作走过的距离。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "步骤；措施",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:00175261"
+            ],
+            "usage_note": "为达成目标而采取的一项行动，不是物理台阶。",
+            "semantic_role_or_object": "为达成目标而采取的一项行动，不是物理台阶。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "台阶",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:04322052"
+            ],
+            "usage_note": "上下楼梯时供脚踏的结构部分。",
+            "semantic_role_or_object": "上下楼梯时供脚踏的结构部分。",
+            "use_id": "core_03"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "迈步；走",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "wn31:v:01932791",
+              "wn31:v:02095956"
+            ],
+            "usage_note": "人用脚移动；与一步这个名词区分。",
+            "semantic_role_or_object": "人用脚移动；与一步这个名词区分。",
+            "use_id": "core_04"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "踩；踏（常用step on）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02095677"
+          ],
+          "reason": "脚放下或压到某物上的动作，迈步未明确表达接触/施压对象。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "步；一步",
+          "semantic_role_or_object": "抬脚落脚的动作，或该动作走过的距离。",
+          "evidence_ids": [
+            "wn31:n:00286401",
+            "wn31:n:13779389"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "步骤；措施",
+          "semantic_role_or_object": "为达成目标而采取的一项行动，不是物理台阶。",
+          "evidence_ids": [
+            "wn31:n:00175261"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "台阶",
+          "semantic_role_or_object": "上下楼梯时供脚踏的结构部分。",
+          "evidence_ids": [
+            "wn31:n:04322052"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_04",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "迈步；走",
+          "semantic_role_or_object": "人用脚移动；与一步这个名词区分。",
+          "evidence_ids": [
+            "wn31:v:01932791",
+            "wn31:v:02095956"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "踩；踏（常用step on）",
+          "semantic_role_or_object": "脚放下或压到某物上的动作，迈步未明确表达接触/施压对象。",
+          "evidence_ids": [
+            "wn31:v:02095677"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:v:02095677"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        },
+        {
+          "domain": "teaching_load",
+          "severity": "teaching_preference",
+          "evidence_ids": [
+            "wn31:n:00175261",
+            "wn31:n:00286401",
+            "wn31:n:04322052",
+            "wn31:n:13779389",
+            "wn31:v:01932791",
+            "wn31:v:02095677",
+            "wn31:v:02095956"
+          ],
+          "finding": "核心超过3组，已逐用法检查并保留差异；需人工复核记忆负担，不以删义达到数字。"
+        }
+      ],
+      "priority_rationale": "动作/距离、程序行动、实体台阶和迈步动词是四个独立理解点，保留4组并待人工复核负担；步的动作与距离可在同一名词组说明，不伪造新片段。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00175261",
+          "part_of_speech": "n",
+          "definition_en": "any maneuver made as part of progress toward a goal; \"the situation called for strong measures\"; \"the police took steps to reduce crime\"",
+          "lemmas": [
+            "measure",
+            "step"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00286401",
+          "part_of_speech": "n",
+          "definition_en": "the act of changing location by raising the foot and setting it down; \"he walked with unsteady steps\"",
+          "lemmas": [
+            "step"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04322052",
+          "part_of_speech": "n",
+          "definition_en": "support consisting of a place to rest the foot while ascending or descending a stairway; \"he paused on the bottom step\"",
+          "lemmas": [
+            "step",
+            "stair"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13779389",
+          "part_of_speech": "n",
+          "definition_en": "the distance covered by a step; \"he stepped off ten paces from the old tree and began to dig\"",
+          "lemmas": [
+            "footstep",
+            "pace",
+            "step",
+            "stride"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01932791",
+          "part_of_speech": "v",
+          "definition_en": "shift or move by taking a step; \"step back\"",
+          "lemmas": [
+            "step"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02095677",
+          "part_of_speech": "v",
+          "definition_en": "put down or press the foot, place the foot; \"For fools rush in where angels fear to tread\"; \"step on the brake\"",
+          "lemmas": [
+            "step",
+            "tread"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02095956",
+          "part_of_speech": "v",
+          "definition_en": "walk a short distance to a specified place or in a specified manner; \"step over to the blackboard\"",
+          "lemmas": [
+            "step"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "core_03"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_04"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-f9852209bcf6",
+      "headword": "policewoman",
+      "source_hash": "6e676bcbebe80ae8e9b964957e5b0bac474b135a3dcfd0e0e4e96ae0cfe66b24",
+      "original_meaning_zh": "女警察",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "女警察",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "女警察",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:10468986"
+            ],
+            "usage_note": "指女性警察；原文性别限定保留。",
+            "semantic_role_or_object": "指女性警察；原文性别限定保留。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "女警察",
+          "semantic_role_or_object": "指女性警察；原文性别限定保留。",
+          "evidence_ids": [
+            "wn31:n:10468986"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "单一人物职业名词，保留女性限定即可，不扩成所有警务人员。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10468986",
+          "part_of_speech": "n",
+          "definition_en": "a woman policeman",
+          "lemmas": [
+            "police_matron",
+            "policewoman"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-725ecdf25fb5",
+      "headword": "withstand",
+      "source_hash": "70cf2b03cb6d419103a14a6588b5b08288624b7f619248d3e7cea617fb8433b6",
+      "original_meaning_zh": "承受；经受住",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "承受",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "经受住",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "承受；经受住",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01119003",
+              "wn31:v:02712676"
+            ],
+            "usage_note": "抵御压力、冲击、攻击等而经得住；对象是外来作用，不只是中性接受。",
+            "semantic_role_or_object": "抵御压力、冲击、攻击等而经得住；对象是外来作用，不只是中性接受。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "承受；经受住",
+          "semantic_role_or_object": "抵御压力、冲击、攻击等而经得住；对象是外来作用，不只是中性接受。",
+          "evidence_ids": [
+            "wn31:v:01119003",
+            "wn31:v:02712676"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "两片段共同表达经受外力或困难的抵抗功能，合为一组并保留经受住的结果意味。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01119003",
+          "part_of_speech": "v",
+          "definition_en": "stand up or offer resistance to somebody or something",
+          "lemmas": [
+            "resist",
+            "hold_out",
+            "withstand",
+            "stand_firm"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02712676",
+          "part_of_speech": "v",
+          "definition_en": "resist or confront with resistance; \"The politician defied public opinion\"; \"The new material withstands even the greatest wear and tear\"; \"The bridge held\"",
+          "lemmas": [
+            "defy",
+            "withstand",
+            "hold",
+            "hold_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-c0d2856b74d0",
+      "headword": "field",
+      "source_hash": "da483c6adbf16af71ba9d762598bb2780e59d2bf8e61825c83907a48aa919065",
+      "original_meaning_zh": "田野；领域；字段",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "田野",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "领域",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "字段",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "田野；田地",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:08587527",
+              "wn31:n:09416498"
+            ],
+            "usage_note": "开阔的土地或耕作地；不由此涵盖所有专门场所。",
+            "semantic_role_or_object": "开阔的土地或耕作地；不由此涵盖所有专门场所。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "领域",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:06005806",
+              "wn31:n:14537641"
+            ],
+            "usage_note": "学科、活动或工作范围。",
+            "semantic_role_or_object": "学科、活动或工作范围。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "字段",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:08022022"
+            ],
+            "usage_note": "计算机中构成信息单位的一组字符；明确领域限定。",
+            "semantic_role_or_object": "计算机中构成信息单位的一组字符；明确领域限定。",
+            "use_id": "other_01"
+          }
+        ]
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "运动场；比赛场地",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08588287"
+          ],
+          "reason": "有指定运动用途的土地，原文田野不充分表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "实地；现场",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08587306"
+          ],
+          "reason": "与办公室、实验室相对的实践或采集数据环境，原文未明确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "场（物理）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:11477177"
+          ],
+          "reason": "电磁作用所在空间，不能用一般领域冒充物理概念。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "应答；处理（问题）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00817201"
+          ],
+          "reason": "回答问题的独立动词用途，源词性只有名词，候选不自动加进原文核心。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "田野；田地",
+          "semantic_role_or_object": "开阔的土地或耕作地；不由此涵盖所有专门场所。",
+          "evidence_ids": [
+            "wn31:n:08587527",
+            "wn31:n:09416498"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "领域",
+          "semantic_role_or_object": "学科、活动或工作范围。",
+          "evidence_ids": [
+            "wn31:n:06005806",
+            "wn31:n:14537641"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "other_01",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "字段",
+          "semantic_role_or_object": "计算机中构成信息单位的一组字符；明确领域限定。",
+          "evidence_ids": [
+            "wn31:n:08022022"
+          ],
+          "layer": "other",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "运动场；比赛场地",
+          "semantic_role_or_object": "有指定运动用途的土地，原文田野不充分表达。",
+          "evidence_ids": [
+            "wn31:n:08588287"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "实地；现场",
+          "semantic_role_or_object": "与办公室、实验室相对的实践或采集数据环境，原文未明确。",
+          "evidence_ids": [
+            "wn31:n:08587306"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "场（物理）",
+          "semantic_role_or_object": "电磁作用所在空间，不能用一般领域冒充物理概念。",
+          "evidence_ids": [
+            "wn31:n:11477177"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_04",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "应答；处理（问题）",
+          "semantic_role_or_object": "回答问题的独立动词用途，源词性只有名词，候选不自动加进原文核心。",
+          "evidence_ids": [
+            "wn31:v:00817201"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:08587306",
+            "wn31:n:08588287",
+            "wn31:n:11477177",
+            "wn31:v:00817201"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "先建立实地土地与抽象领域的区别，数据字段保留在带计算机限定的其他层；不是因为中文较长而后移。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06005806",
+          "part_of_speech": "n",
+          "definition_en": "a branch of knowledge; \"in what discipline is his doctorate?\"; \"teachers should be well trained in their subject\"; \"anthropology is the study of human beings\"",
+          "lemmas": [
+            "discipline",
+            "subject",
+            "subject_area",
+            "subject_field",
+            "field",
+            "field_of_study",
+            "study",
+            "bailiwick"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08022022",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) a set of one or more adjacent characters comprising a unit of information",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08587306",
+          "part_of_speech": "n",
+          "definition_en": "somewhere (away from a studio or office or library or laboratory) where practical work is done or data is collected; \"anthropologists do much of their work in the field\"",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08587527",
+          "part_of_speech": "n",
+          "definition_en": "a piece of land cleared of trees and usually enclosed; \"he planted a field of wheat\"",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08588287",
+          "part_of_speech": "n",
+          "definition_en": "a piece of land prepared for playing a game; \"the home crowd cheered when Princeton took the field\"",
+          "lemmas": [
+            "playing_field",
+            "athletic_field",
+            "playing_area",
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09416498",
+          "part_of_speech": "n",
+          "definition_en": "extensive tract of level open land; \"they emerged from the woods onto a vast open plain\"; \"he longed for the fields of his youth\"",
+          "lemmas": [
+            "plain",
+            "field",
+            "champaign"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:11477177",
+          "part_of_speech": "n",
+          "definition_en": "the space around a radiating body within which its electromagnetic oscillations can exert force on another similar body not in contact with it",
+          "lemmas": [
+            "field",
+            "field_of_force",
+            "force_field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14537641",
+          "part_of_speech": "n",
+          "definition_en": "a particular environment or walk of life; \"his social sphere is limited\"; \"it was a closed area of employment\"; \"he's out of my orbit\"",
+          "lemmas": [
+            "sphere",
+            "domain",
+            "area",
+            "orbit",
+            "field",
+            "arena"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00817201",
+          "part_of_speech": "v",
+          "definition_en": "answer adequately or successfully; \"The lawyer fielded all questions from the press\"",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "other_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_02",
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-758cb95fdc40",
+      "headword": "tailor",
+      "source_hash": "25a2243301f00bd5d18cdfa323063677dfe0974c28b433d51585108542c23986",
+      "original_meaning_zh": "名词：裁缝；动词：专门定制",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "裁缝",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "专门定制",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "裁缝",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:10709060"
+            ],
+            "usage_note": "以制作、修改衣物为业的人。",
+            "semantic_role_or_object": "以制作、修改衣物为业的人。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "专门定制；按需要调整",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:00302443"
+            ],
+            "usage_note": "调整产品、服务或方案以符合特定需要或市场；不局限衣服。",
+            "semantic_role_or_object": "调整产品、服务或方案以符合特定需要或市场；不局限衣服。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "裁制（衣服）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01670222"
+          ],
+          "reason": "直接用布制作衣服有词典证据；原文专门定制主要强调需求匹配，服装制作另列待审。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "裁缝",
+          "semantic_role_or_object": "以制作、修改衣物为业的人。",
+          "evidence_ids": [
+            "wn31:n:10709060"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "专门定制；按需要调整",
+          "semantic_role_or_object": "调整产品、服务或方案以符合特定需要或市场；不局限衣服。",
+          "evidence_ids": [
+            "wn31:v:00302443"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "裁制（衣服）",
+          "semantic_role_or_object": "直接用布制作衣服有词典证据；原文专门定制主要强调需求匹配，服装制作另列待审。",
+          "evidence_ids": [
+            "wn31:v:01670222"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:v:01670222"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "人物职业与满足特定需求的动词功能并列先学；动词以对象和目的说明，避免仅按名词派生理解。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10709060",
+          "part_of_speech": "n",
+          "definition_en": "a person whose occupation is making and altering garments",
+          "lemmas": [
+            "tailor",
+            "seamster",
+            "sartor"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00302443",
+          "part_of_speech": "v",
+          "definition_en": "adjust to a specific need or market; \"a magazine oriented towards young people\"; \"tailor your needs to your surroundings\"",
+          "lemmas": [
+            "tailor",
+            "orient"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01670222",
+          "part_of_speech": "v",
+          "definition_en": "create (clothes) with cloth; \"Can the seamstress sew me a suit by next week?\"",
+          "lemmas": [
+            "sew",
+            "tailor",
+            "tailor-make"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-d46bcc63d061",
+      "headword": "mainland",
+      "source_hash": "00f16c44bb06784931fc6c5cea544413730efdf256759adc490f1379333bc747",
+      "original_meaning_zh": "大陆；本土",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "大陆",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "本土",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "大陆；本土（相对于岛屿）",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:09369017"
+            ],
+            "usage_note": "国家或洲的主体陆块，相对附近岛屿；本土不能泛化为任何人的祖国。",
+            "semantic_role_or_object": "国家或洲的主体陆块，相对附近岛屿；本土不能泛化为任何人的祖国。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "大陆；本土（相对于岛屿）",
+          "semantic_role_or_object": "国家或洲的主体陆块，相对附近岛屿；本土不能泛化为任何人的祖国。",
+          "evidence_ids": [
+            "wn31:n:09369017"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "两个中文提示在主体陆块这一地理关系下可合并；保留相对于岛屿的限定以免本土过宽。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:09369017",
+          "part_of_speech": "n",
+          "definition_en": "the main land mass of a country or continent; as distinguished from an island or peninsula",
+          "lemmas": [
+            "mainland"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-9f2e6d33a371",
+      "headword": "head",
+      "source_hash": "20ecb243a1b07e9f87eb37d00b59b2bffb38c79f3a4b0b4674d6f333706f39a3",
+      "original_meaning_zh": "头；负责人",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "头",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "负责人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "头；头部",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:05546258"
+            ],
+            "usage_note": "人身体上部或动物身体前部。",
+            "semantic_role_or_object": "人身体上部或动物身体前部。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "负责人；领导者",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:10182584"
+            ],
+            "usage_note": "对组织或事务负责的人；不能从名词负责人自动派生成领导动词。",
+            "semantic_role_or_object": "对组织或事务负责的人；不能从名词负责人自动派生成领导动词。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "朝……前进；前往",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01939092"
+          ],
+          "reason": "方向移动的动词常有独立句法功能，原文只列名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "领导；主管",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02445109"
+          ],
+          "reason": "担任负责工作的动词，不等于负责人名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "顶部；前端",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08681922",
+            "wn31:n:08590014"
+          ],
+          "reason": "非身体物体的空间端部未在原文明确，单列可避免宽中文偷渡。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "头脑；思维",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05619057"
+          ],
+          "reason": "认知功能不同于身体部位，原文未明确表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "头；头部",
+          "semantic_role_or_object": "人身体上部或动物身体前部。",
+          "evidence_ids": [
+            "wn31:n:05546258"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "负责人；领导者",
+          "semantic_role_or_object": "对组织或事务负责的人；不能从名词负责人自动派生成领导动词。",
+          "evidence_ids": [
+            "wn31:n:10182584"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "朝……前进；前往",
+          "semantic_role_or_object": "方向移动的动词常有独立句法功能，原文只列名词。",
+          "evidence_ids": [
+            "wn31:v:01939092"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "领导；主管",
+          "semantic_role_or_object": "担任负责工作的动词，不等于负责人名词。",
+          "evidence_ids": [
+            "wn31:v:02445109"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "顶部；前端",
+          "semantic_role_or_object": "非身体物体的空间端部未在原文明确，单列可避免宽中文偷渡。",
+          "evidence_ids": [
+            "wn31:n:08681922",
+            "wn31:n:08590014"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_04",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "头脑；思维",
+          "semantic_role_or_object": "认知功能不同于身体部位，原文未明确表达。",
+          "evidence_ids": [
+            "wn31:n:05619057"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:05619057",
+            "wn31:n:08590014",
+            "wn31:n:08681922",
+            "wn31:v:01939092",
+            "wn31:v:02445109"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "身体部位和负责的人是原文明确的两个用途，先各记一组；头这个宽中文字不承接所有英语隐喻。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:05546258",
+          "part_of_speech": "n",
+          "definition_en": "the upper part of the human body or the front part of the body in animals; contains the face and brains; \"he stuck his head out the window\"",
+          "lemmas": [
+            "head",
+            "caput"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05619057",
+          "part_of_speech": "n",
+          "definition_en": "that which is responsible for one's thoughts, feelings, and conscious brain functions; the seat of the faculty of reason; \"his mind wandered\"; \"I couldn't get his words out of my head\"",
+          "lemmas": [
+            "mind",
+            "head",
+            "brain",
+            "psyche",
+            "nous"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08590014",
+          "part_of_speech": "n",
+          "definition_en": "the part in the front or nearest the viewer; \"he was in the forefront\"; \"he was at the head of the column\"",
+          "lemmas": [
+            "forefront",
+            "head"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08681922",
+          "part_of_speech": "n",
+          "definition_en": "the top of something; \"the head of the stairs\"; \"the head of the page\"; \"the head of the list\"",
+          "lemmas": [
+            "head"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:10182584",
+          "part_of_speech": "n",
+          "definition_en": "a person who is in charge; \"the head of the whole operation\"",
+          "lemmas": [
+            "head",
+            "chief",
+            "top_dog"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01939092",
+          "part_of_speech": "v",
+          "definition_en": "to go or travel towards; \"where is she heading\"; \"We were headed for the mountains\"",
+          "lemmas": [
+            "head"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02445109",
+          "part_of_speech": "v",
+          "definition_en": "be in charge of; \"Who is heading this project?\"",
+          "lemmas": [
+            "head",
+            "lead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_03",
+            "addition_04"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-0829103205fb",
+      "headword": "sunset",
+      "source_hash": "a05b73a46e7b11629e126d12c05ed0561c56d249f20929211d74a6fd4b1ead89",
+      "original_meaning_zh": "日落",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "日落",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "日落",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:07358615"
+            ],
+            "usage_note": "太阳在地平线下消失的日常事件。",
+            "semantic_role_or_object": "太阳在地平线下消失的日常事件。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "日落时分",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:15194295"
+            ],
+            "usage_note": "以日落事件定位傍晚时间，原片段可作此时间读法，显式拆解。",
+            "semantic_role_or_object": "以日落事件定位傍晚时间，原片段可作此时间读法，显式拆解。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "落日景象",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:11538209"
+          ],
+          "reason": "伴随日落的可见大气景象与事件/时间不同，原文未明确这种景象范围。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "日落",
+          "semantic_role_or_object": "太阳在地平线下消失的日常事件。",
+          "evidence_ids": [
+            "wn31:n:07358615"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "日落时分",
+          "semantic_role_or_object": "以日落事件定位傍晚时间，原片段可作此时间读法，显式拆解。",
+          "evidence_ids": [
+            "wn31:n:15194295"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "落日景象",
+          "semantic_role_or_object": "伴随日落的可见大气景象与事件/时间不同，原文未明确这种景象范围。",
+          "evidence_ids": [
+            "wn31:n:11538209"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "日落",
+              "semantic_role_or_object": "太阳在地平线下消失的日常事件。",
+              "evidence_ids": [
+                "wn31:n:07358615"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "日落时分",
+              "semantic_role_or_object": "以日落事件定位傍晚时间，原片段可作此时间读法，显式拆解。",
+              "evidence_ids": [
+                "wn31:n:15194295"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:11538209"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "首次理解天文/日常事件，随后区分该事件发生的时间；不把天空景象或政策到期都塞进单个日落提示。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07358615",
+          "part_of_speech": "n",
+          "definition_en": "the daily event of the sun sinking below the horizon",
+          "lemmas": [
+            "sunset"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:11538209",
+          "part_of_speech": "n",
+          "definition_en": "atmospheric phenomena accompanying the daily disappearance of the sun",
+          "lemmas": [
+            "sunset"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15194295",
+          "part_of_speech": "n",
+          "definition_en": "the time in the evening at which the sun begins to fall below the horizon",
+          "lemmas": [
+            "sunset",
+            "sundown"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-f4bf9f7fcbed",
+      "headword": "as",
+      "source_hash": "61ca9d47cdd65fb6136f1e5ce9e460dce4a34a3ef8c5a4d9b31c94122ec634ee",
+      "original_meaning_zh": "作为；当……时；因为；像……一样",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "作为",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "当……时",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "因为",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "像……一样",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 11,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "介词；连词；副词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "介词",
+            "display_zh": "作为；以……身份",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "pub:as"
+            ],
+            "usage_note": "后接身份、角色等名词短语。",
+            "semantic_role_or_object": "后接身份、角色等名词短语。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "连词",
+            "display_zh": "当……时",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:as"
+            ],
+            "usage_note": "引导时间从句，表示同时发生或随之发展。",
+            "semantic_role_or_object": "引导时间从句，表示同时发生或随之发展。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "连词",
+            "display_zh": "因为；由于",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "pub:as"
+            ],
+            "usage_note": "引导解释原因的从句；不是时间关系。",
+            "semantic_role_or_object": "引导解释原因的从句；不是时间关系。",
+            "use_id": "core_03"
+          },
+          {
+            "part_of_speech": "副词",
+            "display_zh": "同样地（as...as中的程度）",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "wn31:r:00022585",
+              "pub:as"
+            ],
+            "usage_note": "as...as中第一个as修饰形容词或副词的程度，中文整体为像……一样。",
+            "semantic_role_or_object": "as...as中第一个as修饰形容词或副词的程度，中文整体为像……一样。",
+            "use_id": "core_04"
+          },
+          {
+            "part_of_speech": "连词",
+            "display_zh": "和……一样（连接比较内容）",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "pub:as"
+            ],
+            "usage_note": "比较结构第二个as引入比较对象/从句；词性标签随语法体系可有差异。",
+            "semantic_role_or_object": "比较结构第二个as引入比较对象/从句；词性标签随语法体系可有差异。",
+            "use_id": "core_05"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "介词",
+          "meaning_zh": "作为；以……身份",
+          "semantic_role_or_object": "后接身份、角色等名词短语。",
+          "evidence_ids": [
+            "pub:as"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "连词",
+          "meaning_zh": "当……时",
+          "semantic_role_or_object": "引导时间从句，表示同时发生或随之发展。",
+          "evidence_ids": [
+            "pub:as"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "连词",
+          "meaning_zh": "因为；由于",
+          "semantic_role_or_object": "引导解释原因的从句；不是时间关系。",
+          "evidence_ids": [
+            "pub:as"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_04",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "同样地（as...as中的程度）",
+          "semantic_role_or_object": "as...as中第一个as修饰形容词或副词的程度，中文整体为像……一样。",
+          "evidence_ids": [
+            "wn31:r:00022585",
+            "pub:as"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_05",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "连词",
+          "meaning_zh": "和……一样（连接比较内容）",
+          "semantic_role_or_object": "比较结构第二个as引入比较对象/从句；词性标签随语法体系可有差异。",
+          "evidence_ids": [
+            "pub:as"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s004",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_04",
+              "part_of_speech": "副词",
+              "meaning_zh": "同样地（as...as中的程度）",
+              "semantic_role_or_object": "as...as中第一个as修饰形容词或副词的程度，中文整体为像……一样。",
+              "evidence_ids": [
+                "wn31:r:00022585",
+                "pub:as"
+              ]
+            },
+            {
+              "use_id": "core_05",
+              "part_of_speech": "连词",
+              "meaning_zh": "和……一样（连接比较内容）",
+              "semantic_role_or_object": "比较结构第二个as引入比较对象/从句；词性标签随语法体系可有差异。",
+              "evidence_ids": [
+                "pub:as"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "pub:as",
+            "wn31:r:00022585"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "teaching_load",
+          "severity": "teaching_preference",
+          "evidence_ids": [
+            "pub:as",
+            "wn31:r:00022585"
+          ],
+          "finding": "核心超过3组，已逐用法检查并保留差异；需人工复核记忆负担，不以删义达到数字。"
+        }
+      ],
+      "priority_rationale": "身份、时间、原因及相等比较均为原文明示的功能；比较中两处as词性不同，保留5组并触发人工负担复核。源功能词证据须来自出版社，不能把WordNet缺项当作不存在。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:as",
+          "headword": "as",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/as",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "分列身份角色介词、同时发生的时间连词、解释原因的连词；比较结构as...as涉及程度副词和第二个as连接比较内容，另有方式连词等。词典词性随结构，不是所有as都一种用法。",
+          "pos_supported": [
+            "介词",
+            "连词",
+            "副词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:r:00022585",
+          "part_of_speech": "r",
+          "definition_en": "to the same degree (often followed by `as'); \"they were equally beautiful\"; \"birds were singing and the child sang as sweetly\"; \"sang as sweetly as a nightingale\"; \"he is every bit as mean as she is\"",
+          "lemmas": [
+            "equally",
+            "as",
+            "every_bit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "介词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "连词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02",
+            "core_03",
+            "core_05"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "副词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_04"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "相等比较的第二个as在接名词短语和从句时，教材最终采用介词还是连词标签需统一；本提案使用补充包的连接比较内容标签。"
+      ]
+    }
+  ],
+  "count": 10,
+  "external_access_failures": [
+    {
+      "headword": "issue",
+      "url": "https://dictionary.cambridge.org/dictionary/english/issue",
+      "http_status": 403,
+      "observation_zh": "网页工具返回Forbidden，未获得定义；未将失败访问当作词义证据。随后另查出版社Merriam-Webster。"
+    }
+  ]
+}

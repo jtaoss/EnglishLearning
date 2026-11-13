@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_19",
+  "request_hash": "89e91a046a08c2c74f572c1c4454a57e8b7b0b5efdfd6f40f2a76d7a40c05721",
+  "started_utc": "2026-11-13T08:16:13.698818+00:00",
+  "completed_utc": "2026-11-13T08:16:53.816117+00:00",
+  "elapsed_seconds": 40.125,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ceeab6b9-d02a-4e30-a1b8-66261b2a9e80",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2817,
+    "completion_tokens": 2038,
+    "total_tokens": 4855,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1759
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2817
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-f4873b35ecfe\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源片段“保护”较宽，提供的三个WordNet义项中无直接表示一般性保护活动的名词义；n:07434199为事件/结果义，n:00820935为环境/资源专门义，故候选将其保留暂存合理，但该覆盖缺口仍属待定而非已解决。\",\n          \"evidence_ids\": [\n            \"wn31:n:07434199\",\n            \"wn31:n:00820935\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": null\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"候选核心义直接对应源片段“保护自然环境”，证据充分；宽泛“保护”因无直接匹配义项被放入暂存区而非错误合并，物理“守恒”作为外部候选单列且未自动提升，整体处理符合规则。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

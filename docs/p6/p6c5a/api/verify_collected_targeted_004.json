@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_004",
+  "kind": "verify",
+  "request_hash": "e010b27215dd170037e98e907face7f93165ed64326abb134f4722c65e4f1595",
+  "input_ids": [
+    "SG25-0487c249731a",
+    "SG25-a0561fd649cd"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "bdaba688-97d6-49e9-80fa-90a49660cc57",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-0487c249731a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心“程序；手续”概括了手续与程序；证据 wn31:n:00578105（实际/机械工作的过程或系列行为）和 wn31:n:01025578（法律/议会程序方式）支持该概括，未新增排他对象限制。\",\n          \"evidence_ids\": [\"wn31:n:00578105\", \"wn31:n:01025578\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“程序”对应具体行动过程和法律程序，与原文“程序”一致；证据 wn31:n:00578105 和 wn31:n:01025578 覆盖该用途。\",\n          \"evidence_ids\": [\"wn31:n:00578105\", \"wn31:n:01025578\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展“过程（按步骤办事）”仅保留 procedure 的按步骤办事过程；原文“过程”若泛指自然发展/事件进程，英语 procedure 证据不支持，属于来源中文偏宽。\",\n          \"evidence_ids\": [\"wn31:n:00578105\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s003 原文“过程”是否仅指按步骤办事过程，还是包括自然/事件进程；现有英语证据仅支持步骤性过程，自然进程是否需另行标记待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"三个源义均有链接；核心覆盖程序/手续，扩展覆盖步骤性过程并已注明非任意自然过程；无确认覆盖缺陷。\"\n    },\n    {\n      \"id\": \"SG25-a0561fd649cd\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“进入权”与 wn31:n:05183715（进入的权利）一致；原文名词“进入权”得到直接覆盖，未扩大或缩小。\",\n          \"evidence_ids\": [\"wn31:n:05183715\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展“获取途径”仅用 wn31:n:02673692（进出通道）作证，实际覆盖物理进出通道；原文“获取途径”可涵盖获得/使用的权利或机会，wn31:n:05182994 直接支持该范围但未链接。\",\n          \"evidence_ids\": [\"wn31:n:02673692\", \"wn31:n:05182994\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心“访问”概括了物理进入/到达（v:02011431）与计算机存储信息读取（v:02253616）；与原文动词“访问”一致，未超出英语 access 动词证据。\",\n          \"evidence_ids\": [\"wn31:v:02011431\", \"wn31:v:02253616\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展“获取”仅由 wn31:v:02253616（从存储设备检索信息）支持；英语 access 动词不覆盖一般“获得”，目标标签宽泛但证据收窄至数据/信息检索。\",\n          \"evidence_ids\": [\"wn31:v:02253616\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_scope_mismatch\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-a0561fd649cd:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:02673692\", \"wn31:n:05182994\"],\n          \"reason\": \"扩展“获取途径”只挂 wn31:n:02673692（进出通道），把含义收窄为物理通道；原文“获取途径”在英语 access 名词中还涵盖获得/使用的权利或机会，已提供证据 wn31:n:05182994 未采用。\",\n          \"counterexample\": \"the right to obtain or make use of services/membership（获得/使用服务的权利或机会）\",\n          \"repair_suggestion\": \"补链 wn31:n:05182994，并在注释区分“通道/入口”与“获得/使用的权利/机会”；或说明该项仅覆盖物理通道且剩余范围待核。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_qualification\",\n          \"source_ids\": [\"s004\"],\n          \"group_ids\": [\"SG25-a0561fd649cd:extended:2\"],\n          \"evidence_ids\": [\"wn31:v:02253616\"],\n          \"reason\": \"扩展动词“获取”未限定对象，但唯一证据 wn31:v:02253616 仅支持从存储设备检索/获取信息；若按一般“获得”理解，则超出英语 access 动词范围。\",\n          \"counterexample\": \"access the attic 是进入/到达，不是一般 obtain；access stored information 是检索/读取\",\n          \"repair_suggestion\": \"将显示改为“获取/检索（数据、信息）”或加注释限定为计算机/存储语境，避免误读为通用 obtain。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002“获取途径”在原文中是否包含“权利/机会”还是仅“通道/方法”尚不明确；现有证据可覆盖前者但未采用。\",\n        \"s004原“获取”是否仅指计算机数据检索，还是泛指一般获得；来源未注语境。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"四个源义均有链接；核心进入权/访问较稳；扩展获取途径和获取的英语证据范围需要限定，存在两个 Minor 级证据/限定问题。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5031,
+    "completion_tokens": 6920,
+    "total_tokens": 11951,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5573
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3367
+  },
+  "started_utc": "2026-11-13T09:56:48.943458+00:00",
+  "completed_utc": "2026-11-13T09:58:14.037288+00:00",
+  "elapsed_seconds": 85.093,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

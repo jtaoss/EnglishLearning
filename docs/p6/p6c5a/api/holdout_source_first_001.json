@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_001",
+  "kind": "holdout",
+  "request_hash": "7daf58fe7acf5c167b8e450572760c7ef2a0b53e578e8d6067d343d85f9ab90f",
+  "input_ids": [
+    "SG25-c082456a7766",
+    "SG25-29a8825bd242"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "814133ec-eabd-4789-8e4b-86428ee1ac50",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c082456a7766\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"名词：媒介\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:n:06264605\",\n            \"wn31:n:06272239\",\n            \"wn31:n:14923303\",\n            \"wn31:n:06264799\"\n          ],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词：手段\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:n:06264799\",\n            \"wn31:n:14923303\"\n          ],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"形容词：中等的\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:s:01536076\"\n          ],\n          \"uncertainty\": \"低\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词：媒介\",\n        \"名词：手段\",\n        \"形容词：中等的\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"核心基于原文明确标注的词性和释义。部分词典义项（如灵媒、绘画用液体、细菌培养基等）未采纳，因原文未包含这些特定领域用法。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"灵媒（与亡者沟通的人）\",\n          \"evidence_ids\": [\"wn31:n:10325946\"]\n        },\n        {\n          \"text\": \"周围环境\",\n          \"evidence_ids\": [\"wn31:n:08585671\"]\n        },\n        {\n          \"text\": \"中间状态\",\n          \"evidence_ids\": [\"wn31:n:13943202\"]\n        },\n        {\n          \"text\": \"细菌培养基\",\n          \"evidence_ids\": [\"wn31:n:14923479\"]\n        },\n        {\n          \"text\": \"生物标本保存或展示用物质\",\n          \"evidence_ids\": [\"wn31:n:14923681\"]\n        },\n        {\n          \"text\": \"画家混合颜料用液体\",\n          \"evidence_ids\": [\"wn31:n:14924039\"]\n        },\n        {\n          \"text\": \"（肉）煮至中间略带粉红\",\n          \"evidence_ids\": [\"wn31:s:00620371\"]\n        },\n        {\n          \"text\": \"非常适合的职业\",\n          \"evidence_ids\": [\"wn31:n:00611490\"]\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-29a8825bd242\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"形容词：简短的\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:s:00549386\",\n            \"wn31:s:01445717\"\n          ],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词：概要\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:n:06480311\"\n          ],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"动词：向……介绍情况\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": null,\n          \"evidence_ids\": [\n            \"wn31:v:00832934\"\n          ],\n          \"uncertainty\": \"低\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：简短的\",\n        \"名词：概要\",\n        \"动词：向……介绍情况\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"核心与原文一致。词典中的法律文书（brief）和衣物极短用法未纳入核心，因其范围明显窄于原文的一般释义。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"法律文件（陈述案件事实与法律要点）\",\n          \"evidence_ids\": [\"wn31:n:06555772\"]\n        },\n        {\n          \"text\": \"（衣物）非常短\",\n          \"evidence_ids\": [\"wn31:s:01439307\"]\n        }\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3370,
+    "completion_tokens": 4738,
+    "total_tokens": 8108,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3730
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3370
+  },
+  "started_utc": "2026-11-13T09:33:06.697443+00:00",
+  "completed_utc": "2026-11-13T09:34:14.316695+00:00",
+  "elapsed_seconds": 67.625,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

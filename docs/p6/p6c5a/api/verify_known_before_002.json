@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_before_002",
+  "kind": "verify",
+  "request_hash": "8d8cb771602e6c31e78e00056c70f181fc11ce5b17fbe9fcff30c711958b2df2",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b3230758-b86b-46aa-b845-5e075ab622bb",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-093e7d5fdbaa\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原片段词性未定但源词性含名词和动词；名词组1覆盖沟通互动/联系状态，动词组3覆盖建立/进行沟通，均与英语证据相符，未遗漏该片段在原语境下的用途。\",\n          \"evidence_ids\": [\"wn31:n:07293990\", \"wn31:n:00040035\", \"wn31:v:00745330\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原片段词性未定；名词组2覆盖物理触碰、紧邻或相碰，动词组4覆盖使某物与另一物发生物理接触，均与证据相符。\",\n          \"evidence_ids\": [\"wn31:n:00125700\", \"wn31:n:14442914\", \"wn31:n:07353929\", \"wn31:v:01208316\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"源词性未定，候选按名词和动词分别覆盖，处理得当；未混入隐形眼镜、电路触点、人脉等词典外部义。\"\n    },\n    {\n      \"id\": \"SG25-bf0bb4ee60e2\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"组1将“伸展”仅限定为主动伸展身体部位，而证据中还有非身体对象的向外伸展用法（如 v02695935、v02058913），这些用途未链接到本原义，也未在其它组中声明覆盖，构成对象范围收窄。\",\n          \"evidence_ids\": [\"wn31:v:00027261\", \"wn31:v:02695935\", \"wn31:v:02058913\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原义“变宽”为不及物变化义，现有证据多为及物“使变宽/扩大范围”或空间跨度，未直接证明英语 extend 有不及物“become wider”用法，暂存待核。\",\n          \"evidence_ids\": [\"wn31:v:00541315\", \"wn31:v:00235827\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"组2覆盖空间或时间上的延伸、向外伸出，以不及物为主，与英语证据相符；未发现明显缺失。\",\n          \"evidence_ids\": [\"wn31:v:02691775\", \"wn31:v:02693758\", \"wn31:v:02695935\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"minor\",\n          \"kind\": \"range_narrowing\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-bf0bb4ee60e2:p6c5:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:v:00027261\", \"wn31:v:02695935\", \"wn31:v:02058913\"],\n          \"reason\": \"原义“伸展”并未限定对象仅为身体部位，英语 extend 也支持非身体对象的向外伸展；候选组1明确加上了“对象为身体部位”的限制且没有其他组补齐该用法，造成原义覆盖收窄。\",\n          \"counterexample\": \"“遮阳篷向外伸展”对应 “The awning extends several feet over the sidewalk”（wn31:v:02695935）；“伸展天线”对应 “extend the TV antenna”（wn31:v:02058913）。\",\n          \"repair_suggestion\": \"将组1的对象范围扩展至非身体对象，或新增一组链接到 s001 以覆盖向外伸展/展开的非身体用法，并引用 v02695935、v02058913 等证据。\"\n        }\n      ],\n      \"unresolved\": [\n        {\n          \"source_id\": \"s002\",\n          \"issue\": \"缺少英语 extend 表示“变宽”（不及物变化）的直接证据；现有词典中 v00541315 等均为及物扩大范围，不适用于原义。\",\n          \"evidence_reviewed\": [\"wn31:v:00541315\", \"wn31:v:00235827\", \"wn31:v:02691775\"]\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 存在非身体对象伸展的收窄缺陷，s002 已正确暂存但证据仍不足，s003 覆盖基本完整。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5425,
+    "completion_tokens": 8337,
+    "total_tokens": 13762,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7262
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 5425
+  },
+  "started_utc": "2026-11-13T09:38:39.460419+00:00",
+  "completed_utc": "2026-11-13T09:40:47.444889+00:00",
+  "elapsed_seconds": 127.985,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

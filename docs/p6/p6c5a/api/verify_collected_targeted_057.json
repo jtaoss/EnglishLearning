@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_057",
+  "kind": "verify",
+  "request_hash": "72c1f95a3463616461bd0ed80186b17130ad52e9185988fab0088eb74e0042e7",
+  "input_ids": [
+    "SG25-795b6904e54f",
+    "SG25-6df37daaa46c"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "515ede7a-a328-477c-92af-03d678aab424",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-795b6904e54f\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"来源中文“垃圾”作为名词通常指一般废弃物/垃圾；候选核心文本为“垃圾”，未在字面上收窄，但唯一链接的WordNet证据仅覆盖“厨房丢弃食物”，未提供一般废弃物（如纸张、塑料等非厨余垃圾）的英语证据。在该来源范围内英语证据不足，暂无法确认完整语义等价。\",\n          \"evidence_ids\": [\"wn31:n:14881302\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_range_pending\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-795b6904e54f:p6c1:core:1\"],\n          \"evidence_ids\": [\"wn31:n:14881302\"],\n          \"reason\": \"候选核心字面保留一般“垃圾”，但所用证据只是厨房丢弃食物，不能直接支撑一般废弃物范围；其他WordNet证据分别为容器和“无价值消息”，也不覆盖一般废弃物。这是来源范围宽于英语证据的待核问题，而非已证实的语义收窄。\",\n          \"counterexample\": \"非厨余生活垃圾（如废纸、塑料）在已给证据中无对应义项，但在来源中文中通常属于“垃圾”范围。\",\n          \"repair_suggestion\": \"补充一般废弃物义项的证据，或暂时在核心注释中说明当前证据仅覆盖厨余垃圾、一般废弃物范围待核，不要把厨房垃圾证据当作一般垃圾已完整核验。\"\n        }\n      ],\n      \"unresolved\": [\n        \"一般废弃物（非厨余）的英语词典证据尚未提供，来源范围是否完整覆盖待核。\",\n        \"候选核心显示一般“垃圾”，但当前证据链不能确认首屏显示所声称的一般范围。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"独立核验：目标文本与源相同，未造成明显收窄；但证据不足使来源范围无法关闭。不采纳将厨余子类证据直接视为一般垃圾完整证据的自动判定。\"\n    },\n    {\n      \"id\": \"SG25-6df37daaa46c\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“星期”作为名词在该并列语境中表示七天一周的时间单位；候选“星期；周（七天的一段时间）”保留该义，并用WordNet“any period of seven consecutive days”作为证据，未新增排他限制。\",\n          \"evidence_ids\": [\"wn31:n:15194920\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“周”同样表示七天为一周期的时间单位；候选以“周（七天的一段时间）”覆盖，证据支持任意连续七天，与来源保持一致。\",\n          \"evidence_ids\": [\"wn31:n:15194920\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"中文“星期”是否在本教材中存在“星期日/星期几”的日曜义，单字来源无法判断；当前候选按七天周期处理，若原文有该用法需另行核验。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"该候选将“星期”和“周”合并为七天周期的同义表达，证据选用通用连续七天义，而非限制在周日起算或工作周；在当前语义范围内无已确认缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 2923,
+    "completion_tokens": 4807,
+    "total_tokens": 7730,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3988
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1259
+  },
+  "started_utc": "2026-11-13T10:00:03.471845+00:00",
+  "completed_utc": "2026-11-13T10:01:12.312139+00:00",
+  "elapsed_seconds": 68.844,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

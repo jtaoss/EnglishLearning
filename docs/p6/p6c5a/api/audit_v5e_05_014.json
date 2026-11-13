@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_014",
+  "kind": "audit",
+  "request_hash": "23b7a1e8cde22cc81f5affc3b65c8c53844ba730b7a87b3c2fea57003b2c4fe4",
+  "input_ids": [
+    "SG25-a9f4b3d22a52",
+    "SG25-c9195f094689",
+    "SG25-13d853006f71",
+    "SG25-815fbec040e3",
+    "SG25-943ae60b331d"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "9ef9e33b-c18f-40a9-9061-f556f79ffc0f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-a9f4b3d22a52\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：对问题等作出的回答\",\"relation\":\"语义等价\",\"reason\":\"核心组直接保留“回答”，词典证据覆盖答复语句和对话应答；组注释中的问题、请求、批评等是示例，不构成排他限制。\",\"evidence_ids\":[\"wn31:n:06758700\",\"wn31:n:07214225\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：答复、回复\",\"relation\":\"语义等价\",\"reason\":\"“答复”与核心组“回答；答复”一致，证据支持口头或书面的 reply/answer；未把生理或设备反应混入。\",\"evidence_ids\":[\"wn31:n:06758700\",\"wn31:n:07214225\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"dictionary_addition_observation\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-a9f4b3d22a52:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:11437102\"],\"reason\":\"response 的“结果”义有词典证据，但未列入未采用外部候选；该义不在原文“回答；答复”范围内，不影响核心覆盖。\",\"repair_suggestion\":\"可在外部候选或观察项补充“结果”义，但不要因此进入核心。\"}],\"note\":\"两个源义均为名词性回答/答复，核心组合并覆盖；生理/设备反应和结果义留作外部观察，不进入核心。\"},{\"id\":\"SG25-c9195f094689\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：对职责或行为负责、可问责\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“负责的；有责任的”，a:02003477 支持 accountable/须问责；因果义另置核心2，未混入。\",\"evidence_ids\":[\"wn31:a:02003477\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：有责任、应受问责\",\"relation\":\"语义等价\",\"reason\":\"“有责任的”与核心1的问责义对应，证据支持 held accountable；注释未把它扩展为纯因果。\",\"evidence_ids\":[\"wn31:a:02003477\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：是……的原因、造成某事\",\"relation\":\"语义等价\",\"reason\":\"核心2保留“造成某事的；是……的原因”，s:00325776 支持 agent/cause；该用法需结合 responsible for 句式，与原用法说明一致。\",\"evidence_ids\":[\"wn31:s:00325776\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三源义分别落在责任/问责与因果两组；信用可靠义仅作外部候选，未混入核心，覆盖完整。\"},{\"id\":\"SG25-13d853006f71\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：为活动、项目等提供赞助或资助\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“赞助；资助”，v:02224722 支持 assume sponsorship of；对象列举为示例，不是排他限制。\",\"evidence_ids\":[\"wn31:v:02224722\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：发起、牵头某事\",\"relation\":\"合理概括\",\"reason\":\"核心2以“发起；倡议；牵头”概括，v:02224930 支持承担责任或领导；原文“发起”保留，且与出资赞助义分开。\",\"evidence_ids\":[\"wn31:v:02224930\"],\"context\":\"none\",\"residual_scope\":\"多出近义“倡议/牵头”（属可接受概括）\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：赞助者，通常指出资赞助方\",\"relation\":\"范围扩大\",\"reason\":\"核心3写作“赞助者；支持者”，但 n:10427699 只给宽义 supporter/champion；组注释也承认“出资赞助商”窄义未由该定义单独证实，故相对原文有扩大和证据不足。\",\"evidence_ids\":[\"wn31:n:10427699\"],\"context\":\"uncertain\",\"residual_scope\":\"多出宽泛“支持者/拥护者”；“出资赞助商”窄义证据不足\",\"counterexample\":\"supporter/champion 可涵盖非出资的支持者，不能单独证明原文“赞助者”的出资义\",\"counterexample_evidence_ids\":[\"wn31:n:10427699\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_evidence_gap\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-13d853006f71:p6c5:core_meanings:3\"],\"evidence_ids\":[\"wn31:n:10427699\"],\"reason\":\"核心3把“赞助者”扩为“支持者”，且注释承认出资赞助商窄义未被所给名词定义证实；原文“赞助者”通常指出资赞助方，存在范围扩大与证据不足风险。\",\"repair_suggestion\":\"补入明确支持“出资赞助商”的名词证据，或将该窄义标为待核；宽泛 supporter/champion 宜作注释或扩展层，不应替代核心窄义。\"}],\"note\":\"动词赞助与发起分列，名词赞助者仍有出资窄义证据不足；核心3需补证或明确待核，故本词整体为部分覆盖。\"},{\"id\":\"SG25-815fbec040e3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：婚姻关系中的配偶\",\"relation\":\"语义等价\",\"reason\":\"核心组直接保留“配偶”，n:10660018 的 partner in marriage 完全对应，性别中立。\",\"evidence_ids\":[\"wn31:n:10660018\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文仅有“配偶”一个名词义，核心组与词典定义精确对应，无需拆分或暂存。\"},{\"id\":\"SG25-943ae60b331d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：内在实质、本质\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“实质；本质”，n:05929717 支持 essential/gist；注释排除物理材料，与原文抽象义一致。\",\"evidence_ids\":[\"wn31:n:05929717\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：本旨、主要意图\",\"relation\":\"语义等价\",\"reason\":\"核心2保留“本旨；主旨”，n:05928460 的 idea intended/meaning 支持；与“实质”按意图对象区分。\",\"evidence_ids\":[\"wn31:n:05928460\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：物质、构成材料\",\"relation\":\"语义等价\",\"reason\":\"核心3保留“物质”，n:00019793 的 real physical matter 支持；未把资产、财力等外部义混入。\",\"evidence_ids\":[\"wn31:n:00019793\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义分别覆盖抽象实质、本旨和物理物质；资产/财力仅外部候选，核心分层清楚。\"}]}",
+  "usage": {
+    "prompt_tokens": 5803,
+    "completion_tokens": 15717,
+    "total_tokens": 21520,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 13835
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3883
+  },
+  "started_utc": "2026-11-13T09:48:22.480548+00:00",
+  "completed_utc": "2026-11-13T09:49:49.631083+00:00",
+  "elapsed_seconds": 87.156,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

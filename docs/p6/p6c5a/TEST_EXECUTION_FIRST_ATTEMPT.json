@@ -1,0 +1,76 @@
+{
+  "all_passed": false,
+  "python_tests": 41,
+  "Dart_contract_tests": 9,
+  "commands": [
+    {
+      "name": "python_scope_guard",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/p6c5a",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_file": "docs/p6/p6c5a/verification/python_scope_guard.txt",
+      "test_count": 21
+    },
+    {
+      "name": "python_old_C5",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/p6c5",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_file": "docs/p6/p6c5a/verification/python_old_C5.txt",
+      "test_count": 20
+    },
+    {
+      "name": "flutter_contracts",
+      "command": [
+        "cmd",
+        "/c",
+        "E:\\dev\\flutter\\bin\\flutter.bat",
+        "test",
+        "--no-pub",
+        "--reporter",
+        "expanded",
+        "test/p6c5a/scope_guard_contract_test.dart",
+        "test/p6c5/full_candidates_contract_test.dart"
+      ],
+      "exit_code": 0,
+      "output_file": "docs/p6/p6c5a/verification/flutter_contracts.txt",
+      "test_count": 9
+    },
+    {
+      "name": "dart_analyze",
+      "command": [
+        "cmd",
+        "/c",
+        "E:\\dev\\flutter\\bin\\dart.bat",
+        "analyze",
+        "test/p6c5a/scope_guard_contract_test.dart"
+      ],
+      "exit_code": 3,
+      "output_file": "docs/p6/p6c5a/verification/dart_analyze.txt"
+    }
+  ],
+  "semantic_gate_not_implied": true,
+  "production_build_not_needed_for_isolated_data_review": true
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_011",
+  "kind": "verify",
+  "request_hash": "83911f8072e35561c17a54b447510eec4fa7e5dad9b9d84977c66f5e99437c73",
+  "input_ids": [
+    "SG25-596d40a4ed24",
+    "SG25-85ca6d6d291c"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ca77b5cc-e5d3-428c-b521-caa99854afac",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-596d40a4ed24\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"证据n:06768279（作为依据的假定）与n:06783666（协议要求条款）覆盖名词“条件/前提”，组文本未添加排他对象限制。\",\n          \"evidence_ids\": [\"wn31:n:06768279\", \"wn31:n:06783666\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"证据n:13943868（特定时间的状态）直接支持名词“状况”，组文本保持一致。\",\n          \"evidence_ids\": [\"wn31:n:13943868\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义不匹配\",\n          \"reason\": \"源义“使适应”通常指一般适应/习惯于，但证据v:02559394为行为训练/纪律，v:02577683为建立条件反射，未覆盖一般适应义；组文本保留“使适应”但证据不支持，造成不匹配。\",\n          \"evidence_ids\": [\"wn31:v:02559394\", \"wn31:v:02577683\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"v:00207826“put into a better state”可概括“调理”的改善状态义，v:00041418护发为具体例，组文本未限定为护发。\",\n          \"evidence_ids\": [\"wn31:v:00041418\", \"wn31:v:00207826\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"semantic_mismatch_unsupported_sense\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-596d40a4ed24:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:02559394\", \"wn31:v:02577683\"],\n          \"reason\": \"源义“使适应”在无上下文时通常指一般性适应/习惯于，但所用证据仅覆盖行为训练/条件反射（心理学），未提供一般适应义；候选层仅有此组覆盖s003，导致该义项显示为“使适应”却无对应英语证据，可能误导学习者把condition理解为任何适应行为。\",\n          \"counterexample\": \"例如“condition oneself to cold”意为使自己适应寒冷，需要一般适应义，而v:02559394/v:02577683不适用。\",\n          \"repair_suggestion\": \"将s003标为来源范围待核/无法确定，或在扩展组注明该义项仅覆盖心理/行为训练意义，另寻一般“使适应”的英语证据；不得沿用“使适应”作为无支持的一般义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"源义s003“使适应”的确切适用范围无法从原始材料确定：可能是通用适应、也可能是条件反射训练；当前提供的WordNet证据不足，无法确认究竟缺失多大范围。\",\n        \"未采用词典补充义（如v:01020937合同规定、v:02559394可视为训练等）是否应纳入其他层级未明确。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词条件/状况及动词调理的映射可接受；动词使适应的证据支持范围明显窄于最常见理解，建议待核后再确定教学层级。\"\n    },\n    {\n      \"id\": \"SG25-85ca6d6d291c\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"证据n:01223473（manner of acting or controlling yourself）直接支持名词“行为”，未添加排他对象限制。\",\n          \"evidence_ids\": [\"wn31:n:01223473\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"证据v:02450374（direct the course of; manage or control）覆盖“组织/管理”活动语境，组文本未将business示例写成唯一对象。\",\n          \"evidence_ids\": [\"wn31:v:02450374\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“指挥”在所提供的原始材料中与音乐指挥语境对应（见web:conduct观察），证据v:01736802/v:01737094均为音乐指挥；未发现一般指挥义的明确来源。若一般指挥义属于源范围则为未覆盖，但现有证据不支持该假设。\",\n          \"evidence_ids\": [\"wn31:v:01736802\", \"wn31:v:01737094\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"证据v:02084180（transmit or serve as medium）支持物理“传导”，示例未被写成排他限制。\",\n          \"evidence_ids\": [\"wn31:v:02084180\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源s003“指挥”是否包含非音乐的一般指挥/带领义无法确定；现有证据仅覆盖音乐，若原范围更宽则存在残余缺口。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"行为名词、组织/管理及物理传导映射可接受；音乐指挥证据充分，但需标注音乐语境以避免读者误推至一般指挥义。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6274,
+    "completion_tokens": 7072,
+    "total_tokens": 13346,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5830
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 4610
+  },
+  "started_utc": "2026-11-13T09:56:48.873072+00:00",
+  "completed_utc": "2026-11-13T09:58:22.194106+00:00",
+  "elapsed_seconds": 93.328,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

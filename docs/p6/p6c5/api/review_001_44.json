@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_44",
+  "request_hash": "caf4db2194f82b7e5e0e86ccb3980a7be4567ea2998255861ab730a0012cda60",
+  "started_utc": "2026-11-13T08:16:14.236807+00:00",
+  "completed_utc": "2026-11-13T08:17:29.586973+00:00",
+  "elapsed_seconds": 75.343,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5ab2fc5d-24c7-48f8-8417-c58ebc1a2f0f",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3154,
+    "completion_tokens": 4067,
+    "total_tokens": 7221,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3668
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1106
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-54b759dba2de\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"important_external_use_omitted\",\n          \"reason\": \"The supplied WordNet evidence includes a noun sense 'a fact about some part (as opposed to general)' (wn31:n:05826326), corresponding to common noun usage such as 'specifics/details'. The candidate's dictionary_additions include medicine and taxonomic uses but omit this important external noun use, leaving a significant usage untracked.\",\n          \"evidence_ids\": [\"wn31:n:05826326\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions\",\n          \"proposed_fix\": \"Add a dictionary addition candidate with meaning_zh '细节；具体情况（名词）', part_of_speech '名词', source_sense_ids [], evidence_ids ['wn31:n:05826326'], status 'AI_candidate_not_adopted', and a reason noting common plural usage 'specifics'.\"\n        }\n      ],\n      \"preferences\": [\n        \"Keep the two adjective core groups as they are; they correctly separate 'concrete/detailed' from 'particular'.\",\n        \"When introducing the noun detail use, use contextual examples like 'get down to specifics' rather than promoting it to core.\"\n      ],\n      \"note\": \"Core adjective coverage is accurate: group1 maps 具体的 to explicit/detail (wn31:s:01103644), group2 maps 特定的 to particular/unique (wn31:a:01106714), both supported. The only gap is missing common noun sense in dictionary_additions; all other external uses (medicine noun, taxonomic adjective) are appropriately listed.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_037",
+  "kind": "verify",
+  "request_hash": "d1aebfb65923a687b6b21d7d42c509d5bc59f6cf273caadc2e9fb1eac5e07d89",
+  "input_ids": [
+    "SG25-8cfc12e7f780",
+    "SG25-2d5e8600a4fb"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "91ca8a30-c3ee-4412-80b5-779f27267b64",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8cfc12e7f780\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选仅覆盖代理/典型两个分支，缺失“代表”的符号/象征用法；证据 wn31:v:00837915 和 wn31:v:00990060 明确支持 represent 的象征/间接表达义，且中文“代表”自然包含该用法（如“红色代表热情”）。核心组3虽含象征但只挂 s002，按 V5 不同源ID不得借义覆盖，故 s001 范围收窄。\",\n          \"evidence_ids\": [\n            \"wn31:v:02547206\",\n            \"wn31:v:02547618\",\n            \"wn31:v:02729608\",\n            \"wn31:v:00837915\",\n            \"wn31:v:00990060\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心3只保留间接象征/表达；中文“表示”常含直接陈述、指出、表明等用法，英语 represent 亦有 present/describe/point out 等证据（wn31:v:00775012、wn31:v:00989377、wn31:v:00827108），候选均未采用。该收窄因源语境未明暂列为待核，但非语义等价。\",\n          \"evidence_ids\": [\n            \"wn31:v:00837915\",\n            \"wn31:v:00990060\",\n            \"wn31:v:00775012\",\n            \"wn31:v:00989377\",\n            \"wn31:v:00827108\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"source_coverage_gap\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-8cfc12e7f780:p6c5:core_meanings:1\",\n            \"SG25-8cfc12e7f780:p6c5:core_meanings:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:00837915\",\n            \"wn31:v:00990060\",\n            \"wn31:v:02547206\",\n            \"wn31:v:02547618\",\n            \"wn31:v:02729608\"\n          ],\n          \"reason\": \"s001 中文“代表”包含“用符号/形象表示某意义”的独立用法，例如“红色代表热情”“鸽子代表和平”。候选联合覆盖仅给出代理与典型，象征/stand-for 被归入 s002 的核心3；按规则不同源ID不得跨借，故 s001 存在覆盖缺口。\",\n          \"counterexample\": \"The flower represents a young girl (wn31:v:00990060) 可译为“花代表一个女孩”，而非代理或典型。\",\n          \"repair_suggestion\": \"将 wn31:v:00837915、wn31:v:00990060 同时挂到 s001 的一个新组或并入现有组，或新增“代表；象征”子组；不能仅放在 s002。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002 直接表达/陈述/指出是否属于原“表示”的范围，以及英语 represent 的 present/describe 证据是否应采纳；需源语境确认。\",\n        \"s001 是否还应包含“构成/相当于”等义（evidence wn31:v:02626667、wn31:v:02705339），但中文“代表”未必对应，暂不确认为覆盖缺口。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 的象征义被错误地仅归入 s002，属范围收窄，确认 Major；s002 直接表达待核。\"\n    },\n    {\n      \"id\": \"SG25-2d5e8600a4fb\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选仅保留物理刺激/易痛和机密信息两个限制性子域；一般情感/批评/话题敏感（如 sensitive to criticism）未在任何已挂 s001 的组中出现。核心2虽涉及情感敏感，但 source_ids 仅 s002，按 V5 不能跨 sid 覆盖。\",\n          \"evidence_ids\": [\n            \"wn31:a:02110761\",\n            \"wn31:s:01717206\",\n            \"wn31:s:00417683\",\n            \"wn31:a:02113270\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心2把“体贴的”表述为“能体察他人感受”，注释明确不等同主动照顾；中文“体贴的”常包含主动关怀/照顾，英语证据仅支持对他人需要敏感，未提供主动照顾证据。此为待核收窄，非已确认缺陷。\",\n          \"evidence_ids\": [\n            \"wn31:a:02113270\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"source_coverage_gap\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-2d5e8600a4fb:p6c5:core_meanings:1\",\n            \"SG25-2d5e8600a4fb:p6c5:other_meanings:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:a:02113270\",\n            \"wn31:a:02110761\",\n            \"wn31:s:00417683\"\n          ],\n          \"reason\": \"s001 原文“敏感的”为一般形容词，应包含对情感、批评、话题等敏感；但联合候选只有物理刺激/易痛和机密信息两个限制用途，没有一般情感/话题敏感的父级。核心2的体察义仅挂 s002，不能覆盖 s001。\",\n          \"counterexample\": \"sensitive to criticism / sensitive to others' feelings 是“敏感的”常见用法，证据 wn31:a:02113270 支持对他人态度/感受敏感。\",\n          \"repair_suggestion\": \"在 s001 下补充一般“敏感的（对情感/批评/话题等）”父级，或明确标暂存剩余范围；物理与机密义可作子用法或其他层。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002“体贴的”是否要求主动照顾/关怀；若要求，则核心2仅覆盖体察感知为收窄，现有英语证据 wn31:a:02113270 不包含主动行为，需源语境确认。\",\n        \"s001 一般情感敏感与 s002 体察义可能有重叠，但 sid 隔离造成学习入口缺失；是否允许跨 sid 引用需教学决策。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 一般情感/话题敏感缺失，确认 Major；s002 主动照顾范围待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5687,
+    "completion_tokens": 10667,
+    "total_tokens": 16354,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9086
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 4023
+  },
+  "started_utc": "2026-11-13T09:58:31.891405+00:00",
+  "completed_utc": "2026-11-13T10:01:04.802240+00:00",
+  "elapsed_seconds": 152.906,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

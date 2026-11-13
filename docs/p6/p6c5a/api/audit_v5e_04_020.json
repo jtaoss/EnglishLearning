@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_020",
+  "kind": "audit",
+  "request_hash": "f9a64d3c2cf0a2e0d594aa9f90a1c1aac57fa205b6d3fe006d2324c5c53ca1db",
+  "input_ids": [
+    "SG25-c4d0cf241a1b",
+    "SG25-f8dcb7a13bf4",
+    "SG25-d5df61d74243",
+    "SG25-31de312977fc",
+    "SG25-7c7978abd4f8"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "fb1a0792-ebef-417e-afbb-2b82d2099126",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c4d0cf241a1b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"需要（动词，必需/需要某物）\",\"relation\":\"语义等价\",\"reason\":\"核心组1保留“需要”，对应have need of的动词用法。\",\"evidence_ids\":[\"wn31:v:01191258\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"要求（动词，要求或使某人必须做）\",\"relation\":\"语义等价\",\"reason\":\"核心组2保留“要求”，对应make someone do与consider obligatory/request and expect。\",\"evidence_ids\":[\"wn31:v:00753573\",\"wn31:v:00757790\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源动词义分别保留在核心组1和核心组2，动作方向与词典证据对应清楚，未发现覆盖缺口。\"},{\"id\":\"SG25-f8dcb7a13bf4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"要求（名词，需求/必需之事）\",\"relation\":\"语义等价\",\"reason\":\"核心组1保留“要求”，对应required activity与demands。\",\"evidence_ids\":[\"wn31:n:05901258\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"必需条件（名词，先决或不可或缺条件）\",\"relation\":\"语义等价\",\"reason\":\"扩展组1保留“必需条件”，对应prerequisite与indispensable。\",\"evidence_ids\":[\"wn31:n:05901034\",\"wn31:n:09390100\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“要求”在核心，“必需条件”在扩展；两个源名词义均被保留，未发现源义丢失。\"},{\"id\":\"SG25-d5df61d74243\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"取得（获得具体或抽象物）\",\"relation\":\"合理概括\",\"reason\":\"核心组1合并“取得/得到/获得”，对应取得具体或抽象物及努力赢得。\",\"evidence_ids\":[\"wn31:v:02215637\",\"wn31:v:02293158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"得到（获得具体或抽象物）\",\"relation\":\"合理概括\",\"reason\":\"核心组1以近义合并保留“得到”，证据支持取得具体或抽象物。\",\"evidence_ids\":[\"wn31:v:02215637\",\"wn31:v:02293158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"获得（获得具体或抽象物）\",\"relation\":\"合理概括\",\"reason\":\"核心组1以近义合并保留“获得”，证据支持取得具体或抽象物及努力赢得。\",\"evidence_ids\":[\"wn31:v:02215637\",\"wn31:v:02293158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义源义合组在核心组1，证据覆盖具体/抽象物的取得及努力赢得，未加入原文没有的专业义。\"},{\"id\":\"SG25-31de312977fc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"获得（名词，取得占有的行为或过程）\",\"relation\":\"语义等价\",\"reason\":\"核心组1保留“获得”，对应取得占有之行为/过程。\",\"evidence_ids\":[\"wn31:n:00078239\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"获得物（名词，所取得之物）\",\"relation\":\"语义等价\",\"reason\":\"核心组2保留“获得物”，对应something acquired。\",\"evidence_ids\":[\"wn31:n:13274154\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"获得过程与获得物分列核心组1和核心组2，两个源名词义均被保留。\"},{\"id\":\"SG25-7c7978abd4f8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"审问（名词，正式盘问或审讯性询问）\",\"relation\":\"无法确定\",\"reason\":\"原文“审问”带正式盘问/审讯色彩；所给证据仅为一般询问或探究，未支持该强度，已held暂存。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"审问的正式/审讯性盘问范围未覆盖，暂存\",\"counterexample\":\"一般questioning/inquiry不等于interrogation；wn31:n:07208256仅为an instance of questioning。\",\"counterexample_evidence_ids\":[\"wn31:n:07208256\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"探问（名词，探询/询问）\",\"relation\":\"合理概括\",\"reason\":\"核心组1合并“询问/探问”，对应search for knowledge与instance of questioning。\",\"evidence_ids\":[\"wn31:n:05805605\",\"wn31:n:07208256\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"询问（名词，提问/打听）\",\"relation\":\"合理概括\",\"reason\":\"核心组1合并“询问/探问”，对应search for knowledge与instance of questioning。\",\"evidence_ids\":[\"wn31:n:05805605\",\"wn31:n:07208256\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_sense_held\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:07208256\"],\"reason\":\"“审问”的正式盘问义未被可靠证据支持，已暂存而非通过。\",\"repair_suggestion\":\"保留held；若后续有interrogation或正式审问证据再评估，不以一般questioning泛化。\"}],\"note\":\"询问/探问在核心组1合组保留；“审问”因缺少审讯性证据而held，外部候选“调查；探究”未采用为源义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5504,
+    "completion_tokens": 5914,
+    "total_tokens": 11418,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4370
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3584
+  },
+  "started_utc": "2026-11-13T09:46:53.982805+00:00",
+  "completed_utc": "2026-11-13T09:47:24.857423+00:00",
+  "elapsed_seconds": 30.875,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

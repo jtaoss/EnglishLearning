@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_001",
+  "kind": "audit",
+  "request_hash": "46c227c191984306983cb7ad84ef37d161105d3f0e741ecc9834ca196673e76b",
+  "input_ids": [
+    "SG25-e40dfff1a71e",
+    "SG25-d21f85ea3816",
+    "SG25-e5c6fde86910",
+    "SG25-d4f0bc5a29de",
+    "SG25-6a651134eb4b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "65f319c1-f493-4e46-a75b-7451340dfedf",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-e40dfff1a71e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词，向前移动（物理或抽象）\",\"relation\":\"语义等价\",\"reason\":\"原文动词『前进』与 v:01996535『move forward, also in metaphorical sense』方向、词性一致，核心组直接保留。\",\"evidence_ids\":[\"wn31:v:01996535\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词，促使发展/推进\",\"relation\":\"语义等价\",\"reason\":\"原文『促进』与 v:02560630『contribute to the progress or growth of』义合；置于扩展层属教学排序，不影响覆盖。\",\"evidence_ids\":[\"wn31:v:02560630\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词，进步/改善\",\"relation\":\"语义等价\",\"reason\":\"原文名词『进步』与 n:07371988『a change for the better; progress』一致，保留于核心。\",\"evidence_ids\":[\"wn31:n:07371988\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词，预付的钱款\",\"relation\":\"语义等价\",\"reason\":\"原文『预付款』与 n:13397064『an amount paid before it is earned』对应，扩展层保留。\",\"evidence_ids\":[\"wn31:n:13397064\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s005\",\"source_scope\":\"形容词，先于时间/需要的\",\"relation\":\"语义等价\",\"reason\":\"原文形容词『预先的』与 s:00817484『being ahead of time or need』对应，扩展层保留。\",\"evidence_ids\":[\"wn31:s:00817484\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"五个源义（动词前进/促进、名词进步/预付款、形容词预先的）均在核心或扩展层有对应链接，词性区分清晰，未出现以『前进』吞并其余义项的问题。\"},{\"id\":\"SG25-d21f85ea3816\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词，知识/技能层次较高\",\"relation\":\"语义等价\",\"reason\":\"原文『高级的』与 s:01213968『at a higher level in training or knowledge or skill』一致，保留于核心。\",\"evidence_ids\":[\"wn31:s:01213968\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词，技术/社会发展水平高\",\"relation\":\"语义等价\",\"reason\":\"原文『先进的』与 s:00413248『highly developed especially in technology or industry』一致，保留于核心。\",\"evidence_ids\":[\"wn31:s:00413248\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词，进程较晚阶段\",\"relation\":\"语义等价\",\"reason\":\"原文『处于较后阶段的』与 s:00823095『comparatively late in a course of development』一致，置于扩展层可接受。\",\"evidence_ids\":[\"wn31:s:00823095\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义分别由独立组承接，且已按知识层次/技术发展/较后阶段区分，未机械合并；与 advance 的区分提示合理。\"},{\"id\":\"SG25-e5c6fde86910\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词，确实存在而非潜在的\",\"relation\":\"语义等价\",\"reason\":\"原文『实际的』与 a:00043985『presently existing in fact and not merely potential』及 s:01940178『existing in act or fact』相合；合并入同一核心组可行。\",\"evidence_ids\":[\"wn31:a:00043985\",\"wn31:s:01940178\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词，真实而非虚构的\",\"relation\":\"语义等价\",\"reason\":\"原文『真实的』由同组承载，证据覆盖真实/实在义，与『实际的』近义合并属合理概括。\",\"evidence_ids\":[\"wn31:a:00043985\",\"wn31:s:01940178\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义近义，合并为单一核心组仍可回溯，未引入『目前的』等无源新义，覆盖完整。\"},{\"id\":\"SG25-d4f0bc5a29de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，代他人行事者\",\"relation\":\"合理概括\",\"reason\":\"原文『代理人』以 n:09796794『representative who acts on behalf』为据，与经纪人合并为上位展示『代理人（含经纪等具体角色）』，下位仍可追溯。\",\"evidence_ids\":[\"wn31:n:09796794\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词，代客买卖抽取佣金的经纪\",\"relation\":\"合理概括\",\"reason\":\"原文『经纪人』以 n:09796453『businessman who buys or sells for another in exchange for a commission』为据，纳入合并组的括号举例，具体角色可查。\",\"evidence_ids\":[\"wn31:n:09796453\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词，产生作用的因素/动因\",\"relation\":\"语义等价\",\"reason\":\"原文『起作用的因素』与 n:09213796『active and efficient cause』及 n:14802595『a substance that exerts some force』相合，扩展层另组保留。\",\"evidence_ids\":[\"wn31:n:09213796\",\"wn31:n:14802595\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"代理人/经纪人合并为可回溯的上位组，起作用的因素另立扩展组，三个源义均有承接，未把因素义误并为人员义。\"},{\"id\":\"SG25-6a651134eb4b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词，存在多种理解/含义不明\",\"relation\":\"语义等价\",\"reason\":\"原文『意义不明确的』与 a:00103000『having more than one possible meaning』一致，核心组保留。\",\"evidence_ids\":[\"wn31:a:00103000\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词，可作两种以上解释\",\"relation\":\"语义等价\",\"reason\":\"原文『模棱两可的』与 a:00898735『open to two or more interpretations』一致，与前一义合组仍各自可回溯。\",\"evidence_ids\":[\"wn31:a:00898735\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义都指多种解释，合并为同一核心组合理，没有把『未知事实』等词典外联想塞入。\"}]}",
+  "usage": {
+    "prompt_tokens": 7532,
+    "completion_tokens": 3912,
+    "total_tokens": 11444,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2081
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5612
+  },
+  "started_utc": "2026-11-13T09:40:12.677330+00:00",
+  "completed_utc": "2026-11-13T09:40:30.496753+00:00",
+  "elapsed_seconds": 17.813,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

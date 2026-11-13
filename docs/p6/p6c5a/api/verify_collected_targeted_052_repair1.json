@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_052_repair1",
+  "kind": "verify",
+  "request_hash": "a4514db2319d6b60fabd9ba8118ae31bd677908211cb62496d2e8c19ad2b5ab6",
+  "input_ids": [
+    "SG25-c082456a7766",
+    "SG25-8a741eb9c892"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a971462b-dfff-4e5a-88cc-f525da2afadf",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c082456a7766\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组保留“媒介”，证据 wn31:n:06264799 为存储或传递信息的手段/工具，覆盖常见“媒介”义；原词无上下文，不显示已丢失明确源用途。\",\n          \"evidence_ids\": [\n            \"wn31:n:06264799\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组以“实现某事的手段”解释“手段”，证据 wn31:n:14923303 为某事物得以实现的中间物质/手段，覆盖该义；组内并列保留两个子片段。\",\n          \"evidence_ids\": [\n            \"wn31:n:14923303\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“中等的”直接对应原文形容词，证据 wn31:s:01536076 为中间等级/规模。\",\n          \"evidence_ids\": [\n            \"wn31:s:01536076\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"原词条无上下文，“媒介”是否需覆盖大众传播媒介、疾病传播媒介、信号传导介质或中介人等不能由当前证据确认；当前核心仅以“传递信息的媒介”解释，未显示遗漏但精确范围待人工确认。\"\n      ],\n      \"preferences\": [\n        \"可将名词义拆为“媒介（信息）”和“手段/介质”两个核心组以提升辨析，但当前同框并列也可接受。\"\n      ],\n      \"note\": \"名词二义合并但子片段保留；形容词独立。无明确范围扩大或丢失；源范围因无上下文略含糊，已记录待核。\"\n    },\n    {\n      \"id\": \"SG25-8a741eb9c892\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“擦亮；抛光”保留“擦亮”，证据 wn31:v:01248201 为使表面光亮，覆盖物理擦亮。\",\n          \"evidence_ids\": [\n            \"wn31:v:01248201\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心组在“润色”外加入“完善（文字、表现等）”，原文“润色”通常用于文字/作品；证据 wn31:v:00474948 仅支持 refining style of writing，额外的“表现”未获源义或该证据支持。\",\n          \"evidence_ids\": [\n            \"wn31:v:00474948\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“抛光剂”直接对应证据 wn31:n:15020587 用于抛光的制剂。\",\n          \"evidence_ids\": [\n            \"wn31:n:15020587\"\n          ]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“光泽”直接对应证据 wn31:n:04962337 光滑闪亮的性质。\",\n          \"evidence_ids\": [\n            \"wn31:n:04962337\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-8a741eb9c892:p6c4:core_meanings:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:00474948\",\n            \"wn31:v:00474730\"\n          ],\n          \"reason\": \"核心组将原文“润色”扩展为“完善（文字、表现等）”。证据 wn31:v:00474948 仅覆盖写作风格润色；wn31:v:00474730 虽证明英语可有完善社交举止等更广用法，但该词典义不在原文范围内且未被组采用，不能与源义等价合并。\",\n          \"counterexample\": \"润色文稿（原文支持） vs 完善社会举止/表现（词典例，原文未支持）\",\n          \"repair_suggestion\": \"核心保留“润色（文字/作品）”；将一般“完善”/表现用法移至扩展或标为词典补充，并在注释中明确超出源义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原文未给出“润色”的具体对象范围；若教材/教学语境确实允许润色扩展到表演或社会举止，则当前核心组的“表现等”不构成扩大，但这依赖人工确认。\"\n      ],\n      \"preferences\": [\n        \"两个名词义放扩展而非核心属于教学排序选择；现有理由未提供频率证据，可作为偏好。\"\n      ],\n      \"note\": \"物理/抽象动词分列；名词义在扩展保留。核心 s002 存在轻度范围扩大，建议限定为文字/作品润色。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6057,
+    "completion_tokens": 9080,
+    "total_tokens": 15137,
+    "prompt_tokens_details": {
+      "cached_tokens": 4608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7917
+    },
+    "prompt_cache_hit_tokens": 4608,
+    "prompt_cache_miss_tokens": 1449
+  },
+  "started_utc": "2026-11-13T10:01:28.641006+00:00",
+  "completed_utc": "2026-11-13T10:03:39.713979+00:00",
+  "elapsed_seconds": 131.062,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

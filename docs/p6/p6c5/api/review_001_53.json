@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_53",
+  "request_hash": "cfe6df1d47969da082cf4974642a952b8a2b8cccf1c15b49876a4ea69efbb5dd",
+  "started_utc": "2026-11-13T08:16:39.948403+00:00",
+  "completed_utc": "2026-11-13T08:17:09.371273+00:00",
+  "elapsed_seconds": 29.422,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "65de559a-ea6f-4a3a-b732-0e59bb0dc523",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3233,
+    "completion_tokens": 1433,
+    "total_tokens": 4666,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1256
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1185
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-f379ccb92b91\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"教学中可先以“稳定的价格/关系”等一般搭配呈现形容词义，再展示马厩实物图；化学义暂不要求首次记忆。\"\n      ],\n      \"note\": \"原文形容词“稳定的”与名词“马厩”分别由候选核心覆盖，词性与对象正确；化学稳定作为专业受限读法单列其他，符合来源未限定专业域的保守处理；动词入厩仅词典外部候选，未混入原文核心，无证据显示存在错误翻译、遗漏原文用途或不可追溯意义。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

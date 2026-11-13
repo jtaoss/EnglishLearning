@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_004",
+  "kind": "audit",
+  "request_hash": "9c19efa3b88474ecc1d140111bf608cd1e7eaf748fd905cb981bb271370e2f8f",
+  "input_ids": [
+    "SG25-65045134064d",
+    "SG25-fa7496e4ae84",
+    "SG25-d867c55b793d",
+    "SG25-6bc636ff0103",
+    "SG25-84e0c3d153f9"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "6ca8a6e0-dcdd-4991-8fcb-397f1fb887c9",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-65045134064d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"选择行为/选择（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组“选择”与WordNet“choosing/selecting”行为义一致；原文仅一个名词片段，未强加被选物或选集义。\",\"evidence_ids\":[\"wn31:n:00162063\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义“选择”由核心行为义覆盖；被选物、选集、自然选择等词典义未冒充原文，无残留范围。\"},{\"id\":\"SG25-fa7496e4ae84\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"收集行为（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心“收集”对应WordNet“the act of gathering something together”的收集行为义。\",\"evidence_ids\":[\"wn31:n:01016008\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"收藏品（被收集物/藏品）\",\"relation\":\"语义等价\",\"reason\":\"核心“收藏品”保留原文对象义，但所引07968050为宽泛“若干物汇聚”，未单列被收集物，对象证据偏宽；覆盖存在但需补证。\",\"evidence_ids\":[\"wn31:n:07968050\"],\"context\":\"none\",\"residual_scope\":\"证据未单列“被收藏/收集物”对象\",\"counterexample\":\"同一条宽泛汇聚证据也支持上位“集合”，不能据此区分收藏品与一般集合。\",\"counterexample_evidence_ids\":[\"wn31:n:07968050\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"集合（较广汇聚概念）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“集合”对应“several things grouped together or considered as a whole”的汇聚概念。\",\"evidence_ids\":[\"wn31:n:07968050\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_scope_overlap\",\"source_ids\":[\"s002\",\"s003\"],\"group_ids\":[\"SG25-fa7496e4ae84:core:2\",\"SG25-fa7496e4ae84:extended:1\"],\"evidence_ids\":[\"wn31:n:07968050\"],\"reason\":\"“收藏品”与“集合”两个中文义共用同一条宽泛“若干物汇聚”证据，未单列收藏物/被收集对象，核心“收藏品”的对象范围未被具体证据区分。\",\"repair_suggestion\":\"保留“集合”为上位汇聚义；为“收藏品”补更具体的被收集物/藏品证据，或在核心注明其为集合的子例并保留上位。\"}],\"note\":\"三个义项均有链接；收集行为在核心，收藏品核心但证据偏宽，集合在扩展保留，需补收藏品对象证据。\"},{\"id\":\"SG25-d867c55b793d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"集体的（形容词）\",\"relation\":\"语义等价\",\"reason\":\"核心合并组中的“集体的”由“forming a whole or aggregate”支持，保留形容词集体/聚合义。\",\"evidence_ids\":[\"wn31:a:00468799\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"共同的（形容词）\",\"relation\":\"语义等价\",\"reason\":\"“共同的”由“done by or characteristic of individuals acting together; joint/collective”支持，与核心合并表述一致。\",\"evidence_ids\":[\"wn31:s:02119981\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"集体（名词，群体/组织）\",\"relation\":\"语义等价\",\"reason\":\"名词“集体”保留于扩展层，n:08073353提供合作企业成员的具体组织义；未用形容词义跨词性替代名词义。\",\"evidence_ids\":[\"wn31:n:08073353\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词“集体的/共同的”在核心合并，名词“集体”在扩展层单独保留；三个源义均未漏。\"},{\"id\":\"SG25-6bc636ff0103\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"讲座（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心“讲座”对应“a speech that is open to the public”的公开讲座义。\",\"evidence_ids\":[\"wn31:n:07255209\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"讲课（动词）\",\"relation\":\"语义等价\",\"reason\":\"核心动词“讲课”对应“deliver a lecture or talk”的授课/讲演义。\",\"evidence_ids\":[\"wn31:v:00832422\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"训斥（动词）\",\"relation\":\"语义等价\",\"reason\":\"扩展动词“训斥”对应“censure severely or angrily”的斥责义，未与教育讲座义混同。\",\"evidence_ids\":[\"wn31:v:00826456\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词讲座、动词讲课在核心，动词训斥在扩展；三个源义均覆盖且词性分开。\"},{\"id\":\"SG25-84e0c3d153f9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"忽视（源词性未定；名词/动词候选）\",\"relation\":\"无法确定\",\"reason\":\"原s001词性为null；候选以名词“忽视”核心组和动词“忽视；不予注意”核心组分别保留，覆盖可能，但不能把组词性当作已核实源词性。\",\"evidence_ids\":[\"wn31:n:00419628\",\"wn31:n:05714576\",\"wn31:v:00618547\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性及原语境待核；名词与动词分支不能互相替代\",\"counterexample\":\"名词“lack of attention”与动词“give little attention to”句法用途不同，需原语境定夺。\",\"counterexample_evidence_ids\":[\"wn31:n:05714576\",\"wn31:v:00618547\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"疏于照料（源词性未定；候选动词）\",\"relation\":\"无法确定\",\"reason\":\"原s002词性null；核心动词组以“fail to attend to; he neglects his children”支持“疏于照料”，但源片段未标词性，不能确认。\",\"evidence_ids\":[\"wn31:v:00617843\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性待核；名词状态义未由本片段确认\",\"counterexample\":\"同一词有名词状态义（in a state of neglect），不能与动词“疏于照料”互证。\",\"counterexample_evidence_ids\":[\"wn31:n:14446832\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-84e0c3d153f9:core:1\",\"SG25-84e0c3d153f9:core:2\",\"SG25-84e0c3d153f9:p6c4:core:ignore_verb\"],\"evidence_ids\":[\"wn31:n:00419628\",\"wn31:n:05714576\",\"wn31:v:00617843\",\"wn31:v:00618547\"],\"reason\":\"两个源片段均无已定词性；候选把s001拆为名词核心与动词核心、s002列为动词核心，作为词典推荐可保留，但映射关系只能暂定，不能视为源词性已核实。\",\"repair_suggestion\":\"保留待核标记；回到原教材语境确认s001/s002词性，尤其区分名词“忽视/疏忽”与动词“忽视/疏于照料”，再签审核心分支。\"}],\"note\":\"两个源义均已有候选链接，但源词性为null，s001同时挂名词和动词核心；整体只能暂定，不能按已核实词性通过。\"}]}",
+  "usage": {
+    "prompt_tokens": 5989,
+    "completion_tokens": 14857,
+    "total_tokens": 20846,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12849
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4069
+  },
+  "started_utc": "2026-11-13T09:44:50.736537+00:00",
+  "completed_utc": "2026-11-13T09:46:17.239083+00:00",
+  "elapsed_seconds": 86.5,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

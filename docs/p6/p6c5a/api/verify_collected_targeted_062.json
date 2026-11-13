@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_062",
+  "kind": "verify",
+  "request_hash": "83449d8cd1db472ee07e91d45d0b65212e0f0a3e1c15ebea19d9ded660ccaa08",
+  "input_ids": [
+    "SG25-27042f4e6eca",
+    "SG25-97519f7c288b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "626e4038-e326-4ab6-89ca-0d925ef85bc7",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-27042f4e6eca\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心形容词组“正确的”引 wn31:a:00634232（free from error/conforming to truth）与 wn31:a:00636250（correct in opinion/judgment），覆盖原始 s001 的形容词正确义，无语义扩大或收窄。\",\n          \"evidence_ids\": [\"wn31:a:00634232\", \"wn31:a:00636250\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心副词组“向右；在右边”引 wn31:r:00389732（toward or on the right）。原文 s002 只有方向“向右”，该组加入静态位置“在右边”，超出原来源范围，尽管词典证据覆盖静态位置。\",\n          \"evidence_ids\": [\"wn31:r:00389732\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_expansion_core\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-27042f4e6eca:p6c4:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:r:00389732\"],\n          \"reason\": \"s002 原文为“向右”，仅方向义；核心组文本“向右；在右边”并入了静态位置义“在右边”。该静态义由 wn31:r:00389732 的 on the right 部分支持，但原文未授权，属于来源范围扩大。\",\n          \"counterexample\": \"原文 s002 文本只有“向右”；无“在右边/站在右边”等静态位置提示；词典 r:00389732 同时含 toward/on the right，不能作为来源静态义许可。\",\n          \"repair_suggestion\": \"将核心显示改为“向右（方向）”，静态位置另列为有证据的扩展/其他层或加注，避免把未授权范围放入核心。\"\n        }\n      ],\n      \"unresolved\": [\n        \"来源内部 senses 的 part_of_speech 为 null 且 pos_evidence 为 unresolved_multi_pos；虽然 source_pos 字段标形容词；副词，但未锁定 s001/s002 词性，因此核心组按推荐词性分形容词/副词存在待确认。\",\n        \"原中文 s002 是否在语境中隐含静态位置“在右边”无法仅凭片段确定，当前按字面只支持方向义处理。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 正确义核心证据匹配；s002 方向义核心证据匹配方向，但组文本多出静态“在右边”，属未许可范围扩张，Minor；未采用的权利/右边的外义不属原义。\"\n    },\n    {\n      \"id\": \"SG25-97519f7c288b\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义不匹配\",\n          \"reason\": \"核心1“无论如何”引 wn31:r:00027635（in any way whatsoever，以任何方式），该义偏方式/手段，而原文“无论如何”通常为让步/不论情况（in any case/regardless），后者由 wn31:r:00026948 支持；当前链接导致原文让步义缺失。\",\n          \"evidence_ids\": [\"wn31:r:00027635\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心2“反正；总之”引 wn31:r:00026948，对应用于解释/支持前文或 in any case 的语篇功能，与 s002 一致。\",\n          \"evidence_ids\": [\"wn31:r:00026948\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_semantic_mismatch\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-97519f7c288b:p6c4:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:r:00027635\", \"wn31:r:00026948\"],\n          \"reason\": \"核心1文本“无论如何”被接到 r:00027635（in any way whatsoever）。该词典义表示“以任何方式/手段”，不是通常的让步义“无论如何/in any case”。原文 s001 若按普通理解（不论情况）覆盖缺失；词典 r:00026948 中的 in any case 更适合该义。\",\n          \"counterexample\": \"例如“无论如何，我都要去”（no matter what/I will go anyway）不能用 r:00027635 的“get it done anyway you can（以任何方式完成）”来解释；后者是方式副词短语，不是让步副词。\",\n          \"repair_suggestion\": \"将核心1的证据改为/增加 r:00026948（in any case/anyway）并核原语境；若确实想保留“以任何方式”这一受限用法，需明确结构与例句，不能作为“无论如何”的无标记核心义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原 s001“无论如何”无上下文，不能完全排除其指“以任何方式/手段”的教学意图；若源语境为“get it done anyway you can”式用法，当前 r:00027635 可能部分成立。当前判定基于普通让步理解。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s002 反正/语篇义证据匹配；s001 当前证据语义偏窄，需核对原语境后修正证据映射。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6928,
+    "completion_tokens": 7703,
+    "total_tokens": 14631,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6417
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 5264
+  },
+  "started_utc": "2026-11-13T10:00:25.653645+00:00",
+  "completed_utc": "2026-11-13T10:02:12.756798+00:00",
+  "elapsed_seconds": 107.109,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

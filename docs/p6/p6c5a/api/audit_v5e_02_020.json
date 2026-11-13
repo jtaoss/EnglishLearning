@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_020",
+  "kind": "audit",
+  "request_hash": "96fdc19fb5581562f8c621e73607a5f6922a2dea0a0b7d2cc6d3243b8ebb022b",
+  "input_ids": [
+    "SG25-040eb379271f",
+    "SG25-3bed2cb3a3ac",
+    "SG25-6b6b85aed8ad",
+    "SG25-ac1b5c0961a7",
+    "SG25-70dd37c11434"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "3f2e82de-a47f-4b0a-957d-e0673c2c9230",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-040eb379271f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"聪明的（思考、推理能力强）\",\"relation\":\"语义等价\",\"reason\":\"核心组以“聪明的／有理解力的”合并两个近义源义，a:01337350支持高程度思考推理能力，未新增对象或领域限制。\",\"evidence_ids\":[\"wn31:a:01337350\",\"wn31:s:01932488\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"有理解力的（具备推理、理解能力）\",\"relation\":\"语义等价\",\"reason\":\"s:01932488“endowed with the capacity to reason”对应有理解力/推理能力，并在核心组中与s001合并保留。\",\"evidence_ids\":[\"wn31:s:01932488\",\"wn31:a:01337350\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义均以核心组合并保留，证据支持思考推理能力；“明智的/知识丰富的”等词网另用未写入，不构成原文缺口。\"},{\"id\":\"SG25-3bed2cb3a3ac\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"体内的（身体内部）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“体内的”，a:00951878以internal organs例示身体内部，身体语境子范围明确。\",\"evidence_ids\":[\"wn31:a:00951878\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"内部的（在某界限或表面以内）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留一般“内部的”，a:00951878支持within limits or especially surface；身体子范围另在扩展层保留。\",\"evidence_ids\":[\"wn31:a:00951878\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心保留一般“内部的”，“体内的”作为身体子范围在扩展层保留；未把一般内部义改成仅身体义。\"},{\"id\":\"SG25-6b6b85aed8ad\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"内部（某物里面/内侧）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组保留“内部”，n:08605707支持inner/enclosed surface；未新增室内或机构限制。\",\"evidence_ids\":[\"wn31:n:08605707\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"内地（区域内部/内陆部分）\",\"relation\":\"语义等价\",\"reason\":\"扩展名词组保留“内地”，n:08605849以region inside something提供宽泛内部区域证据；未混入形容词性或室内义。\",\"evidence_ids\":[\"wn31:n:08605849\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"内部的（一般内部/内侧）\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组文本为一般“内部的”，s:00955021等一般located inward证据可支持；但该组实际只链接了建筑室内证据a:00956057，见issue。\",\"evidence_ids\":[\"wn31:a:00956057\",\"wn31:s:00955021\",\"wn31:s:01042014\"],\"context\":\"none\",\"residual_scope\":\"组链接证据仅建筑内部，未显式链接一般内部/内侧证据\",\"counterexample\":\"interior regions of the earth（一般内部/内侧）不是仅建筑室内\",\"counterexample_evidence_ids\":[\"wn31:s:00952323\",\"wn31:s:00955021\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_scope_mismatch\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-6b6b85aed8ad:core:2\"],\"evidence_ids\":[\"wn31:a:00956057\",\"wn31:s:00955021\",\"wn31:s:01042014\",\"wn31:s:00952323\"],\"reason\":\"s003原文“内部的”为一般内部/内侧；核心形容词组只链接a:00956057（建筑内部/室内），更一般的located inward/inside toward center证据未链接，组证据不能单独确认一般“内部的”。\",\"repair_suggestion\":\"改用或补充一般内部/内侧证据；若只保留建筑室内，应将组文本限定为“室内的/建筑内部的”并另保留一般“内部的”。\"}],\"note\":\"三个源义均有组承接；核心形容词组证据偏建筑室内，需要补一般内部证据；名词“内地”证据为宽泛内部区域。\"},{\"id\":\"SG25-ac1b5c0961a7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"最初的（开始阶段的）\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组“最初的”由s:01015570 occurring at the beginning支持，保留开始阶段义。\",\"evidence_ids\":[\"wn31:s:01015570\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"姓名首字母（人名的首字母）\",\"relation\":\"语义等价\",\"reason\":\"扩展名词组“姓名首字母”由n:06844047 first letter of a word/name支持，对象范围与原文一致。\",\"evidence_ids\":[\"wn31:n:06844047\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"deferral_rationale_missing\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-ac1b5c0961a7:extended:1\"],\"evidence_ids\":[\"wn31:n:06844047\"],\"reason\":\"名词“姓名首字母”是常用独立义，扩展层注释只说两个语境都保留，未给后置的教学理由；覆盖本身存在。\",\"repair_suggestion\":\"补充后置或并列的教学理由；这是教学排序说明，不是覆盖缺陷。\"}],\"note\":\"形容词“最初的”与名词“姓名首字母”均有证据承接；名词义在扩展层保留，教学理由可补充说明。\"},{\"id\":\"SG25-70dd37c11434\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"过渡（源词性未定；候选推荐名词）\",\"relation\":\"无法确定\",\"reason\":\"源义s001的part_of_speech为null（unresolved_multi_pos）；核心组推荐名词，n:00201907支持名词“过渡”，但不能据此确认原义即名词。\",\"evidence_ids\":[\"wn31:n:00201907\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；若原义为动词，当前名词核心映射未覆盖\",\"counterexample\":\"transition作动词'make/undergo a transition'也是词典支持用法\",\"counterexample_evidence_ids\":[\"wn31:v:00551623\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"转变（源词性未定；候选推荐动词）\",\"relation\":\"无法确定\",\"reason\":\"源义s002的part_of_speech为null；核心组推荐动词，v:00551623支持动词“转变/过渡”，但不能据此确认原义即动词。\",\"evidence_ids\":[\"wn31:v:00551623\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；若原义为名词，当前动词核心映射未覆盖\",\"counterexample\":\"transition作名词'a change from one state/place to another'也是词典支持用法\",\"counterexample_evidence_ids\":[\"wn31:n:07373176\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-70dd37c11434:core:1\",\"SG25-70dd37c11434:core:2\"],\"evidence_ids\":[\"wn31:n:00201907\",\"wn31:v:00551623\"],\"reason\":\"两个源义part_of_speech均为null（unresolved_multi_pos），候选分别落到名词/动词核心组；词典支持该词有名词和动词用法，但不能据此把源义逐条确定为名词或动词。\",\"repair_suggestion\":\"将两条映射保留为无法确定/pending，组词性仅作推荐；由人工或原书语境确认逐义词性，或同时保留名词/动词可能。\"}],\"note\":\"两个源义词性未定，候选按词典推荐分设名词/动词核心；映射不能确认，需保留待核。\"}]}",
+  "usage": {
+    "prompt_tokens": 5828,
+    "completion_tokens": 17672,
+    "total_tokens": 23500,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15632
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3908
+  },
+  "started_utc": "2026-11-13T09:43:08.875000+00:00",
+  "completed_utc": "2026-11-13T09:44:49.829392+00:00",
+  "elapsed_seconds": 100.953,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

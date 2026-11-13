@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_007_repair1",
+  "kind": "holdout",
+  "request_hash": "2179c8bdc2cc36e3d83bce7617db6f4729234a4d25430d988311d79d7aecae03",
+  "input_ids": [
+    "SG25-3f8b4464a99d",
+    "SG25-b093720ae253"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1f43ed31-47a6-40bb-b1ea-b1d47c4175d0",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3f8b4464a99d\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"宗教的，与宗教、神圣事物或教会有关的（形容词修饰名词）\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"修饰与宗教、神圣事物或教会相关的名词；不特定限于修道誓愿\",\n          \"evidence_ids\": [\"wn31:s:02063669\"],\n          \"uncertainty\": \"证据义项较广，包含宗教、神圣事物和教会；另有一狭义形容词 wn31:a:01787508 仅限修道誓愿，未纳入以免范围收窄\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"虔诚的，对神有信仰和敬畏的（描述人或态度）\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"用于描述人物或态度，如虔诚的人、虔诚的态度\",\n          \"evidence_ids\": [\"wn31:a:01787685\"],\n          \"uncertainty\": \"无\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：宗教的，与宗教、神圣事物或教会有关的\",\n        \"形容词：虔诚的，对神有信仰和敬畏的\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"未采用观察：wn31:n:10538195（名词，修士/修女）与源词性形容词不符；wn31:a:01787508（限于修道誓愿的）为更窄形容词义，非源义；wn31:s:02092886（极其审慎的）为引申义，非源义。以上均为词典新增，不计入来源映射。\"\n    },\n    {\n      \"id\": \"SG25-b093720ae253\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"医学上患者感受到的与疾病相关的身体功能变化或感觉\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"医学语境，描述疾病表现\",\n          \"evidence_ids\": [\"wn31:n:14323139\"],\n          \"uncertainty\": \"原文未提供实例，按中文常用义取医学义；一般义（任何事物的征兆）未被原文证实，暂不采纳\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词：症状（疾病的表现）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"未采用观察：wn31:n:06811045（任何事物的征兆）为一般义，超出原文所证范围，未纳入核心。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3154,
+    "completion_tokens": 1956,
+    "total_tokens": 5110,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1352
+    },
+    "prompt_cache_hit_tokens": 2304,
+    "prompt_cache_miss_tokens": 850
+  },
+  "started_utc": "2026-11-13T09:34:00.531113+00:00",
+  "completed_utc": "2026-11-13T09:34:28.451644+00:00",
+  "elapsed_seconds": 27.907,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

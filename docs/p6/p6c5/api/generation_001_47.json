@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_47",
+  "request_hash": "d1832eaeeb6f8ee73b828cbd5783ada89c74ee902aa138f21efc76245ad00ad5",
+  "started_utc": "2026-11-13T08:14:59.719214+00:00",
+  "completed_utc": "2026-11-13T08:15:45.502750+00:00",
+  "elapsed_seconds": 45.781,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c322886e-1947-4d04-b2d9-399c675d9fde",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3593,
+    "completion_tokens": 7236,
+    "total_tokens": 10829,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6408
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 777
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-4ca303a3bf7d\",\"word\":\"architecture\",\"core\":[[\"建筑学\",\"名词\",[\"s001\"],[\"wn31:n:06132970\"],\"学科/学问：涉及建筑设计、建造与装饰原则；对应“建筑学”的学科义。\"]],\"extended\":[],\"other\":[[\"（计算机）体系结构\",\"名词\",[\"s003\"],[\"wn31:n:04939455\"],\"计算机领域：计算机硬件或系统软件的结构与组织；受专业语境限制。\"]],\"hold\":[[\"s002\",\"原始中文“建筑风格”指建筑风格/样式，但所给词典证据只有职业、建筑作品、计算机体系结构和学科，没有风格义；不能改派为“建筑作品”。\"]],\"splits\":{},\"additions\":[[\"建筑职业；建筑设计行业\",\"名词\",[\"wn31:n:00612006\"],\"外部候选：architecture 可指设计建筑与环境的职业；原文“建筑学”偏学科，职业义未明确表达，不并入核心。\"],[\"建筑作品；建筑物\",\"名词\",[\"wn31:n:02737730\"],\"外部候选：architecture 可指具体的建筑作品/构筑物；与“建筑风格”不同，原文未明确表达。\"]],\"reason\":\"首忆先取原文最直接且证据吻合的学科义“建筑学”；“体系结构”因计算机专业限制单列 other；无证据的“建筑风格”暂存，不用相近的“建筑作品”义冒充。\",\"flags\":[[\"Major\",\"lexical_evidence_insufficient\",\"片段“建筑风格”无独立词典证据支持，暂存待核。\"],[\"Info\",\"domain_restricted_sense\",\"“体系结构”为计算机领域用法，置于 other。\"]]},{\"id\":\"SG25-c7ce66d0fb14\",\"word\":\"attempt\",\"core\":[[\"尝试；企图\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:00787849\"],\"名词：为完成某事作出的一次认真尝试/努力；“企图”可带负面意图，英语 attempt 本身中性。\"],[\"尝试；企图（做某事）\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:02535833\"],\"动词：努力尝试做某事；“企图”常暗示不当意图，英语 attempt 不必然含贬义。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"“尝试”既可作名词（一次尝试）也可作动词（尝试做），分别由名词 n:00787849 和动词 v:02535833 支持；不是按原片段顺序分配词性。\",\"s002\":\"“企图”同样可作名词（一种企图/图谋）和动词（企图做），对应 attempt 的名词与动词义；重复引用以保留两种词性用法。\"},\"additions\":[[\"（对某人的）攻击图谋；行刺企图\",\"名词\",[\"wn31:n:00775311\"],\"外部候选：词条有“an act of attacking / attempt on his life”的用法，属特定语境，原文“企图”未明确表达攻击义，不并入核心。\"]],\"reason\":\"首忆保留“尝试/企图”在中英中都可作名词和动词的两条用法；因原片段词性未定，按证据分别立名词、动词组，而不按位置硬配；对“企图”的负面语用作提示，不据此删并。\",\"flags\":[[\"Major\",\"pos_ambiguity\",\"原始两片段词性均未解析（unresolved_multi_pos）；核心的名词/动词分层来自英语证据，未假定第一个片段是名词、第二个是动词。\"],[\"Minor\",\"source_nuance\",\"“企图”常含负面/不当意图，而英语 attempt 中性；展示保留该语用差异，不把它当作完全等义。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

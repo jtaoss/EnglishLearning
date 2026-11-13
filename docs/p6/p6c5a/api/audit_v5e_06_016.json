@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_016",
+  "kind": "audit",
+  "request_hash": "7dc741799a7b656c13e3298774859a760fcdbc858f3f699b678d58cd2fd5e8da",
+  "input_ids": [
+    "SG25-6cd6f41455d7",
+    "SG25-230b4397685e",
+    "SG25-f56175f2116f",
+    "SG25-445be54d48a2",
+    "SG25-839be5813487"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c0252387-5f88-443b-9bf4-689a80cf346f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-6cd6f41455d7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"使注意/引起注意（源义）\",\"relation\":\"无法确定\",\"reason\":\"英语参考仅支持 notify=告知/通知，未见独立的‘使注意/吸引注意’用法；该源义需待核或并入通知。\",\"evidence_ids\":[\"wn31:v:00875364\",\"web:notify\"],\"context\":\"uncertain\",\"residual_scope\":\"原‘使注意’未获独立英语用法支持，可能只是告知的使动结果，待核/并入通知\",\"counterexample\":\"notify sb of sth 表示告知某人某事，不对应独立‘吸引注意’义\",\"counterexample_evidence_ids\":[\"wn31:v:00875364\",\"web:notify\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"通知/告知\",\"relation\":\"语义等价\",\"reason\":\"核心组‘通知；告知’与 inform somebody of something 对应，web 观察也支持及物正式通知。\",\"evidence_ids\":[\"wn31:v:00875364\",\"web:notify\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00875364\",\"web:notify\"],\"reason\":\"‘使注意’被 held，但英语证据只支持通知/告知；这是来源范围待核，不应当作已确认的独立吸引注意义。\",\"repair_suggestion\":\"保持 s001 为待核/held；若确认仅为告知的使动结果，则并入‘通知/告知’，不新增独立核心义。\"}],\"note\":\"通知/告知已有核心覆盖；‘使注意’仍待核，未作为独立吸引注意义采用。\"},{\"id\":\"SG25-230b4397685e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"概括（形成一般结论/一般表述）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘概括；归纳’由 draw from specific cases for more general cases 支持，可覆盖‘概括’。\",\"evidence_ids\":[\"wn31:v:01024429\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"归纳（从具体到一般）\",\"relation\":\"语义等价\",\"reason\":\"同一核心组用‘概括；归纳’合并近义表达，英语证据支持从具体事例得出一般结论。\",\"evidence_ids\":[\"wn31:v:01024429\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两源义合并为核心‘概括；归纳’，均有 draw from specific cases 的证据支持。\"},{\"id\":\"SG25-f56175f2116f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：脸红\",\"relation\":\"语义等价\",\"reason\":\"核心动词组‘脸红’对应 turn red as if in embarrassment/shame 的 blush 义。\",\"evidence_ids\":[\"wn31:v:00103071\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：冲洗/用水冲净\",\"relation\":\"语义等价\",\"reason\":\"核心动词组‘冲洗’对应 rinse, clean, or empty with a liquid，可覆盖冲洗/冲净。\",\"evidence_ids\":[\"wn31:v:00456484\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：红晕\",\"relation\":\"语义等价\",\"reason\":\"扩展名词组‘红晕’对应 sudden reddening of the face。\",\"evidence_ids\":[\"wn31:n:00119088\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：冲洗/冲水（一次冲洗）\",\"relation\":\"合理概括\",\"reason\":\"扩展名词组‘冲水；一次冲洗’概括可数名词的冲洗/冲水用法，Collins 观察支持该名词用法。\",\"evidence_ids\":[\"web:flush\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"‘如马桶冲水’只是示例，不应被读成唯一对象限制\",\"counterexample_evidence_ids\":[\"web:flush\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词冲洗、脸红进核心；名词冲水、红晕保留在扩展层，词性与语境未混同。\"},{\"id\":\"SG25-445be54d48a2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：无效的\",\"relation\":\"语义等价\",\"reason\":\"核心组‘无效的’对应 lacking legal or binding force；规则/合同/票据是示例语境。\",\"evidence_ids\":[\"wn31:s:02510539\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"规则、合同、票据是示例，不应据此排除其他‘无效’语境\",\"counterexample_evidence_ids\":[\"wn31:s:02510539\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：空的/无内容的\",\"relation\":\"语义等价\",\"reason\":\"扩展形容词组‘空的’对应 containing nothing。\",\"evidence_ids\":[\"wn31:s:01092043\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：空白/空隙\",\"relation\":\"合理概括\",\"reason\":\"其他名词组‘空白；空隙’对应 empty area or space，并能覆盖比喻性空白。\",\"evidence_ids\":[\"wn31:n:13933131\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词：使无效\",\"relation\":\"语义等价\",\"reason\":\"扩展动词组‘使无效’对应 take away the legal force of or render ineffective。\",\"evidence_ids\":[\"wn31:v:00449395\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个源义均有对应层级；核心保留形容词‘无效的’，空义、使无效、空白义分置扩展/其他层。\"},{\"id\":\"SG25-839be5813487\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：大惊小怪/不必要的激动\",\"relation\":\"语义等价\",\"reason\":\"核心名词组‘大惊小怪’对应 excited state of agitation，并可用 make a fuss 的搭配理解。\",\"evidence_ids\":[\"wn31:n:14427176\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"make a fuss 是典型搭配，但不排除其他‘大惊小怪’表达\",\"counterexample_evidence_ids\":[\"wn31:n:14427176\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：过分操心/瞎操心\",\"relation\":\"语义等价\",\"reason\":\"扩展动词组‘过分操心’对应 worry unnecessarily or excessively。\",\"evidence_ids\":[\"wn31:v:01797944\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词‘大惊小怪’进核心并提示 make a fuss；动词‘过分操心’在扩展层另列，覆盖完整。\"}]}",
+  "usage": {
+    "prompt_tokens": 6822,
+    "completion_tokens": 8967,
+    "total_tokens": 15789,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7204
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4902
+  },
+  "started_utc": "2026-11-13T09:50:57.426096+00:00",
+  "completed_utc": "2026-11-13T09:51:46.904477+00:00",
+  "elapsed_seconds": 49.469,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

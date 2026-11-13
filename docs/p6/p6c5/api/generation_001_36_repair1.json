@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_36_repair1",
+  "request_hash": "00e66932e4de9a922b861031d4c5ffde0304a29acd39eae887950ee8f9a1efc5",
+  "started_utc": "2026-11-13T08:15:30.140639+00:00",
+  "completed_utc": "2026-11-13T08:15:52.714172+00:00",
+  "elapsed_seconds": 22.562,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "fa0e4cb8-4184-416a-8710-5d228d838e3f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4261,
+    "completion_tokens": 3796,
+    "total_tokens": 8057,
+    "prompt_tokens_details": {
+      "cached_tokens": 3456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3207
+    },
+    "prompt_cache_hit_tokens": 3456,
+    "prompt_cache_miss_tokens": 805
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-5c097b19679a\",\"core\":[[\"构成；组成\",\"动词\",[\"s001\"],[\"wn31:v:02626667\",\"wn31:v:02627475\"],\"表示部分组成整体，或构成/构成某物；两个定义分别支持 form/compose 与 compose/represent。\"],[\"设立；建立\",\"动词\",[\"s002\"],[\"wn31:v:01650771\"],\"表示奠定基础、建立机构；与‘构成’的对象和方向不同。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"任命；委任\",\"动词\",[\"wn31:v:02401347\"],\"词典有 create and charge with task/function; nominate a committee 的用法；原文‘设立’未表达任命/委任，列为未采用候选。\"]],\"reason\":\"首记两个不同动词用法：构成/组成（部分组成整体）与设立/建立（奠定基础）；二者对象和方向不同，故分核心组。词典另有‘任命/委任’义，原文未表达，仅列候选。\",\"flags\":[]},{\"id\":\"SG25-eb9a7650cd53\",\"core\":[[\"宪法\",\"名词\",[\"s001\"],[\"wn31:n:06545639\"],\"指规定政府根本政治原则的根本法；法律义明确。\"],[\"构成；组成方式\",\"名词\",[\"s003\"],[\"wn31:n:04940721\"],\"指某物由什么组成或其构成方式；结果/方式义，定义较宽。\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s002\",\"原文‘体质’为身体/体格限定义；所给 n:04940721 仅为宽义‘构成方式’，未独立验证身体/健康义。保留待核，不升为已确认核心。\"]],\"splits\":{},\"additions\":[[\"设立；建立；组织（行为）\",\"名词\",[\"wn31:n:00237945\"],\"词典有‘形成/设立的行为；组织’义；原文‘构成’未明确表达行为义，作为未采用候选。\"]],\"reason\":\"首记宪法与构成方式两个明确核心；体质因证据仅宽义 composition 置暂存；设立/组织行为义原文未明确表达，列候选。\",\"flags\":[[\"Major\",\"lexical_evidence_insufficient\",\"s002‘体质’为身体/体格限定义；所给 n:04940721 仅为宽义‘构成方式’，未独立验证身体/健康义，暂存待核。\"],[\"Info\",\"external_addition_candidate\",\"n:00237945 的‘设立/组织行为’义未在原文明确表达，列为未采用候选。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

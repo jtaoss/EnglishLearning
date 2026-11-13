@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_029",
+  "kind": "verify",
+  "request_hash": "95694d10b63c9c3a14b9ae68aa52b50efb85970da5d0535ea324f347bc05807b",
+  "input_ids": [
+    "SG25-19bf2c59ada7",
+    "SG25-32182951b85a"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "878dedb2-7d19-4777-a3a2-1698b1e4a57f",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-19bf2c59ada7\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s001 产生，源词性动词；候选 core:1 使用 WordNet v:01631641 bring into being/initiate（及物使产生），与“产生”的使动/发起用法相符；若原文还含不及物产生，已由 s002 出现覆盖，本链针对及物方向，无缺失。\",\n          \"evidence_ids\": [\"wn31:v:01631641\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s002 出现，候选 core:2 使用 v:02630344 come into existence/take on form，覆盖开始存在/成形，与原词吻合。\",\n          \"evidence_ids\": [\"wn31:v:02630344\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"s003 发生，原始中文可泛指 happen/occur；候选 extended:1 仅链 v:02630344 并注释限开始形成，排除一般偶然事件，故为真子集；英语证据 v:02630344 不支持任意发生，需标来源待核。\",\n          \"evidence_ids\": [\"wn31:v:02630344\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_overbroad_range_narrowing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-19bf2c59ada7:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:02630344\"],\n          \"reason\": \"s003 原文“发生”在中文可泛指 happen/occur（如 发生事故），但候选目标仅覆盖 begin to exist/take form，并明确加了“限开始形成，不泛作每次偶然事件”；未暂存/说明剩余一般发生范围，可能造成来源范围收窄但无显式待核。\",\n          \"counterexample\": \"“发生事故”通常译为“an accident happened”，不能由英语 originate 的 WordNet 证据覆盖，说明一般发生义未包含。\",\n          \"repair_suggestion\": \"在 extended:1 或来源注中明确将“发生”限定为开始形成/出现，并标记一般 happen/occur 不属于该英语词的核心覆盖，必要时在 unresolved 中登记来源范围待核；不要声称已完整覆盖原文全部义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003 的“发生”具体来源范围无原语境说明，无法确定是否包含一般偶然事件；需外部例句或教材上下文确认。\"\n      ],\n      \"preferences\": [\n        \"s001 core 显示可加“(使)产生”以明确及物方向，但现有 note 已说明，语义无缺陷。\"\n      ],\n      \"note\": \"s001/s002 覆盖合理；s003 因证据仅支持开始形成，视为范围收窄并保留来源待核；未采用词典 v:02749218（旅行起点）无对应源义，不构成缺陷。\"\n    },\n    {\n      \"id\": \"SG25-32182951b85a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s001 特定的，候选 core:1 用 s:01107719 unique or specific to a person or thing or category，覆盖特定/专用于某对象；与原文“特定的”相符。\",\n          \"evidence_ids\": [\"wn31:s:01107719\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s002 特别的，候选 extended:1 用 s:00490174 surpassing what is common or usual or expected，覆盖特别/不普通；与原文“特别的”相符。\",\n          \"evidence_ids\": [\"wn31:s:00490174\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s003 挑剔的，候选 extended:2 用 s:00987815 exacting especially about details，覆盖挑剔/苛求细节；与原文“挑剔的”相符。\",\n          \"evidence_ids\": [\"wn31:s:00987815\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"三个源义均有对应形容词证据；未采用的词典名词义和部分形容词义（如详尽描写、单独区分）不属于源义独立用途，无需补充；层级安排为教学排序，不影响语义覆盖。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4226,
+    "completion_tokens": 6209,
+    "total_tokens": 10435,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5141
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2562
+  },
+  "started_utc": "2026-11-13T09:58:03.275812+00:00",
+  "completed_utc": "2026-11-13T09:59:24.932946+00:00",
+  "elapsed_seconds": 81.656,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

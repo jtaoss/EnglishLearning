@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_013",
+  "kind": "audit",
+  "request_hash": "4eaf08f47209926c566b5309b57d0a449b092a12bd662af0e987bf1cac221e79",
+  "input_ids": [
+    "SG25-ea07dcc807ff",
+    "SG25-c90f436c6c08",
+    "SG25-aa214ea38326",
+    "SG25-ef379363dd0c",
+    "SG25-8e9498bf9ee9"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c92117ea-491e-4766-b69e-86813e509d0b",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-ea07dcc807ff\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"通知（使人知道事实）\",\"relation\":\"语义等价\",\"reason\":\"核心组“通知／告知”直接覆盖该动词义；wn31:v:00833312 为向人提供事实或消息。\",\"evidence_ids\":[\"wn31:v:00833312\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"告知（使人知道事实）\",\"relation\":\"语义等价\",\"reason\":\"核心组“通知／告知”保留该近义动词义；wn31:v:00833312 支持告知事实或情况。\",\"evidence_ids\":[\"wn31:v:00833312\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个原义均为动词且近义，核心组合并保留“通知／告知”；inform sb of/about 为常用搭配，未把“赋予特征”等外部义列入核心。\"},{\"id\":\"SG25-c90f436c6c08\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有形的（可触知实体）\",\"relation\":\"语义等价\",\"reason\":\"核心组覆盖“有形的／可触知的”；wn31:a:02400023 表示可感知尤其可触摸，wn31:a:02400702 表示有物理实体。\",\"evidence_ids\":[\"wn31:a:02400023\",\"wn31:a:02400702\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"可触知的（可感知/可触摸）\",\"relation\":\"语义等价\",\"reason\":\"核心组“有形的／可触知的”保留可感知、可触摸义；证据同上。\",\"evidence_ids\":[\"wn31:a:02400023\",\"wn31:a:02400702\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"明确的（可作事实/确凿）\",\"relation\":\"无法确定\",\"reason\":\"该源义仅列入held，没有链接到核心或扩展组；wn31:s:00013681“capable of being treated as fact; tangible evidence”显示可能对应“明确/确凿”的抽象义，但当前未建立映射。\",\"evidence_ids\":[\"wn31:s:00013681\"],\"context\":\"uncertain\",\"residual_scope\":\"抽象“明确/确凿”义未落入核心或扩展，仅显式暂存\",\"counterexample\":\"tangible evidence 可表示“明确/确凿的证据”\",\"counterexample_evidence_ids\":[\"wn31:s:00013681\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"held_source_sense_supported\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:s:00013681\"],\"reason\":\"s003“明确的”被held，但提供的词典证据可直接支持“可作事实/确凿”的tangible用法；当前无核心/扩展组承接，剩余范围未解析。\",\"repair_suggestion\":\"复核是否将s003链接到扩展或核心的“明确/确凿”子义，或补充更明确的暂存理由与语境限制。\"}],\"note\":\"有形的/可触知的核心覆盖充分；“明确的”抽象义仍held，需复核，不能视为已覆盖。\"},{\"id\":\"SG25-aa214ea38326\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"改变（形式/性质变化；原中文较宽）\",\"relation\":\"语义等价\",\"reason\":\"核心组“改变／使转变”覆盖该动词义；wn31:v:00383306 改变形式/外观/性质，wn31:v:00382272 支持不及物转化为另一形态。注释限定为较明显转化，符合transform词典用法。\",\"evidence_ids\":[\"wn31:v:00383306\",\"wn31:v:00384213\",\"wn31:v:00382272\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"使转变（使某物形式/性质转化）\",\"relation\":\"语义等价\",\"reason\":\"核心组“改变／使转变”覆盖使动义；wn31:v:00383306 的及物例“transformed the clay into...”支持使某物转化为另一形态。\",\"evidence_ids\":[\"wn31:v:00383306\",\"wn31:v:00384213\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个动词义合并为“改变／使转变”可保留；注释排除任意微小修改是transform的词典必要限制，不是无依据新增对象限制。\"},{\"id\":\"SG25-ef379363dd0c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"制服（名词，群体识别服装）\",\"relation\":\"语义等价\",\"reason\":\"核心组名词“制服”直接对应 wn31:n:04516887 具识别性的群体服装。\",\"evidence_ids\":[\"wn31:n:04516887\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"统一的（形容词，无差异/始终一致）\",\"relation\":\"语义等价\",\"reason\":\"核心组形容词“统一的”对应 wn31:a:00748118 无差异、wn31:a:01973553 始终同一。\",\"evidence_ids\":[\"wn31:a:00748118\",\"wn31:a:01973553\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"均匀的（组成/间隔一致）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“均匀的”对应 wn31:s:01203638 结构组成一致、wn31:s:01967120 等间距。\",\"evidence_ids\":[\"wn31:s:01203638\",\"wn31:s:01967120\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"extended_rationale_missing\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-ef379363dd0c:extended:1\"],\"evidence_ids\":[\"wn31:s:01203638\",\"wn31:s:01967120\"],\"reason\":\"“均匀的”作为原文形容词义保留在扩展层，注释仅描述词义，未说明为何后置而不进核心；层级选择缺明确教学理由。\",\"repair_suggestion\":\"补充简短的教学后置理由，或若属于首屏常用义则调整到核心。\"}],\"note\":\"名词制服、形容词统一和均匀均有对应组；均匀的置于扩展，覆盖完整但后置理由不足，列为Info。\"},{\"id\":\"SG25-8e9498bf9ee9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"舒适（名词，身心安适/无痛放松）\",\"relation\":\"语义等价\",\"reason\":\"核心组名词“舒适”对应 wn31:n:14010704 身心满足/安适及 wn31:n:14468845 放松无痛状态。\",\"evidence_ids\":[\"wn31:n:14010704\",\"wn31:n:14468845\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"安慰（名词，慰藉/安抚行为）\",\"relation\":\"语义等价\",\"reason\":\"扩展组名词“安慰”对应 wn31:n:01214157 安慰/慰藉行为；与动词义分属不同词性，未跨词性合并。\",\"evidence_ids\":[\"wn31:n:01214157\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"安慰（动词，给予道义/情感支持）\",\"relation\":\"语义等价\",\"reason\":\"核心组动词“安慰”对应 wn31:v:01818782 给予道义或情感力量。\",\"evidence_ids\":[\"wn31:v:01818782\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"extended_rationale_missing\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-8e9498bf9ee9:extended:1\"],\"evidence_ids\":[\"wn31:n:01214157\"],\"reason\":\"名词“安慰”保留在扩展层，注释说明先记舒适/安慰动词及不跨词性合并，但未给出该名词义后置的具体教学理由。\",\"repair_suggestion\":\"补充后置理由，或若属于首屏常用义则考虑调整到核心。\"}],\"note\":\"舒适名词、安慰名词和安慰动词均有对应组；名词安慰在扩展层，覆盖完整但后置理由不足，列为Info。\"}]}",
+  "usage": {
+    "prompt_tokens": 6059,
+    "completion_tokens": 12678,
+    "total_tokens": 18737,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10566
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4139
+  },
+  "started_utc": "2026-11-13T09:43:08.991886+00:00",
+  "completed_utc": "2026-11-13T09:44:16.662225+00:00",
+  "elapsed_seconds": 67.671,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

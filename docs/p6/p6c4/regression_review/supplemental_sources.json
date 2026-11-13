@@ -1,0 +1,64 @@
+{
+  "date_asia_shanghai": "2026-11-13",
+  "sources": [
+    {
+      "evidence_id": "p6c4:regression:mw:dynamic",
+      "headword": "dynamic",
+      "publisher": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/dynamic",
+      "access": "direct_page_retrieved",
+      "locator": "adjective 1a/1b versus2a/2b",
+      "observation_zh": "形容词分别支持持续活动变化、有活力与动力学关系。一般动态变化不应只由动力学关系定义代为证明。",
+      "verbatim_text_retained": false
+    },
+    {
+      "evidence_id": "p6c4:regression:mw:commit",
+      "headword": "commit",
+      "publisher": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/commit",
+      "access": "direct_page_retrieved",
+      "locator": "transitive2a/2b; intransitive1",
+      "observation_zh": "有使承担约束、保证采取某行动或用途的动词用法；承诺/commit to可以有更直接证据，不必仅靠投身活动的宽定义。",
+      "verbatim_text_retained": false
+    },
+    {
+      "evidence_id": "p6c4:regression:collins:stewardess",
+      "headword": "stewardess",
+      "publisher": "HarperCollins",
+      "url": "https://www.collinsdictionary.com/dictionary/english/stewardess",
+      "access": "direct_page_retrieved",
+      "locator": "COBUILD countable noun and British English noun",
+      "observation_zh": "旧式女性乘务称谓明确可用于船、飞机和列车，航空不是全部范围；支持修正现有注释要求仅限飞机的冲突。",
+      "verbatim_text_retained": false
+    },
+    {
+      "evidence_id": "p6c4:regression:mw:monitor",
+      "headword": "monitor",
+      "publisher": "Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/monitor",
+      "access": "direct_page_retrieved",
+      "locator": "noun1c(1); verb",
+      "observation_zh": "名词明确有带屏幕以显示电视或计算机信息的电子设备，动词是为特定目的跟踪观察检查；补强原WordNet显示内容定义与显示器设备的对象对齐。",
+      "verbatim_text_retained": false
+    },
+    {
+      "evidence_id": "p6c4:regression:attempt:cambridge:dynamic",
+      "headword": "dynamic",
+      "publisher": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/dynamic",
+      "access": "HTTP_403_no_bypass",
+      "observation_zh": "直接请求失败，未使用页面内容；改读公开可取的原出版社Merriam-Webster。",
+      "verbatim_text_retained": false
+    },
+    {
+      "evidence_id": "p6c4:regression:attempt:cambridge:monitor",
+      "headword": "monitor",
+      "publisher": "Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/monitor",
+      "access": "HTTP_403_no_bypass",
+      "observation_zh": "直接请求失败，未绕过限制或复制内容；Merriam-Webster提供直接设备义。",
+      "verbatim_text_retained": false
+    }
+  ],
+  "copyright_handling": "Original brief Chinese observations and direct publisher URLs only; no commercial entry/page/example copying; no pronunciation output."
+}

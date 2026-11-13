@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_017",
+  "kind": "audit",
+  "request_hash": "34de8e3efd15bc5e76a83a58a86e68dee5f8c7b79f3cb5cdcab52cf3c20fbcb1",
+  "input_ids": [
+    "SG25-fa44132b238e",
+    "SG25-8c585378513f",
+    "SG25-828febb7609a",
+    "SG25-df8eb42b37df",
+    "SG25-b2dc971f4895"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "f49595f7-fccb-44c0-baa4-046bf12c5250",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-fa44132b238e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：发现（行为/事实）\",\"relation\":\"语义等价\",\"reason\":\"核心组把“发现”对应到“act of discovering”，与名词“发现”的行为义相符。\",\"evidence_ids\":[\"wn31:n:00043933\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：发觉/意识到\",\"relation\":\"合理概括\",\"reason\":\"“发觉”与“发现”同组，核心用“act of discovering”概括，未扩展出原文外的对象范围。\",\"evidence_ids\":[\"wn31:n:00043933\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：突破性进展（可能过宽）\",\"relation\":\"无法确定\",\"reason\":\"该义仅在held中；最接近的词典义“productive insight”不等于“breakthrough progress”，不能确认discovery直接覆盖“突破性进展”。\",\"evidence_ids\":[\"wn31:n:05816226\"],\"context\":\"uncertain\",\"residual_scope\":\"突破性进展（breakthrough progress）未证实；与productive insight不等同\",\"counterexample\":\"productive insight可指有成效的洞察，但不必然等于突破性进展。\",\"counterexample_evidence_ids\":[\"wn31:n:05816226\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_pending\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:05816226\"],\"reason\":\"s003“突破性进展”只保留在held，未进入核心/扩展；discovery最接近的“productive insight”不等于breakthrough progress，属于来源范围待核。\",\"repair_suggestion\":\"继续保留s003为待核；若需覆盖，应以“重大发现/有成效的洞察”限定，不能把discovery直接等同breakthrough。\"}],\"note\":\"核心合并“发现/发觉”并以act of discovering为证；“突破性进展”仅held，整体因s003待核。\"},{\"id\":\"SG25-8c585378513f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：病后康复\",\"relation\":\"语义等价\",\"reason\":\"扩展组“康复”对应“gradual healing after sickness or injury”，健康逐步恢复义明确。\",\"evidence_ids\":[\"wn31:n:13473520\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：恢复原状\",\"relation\":\"语义等价\",\"reason\":\"核心组“恢复”对应“return to an original state”，保留较广的回到原状态义。\",\"evidence_ids\":[\"wn31:n:07434392\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“恢复”在核心，“康复”在扩展，分别有回到原状态和病后逐步愈合证据；两义未互相删除。\"},{\"id\":\"SG25-828febb7609a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：有创造力（人或能力）\",\"relation\":\"语义等价\",\"reason\":\"核心组“有创造力的”对应“having the ability or power to create”，适用于人或能力。\",\"evidence_ids\":[\"wn31:a:00646272\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：创造性的（活动/成果）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“创造性的”对应“promoting construction or creation; creative work”，适用于活动或成果。\",\"evidence_ids\":[\"wn31:s:00587863\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“有创造力的人/能力”在核心，“创造性活动/成果”在扩展，两条证据分别对应，覆盖完整。\"},{\"id\":\"SG25-df8eb42b37df\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：生物（宽泛）\",\"relation\":\"无法确定\",\"reason\":\"扩展组保留“生物”，但唯一证据是有自主运动的活体（动物）；植物、微生物等是否属于creature常规范围未获证据支持。\",\"evidence_ids\":[\"wn31:n:00015568\"],\"context\":\"uncertain\",\"residual_scope\":\"植物、微生物等非动物生物；creature证据仅动物\",\"counterexample\":\"creature的词典定义要求自主运动，典型为动物，不含植物/微生物。\",\"counterexample_evidence_ids\":[\"wn31:n:00015568\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"名词：动物\",\"relation\":\"语义等价\",\"reason\":\"核心组“动物”对应“a living organism characterized by voluntary movement”，与动物义相符。\",\"evidence_ids\":[\"wn31:n:00015568\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"gloss_broader_than_evidence\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-df8eb42b37df:extended:1\"],\"evidence_ids\":[\"wn31:n:00015568\"],\"reason\":\"扩展层显示“生物”，但证据仅为有自主运动的活体（动物）；note虽提示限制，显示词仍可能让读者推导出植物/微生物等非动物范围。\",\"repair_suggestion\":\"将扩展显示改为“生物（尤指动物；不泛指植物/微生物）”或标记为来源待核；若原文确需宽义，保留pending。\"}],\"note\":\"“动物”在核心；扩展“生物”证据仅动物，显示词偏宽，需限定植物/微生物并待核。\"},{\"id\":\"SG25-b2dc971f4895\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"减少（词性未定）\",\"relation\":\"无法确定\",\"reason\":\"源义part_of_speech为null；核心只把“减少”推荐为名词并引act of decreasing，不能据此确认原文该义就是名词。\",\"evidence_ids\":[\"wn31:n:00352464\"],\"context\":\"uncertain\",\"residual_scope\":\"若原文为动词，本条未明确覆盖动词“减少”；动词层由s002/其他组承担\",\"counterexample\":\"decrease作动词可表示减少（wn31:v:00151509），本条仅名词。\",\"counterexample_evidence_ids\":[\"wn31:v:00151509\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"降低（词性未定）\",\"relation\":\"无法确定\",\"reason\":\"源义part_of_speech为null；核心只把“降低”推荐为动词，虽有动词词典证据，但不能确认原文该义就是动词。\",\"evidence_ids\":[\"wn31:v:00151509\",\"wn31:v:00442400\"],\"context\":\"uncertain\",\"residual_scope\":\"若原文为名词，本条未覆盖名词“降低/减少量”；名词层由s001/其他组承担\",\"counterexample\":\"decrease作名词可表示减少量或下降变化（wn31:n:05117108），本条仅动词。\",\"counterexample_evidence_ids\":[\"wn31:n:05117108\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-b2dc971f4895:core:1\",\"SG25-b2dc971f4895:core:2\"],\"evidence_ids\":[\"wn31:n:00352464\",\"wn31:v:00151509\"],\"reason\":\"两个源义的part_of_speech均为null；core:1把“减少”定为名词、core:2把“降低”定为动词，仅是教学推荐，未由原文逐义词性确认。\",\"repair_suggestion\":\"保持note透明；映射继续标无法确定，待原文词性或语境补充后再定核心词性。\"}],\"note\":\"“减少/降低”分别按名词/动词推荐入核心，但源词性未定，映射只能待核；两词性均有词典证据。\"}]}",
+  "usage": {
+    "prompt_tokens": 4948,
+    "completion_tokens": 15437,
+    "total_tokens": 20385,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 13493
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3028
+  },
+  "started_utc": "2026-11-13T09:40:12.894627+00:00",
+  "completed_utc": "2026-11-13T09:41:37.902268+00:00",
+  "elapsed_seconds": 85.0,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

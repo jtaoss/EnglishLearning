@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_018",
+  "kind": "audit",
+  "request_hash": "15d95ea77abdce2c6cd0a2ae9e32fc43283f4846eaf7311e530975d4865e626d",
+  "input_ids": [
+    "SG25-84ac874b232a",
+    "SG25-fc9184134ae5",
+    "SG25-9deb65b8788f",
+    "SG25-f054cfcb3f1c",
+    "SG25-b093720ae253"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "009a0b7a-1dd3-44e8-a1ac-3b8aeea3b914",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-84ac874b232a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：适宜目的或情境的“合适的”\",\"relation\":\"语义等价\",\"reason\":\"核心合并组保留“合适的”，与 appropriate/suitable 的适宜、恰当证据一致，未添加对象或领域限制。\",\"evidence_ids\":[\"wn31:s:00136526\",\"wn31:a:01884565\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：恰当、合乎情理的“恰当的”\",\"relation\":\"语义等价\",\"reason\":\"核心合并组保留“恰当的”，证据覆盖 rightness/appropriateness，未把“特指本身”等非来源义并入。\",\"evidence_ids\":[\"wn31:s:00136526\",\"wn31:a:01884565\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：适合某一用途的“适合的”\",\"relation\":\"语义等价\",\"reason\":\"核心合并组保留“适合的”，与 suitable/appropriate 的用途适宜义一致。\",\"evidence_ids\":[\"wn31:s:00136526\",\"wn31:a:01884565\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义形容词义均保留在核心合并组，英语证据覆盖适宜、恰当、适合范围，未发现来源范围缺口。\"},{\"id\":\"SG25-fc9184134ae5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：土地建筑等房地产、地产\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“地产”；web:property 观察明确土地建筑房地产义，但该证据自注需补证且非独立词典频次证据，故关系暂按待核记录。\",\"evidence_ids\":[\"web:property\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"名词：拥有的物品、所有物\",\"relation\":\"语义等价\",\"reason\":\"核心组含“所有物”，n:13265007 覆盖 tangible/intangible possession，未添加额外对象限制。\",\"evidence_ids\":[\"wn31:n:13265007\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：财产、拥有物总称\",\"relation\":\"语义等价\",\"reason\":\"核心组含“财产”，同一拥有物证据覆盖 property 的财产义，且未把“性质/特性”等非来源义并入。\",\"evidence_ids\":[\"wn31:n:13265007\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_pending\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-fc9184134ae5:extended:2\"],\"evidence_ids\":[\"web:property\"],\"reason\":\"地产义仅由出版方观察支撑，且该证据注明非独立词典频次证据；扩展组虽保留该义，具体土地建筑范围仍需补证。\",\"repair_suggestion\":\"补充独立词典或语料证据确认 property 的房地产/土地建筑义；确认前保持 pending，不并入核心。\"}],\"note\":\"核心组覆盖财产/所有物；地产义保留在扩展组但证据待补；“性质/特性”属外部词典新增，未作为来源义采用。\"},{\"id\":\"SG25-9deb65b8788f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：正式允许、准许\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“允许”，formal act of approving 可支撑正式批准/许可侧，未扩展到喜爱等非来源义。\",\"evidence_ids\":[\"wn31:n:01217882\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：准许、批准\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“准许”，与正式批准义证据一致；同意/认可侧另在扩展组保留。\",\"evidence_ids\":[\"wn31:n:01217882\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：同意、认可、接受\",\"relation\":\"合理概括\",\"reason\":\"扩展组用“同意”概括 approval 的认可/接受侧，证据为 acceptance as satisfactory；未把普遍喜爱等更宽义当作原文义。\",\"evidence_ids\":[\"wn31:n:14435778\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"允许/准许留在核心，同意/认可在扩展组保留；三层并集覆盖原三个名词义，未发现来源范围丢失。\"},{\"id\":\"SG25-f054cfcb3f1c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：心理学学科\",\"relation\":\"语义等价\",\"reason\":\"核心组精确保留“心理学”，WordNet 定义为 the science of mental life，未追加个人心理状态义。\",\"evidence_ids\":[\"wn31:n:06145709\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文只有学科义，核心组与“心智生活科学”证据一致，无额外限制或缺口。\"},{\"id\":\"SG25-b093720ae253\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：疾病相关的症状、可觉察表现\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“症状”，医学证据 n:14323139 覆盖疾病相关感受或功能变化；未把泛指迹象冒充原文医学义。\",\"evidence_ids\":[\"wn31:n:14323139\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心组精确对应医学“症状”；更宽泛的“迹象”虽有词典证据，但原文未要求，未作来源义扩展。\"}]}",
+  "usage": {
+    "prompt_tokens": 4877,
+    "completion_tokens": 12063,
+    "total_tokens": 16940,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10580
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2957
+  },
+  "started_utc": "2026-11-13T09:46:54.014363+00:00",
+  "completed_utc": "2026-11-13T09:48:03.199376+00:00",
+  "elapsed_seconds": 69.188,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

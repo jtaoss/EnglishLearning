@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_013",
+  "kind": "audit",
+  "request_hash": "a8410b8ace4583421a652caf109011c9261544f0164a2cc56f917d622845235a",
+  "input_ids": [
+    "SG25-abcd0ee1fc2c",
+    "SG25-4087b6426d9a",
+    "SG25-80c1018a4c8f",
+    "SG25-d4f568b800c6",
+    "SG25-8a741eb9c892"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "7e18f9b7-265f-41a4-910c-591ebdde8a6a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-abcd0ee1fc2c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"公告（正式公开告知/公告）\",\"relation\":\"语义等价\",\"reason\":\"组义含“公告”，并由正式公开声明/会议正式表达证据支持。\",\"evidence_ids\":[\"wn31:n:06738907\",\"wn31:n:06523865\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"声明（明确、正式的表态或陈述）\",\"relation\":\"语义等价\",\"reason\":\"组义含“声明”，与 emphatic explicit statement 及 formal public statement 对应。\",\"evidence_ids\":[\"wn31:n:06738626\",\"wn31:n:06738907\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"宣布（名词性宣布行为/内容）\",\"relation\":\"合理概括\",\"reason\":\"组义以正式公开表达概括宣布行为/内容；按源名词性处理，不改写成动词。\",\"evidence_ids\":[\"wn31:n:06523865\",\"wn31:n:06738907\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三义合并为正式公开表达，保留源名词性；法律、桥牌、报关等词典义未采用。\"},{\"id\":\"SG25-4087b6426d9a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"顾问（提供专业意见/建议的人）\",\"relation\":\"语义等价\",\"reason\":\"组义与 expert who gives advice 对应，人员角色清楚。\",\"evidence_ids\":[\"wn31:n:09793689\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单纯人员角色义，核心保留完整。\"},{\"id\":\"SG25-80c1018a4c8f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"曲线（弯曲的线/运动轨迹）\",\"relation\":\"语义等价\",\"reason\":\"组义“曲线”对应 trace of a point whose direction of motion changes。\",\"evidence_ids\":[\"wn31:n:13890262\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"弯道（道路等弯曲段）\",\"relation\":\"语义等价\",\"reason\":\"组义“弯道”对应 curved segment of road/river/railroad track。\",\"evidence_ids\":[\"wn31:n:02832880\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"弯曲（动词：自身弯曲/使弯曲）\",\"relation\":\"合理概括\",\"reason\":\"组义保留“弯曲”，并注明自身/使动；与 bend or cause to bend 相符。\",\"evidence_ids\":[\"wn31:v:02038516\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词曲线、弯道与动词弯曲均分别保留，词性未混。\"},{\"id\":\"SG25-d4f568b800c6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有限的（数量/空间/时间等受限）\",\"relation\":\"语义等价\",\"reason\":\"组义与 bounded/limited in magnitude or spatial/temporal extent 对应；语法有限动词义未混入。\",\"evidence_ids\":[\"wn31:a:01010155\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"一般“有限”义覆盖清楚，语法专业义未作为源义加入。\"},{\"id\":\"SG25-8a741eb9c892\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"擦亮（使表面光亮）\",\"relation\":\"合理概括\",\"reason\":\"组义以擦亮/抛光概括表面抛光，证据为 make a surface shine。\",\"evidence_ids\":[\"wn31:v:01248201\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"润色（文字/作品加工使完善）\",\"relation\":\"范围扩大\",\"reason\":\"组义在“润色”外加入一般“完善（文字、表现等）”；英语词典有该用法不等于原文表达了它。\",\"evidence_ids\":[\"wn31:v:00474948\",\"wn31:v:00474730\"],\"context\":\"none\",\"residual_scope\":\"多出一般“完善（表现等）”抽象范围\",\"counterexample\":\"润色文稿/文字（原文支持）对比完善社会举止（词典例，原文未支持）\",\"counterexample_evidence_ids\":[\"wn31:v:00474730\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"抛光剂（用于抛光的制剂）\",\"relation\":\"语义等价\",\"reason\":\"组义与 a preparation used in polishing 对应。\",\"evidence_ids\":[\"wn31:n:15020587\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"光泽（光滑表面的亮泽）\",\"relation\":\"语义等价\",\"reason\":\"组义与 the property of being smooth and shiny 对应。\",\"evidence_ids\":[\"wn31:n:04962337\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"scope_expansion\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-8a741eb9c892:p6c4:core_meanings:2\"],\"evidence_ids\":[\"wn31:v:00474730\",\"wn31:v:00474948\"],\"reason\":\"核心组把“润色”扩为一般“完善（文字、表现等）”；原文只支持文字/作品润色，英语 social manners 例不能直接并入源义。\",\"repair_suggestion\":\"核心保留“润色（文字/作品）”，将一般“完善”/表现用法移到扩展或标为词典补充，不与源义等价合并。\"}],\"note\":\"四个源义均有链接；两个名词义在扩展保留。核心 s002 有轻度范围扩大，需限定或后置。\"}]}",
+  "usage": {
+    "prompt_tokens": 5725,
+    "completion_tokens": 11997,
+    "total_tokens": 17722,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10469
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3805
+  },
+  "started_utc": "2026-11-13T09:50:57.314275+00:00",
+  "completed_utc": "2026-11-13T09:52:03.896397+00:00",
+  "elapsed_seconds": 66.578,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

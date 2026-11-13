@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_32",
+  "request_hash": "5fae30ffbd31ff701710278f3b360cc8f0ff6aaec96cb2963efe7ab4dfd4f61a",
+  "started_utc": "2026-11-13T08:16:13.911029+00:00",
+  "completed_utc": "2026-11-13T08:16:59.558631+00:00",
+  "elapsed_seconds": 45.641,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "084e428e-8e45-44b7-92ac-45b2fe74671b",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3467,
+    "completion_tokens": 2315,
+    "total_tokens": 5782,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1976
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3467
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-0b514913789f\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"WordNet act sense wn31:n:01083552 ('the act of consorting with or joining with others') is not explicitly mapped to 联系; candidate uses relation/state senses only. If 联系 is intended to include active contact/association, this may be an omitted nuance, but Chinese gloss 联系 commonly covers relation/connection, so this is not a confirmed defect.\",\n          \"evidence_ids\": [\n            \"wn31:n:01083552\"\n          ],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"SG25-0b514913789f:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"Optionally add a note or dictionary_addition for the act sense; not required as core.\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"Candidate correctly separates 协会 (formal organization) from 联系/关系 and 联想, with appropriate POS and dictionary support. 联系 is represented by relation and social/business relationship senses; the act-of-consorting sense is not separately shown but can be seen as covered by broad 联系. Chemistry and ecology senses are correctly demoted to external additions. No semantic inversion or wrong POS.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

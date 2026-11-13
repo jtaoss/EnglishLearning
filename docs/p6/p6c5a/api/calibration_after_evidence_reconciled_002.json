@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_after_evidence_reconciled_002",
+  "kind": "audit",
+  "request_hash": "d863fb41f586e2c235b38f33e09ddf3395315c5be6eb218c2fecacae159ea630",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ed85ef5d-be72-49ee-a797-cefbc11cdc4c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-093e7d5fdbaa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"联系（人际/机构沟通；源词性未定，名词与动词路径均保留）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组1覆盖 n07293990 / n00040035 的沟通、密切互动义，核心动词组3覆盖 v00745330 的建立沟通义；s001 的 part_of_speech 为 null，候选同时保留名词和动词路径，未把源词性静默改写成单一标签。\",\"evidence_ids\":[\"wn31:n:07293990\",\"wn31:n:00040035\",\"wn31:v:00745330\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"接触（物理触碰/紧邻状态；源词性未定，名词与动词路径均保留）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组2覆盖 n00125700 / n14442914 / n07353929 的物理触碰、紧邻或相碰状态，核心动词组4覆盖 v01208316 的直接物理接触；s002 词性为 null 时双路径均保留。\",\"evidence_ids\":[\"wn31:n:00125700\",\"wn31:n:14442914\",\"wn31:n:07353929\",\"wn31:v:01208316\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-093e7d5fdbaa:p6c5:core_meanings:1\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:2\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:3\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:4\"],\"evidence_ids\":[],\"reason\":\"两个源片段的 part_of_speech 均为 null；当前候选同时保留名词和动词四组，没有把 null 静默改成单一源词性，但源词性本身仍需后续语境核对。\",\"repair_suggestion\":\"继续保留名词/动词双路径；若后续教材语境能确定片段词性，再补源词性说明；推荐词性不得写成源标签。\"}],\"note\":\"两片段源词性均为 null；核心名词/动词四组联合覆盖“联系”与“接触”，未把隐形眼镜、电路触点、人脉等外部候选混入核心；主要剩余是源词性待核。\"},{\"id\":\"SG25-bf0bb4ee60e2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"伸展（肢体或可伸展物体伸直/展开）\",\"relation\":\"合理概括\",\"reason\":\"核心组1用“伸展；展开（肢体或物体）”合并肢体伸展 v00027261、桌腿/天线等物体伸展 v01371528/v02058913，并以例示方式给出对象；未把空间/时间延伸并入本义。\",\"evidence_ids\":[\"wn31:v:00027261\",\"wn31:v:01371528\",\"wn31:v:02058913\",\"pub:p6c5:parent:extend\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"变宽（不及物变化义）\",\"relation\":\"无法确定\",\"reason\":\"所给证据主要为及物“扩大范围/使变宽”或空间跨度：v00541315 的例证多为及物/被动扩大范围，v02693758 为空间/时间跨度；未直接证明 extend 可表示不及物“become wider”。候选已明确暂存，未静默配入核心。\",\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少直接支持不及物“变宽”的词典证据；现有证据为及物扩大范围或空间跨度。\",\"counterexample\":\"extend the backyard / widen the range 是及物扩大范围，不是“变宽”的不及物变化。\",\"counterexample_evidence_ids\":[\"wn31:v:00541315\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"延伸（空间/时间/范围上的绵延与伸出）\",\"relation\":\"合理概括\",\"reason\":\"核心组2保留空间/时间上的绵延、达到、向外伸出，对应 v02691775 / v02693758 / v02695935；v02691775 定义还含 scope，注释只列空间/时间但证据未丢失抽象范围，可作为自然概括处理。\",\"evidence_ids\":[\"wn31:v:02691775\",\"wn31:v:02693758\",\"wn31:v:02695935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"pending_source_sense\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"reason\":\"s002“变宽”未进入核心或扩展，仅以 held 暂存；v00541315 为及物扩大范围/使变宽，v02693758 为空间跨度，均未直接证明不及物 become wider。\",\"repair_suggestion\":\"补查可靠词典或语料是否列 extend 的不及物“变宽”用法；若无，保留 pending，并考虑原文“变宽”与 widen/expand 的源对应不确定性。\"},{\"severity\":\"Info\",\"kind\":\"scope_note_clarification\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-bf0bb4ee60e2:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:v:02691775\"],\"reason\":\"核心组2注释只写空间/时间延伸，但所附 v02691775 定义含 scope；原文“延伸”可涉范围/抽象延伸。证据已保留，属显示与注释澄清，不是已确认覆盖缺口。\",\"repair_suggestion\":\"可在注释中补“范围/抽象延伸”或说明空间/时间为示例；不改变核心层级。\"}],\"note\":\"s001“伸展”与 s003“延伸”有核心组覆盖；s002“变宽”因仅见及物扩大或空间跨度证据而明确暂存，故词义覆盖为 partial。s003 注释可补范围/抽象延伸，但 v02691775 已含 scope。\"}]}",
+  "usage": {
+    "prompt_tokens": 5979,
+    "completion_tokens": 15497,
+    "total_tokens": 21476,
+    "prompt_tokens_details": {
+      "cached_tokens": 5120
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 13975
+    },
+    "prompt_cache_hit_tokens": 5120,
+    "prompt_cache_miss_tokens": 859
+  },
+  "started_utc": "2026-11-13T09:38:39.530165+00:00",
+  "completed_utc": "2026-11-13T09:40:10.858582+00:00",
+  "elapsed_seconds": 91.328,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

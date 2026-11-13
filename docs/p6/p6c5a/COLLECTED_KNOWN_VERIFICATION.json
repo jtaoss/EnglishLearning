@@ -1,0 +1,700 @@
+{
+  "before": {
+    "stage": "verify_known_before",
+    "kind": "verify",
+    "records": [
+      {
+        "id": "SG25-7920fdeff9c5",
+        "review": {
+          "id": "SG25-7920fdeff9c5",
+          "scope_checks": [
+            {
+              "relation": "范围收窄",
+              "reason": "源名词“仪式”为一般仪式，未限定宗教；目标仅保留“宗教仪式的规定程序”，缺失非宗教/世俗仪式用法；Collins观察与WordNet n:01029801均支持广义仪式。",
+              "evidence_ids": [
+                "wn31:n:01029801"
+              ],
+              "sid": "s001",
+              "unverified_model_citation_ids": [
+                "pub:p6c5:collins:ritual"
+              ]
+            },
+            {
+              "relation": "合理概括",
+              "reason": "源“惯常程序”指惯常的固定做法/行为；目标“惯常做法/固定行为”是其自然上位表达，并用n:00415803和n:01029801支撑；无排他限制。",
+              "evidence_ids": [
+                "wn31:n:00415803",
+                "wn31:n:01029801"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "源形容词“仪式的”由目标“仪式的/与仪式有关的”覆盖，且括注同时容纳社会性及宗教仪式两类形容词证据。",
+              "evidence_ids": [
+                "wn31:a:02903641",
+                "wn31:a:02903908"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [
+            {
+              "severity": "Major",
+              "kind": "scope_narrowing",
+              "source_ids": [
+                "s001"
+              ],
+              "group_ids": [
+                "SG25-7920fdeff9c5:p6c5:core_meanings:1"
+              ],
+              "evidence_ids": [
+                "wn31:n:01029801"
+              ],
+              "reason": "原中文“仪式”没有宗教限制，证据显示ritual可指宗教或其他仪式；候选只保留宗教仪式规定程序，造成非宗教庄重仪式/习俗用法在所有层级缺失。",
+              "counterexample": "The graduation ceremony is a ritual.",
+              "repair_suggestion": "将核心1调整为“仪式（宗教或世俗的庄重仪式/习俗）”，或新增包含“任何惯常仪式/习俗”的义项并链接wn31:n:01029801；不要仅限宗教规定程序。",
+              "unverified_model_citation_ids": [
+                "pub:p6c5:collins:ritual"
+              ]
+            }
+          ],
+          "unresolved": [
+            "s002是否被target group2的“固定行为”扩大到单一习惯行为，尚需进一步确认；源“程序”可能要求步骤序列。",
+            "s001的非宗教仪式是否应单独列出还是合并到s002，需要更多中文语境确认。"
+          ],
+          "preferences": [
+            "教学顺序上，可把广义“仪式”放在宗教仪式之前或并列，但必须覆盖非宗教用法。"
+          ],
+          "note": "核心3形容词覆盖良好；核心1的宗教限定为确认缺陷。"
+        },
+        "api_tag": "verify_known_before_001",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "d5a2a2b5-81cc-4f8a-8e9f-5b1a0a8c0f0a",
+        "raw_response_sha256": "51c2fe5bea1f184834c38bcaa23b4dab8a49d93f4e34b5aa49ce341807fc42e6",
+        "raw_record_sha256": "0b559a321350cd6c97c398bbc92c93e902767d0730c715c3f4e69303c717a779",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [
+            "pub:p6c5:collins:ritual"
+          ],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-e3f48726b892",
+        "review": {
+          "id": "SG25-e3f48726b892",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "目标“学习者”与源一致；WordNet虽注‘especially a child’，但非排他，且中文原词为宽义改述，候选保留宽义。",
+              "evidence_ids": [
+                "wn31:n:10271476"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "目标“学者”与源一致，证据为learned person，覆盖学科掌握者。",
+              "evidence_ids": [
+                "wn31:n:10577282"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "目标明确列出“文人”，并在注释中说明其为learned person在人文领域的下位用法；源词本人文色彩得到保留。",
+              "evidence_ids": [
+                "wn31:n:10577282"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [
+            "把“文人”并入“学者”可能略去其“作家/文人”的非学术色彩，但提供证据仅支持人文领域学习者，当前处理可接受；若后续有反例可拆分。"
+          ],
+          "preferences": [
+            "可考虑在core1中把“文人”单列为并列义项而非合并，以便区分学术与文学色彩。"
+          ],
+          "note": "该记录未发现确认的范围缺陷；unadopted external candidate（奖学金获得者）未采用，不影响来源覆盖。"
+        },
+        "api_tag": "verify_known_before_001",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "d5a2a2b5-81cc-4f8a-8e9f-5b1a0a8c0f0a",
+        "raw_response_sha256": "51c2fe5bea1f184834c38bcaa23b4dab8a49d93f4e34b5aa49ce341807fc42e6",
+        "raw_record_sha256": "b349c961145bea3ff50ffc74813377e708f687432ebb0f921a27a4ac703af1e7",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-093e7d5fdbaa",
+        "review": {
+          "id": "SG25-093e7d5fdbaa",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "原片段词性未定但源词性含名词和动词；名词组1覆盖沟通互动/联系状态，动词组3覆盖建立/进行沟通，均与英语证据相符，未遗漏该片段在原语境下的用途。",
+              "evidence_ids": [
+                "wn31:n:07293990",
+                "wn31:n:00040035",
+                "wn31:v:00745330"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "原片段词性未定；名词组2覆盖物理触碰、紧邻或相碰，动词组4覆盖使某物与另一物发生物理接触，均与证据相符。",
+              "evidence_ids": [
+                "wn31:n:00125700",
+                "wn31:n:14442914",
+                "wn31:n:07353929",
+                "wn31:v:01208316"
+              ],
+              "sid": "s002"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [],
+          "preferences": [],
+          "note": "源词性未定，候选按名词和动词分别覆盖，处理得当；未混入隐形眼镜、电路触点、人脉等词典外部义。"
+        },
+        "api_tag": "verify_known_before_002",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "b3230758-b86b-46aa-b845-5e075ab622bb",
+        "raw_response_sha256": "0212eb45df51d4552a6ee0b9bd248b7756c9d51aa1631deafc0914f33669b6fb",
+        "raw_record_sha256": "d743cd459c4c408350fe42d57b3d50a1622b2c434750745c9c023bae5dd6d929",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-bf0bb4ee60e2",
+        "review": {
+          "id": "SG25-bf0bb4ee60e2",
+          "scope_checks": [
+            {
+              "relation": "范围收窄",
+              "reason": "组1将“伸展”仅限定为主动伸展身体部位，而证据中还有非身体对象的向外伸展用法（如 v02695935、v02058913），这些用途未链接到本原义，也未在其它组中声明覆盖，构成对象范围收窄。",
+              "evidence_ids": [
+                "wn31:v:00027261",
+                "wn31:v:02695935",
+                "wn31:v:02058913"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "无法确定",
+              "reason": "原义“变宽”为不及物变化义，现有证据多为及物“使变宽/扩大范围”或空间跨度，未直接证明英语 extend 有不及物“become wider”用法，暂存待核。",
+              "evidence_ids": [
+                "wn31:v:00541315",
+                "wn31:v:00235827"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "组2覆盖空间或时间上的延伸、向外伸出，以不及物为主，与英语证据相符；未发现明显缺失。",
+              "evidence_ids": [
+                "wn31:v:02691775",
+                "wn31:v:02693758",
+                "wn31:v:02695935"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [
+            {
+              "severity": "Minor",
+              "kind": "range_narrowing",
+              "source_ids": [
+                "s001"
+              ],
+              "group_ids": [
+                "SG25-bf0bb4ee60e2:p6c5:core_meanings:1"
+              ],
+              "evidence_ids": [
+                "wn31:v:00027261",
+                "wn31:v:02695935",
+                "wn31:v:02058913"
+              ],
+              "reason": "原义“伸展”并未限定对象仅为身体部位，英语 extend 也支持非身体对象的向外伸展；候选组1明确加上了“对象为身体部位”的限制且没有其他组补齐该用法，造成原义覆盖收窄。",
+              "counterexample": "“遮阳篷向外伸展”对应 “The awning extends several feet over the sidewalk”（wn31:v:02695935）；“伸展天线”对应 “extend the TV antenna”（wn31:v:02058913）。",
+              "repair_suggestion": "将组1的对象范围扩展至非身体对象，或新增一组链接到 s001 以覆盖向外伸展/展开的非身体用法，并引用 v02695935、v02058913 等证据。"
+            }
+          ],
+          "unresolved": [
+            {
+              "source_id": "s002",
+              "issue": "缺少英语 extend 表示“变宽”（不及物变化）的直接证据；现有词典中 v00541315 等均为及物扩大范围，不适用于原义。",
+              "evidence_reviewed": [
+                "wn31:v:00541315",
+                "wn31:v:00235827",
+                "wn31:v:02691775"
+              ]
+            }
+          ],
+          "preferences": [],
+          "note": "s001 存在非身体对象伸展的收窄缺陷，s002 已正确暂存但证据仍不足，s003 覆盖基本完整。"
+        },
+        "api_tag": "verify_known_before_002",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "b3230758-b86b-46aa-b845-5e075ab622bb",
+        "raw_response_sha256": "0212eb45df51d4552a6ee0b9bd248b7756c9d51aa1631deafc0914f33669b6fb",
+        "raw_record_sha256": "2b43f1cb40a92003396bb8b680f3f231cb68c8d158d8c0b23766d3e500a33e37",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "severity",
+              "before": "minor",
+              "after": "Minor",
+              "reason": "enum letter case only"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      }
+    ],
+    "record_count": 4,
+    "expected_count": 4,
+    "missing_ids": [],
+    "transport_errors_preserved": [],
+    "no_new_model_calls": true,
+    "collector_sha256": "e03dc50ed7d0d587e0779781702b37ec407e1f21e20778218ab7abd162e847b6"
+  },
+  "after": {
+    "stage": "verify_known_after_and_pursue",
+    "kind": "verify",
+    "records": [
+      {
+        "id": "SG25-7920fdeff9c5",
+        "review": {
+          "id": "SG25-7920fdeff9c5",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "组1以‘仪式；礼仪程序（宗教或非宗教）’覆盖，并使用wn31:n:01029801与parent证据保留非宗教正式仪式范围，未添加排他对象限制。",
+              "evidence_ids": [
+                "wn31:n:01029801",
+                "wn31:n:01032852",
+                "pub:p6c5:parent:ritual"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "组2用‘惯常做法/固定行为’对应‘惯常程序’，证据包括stereotyped behavior与customary practice，符合英语ritual的惯常行为义，未添加不必要步骤限制。",
+              "evidence_ids": [
+                "wn31:n:00415803",
+                "wn31:n:01029801"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "组3以‘仪式的/与仪式有关的’覆盖形容词，证据分别支持社会礼仪和宗教仪式两类，未超出原文范围。",
+              "evidence_ids": [
+                "wn31:a:02903641",
+                "wn31:a:02903908"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [],
+          "preferences": [],
+          "note": "三组覆盖名词两义与形容词一义；未发现证据内的覆盖缺陷。核心排序合理。"
+        },
+        "api_tag": "verify_known_after_and_pursue_001",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "e1458d45-b50b-4667-8ab2-aef9ceb25f9a",
+        "raw_response_sha256": "67f6b76540617a4a5e2d3acdbe9a455b3e82a59e14bed6f0f293df1d875ea4b5",
+        "raw_record_sha256": "d69a4ec70c0231bba9a7fd6927134efbcadf9c701bb47c3c338bcb01cde49415",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-e3f48726b892",
+        "review": {
+          "id": "SG25-e3f48726b892",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "组2用learner覆盖‘学习者’，证据wn31:n:10271476虽提及尤其儿童，但不排他，中文宽义可对应。",
+              "evidence_ids": [
+                "wn31:n:10271476"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "组1中‘学者’直接对应learned person，证据wn31:n:10577282定义准确。",
+              "evidence_ids": [
+                "wn31:n:10577282"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "合理概括",
+              "reason": "‘文人’被并入learned person组作为下位用法，evidence仅提供人文领域learned person的概括，未提供专门literary person证据；概括可接受，但需注意下位区别。",
+              "evidence_ids": [
+                "wn31:n:10577282"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [
+            "‘文人’的具体文义（文学/人文领域的人）仅由宽泛的learned person证据间接支持；组内注释称其为‘文学/人文学科的学习者’，但‘文人’并非学习者，可能误导。需要专门词典支持或调整注释。"
+          ],
+          "preferences": [
+            "建议将组1注释中的‘学习者’改为‘文学/人文学科人士’，以准确描述‘文人’的下位范围。"
+          ],
+          "note": "学习者与学者映射准确；文人作为下位用法并入学者组属合理概括，但专用文学义证据不足及注释表述已列入unresolved。"
+        },
+        "api_tag": "verify_known_after_and_pursue_001",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "e1458d45-b50b-4667-8ab2-aef9ceb25f9a",
+        "raw_response_sha256": "67f6b76540617a4a5e2d3acdbe9a455b3e82a59e14bed6f0f293df1d875ea4b5",
+        "raw_record_sha256": "98a490a5909b10918880a0ddc446b2eb7c1e30898b2746f95b99b08a7658b20f",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-093e7d5fdbaa",
+        "review": {
+          "id": "SG25-093e7d5fdbaa",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "源片段未单独标注词性；现有分组在名词与动词下分别覆盖“联系”的沟通/互动义，证据为 WordNet 交际互动与建立沟通，未添加原文/证据以外的对象或方向限制。",
+              "evidence_ids": [
+                "wn31:n:07293990",
+                "wn31:n:00040035",
+                "wn31:v:00745330"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "“接触”在名词下以物理触碰、紧邻、相碰，动词下以直接物理接触/相碰获得覆盖；证据支持状态与动作，未将电子触点、隐形眼镜等外部义纳入核心。",
+              "evidence_ids": [
+                "wn31:n:00125700",
+                "wn31:n:14442914",
+                "wn31:n:07353929",
+                "wn31:v:01208316"
+              ],
+              "sid": "s002"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [
+            "s001/s002 的个别词性未在原始义项内标注；当前按全局 source_pos 双词性展开，可能对非预期词性造成扩大，需教材语境确认。",
+            "s002 是否包含非物理的“接触/交往”义未定；现有核心仅物理接触，若原义需涵盖“与新事物/文化接触”，则可能收窄，但现有证据不足以确认。"
+          ],
+          "preferences": [
+            "外部候选触点、隐形眼镜、人脉只作词典补充未进核心，是合理的教学排序而非缺陷。"
+          ],
+          "note": "未发现已确认的覆盖缺陷；候选把两个中文片段分别建立名词/动词联系/接触，核心层级证据清楚，暂存与外部候选处理未引入核心污染。"
+        },
+        "api_tag": "verify_known_after_and_pursue_002",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "539a06eb-c8ee-4537-ba08-d3d8ff16a0a0",
+        "raw_response_sha256": "bdd37966fc0701124380044d3c8509d727fa22b0667afc791213eca1299b1d31",
+        "raw_record_sha256": "4f01c55d858a7b0782c665baa3f4e98c1c77e96de844c77e0ebb3fb957fa5930",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-bf0bb4ee60e2",
+        "review": {
+          "id": "SG25-bf0bb4ee60e2",
+          "scope_checks": [
+            {
+              "relation": "语义等价",
+              "reason": "“伸展”目标组覆盖身体/肢体及可伸展物体，证据为伸展四肢、展开桌腿/布料/天线等；未添加排他对象限制，中文‘伸展’允许及物/不及物身体和物体用法。",
+              "evidence_ids": [
+                "wn31:v:00027261",
+                "wn31:v:01371528",
+                "wn31:v:02058913",
+                "pub:p6c5:parent:extend"
+              ],
+              "sid": "s001"
+            },
+            {
+              "relation": "无法确定",
+              "reason": "原义“变宽”为不及物状态变化；当前无显示组覆盖，仅在 held 暂存。所给 WordNet v00541315 为及物使变宽/扩大范围，v02693758 为空间跨度，未直接证明‘become wider’。证据不足，不能确认已覆盖，但也不能断言生成器错误。",
+              "evidence_ids": [
+                "wn31:v:00541315",
+                "wn31:v:02693758"
+              ],
+              "sid": "s002"
+            },
+            {
+              "relation": "语义等价",
+              "reason": "“延伸”目标组覆盖空间/时间绵延、达到、向外伸出，证据为距离/空间/时间跨度；未扩大至给予、时间延长等未明说义。",
+              "evidence_ids": [
+                "wn31:v:02691775",
+                "wn31:v:02693758",
+                "wn31:v:02695935"
+              ],
+              "sid": "s003"
+            }
+          ],
+          "confirmed_within_supplied_evidence": [],
+          "unresolved": [
+            "s002 变宽：无显示层覆盖；held 指出所给词典证据方向不一致（主要及物使变宽/范围扩大，未证明不及物自身变宽）。若教材实际是及物‘使范围变宽/扩大’，应将 v00541315 作为候选并再定词性；若是不及物变化，则需补充可用英语证据。",
+            "s001/s003 之间‘伸展’与‘延伸’在空间义上有重叠（如不及物向外延伸），当前分组按主体/方向切分，但个别例句可能跨组，教学顺序待人工确认。"
+          ],
+          "preferences": [
+            "未采用时间延长、给予/提供、扩大范围/影响作为核心，符合原文未明说的政策；只做词典补充。",
+            "held s002 保留待核，优于强行把及物 widen 映射为‘变宽’。"
+          ],
+          "note": "候选未将 s002 变宽纳入核心/扩展是合理的暂存，不应直接判 Major；但最终覆盖需以教材语境确认。"
+        },
+        "api_tag": "verify_known_after_and_pursue_002",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "539a06eb-c8ee-4537-ba08-d3d8ff16a0a0",
+        "raw_response_sha256": "bdd37966fc0701124380044d3c8509d727fa22b0667afc791213eca1299b1d31",
+        "raw_record_sha256": "357be8dfeb0ddad94059571a55c7961a9187732b37423f6e1afb0e868f6d44cd",
+        "strict_contract_passed": true,
+        "strict_failure": null,
+        "metadata": {
+          "representation_normalizations": [
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            },
+            {
+              "field": "source_sense_id->sid",
+              "reason": "same source identifier field alias; value unchanged"
+            }
+          ],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      },
+      {
+        "id": "SG25-0f571e7c2d33",
+        "review": {
+          "id": "SG25-0f571e7c2d33",
+          "scope_checks": [
+            {
+              "sid": "s001",
+              "relation": "合理概括",
+              "reason": "原义“追求”宽泛，目标组以“追求；寻找”并注明词典搜求/猎取，属于用宽义改述保留原语境，未增加排他限制；但若把“追求目标”仅限定为搜索/猎取则可能收窄，需结合 unresolved 与已确认问题。",
+              "evidence_ids": [
+                "wn31:v:01320193"
+              ]
+            },
+            {
+              "sid": "s002",
+              "relation": "语义等价",
+              "reason": "“追赶；追捕”对应 follow in or as if in pursuit，方向、对象和意图均匹配原义。",
+              "evidence_ids": [
+                "wn31:v:02004900"
+              ]
+            },
+            {
+              "sid": "s003",
+              "relation": "语义等价",
+              "reason": "“从事；参与”对应 carry out or participate in an activity，词性、对象范围与原义一致。",
+              "evidence_ids": [
+                "wn31:v:02380222"
+              ]
+            }
+          ],
+          "confirmed_within_supplied_evidence": [
+            {
+              "severity": "moderate",
+              "kind": "scope_narrowing",
+              "source_ids": [
+                "s001"
+              ],
+              "group_ids": [
+                "SG25-0f571e7c2d33:p6c5:core_meanings:1"
+              ],
+              "evidence_ids": [
+                "wn31:v:01320193",
+                "pub:p6c5a:collins:pursue"
+              ],
+              "reason": "核心组注释把 s001 的证据唯一限定为 WordNet 'go in search of or hunt for'，并注明“词典定义为搜求/猎取”。原中文“追求”在常见语境还包括“努力实现/达到目标”，Collins 观察也写明“可努力实现目标或结果”。该含义未被该证据或注释明确保留，可能造成范围收窄。",
+              "counterexample": "追求理想/目标（strive to achieve a goal）不一定只是 search/hunt；Collins 和 WordNet 02381520 可作旁证。",
+              "repair_suggestion": "在 group 1 的注释中补充“含努力实现目标”并关联 Collins 观察或 wn31:v:02381520，或另设扩展组承载该义，避免把追求目标窄化为搜索/猎取。"
+            }
+          ],
+          "unresolved": [
+            "s001 的“追求”是否包含“努力实现目标”，现有证据 wn31:v:01320193 仅覆盖搜索/猎取；Collins 观察支持该义但未链接；需人工确认是否需要在核心组补充或作为扩展。",
+            "原文只有单个源词性动词，没有例句，无法进一步确定对象范围；所有判断基于通用词典。"
+          ],
+          "preferences": [
+            "如果保留核心组1，可考虑把 Collins 观察证据链接到该组，并在注释中并列“努力实现”与“寻找”，使人不误以为只限于搜索/猎取。"
+          ],
+          "note": "独立审阅认为三组核心映射总体覆盖原中文三个动作，但 s001 的“追求”可能因注释和证据聚焦搜索/猎取而未明确保留“努力实现目标”义；其余两组未见明显缺陷。未采用的外部义“推进”不属于原文，无需纳入。"
+        },
+        "api_tag": "verify_known_after_and_pursue_003",
+        "response_model": "deepseek-v4-pro",
+        "response_id": "697c904a-1e4b-41d3-8572-0a343cb5ecb9",
+        "raw_response_sha256": "7fd42d1cd9e4a786d21d72f197f6f5059209a678bea4b77c5e58f0071a93725f",
+        "raw_record_sha256": "fb7c15d414a36b64b118bb3ce603593826481fbf11334a32736c73c2cdddf0f7",
+        "strict_contract_passed": false,
+        "strict_failure": "Missing independent issue contrast",
+        "metadata": {
+          "representation_normalizations": [],
+          "unverified_citation_ids": [],
+          "derived_conservative_flags": [],
+          "semantic_labels_not_changed": true,
+          "no_wrong_ID_or_source_text_repair": true
+        },
+        "review_is_AI_not_human": true
+      }
+    ],
+    "record_count": 5,
+    "expected_count": 5,
+    "missing_ids": [],
+    "transport_errors_preserved": [],
+    "no_new_model_calls": true,
+    "collector_sha256": "e03dc50ed7d0d587e0779781702b37ec407e1f21e20778218ab7abd162e847b6"
+  },
+  "no_new_model_calls": true
+}

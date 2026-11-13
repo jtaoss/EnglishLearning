@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_66",
+  "request_hash": "3a0f2e4cb47f5197fefe9273ceea017ba1d1fa75b00ab81ac595ca79b16a52cb",
+  "started_utc": "2026-11-13T08:17:05.563309+00:00",
+  "completed_utc": "2026-11-13T08:18:49.556996+00:00",
+  "elapsed_seconds": 103.984,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "8918fe85-2573-40a4-9afc-8c597c0fb38e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3252,
+    "completion_tokens": 5435,
+    "total_tokens": 8687,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4808
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1204
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3165df34fcec\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"名词义“研究所”和“学院”均挂靠 WordNet n:08424287（组织/协会），该释义为宽泛上位义，未直接列出研究机构或学院作为下位义。候选已用“宽义机构义可涵盖”的限定标注，语义没有错误，但具体下位对应缺乏逐义词典证据。\",\n          \"evidence_ids\": [\"wn31:n:08424287\"],\n          \"source_sense_ids\": [\"s001\", \"s002\"],\n          \"candidate_group_ref\": \"SG25-3165df34fcec:p6c5:core_meanings:1|SG25-3165df34fcec:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"若后续人工确认需要更精确的英语义，可补充“研究所”为 research institute/专门研究机构，“学院”为 college/academy 的词典证据；本轮不必改变核心。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"动词义“实行”（s004）被保留为 pending，因为所提供的 WordNet v:01621566 为法律程序提起义，v:01650771 为建立/设立义，均不能支持“实施/实行”。候选未错误合并；此源义缺乏英语词典逐义证据。\",\n          \"evidence_ids\": [\"wn31:v:01621566\", \"wn31:v:01650771\"],\n          \"source_sense_ids\": [\"s004\"],\n          \"candidate_group_ref\": \"SG25-3165df34fcec:p6c5:reserved_original_items\",\n          \"proposed_fix\": \"保持暂存；如后续获得可靠词典义（如 put into effect/implement），再考虑是否纳入名词外用法。\"\n        }\n      ],\n      \"preferences\": [\n        \"名词两个中方提示分开保留是可取的，但共享同一个宽泛 WordNet 释义可能让学习者误以为它们同义；教学中可提示“研究所”偏科研、“学院”偏教育。\",\n        \"核心“建立；设立”可继续使用，但可补充搭配 initiate/set up a policy 等以区分于法律程序义。\"\n      ],\n      \"note\": \"候选处理总体合理：名词按源义分两组并诚实标注宽义兼容，动词建立与源义吻合，实行因证据不匹配正确进入暂存，法律义作为外部候选未被偷渡进核心。未发现已确认的翻译、词性或合并错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_65",
+  "request_hash": "831a160adb578f22a38dc48b22810c4ec902e940364d17088da0f828f36f2203",
+  "started_utc": "2026-11-13T08:17:03.194826+00:00",
+  "completed_utc": "2026-11-13T08:18:45.704628+00:00",
+  "elapsed_seconds": 102.515,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "7fe839fd-a18d-4f62-96f1-cb362939f3a0",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3025,
+    "completion_tokens": 5550,
+    "total_tokens": 8575,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4882
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 977
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-eb9a7650cd53\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"s002 '体质' is retained as pending because the available composition sense (wn31:n:04940721) is broad and does not independently confirm the body/health restriction. No confirmed error; additional evidence is needed to promote to core or refine.\",\n          \"evidence_ids\": [\"wn31:n:04940721\"],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"reserved_original_items\",\n          \"proposed_fix\": \"If a separate dictionary sense for physical constitution (health) is available, add it as evidence; otherwise keep pending.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"s003 '构成' may potentially support the activity sense (wn31:n:00237945 act of forming), but the candidate assigns it only to composition/way and places activity as dictionary addition without source link. Not a confirmed error if original is interpreted as result-only, but ambiguity should be tracked.\",\n          \"evidence_ids\": [\"wn31:n:00237945\"],\n          \"source_sense_ids\": [\"s003\"],\n          \"candidate_group_ref\": \"dictionary_additions (SG25-eb9a7650cd53:p6c5:addition:1)\",\n          \"proposed_fix\": \"If evidence supports activity as a possible reading of s003, create a semantic split or add source_sense_ids and status pending; otherwise keep current separation.\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"internal_consistency\",\n          \"reason\": \"source_POS_coverage value 'source_derived_use_represented' for 名词 is inconsistent because s002 is in reserved_original_items with status original_preserved_evidence_pending, not represented in core. Coverage should reflect partial pending.\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"source_POS_coverage\",\n          \"proposed_fix\": \"Change value to 'source_derived_use_represented_with_pending' or adjust to acknowledge pending source sense.\"\n        }\n      ],\n      \"preferences\": [\n        \"If s002 is later confirmed, consider grouping body constitution with composition way but with a specific note about physical condition.\",\n        \"When teaching, clarify that '构成' as a noun typically refers to structure rather than the act of forming.\"\n      ],\n      \"note\": \"Candidate correctly identifies the law sense and the composition/way sense; the body/health sense is preserved with pending status and not incorrectly promoted. The activity sense is separated as an unadopted dictionary addition, which is consistent with the conservative interpretation of the ambiguous Chinese noun. The only definite issue is the source_POS_coverage label not reflecting the pending status of s002.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

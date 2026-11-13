@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_87",
+  "request_hash": "67f5e0776e7a145417eceab48e86510e0504d686dffe3d5e1bbe8466f59fa1cf",
+  "started_utc": "2026-11-13T08:17:31.810682+00:00",
+  "completed_utc": "2026-11-13T08:18:42.216279+00:00",
+  "elapsed_seconds": 70.406,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c1204d6c-462c-4d00-9926-d65e653ced1e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3325,
+    "completion_tokens": 3467,
+    "total_tokens": 6792,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3200
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1277
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3d8eefab379d\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"首次记忆后，可将 “determine” 表示“确定边界/范围”（WordNet 00702474）和“成为决定因素/解决争议”（00765444）作为扩展提示，不必进入核心。\"\n      ],\n      \"note\": \"候选按原片段分别映射：s001“决定”→作出选择（wn31:v:00699355），s002“确定”→权威/明确固定（wn31:v:00701581, wn31:v:00949109），s003“查明”→调查弄清（wn31:v:00920843, wn31:v:00922307），词性、过程与对象区分合理。影响义（wn31:v:00702806）作为外部候选单独保留且未采用，未混入原文核心，符合分层规则。未纳入的边界固定义和解决争议义与源片段“确定”“决定”可能有一定兼容性，但并非首次理解必需的核心用法，故不作为当前问题。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

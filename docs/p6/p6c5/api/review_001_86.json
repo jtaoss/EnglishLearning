@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_86",
+  "request_hash": "26126a6e2730136036ee0acfc0c7af01d1719fa3e0d60d80c2323e326f1b92c8",
+  "started_utc": "2026-11-13T08:17:30.443507+00:00",
+  "completed_utc": "2026-11-13T08:18:30.366608+00:00",
+  "elapsed_seconds": 59.922,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5924fda9-f895-47e9-aeac-498630c50d9c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3239,
+    "completion_tokens": 3011,
+    "total_tokens": 6250,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2582
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1191
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-4c3200fefd8b\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源片段 '性情'（s002）可能指向更稳定的气质/性格义，但所供四个 WordNet 义项均为倾向、偏好、趋势或做某事的意向，未见独立稳定性情义。候选已将其挂起为 original_preserved_evidence_pending，属合理处理，但证据仍不确定，不能确认其为当前源义。\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"reserved_original_items\",\n          \"proposed_fix\": \"保持挂起，待补充支持 '性情' 作为独立 stable temperament 义的词典证据；当前所给 WordNet 四义均不覆盖该义。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学上可将 '倾向（偏好）' 与 '趋势/动向' 的层级顺序根据目标学员调整，若一般趋势更常用可前移，但非错误。\"\n      ],\n      \"note\": \"逐源义检查：s001 '倾向' 被候选拆分为自然趋势/特征性可能（wn31:n:04951225）、心理偏好态度（wn31:n:06206319）和一般动向（wn31:n:08699515，放扩展），三者用法边界清楚，未发现假合并；s003 '意向' 与 wn31:n:07514352 做某事的意愿匹配；s002 '性情' 因所给证据未明确覆盖稳定气质，候选挂起，属于可接受的暂存，未误标为已证实。词典四义全部有覆盖，未发现遗漏原文义或重要外部义。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

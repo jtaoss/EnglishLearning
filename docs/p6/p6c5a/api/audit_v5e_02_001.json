@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_001",
+  "kind": "audit",
+  "request_hash": "6a503da0b95ae8193aae6d77c230f7c8e4cb353312ea6cfe395936d638a08b7b",
+  "input_ids": [
+    "SG25-652d75f9bafb",
+    "SG25-59cd793c05f0",
+    "SG25-6f5a5c61ccdb",
+    "SG25-5138a960e3e1",
+    "SG25-f9070e8db001"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "cb42f2be-c605-4e9c-9c00-40c32043b3a5",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-652d75f9bafb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"债务（偿付义务或欠债状态）\",\"relation\":\"语义等价\",\"reason\":\"核心组合并保留“债务；欠款”，词典n:13418347（所欠钱财/财物/服务）与n:14514148（欠债状态）支持该财务义务义，未增加对象或领域限制。\",\"evidence_ids\":[\"wn31:n:13418347\",\"wn31:n:14514148\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"欠款（所欠钱财/欠债状态）\",\"relation\":\"语义等价\",\"reason\":\"核心组文本含“欠款”，n:13418347直接指money/goods/services owed，n:14514148补足owing state；两片段合并合理。\",\"evidence_ids\":[\"wn31:n:13418347\",\"wn31:n:14514148\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"债务与欠款合并为同一财务/欠款义核心组；原有“偿付义务”与“所欠财物/状态”均获词典证据支持，未发现残留范围缺口。\"},{\"id\":\"SG25-59cd793c05f0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"十年（十年时长/十年期）\",\"relation\":\"语义等价\",\"reason\":\"核心合并组包含“十年”，n:15229779“a period of 10 years”直接支持；未把基数义n:13768652当作十年义。\",\"evidence_ids\":[\"wn31:n:15229779\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"十年期（十年时段）\",\"relation\":\"语义等价\",\"reason\":\"“十年期”是同一十年时段的中文变体，核心组合并保留；n:15229779支持period of 10 years。\",\"evidence_ids\":[\"wn31:n:15229779\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"十年间（十年期间/时段）\",\"relation\":\"语义等价\",\"reason\":\"“十年间”仍指十年时段，核心组以n:15229779“a period of 10 years”覆盖；三个中文变体合并不增新义。\",\"evidence_ids\":[\"wn31:n:15229779\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个中文变体均表示“十年（期）”，核心合并保留；正确采用n:15229779（a period of 10 years），未把基数“十”当作十年义证据。\"},{\"id\":\"SG25-6f5a5c61ccdb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"损害（源词性未定，可能为名词或动词；候选仅以名词组“损害”承接）\",\"relation\":\"无法确定\",\"reason\":\"原片段part_of_speech为null/unresolved_multi_pos；核心名词组以n:00403900（act of damaging）和n:07435370（change for worse）支持名词“损害”，但未证明s001只作名词。动词层有“损坏”，但属于s002，不能自动把s001动词侧并入。\",\"evidence_ids\":[\"wn31:n:00403900\",\"wn31:n:07435370\",\"wn31:v:00259743\"],\"context\":\"uncertain\",\"residual_scope\":\"若s001含动词“损害”，联合层仅以s002动词“损坏”间接对应，存在词项和对象范围差异。\",\"counterexample\":\"词典动词“inflict damage upon”可支持动词用法，但原片段没有标注动词，不能据此把s001固定为名词。\",\"counterexample_evidence_ids\":[\"wn31:v:00259743\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"损坏（源词性未定，可能为动词或名词；候选仅以动词组“损坏”承接）\",\"relation\":\"无法确定\",\"reason\":\"原片段part_of_speech也为null；核心动词组以v:00259743支持“损坏”的动词“inflict damage upon”，但未证明s002只作动词。名词层有“损害”属于s001，不能自动把s002名词侧并入。\",\"evidence_ids\":[\"wn31:v:00259743\",\"wn31:n:00403900\"],\"context\":\"uncertain\",\"residual_scope\":\"若s002含名词“损坏”，联合层仅以s001名词“损害”间接对应，词项不同。\",\"counterexample\":\"词典名词“act of damaging”可支持名词用法，但原片段未标名词。\",\"counterexample_evidence_ids\":[\"wn31:n:00403900\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"source_pos_unresolved_assigned\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-6f5a5c61ccdb:core:1\",\"SG25-6f5a5c61ccdb:core:2\"],\"evidence_ids\":[\"wn31:n:00403900\",\"wn31:v:00259743\"],\"reason\":\"两个原片段均为unresolved_multi_pos，候选却把s001固定到名词组、s002固定到动词组，静默将源词性null转为已知词性；联合层虽同时有名词和动词，但各片段另一词性侧未明确待核。\",\"repair_suggestion\":\"在组注释或映射中显式保留源词性未定；将名词/动词两侧都标为需由原片段联合核验并列出剩余范围，不要用不同源ID自动借义。\"}],\"note\":\"名词“损害”和动词“损坏”两核心组均有词典证据，联合层覆盖名词/动词大类；但源片段词性未定，候选按名词/动词单侧固定，需按pending处理，不能视为逐义核验通过。\"},{\"id\":\"SG25-5138a960e3e1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"民主（民主原则/政治取向；广义）\",\"relation\":\"语义等价\",\"reason\":\"核心组“s001=民主”由n:05973312多数决定原则和n:06227040民主政治取向支持；未把制度义硬塞进该组。\",\"evidence_ids\":[\"wn31:n:05973312\",\"wn31:n:06227040\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"民主制度（政治制度/政体）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“民主制度”，n:08378256（supreme power in citizens who elect representatives）直接支持政治制度义；扩展层不等于遗漏。\",\"evidence_ids\":[\"wn31:n:08378256\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"核心保留“民主”原则/取向，扩展保留“民主制度”政体义；两者未完全同义，分层有注释说明，覆盖完整。\"},{\"id\":\"SG25-f9070e8db001\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有民主精神的（民主作风/态度）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“有民主精神的”，a:00718584支持“advocating/based on principles of democracy or social equality”；s00488527的democratic art forms/popular作为近邻证据，组注释已区分态度/作风。\",\"evidence_ids\":[\"wn31:s:00488527\",\"wn31:a:00718584\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"民主的（合民主原则/制度）\",\"relation\":\"语义等价\",\"reason\":\"核心组“民主的”由a:00718584直接支持，形容制度、国家等民主原则；未把“有民主精神”的作风义误作唯一。\",\"evidence_ids\":[\"wn31:a:00718584\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"核心保留“民主的”制度/原则用法，扩展保留“有民主精神的”态度/作风用法；适用对象区别在注释中保留，覆盖完整。\"}]}",
+  "usage": {
+    "prompt_tokens": 4823,
+    "completion_tokens": 13515,
+    "total_tokens": 18338,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11505
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2903
+  },
+  "started_utc": "2026-11-13T09:43:09.182082+00:00",
+  "completed_utc": "2026-11-13T09:44:22.389771+00:00",
+  "elapsed_seconds": 73.203,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_012",
+  "kind": "audit",
+  "request_hash": "20d176f3fac6b1f2ccc00e038d1f5f96839faad0b0a37e65efc62969b7d26d78",
+  "input_ids": [
+    "SG25-15275743f9d3",
+    "SG25-888df6d1572d",
+    "SG25-ef527ccc32ee",
+    "SG25-353e5d16112c",
+    "SG25-71d757566792"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "1cdbe9da-7d92-447b-8aed-ad1afdd6a22d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-15275743f9d3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"出现（进入视野/显露）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“出现”，wn31:v:00424924 的 come out into view 支持从隐蔽处进入视野的用法。\",\"evidence_ids\":[\"wn31:v:00424924\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"显现（变得可见/显露）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“显现”，同一词典证据支持 become visible/come into view 的显现义。\",\"evidence_ids\":[\"wn31:v:00424924\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"暴露（事实/秘密变得为人所知）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组把“暴露”限定为事实变得为人所知，未覆盖原文可能含有的及物“使暴露/揭露”方向；英语 emerge 证据只支持非及物变得已知，此点可能属来源待核。\",\"evidence_ids\":[\"wn31:v:00427534\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"缺失：若原文“暴露”含及物“使暴露/揭露”义，该范围未覆盖；需来源语境确认\",\"counterexample\":\"及物“暴露秘密/身份”（使某事被揭露）与 intransitive become known/apparent 不同\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"range_narrowing_unresolved\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-15275743f9d3:extended:1\"],\"evidence_ids\":[\"wn31:v:00427534\"],\"reason\":\"扩展组将“暴露”限定为事实变得为人所知并排除及物暴露，但原片段“暴露”缺少语境，未以 held 或明确剩余范围记录可能更宽的来源范围。英语 emerge 证据不支持及物 expose，因此更像来源待核而非可确认的英语义缺失。\",\"repair_suggestion\":\"保留扩展组的非及物“事实变得已知”用法；若来源语境支持及物“暴露”，另记 source-scope pending/held，不要无证据加入核心或写成英语 emerge 的及物义。\"}],\"note\":\"出现/显现核心有证据支持；暴露置于扩展但只用“事实变得已知”义，及物暴露未明确暂存，需补源范围说明。\"},{\"id\":\"SG25-888df6d1572d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"心理的（涉及心智/智力活动）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“心理的”，wn31:a:01784531 与 wn31:a:02910002 均支持 involving/relating to the mind。\",\"evidence_ids\":[\"wn31:a:01784531\",\"wn31:a:02910002\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"精神的（此处取心智/心理层面）\",\"relation\":\"语义等价\",\"reason\":\"核心组将“精神的”与“心理的”合于心智义，注释已排除宗教灵性义及自动指精神疾病；所给 mental 证据支持该心智范围。\",\"evidence_ids\":[\"wn31:a:01784531\",\"wn31:a:02910002\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"宗教/灵性意义的“精神的”不由 mental 覆盖\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"心理/精神合于心智义，核心两源义均有证据；已排除灵性/自动疾病义。\"},{\"id\":\"SG25-ef527ccc32ee\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"下降（数量/程度变小）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“下降”，wn31:v:00151509 的 decrease in size, extent, or range 支持数量规模变小义。\",\"evidence_ids\":[\"wn31:v:00151509\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"减少（数量/规模变小）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“减少”，同一词典证据覆盖 decrease in size/extent/range。\",\"evidence_ids\":[\"wn31:v:00151509\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"减弱（力量/强度/权威等变弱）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“减弱”，wn31:v:00151509 支持程度变小，wn31:v:00442836 支持权威/尊严/声誉被削弱，注释保留对象差别。\",\"evidence_ids\":[\"wn31:v:00151509\",\"wn31:v:00442836\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"下降/减少核心、减弱扩展，数量规模与权威/强度对象差别保留；原三义均有归属。\"},{\"id\":\"SG25-353e5d16112c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"侨民（旅居海外并保留本国籍者）\",\"relation\":\"无法确定\",\"reason\":\"该源义已 held：侨民常指海外国民/侨居者，与 immigrant 的“入境定居者”方向未必一致；无来源语境确认，不能通过。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"缺失：侨民若指海外国民/侨居者，则不在 immigrant 的入境定居范围；待来源语境确认\",\"counterexample\":\"侨民可指保留本国籍的海外国民，而 immigrant 指进入他国定居的人\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"移民（进入他国定居的人）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“移民”，wn31:n:10219108 定义为进入非出生国并定居的人。\",\"evidence_ids\":[\"wn31:n:10219108\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"移民者（进入他国定居者）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“移民者”，同一词典证据支持 person who comes to a country to settle there。\",\"evidence_ids\":[\"wn31:n:10219108\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"held_source_unresolved\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[],\"reason\":\"s001“侨民”被 held，理由是可能指海外国民/侨居者，与 immigrant 的入境定居义不完全一致；该来源冲突尚未解决。\",\"repair_suggestion\":\"保留 held，不把 s001 计为已覆盖；结合来源语境复核，若确为海外国民义则应与 immigrant 分开处理。\"}],\"note\":\"移民/移民者核心有入境定居证据；侨民 held，未通过，词条整体待定。\"},{\"id\":\"SG25-71d757566792\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"军事的（与军队/武装部队相关）\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组保留“军事的”，wn31:a:01521164 与 wn31:a:02775023 分别支持与武装部队相关及战争原则研究相关。\",\"evidence_ids\":[\"wn31:a:01521164\",\"wn31:a:02775023\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"军队（国家武装力量）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组保留“军队”，wn31:n:08215965 定义为 the military forces of a nation。\",\"evidence_ids\":[\"wn31:n:08215965\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词军事的与名词军队分属两核心入口，均有词典证据，跨词性未合并。\"}]}",
+  "usage": {
+    "prompt_tokens": 5021,
+    "completion_tokens": 10524,
+    "total_tokens": 15545,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8525
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3101
+  },
+  "started_utc": "2026-11-13T09:44:50.435406+00:00",
+  "completed_utc": "2026-11-13T09:45:50.825937+00:00",
+  "elapsed_seconds": 60.391,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

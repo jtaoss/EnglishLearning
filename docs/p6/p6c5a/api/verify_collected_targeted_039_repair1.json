@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_039_repair1",
+  "kind": "verify",
+  "request_hash": "8708a0988f24771fc2cffd6ea8d5f507a902a4cf053a7f28c3c3f32c9310681a",
+  "input_ids": [
+    "SG25-6df24c372c04",
+    "SG25-178b6e061a04"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e15e99ed-14d9-4d56-a214-4bbc717578bd",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6df24c372c04\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义1‘预订（座位、房间、票等）’覆盖为自己预订 (v:00797294) 和为他人预订 (v:02503969)，括号对象是示例而非排他；源义无对象限制，保留完整。\",\n          \"evidence_ids\": [\"wn31:v:00797294\", \"wn31:v:02503969\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义2‘保留；留出（供将来或专用）’对应 v:00726112 和 v:02219267，含资源、时间、物品留用；未新增领域限制。\",\n          \"evidence_ids\": [\"wn31:v:00726112\", \"wn31:v:02219267\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义3‘储备；储备物’直接匹配 n:13389225；源名词义覆盖。\",\n          \"evidence_ids\": [\"wn31:n:13389225\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展义1‘保护区；保留地’对应 n:08604729；置于扩展层不影响覆盖。\",\n          \"evidence_ids\": [\"wn31:n:08604729\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"未发现源义覆盖缺陷；候选各层联合覆盖原中文释义，证据支持对象与词性。未采用外部候选不构成源义缺陷。\"\n    },\n    {\n      \"id\": \"SG25-178b6e061a04\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义1‘联系；使关联’覆盖 v:00715072 的逻辑/因果连接；未采用 v:02475598 的更宽泛联合/交往义，但源义‘联系’可能仅指一般连接且证据未提供 contact 义，候选不构成排他限制，故不判为范围收窄。\",\n          \"evidence_ids\": [\"wn31:v:00715072\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义2‘交往；结伴’对应 v:02595401，并标注常与 with 连用，覆盖源义。\",\n          \"evidence_ids\": [\"wn31:v:02595401\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义3‘同事（工作或机构中的共事者）’依据 n:09836176/n:09836579 将源义具体化到工作语境，中文‘同事’本指工作/机构共事者，证据中下级成员色彩不构成源义扩大。\",\n          \"evidence_ids\": [\"wn31:n:09836176\", \"wn31:n:09836579\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心义4‘伙伴；同伴’对应 n:09965384；源义覆盖。\",\n          \"evidence_ids\": [\"wn31:n:09965384\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源义 s001 ‘联系’未提供对象或语境；英语 associate 作动词时是否覆盖‘联系某人（contact）’尚不明确，候选核心义1只按逻辑/因果关联处理，未采用 v:02475598 等更宽证据，因此该子用法是否属于源范围需进一步核对。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"除 s001 的 contact 义待核外，未发现已确认的源义覆盖缺陷；候选各层联合覆盖原中文释义，未采用外部候选不构成源义缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5706,
+    "completion_tokens": 5871,
+    "total_tokens": 11577,
+    "prompt_tokens_details": {
+      "cached_tokens": 4608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4928
+    },
+    "prompt_cache_hit_tokens": 4608,
+    "prompt_cache_miss_tokens": 1098
+  },
+  "started_utc": "2026-11-13T10:00:06.961239+00:00",
+  "completed_utc": "2026-11-13T10:01:32.027442+00:00",
+  "elapsed_seconds": 85.063,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -24,3 +24,13 @@ scripts/p6c/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-
 scripts/p6c1/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/p6/P6C_CORE_MEANINGS_PILOT_REPORT.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/p6/P6C1_INDEPENDENT_REVIEW_REPORT.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Later isolated review checkpoints also bind the original artifact bytes.
+docs/p6/p6c[2-5]/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/p6/p6c5a/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/p6c[2-5]/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/p6c5a/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+test/p6c[2-5]/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+test/p6c5a/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Command transcripts keep the terminal's intentional blank footer unchanged.
+docs/p6/p6c5a/verification/*.txt -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_49",
+  "request_hash": "842927c6c1854a505ccbfa2ce59e147f5c41772346fb5d8e9b2de1601cb7dc1d",
+  "started_utc": "2026-11-13T08:14:59.830226+00:00",
+  "completed_utc": "2026-11-13T08:15:27.130545+00:00",
+  "elapsed_seconds": 27.297,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "bb8a2214-b7a7-48da-bedc-e418f24fa7c0",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3511,
+    "completion_tokens": 4426,
+    "total_tokens": 7937,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3930
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 695
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-2b4a5bdd6f71\",\"word\":\"extent\",\"core\":[[\"程度\",\"名词\",[\"s001\"],[\"wn31:n:13964158\"],\"某事物延伸所达到的点或程度，如损害程度\"],[\"范围\",\"名词\",[\"s002\"],[\"wn31:n:05130681\"],\"某事物延伸所覆盖的距离、面积或体积\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"‘程度’对应延伸所达到的度，‘范围’对应延伸覆盖的距离/面积；两项证据区分明确，故分两组。\",\"flags\":[]},{\"id\":\"SG25-4c3200fefd8b\",\"word\":\"tendency\",\"core\":[[\"倾向\",\"名词\",[\"s001\"],[\"wn31:n:04951225\"],\"事物或人的特征性可能/自然趋势，如布料易缩水\"],[\"倾向（偏好）\",\"名词\",[\"s001\"],[\"wn31:n:06206319\"],\"心理上偏向某一选择或做法\"],[\"意向\",\"名词\",[\"s003\"],[\"wn31:n:07514352\"],\"做某事的意愿或倾向\"]],\"extended\":[[\"趋势/动向\",\"名词\",[\"s001\"],[\"wn31:n:08699515\"],\"事物发展的一般方向，如水流或市场走向\"]],\"other\":[],\"hold\":[[\"s002\",\"‘性情’指较稳定的气质/性格；所给证据只支持对某条件或结果的天然倾向，未充分覆盖稳定性情义。\"]],\"splits\":{\"s001\":\"原‘倾向’可分别指特征性可能、心理偏好和一般发展趋势；对象分别为事物/人的自然趋势、心态选择、发展走向，故按证据拆为三处，其中趋势义置于扩展层。\"},\"additions\":[],\"reason\":\"先取‘倾向’的一般趋势义和‘意向’的做事意愿义；‘偏好’是同一中文片段下对象不同的心理用法，单独列出以免与一般趋势混淆；‘性情’证据范围不足，暂存。\",\"flags\":[[\"Minor\",\"lexical_evidence_insufficient\",\"s002‘性情’缺乏直接覆盖稳定气质/性格义的证据；暂存待核，不并入已确认核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

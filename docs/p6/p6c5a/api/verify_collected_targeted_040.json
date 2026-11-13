@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_040",
+  "kind": "verify",
+  "request_hash": "e9184366824607d897137707a6b5bdfdb0e5d7d147fec6ed15b7dbfc982747f9",
+  "input_ids": [
+    "SG25-8270f2824111",
+    "SG25-40542f7e6b9e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "53adbef6-2ddd-4b6c-9290-9806dbe8393e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8270f2824111\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"解决问题的方法/方案\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组1用方法义定义覆盖原中文“解决办法”，未混入答案陈述或数学解；排除的义项属于外部候选，并非原义已支持用途。\",\n          \"evidence_ids\": [\"wn31:n:05669513\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"均匀混合物，常为液体溶液\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组2直接采用混合物定义，与“溶液”一致；未额外限制固态/气态溶液之外。\",\n          \"evidence_ids\": [\"wn31:n:14613403\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"两个原义均获得明确对应证据；未采用的答案/数学解仅作为外部未采用候选，不影响来源覆盖。\"\n    },\n    {\n      \"id\": \"SG25-40542f7e6b9e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"前景，可指中性/一般未来展望或未来成功前景\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组1只采用未来成功/前途义（n14506552），未保留n05953807所证明的一般未来预期/展望；组2虽为未来预期，但只挂接s002，不能自动补s001。\",\n          \"evidence_ids\": [\"wn31:n:14506552\", \"wn31:n:05953807\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"可能性；原文未限定为未来\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组2将“可能性”改写为未来可能性/预期，排除非未来泛指可能性；原中文无上下文说明仅限未来，故属未许可的收窄或来源待核。\",\n          \"evidence_ids\": [\"wn31:n:05953807\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"source_scope\": \"商业/销售语境中的潜在客户\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"held记录承认缺乏直接客户/购买者义证据；n09910201仅为被考虑人选，不是客户；无法完成映射。\",\n          \"evidence_ids\": [\"wn31:n:09910201\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_narrowing\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-40542f7e6b9e:p6c5:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:n:14506552\", \"wn31:n:05953807\"],\n          \"reason\": \"核心组1将“前景”窄化为未来成功/前途；一般未来展望（如中性的前景不明/前景如何）由n05953807支持，但未挂接s001。组2不能替代，因为其source_ids仅为s002。\",\n          \"counterexample\": \"n05953807 belief about (or mental picture of) the future 可表达中性未来展望，不要求成功/前途。\",\n          \"repair_suggestion\": \"将s001的一般未来展望义与本核心组关联，或显式在组1保留中性前景并括注未来成功为典型示例；若选择保留窄义，则把一般未来展望记入暂存/扩展。\"\n        }\n      ],\n      \"unresolved\": [\n        {\n          \"point\": \"s002原中文“可能性”是否语境限为未来无法从当前源字段确认；候选限定为未来，可能过窄。\"\n        },\n        {\n          \"point\": \"s003“潜在客户”无直接词典证据（客户/购买者义）；n09910201仅为候选/被考虑者，held记录未提供映射。\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"s001存在可确认的范围收窄，但属于Minor；s002因来源无上下文暂记为无法确定而非生成器确认错误；s003已有held待核，不是误导性核心，但整词仍partial。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4348,
+    "completion_tokens": 5163,
+    "total_tokens": 9511,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4167
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2684
+  },
+  "started_utc": "2026-11-13T09:58:38.225831+00:00",
+  "completed_utc": "2026-11-13T09:59:55.339726+00:00",
+  "elapsed_seconds": 77.109,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

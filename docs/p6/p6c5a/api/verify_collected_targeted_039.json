@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_039",
+  "kind": "verify",
+  "request_hash": "524ef176dd9ec4a0fcfd7a7b16abe5830225bcf82b9b8da9eb1a1a7f44ea1d37",
+  "input_ids": [
+    "SG25-6df24c372c04",
+    "SG25-178b6e061a04"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5f39629a-33ac-4ef7-94b9-899ec0e26f75",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6df24c372c04\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义1涵盖动词‘预订’的两种证据：为自己预订 (v:00797294) 和为他人预订 (v:02503969)，括号中的典型对象是示例而非排他，源义已保留。\",\n          \"evidence_ids\": [\"wn31:v:00797294\", \"wn31:v:02503969\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义2以‘保留；留出（供将来或专用）’对应动词‘保留’，覆盖 v:00726112 的资源和 v:02219267 的扣留/搁置；未额外增加对象领域。\",\n          \"evidence_ids\": [\"wn31:v:00726112\", \"wn31:v:02219267\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义3‘储备；储备物’直接匹配 n:13389225（为未来或特殊用途留存的数量）。\",\n          \"evidence_ids\": [\"wn31:n:13389225\"]\n        },\n        {\n          \"source_sense_id\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选扩展义1‘保护区；保留地’对应 n:08604729（为特定目的保留的区域），置于扩展层不影响覆盖。\",\n          \"evidence_ids\": [\"wn31:n:08604729\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"未发现源义覆盖缺陷；候选各层联合覆盖原中文释义，证据支持对象与词性。未采用外部候选不构成源义缺陷。\"\n    },\n    {\n      \"id\": \"SG25-178b6e061a04\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义1‘联系；使关联’对应 v:00715072 的逻辑/因果连接，源义和证据一致；未采用更宽泛的 v:02475598 不会造成源义丢失。\",\n          \"evidence_ids\": [\"wn31:v:00715072\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义2‘交往；结伴’对应 v:02595401 的与人为伴、常来往，并标注常与 with 连用，覆盖源义。\",\n          \"evidence_ids\": [\"wn31:v:02595401\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义3‘同事（工作或机构中的共事者）’以工作语境收窄证据 n:09836176 和 n:09836579，并注明下级成员色彩，中文‘同事’不要求严格平级；源义已保留。\",\n          \"evidence_ids\": [\"wn31:n:09836176\", \"wn31:n:09836579\"]\n        },\n        {\n          \"source_sense_id\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心义4‘伙伴；同伴’对应 n:09965384 的朋友/经常相伴者，源义覆盖完整。\",\n          \"evidence_ids\": [\"wn31:n:09965384\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"未发现源义覆盖缺陷；候选各层联合覆盖原中文释义，证据支持对象与词性。未采用外部候选不构成源义缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4633,
+    "completion_tokens": 7306,
+    "total_tokens": 11939,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6419
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2969
+  },
+  "started_utc": "2026-11-13T09:58:33.856550+00:00",
+  "completed_utc": "2026-11-13T10:00:06.855074+00:00",
+  "elapsed_seconds": 93.0,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

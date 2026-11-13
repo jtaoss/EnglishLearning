@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_before_001",
+  "kind": "verify",
+  "request_hash": "6b6f60c6a137f672afb1984f5982fe7e61144cd840575c9463ac5d364548c2ad",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d5a2a2b5-81cc-4f8a-8e9f-5b1a0a8c0f0a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7920fdeff9c5\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源名词“仪式”为一般仪式，未限定宗教；目标仅保留“宗教仪式的规定程序”，缺失非宗教/世俗仪式用法；Collins观察与WordNet n:01029801均支持广义仪式。\",\n          \"evidence_ids\": [\n            \"pub:p6c5:collins:ritual\",\n            \"wn31:n:01029801\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"源“惯常程序”指惯常的固定做法/行为；目标“惯常做法/固定行为”是其自然上位表达，并用n:00415803和n:01029801支撑；无排他限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:00415803\",\n            \"wn31:n:01029801\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源形容词“仪式的”由目标“仪式的/与仪式有关的”覆盖，且括注同时容纳社会性及宗教仪式两类形容词证据。\",\n          \"evidence_ids\": [\n            \"wn31:a:02903641\",\n            \"wn31:a:02903908\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-7920fdeff9c5:p6c5:core_meanings:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:01029801\",\n            \"pub:p6c5:collins:ritual\"\n          ],\n          \"reason\": \"原中文“仪式”没有宗教限制，证据显示ritual可指宗教或其他仪式；候选只保留宗教仪式规定程序，造成非宗教庄重仪式/习俗用法在所有层级缺失。\",\n          \"counterexample\": \"The graduation ceremony is a ritual.\",\n          \"repair_suggestion\": \"将核心1调整为“仪式（宗教或世俗的庄重仪式/习俗）”，或新增包含“任何惯常仪式/习俗”的义项并链接wn31:n:01029801；不要仅限宗教规定程序。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002是否被target group2的“固定行为”扩大到单一习惯行为，尚需进一步确认；源“程序”可能要求步骤序列。\",\n        \"s001的非宗教仪式是否应单独列出还是合并到s002，需要更多中文语境确认。\"\n      ],\n      \"preferences\": [\n        \"教学顺序上，可把广义“仪式”放在宗教仪式之前或并列，但必须覆盖非宗教用法。\"\n      ],\n      \"note\": \"核心3形容词覆盖良好；核心1的宗教限定为确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-e3f48726b892\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标“学习者”与源一致；WordNet虽注‘especially a child’，但非排他，且中文原词为宽义改述，候选保留宽义。\",\n          \"evidence_ids\": [\n            \"wn31:n:10271476\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标“学者”与源一致，证据为learned person，覆盖学科掌握者。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标明确列出“文人”，并在注释中说明其为learned person在人文领域的下位用法；源词本人文色彩得到保留。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"把“文人”并入“学者”可能略去其“作家/文人”的非学术色彩，但提供证据仅支持人文领域学习者，当前处理可接受；若后续有反例可拆分。\"\n      ],\n      \"preferences\": [\n        \"可考虑在core1中把“文人”单列为并列义项而非合并，以便区分学术与文学色彩。\"\n      ],\n      \"note\": \"该记录未发现确认的范围缺陷；unadopted external candidate（奖学金获得者）未采用，不影响来源覆盖。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3303,
+    "completion_tokens": 6960,
+    "total_tokens": 10263,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5878
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3303
+  },
+  "started_utc": "2026-11-13T09:38:39.456589+00:00",
+  "completed_utc": "2026-11-13T09:40:21.244583+00:00",
+  "elapsed_seconds": 101.782,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

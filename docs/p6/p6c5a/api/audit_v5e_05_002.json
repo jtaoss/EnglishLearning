@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_002",
+  "kind": "audit",
+  "request_hash": "2caee5bfc2fe2a6c931afac002f012fc88ab223cf51ab45181613d014a492dca",
+  "input_ids": [
+    "SG25-53bc5c9386ea",
+    "SG25-4bab36ce40d3",
+    "SG25-9251036c931d",
+    "SG25-c697d2981bf4",
+    "SG25-667937c3e7a6"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "0ea553a4-bc3f-4044-bd85-9201a2bece2a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-53bc5c9386ea\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"判断正确的（可能指客观正确）\",\"relation\":\"无法确定\",\"reason\":\"候选仅将s001列入held，没有对应核心/扩展组或可检验词典证据；来源义尚未落地。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"判断正确的独立范围未覆盖\",\"counterexample\":\"合理的/明智的可表示得当，但不保证判断客观正确\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"合理的（价格公道、判断得当等宽泛评价）\",\"relation\":\"语义等价\",\"reason\":\"core1保留宽泛‘合理的’，证据覆盖合理价格与合理判断，未加对象排他限制。\",\"evidence_ids\":[\"wn31:s:01536380\",\"wn31:a:01950023\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"明智的（有良好判断）\",\"relation\":\"语义等价\",\"reason\":\"core2与sound judgment证据对应，并保持独立于‘合理的’。\",\"evidence_ids\":[\"wn31:s:01932628\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"held_source_unresolved\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[],\"reason\":\"s001仅进入held，没有对应核心/扩展组或可检验词典证据；来源义仍未落地，不能计为完整覆盖。\",\"repair_suggestion\":\"补足语境并核对可与reasonable对应的证据；核验前保持pending，勿把held当作已覆盖。\"}],\"note\":\"合理/明智两义已入核心；s001‘判断正确的’仅held，来源待核，整体不完整。\"},{\"id\":\"SG25-4bab36ce40d3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"僵硬的（不易弯曲）\",\"relation\":\"语义等价\",\"reason\":\"core1对应incapable/resistant to bending，保留物理不易弯曲义。\",\"evidence_ids\":[\"wn31:s:01027321\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"严格的（规则/标准要求严）\",\"relation\":\"范围收窄\",\"reason\":\"extended1仅保留‘缺乏灵活性、不可妥协’的严格义，未明确保留一般规则/标准严格的宽范围。\",\"evidence_ids\":[\"wn31:s:02446199\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"一般‘严格’（规则/标准要求严）未单列或明确暂存\",\"counterexample\":\"‘严格的规则/标准’可只表示要求严，不一定含主体不可妥协\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope_narrowed\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-4bab36ce40d3:extended:1\"],\"evidence_ids\":[\"wn31:s:02446199\",\"wn31:s:01032766\"],\"reason\":\"来源‘严格的’未明确限于‘不可妥协’；extended1只保留不灵活/不可妥协子义，未写一般严格（规则/标准要求严）的剩余范围或暂存。\",\"repair_suggestion\":\"在扩展保留限定子义，同时补一般‘严格的’父级或明确暂存剩余范围，并核对01032766等严格/不灵活证据。\"}],\"note\":\"僵硬核心对应物理义；严格义在扩展但被语境收窄，需补一般严格范围或暂存。\"},{\"id\":\"SG25-9251036c931d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"直接地（无中介）\",\"relation\":\"语义等价\",\"reason\":\"core1对应without anyone/anything intervening，保留‘直接地’的主要副词义，未并入‘立即’。\",\"evidence_ids\":[\"wn31:r:00506737\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"立即（无延迟）\",\"relation\":\"语义等价\",\"reason\":\"core2对应without delay/with no time intervening，与‘直接地’分列，证据支持。\",\"evidence_ids\":[\"wn31:r:00049277\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘直接地（无中介）’与‘立即’分列核心，证据分别支持；未见需补的来源义。\"},{\"id\":\"SG25-c697d2981bf4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"区域（空间地带）\",\"relation\":\"语义等价\",\"reason\":\"core1以空间地带证据对应，未把身体部位、知识领域或约数等词典扩展塞入来源义。\",\"evidence_ids\":[\"wn31:n:08647614\",\"wn31:n:08648560\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一来源义‘区域’保留为空间地带核心义；专业身体部位和in the region of约数未混入。\"},{\"id\":\"SG25-667937c3e7a6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有规律的（按固定秩序/模式）\",\"relation\":\"语义等价\",\"reason\":\"core1对应fixed order/procedure与conforming standard/pattern，保留有规律义。\",\"evidence_ids\":[\"wn31:a:01966104\",\"wn31:s:02304307\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"定期的（固定间隔/排定时间）\",\"relation\":\"语义等价\",\"reason\":\"core2对应fixed intervals与scheduled fixed times，和‘有规律的’分列。\",\"evidence_ids\":[\"wn31:s:02309868\",\"wn31:s:02375495\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"普通的（正常/通常）\",\"relation\":\"语义等价\",\"reason\":\"extended1以‘not deviating from what is normal’对应‘普通的/通常的’，链接基本可追踪。\",\"evidence_ids\":[\"wn31:s:01599894\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"deferred_without_rationale\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-667937c3e7a6:extended:1\"],\"evidence_ids\":[\"wn31:s:01599894\"],\"reason\":\"‘普通的’作为独立来源义被放入extended，但注释仅写‘另留’，未给出为何后置的具体AI教学理由或可检验语境边界。\",\"repair_suggestion\":\"补充明确的教学/语境理由；若无充分理由，考虑与核心并列而非仅以‘另留’后置。\"}],\"note\":\"有规律与定期分列核心；普通的放入扩展且链接存在，但后置理由不足。\"}]}",
+  "usage": {
+    "prompt_tokens": 6499,
+    "completion_tokens": 12303,
+    "total_tokens": 18802,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10584
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4579
+  },
+  "started_utc": "2026-11-13T09:48:22.191771+00:00",
+  "completed_utc": "2026-11-13T09:49:33.220045+00:00",
+  "elapsed_seconds": 71.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

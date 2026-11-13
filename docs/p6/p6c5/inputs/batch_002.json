@@ -1,0 +1,4962 @@
+{
+  "batch": 2,
+  "records": [
+    {
+      "id": "SG25-5c59d0c160a3",
+      "word": "contest",
+      "pos": "名词；动词",
+      "raw": "名词：比赛；动词：争取，质疑",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "比赛",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "争取",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "质疑",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01171451",
+          "pos": "n",
+          "definition": "a struggle between rivals"
+        },
+        {
+          "id": "wn31:n:07470961",
+          "pos": "n",
+          "definition": "an occasion on which a winner is selected from among two or more contestants"
+        },
+        {
+          "id": "wn31:v:00871260",
+          "pos": "v",
+          "definition": "to make the subject of dispute, contention, or litigation; \"They contested the outcome of the race\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-d05c34e72352",
+      "word": "theatre",
+      "pos": "名词",
+      "raw": "剧院；戏剧",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "剧院",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "戏剧",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04424944",
+          "pos": "n",
+          "definition": "a building where theatrical performances or motion-picture shows can be presented; \"the house was full\""
+        },
+        {
+          "id": "wn31:n:07019235",
+          "pos": "n",
+          "definition": "the art of writing and producing plays"
+        },
+        {
+          "id": "wn31:n:08569203",
+          "pos": "n",
+          "definition": "a region in which active military operations are in progress; \"the army was in the field awaiting action\"; \"he served in the Vietnam theater for three years\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-4f7185b2e317",
+      "word": "entitle",
+      "pos": "动词",
+      "raw": "使有权；给……命名",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "使有权",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "给……命名",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01031533",
+          "pos": "v",
+          "definition": "give a title to"
+        },
+        {
+          "id": "wn31:v:02403605",
+          "pos": "v",
+          "definition": "give a title to someone; make someone a member of the nobility"
+        },
+        {
+          "id": "wn31:v:02452235",
+          "pos": "v",
+          "definition": "give the right to; \"The Freedom of Information Act entitles you to request your FBI file\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ed80ec951eb5",
+      "word": "tolerant",
+      "pos": "形容词",
+      "raw": "容忍的；宽容的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "容忍的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "宽容的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00287703",
+          "pos": "s",
+          "definition": "showing or characterized by broad-mindedness; \"a broad political stance\"; \"generous and broad sympathies\"; \"a liberal newspaper\"; \"tolerant of his opponent's opinions\""
+        },
+        {
+          "id": "wn31:s:01044891",
+          "pos": "s",
+          "definition": "tolerant and forgiving under provocation; \"our neighbor was very kind about the window our son broke\""
+        },
+        {
+          "id": "wn31:s:01741132",
+          "pos": "s",
+          "definition": "showing the capacity for endurance; \"injustice can make us tolerant and forgiving\"; \"a man patient of distractions\""
+        },
+        {
+          "id": "wn31:s:02444201",
+          "pos": "s",
+          "definition": "able to tolerate environmental conditions or physiological stress; \"the plant is tolerant of saltwater\"; \"these fish are quite tolerant as long as extremes of pH are avoided\"; \"the new hybrid is more resistant to drought\""
+        },
+        {
+          "id": "wn31:a:02445545",
+          "pos": "a",
+          "definition": "showing respect for the rights or opinions or practices of others"
+        }
+      ]
+    },
+    {
+      "id": "SG25-3913e8d04d35",
+      "word": "tolerate",
+      "pos": "动词",
+      "raw": "受；容忍；忍受",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "受",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "容忍",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "忍受",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00670017",
+          "pos": "v",
+          "definition": "put up with something or somebody unpleasant; \"I cannot bear his constant criticism\"; \"The new secretary had to endure a lot of unprofessional remarks\"; \"he learned to tolerate the heat\"; \"She stuck out two years in a miserable marriage\""
+        },
+        {
+          "id": "wn31:v:00804608",
+          "pos": "v",
+          "definition": "allow the presence of or allow (an activity) without opposing or prohibiting; \"We don't allow dogs here\"; \"Children are not permitted beyond this point\"; \"We cannot tolerate smoking in the hospital\""
+        },
+        {
+          "id": "wn31:v:02113858",
+          "pos": "v",
+          "definition": "have a tolerance for a poison or strong drug or pathogen or environmental condition; \"The patient does not tolerate the anti-inflammatory drugs we gave him\""
+        },
+        {
+          "id": "wn31:v:02463017",
+          "pos": "v",
+          "definition": "recognize and respect (rights and beliefs of others); \"We must tolerate the religions of others\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-41e1e73d5586",
+      "word": "tolerance",
+      "pos": "名词",
+      "raw": "宽容；容忍；耐受性",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "宽容",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "容忍",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "耐受性",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01073014",
+          "pos": "n",
+          "definition": "the act of tolerating something"
+        },
+        {
+          "id": "wn31:n:04645280",
+          "pos": "n",
+          "definition": "a disposition to allow freedom of choice and behavior"
+        },
+        {
+          "id": "wn31:n:04757264",
+          "pos": "n",
+          "definition": "a permissible difference; allowing some freedom to move within limits"
+        },
+        {
+          "id": "wn31:n:05040565",
+          "pos": "n",
+          "definition": "the power or capacity of an organism to tolerate unfavorable environmental conditions"
+        },
+        {
+          "id": "wn31:n:06214141",
+          "pos": "n",
+          "definition": "willingness to recognize and respect the beliefs or practices of others"
+        }
+      ]
+    },
+    {
+      "id": "SG25-eafe895eb811",
+      "word": "trace",
+      "pos": "名词；动词",
+      "raw": "名词：痕迹，微量；动词：追踪，查找",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "痕迹",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "微量",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "追踪",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "查找",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04469642",
+          "pos": "n",
+          "definition": "either of two lines that connect a horse's harness to a wagon or other vehicle or to a whiffletree"
+        },
+        {
+          "id": "wn31:n:04470508",
+          "pos": "n",
+          "definition": "a drawing created by superimposing a semitransparent sheet of paper on the original image and copying on it the lines of the original image"
+        },
+        {
+          "id": "wn31:n:06659391",
+          "pos": "n",
+          "definition": "an indication that something has been present; \"there wasn't a trace of evidence for the claim\"; \"a tincture of condescension\""
+        },
+        {
+          "id": "wn31:n:06659799",
+          "pos": "n",
+          "definition": "a visible mark (as a footprint) left by the passage of person or animal or vehicle"
+        },
+        {
+          "id": "wn31:n:07178814",
+          "pos": "n",
+          "definition": "a suggestion of some quality; \"there was a touch of sarcasm in his tone\"; \"he detected a ghost of a smile on her face\""
+        },
+        {
+          "id": "wn31:n:13795501",
+          "pos": "n",
+          "definition": "a just detectable amount; \"he speaks French with a trace of an accent\"; \"a hint mockery in her manner\"; \"a tint of glamour\""
+        },
+        {
+          "id": "wn31:v:00627767",
+          "pos": "v",
+          "definition": "read with difficulty; \"Can you decipher this letter?\"; \"The archeologist traced the hieroglyphs\""
+        },
+        {
+          "id": "wn31:v:00731071",
+          "pos": "v",
+          "definition": "follow, discover, or ascertain the course of development of something; \"We must follow closely the economic development is Cuba\"; \"trace the student's progress\"; \"trace one's ancestry\""
+        },
+        {
+          "id": "wn31:v:01585566",
+          "pos": "v",
+          "definition": "make a mark or lines on a surface; \"draw a line\"; \"trace the outline of a figure in the sand\""
+        },
+        {
+          "id": "wn31:v:01698271",
+          "pos": "v",
+          "definition": "copy by following the lines of the original drawing on a transparent sheet placed upon it; make a tracing of; \"trace a design\"; \"trace a pattern\""
+        },
+        {
+          "id": "wn31:v:01999981",
+          "pos": "v",
+          "definition": "make one's course or travel along a path; travel or pass over, around, or along; \"The children traced along the edge of the dark forest\"; \"The women traced the pasture\""
+        },
+        {
+          "id": "wn31:v:02007615",
+          "pos": "v",
+          "definition": "pursue or chase relentlessly; \"The hunters traced the deer into the woods\"; \"the detectives hounded the suspect until they found him\""
+        },
+        {
+          "id": "wn31:v:02008366",
+          "pos": "v",
+          "definition": "to go back over again; \"we retraced the route we took last summer\"; \"trace your path\""
+        },
+        {
+          "id": "wn31:v:02160493",
+          "pos": "v",
+          "definition": "discover traces of; \"She traced the circumstances of her birth\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-2bb8bf7259c4",
+      "word": "track",
+      "pos": "名词；动词",
+      "raw": "名词：轨道，路径，踪迹；动词：跟踪",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "轨道",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "路径",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "踪迹",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "跟踪",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00440979",
+          "pos": "n",
+          "definition": "the act of participating in an athletic competition involving running on a track"
+        },
+        {
+          "id": "wn31:n:04044101",
+          "pos": "n",
+          "definition": "a course over which races are run"
+        },
+        {
+          "id": "wn31:n:04470745",
+          "pos": "n",
+          "definition": "any road or path affording passage especially a rough one"
+        },
+        {
+          "id": "wn31:n:04470914",
+          "pos": "n",
+          "definition": "a bar or pair of parallel bars of rolled steel making the railway along which railroad cars or other vehicles can roll"
+        },
+        {
+          "id": "wn31:n:04471218",
+          "pos": "n",
+          "definition": "a pair of parallel rails providing a runway for wheels"
+        },
+        {
+          "id": "wn31:n:04471360",
+          "pos": "n",
+          "definition": "a groove on a phonograph recording"
+        },
+        {
+          "id": "wn31:n:04471446",
+          "pos": "n",
+          "definition": "(computer science) one of the circular magnetic paths on a magnetic disk that serve as a guide for writing and reading data"
+        },
+        {
+          "id": "wn31:n:04471653",
+          "pos": "n",
+          "definition": "an endless metal belt on which tracked vehicles move over the ground"
+        },
+        {
+          "id": "wn31:n:05835238",
+          "pos": "n",
+          "definition": "evidence pointing to a possible solution; \"the police are following a promising lead\"; \"the trail led straight to the perpetrator\""
+        },
+        {
+          "id": "wn31:n:06625218",
+          "pos": "n",
+          "definition": "a distinct selection of music from a recording or a compact disc; \"he played the first cut on the cd\"; \"the title track of the album\""
+        },
+        {
+          "id": "wn31:n:09410115",
+          "pos": "n",
+          "definition": "a line or route along which something travels or moves; \"the hurricane demolished houses in its path\"; \"the track of an animal\"; \"the course of the river\""
+        },
+        {
+          "id": "wn31:v:01621487",
+          "pos": "v",
+          "definition": "make tracks upon"
+        },
+        {
+          "id": "wn31:v:01916152",
+          "pos": "v",
+          "definition": "travel across or pass over; \"The caravan covered almost 100 miles each day\""
+        },
+        {
+          "id": "wn31:v:02005890",
+          "pos": "v",
+          "definition": "go after with the intent to catch; \"The policeman chased the mugger down the alley\"; \"the dog chased the rabbit\""
+        },
+        {
+          "id": "wn31:v:02082700",
+          "pos": "v",
+          "definition": "carry on the feet and deposit; \"track mud into the house\""
+        },
+        {
+          "id": "wn31:v:02202143",
+          "pos": "v",
+          "definition": "observe or plot the moving path of something; \"track a missile\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-982055e51c25",
+      "word": "trait",
+      "pos": "名词",
+      "raw": "个性；品质；特征",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "个性",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "品质",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "特征",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04623416",
+          "pos": "n",
+          "definition": "a distinguishing feature of your personal nature"
+        }
+      ]
+    },
+    {
+      "id": "SG25-6ef3b00039e6",
+      "word": "attractive",
+      "pos": "形容词",
+      "raw": "吸引人的；有吸引力的；有魅力的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "吸引人的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "有吸引力的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "有魅力的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 11,
+          "end": 15
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:00167408",
+          "pos": "a",
+          "definition": "pleasing to the eye or mind especially through beauty or charm; \"a remarkably attractive young man\"; \"an attractive personality\"; \"attractive clothes\"; \"a book with attractive illustrations\""
+        },
+        {
+          "id": "wn31:a:00171217",
+          "pos": "a",
+          "definition": "having the properties of a magnet; the ability to draw or pull; \"an attractive force\""
+        },
+        {
+          "id": "wn31:s:00172108",
+          "pos": "s",
+          "definition": "having power to arouse interest; \"an attractive opportunity\"; \"the job is attractive because of the pay\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8aa73cb60552",
+      "word": "contribute",
+      "pos": "动词",
+      "raw": "贡献；捐助；促成",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "贡献",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "捐助",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "促成",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:02242564",
+          "pos": "v",
+          "definition": "provide; \"The city has to put up half the required amount\""
+        },
+        {
+          "id": "wn31:v:02313721",
+          "pos": "v",
+          "definition": "contribute to some cause; \"I gave at the office\""
+        },
+        {
+          "id": "wn31:v:02329474",
+          "pos": "v",
+          "definition": "bestow a quality on; \"Her presence lends a certain cachet to the company\"; \"The music added a lot to the play\"; \"She brings a special atmosphere to our meetings\"; \"This adds a light note to the program\""
+        },
+        {
+          "id": "wn31:v:02561616",
+          "pos": "v",
+          "definition": "be conducive to; \"The use of computers in the classroom lead to better writing\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-a7b4dc56dac9",
+      "word": "contribution",
+      "pos": "名词",
+      "raw": "贡献；捐款",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "贡献",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "捐款",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00789119",
+          "pos": "n",
+          "definition": "the effort contributed by a person in bringing about a result; \"I am proud of my contribution in advancing the project\"; \"they all did their share of the work\""
+        },
+        {
+          "id": "wn31:n:01091702",
+          "pos": "n",
+          "definition": "act of giving in common with others for a common purpose especially to a charity"
+        },
+        {
+          "id": "wn31:n:01104617",
+          "pos": "n",
+          "definition": "a writing for publication especially one of a collection of writings as an article or story"
+        },
+        {
+          "id": "wn31:n:13290913",
+          "pos": "n",
+          "definition": "an amount of money contributed; \"he expected his contribution to be repaid with interest\""
+        },
+        {
+          "id": "wn31:n:13291061",
+          "pos": "n",
+          "definition": "a voluntary gift (as of money or service or ideas) made to some worthwhile cause"
+        }
+      ]
+    },
+    {
+      "id": "SG25-a92bfd02c450",
+      "word": "attribute",
+      "pos": "名词；动词",
+      "raw": "名词：特征，属性；动词：把……归因于",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "特征",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "属性",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "把……归因于",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00024444",
+          "pos": "n",
+          "definition": "an abstraction belonging to or characteristic of an entity"
+        },
+        {
+          "id": "wn31:n:05857567",
+          "pos": "n",
+          "definition": "a construct whereby objects or individuals can be distinguished; \"self-confidence is not an endearing property\""
+        },
+        {
+          "id": "wn31:v:00728262",
+          "pos": "v",
+          "definition": "attribute or credit to; \"We attributed this quotation to Shakespeare\"; \"People impute great cleverness to cats\""
+        },
+        {
+          "id": "wn31:v:00742058",
+          "pos": "v",
+          "definition": "decide as to where something belongs in a scheme; \"The biologist assigned the mushroom to the proper class\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-9bb8c09c1ccb",
+      "word": "triumph",
+      "pos": "名词；动词",
+      "raw": "名词：胜利；动词：获胜",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "胜利",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "获胜",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07488581",
+          "pos": "n",
+          "definition": "a successful ending of a struggle or contest; \"a narrow victory\"; \"the general always gets credit for his army's victory\"; \"clinched a victory\"; \"convincing victory\"; \"the agreement was a triumph for common sense\""
+        },
+        {
+          "id": "wn31:n:07543485",
+          "pos": "n",
+          "definition": "the exultation of victory"
+        },
+        {
+          "id": "wn31:v:00859605",
+          "pos": "v",
+          "definition": "to express great joy; \"Who cannot exult in Spring?\""
+        },
+        {
+          "id": "wn31:v:00885156",
+          "pos": "v",
+          "definition": "dwell on with satisfaction"
+        },
+        {
+          "id": "wn31:v:01104145",
+          "pos": "v",
+          "definition": "prove superior; \"The champion prevailed, though it was a hard fight\""
+        },
+        {
+          "id": "wn31:v:01827320",
+          "pos": "v",
+          "definition": "be ecstatic with joy"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9bfac98c5b65",
+      "word": "typical",
+      "pos": "形容词",
+      "raw": "典型的；有代表性的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "典型的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "有代表性的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00358636",
+          "pos": "s",
+          "definition": "of a feature that helps to distinguish a person or thing; \"Jerusalem has a distinctive Middle East flavor\"- Curtis Wilkie; \"that is typical of you!\""
+        },
+        {
+          "id": "wn31:s:01600022",
+          "pos": "s",
+          "definition": "conforming to a type; \"the typical (or normal) American\"; \"typical teenage behavior\""
+        },
+        {
+          "id": "wn31:a:02477858",
+          "pos": "a",
+          "definition": "exhibiting the qualities or characteristics that identify a group or kind or category; \"a typical American girl\"; \"a typical suburban community\"; \"the typical car owner drives 10,000 miles a year\"; \"a painting typical of the Impressionist school\"; \"a typical romantic poem\"; \"a typical case of arteritis\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ef3ff703d756",
+      "word": "union",
+      "pos": "名词",
+      "raw": "联合；联盟；工会",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "联合",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "联盟",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "工会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00382488",
+          "pos": "n",
+          "definition": "the act of making or becoming a single unit; \"the union of opposing factions\"; \"he looked forward to the unification of his family for the holidays\""
+        },
+        {
+          "id": "wn31:n:00848970",
+          "pos": "n",
+          "definition": "the act of pairing a male and female for reproductive purposes; \"the casual couplings of adolescents\"; \"the mating of some species occurs only in the spring\""
+        },
+        {
+          "id": "wn31:n:04517110",
+          "pos": "n",
+          "definition": "a device on a national flag emblematic of the union of two or more sovereignties (typically in the upper inner corner)"
+        },
+        {
+          "id": "wn31:n:07387877",
+          "pos": "n",
+          "definition": "the occurrence of a uniting of separate parts; \"lightning produced an unusual union of the metals\""
+        },
+        {
+          "id": "wn31:n:08015154",
+          "pos": "n",
+          "definition": "a set containing all and only the members of two or more given sets; \"let C be the union of the sets A and B\""
+        },
+        {
+          "id": "wn31:n:08249977",
+          "pos": "n",
+          "definition": "an organization of employees formed to bargain with the employer; \"you have to join the union in order to get a job\""
+        },
+        {
+          "id": "wn31:n:08321825",
+          "pos": "n",
+          "definition": "a political unit formed from previously independent people or organizations; \"the Soviet Union\""
+        },
+        {
+          "id": "wn31:n:13592568",
+          "pos": "n",
+          "definition": "healing process involving the growing together of the edges of a wound or the growing together of broken bones"
+        },
+        {
+          "id": "wn31:n:13987306",
+          "pos": "n",
+          "definition": "the state of being a married couple voluntarily joined for life (or until divorce); \"a long and happy marriage\"; \"God bless this union\""
+        },
+        {
+          "id": "wn31:n:14441799",
+          "pos": "n",
+          "definition": "the state of being joined or united or linked; \"there is strength in union\""
+        },
+        {
+          "id": "wn31:a:02483666",
+          "pos": "a",
+          "definition": "of trade unions; \"the union movement\"; \"union negotiations\"; \"a union-shop clause in the contract\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c2720445a452",
+      "word": "unique",
+      "pos": "形容词",
+      "raw": "独一无二的；独特的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "独一无二的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "独特的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00493556",
+          "pos": "s",
+          "definition": "highly unusual or rare but not the single instance; \"spoke with a unique accent\"; \"had unique ability in raising funds\"; \"a frankness unique in literature\"; \"a unique dining experience\""
+        },
+        {
+          "id": "wn31:s:00507765",
+          "pos": "s",
+          "definition": "radically distinctive and without equal; \"he is alone in the field of microbiology\"; \"this theory is altogether alone in its penetration of the problem\"; \"Bach was unique in his handling of counterpoint\"; \"craftsmen whose skill is unequaled\"; \"unparalleled athletic ability\"; \"a breakdown of law unparalleled in our history\""
+        },
+        {
+          "id": "wn31:s:01108735",
+          "pos": "s",
+          "definition": "(followed by `to') applying exclusively to a given category or condition or locality; \"a species unique to Australia\""
+        },
+        {
+          "id": "wn31:s:02222756",
+          "pos": "s",
+          "definition": "the single one of its kind; \"a singular example\"; \"the unique existing example of Donne's handwriting\"; \"a unique copy of an ancient manuscript\"; \"certain types of problems have unique solutions\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-e5909c3cc473",
+      "word": "urban",
+      "pos": "形容词",
+      "raw": "城市的；都市的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "城市的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "都市的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:02059737",
+          "pos": "a",
+          "definition": "located in or characteristic of a city or city life; \"urban property owners\"; \"urban affairs\"; \"urban manners\""
+        },
+        {
+          "id": "wn31:a:02832010",
+          "pos": "a",
+          "definition": "relating to or concerned with a city or densely populated area; \"urban sociology\"; \"urban development\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-f9d37c23fcc0",
+      "word": "urgent",
+      "pos": "形容词",
+      "raw": "紧急的；迫切的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "紧急的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "迫切的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00717023",
+          "pos": "s",
+          "definition": "compelling immediate action; \"too pressing to permit of longer delay\"; \"the urgent words `Hurry! Hurry!'\"; \"bridges in urgent need of repair\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-dd6934703813",
+      "word": "unusual",
+      "pos": "形容词",
+      "raw": "不平常的；与众不同的；异常的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "不平常的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "与众不同的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "异常的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00490844",
+          "pos": "s",
+          "definition": "not commonly encountered; \"two-career families are no longer unusual\""
+        },
+        {
+          "id": "wn31:a:00492026",
+          "pos": "a",
+          "definition": "not usual or common or ordinary; \"a scene of unusual beauty\"; \"a man of unusual ability\"; \"cruel and unusual punishment\"; \"an unusual meteorite\""
+        },
+        {
+          "id": "wn31:a:00970318",
+          "pos": "a",
+          "definition": "being definitely out of the ordinary and unexpected; slightly odd or even a bit weird; \"a strange exaltation that was indefinable\"; \"a strange fantastical mind\"; \"what a strange sense of humor she has\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ec654fac9599",
+      "word": "valid",
+      "pos": "形容词",
+      "raw": "有效的；有根据的；有确实根据的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "有效的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "有根据的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "有确实根据的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 15
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00941928",
+          "pos": "s",
+          "definition": "still legally acceptable; \"the license is still valid\""
+        },
+        {
+          "id": "wn31:a:02508521",
+          "pos": "a",
+          "definition": "well grounded in logic or truth or having legal force; \"a valid inference\"; \"a valid argument\"; \"a valid contract\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8b6e13fa6c31",
+      "word": "valuable",
+      "pos": "形容词",
+      "raw": "有价值的；贵重的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "有价值的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "贵重的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13392203",
+          "pos": "n",
+          "definition": "something of value; \"all our valuables were stolen\""
+        },
+        {
+          "id": "wn31:a:02510833",
+          "pos": "a",
+          "definition": "having great material or monetary value especially for use or exchange; \"a valuable diamond\""
+        },
+        {
+          "id": "wn31:s:02598053",
+          "pos": "s",
+          "definition": "having worth or merit or value; \"a valuable friend\"; \"a good and worthful man\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-f7ecefc770b9",
+      "word": "urge",
+      "pos": "名词；动词",
+      "raw": "动词：敦促；名词：强烈愿望",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "敦促",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "强烈愿望",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07505591",
+          "pos": "n",
+          "definition": "a strong restless desire; \"why this urge to travel?\""
+        },
+        {
+          "id": "wn31:n:09203328",
+          "pos": "n",
+          "definition": "an instinctive motive; \"profound religious impulses\""
+        },
+        {
+          "id": "wn31:v:00767694",
+          "pos": "v",
+          "definition": "force or impel in an indicated direction; \"I urged him to finish his studies\""
+        },
+        {
+          "id": "wn31:v:00860463",
+          "pos": "v",
+          "definition": "spur on or encourage especially by cheers and shouts; \"The crowd cheered the demonstrating strikers\""
+        },
+        {
+          "id": "wn31:v:00876672",
+          "pos": "v",
+          "definition": "push for something; \"The travel agent recommended strongly that we not travel on Thanksgiving Day\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ddd9818abacf",
+      "word": "available",
+      "pos": "形容词",
+      "raw": "可获得的；有空的",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "可获得的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "有空的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:00184353",
+          "pos": "a",
+          "definition": "obtainable or accessible and ready for use or service; \"kept a fire extinguisher available\"; \"much information is available through computers\"; \"available in many colors\"; \"the list of available candidates is unusually long\""
+        },
+        {
+          "id": "wn31:s:00781209",
+          "pos": "s",
+          "definition": "convenient for use or disposal; \"the house is available after July 1\"; \"2000 square feet of usable office space\""
+        },
+        {
+          "id": "wn31:s:01066320",
+          "pos": "s",
+          "definition": "not busy; not otherwise committed; \"he was not available for comment\"; \"he was available and willing to accompany her\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-cc73c906e945",
+      "word": "equivalent",
+      "pos": "名词；形容词",
+      "raw": "形容词：相等的，相当的；名词：等同物",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "相等的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "相当的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "等同物",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05033674",
+          "pos": "n",
+          "definition": "the atomic weight of an element that has the same combining capacity as a given weight of another element; the standard is 8 for oxygen"
+        },
+        {
+          "id": "wn31:n:05703519",
+          "pos": "n",
+          "definition": "a person or thing equal to another in value or measure or force or effect or significance etc; \"send two dollars or the equivalent in stamps\""
+        },
+        {
+          "id": "wn31:s:00893644",
+          "pos": "s",
+          "definition": "being essentially equal to something; \"it was as good as gold\"; \"a wish that was equivalent to a command\"; \"his statement was tantamount to an admission of guilt\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-93ce248b8b9c",
+      "word": "vanish",
+      "pos": "动词",
+      "raw": "消失",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "消失",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00152881",
+          "pos": "v",
+          "definition": "decrease rapidly and disappear; \"the money vanished in las Vegas\"; \"all my stock assets have vaporized\""
+        },
+        {
+          "id": "wn31:v:00427911",
+          "pos": "v",
+          "definition": "get lost, as without warning or explanation; \"He disappeared without a trace\""
+        },
+        {
+          "id": "wn31:v:00428350",
+          "pos": "v",
+          "definition": "cease to exist; \"An entire civilization vanished\""
+        },
+        {
+          "id": "wn31:v:02076993",
+          "pos": "v",
+          "definition": "pass away rapidly; \"Time flies like an arrow\"; \"Time fleeing beneath him\""
+        },
+        {
+          "id": "wn31:v:02160976",
+          "pos": "v",
+          "definition": "become invisible or unnoticeable; \"The effect vanished when day broke\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-419a636ccc2a",
+      "word": "reveal",
+      "pos": "动词",
+      "raw": "使公诸于世；揭开；揭露",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "使公诸于世",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "揭开",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "揭露",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00935783",
+          "pos": "v",
+          "definition": "make known to the public information that was previously known only to a few people or that was meant to be kept a secret; \"The auction house would not disclose the price at which the van Gogh had sold\"; \"The actress won't reveal how old she is\"; \"bring out the truth\"; \"he broke the news to her\"; \"unwrap the evidence in the murder case\"; \"The newspaper uncovered the President's illegal dealings\""
+        },
+        {
+          "id": "wn31:v:02147756",
+          "pos": "v",
+          "definition": "make visible; \"Summer brings out bright clothes\"; \"He brings out the best in her\""
+        },
+        {
+          "id": "wn31:v:02148706",
+          "pos": "v",
+          "definition": "disclose directly or through prophets; \"God rarely reveal his plans for Mankind\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-3b325109deb0",
+      "word": "variable",
+      "pos": "名词；形容词",
+      "raw": "形容词：可变的；名词：变量",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "可变的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "变量",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05866043",
+          "pos": "n",
+          "definition": "a quantity that can assume any of a set of values"
+        },
+        {
+          "id": "wn31:n:07285985",
+          "pos": "n",
+          "definition": "a symbol (like x or y) that is used in mathematical or logical expressions to represent a variable quantity"
+        },
+        {
+          "id": "wn31:n:09492089",
+          "pos": "n",
+          "definition": "something that is likely to vary; something that is subject to variation; \"the weather is one variable to be considered\""
+        },
+        {
+          "id": "wn31:n:09492282",
+          "pos": "n",
+          "definition": "a star that varies noticeably in brightness"
+        },
+        {
+          "id": "wn31:s:01032411",
+          "pos": "s",
+          "definition": "(used of a device) designed so that a property (as e.g. light) can be varied; \"a variable capacitor\"; \"variable filters in front of the mercury xenon lights\""
+        },
+        {
+          "id": "wn31:a:02514176",
+          "pos": "a",
+          "definition": "liable to or capable of change; \"rainfall in the tropics is notoriously variable\"; \"variable winds\"; \"variable expenses\""
+        },
+        {
+          "id": "wn31:s:02517573",
+          "pos": "s",
+          "definition": "marked by diversity or difference; \"the varying angles of roof slope\"; \"nature is infinitely variable\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-b530f329d65f",
+      "word": "variety",
+      "pos": "名词",
+      "raw": "种类；多样性",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "种类",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "多样性",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04758560",
+          "pos": "n",
+          "definition": "noticeable heterogeneity; \"a diversity of possibilities\"; \"the range and variety of his work is amazing\""
+        },
+        {
+          "id": "wn31:n:04759289",
+          "pos": "n",
+          "definition": "a difference that is usually pleasant; \"he goes to France for variety\"; \"it is a refreshing change to meet a woman mechanic\""
+        },
+        {
+          "id": "wn31:n:05847533",
+          "pos": "n",
+          "definition": "a category of things distinguished by some common characteristic or quality; \"sculpture is a form of art\"; \"what kinds of desserts are there?\""
+        },
+        {
+          "id": "wn31:n:07033353",
+          "pos": "n",
+          "definition": "a show consisting of a series of short unrelated performances"
+        },
+        {
+          "id": "wn31:n:08118051",
+          "pos": "n",
+          "definition": "(biology) a taxonomic category consisting of members of a species that differ from others of the same species in minor but heritable characteristics; \"varieties are frequently recognized in botany\""
+        },
+        {
+          "id": "wn31:n:08415730",
+          "pos": "n",
+          "definition": "a collection containing a variety of sorts of things; \"a great assortment of cars was on display\"; \"he had a variety of disorders\"; \"a veritable smorgasbord of religions\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-1d35a94841cb",
+      "word": "various",
+      "pos": "形容词",
+      "raw": "各种各样的",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "各种各样的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00496454",
+          "pos": "s",
+          "definition": "considered individually; \"the respective club members\"; \"specialists in their several fields\"; \"the various reports all agreed\""
+        },
+        {
+          "id": "wn31:s:02073069",
+          "pos": "s",
+          "definition": "of many different kinds purposefully arranged but lacking any uniformity; \"assorted sizes\"; \"his disguises are many and various\"; \"various experiments have failed to disprove the theory\"; \"cited various reasons for his behavior\""
+        },
+        {
+          "id": "wn31:s:02074895",
+          "pos": "s",
+          "definition": "distinctly dissimilar or unlike; \"celebrities as diverse as Bob Hope and Bob Dylan\"; \"animals as various as the jaguar and the cavy and the sloth\""
+        },
+        {
+          "id": "wn31:s:02517830",
+          "pos": "s",
+          "definition": "having great diversity or variety; \"his various achievements are impressive\"; \"his vast and versatile erudition\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-3320956b836c",
+      "word": "convenient",
+      "pos": "形容词",
+      "raw": "便利的；方便的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "便利的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "方便的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:00477986",
+          "pos": "a",
+          "definition": "large and roomy (`convenient' is archaic in this sense); \"a commodious harbor\"; \"a commodious building suitable for conventions\""
+        },
+        {
+          "id": "wn31:a:00607261",
+          "pos": "a",
+          "definition": "suited to your comfort or purpose or needs; \"a convenient excuse for not going\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-37806e80c15b",
+      "word": "convention",
+      "pos": "名词",
+      "raw": "大会；惯例；公约",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "惯例",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "公约",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01234384",
+          "pos": "n",
+          "definition": "the act of convening"
+        },
+        {
+          "id": "wn31:n:04808781",
+          "pos": "n",
+          "definition": "orthodoxy as a consequence of being conventional"
+        },
+        {
+          "id": "wn31:n:05675457",
+          "pos": "n",
+          "definition": "something regarded as a normative example; \"the convention of not naming the main character\"; \"violence is the rule not the exception\"; \"his formula for impressing visitors\""
+        },
+        {
+          "id": "wn31:n:06787117",
+          "pos": "n",
+          "definition": "(diplomacy) an international agreement"
+        },
+        {
+          "id": "wn31:n:08326016",
+          "pos": "n",
+          "definition": "a large formal assembly; \"political convention\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-371f7e422380",
+      "word": "revenue",
+      "pos": "名词",
+      "raw": "收入；财政收入",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "收入",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "财政收入",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13277590",
+          "pos": "n",
+          "definition": "the entire amount of income before any deductions are made"
+        },
+        {
+          "id": "wn31:n:13282815",
+          "pos": "n",
+          "definition": "government income due to taxation"
+        }
+      ]
+    },
+    {
+      "id": "SG25-a9fd07856242",
+      "word": "universal",
+      "pos": "形容词",
+      "raw": "普遍的；通用的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "普遍的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "通用的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04518001",
+          "pos": "n",
+          "definition": "coupling that connects two rotating shafts allowing freedom of movement in all directions; \"in motor vehicles a universal joint allows the driveshaft to move up and down as the vehicle passes over bumps\""
+        },
+        {
+          "id": "wn31:n:05676203",
+          "pos": "n",
+          "definition": "a behavioral convention or pattern characteristic of all members of a particular culture or of all human beings; \"some form of religion seems to be a human universal\""
+        },
+        {
+          "id": "wn31:n:06764081",
+          "pos": "n",
+          "definition": "(logic) a proposition that asserts something of all members of a class"
+        },
+        {
+          "id": "wn31:n:07274652",
+          "pos": "n",
+          "definition": "(linguistics) a grammatical rule (or other linguistic feature) that is found in all languages"
+        },
+        {
+          "id": "wn31:s:00529364",
+          "pos": "s",
+          "definition": "of worldwide scope or applicability; \"an issue of cosmopolitan import\"; \"the shrewdest political and ecumenical comment of our time\"- Christopher Morley; \"universal experience\""
+        },
+        {
+          "id": "wn31:s:01032238",
+          "pos": "s",
+          "definition": "adapted to various purposes, sizes, forms, operations; \"universal wrench\"; \"universal chuck\"; \"universal screwdriver\""
+        },
+        {
+          "id": "wn31:s:01106367",
+          "pos": "s",
+          "definition": "applicable to or common to all members of a group or set; \"the play opened to universal acclaim\"; \"rap enjoys universal appeal among teenage boys\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-327a7380d2cc",
+      "word": "universe",
+      "pos": "名词",
+      "raw": "宇宙",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "宇宙",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05822288",
+          "pos": "n",
+          "definition": "everything stated or assumed in a given discussion"
+        },
+        {
+          "id": "wn31:n:06035684",
+          "pos": "n",
+          "definition": "(statistics) the entire aggregation of items from which samples can be drawn; \"it is an estimate of the mean of the population\""
+        },
+        {
+          "id": "wn31:n:09489410",
+          "pos": "n",
+          "definition": "everything that exists anywhere; \"they study the evolution of the universe\"; \"the biggest tree in existence\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-713e270f9aeb",
+      "word": "verbal",
+      "pos": "形容词",
+      "raw": "用词语表达的；言语的；言辞的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "用词语表达的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "言语的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "言辞的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 11,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00502355",
+          "pos": "s",
+          "definition": "communicated in the form of words; \"verbal imagery\"; \"a verbal protest\""
+        },
+        {
+          "id": "wn31:s:00551895",
+          "pos": "s",
+          "definition": "prolix; \"you put me to forget a lady's manners by being so verbal\"- Shakespeare"
+        },
+        {
+          "id": "wn31:a:02238326",
+          "pos": "a",
+          "definition": "relating to or having facility in the use of words; \"a good poet is a verbal artist\"; \"a merely verbal writer who sacrifices content to sound\"; \"verbal aptitude\""
+        },
+        {
+          "id": "wn31:s:02292058",
+          "pos": "s",
+          "definition": "expressed in spoken words; \"a verbal contract\""
+        },
+        {
+          "id": "wn31:a:02834663",
+          "pos": "a",
+          "definition": "of or relating to or formed from a verb; \"verbal adjectives like `running' in `hot and cold running water'\""
+        },
+        {
+          "id": "wn31:a:02834859",
+          "pos": "a",
+          "definition": "of or relating to or formed from words in general; \"verbal ability\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-5ca4f3850ccc",
+      "word": "version",
+      "pos": "名词",
+      "raw": "版本；说法",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "版本",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "说法",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01270394",
+          "pos": "n",
+          "definition": "manual turning of a fetus in the uterus (usually to aid delivery)"
+        },
+        {
+          "id": "wn31:n:05849159",
+          "pos": "n",
+          "definition": "something a little different from others of the same type; \"an experimental version of the night fighter\"; \"a variant of the same word\"; \"an emery wheel is the modern variation of a grindstone\"; \"the boy is a younger edition of his father\""
+        },
+        {
+          "id": "wn31:n:05937299",
+          "pos": "n",
+          "definition": "a mental representation of the meaning or significance of something"
+        },
+        {
+          "id": "wn31:n:06420422",
+          "pos": "n",
+          "definition": "a written work (as a novel) that has been recast in a new form; \"the play is an adaptation of a short novel\""
+        },
+        {
+          "id": "wn31:n:06548380",
+          "pos": "n",
+          "definition": "a written communication in a second language having the same meaning as the written communication in a first language"
+        },
+        {
+          "id": "wn31:n:07188236",
+          "pos": "n",
+          "definition": "an interpretation of a matter from a particular viewpoint; \"his version of the fight was different from mine\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8856504c33a8",
+      "word": "controversy",
+      "pos": "名词",
+      "raw": "争议；争论",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "争议",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "争论",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07197811",
+          "pos": "n",
+          "definition": "a contentious speech act; a dispute where there is strong disagreement; \"they were involved in a violent argument\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-5c417c6c8127",
+      "word": "invest",
+      "pos": "动词",
+      "raw": "投资；投入",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "投资",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "投入",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:02275982",
+          "pos": "v",
+          "definition": "make an investment; \"Put money into bonds\""
+        },
+        {
+          "id": "wn31:v:02389417",
+          "pos": "v",
+          "definition": "place ceremoniously or formally in an office or position; \"there was a ceremony to induct the president of the Academy\""
+        },
+        {
+          "id": "wn31:v:02391530",
+          "pos": "v",
+          "definition": "provide with power and authority; \"They vested the council with special rights\""
+        },
+        {
+          "id": "wn31:v:02391817",
+          "pos": "v",
+          "definition": "furnish with power or authority; of kings or emperors"
+        },
+        {
+          "id": "wn31:v:02479662",
+          "pos": "v",
+          "definition": "give qualities or abilities to"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f9b21c4bda58",
+      "word": "investment",
+      "pos": "名词",
+      "raw": "投资；投资额",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "投资",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "投资额",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00199768",
+          "pos": "n",
+          "definition": "the ceremonial act of clothing someone in the insignia of an office; the formal promotion of a person to an office or rank"
+        },
+        {
+          "id": "wn31:n:00830123",
+          "pos": "n",
+          "definition": "the act of putting on robes or vestments"
+        },
+        {
+          "id": "wn31:n:01101341",
+          "pos": "n",
+          "definition": "the act of investing; laying out money or capital in an enterprise with the expectation of profit"
+        },
+        {
+          "id": "wn31:n:01461257",
+          "pos": "n",
+          "definition": "outer layer or covering of an organ or part or organism"
+        },
+        {
+          "id": "wn31:n:04654542",
+          "pos": "n",
+          "definition": "the commitment of something other than money (time, energy, or effort) to a project with the expectation of some worthwhile result; \"this job calls for the investment of some hard thinking\"; \"he made an emotional investment in the work\""
+        },
+        {
+          "id": "wn31:n:13354252",
+          "pos": "n",
+          "definition": "money that is invested with an expectation of profit"
+        }
+      ]
+    },
+    {
+      "id": "SG25-ee8250fb76e0",
+      "word": "evidence",
+      "pos": "名词",
+      "raw": "证据；迹象",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "证据",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "迹象",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05832256",
+          "pos": "n",
+          "definition": "your basis for belief or disbelief; knowledge on which to base belief; \"the evidence that smoking causes lung cancer is very compelling\""
+        },
+        {
+          "id": "wn31:n:06656171",
+          "pos": "n",
+          "definition": "an indication that makes something evident; \"his trembling was evidence of his fear\""
+        },
+        {
+          "id": "wn31:n:06746688",
+          "pos": "n",
+          "definition": "(law) all the means by which any alleged matter of fact whose truth is investigated at judicial trial is established or disproved"
+        },
+        {
+          "id": "wn31:v:00822637",
+          "pos": "v",
+          "definition": "provide evidence for; stand as proof of; show by one's behavior, attitude, or external attributes; \"His high fever attested to his illness\"; \"The buildings in Rome manifest a high level of architectural sophistication\"; \"This decision demonstrates his sense of fairness\""
+        },
+        {
+          "id": "wn31:v:00956454",
+          "pos": "v",
+          "definition": "give evidence; \"he was telling on all his former colleague\""
+        },
+        {
+          "id": "wn31:v:01017253",
+          "pos": "v",
+          "definition": "provide evidence for; \"The blood test showed that he was the father\"; \"Her behavior testified to her incompetence\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-1bdd5b5b92e2",
+      "word": "victim",
+      "pos": "名词",
+      "raw": "受害人；受害者；牺牲者",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "受害人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "受害者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "牺牲者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:10771761",
+          "pos": "n",
+          "definition": "an unfortunate person who suffers from some adverse circumstance"
+        },
+        {
+          "id": "wn31:n:10772148",
+          "pos": "n",
+          "definition": "a person who is tricked or swindled"
+        }
+      ]
+    },
+    {
+      "id": "SG25-61b0a3c4d282",
+      "word": "convince",
+      "pos": "动词",
+      "raw": "使信服；说服",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "使信服",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "说服",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00771598",
+          "pos": "v",
+          "definition": "make (someone) agree, understand, or realize the truth or validity of something; \"He had finally convinced several customers of the advantages of his product\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-267d294ad2fe",
+      "word": "provision",
+      "pos": "名词",
+      "raw": "提供；规定；供应品",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "提供",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "规定",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "供应品",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01059124",
+          "pos": "n",
+          "definition": "the activity of supplying or providing something"
+        },
+        {
+          "id": "wn31:n:05802702",
+          "pos": "n",
+          "definition": "the cognitive process of thinking about what you will do in the event of something happening; \"his planning for retirement was hindered by several uncertainties\""
+        },
+        {
+          "id": "wn31:n:06768658",
+          "pos": "n",
+          "definition": "a stipulated condition; \"he accepted subject to one provision\""
+        },
+        {
+          "id": "wn31:n:13388621",
+          "pos": "n",
+          "definition": "a store or supply of something (especially of food or clothing or arms)"
+        },
+        {
+          "id": "wn31:v:02343971",
+          "pos": "v",
+          "definition": "supply with provisions"
+        }
+      ]
+    },
+    {
+      "id": "SG25-80c3675033fd",
+      "word": "violate",
+      "pos": "动词",
+      "raw": "妨碍；违反",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "妨碍",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "违反",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01210308",
+          "pos": "v",
+          "definition": "destroy; \"Don't violate my garden\"; \"violate my privacy\""
+        },
+        {
+          "id": "wn31:v:01568253",
+          "pos": "v",
+          "definition": "destroy and strip of its possession; \"The soldiers raped the beautiful country\""
+        },
+        {
+          "id": "wn31:v:02572443",
+          "pos": "v",
+          "definition": "act in disregard of laws, rules, contracts, or promises; \"offend all laws of humanity\"; \"violate the basic laws or human civilization\"; \"break a law\"; \"break a promise\""
+        },
+        {
+          "id": "wn31:v:02573434",
+          "pos": "v",
+          "definition": "force (someone) to have sex against their will; \"The woman was raped on her way home at night\""
+        },
+        {
+          "id": "wn31:v:02573980",
+          "pos": "v",
+          "definition": "violate the sacred character of a place or language; \"desecrate a cemetery\"; \"violate the sanctity of the church\"; \"profane the name of God\""
+        },
+        {
+          "id": "wn31:v:02674312",
+          "pos": "v",
+          "definition": "fail to agree with; be in violation of; as of rules or patterns; \"This sentence violates the rules of syntax\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-a5961f3f5ac8",
+      "word": "visual",
+      "pos": "形容词",
+      "raw": "眼睛的；视觉的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "眼睛的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "视觉的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:02526205",
+          "pos": "s",
+          "definition": "visible; \"be sure of it; give me the ocular proof\"- Shakespeare; \"a visual presentation\"; \"a visual image\""
+        },
+        {
+          "id": "wn31:a:02880845",
+          "pos": "a",
+          "definition": "relating to or using sight; \"ocular inspection\"; \"an optical illusion\"; \"visual powers\"; \"visual navigation\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-4032ee403877",
+      "word": "survival",
+      "pos": "名词",
+      "raw": "幸存；生存",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "幸存",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "生存",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01024120",
+          "pos": "n",
+          "definition": "something that survives"
+        },
+        {
+          "id": "wn31:n:13584949",
+          "pos": "n",
+          "definition": "a natural process resulting in the evolution of organisms best adapted to the environment"
+        },
+        {
+          "id": "wn31:n:13985502",
+          "pos": "n",
+          "definition": "a state of surviving; remaining alive"
+        }
+      ]
+    },
+    {
+      "id": "SG25-3371305232c8",
+      "word": "virtue",
+      "pos": "名词",
+      "raw": "美德；优点",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "美德",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "优点",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04854529",
+          "pos": "n",
+          "definition": "the quality of doing what is right and avoiding what is wrong"
+        },
+        {
+          "id": "wn31:n:04854713",
+          "pos": "n",
+          "definition": "a particular moral excellence"
+        },
+        {
+          "id": "wn31:n:04856990",
+          "pos": "n",
+          "definition": "morality with respect to sexual relations"
+        },
+        {
+          "id": "wn31:n:05146223",
+          "pos": "n",
+          "definition": "any admirable quality or attribute; \"work of great merit\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-39ca0c269f8b",
+      "word": "vital",
+      "pos": "形容词",
+      "raw": "关键的；紧要的；重要的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "关键的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "紧要的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "重要的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:00095947",
+          "pos": "s",
+          "definition": "manifesting or characteristic of life; \"a vital, living organism\"; \"vital signs\""
+        },
+        {
+          "id": "wn31:s:00119817",
+          "pos": "s",
+          "definition": "full of spirit; full of life; \"a dynamic full of life woman\"; \"a vital and charismatic leader\"; \"this whole lively world\""
+        },
+        {
+          "id": "wn31:s:00905499",
+          "pos": "s",
+          "definition": "performing an essential function in the living body; \"vital organs\"; \"blood and other vital fluids\"; \"the loss of vital heat in shock\"; \"a vital spot\"; \"life-giving love and praise\""
+        },
+        {
+          "id": "wn31:s:00907116",
+          "pos": "s",
+          "definition": "urgently needed; absolutely necessary; \"a critical element of the plan\"; \"critical medical supplies\"; \"vital for a healthy society\"; \"of vital interest\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-3c054e0895eb",
+      "word": "advocate",
+      "pos": "名词；动词",
+      "raw": "动词：提倡；名词：拥护者，辩护人",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "提倡",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "拥护者",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "辩护人",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09794206",
+          "pos": "n",
+          "definition": "a person who pleads for a cause or propounds an idea"
+        },
+        {
+          "id": "wn31:n:09795104",
+          "pos": "n",
+          "definition": "a lawyer who pleads cases in court"
+        },
+        {
+          "id": "wn31:v:00829391",
+          "pos": "v",
+          "definition": "speak, plead, or argue in favor of; \"The doctor advocated a smoking ban in the entire house\""
+        },
+        {
+          "id": "wn31:v:00876672",
+          "pos": "v",
+          "definition": "push for something; \"The travel agent recommended strongly that we not travel on Thanksgiving Day\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-873f8161e2c6",
+      "word": "involve",
+      "pos": "动词",
+      "raw": "涉及；包含；使卷入",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "涉及",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "包含",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使卷入",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00402444",
+          "pos": "v",
+          "definition": "make complex or intricate or complicated; \"The situation was rather involved\""
+        },
+        {
+          "id": "wn31:v:00602119",
+          "pos": "v",
+          "definition": "occupy or engage the interest of; \"His story completely involved me during the entire afternoon\""
+        },
+        {
+          "id": "wn31:v:02634015",
+          "pos": "v",
+          "definition": "require as useful, just, or proper; \"It takes nerve to do what she did\"; \"success usually requires hard work\"; \"This job asks a lot of patience and skill\"; \"This position demands a lot of personal sacrifice\"; \"This dinner calls for a spectacular dessert\"; \"This intervention does not postulate a patient's consent\""
+        },
+        {
+          "id": "wn31:v:02639299",
+          "pos": "v",
+          "definition": "contain as a part; \"Dinner at Joe's always involves at least six courses\""
+        },
+        {
+          "id": "wn31:v:02642216",
+          "pos": "v",
+          "definition": "have as a necessary feature; \"This decision involves many changes\""
+        },
+        {
+          "id": "wn31:v:02682907",
+          "pos": "v",
+          "definition": "connect closely and often incriminatingly; \"This new ruling affects your business\""
+        },
+        {
+          "id": "wn31:v:02683377",
+          "pos": "v",
+          "definition": "engage as a participant; \"Don't involve me in your family affairs!\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-347a5faf2ae6",
+      "word": "voluntary",
+      "pos": "形容词",
+      "raw": "自愿的；义务的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "自愿的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "义务的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07054871",
+          "pos": "n",
+          "definition": "composition (often improvised) for a solo instrument (especially solo organ) and not a regular part of a religious service or musical performance"
+        },
+        {
+          "id": "wn31:n:10778999",
+          "pos": "n",
+          "definition": "(military) a person who freely enlists for service"
+        },
+        {
+          "id": "wn31:a:02530275",
+          "pos": "a",
+          "definition": "of your own free will or design; done by choice; not forced or compelled; \"man is a voluntary agent\"; \"participation was voluntary\"; \"voluntary manslaughter\"; \"voluntary generosity in times of disaster\"; \"voluntary social workers\"; \"a voluntary confession\""
+        },
+        {
+          "id": "wn31:a:02532426",
+          "pos": "a",
+          "definition": "controlled by individual volition; \"voluntary motions\"; \"voluntary muscles\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-dcbb0f3cafb3",
+      "word": "volunteer",
+      "pos": "名词；动词",
+      "raw": "名词：志愿者；动词：自愿做",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "志愿者",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "自愿做",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:10778819",
+          "pos": "n",
+          "definition": "a person who performs voluntary work"
+        },
+        {
+          "id": "wn31:n:10778999",
+          "pos": "n",
+          "definition": "(military) a person who freely enlists for service"
+        },
+        {
+          "id": "wn31:v:00881623",
+          "pos": "v",
+          "definition": "tell voluntarily; \"He volunteered the information\""
+        },
+        {
+          "id": "wn31:v:02429831",
+          "pos": "v",
+          "definition": "do volunteer work"
+        },
+        {
+          "id": "wn31:v:02429959",
+          "pos": "v",
+          "definition": "agree freely; \"She volunteered to drive the old lady home\"; \"I offered to help with the dishes but the hostess would not hear of it\""
+        },
+        {
+          "id": "wn31:s:02531239",
+          "pos": "s",
+          "definition": "without payment; \"the soup kitchen was run primarily by unpaid helpers\"; \"a volunteer fire department\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-70b6144fae4d",
+      "word": "revolution",
+      "pos": "名词",
+      "raw": "变革；革命",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "变革",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "革命",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00964833",
+          "pos": "n",
+          "definition": "the overthrow of a government by those who are governed"
+        },
+        {
+          "id": "wn31:n:07438709",
+          "pos": "n",
+          "definition": "a drastic and far-reaching change in ways of thinking and behaving; \"the industrial revolution was also a cultural revolution\""
+        },
+        {
+          "id": "wn31:n:07455579",
+          "pos": "n",
+          "definition": "a single complete turn (axial or orbital); \"the plane made three rotations before it crashed\"; \"the revolution of the earth about the sun takes one year\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-f2b826b18b9d",
+      "word": "vulnerable",
+      "pos": "形容词",
+      "raw": "易受伤害的；易受攻击的；脆弱的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "易受伤害的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "易受攻击的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "脆弱的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 12,
+          "end": 15
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:02334251",
+          "pos": "s",
+          "definition": "capable of being wounded or hurt; \"vulnerable parts of the body\""
+        },
+        {
+          "id": "wn31:s:02371734",
+          "pos": "s",
+          "definition": "susceptible to criticism or persuasion or temptation; \"vulnerable to bribery\"; \"an argument vulnerable to refutation\""
+        },
+        {
+          "id": "wn31:a:02533434",
+          "pos": "a",
+          "definition": "susceptible to attack; \"a vulnerable bridge\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8bf9fd4be091",
+      "word": "aware",
+      "pos": "形容词",
+      "raw": "想着的；意识到的；注意的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "想着的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "意识到的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "注意的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:00191603",
+          "pos": "a",
+          "definition": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception; \"was aware of his opponent's hostility\"; \"became aware of her surroundings\"; \"aware that he had exceeded the speed limit\""
+        },
+        {
+          "id": "wn31:a:01984219",
+          "pos": "a",
+          "definition": "bearing in mind; attentive to; \"ever mindful of her health\"; \"mindful of his responsibilities\"; \"mindful of these criticisms, I shall attempt to justify my action\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-0cfcdc2f0991",
+      "word": "alongside",
+      "pos": "介词；副词",
+      "raw": "在……旁边；与……一起",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "在……旁边",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "与……一起",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00251525",
+          "pos": "r",
+          "definition": "side by side; \"anchored close aboard another ship\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-d10149eecff3",
+      "word": "aircraft",
+      "pos": "名词",
+      "raw": "航空器；飞机",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "航空器",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "飞机",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02689427",
+          "pos": "n",
+          "definition": "a vehicle that can fly"
+        }
+      ]
+    },
+    {
+      "id": "SG25-1b288c5c6dc9",
+      "word": "airline",
+      "pos": "名词",
+      "raw": "航空公司；航线",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "航空公司",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "航线",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02692940",
+          "pos": "n",
+          "definition": "a commercial enterprise that provides scheduled flights for passengers"
+        },
+        {
+          "id": "wn31:n:02693129",
+          "pos": "n",
+          "definition": "a hose that carries air under pressure"
+        }
+      ]
+    },
+    {
+      "id": "SG25-b1ece0f3fb4f",
+      "word": "blueprint",
+      "pos": "名词",
+      "raw": "蓝图；详细计划",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "蓝图",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "详细计划",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02859389",
+          "pos": "n",
+          "definition": "photographic print of plans or technical drawings etc."
+        },
+        {
+          "id": "wn31:n:05910921",
+          "pos": "n",
+          "definition": "something intended as a guide for making something else; \"a blueprint for a house\"; \"a pattern for a skirt\""
+        },
+        {
+          "id": "wn31:v:01687477",
+          "pos": "v",
+          "definition": "make a blueprint of"
+        }
+      ]
+    },
+    {
+      "id": "SG25-312e825d985a",
+      "word": "chairman",
+      "pos": "名词",
+      "raw": "主席；主持人",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "主席",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "主持人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:10488547",
+          "pos": "n",
+          "definition": "the officer who presides at the meetings of an organization; \"address your remarks to the chairperson\""
+        },
+        {
+          "id": "wn31:v:02444885",
+          "pos": "v",
+          "definition": "act or preside as chair, as of an academic department in a university; \"She chaired the department for many years\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-3549b0028b75",
+      "word": "database",
+      "pos": "名词",
+      "raw": "数据库",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "数据库",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:06650349",
+          "pos": "n",
+          "definition": "an organized body of related information"
+        }
+      ]
+    },
+    {
+      "id": "SG25-7b1b763ee8f6",
+      "word": "elsewhere",
+      "pos": "副词",
+      "raw": "在别处；到别处",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "在别处",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "到别处",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00085352",
+          "pos": "r",
+          "definition": "in or to another place; \"he went elsewhere\"; \"look elsewhere for the answer\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-59bda3f8ee98",
+      "word": "feedback",
+      "pos": "名词",
+      "raw": "反馈；回授",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "反馈",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "回授",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:06759184",
+          "pos": "n",
+          "definition": "response to an inquiry or experiment"
+        },
+        {
+          "id": "wn31:n:13500583",
+          "pos": "n",
+          "definition": "the process in which part of the output of a system is returned to its input in order to regulate its further output"
+        }
+      ]
+    },
+    {
+      "id": "SG25-533ce8ef5fb4",
+      "word": "furthermore",
+      "pos": "副词",
+      "raw": "此外；而且",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "此外",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "而且",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00029763",
+          "pos": "r",
+          "definition": "in addition; \"computer chess games are getting cheaper all the time; furthermore, their quality is improving\"; \"the cellar was dark; moreover, mice nested there\"; \"what is more, there's no sign of a change\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-bbcd628c07a0",
+      "word": "household",
+      "pos": "名词",
+      "raw": "人家；家庭；家庭成员",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "人家",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "家庭",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "家庭成员",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08094856",
+          "pos": "n",
+          "definition": "a social unit living together; \"he moved his family to Virginia\"; \"It was a good Christian household\"; \"I waited until the whole house was asleep\"; \"the teacher asked how many people made up his home\"; \"the family refused to accept his will\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-dc2c5be187f6",
+      "word": "highlight",
+      "pos": "名词；动词",
+      "raw": "动词：突出，强调；名词：最精彩的部分",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "突出",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "强调",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "最精彩的部分",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04959297",
+          "pos": "n",
+          "definition": "an area of lightness in a picture"
+        },
+        {
+          "id": "wn31:n:13832353",
+          "pos": "n",
+          "definition": "the most interesting or memorable part; \"the highlight of the tour was our visit to the Vatican\""
+        },
+        {
+          "id": "wn31:v:00040937",
+          "pos": "v",
+          "definition": "apply a highlighter to one's cheeks or eyebrows in order to make them more prominent; \"highlight the area above your eyebrows\""
+        },
+        {
+          "id": "wn31:v:00515150",
+          "pos": "v",
+          "definition": "move into the foreground to make more visible or prominent; \"The introduction highlighted the speaker's distinguished career in linguistics\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c044215e7b91",
+      "word": "meanwhile",
+      "pos": "副词",
+      "raw": "与此同时；在此期间",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "与此同时",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "在此期间",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:15297873",
+          "pos": "n",
+          "definition": "the time between one event, process, or period and another; \"meanwhile the socialists are running the government\""
+        },
+        {
+          "id": "wn31:r:00065346",
+          "pos": "r",
+          "definition": "during the intervening time; \"meanwhile I will not think about the problem\"; \"meantime he was attentive to his other interests\"; \"in the meantime the police were notified\""
+        },
+        {
+          "id": "wn31:r:00065584",
+          "pos": "r",
+          "definition": "at the same time but in another place; \"meanwhile, back at the ranch...\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-215695de89b1",
+      "word": "moreover",
+      "pos": "副词",
+      "raw": "此外；而且",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "此外",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "而且",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00029763",
+          "pos": "r",
+          "definition": "in addition; \"computer chess games are getting cheaper all the time; furthermore, their quality is improving\"; \"the cellar was dark; moreover, mice nested there\"; \"what is more, there's no sign of a change\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-f29c4511672f",
+      "word": "newspaper",
+      "pos": "名词",
+      "raw": "报；报章；报纸",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "报",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "报章",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "报纸",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03827711",
+          "pos": "n",
+          "definition": "the physical object that is the product of a newspaper publisher; \"when it began to rain he covered his head with a newspaper\""
+        },
+        {
+          "id": "wn31:n:06277798",
+          "pos": "n",
+          "definition": "a daily or weekly publication on folded sheets; contains news and articles and advertisements; \"he read his newspaper at breakfast\""
+        },
+        {
+          "id": "wn31:n:08079806",
+          "pos": "n",
+          "definition": "a business firm that publishes newspapers; \"Murdoch owns many newspapers\""
+        },
+        {
+          "id": "wn31:n:14985861",
+          "pos": "n",
+          "definition": "cheap paper made from wood pulp and used for printing newspapers; \"they used bales of newspaper every day\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-25a63e52a98f",
+      "word": "outcome",
+      "pos": "名词",
+      "raw": "结果",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "结果",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07307418",
+          "pos": "n",
+          "definition": "something that results; \"he listened for the results on the radio\""
+        },
+        {
+          "id": "wn31:n:11430739",
+          "pos": "n",
+          "definition": "a phenomenon that follows and is caused by some previous phenomenon; \"the magnetic effect was greater when the rod was lengthwise\"; \"his decision had depressing consequences for business\"; \"he acted very wise after the event\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-318678825324",
+      "word": "outline",
+      "pos": "名词；动词",
+      "raw": "名词：轮廓，提纲；动词：概述",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "轮廓",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "提纲",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "概述",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05900179",
+          "pos": "n",
+          "definition": "a schematic or preliminary plan"
+        },
+        {
+          "id": "wn31:n:06480622",
+          "pos": "n",
+          "definition": "a sketchy summary of the main points of an argument or theory"
+        },
+        {
+          "id": "wn31:n:08630343",
+          "pos": "n",
+          "definition": "the line that appears to bound an object"
+        },
+        {
+          "id": "wn31:v:01008466",
+          "pos": "v",
+          "definition": "describe roughly or briefly or give the main points or summary of; \"sketch the outline of the book\"; \"outline his ideas\""
+        },
+        {
+          "id": "wn31:v:01693274",
+          "pos": "v",
+          "definition": "trace the shape of"
+        },
+        {
+          "id": "wn31:v:01705493",
+          "pos": "v",
+          "definition": "draw up an outline or sketch for something; \"draft a speech\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-e0ee8bb50685",
+      "word": "output",
+      "pos": "名词；动词",
+      "raw": "名词：产量，输出；动词：输出",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "产量",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "输出",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "输出",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00916463",
+          "pos": "n",
+          "definition": "production of a certain amount"
+        },
+        {
+          "id": "wn31:n:03292089",
+          "pos": "n",
+          "definition": "final product; the things produced"
+        },
+        {
+          "id": "wn31:n:03866402",
+          "pos": "n",
+          "definition": "what is produced in a given time period"
+        },
+        {
+          "id": "wn31:n:07279593",
+          "pos": "n",
+          "definition": "signal that comes out of an electronic system"
+        },
+        {
+          "id": "wn31:n:13780885",
+          "pos": "n",
+          "definition": "the quantity of something (as a commodity) that is created (usually within a given period of time); \"production was up in the second quarter\""
+        },
+        {
+          "id": "wn31:v:01625832",
+          "pos": "v",
+          "definition": "to create or manufacture a specific amount; \"the computer is outputting the data from the job I'm running\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c1deb3268b97",
+      "word": "overall",
+      "pos": "形容词",
+      "raw": "总体的；全面的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "总体的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "全面的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03868628",
+          "pos": "n",
+          "definition": "(usually plural) work clothing consisting of denim trousers (usually with a bib and shoulder straps)"
+        },
+        {
+          "id": "wn31:n:03868782",
+          "pos": "n",
+          "definition": "a loose protective coverall or smock worn over ordinary clothing for dirty work"
+        },
+        {
+          "id": "wn31:s:01106144",
+          "pos": "s",
+          "definition": "involving only main features; \"the overall pattern of his life\""
+        },
+        {
+          "id": "wn31:s:01587354",
+          "pos": "s",
+          "definition": "including everything; \"the overall cost\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-303197632307",
+      "word": "overlook",
+      "pos": "动词",
+      "raw": "忽视；俯瞰",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "忽视",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "俯瞰",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08631679",
+          "pos": "n",
+          "definition": "a high place affording a good view"
+        },
+        {
+          "id": "wn31:v:00616690",
+          "pos": "v",
+          "definition": "leave undone or leave out; \"How could I miss that typo?\"; \"The workers on the conveyor belt miss one out of ten\""
+        },
+        {
+          "id": "wn31:v:02170692",
+          "pos": "v",
+          "definition": "watch over; \"I am overlooking her work\""
+        },
+        {
+          "id": "wn31:v:02170805",
+          "pos": "v",
+          "definition": "look past, fail to notice"
+        },
+        {
+          "id": "wn31:v:02701971",
+          "pos": "v",
+          "definition": "look down on; \"The villa dominates the town\""
+        },
+        {
+          "id": "wn31:v:02727841",
+          "pos": "v",
+          "definition": "be oriented in a certain direction; \"The house looks out on a tennis court\"; \"The apartment overlooks the Hudson\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-01b8016fdce4",
+      "word": "ownership",
+      "pos": "名词",
+      "raw": "所有权",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "所有权",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00811126",
+          "pos": "n",
+          "definition": "the act of having and controlling property"
+        },
+        {
+          "id": "wn31:n:13261412",
+          "pos": "n",
+          "definition": "the relation of an owner to the thing possessed; possession with the right to transfer possession to others"
+        },
+        {
+          "id": "wn31:n:14503072",
+          "pos": "n",
+          "definition": "the state or fact of being an owner"
+        }
+      ]
+    },
+    {
+      "id": "SG25-1ef4808791d1",
+      "word": "so-called",
+      "pos": "形容词",
+      "raw": "所谓的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "所谓的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:01922936",
+          "pos": "s",
+          "definition": "doubtful or suspect; \"these so-called experts are no help\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-35390f5453e8",
+      "word": "software",
+      "pos": "名词",
+      "raw": "软件；软体",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "软件",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "软体",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:06578068",
+          "pos": "n",
+          "definition": "(computer science) written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory; \"the market for software is expected to expand\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8d8c872204ee",
+      "word": "somewhat",
+      "pos": "副词",
+      "raw": "有点；稍微",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "有点",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "稍微",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00036138",
+          "pos": "r",
+          "definition": "to certain extent or degree; \"pretty big\"; \"pretty bad\"; \"jolly decent of him\"; \"the shoes are priced reasonably\"; \"he is fairly clever with computers\""
+        },
+        {
+          "id": "wn31:r:00036695",
+          "pos": "r",
+          "definition": "to a small degree or extent; \"his arguments were somewhat self-contradictory\"; \"the children argued because one slice of cake was slightly larger than the other\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-d41d9e05fcfb",
+      "word": "throughout",
+      "pos": "介词；副词",
+      "raw": "遍及；自始至终",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "遍及",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "自始至终",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00103637",
+          "pos": "r",
+          "definition": "from first to last; \"the play was excellent end-to-end\""
+        },
+        {
+          "id": "wn31:r:00258633",
+          "pos": "r",
+          "definition": "used to refer to cited works"
+        }
+      ]
+    },
+    {
+      "id": "SG25-4b38d369ea82",
+      "word": "underestimate",
+      "pos": "名词；动词",
+      "raw": "低估",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "低估",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05812499",
+          "pos": "n",
+          "definition": "an estimation that is too low; an estimate that is less than the true or actual value"
+        },
+        {
+          "id": "wn31:v:00673254",
+          "pos": "v",
+          "definition": "make too low an estimate of; \"he underestimated the work that went into the renovation\"; \"Don't underestimate the danger of such a raft trip on this river\""
+        },
+        {
+          "id": "wn31:v:00675685",
+          "pos": "v",
+          "definition": "make a deliberately low estimate; \"The construction company wanted the contract badly and lowballed\""
+        },
+        {
+          "id": "wn31:v:00697527",
+          "pos": "v",
+          "definition": "assign too low a value to; \"Don't underestimate the value of this heirloom-you may sell it at a good price\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-a2bca9949a55",
+      "word": "undergraduate",
+      "pos": "名词",
+      "raw": "本科生",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "本科生",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:10756259",
+          "pos": "n",
+          "definition": "a university student who has not yet received a first degree"
+        }
+      ]
+    },
+    {
+      "id": "SG25-944969efb294",
+      "word": "underline",
+      "pos": "动词",
+      "raw": "在……下面画线；强调",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "在……下面画线",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "强调",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:06814276",
+          "pos": "n",
+          "definition": "a line drawn underneath (especially under written matter)"
+        },
+        {
+          "id": "wn31:v:01006280",
+          "pos": "v",
+          "definition": "draw a line or lines underneath to call attention to"
+        },
+        {
+          "id": "wn31:v:01016618",
+          "pos": "v",
+          "definition": "give extra weight to (a communication); \"Her gesture emphasized her words\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-5d13e04fd93b",
+      "word": "undermine",
+      "pos": "动词",
+      "raw": "妨害；暗地里破坏；毁灭",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "妨害",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "暗地里破坏",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "毁灭",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01285636",
+          "pos": "v",
+          "definition": "hollow out as if making a cave or opening; \"The river was caving the banks\""
+        },
+        {
+          "id": "wn31:v:02549304",
+          "pos": "v",
+          "definition": "destroy property or hinder normal operations; \"The Resistance sabotaged railroad operations during the war\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8b2f40633932",
+      "word": "upset",
+      "pos": "动词；形容词",
+      "raw": "动词：使心烦，打乱；形容词：难过的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "使心烦",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "打乱",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "难过的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00068990",
+          "pos": "n",
+          "definition": "an improbable and unexpected victory; \"the biggest upset since David beat Goliath\""
+        },
+        {
+          "id": "wn31:n:00349138",
+          "pos": "n",
+          "definition": "the act of upsetting something; \"he was badly bruised by the upset of his sled at a high speed\""
+        },
+        {
+          "id": "wn31:n:00555887",
+          "pos": "n",
+          "definition": "the act of disturbing the mind or body; \"his carelessness could have caused an ecological upset\"; \"she was unprepared for this sudden overthrow of their normal way of living\""
+        },
+        {
+          "id": "wn31:n:04522739",
+          "pos": "n",
+          "definition": "a tool used to thicken or spread metal (the end of a bar or a rivet etc.) by forging or hammering or swaging"
+        },
+        {
+          "id": "wn31:n:14075885",
+          "pos": "n",
+          "definition": "a physical condition in which there is a disturbance of normal functioning; \"the doctor prescribed some medicine for the disorder\"; \"everyone gets stomach upsets from time to time\""
+        },
+        {
+          "id": "wn31:n:14426686",
+          "pos": "n",
+          "definition": "an unhappy and worried mental state; \"there was too much anger and disturbance\"; \"she didn't realize the upset she caused me\""
+        },
+        {
+          "id": "wn31:v:00522376",
+          "pos": "v",
+          "definition": "disturb the balance or stability of; \"The hostile talks upset the peaceful relations between the two countries\""
+        },
+        {
+          "id": "wn31:v:01111498",
+          "pos": "v",
+          "definition": "defeat suddenly and unexpectedly; \"The foreign team upset the local team\""
+        },
+        {
+          "id": "wn31:v:01258938",
+          "pos": "v",
+          "definition": "form metals with a swage"
+        },
+        {
+          "id": "wn31:v:01774422",
+          "pos": "v",
+          "definition": "move deeply; \"This book upset me\"; \"A troubling thought\""
+        },
+        {
+          "id": "wn31:v:01793821",
+          "pos": "v",
+          "definition": "cause to lose one's composure"
+        },
+        {
+          "id": "wn31:v:01913971",
+          "pos": "v",
+          "definition": "cause to overturn from an upright or normal position; \"The cat knocked over the flower vase\"; \"the clumsy customer turned over the vase\"; \"he tumped over his beer\""
+        },
+        {
+          "id": "wn31:s:00934664",
+          "pos": "s",
+          "definition": "used of an unexpected defeat of a team favored to win; \"the Bills' upset victory over the Houston Oilers\""
+        },
+        {
+          "id": "wn31:s:01673499",
+          "pos": "s",
+          "definition": "thrown into a state of disarray or confusion; \"troops fleeing in broken ranks\"; \"a confused mass of papers on the desk\"; \"the small disordered room\"; \"with everything so upset\""
+        },
+        {
+          "id": "wn31:s:02466219",
+          "pos": "s",
+          "definition": "afflicted with or marked by anxious uneasiness or trouble or grief; \"too upset to say anything\"; \"spent many disquieted moments\"; \"distressed about her son's leaving home\"; \"lapsed into disturbed sleep\"; \"worried parents\"; \"a worried frown\"; \"one last worried check of the sleeping children\""
+        },
+        {
+          "id": "wn31:s:02476989",
+          "pos": "s",
+          "definition": "having been turned so that the bottom is no longer the bottom; \"an overturned car\"; \"the upset pitcher of milk\"; \"sat on an upturned bucket\""
+        },
+        {
+          "id": "wn31:s:02557987",
+          "pos": "s",
+          "definition": "mildly physically distressed; \"an upset stomach\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ade5f219811f",
+      "word": "worthwhile",
+      "pos": "形容词",
+      "raw": "值得做的；值得花时间的；值得花精力的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "值得做的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "值得花时间的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "值得花精力的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 12,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:s:02598251",
+          "pos": "s",
+          "definition": "sufficiently valuable to justify the investment of time or interest; \"a worthwhile book\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c26f22db83dc",
+      "word": "withdraw",
+      "pos": "动词",
+      "raw": "向后移；撤退；离开",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "向后移",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "撤退",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "离开",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00173351",
+          "pos": "v",
+          "definition": "remove something concrete, as by lifting, pushing, or taking off, or remove something abstract; \"remove a threat\"; \"remove a wrapper\"; \"Remove the dirty dishes from the table\"; \"take the gun from your pocket\"; \"This machine withdraws heat from the environment\""
+        },
+        {
+          "id": "wn31:v:00496934",
+          "pos": "v",
+          "definition": "keep away from others; \"He sequestered himself in his study to write a book\""
+        },
+        {
+          "id": "wn31:v:00800738",
+          "pos": "v",
+          "definition": "take back what one has said; \"He swallowed his words\""
+        },
+        {
+          "id": "wn31:v:00801045",
+          "pos": "v",
+          "definition": "make a retreat from an earlier commitment or activity; \"We'll have to crawfish out from meeting with him\"; \"He backed out of his earlier promise\"; \"The aggressive investment company pulled in its horns\""
+        },
+        {
+          "id": "wn31:v:01514012",
+          "pos": "v",
+          "definition": "release from something that holds fast, connects, or entangles; \"I want to disengage myself from his influence\"; \"disengage the gears\""
+        },
+        {
+          "id": "wn31:v:01770804",
+          "pos": "v",
+          "definition": "lose interest; \"he retired from life when his wife died\""
+        },
+        {
+          "id": "wn31:v:01998474",
+          "pos": "v",
+          "definition": "pull back or move away or backward; \"The enemy withdrew\"; \"The limo pulled away from the curb\""
+        },
+        {
+          "id": "wn31:v:02316367",
+          "pos": "v",
+          "definition": "remove (a commodity) from (a supply source); \"She drew $2,000 from the account\"; \"The doctors drew medical supplies from the hospital's emergency bank\""
+        },
+        {
+          "id": "wn31:v:02317458",
+          "pos": "v",
+          "definition": "cause to be returned; \"recall the defective auto tires\"; \"The manufacturer tried to call back the spoilt yoghurt\""
+        },
+        {
+          "id": "wn31:v:02385151",
+          "pos": "v",
+          "definition": "withdraw from active participation; \"He retired from chess\""
+        },
+        {
+          "id": "wn31:v:02385902",
+          "pos": "v",
+          "definition": "retire gracefully; \"He bowed out when he realized he could no longer handle the demands of the chairmanship\""
+        },
+        {
+          "id": "wn31:v:02433334",
+          "pos": "v",
+          "definition": "break from a meeting or gathering; \"We adjourned for lunch\"; \"The men retired to the library\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-a6278590a4ba",
+      "word": "abroad",
+      "pos": "副词",
+      "raw": "在国外；到国外",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "在国外",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "到国外",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00104690",
+          "pos": "r",
+          "definition": "to or in a foreign country; \"they had never travelled abroad\""
+        },
+        {
+          "id": "wn31:r:00183162",
+          "pos": "r",
+          "definition": "in a place across an ocean"
+        },
+        {
+          "id": "wn31:r:00264611",
+          "pos": "r",
+          "definition": "far away from home or one's usual surroundings; \"looking afield for new lands to conquer\"- R.A.Hall"
+        },
+        {
+          "id": "wn31:s:01041445",
+          "pos": "s",
+          "definition": "in a foreign country; \"markets abroad\"; \"overseas markets\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-1888101dae1d",
+      "word": "absence",
+      "pos": "名词",
+      "raw": "缺席；不存在",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "缺席",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "不存在",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01236910",
+          "pos": "n",
+          "definition": "failure to be present"
+        },
+        {
+          "id": "wn31:n:13984260",
+          "pos": "n",
+          "definition": "the state of being absent; \"he was surprised by the absence of any explanation\""
+        },
+        {
+          "id": "wn31:n:14111894",
+          "pos": "n",
+          "definition": "the occurrence of an abrupt, transient loss or impairment of consciousness (which is not subsequently remembered), sometimes with light twitching, fluttering eyelids, etc.; common in petit mal epilepsy"
+        },
+        {
+          "id": "wn31:n:15295848",
+          "pos": "n",
+          "definition": "the time interval during which something or somebody is away; \"he visited during my absence\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-a60a2bb10fad",
+      "word": "abuse",
+      "pos": "名词；动词",
+      "raw": "滥用；虐待；辱骂",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "滥用",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "虐待",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "辱骂",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00420921",
+          "pos": "n",
+          "definition": "cruel or inhumane treatment; \"the child showed signs of physical abuse\""
+        },
+        {
+          "id": "wn31:n:00949535",
+          "pos": "n",
+          "definition": "improper or excessive use; \"alcohol abuse\"; \"the abuse of public funds\""
+        },
+        {
+          "id": "wn31:n:06728162",
+          "pos": "n",
+          "definition": "a rude expression intended to offend or hurt; \"when a student made a stupid mistake he spared them no abuse\"; \"they yelled insults at the visiting team\""
+        },
+        {
+          "id": "wn31:v:00203575",
+          "pos": "v",
+          "definition": "change the inherent purpose or function of something; \"Don't abuse the system\"; \"The director of the factory misused the funds intended for the health care of his workers\""
+        },
+        {
+          "id": "wn31:v:00203918",
+          "pos": "v",
+          "definition": "use wrongly or improperly or excessively; \"Her husband often abuses alcohol\"; \"while she was pregnant, she abused drugs\""
+        },
+        {
+          "id": "wn31:v:00846978",
+          "pos": "v",
+          "definition": "use foul or abusive language towards; \"The actress abused the policeman who gave her a parking ticket\"; \"The angry mother shouted at the teacher\""
+        },
+        {
+          "id": "wn31:v:02522260",
+          "pos": "v",
+          "definition": "treat badly; \"This boss abuses his workers\"; \"She is always stepping on others to get ahead\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-b8a98203ec9d",
+      "word": "academic",
+      "pos": "名词；形容词",
+      "raw": "形容词：学术的；名词：学者",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "学术的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "学者",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09778400",
+          "pos": "n",
+          "definition": "an educator who works at a college or university"
+        },
+        {
+          "id": "wn31:s:00865905",
+          "pos": "s",
+          "definition": "hypothetical or theoretical and not expected to produce an immediate or practical result; \"an academic discussion\"; \"an academic question\""
+        },
+        {
+          "id": "wn31:s:02091054",
+          "pos": "s",
+          "definition": "marked by a narrow focus on or display of learning especially its trivial aspects"
+        },
+        {
+          "id": "wn31:a:02610356",
+          "pos": "a",
+          "definition": "associated with academia or an academy; \"the academic curriculum\"; \"academic gowns\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-0651863bf5d9",
+      "word": "activity",
+      "pos": "名词",
+      "raw": "活动",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "活动",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00408356",
+          "pos": "n",
+          "definition": "any specific behavior; \"they avoided all recreational activity\""
+        },
+        {
+          "id": "wn31:n:04642461",
+          "pos": "n",
+          "definition": "the trait of being active; moving or acting rapidly and energetically; \"the level of activity declines with age\""
+        },
+        {
+          "id": "wn31:n:13461236",
+          "pos": "n",
+          "definition": "an organic process that takes place in the body; \"respiratory activity\""
+        },
+        {
+          "id": "wn31:n:13540166",
+          "pos": "n",
+          "definition": "a process existing in or produced by nature (rather than by the intent of human beings); \"the action of natural forces\"; \"volcanic activity\""
+        },
+        {
+          "id": "wn31:n:14030430",
+          "pos": "n",
+          "definition": "the state of being active; \"his sphere of activity\"; \"he is out of action\""
+        },
+        {
+          "id": "wn31:n:14554805",
+          "pos": "n",
+          "definition": "(chemistry) the capacity of a substance to take part in a chemical reaction; \"catalytic activity\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-40df7df8c9ad",
+      "word": "accomplish",
+      "pos": "动词",
+      "raw": "取得；完成；实现",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "取得",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "完成",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "实现",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01644397",
+          "pos": "v",
+          "definition": "put in effect; \"carry out a task\"; \"execute the decision of the people\"; \"He actioned the operation\""
+        },
+        {
+          "id": "wn31:v:02531751",
+          "pos": "v",
+          "definition": "to gain with effort; \"she achieved her goal despite setbacks\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-085afa73a886",
+      "word": "acknowledge",
+      "pos": "动词",
+      "raw": "承认",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "承认",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00594278",
+          "pos": "v",
+          "definition": "accept (someone) to be what is claimed or accept his power and authority; \"The Crown Prince was acknowledged as the true heir to the throne\"; \"We do not recognize your gods\""
+        },
+        {
+          "id": "wn31:v:00742454",
+          "pos": "v",
+          "definition": "accept as legally binding and valid; \"acknowledge the deed\""
+        },
+        {
+          "id": "wn31:v:00818972",
+          "pos": "v",
+          "definition": "declare to be true or admit the existence or reality or truth of; \"He admitted his errors\"; \"She acknowledged that she might have forgotten\""
+        },
+        {
+          "id": "wn31:v:00893988",
+          "pos": "v",
+          "definition": "express obligation, thanks, or gratitude for; \"We must acknowledge the kindness she showed towards us\""
+        },
+        {
+          "id": "wn31:v:00894219",
+          "pos": "v",
+          "definition": "report the receipt of; \"The program committee acknowledged the submission of the authors of the paper\""
+        },
+        {
+          "id": "wn31:v:01060995",
+          "pos": "v",
+          "definition": "express recognition of the presence or existence of, or acquaintance with; \"He never acknowledges his colleagues when they run into him in the hallway\"; \"She acknowledged his complement with a smile\"; \"it is important to acknowledge the work of others in one's own writing\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-7db0558a5cda",
+      "word": "advantage",
+      "pos": "名词",
+      "raw": "优势；好处",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "优势",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "好处",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05150110",
+          "pos": "n",
+          "definition": "benefit resulting from some event or action; \"it turned out to my advantage\"; \"reaping the rewards of generosity\""
+        },
+        {
+          "id": "wn31:n:05163204",
+          "pos": "n",
+          "definition": "the quality of having a superior or more favorable position; \"the experience gave him the advantage over me\""
+        },
+        {
+          "id": "wn31:n:13631669",
+          "pos": "n",
+          "definition": "(tennis) first point scored after deuce"
+        },
+        {
+          "id": "wn31:v:02518934",
+          "pos": "v",
+          "definition": "give an advantage to; \"This system advantages the rich\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-77f930e4b1a5",
+      "word": "addition",
+      "pos": "名词",
+      "raw": "增加；增加物；增加部分",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "增加",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "增加物",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "增加部分",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00364614",
+          "pos": "n",
+          "definition": "the act of adding one thing to another; \"the addition of flowers created a pleasing effect\"; \"the addition of a leap day every four years\""
+        },
+        {
+          "id": "wn31:n:00873785",
+          "pos": "n",
+          "definition": "the arithmetic operation of summing; calculating the sum of two or more numbers; \"the summation of four and three gives seven\"; \"four plus three equals seven\""
+        },
+        {
+          "id": "wn31:n:02682269",
+          "pos": "n",
+          "definition": "a component that is added to something to improve it; \"the addition of a bathroom was a major improvement\"; \"the addition of cinnamon improved the flavor\""
+        },
+        {
+          "id": "wn31:n:08572409",
+          "pos": "n",
+          "definition": "a suburban area laid out in streets and lots for a future residential area"
+        },
+        {
+          "id": "wn31:n:13274322",
+          "pos": "n",
+          "definition": "something added to what you already have; \"the librarian shelved the new accessions\"; \"he was a new addition to the staff\""
+        },
+        {
+          "id": "wn31:n:13776433",
+          "pos": "n",
+          "definition": "a quantity that is added; \"there was an addition to property taxes this year\"; \"they recorded the cattle's gain in weight over a period of weeks\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-75c929eb04a7",
+      "word": "affair",
+      "pos": "名词",
+      "raw": "事务；事件；私情",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "事务",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "事件",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "私情",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05679169",
+          "pos": "n",
+          "definition": "a vaguely specified concern; \"several matters to attend to\"; \"it is none of your affair\"; \"things are going well\""
+        },
+        {
+          "id": "wn31:n:07461861",
+          "pos": "n",
+          "definition": "a vaguely specified social event; \"the party was quite an affair\"; \"an occasion arranged to honor the president\"; \"a seemingly endless round of social functions\""
+        },
+        {
+          "id": "wn31:n:13954922",
+          "pos": "n",
+          "definition": "a usually secretive or illicit sexual relationship"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f901528b18bc",
+      "word": "afford",
+      "pos": "动词",
+      "raw": "买得起；承担得起",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "买得起",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "承担得起",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01195161",
+          "pos": "v",
+          "definition": "be able to spare or give up; \"I can't afford to spend two hours with this person\""
+        },
+        {
+          "id": "wn31:v:02344167",
+          "pos": "v",
+          "definition": "be the cause or source of; \"He gave me a lot of trouble\"; \"Our meeting afforded much interesting information\""
+        },
+        {
+          "id": "wn31:v:02363033",
+          "pos": "v",
+          "definition": "afford access to; \"the door opens to the patio\"; \"The French doors give onto a terrace\""
+        },
+        {
+          "id": "wn31:v:02750326",
+          "pos": "v",
+          "definition": "have the financial means to do something or buy something; \"We can't afford to send our children to college\"; \"Can you afford this car?\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-180366dd3b2c",
+      "word": "afraid",
+      "pos": "形容词",
+      "raw": "害怕的；怕；恐惧的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "害怕的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "怕",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "恐惧的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:a:00078253",
+          "pos": "a",
+          "definition": "filled with fear or apprehension; \"afraid even to turn his head\"; \"suddenly looked afraid\"; \"afraid for his life\"; \"afraid of snakes\"; \"afraid to ask questions\""
+        },
+        {
+          "id": "wn31:s:00546213",
+          "pos": "s",
+          "definition": "filled with regret or concern; used often to soften an unpleasant statement; \"I'm afraid I won't be able to come\"; \"he was afraid he would have to let her go\"; \"I'm afraid you're wrong\""
+        },
+        {
+          "id": "wn31:s:00546451",
+          "pos": "s",
+          "definition": "feeling worry or concern or insecurity; \"She was afraid that I might be embarrassed\"; \"terribly afraid of offending someone\"; \"I am afraid we have witnessed only the first phase of the conflict\""
+        },
+        {
+          "id": "wn31:s:01296519",
+          "pos": "s",
+          "definition": "having feelings of aversion or unwillingness; \"afraid of hard work\"; \"afraid to show emotion\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c4b2af4722ee",
+      "word": "agency",
+      "pos": "名词",
+      "raw": "代理行；机构；经销处",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "代理行",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "机构",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "经销处",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00173531",
+          "pos": "n",
+          "definition": "thing or person that acts to produce a particular effect or achieve an end; \"a means of control\"; \"an example is the best agency of instruction\"; \"the true way to success\""
+        },
+        {
+          "id": "wn31:n:08073958",
+          "pos": "n",
+          "definition": "a business or organization that provides a particular service, especially the mediation of transactions between two parties"
+        },
+        {
+          "id": "wn31:n:08354251",
+          "pos": "n",
+          "definition": "an administrative unit of government; \"the Central Intelligence Agency\"; \"the Census Bureau\"; \"Office of Management and Budget\"; \"Tennessee Valley Authority\""
+        },
+        {
+          "id": "wn31:n:14023888",
+          "pos": "n",
+          "definition": "the state of serving as an official and authorized delegate or agent"
+        },
+        {
+          "id": "wn31:n:14031031",
+          "pos": "n",
+          "definition": "the state of being in action or exerting power; \"the agency of providence\"; \"she has free agency\""
+        }
+      ]
+    }
+  ]
+}

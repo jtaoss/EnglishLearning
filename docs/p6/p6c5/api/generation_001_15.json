@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_15",
+  "request_hash": "dd46bf9998dd5f98fd435bc2fe90d0203878c88e04e40ec22bc5c82b818dba08",
+  "started_utc": "2026-11-13T08:14:58.871346+00:00",
+  "completed_utc": "2026-11-13T08:15:13.817374+00:00",
+  "elapsed_seconds": 14.953,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "23f45a0e-fed0-4d47-a838-041d6c00833e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3335,
+    "completion_tokens": 2143,
+    "total_tokens": 5478,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1872
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 519
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-18b263dcdea6\",\"word\":\"considerable\",\"core\":[[\"相当大的；可观的；相当的\",\"形容词\",[\"s001\",\"s002\",\"s003\"],[\"wn31:a:00626700\"],\"均表示数量、程度或规模较大，属同一形容词义。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"三个中文片段都指向同一“数量/程度/规模较大”的形容词义，合并为一组，避免把同义改述拆成多个假义项。\",\"flags\":[]},{\"id\":\"SG25-d7f8d3e72469\",\"word\":\"deserve\",\"core\":[[\"值得；应受\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:02652462\"],\"同一“应得/值得”动词义；宾语可为奖励或惩罚，褒贬由搭配决定。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"两个原片段均对应该动词的“应得”义，主要差别在宾语褒贬搭配，因此合并保留并在范围说明中注明搭配条件。\",\"flags\":[]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

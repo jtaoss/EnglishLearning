@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_019",
+  "kind": "verify",
+  "request_hash": "87bb826268a70736f2a103940b038fa35ea8e514fe798937d49a63762f4041a6",
+  "input_ids": [
+    "SG25-0a60353a3fd8",
+    "SG25-0dd1b6d5c52e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "3cc10fa0-5a96-4826-bbc0-4a4fa5c5a15b",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-0a60353a3fd8\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选other层文本为“干掉”，但唯一证据kill in large numbers仅覆盖大规模杀害；未链接消除、击败、淘汰等非大规模用法，因此实际支持范围小于原口语“干掉”。\",\n          \"evidence_ids\": [\"wn31:v:00471632\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展层“摆脱”对应terminate/end/take out及eliminate my debts，覆盖去除债务、负担等用途，未加排他限制。\",\n          \"evidence_ids\": [\"wn31:v:00472642\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心层“消除”对应do away with，保留一般消除义，无对象或领域收窄。\",\n          \"evidence_ids\": [\"wn31:v:02635337\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-0a60353a3fd8:other:1\"],\n          \"evidence_ids\": [\"wn31:v:00471632\", \"wn31:v:01105250\"],\n          \"reason\": \"“干掉”作为独立口语义，词典可支持淘汰、击败、清除（如eliminate competitors）或一般do away with；候选仅用kill in large numbers，未保留非大规模杀害、击败淘汰等用法。组文本未排他，但证据不足以支撑一般口语义。\",\n          \"counterexample\": \"eliminate competitors（淘汰/击败对手）\",\n          \"repair_suggestion\": \"在other层补入wn31:v:01105250或wn31:v:02635337作为‘干掉/清除/淘汰’的证据，或明确该分支仅指大规模杀害并将其他口语义暂存。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原教材中“干掉”是否确实涵盖‘击败/淘汰’而非仅‘杀害’，需要来源语境确认；候选保留词形但证据范围偏窄。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心“消除”和扩展“摆脱”覆盖较好；“干掉”置other但证据只有大规模杀害，存在口语义覆盖缺口，建议补证或暂存。\"\n    },\n    {\n      \"id\": \"SG25-0dd1b6d5c52e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心层“永久的”对应continuing or enduring without marked change，保留永久持续的核心义，未加不当限制。\",\n          \"evidence_ids\": [\"wn31:a:01758923\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展层将“长期的”限定为‘持续稳定、非临时’，比原文一般‘长期的’窄；英语permanent证据不支持仅时长长、可变或临时的长期用法。\",\n          \"evidence_ids\": [\"wn31:a:01758923\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_range_broad\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-0dd1b6d5c52e:extended:1\"],\n          \"evidence_ids\": [\"wn31:a:01758923\", \"wn31:s:01764039\"],\n          \"reason\": \"原中文‘长期的’范围比英语 permanent 宽，永久/不可逆证据不能直接支持仅时长长、可变或临时语境；候选已在扩展层加‘持续稳定、非临时’限定，未把该宽义并入核心，但原来源映射仍待核。\",\n          \"counterexample\": \"permanent brain damage 显示 permanent 强调不可逆/持续稳定，而非任意长期。\",\n          \"repair_suggestion\": \"保留扩展限定并标来源待核；不要将‘长期但不永久’作为 permanent 核心义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原教材用‘长期的’是否指英语中‘长期但非永久’的语境，还是仅作为‘永久’的宽松同义表述，需要来源确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心“永久的”有充分证据；扩展“长期的”已限定为持续稳定、非临时，符合英语证据，但来源中文偏宽需标注待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4403,
+    "completion_tokens": 5436,
+    "total_tokens": 9839,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4370
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2739
+  },
+  "started_utc": "2026-11-13T09:56:49.143344+00:00",
+  "completed_utc": "2026-11-13T09:58:03.159146+00:00",
+  "elapsed_seconds": 74.015,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

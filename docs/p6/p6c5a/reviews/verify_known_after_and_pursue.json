@@ -1,0 +1,120 @@
+{
+  "stage": "verify_known_after_and_pursue",
+  "kind": "verify",
+  "model_requested": "deepseek-v4-pro",
+  "record_count": 2,
+  "expected_count": 5,
+  "records": [
+    {
+      "id": "SG25-093e7d5fdbaa",
+      "scope_checks": [
+        {
+          "sid": "s001",
+          "relation": "语义等价",
+          "reason": "候选在名词和动词两个词性下均保留“联系”的沟通/互动义；名词证据为人际/机构间交流互动与接触状态，动词证据为建立/进行沟通。未添加对象/方向排他限制，也未混入电触点、隐形眼镜、人脉等原文未明说义。",
+          "evidence_ids": [
+            "wn31:n:07293990",
+            "wn31:n:00040035",
+            "wn31:v:00745330"
+          ]
+        },
+        {
+          "sid": "s002",
+          "relation": "语义等价",
+          "reason": "候选在名词和动词下分别保留物理触碰、紧邻或相碰的状态/动作；证据覆盖触碰行为、紧邻状态、物理相碰及直接物理接触，未引入非物理扩展。",
+          "evidence_ids": [
+            "wn31:n:00125700",
+            "wn31:n:14442914",
+            "wn31:n:07353929",
+            "wn31:v:01208316"
+          ]
+        }
+      ],
+      "confirmed_within_supplied_evidence": [],
+      "unresolved": [
+        "s001/s002 的原始义项均未单独标词性，候选按全局 source_pos“名词；动词”展开；若教材只取某一种词性，则另一词性为范围扩大。现有证据不足确认。",
+        "s002“接触”是否包含非物理的“接触/交往/接触新事物”义未定；候选仅覆盖物理接触，现有 WordNet 证据未证明该类材料，但原中文可能更宽，需教材语境确认。"
+      ],
+      "preferences": [
+        "外部候选“触点/隐形眼镜/人脉”未进入核心是合理的教学排序，不视为缺陷。"
+      ],
+      "note": "未发现已确认覆盖缺陷；核心两组将两个中文片段按词性和物理/沟通区分，证据匹配；所有不确定点已列 unresolved。"
+    },
+    {
+      "id": "SG25-bf0bb4ee60e2",
+      "scope_checks": [
+        {
+          "sid": "s001",
+          "relation": "无法确定",
+          "reason": "原义“伸展”未有词性/用法说明；候选组仅覆盖及物伸展/展开，明确排除不及物空间/时间延伸（归入 s003）。但中文“伸展”本身可及物也可不及物；现有证据未给出该义项的宾语/方向，无法确认是语义等价还是范围收窄。",
+          "evidence_ids": [
+            "wn31:v:00027261",
+            "wn31:v:01371528",
+            "wn31:v:02058913",
+            "pub:p6c5:parent:extend"
+          ]
+        },
+        {
+          "sid": "s002",
+          "relation": "无法确定",
+          "reason": "“变宽”未在任何显示层出现，仅 held；所供词典证据 v00541315 为及物使范围/面积扩大，v02693758 为空间跨度，未证明不及物“自身变宽”；来源语义也未说明，故无法确定候选是否遗漏，暂存合理。",
+          "evidence_ids": [
+            "wn31:v:00541315",
+            "wn31:v:02693758"
+          ]
+        },
+        {
+          "sid": "s003",
+          "relation": "语义等价",
+          "reason": "候选组覆盖空间/时间绵延、达到、向外伸出，证据为距离/空间/时间跨度和向外伸出；未扩大至给予/提供/时间延长等原文未明说义。",
+          "evidence_ids": [
+            "wn31:v:02691775",
+            "wn31:v:02693758",
+            "wn31:v:02695935"
+          ]
+        }
+      ],
+      "confirmed_within_supplied_evidence": [],
+      "unresolved": [
+        "s001“伸展”是否包含不及物空间扩展不确定；当前组以及物肢体/物体展开为主，若教材包含不及物“枝条伸展”则 s001 覆盖可能收窄，但证据未证实。",
+        "s002“变宽”仍无显示层覆盖；held 理由为词典证据方向不一致。若教材实际为及物“使变宽/扩大”，可考虑 v00541315；若为不及物，需补充“become wider”类证据。",
+        "s001 与 s003 在空间延伸义上有边界重叠；当前按 s001 及物、s003 不及物切分，个别例句可能跨组，教学顺序待人工确认。"
+      ],
+      "preferences": [
+        "未将时间延长、给予/提供、扩大范围/影响作为核心，符合原文未明说政策；held s002 保留待核优于强行映射为“变宽”。"
+      ],
+      "note": "候选对 s002 暂存处理透明，未构成已确认 Major；“变宽”覆盖最终取决于教材语境和可靠英语证据，当前证据不足。"
+    }
+  ],
+  "failures": [
+    {
+      "chunk": 1,
+      "ids": [
+        "SG25-7920fdeff9c5",
+        "SG25-e3f48726b892"
+      ],
+      "error_type": "KeyError",
+      "error": "'sid'",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 3,
+      "ids": [
+        "SG25-0f571e7c2d33"
+      ],
+      "error_type": "ValueError",
+      "error": "Missing independent issue contrast",
+      "status": "incomplete_not_fabricated"
+    }
+  ],
+  "input_hash": "57228e3f1feb0b2abbb218ae510db856066a7a45fcc1370ec5d82372d1e1ff03",
+  "response_files": [
+    {
+      "tag": "verify_known_after_and_pursue_002_repair1",
+      "response_sha256": "cd8df2012bdfaafe544f1fff2d694705c1a5251c618722f5a801747eb82ed233"
+    }
+  ],
+  "all_output_AI_candidate": true,
+  "human_approved": false,
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950"
+}

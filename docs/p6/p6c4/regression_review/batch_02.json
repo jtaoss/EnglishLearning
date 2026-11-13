@@ -1,0 +1,4882 @@
+{
+  "context": "fresh_nonblind_regression",
+  "batch": 2,
+  "completed": 50,
+  "backend_model_id": null,
+  "model_configuration": "inherited_parent_unexposed",
+  "tokens": null,
+  "cost": null,
+  "source_packet_sha256": "5c86059793fb547c7e09a69d56b88ce773f6dc8f986ff912958c462e12ed51c9",
+  "review_method": "All 50 raw source glosses, candidate source mappings and unfiltered licensed WordNet definitions read semantically; non-blind versus existing500; individual judgments below. No fresh100 packets read.",
+  "records": [
+    {
+      "stable_id": "SG25-5e8c03a94c78",
+      "headword": "instance",
+      "source_hash": "e133c9e32d807cc92a5cd4582d34b4b7154732b6a075d3723f82af53afbddc14",
+      "decision": "keep",
+      "rationale_zh": "例子实例可共用一个信息框；名词证据对应典型例项；实例发生与说明例项不必首次细拆；1组自然；两源片段均保留；举例动词非原表词性，不自动添加",
+      "review_axes": {
+        "core_choice": "例子实例可共用一个信息框",
+        "POS": "名词证据对应典型例项",
+        "merge": "实例发生与说明例项不必首次细拆",
+        "ordering": "1组自然",
+        "source_coverage": "两源片段均保留",
+        "important_use_coverage": "举例动词非原表词性，不自动添加"
+      },
+      "evidence_ids": [
+        "wn31:n:05828980"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-5e8c03a94c78:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "例子；实例",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:05828980"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "例子",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:05828980"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "实例",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:05828980"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "例子；实例"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词证据对应典型例项；举例动词非原表词性，不自动添加"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-26f1de33979d",
+      "headword": "extension",
+      "source_hash": "bda9ee05a92ebcdcdf6a1e9ed3564056819e0d08b6fa0e9cc04c85c5125b1c27",
+      "decision": "keep",
+      "rationale_zh": "扩展范围和延长时间长度可同框并列；分机为名词设备另列；三种延展对象已有子义证据，非宣称同义；1核心仍可读；分机后学可接受；三源片段均覆盖，延期有专门定义；文件扩展名有独立数字生活价值，另挂候选",
+      "review_axes": {
+        "core_choice": "扩展范围和延长时间长度可同框并列",
+        "POS": "分机为名词设备另列",
+        "merge": "三种延展对象已有子义证据，非宣称同义",
+        "ordering": "1核心仍可读；分机后学可接受",
+        "source_coverage": "三源片段均覆盖，延期有专门定义",
+        "important_use_coverage": "文件扩展名有独立数字生活价值，另挂候选"
+      },
+      "evidence_ids": [
+        "wn31:n:00368594",
+        "wn31:n:03286846",
+        "wn31:n:15297368",
+        "wn31:n:03311814",
+        "wn31:n:06346173"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [
+        {
+          "candidate_id": "SG25-26f1de33979d:p6c4:regression_external:1",
+          "part_of_speech": "名词",
+          "meaning_zh": "文件扩展名",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06346173"
+          ],
+          "reason_zh": "计算机文件名称部分不同于扩大范围或加长",
+          "status": "AI_candidate_not_adopted",
+          "suggested_layer": "pending_teaching_decision",
+          "human_approved": false
+        }
+      ],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对extension的语义认可不解除旧待审事项。旧多义/分层风险仍待人工独立签审。",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-26f1de33979d",
+        "headword": "extension",
+        "risk_level": "high",
+        "reserved_original_items": [],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-26f1de33979d:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "扩展（范围）；延长（时间或长度）",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:00368594",
+            "wn31:n:03286846",
+            "wn31:n:15297368"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "两个子义保留，单个显示单元不表示二者完全同义",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "扩展",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:00368594"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "延长",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03286846",
+                "wn31:n:15297368"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-26f1de33979d:p6c1:extended:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "分机",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:03311814"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "分机",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03311814"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-26f1de33979d:p6c4:regression_external:1",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "文件扩展名",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:06346173"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "计算机文件名称部分不同于扩大范围或加长",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "扩展（范围）；延长（时间或长度）",
+            "分机"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "分机为名词设备另列；文件扩展名有独立数字生活价值，另挂候选"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-81dcf73d9805",
+      "headword": "obvious",
+      "source_hash": "e43e7918c60be07480bcafdc08cf11639264fcac062b40be4ab75edc494903fa",
+      "decision": "evidence_pending",
+      "rationale_zh": "明显显而易见适合先记感知可得性；形容词无跨POS问题；无疑已暂存为语境改述，不能再次算当前误译；1核心清楚；s001保留待决；其他两片段可追溯；403历史访问失败记录仍在，不能冒充直接网页已读",
+      "review_axes": {
+        "core_choice": "明显显而易见适合先记感知可得性",
+        "POS": "形容词无跨POS问题",
+        "merge": "无疑已暂存为语境改述，不能再次算当前误译",
+        "ordering": "1核心清楚",
+        "source_coverage": "s001保留待决；其他两片段可追溯",
+        "important_use_coverage": "403历史访问失败记录仍在，不能冒充直接网页已读"
+      },
+      "evidence_ids": [
+        "wn31:a:01622205"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对obvious的语义认可不解除旧待审事项。旧暂存原义仍未决：无疑的",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-81dcf73d9805",
+        "headword": "obvious",
+        "risk_level": "high",
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s001",
+            "original_gloss": "无疑的",
+            "state": "contextual_paraphrase_only",
+            "reason": "无疑的可出现在语境转述中，不应从easily perceived另造一个确定无疑义项。",
+            "evidence_ids": [
+              "wn31:a:01622205"
+            ]
+          }
+        ],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-81dcf73d9805:p6c1:core:1",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "明显的；显而易见的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:a:01622205"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "可观察/易理解；原无疑的只作为语境转述保留",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "明明白白的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:a:01622205"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "明显的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:a:01622205"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "obvious:reserved:s001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "无疑的",
+          "layer": "reserved",
+          "evidence_ids": [
+            "wn31:a:01622205"
+          ],
+          "evidence_relation": "unresolved_not_confirmed_error",
+          "scope_zh": "无疑的可出现在语境转述中，不应从easily perceived另造一个确定无疑义项。",
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ],
+          "teaching_status": "meaning_scope_unresolved_not_for_standalone_memorization; known_source_POS_not_erased"
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "明显的；显而易见的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "形容词无跨POS问题；403历史访问失败记录仍在，不能冒充直接网页已读"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d811aa2ea4fe",
+      "headword": "widespread",
+      "source_hash": "297b4afc4cb521300fd5ad72e6dfb455e1adbded8137cc3b47069d3d64676429",
+      "decision": "keep",
+      "rationale_zh": "广泛普遍合框支持分布范围；形容词分别有分布与传播证据；两中文近义兼容，无独立对象被吞并；1核心自然；两源片段保留；未把普遍等同无一例外，无需扩组",
+      "review_axes": {
+        "core_choice": "广泛普遍合框支持分布范围",
+        "POS": "形容词分别有分布与传播证据",
+        "merge": "两中文近义兼容，无独立对象被吞并",
+        "ordering": "1核心自然",
+        "source_coverage": "两源片段保留",
+        "important_use_coverage": "未把普遍等同无一例外，无需扩组"
+      },
+      "evidence_ids": [
+        "wn31:s:00543834",
+        "wn31:s:01106569"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d811aa2ea4fe:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "广泛的；普遍的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:s:00543834",
+            "wn31:s:01106569"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "广泛的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:s:00543834"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "普遍的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:s:01106569"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "广泛的；普遍的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "形容词分别有分布与传播证据；未把普遍等同无一例外，无需扩组"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-2374d91794b7",
+      "headword": "cancel",
+      "source_hash": "2ddea250ffe56bc16dc2b09120efb66b3c31e8bec0e10a0be6529af47f9b5162",
+      "decision": "keep",
+      "rationale_zh": "取消撤销同框表达使安排或效力停止；均动词；安排取消与宣布无效分别引证，允许同框；1核心简洁；两源片段可追溯；抵消有外部独立用途，另挂候选",
+      "review_axes": {
+        "core_choice": "取消撤销同框表达使安排或效力停止",
+        "POS": "均动词",
+        "merge": "安排取消与宣布无效分别引证，允许同框",
+        "ordering": "1核心简洁",
+        "source_coverage": "两源片段可追溯",
+        "important_use_coverage": "抵消有外部独立用途，另挂候选"
+      },
+      "evidence_ids": [
+        "wn31:v:02482757",
+        "wn31:v:02483178",
+        "wn31:v:02723706"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [
+        {
+          "candidate_id": "SG25-2374d91794b7:p6c4:regression_external:1",
+          "part_of_speech": "动词",
+          "meaning_zh": "抵消；相互补偿",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02723706"
+          ],
+          "reason_zh": "效果抵消不同于取消安排或撤销效力",
+          "status": "AI_candidate_not_adopted",
+          "suggested_layer": "pending_teaching_decision",
+          "human_approved": false
+        }
+      ],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-2374d91794b7:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "取消；撤销",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:02482757",
+            "wn31:v:02483178"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "取消",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:02483178"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "撤销",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:02482757"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-2374d91794b7:p6c4:regression_external:1",
+          "source_sense_ids": [],
+          "recommended_POS": "动词",
+          "meaning_zh": "抵消；相互补偿",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:v:02723706"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "效果抵消不同于取消安排或撤销效力",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "取消；撤销"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "均动词；抵消有外部独立用途，另挂候选"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-fac6a3243ed4",
+      "headword": "engage",
+      "source_hash": "d8b33d1cab9b2b7a01d40044de24f528f560db48c6d0f0516371076058fd523a",
+      "decision": "evidence_pending",
+      "rationale_zh": "从事参与以活动为对象适合先记；engage in结构与及物吸引聘用候选分清；实行已暂存，未将政策实施无依据放核心；1核心可用，候选不能自动前移；s001s002覆盖；s003旧未决保留；雇用和吸引已有候选；403不当访问成功",
+      "review_axes": {
+        "core_choice": "从事参与以活动为对象适合先记",
+        "POS": "engage in结构与及物吸引聘用候选分清",
+        "merge": "实行已暂存，未将政策实施无依据放核心",
+        "ordering": "1核心可用，候选不能自动前移",
+        "source_coverage": "s001s002覆盖；s003旧未决保留",
+        "important_use_coverage": "雇用和吸引已有候选；403不当访问成功"
+      },
+      "evidence_ids": [
+        "wn31:v:02380222",
+        "wn31:v:02414542",
+        "wn31:v:00601765"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对engage的语义认可不解除旧待审事项。旧暂存原义仍未决：实行",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-fac6a3243ed4",
+        "headword": "engage",
+        "risk_level": "high",
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s003",
+            "original_gloss": "实行",
+            "state": "unresolved_not_for_standalone_memorization",
+            "reason": "carry out/participate in an activity不等于可任意替换实行政策等搭配。",
+            "evidence_ids": [
+              "wn31:v:02380222"
+            ]
+          }
+        ],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-fac6a3243ed4:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "从事；参与（活动）",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:02380222"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "典型结构engage in，不从词头频次推出义项频次",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "从事",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:02380222"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "从事于",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:02380222"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "engage:reserved:s003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "实行",
+          "layer": "reserved",
+          "evidence_ids": [
+            "wn31:v:02380222"
+          ],
+          "evidence_relation": "unresolved_not_confirmed_error",
+          "scope_zh": "carry out/participate in an activity不等于可任意替换实行政策等搭配。",
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ],
+          "teaching_status": "meaning_scope_unresolved_not_for_standalone_memorization; known_source_POS_not_erased"
+        },
+        {
+          "use_id": "SG25-fac6a3243ed4:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "动词",
+          "meaning_zh": "雇用；聘用",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:v:02414542"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "常有正式聘用语境，不由词头高频推出此义最常用。",
+          "source_POS_status": []
+        },
+        {
+          "use_id": "SG25-fac6a3243ed4:p6c1:added:2",
+          "source_sense_ids": [],
+          "recommended_POS": "动词",
+          "meaning_zh": "吸引（注意或兴趣）",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:v:00601765"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "与engage in参与活动不同的及物用法。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "从事；参与（活动）"
+          ],
+          "unadopted_external_candidates": [
+            "雇用；聘用",
+            "吸引（注意或兴趣）"
+          ],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "engage in结构与及物吸引聘用候选分清；雇用和吸引已有候选；403不当访问成功"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d888a3e4ea95",
+      "headword": "indeed",
+      "source_hash": "55af5de9ceb849959b2699f0189397018ac40eb2297df1f3ec2900952217be45",
+      "decision": "keep",
+      "rationale_zh": "确实的确同一强调真实性功能；副词标注吻合；近义合并不丢独立原用途；1核心自然；两源片段均在；惊讶怀疑话语用法有证据但不强入首学",
+      "review_axes": {
+        "core_choice": "确实的确同一强调真实性功能",
+        "POS": "副词标注吻合",
+        "merge": "近义合并不丢独立原用途",
+        "ordering": "1核心自然",
+        "source_coverage": "两源片段均在",
+        "important_use_coverage": "惊讶怀疑话语用法有证据但不强入首学"
+      },
+      "evidence_ids": [
+        "wn31:r:00038035"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d888a3e4ea95:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "副词",
+          "meaning_zh": "确实；的确",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:r:00038035"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "确实",
+              "original_pos": "副词",
+              "evidence_ids": [
+                "wn31:r:00038035"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "的确",
+              "original_pos": "副词",
+              "evidence_ids": [
+                "wn31:r:00038035"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "副词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "副词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "副词",
+          "existing_layer_groups": [
+            "确实；的确"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "副词标注吻合；惊讶怀疑话语用法有证据但不强入首学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-040ffd5925d4",
+      "headword": "payment",
+      "source_hash": "74f101585837a0408ba6844cdf57ee9d2c5b77465bf3e1288f6136ec1e236ad2",
+      "decision": "keep",
+      "rationale_zh": "付款行为为清楚入口；报酬仍名词，限定特定支付情境；行为与款项不可等同；已有报酬限定不重报错误；1核心可用但钱款候选待决；两原片段保留；支付款项已有候选未采用，不写覆盖完整",
+      "review_axes": {
+        "core_choice": "付款行为为清楚入口",
+        "POS": "报酬仍名词，限定特定支付情境",
+        "merge": "行为与款项不可等同；已有报酬限定不重报错误",
+        "ordering": "1核心可用但钱款候选待决",
+        "source_coverage": "两原片段保留",
+        "important_use_coverage": "支付款项已有候选未采用，不写覆盖完整"
+      },
+      "evidence_ids": [
+        "wn31:n:01122769",
+        "wn31:n:13299398",
+        "web:payment"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-040ffd5925d4:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "付款",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:01122769"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "付款",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:01122769"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-040ffd5925d4:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "报酬（特定支付语境）",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:13299398"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "不是所有payment都指工资或酬劳",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "报酬",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:13299398"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-040ffd5925d4:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "支付的款项；应付款",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:13299398",
+            "web:payment"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "支付行为之外的钱款，不限于劳动报酬。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "付款",
+            "报酬（特定支付语境）"
+          ],
+          "unadopted_external_candidates": [
+            "支付的款项；应付款"
+          ],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "报酬仍名词，限定特定支付情境；支付款项已有候选未采用，不写覆盖完整"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-a75c433ab2ae",
+      "headword": "settlement",
+      "source_hash": "caf5f8731b6a529ea770a2bd23f9d9883188b60bc577aab76eb122a4eaab9a87",
+      "decision": "keep",
+      "rationale_zh": "争议解决和解带对象条件合理；结算款项与定居点均名词；三对象不同未混并，解决不泛化所有问题；1核心可用，定居点先后属教学选择；三个源片段有定义或出版社观察；殖民建立属外部历史用途，无须强行首学",
+      "review_axes": {
+        "core_choice": "争议解决和解带对象条件合理",
+        "POS": "结算款项与定居点均名词",
+        "merge": "三对象不同未混并，解决不泛化所有问题",
+        "ordering": "1核心可用，定居点先后属教学选择",
+        "source_coverage": "三个源片段有定义或出版社观察",
+        "important_use_coverage": "殖民建立属外部历史用途，无须强行首学"
+      },
+      "evidence_ids": [
+        "wn31:n:07192584",
+        "web:settlement",
+        "wn31:n:08690300"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-a75c433ab2ae:p6c1:core:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "解决；和解（争议）",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:07192584"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "争议的解决或解决协议，不泛化为任何解决",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "解决",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:07192584"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-a75c433ab2ae:p6c1:extended:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "结算；清偿",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "web:settlement"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "所欠款项支付",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "结算",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "web:settlement"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-a75c433ab2ae:p6c1:extended:2",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "定居点",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:08690300"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "定居点",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:08690300"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "解决；和解（争议）",
+            "结算；清偿",
+            "定居点"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "结算款项与定居点均名词；殖民建立属外部历史用途，无须强行首学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-200afd0641fa",
+      "headword": "worthy",
+      "source_hash": "b3e9b544daaf274bba6553554f6058d31d784da88c9f241a83d8b4879ce79763",
+      "decision": "keep",
+      "rationale_zh": "值得以价值/功绩评价为入口；形容词而非重要人物名词；值得尊敬保留扩展不与所有值得用法互换；1核心可用；两源片段有定义，值得尊敬为评价改述；worthy of搭配可辅助记忆，不增加独立原义",
+      "review_axes": {
+        "core_choice": "值得以价值/功绩评价为入口",
+        "POS": "形容词而非重要人物名词",
+        "merge": "值得尊敬保留扩展不与所有值得用法互换",
+        "ordering": "1核心可用",
+        "source_coverage": "两源片段有定义，值得尊敬为评价改述",
+        "important_use_coverage": "worthy of搭配可辅助记忆，不增加独立原义"
+      },
+      "evidence_ids": [
+        "wn31:a:02595419",
+        "wn31:s:01024736"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-200afd0641fa:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "值得的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:a:02595419"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "值得的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:a:02595419"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-200afd0641fa:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "值得尊敬的",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:s:01024736"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "值得尊敬的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:s:01024736"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "值得的",
+            "值得尊敬的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "形容词而非重要人物名词；worthy of搭配可辅助记忆，不增加独立原义"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-000c285457fc",
+      "headword": "monkey",
+      "source_hash": "780381231e57cc662ab648b1f36c125af8b08b284eac2dd995ac67fb1f5a562f",
+      "decision": "keep",
+      "rationale_zh": "猴子具体动物入口准确；名词源保留；未把顽皮人及动词乱动合并动物义；1核心足够；单源片段有动物定义；顽皮人等引申存在，但无须自动首次背诵",
+      "review_axes": {
+        "core_choice": "猴子具体动物入口准确",
+        "POS": "名词源保留",
+        "merge": "未把顽皮人及动词乱动合并动物义",
+        "ordering": "1核心足够",
+        "source_coverage": "单源片段有动物定义",
+        "important_use_coverage": "顽皮人等引申存在，但无须自动首次背诵"
+      },
+      "evidence_ids": [
+        "wn31:n:02486953"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-000c285457fc:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "猴子",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:02486953"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "猴子",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:02486953"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "猴子"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词源保留；顽皮人等引申存在，但无须自动首次背诵"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-0a5a9bb73d93",
+      "headword": "furniture",
+      "source_hash": "396c4c2d11aefb7da2853c09d7343d5c5d339da98106d062fa1bf70732f0e6d7",
+      "decision": "keep",
+      "rationale_zh": "家具集合概念单核心适合；名词无词性变换；未按不同家具任意拆义；1组简明；原片段对应房间设施定义；没有依据须新增独立用途",
+      "review_axes": {
+        "core_choice": "家具集合概念单核心适合",
+        "POS": "名词无词性变换",
+        "merge": "未按不同家具任意拆义",
+        "ordering": "1组简明",
+        "source_coverage": "原片段对应房间设施定义",
+        "important_use_coverage": "没有依据须新增独立用途"
+      },
+      "evidence_ids": [
+        "wn31:n:03410635"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-0a5a9bb73d93:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "家具",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03410635"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "家具",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03410635"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "家具"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词无词性变换；没有依据须新增独立用途"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-1351d52cee6c",
+      "headword": "noun",
+      "source_hash": "93df8352bc34974bb1c7ef02d1bcf6eba7ab023082711c46ab3ce437c642f9ec",
+      "decision": "keep",
+      "rationale_zh": "名词以指人地物品质行为的词类解释适合；术语本身是名词无混乱；词类与其成员定义兼容，无须两核心；1核心适宜；原片段有内容词定义；另一语法功能定义补充边界，未作原文遗漏",
+      "review_axes": {
+        "core_choice": "名词以指人地物品质行为的词类解释适合",
+        "POS": "术语本身是名词无混乱",
+        "merge": "词类与其成员定义兼容，无须两核心",
+        "ordering": "1核心适宜",
+        "source_coverage": "原片段有内容词定义",
+        "important_use_coverage": "另一语法功能定义补充边界，未作原文遗漏"
+      },
+      "evidence_ids": [
+        "wn31:n:06330286"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-1351d52cee6c:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "名词",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:06330286"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "名词",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:06330286"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "名词"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "术语本身是名词无混乱；另一语法功能定义补充边界，未作原文遗漏"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-222b0bd51fce",
+      "headword": "five",
+      "source_hash": "227f08a062b7691990607aa26fcc2acf160b0d9063f001e762ed01a9e418c0c2",
+      "decision": "keep",
+      "rationale_zh": "五为唯一数量入口正确；推荐数词可用，WordNet将数量编码名词不等于标错；数量与五点牌/篮球队不能自动合并；1组足够；单源数字保留；棋牌和球队为特殊用途无需首学",
+      "review_axes": {
+        "core_choice": "五为唯一数量入口正确",
+        "POS": "推荐数词可用，WordNet将数量编码名词不等于标错",
+        "merge": "数量与五点牌/篮球队不能自动合并",
+        "ordering": "1组足够",
+        "source_coverage": "单源数字保留",
+        "important_use_coverage": "棋牌和球队为特殊用途无需首学"
+      },
+      "evidence_ids": [
+        "wn31:n:13766661"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-222b0bd51fce:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "数词",
+          "meaning_zh": "五",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13766661"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "五",
+              "original_pos": "数词",
+              "evidence_ids": [
+                "wn31:n:13766661"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "数词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "数词",
+          "existing_layer_groups": [
+            "五"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "推荐数词可用，WordNet将数量编码名词不等于标错；棋牌和球队为特殊用途无需首学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-3171d89ad005",
+      "headword": "kitchen",
+      "source_hash": "b246d94c7be98b8a116f1bcfab55cd98dea7d95eb6563d193b47d622b0e65b7e",
+      "decision": "keep",
+      "rationale_zh": "厨房有做饭设备房间定义支持；名词无跨POS；未把厨房与家具混成泛房间；1组自然；原片段完整；无有据重要缺口",
+      "review_axes": {
+        "core_choice": "厨房有做饭设备房间定义支持",
+        "POS": "名词无跨POS",
+        "merge": "未把厨房与家具混成泛房间",
+        "ordering": "1组自然",
+        "source_coverage": "原片段完整",
+        "important_use_coverage": "无有据重要缺口"
+      },
+      "evidence_ids": [
+        "wn31:n:03625099"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-3171d89ad005:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "厨房",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03625099"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "厨房",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03625099"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "厨房"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词无跨POS；无有据重要缺口"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-3d7eb3d3dab1",
+      "headword": "chair",
+      "source_hash": "0cd3806613c0a21c238f5bf60005a09a8505a89183e7ee721a77c8f1c18ece85",
+      "decision": "keep",
+      "rationale_zh": "椅子具体座椅先学合理；主席名词和主持动词已外部标明；家具与职务不合并；1核心合适；原椅子定义对应单人有靠背座位；主持和主席候选未采用，仍待决",
+      "review_axes": {
+        "core_choice": "椅子具体座椅先学合理",
+        "POS": "主席名词和主持动词已外部标明",
+        "merge": "家具与职务不合并",
+        "ordering": "1核心合适",
+        "source_coverage": "原椅子定义对应单人有靠背座位",
+        "important_use_coverage": "主持和主席候选未采用，仍待决"
+      },
+      "evidence_ids": [
+        "wn31:n:03005231",
+        "wn31:v:00815452",
+        "wn31:n:10488547"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-3d7eb3d3dab1:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "椅子",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03005231"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "椅子",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03005231"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-3d7eb3d3dab1:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "动词",
+          "meaning_zh": "主持（会议）",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:v:00815452"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "新增词性候选；椅子仍为首个名词义。",
+          "source_POS_status": []
+        },
+        {
+          "use_id": "SG25-3d7eb3d3dab1:p6c1:added:2",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "主席；主持人",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:10488547"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "职务/会议语境，不等于家具。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "椅子"
+          ],
+          "unadopted_external_candidates": [
+            "主席；主持人"
+          ],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "主席名词和主持动词已外部标明；主持和主席候选未采用，仍待决"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-4cb4ea25583c",
+      "headword": "year",
+      "source_hash": "e721aef5cc0993198c709882cbd111199d9f91b9c7de2fc55a2c88231d4c95cc",
+      "decision": "keep",
+      "rationale_zh": "年以365或366天周期记忆适合；名词无误派；学年和毕业群体不能机械合为时间长度；1核心自然；源年保留；学年为时间特化可后学，不强加额外组",
+      "review_axes": {
+        "core_choice": "年以365或366天周期记忆适合",
+        "POS": "名词无误派",
+        "merge": "学年和毕业群体不能机械合为时间长度",
+        "ordering": "1核心自然",
+        "source_coverage": "源年保留",
+        "important_use_coverage": "学年为时间特化可后学，不强加额外组"
+      },
+      "evidence_ids": [
+        "wn31:n:15228587"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-4cb4ea25583c:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "年",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:15228587"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "年",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:15228587"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "年"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词无误派；学年为时间特化可后学，不强加额外组"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6008c26f4452",
+      "headword": "street",
+      "source_hash": "cb867820b6932ac39a29e500ec6617213eeb78bd9b4d5f95e3e7ec92ce4fee78",
+      "decision": "keep",
+      "rationale_zh": "街道具体道路入口正确；名词不引入动词；道路与同街居民不同，未误合并；1核心够用；原片段有沿建筑物道路定义；街头环境引申待上下文，不自动核心",
+      "review_axes": {
+        "core_choice": "街道具体道路入口正确",
+        "POS": "名词不引入动词",
+        "merge": "道路与同街居民不同，未误合并",
+        "ordering": "1核心够用",
+        "source_coverage": "原片段有沿建筑物道路定义",
+        "important_use_coverage": "街头环境引申待上下文，不自动核心"
+      },
+      "evidence_ids": [
+        "wn31:n:04341737"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-6008c26f4452:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "街道",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:04341737"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "街道",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:04341737"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "街道"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词不引入动词；街头环境引申待上下文，不自动核心"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6c86df9c018e",
+      "headword": "misunderstand",
+      "source_hash": "556146d5b2c9cb90d852847d4dcbb563c6731db66034ff6de3ad254ea7cc055d",
+      "decision": "keep",
+      "rationale_zh": "误解对应错误解释清楚；动词无POS问题；无需把误听误会机械拆分；1组自然；唯一源片段完整；无额外有据重要用途",
+      "review_axes": {
+        "core_choice": "误解对应错误解释清楚",
+        "POS": "动词无POS问题",
+        "merge": "无需把误听误会机械拆分",
+        "ordering": "1组自然",
+        "source_coverage": "唯一源片段完整",
+        "important_use_coverage": "无额外有据重要用途"
+      },
+      "evidence_ids": [
+        "wn31:v:00621541"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-6c86df9c018e:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "误解",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00621541"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "误解",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00621541"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "误解"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "动词无POS问题；无额外有据重要用途"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-795b6904e54f",
+      "headword": "garbage",
+      "source_hash": "9b3d97f6d022c2ab21fed39e0dea72e04f11dc4f0eaac61cc0a2cd8373806075",
+      "decision": "keep",
+      "rationale_zh": "垃圾适合废弃物入口；名词保留；食物垃圾是证据具体对象，未等同垃圾桶；1核心自然；源词宽于选中食物废弃物定义，证据仅局部支持且非现成错义；无价值信息有独立比喻用途，另挂候选",
+      "review_axes": {
+        "core_choice": "垃圾适合废弃物入口",
+        "POS": "名词保留",
+        "merge": "食物垃圾是证据具体对象，未等同垃圾桶",
+        "ordering": "1核心自然",
+        "source_coverage": "源词宽于选中食物废弃物定义，证据仅局部支持且非现成错义",
+        "important_use_coverage": "无价值信息有独立比喻用途，另挂候选"
+      },
+      "evidence_ids": [
+        "wn31:n:14881302",
+        "wn31:n:06624619"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [
+        {
+          "candidate_id": "SG25-795b6904e54f:p6c4:regression_external:1",
+          "part_of_speech": "名词",
+          "meaning_zh": "无价值的信息；废话",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06624619"
+          ],
+          "reason_zh": "信息评价不同于具体生活废弃物",
+          "status": "AI_candidate_not_adopted",
+          "suggested_layer": "pending_teaching_decision",
+          "human_approved": false
+        }
+      ],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-795b6904e54f:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "垃圾",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:14881302"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "垃圾",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:14881302"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-795b6904e54f:p6c4:regression_external:1",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "无价值的信息；废话",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:06624619"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "信息评价不同于具体生活废弃物",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "垃圾"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词保留；无价值信息有独立比喻用途，另挂候选"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-873ac9ffea4d",
+      "headword": "cheese",
+      "source_hash": "3319207a63f7f01b4abf367002c58b729e8b4d2e9891870bb680658ed23cf446",
+      "decision": "keep",
+      "rationale_zh": "奶酪食品单核心准确；名词无跨词性；未把植物或动词同形词混入食物；1核心足够；源片段有乳凝块食品定义；冷僻同形用法不必初学",
+      "review_axes": {
+        "core_choice": "奶酪食品单核心准确",
+        "POS": "名词无跨词性",
+        "merge": "未把植物或动词同形词混入食物",
+        "ordering": "1核心足够",
+        "source_coverage": "源片段有乳凝块食品定义",
+        "important_use_coverage": "冷僻同形用法不必初学"
+      },
+      "evidence_ids": [
+        "wn31:n:07866305"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-873ac9ffea4d:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "奶酪",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:07866305"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "奶酪",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:07866305"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "奶酪"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词无跨词性；冷僻同形用法不必初学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-94d5c9d96025",
+      "headword": "agree",
+      "source_hash": "66cf4cd4fc3d69ae32ca69c0405713471b986bd20a002290fe4b13ce68e9e8b7",
+      "decision": "keep",
+      "rationale_zh": "同意以意见一致为入口；动词标注合适，原未逐义分及物性；同意条件/答应做事与观点一致兼容但搭配需后学；1核心可用；源同意有对应定义；相符候选已有记录，不把数据相符当作人的同意",
+      "review_axes": {
+        "core_choice": "同意以意见一致为入口",
+        "POS": "动词标注合适，原未逐义分及物性",
+        "merge": "同意条件/答应做事与观点一致兼容但搭配需后学",
+        "ordering": "1核心可用",
+        "source_coverage": "源同意有对应定义",
+        "important_use_coverage": "相符候选已有记录，不把数据相符当作人的同意"
+      },
+      "evidence_ids": [
+        "wn31:v:00807038",
+        "wn31:v:02663315"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-94d5c9d96025:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "同意",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00807038"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "同意",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00807038"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-94d5c9d96025:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "动词",
+          "meaning_zh": "一致；相符",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:v:02663315"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "数据/陈述相符，不是人主动表示同意。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "同意"
+          ],
+          "unadopted_external_candidates": [
+            "一致；相符"
+          ],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "动词标注合适，原未逐义分及物性；相符候选已有记录，不把数据相符当作人的同意"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-a0af3a48cfad",
+      "headword": "thousand",
+      "source_hash": "818ce9863498d27c9b8d3b2ff9bb1f55341bc071d7b18072251fe251ee85dfe2",
+      "decision": "keep",
+      "rationale_zh": "一千数量清楚；数词推荐正确，词典名词编码不构成POS混淆；数量不与其他单位合组；1组适合；源数字保留；形容性数量用法无需独立义群",
+      "review_axes": {
+        "core_choice": "一千数量清楚",
+        "POS": "数词推荐正确，词典名词编码不构成POS混淆",
+        "merge": "数量不与其他单位合组",
+        "ordering": "1组适合",
+        "source_coverage": "源数字保留",
+        "important_use_coverage": "形容性数量用法无需独立义群"
+      },
+      "evidence_ids": [
+        "wn31:n:13772984"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-a0af3a48cfad:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "数词",
+          "meaning_zh": "一千",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13772984"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "一千",
+              "original_pos": "数词",
+              "evidence_ids": [
+                "wn31:n:13772984"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "数词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "数词",
+          "existing_layer_groups": [
+            "一千"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "数词推荐正确，词典名词编码不构成POS混淆；形容性数量用法无需独立义群"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-ab91a82d14cf",
+      "headword": "animal",
+      "source_hash": "698271d7dd1854e3cbe80d5ceeaff3686ba4d0939515c8ba0259fe03688b4c74",
+      "decision": "keep",
+      "rationale_zh": "动物实体单核心合理；源名词保留，形容性肉欲未偷入；生物与情欲属性不合并；1核心自然；源片段有生物定义；单一定义非完整生物学分类，未输出科学阈值",
+      "review_axes": {
+        "core_choice": "动物实体单核心合理",
+        "POS": "源名词保留，形容性肉欲未偷入",
+        "merge": "生物与情欲属性不合并",
+        "ordering": "1核心自然",
+        "source_coverage": "源片段有生物定义",
+        "important_use_coverage": "单一定义非完整生物学分类，未输出科学阈值"
+      },
+      "evidence_ids": [
+        "wn31:n:00015568"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-ab91a82d14cf:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "动物",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:00015568"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "动物",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:00015568"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "动物"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "源名词保留，形容性肉欲未偷入；单一定义非完整生物学分类，未输出科学阈值"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-bc020a35b7f9",
+      "headword": "machine",
+      "source_hash": "dff039f16d2c4f5af296ada5e974a29979260fb015640ea14b1b2039fad52bb3",
+      "decision": "keep",
+      "rationale_zh": "机器工具入口明确；名词不混机械加工动词；机械装置与政治组织/高效者分开理解；1组自然；唯一源片段有机械电气设备定义；加工动词有独立工业用途，非必须首学",
+      "review_axes": {
+        "core_choice": "机器工具入口明确",
+        "POS": "名词不混机械加工动词",
+        "merge": "机械装置与政治组织/高效者分开理解",
+        "ordering": "1组自然",
+        "source_coverage": "唯一源片段有机械电气设备定义",
+        "important_use_coverage": "加工动词有独立工业用途，非必须首学"
+      },
+      "evidence_ids": [
+        "wn31:n:03705309"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-bc020a35b7f9:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "机器",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03705309"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "机器",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03705309"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "机器"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词不混机械加工动词；加工动词有独立工业用途，非必须首学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c8ce96a5ba0d",
+      "headword": "million",
+      "source_hash": "e9f665fc2ae9d0d8a33f58c9822b00fc6c59a1e31b32424e3d0398a4e9381a8f",
+      "decision": "keep",
+      "rationale_zh": "百万数量解释准确；推荐数词可兼容词典数量名词编码；精确百万与夸张大量不混为恒等；1核心足够；源片段完整；夸张大量可语境后学",
+      "review_axes": {
+        "core_choice": "百万数量解释准确",
+        "POS": "推荐数词可兼容词典数量名词编码",
+        "merge": "精确百万与夸张大量不混为恒等",
+        "ordering": "1核心足够",
+        "source_coverage": "源片段完整",
+        "important_use_coverage": "夸张大量可语境后学"
+      },
+      "evidence_ids": [
+        "wn31:n:13773673"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-c8ce96a5ba0d:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "数词",
+          "meaning_zh": "百万",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13773673"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "百万",
+              "original_pos": "数词",
+              "evidence_ids": [
+                "wn31:n:13773673"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "数词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "数词",
+          "existing_layer_groups": [
+            "百万"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "推荐数词可兼容词典数量名词编码；夸张大量可语境后学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d1a0d6f47074",
+      "headword": "roof",
+      "source_hash": "92470673cbf9ea1a944adf5c9012ce7cce9a30a686641cc4591ee4216024d592",
+      "decision": "keep",
+      "rationale_zh": "屋顶以建筑顶盖为对象准确；名词标签适当；车顶与建筑顶盖同类但上限比喻不自动合并；1核心自然；源屋顶定义对应；口腔顶等空腔上部是扩展场景，不强制首次",
+      "review_axes": {
+        "core_choice": "屋顶以建筑顶盖为对象准确",
+        "POS": "名词标签适当",
+        "merge": "车顶与建筑顶盖同类但上限比喻不自动合并",
+        "ordering": "1核心自然",
+        "source_coverage": "源屋顶定义对应",
+        "important_use_coverage": "口腔顶等空腔上部是扩展场景，不强制首次"
+      },
+      "evidence_ids": [
+        "wn31:n:04112162"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d1a0d6f47074:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "屋顶",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:04112162"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "屋顶",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:04112162"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "屋顶"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词标签适当；口腔顶等空腔上部是扩展场景，不强制首次"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-e0c08c2b1f53",
+      "headword": "soldier",
+      "source_hash": "52f0a9d2422b675a1d7f2d34b015aed31f488111101784c4274191d33462d178",
+      "decision": "keep",
+      "rationale_zh": "士兵军人入口清楚；名词无POS混淆；兵蚁非自动并入人类军人义；1核心自然；源片段有军队服役者定义；参军动词属外部词性，未自动采用",
+      "review_axes": {
+        "core_choice": "士兵军人入口清楚",
+        "POS": "名词无POS混淆",
+        "merge": "兵蚁非自动并入人类军人义",
+        "ordering": "1核心自然",
+        "source_coverage": "源片段有军队服役者定义",
+        "important_use_coverage": "参军动词属外部词性，未自动采用"
+      },
+      "evidence_ids": [
+        "wn31:n:10641415"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-e0c08c2b1f53:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "士兵",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:10641415"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "士兵",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:10641415"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "士兵"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词无POS混淆；参军动词属外部词性，未自动采用"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f2ce341fdaa6",
+      "headword": "sixteen",
+      "source_hash": "e5e55d947fc25177cb6c8ef646e0187575e6af5aef76c4fcf5ba211fbc725025",
+      "decision": "keep",
+      "rationale_zh": "十六精确数量正确；数词推荐适宜；数量概念无需名词形容词双组；1组足够；源数字完整；无独立重要缺口",
+      "review_axes": {
+        "core_choice": "十六精确数量正确",
+        "POS": "数词推荐适宜",
+        "merge": "数量概念无需名词形容词双组",
+        "ordering": "1组足够",
+        "source_coverage": "源数字完整",
+        "important_use_coverage": "无独立重要缺口"
+      },
+      "evidence_ids": [
+        "wn31:n:13769746"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-f2ce341fdaa6:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "数词",
+          "meaning_zh": "十六",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13769746"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "十六",
+              "original_pos": "数词",
+              "evidence_ids": [
+                "wn31:n:13769746"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "数词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "数词",
+          "existing_layer_groups": [
+            "十六"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "数词推荐适宜；无独立重要缺口"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-fef8f41cdcd2",
+      "headword": "fourteen",
+      "source_hash": "bb615d8efe571139321fb5a920f2242b33052c69f58d2fe163fca4cf2d8de358",
+      "decision": "keep",
+      "rationale_zh": "十四精确数量正确；数词推荐适宜；词典数量和数量修饰不必拆中文核心；1组足够；原片段有十三加一定义；无独立重要缺口",
+      "review_axes": {
+        "core_choice": "十四精确数量正确",
+        "POS": "数词推荐适宜",
+        "merge": "词典数量和数量修饰不必拆中文核心",
+        "ordering": "1组足够",
+        "source_coverage": "原片段有十三加一定义",
+        "important_use_coverage": "无独立重要缺口"
+      },
+      "evidence_ids": [
+        "wn31:n:13769488"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-fef8f41cdcd2:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "数词",
+          "meaning_zh": "十四",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13769488"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "十四",
+              "original_pos": "数词",
+              "evidence_ids": [
+                "wn31:n:13769488"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "数词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "数词",
+          "existing_layer_groups": [
+            "十四"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "数词推荐适宜；无独立重要缺口"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-8517fce0bb21",
+      "headword": "vulgar",
+      "source_hash": "efe4662ac231b49e0fe7c55af4e5e6a241d097f6fa44db75af4e36d13d92120a",
+      "decision": "keep",
+      "rationale_zh": "粗俗的以缺教养品味为入口有据；形容词而非粗话名词；不雅与大众语言是不同语域，不宣称粗俗概括全部；1核心合适；原粗俗有直接定义；普通民众旧用法无需首次记忆",
+      "review_axes": {
+        "core_choice": "粗俗的以缺教养品味为入口有据",
+        "POS": "形容词而非粗话名词",
+        "merge": "不雅与大众语言是不同语域，不宣称粗俗概括全部",
+        "ordering": "1核心合适",
+        "source_coverage": "原粗俗有直接定义",
+        "important_use_coverage": "普通民众旧用法无需首次记忆"
+      },
+      "evidence_ids": [
+        "wn31:s:01957020"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-8517fce0bb21:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "粗俗的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:s:01957020"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "粗俗的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:s:01957020"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "粗俗的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "形容词而非粗话名词；普通民众旧用法无需首次记忆"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c465a314b762",
+      "headword": "graphic",
+      "source_hash": "728667050573a48ee4a7024bf345d19581cade59e1314407043b07aab7b7791e",
+      "decision": "keep",
+      "rationale_zh": "图形与生动两个用途应保留；均形容词，计算机图像名词未偷入；生动不必负面，出版社已有不适细节的条件说明；2核心适合不同功能；两源片段有图示及心中逼真图像定义；露骨细节语境可辅助，不能说所有生动都色情",
+      "review_axes": {
+        "core_choice": "图形与生动两个用途应保留",
+        "POS": "均形容词，计算机图像名词未偷入",
+        "merge": "生动不必负面，出版社已有不适细节的条件说明",
+        "ordering": "2核心适合不同功能",
+        "source_coverage": "两源片段有图示及心中逼真图像定义",
+        "important_use_coverage": "露骨细节语境可辅助，不能说所有生动都色情"
+      },
+      "evidence_ids": [
+        "wn31:a:02747544",
+        "wn31:s:01947643"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 2,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-c465a314b762:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "图形的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:a:02747544"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "图形的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:a:02747544"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-c465a314b762:p6c1:core:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "生动的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:s:01947643"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "生动的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:s:01947643"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "图形的",
+            "生动的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "均形容词，计算机图像名词未偷入；露骨细节语境可辅助，不能说所有生动都色情"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-bcffaab67df4",
+      "headword": "ability",
+      "source_hash": "95e82a5d1382b63a0d2b9562c401b7cc47dae579e009723a5f905af328c330d7",
+      "decision": "keep",
+      "rationale_zh": "能力才能能耐近义合框可行；均名词；一般能做到与精神能力分别有证据，未删源片段；1核心简洁；三片段均可追溯；不为能耐另造独立英语用途",
+      "review_axes": {
+        "core_choice": "能力才能能耐近义合框可行",
+        "POS": "均名词",
+        "merge": "一般能做到与精神能力分别有证据，未删源片段",
+        "ordering": "1核心简洁",
+        "source_coverage": "三片段均可追溯",
+        "important_use_coverage": "不为能耐另造独立英语用途"
+      },
+      "evidence_ids": [
+        "wn31:n:05207437",
+        "wn31:n:05624029"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-bcffaab67df4:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "能力；才能",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:05207437",
+            "wn31:n:05624029"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "能耐留在原文追溯，不重复显示第三个近义词",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "才能",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:05624029"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "能力",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:05207437"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "能耐",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:05624029"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "能力；才能"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "均名词；不为能耐另造独立英语用途"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-0e1637f032b1",
+      "headword": "chamber",
+      "source_hash": "f3cd20bdf17ff7a3acd52ab35db151c134aff3cc9f0c73becc93e7a3c8247627",
+      "decision": "keep",
+      "rationale_zh": "室和封闭空间带正式/腔体对象合理；议院另为名词组织；已有不是任意room的限制，不再重报宽译；1核心可用；室及议院各有对应证据；法官办公室等子场景无需首次另组",
+      "review_axes": {
+        "core_choice": "室和封闭空间带正式/腔体对象合理",
+        "POS": "议院另为名词组织",
+        "merge": "已有不是任意room的限制，不再重报宽译",
+        "ordering": "1核心可用",
+        "source_coverage": "室及议院各有对应证据",
+        "important_use_coverage": "法官办公室等子场景无需首次另组"
+      },
+      "evidence_ids": [
+        "wn31:n:03007334",
+        "wn31:n:08335834"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-0e1637f032b1:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "室；封闭空间",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03007334"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "正式房间、人体或设备内的腔室；不是所有口语room的替代",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "室",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03007334"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-0e1637f032b1:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "议院",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:08335834"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "议院",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:08335834"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "室；封闭空间",
+            "议院"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "议院另为名词组织；法官办公室等子场景无需首次另组"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d4f568b800c6",
+      "headword": "finite",
+      "source_hash": "e6ba24c637b9ae8f842a53be01859444b674632c933fa44ce9ba606d5c3c517d",
+      "decision": "keep",
+      "rationale_zh": "有限的以时空量边界解释适宜；形容词保留；语法限定动词形式与一般有限区分；1组足够；源片段有边界定义；语法限定式属专门用途，后学可讨论",
+      "review_axes": {
+        "core_choice": "有限的以时空量边界解释适宜",
+        "POS": "形容词保留",
+        "merge": "语法限定动词形式与一般有限区分",
+        "ordering": "1组足够",
+        "source_coverage": "源片段有边界定义",
+        "important_use_coverage": "语法限定式属专门用途，后学可讨论"
+      },
+      "evidence_ids": [
+        "wn31:a:01010155"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d4f568b800c6:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "形容词",
+          "meaning_zh": "有限的",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:a:01010155"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "有限的",
+              "original_pos": "形容词",
+              "evidence_ids": [
+                "wn31:a:01010155"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "形容词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "形容词",
+          "existing_layer_groups": [
+            "有限的"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "形容词保留；语法限定式属专门用途，后学可讨论"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d4ab04449fe1",
+      "headword": "carve",
+      "source_hash": "e5a9970242550b2594bfd208195e0159651a68698bb1412d3d682b469253d024",
+      "decision": "keep",
+      "rationale_zh": "雕刻以形成刻制物先学合理；切肉等仍为动词；切开已限定切片块，不再当任意打开错误；1核心合理；两源片段有形成雕刻与切块证据；表面刻字可纳雕刻场景，不强制扩组",
+      "review_axes": {
+        "core_choice": "雕刻以形成刻制物先学合理",
+        "POS": "切肉等仍为动词",
+        "merge": "切开已限定切片块，不再当任意打开错误",
+        "ordering": "1核心合理",
+        "source_coverage": "两源片段有形成雕刻与切块证据",
+        "important_use_coverage": "表面刻字可纳雕刻场景，不强制扩组"
+      },
+      "evidence_ids": [
+        "wn31:v:01258721",
+        "wn31:v:01258531"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d4ab04449fe1:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "雕刻",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:01258721"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "雕刻",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01258721"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-d4ab04449fe1:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "切（肉等）",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:v:01258531"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "切割成片/块，原切开不宜理解为任意打开",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "切开",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01258531"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "雕刻",
+            "切（肉等）"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "切肉等仍为动词；表面刻字可纳雕刻场景，不强制扩组"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f2a6aa97adb2",
+      "headword": "tomb",
+      "source_hash": "4718d3f8c1be7717fe92d1ef6446defebff9a9d928ba2653a60616858f7bf2e6",
+      "decision": "keep",
+      "rationale_zh": "坟墓安葬场所入口准确；名词保留；未把墓碑实体当整个坟墓；1核心自然；单源定义含安葬场所；没有有据独立重要缺口",
+      "review_axes": {
+        "core_choice": "坟墓安葬场所入口准确",
+        "POS": "名词保留",
+        "merge": "未把墓碑实体当整个坟墓",
+        "ordering": "1核心自然",
+        "source_coverage": "单源定义含安葬场所",
+        "important_use_coverage": "没有有据独立重要缺口"
+      },
+      "evidence_ids": [
+        "wn31:n:03459977"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-f2a6aa97adb2:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "坟墓",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03459977"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "坟墓",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03459977"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "坟墓"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词保留；没有有据独立重要缺口"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f56175f2116f",
+      "headword": "flush",
+      "source_hash": "6ccd3db6c6cd1b398a5570dfd6635476d669401c52946999332848659ff62378",
+      "decision": "keep",
+      "rationale_zh": "冲洗和脸红不同动作双核心合理；名词红晕及一次冲水独立保留；冲洗动词与冲水事件名词未跨POS合并；2核心合适；四片段有定义及Collins观察；厕所对象限定清楚；齐平与同花专门用法不自动进入首次",
+      "review_axes": {
+        "core_choice": "冲洗和脸红不同动作双核心合理",
+        "POS": "名词红晕及一次冲水独立保留",
+        "merge": "冲洗动词与冲水事件名词未跨POS合并",
+        "ordering": "2核心合适",
+        "source_coverage": "四片段有定义及Collins观察；厕所对象限定清楚",
+        "important_use_coverage": "齐平与同花专门用法不自动进入首次"
+      },
+      "evidence_ids": [
+        "wn31:v:00456484",
+        "wn31:v:00103071",
+        "web:flush",
+        "wn31:n:00119088"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 2,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-f56175f2116f:p6c1:core:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "冲洗",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00456484"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "冲洗",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00456484"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-f56175f2116f:p6c1:core:2",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "脸红",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00103071"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "脸红",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00103071"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-f56175f2116f:p6c1:extended:1",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "冲水；一次冲洗",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "web:flush"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "如马桶冲水",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "冲洗",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "web:flush"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s004",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-f56175f2116f:p6c1:extended:2",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "红晕",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:00119088"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "红晕",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:00119088"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "冲水；一次冲洗",
+            "红晕"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词红晕及一次冲水独立保留；齐平与同花专门用法不自动进入首次"
+        },
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "冲洗",
+            "脸红"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词红晕及一次冲水独立保留；齐平与同花专门用法不自动进入首次"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-392245974134",
+      "headword": "knock",
+      "source_hash": "bb3eb32bf2b89d21e67d35fcd6c014bc938cb276b7b513c0a1ba8ecb45cce1eb",
+      "decision": "keep",
+      "rationale_zh": "敲击以手指敲表面先学合理；原名词未强配中文次序；名词候选显式补列；碰撞与敲门工具对象不同，分组正确；1核心可用；源敲/碰撞均有动词证据，源名词覆盖仍由候选待决；敲击声/一次敲击已追踪；原词性未知不自动解除历史风险",
+      "review_axes": {
+        "core_choice": "敲击以手指敲表面先学合理",
+        "POS": "原名词未强配中文次序；名词候选显式补列",
+        "merge": "碰撞与敲门工具对象不同，分组正确",
+        "ordering": "1核心可用",
+        "source_coverage": "源敲/碰撞均有动词证据，源名词覆盖仍由候选待决",
+        "important_use_coverage": "敲击声/一次敲击已追踪；原词性未知不自动解除历史风险"
+      },
+      "evidence_ids": [
+        "wn31:v:01417121",
+        "wn31:v:01242183",
+        "wn31:n:07400970",
+        "wn31:n:07424807"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对knock的语义认可不解除旧待审事项。旧多义/分层风险仍待人工独立签审。",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-392245974134",
+        "headword": "knock",
+        "risk_level": "high",
+        "reserved_original_items": [],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-392245974134:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "敲；敲击",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:01417121"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "参考英语动词义进行推荐标注，非原书词性已确认",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "敲",
+              "original_pos": null,
+              "evidence_ids": [
+                "wn31:v:01417121"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": null,
+              "source_POS_evidence": "unresolved_multi_pos"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-392245974134:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "碰；撞击",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:v:01242183"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "knock against/off等；推荐词性来自独立参考",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "碰撞",
+              "original_pos": null,
+              "evidence_ids": [
+                "wn31:v:01242183"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": null,
+              "source_POS_evidence": "unresolved_multi_pos"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-392245974134:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "敲击声；一次敲击",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:07400970",
+            "wn31:n:07424807"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "补充英语名词入口，不宣称已查明原书敲/碰撞的词性排列。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [],
+          "unadopted_external_candidates": [
+            "敲击声；一次敲击"
+          ],
+          "status": "explicit_external_candidate_pending_original_mapping_unknown",
+          "semantic_scope_judgment": "原名词未强配中文次序；名词候选显式补列；敲击声/一次敲击已追踪；原词性未知不自动解除历史风险"
+        },
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "敲；敲击",
+            "碰；撞击"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "原名词未强配中文次序；名词候选显式补列；敲击声/一次敲击已追踪；原词性未知不自动解除历史风险"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6cf382fca2a1",
+      "headword": "couple",
+      "source_hash": "f92b990d8e3388fb3d47250ee53f2a46f95b1651f14fd539068e2481e699a4ab",
+      "decision": "keep",
+      "rationale_zh": "一对为数量入口合理；伴侣名词及数量结构候选分清；夫妇只是同居伴侣子集，已有候选不算未报漏义；1核心可用，伴侣候选待决；两原片段保留且夫妇有条件兼容同居人定义；伴侣不限已婚及少数几个已追踪未采用",
+      "review_axes": {
+        "core_choice": "一对为数量入口合理",
+        "POS": "伴侣名词及数量结构候选分清",
+        "merge": "夫妇只是同居伴侣子集，已有候选不算未报漏义",
+        "ordering": "1核心可用，伴侣候选待决",
+        "source_coverage": "两原片段保留且夫妇有条件兼容同居人定义",
+        "important_use_coverage": "伴侣不限已婚及少数几个已追踪未采用"
+      },
+      "evidence_ids": [
+        "wn31:n:13765745",
+        "wn31:n:08005299",
+        "web:couple",
+        "wn31:n:13793430"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "pending_not_adopted",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-6cf382fca2a1:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "一对",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:13765745"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "一对",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:13765745"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-6cf382fca2a1:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "夫妇",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:08005299"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "夫妇",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:08005299"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-6cf382fca2a1:p6c1:added:1",
+          "source_sense_ids": [],
+          "recommended_POS": "名词",
+          "meaning_zh": "一对伴侣（不限已婚）",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:08005299",
+            "web:couple"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "夫妇只是其中一个适用子集。",
+          "source_POS_status": []
+        },
+        {
+          "use_id": "SG25-6cf382fca2a1:p6c1:added:2",
+          "source_sense_ids": [],
+          "recommended_POS": "名词/数量结构",
+          "meaning_zh": "两个；两三个；几个（a couple of）",
+          "layer": "external_candidate_not_adopted",
+          "evidence_ids": [
+            "wn31:n:13793430",
+            "web:couple"
+          ],
+          "evidence_relation": "existence_evidenced_adoption_pending",
+          "scope_zh": "精确两件与非精确少量依上下文，不能机械等于永远两个。",
+          "source_POS_status": []
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "一对",
+            "夫妇"
+          ],
+          "unadopted_external_candidates": [
+            "一对伴侣（不限已婚）"
+          ],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "伴侣名词及数量结构候选分清；伴侣不限已婚及少数几个已追踪未采用"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-4b18aefe826a",
+      "headword": "cripple",
+      "source_hash": "32f1796de44a024143b49e24978aa55d7e2e84b9d9dcc225e79bae8e794ea1c7",
+      "decision": "keep",
+      "rationale_zh": "严重削弱功能比喻核心带服务组织对象清楚；动词与称呼残障者名词分开；使残疾具体肢体功能另列，非与系统瘫痪全同义；1核心可用，次序不是频率断言；两片段有具体身体和效率定义；未把名词语用警告机械判到动词；旧风险仍未决",
+      "review_axes": {
+        "core_choice": "严重削弱功能比喻核心带服务组织对象清楚",
+        "POS": "动词与称呼残障者名词分开",
+        "merge": "使残疾具体肢体功能另列，非与系统瘫痪全同义",
+        "ordering": "1核心可用，次序不是频率断言",
+        "source_coverage": "两片段有具体身体和效率定义",
+        "important_use_coverage": "未把名词语用警告机械判到动词；旧风险仍未决"
+      },
+      "evidence_ids": [
+        "wn31:v:00226258",
+        "wn31:v:00091399"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对cripple的语义认可不解除旧待审事项。旧多义/分层风险仍待人工独立签审。",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-4b18aefe826a",
+        "headword": "cripple",
+        "risk_level": "high",
+        "reserved_original_items": [],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-4b18aefe826a:p6c1:core:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "使瘫痪；严重削弱功能",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00226258"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "服务/组织等语境；不是实测频率排序",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "使瘫痪",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00226258"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-4b18aefe826a:p6c1:extended:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "使残疾",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:v:00091399"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "具体身体损伤义；名词称呼人的语用问题不直接套在本动词上",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "使残疾",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00091399"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "使瘫痪；严重削弱功能",
+            "使残疾"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "动词与称呼残障者名词分开；未把名词语用警告机械判到动词；旧风险仍未决"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-574432331453",
+      "headword": "chop",
+      "source_hash": "c68697824a3441a28352169553535399d5d5e5dba71ef824aa5ea2bd279ed4c1",
+      "decision": "keep",
+      "rationale_zh": "砍木材和切碎食物同框保留工具结果差别；排骨名词独立；两动词分别引证，已有并列条件不是假合并；1核心自然；三源片段均有定义；体育切削球及下颌属专门语境无需首学",
+      "review_axes": {
+        "core_choice": "砍木材和切碎食物同框保留工具结果差别",
+        "POS": "排骨名词独立",
+        "merge": "两动词分别引证，已有并列条件不是假合并",
+        "ordering": "1核心自然",
+        "source_coverage": "三源片段均有定义",
+        "important_use_coverage": "体育切削球及下颌属专门语境无需首学"
+      },
+      "evidence_ids": [
+        "wn31:v:01259737",
+        "wn31:v:01260655",
+        "wn31:n:07669591"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对chop的语义认可不解除旧待审事项。旧多义/分层风险仍待人工独立签审。",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-574432331453",
+        "headword": "chop",
+        "risk_level": "high",
+        "reserved_original_items": [],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-574432331453:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "砍（木材）；切碎（食物）",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:01259737",
+            "wn31:v:01260655"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "不同工具/结果的子义分别保留，只合为一个并列显示单元",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "砍",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01259737"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "切",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01260655"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-574432331453:p6c1:extended:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "排骨",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:n:07669591"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "排骨",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:07669591"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "排骨"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "排骨名词独立；体育切削球及下颌属专门语境无需首学"
+        },
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "砍（木材）；切碎（食物）"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "排骨名词独立；体育切削球及下颌属专门语境无需首学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-dac1d7cfa950",
+      "headword": "layer",
+      "source_hash": "2446c170fcdcd30a25b19e40e76e0291c7b08f6ca13a5166428f1eef4765e8f9",
+      "decision": "keep",
+      "rationale_zh": "层实体结构入口准确；分层放置动词独立；名词厚度与制作层动作不合并；1核心合理；两源片段保留；产蛋鸡同形词不强制初学",
+      "review_axes": {
+        "core_choice": "层实体结构入口准确",
+        "POS": "分层放置动词独立",
+        "merge": "名词厚度与制作层动作不合并",
+        "ordering": "1核心合理",
+        "source_coverage": "两源片段保留",
+        "important_use_coverage": "产蛋鸡同形词不强制初学"
+      },
+      "evidence_ids": [
+        "wn31:n:03655499",
+        "wn31:v:01264677"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-dac1d7cfa950:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "层",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03655499"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "层",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03655499"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-dac1d7cfa950:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "分层放置",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:v:01264677"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "分层放置",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01264677"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "层"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "分层放置动词独立；产蛋鸡同形词不强制初学"
+        },
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "分层放置"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "分层放置动词独立；产蛋鸡同形词不强制初学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f300f10844ec",
+      "headword": "greenhouse",
+      "source_hash": "43c941a998d03456771604192a6d060f329172bf1a26bc11b065c20a6450884c",
+      "decision": "keep",
+      "rationale_zh": "温室建筑定义清楚；名词源未混效应形容词；受控植物培养场所不是普通玻璃房泛化；1核心自然；单源完整；温室效应关系形容词可搭配后学",
+      "review_axes": {
+        "core_choice": "温室建筑定义清楚",
+        "POS": "名词源未混效应形容词",
+        "merge": "受控植物培养场所不是普通玻璃房泛化",
+        "ordering": "1核心自然",
+        "source_coverage": "单源完整",
+        "important_use_coverage": "温室效应关系形容词可搭配后学"
+      },
+      "evidence_ids": [
+        "wn31:n:03462844"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-f300f10844ec:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "温室",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:03462844"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "温室",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:03462844"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "温室"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "名词源未混效应形容词；温室效应关系形容词可搭配后学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-230b4397685e",
+      "headword": "generalize",
+      "source_hash": "c541dd83e2389d7ef6f9e5d8de483efc641fb9eabc6be7e7d3e9d69c6cba7904",
+      "decision": "keep",
+      "rationale_zh": "概括归纳共用从具体到一般框合理；均为动词；归纳概括保留推论方向，不与随口泛谈恒等；1核心可用；两源片段均由specific-to-general定义支持；泛泛而谈为独立外部表述可后学",
+      "review_axes": {
+        "core_choice": "概括归纳共用从具体到一般框合理",
+        "POS": "均为动词",
+        "merge": "归纳概括保留推论方向，不与随口泛谈恒等",
+        "ordering": "1核心可用",
+        "source_coverage": "两源片段均由specific-to-general定义支持",
+        "important_use_coverage": "泛泛而谈为独立外部表述可后学"
+      },
+      "evidence_ids": [
+        "wn31:v:01024429"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-230b4397685e:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "概括；归纳",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:01024429"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "概括",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01024429"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "归纳",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01024429"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "概括；归纳"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "均为动词；泛泛而谈为独立外部表述可后学"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-ad8c6f6e417a",
+      "headword": "consumption",
+      "source_hash": "8753130595e61bf5ea3289c93d30710ccdfd2747cbb23377b5592eddc91c3dfc",
+      "decision": "keep",
+      "rationale_zh": "商品消费和资源消耗并列带对象合适；摄入量名词有出版社补充，非动词进食；过程与量区别仍保留，已有对象提示不算假同义；1核心可用；三源片段覆盖，摄入量不只靠进食过程推导；肺病旧称领域性强，无须首次背诵",
+      "review_axes": {
+        "core_choice": "商品消费和资源消耗并列带对象合适",
+        "POS": "摄入量名词有出版社补充，非动词进食",
+        "merge": "过程与量区别仍保留，已有对象提示不算假同义",
+        "ordering": "1核心可用",
+        "source_coverage": "三源片段覆盖，摄入量不只靠进食过程推导",
+        "important_use_coverage": "肺病旧称领域性强，无须首次背诵"
+      },
+      "evidence_ids": [
+        "wn31:n:00357193",
+        "wn31:n:13472977",
+        "web:consumption"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对consumption的语义认可不解除旧待审事项。旧多义/分层风险仍待人工独立签审。",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-ad8c6f6e417a",
+        "headword": "consumption",
+        "risk_level": "high",
+        "reserved_original_items": [],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-ad8c6f6e417a:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "消费（商品/服务）；消耗（资源）",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:00357193",
+            "wn31:n:13472977"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "经济消费与资源消耗仍有语境区别，不能当成完全同义",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "消费",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:13472977"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "消耗",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:00357193"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-ad8c6f6e417a:p6c1:extended:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "摄入量",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "web:consumption"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "摄入量",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "web:consumption"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s003",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "消费（商品/服务）；消耗（资源）",
+            "摄入量"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "摄入量名词有出版社补充，非动词进食；肺病旧称领域性强，无须首次背诵"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-476994559e87",
+      "headword": "wash",
+      "source_hash": "63bcf8031b7e1a99e4abd625a120ca417927f57bff1691cd93ccdd3410b6ca43",
+      "decision": "keep",
+      "rationale_zh": "洗清洗同一清洁功能合框合适；源动词不与洗衣物名词合并；清洁与水流冲蚀不是必然同义；1核心足够；两原片段有清洁剂和水定义；能耐洗是语态/性质变化，不强迫另核心",
+      "review_axes": {
+        "core_choice": "洗清洗同一清洁功能合框合适",
+        "POS": "源动词不与洗衣物名词合并",
+        "merge": "清洁与水流冲蚀不是必然同义",
+        "ordering": "1核心足够",
+        "source_coverage": "两原片段有清洁剂和水定义",
+        "important_use_coverage": "能耐洗是语态/性质变化，不强迫另核心"
+      },
+      "evidence_ids": [
+        "wn31:v:01538034"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-476994559e87:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "洗；清洗",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:01538034"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "洗",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01538034"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "清洗",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01538034"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "洗；清洗"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "源动词不与洗衣物名词合并；能耐洗是语态/性质变化，不强迫另核心"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6cd6f41455d7",
+      "headword": "notify",
+      "source_hash": "dec3125bc8b3139ebc5e5afd626694e605aff56daeb99b97d118a188022e58a4",
+      "decision": "evidence_pending",
+      "rationale_zh": "通知告知以信息传达为核心准确；及物动词，接人及所告信息；使注意已暂存，不能再算当前吸引注意误译；1核心可用；s001旧未决，s002对应inform；403保留真实访问状态，未把旧待决自动放行",
+      "review_axes": {
+        "core_choice": "通知告知以信息传达为核心准确",
+        "POS": "及物动词，接人及所告信息",
+        "merge": "使注意已暂存，不能再算当前吸引注意误译",
+        "ordering": "1核心可用",
+        "source_coverage": "s001旧未决，s002对应inform",
+        "important_use_coverage": "403保留真实访问状态，未把旧待决自动放行"
+      },
+      "evidence_ids": [
+        "wn31:v:00875364"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": true,
+      "historical_status": "pending_not_auto_passed",
+      "historical_observation_zh": "保留旧风险等级high及其未决状态；本次对notify的语义认可不解除旧待审事项。旧暂存原义仍未决：使注意",
+      "historical_input_snapshot": {
+        "stable_id": "SG25-6cd6f41455d7",
+        "headword": "notify",
+        "risk_level": "high",
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s001",
+            "original_gloss": "使注意",
+            "state": "unresolved_not_for_standalone_memorization",
+            "reason": "英语参考支持通知/告知，不支持把使注意当成另一个吸引注意义。",
+            "evidence_ids": [
+              "wn31:v:00875364"
+            ]
+          }
+        ],
+        "status": "pending_not_auto_passed"
+      },
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-6cd6f41455d7:p6c1:core:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "通知；告知",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00875364"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "notify sb of sth；notify sb that ...",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "通知",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00875364"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        },
+        {
+          "use_id": "notify:reserved:s001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "使注意",
+          "layer": "reserved",
+          "evidence_ids": [
+            "wn31:v:00875364"
+          ],
+          "evidence_relation": "unresolved_not_confirmed_error",
+          "scope_zh": "英语参考支持通知/告知，不支持把使注意当成另一个吸引注意义。",
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ],
+          "teaching_status": "meaning_scope_unresolved_not_for_standalone_memorization; known_source_POS_not_erased"
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "通知；告知"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "及物动词，接人及所告信息；403保留真实访问状态，未把旧待决自动放行"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-839be5813487",
+      "headword": "fuss",
+      "source_hash": "e57caf7ba9442cbfbc1109be5adabc7b65ad94da0d7713f1efbde71ee9be7ecb",
+      "decision": "keep",
+      "rationale_zh": "大惊小怪的激动状态入口合理；过分操心动词另列；情绪骚动名词与不必要担忧动作分开；1核心可用；两源片段有相应定义；争执与照料等独立场景待后学，不自动合入",
+      "review_axes": {
+        "core_choice": "大惊小怪的激动状态入口合理",
+        "POS": "过分操心动词另列",
+        "merge": "情绪骚动名词与不必要担忧动作分开",
+        "ordering": "1核心可用",
+        "source_coverage": "两源片段有相应定义",
+        "important_use_coverage": "争执与照料等独立场景待后学，不自动合入"
+      },
+      "evidence_ids": [
+        "wn31:n:14427176",
+        "wn31:v:01797944"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-839be5813487:p6c1:core:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "recommended_POS": "名词",
+          "meaning_zh": "大惊小怪",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:n:14427176"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "大惊小怪",
+              "original_pos": "名词",
+              "evidence_ids": [
+                "wn31:n:14427176"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "名词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        },
+        {
+          "use_id": "SG25-839be5813487:p6c1:extended:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "过分操心",
+          "layer": "extended_meanings",
+          "evidence_ids": [
+            "wn31:v:01797944"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "过分操心",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:01797944"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "explicit_gloss_label"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "名词",
+          "existing_layer_groups": [
+            "大惊小怪"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "过分操心动词另列；争执与照料等独立场景待后学，不自动合入"
+        },
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "过分操心"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "过分操心动词另列；争执与照料等独立场景待后学，不自动合入"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-735b841b230d",
+      "headword": "correlate",
+      "source_hash": "ebe9095f20f8debf6650c964150f40a2027e02e55c108ca1e3291ce93ad1da66",
+      "decision": "keep",
+      "rationale_zh": "相关与使相关同框已有方向提示可留；不及物自身关系与及物建立关系明确；双向关系与使动不是全同义，子义各有证据；1核心可读且无需为数字拆框；两原片段有相互关系定义；名词相关变量不自动借源动词采用",
+      "review_axes": {
+        "core_choice": "相关与使相关同框已有方向提示可留",
+        "POS": "不及物自身关系与及物建立关系明确",
+        "merge": "双向关系与使动不是全同义，子义各有证据",
+        "ordering": "1核心可读且无需为数字拆框",
+        "source_coverage": "两原片段有相互关系定义",
+        "important_use_coverage": "名词相关变量不自动借源动词采用"
+      },
+      "evidence_ids": [
+        "wn31:v:00715901",
+        "wn31:v:02665057"
+      ],
+      "confirmed_findings": [],
+      "preference_suggestions": [],
+      "new_dictionary_candidates": [],
+      "existing_dictionary_candidates_status": "none_in_input",
+      "historical_risk_retained": false,
+      "historical_status": "not_in_historical48",
+      "historical_observation_zh": null,
+      "historical_input_snapshot": null,
+      "human_approved": false,
+      "first_memory_core_count": 1,
+      "external_coverage_status": "reviewed_against_available_WordNet_not_exhaustiveness_claim",
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-735b841b230d:p6c1:core:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "recommended_POS": "动词",
+          "meaning_zh": "相关；使相互关联",
+          "layer": "core_meanings",
+          "evidence_ids": [
+            "wn31:v:00715901",
+            "wn31:v:02665057"
+          ],
+          "evidence_relation": "independently_reassessed_compatibility; scope_and_remaining_limits_in_review_axes; not_gold_or_human_approval",
+          "scope_zh": "相关：不及物；使相关：及物，句法方向必须保留",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "相关",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:02665057"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "使相互关联",
+              "original_pos": "动词",
+              "evidence_ids": [
+                "wn31:v:00715901"
+              ]
+            }
+          ],
+          "source_POS_status": [
+            {
+              "source_sense_id": "s001",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            },
+            {
+              "source_sense_id": "s002",
+              "source_part_of_speech": "动词",
+              "source_POS_evidence": "single_pos_field"
+            }
+          ]
+        }
+      ],
+      "source_POS_coverage_review": [
+        {
+          "source_POS": "动词",
+          "existing_layer_groups": [
+            "相关；使相互关联"
+          ],
+          "unadopted_external_candidates": [],
+          "status": "represented_in_existing_layers_not_proof_of_complete_use_coverage",
+          "semantic_scope_judgment": "不及物自身关系与及物建立关系明确；名词相关变量不自动借源动词采用"
+        }
+      ]
+    }
+  ],
+  "post_checkpoint_evidence_audit": "Completed after batch10: source hash/identity/fragment coverage/evidence presence checked; later direct publisher observations annotated without changing original source or adopting dictionary candidates."
+}

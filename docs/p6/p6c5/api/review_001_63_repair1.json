@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_63_repair1",
+  "request_hash": "2b4b5569167f7ca6b5d8313e8006c7540eb1434539f88f793e2b87ca605f8ee7",
+  "started_utc": "2026-11-13T08:22:08.416812+00:00",
+  "completed_utc": "2026-11-13T08:23:24.970219+00:00",
+  "elapsed_seconds": 76.563,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "aaf80ed7-74ef-45d9-8182-feedaab89c21",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3442,
+    "completion_tokens": 3774,
+    "total_tokens": 7216,
+    "prompt_tokens_details": {
+      "cached_tokens": 3328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3589
+    },
+    "prompt_cache_hit_tokens": 3328,
+    "prompt_cache_miss_tokens": 114
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ab5e345f2c28\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"源三个动词义均被候选覆盖：s001 分用于核心1（警觉/兴奋）与核心2（情绪/食欲激起），s002 经 v00795741/v01648064 有条件支持为促进/推动，s003 与 s001 合并于情绪激发。外部促使义已作为未采用候选列出，未冒充原文。证据 v00504245 较宽但兼容核心1；“使迅速发生”与促进存在边界，但候选已标有条件支持且另有 v00795741 支撑，不构成确认错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_008_repair1",
+  "kind": "verify",
+  "request_hash": "6ded445b660f3807afc0debdcaea339253774d08a0918678328e956c4c2f08fc",
+  "input_ids": [
+    "SG25-c3ccedf562d9",
+    "SG25-2f1fd9f37ede"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a921fa99-76ad-4068-9cc6-34aea2b97c95",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c3ccedf562d9\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"core:2 显示“粗糙的”，但其证据 wn31:s:02237329 只支持“制作粗糙/不精巧”；原中文形容词范围未限定，可能还包括表面质地或概括性粗糙。当前层级未明确保留或暂存该更宽范围，故候选覆盖相对原文字面偏窄。\",\n          \"evidence_ids\": [\"wn31:s:02237329\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1“未经加工的”对应 wn31:s:00418723 与 wn31:a:01960289 的未处理/未精炼义，词性与对象范围一致。\",\n          \"evidence_ids\": [\"wn31:s:00418723\", \"wn31:a:01960289\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:1 名词“原油”对应 wn31:n:15005138 的 dark oil consisting mainly of hydrocarbons，词性与对象一致。\",\n          \"evidence_ids\": [\"wn31:n:15005138\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001“粗糙的”是否包含表面触感粗糙或‘未加修饰/粗略’等义；现有证据只支持制作粗糙，来源范围未能在当前证据内确定。\"\n      ],\n      \"preferences\": [\n        \"名词“原油”后置于扩展层属于教学排序选择，本身不改变语义覆盖。\"\n      ],\n      \"note\": \"三个源义项均已在现有层级有对应；未发现由已提供证据支持且被遗漏的具体用途。s001 的更宽范围疑点留为 unresolved，不判为确证缺陷。\"\n    },\n    {\n      \"id\": \"SG25-2f1fd9f37ede\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1“培养”对应 wn31:v:01746607 的 foster the growth of，词性一致；注释限于能力/品质属于常见对象范围，未改变原文基本义。\",\n          \"evidence_ids\": [\"wn31:v:01746607\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"extended:1 显示“教育”，但注释与证据 wn31:v:02393545 实际限定为培养品味/判断力；原中文“教育”字面更宽，可能包含一般学校教育，当前未保留或暂存该更宽范围。\",\n          \"evidence_ids\": [\"wn31:v:02393545\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s003“磨炼”处于 held，没有组覆盖；现有词典证据只支持培养/陶冶品味，不能覆盖一般意志磨炼，来源范围与英语对应均待核。\",\n          \"evidence_ids\": []\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002“教育”在源材料中的具体范围是否为修养/鉴赏力培养，而非一般学校教育；英语证据仅支持前者。\",\n        \"s003“磨炼”是否在英语中有可对应的独立义项；当前暂存，需进一步证据。\"\n      ],\n      \"preferences\": [\n        \"耕作义候选未映射到原始中文义项，符合源词条的人类发展/教育语境。\"\n      ],\n      \"note\": \"s001 覆盖充分；s002 范围疑点未达确证，因为缺少一般教育义的英语证据；s003 暂存为适当处理，未发现由已提供证据支持的确认缺口。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6189,
+    "completion_tokens": 6151,
+    "total_tokens": 12340,
+    "prompt_tokens_details": {
+      "cached_tokens": 4736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5262
+    },
+    "prompt_cache_hit_tokens": 4736,
+    "prompt_cache_miss_tokens": 1453
+  },
+  "started_utc": "2026-11-13T09:58:18.597779+00:00",
+  "completed_utc": "2026-11-13T09:59:44.646782+00:00",
+  "elapsed_seconds": 86.047,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

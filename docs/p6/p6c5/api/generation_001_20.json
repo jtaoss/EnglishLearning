@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_20",
+  "request_hash": "ec3774e21c3721f87b503f85b4f86fc4876b52b57b3ed721e8b03d3e0a05ff38",
+  "started_utc": "2026-11-13T08:14:59.035814+00:00",
+  "completed_utc": "2026-11-13T08:15:27.327502+00:00",
+  "elapsed_seconds": 28.282,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "3f6bbf80-58ef-417c-aac1-a1016f0e94db",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3492,
+    "completion_tokens": 4487,
+    "total_tokens": 7979,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3854
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 676
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-22b090dd46c7\",\"core\":[[\"吸收（液体、气体、光等）\",\"动词\",[\"s001\"],[\"wn31:v:01541851\",\"wn31:v:02771422\"],\"物质或能量被摄入、吸入；如海绵吸水、物体吸收光/物质\"],[\"吸收（知识、信息等）；领会\",\"动词\",[\"s001\"],[\"wn31:v:00603650\"],\"心智层面的摄取与掌握，对象常为知识、信息、观念\"],[\"使并入；同化（人、机构等）\",\"动词\",[\"s001\"],[\"wn31:v:00396604\",\"wn31:v:01473153\"],\"使成为更大整体的一部分，或使群体/成分融入社会、组织\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"原片段“吸收”可兼容物理摄入、知识/信息摄取、并入同化三种有证据用法；对象和语义方向不同，故显式拆分，不视为三个原文ID。\"},\"additions\":[[\"使全神贯注；占据全部注意力\",\"动词\",[\"wn31:v:00601765\"],\"词典有独立证据，但原中文“吸收”未明确表达此使动/心理用法，列为外部候选。\"],[\"承担（费用、成本等）\",\"动词\",[\"wn31:v:02221342\"],\"词典有财务/费用承担义，原中文“吸收”未明确；作为候选保留，不并入核心。\"]],\"reason\":\"首次记忆先抓物理“吸收”和知识吸收，再补并入/同化；三者对象不同，保留分列以免把“吸收知识”与“吸收液体”混为同一用法。“使全神贯注/承担费用”仅作外部候选。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"“使全神贯注/承担费用”是词典有证据的重要外部用法，仅列候选，尚未并入原文核心。\"]]},{\"id\":\"SG25-542bce4a780c\",\"core\":[[\"哲学家；哲学研究者\",\"名词\",[\"s001\"],[\"wn31:n:10443334\"],\"哲学学科专家，直接对应原文“哲学家”\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"哲人；智者\",\"名词\",[\"wn31:n:10445710\"],\"词典另有“明智冷静、以理性生活的人”义，原中文“哲学家”通常指学科专家，未明确采用；列为外部候选。\"]],\"reason\":\"先记学科专家这一直接对应“哲学家”的核心义；“智者/哲人”是词典另义但原中文不明确，放候选而不是挤入核心。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"“哲人/智者”义为外部候选，原中文核心只覆盖学科专家。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

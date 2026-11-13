@@ -1,0 +1,1587 @@
+{
+  "part": 3,
+  "record_count": 15,
+  "input_sha256": "fcaa13db259e16251780ada08a7231cfc2799dbf5079580de80f92dff24f96cd",
+  "records": [
+    {
+      "stable_id": "SG25-b1f51a511f1d",
+      "headword": "red",
+      "source_hash": "2eda063eaca12e7d40c240033ecfb3e4b162b8780f4188d1b99e6d6e49a0b075",
+      "original_meaning_zh": "红色；红色的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "红色",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "红色的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "红色",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:04969961"
+          ],
+          "reason": "颜色本身可作为所谈论的对象。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "红色的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:00382159"
+          ],
+          "reason": "修饰呈红色的物体。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Info",
+          "type": "逐义词性缺失",
+          "observation": "原文两个片段均未标注逐义词性；依据颜色名词与描写颜色的形容词分别建议词性。",
+          "evidence_ids": [
+            "wn31:n:04969961",
+            "wn31:s:00382159"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "颜色名称与描写物体颜色的形容词用途都属于基本用法。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04969961",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "red color or pigment; the chromatic color resembling the hue of blood",
+          "selected_headwords": [
+            "red"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00382159",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of a color at the end of the color spectrum (next to orange); resembling the color of blood or cherries or tomatoes or rubies",
+          "selected_headwords": [
+            "red"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-ac7f39a1e0b7",
+      "headword": "logical",
+      "source_hash": "74c2f423e19e0c5ca400d831ba26a672eb5d75357c975ce8b2adc51acb459d80",
+      "original_meaning_zh": "合乎逻辑的；有逻辑的；有逻辑头脑的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "合乎逻辑的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "有逻辑的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "有逻辑头脑的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 11,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "合乎逻辑的，有条理的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:00466504",
+            "wn31:a:01432984",
+            "wn31:s:02509114"
+          ],
+          "reason": "适用于有合理关系或以已知条件为基础的推理及结论。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "有逻辑头脑的，善于推理的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:01932107"
+          ],
+          "reason": "修饰人时重在清晰一贯地思考表达的能力。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "先识别论证是否合理，再认出能进行有条理推理的人。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00466504",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "marked by an orderly, logical, and aesthetically consistent relation of parts; \"a coherent argument\"",
+          "selected_headwords": [
+            "logical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:01432984",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "capable of or reflecting the capability for correct and valid reasoning; \"a logical mind\"",
+          "selected_headwords": [
+            "logical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:02509114",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "based on known statements or events or conditions; \"rain was a logical expectation, given the time of year\"",
+          "selected_headwords": [
+            "logical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01932107",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "capable of thinking and expressing yourself in a clear and consistent manner; \"a lucid thinker\"; \"she was more coherent than she had been just after the accident\"",
+          "selected_headwords": [
+            "logical"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-65ee89092efb",
+      "headword": "optimistic",
+      "source_hash": "17eee24dc99b276457ed8e135bca3aaed12b3c041f9e94625fc018d1b8ee1950",
+      "original_meaning_zh": "乐观的；乐观主义的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "乐观的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "乐观主义的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "乐观的，持乐观态度的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:01668036",
+            "wn31:s:01823412"
+          ],
+          "reason": "两项都可描述抱有良好预期；“乐观主义的”通常不必解作独立学说义。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "把预期事情会往好处发展的态度作为记忆点。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:01668036",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "expecting the best in this best of all possible worlds; \"in an optimistic mood\"; \"optimistic plans\"; \"took an optimistic view\"",
+          "selected_headwords": [
+            "optimistic"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01823412",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "expecting the best; \"an affirmative outlook\"",
+          "selected_headwords": [
+            "optimistic"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-cec9111de36d",
+      "headword": "approach",
+      "source_hash": "d0c85bda9c8a90fa5bc62fad781f5b881ab54cb73b95969c770b4e2ddcc9f97b",
+      "original_meaning_zh": "动词：接近，着手处理；名词：方法，接近",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "接近",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "着手处理",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "方法",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "接近",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "接近，走近",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:02057865"
+          ],
+          "reason": "由远而近地移动。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "着手处理",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02444146"
+          ],
+          "reason": "以问题或任务作宾语时表示开始处理。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "方法，处理方式",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:00942956"
+          ],
+          "reason": "强调处理问题所采取的思路或行动。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "接近，靠近这一过程",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:n:00281697",
+            "wn31:n:07325125"
+          ],
+          "reason": "语法上把靠近理解成一个过程或事件。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "空间上的靠近、对问题着手、解决问题的方法和靠近这一动作都能独立入句。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:02057865",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "move towards; \"We were approaching our destination\"; \"They are drawing near\"; \"The enemy army came nearer and nearer\"",
+          "selected_headwords": [
+            "approach"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02444146",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "begin to deal with; \"approach a task\"; \"go about a difficult problem\"; \"approach a new project\"",
+          "selected_headwords": [
+            "approach"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00942956",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "ideas or actions intended to deal with a problem or situation; \"his approach to every problem is to draw up a list of pros and cons\"; \"an attack on inflation\"; \"his plan of attack was misguided\"",
+          "selected_headwords": [
+            "approach"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00281697",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of drawing spatially closer to something; \"the hunter's approach scattered the geese\"",
+          "selected_headwords": [
+            "approach"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07325125",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the event of one object coming closer to another",
+          "selected_headwords": [
+            "approach"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-f44e85c4b8ea",
+      "headword": "analysis",
+      "source_hash": "ae7b1e56f91c4e89d60bbb31f47aa9dc2279219c96a33899942f1807548b778a",
+      "original_meaning_zh": "分析",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "分析",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "分析",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00635519",
+            "wn31:n:05780664"
+          ],
+          "reason": "可指调查对象组成的过程或方法。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "分开考察一件事的组成及其关系即可解释原文。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00635519",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an investigation of the component parts of a whole and their relations in making up the whole",
+          "selected_headwords": [
+            "analysis"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:05780664",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the abstract separation of a whole into its constituent parts in order to study the parts and their relations",
+          "selected_headwords": [
+            "analysis"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-c1bb3894443f",
+      "headword": "committee",
+      "source_hash": "49a1ec2a5013c14575ca1b86af18999e3a54693a342a9c5e6b1d9b7d375a745d",
+      "original_meaning_zh": "委员会；考察团；调查团",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "委员会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "考察团",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "调查团",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "委员会",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:08341444",
+            "wn31:n:08342616"
+          ],
+          "reason": "成员组成集体，以处理事项或推动某项事业。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s002",
+          "text": "考察团",
+          "reason": "考察团的出访或考察性质不能从单独的 committee 推出。"
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "调查团",
+          "reason": "调查团可能采取委员会形式，需有调查任务这一语境。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "专门任务误作通义",
+          "observation": "原文未说明考察或调查职能；词典的受委托团体定义允许具体语境，不能断定所有委员会都执行这些任务。",
+          "evidence_ids": [
+            "wn31:n:08341444"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "按职责组成的小组这一概念可以解释“委员会”；考察或调查是部分小组的任务。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:08341444",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a special group delegated to consider some matter; \"a committee is a group that keeps minutes and loses hours\" - Milton Berle",
+          "selected_headwords": [
+            "committee"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08342616",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a self-constituted organization to promote something",
+          "selected_headwords": [
+            "committee"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "是否出自 visiting committee、investigating committee 一类限定表达？"
+      ],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-4932c716f725",
+      "headword": "indicate",
+      "source_hash": "670dfc910f84b86223e1c995c127394484d50f6a64be1a847e7adebbe2f61600",
+      "original_meaning_zh": "指；指出；指示",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "指",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "指出",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "指示",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "指向，指出（地点或对象）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00925764"
+          ],
+          "reason": "可用动作或其他方式指出一个具体对象。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "指示、显示（某种情况）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00774685",
+            "wn31:v:00923271"
+          ],
+          "reason": "主语可以是迹象、症状或数据，表示这些信息指向某一情形。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "指出，简要说明",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00929986"
+          ],
+          "reason": "“指出”还可指用言语或文字陈述，保留原片段另列这种用法。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "中文提示多解",
+          "observation": "“指示”还可能被理解为命令；信号指示与指出位置均宜由对象消歧。",
+          "evidence_ids": [
+            "wn31:v:00774685",
+            "wn31:v:00923271",
+            "wn31:v:00925764"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "手势或标志指出对象与信号传达信息的方式不同。“指示”尤需排除命令式理解。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00925764",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "indicate a place, direction, person, or thing; either spatially or figuratively; \"I showed the customer the glove section\"; \"He pointed to the empty parking space\"; \"he indicated his opponents\"",
+          "selected_headwords": [
+            "indicate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00774685",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "give evidence of; \"The evidence argues for your claim\"; \"The results indicate the need for more work\"",
+          "selected_headwords": [
+            "indicate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00923271",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be a signal for or a symptom of; \"These symptoms indicate a serious illness\"; \"Her behavior points to a severe neurosis\"; \"The economic indicators signal that the euro is undervalued\"",
+          "selected_headwords": [
+            "indicate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00929986",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "to state or express briefly; \"indicated his wishes in a letter\"",
+          "selected_headwords": [
+            "indicate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "interpretation": "AI语义拆解",
+          "reason": "中文“指出”可以是指向地点或对象，也可以是用言语陈述；分别引用指向和简述的动词义项。"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c90f436c6c08",
+      "headword": "tangible",
+      "source_hash": "54346ba6f25f0ae11de8061cf0ad9e90e24005d944d428bb2cb19db493141a45",
+      "original_meaning_zh": "有形的；可触知的；明确的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "有形的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "可触知的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "明确的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "有形的，可触知的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:01721570",
+            "wn31:a:02400023",
+            "wn31:a:02400702"
+          ],
+          "reason": "二者都能指有物质形态或可以触及。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "具体可证实的（如成果、证据）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:00013681"
+          ],
+          "reason": "只有“明确的”指实际可确认时，才接近此义。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "译文过宽",
+          "observation": "仅指说明清楚的“明确”不保证有可验证的事实或成果。",
+          "evidence_ids": [
+            "wn31:s:00013681"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "可触知的实物和能切实感受到的成果分别需要具体搭配。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:01721570",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "capable of being perceived; especially capable of being handled or touched or felt; \"a barely palpable dust\"; \"felt sudden anger in a palpable wave\"; \"the air was warm and close--palpable as cotton\"; \"a palpable lie\"",
+          "selected_headwords": [
+            "tangible"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02400023",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "perceptible by the senses especially the sense of touch; \"skin with a tangible roughness\"",
+          "selected_headwords": [
+            "tangible"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02400702",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(of especially business assets) having physical substance and intrinsic monetary value; \"tangible property like real estate\"; \"tangible assets such as machinery\"",
+          "selected_headwords": [
+            "tangible"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00013681",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "capable of being treated as fact; \"tangible evidence\"; \"his brief time as Prime Minister brought few real benefits to the poor\"",
+          "selected_headwords": [
+            "tangible"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-5304378d0078",
+      "headword": "suicide",
+      "source_hash": "56f095be965971ad0479f8a98e7d308f7822b5668673d5289e73b16e22bc4d95",
+      "original_meaning_zh": "自我毁灭；自杀；自毁",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "自我毁灭",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "自杀",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "自毁",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "自杀",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00223352",
+            "mw:suicide"
+          ],
+          "reason": "字面义涉及人有意结束自己的生命。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（比喻）自我毁灭，自毁前途",
+          "source_sense_ids": [
+            "s001",
+            "s003"
+          ],
+          "evidence_ids": [
+            "mw:suicide"
+          ],
+          "reason": "两个说法都可指某项行动断送自己的成功或利益；限定比喻以免泛化。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "比喻标记缺失",
+          "observation": "源内两个泛指自毁的片段可由比喻义解释，宜标明与字面义的界限。",
+          "evidence_ids": [
+            "mw:suicide",
+            "wn31:n:00223352"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先认出有意结束自己生命的字面义，再理解例如政治前途自毁的比喻。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00223352",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of killing yourself; \"it is a crime to commit suicide\"",
+          "selected_headwords": [
+            "suicide"
+          ]
+        },
+        {
+          "evidence_id": "mw:suicide",
+          "publisher": "Merriam-Webster",
+          "source": "https://www.merriam-webster.com/dictionary/suicide",
+          "observation_zh": "该名词亦可比喻断送自己前途或利益的行为。",
+          "selected_headwords": [
+            "suicide"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-73e4c51456c2",
+      "headword": "electronic",
+      "source_hash": "32eabeb8f282f1c59686041b760d42861748cf09a8d12495092136f28d7b784f",
+      "original_meaning_zh": "电子的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "电子的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "电子的，电子技术的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:02729233"
+          ],
+          "reason": "描述与电子技术或电子设备有关的性质。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "电子的（与电子这种粒子有关）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:02729455"
+          ],
+          "reason": "物理语境以粒子为对象；原译同样可以表达此义。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "日常设备语境先记与电子技术相关，理解元件和装置的修饰关系。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:02729233",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of or relating to electronics; concerned with or using devices that operate on principles governing the behavior of electrons; \"electronic devices\"",
+          "selected_headwords": [
+            "electronic"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02729455",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of or concerned with electrons; \"electronic energy\"",
+          "selected_headwords": [
+            "electronic"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "interpretation": "AI语义拆解",
+          "reason": "同一中文片段可修饰电子设备和物理学中的电子；两种形容词定义各自支持一个语境。"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-def696de03d9",
+      "headword": "occur",
+      "source_hash": "dd1653bfddddea3fe03a5fc1469152aa16fffe5c86d6ca920c7f266fdd5536a9",
+      "original_meaning_zh": "发生；碰巧",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "发生",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "碰巧",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "发生",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00340744"
+          ],
+          "reason": "事件发生即可，无须碰巧。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s002",
+          "text": "碰巧",
+          "reason": "“碰巧”通常强调偶然或凑巧；原文未提供能还原该语气的句子。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（想法）浮现，被某人想到（occur to）",
+          "evidence_ids": [
+            "wn31:v:00725311"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "存在于，见于",
+          "evidence_ids": [
+            "wn31:v:02618403"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "附加偶然性",
+          "observation": "普通发生义并无偶然条件；“碰巧”是否属具体句子的意译待判。",
+          "evidence_ids": [
+            "wn31:v:00340744"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "发生是事件动词，一般不附加偶然性；突然想到的固定构式另列补义。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00340744",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "come to pass; \"What is happening?\"; \"The meeting took place off without an incidence\"; \"Nothing occurred that seemed important\"",
+          "selected_headwords": [
+            "occur"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00725311",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "come to one's mind; suggest itself; \"It occurred to me that we should hire another secretary\"; \"A great idea then came to her\"",
+          "selected_headwords": [
+            "occur"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02618403",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "to be found to exist; \"sexism occurs in many workplaces\"; \"precious stones occur in a large area in Brazil\"",
+          "selected_headwords": [
+            "occur"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "原句是否表达巧合，还是与 happen to 的译法混淆？"
+      ],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-fc613b4dfd67",
+      "headword": "master",
+      "source_hash": "be4d855ca54858decbc7eba4e414770fd7bbf1613238bbd7a6dd8dd9f79a2b5c",
+      "original_meaning_zh": "名词：主人，大师，硕士；动词：掌握",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "主人",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "大师",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "硕士",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "掌握",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "主人，掌控者",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:10408139"
+          ],
+          "reason": "指有权支配他人者，能解释特定人际关系中的主人。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "大师，能手",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:10299827",
+            "wn31:n:10318149"
+          ],
+          "reason": "以精湛技艺或专业资历为判别特征。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "掌握，精通",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:00598780",
+            "wn31:v:00599029"
+          ],
+          "reason": "表示对知识有充分理解或对技能达到熟练程度。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "硕士（学位获得者）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:10318465"
+          ],
+          "reason": "学历语境中可指获得硕士学位的人。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "人际支配、专长和学位是不同名词概念，动词“掌握”关系到学习技能。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10408139",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a person who has general authority over others",
+          "selected_headwords": [
+            "master"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10299827",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an artist of consummate skill; \"a master of the violin\"; \"one of the old masters\"",
+          "selected_headwords": [
+            "master"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10318149",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an authority qualified to teach apprentices",
+          "selected_headwords": [
+            "master"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10318465",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "someone who holds a master's degree from academic institution",
+          "selected_headwords": [
+            "master"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00598780",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have a firm understanding or knowledge of; be on top of; \"Do you control these data?\"",
+          "selected_headwords": [
+            "master"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00599029",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be or become completely proficient or skilled in; \"She mastered Japanese in less than two years\"",
+          "selected_headwords": [
+            "master"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-ecd1378bc9dc",
+      "headword": "proposal",
+      "source_hash": "e1997915bcf28aa674bd6a55409039d5c3ba673d9e2c2af26fa67ce22d78c252",
+      "original_meaning_zh": "提议；建议；求婚",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "提议",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "建议",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "求婚",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "提议，建议",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07176080",
+            "wn31:n:07176845"
+          ],
+          "reason": "可指提出某项方案或所提的内容。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "求婚",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:07176392"
+          ],
+          "reason": "以建立婚姻关系为目标的请求。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "建议的内容和婚姻请求有不同交际目的，不能只保留中文近义词。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07176080",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of making a proposal; \"they listened to her proposal\"",
+          "selected_headwords": [
+            "proposal"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07176845",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "something proposed (such as a plan or assumption)",
+          "selected_headwords": [
+            "proposal"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07176392",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an offer of marriage",
+          "selected_headwords": [
+            "proposal"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-948fe603f61d",
+      "headword": "client",
+      "source_hash": "c70beff1367e1f55c498c7d7fe9e85520709a339f610acb1fa02906ac8191226",
+      "original_meaning_zh": "主顾；委托人；客户",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "主顾",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "委托人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "客户",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "客户，主顾",
+          "source_sense_ids": [
+            "s001",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:10004189"
+          ],
+          "reason": "指接受或购买服务的人。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "委托人（如律师的当事人）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:10004605"
+          ],
+          "reason": "专业服务语境强调谁委托专业人士代办事务。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "客户端计算机",
+          "evidence_ids": [
+            "wn31:n:03832647"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "客户关系与专业代理关系相关，但委托人与受托人的区分值得明示。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10004189",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "someone who pays for goods or services",
+          "selected_headwords": [
+            "client"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10004605",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a person who seeks the advice of a lawyer",
+          "selected_headwords": [
+            "client"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:03832647",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(computer science) any computer that is hooked up to a computer network",
+          "selected_headwords": [
+            "client"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-26dd7517f5ec",
+      "headword": "crucial",
+      "source_hash": "d718be846ebeb2941da790cdd15cf779f549aa3c7bc1d7dc0c28879310839db7",
+      "original_meaning_zh": "决定性的；本质的；非常重要的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "决定性的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "本质的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "非常重要的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "至关重要的，决定性的",
+          "source_sense_ids": [
+            "s001",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:a:00658802",
+            "wn31:s:01279260",
+            "wn31:s:01491306"
+          ],
+          "reason": "重在对结果极为重要；是否真正决定结果取决于语境。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s002",
+          "text": "本质的",
+          "reason": "“本质的”通常说明根本性质，而关键性说明对某事的重要程度。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "义轴偏移",
+          "observation": "材料缺少能把“本质的”理解成“极其重要的”的搭配，需查原例。",
+          "evidence_ids": [
+            "wn31:a:00658802",
+            "wn31:s:01279260"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "先记重要到影响结果，避免把谈事物本身性质的“本质”混入。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00658802",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of extreme importance; vital to the resolution of a crisis; \"a crucial moment in his career\"; \"a crucial election\"; \"a crucial issue for women\"",
+          "selected_headwords": [
+            "crucial"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01279260",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of the greatest importance; \"the all-important subject of disarmament\"; \"crucial information\"; \"in chess cool nerves are of the essence\"",
+          "selected_headwords": [
+            "crucial"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01491306",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "having crucial relevance; \"crucial to the case\"; \"relevant testimony\"",
+          "selected_headwords": [
+            "crucial"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "原文有无能支持“本质的”这一译法的特定语境？"
+      ],
+      "ai_semantic_splits": []
+    }
+  ]
+}

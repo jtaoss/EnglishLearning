@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_59",
+  "request_hash": "40459e97b65a647fb9956b8b84fb791abe6f1c56a811d39bb4ed5490fb880d59",
+  "started_utc": "2026-11-13T08:16:49.841693+00:00",
+  "completed_utc": "2026-11-13T08:17:26.434737+00:00",
+  "elapsed_seconds": 36.594,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ec39e822-191d-4310-8d94-a8e68ff68c95",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2979,
+    "completion_tokens": 2264,
+    "total_tokens": 5243,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1270
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 931
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-cac787df74af\",\"word\":\"consist\",\"pos\":\"动词\",\"raw\":\"由……组成；在于\",\"usage_note\":\"\",\"senses\":[{\"source_sense_id\":\"s001\",\"text\":\"由……组成\",\"part_of_speech\":\"动词\",\"pos_evidence\":\"single_pos_field\",\"start\":0,\"end\":5},{\"source_sense_id\":\"s002\",\"text\":\"在于\",\"part_of_speech\":\"动词\",\"pos_evidence\":\"single_pos_field\",\"start\":6,\"end\":8}],\"evidence\":[{\"id\":\"wn31:v:02639437\",\"pos\":\"v\",\"definition\":\"be composed of; \\\"The land he conquered comprised several provinces\\\"; \\\"What does this dish consist of?\\\"\"},{\"id\":\"wn31:v:02659476\",\"pos\":\"v\",\"definition\":\"originate (in); \\\"The problems dwell in the social injustices in this country\\\"\"},{\"id\":\"wn31:v:02664128\",\"pos\":\"v\",\"definition\":\"be consistent in form, tenor, or character; be congruous; \\\"Desires are to be satisfied only so far as consists with an approved end\\\"\"},{\"id\":\"wn31:v:02756729\",\"pos\":\"v\",\"definition\":\"have its essential character; be comprised or contained in; be embodied in; \\\"The payment consists in food\\\"; \\\"What does love consist in?\\\"\"}],\"review_role\":\"targeted_risk\",\"candidate\":{\"core_meanings\":[{\"sense_group_id\":\"SG25-cac787df74af:p6c5:core_meanings:1\",\"display_zh\":\"由……组成；由……构成\",\"part_of_speech\":\"动词\",\"source_sense_ids\":[\"s001\"],\"evidence_ids\":[\"wn31:v:02639437\"],\"usage_note\":\"整体由若干部分组成；对应 consist of。\",\"origin\":\"AI_V4_1_source_derived_candidate\",\"source_subsenses\":[{\"source_sense_id\":\"s001\",\"original_gloss\":\"由……组成\",\"original_pos\":\"动词\",\"original_pos_evidence\":\"single_pos_field\",\"evidence_ids\":[\"wn31:v:02639437\"]}]},{\"sense_group_id\":\"SG25-cac787df74af:p6c5:core_meanings:2\",\"display_zh\":\"在于；本质是；存在于\",\"part_of_speech\":\"动词\",\"source_sense_ids\":[\"s002\"],\"evidence_ids\":[\"wn31:v:02756729\",\"wn31:v:02659476\"],\"usage_note\":\"说明本质、内容或根源所在；对应 consist in，并兼容“originate in”的来源义。\",\"origin\":\"AI_V4_1_source_derived_candidate\",\"source_subsenses\":[{\"source_sense_id\":\"s002\",\"original_gloss\":\"在于\",\"original_pos\":\"动词\",\"original_pos_evidence\":\"single_pos_field\",\"evidence_ids\":[\"wn31:v:02756729\",\"wn31:v:02659476\"]}]}],\"extended_meanings\":[],\"other_meanings\":[],\"reserved_original_items\":[],\"dictionary_additions\":[{\"candidate_id\":\"SG25-cac787df74af:p6c5:addition:1\",\"meaning_zh\":\"（与……）一致；相符\",\"part_of_speech\":\"动词\",\"source_sense_ids\":[],\"evidence_ids\":[\"wn31:v:02664128\"],\"reason\":\"原中文未表达“consist with”的相容义；属正式或较少用搭配，仅列候选。\",\"status\":\"AI_candidate_not_adopted\",\"human_approved\":false,\"auto_promoted_to_core\":false,\"priority_basis\":\"AI_teaching_suggestion_not_measured_frequency\"}],\"selection_reason\":\"源两个片段分别对应整体组成和本质/根源所在；consist of 与 consist in 的对象和句式不同，不能合并。consist with 未在原中文出现，只作候选。\",\"source_POS_coverage\":{\"动词\":\"source_derived_use_represented\"}},\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[\"保持 consist of 与 consist in 的分组，并提示搭配对象差异；consist with 仅作为扩展候选不进入核心。\"],\"note\":\"两个源义分别映射到精确的 WordNet 义项：s001 对应 be composed of，s002 对应 originate (in) 与 have essential character/be embodied in，词性均为动词，对象与方向正确。未发现错误翻译、POS 错误、原义遗漏或错误合并。未在原文出现的 consist with 已作为 dictionary_additions 明确标记为未采用候选，处理符合双轨规则。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

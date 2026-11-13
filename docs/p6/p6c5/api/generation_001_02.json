@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_02",
+  "request_hash": "f40c8910081d664a62a7e2bd3c4639b775e32baf20f52fe19bd294a92417d873",
+  "started_utc": "2026-11-13T08:14:58.551188+00:00",
+  "completed_utc": "2026-11-13T08:15:39.266221+00:00",
+  "elapsed_seconds": 40.719,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a9b1978b-6b8e-4f3f-866d-b8d3341bfb0c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3459,
+    "completion_tokens": 6155,
+    "total_tokens": 9614,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5604
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 643
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-46023b2bfb8b\",\"word\":\"derive\",\"core\":[[\"获得；从…得到\",\"动词\",[\"s001\"],[\"wn31:v:02297086\"],\"及物用法：从某来源获得某物，如 derive pleasure from。\"],[\"源自；来自\",\"动词\",[\"s002\"],[\"wn31:v:00252677\"],\"不及物用法：说明名称、事物等的来源，come from。\"],[\"推导出；经推论得出\",\"动词\",[\"s003\"],[\"wn31:v:00638236\"],\"逻辑/推理义，原文未列，作为外部候选单列。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"推导出；经推论得出\",\"动词\",[\"wn31:v:00638236\"],\"原文未列推理/逻辑义，词典有独立证据；仅作外部候选，不并入核心。\"]],\"reason\":\"先建立及物“从来源获得”与不及物“源自/来自”两个核心；推理义原文未列，保留为外部候选，避免把词典义偷渡进核心。\",\"flags\":[[\"Minor\",\"source_coverage_gap\",\"原中文未列“推理/推导”义，词典同词头有独立证据；已放入 additions 候选，未并入核心。\"]]},{\"id\":\"SG25-7688bd7c4272\",\"word\":\"satisfy\",\"core\":[[\"满足（需要、愿望等）\",\"动词\",[\"s001\"],[\"wn31:v:01185870\"],\"及物用法：填补需求、愿望，对象为 need/want 等。\"],[\"使满意；使感到满足\",\"动词\",[\"s001\"],[\"wn31:v:01820398\"],\"对象为人，使其满意或高兴；与“满足需求”对象不同。\"],[\"符合；达到（要求、期望）\",\"动词\",[\"s002\"],[\"wn31:v:02677669\",\"wn31:v:01185870\"],\"对象为要求、期望、条件，强调达到标准。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"同一“满足”分别覆盖满足需求/愿望（对象为需求）和使某人满意（对象为人），证据分别为 01185870 与 01820398，对象不同。\"},\"additions\":[],\"reason\":\"原“满足”按对象分为满足需求/愿望和使人满意，避免人物对象混同；“符合”另立为达到要求/期望。\",\"flags\":[]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

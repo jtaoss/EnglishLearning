@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_019",
+  "kind": "audit",
+  "request_hash": "2a6833e75437b416bfeb9216b59bc4983ae4de4a3ad6b0c3b646ab520f91e4ae",
+  "input_ids": [
+    "SG25-ec3d00212250",
+    "SG25-7fdd65bbaaa6",
+    "SG25-003c443ef278",
+    "SG25-0ec9f882d110",
+    "SG25-9f80a5e14017"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "0d3beed9-d11e-4a2f-a31d-a0194474dfec",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-ec3d00212250\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：形成心理图景的能力（想象力）\",\"relation\":\"语义等价\",\"reason\":\"原文“想象力”指形成心理图景的能力，核心组保留同一中文入口并注明为能力，未改写成具体想象物；wn31:n:05775730 直接支持该能力义。\",\"evidence_ids\":[\"wn31:n:05775730\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文仅“想象力”一个名词义，核心以“想象力”并注明为形成心理图景的能力；证据匹配，未把资源机智或具体想象物混入。\"},{\"id\":\"SG25-7fdd65bbaaa6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：在头脑中形成不在眼前的心理图景\",\"relation\":\"语义等价\",\"reason\":\"原文仅列“想象”一个动词义，核心保留“想象/心理图景”用法；wn31:v:01639939 直接支持形成不在场或不实之物的心理图像，词典 expect/suppose 义未冒充原文。\",\"evidence_ids\":[\"wn31:v:01639939\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文仅“想象”一个动词义，核心保留心理图景义；未把词典的猜想/料想义写成原文已确认内容。\"},{\"id\":\"SG25-003c443ef278\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：仿效、照着做\",\"relation\":\"语义等价\",\"reason\":\"原文“仿效”与核心“模仿；仿效”同义；wn31:v:01698158 支持复制/仿制，wn31:v:01746767 支持仿行为或样子。\",\"evidence_ids\":[\"wn31:v:01698158\",\"wn31:v:01746767\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：学别人的行为样子\",\"relation\":\"合理概括\",\"reason\":\"原文“学样”是口语化的模仿行为，核心用近义“模仿；仿效”概括，仍可追溯；wn31:v:01746767 支持学人行为或样子。\",\"evidence_ids\":[\"wn31:v:01746767\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：摹拟、模仿\",\"relation\":\"合理概括\",\"reason\":\"原文“摹拟”与“模仿”近义，核心合并为近义显示，动词方向未变；wn31:v:01698158 支持复制/摹拟。\",\"evidence_ids\":[\"wn31:v:01698158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三条中文近义均为动词，核心合并为“模仿；仿效”，三条 source_id 全部映射；复制与仿行为证据分别可查。\"},{\"id\":\"SG25-0ec9f882d110\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：智力的、涉及心智的\",\"relation\":\"语义等价\",\"reason\":\"原文形容词“智力的”与核心形容词组一致；wn31:s:01784888 支持“与心智相关或需要运用心智”，wn31:a:01933854 支持偏理智而非情绪。\",\"evidence_ids\":[\"wn31:s:01784888\",\"wn31:a:01933854\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：运用心智的人、知识分子\",\"relation\":\"语义等价\",\"reason\":\"原文名词“知识分子”与核心名词组一致；wn31:n:09644715 指创造性运用心智的人。\",\"evidence_ids\":[\"wn31:n:09644715\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文形容词/名词两义分开，核心1“智力的”与核心2“知识分子”分别对应原词性，证据匹配。\"},{\"id\":\"SG25-9f80a5e14017\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：智力、理解能力\",\"relation\":\"语义等价\",\"reason\":\"原文“智力”与核心第一入口一致；wn31:n:05625389 支持理解并从经验获益的能力。\",\"evidence_ids\":[\"wn31:n:05625389\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：情报、关于敌方或重要情况的秘密信息\",\"relation\":\"语义等价\",\"reason\":\"原文“情报”保留为核心第二入口；wn31:n:06655303 直接支持敌方秘密信息，wn31:n:06654787 为相邻广义信息证据但不改变中文入口锚点。\",\"evidence_ids\":[\"wn31:n:06655303\",\"wn31:n:06654787\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文“智力”与“情报”两个阅读入口均保留；情报义由敌方秘密信息证据锚定，未把情报机构/人员义混入。\"}]}",
+  "usage": {
+    "prompt_tokens": 4781,
+    "completion_tokens": 10008,
+    "total_tokens": 14789,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8697
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2861
+  },
+  "started_utc": "2026-11-13T09:43:09.089115+00:00",
+  "completed_utc": "2026-11-13T09:44:05.491578+00:00",
+  "elapsed_seconds": 56.407,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

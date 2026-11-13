@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_16",
+  "request_hash": "36d538ec5efc1809c57b5fdd6bef6f263ca006eb872d8907fb1f9ddc3ce76477",
+  "started_utc": "2026-11-13T08:14:58.873341+00:00",
+  "completed_utc": "2026-11-13T08:15:36.539528+00:00",
+  "elapsed_seconds": 37.671,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5d0c3ba0-bb87-492c-9553-db5f9fdd2ade",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3856,
+    "completion_tokens": 5805,
+    "total_tokens": 9661,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5084
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1040
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-3bb61db1bc03\",\"word\":\"severe\",\"pos\":\"形容词\",\"core\":[[\"严重的；重度的\",\"形容词\",[\"s001\"],[\"wn31:s:00654061\",\"wn31:s:01132864\",\"wn31:s:01516947\"],\"程度深或造成严重损害；可修饰病情、损伤、疼痛、局势等；不指纪律态度\"],[\"严厉的；严格的\",\"形容词\",[\"s002\"],[\"wn31:s:01304251\"],\"指纪律、判断或态度不宽恕、严格；对象为人、管教、态度\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"猛烈的；强烈的（打击/风力等）\",\"形容词\",[\"wn31:s:02330284\"],\"外部词典有‘very strong or vigorous’独立义，原文‘严重/严厉’未明确物理力度；候选待采用\"]],\"reason\":\"原文两个形容词片段分别对应‘程度严重’和‘纪律/态度严厉’，英语证据边界清楚，故分两组。‘猛烈/强烈’的物理力度义原文未明说，置外部候选。\",\"flags\":[[\"Info\",\"external_candidate_not_adopted\",\"additions 中的‘猛烈/强烈’仅为候选，未并入核心\"]]},{\"id\":\"SG25-9300b4d2567a\",\"word\":\"assign\",\"pos\":\"动词\",\"core\":[[\"委派；指派（任务/职位）\",\"动词\",[\"s002\"],[\"wn31:v:02396945\"],\"把任务或职位分配给某人；对象是人或任务\"],[\"指定；选定\",\"动词\",[\"s003\"],[\"wn31:v:00679602\"],\"为特定目的选定某人或某物；可接人做某事\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s001\",\"原文‘委托’偏‘托付/信任’，assign 的词典核心为分配/指派任务或职位；未找到直接表示‘托付’的证据，暂不并入核心，待核原文义。\"]],\"splits\":{},\"additions\":[[\"分配；分发（物品）\",\"动词\",[\"wn31:v:02233480\"],\"外部词典有 give out 义，原文未明确物品分配；候选待采用\"],[\"把…归因于；把…归于\",\"动词\",[\"wn31:v:00728262\"],\"外部词典有 attribute/credit to 义，原文未明确归因；候选待采用\"],[\"转让（权利/财产）\",\"动词\",[\"wn31:v:02233313\"],\"法律域‘transfer one's right to’，原文未含；仅作受限域候选\"]],\"reason\":\"原文‘委派’与‘指定’分别有任务分配和选定目的的证据，分两组；‘委托’偏托付，证据不直接，暂存；分配物品、归因、权利转让等作为外部候选。\",\"flags\":[[\"Major\",\"source_translation_uncertain\",\"s001‘委托’与 assign 的‘分配/指派’不完全等同，暂存待核，未强行并入\"],[\"Info\",\"restricted_domain_candidate\",\"additions 中‘转让（权利/财产）’属法律域候选，未采用\"],[\"Info\",\"external_candidate_not_adopted\",\"分配物品、归因、权利转让等外部候选未并入核心\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

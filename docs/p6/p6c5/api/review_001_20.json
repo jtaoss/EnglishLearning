@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_20",
+  "request_hash": "264f8dc7174029a2cd822a44709b718325746182e8637c5b235401a1db9fd9d2",
+  "started_utc": "2026-11-13T08:16:13.654598+00:00",
+  "completed_utc": "2026-11-13T08:17:05.558134+00:00",
+  "elapsed_seconds": 51.906,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "db8ff489-fed7-4ab7-b5db-1663cfc01efd",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3062,
+    "completion_tokens": 2684,
+    "total_tokens": 5746,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2468
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3062
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c152d5bbb379\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"Consider adding a note in core adjective that the cautious/moderate sense (conservative estimate) is distinct and common, but extended placement is acceptable.\",\n        \"Could provide example phrases in Chinese for the extended sense to reinforce object restriction.\"\n      ],\n      \"note\": \"Candidate covers both source POS: noun '保守主义者' and adjective '保守的' with appropriate WordNet evidence. Adjective core merges political/social resistance and conventionality under a broad Chinese gloss; this is acceptable given the source's single broad adjective gloss. Extended sense for 'conservative estimate' is supported by evidence and correctly placed as extended. No untraceable meanings; all evidence IDs used. Source scope gap (absence of additional adjective splits) is not a defect because source gloss is broad.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

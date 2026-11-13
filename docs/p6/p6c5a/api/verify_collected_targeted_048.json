@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_048",
+  "kind": "verify",
+  "request_hash": "e12bfa4044970d38841ed7c3642ade879e2987b97f518b65b7f787081f73455e",
+  "input_ids": [
+    "SG25-040ffd5925d4",
+    "SG25-a75c433ab2ae"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "31a0ee4f-547e-4148-bad0-eff46c5fbfa1",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-040ffd5925d4\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"source_pos\": \"名词\",\n          \"source_scope\": \"付款（支付行为，名词）\",\n          \"target_links\": [\"SG25-040ffd5925d4:p6c1:core:1\"],\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“付款”对应 the act of paying money，保留支付行为。\",\n          \"evidence_ids\": [\"wn31:n:01122769\"],\n          \"context_requirement\": \"none\",\n          \"residual_scope\": \"\",\n          \"counterexample\": \"\",\n          \"counterexample_evidence_ids\": [],\n          \"risk\": \"none\"\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"source_pos\": \"名词\",\n          \"source_scope\": \"报酬（酬劳/报偿，名词）\",\n          \"target_links\": [\"SG25-040ffd5925d4:p6c1:extended:1\"],\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组仅以“特定支付语境”保留报酬，链接证据是 sum of money paid，不是一般报酬；未涵盖 requital/reward 等非货币报偿。\",\n          \"evidence_ids\": [\"wn31:n:13299398\", \"web:payment\"],\n          \"context_requirement\": \"specific_payment_context\",\n          \"residual_scope\": \"一般非货币或更宽泛的“报酬/报偿”未保留；依赖未链接的 wn31:n:01237702 可部分支持。\",\n          \"counterexample\": \"payment 可指款项支付而非仅为报酬。\",\n          \"counterexample_evidence_ids\": [\"wn31:n:13299398\"],\n          \"risk\": \"pending\"\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"原文“报酬”是否限于金钱支付语境，还是包含非金钱报偿；英语证据 n:01237702 可支持 requital，但未被采用，需要来源范围待核。\"\n      ],\n      \"preferences\": [\n        \"可在核心或扩展添加‘付款的款项’义，但属于词典补充，非来源必需。\"\n      ],\n      \"note\": \"核心覆盖付款行为；扩展对‘报酬’施加支付语境限制，证据仅覆盖款项支付，一般报酬义待核。\"\n    },\n    {\n      \"id\": \"SG25-a75c433ab2ae\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"source_pos\": \"名词\",\n          \"source_scope\": \"定居点（居住地，名词）\",\n          \"target_links\": [\"SG25-a75c433ab2ae:p6c1:extended:2\"],\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展“定居点”对应 area where a group of families live together，保留地点义。\",\n          \"evidence_ids\": [\"wn31:n:08690300\"],\n          \"context_requirement\": \"none\",\n          \"residual_scope\": \"\",\n          \"counterexample\": \"\",\n          \"counterexample_evidence_ids\": [],\n          \"risk\": \"none\"\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"source_pos\": \"名词\",\n          \"source_scope\": \"解决（名词，未限定事项/争议）\",\n          \"target_links\": [\"SG25-a75c433ab2ae:p6c1:core:1\"],\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组将一般“解决”限定为争议/和解；证据 n:07192584 是 matter 的 conclusive resolution，未限定为争议，来源未许可该限制。\",\n          \"evidence_ids\": [\"wn31:n:07192584\"],\n          \"context_requirement\": \"unlicensed_limit\",\n          \"residual_scope\": \"非争议事项的解决未保留。\",\n          \"counterexample\": \"settlement of a matter（matter 不必是争议）\",\n          \"counterexample_evidence_ids\": [\"wn31:n:07192584\"],\n          \"risk\": \"suspected_Minor\"\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"source_pos\": \"名词\",\n          \"source_scope\": \"结算（款项支付/清偿，名词）\",\n          \"target_links\": [\"SG25-a75c433ab2ae:p6c1:extended:1\"],\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展“结算；清偿”对应所欠款项支付，保留财务结算义。\",\n          \"evidence_ids\": [\"web:settlement\"],\n          \"context_requirement\": \"none\",\n          \"residual_scope\": \"\",\n          \"counterexample\": \"\",\n          \"counterexample_evidence_ids\": [],\n          \"risk\": \"none\"\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_narrowed\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-a75c433ab2ae:p6c1:core:1\"],\n          \"evidence_ids\": [\"wn31:n:07192584\"],\n          \"reason\": \"原文只写“解决”，核心/注释限定为争议解决/和解；证据 n:07192584 说 matter 的 conclusive resolution，本身不限于争议，需保留一般事项解决或明确来源过宽。\",\n          \"counterexample\": \"settlement of a matter（matter 不必是争议）\",\n          \"repair_suggestion\": \"将核心注释改为‘事项/争议的解决或和解；不泛指任何问题的解决’，并记录‘一般解决’来源待核。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原文“解决”是否在来源中专门用于争议语境，需要原语境确认；目前一般事项解决未在候选层中保留。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"定居点与结算分别保留；核心‘解决’被限定为争议/和解，证据只支持事项解决，一般解决范围待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4324,
+    "completion_tokens": 6685,
+    "total_tokens": 11009,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5316
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2660
+  },
+  "started_utc": "2026-11-13T09:59:25.037355+00:00",
+  "completed_utc": "2026-11-13T10:00:51.478513+00:00",
+  "elapsed_seconds": 86.438,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

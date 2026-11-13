@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_014",
+  "kind": "audit",
+  "request_hash": "ed940e22c53522475deca24f95fb7426d6670ca5c5f381b5d98c6d38d4e683b7",
+  "input_ids": [
+    "SG25-27a0113e9ce8",
+    "SG25-5c17fb27fc50",
+    "SG25-199c48140d2b",
+    "SG25-403b8dc9df0d",
+    "SG25-c9113f82ea7d"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "88aafd0c-9d00-4d28-b45b-5b22d3ee1d8f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-27a0113e9ce8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：财富/财产\",\"relation\":\"语义等价\",\"reason\":\"核心组“财富”对应源义，证据 wn31:n:13392111 支持 fortune 作财富/繁荣的用法；未把运气义混入。\",\"evidence_ids\":[\"wn31:n:13392111\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：运气/机遇\",\"relation\":\"语义等价\",\"reason\":\"核心组“运气”对应源义，证据同时覆盖中性机遇与有利结果；未扩大到命运/人生境遇。\",\"evidence_ids\":[\"wn31:n:11438252\",\"wn31:n:11438574\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个名词源义分别保留在核心“财富”和“运气”，并有对应词典证据；词典中的命运/际遇义未作为来源义纳入。\"},{\"id\":\"SG25-5c17fb27fc50\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：使抽象事物增强\",\"relation\":\"合理概括\",\"reason\":\"核心组以“加强／加固”合并同一“使更强”框架，源义“加强”仍可追溯；make stronger 定义可覆盖抽象增强，混凝土例证仅为示例而非排他限制。\",\"evidence_ids\":[\"wn31:v:00222898\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：物理加固/使坚固\",\"relation\":\"合理概括\",\"reason\":\"源义“加固”保留在核心组中，证据 make stronger 及 concrete 例支持物理加固；同组并列抽象“加强”属同词另一源义且 note 已说明。\",\"evidence_ids\":[\"wn31:v:00222898\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个动词源义合并在一个核心组，但 note 明确保留物理加固与抽象加强差别；未发现外部新增义混入。\"},{\"id\":\"SG25-199c48140d2b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：敌对或竞争性对抗\",\"relation\":\"语义等价\",\"reason\":\"核心组“对抗”直接对应源义，证据 wn31:v:01081176 为 oppose in hostility or competition，词性和作用方向一致。\",\"evidence_ids\":[\"wn31:v:01081176\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心只保留原文“对抗”；“直面/处理不愉快问题”已列为未采用的词典补充，不进入来源层。\"},{\"id\":\"SG25-403b8dc9df0d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：频繁发生的\",\"relation\":\"语义等价\",\"reason\":\"核心组“频繁的”对应形容词源义，证据 wn31:a:01070231 支持短间隔或习惯性发生。\",\"evidence_ids\":[\"wn31:a:01070231\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：常去某地\",\"relation\":\"语义等价\",\"reason\":\"核心组“常去”对应动词源义，证据 wn31:v:01848373 为定期/频繁到访某地，词性及对象一致。\",\"evidence_ids\":[\"wn31:v:01848373\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词和动词源义分别保留在两个核心组，词性未混用；patronize 类词典义未作为来源义纳入。\"},{\"id\":\"SG25-c9113f82ea7d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"副词：不幸地/不如意地\",\"relation\":\"合理概括\",\"reason\":\"核心组将“不幸地／遗憾地”合为同一副词评价框架；证据 by bad luck / unfortunately 支持引入不如意结果，未加入正式频率判断。\",\"evidence_ids\":[\"wn31:r:00043179\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"副词：遗憾地/令人遗憾地\",\"relation\":\"合理概括\",\"reason\":\"源义“遗憾地”与“不幸地”在 unfortunately 的 regrettably 用法中接近，核心组合并未删除该源义；证据支持说话者评价不如意结果。\",\"evidence_ids\":[\"wn31:r:00043179\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个副词源义合并为一个核心组，属于近义评价框架的合理并列；没有遗漏独立源义。\"}]}",
+  "usage": {
+    "prompt_tokens": 4673,
+    "completion_tokens": 9783,
+    "total_tokens": 14456,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8544
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2753
+  },
+  "started_utc": "2026-11-13T09:43:09.484839+00:00",
+  "completed_utc": "2026-11-13T09:44:08.850989+00:00",
+  "elapsed_seconds": 59.359,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

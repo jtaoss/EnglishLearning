@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_017",
+  "kind": "verify",
+  "request_hash": "2dad37529fdd4708d206fa941ab314ea6105a6a32d5bd49565b7eaaaa1f285c7",
+  "input_ids": [
+    "SG25-ec3d00212250",
+    "SG25-14a62b33decf"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "bf853a77-c7e6-431e-993b-225ca4065c12",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ec3d00212250\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“想象力”为形成心理图景的能力，证据 wn31:n:05775730 定义完全匹配；未采纳其他 WordNet 义，因源范围不要求。\",\n          \"evidence_ids\": [\"wn31:n:05775730\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"候选核心组使用能力义，与源一致；未采用形成/创造想象过程义（wn31:n:05633248）及机敏应对义（wn31:n:05641705），未见来源支持，不构成缺口。\"\n    },\n    {\n      \"id\": \"SG25-14a62b33decf\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"名词“偏见”对应 partiality preventing objective consideration，词性与语义相符。\",\n          \"evidence_ids\": [\"wn31:n:06211643\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"动词“使产生偏见”对应 influence (somebody's) opinion in advance，使动方向与宾语一致。\",\n          \"evidence_ids\": [\"wn31:v:00682064\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源“使不利”字面未限定由偏见造成，而可用证据 wn31:v:02519408 仅覆盖 disadvantage by prejudice；目标文本保留宽义但英语证据不足，故无法判定完全覆盖。\",\n          \"evidence_ids\": [\"wn31:v:02519408\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源义 s003“使不利”可能宽于英文动词 prejudice 的“因偏见造成不利”（wn31:v:02519408），需补充更一般 harm/damage 义证据或标注来源范围待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词和使动动词映射适当；使不利义置于扩展层，但其证据仅支持由偏见造成的不利，来源字面更宽，应按待核处理，不自动判为生成器 Major。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3354,
+    "completion_tokens": 4408,
+    "total_tokens": 7762,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3848
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1690
+  },
+  "started_utc": "2026-11-13T09:56:49.140271+00:00",
+  "completed_utc": "2026-11-13T09:57:48.340264+00:00",
+  "elapsed_seconds": 59.187,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

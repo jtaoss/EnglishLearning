@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_04",
+  "request_hash": "9eb749610f496f26acd4e6d1d09b43af7a084830c6b6f5426086679079e586c5",
+  "started_utc": "2026-11-13T08:14:58.587370+00:00",
+  "completed_utc": "2026-11-13T08:15:12.352333+00:00",
+  "elapsed_seconds": 13.766,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "9f9f46b3-2495-47de-b163-961acda47134",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3490,
+    "completion_tokens": 2103,
+    "total_tokens": 5593,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1617
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 674
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e3f48726b892\",\"word\":\"scholar\",\"core\":[[\"学者；文人\",\"名词\",[\"s002\",\"s003\"],[\"wn31:n:10577282\"],\"learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法\"],[\"学习者\",\"名词\",[\"s001\"],[\"wn31:n:10271476\"],\"learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"奖学金获得者；领奖学金的学生\",\"名词\",[\"wn31:n:10578201\"],\"外部独立义：持有奖学金的学生，原文未表达\"]],\"reason\":\"首屏先给最常用的‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。\",\"flags\":[[\"Minor\",\"scope_gap\",\"‘学习者’对应义强调儿童学习者，中文泛指学习者，属宽义改述\"]]},{\"id\":\"SG25-db6e2c6375d0\",\"word\":\"conscious\",\"core\":[[\"有意识的；清醒的\",\"形容词\",[\"s001\"],[\"wn31:a:00572854\"],\"处于知觉/意识清醒状态\"],[\"知道的；意识到的（常与 of 连用）\",\"形容词\",[\"s002\"],[\"wn31:s:00192448\"],\"意识到某具体事实，常带 of 或 that 从句\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"有意的；刻意的\",\"形容词\",[\"wn31:s:01340720\"],\"deliberate/intentional 义，原文未明确表达\"]],\"reason\":\"‘有意识的’指清醒/知觉状态，‘知道的’指意识到某事实，二者句法搭配（是否带 of）与语义焦点不同，分列。\",\"flags\":[[\"Minor\",\"pos_or_sense_ambiguity\",\"中文‘有意识的’也可能读作‘有意的/刻意的’（deliberate），与 s001 存在歧义；故意的读法仅列候选待核\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

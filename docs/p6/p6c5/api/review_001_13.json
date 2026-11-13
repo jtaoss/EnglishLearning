@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_13",
+  "request_hash": "f5264190d07e4fd76731bddddd70c9c252106534b7e8957b2d29b7718570bedc",
+  "started_utc": "2026-11-13T08:16:13.484717+00:00",
+  "completed_utc": "2026-11-13T08:18:25.568717+00:00",
+  "elapsed_seconds": 132.078,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "fdefb2ca-748e-4bca-84d8-54bdd1dcb046",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3769,
+    "completion_tokens": 7298,
+    "total_tokens": 11067,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6502
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3769
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8cfc12e7f780\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"important_external_use_omitted\",\n          \"reason\": \"可靠的 WordNet synset wn31:v:02587760 提供重要的独立用法：担任辩护律师/代理诉讼（'Ms. Smith will represent the defendant'），原文未含，且候选的 dictionary_additions 未列出该候选，未显式跟踪。\",\n          \"evidence_ids\": [\n            \"wn31:v:02587760\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions\",\n          \"proposed_fix\": \"在 dictionary_additions 中增加候选：meaning_zh: \\\"担任…的辩护律师；代理（诉讼）\\\"，source_sense_ids: []，evidence_ids: [\\\"wn31:v:02587760\\\"]，status: AI_candidate_not_adopted。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"dictionary_additions 中的候选 '构成；相当于' 引用了 wn31:v:02626667（构成/组成），但 '相当于' 更直接对应 wn31:v:02705339（take the place of or be parallel or equivalent to），该证据未被引用；当前候选的 '相当于' 部分缺少直接词典支持。\",\n          \"evidence_ids\": [\n            \"wn31:v:02626667\",\n            \"wn31:v:02705339\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions:candidate_id SG25-8cfc12e7f780:p6c5:addition:2\",\n          \"proposed_fix\": \"为该候选补加证据 wn31:v:02705339，或将 '相当于' 与 '构成' 拆为两个候选。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源义 s002 '表示' 仅一个词，候选将其实例化为 '表示；象征'（间接表达/象征），但中文 '表示' 也可直接表示 '表达、陈述、表明'（如 表示感谢/同意）。证据列表中的 wn31:v:00775012（bring forward and present to the mind）和 wn31:v:00989377（describe or present）可能支持直接表达，但候选未采用；由于缺少明确的对应用法证据，暂不判定为错误。\",\n          \"evidence_ids\": [\n            \"wn31:v:00775012\",\n            \"wn31:v:00989377\"\n          ],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"core_meanings:3\",\n          \"proposed_fix\": \"如需扩展，可考虑增加一个候选或使用说明：'表示（观点、情感等）直接表达'，或保持现状并在 usage_note 中说明仅限间接象征。\"\n        }\n      ],\n      \"preferences\": [\n        \"首屏三组已合理，但建议在后续扩展中明确法律代理义；首屏顺序可待真实频率数据确认。\"\n      ],\n      \"note\": \"候选核心三组将 s001 按代理/典型拆分，s002 按象征合并，基本覆盖原文常见用法；未发现核心层面的错误。主要缺口是外部法律义未跟踪，以及 s002 的边界不确定。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

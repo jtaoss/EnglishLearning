@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_before_002_repair1",
+  "kind": "verify",
+  "request_hash": "b6eb0c424c9107af3810d420fc2d7f9dae5f91fddf68fc07620e930625478086",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0b0c454f-0819-4ecd-9a2c-728854efccce",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-093e7d5fdbaa\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原片段“联系”词性未定，候选提供名词组1（沟通互动/联系状态）和动词组3（建立/进行沟通），覆盖名词和动词用法，与英语证据相符，未发现范围收窄或扩大。\",\n          \"evidence_ids\": [\"wn31:n:07293990\", \"wn31:n:00040035\", \"wn31:v:00745330\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原片段“接触”词性未定，候选提供名词组2（物理触碰/紧邻/相碰）和动词组4（使某物与另一物发生物理接触），覆盖名词和动词用法，与英语证据相符，未发现范围收窄或扩大。\",\n          \"evidence_ids\": [\"wn31:n:00125700\", \"wn31:n:14442914\", \"wn31:n:07353929\", \"wn31:v:01208316\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"候选按名词和动词分别覆盖了“联系”和“接触”，未混入隐形眼镜、电路触点、人脉等词典外部义，处理得当。\"\n    },\n    {\n      \"id\": \"SG25-bf0bb4ee60e2\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原义“伸展”并未限定对象仅为身体部位；英语 extend 可把非身体物体展开或伸长（如天线、桌腿、遮阳篷向外伸展），候选组1明确加上“对象为身体部位”的限制，且没有其他组补齐该用法，造成原义覆盖收窄。\",\n          \"evidence_ids\": [\"wn31:v:00027261\", \"wn31:v:02058913\", \"wn31:v:01371528\", \"wn31:v:02695935\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原义“变宽”为不及物变化义，但所给英语证据多为及物“使变宽/扩大范围”，未提供英语 extend 表示“become wider”的直接证据，候选正确暂存，但映射仍无法确定。\",\n          \"evidence_ids\": [\"wn31:v:00541315\", \"wn31:v:00235827\", \"wn31:v:02693758\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原义“延伸”在空间或时间上的绵延、向外伸出由组2覆盖，证据支持该用法，未发现明显缺失。\",\n          \"evidence_ids\": [\"wn31:v:02691775\", \"wn31:v:02693758\", \"wn31:v:02695935\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"minor\",\n          \"kind\": \"range_narrowing\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-bf0bb4ee60e2:p6c5:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:v:00027261\", \"wn31:v:02058913\", \"wn31:v:01371528\", \"wn31:v:02695935\"],\n          \"reason\": \"原义“伸展”未限定对象仅为身体部位；英语 extend 可把非身体物体展开或伸长（如天线、桌腿、遮阳篷向外伸展），候选组1明确限制为身体部位且无其他组补齐该用法，导致覆盖收窄。\",\n          \"counterexample\": \"“The awning extends several feet over the sidewalk”（wn31:v:02695935）；“extend the TV antenna”（wn31:v:02058913）；“extend the legs of this dining table”（wn31:v:01371528）。\",\n          \"repair_suggestion\": \"将组1的对象范围扩展至非身体对象，或新增一组链接到 s001 以覆盖向外伸展/展开的非身体用法，并引用 v02058913、v01371528、v02695935 等证据。\"\n        }\n      ],\n      \"unresolved\": [\n        {\n          \"source_id\": \"s002\",\n          \"issue\": \"英语 extend 是否具有不及物“变宽”义仍无直接证据；现有 v00541315 等多为及物扩大范围，不能证明“become wider”。\",\n          \"evidence_reviewed\": [\"wn31:v:00541315\", \"wn31:v:00235827\", \"wn31:v:02693758\"]\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 存在非身体对象伸展的收窄缺陷，s002 已正确暂存但证据仍不足，s003 覆盖基本完整。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6685,
+    "completion_tokens": 7502,
+    "total_tokens": 14187,
+    "prompt_tokens_details": {
+      "cached_tokens": 5376
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6364
+    },
+    "prompt_cache_hit_tokens": 5376,
+    "prompt_cache_miss_tokens": 1309
+  },
+  "started_utc": "2026-11-13T09:40:47.544568+00:00",
+  "completed_utc": "2026-11-13T09:42:29.988757+00:00",
+  "elapsed_seconds": 102.454,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

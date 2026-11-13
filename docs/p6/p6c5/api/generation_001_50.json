@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_50",
+  "request_hash": "ce61acc55248f15f07c3dff32c52bb19092ece2c928e7cc0be873c47939164ae",
+  "started_utc": "2026-11-13T08:14:59.893498+00:00",
+  "completed_utc": "2026-11-13T08:15:25.533241+00:00",
+  "elapsed_seconds": 25.64,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "65547e98-b9ed-4da0-a393-0dbf89dd9ba3",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3765,
+    "completion_tokens": 4017,
+    "total_tokens": 7782,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3513
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 949
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-3d8eefab379d\",\"word\":\"determine\",\"core\":[[\"决定\",\"动词\",[\"s001\"],[\"wn31:v:00699355\"],\"对选择或行动作出决定\"],[\"确定\",\"动词\",[\"s002\"],[\"wn31:v:00701581\",\"wn31:v:00949109\"],\"权威地或明确地确定、规定\"],[\"查明\",\"动词\",[\"s003\"],[\"wn31:v:00920843\",\"wn31:v:00922307\"],\"通过计算、调查或询问弄清\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"决定；支配（结果或发展）\",\"动词\",[\"wn31:v:00702806\"],\"外部词典有“塑造/影响”的独立因果义；原文“决定”可能兼容但未明确对象和方向，作为未采用候选。\"]],\"reason\":\"先按原片段各自的动作方式和对象分：“决定”是作出选择，“确定”是权威固定或明确规定，“查明”是调查弄清；同词性但过程不同，故分列核心。\",\"flags\":[[\"Info\",\"source_scope_ambiguous\",\"“决定”可兼指作出选择与因果上决定结果；核心只采用直接证据支持的作出选择义，因果义放入补充候选。\"]]},{\"id\":\"SG25-d0d092b83d4a\",\"word\":\"intense\",\"core\":[[\"强烈的；剧烈的；极度的\",\"形容词\",[\"s001\",\"s002\",\"s003\"],[\"wn31:a:01513206\",\"wn31:s:00806846\"],\"程度高、强烈或严重；可指情感、疼痛、气味、火力等\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（颜色）浓烈的；鲜艳的\",\"形容词\",[\"wn31:s:00394744\"],\"外部词典列出颜色高度饱和的专门用法；原文未明确颜色域，作为未采用候选。\"]],\"reason\":\"三个原片段都指向程度高或强烈，先合并为一个首记核心；颜色饱和是词典独立专门用法，原文未明确，放补充候选。\",\"flags\":[[\"Info\",\"restricted_domain_candidate\",\"颜色高度饱和的用法为词典专门义，原文未明确，仅列入补充候选。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

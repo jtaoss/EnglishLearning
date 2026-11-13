@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_018",
+  "kind": "verify",
+  "request_hash": "4e60d2986e1cfda076a67510c2a852d13c9107771f9dc6bcf9fd396b2d07b167",
+  "input_ids": [
+    "SG25-93bc5d02dc2a",
+    "SG25-3f8b4464a99d"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d843f1c0-7eff-41d2-99c0-9a3aac345383",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-93bc5d02dc2a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源词性声明为名词与动词（未逐义指定），但目标仅保留名词“倒塌”。证据 wn31:v:01993067 支持动词物理倒塌用法（如 'The wall collapsed'），该用法未在任何层级中显示，故联合覆盖收窄于名词。\",\n          \"evidence_ids\": [\n            \"wn31:v:01993067\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源词性声明为名词与动词（未逐义指定），但目标仅保留动词“崩溃”。证据 wn31:n:07493085（经济崩溃）与 wn31:n:14089685（功能/体力崩溃）支持名词崩溃用法，该用法未在任何层级中显示，故联合覆盖收窄于动词。\",\n          \"evidence_ids\": [\n            \"wn31:n:07493085\",\n            \"wn31:n:14089685\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"unresolved_pos_cross_pos_coverage\",\n          \"source_ids\": [\n            \"s001\",\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-93bc5d02dc2a:core:1\",\n            \"SG25-93bc5d02dc2a:core:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:01993067\",\n            \"wn31:n:07493085\",\n            \"wn31:n:14089685\"\n          ],\n          \"reason\": \"词条源词性为“名词；动词”，但目标按 s001→名词倒塌、s002→动词崩溃分配。词典证据支持动词倒塌（wn31:v:01993067 'The wall collapsed'）与名词崩溃（wn31:n:07493085 'business/stock collapse'；wn31:n:14089685 'complete physical exhaustion'），这些有证据的跨词性用途未在任何层级中保留，造成来源范围收窄。\",\n          \"counterexample\": \"动词倒塌：'The wall collapsed' 由 wn31:v:01993067 支持，但无动词“倒塌”组；名词崩溃：'the stock market collapse' 由 wn31:n:07493085 支持，但无名词“崩溃”组。\",\n          \"repair_suggestion\": \"保留源词性待核状态；为动词倒塌和名词崩溃分别增加目标组（或明确放入暂存/扩展）并附带相应证据，或标注剩余范围待人工审核，不应将 AI 推荐词性视为源义分配。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原词条未逐义给出词性，两个源片段（倒塌、崩溃）各自可能兼有名词与动词用法，当前仅依靠 AI 推荐分配，需要人工确认每个片段实际覆盖的词性。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"生成器说明已承认原文对应未知，但联合层级仍只保留名词倒塌和动词崩溃，未覆盖动词倒塌与名词崩溃，属于覆盖缺口而非单纯教学排序差异。\"\n    },\n    {\n      \"id\": \"SG25-3f8b4464a99d\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标核心组显示“宗教的”，证据 wn31:s:02063669 定义为 'concerned with sacred matters or religion or the church'，涵盖宗教相关的一般形容用途，与源义匹配。\",\n          \"evidence_ids\": [\n            \"wn31:s:02063669\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标扩展组显示“虔诚的”，证据 wn31:a:01787685 定义为 'having or showing belief in and reverence for a deity'，与源义匹配。\",\n          \"evidence_ids\": [\n            \"wn31:a:01787685\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [\n        {\n          \"kind\": \"ordering\",\n          \"reason\": \"将“宗教的”置于核心、“虔诚的”置于扩展是教学优先级选择，无语义丢失或错误。\"\n        }\n      ],\n      \"note\": \"源词性为形容词，两个义项均被保留；词典中其他相关义（如修道院神职人员的）未纳入但不缺失源义覆盖，无需处理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4296,
+    "completion_tokens": 5069,
+    "total_tokens": 9365,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4014
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2632
+  },
+  "started_utc": "2026-11-13T09:56:48.794932+00:00",
+  "completed_utc": "2026-11-13T09:57:58.675799+00:00",
+  "elapsed_seconds": 69.891,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,27 @@
+
+test_24_holdout_selection_frozen_and_excludes_repairs (test_scope_guard.RealRegressionContracts.test_24_holdout_selection_frozen_and_excludes_repairs) ... ok
+test_all_1702_source_fragments_retained (test_scope_guard.RealRegressionContracts.test_all_1702_source_fragments_retained) ... ok
+test_exact_existing700_no_701st (test_scope_guard.RealRegressionContracts.test_exact_existing700_no_701st) ... ok
+test_historical48_and_pursue_failure_kept (test_scope_guard.RealRegressionContracts.test_historical48_and_pursue_failure_kept) ... ok
+test_known_narrowing_detected_before_and_not_silently_removed_after (test_scope_guard.RealRegressionContracts.test_known_narrowing_detected_before_and_not_silently_removed_after) ... ok
+test_no_categorical_contact_causative_false_gold (test_scope_guard.RealRegressionContracts.test_no_categorical_contact_causative_false_gold) ... ok
+test_old_sources_checkpoints_and_database_hashes_preserved (test_scope_guard.RealRegressionContracts.test_old_sources_checkpoints_and_database_hashes_preserved) ... ok
+test_reused600_semantic_content_not_rewritten (test_scope_guard.RealRegressionContracts.test_reused600_semantic_content_not_rewritten) ... ok
+test_second_review_risk_does_not_become_human_signoff (test_scope_guard.RealRegressionContracts.test_second_review_risk_does_not_become_human_signoff) ... ok
+test_Chinese_substring_does_not_clear_known_narrowing (test_scope_guard.ScopeGuardContracts.test_Chinese_substring_does_not_clear_known_narrowing) ... ok
+test_cited_but_not_supplied_counterexample_rejected (test_scope_guard.ScopeGuardContracts.test_cited_but_not_supplied_counterexample_rejected) ... ok
+test_frequency_scan_is_only_an_advisory_alarm (test_scope_guard.ScopeGuardContracts.test_frequency_scan_is_only_an_advisory_alarm) ... ok
+test_held_fragment_cannot_be_called_complete (test_scope_guard.ScopeGuardContracts.test_held_fragment_cannot_be_called_complete) ... ok
+test_licensed_context_or_example_is_not_automatic_defect (test_scope_guard.ScopeGuardContracts.test_licensed_context_or_example_is_not_automatic_defect) ... ok
+test_missing_publisher_reference_fails_graph_preflight (test_scope_guard.ScopeGuardContracts.test_missing_publisher_reference_fails_graph_preflight) ... ok
+test_narrowing_cannot_be_marked_no_risk_without_remainder (test_scope_guard.ScopeGuardContracts.test_narrowing_cannot_be_marked_no_risk_without_remainder) ... ok
+test_relation_schema_includes_all_six_without_word_hardcodes (test_scope_guard.ScopeGuardContracts.test_relation_schema_includes_all_six_without_word_hardcodes) ... ok
+test_source_id_loss_rejected (test_scope_guard.ScopeGuardContracts.test_source_id_loss_rejected) ... ok
+test_union_preserves_extension_not_all_source_required_in_core (test_scope_guard.ScopeGuardContracts.test_union_preserves_extension_not_all_source_required_in_core) ... ok
+test_unknown_is_pending_not_semantically_passed (test_scope_guard.ScopeGuardContracts.test_unknown_is_pending_not_semantically_passed) ... ok
+test_wrong_model_ID_or_word_ID_not_silently_reconciled (test_scope_guard.ScopeGuardContracts.test_wrong_model_ID_or_word_ID_not_silently_reconciled) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.739s
+
+OK

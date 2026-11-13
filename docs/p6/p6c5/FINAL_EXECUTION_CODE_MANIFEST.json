@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-11-13T08:47:21.510208+00:00",
+  "purpose": "After-run replay code hashes; immutable pre-generation rule/config manifest remains separate",
+  "frozen_semantic_run_manifest_sha256": "08589b454f6d2a4b314ad045007c014b40025262ddccaa584895f06610ba921b",
+  "files": {
+    "scripts/p6c5/adjudicate_first_batch.py": "28b8dee6cea0a43daf05502d09d4946028b7e21270bf59e0c518c160dcb98445",
+    "scripts/p6c5/api_client.py": "7cd28509aaaa234dc280ebf0281b9f5f4e6a26b1639d81dbb7c994db41283c2c",
+    "scripts/p6c5/assemble.py": "7c736bb90cc4dfd80182dd6f59d953dcf06d4c6803176af5d04091022b179a04",
+    "scripts/p6c5/common.py": "6a64c3d58edcaf41430b9d2314c5d9fd3cf1dc851733845c44de20d8d075bd80",
+    "scripts/p6c5/finalize_stopped_batch.py": "1119aa77c6b76211341bc62f68078ec17763b6c0548a1a5044925e52b1a6bbe7",
+    "scripts/p6c5/freeze.py": "7b89ea99ce7b9a41c7c9766ddbfcc53901a0b5eb052a065a80b43032036dbc8a",
+    "scripts/p6c5/preflight.py": "784f83198930bd69f01419adb4f5d2b0bc2d7179636e957bdcfc5e43af33d0f6",
+    "scripts/p6c5/preflight_review.py": "59df2ffb003509bc1f2e97c8310a0d16d78dd810fcc0557c0de56c6ce5c32896",
+    "scripts/p6c5/prepare.py": "7e57662b8f3504666f403842652786733135692e5339ee9b50261c0e75cb5c12",
+    "scripts/p6c5/PROMPT.md": "894bcff48276bcf94e98d52aade27d88448971b1ce1b8c6e305b6972d58cebd3",
+    "scripts/p6c5/records.py": "d97a1e107676deedefe91d659168c5a06c5664064ffc699d2256e0da716b7e1b",
+    "scripts/p6c5/recover_reviews.py": "c701471c07c2ba80cb295abc9f715b469d07fbf41ffc33a99b5e5b4f98d9dda6",
+    "scripts/p6c5/REVIEW_PROMPT.md": "343d727280832e312581bf88fb55286b572e919d69efbf67f9f9bed8e72f024c",
+    "scripts/p6c5/run_batches.py": "7bf070866a7815a5a43e822b6acbe0ea2c360f0d23e8e447ebc2df9d13611f71",
+    "scripts/p6c5/validate.py": "0dd8052c793e9dc6d18b17e835862653aa03771653100ecb21b79a9dfd823869",
+    "scripts/p6c5/write_reports.py": "5c4f7655965c4723cfc9e246dd346c2ce4adb659c12041dcae0d864827cb574f",
+    "test/p6c5/full_candidates_contract_test.dart": "7390de25cd74f3c8d689e548ee98455fdb706dd08de906e9e25ab5747e4b8589",
+    "test/p6c5/test_candidates.py": "3d8e70708d22180779ce76c7f7151522775f40ef224e897b89bc6ed8d03654ce"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "stage":"before fresh100 generation and blind review",
+  "gate_changed":false,
+  "corrections":[{
+    "evidence_id":"pub:intercourse",
+    "old_observation_zh":"名词有性交，亦有个人或群体之间交往/交流；社会交往义带正式语体提示，需要具体语境，不能在普通日常聊天场合不加限定地替代communication。",
+    "observation_zh":"名词有性交以及个人或群体间的交往/交流。COBUILD把社会交往义标为old-fashioned，性交项另标formal；不能把前一项formal标签转用于后一项。其他分词典列交往义而未同样标语体。原文交往的较正式或旧式表述保留，但本轮只独立确认该分词典的旧式提示。",
+    "basis":"https://www.collinsdictionary.com/dictionary/english/intercourse ; COBUILD senses1/2 and British English senses1/2",
+    "reason":"补充包封存后的逐标签核对发现概述不够精确；保留原包，显式勘误，不覆盖记录。此时尚无生成或盲审答案。"
+  }]
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_008",
+  "kind": "audit",
+  "request_hash": "ce0676741424e58febfdac4cec18568248913493b10a8d693f51f239f760097e",
+  "input_ids": [
+    "SG25-70430045cb50",
+    "SG25-9c457a4c48c5",
+    "SG25-d9e218ac870d",
+    "SG25-8cb6279a8e1b",
+    "SG25-fa25baee7bac"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "b7fc1ae3-0f42-4517-94f2-4bad475f65c4",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-70430045cb50\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"加快（使速度变快）\",\"relation\":\"语义等价\",\"reason\":\"核心组“加快／加速”保留该用法，兼含不及物“move faster”与使动“cause to move faster”两种英语证据，未添加原文外语境限制。\",\"evidence_ids\":[\"wn31:v:00439133\",\"wn31:v:00440298\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"加速（速度或过程变快）\",\"relation\":\"语义等价\",\"reason\":\"与s001同属一个加速概念，核心组已用并列表述覆盖，英语使动式有对应证据。\",\"evidence_ids\":[\"wn31:v:00440298\",\"wn31:v:00439133\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"快进（如播放时跳进）\",\"relation\":\"无法确定\",\"reason\":\"“快进”在英语中常对应 fast-forward（跳进/逐段前进），与 accelerate 的“速度增加”方向不同；该源义未进入任何层级，仅暂存，属来源范围待核。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"缺失：若教材原意仅为“加快播放”，应以 speed up/fast-forward 区分；现无英语证据支持把跳进义并入 accelerate\",\"counterexample\":\"The car accelerated 表示车速增加而非播放位置跳进\",\"counterexample_evidence_ids\":[\"wn31:v:00439133\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_pending\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00439133\",\"wn31:v:00440298\"],\"reason\":\"“快进”作为源义已明确暂存而非静默丢弃，但其所指（播放跳进）与 accelerate 的英语证据不完全一致，属来源范围冲突，未作确认错误。\",\"repair_suggestion\":\"保持暂存状态；若后续确认教材语境为播放加速，再注明与 fast-forward 的差别，不并入核心。\"}],\"note\":\"加快、加速两义由核心一组覆盖且证据充分；快进义明确暂存并在映射中标注残留与反例，词语整体为部分解决而非通过。\"},{\"id\":\"SG25-9c457a4c48c5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"庆祝（举行庆祝活动）\",\"relation\":\"语义等价\",\"reason\":\"核心组“庆祝／欢度”对应“have a celebration”，是原文在动词、庆祝活动语境下的直接用途。\",\"evidence_ids\":[\"wn31:v:02496526\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"欢度（节日、仪式性节日）\",\"relation\":\"语义等价\",\"reason\":\"“欢度节日”对应“behave as expected during holidays or rites / celebrate Christmas”一支，与庆祝合并展示不改变对象范围。\",\"evidence_ids\":[\"wn31:v:02584595\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两义合并为庆祝框架，均有独立英语证据；赞颂义（lionize）未采用也未悄悄升级为核心，无需补漏。\"},{\"id\":\"SG25-d9e218ac870d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名人（知名人物）\",\"relation\":\"语义等价\",\"reason\":\"“名人”是“a widely known person”，核心组精确对应该人称义，未混入状态义。\",\"evidence_ids\":[\"wn31:n:09922606\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名声（受广泛赞誉的状态）\",\"relation\":\"语义等价\",\"reason\":\"“名声”是“the state or quality of being widely honored and acclaimed”，在扩展层单独保留，未与人称义合并。\",\"evidence_ids\":[\"wn31:n:14460852\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"he was a baseball celebrity 指人，不是名声这种状态\",\"counterexample_evidence_ids\":[\"wn31:n:09922606\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"deferral_rationale\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-d9e218ac870d:extended:1\"],\"evidence_ids\":[\"wn31:n:14460852\"],\"reason\":\"注释说明的是“人 vs 状态不宜合并”，属分层正确性依据，而非把名声后置到扩展层的教学理由；两者均为常用义，后置理由不足。\",\"repair_suggestion\":\"补充具体教学/搭配理由（如教材首屏以人物义为主、名声多与 fame/reputation 语境并列），或考虑名声与名人同列核心但分列子义。\"}],\"note\":\"人称义与人状态义均准确落层，无遗漏；唯一小问题是扩展层后置理由偏弱，不影响覆盖。\"},{\"id\":\"SG25-8cb6279a8e1b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"中心的（位于中央的区域/位置）\",\"relation\":\"语义等价\",\"reason\":\"核心组对应“in or near a center; the inner area”，保留位置义而未用“主要”义替代。\",\"evidence_ids\":[\"wn31:a:00330729\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"主要的（关键的、核心构成）\",\"relation\":\"语义等价\",\"reason\":\"扩展组对应“serving as an essential component”，与位置义分列，未相互借义。\",\"evidence_ids\":[\"wn31:s:01280207\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"a central position 是位置，不等于 essential component\",\"counterexample_evidence_ids\":[\"wn31:a:00330729\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"deferral_rationale\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-8cb6279a8e1b:extended:1\"],\"evidence_ids\":[\"wn31:s:01280207\"],\"reason\":\"注释解释的是两个义项何以分开，而不是“主要的”为何后置于扩展层；该义在教材释义中与中心义并列出现，缺少明确后置教学理由。\",\"repair_suggestion\":\"补充后置理由（搭配/使用场景差异）或考虑在核心中以子义并列呈现。\"},{\"severity\":\"Minor\",\"kind\":\"irrelevant_evidence\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:02998465\"],\"reason\":\"所附 wn31:n:02998465 是名词“central（电话交换中心）”义，与形容词两个源义均不相关，属证据噪声。\",\"repair_suggestion\":\"移除该名词证据或仅作词典补充观察，不参与源义映射。\"}],\"note\":\"位置义与关键义分别落层，对象/词性一致；问题是主要义的后置理由不足及一条无关名词证据。\"},{\"id\":\"SG25-fa25baee7bac\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"中心（中央的位置/区域及衍生的一般概念）\",\"relation\":\"合理概括\",\"reason\":\"核心组以一般“中心”保留原义，证据覆盖等距中点与区域中央两种用途，未把活动中心、神经中枢等具体子义伪装成已细分，也未加无来源排他限制。\",\"evidence_ids\":[\"wn31:n:08538999\",\"wn31:n:08540894\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"irrelevant_evidence\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-fa25baee7bac:core:1\"],\"evidence_ids\":[\"wn31:v:00724156\",\"wn31:v:01856668\",\"wn31:n:02997001\"],\"reason\":\"所附动词 focus/move into the center 及名词“central 电话交换中心”与名词“中心”源义不在同一词性或范围，属证据列表噪声；核心组实际只引用了恰当的两条名词证据。\",\"repair_suggestion\":\"保留核心组引用即可，其余条目作为词典补充观察，不进入源义映射。\"}],\"note\":\"单一源义由一般“中心”组覆盖，具体子义未被误作已细分，残留范围无需另记；仅证据列表含无关条目。\"}]}",
+  "usage": {
+    "prompt_tokens": 5071,
+    "completion_tokens": 3776,
+    "total_tokens": 8847,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1729
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3151
+  },
+  "started_utc": "2026-11-13T09:40:13.058493+00:00",
+  "completed_utc": "2026-11-13T09:40:34.689483+00:00",
+  "elapsed_seconds": 21.641,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_67",
+  "request_hash": "9ccd57fae6c35303d2c730bd271471eaee20209c0acf46c4cfa7c3552d2f03be",
+  "started_utc": "2026-11-13T08:17:08.502512+00:00",
+  "completed_utc": "2026-11-13T08:18:40.726844+00:00",
+  "elapsed_seconds": 92.219,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "311aac2f-3561-45e0-8a0b-fb80745cbc54",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3252,
+    "completion_tokens": 4829,
+    "total_tokens": 8081,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4152
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1204
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-f329e3a317ee\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"major\",\n          \"kind\": \"false_merging\",\n          \"reason\": \"候选将源义“复原”（s002）与“恢复”（s003）合并为一组，并把 wn31:v:02431646（bring back into original existence/use/function/position; restore law and order/reestablish peace/restore emperor to throne）同时分配给 s002 与 s003。中文“复原”不用于恢复法律秩序、和平或地位，仅适合恢复到原有具体状态/功能；该证据导致“复原”边界被扩大到抽象地位/秩序，属于用法合并错误。\",\n          \"evidence_ids\": [\"wn31:v:02431646\"],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"SG25-f329e3a317ee:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"将“复原”仅对应 wn31:v:02558146（恢复到原状/可用状态），把 wn31:v:02431646 从 s002 的 source_subsenses 中移除；“恢复”可同时保留 02431646 与 02558146，或进一步按抽象/具体对象拆分。\"\n        },\n        {\n          \"severity\": \"info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源义“恢复”（s003）字面宽泛，可搭配精力/体力表达“使恢复精力/复苏”，与 wn31:v:00168396（return to life; get or give new life or energy）可能兼容。候选将其作为 source_sense_ids=[] 的未采用外部候选，并称“原文未明确”。因源片段无对象限定，无法确认是否必须排除该义；需要源证据或人工判断。\",\n          \"evidence_ids\": [\"wn31:v:00168396\"],\n          \"source_sense_ids\": [\"s003\"],\n          \"candidate_group_ref\": \"SG25-f329e3a317ee:p6c5:addition:1\",\n          \"proposed_fix\": \"核实源“恢复”的范围；若可覆盖精力/生命义，应把该证据关联到 s003 并讨论是否进入核心；若不可，保持未采用但需补充依据。\"\n        }\n      ],\n      \"preferences\": [\n        {\n          \"suggestion\": \"教学提示可把“复原”限定为具体原状/功能（如复原生态/文物），“恢复”再区分抽象秩序/地位与具体状态，避免学生生成“复原秩序”。\"\n        }\n      ],\n      \"note\": \"修复组与 wn31:v:00261534 匹配准确；归还义 wn31:v:02315462 确为原文未列外部义，维持未采用合理。主要问题是“复原”被错误合并到抽象重建/地位义，需拆分证据归属；精力义是否源覆盖待证。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

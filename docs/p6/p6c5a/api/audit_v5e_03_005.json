@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_005",
+  "kind": "audit",
+  "request_hash": "b538767968e1f6b24a1ce7c55fee303f3f44904b5f287bfd579fe0a828df2f4b",
+  "input_ids": [
+    "SG25-c5fd94b8c335",
+    "SG25-139d14b61cae",
+    "SG25-3f8b4464a99d",
+    "SG25-4e73ff840ac8",
+    "SG25-559359f07850"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ce693385-9173-4bc7-9529-fee907f17023",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c5fd94b8c335\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"责任（原文未明确法律或一般）\",\"relation\":\"无法确定\",\"reason\":\"核心:1保留“责任”但在注释中限定为依法承担的义务；原文片段仅“责任”，英语证据只支持法律义务，原文是否泛指一般责任待核。\",\"evidence_ids\":[\"wn31:n:14554005\"],\"context\":\"uncertain\",\"residual_scope\":\"法律义务与一般非法律责任的边界未定；若原文泛指责任，则核心注释缺少一般责任范围\",\"counterexample\":\"原文“责任”本身未排除一般职责/道德责任；英语证据仅列法律义务\",\"counterexample_evidence_ids\":[\"wn31:n:14554005\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"债务；需偿付的金钱义务\",\"relation\":\"语义等价\",\"reason\":\"核心:2“债务”与“an obligation to pay money to another party”对应，财务义务语境明确。\",\"evidence_ids\":[\"wn31:n:14513903\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"负担；拖累/不利条件\",\"relation\":\"合理概括\",\"reason\":\"扩展:1用“负担（拖累）”概括“holds you back”的不利条件义，保留原文负担框架且注释说明为拖累。\",\"evidence_ids\":[\"wn31:n:05168909\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_unresolved\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-c5fd94b8c335:core:1\"],\"evidence_ids\":[\"wn31:n:14554005\"],\"reason\":\"原文片段只有“责任”，核心注释限定为“依法承担的义务”；英语证据支持法律义务，但未解决原文是否也泛指一般责任，属来源范围待核而非已确认生成器错误。\",\"repair_suggestion\":\"将核心注释标为来源范围待核，或保留“责任”为父级并明确法律义务为典型语境；不要静默当作所有一般责任已覆盖。\"}],\"note\":\"liability三义均有链接：债务清晰，负担置于扩展；“责任”核心注释限法律义务，原文是否泛指一般责任仍待核，故词条为部分覆盖、核心待核。\"},{\"id\":\"SG25-139d14b61cae\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"宗教（广义：制度/信仰体系）\",\"relation\":\"语义等价\",\"reason\":\"核心:1“宗教”保留原文广义框架，注释同时保留组织与信念两个框架；证据支持宗教制度义。\",\"evidence_ids\":[\"wn31:n:08098545\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"宗教信仰/信念\",\"relation\":\"语义等价\",\"reason\":\"扩展:1“宗教信仰”与“a strong belief in a supernatural power or powers”对应，信念义独立保留。\",\"evidence_ids\":[\"wn31:n:05955536\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"religion的“宗教”与“宗教信仰”两义分别在核心与扩展保留，制度与信念框架分开呈现，未发现来源范围缺口。\"},{\"id\":\"SG25-3f8b4464a99d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"宗教的；与宗教/教会相关的\",\"relation\":\"语义等价\",\"reason\":\"核心:1“宗教的”与“concerned with sacred matters or religion or the church”对应，描述宗教关联。\",\"evidence_ids\":[\"wn31:s:02063669\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"虔诚的；笃信敬神的\",\"relation\":\"语义等价\",\"reason\":\"扩展:1“虔诚的”与“having or showing belief in and reverence for a deity”对应，信念态度义独立保留。\",\"evidence_ids\":[\"wn31:a:01787685\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"religious的“宗教的”与“虔诚的”分别对应宗教关联和信念态度，注释提醒不能把宗教相关等同于虔诚，覆盖完整。\"},{\"id\":\"SG25-4e73ff840ac8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"不合法的；法律禁止的\",\"relation\":\"语义等价\",\"reason\":\"核心:1“不合法的”与“prohibited by law”对应，法律禁止义清晰。\",\"evidence_ids\":[\"wn31:a:01404858\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"不合规定的；违反官方/接受规则\",\"relation\":\"语义等价\",\"reason\":\"扩展:1并列保留“不合规定的”，与“prohibited by official or accepted rules”对应。\",\"evidence_ids\":[\"wn31:a:01404858\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"犯规的；竞赛/规则违规\",\"relation\":\"合理概括\",\"reason\":\"扩展:1以“犯规的”并列保留竞赛违规子用法，证据中的规则禁止义可概括该下位语境，但未单列体育犯规领域。\",\"evidence_ids\":[\"wn31:a:01404858\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"illegal的法律禁止义在核心，非法律规则/犯规义在扩展并列保留；注释限定官方或接受规则，三源义均有覆盖。\"},{\"id\":\"SG25-559359f07850\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"开明的；思想宽容/支持改革\",\"relation\":\"语义等价\",\"reason\":\"核心:1“开明的”与“broad-mindedness / tolerant of change”对应，思想宽容义清晰。\",\"evidence_ids\":[\"wn31:s:00287703\",\"wn31:a:00577581\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"慷慨的；大方给予的\",\"relation\":\"语义等价\",\"reason\":\"扩展:1“慷慨的”与“given or giving freely”对应，大方给予义独立保留。\",\"evidence_ids\":[\"wn31:s:01115129\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"自由主义者（政治/经济立场）\",\"relation\":\"语义等价\",\"reason\":\"扩展:2“自由主义者”与政治自由主义者及经济自由市场支持者两组名词证据对应，注释不限定唯一党派或国家。\",\"evidence_ids\":[\"wn31:n:10276453\",\"wn31:n:10276781\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"liberal的形容词“开明的”“慷慨的”和名词“自由主义者”均有层级链接，词性与语境分开，未发现语义覆盖缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 5381,
+    "completion_tokens": 13839,
+    "total_tokens": 19220,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12054
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3461
+  },
+  "started_utc": "2026-11-13T09:44:50.501362+00:00",
+  "completed_utc": "2026-11-13T09:46:13.120223+00:00",
+  "elapsed_seconds": 82.61,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

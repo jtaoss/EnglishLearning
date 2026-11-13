@@ -1,0 +1,4968 @@
+{
+  "stage": "audit_v5e_02",
+  "kind": "audit",
+  "model_requested": "deepseek-flash",
+  "record_count": 100,
+  "expected_count": 100,
+  "records": [
+    {
+      "id": "SG25-652d75f9bafb",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "债务（偿付义务或欠债状态）",
+          "relation": "语义等价",
+          "reason": "核心组合并保留“债务；欠款”，词典n:13418347（所欠钱财/财物/服务）与n:14514148（欠债状态）支持该财务义务义，未增加对象或领域限制。",
+          "evidence_ids": [
+            "wn31:n:13418347",
+            "wn31:n:14514148"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "欠款（所欠钱财/欠债状态）",
+          "relation": "语义等价",
+          "reason": "核心组文本含“欠款”，n:13418347直接指money/goods/services owed，n:14514148补足owing state；两片段合并合理。",
+          "evidence_ids": [
+            "wn31:n:13418347",
+            "wn31:n:14514148"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "债务与欠款合并为同一财务/欠款义核心组；原有“偿付义务”与“所欠财物/状态”均获词典证据支持，未发现残留范围缺口。"
+    },
+    {
+      "id": "SG25-59cd793c05f0",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "十年（十年时长/十年期）",
+          "relation": "语义等价",
+          "reason": "核心合并组包含“十年”，n:15229779“a period of 10 years”直接支持；未把基数义n:13768652当作十年义。",
+          "evidence_ids": [
+            "wn31:n:15229779"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "十年期（十年时段）",
+          "relation": "语义等价",
+          "reason": "“十年期”是同一十年时段的中文变体，核心组合并保留；n:15229779支持period of 10 years。",
+          "evidence_ids": [
+            "wn31:n:15229779"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "十年间（十年期间/时段）",
+          "relation": "语义等价",
+          "reason": "“十年间”仍指十年时段，核心组以n:15229779“a period of 10 years”覆盖；三个中文变体合并不增新义。",
+          "evidence_ids": [
+            "wn31:n:15229779"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个中文变体均表示“十年（期）”，核心合并保留；正确采用n:15229779（a period of 10 years），未把基数“十”当作十年义证据。"
+    },
+    {
+      "id": "SG25-6f5a5c61ccdb",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "损害（源词性未定，可能为名词或动词；候选仅以名词组“损害”承接）",
+          "relation": "无法确定",
+          "reason": "原片段part_of_speech为null/unresolved_multi_pos；核心名词组以n:00403900（act of damaging）和n:07435370（change for worse）支持名词“损害”，但未证明s001只作名词。动词层有“损坏”，但属于s002，不能自动把s001动词侧并入。",
+          "evidence_ids": [
+            "wn31:n:00403900",
+            "wn31:n:07435370",
+            "wn31:v:00259743"
+          ],
+          "context": "uncertain",
+          "residual_scope": "若s001含动词“损害”，联合层仅以s002动词“损坏”间接对应，存在词项和对象范围差异。",
+          "counterexample": "词典动词“inflict damage upon”可支持动词用法，但原片段没有标注动词，不能据此把s001固定为名词。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00259743"
+          ],
+          "risk": "pending"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "损坏（源词性未定，可能为动词或名词；候选仅以动词组“损坏”承接）",
+          "relation": "无法确定",
+          "reason": "原片段part_of_speech也为null；核心动词组以v:00259743支持“损坏”的动词“inflict damage upon”，但未证明s002只作动词。名词层有“损害”属于s001，不能自动把s002名词侧并入。",
+          "evidence_ids": [
+            "wn31:v:00259743",
+            "wn31:n:00403900"
+          ],
+          "context": "uncertain",
+          "residual_scope": "若s002含名词“损坏”，联合层仅以s001名词“损害”间接对应，词项不同。",
+          "counterexample": "词典名词“act of damaging”可支持名词用法，但原片段未标名词。",
+          "counterexample_evidence_ids": [
+            "wn31:n:00403900"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "uncertain",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "source_pos_unresolved_assigned",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-6f5a5c61ccdb:core:1",
+            "SG25-6f5a5c61ccdb:core:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:00403900",
+            "wn31:v:00259743"
+          ],
+          "reason": "两个原片段均为unresolved_multi_pos，候选却把s001固定到名词组、s002固定到动词组，静默将源词性null转为已知词性；联合层虽同时有名词和动词，但各片段另一词性侧未明确待核。",
+          "repair_suggestion": "在组注释或映射中显式保留源词性未定；将名词/动词两侧都标为需由原片段联合核验并列出剩余范围，不要用不同源ID自动借义。"
+        }
+      ],
+      "note": "名词“损害”和动词“损坏”两核心组均有词典证据，联合层覆盖名词/动词大类；但源片段词性未定，候选按名词/动词单侧固定，需按pending处理，不能视为逐义核验通过。"
+    },
+    {
+      "id": "SG25-5138a960e3e1",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "民主（民主原则/政治取向；广义）",
+          "relation": "语义等价",
+          "reason": "核心组“s001=民主”由n:05973312多数决定原则和n:06227040民主政治取向支持；未把制度义硬塞进该组。",
+          "evidence_ids": [
+            "wn31:n:05973312",
+            "wn31:n:06227040"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "民主制度（政治制度/政体）",
+          "relation": "语义等价",
+          "reason": "扩展组保留“民主制度”，n:08378256（supreme power in citizens who elect representatives）直接支持政治制度义；扩展层不等于遗漏。",
+          "evidence_ids": [
+            "wn31:n:08378256"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "核心保留“民主”原则/取向，扩展保留“民主制度”政体义；两者未完全同义，分层有注释说明，覆盖完整。"
+    },
+    {
+      "id": "SG25-f9070e8db001",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "有民主精神的（民主作风/态度）",
+          "relation": "语义等价",
+          "reason": "扩展组保留“有民主精神的”，a:00718584支持“advocating/based on principles of democracy or social equality”；s00488527的democratic art forms/popular作为近邻证据，组注释已区分态度/作风。",
+          "evidence_ids": [
+            "wn31:s:00488527",
+            "wn31:a:00718584"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "民主的（合民主原则/制度）",
+          "relation": "语义等价",
+          "reason": "核心组“民主的”由a:00718584直接支持，形容制度、国家等民主原则；未把“有民主精神”的作风义误作唯一。",
+          "evidence_ids": [
+            "wn31:a:00718584"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "核心保留“民主的”制度/原则用法，扩展保留“有民主精神的”态度/作风用法；适用对象区别在注释中保留，覆盖完整。"
+    },
+    {
+      "id": "SG25-d43c8bd5797a",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：纪律（规则/行为规范）",
+          "relation": "语义等价",
+          "reason": "核心组“纪律”以规则体系证据 n:05670721 对应，未附加对象限制。",
+          "evidence_ids": [
+            "wn31:n:05670721"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：学科/知识分支",
+          "relation": "语义等价",
+          "reason": "核心组“学科”由 branch of knowledge n:06005806 直接支持。",
+          "evidence_ids": [
+            "wn31:n:06005806"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：训练（未限定对象；可含技能/体能训练）",
+          "relation": "范围收窄",
+          "reason": "扩展组“训练”仅用 v:02559394（儿童/动物行为与自控训练）支持，未覆盖中文“训练”可含的一般技能/体能训练；可能为源中文较宽。",
+          "evidence_ids": [
+            "wn31:v:02559394"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺少一般技能/体能训练范围；仅保留行为/自控训练",
+          "counterexample": "“训练运动员技能”通常对应 train/coach，而不是 discipline",
+          "counterexample_evidence_ids": [
+            "wn31:v:02559394"
+          ],
+          "risk": "pending"
+        },
+        {
+          "sid": "s004",
+          "source_scope": "动词：管教（纠正行为/约束）",
+          "relation": "合理概括",
+          "reason": "扩展组“管教”由 v:02559125（为控制/服从而惩罚）支持，“管教”可涵盖纠正性管束，并与训练义分开。",
+          "evidence_ids": [
+            "wn31:v:02559125"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_scope_narrower_than_label",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-d43c8bd5797a:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:02559394"
+          ],
+          "reason": "扩展组“训练”显示为一般训练，但唯一证据 v:02559394 限于儿童/动物行为与自控训练；中文“训练”可含一般技能/体能训练，未说明剩余范围。可能为源中文较宽。",
+          "repair_suggestion": "在组注释限定“行为/自控训练”，并将一般技能训练标为源范围待核；不要以该证据支持 discipline 的通用训练义。"
+        }
+      ],
+      "note": "名词纪律/学科核心覆盖正确；动词训练仅覆盖行为/自控训练，一般训练范围待核；管教有惩罚性控制证据。"
+    },
+    {
+      "id": "SG25-a4ce996f70c5",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：流行病（传染病大规模暴发）",
+          "relation": "语义等价",
+          "reason": "核心组“流行病”由 n:07450133（广泛暴发的传染病）直接支持。",
+          "evidence_ids": [
+            "wn31:n:07450133"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "形容词：流行性的（疾病/类似疾病广泛侵袭）",
+          "relation": "语义等价",
+          "reason": "核心组“流行性的”由 a:01429248（疾病或类似疾病同时侵袭多人）支持，未扩到一般时尚流行。",
+          "evidence_ids": [
+            "wn31:a:01429248"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "名词“流行病”与形容词“流行性的”分开，均以疾病义证据支持，未把时尚流行并入。"
+    },
+    {
+      "id": "SG25-4932c716f725",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：指（未给宾语/语境，可能指向、指出或指代）",
+          "relation": "无法确定",
+          "reason": "该片段被 held；裸“指”缺宾语/语境，不能确定对应 indicate 的哪一用法，未并入任何候选组。",
+          "evidence_ids": [],
+          "context": "uncertain",
+          "residual_scope": "未确定：指向地点/对象、指出事实、指代等均未定",
+          "counterexample": "“指向某地点”与“指出某事实”分别对应不同用法，裸“指”不能同时证明两者。",
+          "counterexample_evidence_ids": [],
+          "risk": "pending"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：指出（点明/说明；也可简要表达）",
+          "relation": "范围扩大",
+          "reason": "扩展组“指出；简要表达”可由 v:00929986 支持，但 core:1 在 s002 名下含“指向（地点或对象）”，更接近 held s001 的裸“指”，有借入未决义的风险。",
+          "evidence_ids": [
+            "wn31:v:00925764",
+            "wn31:v:00929986",
+            "p6c3:mw:indicate"
+          ],
+          "context": "uncertain",
+          "residual_scope": "core:1 含“指向地点/对象”；可能超出 s002“指出”而属于 held s001",
+          "counterexample": "“指出事实/问题”与“指向某地点”是不同用法；后者不能由 s002 直接证明。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00925764"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：指示/表明（迹象、信号或信息；非命令）",
+          "relation": "语义等价",
+          "reason": "核心组“指示；表明（某种情况）”由 v:00774685 与 v:00923271 支持，注释明确不是向人发命令。",
+          "evidence_ids": [
+            "wn31:v:00774685",
+            "wn31:v:00923271",
+            "p6c3:mw:indicate"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "上级“指示”某人做事是 instruct/order，不是此处 indicate。",
+          "counterexample_evidence_ids": [
+            "p6c3:mw:indicate"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "source_held_unresolved",
+          "source_ids": [
+            "s001"
+          ],
+          "group_ids": [],
+          "evidence_ids": [],
+          "reason": "裸“指”缺宾语/语境，已被 held；未并入任何候选组，不能视为已覆盖。",
+          "repair_suggestion": "保留 s001 pending，补充语境或明确指向/指出/指代后再映射；不要用 s002 的组自动代偿。"
+        },
+        {
+          "severity": "Minor",
+          "kind": "source_scope_borrowing",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-4932c716f725:p6c3:core:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:00925764"
+          ],
+          "reason": "core:1 以 s002“指出”为源，却显示“指向（地点或对象）”；该范围更接近 held s001 的裸“指”，有把未决义借入 s002 的风险。",
+          "repair_suggestion": "将“指向地点/对象”留在 s001 pending 或另组说明来源；s002 仅保留“指出/点明/简要表达”及对应证据。"
+        }
+      ],
+      "note": "s002/s003 的指出与表明有证据支持；s001 裸“指”仍 held，且 core:1 混入“指向”需拆清。"
+    },
+    {
+      "id": "SG25-596d40a4ed24",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：条件/前提（决定有效性或约定要求）",
+          "relation": "语义等价",
+          "reason": "核心组“条件”由 n:06768279（作为依据的假定）与 n:06783666（协议要求条款）支持。",
+          "evidence_ids": [
+            "wn31:n:06768279",
+            "wn31:n:06783666"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：状况/状态",
+          "relation": "语义等价",
+          "reason": "核心组“状况”由 n:13943868（特定时间的状态）直接支持。",
+          "evidence_ids": [
+            "wn31:n:13943868"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：使适应/使习惯于",
+          "relation": "语义不匹配",
+          "reason": "源义“使适应”未被证据支持：v:02559394 是行为训练/自控，v:02577683 是建立条件反射；均不是一般“使适应/使习惯于”。组名沿用“使适应”会造成语义不匹配。",
+          "evidence_ids": [
+            "wn31:v:02559394",
+            "wn31:v:02577683"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺少“使适应/使习惯于”的一般适应义；现有证据为行为训练/条件反射",
+          "counterexample": "“使儿童适应新环境”通常用 adapt/accustom；本组证据对应行为训练/条件反射。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02559394",
+            "wn31:v:02577683"
+          ],
+          "risk": "suspected_Major"
+        },
+        {
+          "sid": "s004",
+          "source_scope": "动词：调理/改善状态",
+          "relation": "合理概括",
+          "reason": "v:00207826 的“put into a better state”可概括“调理”，v:00041418 的护发为具体例；未把“调理”限为护发。",
+          "evidence_ids": [
+            "wn31:v:00041418",
+            "wn31:v:00207826"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "护发只是例子，不能反推所有“调理”都是护发。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00041418"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "semantic_mismatch_verb_sense",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-596d40a4ed24:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:02559394",
+            "wn31:v:02577683"
+          ],
+          "reason": "源义“使适应”未被证据支持：v:02559394 是行为训练/自控，v:02577683 是建立条件反射；均不是一般“使适应/使习惯于”。组名沿用“使适应”会造成语义不匹配。",
+          "repair_suggestion": "把 s003 标为源范围待核/无法确定，或将组义改为“训练/使形成条件反射”并保留“使适应”为未覆盖；另找适应义证据。"
+        }
+      ],
+      "note": "名词条件/状况核心覆盖正确；动词“调理”有改善状态与护发例；动词“使适应”证据不匹配，需 pending 或改义。"
+    },
+    {
+      "id": "SG25-daf81fe9648c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：剂量（一次用量）",
+          "relation": "语义等价",
+          "reason": "核心组“剂量／一剂”由 n:03229941 与 n:13794246（一次服用/吸收的用量）支持。",
+          "evidence_ids": [
+            "wn31:n:03229941",
+            "wn31:n:13794246"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：一剂（一次份量）",
+          "relation": "语义等价",
+          "reason": "同一用量组明确含“一剂”，n:03229941 的 measured portion taken at any one time 对应一次剂量。",
+          "evidence_ids": [
+            "wn31:n:03229941"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：给……用药（给予一剂药物）",
+          "relation": "语义等价",
+          "reason": "扩展组“给……用药”由 v:00084491（administer a drug to）直接支持。",
+          "evidence_ids": [
+            "wn31:v:00084491"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "剂量/一剂合组有两次用量证据；给……用药有 administer a drug 证据，未以俚语或性病义充核心。"
+    },
+    {
+      "id": "SG25-db2a30692ef9",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "不一样的（强调差异）",
+          "relation": "语义等价",
+          "reason": "扩展组“不一样的”对应 distinctly dissimilar/unlike，且该用途仍在候选层级并集中保留。",
+          "evidence_ids": [
+            "wn31:s:02074895"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "不同种类的（多种类别）",
+          "relation": "合理概括",
+          "reason": "核心组将“不同种类的”与“各式各样的”合并为多样性上位表达，保留原文两个近义源义，未增加无来源对象限制。",
+          "evidence_ids": [
+            "wn31:s:02075123"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "各式各样的（多种多样）",
+          "relation": "合理概括",
+          "reason": "核心组用“不同种类的／各式各样的”概括 many and different；该源义有对应组且可追溯。",
+          "evidence_ids": [
+            "wn31:s:02075123"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个源义均有对应组：差异义在扩展，种类/各式各样在核心；无丢失，也未把词典额外义强并入核心。"
+    },
+    {
+      "id": "SG25-da15caaee9de",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "个人（人）",
+          "relation": "语义等价",
+          "reason": "核心名词组“个人”对应 a human being/person，词性与对象一致。",
+          "evidence_ids": [
+            "wn31:n:00007846"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "个别的（单独区分）",
+          "relation": "语义等价",
+          "reason": "扩展组“个别的”对应 separate and distinct from others of the same kind，保留单独/区分义。",
+          "evidence_ids": [
+            "wn31:s:00732690"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "个人的（专属个人/个人相关）",
+          "relation": "语义等价",
+          "reason": "核心形容词组“个人的”对应 concerning one person exclusively，符合个人专属或私人相关用法。",
+          "evidence_ids": [
+            "wn31:s:01772598"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "名词“个人”和形容词“个人的”在核心，“个别的”在扩展；各源义均有准确链接，词性未混用。"
+    },
+    {
+      "id": "SG25-04731bc4ce6b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "占优势的（有优势/支配力）",
+          "relation": "合理概括",
+          "reason": "核心组“占优势的／主导的”对应 exercising influence or control，合并两个近义源义且未纳入遗传学显性义。",
+          "evidence_ids": [
+            "wn31:a:00794782"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "主导的（起主导作用）",
+          "relation": "合理概括",
+          "reason": "核心组将“主导的”与“占优势的”合为影响/控制上位表达，源义保留且未冒充词典其他专门义。",
+          "evidence_ids": [
+            "wn31:a:00794782"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个源义合在核心“占优势/主导”组；遗传学显性等词典义未被当作原文已有义。"
+    },
+    {
+      "id": "SG25-e892aeb42e69",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "占上风（取得优势）",
+          "relation": "合理概括",
+          "reason": "核心组“占上风／占优势”覆盖 have dominance/power to defeat over，并与“占优势”近义合组。",
+          "evidence_ids": [
+            "wn31:v:02545000",
+            "wn31:v:02650318"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "占优势（数量/地位等占优）",
+          "relation": "合理概括",
+          "reason": "核心组用“占上风／占优势”概括 be larger in number/quantity/power/status/importance，源义得到保留。",
+          "evidence_ids": [
+            "wn31:v:02545000",
+            "wn31:v:02650318"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "控制（支配）",
+          "relation": "语义等价",
+          "reason": "扩展组“控制”对应 be in control，保留支配关系，且未把该义误并入核心一般优势义。",
+          "evidence_ids": [
+            "wn31:v:02653015"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "占上风/占优势在核心，控制在扩展；词典的俯视、意义超过等未作为源义。"
+    },
+    {
+      "id": "SG25-bfb9e6d725a0",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "国内的（国家内部/内政）",
+          "relation": "语义等价",
+          "reason": "核心组“国内的”对应 concerning internal affairs of a nation，符合国内事务义。",
+          "evidence_ids": [
+            "wn31:a:01041784"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "家庭的（家/家庭）",
+          "relation": "语义等价",
+          "reason": "核心组“家庭的”对应 of or involving the home or family，对象和词性一致。",
+          "evidence_ids": [
+            "wn31:a:01042490"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "家养的（驯养/家用动物等）",
+          "relation": "语义等价",
+          "reason": "扩展组“家养的”对应 converted or adapted to domestic use，如 domestic animals，保留驯养/家用义。",
+          "evidence_ids": [
+            "wn31:s:02397489"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "国内、家庭、家养三义分别落在核心/核心/扩展，对象边界清楚，未把家庭义泛化到家养义。"
+    },
+    {
+      "id": "SG25-85ca6d6d291c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：行为、举止",
+          "relation": "语义等价",
+          "reason": "核心组‘行为’与 wn31:n:01223473 ‘manner of acting/controlling yourself’ 对应；另 n:04904939 也支持待人行为，组文本未加对象排他限制。",
+          "evidence_ids": [
+            "wn31:n:01223473",
+            "wn31:n:04904939"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：组织、管理/主持（活动、事务）",
+          "relation": "合理概括",
+          "reason": "核心组‘组织’由 v:02450374 ‘direct the course of; manage/control’（conduct business）支撑，覆盖组织/管理活动；文本仍作一般‘组织’，未把‘business’示例写成唯一对象。",
+          "evidence_ids": [
+            "wn31:v:02450374"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：指挥（可含音乐指挥或一般带领/指挥）",
+          "relation": "范围收窄",
+          "reason": "扩展组只以音乐指挥证据 v:01736802、v:01737094 支撑‘指挥’，而源‘指挥’未限定音乐；一般‘指挥/带领’的残余范围未在 union 中明确保留或暂存。",
+          "evidence_ids": [
+            "wn31:v:01736802",
+            "wn31:v:01737094"
+          ],
+          "context": "uncertain",
+          "residual_scope": "源‘指挥’若泛指非音乐的一般指挥/带领，当前仅明确保留音乐指挥。",
+          "counterexample": "v:02450374 ‘direct the course of; manage/control’ 显示 conduct 可泛指管理/指挥事务，非仅音乐指挥。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02450374"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s004",
+          "source_scope": "动词：传导（热、电、声等）",
+          "relation": "语义等价",
+          "reason": "扩展组‘传导’与 v:02084180 ‘transmit or serve as the medium for transmission’（heat/sound 示例）在物理传导义上对应，示例未被写成排他限制。",
+          "evidence_ids": [
+            "wn31:v:02084180"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "残余范围/示例排他",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-85ca6d6d291c:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:01736802",
+            "wn31:v:01737094",
+            "wn31:v:02450374"
+          ],
+          "reason": "源‘指挥’未注明仅音乐，扩展组注释放到音乐指挥；现有文本仍作‘指挥’，故非Major，但需说明音乐为常见语境而非排他，并保留一般‘指挥/带领’的待核残余。",
+          "repair_suggestion": "在扩展组注明音乐指挥为常见用例而非唯一对象，并为一般‘指挥/带领’保留待核备注；不要新增无来源证据的独立义。"
+        }
+      ],
+      "note": "行为名词与组织/管理动词在核心；音乐指挥、物理传导在扩展。指挥的音乐限制被标为Minor残余范围，其余映射可审计。"
+    },
+    {
+      "id": "SG25-0fee7196f681",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：介绍（使人相识/使了解）",
+          "relation": "语义等价",
+          "reason": "核心组‘介绍’与 v:00902866 ‘cause to come to know personally’ 对应；组文本保持一般‘介绍’，未把‘使人相识’这一典型证据写成排他对象。",
+          "evidence_ids": [
+            "wn31:v:00902866"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：引入（新事物、制度、产品等）",
+          "relation": "语义等价",
+          "reason": "核心组‘引入’由 v:01621712 ‘bring in or establish in a new place/environment’ 与 v:01645979 ‘bring something new to an environment’ 支撑，规则、外来水果等示例非排他。",
+          "evidence_ids": [
+            "wn31:v:01621712",
+            "wn31:v:01645979"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "‘介绍’与‘引入’分列核心；介绍组保留一般表述，引入组有建立新事物/新环境的词典支撑。"
+    },
+    {
+      "id": "SG25-d3db5338aae1",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：介绍（使人相识/使公开认识）",
+          "relation": "语义等价",
+          "reason": "核心组‘介绍’与 n:07232009 ‘formally making a person known to another or to the public’ 对应；组文本未排除其他介绍场景。",
+          "evidence_ids": [
+            "wn31:n:07232009"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：引言、开头部分",
+          "relation": "语义等价",
+          "reason": "核心组‘引言’与 n:06408573 ‘the first section of a communication’ 对应，对象为文章/通信开头，不是所有介绍活动。",
+          "evidence_ids": [
+            "wn31:n:06408573"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：引进、引入新事物",
+          "relation": "合理概括",
+          "reason": "扩展组‘引进’由 n:00238889 ‘act of beginning something new’ 与 n:00241051 ‘introducing something new’ 支撑，覆盖引入新事物的活动；与‘介绍人’、‘文章引言’分开。",
+          "evidence_ids": [
+            "wn31:n:00238889",
+            "wn31:n:00241051"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "介绍、文章引言在核心，引进新事物在扩展；三类名词用法均有词典证据且未互相冒充。"
+    },
+    {
+      "id": "SG25-60c394d0e768",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：有生产力的、能产出/丰产的",
+          "relation": "语义等价",
+          "reason": "核心组合并文本‘有生产力的／能生产的’中的‘有生产力的’由 a:01871147 ‘producing or capable of producing (especially abundantly)’ 支撑；丰产、农田等为示例而非排他。",
+          "evidence_ids": [
+            "wn31:a:01871147"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "形容词：能生产的、具有产出能力",
+          "relation": "语义等价",
+          "reason": "核心组中的‘能生产的’由 a:01873245 ‘having the ability to produce or originate’ 支撑；与 s001 同属产出能力范围，合并展示未新增对象限制。",
+          "evidence_ids": [
+            "wn31:a:01873245"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个近义中文片段围绕产出能力合组在核心；均有对应形容词证据，未见来源范围缺口。"
+    },
+    {
+      "id": "SG25-93a80394715c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：忍受、忍耐不愉快",
+          "relation": "语义等价",
+          "reason": "核心组‘忍受’与 v:00670017 ‘put up with something or somebody unpleasant’ 直接对应；v:02113644 ‘undergo/be subjected to’ 提供受难受苦的邻近支撑。",
+          "evidence_ids": [
+            "wn31:v:00670017",
+            "wn31:v:02113644"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：持续存在、延续",
+          "relation": "语义等价",
+          "reason": "扩展组‘持续存在’与 v:02653599 ‘continue to exist’、v:02710788 ‘persist for a specified period of time’ 对应；未把‘忍受’义混入。",
+          "evidence_ids": [
+            "wn31:v:02653599",
+            "wn31:v:02710788"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "‘忍受’与‘持续存在’分属核心/扩展，词性和对象范围区分清楚，未发生互相借义覆盖。"
+    },
+    {
+      "id": "SG25-bd1b16004d22",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "产出能力/生产力（较一般的能力义）",
+          "relation": "语义等价",
+          "reason": "扩展组以“生产力”承接原文较一般的产出能力义，与 wn31:n:05155187 的 productive power/quality 定义相符；核心保留可计量的“生产率”义。",
+          "evidence_ids": [
+            "wn31:n:05155187"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "按投入产出的比率/生产率",
+          "relation": "语义等价",
+          "reason": "核心组“生产率”与 wn31:n:13846712 的经济学 ratio 定义一致，原文语境未要求额外对象限制。",
+          "evidence_ids": [
+            "wn31:n:13846712"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "两义均保留：核心先列可计量的“生产率”，扩展保留较一般的“生产力/产出能力”；核心压缩有明确说明。"
+    },
+    {
+      "id": "SG25-46401dc068e7",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "数量/程度减少（名词性）",
+          "relation": "语义等价",
+          "reason": "核心短语包含“减少”，与 wn31:n:00352464 的 act of decreasing/reducing something 相符。",
+          "evidence_ids": [
+            "wn31:n:00352464"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "缩减/削减（名词性）",
+          "relation": "语义等价",
+          "reason": "“缩减”可由核心组“减少／缩减／缩小”及 reducing something 证据覆盖，未加入额外的对象排他限制。",
+          "evidence_ids": [
+            "wn31:n:00352464"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "尺寸/范围变小（名词性概括）",
+          "relation": "合理概括",
+          "reason": "“缩小”与减少/缩减合并为近义记忆框架，由 reducing something 概括承接；具体对象差异仍可从原片段追溯。",
+          "evidence_ids": [
+            "wn31:n:00352464"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个近义片段合并为核心短语，共享“使/变少”的词典义；化学还原等外部义未塞入来源层。"
+    },
+    {
+      "id": "SG25-73c76d56fd40",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "人或事物有活力、有行动力/有干劲",
+          "relation": "语义等价",
+          "reason": "核心组“充满活力的”对应 wn31:a:00811761 的 action/forcefulness/force of personality 用法。",
+          "evidence_ids": [
+            "wn31:a:00811761"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "处于变化、活动状态或与动力学相关（较宽）",
+          "relation": "范围收窄",
+          "reason": "扩展组仅用 wn31:a:02991423“of or relating to dynamics”承接，技术域限制把原文较宽的“动态的”收窄；一般“变化/活跃”用法没有保留或暂存。",
+          "evidence_ids": [
+            "wn31:a:02991423"
+          ],
+          "context": "unlicensed_limit",
+          "residual_scope": "缺少一般“不断变化/活跃的”动态义，仅留“动力学的”技术义",
+          "counterexample": "dynamic market / dynamic speaker 的 active/forceful 用法见 a:00811761",
+          "counterexample_evidence_ids": [
+            "wn31:a:00811761"
+          ],
+          "risk": "suspected_Minor"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "范围收窄",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-73c76d56fd40:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:a:02991423",
+            "wn31:a:00811761"
+          ],
+          "reason": "原文“动态的”未限定技术域；扩展组以“of or relating to dynamics”承接，缺少一般变化/活跃义。a:00811761 的 dynamic market 示例显示更广的 active 用法。",
+          "repair_suggestion": "扩展组改为“动态的；不断变化的”，将“动力学的”作为语境限定或另列，并补一般动态义的证据或明确暂存剩余范围。"
+        }
+      ],
+      "note": "核心“充满活力的”匹配；扩展“动态的”被技术动力学义收窄，一般变化/活跃义未明确保留，需修正。"
+    },
+    {
+      "id": "SG25-ae80c184961f",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "物理电现象/电能（日常“电”）",
+          "relation": "语义等价",
+          "reason": "核心组“电”同时由 wn31:n:11470244 物理现象和 wn31:n:11470903 电能/电流两证据支持；未把情绪兴奋比喻义放入来源层。",
+          "evidence_ids": [
+            "wn31:n:11470244",
+            "wn31:n:11470903"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文单义“电”已覆盖物理现象与电能/用电概念；情绪兴奋义作为外部词典义未升入核心。"
+    },
+    {
+      "id": "SG25-5e9ad751b5e6",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "经济学学科",
+          "relation": "语义等价",
+          "reason": "核心组与 wn31:n:06158935 的社会科学分支定义一致；未按词形误加“经济状况/多经济”。",
+          "evidence_ids": [
+            "wn31:n:06158935"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "“经济学”单一学科义与词典证据精确对应，无额外来源义缺口。"
+    },
+    {
+      "id": "SG25-ed157486b875",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "与电有关或由电驱动",
+          "relation": "语义等价",
+          "reason": "核心“电的”同时对应“relating to/concerned with electricity”和“operated by electricity”，在形容词范围内保留原短释。",
+          "evidence_ids": [
+            "wn31:a:02837586",
+            "wn31:a:02837762"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "单义形容词；核心“电的”覆盖与电相关及电力驱动用途，无来源剩余范围。"
+    },
+    {
+      "id": "SG25-73e4c51456c2",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "与电子学、电子设备或电子有关",
+          "relation": "语义等价",
+          "reason": "核心“电子的”对应电子学/电子设备义，也保留与电子相关的词典依据；注释中的“电子设备”可视为示例而非排他限制。",
+          "evidence_ids": [
+            "wn31:a:02729233",
+            "wn31:a:02729455"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "单义形容词；核心“电子的”覆盖电子学/电子设备及与电子相关用法，与electrical区别留作教学说明。"
+    },
+    {
+      "id": "SG25-79e1d925e79c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "估计（原文词性未逐项标注，可涉名词或动词）",
+          "relation": "无法确定",
+          "reason": "核心1将“估计”仅落到名词，但s001为unresolved_multi_pos；名词义有n:05811387支持，动词“估计”未由该ID明确承接。",
+          "evidence_ids": [
+            "wn31:n:05811387"
+          ],
+          "context": "uncertain",
+          "residual_scope": "该片段的名词/动词词性归属未确认，动词“估计”用法未由本ID明确承接",
+          "counterexample": "英语estimate可作动词表示“估算数量/时间”（wn31:v:00674352）",
+          "counterexample_evidence_ids": [
+            "wn31:v:00674352"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "估算（原文词性未逐项标注，可涉名词或动词）",
+          "relation": "无法确定",
+          "reason": "核心2将“估算”仅落到动词，但s002为unresolved_multi_pos；动词义有v:00674352支持，名词“估算/估价”未由该ID明确承接。",
+          "evidence_ids": [
+            "wn31:v:00674352"
+          ],
+          "context": "uncertain",
+          "residual_scope": "该片段的名词/动词词性归属未确认，名词“估算/估计”用法未由本ID明确承接",
+          "counterexample": "英语estimate可作名词表示“估算、估价”（wn31:n:05811387）",
+          "counterexample_evidence_ids": [
+            "wn31:n:05811387"
+          ],
+          "risk": "suspected_Minor"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_pos_unresolved_split",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-79e1d925e79c:core:1",
+            "SG25-79e1d925e79c:core:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:05811387",
+            "wn31:v:00674352"
+          ],
+          "reason": "两个原片段均为unresolved_multi_pos，核心按名词/动词拆分；注释虽说明是教学分配，但映射仍可能把未定词性当成已核验，且未明确“估计”动词、“估算”名词的残余范围。",
+          "repair_suggestion": "将词性分配标为推荐而非源标注；在两个片段下保留名词/动词未定，或明确核心1名词“估计”与核心2动词“估算”为联合教学覆盖，并暂存未逐项核验的残余。"
+        }
+      ],
+      "note": "名词和动词两组均有词典支持，但源片段词性未逐项确定；拆分合理却仍应作待核，不能视为每个ID的完整核验。"
+    },
+    {
+      "id": "SG25-dc3dd57e3c5b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "同等、处于同等水平",
+          "relation": "语义等价",
+          "reason": "扩展“同等”有n:13969940“essentially equal or equivalent; equally balanced”支持，原义未被删除，仅作后置。",
+          "evidence_ids": [
+            "wn31:n:13969940"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "社会地位或权利平等",
+          "relation": "语义等价",
+          "reason": "核心“平等”对应n:04755139中status相同这一范围，未添加无关对象领域。",
+          "evidence_ids": [
+            "wn31:n:04755139"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "数量、度量或价值相等",
+          "relation": "语义等价",
+          "reason": "核心“相等”对应n:04755139中quantity/measure/value相同这一范围，与数值/度量语境一致。",
+          "evidence_ids": [
+            "wn31:n:04755139"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三义均有层级覆盖；同等置扩展属教学排序而非覆盖缺口，核心分别保留平等与相等。"
+    },
+    {
+      "id": "SG25-925b979d6564",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "个人或群体的道德原则/行为准则",
+          "relation": "语义等价",
+          "reason": "核心“道德准则”对应n:05964886（个人或群体接受的right/wrong原则）及n:06676362（道德与可接受行为的准则体系），未擅自扩为整门伦理学。",
+          "evidence_ids": [
+            "wn31:n:05964886",
+            "wn31:n:06676362"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "单义名词；核心“道德准则”覆盖个人/群体行为原则，未扩大为ethics学科义。"
+    },
+    {
+      "id": "SG25-3393b41eeeea",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：极端的（程度、立场等）",
+          "relation": "语义等价",
+          "reason": "core:1 与原义同为形容词“极端的”，证据 s01515272 支持最大程度/强度，s01539177 支持超出常规的观点/行动，能覆盖原文常见性质用法。",
+          "evidence_ids": [
+            "wn31:s:01515272",
+            "wn31:s:01539177"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：极端（最高程度/极端情形）",
+          "relation": "语义等价",
+          "reason": "extended:1 的“极端”由 n05105361 的 furthest/highest degree 支持，与原义相合。",
+          "evidence_ids": [
+            "wn31:n:05105361"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：极限（最高限度/极限程度）",
+          "relation": "语义不匹配",
+          "reason": "extended:2 用 n08586694“离中心最远的点”支撑“极限”，该证据更接近空间端点/末端而非“最高限度”；更贴近该义的 n05105361 已用于 s002。",
+          "evidence_ids": [
+            "wn31:n:08586694"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺失“最高限度/极限程度”义，当前证据只覆盖空间端点义",
+          "counterexample": "n05105361 的 furthest/highest degree（carried it to extremes）是支持“极限/最高程度”的用法，但当前未链到 s003。",
+          "counterexample_evidence_ids": [
+            "wn31:n:05105361"
+          ],
+          "risk": "suspected_Major"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "evidence_mismatch",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-3393b41eeeea:extended:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:08586694",
+            "wn31:n:05105361"
+          ],
+          "reason": "extended:2 的“极限”以空间“点 located farthest from middle”为证据，语义偏向端点/末端；源义“极限”通常指最高限度/极限程度，证据不匹配。",
+          "repair_suggestion": "将 s003 重链到 n05105361 的最高程度义，或把组文本改为“极端/末端”并另留“极限”待核。"
+        }
+      ],
+      "note": "s001 核心形容词已覆盖；s002 扩展名词“极端”由程度义证据支持；s003“极限”当前证据是空间端点义，与“最高限度”不符，需重链或改注。"
+    },
+    {
+      "id": "SG25-d10dd510c72e",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：不可避免的",
+          "relation": "语义等价",
+          "reason": "core:1 与原文同义；a00343913 直接定义 incapable of being avoided or prevented。",
+          "evidence_ids": [
+            "wn31:a:00343913"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "唯一源义“不可避免的”由核心形容词证据直接覆盖；名词 the inevitable 属外部同形用法，未混入源义。"
+    },
+    {
+      "id": "SG25-16a7b8d12931",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：防御（抵御攻击/军事防卫）",
+          "relation": "语义等价",
+          "reason": "core:1 的“防御”由 n00825193（抵御攻击/伤害的行为）与 n00956422（军事防卫行动/资源）支持，覆盖原文一般防御义。",
+          "evidence_ids": [
+            "wn31:n:00825193",
+            "wn31:n:00956422"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：辩护（为观点/行为辩解，含法律答辩语境）",
+          "relation": "范围收窄",
+          "reason": "core:2 文本和 note 保留“辩护”并提法律语境，但所给证据只覆盖一般正当理由与言论回应，未列 n01201240 的被告答辩/刑事辩护；对原义为子集。",
+          "evidence_ids": [
+            "wn31:n:06753339",
+            "wn31:n:07215473"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺失法律被告答辩/刑事辩护语境",
+          "counterexample": "n01201240：defendant's answer or plea denying charges（法律辩护）是原义可支持的用法，但当前证据未覆盖。",
+          "counterexample_evidence_ids": [
+            "wn31:n:01201240"
+          ],
+          "risk": "suspected_Minor"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "evidence_gap",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-16a7b8d12931:core:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:01201240",
+            "wn31:n:06753339",
+            "wn31:n:07215473"
+          ],
+          "reason": "note 称法律和日常论辩都有语境，但 core:2 只列 justification/speech act 证据；法律被告答辩 n01201240 未列，无法验证法律辩护覆盖。",
+          "repair_suggestion": "补 n01201240 或将 note 的法律语境降为待核/删除；若保留法律义，core:2 文本可保持“辩护”但需证据。"
+        }
+      ],
+      "note": "s001“防御”有行为与军事防卫证据；s002“辩护”组文本与 note 提法律，但证据只给一般正当理由/言论回应，缺 n01201240 被告答辩，需补证。"
+    },
+    {
+      "id": "SG25-599fc58fd0f7",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：不同（事物不一样）",
+          "relation": "语义等价",
+          "reason": "core:1 合并“不同／相异”，n02672316 be different 直接支持；与 s001 同义。",
+          "evidence_ids": [
+            "wn31:v:02672316"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：相异（事物不一样）",
+          "relation": "语义等价",
+          "reason": "与 s001 同义，core:1 的合并文本与 n02672316 同时覆盖“相异”。",
+          "evidence_ids": [
+            "wn31:v:02672316"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个近义源义合并为核心“不同／相异”，n02672316 直接支持；意见不同仅在注释作搭配，未冒充原文独立义。"
+    },
+    {
+      "id": "SG25-69ea741e98fd",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：差别（事物不一样的性质）",
+          "relation": "语义等价",
+          "reason": "core:1“差别”由 n04756076 the quality of being unlike/dissimilar 直接支持。",
+          "evidence_ids": [
+            "wn31:n:04756076"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：分歧（意见不一致）",
+          "relation": "语义等价",
+          "reason": "core:2“分歧”由 n07196595 disagreement/argument about something important 支持，分歧义明确。",
+          "evidence_ids": [
+            "wn31:n:07196595"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "s001“差别”由 n04756076 直接支持；s002“分歧”由 n07196595 的分歧/争执义支持，两源义分别保留于核心。"
+    },
+    {
+      "id": "SG25-763cdc62a869",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：物体外表面／二维外边界；原文未给抽象或公开露面语境",
+          "relation": "语义等价",
+          "reason": "核心组“表面”以 wn31:n:04369112、wn31:n:08677970 支持一般物理表面；未把动词 surface 或公开出现义加入，符合原名词义。",
+          "evidence_ids": [
+            "wn31:n:04369112",
+            "wn31:n:08677970"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文仅名词“表面”，核心保留一般物理表面；抽象“表面现象”未明确展开，但原文无语境，不据此判缺。"
+    },
+    {
+      "id": "SG25-ea728840d371",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：会议（协商／讨论性会面）",
+          "relation": "合理概括",
+          "reason": "与“讨论会”同组，由正式会议／协商讨论证据支持；核心文本仍作会议／讨论会，未泛化为任何相遇。",
+          "evidence_ids": [
+            "wn31:n:07157274",
+            "wn31:n:08325427"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：讨论会（有议题的讨论性会面）",
+          "relation": "合理概括",
+          "reason": "讨论会与会议在同一正式协商／讨论事件框架内合并；不是新增体育协会等义。",
+          "evidence_ids": [
+            "wn31:n:07157274",
+            "wn31:n:08325427"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个原义在同一正式会面框架内保留，核心短释未扩展到无关“相遇”义。"
+    },
+    {
+      "id": "SG25-52367a6622b1",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：提到／提及（言语指出）",
+          "relation": "语义等价",
+          "reason": "核心“提及”由 wn31:n:06778981 支持，保留言语指出某人某事的独立名词用法。",
+          "evidence_ids": [
+            "wn31:n:06778981"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：参考／查阅（参照行为）",
+          "relation": "语义等价",
+          "reason": "核心“参考”由 wn31:n:01266543 支持，保留参照、查阅行为；未把“参考书”直接并入。",
+          "evidence_ids": [
+            "wn31:n:01266543"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：推荐信（为他人提供评价的书面材料）",
+          "relation": "语义等价",
+          "reason": "扩展“推荐信”由 wn31:n:06707541 支持；证据中的前雇主推荐是许可子类，目标文本保持一般“推荐信”。",
+          "evidence_ids": [
+            "wn31:n:06707541"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个原义均有独立链接：参考／提及在核心，推荐信在扩展；推荐信未进首屏属教学分层，不是丢失；参考书作为词典补充未采用。"
+    },
+    {
+      "id": "SG25-27f576cafbb2",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词／动词待核：位置或事物从一处到另一处的转移",
+          "relation": "合理概括",
+          "reason": "核心同时保留动词“转移”和名词“转移（过程／事件）”，由 v00556317、v02236972、n00316812 支持；未宣称原书已逐义分配词性。",
+          "evidence_ids": [
+            "wn31:v:00556317",
+            "wn31:v:02236972",
+            "wn31:n:00316812"
+          ],
+          "context": "uncertain",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词／动词待核：所有权转让（行为或动作）",
+          "relation": "无法确定",
+          "reason": "扩展只保留动词“转让”（v02225243）；源义项词性为 null，未以 pending/held 保留名词“所有权转让行为”，不能静默断言源义仅为动词。",
+          "evidence_ids": [
+            "wn31:v:02225243"
+          ],
+          "context": "uncertain",
+          "residual_scope": "若源义为名词“所有权转让（行为）”，当前缺名词行为分支；wn31:n:01109837 可作核对证据",
+          "counterexample": "名词“所有权转让行为”可由 wn31:n:01109837 支持，与仅有动词“转让”形成覆盖差异。",
+          "counterexample_evidence_ids": [
+            "wn31:n:01109837"
+          ],
+          "risk": "pending"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词／动词待核：人员岗位／工作地点调动",
+          "relation": "无法确定",
+          "reason": "扩展只保留动词“调动”（v02398228）；源义项词性为 null，名词“调动／岗位调动”可能性未明确暂存。",
+          "evidence_ids": [
+            "wn31:v:02398228"
+          ],
+          "context": "uncertain",
+          "residual_scope": "名词“岗位／人员调动”未保留独立分支；现有 wn31:n:10744008 仅指被调动者，不能替代行为名词",
+          "counterexample": "wn31:n:10744008 只支持“被调动的人”，不是“调动”行为本身，不能证明名词调动已覆盖。",
+          "counterexample_evidence_ids": [
+            "wn31:n:10744008"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "source_pos_unresolved",
+          "source_ids": [
+            "s002",
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-27f576cafbb2:extended:1",
+            "SG25-27f576cafbb2:extended:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:01109837",
+            "wn31:n:10744008"
+          ],
+          "reason": "原词语源词性为“名词；动词”，且各原义项 part_of_speech 为 null；候选将“转让”“调动”落到动词组，未把名词转让／调动可能显式暂存，整体也未处理源词性待核。",
+          "repair_suggestion": "将 s002、s003 的源词性标为待核；如需覆盖名词可能，补充“所有权转让行为”（n01109837）及岗位调动名词待核，不把动词推荐当作原书词性。"
+        }
+      ],
+      "note": "转移的核心名词／动词均有对应组，但“转让”“调动”只落动词且源词性未逐义确认；应保留 pending，不能把整个词判为已核验。"
+    },
+    {
+      "id": "SG25-92bc2e412115",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：根据已知事实／推理得出结论",
+          "relation": "语义等价",
+          "reason": "核心“推断／推论”由 wn31:v:00638236、wn31:v:00946956 支持，保留根据推理得出结论的动作，不是无依据猜测。",
+          "evidence_ids": [
+            "wn31:v:00638236",
+            "wn31:v:00946956"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：推论／推出结论",
+          "relation": "语义等价",
+          "reason": "与“推断”在同一推理结论框架内合并；目标短释未把归纳或演绎任一方向设为排他限制。",
+          "evidence_ids": [
+            "wn31:v:00638236",
+            "wn31:v:00946956"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "推断与推论在根据证据推出结论的动词框架合并；英语 infer 的归纳用法未被文本排除，当前核心短释可涵盖，未见缺失。"
+    },
+    {
+      "id": "SG25-bc5ece60fff8",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "偏好（相对其他选择更喜欢）",
+          "relation": "语义等价",
+          "reason": "preference 的“偏好/偏爱”义由 predisposition in favor 与 strong liking 证据支持，合组保留比较选择语境。",
+          "evidence_ids": [
+            "wn31:n:06210079",
+            "wn31:n:07513449"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "偏爱（偏向某一方）",
+          "relation": "语义等价",
+          "reason": "“偏爱”对应 preference 的偏向性喜欢，合组不扩展到选择权或贸易优惠。",
+          "evidence_ids": [
+            "wn31:n:06210079",
+            "wn31:n:07513449"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "喜爱（较强喜欢）",
+          "relation": "合理概括",
+          "reason": "将“喜爱”以“较强喜欢”的上位表达并入 preference 组，保留比较选择语境，不扩展为一般喜欢。",
+          "evidence_ids": [
+            "wn31:n:06210079",
+            "wn31:n:07513449"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三片段合入一个核心组；证据覆盖相对选择/较强喜欢，未采用的选择权与贸易优惠不属原中文范围。"
+    },
+    {
+      "id": "SG25-cd340d1a5c41",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "专业的（与专业/职业相关或符合职业特征）",
+          "relation": "语义等价",
+          "reason": "形容词“专业的”对应 professional 的“职业相关/符合职业特征”用法，核心组证据匹配。",
+          "evidence_ids": [
+            "wn31:a:01876050",
+            "wn31:a:02850390"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "职业的（以职业为生/从事职业）",
+          "relation": "语义等价",
+          "reason": "“职业的”对应 engaged in a profession or means of livelihood 的形容词用法。",
+          "evidence_ids": [
+            "wn31:a:01874674"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "专业人士（从事专业职业的人）",
+          "relation": "语义等价",
+          "reason": "“专业人士”对应 person engaged in one of the learned professions；因词性为名词单列扩展层。",
+          "evidence_ids": [
+            "wn31:n:10499838"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "两个形容词义分列核心，名词“专业人士”在扩展层；词性分开，证据分别对应职业相关/以职业为生/从业者。"
+    },
+    {
+      "id": "SG25-4cf14180a81b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "忍受（容忍不愉快的事）",
+          "relation": "语义等价",
+          "reason": "“忍受”对应 suffer 的 put up with something unpleasant 用法，因与“蒙受”方向不同单列扩展。",
+          "evidence_ids": [
+            "wn31:v:00670017"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "忍耐（克制地承受不愉快）",
+          "relation": "语义等价",
+          "reason": "“忍耐”与“忍受”同组，对应主动容忍不愉快，不混同于遭受负面事件。",
+          "evidence_ids": [
+            "wn31:v:00670017"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "蒙受（遭受伤害、处罚等负面经历）",
+          "relation": "语义等价",
+          "reason": "“蒙受”对应 undergo injuries/illnesses 或 be subjected to penalty 等遭受义，核心保留。",
+          "evidence_ids": [
+            "wn31:v:00065410",
+            "wn31:v:02113644"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "“蒙受”保留核心，“忍受/忍耐”在扩展层；证据区分遭受负面经历与主动容忍不愉快。"
+    },
+    {
+      "id": "SG25-ff0139d07c59",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "信心（对他人/事物的信任或把握）",
+          "relation": "语义等价",
+          "reason": "“信心”覆盖对他人/事物的信任与把握，核心组证据含 trust 与 belief in abilities。",
+          "evidence_ids": [
+            "wn31:n:05705328",
+            "wn31:n:07541744"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "自信（对自身能力/判断的信念）",
+          "relation": "语义等价",
+          "reason": "“自信”指向自身，对应 belief in yourself and your abilities；与一般“信心”分列扩展。",
+          "evidence_ids": [
+            "wn31:n:05705328"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "自信心（对自身的信心）",
+          "relation": "语义等价",
+          "reason": "“自信心”与“自信”同组，对应自身能力信念，不并入其他指向的“信心”。",
+          "evidence_ids": [
+            "wn31:n:05705328"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "“信心”在核心，“自信/自信心”在扩展；证据区分对他人/事物的信任与对自身能力的信念。"
+    },
+    {
+      "id": "SG25-c64bc36dfe56",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "限制（限定范围、数量或进入）",
+          "relation": "语义等价",
+          "reason": "“限制”对应 place limits on extent/amount/access 的一般设限义，核心组证据匹配。",
+          "evidence_ids": [
+            "wn31:v:00234091"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "禁闭（关押、剥夺自由）",
+          "relation": "语义等价",
+          "reason": "“禁闭”对应 close within bounds/deprive of freedom，因比一般限制更强而单列扩展。",
+          "evidence_ids": [
+            "wn31:v:01304044",
+            "wn31:v:02500687"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [],
+      "note": "“限制”在核心，“禁闭”在扩展；证据区分一般设限与剥夺自由/关押。"
+    },
+    {
+      "id": "SG25-fed0e4820af4",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "国家或公共财政收支",
+          "relation": "语义等价",
+          "reason": "核心组保留“财政的”，所给 fiscal responsibility 证据支持财政/财务义。",
+          "evidence_ids": [
+            "wn31:a:02858779"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "金融、资金融通",
+          "relation": "语义等价",
+          "reason": "核心组保留“金融的”，所给 involving financial matters 证据可覆盖金融/财务事项。",
+          "evidence_ids": [
+            "wn31:a:02858779"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "财政与金融两个中文场景均保留在核心；同一宽泛财务证据支撑，未强行用对象限制合并两者。"
+    },
+    {
+      "id": "SG25-ecd38f260821",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "给出词或短语的定义",
+          "relation": "语义等价",
+          "reason": "核心组“下定义”与 give a definition for the meaning of a word 对应。",
+          "evidence_ids": [
+            "wn31:v:00959410"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "一般地指明、具体说明或指定",
+          "relation": "范围收窄",
+          "reason": "该源义只链接到 extended 的“指明”组，而该组证据是 show the form or outline 的轮廓显现义；一般“具体指定/说明”未显式保留，核心“界定”虽引 specify the parameters，但未声明覆盖 s002。",
+          "evidence_ids": [
+            "wn31:v:02742653"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺少一般“明确指出/具体指定/说明”的用法，仅有轮廓或形状显现子义",
+          "counterexample": "specify the parameters（具体指定参数）",
+          "counterexample_evidence_ids": [
+            "wn31:v:00949109"
+          ],
+          "risk": "suspected_Major"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "确定、限定范围或界限",
+          "relation": "合理概括",
+          "reason": "核心组“界定”由 decide upon or fix definitely / specify the parameters 支持，可覆盖确定限定义，但证据不是边界专义。",
+          "evidence_ids": [
+            "wn31:v:00949109"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "范围收窄/剩余范围缺失",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-ecd38f260821:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:02742653",
+            "wn31:v:00949109"
+          ],
+          "reason": "s002‘指明’原为一般指明/具体指定；extended 仅以轮廓显现义支持，核心‘界定’虽引 specify the parameters 但未声明覆盖 s002，导致一般指定义没有显式保留或暂存。",
+          "repair_suggestion": "将“指明”改为更具体的“显出轮廓/使轮廓清晰”并另立或暂存一般“具体指定、说明”义；或将 wn31:v:00949109 的 specify 参数义显式链接到 s002 并在注释说明覆盖。"
+        }
+      ],
+      "note": "下定义与界定在核心有直接证据；“指明”被放入扩展但证据仅限轮廓显现，一般具体指定/说明义需修复或暂存。"
+    },
+    {
+      "id": "SG25-4c4ed1afbfda",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "词、短语或符号意义的解释",
+          "relation": "语义等价",
+          "reason": "核心合并组“定义；释义”由 concise explanation of the meaning of a word or phrase or symbol 支持。",
+          "evidence_ids": [
+            "wn31:n:06757091"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "释义、解释性说明",
+          "relation": "语义等价",
+          "reason": "“释义”与“定义”同属解释意义框架，核心合并组保留该用途。",
+          "evidence_ids": [
+            "wn31:n:06757091"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "定义与释义词义在核心合并；外部候选“清晰度”属词典补充义，未混入来源映射。"
+    },
+    {
+      "id": "SG25-3dbd9cd5e1fb",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "能力、官能",
+          "relation": "合理概括",
+          "reason": "核心组保留上位“能力”，所给证据特指心智或感知官能，中文上位词可涵盖但未在注释中显式限定。",
+          "evidence_ids": [
+            "wn31:n:05658174"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "学校全体教师与管理人员",
+          "relation": "语义等价",
+          "reason": "核心组“全体教员”与 body of teachers and administrators at a school 对应。",
+          "evidence_ids": [
+            "wn31:n:08304507"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "大学学科、学院或院系组织（含地区制度差异）",
+          "relation": "语义等价",
+          "reason": "扩展组保留“院系”，并以既有出版方观察补证；证据注明地区制度差异且非独立频率证据。",
+          "evidence_ids": [
+            "web:faculty"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "能力与全体教员分列核心；院系作为地区性学校组织用法置扩展，证据类型限制已注明。"
+    },
+    {
+      "id": "SG25-b9abdfa5387b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "数量充足",
+          "relation": "合理概括",
+          "reason": "核心合并组保留“充足的”，但注释明确不解释为过量丰富；证据为达到需要且不丰富。",
+          "evidence_ids": [
+            "wn31:a:02343832"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "满足需要或要求",
+          "relation": "语义等价",
+          "reason": "核心合并组的“满足需要的”与 fulfill a need or requirement 对应。",
+          "evidence_ids": [
+            "wn31:a:02343832"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "足够、达到所需量",
+          "relation": "语义等价",
+          "reason": "核心合并组“足够的”与 sufficient 的足够义对应，且注释排除过量丰富。",
+          "evidence_ids": [
+            "wn31:a:02343832"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个近义量度表达合组，注释明确是“达到需要而非过量丰富”，未额外新增对象或领域限制。"
+    },
+    {
+      "id": "SG25-4d2971726bc4",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "人工的：非自然形成/由人制作",
+          "relation": "语义等价",
+          "reason": "核心组以“人工的／人造的”共同覆盖，与 wn31:a:01575756“contrived by art rather than nature”对齐；原文未列做作/虚假义。",
+          "evidence_ids": [
+            "wn31:a:01575756"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "artificial 的“做作的/虚假的”义（wn31:s:00074073）不是原文“人工的/人造的”义，未并入。",
+          "counterexample_evidence_ids": [
+            "wn31:s:00074073"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "人造的：由人制造而非自然生成",
+          "relation": "语义等价",
+          "reason": "与 s001 同义合并，核心组“人工的／人造的”保留原文对比自然的范围；未把词典中的虚假/做作义并入。",
+          "evidence_ids": [
+            "wn31:a:01575756"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "artificial 的“做作的/虚假的”义（wn31:s:00074073）不是原文“人造的”义，未并入。",
+          "counterexample_evidence_ids": [
+            "wn31:s:00074073"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "dictionary_addition_not_source",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-4d2971726bc4:core:1"
+          ],
+          "evidence_ids": [
+            "wn31:s:00074073"
+          ],
+          "reason": "词典另列 artificial=做作的/虚假的，原文未列；候选核心未采用该义是正确的，但外部观察未显式记录。",
+          "repair_suggestion": "保持不并入来源核心；如未来采用，作为词典新增/外部观察另行标注。"
+        }
+      ],
+      "note": "两个近义源义合并在核心；词典的做作/虚假义未入来源层，仅作外部观察，无来源缺口。"
+    },
+    {
+      "id": "SG25-480e4f1d08e9",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "效率高的：以较少时间/精力/费用达成效果",
+          "relation": "语义等价",
+          "reason": "核心组文本与 wn31:a:00843158“being effective without wasting time or effort or expense”对齐；原文没有单列仅“有效”义。",
+          "evidence_ids": [
+            "wn31:a:00843158"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "effective/有效但不一定高效（wn31:s:00512569 含 efficient secretary 例），不能把“有效”直接等同于“效率高”。",
+          "counterexample_evidence_ids": [
+            "wn31:s:00512569"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "核心组覆盖“效率高”；未把 effective 的邻近义扩大为源义。"
+    },
+    {
+      "id": "SG25-1dbf39600b57",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "资格：满足要求/胜任条件",
+          "relation": "合理概括",
+          "reason": "核心组“资格／资历”合并两个近义名词义，并由 wn31:n:04724415“attribute that must be met...fits a person for something”支持胜任条件范围。",
+          "evidence_ids": [
+            "wn31:n:04724415"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "qualification 的“限制/保留”义（wn31:n:06775091）不并入“资格/资历”组。",
+          "counterexample_evidence_ids": [
+            "wn31:n:06775091"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "资历：与胜任相关的经历/条件",
+          "relation": "合理概括",
+          "reason": "与“资格”合组保留在核心，词义围绕胜任要求；同一词典证据可覆盖资格/资历的概括层。",
+          "evidence_ids": [
+            "wn31:n:04724415"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "qualification 的“限制/保留”义（wn31:n:06775091）不是“资历”的直接对应义。",
+          "counterexample_evidence_ids": [
+            "wn31:n:06775091"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "限制条件：对主张或陈述的限定/保留条件",
+          "relation": "语义等价",
+          "reason": "扩展组“限制条件”对应 wn31:n:06775091“a statement that limits or restricts some claim”；与资格/资历分开保留。",
+          "evidence_ids": [
+            "wn31:n:06775091"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "qualification 的“修改/限定行为”义（wn31:n:00201412）不是“限制条件”这一名词结果义。",
+          "counterexample_evidence_ids": [
+            "wn31:n:00201412"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "资格/资历合核心，限制条件留扩展；三源义均有落点，无来源遗漏。"
+    },
+    {
+      "id": "SG25-852805846189",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "影响：对事物/人产生作用",
+          "relation": "语义等价",
+          "reason": "核心组“影响”对应 wn31:v:00137133“have an effect upon”，保留一般作用范围，未加对象限制。",
+          "evidence_ids": [
+            "wn31:v:00137133"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "affect=假装/feign（wn31:v:00839722）不是原文“影响”义。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00839722"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "使感动：使人产生情绪触动",
+          "relation": "语义等价",
+          "reason": "扩展组“使感动”对应 wn31:v:01771801 的情绪/认知影响范围，并保留为情绪触动场景；不把一般“影响”都译成“感动”。",
+          "evidence_ids": [
+            "wn31:v:01771801"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "affect=物理作用/影响（wn31:v:00019441）不等于“使感动”。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00019441"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "影响为核心，使感动在扩展保留；注意“使感动”的情绪场景边界，不扩大到一般影响。"
+    },
+    {
+      "id": "SG25-e97469619c0d",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "益处：有利之处/好处",
+          "relation": "语义等价",
+          "reason": "核心组“益处”对应 wn31:n:05149888“something that aids or promotes well-being”，保留一般好处义。",
+          "evidence_ids": [
+            "wn31:n:05149888"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "benefit 的“慈善义演”义（wn31:n:06905573）不是原文“益处/福利”的直接对应。",
+          "counterexample_evidence_ids": [
+            "wn31:n:06905573"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "福利：援助/待遇性福利",
+          "relation": "语义等价",
+          "reason": "扩展组“福利”对应 wn31:n:13317922“financial assistance in time of need”，并注明援助待遇语境。",
+          "evidence_ids": [
+            "wn31:n:13317922"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "benefit 的一般“益处”义（wn31:n:05149888）不能代替福利援助的专指义。",
+          "counterexample_evidence_ids": [
+            "wn31:n:05149888"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "使受益：使某人得到好处（及物方向）",
+          "relation": "语义等价",
+          "reason": "扩展组“使受益”对应 wn31:v:02295917“be beneficial for/do you good”，保留及物受益方向。",
+          "evidence_ids": [
+            "wn31:v:02295917"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "benefit=得益/从……受益（wn31:v:02295422）方向相反，不是“使受益”。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02295422"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s004",
+          "source_scope": "得益：从某事获得好处（不及物方向）",
+          "relation": "语义等价",
+          "reason": "核心组“得益”对应 wn31:v:02295422“derive a benefit from”，保留从……受益方向。",
+          "evidence_ids": [
+            "wn31:v:02295422"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "benefit=使受益/对……有益（wn31:v:02295917）方向相反，不是“得益”。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02295917"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "core_prioritization_note",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-e97469619c0d:review:extended:s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02295917"
+          ],
+          "reason": "s003“使受益”是独立源动词义，却只置扩展层；记录只说方向保留，未给出后置的教学理由。无覆盖缺口，但首屏取舍说明不足。",
+          "repair_suggestion": "补充“使受益”为何不列核心的教学理由，或将其与“得益”并列核心；扩展保留时注明是教学取舍。"
+        }
+      ],
+      "note": "四个源义均有落点；益处与得益在核心，福利与使受益在扩展，注意及物/不及物方向。"
+    },
+    {
+      "id": "SG25-94f2fe083e1b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "有利可图的；金钱或物质获利",
+          "relation": "语义等价",
+          "reason": "核心组保留“有利可图的”，WordNet 物质获利义直接支持。",
+          "evidence_ids": [
+            "wn31:a:01876839"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "有益的；可指非金钱收益",
+          "relation": "语义等价",
+          "reason": "扩展组保留“有益的；有收获的”，与来源广义受益相符；但仅有 publisher observation 且自注需补证。",
+          "evidence_ids": [
+            "web:profitable"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "evidence_limitation",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-94f2fe083e1b:extended:1"
+          ],
+          "evidence_ids": [
+            "web:profitable"
+          ],
+          "reason": "s002 扩展义仅依赖现有 publisher observation，且该证据自注需正规词典补证；这不构成覆盖错误，但确认前应保持待核。",
+          "repair_suggestion": "补充独立词典或语料例证，或保留 pending 风险，不将扩展义标为已完全确认。"
+        }
+      ],
+      "note": "两个源义均已链接：核心保留物质获利，扩展保留非金钱受益；扩展证据仅 publisher observation 且待补证。"
+    },
+    {
+      "id": "SG25-46e087617851",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "有力的（源译可泛指强有力或强硬）",
+          "relation": "范围收窄",
+          "reason": "扩展组仅保留“产生影响或生效”的“有力的”，注释明确不取体力强壮；相对源词可能较宽范围属于收窄。",
+          "evidence_ids": [
+            "wn31:s:00836323"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "源若泛指体力强壮或强硬，英语 effective 无对应，未覆盖",
+          "counterexample": "a physically strong person 不是 effective 的“有力”义",
+          "counterexample_evidence_ids": [],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "有效的",
+          "relation": "语义等价",
+          "reason": "核心组“有效的／有效果的”保留该义，且 producing intended result 证据支持。",
+          "evidence_ids": [
+            "wn31:a:00837737",
+            "wn31:s:00842764"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "有效果的",
+          "relation": "语义等价",
+          "reason": "核心组与 s002 合并展示“有效的／有效果的”，有效果义有 works well as means/remedy 证据支持。",
+          "evidence_ids": [
+            "wn31:a:00837737",
+            "wn31:s:00842764"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_scope_narrowing",
+          "source_ids": [
+            "s001"
+          ],
+          "group_ids": [
+            "SG25-46e087617851:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:s:00836323"
+          ],
+          "reason": "组把“有力的”限定为产生影响或生效，避免体力强壮，这是合理的英语证据限制；但源词范围较宽，映射未明确说明剩余源范围应待核。",
+          "repair_suggestion": "在 s001 的 source_scope/residual 中标注“源若指体力强则无对应”，保留注释，避免把 effective 当一般强壮。"
+        }
+      ],
+      "note": "核心合并有效／有效果；有力的在扩展并限定为产生影响，源若指体力强壮需按源范围待核。"
+    },
+    {
+      "id": "SG25-d778b673710a",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "小说；文学虚构作品",
+          "relation": "语义等价",
+          "reason": "核心组“小说”与 literary work based on imagination 证据直接对应。",
+          "evidence_ids": [
+            "wn31:n:06378552"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "虚构；虚假或虚构的记述",
+          "relation": "语义等价",
+          "reason": "核心组“虚构”与 deliberately false or improbable account 证据对应，且注释提醒不应一概解释为说谎或某本小说。",
+          "evidence_ids": [
+            "wn31:n:06770602"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "小说与虚构分列核心，证据分别支持文学虚构和虚假记述，未见遗漏。"
+    },
+    {
+      "id": "SG25-e2411f906450",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "有势力的；有能力影响他人或事情的",
+          "relation": "语义等价",
+          "reason": "核心组合并“有势力的／有影响的”，having or exercising influence or power 证据支持该范围。",
+          "evidence_ids": [
+            "wn31:a:01835852"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "有影响的",
+          "relation": "语义等价",
+          "reason": "核心组保留“有影响的”，与 influential 的 influence/power 证据对应。",
+          "evidence_ids": [
+            "wn31:a:01835852"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "有势力与有影响合组核心，influence/power 证据支持，未默认政治权势。"
+    },
+    {
+      "id": "SG25-3eb95cbef266",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形成；形成过程",
+          "relation": "语义等价",
+          "reason": "核心组“形成”由 act of forming/establishing 与自然形成过程两条证据支持。",
+          "evidence_ids": [
+            "wn31:n:00237945",
+            "wn31:n:13504691"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "结构（可指空间排列，也可泛指组织或组成机制）",
+          "relation": "范围收窄",
+          "reason": "扩展组仅以 a particular spatial arrangement 支持“结构”，注释限定空间排列；源“结构”一般组织或组成义未说明在别层或暂存剩余范围。",
+          "evidence_ids": [
+            "wn31:n:03389963"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "源“结构”若指一般组织或组成机制，英语 formation 该义未覆盖",
+          "counterexample": "social structure（一般组织结构）",
+          "counterexample_evidence_ids": [],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "队形；人员或事物按单位排列的阵形",
+          "relation": "语义等价",
+          "reason": "扩展组“队形”与 an arrangement of people or things acting as a unit 证据对应。",
+          "evidence_ids": [
+            "wn31:n:08443418"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "scope_narrowing_residual_unresolved",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-3eb95cbef266:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:03389963"
+          ],
+          "reason": "组把“结构”限于空间排列，仅保留子用法；源“结构”若含一般组织或组成机制，未说明其位于其他层或暂存剩余范围。注释有提醒但映射本身仍宽。",
+          "repair_suggestion": "在 s002 的 source_scope/residual 中明确“一般结构或组成机制无英语 formation 对应”或暂存待核，避免把结构泛指所有组成机制。"
+        }
+      ],
+      "note": "形成过程在核心；结构、队形在扩展。结构与队形均按空间或人员排列限定，结构一般组织义需明确剩余范围。"
+    },
+    {
+      "id": "SG25-ea07dcc807ff",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "通知（使人知道事实）",
+          "relation": "语义等价",
+          "reason": "核心组“通知／告知”直接覆盖该动词义；wn31:v:00833312 为向人提供事实或消息。",
+          "evidence_ids": [
+            "wn31:v:00833312"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "告知（使人知道事实）",
+          "relation": "语义等价",
+          "reason": "核心组“通知／告知”保留该近义动词义；wn31:v:00833312 支持告知事实或情况。",
+          "evidence_ids": [
+            "wn31:v:00833312"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个原义均为动词且近义，核心组合并保留“通知／告知”；inform sb of/about 为常用搭配，未把“赋予特征”等外部义列入核心。"
+    },
+    {
+      "id": "SG25-c90f436c6c08",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "有形的（可触知实体）",
+          "relation": "语义等价",
+          "reason": "核心组覆盖“有形的／可触知的”；wn31:a:02400023 表示可感知尤其可触摸，wn31:a:02400702 表示有物理实体。",
+          "evidence_ids": [
+            "wn31:a:02400023",
+            "wn31:a:02400702"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "可触知的（可感知/可触摸）",
+          "relation": "语义等价",
+          "reason": "核心组“有形的／可触知的”保留可感知、可触摸义；证据同上。",
+          "evidence_ids": [
+            "wn31:a:02400023",
+            "wn31:a:02400702"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "明确的（可作事实/确凿）",
+          "relation": "无法确定",
+          "reason": "该源义仅列入held，没有链接到核心或扩展组；wn31:s:00013681“capable of being treated as fact; tangible evidence”显示可能对应“明确/确凿”的抽象义，但当前未建立映射。",
+          "evidence_ids": [
+            "wn31:s:00013681"
+          ],
+          "context": "uncertain",
+          "residual_scope": "抽象“明确/确凿”义未落入核心或扩展，仅显式暂存",
+          "counterexample": "tangible evidence 可表示“明确/确凿的证据”",
+          "counterexample_evidence_ids": [
+            "wn31:s:00013681"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "held_source_sense_supported",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [],
+          "evidence_ids": [
+            "wn31:s:00013681"
+          ],
+          "reason": "s003“明确的”被held，但提供的词典证据可直接支持“可作事实/确凿”的tangible用法；当前无核心/扩展组承接，剩余范围未解析。",
+          "repair_suggestion": "复核是否将s003链接到扩展或核心的“明确/确凿”子义，或补充更明确的暂存理由与语境限制。"
+        }
+      ],
+      "note": "有形的/可触知的核心覆盖充分；“明确的”抽象义仍held，需复核，不能视为已覆盖。"
+    },
+    {
+      "id": "SG25-aa214ea38326",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "改变（形式/性质变化；原中文较宽）",
+          "relation": "语义等价",
+          "reason": "核心组“改变／使转变”覆盖该动词义；wn31:v:00383306 改变形式/外观/性质，wn31:v:00382272 支持不及物转化为另一形态。注释限定为较明显转化，符合transform词典用法。",
+          "evidence_ids": [
+            "wn31:v:00383306",
+            "wn31:v:00384213",
+            "wn31:v:00382272"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "使转变（使某物形式/性质转化）",
+          "relation": "语义等价",
+          "reason": "核心组“改变／使转变”覆盖使动义；wn31:v:00383306 的及物例“transformed the clay into...”支持使某物转化为另一形态。",
+          "evidence_ids": [
+            "wn31:v:00383306",
+            "wn31:v:00384213"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个动词义合并为“改变／使转变”可保留；注释排除任意微小修改是transform的词典必要限制，不是无依据新增对象限制。"
+    },
+    {
+      "id": "SG25-ef379363dd0c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "制服（名词，群体识别服装）",
+          "relation": "语义等价",
+          "reason": "核心组名词“制服”直接对应 wn31:n:04516887 具识别性的群体服装。",
+          "evidence_ids": [
+            "wn31:n:04516887"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "统一的（形容词，无差异/始终一致）",
+          "relation": "语义等价",
+          "reason": "核心组形容词“统一的”对应 wn31:a:00748118 无差异、wn31:a:01973553 始终同一。",
+          "evidence_ids": [
+            "wn31:a:00748118",
+            "wn31:a:01973553"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "均匀的（组成/间隔一致）",
+          "relation": "语义等价",
+          "reason": "扩展组“均匀的”对应 wn31:s:01203638 结构组成一致、wn31:s:01967120 等间距。",
+          "evidence_ids": [
+            "wn31:s:01203638",
+            "wn31:s:01967120"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "extended_rationale_missing",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-ef379363dd0c:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:s:01203638",
+            "wn31:s:01967120"
+          ],
+          "reason": "“均匀的”作为原文形容词义保留在扩展层，注释仅描述词义，未说明为何后置而不进核心；层级选择缺明确教学理由。",
+          "repair_suggestion": "补充简短的教学后置理由，或若属于首屏常用义则调整到核心。"
+        }
+      ],
+      "note": "名词制服、形容词统一和均匀均有对应组；均匀的置于扩展，覆盖完整但后置理由不足，列为Info。"
+    },
+    {
+      "id": "SG25-8e9498bf9ee9",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "舒适（名词，身心安适/无痛放松）",
+          "relation": "语义等价",
+          "reason": "核心组名词“舒适”对应 wn31:n:14010704 身心满足/安适及 wn31:n:14468845 放松无痛状态。",
+          "evidence_ids": [
+            "wn31:n:14010704",
+            "wn31:n:14468845"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "安慰（名词，慰藉/安抚行为）",
+          "relation": "语义等价",
+          "reason": "扩展组名词“安慰”对应 wn31:n:01214157 安慰/慰藉行为；与动词义分属不同词性，未跨词性合并。",
+          "evidence_ids": [
+            "wn31:n:01214157"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "安慰（动词，给予道义/情感支持）",
+          "relation": "语义等价",
+          "reason": "核心组动词“安慰”对应 wn31:v:01818782 给予道义或情感力量。",
+          "evidence_ids": [
+            "wn31:v:01818782"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "extended_rationale_missing",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-8e9498bf9ee9:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:01214157"
+          ],
+          "reason": "名词“安慰”保留在扩展层，注释说明先记舒适/安慰动词及不跨词性合并，但未给出该名词义后置的具体教学理由。",
+          "repair_suggestion": "补充后置理由，或若属于首屏常用义则考虑调整到核心。"
+        }
+      ],
+      "note": "舒适名词、安慰名词和安慰动词均有对应组；名词安慰在扩展层，覆盖完整但后置理由不足，列为Info。"
+    },
+    {
+      "id": "SG25-27a0113e9ce8",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：财富/财产",
+          "relation": "语义等价",
+          "reason": "核心组“财富”对应源义，证据 wn31:n:13392111 支持 fortune 作财富/繁荣的用法；未把运气义混入。",
+          "evidence_ids": [
+            "wn31:n:13392111"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：运气/机遇",
+          "relation": "语义等价",
+          "reason": "核心组“运气”对应源义，证据同时覆盖中性机遇与有利结果；未扩大到命运/人生境遇。",
+          "evidence_ids": [
+            "wn31:n:11438252",
+            "wn31:n:11438574"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个名词源义分别保留在核心“财富”和“运气”，并有对应词典证据；词典中的命运/际遇义未作为来源义纳入。"
+    },
+    {
+      "id": "SG25-5c17fb27fc50",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：使抽象事物增强",
+          "relation": "合理概括",
+          "reason": "核心组以“加强／加固”合并同一“使更强”框架，源义“加强”仍可追溯；make stronger 定义可覆盖抽象增强，混凝土例证仅为示例而非排他限制。",
+          "evidence_ids": [
+            "wn31:v:00222898"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：物理加固/使坚固",
+          "relation": "合理概括",
+          "reason": "源义“加固”保留在核心组中，证据 make stronger 及 concrete 例支持物理加固；同组并列抽象“加强”属同词另一源义且 note 已说明。",
+          "evidence_ids": [
+            "wn31:v:00222898"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个动词源义合并在一个核心组，但 note 明确保留物理加固与抽象加强差别；未发现外部新增义混入。"
+    },
+    {
+      "id": "SG25-199c48140d2b",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：敌对或竞争性对抗",
+          "relation": "语义等价",
+          "reason": "核心组“对抗”直接对应源义，证据 wn31:v:01081176 为 oppose in hostility or competition，词性和作用方向一致。",
+          "evidence_ids": [
+            "wn31:v:01081176"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "核心只保留原文“对抗”；“直面/处理不愉快问题”已列为未采用的词典补充，不进入来源层。"
+    },
+    {
+      "id": "SG25-403b8dc9df0d",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：频繁发生的",
+          "relation": "语义等价",
+          "reason": "核心组“频繁的”对应形容词源义，证据 wn31:a:01070231 支持短间隔或习惯性发生。",
+          "evidence_ids": [
+            "wn31:a:01070231"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：常去某地",
+          "relation": "语义等价",
+          "reason": "核心组“常去”对应动词源义，证据 wn31:v:01848373 为定期/频繁到访某地，词性及对象一致。",
+          "evidence_ids": [
+            "wn31:v:01848373"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "形容词和动词源义分别保留在两个核心组，词性未混用；patronize 类词典义未作为来源义纳入。"
+    },
+    {
+      "id": "SG25-c9113f82ea7d",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "副词：不幸地/不如意地",
+          "relation": "合理概括",
+          "reason": "核心组将“不幸地／遗憾地”合为同一副词评价框架；证据 by bad luck / unfortunately 支持引入不如意结果，未加入正式频率判断。",
+          "evidence_ids": [
+            "wn31:r:00043179"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "副词：遗憾地/令人遗憾地",
+          "relation": "合理概括",
+          "reason": "源义“遗憾地”与“不幸地”在 unfortunately 的 regrettably 用法中接近，核心组合并未删除该源义；证据支持说话者评价不如意结果。",
+          "evidence_ids": [
+            "wn31:r:00043179"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个副词源义合并为一个核心组，属于近义评价框架的合理并列；没有遗漏独立源义。"
+    },
+    {
+      "id": "SG25-c215cc7ced6a",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：根本的（基础/根本）",
+          "relation": "合理概括",
+          "reason": "核心组以‘根本的／基本的’合并两个近义源义；词网 essential component 与 basic facts/principles 覆盖形容词基础义，未引入额外对象限制。",
+          "evidence_ids": [
+            "wn31:s:01280207",
+            "wn31:s:01862358"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "形容词：基本的（基础/基本）",
+          "relation": "合理概括",
+          "reason": "核心组以‘根本的／基本的’合并两个近义源义；词网 essential component 与 basic facts/principles 覆盖形容词基础义，未引入额外对象限制。",
+          "evidence_ids": [
+            "wn31:s:01280207",
+            "wn31:s:01862358"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：基本原则（一般原则）",
+          "relation": "无法确定",
+          "reason": "目标组保留‘基本原则（fundamentals）’，但唯一组证据为既有出版观察且自注非独立词典证据；词网名词证据偏商业因素/声学，不足以确认一般原则义。",
+          "evidence_ids": [
+            "web:fundamental"
+          ],
+          "context": "uncertain",
+          "residual_scope": "普通名词‘基本原则’缺可靠词典证据；现有词网名词证据偏商业因素或声学，未覆盖一般原则。",
+          "counterexample": "WordNet n:07342658 的 fundamentals 示例为公司增长/收入等商业因素，不是普通‘基本原则’；web 观察非独立词典证据。",
+          "counterexample_evidence_ids": [
+            "wn31:n:07342658"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "uncertain",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "evidence_insufficient",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-c215cc7ced6a:extended:1"
+          ],
+          "evidence_ids": [
+            "web:fundamental",
+            "wn31:n:07342658"
+          ],
+          "reason": "名词‘基本原则’仅由出版观察支撑，且该观察自注非独立词典证据；词网现有名词证据不直接覆盖一般原则义，需正规词典补证。",
+          "repair_suggestion": "补入可靠词典证据后再确认该扩展组；否则明确标为待核。"
+        }
+      ],
+      "note": "形容词两个近义义项合并入核心，词网证据可支持；名词‘基本原则’仅置扩展且只有 web 观察，需正规词典补证，故整体待核。"
+    },
+    {
+      "id": "SG25-05cf69408f5a",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：遗传的（基因/家族遗传语境）",
+          "relation": "语义等价",
+          "reason": "核心组直接保留‘遗传的’，词网 inherited/familial 与 gene/genetic code 证据覆盖基因/家族遗传义。",
+          "evidence_ids": [
+            "wn31:s:01317491",
+            "wn31:a:02745280"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文‘遗传的’由核心组直接覆盖，词网遗传/基因证据充分；‘起源的’等词典义未进入来源层，属外部观察。"
+    },
+    {
+      "id": "SG25-0feae16d5536",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：一般的（非专门/普通）",
+          "relation": "语义等价",
+          "reason": "核心组保留‘一般的’，词网 not specialized/limited to one class 支持普通/非专门义。",
+          "evidence_ids": [
+            "wn31:s:00787396"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "形容词：总体的（覆盖全体/多数）",
+          "relation": "语义等价",
+          "reason": "核心组保留‘总体的’，词网 applying to all or most members 支持覆盖全体/多数的总体义。",
+          "evidence_ids": [
+            "wn31:a:01105084"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：将军（高级军官）",
+          "relation": "语义等价",
+          "reason": "扩展组保留‘将军’，词网 general officer of highest rank 直接支持。",
+          "evidence_ids": [
+            "wn31:n:10143381"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "deferral_reason_missing",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-0feae16d5536:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:10143381"
+          ],
+          "reason": "‘将军’是原文独立名词义且词网有直接证据；扩展层注释只说明词网顺序无关，没有给出后置到扩展的 AI 教学理由。",
+          "repair_suggestion": "若维持扩展，补充明确教学理由；否则考虑作为核心独立组。"
+        }
+      ],
+      "note": "三个源义均有对应链接；形容词两义分开保留，名词‘将军’在扩展。主要待核点是‘将军’后置缺少明确教学理由。"
+    },
+    {
+      "id": "SG25-24cacf5004bf",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：产生（使出现/生产）",
+          "relation": "语义等价",
+          "reason": "核心组保留‘产生’，词网 bring into existence 与 produce energy 直接支持使出现/生产义。",
+          "evidence_ids": [
+            "wn31:v:01630392",
+            "wn31:v:01631234"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：导致（使结果出现）",
+          "relation": "合理概括",
+          "reason": "扩展组把‘导致／引起’合并为同一结果产生义；词网 bring into existence 示例 generate problems/chaos 支持，但限使结果出现，不当作一般因果连词。",
+          "evidence_ids": [
+            "wn31:v:01630392"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "仅限‘使某结果出现’的结果产生义；不覆盖一般因果连词用法。",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：引起（使结果出现）",
+          "relation": "合理概括",
+          "reason": "扩展组把‘导致／引起’合并为同一结果产生义；词网 bring into existence 示例 generate problems/chaos 支持，但限使结果出现，不当作一般因果连词。",
+          "evidence_ids": [
+            "wn31:v:01630392"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "仅限‘使某结果出现’的结果产生义；不覆盖一般因果连词用法。",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个动词义均有链接；核心保留‘产生’，扩展以同一结果产生义覆盖‘导致/引起’，词网 bring into existence/产生能量证据支持，未泛化为一般因果词。"
+    },
+    {
+      "id": "SG25-e661f4c935e8",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：一代人（同时代人群）",
+          "relation": "语义等价",
+          "reason": "核心组保留‘一代人’，词网 all people living at same time/approximately same age 直接支持。",
+          "evidence_ids": [
+            "wn31:n:08386333"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：产生（形成/出现过程）",
+          "relation": "语义等价",
+          "reason": "扩展组保留‘产生’，词网 a coming into being 支持形成/出现过程义。",
+          "evidence_ids": [
+            "wn31:n:07338980"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：发电（电力生产）",
+          "relation": "语义等价",
+          "reason": "扩展组保留‘发电’，词网 production of heat or electricity 且例 electricity 支持；组文本按来源限电力生产。",
+          "evidence_ids": [
+            "wn31:n:00923958"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "deferral_reason_missing",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-e661f4c935e8:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:07338980"
+          ],
+          "reason": "‘产生’为常用独立名词义，扩展组注释只说明与一代人分开，未给出后置教学理由；按 V5 需补充明确 AI 教学理由或考虑核心。",
+          "repair_suggestion": "补充维持扩展的明确教学理由，或重新评估是否应进入核心。"
+        }
+      ],
+      "note": "三个名词义均有对应链接；‘一代人’在核心，‘产生’和‘发电’在扩展，发电有具体能量语境说明，但‘产生’后置理由不足。"
+    },
+    {
+      "id": "SG25-68fc24ccdb4e",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "逐渐的：分阶段缓慢发生变化",
+          "relation": "语义等价",
+          "reason": "原始义为分阶段缓慢变化，未限定对象；核心组SG25-68fc24ccdb4e:core:1把它与s002合并为‘逐渐的／渐进的’，与wn31:a:01146289‘proceeding in small stages’对应，也未把地形平缓义混入。",
+          "evidence_ids": [
+            "wn31:a:01146289"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘a gradual slope’属于地形坡度的平缓义，是词典另一义，原文未列，故未纳入。",
+          "counterexample_evidence_ids": [
+            "wn31:a:01147844"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "渐进的：逐步推进、非突变",
+          "relation": "语义等价",
+          "reason": "‘渐进的’与‘逐渐的’同义，合并后仍保留原文的一般义，没有增加对象、领域或语域限制；证据wn31:a:01146289支持这一含义。",
+          "evidence_ids": [
+            "wn31:a:01146289"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "地形渐变义的‘gradual slope’不属于原文片段，不能用来否定本组。",
+          "counterexample_evidence_ids": [
+            "wn31:a:01147844"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个中文片段同义，核心组合并合理；证据指向‘小阶段推进’，未把地形平缓义误当原文已有；无残留范围缺口。"
+    },
+    {
+      "id": "SG25-0acb4d236dc4",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "治理：对政治实体行使权力",
+          "relation": "语义等价",
+          "reason": "‘治理’对应wn31:v:02592711‘exercise authority over; as of nations’，核心组SG25-0acb4d236dc4:core:1保留该义，没有把‘支配行为’并入。",
+          "evidence_ids": [
+            "wn31:v:02592711"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘His belief governs his conduct’是支配行为义，另有扩展组承接，不取代治理。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02447070"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "支配：强有力地影响或左右行为",
+          "relation": "语义等价",
+          "reason": "扩展组SG25-0acb4d236dc4:extended:1以wn31:v:02447070‘direct or strongly influence the behavior of’为主要依据，与‘支配’在词性和方向上一致；所列wn31:v:02517217强调制定规则来约束，范围略窄，只能作相邻证据，不能替代支配的一般义。",
+          "evidence_ids": [
+            "wn31:v:02447070",
+            "wn31:v:02517217"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘regulate the way people dress’只是以规则约束的窄义，不能作为‘支配’的唯一定义。",
+          "counterexample_evidence_ids": [
+            "wn31:v:02517217"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "layer_placement_teaching_rationale",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-0acb4d236dc4:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:02447070"
+          ],
+          "reason": "‘支配’是原文列出的独立义项，却被放在扩展层；注释只用‘避免只记政府含义’作对照警示，未说明为何暂时不放入核心的独立教学理由。这属于首屏排序判断，不是语义覆盖缺口。",
+          "repair_suggestion": "保留现有层级也可，但请在注释中补充首屏不选取该义的教学考虑（如先建立具体政治治理原型），不要诉诸词频或客观稀有度。"
+        }
+      ],
+      "note": "两个源义分别落在核心（治理）与扩展（支配），联合覆盖完整；注意扩展层放置属于教学排序，注释理由可更明确；‘regulate’证据略窄，已注明。"
+    },
+    {
+      "id": "SG25-ab5e9e376f95",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "政府：行使治理权的组织机构",
+          "relation": "语义等价",
+          "reason": "原文只列政府机构，核心组SG25-ab5e9e376f95:core:1与wn31:n:08067430‘the organization that is the governing authority of a political unit’精确对应，并且没有把治理过程、政体或政治学义混入。",
+          "evidence_ids": [
+            "wn31:n:08067430"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘the act of governing’（治理行为）、‘system or form of government’（政体）、‘study of government’（政治学）都是词典其他义，原文未列。",
+          "counterexample_evidence_ids": [
+            "wn31:n:01127115",
+            "wn31:n:05671515",
+            "wn31:n:06157599"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "单一源义与核心组精确对齐；其余词典义（治理行为、政体、政治学）未进来源层是正确的，不算漏报；无残留范围问题。"
+    },
+    {
+      "id": "SG25-b5f90a96e680",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "进步：向好的改善（源词性未定，可为名词或动词）",
+          "relation": "语义等价",
+          "reason": "核心组SG25-b5f90a96e680:core:1以wn31:n:00250368‘gradual improvement or growth or development’覆盖该片段的改善义，与原文一般义相符；不过该组标为名词，而源词性为null，动词‘取得进步’这一分支在全部层级中都无人承接。",
+          "evidence_ids": [
+            "wn31:n:00250368"
+          ],
+          "context": "uncertain",
+          "residual_scope": "缺少动词分支：‘向好发展／取得进步’（wn31:v:00249545）未被任何层链接；源词性未定使名词指派只是推荐。",
+          "counterexample": "‘He progressed well in school’对应动词的向好发展义，词典有据，但当前层级没有承接。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00249545"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "进展：事情向前推进的改善（源词性未定）",
+          "relation": "语义等价",
+          "reason": "与s001合组为‘进步／进展’，用wn31:n:00250368承接改善义；同样因为源词性为null，只保留名词框架，动词‘取得进展’分支不在任何层。",
+          "evidence_ids": [
+            "wn31:n:00250368"
+          ],
+          "context": "uncertain",
+          "residual_scope": "动词‘取得进展／逐步改善’分支缺失；剩余范围未明确暂存。",
+          "counterexample": "‘Plans are shaping up／He progressed well’对应动词向好发展，无对应层链接。",
+          "counterexample_evidence_ids": [
+            "wn31:v:00249545"
+          ],
+          "risk": "suspected_Minor"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "前进：向前移动（源词性未定，可为名词或动词）",
+          "relation": "合理概括",
+          "reason": "核心组SG25-b5f90a96e680:core:2以wn31:v:01996535‘move forward, also in the metaphorical sense’承接动词‘前进’，与原文方向一致；但源词性为null，名词‘行进／前进’（wn31:n:00282894、wn31:n:07459865）没有承接层，动词指派只是推荐，不能当作已核实的词性。",
+          "evidence_ids": [
+            "wn31:v:01996535"
+          ],
+          "context": "uncertain",
+          "residual_scope": "名词‘the act of moving forward／a movement forward’范围未保留，也未标注暂存。",
+          "counterexample": "‘the progress of the troops’对应名词‘行进’义，词典有据。",
+          "counterexample_evidence_ids": [
+            "wn31:n:07459865",
+            "wn31:n:00282894"
+          ],
+          "risk": "suspected_Minor"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_pos_null_forced_label",
+          "source_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-b5f90a96e680:core:1",
+            "SG25-b5f90a96e680:core:2"
+          ],
+          "evidence_ids": [],
+          "reason": "三个源片段的词性均为null（unresolved_multi_pos），而核心组分别标为名词和动词。注释虽承认‘原书逐义词性未标’，但映射以确定词性呈现，容易让读者以为已经核实s001、s002只作名词、s003只作动词。",
+          "repair_suggestion": "在两个核心组的注释或映射context中明确标注‘源词性未定，当前词性为推荐展示’，不要把推荐词性写成源标签。"
+        },
+        {
+          "severity": "Minor",
+          "kind": "missing_branch_in_union",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-b5f90a96e680:core:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:00249545",
+            "wn31:n:00282894"
+          ],
+          "reason": "词典证据wn31:v:00249545（向好发展）已提供，却未链接到任何组；由于句式‘进步／进展’在中文里也能作动词，且条目词性含动词，所以候选各层的联合覆盖只有名词改善和动词前移，缺少‘取得进步’这条分支。",
+          "repair_suggestion": "要么在核心组注释中保留‘进步／进展（作名词或动词均可）’的上位表述并补上动词改进分支，要么显式标注该剩余范围暂存待核。"
+        }
+      ],
+      "note": "已有名词‘进步／进展’与动词‘前进’两条线，但源词性为null却被写成确定词性；动词‘取得进步／进展’分支在各层缺失，名词‘行进’分支也未暂存，因此判为部分覆盖、核心待定。"
+    },
+    {
+      "id": "SG25-42eddc67a744",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "侵略性的：对他人发动攻击、敌对",
+          "relation": "语义等价",
+          "reason": "核心组SG25-42eddc67a744:core:1与wn31:s:01247720‘characteristic of an enemy or one eager to fight’对应，未把积极进取义并入敌对义。",
+          "evidence_ids": [
+            "wn31:s:01247720"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘an aggressive tumor’是医学扩散义，原文未列。",
+          "counterexample_evidence_ids": [
+            "wn31:s:01358991"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "好斗的：好与人争斗、态度敌对",
+          "relation": "语义等价",
+          "reason": "与s001在攻击、敌对的态度框架下同组，wn31:s:01247720直接支持；合并未引入对象限制。",
+          "evidence_ids": [
+            "wn31:s:01247720"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘a belligerent tone’同属该义框架，不构成额外对象限制。",
+          "counterexample_evidence_ids": [
+            "wn31:s:01247720"
+          ],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "积极进取的：有决心、有力追求目标",
+          "relation": "语义等价",
+          "reason": "扩展组SG25-42eddc67a744:extended:1用wn31:a:00082711‘determination and energetic pursuit of your ends’承接‘积极进取的’，示例是aggressive businessman和driver，属于该义的非排他例子；这个词不是褒义词这一警示也成立。",
+          "evidence_ids": [
+            "wn31:a:00082711"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "‘an aggressive driver’虽含强势、冒犯色彩，仍同属追求目标并带有攻击性的用法，不是独立的新义。",
+          "counterexample_evidence_ids": [
+            "wn31:a:00082711"
+          ],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "layer_placement_teaching_rationale",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-42eddc67a744:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:a:00082711"
+          ],
+          "reason": "‘积极进取的’是原文列出的独立义，放在扩展层；注释侧重‘不能理解为总是褒义’的语义警示，未说明首屏暂不呈现它的教学理由。",
+          "repair_suggestion": "补充首屏教学理由（如先建立攻击性原型，再对比褒义用法），不要以词频或客观义项稀有性作为依据。"
+        }
+      ],
+      "note": "三个源义全部落地：敌对、好斗在核心，积极进取在扩展；肿瘤扩散义未被误纳；仅扩展层的教学理由说明偏薄，属排序说明问题而非覆盖缺口。"
+    },
+    {
+      "id": "SG25-3db20e1df89a",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "代表大会（代表会议/集会义）",
+          "relation": "语义等价",
+          "reason": "核心组“代表大会”对应词典“a meeting of elected or appointed representatives”，会议主体和词性一致。",
+          "evidence_ids": [
+            "wn31:n:08325730"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "国会（国家立法机关）",
+          "relation": "语义等价",
+          "reason": "核心组“国会”对应词典“a national legislative assembly”，为国家立法机关义。",
+          "evidence_ids": [
+            "wn31:n:08335621"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个名词义均有独立核心组和直接词典证据；社交/性交集会义不在原文范围，未采用不构成缺口。"
+    },
+    {
+      "id": "SG25-b308a7f43bba",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "程度（强度、数量或质量尺度上的位置）",
+          "relation": "语义等价",
+          "reason": "核心组“程度”对应词典“a position on a scale of intensity or amount or quality”，与原文程度义一致。",
+          "evidence_ids": [
+            "wn31:n:05101152"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "学位（高校授予的学术资格）",
+          "relation": "语义等价",
+          "reason": "核心组“学位”对应词典“an award conferred by a college or university”，为学位义。",
+          "evidence_ids": [
+            "wn31:n:06710094"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "度（角度、温度等计量单位；原片段较宽）",
+          "relation": "范围收窄",
+          "reason": "扩展组仅以角度和温度单位证据保留“度”，相对原文单字“度”的宽泛范围是收窄；单位语境需明确。",
+          "evidence_ids": [
+            "wn31:n:13632450",
+            "wn31:n:13736289"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "其他“度”的计量/数学等用法未列出或未明确暂存",
+          "counterexample": "词典另有“最高次数”义（degree），但中文“度”是否承载该义未定",
+          "counterexample_evidence_ids": [
+            "wn31:n:05869901"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "uncertain",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_scope_underdetermined",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-b308a7f43bba:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:13632450",
+            "wn31:n:13736289",
+            "wn31:n:05869901"
+          ],
+          "reason": "s003原文仅为“度”，候选以角度/温度为限制度；词典另有最高次数义，但原文是否支持未定，剩余范围未明确暂存。",
+          "repair_suggestion": "在s003的residual_scope或note中明确其他“度”用法待核，不扩为核心；如教材语境明确为角度/温度，可保留现限定。"
+        }
+      ],
+      "note": "程度、学位在核心，“度”在扩展并注明单位语境；s003来源范围偏宽，存在待核剩余范围。"
+    },
+    {
+      "id": "SG25-2cc7e7e9e251",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "展示（把某物显示或展出给公众/观众）",
+          "relation": "语义等价",
+          "reason": "核心动词组“展示”对应词典“to show, make visible or apparent”和“give an exhibition of”，动作义一致。",
+          "evidence_ids": [
+            "wn31:v:02144506",
+            "wn31:v:02153218"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "展品（公开展示之物）",
+          "relation": "语义等价",
+          "reason": "核心名词组“展品”对应词典“something shown to the public”，为公开展示之物。",
+          "evidence_ids": [
+            "wn31:n:00522265"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "动词“展示”与名词“展品”分属不同词性，均核心保留；法律证物、炫耀性展示等词典义不在原文范围。"
+    },
+    {
+      "id": "SG25-83a2bff84b1d",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "博览会（较大型公开展览/展销语境）",
+          "relation": "语义等价",
+          "reason": "扩展组仍用“博览会”保留原文的较大型展览语境；词典证据为公开展览集合，未单独区分规模，需靠语境限定。",
+          "evidence_ids": [
+            "wn31:n:08424576"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "展览会（公开展览/陈列）",
+          "relation": "语义等价",
+          "reason": "核心组“展览会”对应词典“a collection of things ... for public display”，为公开展览义。",
+          "evidence_ids": [
+            "wn31:n:08424576"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "justified_deferred",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "evidence_distinction",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-83a2bff84b1d:core:1",
+            "SG25-83a2bff84b1d:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:08424576"
+          ],
+          "reason": "“展览会”和“博览会”共用同一通用词典证据；二者规模/语境区别是教学分层，不是词典独立义项。",
+          "repair_suggestion": "保留现核心/扩展分层并注明“博览会”为较大型展览语境，不把规模区别写成词典未支持的独立义。"
+        }
+      ],
+      "note": "展览会为核心、博览会为扩展，覆盖两个原文名词义；规模区别目前靠语境说明而非独立词典证据。"
+    },
+    {
+      "id": "SG25-a831f1ff1a6c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "栖息地（生物通常生存的环境）",
+          "relation": "语义等价",
+          "reason": "核心组“栖息地”对应词典“the type of environment in which an organism or group normally lives or occurs”。",
+          "evidence_ids": [
+            "wn31:n:08598111"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "单一原文义有直接词典证据并保留在核心，无来源范围缺口。"
+    },
+    {
+      "id": "SG25-96c842ee0d60",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "固有的（事物本性/本质特征）",
+          "relation": "语义等价",
+          "reason": "核心组‘固有的／内在的’与证据‘essential constituent or characteristic’及‘in the nature of something’一致，表达事物本性中的固有属性。",
+          "evidence_ids": [
+            "wn31:s:01351376",
+            "wn31:s:00945209"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "the inner room 表物理内部，不是 inherent 的固有/本性义",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "内在的（本质/本性，非物理内部）",
+          "relation": "语义等价",
+          "reason": "‘内在的’在此与 inherent 的本质属性义对应；组注已限定不将所有物理内部都称固有，证据支持内在本质而非空间内部。",
+          "evidence_ids": [
+            "wn31:s:00945209",
+            "wn31:s:01351376"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "inner layer 属物理内部，不能由 inherent 覆盖",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "固有/内在合组覆盖本质属性义；两条证据匹配，核心注释明确排除物理内部，未见范围缺口。"
+    },
+    {
+      "id": "SG25-604c00db87b2",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "历史学家（研究并写作历史的人）",
+          "relation": "语义等价",
+          "reason": "证据定义为‘a person who is an authority on history and who studies it and writes about it’，与‘历史学家’直接对应。",
+          "evidence_ids": [
+            "wn31:n:10196781"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "历史家（历史学家的中文变体）",
+          "relation": "语义等价",
+          "reason": "‘历史家’与‘历史学家/史学家’同指历史研究者，证据支持同一人物称谓。",
+          "evidence_ids": [
+            "wn31:n:10196781"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "史学家（历史学家的中文变体）",
+          "relation": "语义等价",
+          "reason": "‘史学家’是历史学者的另一中文表述，与证据中研究并写作历史的人一致。",
+          "evidence_ids": [
+            "wn31:n:10196781"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三个中文称谓为同一历史研究者义，核心合组覆盖完整，证据充分。"
+    },
+    {
+      "id": "SG25-f5dbf9fe930c",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "历史的（属于过去/过去重要或著名）",
+          "relation": "语义等价",
+          "reason": "核心组‘历史的’对应证据‘belonging to the past; of what is important or famous in the past’，并保留 historical 与 historic 的提示。",
+          "evidence_ids": [
+            "wn31:s:01734292"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "历史研究的（与历史研究相关）",
+          "relation": "语义等价",
+          "reason": "扩展组‘历史研究的／史学的’对应证据‘of or relating to the study of history’，例证含 historical scholars/perspective。",
+          "evidence_ids": [
+            "wn31:a:02931434"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "史学的（历史学科/研究领域）",
+          "relation": "语义等价",
+          "reason": "‘史学的’与‘历史研究的’同属历史学科研究领域义，证据直接支持该研究领域用法。",
+          "evidence_ids": [
+            "wn31:a:02931434"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "历史过去义置核心，历史研究/史学义置扩展；三个源义均有对应，注意不与 historic 的重要历史意义混淆。"
+    },
+    {
+      "id": "SG25-0f780b5c735e",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "识别/辨认（确认某人或某物是什么）",
+          "relation": "语义等价",
+          "reason": "核心组‘识别’由‘establish the identity of someone or something’及植物/生物识别例证支持，覆盖一般辨认义。",
+          "evidence_ids": [
+            "wn31:v:00620568",
+            "wn31:v:00654017"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "确认身份（确定姓名或身份特征）",
+          "relation": "语义等价",
+          "reason": "源义与扩展组文本‘确认身份’一致；更直接证据00620568支持‘establish the identity’，但扩展组当前只引01028104，证据分配需复核。",
+          "evidence_ids": [
+            "wn31:v:01028104",
+            "wn31:v:00620568"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "the almanac identifies the auspicious months 属‘标明/指称’，不是‘确认某人身份’",
+          "counterexample_evidence_ids": [
+            "wn31:v:01028104"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "evidence_mismatch",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-0f780b5c735e:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:01028104",
+            "wn31:v:00620568"
+          ],
+          "reason": "扩展组‘确认身份’仅引01028104（give the name/identifying characteristics，例证偏‘标明/指称’），而更直接支持‘establish the identity of someone’的00620568被放在核心‘识别’组；当前扩展组证据不足以单独证明‘确认身份’义。",
+          "repair_suggestion": "将00620568补入扩展组‘确认身份’的直接证据，或调整组注说明01028104如何支持确认身份；核心‘识别’仍可保留00620568作为上位识别证据。"
+        }
+      ],
+      "note": "识别在核心，确认身份在扩展，覆盖完整；但扩展组证据01028104不如00620568直接支持确认身份，建议复核证据分配。"
+    },
+    {
+      "id": "SG25-689f6a627384",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "个性（个体持续的人格/自我同一性）",
+          "relation": "语义等价",
+          "reason": "扩展组‘个性’由‘the distinct personality of an individual regarded as a persisting entity’支持，对应 identity 的人格同一性义。",
+          "evidence_ids": [
+            "wn31:n:04625427"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "特性（可辨认某人/某物的个体特征）",
+          "relation": "合理概括",
+          "reason": "证据‘the individual characteristics by which a thing or person is recognized or known’支持‘识别性特征’；组注已说明特性是识别相关的特点，未扩大为任意特性。",
+          "evidence_ids": [
+            "wn31:n:05771409"
+          ],
+          "context": "required_for_lexical_use",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "身份（某人/某物被辨认是谁或是什么）",
+          "relation": "语义等价",
+          "reason": "核心组‘身份’由‘determine his identity’及‘identity of the gene/lover’等证据支持，对应可辨认身份/同一性。",
+          "evidence_ids": [
+            "wn31:n:05771409"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "身份为核心，个性与识别性特性在扩展；三层与证据对应，未将 identity 误并为单一‘人格’义。"
+    },
+    {
+      "id": "SG25-ec3d00212250",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：形成心理图景的能力（想象力）",
+          "relation": "语义等价",
+          "reason": "原文“想象力”指形成心理图景的能力，核心组保留同一中文入口并注明为能力，未改写成具体想象物；wn31:n:05775730 直接支持该能力义。",
+          "evidence_ids": [
+            "wn31:n:05775730"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文仅“想象力”一个名词义，核心以“想象力”并注明为形成心理图景的能力；证据匹配，未把资源机智或具体想象物混入。"
+    },
+    {
+      "id": "SG25-7fdd65bbaaa6",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：在头脑中形成不在眼前的心理图景",
+          "relation": "语义等价",
+          "reason": "原文仅列“想象”一个动词义，核心保留“想象/心理图景”用法；wn31:v:01639939 直接支持形成不在场或不实之物的心理图像，词典 expect/suppose 义未冒充原文。",
+          "evidence_ids": [
+            "wn31:v:01639939"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文仅“想象”一个动词义，核心保留心理图景义；未把词典的猜想/料想义写成原文已确认内容。"
+    },
+    {
+      "id": "SG25-003c443ef278",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "动词：仿效、照着做",
+          "relation": "语义等价",
+          "reason": "原文“仿效”与核心“模仿；仿效”同义；wn31:v:01698158 支持复制/仿制，wn31:v:01746767 支持仿行为或样子。",
+          "evidence_ids": [
+            "wn31:v:01698158",
+            "wn31:v:01746767"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "动词：学别人的行为样子",
+          "relation": "合理概括",
+          "reason": "原文“学样”是口语化的模仿行为，核心用近义“模仿；仿效”概括，仍可追溯；wn31:v:01746767 支持学人行为或样子。",
+          "evidence_ids": [
+            "wn31:v:01746767"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "动词：摹拟、模仿",
+          "relation": "合理概括",
+          "reason": "原文“摹拟”与“模仿”近义，核心合并为近义显示，动词方向未变；wn31:v:01698158 支持复制/摹拟。",
+          "evidence_ids": [
+            "wn31:v:01698158"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "三条中文近义均为动词，核心合并为“模仿；仿效”，三条 source_id 全部映射；复制与仿行为证据分别可查。"
+    },
+    {
+      "id": "SG25-0ec9f882d110",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "形容词：智力的、涉及心智的",
+          "relation": "语义等价",
+          "reason": "原文形容词“智力的”与核心形容词组一致；wn31:s:01784888 支持“与心智相关或需要运用心智”，wn31:a:01933854 支持偏理智而非情绪。",
+          "evidence_ids": [
+            "wn31:s:01784888",
+            "wn31:a:01933854"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：运用心智的人、知识分子",
+          "relation": "语义等价",
+          "reason": "原文名词“知识分子”与核心名词组一致；wn31:n:09644715 指创造性运用心智的人。",
+          "evidence_ids": [
+            "wn31:n:09644715"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文形容词/名词两义分开，核心1“智力的”与核心2“知识分子”分别对应原词性，证据匹配。"
+    },
+    {
+      "id": "SG25-9f80a5e14017",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：智力、理解能力",
+          "relation": "语义等价",
+          "reason": "原文“智力”与核心第一入口一致；wn31:n:05625389 支持理解并从经验获益的能力。",
+          "evidence_ids": [
+            "wn31:n:05625389"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：情报、关于敌方或重要情况的秘密信息",
+          "relation": "语义等价",
+          "reason": "原文“情报”保留为核心第二入口；wn31:n:06655303 直接支持敌方秘密信息，wn31:n:06654787 为相邻广义信息证据但不改变中文入口锚点。",
+          "evidence_ids": [
+            "wn31:n:06655303",
+            "wn31:n:06654787"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "原文“智力”与“情报”两个阅读入口均保留；情报义由敌方秘密信息证据锚定，未把情报机构/人员义混入。"
+    },
+    {
+      "id": "SG25-040eb379271f",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "聪明的（思考、推理能力强）",
+          "relation": "语义等价",
+          "reason": "核心组以“聪明的／有理解力的”合并两个近义源义，a:01337350支持高程度思考推理能力，未新增对象或领域限制。",
+          "evidence_ids": [
+            "wn31:a:01337350",
+            "wn31:s:01932488"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "有理解力的（具备推理、理解能力）",
+          "relation": "语义等价",
+          "reason": "s:01932488“endowed with the capacity to reason”对应有理解力/推理能力，并在核心组中与s001合并保留。",
+          "evidence_ids": [
+            "wn31:s:01932488",
+            "wn31:a:01337350"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "两个源义均以核心组合并保留，证据支持思考推理能力；“明智的/知识丰富的”等词网另用未写入，不构成原文缺口。"
+    },
+    {
+      "id": "SG25-3bed2cb3a3ac",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "体内的（身体内部）",
+          "relation": "语义等价",
+          "reason": "扩展组保留“体内的”，a:00951878以internal organs例示身体内部，身体语境子范围明确。",
+          "evidence_ids": [
+            "wn31:a:00951878"
+          ],
+          "context": "required_from_source",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "内部的（在某界限或表面以内）",
+          "relation": "语义等价",
+          "reason": "核心组保留一般“内部的”，a:00951878支持within limits or especially surface；身体子范围另在扩展层保留。",
+          "evidence_ids": [
+            "wn31:a:00951878"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [],
+      "note": "核心保留一般“内部的”，“体内的”作为身体子范围在扩展层保留；未把一般内部义改成仅身体义。"
+    },
+    {
+      "id": "SG25-6b6b85aed8ad",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "内部（某物里面/内侧）",
+          "relation": "语义等价",
+          "reason": "核心名词组保留“内部”，n:08605707支持inner/enclosed surface；未新增室内或机构限制。",
+          "evidence_ids": [
+            "wn31:n:08605707"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "内地（区域内部/内陆部分）",
+          "relation": "语义等价",
+          "reason": "扩展名词组保留“内地”，n:08605849以region inside something提供宽泛内部区域证据；未混入形容词性或室内义。",
+          "evidence_ids": [
+            "wn31:n:08605849"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "内部的（一般内部/内侧）",
+          "relation": "语义等价",
+          "reason": "核心形容词组文本为一般“内部的”，s:00955021等一般located inward证据可支持；但该组实际只链接了建筑室内证据a:00956057，见issue。",
+          "evidence_ids": [
+            "wn31:a:00956057",
+            "wn31:s:00955021",
+            "wn31:s:01042014"
+          ],
+          "context": "none",
+          "residual_scope": "组链接证据仅建筑内部，未显式链接一般内部/内侧证据",
+          "counterexample": "interior regions of the earth（一般内部/内侧）不是仅建筑室内",
+          "counterexample_evidence_ids": [
+            "wn31:s:00952323",
+            "wn31:s:00955021"
+          ],
+          "risk": "suspected_Minor"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "evidence_scope_mismatch",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-6b6b85aed8ad:core:2"
+          ],
+          "evidence_ids": [
+            "wn31:a:00956057",
+            "wn31:s:00955021",
+            "wn31:s:01042014",
+            "wn31:s:00952323"
+          ],
+          "reason": "s003原文“内部的”为一般内部/内侧；核心形容词组只链接a:00956057（建筑内部/室内），更一般的located inward/inside toward center证据未链接，组证据不能单独确认一般“内部的”。",
+          "repair_suggestion": "改用或补充一般内部/内侧证据；若只保留建筑室内，应将组文本限定为“室内的/建筑内部的”并另保留一般“内部的”。"
+        }
+      ],
+      "note": "三个源义均有组承接；核心形容词组证据偏建筑室内，需要补一般内部证据；名词“内地”证据为宽泛内部区域。"
+    },
+    {
+      "id": "SG25-ac1b5c0961a7",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "最初的（开始阶段的）",
+          "relation": "语义等价",
+          "reason": "核心形容词组“最初的”由s:01015570 occurring at the beginning支持，保留开始阶段义。",
+          "evidence_ids": [
+            "wn31:s:01015570"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "姓名首字母（人名的首字母）",
+          "relation": "语义等价",
+          "reason": "扩展名词组“姓名首字母”由n:06844047 first letter of a word/name支持，对象范围与原文一致。",
+          "evidence_ids": [
+            "wn31:n:06844047"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Info",
+          "kind": "deferral_rationale_missing",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-ac1b5c0961a7:extended:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:06844047"
+          ],
+          "reason": "名词“姓名首字母”是常用独立义，扩展层注释只说两个语境都保留，未给后置的教学理由；覆盖本身存在。",
+          "repair_suggestion": "补充后置或并列的教学理由；这是教学排序说明，不是覆盖缺陷。"
+        }
+      ],
+      "note": "形容词“最初的”与名词“姓名首字母”均有证据承接；名词义在扩展层保留，教学理由可补充说明。"
+    },
+    {
+      "id": "SG25-70dd37c11434",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "过渡（源词性未定；候选推荐名词）",
+          "relation": "无法确定",
+          "reason": "源义s001的part_of_speech为null（unresolved_multi_pos）；核心组推荐名词，n:00201907支持名词“过渡”，但不能据此确认原义即名词。",
+          "evidence_ids": [
+            "wn31:n:00201907"
+          ],
+          "context": "uncertain",
+          "residual_scope": "源词性未定；若原义为动词，当前名词核心映射未覆盖",
+          "counterexample": "transition作动词'make/undergo a transition'也是词典支持用法",
+          "counterexample_evidence_ids": [
+            "wn31:v:00551623"
+          ],
+          "risk": "pending"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "转变（源词性未定；候选推荐动词）",
+          "relation": "无法确定",
+          "reason": "源义s002的part_of_speech为null；核心组推荐动词，v:00551623支持动词“转变/过渡”，但不能据此确认原义即动词。",
+          "evidence_ids": [
+            "wn31:v:00551623"
+          ],
+          "context": "uncertain",
+          "residual_scope": "源词性未定；若原义为名词，当前动词核心映射未覆盖",
+          "counterexample": "transition作名词'a change from one state/place to another'也是词典支持用法",
+          "counterexample_evidence_ids": [
+            "wn31:n:07373176"
+          ],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "uncertain",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_pos_unresolved",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-70dd37c11434:core:1",
+            "SG25-70dd37c11434:core:2"
+          ],
+          "evidence_ids": [
+            "wn31:n:00201907",
+            "wn31:v:00551623"
+          ],
+          "reason": "两个源义part_of_speech均为null（unresolved_multi_pos），候选分别落到名词/动词核心组；词典支持该词有名词和动词用法，但不能据此把源义逐条确定为名词或动词。",
+          "repair_suggestion": "将两条映射保留为无法确定/pending，组词性仅作推荐；由人工或原书语境确认逐义词性，或同时保留名词/动词可能。"
+        }
+      ],
+      "note": "两个源义词性未定，候选按词典推荐分设名词/动词核心；映射不能确认，需保留待核。"
+    }
+  ],
+  "failures": [],
+  "input_hash": "f58f88c49241eb6fa043639892ade129a4ac98a14fded6cba3cb7857e8e5fdea",
+  "response_files": [
+    {
+      "tag": "audit_v5e_02_001",
+      "response_sha256": "21d19ef51c021b30c964cb6f601f62936897a06814f70095a875f3c9a83c809c"
+    },
+    {
+      "tag": "audit_v5e_02_002",
+      "response_sha256": "594e2b0e64ce03b0981c2594355fb76eb0fa1311752a4d9ef3704218af04d4fe"
+    },
+    {
+      "tag": "audit_v5e_02_003",
+      "response_sha256": "cfeae56cecee38f22e0be64bd889bfd5d2692c726f1c06dcb88e604f4d442aea"
+    },
+    {
+      "tag": "audit_v5e_02_004",
+      "response_sha256": "ba32df771a91956ecac6b95edc72b5fc8b205d4642f520f51a951a3de8ecf244"
+    },
+    {
+      "tag": "audit_v5e_02_005",
+      "response_sha256": "aeb7b9eda31ee1acf7999e3fd3033037ce12b4f606ba036d020049f1ca6b1f07"
+    },
+    {
+      "tag": "audit_v5e_02_006",
+      "response_sha256": "fad63807484f37e035269461f5aa51c41a1a7fcb42e0e9b8ef8d7b301edafdb4"
+    },
+    {
+      "tag": "audit_v5e_02_007",
+      "response_sha256": "ee147285b42f275d269464382b1a0fb364846c6deb18de8bdb2817f6d6d8b513"
+    },
+    {
+      "tag": "audit_v5e_02_008",
+      "response_sha256": "de16036c70d7210d59a8811f2e7b8c5961197c65a54e44e4b3dfdc2caa228abb"
+    },
+    {
+      "tag": "audit_v5e_02_009",
+      "response_sha256": "8c02598c69c308d487aa3e41fa263c64afaf705a70539109e9a542d3c4cc85fa"
+    },
+    {
+      "tag": "audit_v5e_02_010",
+      "response_sha256": "bc73d9791bcf07b0690bf050d05104f6da434dd1ee9b2351d41a04e3bd562f0f"
+    },
+    {
+      "tag": "audit_v5e_02_011",
+      "response_sha256": "be7f0abaa7915285701b336840e0b028a8742047b94e5f2d83f6111f16f4daa4"
+    },
+    {
+      "tag": "audit_v5e_02_012",
+      "response_sha256": "66acb7b62ee92ac19b5ebb06a708af87f2adce4b7916dbb904b2c243383f54e5"
+    },
+    {
+      "tag": "audit_v5e_02_013",
+      "response_sha256": "1cc5455ccc46782f1630a1321dd48e88ebc34f4032d2693cbe54df8ff6d30a40"
+    },
+    {
+      "tag": "audit_v5e_02_014",
+      "response_sha256": "43b13a63247be279ed6ea8cafaa1b99ef751c640bd84f9d7367f3329a11bff60"
+    },
+    {
+      "tag": "audit_v5e_02_015",
+      "response_sha256": "b8669c3f89ce26d9eef0c2a3dc649075b5408c9a09f99b00198e86776e0c5c49"
+    },
+    {
+      "tag": "audit_v5e_02_016",
+      "response_sha256": "8674fd1cae2d3f1c581a69d1a415b2a0c0102ec41f0957e560cd8107b3281c4d"
+    },
+    {
+      "tag": "audit_v5e_02_017",
+      "response_sha256": "78dbef64b25215b909a728912a7d0d1c0d94f670c4943ff2ab69a825efb89ea6"
+    },
+    {
+      "tag": "audit_v5e_02_018",
+      "response_sha256": "c270bfd847cb5c61292f5235fb3102492e75b1374bfbe44fabdb9e8046badc58"
+    },
+    {
+      "tag": "audit_v5e_02_019",
+      "response_sha256": "ed63005620746cb33bdfc27cdddbb17b0f1e97c8ff371ebbf777bc19855c7413"
+    },
+    {
+      "tag": "audit_v5e_02_020",
+      "response_sha256": "9033ed8eed6a15df306a079a83b763e25560f2c421dfeaf35b76e98ea89b779d"
+    }
+  ],
+  "all_output_AI_candidate": true,
+  "human_approved": false,
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950"
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_043",
+  "kind": "verify",
+  "request_hash": "0b0d4f23035ec2ff97a04564a3b2b9ab6ce243de7d9ac27d337073bb874ed814",
+  "input_ids": [
+    "SG25-5c097b19679a",
+    "SG25-eb9a7650cd53"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "22b4da72-aab3-494c-b813-425f23184b24",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5c097b19679a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选‘构成；组成’覆盖原文‘构成’的组成/构成义；证据 wn31:v:02626667（组成）和 wn31:v:02627475（构成/代表）均支持该动词用法，未添加排他限制。\",\n          \"evidence_ids\": [\"wn31:v:02626667\", \"wn31:v:02627475\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选‘设立；建立’与原文‘设立’对应；证据 wn31:v:01650771‘set up or lay the groundwork for; establish’直接支持。\",\n          \"evidence_ids\": [\"wn31:v:01650771\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [\n        {\n          \"reason\": \"核心组‘构成；组成’未明确写出‘等同/是’用法（如 constitute a threat），但证据 wn31:v:02627475 已隐含；建议在注释中补充示例以避免遗漏。\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-5c097b19679a:p6c5:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:v:02627475\"],\n          \"repair_suggestion\": \"在核心组注释中增加‘可表等同/是，如 constitute a threat’。\"\n        }\n      ],\n      \"note\": \"未发现源义丢失或错误扩大；‘任命/委任’未采用恰当。\"\n    },\n    {\n      \"id\": \"SG25-eb9a7650cd53\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"‘宪法’与法律定义直接对应；证据 wn31:n:06545639 支持。\",\n          \"evidence_ids\": [\"wn31:n:06545639\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文‘体质’特指身体/健康/体格，所给证据 wn31:n:04940721 仅为宽泛的‘构成方式’，未单独证明身体体质义；候选将其暂存，未确认为核心。\",\n          \"evidence_ids\": [\"wn31:n:04940721\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选‘构成；组成方式’覆盖原文‘构成’的名词义（组成/结构），证据 wn31:n:04940721 直接支持。\",\n          \"evidence_ids\": [\"wn31:n:04940721\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        {\n          \"source_id\": \"s002\",\n          \"text\": \"体质\",\n          \"reason\": \"需更具体的身体/健康义证据（如 physical constitution、health/physique）才能确认是否可由现有词典证据覆盖。\",\n          \"evidence_ids\": [\"wn31:n:04940721\"],\n          \"suggestion\": \"继续查找或补充明确支持‘体质’的词典义项。\"\n        }\n      ],\n      \"preferences\": [\n        {\n          \"reason\": \"核心组‘构成；组成方式’可增加例句或说明‘方式/结果’义，避免与动词‘构成’混淆。\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-eb9a7650cd53:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:n:04940721\"],\n          \"repair_suggestion\": \"在注释中加入如‘the constitution of society’等例句。\"\n        }\n      ],\n      \"note\": \"未采用外部候选‘设立/组织行为’正确，因原文未表达该义；‘体质’暂存合理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3147,
+    "completion_tokens": 5199,
+    "total_tokens": 8346,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4292
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1483
+  },
+  "started_utc": "2026-11-13T09:58:41.225037+00:00",
+  "completed_utc": "2026-11-13T09:59:49.656613+00:00",
+  "elapsed_seconds": 68.437,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

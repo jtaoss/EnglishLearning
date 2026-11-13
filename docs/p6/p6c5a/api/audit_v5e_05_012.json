@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_012",
+  "kind": "audit",
+  "request_hash": "9679aae4a732b7149eaa7ec8691ff5e426ac85b33a0049f54e262fd63ce88b9e",
+  "input_ids": [
+    "SG25-8270f2824111",
+    "SG25-744254211165",
+    "SG25-40542f7e6b9e",
+    "SG25-355ac7d4d962",
+    "SG25-982776aa0b87"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a832ad31-0c6a-4d10-a7e4-398e3745291d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-8270f2824111\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"解决问题的办法/方案\",\"relation\":\"语义等价\",\"reason\":\"核心组1使用‘a method for solving a problem’，与原义‘解决办法’在名词、对象及语境内一致；答案陈述和数学解没有混入。\",\"evidence_ids\":[\"wn31:n:05669513\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"溶液；均匀混合物\",\"relation\":\"语义等价\",\"reason\":\"核心组2对应‘homogeneous mixture’定义，保留溶液为均匀混合物，没有额外限定具体溶质。\",\"evidence_ids\":[\"wn31:n:14613403\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两源义分别落在核心‘解决办法/方案’与‘溶液’，证据匹配；答案和数学解仅作外部候选。\"},{\"id\":\"SG25-744254211165\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"对事物或话题的看法、见解\",\"relation\":\"语义等价\",\"reason\":\"核心组1用‘a way of regarding situations or topics’覆盖‘见解’，与原文名词看法义一致。\",\"evidence_ids\":[\"wn31:n:06218486\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"对事物或话题的观点、立场\",\"relation\":\"语义等价\",\"reason\":\"核心组1合并近义的‘观点’，同一证据支持对情境或话题的看法，语义未超出原文。\",\"evidence_ids\":[\"wn31:n:06218486\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘见解；观点’近义合并进核心，共用‘a way of regarding situations or topics’证据；视觉透视义未进原文映射。\"},{\"id\":\"SG25-40542f7e6b9e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"未来前景/发展前景\",\"relation\":\"范围收窄\",\"reason\":\"核心组1以‘the possibility of future success’支撑‘前景；前途’，只保留成功/前途方向的未来前景；一般未来展望未明确保留。\",\"evidence_ids\":[\"wn31:n:14506552\"],\"context\":\"none\",\"residual_scope\":\"成功/前途之外的普通未来展望未明确覆盖\",\"counterexample\":\"同一词有‘belief about (or mental picture of) the future’的未来预期用法，不限于成功/前途\",\"counterexample_evidence_ids\":[\"wn31:n:05953807\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"可能性；预期\",\"relation\":\"范围收窄\",\"reason\":\"核心组2用未来信念/预期定义，保留‘（未来的）可能性；预期’，未覆盖非未来的泛指可能性；若原中文‘可能性’只是宽译，则属来源待核。\",\"evidence_ids\":[\"wn31:n:05953807\"],\"context\":\"uncertain\",\"residual_scope\":\"非未来泛指可能性未覆盖；来源宽度待核\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"商业/销售语境中的潜在客户\",\"relation\":\"无法确定\",\"reason\":\"仅有held记录；所给名词证据为奖项/职位候选人而非客户或购买者，无直接支持商业‘潜在客户’的词典定义，不能确认映射。\",\"evidence_ids\":[\"wn31:n:09910201\"],\"context\":\"required_from_source\",\"residual_scope\":\"整个‘潜在客户’义未进入核心/扩展，保留待核\",\"counterexample\":\"所给n:09910201指被考虑参评/任职的人选，不含购买客户或销售对象域\",\"counterexample_evidence_ids\":[\"wn31:n:09910201\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope_narrowing\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-40542f7e6b9e:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:14506552\",\"wn31:n:05953807\"],\"reason\":\"核心组1把‘前景’窄化为未来成功/前途；一般未来展望没有明确保留，组2只挂s002，不能自动补s001。\",\"repair_suggestion\":\"在核心组1保留‘前景；前途’并括注成功方向，或显式把s001的一般未来展望标为暂存/扩展。\"},{\"severity\":\"Info\",\"kind\":\"source_uncertainty\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-40542f7e6b9e:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:n:05953807\"],\"reason\":\"‘可能性’比未来预期宽，核心组2限定为未来；若原中文为宽译则属来源待核，不是确认生成错误。\",\"repair_suggestion\":\"标明未来语境/来源待核，不扩成一切可能性。\"},{\"severity\":\"Minor\",\"kind\":\"unresolved_source_sense\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:09910201\"],\"reason\":\"‘潜在客户’held，无客户/购买者直接证据，尚未映射；需补证或保持待核。\",\"repair_suggestion\":\"查商业词典prospect客户义，补证据后建组；否则保留held并维持partial。\"}],\"note\":\"s001/s002有核心条件覆盖，但s001仍有窄化风险；s003潜在客户无直接证据而held，故整词partial。\"},{\"id\":\"SG25-355ac7d4d962\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"推测；基于不确定依据的猜测/议论\",\"relation\":\"语义等价\",\"reason\":\"核心组1合并不确定推断与议论式猜测，证据分别支持‘believe on uncertain grounds’和‘talk over conjecturally’，与‘推测’一致。\",\"evidence_ids\":[\"wn31:v:00635105\",\"wn31:v:00929020\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"投机；冒险投资\",\"relation\":\"语义等价\",\"reason\":\"核心组2用‘invest at a risk’覆盖金融‘投机’，对象和风险投资方向一致。\",\"evidence_ids\":[\"wn31:v:02276935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘推测’与‘投机’均有独立动词证据；‘深思’未混入已确认义，仅作外部候选。\"},{\"id\":\"SG25-982776aa0b87\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"怀疑：对可信度存疑或认为可能\",\"relation\":\"语义等价\",\"reason\":\"核心组1覆盖不信任/存疑，核心组2覆盖认为很可能/有罪；两分支共同保留中文‘怀疑’的常见动词用法，未混入形容词可疑义。\",\"evidence_ids\":[\"wn31:v:00689827\",\"wn31:v:00923043\",\"wn31:v:00926844\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"处于被怀疑状态的人；嫌疑人\",\"relation\":\"语义等价\",\"reason\":\"核心组3用‘someone who is under suspicion’，与名词‘嫌疑人’一致，未混入已被起诉的法律被告义。\",\"evidence_ids\":[\"wn31:n:10700830\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词‘怀疑’拆为不信任与认为可能两核心分支，名词‘嫌疑人’用被怀疑者证据；形容词可疑义和法律被告义未进原文映射。\"}]}",
+  "usage": {
+    "prompt_tokens": 5971,
+    "completion_tokens": 8677,
+    "total_tokens": 14648,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6814
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4051
+  },
+  "started_utc": "2026-11-13T09:48:22.043899+00:00",
+  "completed_utc": "2026-11-13T09:49:11.117077+00:00",
+  "elapsed_seconds": 49.079,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

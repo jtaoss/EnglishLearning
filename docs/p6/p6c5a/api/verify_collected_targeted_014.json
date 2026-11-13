@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_014",
+  "kind": "verify",
+  "request_hash": "b959d850ac460fa90fa8d03dd444b14486b7652142f4a75e196236ac9a5a84fd",
+  "input_ids": [
+    "SG25-c64bc36dfe56",
+    "SG25-ecd38f260821"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "03747647-f867-4473-a0db-c2021b16443f",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c64bc36dfe56\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“限制”对应一般 place limits on（extent/amount/access），证据 wn31:v:00234091 直接支持，未新增对象或方向限制。\",\n          \"evidence_ids\": [\n            \"wn31:v:00234091\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“禁闭”由 wn31:v:02500687（deprive of freedom; take into confinement）直接支持，wn31:v:01304044 补充 close within bounds/deprive free movement。\",\n          \"evidence_ids\": [\n            \"wn31:v:01304044\",\n            \"wn31:v:02500687\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"两个源义分别保留在核心/扩展，‘限制’与‘禁闭’的强度差异有注释；未发现范围收窄或扩大。未使用的 v01349980、v02716988 不构成源义缺口。\"\n    },\n    {\n      \"id\": \"SG25-ecd38f260821\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“下定义”直接对应 wn31:v:00959410（give a definition for the meaning of a word），源片段覆盖。\",\n          \"evidence_ids\": [\n            \"wn31:v:00959410\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义不匹配\",\n          \"reason\": \"源“指明”意为明确指出/具体指定；扩展组虽然中文为‘指明’，但仅链接 wn31:v:02742653（show the form or outline of），该证据为‘显形/轮廓清楚’，并非‘指出/指定’，造成一般指定义丢失且证据错配；wn31:v:00949109 中有 specify 义但未链接到此源义。\",\n          \"evidence_ids\": [\n            \"wn31:v:02742653\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心“界定”由 wn31:v:00949109（decide upon/fix definitely; specify parameters）支持，可覆盖确定/限定的一部分，但边界/确定性质义未显式给出；因候选文本仍为‘界定’，暂按概括处理。\",\n          \"evidence_ids\": [\n            \"wn31:v:00949109\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"范围收窄/证据错配\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-ecd38f260821:extended:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:02742653\",\n            \"wn31:v:00949109\"\n          ],\n          \"reason\": \"源 s002‘指明’是一般指出/明确指定；扩展组仅链接 wn31:v:02742653（show the form or outline of，显形/轮廓清晰），并非‘指明’，导致该源义未得到正确英语证据覆盖。wn31:v:00949109 中的 specify 义虽可支持，但未链接到 s002。\",\n          \"counterexample\": \"specify the parameters（具体指定参数，属于‘指明’）\",\n          \"repair_suggestion\": \"将 s002 链接至少 wn31:v:00949109 并注释为‘具体指定/明确规定’，或将扩展组改为‘显形/轮廓清晰’并另行暂存/保留一般‘指明’义；不要把轮廓显现义当作‘指明’的唯一支持。\"\n        }\n      ],\n      \"unresolved\": [\n        \"源 s003‘界定’仅用 wn31:v:00949109（fix/specify）支持；若‘界定’强调边界或确定性质，现有证据不够精确，字典中 wn31:v:02617665/wn31:v:02704161 更直接，但未链接。因无源语境，暂不确认是否构成覆盖缺陷。\",\n        \"wn31:v:02617665、wn31:v:02704161 未在任何组中使用，可能对应‘界定’的另一层含义，需人工确认是否应纳入核心/扩展或作为 dictionary additions。\"\n      ],\n      \"preferences\": [\n        \"若保留 s002 为‘指明’，建议优先用 wn31:v:00949109 的 specify 义而非 v02742653；或把轮廓义单列，避免误导。\"\n      ],\n      \"note\": \"s001 覆盖良好；s002 存在证据错配，源义未正确保留，故确认 Major。s003 有合理概括但仍有待核边界义；不按假设自动处理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3854,
+    "completion_tokens": 8451,
+    "total_tokens": 12305,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7321
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2190
+  },
+  "started_utc": "2026-11-13T09:56:49.280687+00:00",
+  "completed_utc": "2026-11-13T09:58:42.817062+00:00",
+  "elapsed_seconds": 113.547,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

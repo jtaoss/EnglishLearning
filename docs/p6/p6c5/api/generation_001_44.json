@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_44",
+  "request_hash": "ec9be9f58cd566bbd4aa15c3e098a84d36a1cb0aaf1c99cdb7e9ef8f5e9ae46a",
+  "started_utc": "2026-11-13T08:14:59.718186+00:00",
+  "completed_utc": "2026-11-13T08:16:00.279243+00:00",
+  "elapsed_seconds": 60.563,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "cc72a83f-bf9c-43bd-b2fe-7941f820d1d9",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3548,
+    "completion_tokens": 9769,
+    "total_tokens": 13317,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9156
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 732
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-cf3c3437a865\",\"core\":[[\"获得；得到\",\"动词\",[\"s001\"],[\"wn31:v:02242867\",\"wn31:v:00523831\"],\"宽义：取得具体事物/资格，也可指得到某种待遇或评价；方向为接受方得到。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（规则、条件、情况）存在；适用；通行\",\"动词\",[\"wn31:v:02654604\"],\"原文仅‘获得’，此正式用法未被中文表达；WordNet支持，候选未采用。\"]],\"reason\":\"首记‘获得；得到’，因中文可宽义覆盖取得具体事物与得到待遇/评价；‘存在/适用’与原文不同，保持外部候选。\",\"flags\":[[\"Minor\",\"source_coverage_gap\",\"原文未列 obtain 的正式‘存在/适用’义，已单列 additions 待决。\"]]},{\"id\":\"SG25-6b428ace0262\",\"core\":[[\"保持；维持（状态、特征）\",\"动词\",[\"s001\"],[\"wn31:v:02415305\"],\"维持原状或性质不消失，如保持镇静、衣物保持形状。\"],[\"保留；留存（以备后用）\",\"动词\",[\"s002\"],[\"wn31:v:02288169\"],\"保留权利、押金等，留作将来使用或不交出。\"]],\"extended\":[[\"记住；保留在记忆中\",\"动词\",[\"s002\"],[\"wn31:v:00611564\"],\"保留信息/记忆的认知用法，后学；对象为信息而非权利/物品。\"]],\"other\":[],\"hold\":[[\"s003\",\"原中文‘容纳’偏向容量/接纳，而证据 hold back within 偏向留住/拦住，语义范围不完全一致；保留原片段待核，不直接确认。\"]],\"splits\":{\"s002\":\"s002 同时支持‘保留以备后用’与‘保留在记忆中’两个对象/认知用法，故拆分并分别标注。\"},\"additions\":[[\"留住；拦住（水分等）\",\"动词\",[\"wn31:v:02707488\"],\"原文‘容纳’未明确‘hold back within’的拦住/留定义；作为外部候选未采用。\"]],\"reason\":\"首记‘保持’与‘保留以备后用’；‘保留在记忆中’作为扩展，因对象不同单列并标注拆分；‘容纳’与证据范围不一致，暂存不硬改。\",\"flags\":[[\"Minor\",\"uncertain_evidence_translation\",\"原中文‘容纳’与 hold back within 的范围不完全一致，已暂存；对应外部候选见 additions。\"],[\"Info\",\"source_coverage_gap\",\"外部‘留住/拦住（水分等）’用法未进入核心，已列 additions 待决。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

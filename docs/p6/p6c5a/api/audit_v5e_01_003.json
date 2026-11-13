@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_003",
+  "kind": "audit",
+  "request_hash": "7f901487ae095773825572cdc3a1cfc7e6f7761695d5fae34e4ee5e5cbb6f88a",
+  "input_ids": [
+    "SG25-83a00300ad6a",
+    "SG25-ee5e2878c485",
+    "SG25-41dda3b2113b",
+    "SG25-8dd9ed10798d",
+    "SG25-20dd3be4a3b1"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "79e96b93-6373-4bc1-9c28-4eeadf9a8411",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-83a00300ad6a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：平行的（几何/并列方向）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“平行的”，几何平行词典义直接支持；原文短释未要求更窄对象。\",\"evidence_ids\":[\"wn31:a:01722394\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：相似的\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“相似的”；仅见出版方观察 web:parallel 支持该形容词用法，独立词典证据偏弱。\",\"evidence_ids\":[\"web:parallel\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"名词：相似情况/类比物\",\"relation\":\"语义等价\",\"reason\":\"名词“相似情况”与“类似物”词典义对应，扩展组未新增对象限制。\",\"evidence_ids\":[\"wn31:n:04753670\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词：与某物相似或与其平行\",\"relation\":\"合理概括\",\"reason\":\"扩展组把“相似”和“平行”两种动词关系并列保留，分别由 be parallel to 与 duplicate/match 证据支持。\",\"evidence_ids\":[\"wn31:v:02665300\",\"wn31:v:02665436\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_support_limited\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-83a00300ad6a:p6c1:extended:1\"],\"evidence_ids\":[\"web:parallel\"],\"reason\":\"“相似的”形容词义只由带限制的出版方观察支撑，缺独立词典义项直接对应，但源中文本身明确列出该义。\",\"repair_suggestion\":\"补充可靠词典的形容词 analogous/similar 义或例句作为直接证据；不据此改动层级。\"}],\"note\":\"四个源义均已链接：核心保留几何“平行的”，相似形容词、相似情况名词及动词双关系在扩展层；主要待核是 s002 的直接词典证据较弱。\"},{\"id\":\"SG25-ee5e2878c485\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：每年的；按年发生/支付\",\"relation\":\"语义等价\",\"reason\":\"核心合并组保留“每年的”，词典 occurring/payable every year 直接支持。\",\"evidence_ids\":[\"wn31:s:01976215\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：一年一次的\",\"relation\":\"语义等价\",\"reason\":\"核心合并组同时列“一年一次的”，annual/yearly 的按年发生义可涵盖每年一次。\",\"evidence_ids\":[\"wn31:s:01976215\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：年刊/年鉴类出版物\",\"relation\":\"语义等价\",\"reason\":\"扩展组“年刊”与每年出版一次的参考书词典义对应。\",\"evidence_ids\":[\"wn31:n:06438138\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：一年生植物（植物学）\",\"relation\":\"语义等价\",\"reason\":\"其他层“一年生植物（生命周期在一年内完成）”与植物学词典义精确对应。\",\"evidence_ids\":[\"wn31:n:11573257\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个形容词义在核心合并保留，年刊在扩展，一年生植物按植物学专业义置其他层；未发现确定范围缺口。\"},{\"id\":\"SG25-41dda3b2113b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：古代的；历史久远时代\",\"relation\":\"语义等价\",\"reason\":\"核心组“古代的”由历史时期义证据直接支持，未额外限定特定文明。\",\"evidence_ids\":[\"wn31:s:01732846\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：古老的；年代久\",\"relation\":\"语义等价\",\"reason\":\"核心组“古老的”由 very old 证据支持，与原短释一致。\",\"evidence_ids\":[\"wn31:s:01649289\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个形容词义分别置于核心并各有对应证据，注释区分历史时期与年代久，未发现覆盖问题。\"},{\"id\":\"SG25-8dd9ed10798d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：业余爱好者（嗜好或非取酬参与）\",\"relation\":\"语义等价\",\"reason\":\"核心组“业余爱好者”由嗜好参与义支持；同词另一不取酬运动员义也可由 n:09806201 补证，文本未收窄。\",\"evidence_ids\":[\"wn31:n:09806026\",\"wn31:n:09806201\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：业余的；非职业/消遣性质\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“业余的”，消遣/非职业义由 s:01875584 支持；注释仅防止默认水平差，未把原文改成单一贬义。\",\"evidence_ids\":[\"wn31:s:01875584\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_link_incomplete\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-8dd9ed10798d:core:1\"],\"evidence_ids\":[\"wn31:n:09806201\"],\"reason\":\"名词组仅链接“嗜好参与”证据，未链接同词“非取酬运动员”证据；组文本“业余爱好者”仍宽，不是确定语义缺口。\",\"repair_suggestion\":\"在组证据中补充 n:09806201 或在注释说明涵盖运动与非取酬场景。\"}],\"note\":\"名词与形容词两个人/性质义均保留在核心；名词证据可再补运动非取酬支，形容词注释已避免默认贬义。\"},{\"id\":\"SG25-20dd3be4a3b1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：诱惑；诱惑感/诱惑物/引诱行为\",\"relation\":\"语义等价\",\"reason\":\"核心组用“诱惑”保留原文短释，词典三条证据分别覆盖引诱行为、诱惑物和欲望，未新增排他对象。\",\"evidence_ids\":[\"wn31:n:00160440\",\"wn31:n:05702756\",\"wn31:n:07500421\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“诱惑”在核心保留，并用三条证据覆盖欲望、诱惑物与引诱行为；未发现确定范围缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 5785,
+    "completion_tokens": 11437,
+    "total_tokens": 17222,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9657
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3865
+  },
+  "started_utc": "2026-11-13T09:40:13.224928+00:00",
+  "completed_utc": "2026-11-13T09:41:18.474817+00:00",
+  "elapsed_seconds": 65.25,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

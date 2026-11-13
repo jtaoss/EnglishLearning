@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_51",
+  "request_hash": "57374447ba010539d2e4fa87bfc3ec7d8f8b9ebd21b0804536f36541a2bf3508",
+  "started_utc": "2026-11-13T08:16:21.905213+00:00",
+  "completed_utc": "2026-11-13T08:17:59.059139+00:00",
+  "elapsed_seconds": 97.156,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "271f8357-4401-4923-876f-556820f7b97e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3596,
+    "completion_tokens": 5014,
+    "total_tokens": 8610,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4365
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1548
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-63e6ce93e1bc\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源动词“使疏远”为及物使动（使某人/某物疏远），候选使用 WordNet v:02688950 “keep at a distance”，但该定义示例为 distance oneself（自身保持距离），与使动方向不完全一致；候选虽标注方向待复核，但未提供额外证据确认可涵盖外部使动用法。\",\n          \"evidence_ids\": [\n            \"wn31:v:02688950\"\n          ],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"SG25-63e6ce93e1bc:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"候选可保留为“使疏远；使与…保持距离”，并在 usage_note 中明确该证据仅反映自身用法，外部使动用法需另寻权威例句或标注为待决，不宜作为已确认核心。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源名词“距离”为宽泛义，中文可含情感/关系上的距离（如“我们之间产生了距离”），且同词头动词“使疏远”暗示情感维度。候选将“情感冷淡；疏远”置于 dictionary_additions（status not adopted），理由是“原文仅动词“使疏远”，名词情感义未明示”，但该理由可能过度限制源名词的外延；需人工确认源义是否包含抽象情感距离。\",\n          \"evidence_ids\": [\n            \"wn31:n:07521110\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-63e6ce93e1bc:p6c5:addition:2\",\n          \"proposed_fix\": \"若源“距离”意图涵盖抽象/情感距离，应将该项从 dictionary_additions 移至 extended_meanings 并将 source_sense_ids 设为 [\\\"s001\\\"]；否则保持现状并记录源范围决定。\"\n        }\n      ],\n      \"preferences\": [\n        \"建议将空间距离的两个义项（属性与量度）在教学上合并，但可保留两条证据以帮助理解。\",\n        \"时间间隔作为扩展合理；情感距离若属源义，可列于扩展并在后学中提及。\"\n      ],\n      \"note\": \"未发现已确认的错误翻译或词性错误；主要问题为动词使动方向证据不足和名词情感距离归类不确定，均为待决项。候选对未采用的 far/distant region、outdistance 等处理谨慎，未混入核心。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

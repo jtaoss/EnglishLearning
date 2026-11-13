@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_010",
+  "kind": "audit",
+  "request_hash": "7b3d9ebced7700ea9c5f5fc3e8ba052ab2d07d838a02e7995452098c79b44fe0",
+  "input_ids": [
+    "SG25-fed0e4820af4",
+    "SG25-ecd38f260821",
+    "SG25-4c4ed1afbfda",
+    "SG25-3dbd9cd5e1fb",
+    "SG25-b9abdfa5387b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "0a4e19cf-533a-4887-8666-749357c2a4c2",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-fed0e4820af4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"国家或公共财政收支\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“财政的”，所给 fiscal responsibility 证据支持财政/财务义。\",\"evidence_ids\":[\"wn31:a:02858779\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"金融、资金融通\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“金融的”，所给 involving financial matters 证据可覆盖金融/财务事项。\",\"evidence_ids\":[\"wn31:a:02858779\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"财政与金融两个中文场景均保留在核心；同一宽泛财务证据支撑，未强行用对象限制合并两者。\"},{\"id\":\"SG25-ecd38f260821\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"给出词或短语的定义\",\"relation\":\"语义等价\",\"reason\":\"核心组“下定义”与 give a definition for the meaning of a word 对应。\",\"evidence_ids\":[\"wn31:v:00959410\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"一般地指明、具体说明或指定\",\"relation\":\"范围收窄\",\"reason\":\"该源义只链接到 extended 的“指明”组，而该组证据是 show the form or outline 的轮廓显现义；一般“具体指定/说明”未显式保留，核心“界定”虽引 specify the parameters，但未声明覆盖 s002。\",\"evidence_ids\":[\"wn31:v:02742653\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般“明确指出/具体指定/说明”的用法，仅有轮廓或形状显现子义\",\"counterexample\":\"specify the parameters（具体指定参数）\",\"counterexample_evidence_ids\":[\"wn31:v:00949109\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s003\",\"source_scope\":\"确定、限定范围或界限\",\"relation\":\"合理概括\",\"reason\":\"核心组“界定”由 decide upon or fix definitely / specify the parameters 支持，可覆盖确定限定义，但证据不是边界专义。\",\"evidence_ids\":[\"wn31:v:00949109\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"范围收窄/剩余范围缺失\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-ecd38f260821:extended:1\"],\"evidence_ids\":[\"wn31:v:02742653\",\"wn31:v:00949109\"],\"reason\":\"s002‘指明’原为一般指明/具体指定；extended 仅以轮廓显现义支持，核心‘界定’虽引 specify the parameters 但未声明覆盖 s002，导致一般指定义没有显式保留或暂存。\",\"repair_suggestion\":\"将“指明”改为更具体的“显出轮廓/使轮廓清晰”并另立或暂存一般“具体指定、说明”义；或将 wn31:v:00949109 的 specify 参数义显式链接到 s002 并在注释说明覆盖。\"}],\"note\":\"下定义与界定在核心有直接证据；“指明”被放入扩展但证据仅限轮廓显现，一般具体指定/说明义需修复或暂存。\"},{\"id\":\"SG25-4c4ed1afbfda\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"词、短语或符号意义的解释\",\"relation\":\"语义等价\",\"reason\":\"核心合并组“定义；释义”由 concise explanation of the meaning of a word or phrase or symbol 支持。\",\"evidence_ids\":[\"wn31:n:06757091\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"释义、解释性说明\",\"relation\":\"语义等价\",\"reason\":\"“释义”与“定义”同属解释意义框架，核心合并组保留该用途。\",\"evidence_ids\":[\"wn31:n:06757091\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"定义与释义词义在核心合并；外部候选“清晰度”属词典补充义，未混入来源映射。\"},{\"id\":\"SG25-3dbd9cd5e1fb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"能力、官能\",\"relation\":\"合理概括\",\"reason\":\"核心组保留上位“能力”，所给证据特指心智或感知官能，中文上位词可涵盖但未在注释中显式限定。\",\"evidence_ids\":[\"wn31:n:05658174\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"学校全体教师与管理人员\",\"relation\":\"语义等价\",\"reason\":\"核心组“全体教员”与 body of teachers and administrators at a school 对应。\",\"evidence_ids\":[\"wn31:n:08304507\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"大学学科、学院或院系组织（含地区制度差异）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“院系”，并以既有出版方观察补证；证据注明地区制度差异且非独立频率证据。\",\"evidence_ids\":[\"web:faculty\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"能力与全体教员分列核心；院系作为地区性学校组织用法置扩展，证据类型限制已注明。\"},{\"id\":\"SG25-b9abdfa5387b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"数量充足\",\"relation\":\"合理概括\",\"reason\":\"核心合并组保留“充足的”，但注释明确不解释为过量丰富；证据为达到需要且不丰富。\",\"evidence_ids\":[\"wn31:a:02343832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"满足需要或要求\",\"relation\":\"语义等价\",\"reason\":\"核心合并组的“满足需要的”与 fulfill a need or requirement 对应。\",\"evidence_ids\":[\"wn31:a:02343832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"足够、达到所需量\",\"relation\":\"语义等价\",\"reason\":\"核心合并组“足够的”与 sufficient 的足够义对应，且注释排除过量丰富。\",\"evidence_ids\":[\"wn31:a:02343832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义量度表达合组，注释明确是“达到需要而非过量丰富”，未额外新增对象或领域限制。\"}]}",
+  "usage": {
+    "prompt_tokens": 4675,
+    "completion_tokens": 9820,
+    "total_tokens": 14495,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8122
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2755
+  },
+  "started_utc": "2026-11-13T09:43:09.154823+00:00",
+  "completed_utc": "2026-11-13T09:44:06.710876+00:00",
+  "elapsed_seconds": 57.562,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

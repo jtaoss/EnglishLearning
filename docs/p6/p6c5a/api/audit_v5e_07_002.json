@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_002",
+  "kind": "audit",
+  "request_hash": "75aabe2fdd9349fa89dd4c8eaa7697cea6bac491b884d06174b23ca1d2512c01",
+  "input_ids": [
+    "SG25-392245974134",
+    "SG25-80688fc3d5f8",
+    "SG25-e8b22d83b417",
+    "SG25-9f2e6d33a371",
+    "SG25-8ac1ef5381ca"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "b035df59-4f4b-40db-9371-ae4a89091203",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-392245974134\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"敲；敲击（源词性未定，可能含名词性敲击）\",\"relation\":\"无法确定\",\"reason\":\"源片段词性为null且整词标为名词；动词，候选仅以动词“敲；敲击”对应 wn31:v:01417121（敲门/rap）。英语证据支持动词敲击，但不能据此排除或确认源片段的名词性敲击义，故不能判为等价。\",\"evidence_ids\":[\"wn31:v:01417121\",\"wn31:n:07400970\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少名词性“敲击/敲击声/一次敲击”在源派生层中的保留；仅见未采用外部候选。\",\"counterexample\":\"the knocking grew louder（名词敲击声）\",\"counterexample_evidence_ids\":[\"wn31:n:07400970\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"碰撞；撞击（源词性未定）\",\"relation\":\"范围收窄\",\"reason\":\"候选扩展层以动词“碰；撞击”对应 wn31:v:01242183（knock against/bump into），可覆盖动词碰撞；但源词性null且整词含名词，名词性一次撞击/碰撞未在源派生层或暂存中保留。\",\"evidence_ids\":[\"wn31:v:01242183\",\"wn31:n:07424807\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少名词性“一次撞击/碰撞”的源派生保留。\",\"counterexample\":\"the sudden knock floored him（名词一次撞击/打击）\",\"counterexample_evidence_ids\":[\"wn31:n:07424807\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"source_pos_unresolved_nominal_gap\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-392245974134:p6c1:core:1\",\"SG25-392245974134:p6c1:extended:1\"],\"evidence_ids\":[\"wn31:n:07400970\",\"wn31:n:07424807\"],\"reason\":\"原词源词性标为名词；动词，但两个源义项的词性均为null且未解析；候选只保留动词层，名词敲击声/一次撞击仅列在unadopted_external_candidates，未在源派生层、held或pending中保留。\",\"repair_suggestion\":\"复核源片段是否含名词义；若保留，应新增或暂存名词分支，或明确记录源剩余范围，不能只放在未采用外部候选中。\"}],\"note\":\"s001、s002的动词敲击/碰撞有英语证据支撑，但源词性未解析，名词性敲击声/撞击未进入源派生层；判为部分覆盖并暂存审查。\"},{\"id\":\"SG25-80688fc3d5f8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"错过（未赶上、未参加等）\",\"relation\":\"语义等价\",\"reason\":\"核心“错过”由 fail to reach/get to（未赶上火车）与 fail to attend（未参加活动）支撑，符合源义“错过”的常用范围。\",\"evidence_ids\":[\"wn31:v:02026505\",\"wn31:v:02619707\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"想念（感到缺少、思念）\",\"relation\":\"语义等价\",\"reason\":\"核心“想念”由 feel or suffer from the lack of（He misses his mother）支撑，与源义“想念”一致。\",\"evidence_ids\":[\"wn31:v:01809490\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001错过与s002想念分别有对应核心组；未击中仅作词典补充未误并入源义。\"},{\"id\":\"SG25-e8b22d83b417\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"握住；用手抓住/持握\",\"relation\":\"语义等价\",\"reason\":\"核心“握住”由 have or hold in one’s hands or grip 支撑，符合源义。\",\"evidence_ids\":[\"wn31:v:01219234\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"保持（使继续处于某状态/位置）\",\"relation\":\"语义等价\",\"reason\":\"核心“保持”由 cause to continue in a certain state/position/activity（hold in place）支撑，符合源义。\",\"evidence_ids\":[\"wn31:v:02687605\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"举行（举办活动、仪式等）\",\"relation\":\"语义等价\",\"reason\":\"核心“举行”由 organize or be responsible for（hold a reception/party）支撑，符合源义。\",\"evidence_ids\":[\"wn31:v:01737358\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"容纳（可容纳、容纳得下）\",\"relation\":\"语义等价\",\"reason\":\"扩展“容纳”由 be capable of holding or containing（The flask holds one gallon）支撑，符合源义容量范围。\",\"evidence_ids\":[\"wn31:v:02707070\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个源义分别由握住、保持、举行、容纳覆盖；容纳在扩展层但仍在联合覆盖中可检索，不判缺口。\"},{\"id\":\"SG25-9f2e6d33a371\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"头；头部（身体部位）\",\"relation\":\"语义等价\",\"reason\":\"核心“头；头部”由 the upper part of the human body 支撑，符合源义身体部位。\",\"evidence_ids\":[\"wn31:n:05546258\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"负责人；领导者（组织/机构中主管）\",\"relation\":\"语义等价\",\"reason\":\"核心“负责人；领导者”由 a person who is in charge 支撑，符合源义人员角色。\",\"evidence_ids\":[\"wn31:n:10182584\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"身体部位“头”与人员角色“负责人”分层清楚；源词性为名词，动词朝/领导仅作外部候选。\"},{\"id\":\"SG25-8ac1ef5381ca\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"嘴唇（人体部位）\",\"relation\":\"语义等价\",\"reason\":\"核心“嘴唇”由 either of two fleshy folds of tissue that surround the mouth 支撑，符合源义。\",\"evidence_ids\":[\"wn31:n:05313305\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义仅嘴唇；容器边缘等仅作外部补充，未误并入源派生层。\"}]}",
+  "usage": {
+    "prompt_tokens": 12977,
+    "completion_tokens": 8087,
+    "total_tokens": 21064,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6369
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 11057
+  },
+  "started_utc": "2026-11-13T09:53:07.982921+00:00",
+  "completed_utc": "2026-11-13T09:53:54.457873+00:00",
+  "elapsed_seconds": 46.484,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

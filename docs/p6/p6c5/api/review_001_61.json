@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_61",
+  "request_hash": "6b8f8d703905ebd43a758544b44cbcae0a73c0274427a2a34b76d59a584a5d10",
+  "started_utc": "2026-11-13T08:16:53.819388+00:00",
+  "completed_utc": "2026-11-13T08:17:54.509288+00:00",
+  "elapsed_seconds": 60.687,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "43faaabc-1799-4763-a57d-f7ff8d7ceffe",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3193,
+    "completion_tokens": 3257,
+    "total_tokens": 6450,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3099
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1145
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-39d5ef92ac20\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"候选将“分清”和“区别”合并为一个辨别义，证据 wn31:v:00652006 支持该概括用法；将“看清楚”对应感官辨认义，证据 wn31:v:02197640 支持。未采用的使动/特征义和使显著义已列入 dictionary_additions，来源原文未明确表达，不构成当前生成缺陷。未发现错误翻译、词性错误或重要源用途遗漏。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_017",
+  "kind": "audit",
+  "request_hash": "96e48689e41543b14296a0575981bb66439d633be6ca1520e7609016018fdd69",
+  "input_ids": [
+    "SG25-da7cc64ae8ad",
+    "SG25-b38d9d168c3a",
+    "SG25-317b32c14369",
+    "SG25-fb3a7850111f",
+    "SG25-c354eb166766"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "30afda22-5220-4a60-9427-931f063e6aa8",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-da7cc64ae8ad\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"神秘的：性质隐秘、不易被感官或理解把握\",\"relation\":\"合理概括\",\"reason\":\"核心组将“神秘的”与“难以解释的”合并展示，wn31:s:00903364 的“import not apparent to the senses / beyond ordinary understanding”正支持“神秘的”，合并后原义仍可追溯，且未擅自添加超自然因果。\",\"evidence_ids\":[\"wn31:s:00903364\",\"wn31:s:00942713\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"难以解释的：隐晦、难以说明其性质\",\"relation\":\"合理概括\",\"reason\":\"wn31:s:00942713 的“of an obscure nature（cryptic / inscrutable）”对应“难以解释的”，在合并组“神秘的／难以解释的”中作为可区分成分保留。\",\"evidence_ids\":[\"wn31:s:00942713\",\"wn31:s:00903364\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义均落在同一核心组，词典两条证据分别对应“隐秘难解”与“隐晦难解释”，联合覆盖无缺；组注明确未引入超自然限定，未发现新增排他限制。\"},{\"id\":\"SG25-b38d9d168c3a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"连接：使两物相接的行为/状态及相关事物\",\"relation\":\"范围收窄\",\"reason\":\"核心组仅取 wn31:n:00146038“the act of bringing two things into contact”，把“连接”限定为接触建立的动作；而“the state of being connected”(wn31:n:14442568)、“an instrumentality that connects”(wn31:n:03095830)、“a connecting shape”(wn31:n:13893444) 同样是对“连接”的词典支持，却未在任何层保留或明确暂存，构成真子集保留。\",\"evidence_ids\":[\"wn31:n:00146038\",\"wn31:n:14442568\",\"wn31:n:03095830\"],\"context\":\"none\",\"residual_scope\":\"缺少“连接状态”“连接物/连接处/连接形状”等有词典支持的子范围\",\"counterexample\":\"the state of being connected（如 the connection between church and state 指连接状态而非连接动作）\",\"counterexample_evidence_ids\":[\"wn31:n:14442568\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"联系：事物或事件之间的关系\",\"relation\":\"语义等价\",\"reason\":\"核心组“联系”以 wn31:n:13813601“a relation between things or events”为据，正对应源义“联系”的关系义；未把“人脉/熟人”(wn31:n:09975626)、“毒品供应者”(wn31:n:09975514) 等源义未支持的词典义塞入。\",\"evidence_ids\":[\"wn31:n:13813601\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope_gap\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-b38d9d168c3a:core:1\"],\"evidence_ids\":[\"wn31:n:14442568\",\"wn31:n:03095830\",\"wn31:n:13893444\"],\"reason\":\"“连接”在核心仅保留“接触建立的动作”，而连接状态、连接物/连接处等有词典支持的用法既未进核心也未进扩展，也未标为暂存剩余范围。\",\"repair_suggestion\":\"在核心“连接”表述中保留一般义（如“连接（动作/状态）”），或以括注/子条区分动作与状态，或在扩展/暂存中显式记录连接物、连接处并说明教学理由。\"}],\"note\":\"“联系”关系义覆盖良好；问题在“连接”被收窄为动作义，状态义与连接物义在全部层级缺失且无暂存说明，属可疑的剩余范围缺口，非频率判断。\"},{\"id\":\"SG25-317b32c14369\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"正常的：符合常态、标准或一般水平\",\"relation\":\"语义等价\",\"reason\":\"核心组“正常的”有 wn31:a:01598231“conforming with or constituting a norm or standard”与 wn31:a:01602901“approximately average or within certain limits”支持，未加入“正常=正确/应然”等无据评价。\",\"evidence_ids\":[\"wn31:a:01598231\",\"wn31:a:01602901\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"通常的：一般发生、惯常的情形\",\"relation\":\"语义等价\",\"reason\":\"wn31:a:01598231 中“the normal course of events / normal working hours”支持“通常的/惯常的”这一用法，内容被保留在扩展层，未从词条整体丢失；仅是首屏排序后置。\",\"evidence_ids\":[\"wn31:a:01598231\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"layer_placement_justification\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-317b32c14369:extended:1\"],\"evidence_ids\":[\"wn31:a:01598231\"],\"reason\":\"“通常的”作为源义被后置到扩展层，组注给出的理由是“不把统计常见当价值判断”，属于语义辨析而非该义后置的教学理由说明。\",\"repair_suggestion\":\"补一句明确的首屏教学理由（如“通常的”常由 usual/typical 承担，normal 更常用于“符合常态/标准”），说明后置不基于词频臆断。\"}],\"note\":\"两个源义均在层级并集中保留，联合覆盖完整；“通常的”置于扩展属可接受的首要教学排序，但后置理由说明略偏薄弱，仅记 Info。\"},{\"id\":\"SG25-fb3a7850111f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"紧张的：焦虑、易激动、悬着心\",\"relation\":\"语义等价\",\"reason\":\"核心组“紧张的”有 wn31:s:00922927“excited in anticipation”与 wn31:s:02465209“causing or fraught with or showing anxiety”支持，未引入与源义不符的对象限制。\",\"evidence_ids\":[\"wn31:s:00922927\",\"wn31:s:02465209\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"神经的：与神经系统有关\",\"relation\":\"语义等价\",\"reason\":\"wn31:a:02915824“of or relating to the nervous system”正对应“神经的”，且与“紧张的”分属不同语义框架，组注明确 nervous system 不能译为“紧张系统”，分设两组合理。\",\"evidence_ids\":[\"wn31:a:02915824\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“紧张的（焦虑/悬心）”与“神经的（与神经系统有关）”两框架分别保留在核心，词典证据一一对应，未发现对象或领域上的无据限制。\"},{\"id\":\"SG25-c354eb166766\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"巨大的：体积、数量、程度远超寻常\",\"relation\":\"合理概括\",\"reason\":\"核心组将“巨大的／庞大的”合并，wn31:s:01388189 的“extraordinarily large in size or extent or amount or power or degree”同时覆盖体积、数量与程度，合并未添加精确门槛或对象排他。\",\"evidence_ids\":[\"wn31:s:01388189\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"庞大的：规模、数量极大\",\"relation\":\"合理概括\",\"reason\":\"“庞大的”与“巨大的”在 wn31:s:01388189 所述“large in size/extent/amount”范围内同指，作为合并展示的可区分成分保留，可回溯。\",\"evidence_ids\":[\"wn31:s:01388189\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义源义合并为一个核心组，单条词典证据覆盖大小、范围、数量与程度，未虚构精确程度门槛，覆盖完整。\"}]}",
+  "usage": {
+    "prompt_tokens": 5378,
+    "completion_tokens": 4028,
+    "total_tokens": 9406,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1978
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3458
+  },
+  "started_utc": "2026-11-13T09:44:50.690391+00:00",
+  "completed_utc": "2026-11-13T09:45:12.525548+00:00",
+  "elapsed_seconds": 21.828,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

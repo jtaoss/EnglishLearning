@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_37",
+  "request_hash": "2427da949dee5e8cf8442219277bf67d4b252517aa20563fd5b93517c4965821",
+  "started_utc": "2026-11-13T08:14:59.485830+00:00",
+  "completed_utc": "2026-11-13T08:15:32.042257+00:00",
+  "elapsed_seconds": 32.546,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d752332e-86e0-4237-a87e-5ebd29e9efab",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3628,
+    "completion_tokens": 5426,
+    "total_tokens": 9054,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4674
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 812
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-3165df34fcec\",\"word\":\"institute\",\"core\":[[\"研究所（宽义机构义可涵盖）\",\"名词\",[\"s001\"],[\"wn31:n:08424287\"],\"词网释义为促进艺术、科学或教育的组织；原文“研究所”是具体机构类型，需按宽义有条件兼容\"],[\"学院（宽义教育机构义可涵盖）\",\"名词\",[\"s002\"],[\"wn31:n:08424287\"],\"同一宽义组织释义；原文“学院”为具体教育机构类型，释义未直接限定\"],[\"建立；设立\",\"动词\",[\"s003\"],[\"wn31:v:01650771\"],\"set up/lay the groundwork，直接对应建立、设立\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s004\",\"“实行”是实施/执行，不是建立/发起；所供 v:01621566 为法律上提起程序，不能证明该义，暂存待核\"]],\"splits\":{},\"additions\":[[\"提起诉讼；提出（诉讼）\",\"动词\",[\"wn31:v:01621566\"],\"原文未列法律程序义；词网明确有 institute proceedings，作为未采用候选\"]],\"reason\":\"首记先分名词机构义与动词建立义：研究所、学院各自保留具体类型并标宽义兼容；建立用 set up 证据。实行因证据方向不符暂存，法律义只作补充候选。\",\"flags\":[[\"Major\",\"evidence_scope_gap\",\"名词证据是促进艺术、科学或教育的组织宽义，原文“研究所/学院”为较具体机构类型，不能视为完全等义。\"],[\"Major\",\"lexical_evidence_insufficient\",\"s004“实行”缺乏匹配证据；词网法律“提起程序”义不等于实施/执行，已暂存。\"],[\"Info\",\"addition_candidate_only\",\"“提起诉讼/程序”义有词网证据但原文未表达，仅列补充候选。\"]]},{\"id\":\"SG25-f329e3a317ee\",\"word\":\"restore\",\"core\":[[\"修复\",\"动词\",[\"s001\"],[\"wn31:v:00261534\"],\"修补破损/损坏之物，词网 repair 义直接对应\"],[\"复原；恢复\",\"动词\",[\"s002\",\"s003\"],[\"wn31:v:02431646\",\"wn31:v:02558146\"],\"均指回到原有状态/功能或重新建立；02431646 恢复存在/使用/地位，02558146 恢复到原状/可用状态\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"使恢复精力；使复苏\",\"动词\",[\"wn31:v:00168396\"],\"原文“恢复”未明确精力/生命力义；词网该义独立，作为未采用候选\"],[\"归还；交还\",\"动词\",[\"wn31:v:02315462\"],\"原文未列归还物品义；词网 give/bring back 义独立，作为未采用候选\"]],\"reason\":\"首记把物理修补（修复）与回到原状/功能（复原、恢复）分开；两者中文近义但对象不同，避免把 repair 与 reestablish/return condition 混成一组。补充候选仅提示原文未显式列出的独立义。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原文未显式列出“使恢复精力/生命力”和“归还物品”义，已作为补充候选，未采用。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

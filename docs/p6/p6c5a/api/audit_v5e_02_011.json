@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_011",
+  "kind": "audit",
+  "request_hash": "6b56e91e09d715031f5612ebece24c69d41629954beb832b216c70d8f24302ce",
+  "input_ids": [
+    "SG25-4d2971726bc4",
+    "SG25-480e4f1d08e9",
+    "SG25-1dbf39600b57",
+    "SG25-852805846189",
+    "SG25-e97469619c0d"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "334686e3-530b-4732-88e8-4534822cb01e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-4d2971726bc4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"人工的：非自然形成/由人制作\",\"relation\":\"语义等价\",\"reason\":\"核心组以“人工的／人造的”共同覆盖，与 wn31:a:01575756“contrived by art rather than nature”对齐；原文未列做作/虚假义。\",\"evidence_ids\":[\"wn31:a:01575756\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"artificial 的“做作的/虚假的”义（wn31:s:00074073）不是原文“人工的/人造的”义，未并入。\",\"counterexample_evidence_ids\":[\"wn31:s:00074073\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"人造的：由人制造而非自然生成\",\"relation\":\"语义等价\",\"reason\":\"与 s001 同义合并，核心组“人工的／人造的”保留原文对比自然的范围；未把词典中的虚假/做作义并入。\",\"evidence_ids\":[\"wn31:a:01575756\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"artificial 的“做作的/虚假的”义（wn31:s:00074073）不是原文“人造的”义，未并入。\",\"counterexample_evidence_ids\":[\"wn31:s:00074073\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"dictionary_addition_not_source\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-4d2971726bc4:core:1\"],\"evidence_ids\":[\"wn31:s:00074073\"],\"reason\":\"词典另列 artificial=做作的/虚假的，原文未列；候选核心未采用该义是正确的，但外部观察未显式记录。\",\"repair_suggestion\":\"保持不并入来源核心；如未来采用，作为词典新增/外部观察另行标注。\"}],\"note\":\"两个近义源义合并在核心；词典的做作/虚假义未入来源层，仅作外部观察，无来源缺口。\"},{\"id\":\"SG25-480e4f1d08e9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"效率高的：以较少时间/精力/费用达成效果\",\"relation\":\"语义等价\",\"reason\":\"核心组文本与 wn31:a:00843158“being effective without wasting time or effort or expense”对齐；原文没有单列仅“有效”义。\",\"evidence_ids\":[\"wn31:a:00843158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"effective/有效但不一定高效（wn31:s:00512569 含 efficient secretary 例），不能把“有效”直接等同于“效率高”。\",\"counterexample_evidence_ids\":[\"wn31:s:00512569\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心组覆盖“效率高”；未把 effective 的邻近义扩大为源义。\"},{\"id\":\"SG25-1dbf39600b57\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"资格：满足要求/胜任条件\",\"relation\":\"合理概括\",\"reason\":\"核心组“资格／资历”合并两个近义名词义，并由 wn31:n:04724415“attribute that must be met...fits a person for something”支持胜任条件范围。\",\"evidence_ids\":[\"wn31:n:04724415\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"qualification 的“限制/保留”义（wn31:n:06775091）不并入“资格/资历”组。\",\"counterexample_evidence_ids\":[\"wn31:n:06775091\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"资历：与胜任相关的经历/条件\",\"relation\":\"合理概括\",\"reason\":\"与“资格”合组保留在核心，词义围绕胜任要求；同一词典证据可覆盖资格/资历的概括层。\",\"evidence_ids\":[\"wn31:n:04724415\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"qualification 的“限制/保留”义（wn31:n:06775091）不是“资历”的直接对应义。\",\"counterexample_evidence_ids\":[\"wn31:n:06775091\"],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"限制条件：对主张或陈述的限定/保留条件\",\"relation\":\"语义等价\",\"reason\":\"扩展组“限制条件”对应 wn31:n:06775091“a statement that limits or restricts some claim”；与资格/资历分开保留。\",\"evidence_ids\":[\"wn31:n:06775091\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"qualification 的“修改/限定行为”义（wn31:n:00201412）不是“限制条件”这一名词结果义。\",\"counterexample_evidence_ids\":[\"wn31:n:00201412\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"资格/资历合核心，限制条件留扩展；三源义均有落点，无来源遗漏。\"},{\"id\":\"SG25-852805846189\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"影响：对事物/人产生作用\",\"relation\":\"语义等价\",\"reason\":\"核心组“影响”对应 wn31:v:00137133“have an effect upon”，保留一般作用范围，未加对象限制。\",\"evidence_ids\":[\"wn31:v:00137133\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"affect=假装/feign（wn31:v:00839722）不是原文“影响”义。\",\"counterexample_evidence_ids\":[\"wn31:v:00839722\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"使感动：使人产生情绪触动\",\"relation\":\"语义等价\",\"reason\":\"扩展组“使感动”对应 wn31:v:01771801 的情绪/认知影响范围，并保留为情绪触动场景；不把一般“影响”都译成“感动”。\",\"evidence_ids\":[\"wn31:v:01771801\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"affect=物理作用/影响（wn31:v:00019441）不等于“使感动”。\",\"counterexample_evidence_ids\":[\"wn31:v:00019441\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"影响为核心，使感动在扩展保留；注意“使感动”的情绪场景边界，不扩大到一般影响。\"},{\"id\":\"SG25-e97469619c0d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"益处：有利之处/好处\",\"relation\":\"语义等价\",\"reason\":\"核心组“益处”对应 wn31:n:05149888“something that aids or promotes well-being”，保留一般好处义。\",\"evidence_ids\":[\"wn31:n:05149888\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"benefit 的“慈善义演”义（wn31:n:06905573）不是原文“益处/福利”的直接对应。\",\"counterexample_evidence_ids\":[\"wn31:n:06905573\"],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"福利：援助/待遇性福利\",\"relation\":\"语义等价\",\"reason\":\"扩展组“福利”对应 wn31:n:13317922“financial assistance in time of need”，并注明援助待遇语境。\",\"evidence_ids\":[\"wn31:n:13317922\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"benefit 的一般“益处”义（wn31:n:05149888）不能代替福利援助的专指义。\",\"counterexample_evidence_ids\":[\"wn31:n:05149888\"],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"使受益：使某人得到好处（及物方向）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“使受益”对应 wn31:v:02295917“be beneficial for/do you good”，保留及物受益方向。\",\"evidence_ids\":[\"wn31:v:02295917\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"benefit=得益/从……受益（wn31:v:02295422）方向相反，不是“使受益”。\",\"counterexample_evidence_ids\":[\"wn31:v:02295422\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s004\",\"source_scope\":\"得益：从某事获得好处（不及物方向）\",\"relation\":\"语义等价\",\"reason\":\"核心组“得益”对应 wn31:v:02295422“derive a benefit from”，保留从……受益方向。\",\"evidence_ids\":[\"wn31:v:02295422\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"benefit=使受益/对……有益（wn31:v:02295917）方向相反，不是“得益”。\",\"counterexample_evidence_ids\":[\"wn31:v:02295917\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"core_prioritization_note\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-e97469619c0d:review:extended:s003\"],\"evidence_ids\":[\"wn31:v:02295917\"],\"reason\":\"s003“使受益”是独立源动词义，却只置扩展层；记录只说方向保留，未给出后置的教学理由。无覆盖缺口，但首屏取舍说明不足。\",\"repair_suggestion\":\"补充“使受益”为何不列核心的教学理由，或将其与“得益”并列核心；扩展保留时注明是教学取舍。\"}],\"note\":\"四个源义均有落点；益处与得益在核心，福利与使受益在扩展，注意及物/不及物方向。\"}]}",
+  "usage": {
+    "prompt_tokens": 5276,
+    "completion_tokens": 15569,
+    "total_tokens": 20845,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 13387
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3356
+  },
+  "started_utc": "2026-11-13T09:43:09.180650+00:00",
+  "completed_utc": "2026-11-13T09:44:34.029365+00:00",
+  "elapsed_seconds": 84.844,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

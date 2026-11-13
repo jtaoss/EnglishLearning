@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_38",
+  "request_hash": "c4df3474ca0d84568ce9c93c9a969dc45ca1c41c5a8c5535d2815be3bb49641a",
+  "started_utc": "2026-11-13T08:16:14.036966+00:00",
+  "completed_utc": "2026-11-13T08:16:39.943813+00:00",
+  "elapsed_seconds": 25.907,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "189d63d9-7805-4acc-9cce-d1535c2e0064",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2733,
+    "completion_tokens": 1194,
+    "total_tokens": 3927,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1019
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 685
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-744254211165\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"可考虑在后续教学中将视觉透视义作为扩展内容单独提示，但不纳入当前核心。\"\n      ],\n      \"note\": \"原文“见解；观点”为两个近义名词片段，均对应 WordNet 06218486“a way of regarding situations or topics”，合并为单一核心合理，未丢失源义。视觉透视义（04683665）已作为外部候选单列且状态为 AI_candidate_not_adopted，未混入核心，符合双轨覆盖要求。无实际翻译、词性或源覆盖缺陷。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

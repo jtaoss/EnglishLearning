@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_after_002",
+  "kind": "audit",
+  "request_hash": "b13ce1eade8a1085a8a585c0d9e0491d2b17b45f016e11d7d1d6bfb8925bd36d",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "69c3d42d-28f3-4279-b01c-5cf3c4acff95",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-093e7d5fdbaa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"联系（源片段词性未定；人际/群体沟通）\",\"relation\":\"合理概括\",\"reason\":\"核心用名词“联系”（n07293990、n00040035）和动词“联系”（v00745330）共同覆盖同一中文义，没有把源片段词性回填成已知标签；对象仍是沟通联系，没有加入电路、镜片、人脉等外部候选。\",\"evidence_ids\":[\"wn31:n:07293990\",\"wn31:n:00040035\",\"wn31:v:00745330\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"接触（源片段词性未定；物理触碰）\",\"relation\":\"合理概括\",\"reason\":\"核心用名词物理接触（n00125700、n14442914、n07353929）和动词物理接触（v01208316）共同覆盖；抽象人际联系由s001承担，没有把源片段词性写成已知标签，也没有纳入外部专业义。\",\"evidence_ids\":[\"wn31:n:00125700\",\"wn31:n:14442914\",\"wn31:n:07353929\",\"wn31:v:01208316\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-093e7d5fdbaa:p6c5:core_meanings:1\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:2\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:3\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:4\"],\"evidence_ids\":[],\"reason\":\"两个源片段的part_of_speech为null（unresolved_multi_pos）；候选用名词、动词两组核心共同覆盖，没有回填源词性，但源片段词性仍未解决。\",\"repair_suggestion\":\"保留名词、动词双分支，待教材语境或可靠源词性核验；不要把组推荐词性写成源片段词性。\"}],\"note\":\"两个源片段词性均未定；核心用名词、动词两组分别覆盖“联系”与物理“接触”，没有回填源词性，也没有把隐形眼镜、触点、人脉等外部候选混入核心。源片段词性仍未解决，已列Info。\"},{\"id\":\"SG25-bf0bb4ee60e2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"伸展（肢体或可伸展物体展开）\",\"relation\":\"合理概括\",\"reason\":\"核心组1把肢体伸展（v00027261）与展开、伸出可伸展物体（v01371528、v02058913）并列，属于同一“伸展”义的自然概括；例子不是排他限制。\",\"evidence_ids\":[\"wn31:v:00027261\",\"wn31:v:01371528\",\"wn31:v:02058913\",\"pub:p6c5a:collins:extend\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"变宽（不及物状态变化）\",\"relation\":\"无法确定\",\"reason\":\"原文“变宽”为不及物变化；所给extend证据多为及物“使变宽/扩大范围”（v00541315）或空间跨度（v02693758），没有直接支持“become wider”；候选已held，未纳入核心。\",\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少“变宽/变宽过程”的独立覆盖；现有证据方向或及物性不吻合\",\"counterexample\":\"extend the range/backyard 是及物“扩大范围”，不等同于不及物“变宽”\",\"counterexample_evidence_ids\":[\"wn31:v:00541315\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"延伸（空间/时间绵延）\",\"relation\":\"合理概括\",\"reason\":\"核心组2以空间/时间绵延、跨越和向外伸出证据（v02691775、v02693758、v02695935）覆盖“延伸”，没有加入使动扩大范围的新限制。\",\"evidence_ids\":[\"wn31:v:02691775\",\"wn31:v:02693758\",\"wn31:v:02695935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"invalid_evidence_id\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-bf0bb4ee60e2:p6c5:core_meanings:1\"],\"evidence_ids\":[\"pub:p6c5a:collins:extend\"],\"reason\":\"核心组1的evidence_ids含pub:p6c5:parent:extend，不在本记录evidence列表；实际提供的出版方观察ID为pub:p6c5a:collins:extend。语义证据仍有三个WN ID，因此不影响核心义存在，但影响可追溯性。\",\"repair_suggestion\":\"删除或替换为实际提供的ID；若需引用parent观察，须补充对应证据条目。\"},{\"severity\":\"Info\",\"kind\":\"source_sense_held_pending\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"reason\":\"s002“变宽”被held；现有证据不能直接证明不及物become wider，故未纳入核心。此项未通过，仍待核。\",\"repair_suggestion\":\"补证不及物变宽的英语用例或重新判定来源范围；证据不足时保持暂存，不强行并入核心。\"}],\"note\":\"s001“伸展”与s003“延伸”已有核心覆盖；s002“变宽”仍held待核，核心未覆盖，故word_status为partial。核心组1引用了未提供的pub:p6c5:parent:extend，需改为实际ID；延长、提供、扩大范围等外部候选未采用，不影响来源映射。\"}]}",
+  "usage": {
+    "prompt_tokens": 5822,
+    "completion_tokens": 13270,
+    "total_tokens": 19092,
+    "prompt_tokens_details": {
+      "cached_tokens": 3200
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11821
+    },
+    "prompt_cache_hit_tokens": 3200,
+    "prompt_cache_miss_tokens": 2622
+  },
+  "started_utc": "2026-11-13T09:33:57.762623+00:00",
+  "completed_utc": "2026-11-13T09:35:14.088095+00:00",
+  "elapsed_seconds": 76.328,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

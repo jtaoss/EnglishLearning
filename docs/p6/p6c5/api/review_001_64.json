@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_64",
+  "request_hash": "bf1997140d1f728c9811ddfe7d57dc3c24c9c718c3095ace63e2195ef134fbcc",
+  "started_utc": "2026-11-13T08:17:02.598930+00:00",
+  "completed_utc": "2026-11-13T08:17:40.631211+00:00",
+  "elapsed_seconds": 38.031,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "18665bf5-1294-4fa1-8aa3-5c38da3bbc5c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3023,
+    "completion_tokens": 2020,
+    "total_tokens": 5043,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1833
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 975
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5c097b19679a\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"候选将源义‘构成’映射为核心1（构成；组成），引用WordNet 02626667和02627475，两个释义均表达form/compose或compose/represent，与源‘构成’相符；源义‘设立’映射为核心2（设立；建立），引用01650771（set up or lay groundwork），符合。词典增义‘任命/委任’（02401347）未被误纳入核心，已作为未采用候选单独列出，符合保守分层。无源义遗漏、无跨词性合并、无词性错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

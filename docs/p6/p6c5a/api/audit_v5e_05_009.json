@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_009",
+  "kind": "audit",
+  "request_hash": "cdef3394329e3e96c596a577ea1b930ab85ebfae44ea06d5d317c7c68c0ea07d",
+  "input_ids": [
+    "SG25-1daf82f62247",
+    "SG25-6df24c372c04",
+    "SG25-18b263dcdea6",
+    "SG25-d7f8d3e72469",
+    "SG25-3bb61db1bc03"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "258e659e-d02d-429d-ab6f-f421b1f742f1",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-1daf82f62247\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"保护（使人或物免受伤害、危险或损坏）\",\"relation\":\"语义等价\",\"reason\":\"核心1以“保护；使免受伤害/损害”对应，词典的preserve/conserve一般安全义支持该范围。\",\"evidence_ids\":[\"wn31:v:02738997\",\"wn31:v:02284977\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"保存（使不腐坏、不丢失或留作后用）\",\"relation\":\"语义等价\",\"reason\":\"核心2以“保存；留存”覆盖食物防腐、照片/文物留存及留作后用，词典证据支持。\",\"evidence_ids\":[\"wn31:v:00212840\",\"wn31:v:02230274\",\"wn31:v:02284977\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"保持（使状态、和平、传统等不变或延续）\",\"relation\":\"语义等价\",\"reason\":\"核心3直接对应“保持；维持（使不变或延续）”，与原文片段一致。\",\"evidence_ids\":[\"wn31:v:02685709\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个动词片段分别由核心三组覆盖：保护免受伤害、保存防损/留存、保持延续；名词果酱、保护区等为外部候选，未混入来源核心。\"},{\"id\":\"SG25-6df24c372c04\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"预订（提前安排座位、房间、票等）\",\"relation\":\"语义等价\",\"reason\":\"核心1以“预订”对应，词典reserve/book提前安排义支持，对象示例不构成排他限制。\",\"evidence_ids\":[\"wn31:v:00797294\",\"wn31:v:02503969\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"保留（搁置留作将来或专用）\",\"relation\":\"语义等价\",\"reason\":\"核心2以“保留；留出（供将来或专用）”对应，词典set aside/future use义支持。\",\"evidence_ids\":[\"wn31:v:00726112\",\"wn31:v:02219267\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"储备（留作未来使用或特殊用途的物资/数量）\",\"relation\":\"语义等价\",\"reason\":\"核心3以“储备；储备物”对应名词reserve，词典something kept back or saved义支持。\",\"evidence_ids\":[\"wn31:n:13389225\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"保护区（为特定目的保留的区域）\",\"relation\":\"语义等价\",\"reason\":\"扩展1以“保护区；保留地”对应a district reserved for particular purpose；原文名词义已保留在扩展层，并有专门区域教学理由。\",\"evidence_ids\":[\"wn31:n:08604729\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"core_deferral_review\",\"source_ids\":[\"s004\"],\"group_ids\":[\"SG25-6df24c372c04:p6c5:extended_meanings:1\"],\"evidence_ids\":[\"wn31:n:08604729\"],\"reason\":\"“保护区”是原文列出的名词义，现保留在扩展层；已有“较专门土地/自然区域”的教学理由，但首屏是否需呈现可人工复核。\",\"repair_suggestion\":\"若首屏需覆盖原文名词义，可提升该组或在核心注记交叉引用；不改变现有语义范围。\"}],\"note\":\"四个来源片段均有对应：预订、保留、储备、保护区；保护区因较专门置于扩展层，语义未丢失，核心首屏覆盖前三项。\"},{\"id\":\"SG25-18b263dcdea6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"可观的（数量、程度或规模较大）\",\"relation\":\"语义等价\",\"reason\":\"唯一核心组以“相当大的；可观的；相当的”覆盖同一形容词义，词典large/relatively large in amount/degree支持。\",\"evidence_ids\":[\"wn31:a:00626700\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"相当的（数量、程度或规模较大）\",\"relation\":\"语义等价\",\"reason\":\"原文“相当的”与同组“可观的；相当大的”为同一形容词义的近义改述，无额外对象限制。\",\"evidence_ids\":[\"wn31:a:00626700\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"相当大的（数量、程度或规模较大）\",\"relation\":\"语义等价\",\"reason\":\"核心组直接保留“相当大的”，与词典定义及原文片段一致。\",\"evidence_ids\":[\"wn31:a:00626700\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个中文片段均为同一“数量/程度/规模较大”形容词义，合并为一组合理，未拆成假义项。\"},{\"id\":\"SG25-d7f8d3e72469\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"值得（应得正面或中性结果）\",\"relation\":\"语义等价\",\"reason\":\"核心组以“值得；应受”合并对应be worthy/deserving；词典证据支持同一动词义，宾语褒贬由搭配决定。\",\"evidence_ids\":[\"wn31:v:02652462\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"应受（应得负面或中性结果）\",\"relation\":\"语义等价\",\"reason\":\"“应受”与“值得”同属deserve的应得义，核心组注释已明确宾语可为奖励或惩罚，未把负面搭配排除。\",\"evidence_ids\":[\"wn31:v:02652462\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个片段对应同一deserve动词义，差别在宾语褒贬搭配；合并保留并注明搭配条件，范围完整。\"},{\"id\":\"SG25-3bb61db1bc03\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"严重的（程度深或造成严重损害）\",\"relation\":\"语义等价\",\"reason\":\"核心1以“严重的；重度的”对应，词典严重病情、损伤、疼痛、局势等证据支持；注释排除纪律态度，避免与s002混同。\",\"evidence_ids\":[\"wn31:s:00654061\",\"wn31:s:01132864\",\"wn31:s:01516947\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"严厉的（纪律、判断或态度严格、不宽恕）\",\"relation\":\"语义等价\",\"reason\":\"核心2以“严厉的；严格的”对应strict/unsparing in discipline or judgment，词典证据直接支持。\",\"evidence_ids\":[\"wn31:s:01304251\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个原文片段分别对应“程度严重”和“纪律/态度严厉”，核心分组清楚；物理力度“猛烈/强烈”未被原文列出，保留为外部候选。\"}]}",
+  "usage": {
+    "prompt_tokens": 6594,
+    "completion_tokens": 8161,
+    "total_tokens": 14755,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6271
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4674
+  },
+  "started_utc": "2026-11-13T09:48:22.328390+00:00",
+  "completed_utc": "2026-11-13T09:49:07.781440+00:00",
+  "elapsed_seconds": 45.453,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

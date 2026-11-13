@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_004_repair1",
+  "kind": "holdout",
+  "request_hash": "0cb09f7cb8a00d7bbbe42af178f3e8299115d6dc77a4ba02a154541a31716978",
+  "input_ids": [
+    "SG25-6ca7ea2feefc",
+    "SG25-e2411f906450"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "f9132f32-8286-4990-b62c-b1c92ac4b7f5",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6ca7ea2feefc\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"保持某状态、性质、位置或所有物，使继续存在\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为状态、属性、位置或所有物；也可接形容词/名词作补语\",\n          \"evidence_ids\": [\n            \"wn31:v:02415305\",\n            \"wn31:v:02687605\"\n          ],\n          \"uncertainty\": \"原文'保持'可涵盖多种维持类用法，上述证据均为及物/使动用法，未覆盖不及物持续义（该义归入s004）\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"保管、照看或存放物品/场所\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为具体物品、场所或需照看的事物\",\n          \"evidence_ids\": [\n            \"wn31:v:02207710\",\n            \"wn31:v:02208626\",\n            \"wn31:v:02208876\"\n          ],\n          \"uncertainty\": \"证据02208626含储存食物以防腐的意味，中文'保管'通常不强调防腐；未采用照看人的用法，因源义限于物品/场所\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"饲养动物（家禽、蜜蜂等）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为动物\",\n          \"evidence_ids\": [\n            \"wn31:v:02658111\"\n          ],\n          \"uncertainty\": \"证据仅示例家禽/蜜蜂，未明确所有动物；中文'饲养'可适用于各类动物，可能范围一致，但证据不足\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"继续某活动或状态，常接动名词或持续表达\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"后接活动或状态，常伴随持续性表达\",\n          \"evidence_ids\": [\n            \"wn31:v:02690747\"\n          ],\n          \"uncertainty\": \"不及物持续义与s001的及物维持义有交叉，此处按源'继续'取持续进行义；未覆盖使动'使保持'，由s001处理\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：保持（使状态、性质、位置或所有物继续存在）\",\n        \"动词：保管（照看、存放或负责某物/场所）\",\n        \"动词：饲养（喂养并管理动物）\",\n        \"动词：继续（持续进行某活动或保持某状态）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"全部为AI提案，未经人工签审；名词性义项（如生活费用、城堡主楼）及其他动词义项（如阻止、遵守、提供食宿等）未纳入核心，因源词性为动词且原文未列出。\"\n    },\n    {\n      \"id\": \"SG25-e2411f906450\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"具有权力、势力，能影响他人或局势\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"描述人、组织等具有权势的主体\",\n          \"evidence_ids\": [\n            \"wn31:a:01835852\"\n          ],\n          \"uncertainty\": \"证据中'influence or power'合并，未单独区分势力与一般影响；源'有势力的'可能侧重权力，但证据无法验证该侧重\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"具有影响力，能产生效果或改变\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"描述人或事物对他人/事件产生影响\",\n          \"evidence_ids\": [\n            \"wn31:a:01835852\"\n          ],\n          \"uncertainty\": \"与s001共用同一证据，边界模糊；证据中示例包括报纸和领导力，既涵盖有势力也有影响，不能确定是否区分\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：有势力的（拥有权力或势力，能左右他人）\",\n        \"形容词：有影响的（具有影响力或效果）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"整条源词性为形容词，仅有一个英文形容词证据，两个中文义项近义；未增加其他词性义项。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6001,
+    "completion_tokens": 3597,
+    "total_tokens": 9598,
+    "prompt_tokens_details": {
+      "cached_tokens": 4096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2563
+    },
+    "prompt_cache_hit_tokens": 4096,
+    "prompt_cache_miss_tokens": 1905
+  },
+  "started_utc": "2026-11-13T09:34:11.761192+00:00",
+  "completed_utc": "2026-11-13T09:35:02.293308+00:00",
+  "elapsed_seconds": 50.531,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

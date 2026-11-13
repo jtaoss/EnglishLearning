@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_28",
+  "request_hash": "53f688965b118653dd310b3d0d849fb36d078c568a0d286ad25aff08275efef9",
+  "started_utc": "2026-11-13T08:14:59.220049+00:00",
+  "completed_utc": "2026-11-13T08:15:21.646596+00:00",
+  "elapsed_seconds": 22.422,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "edca578c-3b00-4f31-b3e6-ec3d1ab007e4",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3538,
+    "completion_tokens": 3393,
+    "total_tokens": 6931,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2963
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 722
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-815fbec040e3\",\"core\":[[\"配偶\",\"名词\",[\"s001\"],[\"wn31:n:10660018\"],\"婚姻关系中的伴侣，性别中立\"]] ,\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"原文只有“配偶”一个名词义，WordNet 定义正好是“a person's partner in marriage”，因此直接合并为一组，不需要拆分。\",\"flags\":[]},{\"id\":\"SG25-943ae60b331d\",\"core\":[[\"实质；本质\",\"名词\",[\"s001\"],[\"wn31:n:05929717\"],\"指内在本质、要点，而非物理材料\"],[\"本旨；主旨\",\"名词\",[\"s002\"],[\"wn31:n:05928460\"],\"指言语、论证或文本所意图表达的主旨\"],[\"物质\",\"名词\",[\"s003\"],[\"wn31:n:00019793\"],\"指构成事物的物理实体或材料\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"资产；财力\",\"名词\",[\"wn31:n:13374873\"],\"外部词典列有“可观资本/财富”义，原文三个片段未明确表达；仅作候选，不并入核心。\"]],\"reason\":\"先把具体的“物质”与抽象的“实质、本旨”分开；抽象的“实质”侧重内在本质，“本旨”侧重意图或主旨，虽然中文接近，但对象和定义有别，因此保留为两组而不合并。首次记忆可先抓具体的“物质”，再区分两个抽象义。\",\"flags\":[[\"Minor\",\"uncertain_translation\",\"“实质/本旨”与两个抽象 WordNet 义项大体兼容，但中文近义边界较细，映射仍需复核。\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"外部词典另有“财富/财力”义，已列为候选，是否采用待审。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

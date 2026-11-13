@@ -1,0 +1,1767 @@
+{
+  "schema_version": "p6c3_revised_candidates.v1",
+  "status": "AI_candidates_only_not_adopted_not_published",
+  "input_sha256": "78b40fc7ad3b98b7f1a1f1dcc310750da211dd5f9e5f72990d500800f5733a20",
+  "record_count": 3,
+  "records": [
+    {
+      "stable_id": "SG25-4932c716f725",
+      "headword": "indicate",
+      "issue_ids": [
+        "C3-003"
+      ],
+      "base_record_hash": "5a0df6829cc927713e78e3be27fd163be5c11d574b4b6637697f2013b169230c",
+      "candidate_record_hash": "7b66c4788734006c018624e739151ed3ed6c99b2c77accd6947534e8754110ee",
+      "changes": {
+        "core_explanation": {
+          "before": "指出或指示是可靠入口；裸指没有宾语语境时范围不清，原片段保留，不假装所有指字用法都等于indicate。",
+          "after": "分别提示指向对象、信号表明和简要陈述；层级是教学建议，不是义项频率。原指片段继续暂存。"
+        },
+        "core_meanings": {
+          "before": [
+            {
+              "sense_group_id": "SG25-4932c716f725:core:1",
+              "part_of_speech": "动词",
+              "display_zh": "指出／指示",
+              "glosses": [
+                "指出",
+                "指示"
+              ],
+              "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+              "source_sense_ids": [
+                "s002",
+                "s003"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s002",
+                  "original_gloss": "指出",
+                  "original_pos": "动词",
+                  "original_pos_evidence": "single_pos_field",
+                  "evidence_ids": [
+                    "wn31:v:00925764",
+                    "wn31:v:00929986"
+                  ]
+                },
+                {
+                  "source_sense_id": "s003",
+                  "original_gloss": "指示",
+                  "original_pos": "动词",
+                  "original_pos_evidence": "single_pos_field",
+                  "evidence_ids": [
+                    "wn31:v:00925764",
+                    "wn31:v:00929986"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:00925764",
+                "wn31:v:00929986"
+              ],
+              "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+              "grouping_relation": "near_synonym_display_candidate",
+              "pos_assignment": "source_explicit_or_single_POS",
+              "usage_note": "指出或指示是可靠入口；裸指没有宾语语境时范围不清，原片段保留，不假装所有指字用法都等于indicate。"
+            }
+          ],
+          "after": [
+            {
+              "sense_group_id": "SG25-4932c716f725:p6c3:core:1",
+              "part_of_speech": "动词",
+              "display_zh": "指出；指向（地点或对象）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s002",
+                  "original_gloss": "指出",
+                  "original_pos": "动词",
+                  "original_pos_evidence": "single_pos_field",
+                  "evidence_ids": [
+                    "wn31:v:00925764",
+                    "p6c3:mw:indicate"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:00925764",
+                "p6c3:mw:indicate"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "对象/方向提示。"
+            },
+            {
+              "sense_group_id": "SG25-4932c716f725:p6c3:core:2",
+              "part_of_speech": "动词",
+              "display_zh": "指示；表明（某种情况）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s003",
+                  "original_gloss": "指示",
+                  "original_pos": "动词",
+                  "original_pos_evidence": "single_pos_field",
+                  "evidence_ids": [
+                    "wn31:v:00774685",
+                    "wn31:v:00923271",
+                    "p6c3:mw:indicate"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:00774685",
+                "wn31:v:00923271",
+                "p6c3:mw:indicate"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "指迹象、信号或信息表明情况，不是向人发命令。"
+            }
+          ]
+        },
+        "extended_meanings": {
+          "before": [],
+          "after": [
+            {
+              "sense_group_id": "SG25-4932c716f725:p6c3:extended:1",
+              "part_of_speech": "动词",
+              "display_zh": "指出；简要表达（意愿等）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s002",
+                  "original_gloss": "指出",
+                  "original_pos": "动词",
+                  "original_pos_evidence": "single_pos_field",
+                  "evidence_ids": [
+                    "wn31:v:00929986",
+                    "p6c3:mw:indicate"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:00929986",
+                "p6c3:mw:indicate"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "同一中文指出可支持另一陈述用法，显式保留区别。"
+            }
+          ]
+        },
+        "is_AI_candidate": {
+          "before": null,
+          "after": true
+        },
+        "model_version": {
+          "before": "codex-session/p6c2-semantic-v4",
+          "after": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra"
+        },
+        "p6c3_revision": {
+          "before": null,
+          "after": {
+            "version": "P6C3_evidence_adjudication_v1",
+            "prompt_version": "RULES_V4",
+            "adjudicator_backend_model_id": null,
+            "configured_blind_review_model": "gpt-6-astra",
+            "issues": [
+              "C3-003"
+            ],
+            "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+            "original_candidate_hash": "5a0df6829cc927713e78e3be27fd163be5c11d574b4b6637697f2013b169230c",
+            "sealed_blind_record_hash": "df4631e21c359f57d01af6d7b8420253ffbfb4d844870eb8d9d25aca15c3bdd9",
+            "source_hash_unchanged": true,
+            "formal_publication_allowed": false
+          }
+        },
+        "prior_generation_metadata": {
+          "before": null,
+          "after": {
+            "model_version": "codex-session/p6c2-semantic-v4",
+            "prompt_version": "p6c2-rules-v4",
+            "revision_history": {
+              "initial_checkpoint": "checkpoints/batch_03.json",
+              "initial_record_hash": "9cff7edb006828af88fbcb104feec03c446f4757ce76da8ecd5e262367dd3789",
+              "source_first_review_observation": "原裸指没有可核对的独立语境，明确指出与指示仍有动词资料，保留片段而不自动扩大其范围。",
+              "layer_or_display_or_reference_changed": false
+            }
+          }
+        },
+        "prompt_version": {
+          "before": "p6c2-rules-v4",
+          "after": "P6C3/RULES_V4"
+        },
+        "review_status": {
+          "before": "AI_reviewed_with_open_source_questions",
+          "after": "P6C3_AI_revision_candidate_not_adopted"
+        },
+        "semantic_splits": {
+          "before": null,
+          "after": [
+            {
+              "source_sense_id": "s002",
+              "annotation": "AI语义拆解；原文仍只有一个指出片段",
+              "uses": [
+                {
+                  "part_of_speech": "动词",
+                  "evidence_ids": [
+                    "wn31:v:00925764"
+                  ]
+                },
+                {
+                  "part_of_speech": "动词",
+                  "evidence_ids": [
+                    "wn31:v:00929986"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "supporting_sources": {
+          "before": [
+            {
+              "evidence_id": "wn31:v:00925764",
+              "pos": "v",
+              "definition_en": "indicate a place, direction, person, or thing; either spatially or figuratively; \"I showed the customer the glove section\"; \"He pointed to the empty parking space\"; \"he indicated his opponents\"",
+              "lemmas": [
+                "indicate",
+                "point",
+                "designate",
+                "show"
+              ],
+              "selected_headwords": [
+                "indicate"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "wn31:v:00929986",
+              "pos": "v",
+              "definition_en": "to state or express briefly; \"indicated his wishes in a letter\"",
+              "lemmas": [
+                "indicate"
+              ],
+              "selected_headwords": [
+                "indicate"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ],
+          "after": [
+            {
+              "evidence_id": "wn31:v:00925764",
+              "pos": "v",
+              "definition_en": "indicate a place, direction, person, or thing; either spatially or figuratively; \"I showed the customer the glove section\"; \"He pointed to the empty parking space\"; \"he indicated his opponents\"",
+              "lemmas": [
+                "indicate",
+                "point",
+                "designate",
+                "show"
+              ],
+              "selected_headwords": [
+                "indicate"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "wn31:v:00929986",
+              "pos": "v",
+              "definition_en": "to state or express briefly; \"indicated his wishes in a letter\"",
+              "lemmas": [
+                "indicate"
+              ],
+              "selected_headwords": [
+                "indicate"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "p6c3:mw:indicate",
+              "headword": "indicate",
+              "publisher": "Merriam-Webster",
+              "url": "https://www.merriam-webster.com/dictionary/indicate",
+              "access": "parsed_publisher_content_available",
+              "locator": "transitive verb: 1a point/show; 1b sign/symptom; 2 state/express briefly",
+              "observation_zh": "动词可指向对象，也可由信号或迹象表明情况，还可简要表达。不能只用指向对象和陈述的引证宣称已经逐用法支持全部指示语境；中文指示也不应被误解为发命令。",
+              "supports": [
+                "point_out",
+                "signal_show",
+                "state_briefly"
+              ],
+              "does_not_support": "三个用法的频率比例或必须全列核心的唯一排序"
+            },
+            {
+              "evidence_id": "wn31:v:00774685",
+              "part_of_speech": "v",
+              "definition_en": "give evidence of; \"The evidence argues for your claim\"; \"The results indicate the need for more work\"",
+              "lemmas": [
+                "argue",
+                "indicate"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "wn31:v:00923271",
+              "part_of_speech": "v",
+              "definition_en": "be a signal for or a symptom of; \"These symptoms indicate a serious illness\"; \"Her behavior points to a severe neurosis\"; \"The economic indicators signal that the euro is undervalued\"",
+              "lemmas": [
+                "bespeak",
+                "betoken",
+                "indicate",
+                "point",
+                "signal"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ]
+        }
+      },
+      "candidate": {
+        "stable_id": "SG25-4932c716f725",
+        "headword": "indicate",
+        "part_of_speech": "动词",
+        "book_category": "高频词",
+        "cohort": "new_400",
+        "selection_ordinal": 101,
+        "source_fields": {
+          "entry_id": "SG25-4932c716f725",
+          "word": "indicate",
+          "meaning_zh": "指；指出；指示",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "45",
+          "source_index_pages": "746",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "动词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00923793-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":116,\"printed_form\":\"indicate\",\"printed_page\":112,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "670dfc910f84b86223e1c995c127394484d50f6a64be1a847e7adebbe2f61600",
+        "original_meaning_zh": "指；指出；指示",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "指",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 1
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "指出",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 2,
+            "end": 4
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "指示",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 5,
+            "end": 7
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-4932c716f725:p6c3:core:1",
+            "part_of_speech": "动词",
+            "display_zh": "指出；指向（地点或对象）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "指出",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:00925764",
+                  "p6c3:mw:indicate"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:v:00925764",
+              "p6c3:mw:indicate"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "对象/方向提示。"
+          },
+          {
+            "sense_group_id": "SG25-4932c716f725:p6c3:core:2",
+            "part_of_speech": "动词",
+            "display_zh": "指示；表明（某种情况）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "指示",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:00774685",
+                  "wn31:v:00923271",
+                  "p6c3:mw:indicate"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:v:00774685",
+              "wn31:v:00923271",
+              "p6c3:mw:indicate"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "指迹象、信号或信息表明情况，不是向人发命令。"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "sense_group_id": "SG25-4932c716f725:p6c3:extended:1",
+            "part_of_speech": "动词",
+            "display_zh": "指出；简要表达（意愿等）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "指出",
+                "original_pos": "动词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:v:00929986",
+                  "p6c3:mw:indicate"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:v:00929986",
+              "p6c3:mw:indicate"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "同一中文指出可支持另一陈述用法，显式保留区别。"
+          }
+        ],
+        "other_meanings": [],
+        "reserved_original_items": [
+          {
+            "source_sense_id": "s001",
+            "text": "指",
+            "part_of_speech": "动词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 1,
+            "reason": "指出或指示是可靠入口；裸指没有宾语语境时范围不清，原片段保留，不假装所有指字用法都等于indicate。",
+            "state": "original_retained_not_established_for_standalone_teaching"
+          }
+        ],
+        "dictionary_additions": [],
+        "core_explanation": "分别提示指向对象、信号表明和简要陈述；层级是教学建议，不是义项频率。原指片段继续暂存。",
+        "selection_reason": "指出或指示是可靠入口；裸指没有宾语语境时范围不清，原片段保留，不假装所有指字用法都等于indicate。",
+        "risk_level": "high",
+        "risk_flags": [
+          "reserved_original_items",
+          "source_translation_scope"
+        ],
+        "review_status": "P6C3_AI_revision_candidate_not_adopted",
+        "needs_human_review": true,
+        "human_approved": false,
+        "model_version": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra",
+        "prompt_version": "P6C3/RULES_V4",
+        "category_evidence": {
+          "status": "目录分区及既有索引/正文支持（核验层级见来源状态）",
+          "basis": "原书目录PDF10；候选台账书内页34，PDF页45；不是PETS频率",
+          "source_verification": "同页正文标题自动同形支持"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:v:00925764",
+            "pos": "v",
+            "definition_en": "indicate a place, direction, person, or thing; either spatially or figuratively; \"I showed the customer the glove section\"; \"He pointed to the empty parking space\"; \"he indicated his opponents\"",
+            "lemmas": [
+              "indicate",
+              "point",
+              "designate",
+              "show"
+            ],
+            "selected_headwords": [
+              "indicate"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00929986",
+            "pos": "v",
+            "definition_en": "to state or express briefly; \"indicated his wishes in a letter\"",
+            "lemmas": [
+              "indicate"
+            ],
+            "selected_headwords": [
+              "indicate"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "p6c3:mw:indicate",
+            "headword": "indicate",
+            "publisher": "Merriam-Webster",
+            "url": "https://www.merriam-webster.com/dictionary/indicate",
+            "access": "parsed_publisher_content_available",
+            "locator": "transitive verb: 1a point/show; 1b sign/symptom; 2 state/express briefly",
+            "observation_zh": "动词可指向对象，也可由信号或迹象表明情况，还可简要表达。不能只用指向对象和陈述的引证宣称已经逐用法支持全部指示语境；中文指示也不应被误解为发命令。",
+            "supports": [
+              "point_out",
+              "signal_show",
+              "state_briefly"
+            ],
+            "does_not_support": "三个用法的频率比例或必须全列核心的唯一排序"
+          },
+          {
+            "evidence_id": "wn31:v:00774685",
+            "part_of_speech": "v",
+            "definition_en": "give evidence of; \"The evidence argues for your claim\"; \"The results indicate the need for more work\"",
+            "lemmas": [
+              "argue",
+              "indicate"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:00923271",
+            "part_of_speech": "v",
+            "definition_en": "be a signal for or a symptom of; \"These symptoms indicate a serious illness\"; \"Her behavior points to a severe neurosis\"; \"The economic indicators signal that the euro is undervalued\"",
+            "lemmas": [
+              "bespeak",
+              "betoken",
+              "indicate",
+              "point",
+              "signal"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "publication_status": "AI_candidate_not_formal_content",
+        "official_exam_focus": false,
+        "review_independence": "generation is current Codex session; second-pass review must be separately recorded, not a claimed independent model",
+        "initial_risk_flags": [
+          "reserved_original_items",
+          "source_translation_scope"
+        ],
+        "reference_gap_resolution": "not_applicable",
+        "risk_origin": "multiple semantic/POS groups, source ambiguity, evidence gap/history, or proposed additions; not accuracy probability",
+        "ai_semantic_review": {
+          "status": "completed",
+          "actor": "Codex current AI session",
+          "backend_model_id": null,
+          "severity": "Major",
+          "observation": "原裸指没有可核对的独立语境，明确指出与指示仍有动词资料，保留片段而不自动扩大其范围。",
+          "method": "explicit per-word post-structure source-first judgment, saved in review_01..08.tsv; no independent model claim"
+        },
+        "high_risk_review": {
+          "status": "source_reinspection_completed_with_stated_limits",
+          "independence": "separate source-first review pass in same AI session, non-blind; NOT a second independent model or human",
+          "independent_model_review": "not_run_no_separate_model_call_capability_used",
+          "observation": "原裸指没有可核对的独立语境，明确指出与指示仍有动词资料，保留片段而不自动扩大其范围。",
+          "evidence_ids": [
+            "wn31:v:00925764",
+            "wn31:v:00929986"
+          ],
+          "source_limits": "Original multi-POS mapping may remain unknown; dictionary compatibility is not a translation gold standard, corpus ranking or teacher approval."
+        },
+        "revision_history": {
+          "initial_checkpoint": "checkpoints/batch_03.json",
+          "initial_record_hash": "9cff7edb006828af88fbcb104feec03c446f4757ce76da8ecd5e262367dd3789",
+          "source_first_review_observation": "原裸指没有可核对的独立语境，明确指出与指示仍有动词资料，保留片段而不自动扩大其范围。",
+          "layer_or_display_or_reference_changed": false
+        },
+        "semantic_splits": [
+          {
+            "source_sense_id": "s002",
+            "annotation": "AI语义拆解；原文仍只有一个指出片段",
+            "uses": [
+              {
+                "part_of_speech": "动词",
+                "evidence_ids": [
+                  "wn31:v:00925764"
+                ]
+              },
+              {
+                "part_of_speech": "动词",
+                "evidence_ids": [
+                  "wn31:v:00929986"
+                ]
+              }
+            ]
+          }
+        ],
+        "prior_generation_metadata": {
+          "model_version": "codex-session/p6c2-semantic-v4",
+          "prompt_version": "p6c2-rules-v4",
+          "revision_history": {
+            "initial_checkpoint": "checkpoints/batch_03.json",
+            "initial_record_hash": "9cff7edb006828af88fbcb104feec03c446f4757ce76da8ecd5e262367dd3789",
+            "source_first_review_observation": "原裸指没有可核对的独立语境，明确指出与指示仍有动词资料，保留片段而不自动扩大其范围。",
+            "layer_or_display_or_reference_changed": false
+          }
+        },
+        "is_AI_candidate": true,
+        "p6c3_revision": {
+          "version": "P6C3_evidence_adjudication_v1",
+          "prompt_version": "RULES_V4",
+          "adjudicator_backend_model_id": null,
+          "configured_blind_review_model": "gpt-6-astra",
+          "issues": [
+            "C3-003"
+          ],
+          "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+          "original_candidate_hash": "5a0df6829cc927713e78e3be27fd163be5c11d574b4b6637697f2013b169230c",
+          "sealed_blind_record_hash": "df4631e21c359f57d01af6d7b8420253ffbfb4d844870eb8d9d25aca15c3bdd9",
+          "source_hash_unchanged": true,
+          "formal_publication_allowed": false
+        }
+      },
+      "human_approved": false,
+      "adopted": false
+    },
+    {
+      "stable_id": "SG25-288965a1f2c8",
+      "headword": "management",
+      "issue_ids": [
+        "C3-002"
+      ],
+      "base_record_hash": "e02edae441a2513bc4af0b7758d2f4a0cb05e2cbf37dfab288a930194f0c61c2",
+      "candidate_record_hash": "d59fc8ce8e19611669c417955f162304f0e974934766f8e24e0544f7a7f4d5a7",
+      "changes": {
+        "dictionary_additions": {
+          "before": [],
+          "after": [
+            {
+              "candidate_id": "SG25-288965a1f2c8:p6c3:addition:1",
+              "part_of_speech": "名词",
+              "meaning_zh": "管理层；负责经营管理的一群人",
+              "source_sense_ids": [],
+              "evidence_ids": [
+                "wn31:n:08397896",
+                "p6c3:collins:management"
+              ],
+              "origin": "external_dictionary_AI_candidate_not_original_fragment",
+              "suggested_layer": "adoption_and_layer_decision_pending",
+              "status": "AI_candidate_not_adopted",
+              "human_approved": false,
+              "auto_promoted_to_core": false
+            }
+          ]
+        },
+        "is_AI_candidate": {
+          "before": null,
+          "after": true
+        },
+        "model_version": {
+          "before": "codex-session/p6c2-semantic-v4",
+          "after": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra"
+        },
+        "p6c3_revision": {
+          "before": null,
+          "after": {
+            "version": "P6C3_evidence_adjudication_v1",
+            "prompt_version": "RULES_V4",
+            "adjudicator_backend_model_id": null,
+            "configured_blind_review_model": "gpt-6-astra",
+            "issues": [
+              "C3-002"
+            ],
+            "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+            "original_candidate_hash": "e02edae441a2513bc4af0b7758d2f4a0cb05e2cbf37dfab288a930194f0c61c2",
+            "sealed_blind_record_hash": "a02ab4c89c1a313774f63f52844311ae7004ae8ecc87b96135976a57773fe794",
+            "source_hash_unchanged": true,
+            "formal_publication_allowed": false
+          }
+        },
+        "prior_generation_metadata": {
+          "before": null,
+          "after": {
+            "model_version": "codex-session/p6c2-semantic-v4",
+            "prompt_version": "p6c2-rules-v4",
+            "revision_history": {
+              "initial_checkpoint": "checkpoints/batch_05.json",
+              "initial_record_hash": "1699fcba3a065df8ae41351c02a7f696ad9a9caa8be3e9da41f5f90771aeaf62",
+              "source_first_review_observation": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+              "layer_or_display_or_reference_changed": true
+            }
+          }
+        },
+        "prompt_version": {
+          "before": "p6c2-rules-v4",
+          "after": "P6C3/RULES_V4"
+        },
+        "review_status": {
+          "before": "AI_reviewed_candidate_not_human_approved",
+          "after": "P6C3_AI_revision_candidate_not_adopted"
+        },
+        "supporting_sources": {
+          "before": [
+            {
+              "evidence_id": "wn31:n:01135602",
+              "pos": "n",
+              "definition_en": "the act of managing something; \"he was given overall management of the program\"; \"is the direction of the economy a function of government?\"",
+              "lemmas": [
+                "management",
+                "direction"
+              ],
+              "selected_headwords": [
+                "management"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ],
+          "after": [
+            {
+              "evidence_id": "wn31:n:01135602",
+              "pos": "n",
+              "definition_en": "the act of managing something; \"he was given overall management of the program\"; \"is the direction of the economy a function of government?\"",
+              "lemmas": [
+                "management",
+                "direction"
+              ],
+              "selected_headwords": [
+                "management"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "p6c3:collins:management",
+              "headword": "management",
+              "publisher": "HarperCollins",
+              "url": "https://www.collinsdictionary.com/dictionary/english/management",
+              "access": "parsed_publisher_content_available",
+              "locator": "COBUILD senses 1 and 2; British English members of executive/administration",
+              "observation_zh": "词典区分管理经营活动与负责经营管理的一群人；后者可称管理层，与管理这一行为不是同一概念。",
+              "supports": [
+                "activity",
+                "people_collective"
+              ],
+              "does_not_support": "该义出现次数或 PETS 官方权重"
+            },
+            {
+              "evidence_id": "wn31:n:08397896",
+              "part_of_speech": "n",
+              "definition_en": "those in charge of running a business",
+              "lemmas": [
+                "management"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ]
+        }
+      },
+      "candidate": {
+        "stable_id": "SG25-288965a1f2c8",
+        "headword": "management",
+        "part_of_speech": "名词",
+        "book_category": "高频词",
+        "cohort": "new_400",
+        "selection_ordinal": 235,
+        "source_fields": {
+          "entry_id": "SG25-288965a1f2c8",
+          "word": "management",
+          "meaning_zh": "指导；指挥；管理",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "85",
+          "source_index_pages": "750",
+          "book_verification": "已核验",
+          "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词",
+          "usage_note": "",
+          "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 01133281-n",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":120,\"printed_form\":\"management\",\"printed_page\":116,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "6d21570768a20d9de96f4cff4970a537ba2cb3abbe4d099e13b397dae77a85d4",
+        "original_meaning_zh": "指导；指挥；管理",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "指导",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "指挥",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 3,
+            "end": 5
+          },
+          {
+            "source_sense_id": "s003",
+            "text": "管理",
+            "part_of_speech": "名词",
+            "pos_evidence": "single_pos_field",
+            "start": 6,
+            "end": 8
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-288965a1f2c8:core:1",
+            "part_of_speech": "名词",
+            "display_zh": "管理",
+            "glosses": [
+              "管理"
+            ],
+            "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s003",
+                "original_gloss": "管理",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:01135602"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:n:01135602"
+            ],
+            "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+            "grouping_relation": "single_original_fragment",
+            "pos_assignment": "source_explicit_or_single_POS",
+            "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "sense_group_id": "SG25-288965a1f2c8:extended:1",
+            "part_of_speech": "名词",
+            "display_zh": "指导（组织管理事务的语境）",
+            "glosses": [
+              "指导"
+            ],
+            "origin": "AI_review_rephrasing_not_original_wording",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "指导",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:01135602"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:n:01135602"
+            ],
+            "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+            "grouping_relation": "single_original_fragment",
+            "pos_assignment": "source_explicit_or_single_POS",
+            "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+          },
+          {
+            "sense_group_id": "SG25-288965a1f2c8:extended:2",
+            "part_of_speech": "名词",
+            "display_zh": "指挥（组织管理活动的语境）",
+            "glosses": [
+              "指挥"
+            ],
+            "origin": "AI_review_rephrasing_not_original_wording",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "指挥",
+                "original_pos": "名词",
+                "original_pos_evidence": "single_pos_field",
+                "evidence_ids": [
+                  "wn31:n:01135602"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:n:01135602"
+            ],
+            "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+            "grouping_relation": "single_original_fragment",
+            "pos_assignment": "source_explicit_or_single_POS",
+            "usage_note": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。"
+          }
+        ],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-288965a1f2c8:p6c3:addition:1",
+            "part_of_speech": "名词",
+            "meaning_zh": "管理层；负责经营管理的一群人",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:08397896",
+              "p6c3:collins:management"
+            ],
+            "origin": "external_dictionary_AI_candidate_not_original_fragment",
+            "suggested_layer": "adoption_and_layer_decision_pending",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false
+          }
+        ],
+        "core_explanation": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。",
+        "selection_reason": "先记管理，指导和指挥限组织管理活动，不等同任何给建议或音乐指挥，保留原文范围疑点。",
+        "risk_level": "high",
+        "risk_flags": [
+          "scope_polysemy"
+        ],
+        "review_status": "P6C3_AI_revision_candidate_not_adopted",
+        "needs_human_review": true,
+        "human_approved": false,
+        "model_version": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra",
+        "prompt_version": "P6C3/RULES_V4",
+        "category_evidence": {
+          "status": "目录分区及既有索引/正文支持（核验层级见来源状态）",
+          "basis": "原书目录PDF10；候选台账书内页74，PDF页85；不是PETS频率",
+          "source_verification": "同页正文标题自动同形支持"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:01135602",
+            "pos": "n",
+            "definition_en": "the act of managing something; \"he was given overall management of the program\"; \"is the direction of the economy a function of government?\"",
+            "lemmas": [
+              "management",
+              "direction"
+            ],
+            "selected_headwords": [
+              "management"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "p6c3:collins:management",
+            "headword": "management",
+            "publisher": "HarperCollins",
+            "url": "https://www.collinsdictionary.com/dictionary/english/management",
+            "access": "parsed_publisher_content_available",
+            "locator": "COBUILD senses 1 and 2; British English members of executive/administration",
+            "observation_zh": "词典区分管理经营活动与负责经营管理的一群人；后者可称管理层，与管理这一行为不是同一概念。",
+            "supports": [
+              "activity",
+              "people_collective"
+            ],
+            "does_not_support": "该义出现次数或 PETS 官方权重"
+          },
+          {
+            "evidence_id": "wn31:n:08397896",
+            "part_of_speech": "n",
+            "definition_en": "those in charge of running a business",
+            "lemmas": [
+              "management"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "publication_status": "AI_candidate_not_formal_content",
+        "official_exam_focus": false,
+        "review_independence": "generation is current Codex session; second-pass review must be separately recorded, not a claimed independent model",
+        "initial_risk_flags": [
+          "scope_polysemy"
+        ],
+        "reference_gap_resolution": "not_applicable",
+        "risk_origin": "multiple semantic/POS groups, source ambiguity, evidence gap/history, or proposed additions; not accuracy probability",
+        "ai_semantic_review": {
+          "status": "completed",
+          "actor": "Codex current AI session",
+          "backend_model_id": null,
+          "severity": "Minor",
+          "observation": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+          "method": "explicit per-word post-structure source-first judgment, saved in review_01..08.tsv; no independent model claim"
+        },
+        "high_risk_review": {
+          "status": "source_reinspection_completed_with_stated_limits",
+          "independence": "separate source-first review pass in same AI session, non-blind; NOT a second independent model or human",
+          "independent_model_review": "not_run_no_separate_model_call_capability_used",
+          "observation": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+          "evidence_ids": [
+            "wn31:n:01135602"
+          ],
+          "source_limits": "Original multi-POS mapping may remain unknown; dictionary compatibility is not a translation gold standard, corpus ranking or teacher approval."
+        },
+        "revision_history": {
+          "initial_checkpoint": "checkpoints/batch_05.json",
+          "initial_record_hash": "1699fcba3a065df8ae41351c02a7f696ad9a9caa8be3e9da41f5f90771aeaf62",
+          "source_first_review_observation": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+          "layer_or_display_or_reference_changed": true
+        },
+        "prior_generation_metadata": {
+          "model_version": "codex-session/p6c2-semantic-v4",
+          "prompt_version": "p6c2-rules-v4",
+          "revision_history": {
+            "initial_checkpoint": "checkpoints/batch_05.json",
+            "initial_record_hash": "1699fcba3a065df8ae41351c02a7f696ad9a9caa8be3e9da41f5f90771aeaf62",
+            "source_first_review_observation": "资料为管理行为，指导指挥仅在组织管理中相容；不能据宽定义证明任意咨询或乐队指挥。",
+            "layer_or_display_or_reference_changed": true
+          }
+        },
+        "is_AI_candidate": true,
+        "p6c3_revision": {
+          "version": "P6C3_evidence_adjudication_v1",
+          "prompt_version": "RULES_V4",
+          "adjudicator_backend_model_id": null,
+          "configured_blind_review_model": "gpt-6-astra",
+          "issues": [
+            "C3-002"
+          ],
+          "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+          "original_candidate_hash": "e02edae441a2513bc4af0b7758d2f4a0cb05e2cbf37dfab288a930194f0c61c2",
+          "sealed_blind_record_hash": "a02ab4c89c1a313774f63f52844311ae7004ae8ecc87b96135976a57773fe794",
+          "source_hash_unchanged": true,
+          "formal_publication_allowed": false
+        }
+      },
+      "human_approved": false,
+      "adopted": false
+    },
+    {
+      "stable_id": "SG25-d942f6488657",
+      "headword": "import",
+      "issue_ids": [
+        "C3-001"
+      ],
+      "base_record_hash": "7c9dee6ece7be17a9008a9957a6c64afe2dd91af4bcbdf837e09bad2bc53d69a",
+      "candidate_record_hash": "155df032fc864be3da6279ad5bbb225601a47da58d11b3d8f8eaa5baff4d6d9d",
+      "changes": {
+        "core_explanation": {
+          "before": "进口名词与输入数据动词不同，原文对应未知；词网名词侧重进口货，行为译法需语境补证。",
+          "after": "先辨贸易动词进口与名词进口行为，数据导入后学建议；原文逐义词性仍未知。进口品只作独立补充候选，不自动升核心。"
+        },
+        "core_meanings": {
+          "before": [
+            {
+              "sense_group_id": "SG25-d942f6488657:core:1",
+              "part_of_speech": "名词",
+              "display_zh": "进口",
+              "glosses": [
+                "进口"
+              ],
+              "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s001",
+                  "original_gloss": "进口",
+                  "original_pos": null,
+                  "original_pos_evidence": "unresolved_multi_pos",
+                  "evidence_ids": [
+                    "wn31:n:03569847"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:n:03569847"
+              ],
+              "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+              "grouping_relation": "single_original_fragment",
+              "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+              "usage_note": "进口名词与输入数据动词不同，原文对应未知；词网名词侧重进口货，行为译法需语境补证。"
+            },
+            {
+              "sense_group_id": "SG25-d942f6488657:core:2",
+              "part_of_speech": "动词",
+              "display_zh": "输入",
+              "glosses": [
+                "输入"
+              ],
+              "origin": "AI_grouping_of_formal_fragments_not_original_wording",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s002",
+                  "original_gloss": "输入",
+                  "original_pos": null,
+                  "original_pos_evidence": "unresolved_multi_pos",
+                  "evidence_ids": [
+                    "wn31:v:02237504"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:02237504"
+              ],
+              "evidence_relation": "AI_selected_lexical_compatibility_not_translation_gold_or_sense_frequency",
+              "grouping_relation": "single_original_fragment",
+              "pos_assignment": "AI_dictionary_supported_recommendation_original_mapping_unknown",
+              "usage_note": "进口名词与输入数据动词不同，原文对应未知；词网名词侧重进口货，行为译法需语境补证。"
+            }
+          ],
+          "after": [
+            {
+              "sense_group_id": "SG25-d942f6488657:p6c3:core:1",
+              "part_of_speech": "动词",
+              "display_zh": "进口；从国外购入（货物等）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s001",
+                  "original_gloss": "进口",
+                  "original_pos": null,
+                  "original_pos_evidence": "unresolved_multi_pos",
+                  "evidence_ids": [
+                    "wn31:v:02351132",
+                    "p6c3:collins:import"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:02351132",
+                "p6c3:collins:import"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "贸易动词；不要仅学成数据导入。"
+            },
+            {
+              "sense_group_id": "SG25-d942f6488657:p6c3:core:2",
+              "part_of_speech": "名词",
+              "display_zh": "进口（行为、业务）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s001",
+                  "original_gloss": "进口",
+                  "original_pos": null,
+                  "original_pos_evidence": "unresolved_multi_pos",
+                  "evidence_ids": [
+                    "p6c3:collins:import"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "p6c3:collins:import"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "这是行为名词，不把进口商品的WordNet定义当作行为证据。"
+            }
+          ]
+        },
+        "dictionary_additions": {
+          "before": [],
+          "after": [
+            {
+              "candidate_id": "SG25-d942f6488657:p6c3:addition:1",
+              "part_of_speech": "名词",
+              "meaning_zh": "进口商品；进口品",
+              "source_sense_ids": [],
+              "evidence_ids": [
+                "wn31:n:03569847",
+                "p6c3:collins:import"
+              ],
+              "origin": "external_dictionary_AI_candidate_not_original_fragment",
+              "suggested_layer": "adoption_and_layer_decision_pending",
+              "status": "AI_candidate_not_adopted",
+              "human_approved": false,
+              "auto_promoted_to_core": false
+            }
+          ]
+        },
+        "extended_meanings": {
+          "before": [],
+          "after": [
+            {
+              "sense_group_id": "SG25-d942f6488657:p6c3:extended:1",
+              "part_of_speech": "动词",
+              "display_zh": "输入；导入（数据）",
+              "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "source_subsenses": [
+                {
+                  "source_sense_id": "s002",
+                  "original_gloss": "输入",
+                  "original_pos": null,
+                  "original_pos_evidence": "unresolved_multi_pos",
+                  "evidence_ids": [
+                    "wn31:v:02237504"
+                  ]
+                }
+              ],
+              "evidence_ids": [
+                "wn31:v:02237504"
+              ],
+              "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+              "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+              "usage_note": "这是对宽泛原片段输入的有证据语境收窄；原文逐义对应仍未知。"
+            }
+          ]
+        },
+        "is_AI_candidate": {
+          "before": null,
+          "after": true
+        },
+        "model_version": {
+          "before": "codex-session/p6c2-semantic-v4",
+          "after": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra"
+        },
+        "p6c3_revision": {
+          "before": null,
+          "after": {
+            "version": "P6C3_evidence_adjudication_v1",
+            "prompt_version": "RULES_V4",
+            "adjudicator_backend_model_id": null,
+            "configured_blind_review_model": "gpt-6-astra",
+            "issues": [
+              "C3-001"
+            ],
+            "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+            "original_candidate_hash": "7c9dee6ece7be17a9008a9957a6c64afe2dd91af4bcbdf837e09bad2bc53d69a",
+            "sealed_blind_record_hash": "077a91f2dd6849e683eb95903e76e6b53be8034e9717c071618a1b0c41614a57",
+            "source_hash_unchanged": true,
+            "formal_publication_allowed": false
+          }
+        },
+        "prior_generation_metadata": {
+          "before": null,
+          "after": {
+            "model_version": "codex-session/p6c2-semantic-v4",
+            "prompt_version": "p6c2-rules-v4",
+            "revision_history": {
+              "initial_checkpoint": "checkpoints/batch_07.json",
+              "initial_record_hash": "7ed7f071e0a472606e47a3f5ff54f80f3dabe0e3c3531486f95ac1d3031108bd",
+              "source_first_review_observation": "原名词进口可指货物或进口行为，词网偏货物，不能借该窄定义声称行为译法已逐义证明。",
+              "layer_or_display_or_reference_changed": false
+            }
+          }
+        },
+        "prompt_version": {
+          "before": "p6c2-rules-v4",
+          "after": "P6C3/RULES_V4"
+        },
+        "review_status": {
+          "before": "AI_reviewed_candidate_not_human_approved",
+          "after": "P6C3_AI_revision_candidate_not_adopted"
+        },
+        "semantic_splits": {
+          "before": null,
+          "after": [
+            {
+              "source_sense_id": "s001",
+              "annotation": "AI语义拆解；不是两个原文片段",
+              "uses": [
+                {
+                  "part_of_speech": "动词",
+                  "evidence_ids": [
+                    "wn31:v:02351132"
+                  ]
+                },
+                {
+                  "part_of_speech": "名词",
+                  "evidence_ids": [
+                    "p6c3:collins:import"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "supporting_sources": {
+          "before": [
+            {
+              "evidence_id": "wn31:n:03569847",
+              "pos": "n",
+              "definition_en": "commodities (goods or services) bought from a foreign country",
+              "lemmas": [
+                "import",
+                "importation"
+              ],
+              "selected_headwords": [
+                "import"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "wn31:v:02237504",
+              "pos": "v",
+              "definition_en": "transfer (electronic data) into a database or document",
+              "lemmas": [
+                "import"
+              ],
+              "selected_headwords": [
+                "import"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ],
+          "after": [
+            {
+              "evidence_id": "wn31:n:03569847",
+              "pos": "n",
+              "definition_en": "commodities (goods or services) bought from a foreign country",
+              "lemmas": [
+                "import",
+                "importation"
+              ],
+              "selected_headwords": [
+                "import"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "wn31:v:02237504",
+              "pos": "v",
+              "definition_en": "transfer (electronic data) into a database or document",
+              "lemmas": [
+                "import"
+              ],
+              "selected_headwords": [
+                "import"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            },
+            {
+              "evidence_id": "p6c3:collins:import",
+              "headword": "import",
+              "publisher": "HarperCollins",
+              "url": "https://www.collinsdictionary.com/dictionary/english/import",
+              "access": "parsed_publisher_content_available",
+              "locator": "COBUILD: trade verb and noun action; computing; American English: act/business of importing",
+              "observation_zh": "贸易义有从国外购入的动词用法，也有进口行为的名词用法；进口品名词另列，计算机数据导入再另列。词性和语境不能只按原中文片段的排列分配。",
+              "supports": [
+                "trade_verb",
+                "trade_action_noun",
+                "goods_noun",
+                "data_import"
+              ],
+              "does_not_support": "义项使用频率、考试频率或唯一教学顺序"
+            },
+            {
+              "evidence_id": "wn31:v:02351132",
+              "part_of_speech": "v",
+              "definition_en": "bring in from abroad",
+              "lemmas": [
+                "import"
+              ],
+              "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+              "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+            }
+          ]
+        }
+      },
+      "candidate": {
+        "stable_id": "SG25-d942f6488657",
+        "headword": "import",
+        "part_of_speech": "名词；动词",
+        "book_category": "高频词",
+        "cohort": "new_400",
+        "selection_ordinal": 307,
+        "source_fields": {
+          "entry_id": "SG25-d942f6488657",
+          "word": "import",
+          "meaning_zh": "进口；输入",
+          "book_category": "高频词",
+          "source_file": "2025考研英语词汇闪过.pdf",
+          "source_id": "src_sg25_5e4501eb7237",
+          "source_pdf_pages": "108",
+          "source_index_pages": "746",
+          "book_verification": "已核验",
+          "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+          "pets2015_status": "已收录",
+          "pets2025_status": "待核实",
+          "library_class": "主学习",
+          "part_of_speech": "名词；动词",
+          "usage_note": "",
+          "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 03564667-n;10200531-n;06601327-n;02346136-v;02232722-v;00932636-v",
+          "example_en": "",
+          "example_zh": "",
+          "learning_priority": "P1",
+          "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+          "phonics_note": "",
+          "syllables": "",
+          "stress": "",
+          "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+          "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+          "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+          "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+          "pets2015_evidence": "[{\"pdf_page\":116,\"printed_form\":\"import\",\"printed_page\":112,\"section\":\"main\"}]",
+          "pets2015_match_method": "exact_case_sensitive_explicit_form"
+        },
+        "source_hash": "9530e5323e50a0b5d530c6712f8963077ea6757fec13249446bba5725730b456",
+        "original_meaning_zh": "进口；输入",
+        "original_meanings": [
+          {
+            "source_sense_id": "s001",
+            "text": "进口",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 0,
+            "end": 2
+          },
+          {
+            "source_sense_id": "s002",
+            "text": "输入",
+            "part_of_speech": null,
+            "pos_evidence": "unresolved_multi_pos",
+            "start": 3,
+            "end": 5
+          }
+        ],
+        "core_meanings": [
+          {
+            "sense_group_id": "SG25-d942f6488657:p6c3:core:1",
+            "part_of_speech": "动词",
+            "display_zh": "进口；从国外购入（货物等）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "进口",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:02351132",
+                  "p6c3:collins:import"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:v:02351132",
+              "p6c3:collins:import"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "贸易动词；不要仅学成数据导入。"
+          },
+          {
+            "sense_group_id": "SG25-d942f6488657:p6c3:core:2",
+            "part_of_speech": "名词",
+            "display_zh": "进口（行为、业务）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s001",
+                "original_gloss": "进口",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "p6c3:collins:import"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "p6c3:collins:import"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "这是行为名词，不把进口商品的WordNet定义当作行为证据。"
+          }
+        ],
+        "extended_meanings": [
+          {
+            "sense_group_id": "SG25-d942f6488657:p6c3:extended:1",
+            "part_of_speech": "动词",
+            "display_zh": "输入；导入（数据）",
+            "origin": "P6C3_AI_semantic_decomposition_or_qualified_rephrasing",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "source_subsenses": [
+              {
+                "source_sense_id": "s002",
+                "original_gloss": "输入",
+                "original_pos": null,
+                "original_pos_evidence": "unresolved_multi_pos",
+                "evidence_ids": [
+                  "wn31:v:02237504"
+                ]
+              }
+            ],
+            "evidence_ids": [
+              "wn31:v:02237504"
+            ],
+            "evidence_relation": "specific_use_lexically_supported_not_frequency_gold",
+            "pos_assignment": "AI_recommendation_original_mapping_unchanged",
+            "usage_note": "这是对宽泛原片段输入的有证据语境收窄；原文逐义对应仍未知。"
+          }
+        ],
+        "other_meanings": [],
+        "reserved_original_items": [],
+        "dictionary_additions": [
+          {
+            "candidate_id": "SG25-d942f6488657:p6c3:addition:1",
+            "part_of_speech": "名词",
+            "meaning_zh": "进口商品；进口品",
+            "source_sense_ids": [],
+            "evidence_ids": [
+              "wn31:n:03569847",
+              "p6c3:collins:import"
+            ],
+            "origin": "external_dictionary_AI_candidate_not_original_fragment",
+            "suggested_layer": "adoption_and_layer_decision_pending",
+            "status": "AI_candidate_not_adopted",
+            "human_approved": false,
+            "auto_promoted_to_core": false
+          }
+        ],
+        "core_explanation": "先辨贸易动词进口与名词进口行为，数据导入后学建议；原文逐义词性仍未知。进口品只作独立补充候选，不自动升核心。",
+        "selection_reason": "进口名词与输入数据动词不同，原文对应未知；词网名词侧重进口货，行为译法需语境补证。",
+        "risk_level": "high",
+        "risk_flags": [
+          "evidence_scope_gap",
+          "multi_pos_original_unlabelled",
+          "original_multi_POS_mapping_unknown"
+        ],
+        "review_status": "P6C3_AI_revision_candidate_not_adopted",
+        "needs_human_review": true,
+        "human_approved": false,
+        "model_version": "codex-adjudicator/backend-unknown; blind-review-config:gpt-6-astra",
+        "prompt_version": "P6C3/RULES_V4",
+        "category_evidence": {
+          "status": "目录分区及既有索引/正文支持（核验层级见来源状态）",
+          "basis": "原书目录PDF10；候选台账书内页97，PDF页108；不是PETS频率",
+          "source_verification": "同页正文标题自动同形支持"
+        },
+        "supporting_sources": [
+          {
+            "evidence_id": "wn31:n:03569847",
+            "pos": "n",
+            "definition_en": "commodities (goods or services) bought from a foreign country",
+            "lemmas": [
+              "import",
+              "importation"
+            ],
+            "selected_headwords": [
+              "import"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "wn31:v:02237504",
+            "pos": "v",
+            "definition_en": "transfer (electronic data) into a database or document",
+            "lemmas": [
+              "import"
+            ],
+            "selected_headwords": [
+              "import"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          },
+          {
+            "evidence_id": "p6c3:collins:import",
+            "headword": "import",
+            "publisher": "HarperCollins",
+            "url": "https://www.collinsdictionary.com/dictionary/english/import",
+            "access": "parsed_publisher_content_available",
+            "locator": "COBUILD: trade verb and noun action; computing; American English: act/business of importing",
+            "observation_zh": "贸易义有从国外购入的动词用法，也有进口行为的名词用法；进口品名词另列，计算机数据导入再另列。词性和语境不能只按原中文片段的排列分配。",
+            "supports": [
+              "trade_verb",
+              "trade_action_noun",
+              "goods_noun",
+              "data_import"
+            ],
+            "does_not_support": "义项使用频率、考试频率或唯一教学顺序"
+          },
+          {
+            "evidence_id": "wn31:v:02351132",
+            "part_of_speech": "v",
+            "definition_en": "bring in from abroad",
+            "lemmas": [
+              "import"
+            ],
+            "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+            "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+          }
+        ],
+        "publication_status": "AI_candidate_not_formal_content",
+        "official_exam_focus": false,
+        "review_independence": "generation is current Codex session; second-pass review must be separately recorded, not a claimed independent model",
+        "initial_risk_flags": [
+          "evidence_scope_gap",
+          "multi_pos_original_unlabelled",
+          "original_multi_POS_mapping_unknown"
+        ],
+        "reference_gap_resolution": "not_applicable",
+        "risk_origin": "multiple semantic/POS groups, source ambiguity, evidence gap/history, or proposed additions; not accuracy probability",
+        "ai_semantic_review": {
+          "status": "completed",
+          "actor": "Codex current AI session",
+          "backend_model_id": null,
+          "severity": "Minor",
+          "observation": "原名词进口可指货物或进口行为，词网偏货物，不能借该窄定义声称行为译法已逐义证明。",
+          "method": "explicit per-word post-structure source-first judgment, saved in review_01..08.tsv; no independent model claim"
+        },
+        "high_risk_review": {
+          "status": "source_reinspection_completed_with_stated_limits",
+          "independence": "separate source-first review pass in same AI session, non-blind; NOT a second independent model or human",
+          "independent_model_review": "not_run_no_separate_model_call_capability_used",
+          "observation": "原名词进口可指货物或进口行为，词网偏货物，不能借该窄定义声称行为译法已逐义证明。",
+          "evidence_ids": [
+            "wn31:n:03569847",
+            "wn31:v:02237504"
+          ],
+          "source_limits": "Original multi-POS mapping may remain unknown; dictionary compatibility is not a translation gold standard, corpus ranking or teacher approval."
+        },
+        "revision_history": {
+          "initial_checkpoint": "checkpoints/batch_07.json",
+          "initial_record_hash": "7ed7f071e0a472606e47a3f5ff54f80f3dabe0e3c3531486f95ac1d3031108bd",
+          "source_first_review_observation": "原名词进口可指货物或进口行为，词网偏货物，不能借该窄定义声称行为译法已逐义证明。",
+          "layer_or_display_or_reference_changed": false
+        },
+        "semantic_splits": [
+          {
+            "source_sense_id": "s001",
+            "annotation": "AI语义拆解；不是两个原文片段",
+            "uses": [
+              {
+                "part_of_speech": "动词",
+                "evidence_ids": [
+                  "wn31:v:02351132"
+                ]
+              },
+              {
+                "part_of_speech": "名词",
+                "evidence_ids": [
+                  "p6c3:collins:import"
+                ]
+              }
+            ]
+          }
+        ],
+        "prior_generation_metadata": {
+          "model_version": "codex-session/p6c2-semantic-v4",
+          "prompt_version": "p6c2-rules-v4",
+          "revision_history": {
+            "initial_checkpoint": "checkpoints/batch_07.json",
+            "initial_record_hash": "7ed7f071e0a472606e47a3f5ff54f80f3dabe0e3c3531486f95ac1d3031108bd",
+            "source_first_review_observation": "原名词进口可指货物或进口行为，词网偏货物，不能借该窄定义声称行为译法已逐义证明。",
+            "layer_or_display_or_reference_changed": false
+          }
+        },
+        "is_AI_candidate": true,
+        "p6c3_revision": {
+          "version": "P6C3_evidence_adjudication_v1",
+          "prompt_version": "RULES_V4",
+          "adjudicator_backend_model_id": null,
+          "configured_blind_review_model": "gpt-6-astra",
+          "issues": [
+            "C3-001"
+          ],
+          "rules_sha256": "43b5af428c5ca663c914af68c66370e7e88df651944e16b9e49ce316baddc8fe",
+          "original_candidate_hash": "7c9dee6ece7be17a9008a9957a6c64afe2dd91af4bcbdf837e09bad2bc53d69a",
+          "sealed_blind_record_hash": "077a91f2dd6849e683eb95903e76e6b53be8034e9717c071618a1b0c41614a57",
+          "source_hash_unchanged": true,
+          "formal_publication_allowed": false
+        }
+      },
+      "human_approved": false,
+      "adopted": false
+    }
+  ],
+  "other_blind_new_candidates": "independent_quality_review.json:new_dictionary_candidates",
+  "human_approved": false
+}

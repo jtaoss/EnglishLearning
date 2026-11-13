@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_42",
+  "request_hash": "2a93ae072694c377c00dd566e90452b6b836ae912ef1145f9657a56ea635c0cb",
+  "started_utc": "2026-11-13T08:16:14.145431+00:00",
+  "completed_utc": "2026-11-13T08:17:49.443315+00:00",
+  "elapsed_seconds": 95.297,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ccaaeb0e-5737-4a26-8050-6c366cab3060",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3446,
+    "completion_tokens": 4692,
+    "total_tokens": 8138,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4386
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1398
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5d3082f6a1fd\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"核心第2组可在后续教学中细分‘拼命的英勇’与‘危险的鲁莽/暴力’语用色彩，但不属于当前语义错误。\",\n        \"危急/无望义已作为外部候选未采用；若日后教学需要，可列入扩展而非核心。\"\n      ],\n      \"note\": \"候选按三个中文片段分别映射，词性均为形容词，证据使用基本准确：s001↔s01232699（绝望/失去希望）匹配，s002↔s01997589/s02067030/s00264329（不顾一切/拼命）不矛盾，s003↔s00716816（极度渴望/迫切）匹配。源片段‘绝望的’未明确包含‘极端危险/危急’义，故将其作为外部增添未采用是保守且可接受的；源词性仅形容词，WordNet名词义不属原文支持范围，未计入核心不构成漏译。候选对‘绝望的’作了人感到绝望的限制，略窄于证据中可修饰行为/呼喊等，但不影响核心含义。未发现实际错误、重要来源用法遗漏、错误合并或无据义项。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

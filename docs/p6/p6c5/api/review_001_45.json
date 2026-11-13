@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_45",
+  "request_hash": "2dff601eddf3eadff2dda9fab17315657a70f4b7168d2a7dfeef706f00627c2b",
+  "started_utc": "2026-11-13T08:16:14.188594+00:00",
+  "completed_utc": "2026-11-13T08:17:24.532382+00:00",
+  "elapsed_seconds": 70.343,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b930167f-7539-490f-aeab-309faa430f9a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3310,
+    "completion_tokens": 3645,
+    "total_tokens": 6955,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3253
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1262
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-bfd5a8ed7357\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"omitted_important_external_use\",\n          \"reason\": \"候选的外部补充中未包含 WordNet 中 weather/climate 义（wn31:n:14543880，定义：the weather or climate at some place），该义在阅读天气/气候描述时具有独立价值，且证据已提供但未被显式跟踪。\",\n          \"evidence_ids\": [\n            \"wn31:n:14543880\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions\",\n          \"proposed_fix\": \"增加一个 dictionary_additions 条目：\\\"天气；气候（局部气象条件）\\\"，词性名词，状态 AI_candidate_not_adopted，证据 wn31:n:14543880，不自动升为核心；同时在 source_POS_coverage 中记录该外部候选。\"\n        }\n      ],\n      \"preferences\": [\n        \"核心组 2 与 3 可考虑合并为“大气/大气圈”以减轻记忆负担，但需保留原片段追源；属于教学偏好，非错误。\"\n      ],\n      \"note\": \"原文三个名词片段分别对应“周围环境”“大气”“大气圈”，候选核心组均使用具体 WordNet 义项且词性正确，无错误合并或缺失核心源义。外部补充已包含“气氛/氛围”和“大气压单位”，但漏掉已供证据的“天气/气候”义，属于外部用途覆盖缺口，建议补为 dictionary_additions 待审。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

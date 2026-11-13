@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_78",
+  "request_hash": "dd8aa1253f5354dc824e396c50779be202a874217033381ee11206ccba61e4b0",
+  "started_utc": "2026-11-13T08:17:25.549311+00:00",
+  "completed_utc": "2026-11-13T08:18:43.807620+00:00",
+  "elapsed_seconds": 78.25,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "acd89668-0874-4516-b249-f1aa71e74570",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3714,
+    "completion_tokens": 4215,
+    "total_tokens": 7929,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3890
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1666
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ed7002b439e9\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"omitted_important_dictionary_addition\",\n          \"reason\": \"The source raw contains only '内容/含量' for nouns and does not include the noun sense 'the state of being contented'. This sense is present in the supplied evidence (wn31:n:14436286) and has independent value (e.g., 'to one's heart's content'). The candidate lists two dictionary additions but omits this one, so the dual-track gap is not fully tracked.\",\n          \"evidence_ids\": [\n            \"wn31:n:14436286\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"Add a dictionary addition entry for the noun sense '满足；满意（状态）' with evidence wn31:n:14436286, status AI_candidate_not_adopted.\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"All four source senses are correctly represented in core with matching POS and appropriate evidence. The two listed dictionary additions (physical contents and limited reflexive verb) are appropriately not promoted to core. However, the important noun sense of contentment (wn31:n:14436286) is missing from dictionary_additions and should be tracked as an external candidate.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

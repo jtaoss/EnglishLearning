@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_52",
+  "request_hash": "9b3aeba583a2d2e64c6929e20813ee6304caf3f0e82dc229af4f3477b5dea282",
+  "started_utc": "2026-11-13T08:16:27.815207+00:00",
+  "completed_utc": "2026-11-13T08:18:04.531141+00:00",
+  "elapsed_seconds": 96.718,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1ac658a2-908f-4fac-86f9-7d0459441287",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3237,
+    "completion_tokens": 5087,
+    "total_tokens": 8324,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4761
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1189
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3a19589098bc\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"候选将 s002“创立”与“创办”合并并限定对象为组织、机构，但“创立”在汉语中也可用于学说、制度等抽象对象；源字段仅提供单字词义，无例句，无法确认该限制是否遗漏源义。\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"SG25-3a19589098bc:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"教学时补充说明“创立”在抽象对象上也可使用，或考虑将该用法并入第二组或单独提示。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学时可将“创立”与“建立”的抽象用法做关联提示，避免学习者以为“创立”只能用于组织、机构。\"\n      ],\n      \"note\": \"候选核心两组基本合理：创办/创立针对组织、机构，建立针对抽象事物。创立在汉语中可兼用于抽象对象，但源字段无上下文，无法确认为遗漏；其余外部义如“证实”已作为未采用候选单列。无确认缺陷。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

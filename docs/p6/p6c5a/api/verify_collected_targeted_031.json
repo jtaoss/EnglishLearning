@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_031",
+  "kind": "verify",
+  "request_hash": "fdcd1509ea2429de729c55060d4f6ce99a98381319e37f17178dd25ac93ec4e9",
+  "input_ids": [
+    "SG25-c781f9e50e6d",
+    "SG25-b40356e6d1c6"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "66b0536e-f42e-4b96-aad4-99d6b38e6636",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c781f9e50e6d\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 保留广义“从政者”，未添加政党活动等排他限制；wn31:n:10469877 作为中性政治人物的一个词典例证，不限制目标范围。\",\n          \"evidence_ids\": [\n            \"wn31:n:10469877\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:1 保留“政客”的贬义标签，未限定为阴谋家；wn31:n:10471024 只是一个贬义子类例证，注释使用“可含贬义”，未作排他限定。\",\n          \"evidence_ids\": [\n            \"wn31:n:10471024\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:2 保留“政治家”中性义，wn31:n:10470837 支持民政领导人物；注释明确不默认杰出领袖，避免把原译当褒称，没有新增范围。\",\n          \"evidence_ids\": [\n            \"wn31:n:10470837\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"三个源义分别由核心/扩展承接；证据仅为词典例证，未形成排他限制。教学排序合理，无确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-b40356e6d1c6\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"core:1 仅以“公开呈现”和“易受伤害状态”两条证据承接，未保留“秘密/内情被揭露”的暴露义；注释“不能一概译成揭露秘密”在该义未在其他层承接时形成实际收窄，缺少 wn31:n:07230037。\",\n          \"evidence_ids\": [\n            \"wn31:n:00523593\",\n            \"wn31:n:14567533\",\n            \"wn31:n:07230037\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:1 “接触”与源义一致，证据 wn31:n:00158283 为“使接触某种影响”的例证，未将接触限定为有害或强制接触。\",\n          \"evidence_ids\": [\n            \"wn31:n:00158283\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"omitted_sense_or_residual_scope\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-b40356e6d1c6:core:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:00523593\",\n            \"wn31:n:14567533\",\n            \"wn31:n:07230037\"\n          ],\n          \"reason\": \"原“暴露”可支持“秘密/内情被揭露”（如揭露竞选计划），但核心只承接公开呈现和易受伤害状态，且注释明确提示不能一概译成揭露秘密；该用法在所有层级均无独立承接，也无暂存记录。\",\n          \"counterexample\": \"exposure of their campaign plans（竞选计划被暴露）是原文“暴露”可支持的用法；词典证据 wn31:n:07230037 已列出，但未被链接。\",\n          \"repair_suggestion\": \"在核心保持父级“暴露”的同时，在扩展补列“秘密/内情被揭露”用法并链接 wn31:n:07230037，或将该剩余范围明确记为暂存；不要只以注释排除。\"\n        }\n      ],\n      \"unresolved\": [\n        \"源文仅给出“暴露/接触”，未提供上下文；无法确定“暴露”是否还须覆盖天气暴露、拍照曝光等英语义，但这些不构成当前确认缺陷。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 “暴露”在核心仅部分承接，秘密揭露义缺失；s002 “接触”承接合理。拍照曝光等英语独有义不属于原文缺失。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4621,
+    "completion_tokens": 7096,
+    "total_tokens": 11717,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6101
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2957
+  },
+  "started_utc": "2026-11-13T09:58:22.293330+00:00",
+  "completed_utc": "2026-11-13T10:00:00.587357+00:00",
+  "elapsed_seconds": 98.297,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

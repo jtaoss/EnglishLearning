@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_005_repair1",
+  "kind": "verify",
+  "request_hash": "1d6294df5d7f36a18cbd740337c8eddc2c63dd380930bfca814a36e71c307bd2",
+  "input_ids": [
+    "SG25-5489eb1d2a02",
+    "SG25-cc57fc1903e4"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "10d56ba2-30c4-493f-9c25-253028e0c07d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5489eb1d2a02\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原义“事故”指造成损害或伤害的不幸事件，与 wn31:n:07315954 的“unfortunate mishap; especially one causing damage or injury”一致；核心组保留该义，无范围改变。\",\n          \"evidence_ids\": [\"wn31:n:07315954\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原义“意外”指偶然发生、无明显原因的事件，与 wn31:n:07315578 的 chance event 义一致；核心组保留该义，无范围改变。\",\n          \"evidence_ids\": [\"wn31:n:07315578\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原义“灾祸”在中文中可指一般灾难或大祸，范围宽于提供的 accident 英语证据；没有任何证据表明 accident 可表示一般灾难，候选未将其映射到任何层级而置于 held，导致该来源范围无法通过现有证据确认是否应覆盖或仅属源文过度翻译。\",\n          \"evidence_ids\": [\"wn31:n:07315954\", \"wn31:n:07315578\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s003 的“灾祸”是否在英语中可对应 accident 的某个未提供的义项，或仅属于中文过度翻译，需独立源依据确认；当前 held 处理不影响事故/意外核心覆盖，但未解决该范围的来源地位。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"事故与意外分别有等价核心覆盖；灾祸因源范围宽于英语证据且未映射任何层级，判定为无法确定而非生成器覆盖缺陷。\"\n    },\n    {\n      \"id\": \"SG25-cc57fc1903e4\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原义“图表”为名词，指信息的可视化展示，与 wn31:n:07012462 “a visual display of information”一致；核心保留一般图表范围，未加入地图或音乐榜等英语扩展义。\",\n          \"evidence_ids\": [\"wn31:n:07012462\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原义“绘制图表”为动词，与 wn31:v:00712632 “make a chart of”对应，动作对象与词性一致；核心保留该义。\",\n          \"evidence_ids\": [\"wn31:v:00712632\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原义“记录”为一般动词，未限定对象或方式；候选扩展层仅保留“记录变化（以图表等方式）”，增加了“变化”这一对象限制，且未保留泛记录分支或明确暂存。证据 wn31:v:01758945 “represent by means of a graph; chart the data” 只支持用图表表示数据，并不限定数据必须是变化数据，因此该限制无来源许可。\",\n          \"evidence_ids\": [\"wn31:v:01758945\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"unlicensed_object_restriction\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-cc57fc1903e4:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:01758945\"],\n          \"reason\": \"s003 原文只写“记录”，未限定对象；候选在扩展层加入“变化”限制，排除了记录静态数据（如 chart the data）的可能性，而证据并未要求仅记录变化。\",\n          \"counterexample\": \"chart the data 可以使用图表表示非变化数据，如固定分类统计，不需要限定为变化数据。\",\n          \"repair_suggestion\": \"将“变化”降为例示或删除排他性，保留“以图表方式记录数据/信息”作为扩展义；对泛“记录”在备注或 held 中明示来源范围待核，或补充能支持该子集的证据。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003 原文“记录”是否仅指用图表记录，还是可泛指一般记录？需根据原教材语境确认；若泛指，则当前收窄需要更明确的暂存说明。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词“图表”和动词“绘制图表”覆盖等价；动词“记录”被收窄为图表记录变化，存在无依据的对象限制，需修正或补充来源范围说明。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5733,
+    "completion_tokens": 4452,
+    "total_tokens": 10185,
+    "prompt_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3349
+    },
+    "prompt_cache_hit_tokens": 4224,
+    "prompt_cache_miss_tokens": 1509
+  },
+  "started_utc": "2026-11-13T09:57:46.690413+00:00",
+  "completed_utc": "2026-11-13T09:58:43.007434+00:00",
+  "elapsed_seconds": 56.312,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

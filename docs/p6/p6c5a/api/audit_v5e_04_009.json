@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_009",
+  "kind": "audit",
+  "request_hash": "22c2582bdc7905a73d7ac3db6c3a4f6b30132faf8a299ea13d2836050c737f57",
+  "input_ids": [
+    "SG25-cb5815fe5c3c",
+    "SG25-f78fcae67d4a",
+    "SG25-96044d9734b6",
+    "SG25-72f7c894ad6c",
+    "SG25-4e33d57d8955"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a194b334-d4a0-41a2-a2a0-ec1caa7bd41d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-cb5815fe5c3c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"行星（绕恒星运行的天体）\",\"relation\":\"语义等价\",\"reason\":\"原文“行星”与候选核心“行星”在名词和天文对象上对应；采用较一般的天体定义，未使用含冥王星的过时枚举。\",\"evidence_ids\":[\"wn31:n:09417539\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义已映射到核心“行星”；一般天体定义覆盖原文，未采用过时九大行星枚举。\"},{\"id\":\"SG25-f78fcae67d4a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"解释（行为或说明内容）\",\"relation\":\"合理概括\",\"reason\":\"原文单一片段“解释”用同一上位表述覆盖“说明内容”和“解释行为”，未把两个词典子义误拆成两个源义；证据支持该概括。\",\"evidence_ids\":[\"wn31:n:06751030\",\"wn31:n:07247081\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“解释”保留为单一核心条目，合理覆盖说明内容与解释行为；未把词典细分强加为新的源义项。\"},{\"id\":\"SG25-96044d9734b6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"植物（名词）\",\"relation\":\"语义等价\",\"reason\":\"原文“植物”与核心名词“植物”对应，植物学活体生物证据支持。\",\"evidence_ids\":[\"wn31:n:00017402\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"工厂（名词）\",\"relation\":\"语义等价\",\"reason\":\"原文“工厂”与核心名词“工厂”对应，工业劳动建筑/设施证据支持。\",\"evidence_ids\":[\"wn31:n:03963198\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"种植（动词）\",\"relation\":\"语义等价\",\"reason\":\"原文“种植”与扩展动词“种植”对应，把种子或植株放入土中的证据支持；首屏后置但未丢失。\",\"evidence_ids\":[\"wn31:v:01570056\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"三个源义均有独立映射：植物、工厂在核心，种植在扩展；后置有词性区分说明，不构成本义丢失。\"},{\"id\":\"SG25-72f7c894ad6c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"塑料（材料义，组推荐名词；源词性null）\",\"relation\":\"语义等价\",\"reason\":\"原文“塑料”与候选名词“塑料”材料义对应，名词材料证据支持；但源义项词性为null，当前仅按组推荐名词映射，未确认源词性。\",\"evidence_ids\":[\"wn31:n:14616790\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"塑料制的（组推荐形容词；源词性null）\",\"relation\":\"无法确定\",\"reason\":\"原文“塑料制的”与候选形容词文本对应，但源义项词性为null；web:plastic为既有观察且自述非独立证据，WordNet形容词证据是可塑性/易受影响，不能确认“塑料制的”形容词义。\",\"evidence_ids\":[\"web:plastic\"],\"context\":\"uncertain\",\"residual_scope\":\"形容词义证据不足；源词性未定\",\"counterexample\":\"WordNet形容词plastic可指可塑的/易受影响的，而非“塑料制的”。\",\"counterexample_evidence_ids\":[\"wn31:s:00848000\",\"wn31:s:02373522\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-72f7c894ad6c:core:1\",\"SG25-72f7c894ad6c:core:2\"],\"evidence_ids\":[],\"reason\":\"两个源义项part_of_speech为null（unresolved_multi_pos），候选组已推荐名词/形容词；不能静默视为源词性已确认。\",\"repair_suggestion\":\"保留候选组，但在源义项上标记词性待核；不要将名词/形容词标签回写为源词性。\"},{\"severity\":\"Minor\",\"kind\":\"evidence_insufficient\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-72f7c894ad6c:core:2\"],\"evidence_ids\":[\"web:plastic\",\"wn31:s:00848000\",\"wn31:s:02373522\"],\"reason\":\"核心形容词“塑料制的”仅由既有观察web:plastic支撑，该证据自述非独立词典定义；WordNet形容词证据对应可塑性，不能直接证明制成材料义。\",\"repair_suggestion\":\"补充独立词典中plastic形容词“made of plastic”的定义或例句，或暂存该义并标注证据待核。\"}],\"note\":\"名词塑料材料义有WordNet支持；形容词“塑料制的”文本对应但证据薄弱且源词性null，整体标uncertain/pending。\"},{\"id\":\"SG25-4e33d57d8955\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"爆发（突然发生、情感等）\",\"relation\":\"语义等价\",\"reason\":\"原文“爆发”与核心“爆发”（sudden outburst）对应，情感、笑声等突然迸发证据支持；与物理爆炸区分。\",\"evidence_ids\":[\"wn31:n:07027968\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"爆炸（物理爆炸）\",\"relation\":\"语义等价\",\"reason\":\"原文“爆炸”与核心“爆炸”对应，剧烈能量释放证据支持；核心文本未加化学/核反应排他限制。\",\"evidence_ids\":[\"wn31:n:07323181\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别映射到核心“爆发”和“爆炸”，并明确区分情感等突然爆发与物理爆炸。\"}]}",
+  "usage": {
+    "prompt_tokens": 5884,
+    "completion_tokens": 10575,
+    "total_tokens": 16459,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9031
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3964
+  },
+  "started_utc": "2026-11-13T09:46:53.736754+00:00",
+  "completed_utc": "2026-11-13T09:47:52.807931+00:00",
+  "elapsed_seconds": 59.062,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

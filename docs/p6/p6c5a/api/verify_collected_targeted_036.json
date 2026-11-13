@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_036",
+  "kind": "verify",
+  "request_hash": "f09c5d54ad3cf9f91a78eabd0e095427e48b30790bef9759a0c5c97fc02a092b",
+  "input_ids": [
+    "SG25-480a27af1dea",
+    "SG25-3fb45623cb30"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a4f699b9-de30-46f6-9d08-06e3259f2c80",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-480a27af1dea\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原“怀疑的”为一般怀疑态度；候选组“怀疑的；持怀疑态度的”及注释“对某事物感到不确定，倾向于质疑或持怀疑态度”与 WordNet 02473075 “marked by or given to doubt”一致，未添加对象或领域限制。\",\n          \"evidence_ids\": [\"wn31:s:02473075\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“怀疑性的”是同一形容词的变体，表示具有怀疑性质；与 s001 共同由同一证据覆盖，属于重复义项合并，未丢失含义。\",\n          \"evidence_ids\": [\"wn31:s:02473075\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原“怀疑论的”可能指哲学怀疑论或对教义的怀疑；现有候选将其置于 held，未映射到用户可见组。唯一关联证据 00650269 “denying or questioning the tenets of especially a religion”较窄，不能无保留等同一般怀疑论；来源范围待核。\",\n          \"evidence_ids\": [\"wn31:s:00650269\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s003“怀疑论的”精确英语语义范围未确认；现有 WordNet 证据 00650269 偏向宗教教义，可能不足以覆盖一般哲学怀疑论。候选将其保留在 held 而非任何显示层，用户看到的核心/扩展中无该义，存在覆盖缺口，但尚未构成可确认的语义错误。需要补充更一般的哲学怀疑用法词典证据，或确认教材语境是否仅限宗教。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 与 s002 合并为一般怀疑态度，证据充分；s003 的暂存处理是保守且合理的，但需进一步证据才能决定是否纳入核心。\"\n    },\n    {\n      \"id\": \"SG25-3fb45623cb30\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原“部分”为一般整体中的部分；候选组“部分；片段”与注释“整体中的一部分或构成整体的片段，可具体可抽象”覆盖 WordNet 04172050 和 05876035 的 broad sense，未施加不当限制。\",\n          \"evidence_ids\": [\"wn31:n:04172050\", \"wn31:n:05876035\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原“章节”为文字或音乐作品中的自足一节；候选组“章节”与注释“文字或音乐作品中相对自足的一节”直接对应 WordNet 06403644。\",\n          \"evidence_ids\": [\"wn31:n:06403644\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原“部门”为大型机构中的专门分部；候选组“部门；科室”与注释“大型机构中的专门分部”直接对应 WordNet 08131836，无范围扩大或收窄。\",\n          \"evidence_ids\": [\"wn31:n:08131836\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"三个源义项分别有直接 WordNet 名词证据，且候选一一映射，无源内缺口。未采用的词典义（如几何剖面、区域、动词切分）不属于当前源中文范围，列于 unadopted_external_candidates 但未混入核心，处理合理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3964,
+    "completion_tokens": 6438,
+    "total_tokens": 10402,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5565
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2300
+  },
+  "started_utc": "2026-11-13T09:58:30.846196+00:00",
+  "completed_utc": "2026-11-13T10:00:03.372453+00:00",
+  "elapsed_seconds": 92.516,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

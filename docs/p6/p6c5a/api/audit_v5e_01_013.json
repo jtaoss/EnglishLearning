@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_013",
+  "kind": "audit",
+  "request_hash": "54afe058706758f86b01acf77b495462f72ccb9c92611bb654030d536c02ff47",
+  "input_ids": [
+    "SG25-cc57fc1903e4",
+    "SG25-a0c7ec73f6d7",
+    "SG25-5589aa5863c2",
+    "SG25-5304378d0078",
+    "SG25-be385d45dcaf"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "bab73413-450f-4368-8b43-328781a5403c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-cc57fc1903e4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：图表（可视化信息展示）\",\"relation\":\"语义等价\",\"reason\":\"核心“图表”对应 a visual display of information，保留原文一般名词范围，未把地图或畅销榜等英语扩展义硬塞入来源。\",\"evidence_ids\":[\"wn31:n:07012462\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：绘制图表\",\"relation\":\"语义等价\",\"reason\":\"核心“绘制图表”与 make a chart of 对应，词性和动作对象一致。\",\"evidence_ids\":[\"wn31:v:00712632\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：记录（原文未限定方式或对象）\",\"relation\":\"范围收窄\",\"reason\":\"扩展只保留“记录变化（以图表等方式）”这一子集；“以图表等方式”受 chart 动词证据要求，但“变化”并非该证据必然限制，且原文泛“记录”没有保留分支或明确暂存。\",\"evidence_ids\":[\"wn31:v:01758945\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少泛“记录”范围；目标仅保留“以图表记录变化”的子集\",\"counterexample\":\"chart the data 表示用图表表示数据，不限于“变化”数据\",\"counterexample_evidence_ids\":[\"wn31:v:01758945\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope_missing\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-cc57fc1903e4:extended:1\"],\"evidence_ids\":[\"wn31:v:01758945\"],\"reason\":\"s003 原文“记录”范围较泛，候选仅在扩展保留“记录变化（以图表等方式）”，未保留泛记录分支或明确 held；同时“变化”是未获直接证据许可的对象限制。\",\"repair_suggestion\":\"将“以图表等方式”标为词典要求，把“变化”降为例示或删去排他性；对泛“记录”在备注/held 明示源范围待核，或补充能支持该子集的证据。\"}],\"note\":\"名词“图表”和动词“绘制图表”覆盖清楚；动词“记录”被收窄为图表记录变化，需补泛记录暂存说明并避免把“变化”当唯一对象。\"},{\"id\":\"SG25-a0c7ec73f6d7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：委员会（行政/治理机构）\",\"relation\":\"语义等价\",\"reason\":\"核心合组“委员会／理事会”包含“委员会”，证据 administrative body 支持治理机构用法。\",\"evidence_ids\":[\"wn31:n:08327879\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：理事会（治理机构）\",\"relation\":\"语义等价\",\"reason\":\"核心合组“委员会／理事会”包含“理事会”，与 administrative body 的 council 用法相容。\",\"evidence_ids\":[\"wn31:n:08327879\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：评议会（议事/咨询会议）\",\"relation\":\"语义等价\",\"reason\":\"扩展“评议会”对应 meeting of people for consultation，保留议事会议侧重，和行政机构义分开。\",\"evidence_ids\":[\"wn31:n:08326339\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个中文标签均被覆盖；委员会/理事会合组符合治理机构义，评议会留扩展并保留会议义区别。\"},{\"id\":\"SG25-5589aa5863c2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：决定（作出选择/决定）\",\"relation\":\"语义等价\",\"reason\":\"核心“决定”对应 reach/make/come to a decision，动作和词性一致。\",\"evidence_ids\":[\"wn31:v:00699355\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：判定（对结果或争议作出判断）\",\"relation\":\"语义等价\",\"reason\":\"扩展“判定”保留判断/决定结果的用法；证据 determine 支持结果判定，注释已限定不机械等同司法裁判。\",\"evidence_ids\":[\"wn31:v:00703643\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“决定”与“判定”按一般决定和结果判断分开；判定留扩展且注释防止过度司法化，未见来源覆盖缺口。\"},{\"id\":\"SG25-5304378d0078\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：自我毁灭（可能为引申/比喻）\",\"relation\":\"无法确定\",\"reason\":\"原文“自我毁灭”可能是比喻或引申，已 held；现有词典证据只支持自杀行为或自杀者，未支持泛化自我毁灭。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"缺少英语词典证据支持的比喻/引申“自我毁灭”范围（held 暂存）\",\"counterexample\":\"词典 suicide 指自杀行为或自杀者，未见泛化“自我毁灭”义\",\"counterexample_evidence_ids\":[\"wn31:n:00223352\",\"wn31:n:10693108\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"名词：自杀（自杀行为）\",\"relation\":\"语义等价\",\"reason\":\"核心“自杀”对应 the act of killing yourself，词性和行为义一致。\",\"evidence_ids\":[\"wn31:n:00223352\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：自毁（可能为引申/比喻）\",\"relation\":\"无法确定\",\"reason\":\"“自毁”与“自我毁灭”近似，可能是比喻；已 held，无英语词典证据直接支持该引申范围。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"缺少英语词典证据支持的比喻/引申“自毁”范围（held 暂存）\",\"counterexample\":\"词典 suicide 只列自杀行为或自杀者，不直接等于泛化“自毁”\",\"counterexample_evidence_ids\":[\"wn31:n:00223352\",\"wn31:n:10693108\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"held_source_unresolved\",\"source_ids\":[\"s001\",\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:00223352\",\"wn31:n:10693108\"],\"reason\":\"“自我毁灭/自毁”暂存待核，不能视为已覆盖；但也没有足够证据判为生成器 Major，属于来源范围或语境待核。\",\"repair_suggestion\":\"保留 held 待语境证据；若后续仍无证据，明确标注源范围待核，不要将比喻义自动加入核心。\"}],\"note\":\"明确自杀义已覆盖；自我毁灭和自毁仍属未决的比喻/引申范围，保留 held 和 pending，不当作已通过。\"},{\"id\":\"SG25-be385d45dcaf\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：引用（引述文字/言论）\",\"relation\":\"语义等价\",\"reason\":\"核心“引用”对应 repeat a passage/quote 及 make reference to，保留引述和提及来源的动词用法。\",\"evidence_ids\":[\"wn31:v:01025268\",\"wn31:v:01026199\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：引证（引用材料作证据/例证）\",\"relation\":\"语义等价\",\"reason\":\"扩展“引证”对应 advance evidence for 和 refer to for illustration or proof，保留举证/例证功能。\",\"evidence_ids\":[\"wn31:v:01017875\",\"wn31:v:01025583\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“引用”和“引证”分别覆盖引述与举证/例证；核心与扩展分工清楚，未见来源范围缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 5546,
+    "completion_tokens": 11135,
+    "total_tokens": 16681,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9141
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3626
+  },
+  "started_utc": "2026-11-13T09:40:13.054465+00:00",
+  "completed_utc": "2026-11-13T09:41:14.876953+00:00",
+  "elapsed_seconds": 61.828,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

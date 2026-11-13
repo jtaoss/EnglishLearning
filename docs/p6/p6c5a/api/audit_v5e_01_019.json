@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_019",
+  "kind": "audit",
+  "request_hash": "0139d60b93b8dda5c787052c02e93ade321e2c6702d1af171a28360884d58a19",
+  "input_ids": [
+    "SG25-c3ccedf562d9",
+    "SG25-2f1fd9f37ede",
+    "SG25-5879092f86c5",
+    "SG25-15152e5a6916",
+    "SG25-def696de03d9"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "dd777ff1-b312-4384-a1e6-bfada930e4e7",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c3ccedf562d9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：粗糙的（做工/质地粗略）\",\"relation\":\"范围收窄\",\"reason\":\"核心组注为制作粗糙，证据 wn31:s:02237329 支持“not carefully or expertly made”；原文“粗糙的”还可指表面或粗略未修饰，剩余范围未保留或暂存。\",\"evidence_ids\":[\"wn31:s:02237329\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少表面触感粗糙、粗略未加修饰等更宽范围\",\"counterexample\":\"crude facts（未加修饰/粗略的事实）为另一支持用法\",\"counterexample_evidence_ids\":[\"wn31:s:00559107\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：未经加工的\",\"relation\":\"语义等价\",\"reason\":\"“未经加工”对应 not processed/not refined or processed；证据含原材料与引申的 raw data，但均属未处理、未精炼范围。\",\"evidence_ids\":[\"wn31:s:00418723\",\"wn31:a:01960289\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：原油\",\"relation\":\"语义等价\",\"reason\":\"名词“原油”对应 a dark oil consisting mainly of hydrocarbons，词性与对象一致。\",\"evidence_ids\":[\"wn31:n:15005138\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-c3ccedf562d9:core:2\"],\"evidence_ids\":[\"wn31:s:02237329\",\"wn31:s:00559107\"],\"reason\":\"核心组把“粗糙的”实际限定为制作粗糙，但原文“粗糙的”可能更宽；crude 另有“粗略/未加修饰”证据，当前未明确保留或标待核。\",\"repair_suggestion\":\"在 core:2 注释中明确“制作粗糙”，并把表面质地、粗略未修饰等剩余范围标为来源待核，避免读者理解为所有“粗糙”。\"}],\"note\":\"两形容词义与名词义均有对应组；s001“粗糙的”仅证据明确做工粗糙，更宽范围待核，故整体部分覆盖。\"},{\"id\":\"SG25-2f1fd9f37ede\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：培养（能力/品质）\",\"relation\":\"语义等价\",\"reason\":\"“培养”对应 foster the growth of，对象可为能力、品质或事物成长，词性一致。\",\"evidence_ids\":[\"wn31:v:01746607\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：教育（限修养/鉴赏等培养）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组保留“教育”，但注释和证据限定为 teach/refine taste or judgment；一般学校教育或系统教学没有证据支持。\",\"evidence_ids\":[\"wn31:v:02393545\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"缺少一般教育/学校教学范围（英语证据不支持）\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"动词：磨炼（意志/能力）\",\"relation\":\"无法确定\",\"reason\":\"s003 已 held；现有证据只支持培养或陶冶品味/判断力，不能直接覆盖“磨炼意志”等一般磨炼义。\",\"evidence_ids\":[\"wn31:v:02393545\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般磨炼/意志锻炼范围（暂存）\",\"counterexample\":\"cultivate musical taste（培养/陶冶音乐鉴赏力）不等于磨炼意志\",\"counterexample_evidence_ids\":[\"wn31:v:02393545\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-2f1fd9f37ede:extended:1\"],\"evidence_ids\":[\"wn31:v:02393545\"],\"reason\":\"扩展组显示“教育”较宽，注释虽限定为品味/判断力培养，但一般教育范围未明示暂存。\",\"repair_suggestion\":\"保持注释中的对象限制，必要时把“一般教育/学校教学”标为来源范围待核，避免泛化。\"},{\"severity\":\"Minor\",\"kind\":\"unresolved_source_sense\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:02393545\"],\"reason\":\"s003“磨炼”仍 held，未被任何组覆盖；证据只支持陶冶/鉴赏力培养，不足以确认一般磨炼义。\",\"repair_suggestion\":\"保留 pending；不要用 extended:1“教育”自动借义覆盖。如后续需保留“陶冶/培养品质”，应另立候选并明确对象。\"}],\"note\":\"培养为核心且证据直接；教育扩展但限修养鉴赏；磨炼暂存，整体部分覆盖。\"},{\"id\":\"SG25-5879092f86c5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：准确性\",\"relation\":\"语义等价\",\"reason\":\"“准确性”对应 the quality of being near to the true value，核心组合并准确性与准确度，未混入数学有效位数专义。\",\"evidence_ids\":[\"wn31:n:04810156\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：准确度\",\"relation\":\"语义等价\",\"reason\":\"“准确度”与“准确性”在本原文均围绕接近真实值，证据支持该一般测量/结果含义。\",\"evidence_ids\":[\"wn31:n:04810156\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义名词义合为一个核心组，证据对应接近真实值，未混入数学有效位数专义。\"},{\"id\":\"SG25-15152e5a6916\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：治愈\",\"relation\":\"语义等价\",\"reason\":\"“治愈”对应 provide a cure for/make healthy again，动作与结果方向一致。\",\"evidence_ids\":[\"wn31:v:00081478\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：疗法\",\"relation\":\"语义等价\",\"reason\":\"“疗法”对应 a medicine or therapy that cures disease or relieves pain，名词手段义一致。\",\"evidence_ids\":[\"wn31:n:04081594\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词治愈与名词疗法均直接对应核心证据，词性和对象一致。\"},{\"id\":\"SG25-def696de03d9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：发生\",\"relation\":\"语义等价\",\"reason\":\"“发生”对应 come to pass，核心组证据直接支持事件发生义。\",\"evidence_ids\":[\"wn31:v:00340744\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：碰巧/恰巧（待核）\",\"relation\":\"无法确定\",\"reason\":\"“碰巧”与 occur 的发生义不直接对应；相关 occur to 表示“想到”，不是“碰巧”，源译存在冲突，暂存合理。\",\"evidence_ids\":[\"wn31:v:00725311\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少“碰巧/恰巧”范围（occur 证据不支持）\",\"counterexample\":\"It occurred to me...（我想到……）不是“碰巧”\",\"counterexample_evidence_ids\":[\"wn31:v:00725311\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_semantic_conflict\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00725311\"],\"reason\":\"原文“碰巧”与 occur 的“发生/想到”不直接对应；occur to me 表示想到，不是碰巧。当前 held 正确，但该源义仍未解决。\",\"repair_suggestion\":\"保持 held/pending；不要把“碰巧”映射为 occur。若需“想到”，应作为 occur to 的独立用法另行候选。\"}],\"note\":\"发生义核心覆盖良好；“碰巧”与 occur 语义冲突，暂存未决，整体不确定。\"}]}",
+  "usage": {
+    "prompt_tokens": 5695,
+    "completion_tokens": 12761,
+    "total_tokens": 18456,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10726
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3775
+  },
+  "started_utc": "2026-11-13T09:40:13.170524+00:00",
+  "completed_utc": "2026-11-13T09:41:26.337489+00:00",
+  "elapsed_seconds": 73.172,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,19 @@
+{
+  "before": [
+    [
+      "scholar",
+      [
+        {
+          "kind": "frequency_wording_requires_evidence_review",
+          "field": "selection_reason",
+          "snippet": "首屏先给最常用的‘学者’，并把同指人文学习者的‘文人’并入同组；",
+          "confirmed_error": false,
+          "possible_false_positive": "negation, quoted warning or explicitly hypothetical wording must be read in context",
+          "not_a_semantic_coverage_test": true
+        }
+      ]
+    ]
+  ],
+  "after": [],
+  "is_lexical_advisory_not_semantic_proof": true
+}

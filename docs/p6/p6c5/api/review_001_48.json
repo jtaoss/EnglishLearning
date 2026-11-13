@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_48",
+  "request_hash": "850c961303e5aa1a24f1ce8766b356e0763387322bb1577be33d3befb9a5e553",
+  "started_utc": "2026-11-13T08:16:14.285028+00:00",
+  "completed_utc": "2026-11-13T08:18:02.268429+00:00",
+  "elapsed_seconds": 107.985,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d1e05fa9-35ec-42c3-9002-07cf6a8655d6",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3037,
+    "completion_tokens": 5398,
+    "total_tokens": 8435,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4732
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 989
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-13d853006f71\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"名词义使用宽义 WordNet wn31:n:10427699 'someone who supports or champions something' 覆盖源片段 '赞助者'。源词在中文通常指提供赞助（常为资金）的人或机构，候选 display 同时列出 '支持者'，虽有 usage_note 说明窄义未证实，但并列可能使学习者把一般支持者等同于赞助者。该窄义是否为源义需人工确认。\",\n          \"evidence_ids\": [\n            \"wn31:n:10427699\"\n          ],\n          \"source_sense_ids\": [\n            \"s003\"\n          ],\n          \"candidate_group_ref\": \"SG25-13d853006f71:p6c5:core_meanings:3\",\n          \"proposed_fix\": \"将 display 保留为 '赞助者' 并在 usage_note 中提示可宽用为支持者；若确认金融赞助为源义，增加 '出资方/赞助商' 独立提示。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"missing_dictionary_addition\",\n          \"reason\": \"外部词典存在原文未包含但可能重要的独立用法未被 candidate 跟踪：wn31:n:10485764 'an advocate who presents a person (as for an award or a degree or an introduction etc.)' 与 wn31:v:02471557 'do one's shopping at; be a customer or client of'。规则要求重要外部用途显式挂到 dictionary_additions，而不是静默省略。\",\n          \"evidence_ids\": [\n            \"wn31:n:10485764\",\n            \"wn31:v:02471557\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"在 dictionary_additions 中增加这两条，状态 AI_candidate_not_adopted，层级建议 other/扩展；无需进入核心。\"\n        }\n      ],\n      \"preferences\": [\n        \"名词组中把 '支持者' 作为宽义注释而非并列核心，以免掩盖 '赞助者' 的出资含义。\",\n        \"动词 '赞助' 可保留 '资助' 作为同义提示，但教学时可说明 '资助' 更侧重资金支持，'赞助' 还可包含名义/设备等。\",\n        \"可把 sponsor 的 'advocate/presenter' 与 'patron/customer' 义列入扩展或 other，待后续人工决定是否采用。\"\n      ],\n      \"note\": \"候选覆盖源三个义项，词性无误；名词义采用宽 WordNet 支持者定义，窄义出资者待确认。外部词典两个独立义项未在 dictionary_additions 跟踪，需补挂。未发现 Critical/Major 错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

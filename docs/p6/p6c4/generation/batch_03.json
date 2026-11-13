@@ -1,0 +1,4818 @@
+{
+  "batch": 3,
+  "record_count": 20,
+  "decision_file_sha256": "356d21cd23a85398fb6b36472e7baa559eab56ea4b896a444edeea4a144d1062",
+  "records": [
+    {
+      "stable_id": "SG25-36bde66f289a",
+      "headword": "manual",
+      "part_of_speech": "名词；形容词",
+      "book_category": "偶考词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-36bde66f289a",
+        "word": "manual",
+        "meaning_zh": "名词：手册；形容词：手工的",
+        "book_category": "偶考词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "621",
+        "source_index_pages": "750",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词；形容词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06421685-n;00895135-n;02759190-a;00182843-a;02557023-a",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "2015官方附录明确列出本词形，优先保留；不推断2025归属或官方词频。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":120,\"printed_form\":\"manual\",\"printed_page\":116,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "f34d42fb4cb506281123611eb4ae663ec2410c27b45c0f87c9a81870f4bee497",
+      "original_meaning_zh": "名词：手册；形容词：手工的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "手册",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "手工的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "手册",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06433328"
+          ],
+          "usage_note": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+          "sense_group_id": "SG25-36bde66f289a:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "手册",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06433328"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "手工的；由人手操作的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:00184143",
+            "wn31:a:02769962"
+          ],
+          "usage_note": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+          "sense_group_id": "SG25-36bde66f289a:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "手工的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:a:00184143",
+                "wn31:a:02769962"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-36bde66f289a:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "手册",
+          "scope_and_roles": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+          "evidence_ids": [
+            "wn31:n:06433328"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-36bde66f289a:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "手工的；由人手操作的",
+          "scope_and_roles": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+          "evidence_ids": [
+            "wn31:a:00184143",
+            "wn31:a:02769962"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers",
+        "形容词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+      "selection_reason": "书本资料与手工操作性质分开；不把需要人力与纸本手册误合。",
+      "risk_flags": [
+        "multiple_source_POS"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:a:00184143",
+          "part_of_speech": "a",
+          "definition_en": "requiring human effort; \"a manual transmission\"",
+          "lemmas": [
+            "manual"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:02769962",
+          "part_of_speech": "a",
+          "definition_en": "of or relating to the hands; \"manual dexterity\"",
+          "lemmas": [
+            "manual"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06433328",
+          "part_of_speech": "n",
+          "definition_en": "a small handbook",
+          "lemmas": [
+            "manual"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-0e031e954a43",
+      "headword": "could",
+      "part_of_speech": "情态动词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-0e031e954a43",
+        "word": "could",
+        "meaning_zh": "能够；可能（can的过去式或委婉形式）",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "710",
+        "source_index_pages": "735",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "情态动词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":102,\"printed_form\":\"could\",\"printed_page\":98,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "50e5fc4f35507da18f90fa80da2bd88acde9fa9b06c98d9c979a0cfeebad39a5",
+      "original_meaning_zh": "能够；可能（can的过去式或委婉形式）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "能够",
+          "part_of_speech": "情态动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "可能（can的过去式或委婉形式）",
+          "part_of_speech": "情态动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 19
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "情态动词",
+          "display_zh": "能够（过去能力或假设条件中的能力）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "usage_note": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+          "sense_group_id": "SG25-0e031e954a43:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "能够",
+              "original_pos": "情态动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "pub:could"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "情态动词",
+          "display_zh": "可能",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "usage_note": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+          "sense_group_id": "SG25-0e031e954a43:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "可能（can的过去式或委婉形式）",
+              "original_pos": "情态动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "pub:could"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "情态动词",
+          "display_zh": "能否……（委婉请求或请求许可）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "usage_note": "该用途来自原括号委婉形式的AI解释；括号作用范围未逐义标注。",
+          "sense_group_id": "SG25-0e031e954a43:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "可能（can的过去式或委婉形式）",
+              "original_pos": "情态动词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "pub:could"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "完整原片段同时写可能与委婉形式，分开可能性和请求功能；不把请求译成事情可能发生。",
+          "uses": [
+            {
+              "use_id": "SG25-0e031e954a43:p6c4:core_meanings:2",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "part_of_speech": "情态动词",
+              "meaning_zh": "可能",
+              "scope_and_roles": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+              "evidence_ids": [
+                "pub:could"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-0e031e954a43:p6c4:extended_meanings:1",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "part_of_speech": "情态动词",
+              "meaning_zh": "能否……（委婉请求或请求许可）",
+              "scope_and_roles": "该用途来自原括号委婉形式的AI解释；括号作用范围未逐义标注。",
+              "evidence_ids": [
+                "pub:could"
+              ],
+              "location": "extended_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        }
+      ],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-0e031e954a43:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "能够（过去能力或假设条件中的能力）",
+          "scope_and_roles": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-0e031e954a43:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "可能",
+          "scope_and_roles": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-0e031e954a43:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "能否……（委婉请求或请求许可）",
+          "scope_and_roles": "该用途来自原括号委婉形式的AI解释；括号作用范围未逐义标注。",
+          "evidence_ids": [
+            "pub:could"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "情态动词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+      "selection_reason": "能力与可能性分开；could不一定只指过去。原括号还提示委婉形式，另保留请求用途。",
+      "risk_flags": [
+        "source_parenthetical_scope_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "pub:could",
+          "headword": "could",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/could",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "情态动词接动词原形，可表达过去能力、可能或假设；也用于委婉请求/提议，不是全部用法都指过去时间。",
+          "pos_supported": [
+            "情态动词"
+          ]
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-c0d2856b74d0",
+      "headword": "field",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-c0d2856b74d0",
+        "word": "field",
+        "meaning_zh": "田野；领域；字段",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "697",
+        "source_index_pages": "742",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 08569998-n;08506641-n;08569777-n;01082290-v;01081852-v;00815539-v",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":110,\"printed_form\":\"field\",\"printed_page\":106,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "da483c6adbf16af71ba9d762598bb2780e59d2bf8e61825c83907a48aa919065",
+      "original_meaning_zh": "田野；领域；字段",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "田野",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "领域",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "字段",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "田野；田地",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:08587527",
+            "wn31:n:09416498"
+          ],
+          "usage_note": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+          "sense_group_id": "SG25-c0d2856b74d0:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "田野",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08587527",
+                "wn31:n:09416498"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "领域（知识、活动等）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06005806",
+            "wn31:n:14537641"
+          ],
+          "usage_note": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+          "sense_group_id": "SG25-c0d2856b74d0:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "领域",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06005806",
+                "wn31:n:14537641"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "字段（计算机数据单元）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:08022022"
+          ],
+          "usage_note": "计算机专业用途；后学不是未经证实的低频标签。",
+          "sense_group_id": "SG25-c0d2856b74d0:p6c4:other_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "字段",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:08022022"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-c0d2856b74d0:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "田野；田地",
+          "scope_and_roles": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+          "evidence_ids": [
+            "wn31:n:08587527",
+            "wn31:n:09416498"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-c0d2856b74d0:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "领域（知识、活动等）",
+          "scope_and_roles": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+          "evidence_ids": [
+            "wn31:n:06005806",
+            "wn31:n:14537641"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-c0d2856b74d0:p6c4:other_meanings:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "字段（计算机数据单元）",
+          "scope_and_roles": "计算机专业用途；后学不是未经证实的低频标签。",
+          "evidence_ids": [
+            "wn31:n:08022022"
+          ],
+          "location": "other_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+      "selection_reason": "具体地块与抽象活动领域分别记；数据库字段标专业语境，仍完整保存。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06005806",
+          "part_of_speech": "n",
+          "definition_en": "a branch of knowledge; \"in what discipline is his doctorate?\"; \"teachers should be well trained in their subject\"; \"anthropology is the study of human beings\"",
+          "lemmas": [
+            "discipline",
+            "subject",
+            "subject_area",
+            "subject_field",
+            "field",
+            "field_of_study",
+            "study",
+            "bailiwick"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08022022",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) a set of one or more adjacent characters comprising a unit of information",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08587527",
+          "part_of_speech": "n",
+          "definition_en": "a piece of land cleared of trees and usually enclosed; \"he planted a field of wheat\"",
+          "lemmas": [
+            "field"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09416498",
+          "part_of_speech": "n",
+          "definition_en": "extensive tract of level open land; \"they emerged from the woods onto a vast open plain\"; \"he longed for the fields of his youth\"",
+          "lemmas": [
+            "plain",
+            "field",
+            "champaign"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14537641",
+          "part_of_speech": "n",
+          "definition_en": "a particular environment or walk of life; \"his social sphere is limited\"; \"it was a closed area of employment\"; \"he's out of my orbit\"",
+          "lemmas": [
+            "sphere",
+            "domain",
+            "area",
+            "orbit",
+            "field",
+            "arena"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-14ebe56a5008",
+      "headword": "break",
+      "part_of_speech": "动词；名词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-14ebe56a5008",
+        "word": "break",
+        "meaning_zh": "打破；休息",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "688",
+        "source_index_pages": "731",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写；词性/常用义/例句复核（AI）；待个人确认",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "动词；名词",
+        "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+        "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+        "example_en": "Be careful not to break the glass.",
+        "example_zh": "小心别打碎玻璃杯。",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词全部保留；本批优先日常通用词。",
+        "phonics_note": "ea 在本词不按 bread 或 meat 套用，需记本词长元音读法。",
+        "syllables": "break",
+        "stress": "单音节；句中强弱随语境变化",
+        "reading_review_status": "逐词分块与CMUdict美式音节数/主重音对照（AI）；非个人确认或自动发音评分",
+        "audio_status": "待补充；缺音频不阻塞学习",
+        "audio_source": "",
+        "audio_license": "无已核验可分发音频",
+        "pets2015_evidence": "PDF96/书内92：break",
+        "pets2015_match_method": "explicit_form_case_sensitive_no_stemming"
+      },
+      "source_hash": "dcd5ccc71f5fc4f3c8865357c27584685869a6794eca9ab50ced3ebefb09b917",
+      "original_meaning_zh": "打破；休息",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "打破",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "休息",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "打破；使破裂",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00335806"
+          ],
+          "usage_note": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "sense_group_id": "SG25-14ebe56a5008:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "打破",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:00335806"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "休息；间歇",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:01064921"
+          ],
+          "usage_note": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "sense_group_id": "SG25-14ebe56a5008:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "休息",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:01064921"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "休息；暂时停止活动",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00781106"
+          ],
+          "usage_note": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "sense_group_id": "SG25-14ebe56a5008:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "休息",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:00781106"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "破裂（自身）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00334996"
+          ],
+          "reason": "原打破是使动，非使动变化另作候选。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-14ebe56a5008:p6c4:addition:1",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（机器等）坏掉；停止运转",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00435327"
+          ],
+          "reason": "故障状态不同于物体被打破。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-14ebe56a5008:p6c4:addition:2",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "违反（规则、承诺等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02572443"
+          ],
+          "reason": "非物理规则违背单列，不伪装原文已有。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-14ebe56a5008:p6c4:addition:3",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "原休息支持名词间歇和停止活动的动词，分别引用。",
+          "uses": [
+            {
+              "use_id": "SG25-14ebe56a5008:p6c4:core_meanings:2",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "part_of_speech": "名词",
+              "meaning_zh": "休息；间歇",
+              "scope_and_roles": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+              "evidence_ids": [
+                "wn31:n:01064921"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-14ebe56a5008:p6c4:extended_meanings:1",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "part_of_speech": "动词",
+              "meaning_zh": "休息；暂时停止活动",
+              "scope_and_roles": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+              "evidence_ids": [
+                "wn31:v:00781106"
+              ],
+              "location": "extended_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        }
+      ],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-14ebe56a5008:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "打破；使破裂",
+          "scope_and_roles": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "evidence_ids": [
+            "wn31:v:00335806"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-14ebe56a5008:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "休息；间歇",
+          "scope_and_roles": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "evidence_ids": [
+            "wn31:n:01064921"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-14ebe56a5008:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "休息；暂时停止活动",
+          "scope_and_roles": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+          "evidence_ids": [
+            "wn31:v:00781106"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "动词": "represented_in_source_derived_layers",
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+      "selection_reason": "使物体破裂与休息名词分开；休息也有动词用法，不按片段顺序排除。",
+      "risk_flags": [
+        "external_use_candidates_pending_adoption",
+        "multiple_source_POS",
+        "source_fragment_POS_correspondence_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:01064921",
+          "part_of_speech": "n",
+          "definition_en": "a pause from doing something (as work); \"we took a 10-minute break\"; \"he took time out to recuperate\"",
+          "lemmas": [
+            "respite",
+            "recess",
+            "break",
+            "time_out"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00334996",
+          "part_of_speech": "v",
+          "definition_en": "become separated into pieces or fragments; \"The figurine broke\"; \"The freshly baked loaf fell apart\"",
+          "lemmas": [
+            "break",
+            "separate",
+            "split_up",
+            "fall_apart",
+            "come_apart"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00335806",
+          "part_of_speech": "v",
+          "definition_en": "destroy the integrity of; usually by force; cause to separate into pieces or fragments; \"He broke the glass plate\"; \"She broke the match\"",
+          "lemmas": [
+            "break"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00435327",
+          "part_of_speech": "v",
+          "definition_en": "stop operating or functioning; \"The engine finally went\"; \"The car died on the road\"; \"The bus we travelled in broke down on the way to town\"; \"The coffee maker broke\"; \"The engine failed on the way to town\"; \"her eyesight went after the accident\"",
+          "lemmas": [
+            "fail",
+            "go_bad",
+            "give_way",
+            "die",
+            "give_out",
+            "conk_out",
+            "go",
+            "break",
+            "break_down"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00781106",
+          "part_of_speech": "v",
+          "definition_en": "cease an action temporarily; \"We pause for station identification\"; \"let's break for lunch\"",
+          "lemmas": [
+            "pause",
+            "intermit",
+            "break"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02572443",
+          "part_of_speech": "v",
+          "definition_en": "act in disregard of laws, rules, contracts, or promises; \"offend all laws of humanity\"; \"violate the basic laws or human civilization\"; \"break a law\"; \"break a promise\"",
+          "lemmas": [
+            "transgress",
+            "offend",
+            "infract",
+            "violate",
+            "go_against",
+            "breach",
+            "break"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-cf0fa94d4532",
+      "headword": "strain",
+      "part_of_speech": "名词；动词",
+      "book_category": "高频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-cf0fa94d4532",
+        "word": "strain",
+        "meaning_zh": "名词：压力，拉伤；动词：使紧张，拉伤",
+        "book_category": "高频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "162",
+        "source_index_pages": "764",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词；动词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 11515325-n;14410089-n;07028373-n;01146051-v;01798452-v;01165579-v",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":139,\"printed_form\":\"strain\",\"printed_page\":135,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "5f4ff8a09c483122d66db65c4c1da41ce6e3378d10684dbbc2cbe3d5c4797946",
+      "original_meaning_zh": "名词：压力，拉伤；动词：使紧张，拉伤",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "压力",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "拉伤",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使紧张",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "拉伤",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "压力；负担（心理或资源等）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14433493",
+            "pub:strain"
+          ],
+          "usage_note": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "sense_group_id": "SG25-cf0fa94d4532:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "压力",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:14433493",
+                "pub:strain"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "肌肉拉伤",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:14321604"
+          ],
+          "usage_note": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "sense_group_id": "SG25-cf0fa94d4532:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "拉伤",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:14321604"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使紧张；使承受压力",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00025196",
+            "pub:strain"
+          ],
+          "usage_note": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "sense_group_id": "SG25-cf0fa94d4532:p6c4:core_meanings:3",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "使紧张",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:v:00025196",
+                "pub:strain"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "拉伤（肌肉等）",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "pub:strain"
+          ],
+          "usage_note": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "sense_group_id": "SG25-cf0fa94d4532:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s004",
+              "original_gloss": "拉伤",
+              "original_pos": "动词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "pub:strain"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-cf0fa94d4532:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "压力；负担（心理或资源等）",
+          "scope_and_roles": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "evidence_ids": [
+            "wn31:n:14433493",
+            "pub:strain"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-cf0fa94d4532:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "肌肉拉伤",
+          "scope_and_roles": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "evidence_ids": [
+            "wn31:n:14321604"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-cf0fa94d4532:p6c4:core_meanings:3",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "使紧张；使承受压力",
+          "scope_and_roles": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "evidence_ids": [
+            "wn31:v:00025196",
+            "pub:strain"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-cf0fa94d4532:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "拉伤（肌肉等）",
+          "scope_and_roles": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+          "evidence_ids": [
+            "pub:strain"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers",
+        "动词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+      "selection_reason": "精神/资源负担与肌肉损伤不同，拉伤动词用明确出版社证据，不能拿紧张义代替。",
+      "risk_flags": [
+        "multiple_source_POS"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "pub:strain",
+          "headword": "strain",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/strain",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词可指心理或资源压力、肌肉拉伤；动词可使承受紧张/负担，或因过度用力/扭转造成拉伤。还分列过滤、品系等不同用法，不能因有心理紧张便当作拉伤证据。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:14321604",
+          "part_of_speech": "n",
+          "definition_en": "injury to a muscle (often caused by overuse); results in swelling and pain",
+          "lemmas": [
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14433493",
+          "part_of_speech": "n",
+          "definition_en": "difficulty that causes worry or emotional tension; \"she endured the stresses and strains of life\"; \"he presided over the economy during the period of the greatest stress and danger\"- R.J.Samuelson",
+          "lemmas": [
+            "stress",
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00025196",
+          "part_of_speech": "v",
+          "definition_en": "cause to be tense and uneasy or nervous or anxious; \"he got a phone call from his lawyer that tensed him up\"",
+          "lemmas": [
+            "tense",
+            "strain",
+            "tense_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-ca00fccfb408",
+      "headword": "error",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-ca00fccfb408",
+        "word": "error",
+        "meaning_zh": "失误；弄错；错误",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "694",
+        "source_index_pages": "740",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 00070965-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":108,\"printed_form\":\"error\",\"printed_page\":104,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "ee2c849318b2a217a0b311309beeaf80a43cec55d49e4b4f2ff733f92bda7bdf",
+      "original_meaning_zh": "失误；弄错；错误",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "失误",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "弄错",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "错误",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "错误；失误（行为、认识或表达中的不正确）",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:00071785",
+            "wn31:n:04809878",
+            "wn31:n:06782183"
+          ],
+          "usage_note": "原弄错在名词栏按弄错这一行为理解，不把英文判为动词。",
+          "sense_group_id": "SG25-ca00fccfb408:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "失误",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:00071785",
+                "wn31:n:04809878",
+                "wn31:n:06782183"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "弄错",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:00071785",
+                "wn31:n:04809878",
+                "wn31:n:06782183"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "错误",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:00071785",
+                "wn31:n:04809878",
+                "wn31:n:06782183"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-ca00fccfb408:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "错误；失误（行为、认识或表达中的不正确）",
+          "scope_and_roles": "原弄错在名词栏按弄错这一行为理解，不把英文判为动词。",
+          "evidence_ids": [
+            "wn31:n:00071785",
+            "wn31:n:04809878",
+            "wn31:n:06782183"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "错误框架保留行为与内容的不同对象，三个源片段不删；没有声称它们是同一个细分词典义。",
+      "selection_reason": "错误框架保留行为与内容的不同对象，三个源片段不删；没有声称它们是同一个细分词典义。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:00071785",
+          "part_of_speech": "n",
+          "definition_en": "a wrong action attributable to bad judgment or ignorance or inattention; \"he made a bad mistake\"; \"she was quick to point out my errors\"; \"I could understand his English in spite of his grammatical faults\"",
+          "lemmas": [
+            "mistake",
+            "error",
+            "fault"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04809878",
+          "part_of_speech": "n",
+          "definition_en": "inadvertent incorrectness",
+          "lemmas": [
+            "erroneousness",
+            "error"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06782183",
+          "part_of_speech": "n",
+          "definition_en": "part of a statement that is not correct; \"the book was full of errors\"",
+          "lemmas": [
+            "error",
+            "mistake"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-4ae1b844e0e9",
+      "headword": "tension",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-4ae1b844e0e9",
+        "word": "tension",
+        "meaning_zh": "不安；压力；紧张",
+        "book_category": "高频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "171",
+        "source_index_pages": "766",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 14376188-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":141,\"printed_form\":\"tension\",\"printed_page\":137,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "a5c1a6bacec699d72f365efb3d77ac5c81df0c463da885d148fb9491730e83c1",
+      "original_meaning_zh": "不安；压力；紧张",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "不安",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "压力",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "紧张",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "紧张；不安；心理压力",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14399593"
+          ],
+          "usage_note": "这里按精神情绪承压说明原压力，不等同任意物理压力。",
+          "sense_group_id": "SG25-4ae1b844e0e9:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "不安",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:14399593"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "压力",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:14399593"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "紧张",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:14399593"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "张力；拉力",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:11535484"
+          ],
+          "reason": "物理受拉应力与心理压力不同。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-4ae1b844e0e9:p6c4:addition:1",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        }
+      ],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-4ae1b844e0e9:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "紧张；不安；心理压力",
+          "scope_and_roles": "这里按精神情绪承压说明原压力，不等同任意物理压力。",
+          "evidence_ids": [
+            "wn31:n:14399593"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "心理紧张类中文合组；物理张力另列词典候选，不能无证据隐藏到原文内。",
+      "selection_reason": "心理紧张类中文合组；物理张力另列词典候选，不能无证据隐藏到原文内。",
+      "risk_flags": [
+        "external_use_candidates_pending_adoption"
+      ],
+      "risk_level": "high",
+      "coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:11535484",
+          "part_of_speech": "n",
+          "definition_en": "(physics) a stress that produces an elongation of an elastic physical body; \"the direction of maximum tension moves asymptotically toward the direction of the shear\"",
+          "lemmas": [
+            "tension"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14399593",
+          "part_of_speech": "n",
+          "definition_en": "(psychology) a state of mental or emotional strain or suspense; \"he suffered from fatigue and emotional tension\"; \"stress is a vasoconstrictor\"",
+          "lemmas": [
+            "tension",
+            "tenseness",
+            "stress"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-a467a313e8c3",
+      "headword": "intercourse",
+      "part_of_speech": "名词",
+      "book_category": "偶考词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-a467a313e8c3",
+        "word": "intercourse",
+        "meaning_zh": "性交；交往（较正式或旧式用法）",
+        "book_category": "偶考词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "602",
+        "source_index_pages": "747",
+        "book_verification": "已核验",
+        "meaning_review_status": "出版社/官方来源对照后独立编写；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "未直接列出",
+        "pets2025_status": "待核实",
+        "library_class": "扩展",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://dictionary.cambridge.org/dictionary/english/intercourse ; https://www.collinsdictionary.com/dictionary/english/intercourse",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P2",
+        "selection_reason": "AI建议保留intercourse，用于沟通、信息与阅读；采用的常用义为“性交；交往（较正式或旧式用法）”。优先级P2；主观用途判断，无客观语料词频或官方考试频率断言。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[]",
+        "pets2015_match_method": "complete_explicit_form_lookup_no_hit"
+      },
+      "source_hash": "f61902a2abfb2a2fe08d310ba6a10e3bf2a1fe74e46f467e03929ed5674061a0",
+      "original_meaning_zh": "性交；交往（较正式或旧式用法）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "性交",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "交往（较正式或旧式用法）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "性交",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00847184",
+            "pub:intercourse"
+          ],
+          "usage_note": "性行为与社会交往明显不同；社会交往放带语体限制的其他层，不用其替换所有日常交流。",
+          "sense_group_id": "SG25-a467a313e8c3:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "性交",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:00847184",
+                "pub:intercourse"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "交往；交流（部分词典标旧式）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07149153",
+            "pub:intercourse"
+          ],
+          "usage_note": "原文较正式或旧式完整保留；COBUILD明确标交往义old-fashioned，不能把性交项formal标签搬过来。",
+          "sense_group_id": "SG25-a467a313e8c3:p6c4:other_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "交往（较正式或旧式用法）",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:07149153",
+                "pub:intercourse"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-a467a313e8c3:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "性交",
+          "scope_and_roles": "性行为与社会交往明显不同；社会交往放带语体限制的其他层，不用其替换所有日常交流。",
+          "evidence_ids": [
+            "wn31:n:00847184",
+            "pub:intercourse"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-a467a313e8c3:p6c4:other_meanings:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "交往；交流（部分词典标旧式）",
+          "scope_and_roles": "原文较正式或旧式完整保留；COBUILD明确标交往义old-fashioned，不能把性交项formal标签搬过来。",
+          "evidence_ids": [
+            "wn31:n:07149153",
+            "pub:intercourse"
+          ],
+          "location": "other_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "性行为与社会交往明显不同；社会交往放带语体限制的其他层，不用其替换所有日常交流。",
+      "selection_reason": "性行为与社会交往明显不同；社会交往放带语体限制的其他层，不用其替换所有日常交流。",
+      "risk_flags": [
+        "source_register_qualifier_partly_unverified"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "pub:intercourse",
+          "headword": "intercourse",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/intercourse",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词有性交以及个人或群体间的交往/交流。COBUILD把社会交往义标为old-fashioned，性交项另标formal；不能把前一项formal标签转用于后一项。其他分词典列交往义而未同样标语体。原文交往的较正式或旧式表述保留，但本轮只独立确认该分词典的旧式提示。",
+          "pos_supported": [
+            "名词"
+          ],
+          "observation_before_erratum": "名词有性交，亦有个人或群体之间交往/交流；社会交往义带正式语体提示，需要具体语境，不能在普通日常聊天场合不加限定地替代communication。",
+          "erratum_reason": "补充包封存后的逐标签核对发现概述不够精确；保留原包，显式勘误，不覆盖记录。此时尚无生成或盲审答案。"
+        },
+        {
+          "evidence_id": "wn31:n:00847184",
+          "part_of_speech": "n",
+          "definition_en": "sexual activity between individuals, especially the insertion of a man's penis into a woman's vagina until orgasm and ejaculation occur",
+          "lemmas": [
+            "sexual_intercourse",
+            "intercourse",
+            "sex_act",
+            "copulation",
+            "coitus",
+            "coition",
+            "sexual_congress",
+            "sexual_relation",
+            "relation",
+            "carnal_knowledge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07149153",
+          "part_of_speech": "n",
+          "definition_en": "communication between individuals",
+          "lemmas": [
+            "intercourse",
+            "social_intercourse"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-89b91df19d9d",
+      "headword": "background",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-89b91df19d9d",
+        "word": "background",
+        "meaning_zh": "背景；经历",
+        "book_category": "高频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "190",
+        "source_index_pages": "730",
+        "book_verification": "已核验",
+        "meaning_review_status": "来源对照复核（AI）；待个人确认",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+        "example_en": "His background in music helped him learn sound editing.",
+        "example_zh": "他的音乐经历有助于他学习声音编辑。",
+        "learning_priority": "P1",
+        "selection_reason": "保留既有稳定 ID；原书高频/中频/基础词全部保留。",
+        "phonics_note": "主重音在 back；ground 的 ou 为双元音组合。",
+        "syllables": "back · ground",
+        "stress": "第1音节主重读：BACK · ground",
+        "reading_review_status": "逐词分块与CMUdict美式音节数/主重音对照（AI）；非个人确认或自动发音评分",
+        "audio_status": "待补充；缺音频不阻塞学习",
+        "audio_source": "",
+        "audio_license": "无已核验可分发音频",
+        "pets2015_evidence": "PDF93/书内89：background",
+        "pets2015_match_method": "explicit_form_case_sensitive_no_stemming"
+      },
+      "source_hash": "846c2bda38f2f0e21a26af925f348c5446f36bf0529140df54f375a96c57ff18",
+      "original_meaning_zh": "背景；经历",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "背景",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "经历",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "背景（场景或事情背后的情况）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14536861",
+            "wn31:n:05942570",
+            "wn31:n:05831841"
+          ],
+          "usage_note": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+          "sense_group_id": "SG25-89b91df19d9d:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "背景",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:14536861",
+                "wn31:n:05942570",
+                "wn31:n:05831841"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "经历；个人背景",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:04928594"
+          ],
+          "usage_note": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+          "sense_group_id": "SG25-89b91df19d9d:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "经历",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:04928594"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-89b91df19d9d:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "背景（场景或事情背后的情况）",
+          "scope_and_roles": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+          "evidence_ids": [
+            "wn31:n:14536861",
+            "wn31:n:05942570",
+            "wn31:n:05831841"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-89b91df19d9d:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "经历；个人背景",
+          "scope_and_roles": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+          "evidence_ids": [
+            "wn31:n:04928594"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+      "selection_reason": "环境/情境背景与个人经历分开提示，避免用同一个裸背景吞掉不同对象。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:04928594",
+          "part_of_speech": "n",
+          "definition_en": "a person's social heritage: previous experience or training; \"he is a lawyer with a sports background\"",
+          "lemmas": [
+            "background"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05831841",
+          "part_of_speech": "n",
+          "definition_en": "information that is essential to understanding a situation or problem; \"the embassy filled him in on the background of the incident\"",
+          "lemmas": [
+            "background",
+            "background_knowledge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05942570",
+          "part_of_speech": "n",
+          "definition_en": "the part of a scene (or picture) that lies behind objects in the foreground; \"he posed her against a background of rolling hills\"",
+          "lemmas": [
+            "background",
+            "ground"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14536861",
+          "part_of_speech": "n",
+          "definition_en": "the state of the environment in which a situation exists; \"you can't do that in a university setting\"",
+          "lemmas": [
+            "setting",
+            "background",
+            "scope"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-de0152f95277",
+      "headword": "chemistry",
+      "part_of_speech": "名词",
+      "book_category": "中频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-de0152f95277",
+        "word": "chemistry",
+        "meaning_zh": "化学",
+        "book_category": "中频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "307",
+        "source_index_pages": "733",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06084469-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":98,\"printed_form\":\"chemistry\",\"printed_page\":94,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "6a9797707071589a8606be26352fb31654aa0b90ad04b14fd7103b5258bc3a5f",
+      "original_meaning_zh": "化学",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "化学",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "化学",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06094057"
+          ],
+          "usage_note": "先记学科，人与人的关系含义不从化学自动推成原文已有。",
+          "sense_group_id": "SG25-de0152f95277:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "化学",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06094057"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "人与人相处的默契或吸引",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:13863157"
+          ],
+          "reason": "人际关系用法与学科不同，候选保持未采用。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-de0152f95277:p6c4:addition:1",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        }
+      ],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-de0152f95277:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "化学",
+          "scope_and_roles": "先记学科，人与人的关系含义不从化学自动推成原文已有。",
+          "evidence_ids": [
+            "wn31:n:06094057"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "先记学科，人与人的关系含义不从化学自动推成原文已有。",
+      "selection_reason": "先记学科，人与人的关系含义不从化学自动推成原文已有。",
+      "risk_flags": [
+        "external_use_candidates_pending_adoption"
+      ],
+      "risk_level": "high",
+      "coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06094057",
+          "part_of_speech": "n",
+          "definition_en": "the science of matter; the branch of the natural sciences dealing with the composition of substances and their properties and reactions",
+          "lemmas": [
+            "chemistry",
+            "chemical_science"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13863157",
+          "part_of_speech": "n",
+          "definition_en": "the way two individuals relate to each other; \"their chemistry was wrong from the beginning -- they hated each other\"; \"a mysterious alchemy brought them together\"",
+          "lemmas": [
+            "chemistry",
+            "interpersonal_chemistry",
+            "alchemy"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-a97b0931730e",
+      "headword": "round",
+      "part_of_speech": "形容词；介词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-a97b0931730e",
+        "word": "round",
+        "meaning_zh": "圆的；围绕",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "706",
+        "source_index_pages": "760",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写；词性/常用义/例句复核（AI）；待个人确认",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "形容词；介词",
+        "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+        "lexical_sources": "中文释义及例句独立编写、AI语义复核；WordNet 3.1 词性对照（可查项）：https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz；音节/重音对照：https://github.com/cmusphinx/cmudict",
+        "example_en": "The table is round.",
+        "example_zh": "这张桌子是圆的。",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词全部保留；本批优先日常通用词。",
+        "phonics_note": "ou 或 ow 在本词作为双元音组合认读；不是所有 ou/ow 都同读。",
+        "syllables": "round",
+        "stress": "单音节；句中强弱随语境变化",
+        "reading_review_status": "逐词分块与CMUdict美式音节数/主重音对照（AI）；非个人确认或自动发音评分",
+        "audio_status": "待补充；缺音频不阻塞学习",
+        "audio_source": "",
+        "audio_license": "无已核验可分发音频",
+        "pets2015_evidence": "PDF133/书内129：round",
+        "pets2015_match_method": "explicit_form_case_sensitive_no_stemming"
+      },
+      "source_hash": "f2ec85230af656549d097638bd499425cb805183c3fa3c2517267a8b794f2f2a",
+      "original_meaning_zh": "圆的；围绕",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "圆的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "围绕",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "圆的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:02048059"
+          ],
+          "usage_note": "形状与围绕关系分开；源介词用出版社补证，WordNet没单列介词不代表原词性无效。",
+          "sense_group_id": "SG25-a97b0931730e:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "圆的",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:a:02048059"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "介词",
+          "display_zh": "围绕；绕着",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "usage_note": "位置/运动关系可相当around，不能拿动词wind around当介词证据。",
+          "sense_group_id": "SG25-a97b0931730e:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "围绕",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "pub:round"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-a97b0931730e:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "圆的",
+          "scope_and_roles": "形状与围绕关系分开；源介词用出版社补证，WordNet没单列介词不代表原词性无效。",
+          "evidence_ids": [
+            "wn31:a:02048059"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-a97b0931730e:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "介词",
+          "meaning_zh": "围绕；绕着",
+          "scope_and_roles": "位置/运动关系可相当around，不能拿动词wind around当介词证据。",
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "形容词": "represented_in_source_derived_layers",
+        "介词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "形状与围绕关系分开；源介词用出版社补证，WordNet没单列介词不代表原词性无效。",
+      "selection_reason": "形状与围绕关系分开；源介词用出版社补证，WordNet没单列介词不代表原词性无效。",
+      "risk_flags": [
+        "multiple_source_POS",
+        "source_fragment_POS_correspondence_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "pub:round",
+          "headword": "round",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/round",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "形容词可形容圆形；介词和副词可表示围绕、环行，相当于around，使用有地区/语体差异；另有轮次等名词用法。",
+          "pos_supported": [
+            "形容词",
+            "介词",
+            "副词",
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02048059",
+          "part_of_speech": "a",
+          "definition_en": "having the shape or form of a circle",
+          "lemmas": [
+            "round",
+            "circular"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-d537bc9c04d3",
+      "headword": "ton",
+      "part_of_speech": "名词",
+      "book_category": "偶考词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-d537bc9c04d3",
+        "word": "ton",
+        "meaning_zh": "吨（具体重量依计量制度而定）",
+        "book_category": "偶考词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "626",
+        "source_index_pages": "767",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 13721529-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "2015官方附录明确列出本词形，优先保留；不推断2025归属或官方词频。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":142,\"printed_form\":\"ton\",\"printed_page\":138,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "986aae681c79db84c59346495ce30f755cd6570644f5a3ed608669e89ba7d665",
+      "original_meaning_zh": "吨（具体重量依计量制度而定）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "吨（具体重量依计量制度而定）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "吨（重量单位，数值依计量制度）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13743492",
+            "wn31:n:13743634"
+          ],
+          "usage_note": "WordNet列英制长吨与美制短吨，不穷尽各制度；不教成一律1000千克。",
+          "sense_group_id": "SG25-d537bc9c04d3:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "吨（具体重量依计量制度而定）",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:13743492",
+                "wn31:n:13743634"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-d537bc9c04d3:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "吨（重量单位，数值依计量制度）",
+          "scope_and_roles": "WordNet列英制长吨与美制短吨，不穷尽各制度；不教成一律1000千克。",
+          "evidence_ids": [
+            "wn31:n:13743492",
+            "wn31:n:13743634"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "保留源计量条件，首次只辨重量单位与制度有关，不做实际换算或编造统一数值。",
+      "selection_reason": "保留源计量条件，首次只辨重量单位与制度有关，不做实际换算或编造统一数值。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:13743492",
+          "part_of_speech": "n",
+          "definition_en": "a British unit of weight equivalent to 2240 pounds",
+          "lemmas": [
+            "long_ton",
+            "ton",
+            "gross_ton"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13743634",
+          "part_of_speech": "n",
+          "definition_en": "a United States unit of weight equivalent to 2000 pounds",
+          "lemmas": [
+            "short_ton",
+            "ton",
+            "net_ton"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-b111c6e1d318",
+      "headword": "statement",
+      "part_of_speech": "名词",
+      "book_category": "高频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-b111c6e1d318",
+        "word": "statement",
+        "meaning_zh": "陈述；声明；报表",
+        "book_category": "高频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "158",
+        "source_index_pages": "764",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06648724-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":138,\"printed_form\":\"statement\",\"printed_page\":134,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "a5d5bfc8e4f4970603c83e7a573d81007d393b34f71ce06661965aa6e8d0728b",
+      "original_meaning_zh": "陈述；声明；报表",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "陈述",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "声明",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "报表",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "陈述；声明",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06735202",
+            "wn31:n:07217786"
+          ],
+          "usage_note": "表达的内容和表达这一行为在陈述框架中明确，不称完全同一细分词典义。",
+          "sense_group_id": "SG25-b111c6e1d318:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "陈述",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06735202",
+                "wn31:n:07217786"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "声明",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06735202",
+                "wn31:n:07217786"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "报表；对账单（收支等财务数据）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:06528586"
+          ],
+          "usage_note": "陈述框架先记，财务单据独立保留扩展，原文本全部在。",
+          "sense_group_id": "SG25-b111c6e1d318:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "报表",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06528586"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-b111c6e1d318:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "陈述；声明",
+          "scope_and_roles": "表达的内容和表达这一行为在陈述框架中明确，不称完全同一细分词典义。",
+          "evidence_ids": [
+            "wn31:n:06735202",
+            "wn31:n:07217786"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-b111c6e1d318:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "报表；对账单（收支等财务数据）",
+          "scope_and_roles": "陈述框架先记，财务单据独立保留扩展，原文本全部在。",
+          "evidence_ids": [
+            "wn31:n:06528586"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "陈述框架先记，财务单据独立保留扩展，原文本全部在。",
+      "selection_reason": "陈述框架先记，财务单据独立保留扩展，原文本全部在。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06528586",
+          "part_of_speech": "n",
+          "definition_en": "a document showing credits and debits",
+          "lemmas": [
+            "statement",
+            "financial_statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06735202",
+          "part_of_speech": "n",
+          "definition_en": "a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc; \"according to his statement he was in London on that day\"",
+          "lemmas": [
+            "statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07217786",
+          "part_of_speech": "n",
+          "definition_en": "the act of affirming or asserting or stating something",
+          "lemmas": [
+            "affirmation",
+            "assertion",
+            "statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-8e9c543a5078",
+      "headword": "coke",
+      "part_of_speech": "名词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-8e9c543a5078",
+        "word": "coke",
+        "meaning_zh": "焦炭；可乐（口语）",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "679",
+        "source_index_pages": "734",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 14685768-n;07928696-n;03066743-n;00498836-v",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":99,\"printed_form\":\"coke\",\"printed_page\":95,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "11d70f154f40d2afdfec69bdea2ce1656b4ce33bd3d3bbfd2ede00e441729ed4",
+      "original_meaning_zh": "焦炭；可乐（口语）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "焦炭",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "可乐（口语）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "可乐（口语饮料义，常写Coke）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:coke"
+          ],
+          "usage_note": "出版社还允许泛指可乐时偶用小写；不改原词头，也不以焦炭/毒品WordNet项证明饮料。",
+          "sense_group_id": "SG25-8e9c543a5078:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "可乐（口语）",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "pub:coke"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "焦炭",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14709929"
+          ],
+          "usage_note": "先用日常饮料场景区分，再辨燃料，两个实体都列核心；这是教学安排不是频率排名，保留大小写说明。",
+          "sense_group_id": "SG25-8e9c543a5078:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "焦炭",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:14709929"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-8e9c543a5078:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "可乐（口语饮料义，常写Coke）",
+          "scope_and_roles": "出版社还允许泛指可乐时偶用小写；不改原词头，也不以焦炭/毒品WordNet项证明饮料。",
+          "evidence_ids": [
+            "pub:coke"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-8e9c543a5078:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "焦炭",
+          "scope_and_roles": "先用日常饮料场景区分，再辨燃料，两个实体都列核心；这是教学安排不是频率排名，保留大小写说明。",
+          "evidence_ids": [
+            "wn31:n:14709929"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "先用日常饮料场景区分，再辨燃料，两个实体都列核心；这是教学安排不是频率排名，保留大小写说明。",
+      "selection_reason": "先用日常饮料场景区分，再辨燃料，两个实体都列核心；这是教学安排不是频率排名，保留大小写说明。",
+      "risk_flags": [
+        "case_sensitive_sense_boundary"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "pub:coke",
+          "headword": "coke",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/coke",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "区分小写coke焦炭/毒品俚称与Coke商标饮料；美国英语分词典另标泛指可乐饮料可偶用小写c-。饮料义的大小写与商标范围应注明，不能拿小写焦炭或毒品的WordNet定义证明饮料。",
+          "pos_supported": [
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:14709929",
+          "part_of_speech": "n",
+          "definition_en": "carbon fuel produced by distillation of coal",
+          "lemmas": [
+            "coke"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-fca30679635b",
+      "headword": "attack",
+      "part_of_speech": "名词；动词",
+      "book_category": "高频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-fca30679635b",
+        "word": "attack",
+        "meaning_zh": "攻击；袭击；发作",
+        "book_category": "高频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "166",
+        "source_index_pages": "729",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词；动词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 00972621-n;00457723-n;06711159-n;01119169-v;00862683-v;01118449-v",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":93,\"printed_form\":\"attack\",\"printed_page\":89,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "37dc1b33b09f883cdc39761f124acb41f35eb9b94f70432ba471a1dc978462fb",
+      "original_meaning_zh": "攻击；袭击；发作",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "攻击",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "袭击",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "发作",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "攻击；袭击",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01121587",
+            "wn31:v:01122487"
+          ],
+          "usage_note": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "sense_group_id": "SG25-fca30679635b:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "攻击",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:01121587",
+                "wn31:v:01122487"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "袭击",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:01121587",
+                "wn31:v:01122487"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "攻击；袭击（行为）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00775311",
+            "wn31:n:00974725"
+          ],
+          "usage_note": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "sense_group_id": "SG25-fca30679635b:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "攻击",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:00775311",
+                "wn31:n:00974725"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "袭击",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:00775311",
+                "wn31:n:00974725"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "发作（病症等）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14104857"
+          ],
+          "usage_note": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "sense_group_id": "SG25-fca30679635b:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "发作",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:14104857"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "原攻击逐义词性未标，词典支持行为名词及攻击动词。",
+          "uses": [
+            {
+              "use_id": "SG25-fca30679635b:p6c4:core_meanings:1",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "part_of_speech": "动词",
+              "meaning_zh": "攻击；袭击",
+              "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+              "evidence_ids": [
+                "wn31:v:01121587",
+                "wn31:v:01122487"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-fca30679635b:p6c4:core_meanings:2",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "part_of_speech": "名词",
+              "meaning_zh": "攻击；袭击（行为）",
+              "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+              "evidence_ids": [
+                "wn31:n:00775311",
+                "wn31:n:00974725"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "原袭击同样可对应两种词性，不因顺序只给其中一种。",
+          "uses": [
+            {
+              "use_id": "SG25-fca30679635b:p6c4:core_meanings:1",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "part_of_speech": "动词",
+              "meaning_zh": "攻击；袭击",
+              "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+              "evidence_ids": [
+                "wn31:v:01121587",
+                "wn31:v:01122487"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-fca30679635b:p6c4:core_meanings:2",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "part_of_speech": "名词",
+              "meaning_zh": "攻击；袭击（行为）",
+              "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+              "evidence_ids": [
+                "wn31:n:00775311",
+                "wn31:n:00974725"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        }
+      ],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-fca30679635b:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "攻击；袭击",
+          "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "evidence_ids": [
+            "wn31:v:01121587",
+            "wn31:v:01122487"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-fca30679635b:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "攻击；袭击（行为）",
+          "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "evidence_ids": [
+            "wn31:n:00775311",
+            "wn31:n:00974725"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-fca30679635b:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "发作（病症等）",
+          "scope_and_roles": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+          "evidence_ids": [
+            "wn31:n:14104857"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers",
+        "动词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+      "selection_reason": "攻击的名词/动词均有证据，病症发作另列；不强行把发作也配成同一个动词。",
+      "risk_flags": [
+        "multiple_source_POS",
+        "source_fragment_POS_correspondence_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:00775311",
+          "part_of_speech": "n",
+          "definition_en": "the act of attacking; \"attacks on women increased last year\"; \"they made an attempt on his life\"",
+          "lemmas": [
+            "attack",
+            "attempt"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00974725",
+          "part_of_speech": "n",
+          "definition_en": "(military) an offensive against an enemy (using weapons); \"the attack began at dawn\"",
+          "lemmas": [
+            "attack",
+            "onslaught",
+            "onset",
+            "onrush"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14104857",
+          "part_of_speech": "n",
+          "definition_en": "a sudden occurrence of an uncontrollable condition; \"an attack of diarrhea\"",
+          "lemmas": [
+            "attack"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01121587",
+          "part_of_speech": "v",
+          "definition_en": "launch an attack or assault on; begin hostilities or start warfare with; \"Hitler attacked Poland on September 1, 1939 and started World War II\"; \"Serbian forces assailed Bosnian towns all week\"",
+          "lemmas": [
+            "attack",
+            "assail"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01122487",
+          "part_of_speech": "v",
+          "definition_en": "attack someone physically or emotionally; \"The mugger assaulted the woman\"; \"Nightmares assailed him regularly\"",
+          "lemmas": [
+            "assail",
+            "assault",
+            "set_on",
+            "attack"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-945c8f9d4fe6",
+      "headword": "overhead",
+      "part_of_speech": "形容词；副词",
+      "book_category": "低频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-945c8f9d4fe6",
+        "word": "overhead",
+        "meaning_zh": "在头顶上；头顶上的",
+        "book_category": "低频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "528",
+        "source_index_pages": "754",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "形容词；副词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13277179-n;15298011-n;08556065-n;02472563-a;00249641-r;00249447-r",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "2015官方附录明确列出本词形，优先保留；不推断2025归属或官方词频。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":125,\"printed_form\":\"overhead\",\"printed_page\":121,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "be16f7609688ef09839700c3d0b94643e2e9c27cfb0298e2e8d9d3a5cd6a5103",
+      "original_meaning_zh": "在头顶上；头顶上的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "在头顶上",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "头顶上的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "在头顶上；在上方",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:r:00250926",
+            "wn31:r:00251120"
+          ],
+          "usage_note": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+          "sense_group_id": "SG25-945c8f9d4fe6:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "在头顶上",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:r:00250926",
+                "wn31:r:00251120"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "头顶上的；上方的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:02482038"
+          ],
+          "usage_note": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+          "sense_group_id": "SG25-945c8f9d4fe6:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "头顶上的",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:a:02482038"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "经常性运营开支；间接费用",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:13298202"
+          ],
+          "reason": "职场费用用途原文缺失，显式单列候选。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-945c8f9d4fe6:p6c4:addition:1",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        }
+      ],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-945c8f9d4fe6:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "在头顶上；在上方",
+          "scope_and_roles": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+          "evidence_ids": [
+            "wn31:r:00250926",
+            "wn31:r:00251120"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-945c8f9d4fe6:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "头顶上的；上方的",
+          "scope_and_roles": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+          "evidence_ids": [
+            "wn31:a:02482038"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "形容词": "represented_in_source_derived_layers",
+        "副词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+      "selection_reason": "位置副词和修饰名词的形容词分开，开支名词不是同一原文意义。",
+      "risk_flags": [
+        "external_use_candidates_pending_adoption",
+        "multiple_source_POS",
+        "source_fragment_POS_correspondence_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:a:02482038",
+          "part_of_speech": "a",
+          "definition_en": "located or originating from above; \"an overhead crossing\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13298202",
+          "part_of_speech": "n",
+          "definition_en": "the expense of maintaining property (e.g., paying property taxes and utilities and insurance); it does not include depreciation or the cost of financing or income taxes",
+          "lemmas": [
+            "operating_expense",
+            "operating_cost",
+            "overhead",
+            "budget_items"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00250926",
+          "part_of_speech": "r",
+          "definition_en": "above the head; over the head; \"bring the legs together overhead\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00251120",
+          "part_of_speech": "r",
+          "definition_en": "above your head; in the sky; \"planes were flying overhead\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-abcd0ee1fc2c",
+      "headword": "declaration",
+      "part_of_speech": "名词",
+      "book_category": "低频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-abcd0ee1fc2c",
+        "word": "declaration",
+        "meaning_zh": "公告；声明；宣布",
+        "book_category": "低频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "458",
+        "source_index_pages": "736",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06725877-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "2015官方附录明确列出本词形，优先保留；不推断2025归属或官方词频。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":103,\"printed_form\":\"declaration\",\"printed_page\":99,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "729efe4cd0ef4b49ae485849a0fe82415376b69a8b4dedf505b3fd55e9db7c61",
+      "original_meaning_zh": "公告；声明；宣布",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "公告",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "声明",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "宣布",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "公告；声明；宣布（正式公开表达）",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:06523865",
+            "wn31:n:06738626",
+            "wn31:n:06738907"
+          ],
+          "usage_note": "原宣布按名词性宣布行为/内容理解，不把英文标成动词。",
+          "sense_group_id": "SG25-abcd0ee1fc2c:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "公告",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06523865",
+                "wn31:n:06738626",
+                "wn31:n:06738907"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "声明",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06523865",
+                "wn31:n:06738626",
+                "wn31:n:06738907"
+              ]
+            },
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "宣布",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06523865",
+                "wn31:n:06738626",
+                "wn31:n:06738907"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "报关申报（应税物品等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:07218770"
+          ],
+          "reason": "特定旅行/贸易用途另列，不从公告自动升级。",
+          "status": "AI_candidate_not_adopted",
+          "human_approved": false,
+          "auto_promoted_to_core": false,
+          "candidate_id": "SG25-abcd0ee1fc2c:p6c4:addition:1",
+          "suggested_layer": "adoption_and_layer_decision_pending",
+          "priority_basis": "AI_teaching_judgment_not_measured_frequency"
+        }
+      ],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-abcd0ee1fc2c:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "公告；声明；宣布（正式公开表达）",
+          "scope_and_roles": "原宣布按名词性宣布行为/内容理解，不把英文标成动词。",
+          "evidence_ids": [
+            "wn31:n:06523865",
+            "wn31:n:06738626",
+            "wn31:n:06738907"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "正式公开表达框架合组，保留行为与内容的对象说明；海关申报单列候选。",
+      "selection_reason": "正式公开表达框架合组，保留行为与内容的对象说明；海关申报单列候选。",
+      "risk_flags": [
+        "external_use_candidates_pending_adoption"
+      ],
+      "risk_level": "high",
+      "coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06523865",
+          "part_of_speech": "n",
+          "definition_en": "a formal expression by a meeting; agreed to by a vote",
+          "lemmas": [
+            "resolution",
+            "declaration",
+            "resolve"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06738626",
+          "part_of_speech": "n",
+          "definition_en": "a statement that is emphatic and explicit (spoken or written)",
+          "lemmas": [
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06738907",
+          "part_of_speech": "n",
+          "definition_en": "a formal public statement; \"the government made an announcement about changes in the drug war\"; \"a declaration of independence\"",
+          "lemmas": [
+            "announcement",
+            "proclamation",
+            "annunciation",
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07218770",
+          "part_of_speech": "n",
+          "definition_en": "a statement of taxable goods or of dutiable properties",
+          "lemmas": [
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-9d96e17fd46e",
+      "headword": "clause",
+      "part_of_speech": "名词",
+      "book_category": "偶考词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-9d96e17fd46e",
+        "word": "clause",
+        "meaning_zh": "从句；条款",
+        "book_category": "偶考词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "623",
+        "source_index_pages": "733",
+        "book_verification": "已核验",
+        "meaning_review_status": "会话内语义对照通过；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "未直接列出",
+        "pets2025_status": "待核实",
+        "library_class": "扩展",
+        "part_of_speech": "名词",
+        "usage_note": "",
+        "lexical_sources": "https://github.com/omwn/omw-data/tree/main/wns/cow ; WordNet 3.0 06392935-n",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P2",
+        "selection_reason": "AI建议保留clause，用于沟通、信息与阅读；采用的常用义为“从句；条款”。优先级P2；主观用途判断，无客观语料词频或官方考试频率断言。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[]",
+        "pets2015_match_method": "complete_explicit_form_lookup_no_hit"
+      },
+      "source_hash": "39954a64e8f0654553987a8a62beae07824b8fe699164aa3ae304ac0237e8aca",
+      "original_meaning_zh": "从句；条款",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "从句",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "条款",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "从句（语法）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06325134"
+          ],
+          "usage_note": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+          "sense_group_id": "SG25-9d96e17fd46e:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "从句",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06325134"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "条款（合同、法律文件等）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06404578"
+          ],
+          "usage_note": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+          "sense_group_id": "SG25-9d96e17fd46e:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "条款",
+              "original_pos": "名词",
+              "original_pos_evidence": "single_pos_field",
+              "evidence_ids": [
+                "wn31:n:06404578"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-9d96e17fd46e:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "从句（语法）",
+          "scope_and_roles": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+          "evidence_ids": [
+            "wn31:n:06325134"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-9d96e17fd46e:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "条款（合同、法律文件等）",
+          "scope_and_roles": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+          "evidence_ids": [
+            "wn31:n:06404578"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+      "selection_reason": "语法结构和法律文件条款完全不同，虽同词性也不合并。",
+      "risk_flags": [],
+      "risk_level": "standard",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06325134",
+          "part_of_speech": "n",
+          "definition_en": "(grammar) an expression including a subject and predicate functioning as a part of a complex sentence",
+          "lemmas": [
+            "clause"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06404578",
+          "part_of_speech": "n",
+          "definition_en": "a separate section of a legal document (as a statute or contract or will)",
+          "lemmas": [
+            "article",
+            "clause"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-c082456a7766",
+      "headword": "medium",
+      "part_of_speech": "名词；形容词",
+      "book_category": "中频词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-c082456a7766",
+        "word": "medium",
+        "meaning_zh": "名词：媒介，手段；形容词：中等的",
+        "book_category": "中频词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "428",
+        "source_index_pages": "750",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词；形容词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 06254669-n;08568142-n;06254475-n;01531957-a;00617752-a",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":121,\"printed_form\":\"medium\",\"printed_page\":117,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "25baea5673f58f9f567d87e53326980fb81b31730ef5b367e666cfdb0897541e",
+      "original_meaning_zh": "名词：媒介，手段；形容词：中等的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "媒介",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "手段",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "中等的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "媒介；实现某事的手段",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06264799",
+            "wn31:n:14923303"
+          ],
+          "usage_note": "传递信息的媒介与实现目的的介质/手段同框并列，子片段保留。",
+          "sense_group_id": "SG25-c082456a7766:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "媒介",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06264799",
+                "wn31:n:14923303"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "手段",
+              "original_pos": "名词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:n:06264799",
+                "wn31:n:14923303"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "中等的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:01536076"
+          ],
+          "usage_note": "媒介手段框架与程度形容词分开，不按相近中文跨词性合并。",
+          "sense_group_id": "SG25-c082456a7766:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "中等的",
+              "original_pos": "形容词",
+              "original_pos_evidence": "explicit_gloss_label",
+              "evidence_ids": [
+                "wn31:s:01536076"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-c082456a7766:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "媒介；实现某事的手段",
+          "scope_and_roles": "传递信息的媒介与实现目的的介质/手段同框并列，子片段保留。",
+          "evidence_ids": [
+            "wn31:n:06264799",
+            "wn31:n:14923303"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-c082456a7766:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "中等的",
+          "scope_and_roles": "媒介手段框架与程度形容词分开，不按相近中文跨词性合并。",
+          "evidence_ids": [
+            "wn31:s:01536076"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers",
+        "形容词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "媒介手段框架与程度形容词分开，不按相近中文跨词性合并。",
+      "selection_reason": "媒介手段框架与程度形容词分开，不按相近中文跨词性合并。",
+      "risk_flags": [
+        "multiple_source_POS"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:06264799",
+          "part_of_speech": "n",
+          "definition_en": "a means or instrumentality for storing or communicating information",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14923303",
+          "part_of_speech": "n",
+          "definition_en": "an intervening substance through which something is achieved; \"the dissolving medium is called a solvent\"",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01536076",
+          "part_of_speech": "s",
+          "definition_en": "around the middle of a scale of evaluation; \"an orange of average size\"; \"intermediate capacity\"; \"medium bombers\"",
+          "lemmas": [
+            "average",
+            "intermediate",
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    },
+    {
+      "stable_id": "SG25-b6813f3af2d4",
+      "headword": "dip",
+      "part_of_speech": "名词；动词",
+      "book_category": "基础词",
+      "stratum": "context_restriction_candidates",
+      "source_fields": {
+        "entry_id": "SG25-b6813f3af2d4",
+        "word": "dip",
+        "meaning_zh": "浸；蘸；下降",
+        "book_category": "基础词",
+        "source_file": "2025考研英语词汇闪过.pdf",
+        "source_id": "src_sg25_5e4501eb7237",
+        "source_pdf_pages": "691",
+        "source_index_pages": "738",
+        "book_verification": "已核验",
+        "meaning_review_status": "独立编写并逐词常用义/词性自检；非教师终审；同会话检查不是独立教师复核",
+        "pets2015_status": "已收录",
+        "pets2025_status": "待核实",
+        "library_class": "主学习",
+        "part_of_speech": "名词；动词",
+        "usage_note": "",
+        "lexical_sources": "原书既有词头/页码；https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz ; WordNet 3.0 13904506-n;13892897-n;10431907-n;01577093-v;01192312-v;00432061-v",
+        "example_en": "",
+        "example_zh": "",
+        "learning_priority": "P1",
+        "selection_reason": "原书高频/中频/基础词必须保留；质量未就绪时进入待核实而非按AI低分暂缓。",
+        "phonics_note": "",
+        "syllables": "",
+        "stress": "",
+        "reading_review_status": "逐词自然拼读教学提示未建设；不得据空白猜造规律；可用现有Windows本地TTS备用",
+        "audio_status": "真人未配置；本机已安装Microsoft en-US Desktop语音时可用本地TTS备用",
+        "audio_source": "真人录音未配置；备用为Windows本地SAPI系统合成语音（不是独立标准录音）",
+        "audio_license": "真人音频授权未取得；TTS仅系统运行时使用；不分发语音引擎或合成录音",
+        "pets2015_evidence": "[{\"pdf_page\":105,\"printed_form\":\"dip\",\"printed_page\":101,\"section\":\"main\"}]",
+        "pets2015_match_method": "exact_case_sensitive_explicit_form"
+      },
+      "source_hash": "db200e43eb05c9d6743a4df02398ca57cdc94e5a815afb720a0531b8913feda8",
+      "original_meaning_zh": "浸；蘸；下降",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "浸",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "蘸",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "下降",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "短暂浸入；蘸",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01579924",
+            "wn31:v:01194845"
+          ],
+          "usage_note": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "sense_group_id": "SG25-b6813f3af2d4:p6c4:core_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "浸",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:01579924",
+                "wn31:v:01194845"
+              ]
+            },
+            {
+              "source_sense_id": "s002",
+              "original_gloss": "蘸",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:01579924",
+                "wn31:v:01194845"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "下降（短暂地）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00433014"
+          ],
+          "usage_note": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "sense_group_id": "SG25-b6813f3af2d4:p6c4:core_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "下降",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:v:00433014"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "短暂浸泡（行为）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07379034"
+          ],
+          "usage_note": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "sense_group_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:1",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s001",
+              "original_gloss": "浸",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:07379034"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "下降（量的减少）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:05119135"
+          ],
+          "usage_note": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "sense_group_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:2",
+          "source_subsenses": [
+            {
+              "source_sense_id": "s003",
+              "original_gloss": "下降",
+              "original_pos": null,
+              "original_pos_evidence": "unresolved_multi_pos",
+              "evidence_ids": [
+                "wn31:n:05119135"
+              ]
+            }
+          ],
+          "origin": "AI_V4_1_qualified_rephrasing_not_verbatim_source"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "原浸可作动词及短浸这一行为的名词，有独立证据。",
+          "uses": [
+            {
+              "use_id": "SG25-b6813f3af2d4:p6c4:core_meanings:1",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "part_of_speech": "动词",
+              "meaning_zh": "短暂浸入；蘸",
+              "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+              "evidence_ids": [
+                "wn31:v:01579924",
+                "wn31:v:01194845"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:1",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "part_of_speech": "名词",
+              "meaning_zh": "短暂浸泡（行为）",
+              "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+              "evidence_ids": [
+                "wn31:n:07379034"
+              ],
+              "location": "extended_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s003",
+          "annotation": "AI语义/词性拆解，不是新的原文片段",
+          "reason": "原下降同时支持变化动词和减少量/事件名词，不按顺序排除。",
+          "uses": [
+            {
+              "use_id": "SG25-b6813f3af2d4:p6c4:core_meanings:2",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "part_of_speech": "动词",
+              "meaning_zh": "下降（短暂地）",
+              "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+              "evidence_ids": [
+                "wn31:v:00433014"
+              ],
+              "location": "core_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            },
+            {
+              "use_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:2",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "part_of_speech": "名词",
+              "meaning_zh": "下降（量的减少）",
+              "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+              "evidence_ids": [
+                "wn31:n:05119135"
+              ],
+              "location": "extended_meanings",
+              "origin": "source_compatible_AI_recommendation",
+              "evidence_status": "lexical_support_not_frequency_or_human_gold"
+            }
+          ]
+        }
+      ],
+      "use_coverage_matrix": [
+        {
+          "use_id": "SG25-b6813f3af2d4:p6c4:core_meanings:1",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "短暂浸入；蘸",
+          "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "evidence_ids": [
+            "wn31:v:01579924",
+            "wn31:v:01194845"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-b6813f3af2d4:p6c4:core_meanings:2",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "下降（短暂地）",
+          "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "evidence_ids": [
+            "wn31:v:00433014"
+          ],
+          "location": "core_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:1",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "短暂浸泡（行为）",
+          "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "evidence_ids": [
+            "wn31:n:07379034"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        },
+        {
+          "use_id": "SG25-b6813f3af2d4:p6c4:extended_meanings:2",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "下降（量的减少）",
+          "scope_and_roles": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+          "evidence_ids": [
+            "wn31:n:05119135"
+          ],
+          "location": "extended_meanings",
+          "origin": "source_compatible_AI_recommendation",
+          "evidence_status": "lexical_support_not_frequency_or_human_gold"
+        }
+      ],
+      "source_POS_coverage": {
+        "名词": "represented_in_source_derived_layers",
+        "动词": "represented_in_source_derived_layers"
+      },
+      "core_explanation": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+      "selection_reason": "短浸动作与数量下降不同；名词行为/下降也保留，逐义源词性仍未知。",
+      "risk_flags": [
+        "multiple_source_POS",
+        "source_fragment_POS_correspondence_unknown"
+      ],
+      "risk_level": "high",
+      "coverage_status": "source_supported_candidates_not_exhaustive_dictionary",
+      "supporting_sources": [
+        {
+          "evidence_id": "wn31:n:05119135",
+          "part_of_speech": "n",
+          "definition_en": "a sudden sharp decrease in some quantity; \"a drop of 57 points on the Dow Jones index\"; \"there was a drop in pressure in the pulmonary artery\"; \"a dip in prices\"; \"when that became known the price of their stock went into free fall\"",
+          "lemmas": [
+            "drop",
+            "dip",
+            "fall",
+            "free_fall"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07379034",
+          "part_of_speech": "n",
+          "definition_en": "a brief immersion",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00433014",
+          "part_of_speech": "v",
+          "definition_en": "go down momentarily; \"Prices dipped\"",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01194845",
+          "part_of_speech": "v",
+          "definition_en": "dip into a liquid while eating; \"She dunked the piece of bread in the sauce\"",
+          "lemmas": [
+            "dunk",
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01579924",
+          "part_of_speech": "v",
+          "definition_en": "immerse briefly into a liquid so as to wet, coat, or saturate; \"dip the garment into the cleaning solution\"; \"dip the brush into the paint\"",
+          "lemmas": [
+            "dunk",
+            "dip",
+            "souse",
+            "plunge",
+            "douse"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "review_status": "AI_candidate_generation_sealed_before_blind_review",
+      "needs_human_review": true,
+      "human_approved": false,
+      "publication_status": "isolated_not_published",
+      "model_version": "Codex_parent_backend_unexposed",
+      "backend_model_id": null,
+      "prompt_version": "P6C4-V4.1",
+      "rules_sha256": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+      "official_exam_sense_frequency": null
+    }
+  ]
+}

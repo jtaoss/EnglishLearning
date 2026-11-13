@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_009",
+  "kind": "verify",
+  "request_hash": "dd5b6ac5ea815dc7feaec2e4b09d732f90d0e795455072381742fe81ed92d131",
+  "input_ids": [
+    "SG25-0d45f5fd462b",
+    "SG25-6f5a5c61ccdb"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "404bce84-7aa2-40d4-ad07-1037bee21b9a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-0d45f5fd462b\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原文“核心”表示事物中心或最重要部分；核心组“核心”由 WordNet 中心义（n:08541787）和最重要部分义（n:05929717）覆盖，对象范围未收窄，词性一致。\",\n          \"evidence_ids\": [\"wn31:n:05929717\", \"wn31:n:08541787\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文“果核”无具体对象或语境；候选“果核（苹果、梨等的中央含籽部分）”与 web:core 提示的英语 fruit core 一致，但缺乏独立证据证明原文是否也涵盖桃核、枣核等硬核；来源范围待核，暂不能判为语义等价或范围收窄。\",\n          \"evidence_ids\": [\"web:core\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 果核来源范围：原文仅“果核”，无对象或语境；候选括注“苹果、梨等”是示例还是排他？需确认教材语境是否专指苹果/梨类中央含籽部分。若原文可泛指硬核，则英语 core 不覆盖该范围，需在 source_scope 标注剩余范围待核，而不是直接收窄。\"\n      ],\n      \"preferences\": [\n        \"将“果核”置于扩展层而非核心层属于教学排序选择，不构成语义缺陷；若希望首屏更贴近抽象核心义可保留现状。\"\n      ],\n      \"note\": \"核心组覆盖 s001，扩展组覆盖 s002；未发现已证实语义丢失或新增限制。s002 的果核范围因缺少来源语境暂标记为无法确定。\"\n    },\n    {\n      \"id\": \"SG25-6f5a5c61ccdb\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s001 原片段“损害”词性未定（null/unresolved_multi_pos）；候选仅以名词组“损害”承接，但未证明 s001 不作动词。英语证据中名词 act of damaging 和动词 inflict damage upon 均存在，而原中文未逐词标注，因此不能确认 s001 只作名词。\",\n          \"evidence_ids\": [\"wn31:n:00403900\", \"wn31:v:00259743\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s002 原片段“损坏”词性未定；候选仅以动词组“损坏”承接，但未排除名词用法（如“造成损坏”）。英语证据中名词 act of damaging 和动词 inflict damage upon 均可支持不同词性，但无逐词对应依据，故无法确认 s002 只作动词。\",\n          \"evidence_ids\": [\"wn31:v:00259743\", \"wn31:n:00403900\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"来源片段 s001、s002 均为 unresolved_multi_pos，候选将其分别固定到名词组和动词组；联合层虽有名词和动词，但未说明另一词性侧是否仍需覆盖（如动词“损害”或名词“损坏”）。原备注“原文未逐义标注的事实不变”已提示不确定性，但未列出剩余范围待核。\",\n        \"两个核心组均使用 WordNet 英语证据，但未提供中文“损害/损坏”逐词词性依据；需教材语境或可靠中文用法确认是否应保留双方词性。\"\n      ],\n      \"preferences\": [\n        \"将“损害”作为名词核心、“损坏”作为动词核心的分组是教学建议，不一定反映原片段内的词性对应；若用户需要动词“损害”或名词“损坏”，可后续补充于扩展层。\"\n      ],\n      \"note\": \"候选以名词组和动词组覆盖联合用途，但原片段词性未逐词标注；本次审查不确认存在已证实语义丢失，仅将词性对应作为未决点，关系均为无法确定。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5053,
+    "completion_tokens": 8087,
+    "total_tokens": 13140,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7110
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3389
+  },
+  "started_utc": "2026-11-13T09:56:49.079484+00:00",
+  "completed_utc": "2026-11-13T09:58:39.781227+00:00",
+  "elapsed_seconds": 110.703,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_020",
+  "kind": "audit",
+  "request_hash": "e32eb5142d981cba3960744c7d386b3b8386823a5f76f90ef84eabe0138dad40",
+  "input_ids": [
+    "SG25-d537bc9c04d3",
+    "SG25-d29223721312",
+    "SG25-0829103205fb",
+    "SG25-ead6ef03d61e",
+    "SG25-c465a314b762"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a5983c0f-d113-4328-b2c6-b9d9c072d2ea",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-d537bc9c04d3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：重量单位“吨”，具体数值随计量制度而定\",\"relation\":\"语义等价\",\"reason\":\"核心保留“重量单位、数值依计量制度”，与原文“具体重量依计量制度而定”一致；未固定为单一千克数。\",\"evidence_ids\":[\"wn31:n:13743492\",\"wn31:n:13743634\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“吨”以重量单位呈现，明确数值随计量制度；证据列英制长吨/美制短吨，核心未误写成统一1000千克。\"},{\"id\":\"SG25-d29223721312\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：松树（植物）\",\"relation\":\"语义等价\",\"reason\":\"核心“松树”与源名词“松树”一致，对应 coniferous tree；未把松木/木材义混入该源义。\",\"evidence_ids\":[\"wn31:n:11628701\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：憔悴、消瘦（原文未明说原因）\",\"relation\":\"范围收窄\",\"reason\":\"扩展层把“憔悴”限定为因悲伤/思念等逐渐消瘦衰弱、常用 pine away；这符合英语证据的受限用法，但比原文“憔悴”窄，普通外貌憔悴未保留也未明确暂存。\",\"evidence_ids\":[\"pub:pine\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"缺少非悲伤/思念导致的普通“憔悴”范围；原中文宽，英语证据不支持泛化，应标待核。\",\"counterexample\":\"因病或疲劳而显得憔悴，英语通常不用 pine 泛称\",\"counterexample_evidence_ids\":[\"pub:pine\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"动词：苦苦思念、对不在者深切渴望\",\"relation\":\"语义等价\",\"reason\":\"核心“苦苦思念；渴望（常接for）”对应 desire for absent person/thing；“渴望”受常接for和思念语境限定，未脱离原文。\",\"evidence_ids\":[\"wn31:v:01809651\",\"pub:pine\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_source_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-d29223721312:p6c4:extended_meanings:1\"],\"evidence_ids\":[\"pub:pine\"],\"reason\":\"原文“憔悴”未限定原因，候选只保留因悲伤/思念导致的消瘦衰弱；虽符合英语 pine away 证据，但原中文较宽的普通憔悴范围没有明确标为待核/剩余，容易让“憔悴”被视为完整等价。\",\"repair_suggestion\":\"在 s002 来源备注标“原中文较宽，英语 pine 限悲伤/思念导致消瘦；普通憔悴待核”，必要时把普通憔悴列入暂存剩余而非核心。\"}],\"note\":\"名词“松树”清楚；动词“苦苦思念”入核心；“憔悴”以悲伤思念导致消瘦的受限用法列扩展并注明不泛指外貌疲惫，但源“憔悴”较宽，剩余范围需待核。\"},{\"id\":\"SG25-0829103205fb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：日落（日落事件或时刻）\",\"relation\":\"语义等价\",\"reason\":\"核心“日落（日落过程或时刻）”同时保留事件和时刻两种名词所指，均有英语证据支持；未引入“夕阳产业”等形容词外部义。\",\"evidence_ids\":[\"wn31:n:07358615\",\"wn31:n:15194295\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“日落”在核心中并列事件与时刻，未压缩掉任一名词所指；形容词义未混入源义。\"},{\"id\":\"SG25-ead6ef03d61e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：鬼（超自然亡灵）\",\"relation\":\"语义等价\",\"reason\":\"核心“鬼；幽灵”保留 s001“鬼”，对应 the visible disembodied soul of a dead person；未引入代笔、动词等外部义。\",\"evidence_ids\":[\"wn31:n:09569105\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：幽灵（超自然亡灵）\",\"relation\":\"语义等价\",\"reason\":\"核心“鬼；幽灵”保留 s002“幽灵”，与“鬼”合并为同一超自然亡灵实体类；证据链指向 disembodied soul。\",\"evidence_ids\":[\"wn31:n:09569105\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义“鬼”“幽灵”合为超自然亡灵实体组，未把现代代笔或“消失式沟通”等外部义加入。\"},{\"id\":\"SG25-c465a314b762\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：图形的、与图形/图像有关的\",\"relation\":\"合理概括\",\"reason\":\"核心用“图形的”作概括表达，文字本身未收窄为“图表的”；但组证据只链到 relating to a graph，输入中另有 graphic arts/描绘刻写等形容词证据未链入，证据链比文字窄。\",\"evidence_ids\":[\"wn31:a:02747544\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"graphic arts/绘图艺术的“图形的”用法有输入证据支持，但核心仅链接 graph 关系证据\",\"counterexample_evidence_ids\":[\"wn31:a:02747737\",\"wn31:s:02293012\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：生动的、栩栩如生的\",\"relation\":\"语义等价\",\"reason\":\"核心“生动的”对应 evoking lifelike images；“生动具体可能涉不适细节”是搭配观察，未被写成唯一或负面限定。\",\"evidence_ids\":[\"wn31:s:01947643\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_linkage\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-c465a314b762:p6c1:core:1\"],\"evidence_ids\":[\"wn31:a:02747544\",\"wn31:a:02747737\",\"wn31:s:02293012\"],\"reason\":\"核心文字“图形的”比单一 graph 关系宽；候选仅链到 relating to a graph 的证据，输入中另有 graphic arts/描绘刻写等形容词证据未链入。文字本身未造成覆盖缺口，但证据链不足以单独证明广义“图形的”。\",\"repair_suggestion\":\"若“图形的”按广义图形/绘图义保留，补充链接 a:02747737 与 s:02293012；若只取图表关系，则核心文字应相应收窄并说明。\"}],\"note\":\"“图形的”与“生动的”分列，后者对应栩栩如生的描述；前者的核心文字较宽而证据链偏窄，需补链或收窄说明。\"}]}",
+  "usage": {
+    "prompt_tokens": 5354,
+    "completion_tokens": 12081,
+    "total_tokens": 17435,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10355
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3434
+  },
+  "started_utc": "2026-11-13T09:50:57.524857+00:00",
+  "completed_utc": "2026-11-13T09:52:08.855128+00:00",
+  "elapsed_seconds": 71.328,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

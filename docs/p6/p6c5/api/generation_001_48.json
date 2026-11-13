@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_48",
+  "request_hash": "8891a3c0857a281be6b5d509e719f9ff5a98f67b971cffd397cbd27971a2d514",
+  "started_utc": "2026-11-13T08:14:59.799789+00:00",
+  "completed_utc": "2026-11-13T08:15:43.191222+00:00",
+  "elapsed_seconds": 43.391,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "74b91735-14f0-4bdc-bb73-768059d63833",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4096,
+    "completion_tokens": 7284,
+    "total_tokens": 11380,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6618
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1280
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-b314ae60cb74\",\"core\":[[\"温度\",\"名词\",[\"s001\"],[\"wn31:n:05018974\"],\"冷热程度的物理量，对应身体或环境的分子活动；不取‘冷热感’这一独立感觉义。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"原文仅‘温度’一段，直接对应‘冷热程度’的物理量；词典第二义为躯体冷热感觉，非本段自然改述，故不并入核心也不硬列补充。\",\"flags\":[]},{\"id\":\"SG25-bf0bb4ee60e2\",\"core\":[[\"伸展（肢体/身体）\",\"动词\",[\"s001\"],[\"wn31:v:00027261\"],\"主动伸展四肢、肌肉或身体；及物动作，对象为身体部位。\"],[\"延伸（空间/时间）\",\"动词\",[\"s003\"],[\"wn31:v:02691775\",\"wn31:v:02693758\",\"wn31:v:02695935\"],\"空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s002\",\"原文‘变宽’为不及物变化义；所给 extend 证据多为及物‘使变宽/扩大范围’（如 v00541315）或空间跨度（v02693758），未直接证明‘become wider’，暂存待核。\"]],\"splits\":{},\"additions\":[[\"延长（时间）\",\"动词\",[\"wn31:v:00318689\",\"wn31:v:00319127\"],\"原文偏空间/形体伸展；词典另有使时间延长、延期之义，原文未明确，列为外部候选。\"],[\"给予；提供\",\"动词\",[\"wn31:v:02302703\",\"wn31:v:02302909\"],\"词典有口头表达问候/同情及提供贷款等义，与原文伸展/延伸不同，列为外部候选。\"],[\"扩大（范围/影响）\",\"动词\",[\"wn31:v:00541315\",\"wn31:v:00542026\"],\"词典有扩展范围、扩大影响之及物义；原文‘延伸’未明确及物范围扩大，列为外部候选。\"]],\"reason\":\"先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。\",\"flags\":[[\"Major\",\"lexical_evidence_insufficient\",\"源片段 s002‘变宽’为不及物变化义，所给 extend 证据未直接覆盖‘become wider’，暂存待核。\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"已识别时间延长、给予/提供、扩大范围/影响等外部常用义，但未采用为原文核心，需后续决定。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

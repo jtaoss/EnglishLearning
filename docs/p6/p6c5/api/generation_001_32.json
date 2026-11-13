@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_32",
+  "request_hash": "6e83d8e5cf61bd80a9b61598f1fc7b1de4dae71368b1bc18657cfcf69ea6f111",
+  "started_utc": "2026-11-13T08:14:59.405631+00:00",
+  "completed_utc": "2026-11-13T08:15:17.872012+00:00",
+  "elapsed_seconds": 18.469,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "6b1d2ca7-ddce-4cea-a7ed-a0bf9ac9b9d0",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3442,
+    "completion_tokens": 2776,
+    "total_tokens": 6218,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2355
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 626
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-a39a7ffad4a3\",\"word\":\"assistant\",\"pos\":\"名词\",\"core\":[[\"助手；助理\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:09835195\"],\"指为完成需要或推进工作而提供帮助的人；两条中文均为近义名词。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"助理的；副的\",\"形容词\",[\"wn31:s:00796805\"],\"英语中 assistant 可作定语形容词（如 assistant manager），原中文两条均为名词，未表达该形容词用法，列为外部候选。\"]],\"reason\":\"原文两条均为“帮助工作的人”这一名词义，合并为一组；形容词定语用法证据独立，且原中文未明确表达，故不混入核心。\",\"flags\":[]},{\"id\":\"SG25-ac455671cf7f\",\"word\":\"circumstance\",\"pos\":\"名词\",\"core\":[[\"境况；形势；情况\",\"名词\",[\"s001\",\"s002\",\"s003\"],[\"wn31:n:13965927\",\"wn31:n:14536419\"],\"围绕或影响事件、活动的条件与事实；三条中文在此均为近义的一般名词。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"考虑因素；需考虑的情况\",\"名词\",[\"wn31:n:05831106\"],\"词典独立义：决策时需考虑的信息；原中文“情况”不等于“考虑因素”，仅列为候选。\"]],\"reason\":\"三条原中文在此都指围绕事件的条件或事实，未显示需要按对象拆分，故合为一组；词典另有“需考虑因素”这一独立用法，原中文未明确表达，列入候选。\",\"flags\":[[\"Info\",\"dictionary_additions_not_adopted\",\"存在词典独立用法候选（考虑因素），尚未纳入核心；原中文覆盖不受影响。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

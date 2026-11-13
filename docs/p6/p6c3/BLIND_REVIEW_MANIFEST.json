@@ -1,0 +1,30 @@
+{
+  "protocol": "source_only_fresh_context_then_sealed_proposal_then_comparison",
+  "configured_review_model": "gpt-6-astra",
+  "original_generator_backend": null,
+  "proven_different_model_identity": false,
+  "identity_limit": "Original backend was not exposed; separate contexts and configured reviewer model are recorded, not proof of a different original backend.",
+  "reviewer_jobs": 2,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewers": {
+    "A": {
+      "input_sha256": "edabab5d59f9f5e07a8ab51ba338e33bcfc4da436d8ae56a32fc96ff7e0f8b14",
+      "proposal_sha256": "8f3ab56f034f9758dffac8a49c8749034d2ff691530c1dd5078d3659b14345bf",
+      "records": 45,
+      "source_fragments": 116,
+      "backend_snapshot": null,
+      "cost": null,
+      "path": "docs/p6/p6c3/blind_reviews/reviewer_A.json"
+    },
+    "B": {
+      "input_sha256": "fcaa13db259e16251780ada08a7231cfc2799dbf5079580de80f92dff24f96cd",
+      "proposal_sha256": "e124dbc2d6e79b3aa21527845c4565569ac8982afc3731db4123917e45706f9a",
+      "records": 45,
+      "source_fragments": 105,
+      "backend_snapshot": null,
+      "cost": null,
+      "path": "docs/p6/p6c3/blind_reviews/reviewer_B.json"
+    }
+  }
+}

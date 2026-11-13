@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_061",
+  "kind": "verify",
+  "request_hash": "8728e298bf35cf2ae4b0fb757a382019922012bb1601a2aad92c4a3246b18859",
+  "input_ids": [
+    "SG25-9372c470eead",
+    "SG25-8dccea521790"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d043fec9-45a6-44fb-9e91-3e3c0a859807",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9372c470eead\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“模型”在语境中可指实物或抽象 representation；链接证据 wn31:n:03782816 “representation of something (sometimes on a smaller scale)” 与该一般义相符，故等价。\",\n          \"evidence_ids\": [\"wn31:n:03782816\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“模特”可指供画家/摄影师作画拍摄或展示时装的人；链接证据 wn31:n:10344226 指为摄影师/画家/雕塑家摆姿势的人，足以覆盖常见模特用法；未链接服装模特专用证据但语义不矛盾。\",\n          \"evidence_ids\": [\"wn31:n:10344226\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源义“典范”可能兼指值得效仿的人或事物；当前仅链接 wn31:n:10344517（值得效仿的人），证据列表中另有 wn31:n:05933998（something to be imitated）未链接，故暂无法确定完整覆盖。\",\n          \"evidence_ids\": [\"wn31:n:10344517\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“建模”指制作或创建模型/表示；证据 wn31:v:01726857 “create a representation or model of” 覆盖制作与模拟建模，语义一致。\",\n          \"evidence_ids\": [\"wn31:v:01726857\"]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源义“模仿”为一般性动作；链接证据 wn31:v:01747665 仅指按模型/范式规划或创建（model after），不等同于普遍“模仿行为”；由于源义可能本意是“仿照”，证据不足，无法确定。\",\n          \"evidence_ids\": [\"wn31:v:01747665\"]\n        },\n        {\n          \"sid\": \"s006\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“模范的”与证据 wn31:s:02596887 “worthy of imitation” 对应，等价。\",\n          \"evidence_ids\": [\"wn31:s:02596887\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_semantic_mismatch\",\n          \"source_ids\": [\"s005\"],\n          \"group_ids\": [\"SG25-9372c470eead:p6c1:extended:4\"],\n          \"evidence_ids\": [\"wn31:v:01747665\"],\n          \"reason\": \"扩展组显示“模仿”，但该证据定义仅为“plan or create according to a model or models”，不直接支持一般“模仿动作”。此组可能误导用户把 model after 误认为可泛指 imitate。\",\n          \"counterexample\": \"如“模仿朋友的说话方式”不能用该证据支持的 model 义表达；该义通常对应“仿照某模板制作”。\",\n          \"repair_suggestion\": \"将组文改为“仿照（按模型制作/规划）”，或补充能证明 model 可直接表示“模仿行为”的词典证据；若无，加入注释限定对象和动作类型。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003“典范”是否包括抽象/事物模范；当前仅人物链接，证据 wn31:n:05933998 未采用，需确认源意图。\",\n        \"s005 general imitate sense unsupported；source likely intended model after but original gloss broad；需澄清源范围。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"模型/模特核心，典范/模范的/建模/模仿扩展。s005 evidence mismatch unresolved；s003 abstract sense pending。整体覆盖基本可接受，但两处源义尚需核认。\"\n    },\n    {\n      \"id\": \"SG25-8dccea521790\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“射击”为发射抛射物/开火行为；证据 wn31:n:00123481 “the act of firing a projectile” 与该义相符。\",\n          \"evidence_ids\": [\"wn31:n:00123481\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源义“照片”无限制；证据 wn31:n:04255717 明确 informal photograph，仅涵盖非正式快照，且通常小相机随意拍摄；目标组未标注该限制，形成范围收窄。\",\n          \"evidence_ids\": [\"wn31:n:04255717\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义“注射”与证据 wn31:n:00698618 “the act of putting a liquid into the body by means of a syringe” 对应。\",\n          \"evidence_ids\": [\"wn31:n:00698618\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源义“尝试”无限制；证据 wn31:n:00790134 明确 informal words for any attempt or effort，仅涵盖非正式/口语用法；目标组未标注，形成范围收窄。\",\n          \"evidence_ids\": [\"wn31:n:00790134\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"missing_register_note\",\n          \"source_ids\": [\"s002\", \"s004\"],\n          \"group_ids\": [\n            \"SG25-8dccea521790:p6c1:extended:1\",\n            \"SG25-8dccea521790:p6c1:extended:2\"\n          ],\n          \"evidence_ids\": [\"wn31:n:04255717\", \"wn31:n:00790134\"],\n          \"reason\": \"扩展组“照片”“尝试”只给中文义，未标英语 shot 在这两义上的非正式/口语语域；证据定义本身含该限制，目标未呈现，可能使学习者过度泛化。\",\n          \"counterexample\": \"在正式语境要求“正式照片”时，shot 并不合适；“尝试”也多用于非正式短语如 give it a shot。\",\n          \"repair_suggestion\": \"在组注或显示中补充“非正式/口语”，或在目标文本中明确“非正式照片”“非正式尝试”，保留中性源义时注明限制。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"四个源义均有映射：射击、注射在核心且证据匹配；照片、尝试在扩展层，不称罕见，但英语这两义通常口语/非正式，组注未标，属 Minor 语域缺口。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 7409,
+    "completion_tokens": 10637,
+    "total_tokens": 18046,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9060
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 5745
+  },
+  "started_utc": "2026-11-13T10:00:23.419693+00:00",
+  "completed_utc": "2026-11-13T10:03:00.884532+00:00",
+  "elapsed_seconds": 157.469,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

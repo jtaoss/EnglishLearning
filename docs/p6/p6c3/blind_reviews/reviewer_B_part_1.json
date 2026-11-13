@@ -1,0 +1,1298 @@
+{
+  "part": 1,
+  "record_count": 15,
+  "input_sha256": "fcaa13db259e16251780ada08a7231cfc2799dbf5079580de80f92dff24f96cd",
+  "records": [
+    {
+      "stable_id": "SG25-199c48140d2b",
+      "headword": "confront",
+      "source_hash": "4dd83a374d0a542e7e2638d1a13428892635cdbee8aff422130ff3b8ee535ae8",
+      "original_meaning_zh": "对抗",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "对抗",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "与……对抗",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01081176"
+          ],
+          "reason": "敌对双方正面相对，能解释原文中的对抗。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "正视、面对（难题）",
+          "evidence_ids": [
+            "wn31:v:00813960"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "拿证据与某人当面对质",
+          "evidence_ids": [
+            "wn31:v:01068455"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "遇到对手时先联想到正面交锋；面对难题的搭配值得另列。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01081176",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "oppose, as in hostility or a competition; \"You must confront your opponent\"; \"Jackson faced Smith in the boxing ring\"; \"The two enemies finally confronted each other\"",
+          "selected_headwords": [
+            "confront"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00813960",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "deal with (something unpleasant) head on; \"You must confront your problems\"; \"He faced the terrible consequences of his mistakes\"",
+          "selected_headwords": [
+            "confront"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01068455",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "present somebody with something, usually to accuse or criticize; \"We confronted him with the evidence\"; \"He was faced with all the evidence and could no longer deny his actions\"; \"An enormous dilemma faces us\"",
+          "selected_headwords": [
+            "confront"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-353e5d16112c",
+      "headword": "immigrant",
+      "source_hash": "1f1ec8f18261d82a954e2a6d07634bda1064aeb41716242c867110fc89627bc4",
+      "original_meaning_zh": "侨民；移民；移民者",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "侨民",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "移民",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "移民者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "移入另一国家定居的人",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:10219108"
+          ],
+          "reason": "两个片段均可指迁入者，一个显式带“者”。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "侨民",
+          "reason": "侨民侧重侨居身份，不足以保证迁入定居；缺少限定语境。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "范围偏移",
+          "observation": "不能仅凭在异国居住的身份推定是前来定居的人。",
+          "evidence_ids": [
+            "wn31:n:10219108"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先抓住迁入并定居的人；中文“移民”也能指行为，需要明确指人。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10219108",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a person who comes to a country where they were not born in order to settle there",
+          "selected_headwords": [
+            "immigrant"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-226f9e95eca7",
+      "headword": "majority",
+      "source_hash": "1855b4026781a34b43835d3750f40a9643f9fe523f58927697ef99bfff824abe",
+      "original_meaning_zh": "多数；大多数；过半数",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "多数",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "大多数",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "过半数",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "多数，大多数（超过半数）",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:05129822",
+            "wn31:n:13602270"
+          ],
+          "reason": "前两项表数量占优，第三项点明相对于整体的界线。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "法定成年年龄",
+          "evidence_ids": [
+            "wn31:n:15177022"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "人数比较与投票过半共享数量关系，明确门槛有助于理解投票结果。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:05129822",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the property resulting from being or relating to the greater in number of two parts; the main part; \"the majority of his customers prefer it\"; \"the bulk of the work is finished\"",
+          "selected_headwords": [
+            "majority"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13602270",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(elections) more than half of the votes",
+          "selected_headwords": [
+            "majority"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:15177022",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the age at which persons are considered competent to manage their own affairs",
+          "selected_headwords": [
+            "majority"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-480e4f1d08e9",
+      "headword": "efficient",
+      "source_hash": "425bf90ed71754ac14ce4e04c7f620196552242075934c1d05e1f91835166343",
+      "original_meaning_zh": "效率高的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "效率高的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "效率高的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:00843158"
+          ],
+          "reason": "达到目的时少浪费时间、精力或费用。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "能节省时间或精力是这个形容词的辨义线索。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00843158",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "being effective without wasting time or effort or expense; \"an efficient production manager\"; \"efficient engines save gas\"",
+          "selected_headwords": [
+            "efficient"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-16f5e2322d05",
+      "headword": "battle",
+      "source_hash": "e649c49a5b9f175fd5faec0aebb070a168d73e6a8197428440d064d7cf64bdfc",
+      "original_meaning_zh": "名词：战斗，斗争；动词：奋力抗争",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "战斗",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "斗争",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "奋力抗争",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "战斗",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00955670"
+          ],
+          "reason": "指对立军队间的一场交战。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "斗争，艰苦的努力",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00790634",
+            "wn31:n:00961007"
+          ],
+          "reason": "可指各方冲突，也可指为实现目标而奋力争取。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "奋力抗争",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:01094777"
+          ],
+          "reason": "表达参与战斗或作斗争的动作。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "战斗可从军事对阵延伸至艰难斗争；动词还须能直接用于造句。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00955670",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a hostile meeting of opposing military forces in the course of a war; \"Grant won a decisive victory in the battle of Chickamauga\"; \"he lost his romantic ideas about war when he got into a real engagement\"",
+          "selected_headwords": [
+            "battle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00790634",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an energetic attempt to achieve something; \"getting through the crowd was a real struggle\"; \"he fought a battle for recognition\"",
+          "selected_headwords": [
+            "battle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00961007",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an open clash between two opposing groups (or individuals); \"the harder the conflict the more glorious the triumph\"--Thomas Paine; \"police tried to control the battle between the pro- and anti-abortion mobs\"",
+          "selected_headwords": [
+            "battle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01094777",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "battle or contend against in or as if in a battle; \"The Kurds are combating Iraqi troops in Northern Iraq\"; \"We must combat the prejudices against other races\"; \"they battled over the budget\"",
+          "selected_headwords": [
+            "battle"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-fbb6337a2ba7",
+      "headword": "independence",
+      "source_hash": "d858dc8bdfaa5837dd53ca05cbb6814a058d3616ed794795c1ef1fb5c83d947c",
+      "original_meaning_zh": "独立；自主",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "独立",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "自主",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "独立，自主",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:14017633"
+          ],
+          "reason": "两项分别突出不受外部控制和自己作决定。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "国家独立和个人自主都可由免受他人支配来理解。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:14017633",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "freedom from control or influence of another or others",
+          "selected_headwords": [
+            "independence"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-dd2638abd6cd",
+      "headword": "suppress",
+      "source_hash": "e6390281584f5b4eec35bf79a91fa2156a57b7e46206ca655fc2f43d6adc9da4",
+      "original_meaning_zh": "征服；抑制；禁止",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "征服",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "抑制",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "禁止",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "抑制，压住",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00153784",
+            "wn31:v:02428558"
+          ],
+          "reason": "可以减弱反应直至停止，也可克制情绪的外露。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "征服",
+          "reason": "可用武力镇压反抗，但“征服”还可指夺取领土等，原文无对象。"
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "禁止",
+          "reason": "“禁止”重在下令不许；制止或压制有时译作禁止，缺少原句难判。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "镇压（反抗、暴动等）",
+          "evidence_ids": [
+            "wn31:v:00463047",
+            "wn31:v:02429499"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "对象与语境缺失",
+          "observation": "“征服”“禁止”均不能脱离对象直接替代压制；是否属于特定搭配待核。",
+          "evidence_ids": [
+            "wn31:v:00153784",
+            "wn31:v:00463047",
+            "wn31:v:02429499"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "先把握遏制活动、反应或表达的动作，再检查原文较强的译词需要哪些搭配。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00153784",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "lessen to the point of stopping; \"suppress a yawn\"; \"this drug can suppress the hemorrhage\"",
+          "selected_headwords": [
+            "suppress"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02428558",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "consciously restrain from showing; of emotions, desires, impulses, or behavior; \"suppress a smile\"; \"he let his anger bottle up until he exploded\"",
+          "selected_headwords": [
+            "suppress"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00463047",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "bring under control by force or authority; \"suppress a nascent uprising\"; \"stamp down on littering\"; \"conquer one's desires\"",
+          "selected_headwords": [
+            "suppress"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02429499",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "come down on or keep down by unjust use of one's authority; \"The government oppresses political activists\"",
+          "selected_headwords": [
+            "suppress"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "原教材中这两个译词各自带什么宾语？"
+      ]
+    },
+    {
+      "stable_id": "SG25-190ab894c1cb",
+      "headword": "suppose",
+      "source_hash": "f824b6deffe134c10bdbf8edc39340746d7698602b28faf4d94f7718c1a7b1c3",
+      "original_meaning_zh": "假定；认为",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "假定",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "认为",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "认为，猜想",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00633399",
+            "wn31:v:00635105"
+          ],
+          "reason": "常表达说话者对事情的判断，可以带不确定性。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "假定，设想",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00718436",
+            "wn31:v:00919271"
+          ],
+          "reason": "先接受一个前提，再据此推理。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "表达意见和设定假设产生不同句意，两种用途均宜首轮识别。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00633399",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "expect, believe, or suppose; \"I imagine she earned a lot of money with her new novel\"; \"I thought to find her in a bad state\"; \"he didn't think to find her in the kitchen\"; \"I guess she is angry at me for standing her up\"",
+          "selected_headwords": [
+            "suppose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00635105",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "to believe especially on uncertain or tentative grounds; \"Scientists supposed that large dinosaurs lived in swamps\"",
+          "selected_headwords": [
+            "suppose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00718436",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take for granted or as a given; suppose beforehand; \"I presuppose that you have done your work\"",
+          "selected_headwords": [
+            "suppose"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00919271",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "express a supposition; \"Let us say that he did not tell the truth\"; \"Let's say you had a lot of money--what would you do?\"",
+          "selected_headwords": [
+            "suppose"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-4db4f7fc0507",
+      "headword": "possess",
+      "source_hash": "f7fc4cd8c79ef21a12f4f8438be21c8f17bab172bf4b1939b336c4bb4c65df7a",
+      "original_meaning_zh": "拥有；持有",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "拥有",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "持有",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "拥有，持有",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02209474"
+          ],
+          "reason": "两项都能指某物归某人所有或为其所持。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "具有（品质、技能等）",
+          "evidence_ids": [
+            "wn31:v:02638248"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "先记拥有关系，持有可作同组提示。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:02209474",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have ownership or possession of; \"He owns three houses in Florida\"; \"How many cars does she have?\"",
+          "selected_headwords": [
+            "possess"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02638248",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have as an attribute, knowledge, or skill; \"he possesses great knowledge about the Middle East\"",
+          "selected_headwords": [
+            "possess"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-80ed840f94f7",
+      "headword": "separate",
+      "source_hash": "05089ab73e577b4c13dd0caf9fd2f5f63ede93872161070e63bb59e1dd9acef5",
+      "original_meaning_zh": "分开的；各自的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "分开的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "各自的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "分开的，彼此分离的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:00162033",
+            "wn31:s:00570805"
+          ],
+          "reason": "描写事物的位置或连接状态。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "各自的，单独的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:02116958"
+          ],
+          "reason": "强调独立安排或分别归属。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使分开；分离",
+          "evidence_ids": [
+            "wn31:v:01559703",
+            "wn31:v:01560556"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "分居不同位置与各有各的一份在语境中有差异，分别提供提取线索。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:00162033",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "standing apart; not attached to or supported by anything; \"a freestanding bell tower\"; \"a house with a separate garage\"",
+          "selected_headwords": [
+            "separate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00570805",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "have the connection undone; having become separate",
+          "selected_headwords": [
+            "separate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02116958",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "independent; not united or joint; \"a problem consisting of two separate issues\"; \"they went their separate ways\"; \"formed a separate church\"",
+          "selected_headwords": [
+            "separate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01559703",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "force, take, or pull apart; \"He separated the fighting children\"; \"Moses parted the Red Sea\"",
+          "selected_headwords": [
+            "separate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01560556",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "come apart; \"The two pieces that we had glued separated\"",
+          "selected_headwords": [
+            "separate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-70430045cb50",
+      "headword": "accelerate",
+      "source_hash": "c6f1223b7ed148c7bb9fb20b81abe24fc549332297d0daad303f7185dfaf116f",
+      "original_meaning_zh": "加快；加速；快进",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "加快",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "加速",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "快进",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "加速，加快",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00439133",
+            "wn31:v:00440298"
+          ],
+          "reason": "兼容运动变快和使之变快。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s003",
+          "text": "快进",
+          "reason": "播放控制中的快进还可能指跳到后段，只有速度变化得到当前定义支持。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "专门语境待核",
+          "observation": "“快进”是否专指某个设备功能，需要核对原例。",
+          "evidence_ids": [
+            "wn31:v:00439133",
+            "wn31:v:00440298"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "加快可以描述自主提速或使某事加速，两种中文说法可同记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00439133",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "move faster; \"The car accelerated\"",
+          "selected_headwords": [
+            "accelerate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00440298",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "cause to move faster; \"He accelerated the car\"",
+          "selected_headwords": [
+            "accelerate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "原句是否说明播放或进度控制？"
+      ]
+    },
+    {
+      "stable_id": "SG25-94d5c9d96025",
+      "headword": "agree",
+      "source_hash": "66cf4cd4fc3d69ae32ca69c0405713471b986bd20a002290fe4b13ce68e9e8b7",
+      "original_meaning_zh": "同意",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "同意",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "同意，赞同",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00766267",
+            "wn31:v:00807038",
+            "wn31:v:01037402"
+          ],
+          "reason": "可同意他人的观点、接受条件或答应做事。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "与……相符、一致",
+          "evidence_ids": [
+            "wn31:v:02663315"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "表达同意是源内清晰的交际用途；物与物一致需另记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00766267",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "consent or assent to a condition, or agree to do something; \"She agreed to all my conditions\"; \"He agreed to leave her alone\"",
+          "selected_headwords": [
+            "agree"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00807038",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be in accord; be in agreement; \"We agreed on the terms of the settlement\"; \"I can't agree with you!\"; \"I hold with those who say life is sacred\"; \"Both philosophers concord on this point\"",
+          "selected_headwords": [
+            "agree"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01037402",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "achieve harmony of opinion, feeling, or purpose; \"No two of my colleagues would agree on whom to elect chairman\"",
+          "selected_headwords": [
+            "agree"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02663315",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be compatible, similar or consistent; coincide in their characteristics; \"The two stories don't agree in many details\"; \"The handwriting checks with the signature on the check\"; \"The suspect's fingerprints don't match those on the gun\"",
+          "selected_headwords": [
+            "agree"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-13bfaf8f3c47",
+      "headword": "partly",
+      "source_hash": "ba72ad7c4b228a6c0f033e4020db1ad6a49c22748fd0dd6398e042167d4bf7b9",
+      "original_meaning_zh": "部分地",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "部分地",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "部分地，在一定程度上",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:r:00008102"
+          ],
+          "reason": "程度上的不完全能直接解释原译。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "该副词说明程度或范围不是全部。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:r:00008102",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "to some extent; in some degree; not wholly; \"I felt partly to blame\"; \"He was partially paralyzed\"",
+          "selected_headwords": [
+            "partly"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-dac1d7cfa950",
+      "headword": "layer",
+      "source_hash": "2446c170fcdcd30a25b19e40e76e0291c7b08f6ca13a5166428f1eef4765e8f9",
+      "original_meaning_zh": "名词：层；动词：分层放置",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "层",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "分层放置",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "层",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:03655499",
+            "wn31:n:08609236"
+          ],
+          "reason": "一层材料或上下相叠中的一层。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "分层放置",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01264677"
+          ],
+          "reason": "动词强调铺成一层或逐层放置。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "先建立一层材料的形象，动作义可借名词推导。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03655499",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "single thickness of usually some homogeneous substance; \"slices of hard-boiled egg on a bed of spinach\"",
+          "selected_headwords": [
+            "layer"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08609236",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a relatively thin sheetlike expanse or region lying over or under another",
+          "selected_headwords": [
+            "layer"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01264677",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "make or form a layer; \"layer the different colored sands\"",
+          "selected_headwords": [
+            "layer"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-cb3b5639a043",
+      "headword": "monopoly",
+      "source_hash": "770d6faa3a14b5018fa123af3a958d9aa74811bc57dc01bbb3b4e57d501dd117",
+      "original_meaning_zh": "垄断",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "垄断",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "垄断，独占",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14467580",
+            "wn31:n:14467792"
+          ],
+          "reason": "某一方独家控制资源或市场供给。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "经济语境中的独占还可用于对某种事物的独家控制，原译能覆盖二者。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:14467580",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "exclusive control or possession of something; \"They have no monopoly on intelligence\"",
+          "selected_headwords": [
+            "monopoly"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:14467792",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(economics) a market in which there are many buyers but only one seller; \"a monopoly on silver\"; \"when you have a monopoly you can ask any price you like\"",
+          "selected_headwords": [
+            "monopoly"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    }
+  ]
+}

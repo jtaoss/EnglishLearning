@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_011",
+  "kind": "audit",
+  "request_hash": "fe599ee60709780057f439e72348509c9d588acc051193e7e03fc734746fda35",
+  "input_ids": [
+    "SG25-c3b290f1c5ba",
+    "SG25-1fe289205936",
+    "SG25-69e1b1f7ae9d",
+    "SG25-cb3b5639a043",
+    "SG25-ec08467ce12b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "7620d370-9aee-4f79-a736-540dfda36397",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c3b290f1c5ba\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"意味着（可推知）\",\"relation\":\"语义等价\",\"reason\":\"核心组用“由此可推知”限定为逻辑后果或可推知含义，与“意味着”在该语境中的用法一致。\",\"evidence_ids\":[\"wn31:v:00932561\",\"wn31:v:02641270\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"意思是（可推知）\",\"relation\":\"范围收窄\",\"reason\":\"核心组只保留“可推知”的用法；中文“意思是”可指明确等同或定义，而imply的可靠证据不支持所有明确直说义。来源较宽处已由注释限定，待语境核验。\",\"evidence_ids\":[\"wn31:v:00932561\",\"wn31:v:02641270\"],\"context\":\"uncertain\",\"residual_scope\":\"明确直说/定义义（不由imply承担，来源待核）\",\"counterexample\":\"符号释义或明确等同用法不是imply的典型用法\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"暗示（间接表达）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“暗示”对应express or state indirectly，保留间接表达义，与来源“暗示”相符。\",\"evidence_ids\":[\"wn31:v:00931801\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_uncertain\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-c3b290f1c5ba:core:1\"],\"evidence_ids\":[\"wn31:v:00932561\",\"wn31:v:02641270\"],\"reason\":\"来源“意思是”可能涵盖明确等同或定义义，而imply的可靠证据只支持逻辑后果或间接表达；核心组注释已限定为可推知，属来源范围待核。\",\"repair_suggestion\":\"保留核心限定；若后续语境要求明确“意为/等同”，另记来源不确定性，不直接扩入imply核心。\"}],\"note\":\"imply三个来源片段均已映射：s001/s002进核心“意味着（由此可推知）”，s003进扩展“暗示”。“意思是”较宽处由注释限定，故列为来源待核Info，不判为核心漏组。\"},{\"id\":\"SG25-1fe289205936\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"申请（书面或口头请求）\",\"relation\":\"语义等价\",\"reason\":\"核心组“申请”对应request for assistance/employment/admission的申请义。\",\"evidence_ids\":[\"wn31:n:06524571\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"应用（投入使用/运用）\",\"relation\":\"语义等价\",\"reason\":\"核心组“应用”覆盖putting into operation及using for a particular purpose；来源“应用”在该概括范围内得到保留。\",\"evidence_ids\":[\"wn31:n:00036782\",\"wn31:n:00950950\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"应用程序（计算机程序）\",\"relation\":\"语义等价\",\"reason\":\"核心组“应用程序”对应computer application/program的明确义。\",\"evidence_ids\":[\"wn31:n:06582286\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"application三个来源片段分别对应申请、应用、应用程序三个核心组；证据与对象边界清楚，未发现需要暂存的剩余范围。\"},{\"id\":\"SG25-69e1b1f7ae9d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"复杂的\",\"relation\":\"语义等价\",\"reason\":\"核心组“复杂的／难解的”合并近义表达，对应difficult to analyze or understand及complex例证，不额外声称所有复杂物都不可理解。\",\"evidence_ids\":[\"wn31:s:02185144\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"难解的\",\"relation\":\"语义等价\",\"reason\":\"“难解的”直接对应difficult to analyze or understand，且与“复杂的”同组有证据支持。\",\"evidence_ids\":[\"wn31:s:02185144\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"complicated两个来源片段合并在同一核心组，符合“复杂/难解”近义且同一词典义的范围；注释已避免把复杂误说成必然不可理解。\"},{\"id\":\"SG25-cb3b5639a043\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"垄断（独占控制/市场单一卖方）\",\"relation\":\"语义等价\",\"reason\":\"核心组“垄断”同时覆盖exclusive control or possession与economics中only one seller的市场义，与来源片段相符。\",\"evidence_ids\":[\"wn31:n:14467580\",\"wn31:n:14467792\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"monopoly单一来源片段已放在核心，独占控制与市场垄断两个证据均支持“垄断”，无遗漏或额外领域限制。\"},{\"id\":\"SG25-ec08467ce12b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"政治的\",\"relation\":\"语义等价\",\"reason\":\"核心组“政治的／政治上的／政治性的”以并列中文形式保留政治相关义，证据覆盖政治活动、政治观点与政治职业等关系。\",\"evidence_ids\":[\"wn31:a:01819670\",\"wn31:a:02868496\",\"wn31:a:02868676\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"政治上的\",\"relation\":\"语义等价\",\"reason\":\"“政治上的”是同一形容词义的中文变体，核心组明确并列保留，未改变词性或对象范围。\",\"evidence_ids\":[\"wn31:a:01819670\",\"wn31:a:02868496\",\"wn31:a:02868676\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"政治性的\",\"relation\":\"语义等价\",\"reason\":\"“政治性的”与核心组并列形式一致，政治属性/关系义可由所给形容词证据支持。\",\"evidence_ids\":[\"wn31:a:01819670\",\"wn31:a:02868496\",\"wn31:a:02868676\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"political三个中文变体均为同一形容词义，合并在核心组合理；来源与证据均未要求额外对象或立场限制。\"}]}",
+  "usage": {
+    "prompt_tokens": 5072,
+    "completion_tokens": 11138,
+    "total_tokens": 16210,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9394
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3152
+  },
+  "started_utc": "2026-11-13T09:46:53.651123+00:00",
+  "completed_utc": "2026-11-13T09:47:55.913964+00:00",
+  "elapsed_seconds": 62.265,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

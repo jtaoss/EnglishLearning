@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_74",
+  "request_hash": "0b4a22424e9c440e2ac0a2c17634169f03fefe9d4cec6ee631acc79b9c372918",
+  "started_utc": "2026-11-13T08:17:20.981392+00:00",
+  "completed_utc": "2026-11-13T08:18:33.177820+00:00",
+  "elapsed_seconds": 72.203,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a461f78d-0a11-4361-9020-e0e568a9973d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3244,
+    "completion_tokens": 3780,
+    "total_tokens": 7024,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3329
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1196
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-a919007637ab\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"important_external_use_not_tracked\",\n          \"reason\": \"Supplied WordNet sense wn31:v:02543752 (create social or emotional ties; e.g., attach to a child) is an important everyday use of 'attach' and is absent from source Chinese, but the candidate only lists legal seizure as a dictionary addition and does not include this emotional-bond sense in dictionary_additions. Under dual-track coverage, important external uses must be explicitly tracked even if not adopted.\",\n          \"evidence_ids\": [\n            \"wn31:v:02543752\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions\",\n          \"proposed_fix\": \"Add dictionary_additions candidate: meaning_zh '建立情感联系；（使）产生亲近感/依恋', part_of_speech '动词', source_sense_ids [], evidence_ids ['wn31:v:02543752'], status 'AI_candidate_not_adopted', human_approved false, auto_promoted_to_core false.\"\n        }\n      ],\n      \"preferences\": [\n        {\n          \"type\": \"teaching_order\",\n          \"note\": \"Consider separating stative 'be attached' (wn31:v:01292858) and dynamic 'become attached' (wn31:v:01293025) in the extended meaning into two distinct teaching notes for clarity, as state vs. change is a useful learner distinction.\"\n        }\n      ],\n      \"note\": \"Candidate correctly separates transitive core from intransitive extended, preserves pending source sense s003 重视, and includes legal seizure as a non-adopted addition. However, it misses the supplied emotional-tie sense, which should be tracked as an external candidate. Source Chinese 附上 and 连接 can both be covered by the broad cause-to-be-attached evidence, so no core semantic error there.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

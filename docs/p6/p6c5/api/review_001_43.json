@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_43",
+  "request_hash": "9823a71631d24a754c7f830c8ea2917fc0799a539c3eb6260d3f8321e36a8db4",
+  "started_utc": "2026-11-13T08:16:14.146463+00:00",
+  "completed_utc": "2026-11-13T08:16:27.811572+00:00",
+  "elapsed_seconds": 13.656,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1b20042b-da76-4d86-b3e4-6106b43adbf9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2631,
+    "completion_tokens": 744,
+    "total_tokens": 3375,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 633
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 583
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ace72b3572c1\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"源词“专家”为通用名词，候选将一般专家义作为核心并以 wn31:n:10651303 支持，将医学专科医生义列为外部候选未采用，处理正确，无问题。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

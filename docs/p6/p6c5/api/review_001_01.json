@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_01",
+  "request_hash": "c9b5917e1803dcbf7a6825d52763827cdcbf99243b3ad1f51d42e76af6bffc18",
+  "started_utc": "2026-11-13T08:16:13.210376+00:00",
+  "completed_utc": "2026-11-13T08:17:51.274438+00:00",
+  "elapsed_seconds": 98.063,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "eb8b164d-6f0a-4bd6-bfc3-d92a6aaa3194",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4036,
+    "completion_tokens": 4979,
+    "total_tokens": 9015,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4579
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4036
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-887270d0cbc5\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"important_source_use_omitted\",\n          \"reason\": \"Source sense s003 '呈现' is broad (display/show/appear, including abstract uses). Candidate core 3 limits it to '以图像或画面表现、描绘' using only wn31:v:01690851, and its own usage_note explicitly states it does not cover abstract '呈现'. This omits the abstract source-supported meaning, and source_POS_coverage incorrectly claims full representation.\",\n          \"evidence_ids\": [\n            \"wn31:v:01690851\"\n          ],\n          \"source_sense_ids\": [\n            \"s003\"\n          ],\n          \"candidate_group_ref\": \"core_meanings:3\",\n          \"proposed_fix\": \"Expand core 3 to '呈现/显现/展示（含抽象）', keeping pictorial depiction as one example. Update usage_note to note that the Chinese gloss is broad and abstract uses are source-supported; if no reliable English evidence for abstract sense is supplied, mark it as pending rather than excluding it.\"\n        }\n      ],\n      \"preferences\": [\n        \"For initial learning, introduce common abstract patterns like 'render sth + adj' (cause to become) and 'render a service/decision' as important contexts, but avoid presenting pictorial depiction as the sole meaning of 呈现.\"\n      ],\n      \"note\": \"Candidate correctly separates the three source senses and keeps dictionary additions distinct. However, core 3 narrows '呈现' to pictorial depiction, missing the abstract 'present/show' meaning implied by the Chinese gloss. This is a source-coverage gap, not a dictionary-addition issue.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

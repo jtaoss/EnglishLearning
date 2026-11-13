@@ -1,0 +1,2883 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "e4c67e6e73a2a72bade4c20835e7bba9c0b2b270d8ceeb0caf08502d8dfe3d38",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "part": 1,
+  "proposal_status": "AI_candidates_not_human_or_gold_standard",
+  "records": [
+    {
+      "stable_id": "SG25-b3922e60250b",
+      "headword": "wherever",
+      "source_hash": "69a674135275ffb139e0bf48c54cf615115431ebc7c63196120d1044b2d8146c",
+      "original_meaning_zh": "无论在哪里；在任何地方",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "无论在哪里",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "在任何地方",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "source_part_of_speech": "副词；连词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "连词",
+            "display_zh": "无论在哪里",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "pub:wherever"
+            ],
+            "usage_note": "引导表示地点不受限制的从句；此处连词是学习展示标签，词典也可分析为关系副词。",
+            "semantic_role_or_object": "引导表示地点不受限制的从句；此处连词是学习展示标签，词典也可分析为关系副词。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "副词",
+            "display_zh": "在任何地方",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:wherever"
+            ],
+            "usage_note": "指所说的任何地点；接从句时有不同词性分析，不由原片段顺序推定。",
+            "semantic_role_or_object": "指所说的任何地点；接从句时有不同词性分析，不由原片段顺序推定。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "究竟在哪里",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00497575",
+            "pub:wherever"
+          ],
+          "reason": "加强疑问的where有独立语用功能，原文两片段没有表达，候选待采用。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "连词",
+          "meaning_zh": "无论在哪里",
+          "semantic_role_or_object": "引导表示地点不受限制的从句；此处连词是学习展示标签，词典也可分析为关系副词。",
+          "evidence_ids": [
+            "pub:wherever"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "在任何地方",
+          "semantic_role_or_object": "指所说的任何地点；接从句时有不同词性分析，不由原片段顺序推定。",
+          "evidence_ids": [
+            "pub:wherever"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "究竟在哪里",
+          "semantic_role_or_object": "加强疑问的where有独立语用功能，原文两片段没有表达，候选待采用。",
+          "evidence_ids": [
+            "wn31:r:00497575",
+            "pub:wherever"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "pub:wherever",
+            "wn31:r:00497575"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pub:wherever",
+            "wn31:r:00497575"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "首次记忆保留无论何处与任何所指地点两种句法功能；词性分析差异不被计作多个英语意义。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:wherever",
+          "headword": "wherever",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/wherever",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "有无论在何处、在任何所指地方，以及疑问中的加强where用法；不同分词典对连接从句的用法标连词、副词或关系词，词性标签差异不自动等于新语义。",
+          "pos_supported": [
+            "副词",
+            "连词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:r:00497575",
+          "part_of_speech": "r",
+          "definition_en": "where in the world",
+          "lemmas": [
+            "wherever",
+            "wheresoever"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "副词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "连词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "引导地点从句时采用连词还是关系副词标签，需统一教学标签体系。",
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-d537bc9c04d3",
+      "headword": "ton",
+      "source_hash": "986aae681c79db84c59346495ce30f755cd6570644f5a3ed608669e89ba7d665",
+      "original_meaning_zh": "吨（具体重量依计量制度而定）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "吨（具体重量依计量制度而定）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 14
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "吨（重量随计量制度而异）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:13743492",
+              "wn31:n:13743634",
+              "pubA:ton"
+            ],
+            "usage_note": "长吨、短吨和公吨须依语境判断；不能统一改写成1000千克。",
+            "semantic_role_or_object": "长吨、短吨和公吨须依语境判断；不能统一改写成1000千克。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "大量；许多（常用tons of）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pubA:ton"
+          ],
+          "reason": "口语数量用法有独立阅读价值，原文只写重量单位。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "吨（重量随计量制度而异）",
+          "semantic_role_or_object": "长吨、短吨和公吨须依语境判断；不能统一改写成1000千克。",
+          "evidence_ids": [
+            "wn31:n:13743492",
+            "wn31:n:13743634",
+            "pubA:ton"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "大量；许多（常用tons of）",
+          "semantic_role_or_object": "口语数量用法有独立阅读价值，原文只写重量单位。",
+          "evidence_ids": [
+            "pubA:ton"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pubA:ton"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "计量单位先整体记忆，并保留原文已有的计量制度限定；不同重量标准不是另造原文片段。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pubA:ton",
+          "headword": "ton",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/ton",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "出版社分列英制长吨、美制短吨和公吨；并收录口语中数量极多的用法。原文已经提醒重量随计量制度而异。",
+          "observed_date": "2026-11-13"
+        },
+        {
+          "evidence_id": "wn31:n:13743492",
+          "part_of_speech": "n",
+          "definition_en": "a British unit of weight equivalent to 2240 pounds",
+          "lemmas": [
+            "long_ton",
+            "ton",
+            "gross_ton"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13743634",
+          "part_of_speech": "n",
+          "definition_en": "a United States unit of weight equivalent to 2000 pounds",
+          "lemmas": [
+            "short_ton",
+            "ton",
+            "net_ton"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-8a741eb9c892",
+      "headword": "polish",
+      "source_hash": "dcb6ad4a5887c813cf300337e741c9eab55c503f17ac58af3ceb7bc6673535d2",
+      "original_meaning_zh": "动词：擦亮，润色；名词：抛光剂，光泽",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "擦亮",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "润色",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "抛光剂",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "光泽",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "擦亮；抛光",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:01248201"
+            ],
+            "usage_note": "使鞋、金属等表面发亮，施动者作用于物体表面。",
+            "semantic_role_or_object": "使鞋、金属等表面发亮，施动者作用于物体表面。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "润色",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:00474948",
+              "wn31:v:00474730"
+            ],
+            "usage_note": "改进文字、表现等使之更完善；不是物理擦亮。",
+            "semantic_role_or_object": "改进文字、表现等使之更完善；不是物理擦亮。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "抛光剂",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:15020587"
+            ],
+            "usage_note": "用于擦亮的制剂，指物质。",
+            "semantic_role_or_object": "用于擦亮的制剂，指物质。",
+            "use_id": "extended_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "光泽",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "wn31:n:04962337"
+            ],
+            "usage_note": "平滑发亮的表面性质，不能和抛光剂当成同一实体义。",
+            "semantic_role_or_object": "平滑发亮的表面性质，不能和抛光剂当成同一实体义。",
+            "use_id": "extended_02"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "精湛；娴熟；完善的程度",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14483408"
+          ],
+          "reason": "形容表演或作品完善程度的名词用法，不能拿原文物理光泽直接充当。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "擦亮；抛光",
+          "semantic_role_or_object": "使鞋、金属等表面发亮，施动者作用于物体表面。",
+          "evidence_ids": [
+            "wn31:v:01248201"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "润色",
+          "semantic_role_or_object": "改进文字、表现等使之更完善；不是物理擦亮。",
+          "evidence_ids": [
+            "wn31:v:00474948",
+            "wn31:v:00474730"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "抛光剂",
+          "semantic_role_or_object": "用于擦亮的制剂，指物质。",
+          "evidence_ids": [
+            "wn31:n:15020587"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_02",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "光泽",
+          "semantic_role_or_object": "平滑发亮的表面性质，不能和抛光剂当成同一实体义。",
+          "evidence_ids": [
+            "wn31:n:04962337"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "精湛；娴熟；完善的程度",
+          "semantic_role_or_object": "形容表演或作品完善程度的名词用法，不能拿原文物理光泽直接充当。",
+          "evidence_ids": [
+            "wn31:n:14483408"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:14483408"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "先用物理擦亮与抽象润色建立两个动词功能；制剂和表面光泽随后学习，后学不表示低频。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04962337",
+          "part_of_speech": "n",
+          "definition_en": "the property of being smooth and shiny",
+          "lemmas": [
+            "polish",
+            "gloss",
+            "glossiness",
+            "burnish"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14483408",
+          "part_of_speech": "n",
+          "definition_en": "a highly developed state of perfection; having a flawless or impeccable quality; \"they performed with great polish\"; \"I admired the exquisite refinement of his prose\"; \"almost an inspiration which gives to all work that finish which is almost art\"--Joseph Conrad",
+          "lemmas": [
+            "polish",
+            "refinement",
+            "culture",
+            "cultivation",
+            "finish"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15020587",
+          "part_of_speech": "n",
+          "definition_en": "a preparation used in polishing",
+          "lemmas": [
+            "polish"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00474730",
+          "part_of_speech": "v",
+          "definition_en": "bring to a highly developed, finished, or refined state; \"polish your social manners\"",
+          "lemmas": [
+            "polish",
+            "round",
+            "round_off",
+            "polish_up",
+            "brush_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00474948",
+          "part_of_speech": "v",
+          "definition_en": "improve or perfect by pruning or polishing; \"refine one's style of writing\"",
+          "lemmas": [
+            "polish",
+            "refine",
+            "fine-tune",
+            "down"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01248201",
+          "part_of_speech": "v",
+          "definition_en": "make (a surface) shine; \"shine the silver, please\"; \"polish my shoes\"",
+          "lemmas": [
+            "polish",
+            "smooth",
+            "smoothen",
+            "shine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "extended_01",
+            "extended_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-cf0fa94d4532",
+      "headword": "strain",
+      "source_hash": "5f4ff8a09c483122d66db65c4c1da41ce6e3378d10684dbbc2cbe3d5c4797946",
+      "original_meaning_zh": "名词：压力，拉伤；动词：使紧张，拉伤",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "压力",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "拉伤",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使紧张",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "拉伤",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "压力；紧张负担",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:14399295",
+              "wn31:n:14433493",
+              "pub:strain"
+            ],
+            "usage_note": "心理或生活资源所承受的压力；不等同肌肉损伤。",
+            "semantic_role_or_object": "心理或生活资源所承受的压力；不等同肌肉损伤。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "使承受压力；使紧张",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:00025196",
+              "wn31:v:01802463",
+              "pub:strain"
+            ],
+            "usage_note": "使人焦虑，或使耐力、关系等受到考验；为使动/施加负担。",
+            "semantic_role_or_object": "使人焦虑，或使耐力、关系等受到考验；为使动/施加负担。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "（肌肉等的）拉伤",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:14321604",
+              "pub:strain"
+            ],
+            "usage_note": "受伤状态/损伤名词。",
+            "semantic_role_or_object": "受伤状态/损伤名词。",
+            "use_id": "core_03"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "拉伤",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "pub:strain"
+            ],
+            "usage_note": "过度用力等使肌肉受伤；不能借心理紧张的WordNet项证明。",
+            "semantic_role_or_object": "过度用力等使肌肉受伤；不能借心理紧张的WordNet项证明。",
+            "use_id": "core_04"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "过滤；滤去",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01461293",
+            "wn31:v:01462658"
+          ],
+          "reason": "厨房与处理液体的独立用途，原文压力和拉伤均未表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "品系；菌株",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08118376",
+            "wn31:n:08128123"
+          ],
+          "reason": "生物与新闻阅读可遇的独立名词用途，须另行决定采用范围。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "竭力；使劲",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01148517",
+            "wn31:v:01167895"
+          ],
+          "reason": "主动用力不同于使紧张和造成拉伤，原文未明确写出。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "压力；紧张负担",
+          "semantic_role_or_object": "心理或生活资源所承受的压力；不等同肌肉损伤。",
+          "evidence_ids": [
+            "wn31:n:14399295",
+            "wn31:n:14433493",
+            "pub:strain"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "使承受压力；使紧张",
+          "semantic_role_or_object": "使人焦虑，或使耐力、关系等受到考验；为使动/施加负担。",
+          "evidence_ids": [
+            "wn31:v:00025196",
+            "wn31:v:01802463",
+            "pub:strain"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "（肌肉等的）拉伤",
+          "semantic_role_or_object": "受伤状态/损伤名词。",
+          "evidence_ids": [
+            "wn31:n:14321604",
+            "pub:strain"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_04",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "拉伤",
+          "semantic_role_or_object": "过度用力等使肌肉受伤；不能借心理紧张的WordNet项证明。",
+          "evidence_ids": [
+            "pub:strain"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "过滤；滤去",
+          "semantic_role_or_object": "厨房与处理液体的独立用途，原文压力和拉伤均未表达。",
+          "evidence_ids": [
+            "wn31:v:01461293",
+            "wn31:v:01462658"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "品系；菌株",
+          "semantic_role_or_object": "生物与新闻阅读可遇的独立名词用途，须另行决定采用范围。",
+          "evidence_ids": [
+            "wn31:n:08118376",
+            "wn31:n:08128123"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "竭力；使劲",
+          "semantic_role_or_object": "主动用力不同于使紧张和造成拉伤，原文未明确写出。",
+          "evidence_ids": [
+            "wn31:v:01148517",
+            "wn31:v:01167895"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:08118376",
+            "wn31:n:08128123",
+            "wn31:v:01148517",
+            "wn31:v:01167895",
+            "wn31:v:01461293",
+            "wn31:v:01462658"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        },
+        {
+          "domain": "teaching_load",
+          "severity": "teaching_preference",
+          "evidence_ids": [
+            "pub:strain",
+            "wn31:n:08118376",
+            "wn31:n:08128123",
+            "wn31:n:14321604",
+            "wn31:n:14399295",
+            "wn31:n:14433493",
+            "wn31:v:00025196",
+            "wn31:v:01148517",
+            "wn31:v:01167895",
+            "wn31:v:01461293",
+            "wn31:v:01462658",
+            "wn31:v:01802463"
+          ],
+          "finding": "核心超过3组，已逐用法检查并保留差异；需人工复核记忆负担，不以删义达到数字。"
+        }
+      ],
+      "priority_rationale": "压力与拉伤均是独立理解所需功能，各自名词和动词分别展示，故保留4个核心组并明确需要人工复核，不用压缩掩盖词性或方向。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:strain",
+          "headword": "strain",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/strain",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词可指心理或资源压力、肌肉拉伤；动词可使承受紧张/负担，或因过度用力/扭转造成拉伤。还分列过滤、品系等不同用法，不能因有心理紧张便当作拉伤证据。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08118376",
+          "part_of_speech": "n",
+          "definition_en": "a special variety of domesticated animals within a species; \"he experimented on a particular breed of white rats\"; \"he created a new strain of sheep\"",
+          "lemmas": [
+            "breed",
+            "strain",
+            "stock"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08128123",
+          "part_of_speech": "n",
+          "definition_en": "(biology) a group of organisms within a species that differ in trivial ways from similar groups; \"a new strain of microorganisms\"",
+          "lemmas": [
+            "form",
+            "variant",
+            "strain",
+            "var."
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14321604",
+          "part_of_speech": "n",
+          "definition_en": "injury to a muscle (often caused by overuse); results in swelling and pain",
+          "lemmas": [
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14399295",
+          "part_of_speech": "n",
+          "definition_en": "(psychology) nervousness resulting from mental stress; \"his responsibilities were a constant strain\"; \"the mental strain of staying alert hour after hour was too much for him\"",
+          "lemmas": [
+            "strain",
+            "mental_strain",
+            "nervous_strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14433493",
+          "part_of_speech": "n",
+          "definition_en": "difficulty that causes worry or emotional tension; \"she endured the stresses and strains of life\"; \"he presided over the economy during the period of the greatest stress and danger\"- R.J.Samuelson",
+          "lemmas": [
+            "stress",
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00025196",
+          "part_of_speech": "v",
+          "definition_en": "cause to be tense and uneasy or nervous or anxious; \"he got a phone call from his lawyer that tensed him up\"",
+          "lemmas": [
+            "tense",
+            "strain",
+            "tense_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01148517",
+          "part_of_speech": "v",
+          "definition_en": "to exert much effort or energy; \"straining our ears to hear\"",
+          "lemmas": [
+            "strive",
+            "reach",
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01167895",
+          "part_of_speech": "v",
+          "definition_en": "use to the utmost; exert vigorously or to full capacity; \"He really extended himself when he climbed Kilimanjaro\"; \"Don't strain your mind too much\"",
+          "lemmas": [
+            "strain",
+            "extend"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01461293",
+          "part_of_speech": "v",
+          "definition_en": "remove by passing through a filter; \"filter out the impurities\"",
+          "lemmas": [
+            "filter",
+            "filtrate",
+            "strain",
+            "separate_out",
+            "filter_out"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01462658",
+          "part_of_speech": "v",
+          "definition_en": "separate by passing through a sieve or other straining device to separate out coarser elements; \"sift the flour\"",
+          "lemmas": [
+            "sift",
+            "sieve",
+            "strain"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01802463",
+          "part_of_speech": "v",
+          "definition_en": "test the limits of; \"You are trying my patience!\"",
+          "lemmas": [
+            "try",
+            "strain",
+            "stress"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_03"
+          ],
+          "external_candidate_use_ids": [
+            "addition_02"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02",
+            "core_04"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "4个核心组需人工检查首屏负担；不可为满足三组而删去拉伤名词或动词。",
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-7062520c5a0e",
+      "headword": "drive",
+      "source_hash": "48c9effe80d13fd393dbaa8f92198c22b14cc89388b35cf9232d972f18dd10e5",
+      "original_meaning_zh": "动词：驾驶，驱动；名词：驱动力，驱动器",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "驾驶",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "驱动",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "驱动力",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "驱动器",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 19
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "驾驶",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:v:01934845"
+            ],
+            "usage_note": "操纵车辆；人是操作者，车辆是对象。",
+            "semantic_role_or_object": "操纵车辆；人是操作者，车辆是对象。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "驱动；使运转",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01184038"
+            ],
+            "usage_note": "提供动力或控制使机器等工作。",
+            "semantic_role_or_object": "提供动力或控制使机器等工作。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "驱动力；推动力",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:00104654"
+            ],
+            "usage_note": "推动事物的物理作用或力；与人的干劲分开记语义角色。",
+            "semantic_role_or_object": "推动事物的物理作用或力；与人的干劲分开记语义角色。",
+            "use_id": "core_03"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "动力；干劲",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:04842955"
+            ],
+            "usage_note": "促使人行动的内在动力；原文驱动力的抽象读法。",
+            "semantic_role_or_object": "促使人行动的内在动力；原文驱动力的抽象读法。",
+            "use_id": "core_04"
+          }
+        ],
+        "extended": [],
+        "other": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "驱动器",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "wn31:n:03247921"
+            ],
+            "usage_note": "计算机中读写存储介质数据的装置；不是驱动软件的任意同义词。",
+            "semantic_role_or_object": "计算机中读写存储介质数据的装置；不是驱动软件的任意同义词。",
+            "use_id": "other_01"
+          }
+        ]
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "驾车出游；一段车程",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00308457"
+          ],
+          "reason": "名词行程不同于动词驾驶，原文未表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "有组织的活动；运动",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00799906"
+          ],
+          "reason": "如为某目标开展的一系列活动，不能把它藏进驱动力。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "通往住宅的车道",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:03249091"
+          ],
+          "reason": "具体道路用途与车辆动作不同，原文没有。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "迫使；驱使（进入某状态或做某事）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01519166",
+            "wn31:v:01649842"
+          ],
+          "reason": "drive someone to/into的使役结果不同于机器运转，单列候选。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "驾驶",
+          "semantic_role_or_object": "操纵车辆；人是操作者，车辆是对象。",
+          "evidence_ids": [
+            "wn31:v:01934845"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "驱动；使运转",
+          "semantic_role_or_object": "提供动力或控制使机器等工作。",
+          "evidence_ids": [
+            "wn31:v:01184038"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "驱动力；推动力",
+          "semantic_role_or_object": "推动事物的物理作用或力；与人的干劲分开记语义角色。",
+          "evidence_ids": [
+            "wn31:n:00104654"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_04",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "动力；干劲",
+          "semantic_role_or_object": "促使人行动的内在动力；原文驱动力的抽象读法。",
+          "evidence_ids": [
+            "wn31:n:04842955"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "other_01",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "驱动器",
+          "semantic_role_or_object": "计算机中读写存储介质数据的装置；不是驱动软件的任意同义词。",
+          "evidence_ids": [
+            "wn31:n:03247921"
+          ],
+          "layer": "other",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "驾车出游；一段车程",
+          "semantic_role_or_object": "名词行程不同于动词驾驶，原文未表达。",
+          "evidence_ids": [
+            "wn31:n:00308457"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "有组织的活动；运动",
+          "semantic_role_or_object": "如为某目标开展的一系列活动，不能把它藏进驱动力。",
+          "evidence_ids": [
+            "wn31:n:00799906"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "通往住宅的车道",
+          "semantic_role_or_object": "具体道路用途与车辆动作不同，原文没有。",
+          "evidence_ids": [
+            "wn31:n:03249091"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_04",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "迫使；驱使（进入某状态或做某事）",
+          "semantic_role_or_object": "drive someone to/into的使役结果不同于机器运转，单列候选。",
+          "evidence_ids": [
+            "wn31:v:01519166",
+            "wn31:v:01649842"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s003",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_03",
+              "part_of_speech": "名词",
+              "meaning_zh": "驱动力；推动力",
+              "semantic_role_or_object": "推动事物的物理作用或力；与人的干劲分开记语义角色。",
+              "evidence_ids": [
+                "wn31:n:00104654"
+              ]
+            },
+            {
+              "use_id": "core_04",
+              "part_of_speech": "名词",
+              "meaning_zh": "动力；干劲",
+              "semantic_role_or_object": "促使人行动的内在动力；原文驱动力的抽象读法。",
+              "evidence_ids": [
+                "wn31:n:04842955"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:00308457",
+            "wn31:n:00799906",
+            "wn31:n:03249091",
+            "wn31:v:01519166",
+            "wn31:v:01649842"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        },
+        {
+          "domain": "teaching_load",
+          "severity": "teaching_preference",
+          "evidence_ids": [
+            "wn31:n:00104654",
+            "wn31:n:00308457",
+            "wn31:n:00799906",
+            "wn31:n:03247921",
+            "wn31:n:03249091",
+            "wn31:n:04842955",
+            "wn31:v:01184038",
+            "wn31:v:01519166",
+            "wn31:v:01649842",
+            "wn31:v:01934845"
+          ],
+          "finding": "核心超过3组，已逐用法检查并保留差异；需人工复核记忆负担，不以删义达到数字。"
+        }
+      ],
+      "priority_rationale": "先覆盖驾驶、提供动力以及驱动力的物理/心理两种对象。核心4组是显式拆解宽片段的教学选择，待人工复核；计算机装置另标领域。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00104654",
+          "part_of_speech": "n",
+          "definition_en": "the act of applying force to propel something; \"after reaching the desired velocity the drive is cut off\"",
+          "lemmas": [
+            "drive",
+            "thrust",
+            "driving_force"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00308457",
+          "part_of_speech": "n",
+          "definition_en": "a journey in a vehicle (usually an automobile); \"he took the family for a drive in his new car\"",
+          "lemmas": [
+            "drive",
+            "ride"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00799906",
+          "part_of_speech": "n",
+          "definition_en": "a series of actions advancing a principle or tending toward a particular end; \"he supported populist campaigns\"; \"they worked in the cause of world peace\"; \"the team was ready for a drive toward the pennant\"; \"the movement to end slavery\"; \"contributed to the war effort\"",
+          "lemmas": [
+            "campaign",
+            "cause",
+            "crusade",
+            "drive",
+            "movement",
+            "effort"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:03247921",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) a device that writes data onto or reads data from a storage medium",
+          "lemmas": [
+            "drive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:03249091",
+          "part_of_speech": "n",
+          "definition_en": "a road leading up to a private house; \"they parked in the driveway\"",
+          "lemmas": [
+            "driveway",
+            "drive",
+            "private_road"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04842955",
+          "part_of_speech": "n",
+          "definition_en": "the trait of being highly motivated; \"his drive and energy exhausted his co-workers\"",
+          "lemmas": [
+            "drive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01184038",
+          "part_of_speech": "v",
+          "definition_en": "cause to function by supplying the force or power for or by controlling; \"The amplifier drives the tube\"; \"steam drives the engines\"; \"this device drives the disks for the computer\"",
+          "lemmas": [
+            "drive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01519166",
+          "part_of_speech": "v",
+          "definition_en": "force into or from an action or state, either physically or metaphorically; \"She rammed her mind into focus\"; \"He drives me mad\"",
+          "lemmas": [
+            "force",
+            "drive",
+            "ram"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01649842",
+          "part_of_speech": "v",
+          "definition_en": "compel somebody to do something, often against his own will or judgment; \"She finally drove him to change jobs\"",
+          "lemmas": [
+            "drive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01934845",
+          "part_of_speech": "v",
+          "definition_en": "operate or control a vehicle; \"drive a car or bus\"; \"Can you drive this four-wheel truck?\"",
+          "lemmas": [
+            "drive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_03",
+            "core_04",
+            "other_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_02",
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_04"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "驱动力宽中文可否同时承载物理推动与人的动力，应由人工确认展示边界。",
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-94e8566ddfc1",
+      "headword": "still",
+      "source_hash": "24ef49dace8c964b164ce22df24e1834f113cf285c114628cd947c281b91570a",
+      "original_meaning_zh": "仍然；静止的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "仍然",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "静止的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "副词；形容词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "副词",
+            "display_zh": "仍然",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:r:00031700"
+            ],
+            "usage_note": "动作或状态持续而未改变；是时间持续关系。",
+            "semantic_role_or_object": "动作或状态持续而未改变；是时间持续关系。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "静止的；不动的",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:s:01568708"
+            ],
+            "usage_note": "说明人或物没有运动；不等同一切安静或无气泡。",
+            "semantic_role_or_object": "说明人或物没有运动；不等同一切安静或无气泡。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "尽管如此；不过",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00027761"
+          ],
+          "reason": "独立让步/转折功能，原文仍然未明确给出。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "更；还要（修饰比较级）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00018101"
+          ],
+          "reason": "比较程度增加不同于时间持续。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "不含气泡的（饮料）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:a:02285234"
+          ],
+          "reason": "饮料选择中的独立用途，静止的不足以说明。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "静静地；一动不动地",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00469307"
+          ],
+          "reason": "副词方式用法有证据，但原文静止的未标明此方式词性，不机械跨配。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "仍然",
+          "semantic_role_or_object": "动作或状态持续而未改变；是时间持续关系。",
+          "evidence_ids": [
+            "wn31:r:00031700"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "静止的；不动的",
+          "semantic_role_or_object": "说明人或物没有运动；不等同一切安静或无气泡。",
+          "evidence_ids": [
+            "wn31:s:01568708"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "尽管如此；不过",
+          "semantic_role_or_object": "独立让步/转折功能，原文仍然未明确给出。",
+          "evidence_ids": [
+            "wn31:r:00027761"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "更；还要（修饰比较级）",
+          "semantic_role_or_object": "比较程度增加不同于时间持续。",
+          "evidence_ids": [
+            "wn31:r:00018101"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "meaning_zh": "不含气泡的（饮料）",
+          "semantic_role_or_object": "饮料选择中的独立用途，静止的不足以说明。",
+          "evidence_ids": [
+            "wn31:a:02285234"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_04",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "静静地；一动不动地",
+          "semantic_role_or_object": "副词方式用法有证据，但原文静止的未标明此方式词性，不机械跨配。",
+          "evidence_ids": [
+            "wn31:r:00469307"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "wn31:a:02285234",
+            "wn31:r:00018101",
+            "wn31:r:00027761",
+            "wn31:r:00031700",
+            "wn31:r:00469307",
+            "wn31:s:01568708"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:a:02285234",
+            "wn31:r:00018101",
+            "wn31:r:00027761",
+            "wn31:r:00469307"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "首次记忆区分时间持续副词与物体静止形容词，不由两片段的先后决定词性。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:02285234",
+          "part_of_speech": "a",
+          "definition_en": "not sparkling; \"a still wine\"; \"still mineral water\"",
+          "lemmas": [
+            "still",
+            "noneffervescent"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00018101",
+          "part_of_speech": "r",
+          "definition_en": "to a greater degree or extent; used with comparisons; \"looked sick and felt even worse\"; \"an even (or still) more interesting problem\"; \"still another problem must be solved\"; \"a yet sadder tale\"",
+          "lemmas": [
+            "even",
+            "yet",
+            "still"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00027761",
+          "part_of_speech": "r",
+          "definition_en": "despite anything to the contrary (usually preceding a concession); \"although I'm a little afraid, however I'd like to try it\"; \"while we disliked each other, nevertheless we agreed\"; \"he was a stern yet fair master\"; \"granted that it is dangerous, all the same I still want to go\"",
+          "lemmas": [
+            "however",
+            "nevertheless",
+            "withal",
+            "still",
+            "yet",
+            "all_the_same",
+            "even_so",
+            "nonetheless",
+            "notwithstanding",
+            "at_the_same_time"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00031700",
+          "part_of_speech": "r",
+          "definition_en": "with reference to action or condition; without change, interruption, or cessation; \"it's still warm outside\"; \"will you still love me when we're old and grey?\"",
+          "lemmas": [
+            "still"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00469307",
+          "part_of_speech": "r",
+          "definition_en": "without moving or making a sound; \"he sat still as a statue\"; \"time stood still\"; \"they waited stock-still outside the door\"; \"he couldn't hold still any longer\"",
+          "lemmas": [
+            "still",
+            "stock-still"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01568708",
+          "part_of_speech": "s",
+          "definition_en": "not in physical motion; \"the inertia of an object at rest\"",
+          "lemmas": [
+            "inactive",
+            "motionless",
+            "static",
+            "still"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "副词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_02",
+            "addition_04"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "形容词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-89b91df19d9d",
+      "headword": "background",
+      "source_hash": "846c2bda38f2f0e21a26af925f348c5446f36bf0529140df54f375a96c57ff18",
+      "original_meaning_zh": "背景；经历",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "背景",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "经历",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "背景（画面后部）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:05942570"
+            ],
+            "usage_note": "与前景相对的视觉部分。",
+            "semantic_role_or_object": "与前景相对的视觉部分。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "背景（事情的情况或来龙去脉）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:05831841",
+              "wn31:n:14536861"
+            ],
+            "usage_note": "帮助理解事件的信息或其环境；与视觉位置不同。",
+            "semantic_role_or_object": "帮助理解事件的信息或其环境；与视觉位置不同。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "经历；个人背景",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:04928594"
+            ],
+            "usage_note": "一个人的出身、训练或以往经验，不指任意单次事件。",
+            "semantic_role_or_object": "一个人的出身、训练或以往经验，不指任意单次事件。",
+            "use_id": "core_03"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "背景（不显著的伴随事物）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:07299896"
+            ],
+            "usage_note": "如处于背景的声音、情况；突出程度低于关注对象。",
+            "semantic_role_or_object": "如处于背景的声音、情况；突出程度低于关注对象。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "背景（画面后部）",
+          "semantic_role_or_object": "与前景相对的视觉部分。",
+          "evidence_ids": [
+            "wn31:n:05942570"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "背景（事情的情况或来龙去脉）",
+          "semantic_role_or_object": "帮助理解事件的信息或其环境；与视觉位置不同。",
+          "evidence_ids": [
+            "wn31:n:05831841",
+            "wn31:n:14536861"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "经历；个人背景",
+          "semantic_role_or_object": "一个人的出身、训练或以往经验，不指任意单次事件。",
+          "evidence_ids": [
+            "wn31:n:04928594"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "背景（不显著的伴随事物）",
+          "semantic_role_or_object": "如处于背景的声音、情况；突出程度低于关注对象。",
+          "evidence_ids": [
+            "wn31:n:07299896"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "背景（画面后部）",
+              "semantic_role_or_object": "与前景相对的视觉部分。",
+              "evidence_ids": [
+                "wn31:n:05942570"
+              ]
+            },
+            {
+              "use_id": "core_02",
+              "part_of_speech": "名词",
+              "meaning_zh": "背景（事情的情况或来龙去脉）",
+              "semantic_role_or_object": "帮助理解事件的信息或其环境；与视觉位置不同。",
+              "evidence_ids": [
+                "wn31:n:05831841",
+                "wn31:n:14536861"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "背景（不显著的伴随事物）",
+              "semantic_role_or_object": "如处于背景的声音、情况；突出程度低于关注对象。",
+              "evidence_ids": [
+                "wn31:n:07299896"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "背景中文宽泛，首次分视觉、事件信息与人的经历三个功能；伴随而不突出的关系随后学。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04928594",
+          "part_of_speech": "n",
+          "definition_en": "a person's social heritage: previous experience or training; \"he is a lawyer with a sports background\"",
+          "lemmas": [
+            "background"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05831841",
+          "part_of_speech": "n",
+          "definition_en": "information that is essential to understanding a situation or problem; \"the embassy filled him in on the background of the incident\"",
+          "lemmas": [
+            "background",
+            "background_knowledge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05942570",
+          "part_of_speech": "n",
+          "definition_en": "the part of a scene (or picture) that lies behind objects in the foreground; \"he posed her against a background of rolling hills\"",
+          "lemmas": [
+            "background",
+            "ground"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07299896",
+          "part_of_speech": "n",
+          "definition_en": "relatively unimportant or inconspicuous accompanying situation; \"when the rain came he could hear the sound of thunder in the background\"",
+          "lemmas": [
+            "background"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14536861",
+          "part_of_speech": "n",
+          "definition_en": "the state of the environment in which a situation exists; \"you can't do that in a university setting\"",
+          "lemmas": [
+            "setting",
+            "background",
+            "scope"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "core_03",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-6df37daaa46c",
+      "headword": "week",
+      "source_hash": "4a822d60d11a9332a1d441e8d3fa83cfdd31975321c56743995cf61eabc02c08",
+      "original_meaning_zh": "星期；周",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "星期",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "周",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "星期；周（七天）",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:15194920"
+            ],
+            "usage_note": "可指任意连续七天；单写星期并非星期几。",
+            "semantic_role_or_object": "可指任意连续七天；单写星期并非星期几。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "每周工作时间；工作周",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:15160948"
+          ],
+          "reason": "工作时间总量可不同于七天日历区间，原文没有明确表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "星期；周（七天）",
+          "semantic_role_or_object": "可指任意连续七天；单写星期并非星期几。",
+          "evidence_ids": [
+            "wn31:n:15194920"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "每周工作时间；工作周",
+          "semantic_role_or_object": "工作时间总量可不同于七天日历区间，原文没有明确表达。",
+          "evidence_ids": [
+            "wn31:n:15160948"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:15160948"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "原文两片段为同一七天时间单位的近义表达，合并减少重复；不把某词典日历周从周日开始误说成全球统一规则。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:15160948",
+          "part_of_speech": "n",
+          "definition_en": "hours or days of work in a calendar week; \"they worked a 40-hour week\"",
+          "lemmas": [
+            "workweek",
+            "week"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15194920",
+          "part_of_speech": "n",
+          "definition_en": "any period of seven consecutive days; \"it rained for a week\"",
+          "lemmas": [
+            "week",
+            "hebdomad"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-efe5d9ec82c3",
+      "headword": "seldom",
+      "source_hash": "e242534cb99ee8545c21aac38f1efc88813de342039b311871b9e67311b1d4c4",
+      "original_meaning_zh": "很少；不常",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "很少",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "不常",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "副词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "副词",
+            "display_zh": "很少；不常",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:r:00035772"
+            ],
+            "usage_note": "修饰发生频度，不指数量少；近义提示合为一组。",
+            "semantic_role_or_object": "修饰发生频度，不指数量少；近义提示合为一组。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "很少；不常",
+          "semantic_role_or_object": "修饰发生频度，不指数量少；近义提示合为一组。",
+          "evidence_ids": [
+            "wn31:r:00035772"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "原文两个提示都是低发生频度，首次一组即可，不能从很少扩成数量用法。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:r:00035772",
+          "part_of_speech": "r",
+          "definition_en": "not often; \"we rarely met\"",
+          "lemmas": [
+            "rarely",
+            "seldom"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "副词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-b6813f3af2d4",
+      "headword": "dip",
+      "source_hash": "db200e43eb05c9d6743a4df02398ca57cdc94e5a815afb720a0531b8913feda8",
+      "original_meaning_zh": "浸；蘸；下降",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "浸",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "蘸",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "下降",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "浸；蘸",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01579924",
+              "wn31:v:01194845"
+            ],
+            "usage_note": "把物体短暂放入液体；蘸食物需食物和酱料语境，不泛指长时间浸泡。",
+            "semantic_role_or_object": "把物体短暂放入液体；蘸食物需食物和酱料语境，不泛指长时间浸泡。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "下降；下沉",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:00433014",
+              "wn31:v:02043524"
+            ],
+            "usage_note": "价格等短暂下降或物体向下进入视线以下；主体自身变化。",
+            "semantic_role_or_object": "价格等短暂下降或物体向下进入视线以下；主体自身变化。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "下降；跌落",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:05119135"
+            ],
+            "usage_note": "数量降低这一变化/结果，和下降动词共用宽中文须显式拆解。",
+            "semantic_role_or_object": "数量降低这一变化/结果，和下降动词共用宽中文须显式拆解。",
+            "use_id": "extended_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "短暂浸入",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:07379034"
+            ],
+            "usage_note": "浸这一短暂动作的名词；不自动将蘸字也配为名词。",
+            "semantic_role_or_object": "浸这一短暂动作的名词；不自动将蘸字也配为名词。",
+            "use_id": "extended_02"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "蘸酱",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:07598174"
+          ],
+          "reason": "用于蘸食的酱是物质，原文浸/蘸动作不能代替该实体义。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "短时间游泳",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00443832"
+          ],
+          "reason": "活动用法并非普通浸入，独立候选。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "动用（一小部分钱等，常用dip into）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02316837"
+          ],
+          "reason": "资源使用不同于液体动作，原文未表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "浸；蘸",
+          "semantic_role_or_object": "把物体短暂放入液体；蘸食物需食物和酱料语境，不泛指长时间浸泡。",
+          "evidence_ids": [
+            "wn31:v:01579924",
+            "wn31:v:01194845"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "下降；下沉",
+          "semantic_role_or_object": "价格等短暂下降或物体向下进入视线以下；主体自身变化。",
+          "evidence_ids": [
+            "wn31:v:00433014",
+            "wn31:v:02043524"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "下降；跌落",
+          "semantic_role_or_object": "数量降低这一变化/结果，和下降动词共用宽中文须显式拆解。",
+          "evidence_ids": [
+            "wn31:n:05119135"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_02",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "短暂浸入",
+          "semantic_role_or_object": "浸这一短暂动作的名词；不自动将蘸字也配为名词。",
+          "evidence_ids": [
+            "wn31:n:07379034"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "蘸酱",
+          "semantic_role_or_object": "用于蘸食的酱是物质，原文浸/蘸动作不能代替该实体义。",
+          "evidence_ids": [
+            "wn31:n:07598174"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "短时间游泳",
+          "semantic_role_or_object": "活动用法并非普通浸入，独立候选。",
+          "evidence_ids": [
+            "wn31:n:00443832"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "动用（一小部分钱等，常用dip into）",
+          "semantic_role_or_object": "资源使用不同于液体动作，原文未表达。",
+          "evidence_ids": [
+            "wn31:v:02316837"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "动词",
+              "meaning_zh": "浸；蘸",
+              "semantic_role_or_object": "把物体短暂放入液体；蘸食物需食物和酱料语境，不泛指长时间浸泡。",
+              "evidence_ids": [
+                "wn31:v:01579924",
+                "wn31:v:01194845"
+              ]
+            },
+            {
+              "use_id": "extended_02",
+              "part_of_speech": "名词",
+              "meaning_zh": "短暂浸入",
+              "semantic_role_or_object": "浸这一短暂动作的名词；不自动将蘸字也配为名词。",
+              "evidence_ids": [
+                "wn31:n:07379034"
+              ]
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s003",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_02",
+              "part_of_speech": "动词",
+              "meaning_zh": "下降；下沉",
+              "semantic_role_or_object": "价格等短暂下降或物体向下进入视线以下；主体自身变化。",
+              "evidence_ids": [
+                "wn31:v:00433014",
+                "wn31:v:02043524"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "下降；跌落",
+              "semantic_role_or_object": "数量降低这一变化/结果，和下降动词共用宽中文须显式拆解。",
+              "evidence_ids": [
+                "wn31:n:05119135"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "wn31:n:00443832",
+            "wn31:n:05119135",
+            "wn31:n:07379034",
+            "wn31:n:07598174",
+            "wn31:v:00433014",
+            "wn31:v:01194845",
+            "wn31:v:01579924",
+            "wn31:v:02043524",
+            "wn31:v:02316837"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:00443832",
+            "wn31:n:07598174",
+            "wn31:v:02316837"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "先学把物体浸入液体与主体下降两种动词结构，再学原文宽片段支持的事件名词；源逐义词性未知被保留。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00443832",
+          "part_of_speech": "n",
+          "definition_en": "a brief swim in water",
+          "lemmas": [
+            "dip",
+            "plunge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05119135",
+          "part_of_speech": "n",
+          "definition_en": "a sudden sharp decrease in some quantity; \"a drop of 57 points on the Dow Jones index\"; \"there was a drop in pressure in the pulmonary artery\"; \"a dip in prices\"; \"when that became known the price of their stock went into free fall\"",
+          "lemmas": [
+            "drop",
+            "dip",
+            "fall",
+            "free_fall"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07379034",
+          "part_of_speech": "n",
+          "definition_en": "a brief immersion",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07598174",
+          "part_of_speech": "n",
+          "definition_en": "tasty mixture or liquid into which bite-sized foods are dipped",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00433014",
+          "part_of_speech": "v",
+          "definition_en": "go down momentarily; \"Prices dipped\"",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01194845",
+          "part_of_speech": "v",
+          "definition_en": "dip into a liquid while eating; \"She dunked the piece of bread in the sauce\"",
+          "lemmas": [
+            "dunk",
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01579924",
+          "part_of_speech": "v",
+          "definition_en": "immerse briefly into a liquid so as to wet, coat, or saturate; \"dip the garment into the cleaning solution\"; \"dip the brush into the paint\"",
+          "lemmas": [
+            "dunk",
+            "dip",
+            "souse",
+            "plunge",
+            "douse"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02043524",
+          "part_of_speech": "v",
+          "definition_en": "appear to move downward; \"The sun dipped below the horizon\"; \"The setting sun sank below the tree line\"",
+          "lemmas": [
+            "dip",
+            "sink"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02316837",
+          "part_of_speech": "v",
+          "definition_en": "take a small amount from; \"I had to dip into my savings to buy him this present\"",
+          "lemmas": [
+            "dip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "extended_01",
+            "extended_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_02"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "浸的事件名词是否采用更自然的短暂浸入，需人工决定。",
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    }
+  ],
+  "count": 10,
+  "external_access_failures": [
+    {
+      "headword": "issue",
+      "url": "https://dictionary.cambridge.org/dictionary/english/issue",
+      "http_status": 403,
+      "observation_zh": "网页工具返回Forbidden，未获得定义；未将失败访问当作词义证据。随后另查出版社Merriam-Webster。"
+    }
+  ]
+}

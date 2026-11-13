@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_77",
+  "request_hash": "f5b9ed76368b21623bd49a4e7315bfdda818b31ce6f051d9e47045d4bad68cc3",
+  "started_utc": "2026-11-13T08:17:24.535523+00:00",
+  "completed_utc": "2026-11-13T08:18:51.884456+00:00",
+  "elapsed_seconds": 87.344,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "fb831b04-8d66-4fe7-b75e-04bed58793e7",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3734,
+    "completion_tokens": 4626,
+    "total_tokens": 8360,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4186
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1686
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-07f5b83f6cec\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源义「维持」语义宽度不确定：候选将「供养；维持生计」(wn31:v:01187158) 和「滋养；以…维持生命」(wn31:v:01205348) 列为外部候选，理由是原中文未明确宾语。但中文「维持」可构成「维持生计」「维持生命」，这两义可能仍属源义范围而非外部新增。需人工判断是否将其中一个/两个归入源义覆盖范围。\",\n          \"evidence_ids\": [\n            \"wn31:v:01187158\",\n            \"wn31:v:01205348\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-07f5b83f6cec:p6c5:addition:1, SG25-07f5b83f6cec:p6c5:addition:3\",\n          \"proposed_fix\": \"可考虑在源义覆盖矩阵中为 s001 标注可能覆盖的宾语类型（谈判/努力/生计/生命），或保留现有外部候选并等待人工审阅。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学上可考虑将「支撑」的抽象证实义（扩展组）提前到核心，因为阅读中较常见；但无频率证据，仅作建议。\",\n        \"建议在 s002 的语义拆分中更明确物理支撑与抽象支持的对象差异，以帮助学习者区分。\"\n      ],\n      \"note\": \"本轮检查源义覆盖完整，未见实质错误；源义「维持」的范围与外部候选边界存在可审阅的不确定性，但不影响当前候选放行。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

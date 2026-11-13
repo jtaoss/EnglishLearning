@@ -1,0 +1,35 @@
+{
+  "additions_by_headword": {
+    "ritual": [
+      {
+        "id": "pub:p6c5:parent:ritual",
+        "pos": [
+          "名词"
+        ],
+        "definition": "仪式义同时包括宗教与非宗教的正式仪式；惯常反复行为另列。不能以宗教仪式程序代替全部一般仪式义。",
+        "source": "https://www.collinsdictionary.com/dictionary/english/ritual",
+        "type": "existing_verified_C5_proposal_publisher_observation",
+        "origin_proposal_file": "docs/p6/p6c5/REVISED_CANDIDATES.json",
+        "origin_evidence_hash": "f2510e18ae3afd9569d4dd4b5d9b04463372e3d751699fecd50c0b3066779ee2"
+      }
+    ],
+    "extend": [
+      {
+        "id": "pub:p6c5:parent:extend",
+        "pos": [
+          "动词"
+        ],
+        "definition": "伸展/展开适用于身体及非身体物体；可伸缩家具和伸出手分别成立。已提供的WordNet还直接列桌子折叠腿、布料、天线等展开对象。",
+        "source": "https://www.collinsdictionary.com/dictionary/english/extend",
+        "type": "existing_verified_C5_proposal_publisher_observation",
+        "origin_proposal_file": "docs/p6/p6c5/REVISED_CANDIDATES.json",
+        "origin_evidence_hash": "5c40dc15d309374ad46d66a74fab803c4a16bb90da6e3283ac24c1b6f32b1e28"
+      }
+    ]
+  },
+  "reason": "Initial packet builder used baseline supporting_sources rather than revised proposal supporting_sources; two real existing publisher citations were omitted.",
+  "original_inputs_and_model_outputs_unchanged": true,
+  "rules_hash_unchanged": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950",
+  "no_new_meanings_or_IDs": true,
+  "parent_verified_missing_count": 2
+}

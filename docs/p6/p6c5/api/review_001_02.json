@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_02",
+  "request_hash": "13924d3823a3666e6e6a3149b00644c8d7768c754fb1b55f64a8fa9e19027dfe",
+  "started_utc": "2026-11-13T08:16:13.231954+00:00",
+  "completed_utc": "2026-11-13T08:17:26.893982+00:00",
+  "elapsed_seconds": 73.672,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e787ad36-c6d0-44d9-b92b-3ab0ce26b672",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3090,
+    "completion_tokens": 3867,
+    "total_tokens": 6957,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3339
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3090
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7920fdeff9c5\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"major\",\n          \"kind\": \"important_source_use_omitted\",\n          \"reason\": \"Candidate maps source noun sense s001 '仪式' exclusively to WordNet sense wn31:n:01032852 'the prescribed procedure for conducting religious ceremonies', adding a religious restriction not present in the source. The source Chinese gloss '仪式' means ceremony/ritual in general, including non-religious formal events. Candidate's second noun group uses s002 '惯常程序', which does not cover the formal ceremony sense. The evidence list includes wn31:n:01029801 'any customary observance or practice', which supports a broader ceremonial sense for s001, but the candidate assigned that evidence to s002 instead. As a result, the core omits the important general ceremony meaning of the source noun.\",\n          \"evidence_ids\": [\n            \"wn31:n:01029801\",\n            \"wn31:n:01032852\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-7920fdeff9c5:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"Broaden the first noun core to display '仪式，典礼（正式仪式，包括宗教和非宗教）' and use both wn31:n:01029801 and wn31:n:01032852 as evidence, or add a separate core group for general ceremony. Do not restrict the core meaning to religious prescribed procedure; keep the religious procedure sense as a distinct sub-sense or extension if needed.\"\n        }\n      ],\n      \"preferences\": [\n        \"For first memory, consider presenting the general noun '仪式/典礼' before the narrower religious procedure sense, using an example like '婚礼仪式' to avoid over-narrowing.\",\n        \"Keep the habitual/customary behavior sense distinct from the ceremonial sense, even though both are nouns, to preserve object and event type boundaries.\"\n      ],\n      \"note\": \"Candidate covers the source's adjective sense and the second noun sense adequately, but the first noun sense is over-restricted to religious procedure, leaving the broad ceremonial meaning of '仪式' unrepresented. The evidence set supports a broader reading, so a correction is proposed for that core group.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

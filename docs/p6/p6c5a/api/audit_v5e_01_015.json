@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_015",
+  "kind": "audit",
+  "request_hash": "abb30d0d5cfcea29f0992550583b0aa9ed70b85ae0bbc876e3d2ae0fa942903a",
+  "input_ids": [
+    "SG25-b7012df75487",
+    "SG25-948fe603f61d",
+    "SG25-cf4531359e01",
+    "SG25-852408bfbc83",
+    "SG25-fd5f8cbed3d0"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "595fcf58-8754-4756-815a-013858c28739",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-b7012df75487\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"公开宣布、公开声明某事\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“公开声明”义，词典有 announce publicly/officially 依据；未把海关申报等专门用法放进原文义。\",\"evidence_ids\":[\"wn31:v:00967903\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"一般地声明、坚定表明\",\"relation\":\"语义等价\",\"reason\":\"核心组“声明”与 state firmly/emphatically 的词典证据相符。\",\"evidence_ids\":[\"wn31:v:00822462\",\"wn31:v:01012145\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"正式宣告、公开宣布\",\"relation\":\"语义等价\",\"reason\":\"核心组“宣告”由 announce publicly/officially 支撑，方向与词性一致。\",\"evidence_ids\":[\"wn31:v:00967903\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三义项同组保留，公开宣布、坚定声明、正式宣告均有词典依据；海关申报、纸牌叫牌及分红等外部义未采用。\"},{\"id\":\"SG25-948fe603f61d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"主顾、付费购买商品或服务的人\",\"relation\":\"语义等价\",\"reason\":\"核心组“主顾／客户”对应 someone who pays for goods or services，对象和词性一致。\",\"evidence_ids\":[\"wn31:n:10004189\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"委托人、寻求律师等专业服务者\",\"relation\":\"语义等价\",\"reason\":\"扩展组以“委托人”保留专业服务客户义，律师是词典例证而非唯一限定；未扩成一般委托/代理主体。\",\"evidence_ids\":[\"wn31:n:10004605\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"客户、购买服务者\",\"relation\":\"语义等价\",\"reason\":\"核心组“客户”与付费顾客义相符，未加入计算机客户端等原文未支持的领域。\",\"evidence_ids\":[\"wn31:n:10004189\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"主顾/客户由付费顾客义覆盖，委托人作为专业服务客户义在扩展层保留；计算机客户端未纳入原文范围。\"},{\"id\":\"SG25-cf4531359e01\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"经推理或讨论得出判断、结论\",\"relation\":\"语义等价\",\"reason\":\"核心组“得出结论”对应 decide by reasoning / reach a conclusion after deliberation。\",\"evidence_ids\":[\"wn31:v:00636134\",\"wn31:v:01023429\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"结束某事或自身结束\",\"relation\":\"语义等价\",\"reason\":\"核心组“结束”同时覆盖及物 bring to a close 与不及物 come to a close。\",\"evidence_ids\":[\"wn31:v:00716979\",\"wn31:v:02616663\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"得出结论与结束分别成核心组，及物和不及物结束均有证据；达成协议等外部义未采用。\"},{\"id\":\"SG25-852408bfbc83\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"经思考或推理得到的结论、判断\",\"relation\":\"语义等价\",\"reason\":\"核心组“结论”覆盖判断/意见与逻辑推理命题两类词典证据。\",\"evidence_ids\":[\"wn31:n:05846685\",\"wn31:n:06765744\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"事情结束、结尾或终止\",\"relation\":\"语义等价\",\"reason\":\"核心组“结束”覆盖 ending act 与 temporal end，词性和概念范围一致。\",\"evidence_ids\":[\"wn31:n:00210792\",\"wn31:n:15292365\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"结论（判断/推理命题）与结束（行为/时间终点）分列核心，层级无缺口；沟通结尾等细义未强加。\"},{\"id\":\"SG25-fd5f8cbed3d0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"数量或程度下降（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组名词“下降”由 gradual decrease / change toward smaller 的词典证据支撑。\",\"evidence_ids\":[\"wn31:n:13477740\",\"wn31:n:13478551\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"衰退、状况变差（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组名词“衰退”对应 condition inferior to earlier / gradual falling off。\",\"evidence_ids\":[\"wn31:n:14445892\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"下降、变小（动词）\",\"relation\":\"语义等价\",\"reason\":\"核心组动词“下降”由 grow smaller / go down 的词典证据支撑，未混入拒绝义。\",\"evidence_ids\":[\"wn31:v:00432779\",\"wn31:v:02043721\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"婉拒、表示不愿接受\",\"relation\":\"语义等价\",\"reason\":\"扩展组“婉拒”由 show unwillingness / refuse to accept 支撑，保留独立拒绝义。\",\"evidence_ids\":[\"wn31:v:00799092\",\"wn31:v:02242120\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词下降/衰退与动词下降分列核心，婉拒在扩展层保留；拒绝与数量下降未混组，语法变格等外部义未采用。\"}]}",
+  "usage": {
+    "prompt_tokens": 6516,
+    "completion_tokens": 9450,
+    "total_tokens": 15966,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7855
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4596
+  },
+  "started_utc": "2026-11-13T09:40:13.136801+00:00",
+  "completed_utc": "2026-11-13T09:41:06.757588+00:00",
+  "elapsed_seconds": 53.625,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

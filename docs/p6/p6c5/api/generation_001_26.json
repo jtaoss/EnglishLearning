@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_26",
+  "request_hash": "013f74f4cbd774a639d109d65a17cdfbe10c915e96d25f28a54207919c4c010b",
+  "started_utc": "2026-11-13T08:14:59.131988+00:00",
+  "completed_utc": "2026-11-13T08:15:23.363313+00:00",
+  "elapsed_seconds": 24.235,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8786348c-dfd7-434f-958e-c69e08c692ee",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3534,
+    "completion_tokens": 3822,
+    "total_tokens": 7356,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3388
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 718
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-f54d93092fae\",\"word\":\"prosperity\",\"core\":[[\"景气\",\"名词\",[\"s001\"],[\"wn31:n:14513283\"],\"经济处于增长、利润上升和充分就业的繁荣状态\"],[\"繁荣\",\"名词\",[\"s002\"],[\"wn31:n:14497636\"],\"兴旺、顺利、有好运的境况；可作较宽泛的繁荣\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"原文两个名词片段分别偏经济周期语境（景气）和较宽泛的兴旺状态（繁荣），因此按证据分成两个核心组，避免把经济专用义与泛指义混为一组。\",\"flags\":[]},{\"id\":\"SG25-a9f4b3d22a52\",\"word\":\"response\",\"core\":[[\"回答；答复\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:06758700\",\"wn31:n:07214225\"],\"对问题、请求、批评或指控作出的口头/书面答复；也指对话中的应答\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"反应；响应（对刺激或输入）\",\"名词\",[\"wn31:n:00860679\",\"wn31:n:05220076\"],\"外部词典显示 response 可指生理过程或设备对刺激/输入的反应；原文仅列回答/答复，未表达此义，列为候选\"]],\"reason\":\"原文“回答；答复”是同一类名词性答复义，故合并为核心；response 的其他常见用法（生理/设备反应）不是原中文片段所表达，单独列为候选而不混入核心。\",\"flags\":[[\"Minor\",\"core_coverage_incomplete_pending_addition_decision\",\"原文仅覆盖回答/答复；外部词典另有重要“反应/响应”用途，已列 additions 但未采用，核心对英语 response 的覆盖仍待人工决定\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

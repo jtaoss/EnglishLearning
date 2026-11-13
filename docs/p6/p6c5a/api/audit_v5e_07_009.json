@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_009",
+  "kind": "audit",
+  "request_hash": "603066b5d1fd5abbc6fa2185d9f672ab9df38e2319f90e753b354d9423887688",
+  "input_ids": [
+    "SG25-623210167553",
+    "SG25-70ce871f8a3d",
+    "SG25-222b0bd51fce",
+    "SG25-c8ce96a5ba0d",
+    "SG25-f2ce341fdaa6"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "b1d8c339-94f1-4e15-b6c2-bb0aed97f294",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-623210167553\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"账单：应付商品或服务款项的分项单据\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:06528946 明示商品或服务应付款项的分项清单，与源义“账单”及核心组一致。\",\"evidence_ids\":[\"wn31:n:06528946\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"法案：待成为法律的成文草案\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:06548844 为 statute in draft before it becomes law，对应“法案”；该义在扩展层保留，未丢失。\",\"evidence_ids\":[\"wn31:n:06548844\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"钞票：纸币\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:13414935 为纸币，与源义“钞票”一致；扩展层保留不构成缺口。\",\"evidence_ids\":[\"wn31:n:13414935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"鸟嘴：鸟的角质突出嘴部\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:01760949 为鸟的角质突出嘴部，直接对应“鸟嘴”；其他层因动物语境单独放置，语义范围仍可查。\",\"evidence_ids\":[\"wn31:n:01760949\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"四个名词源义均有对应组：账单在核心，法案/钞票在扩展，鸟嘴在其他。无残留范围缺口；首屏压缩属教学排序，扩展与其他层可追溯。\"},{\"id\":\"SG25-70ce871f8a3d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词记录：对事实或事件的记载，或作为凭证的资料\",\"relation\":\"合理概括\",\"reason\":\"wn31:n:06649049 与 wn31:n:06659969 分别覆盖事实汇编和永久性资料/证据；合并为“资料或记载”是自然上位表达，未加入排他对象。\",\"evidence_ids\":[\"wn31:n:06649049\",\"wn31:n:06659969\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词唱片：留声机唱片等录音载体\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:03930191 为带纹路的唱片，对应“唱片”；该义在扩展层保留。\",\"evidence_ids\":[\"wn31:n:03930191\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词记录：把信息记载下来\",\"relation\":\"合理概括\",\"reason\":\"wn31:v:01002259 为 make a record of / set down in permanent form；“记载；写下记录”给出通用说明与书写示例，未把书写设为排他限制。\",\"evidence_ids\":[\"wn31:v:01002259\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词录制：以电子方式录制声音、图像等\",\"relation\":\"语义等价\",\"reason\":\"wn31:v:01000444 为 register electronically，核心组“录制（声音、图像等）”保留电子录制义，示例不构成排他。\",\"evidence_ids\":[\"wn31:v:01000444\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"四个源义均映射：名词记录、动词记载、动词电子录制在核心，唱片在扩展。词典另有“纪录/最佳成绩”等未采用外部候选，因非原义且未进入来源映射。\"},{\"id\":\"SG25-222b0bd51fce\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"基数“五”\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:13766661 为 four 加 one 的基数，对应“五”；组词性仍按源词性标为数词，不因 WordNet 名词编码擅改正式词性。\",\"evidence_ids\":[\"wn31:n:13766661\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一数词源义“五”在核心有一一对应，未发现残留范围或词性替换问题。\"},{\"id\":\"SG25-c8ce96a5ba0d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"基数“一百万”\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:13773673 为 1 后六个零的数，直接对应“百万”；核心组保持数词教学标签。\",\"evidence_ids\":[\"wn31:n:13773673\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一数词源义“百万”已由核心组覆盖；词典中的夸张用法“millions of”不在原义内，未构成缺口。\"},{\"id\":\"SG25-f2ce341fdaa6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"基数“十六”\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:13769746 为 fifteen 加 one 的基数，对应“十六”；核心组保持数词标签。\",\"evidence_ids\":[\"wn31:n:13769746\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一数词源义“十六”在核心有清楚对应，无范围缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 6286,
+    "completion_tokens": 8253,
+    "total_tokens": 14539,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6805
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4366
+  },
+  "started_utc": "2026-11-13T09:53:07.959043+00:00",
+  "completed_utc": "2026-11-13T09:53:54.221371+00:00",
+  "elapsed_seconds": 46.266,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

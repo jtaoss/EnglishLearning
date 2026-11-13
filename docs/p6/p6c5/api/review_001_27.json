@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_27",
+  "request_hash": "0079f0d6cb6c0f2180ede3193f57397baedd1a4edddefe90e644effd99eb7b9c",
+  "started_utc": "2026-11-13T08:16:13.764561+00:00",
+  "completed_utc": "2026-11-13T08:17:35.223992+00:00",
+  "elapsed_seconds": 81.469,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "bd5ae7e7-bc67-415b-8b2a-eed3272e40ee",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3468,
+    "completion_tokens": 4393,
+    "total_tokens": 7861,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3999
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3468
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9300b4d2567a\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"omitted_important_dictionary_addition\",\n          \"reason\": \"Evidence wn31:v:00742058 ('decide as to where something belongs in a scheme') represents a common external use of assign (classify/assign to a category), which is not present in the source Chinese but has independent value for reading academic or technical texts. It is absent from the candidate's dictionary_additions.\",\n          \"evidence_ids\": [\"wn31:v:00742058\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"dictionary_additions\",\n          \"proposed_fix\": \"Add a dictionary_addition candidate with meaning_zh '把…归入（类别/体系）；分类', part_of_speech '动词', evidence_ids ['wn31:v:00742058'], status 'AI_candidate_not_adopted'.\"\n        }\n      ],\n      \"preferences\": [\n        \"可考虑将 'assign to a category/class' 作为后学扩展候选，不强制核心，用于学术/分类语境。\"\n      ],\n      \"note\": \"源文三个动词义项：委派（s002）和指定（s003）均有直接词典证据，已在核心中分组；委托（s001）缺乏直接英义，保留暂存合理。候选外部候选已涵盖分配、归因、转让，但遗漏了常见的分类归类义（wn31:v:00742058）。源词性覆盖标记为 source_derived_use_represented 虽整体成立，但 s001 未解决，后续可细化。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

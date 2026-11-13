@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_019",
+  "kind": "audit",
+  "request_hash": "89d9ecf10c012e69a6d5a50ef9f56d942cb46ebc59daee8d8c8f4590ec8b3943",
+  "input_ids": [
+    "SG25-013d426819a5",
+    "SG25-36bde66f289a",
+    "SG25-111f44a7032e",
+    "SG25-d46bcc63d061",
+    "SG25-9d96e17fd46e"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "66306a84-1129-403f-9309-71e34d2f4bd2",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-013d426819a5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"学校校长；传统多指男性\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“校长”义及“传统男性称谓”的原文提示，未改成中性head teacher；WordNet学校负责人义与出版社male用法证据支持。\",\"evidence_ids\":[\"wn31:n:10183826\",\"pub:headmaster\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"headmaster唯一源义已由核心组覆盖；传统男性提示保留，未无依据扩成中性称谓。\"},{\"id\":\"SG25-36bde66f289a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：纸质/小型手册\",\"relation\":\"语义等价\",\"reason\":\"核心组“手册”直接对应small handbook，未混入形容词或军事操练义。\",\"evidence_ids\":[\"wn31:n:06433328\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：手工的/用手操作的\",\"relation\":\"合理概括\",\"reason\":\"核心组保留“手工的；由人手操作的”形容词性质，合并requiring human effort与of hands证据；未扩成名词“手册”。\",\"evidence_ids\":[\"wn31:a:00184143\",\"wn31:a:02769962\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“手册”与形容词“手工的/由人手操作的”分列核心，词典证据与源词性均对应，无覆盖缺口。\"},{\"id\":\"SG25-111f44a7032e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：阴谋/诡计\",\"relation\":\"语义等价\",\"reason\":\"核心组“阴谋”对应crafty and involved plot；未把clandestine love affair无依据并入。\",\"evidence_ids\":[\"wn31:n:05917114\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：使感兴趣/好奇\",\"relation\":\"语义等价\",\"reason\":\"核心组“引起兴趣或好奇”对应cause to be interested or curious。\",\"evidence_ids\":[\"wn31:v:02684649\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：密谋/暗中策划\",\"relation\":\"语义等价\",\"reason\":\"扩展组“密谋”对应form intrigues in an underhand manner；虽未进核心，但已在扩展层保留并可追溯。\",\"evidence_ids\":[\"wn31:v:00709785\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均被覆盖：引起兴趣、阴谋在核心，密谋在扩展；层级分开且不与名词阴谋自动混同。\"},{\"id\":\"SG25-d46bcc63d061\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"大陆/主体陆地\",\"relation\":\"语义等价\",\"reason\":\"核心组“大陆”对应main land mass of a country or continent，并保留与岛屿/半岛相对的词典限制。\",\"evidence_ids\":[\"wn31:n:09369017\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"本土（在此与大陆合指主体陆地）\",\"relation\":\"合理概括\",\"reason\":\"将“本土”并入“与岛屿相对的主体陆地”的上位表达；未扩展为祖国、国籍等无英语证据用法。\",\"evidence_ids\":[\"wn31:n:09369017\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"大陆与本土在“主体陆地、相对于岛屿/半岛”的框架下合组；未泛化成任何祖国或政治国籍。\"},{\"id\":\"SG25-9d96e17fd46e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"语法术语：从属分句（从句）\",\"relation\":\"无法确定\",\"reason\":\"候选未给该源义任何group，仅列为held；英语证据显示clause语法义包含主句/独立分句/从属分句，原“从句”应作为语法分支保留或明确暂存，不能视为已映射。\",\"evidence_ids\":[\"wn31:n:06325134\",\"pub:B:clause\",\"pub:parent:clause\"],\"context\":\"required_from_source\",\"residual_scope\":\"语法分句义缺失；原“从句”的下位范围与更广的“分句”替代释义均待定。\",\"counterexample\":\"clause的语法义包括独立/主分句，不限于“从句”。\",\"counterexample_evidence_ids\":[\"pub:B:clause\",\"pub:parent:clause\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s002\",\"source_scope\":\"法律/合同文件中的条款\",\"relation\":\"语义等价\",\"reason\":\"核心组“条款（合同、法律文件等）”对应separate section of a legal document；与语法义分开。\",\"evidence_ids\":[\"wn31:n:06404578\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"coverage_gap\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:06325134\",\"pub:B:clause\",\"pub:parent:clause\"],\"reason\":\"原“从句”是语法义，但所有候选层级只有法律“条款”核心组；语法义仅held，且“分句（可独立或从属）”仍是未采用外部候选，因此源支持的语法用途未被保留为任何层级或明确待定分支。\",\"repair_suggestion\":\"增加语法层“分句（含独立/从属）”，或以“从句”作为其下位分支保留并明确暂存；不要仅凭held视为已覆盖。\"}],\"note\":\"条款义映射完整；语法“从句/分句”义仅held且无候选层级，需采用分句释义或明确暂存，不能通过。\"}]}",
+  "usage": {
+    "prompt_tokens": 4832,
+    "completion_tokens": 9097,
+    "total_tokens": 13929,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7583
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2912
+  },
+  "started_utc": "2026-11-13T09:50:57.477304+00:00",
+  "completed_utc": "2026-11-13T09:51:49.864727+00:00",
+  "elapsed_seconds": 52.391,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

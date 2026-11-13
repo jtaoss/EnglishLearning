@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_05",
+  "request_hash": "966840dd9528e2507a23ada065667c26e59c66201248b3c2aaba86878a8c7376",
+  "started_utc": "2026-11-13T08:14:58.677764+00:00",
+  "completed_utc": "2026-11-13T08:15:24.650742+00:00",
+  "elapsed_seconds": 25.969,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ae7a2914-3625-4ac2-a3c3-4f67d8ffa0e1",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3444,
+    "completion_tokens": 3927,
+    "total_tokens": 7371,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3334
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 628
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-c9046f7a37ad\",\"word\":\"description\",\"pos\":\"名词\",\"core\":[[\"描述；说明\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:06737512\"],\"用文字表述某事物的陈述/说明\"]],\"extended\":[[\"描述（行为）\",\"名词\",[\"s001\"],[\"wn31:n:07216025\"],\"描述这一行为或过程\"]],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"‘描述’既可指文字陈述内容，也可指描述行为；分别用陈述义与行为义证据，避免合并后丢失行为用法。\"},\"additions\":[[\"种类；类型\",\"名词\",[\"wn31:n:05848585\"],\"外部词典有原文未明确表达的‘种类/类型’用法，仅作候选未采用\"]],\"reason\":\"首次记忆先取‘用文字描述/说明’的陈述义；‘描述行为’作为后学扩展；‘种类/类型’不是原中文片段，仅列为外部候选。\",\"flags\":[[\"Minor\",\"source_coverage_gap\",\"n:05848585 的‘种类/类型’义未被原文表达，已列为候选未采用\"],[\"Minor\",\"translation_scope_uncertain\",\"s002‘说明’可能偏解释/指示，n:06737512仅支持宽义‘文字陈述’\"]]},{\"id\":\"SG25-63ebfab6ce4e\",\"word\":\"assemble\",\"pos\":\"动词\",\"core\":[[\"拼凑；组合\",\"动词\",[\"s001\",\"s003\"],[\"wn31:v:01660471\"],\"把部件或成员放到一起组成整体\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s002\",\"原中文‘收集’通常指收集物品/资料；assemble 的词典证据指人/人群聚集或把组件组合起来，对象与方向不完全匹配，暂不并入已确认义。\"]],\"splits\":{},\"additions\":[[\"集合；聚集；使聚集\",\"动词\",[\"wn31:v:02433771\",\"wn31:v:02604140\"],\"外部词典有原文未表达的人或人群聚集/使聚集用法；候选未采用\"]],\"reason\":\"首次记忆取‘把部件放到一起组成整体’，可覆盖‘拼凑/组合’；‘收集’因对象不匹配暂存；人群‘集合/聚集’只列为外部候选。\",\"flags\":[[\"Major\",\"source_sense_uncovered_hold\",\"s002‘收集’的对象通常为物品/资料，而 assemble 证据指人或组件聚集/组合，不能无标注地并入核心\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"原文未表达‘人群集合/聚集’，已列为外部候选但未采用\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

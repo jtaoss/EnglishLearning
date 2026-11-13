@@ -1,0 +1,126 @@
+{
+  "schema_version": "p6c5_parent_evidence_adjudication.v1",
+  "confirmed_findings": [
+    {
+      "issue_id": "P6C5-b001-confirmed-01",
+      "stable_id": "SG25-7920fdeff9c5",
+      "headword": "ritual",
+      "severity": "Major",
+      "kind": "important_source_use_omitted",
+      "normalized_cause": "unsupported_subtype_restriction_of_source_general_use",
+      "reason": "源s001仪式被明确收窄为宗教仪式规定程序，普通非宗教正式仪式没有进入该源用法的核心/扩展/暂存。s002惯常程序的另一个名词组不能替代s001的正式仪式用法；形容词社会礼仪也不能补名词缺口。已有WordNet宽义与出版社宗教或其他仪式的定义反证该限制。",
+      "evidence_ids": [
+        "wn31:n:01029801",
+        "wn31:n:01032852",
+        "pub:p6c5:parent:ritual"
+      ],
+      "source_sense_ids": [
+        "s001"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-02",
+      "stable_id": "SG25-bf0bb4ee60e2",
+      "headword": "extend",
+      "severity": "Major",
+      "kind": "important_source_use_omitted",
+      "normalized_cause": "unsupported_subtype_restriction_of_source_general_use",
+      "reason": "源s001伸展被限定为身体部位，已提供的展开桌腿/布料/天线等非身体主动展开用法未在任何层级或暂存得到该源用法覆盖；另一不及物空间/时间延伸组不能代替此及物对象用法。问题是新增对象限制，不是要求所有词典细分都放核心。s002变宽的独立证据不足仍可保持暂存。",
+      "evidence_ids": [
+        "wn31:v:00027261",
+        "wn31:v:01371528",
+        "wn31:v:02058913",
+        "pub:p6c5:parent:extend"
+      ],
+      "source_sense_ids": [
+        "s001"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-03",
+      "stable_id": "SG25-e3f48726b892",
+      "headword": "scholar",
+      "severity": "Minor",
+      "kind": "unsupported_sense_frequency_claim",
+      "normalized_cause": "unsupported_frequency_wording",
+      "reason": "选择理由直接写最常用的学者，但没有提供义项频率证据。应改为明确的AI教学选择，原文和核心无需因此删除。",
+      "evidence_ids": [],
+      "source_sense_ids": [],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-04",
+      "stable_id": "SG25-093e7d5fdbaa",
+      "headword": "contact",
+      "severity": "Minor",
+      "kind": "causative_direction_mismatch_in_note",
+      "normalized_cause": "causative_vs_contact_state",
+      "reason": "动词接触组的注释写使某物与另一物发生物理接触，是使动结构；所引WN v01208316为直接接触/相碰的状态或动作，不能据此断言使动。核心中文接触可保留，修正对象方向注释。",
+      "evidence_ids": [
+        "wn31:v:01208316"
+      ],
+      "source_sense_ids": [
+        "s002"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    }
+  ],
+  "systematic_failure_confirmed": true,
+  "systematic_basis": {
+    "batch": 1,
+    "same_causal_Major_count": 2,
+    "cause": "unsupported_subtype_restriction_of_source_general_use",
+    "pre_registered_stop_rule": "RUN_MANIFEST.json systematic_stop_definition",
+    "rules_file_unchanged": true,
+    "problem_location": "new generation model/rule execution, not formal source corruption"
+  },
+  "other_model_Major_adjudications": [
+    {
+      "headword": "render",
+      "status": "evidence_pending_not_confirmed_Major",
+      "reason": "生成已限定图片语境并标scope gap；是否有原文支持的重要抽象用途仍需具体核验，不能仅凭广中文就把所有英语用法并入。"
+    },
+    {
+      "headword": "restore",
+      "status": "evidence_mapping_granularity_pending_not_confirmed_Major",
+      "reason": "复原/恢复近邻合并不必然为语义错误；逐片段引用范围可细化，中文排斥某对象的断言未获独立充分证据。"
+    },
+    {
+      "headword": "attach",
+      "status": "external_candidate_suggestion_not_confirmed_Major",
+      "reason": "情感联系用法可作为外部候选建议；其首次学习重要性仍为教学判断，未跟踪不直接等于当前原文核心错误。"
+    }
+  ],
+  "other_Minor_adjudications": "外部补充遗漏保留为候选建议；constitution词性已有一项表示被误读为全部片段核验完备，不计确认错误；consume消费范围保留证据待核。",
+  "lowrisk_source_first_comparison": {
+    "words": [
+      "spouse",
+      "persuade"
+    ],
+    "confirmed_new_errors": 0,
+    "persuade": "独立建议合为一组，生成分信念/行动对象两组，属于教学分层差异，不计错误。"
+  },
+  "generation_stopped_after_batch": 1,
+  "remaining_unprocessed_new_IDs": 4632,
+  "human_approved": false,
+  "not_published": true,
+  "adjudicator": "Codex parent; exact backend not exposed"
+}

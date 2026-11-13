@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_004",
+  "kind": "audit",
+  "request_hash": "9acbca11cd933c8b42c334893d9f0180a2a9eb3fad64432a9b3abbb63dae51d7",
+  "input_ids": [
+    "SG25-7688bd7c4272",
+    "SG25-bce2966c0b0d",
+    "SG25-480a27af1dea",
+    "SG25-e3f48726b892",
+    "SG25-db6e2c6375d0"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "37404036-18cf-40c6-88fd-46332f26edf3",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7688bd7c4272\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"满足（需要/愿望等，或使某人满意）\",\"relation\":\"合理概括\",\"reason\":\"核心1覆盖需求对象，核心2覆盖人的感受对象，二者合并覆盖原义“满足”；未把单一对象写成唯一义。\",\"evidence_ids\":[\"wn31:v:01185870\",\"wn31:v:01820398\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"符合（要求、期望、条件等）\",\"relation\":\"语义等价\",\"reason\":\"核心3以“符合；达到（要求、期望）”对应“符合”，证据支持 meet requirements/expectations。\",\"evidence_ids\":[\"wn31:v:02677669\",\"wn31:v:01185870\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001按对象拆成需求满足与使人满意两核心组，s002对应要求/期望的符合；未发现原义缺口。\"},{\"id\":\"SG25-bce2966c0b0d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"满意（心理状态）\",\"relation\":\"语义等价\",\"reason\":\"核心1以“满意；满足感”对应，证据07546643、14010164均为实现愿望/需要后的满足状态。\",\"evidence_ids\":[\"wn31:n:07546643\",\"wn31:n:14010164\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"满足（需求/愿望得到实现）\",\"relation\":\"语义等价\",\"reason\":\"核心2对应 fulfilling a desire/need 的行为或实现过程，证据01074489支持该过程义。\",\"evidence_ids\":[\"wn31:n:01074489\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001心理满意状态，s002需求实现过程；法律清偿/赔偿作为外部未采用候选，未混入来源映射。\"},{\"id\":\"SG25-480a27af1dea\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"怀疑的（对事物持怀疑态度）\",\"relation\":\"语义等价\",\"reason\":\"核心1对应 marked by/given to doubt，s001与s002同义合并。\",\"evidence_ids\":[\"wn31:s:02473075\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"怀疑性的（倾向质疑）\",\"relation\":\"合理概括\",\"reason\":\"“怀疑性的”与“怀疑的”同属 given to doubt，合并为自然形容词表述，未改变词性或对象。\",\"evidence_ids\":[\"wn31:s:02473075\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"怀疑论的（哲学或宗教教义上的怀疑）\",\"relation\":\"无法确定\",\"reason\":\"所给00650269只明确否认/质疑（尤指宗教）教义，不能无保留等同一般哲学“怀疑论”；候选held，未通过。\",\"evidence_ids\":[\"wn31:s:00650269\"],\"context\":\"uncertain\",\"residual_scope\":\"一般哲学怀疑论/非宗教教义范围未获所给证据确认\",\"counterexample\":\"所给证据可支持的是“质疑宗教教义”，不足以覆盖一般“怀疑论”\",\"counterexample_evidence_ids\":[\"wn31:s:00650269\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"held_source_sense\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:s:00650269\"],\"reason\":\"s003“怀疑论的”未映射到任何层，仅暂存；00650269范围偏窄，不能视为已覆盖。\",\"repair_suggestion\":\"保持held/pending；补充哲学怀疑论或更广skeptical证据后，再决定是否入核心或扩展。\"}],\"note\":\"s001/s002合并为“怀疑的；持怀疑态度的”核心组；s003哲学/宗教“怀疑论”范围证据不足，保持暂存，不把核心视为全部源义已核验。\"},{\"id\":\"SG25-e3f48726b892\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"学习者（学习知识的人）\",\"relation\":\"合理概括\",\"reason\":\"核心2用宽义“学习者”概括 learner，注释保留尤指儿童学习者的词典侧重，未把儿童写成排他对象。\",\"evidence_ids\":[\"wn31:n:10271476\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"学者（有学问的人，尤人文领域）\",\"relation\":\"语义等价\",\"reason\":\"核心1对应 learned person，注释保留尤人文；s002与s003合并但可追溯。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"文人（文学/人文学科的有学问者）\",\"relation\":\"合理概括\",\"reason\":\"核心1将“文人”作为“学者；文人”并列，证据 learned person 尤人文支持该下位范围，未加入无关对象。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001学习者对应 learner，s002/s003合并为学者/文人并保留尤人文和文人下位；奖学金获得者未采用。\"},{\"id\":\"SG25-db6e2c6375d0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有意识的（处于知觉/意识状态）\",\"relation\":\"语义等价\",\"reason\":\"核心1对应 having awareness of surroundings/sensations，并以“清醒的”作自然说明；未引入“有意的”义。\",\"evidence_ids\":[\"wn31:a:00572854\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"知道的（意识到具体事实）\",\"relation\":\"语义等价\",\"reason\":\"核心2对应 showing realization/recognition，常与 of 或 that 从句搭配。\",\"evidence_ids\":[\"wn31:s:00192448\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001知觉/清醒状态，s002意识到事实；“有意的/刻意的”作为外部未采用候选，不混入来源。\"}]}",
+  "usage": {
+    "prompt_tokens": 5316,
+    "completion_tokens": 10731,
+    "total_tokens": 16047,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9082
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3396
+  },
+  "started_utc": "2026-11-13T09:48:22.426397+00:00",
+  "completed_utc": "2026-11-13T09:49:21.887119+00:00",
+  "elapsed_seconds": 59.453,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

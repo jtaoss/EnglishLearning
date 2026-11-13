@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_35",
+  "request_hash": "c201bcf2c54fb5fa0b6872c7bf421722a99063048e86c6c8cda968bfaedbc416",
+  "started_utc": "2026-11-13T08:16:13.945194+00:00",
+  "completed_utc": "2026-11-13T08:16:52.262313+00:00",
+  "elapsed_seconds": 38.312,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b941cc64-44ef-44bc-ba48-6f5b4cc0c7ce",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2655,
+    "completion_tokens": 1867,
+    "total_tokens": 4522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1695
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2655
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-542bce4a780c\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"可考虑在教学时提醒“philosopher”另有“冷静理性、生活智慧的人”义，当前作为外部候选不并入核心是稳妥的。\"\n      ],\n      \"note\": \"核心义“哲学家；哲学研究者”与原文“哲学家”及WordNet synset 10443334直接对应，词性为名词，无偏离。第二义项10445710已作为dictionary_additions标为AI_candidate_not_adopted，没有偷偷并入核心，符合源义范围不确定时的保守处理。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

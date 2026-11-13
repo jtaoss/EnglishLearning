@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_79",
+  "request_hash": "8b20b7d465d3d58090a2ba1d4cca653832208a22b4eaf27b213fb297acca2ff8",
+  "started_utc": "2026-11-13T08:17:26.438264+00:00",
+  "completed_utc": "2026-11-13T08:17:55.793057+00:00",
+  "elapsed_seconds": 29.343,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "6e01bdd7-6e8c-4168-bd6d-109c236dd5cb",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2744,
+    "completion_tokens": 1298,
+    "total_tokens": 4042,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1103
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 696
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-cf3c3437a865\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[\"可考虑将词典中“（规则、条件、情况）存在；适用；通行”的正式用法在教学需要时纳入扩展或暂存列表，并明确标为词典外部候选，不默认进入首记核心。\"],\"note\":\"源片段仅“获得”，动词，候选核心‘获得；得到’能覆盖具体事物/资格及抽象待遇、评价的获得方向，引用的两个WordNet义项与源义相符；第三个义项“（规则等）存在；适用”与源中文不同，候选已作为dictionary_additions且状态为AI_candidate_not_adopted，未混入核心，处理符合双轨规则。未发现错误翻译、词性误用或源用法遗漏。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

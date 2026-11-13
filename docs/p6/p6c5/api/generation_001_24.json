@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_24",
+  "request_hash": "43d597696da2275feda8ba2d78c03c941e0e80ca2e7edaded19c3150face9a5d",
+  "started_utc": "2026-11-13T08:14:59.130971+00:00",
+  "completed_utc": "2026-11-13T08:15:26.010390+00:00",
+  "elapsed_seconds": 26.875,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "87e3d2ff-0eb8-4851-90a4-491bd60de248",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3654,
+    "completion_tokens": 4059,
+    "total_tokens": 7713,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3551
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 838
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-5d3082f6a1fd\",\"core\":[[\"绝望的\",\"形容词\",[\"s001\"],[\"wn31:s:01232699\"],\"人感到绝望、失去希望；本组不扩展到危险/局势无望义\"],[\"不顾一切的；拼命的\",\"形容词\",[\"s002\"],[\"wn31:s:01997589\",\"wn31:s:02067030\",\"wn31:s:00264329\"],\"常指人/行动因紧急或绝望而拼死、不顾后果；不限定为暴力\"],[\"极度渴望的；迫切的\",\"形容词\",[\"s003\"],[\"wn31:s:00716816\"],\"需求、欲望极强，带紧迫感\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（局势）危急的；几乎无望的\",\"形容词\",[\"wn31:s:00654473\"],\"外部词典有‘fraught with extreme danger; nearly hopeless’，但原文‘绝望的’未明示危险/局势义，保留候选未采用。\"]],\"reason\":\"按中文三片段分别落到绝望、不顾后果/拼命、极度渴望三条首次理解线；‘危急的处境’不混入‘绝望的’，因原片段未明示危险或局势义，改列外部候选。\",\"flags\":[[\"Info\",\"external_candidate_not_adopted\",\"‘危急的；几乎无望的’仅由外部词典支持，原文未明示危险/局势义，列候选待审。\"]]},{\"id\":\"SG25-ace72b3572c1\",\"core\":[[\"专家\",\"名词\",[\"s001\"],[\"wn31:n:10651303\"],\"某一职业或学科领域的专家\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"专科医生\",\"名词\",[\"wn31:n:10651974\"],\"英语 specialist 可指某一科医生；原文‘专家’未明示医疗专科，保留候选未采用。\"]],\"reason\":\"单一‘专家’先按职业/学科专家立核心；医疗专科医生是英语常见但中文原文未明示的独立用法，只列候选。\",\"flags\":[[\"Info\",\"external_candidate_not_adopted\",\"‘专科医生’为外部词典支持的重要独立用法，原文未明确表达，列候选待审。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

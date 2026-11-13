@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_39",
+  "request_hash": "ef157cfbae56ea6d3f86739b9c7c87bf90ada2bc76d360aefdcc1be821fb11d5",
+  "started_utc": "2026-11-13T08:16:14.063143+00:00",
+  "completed_utc": "2026-11-13T08:18:16.197524+00:00",
+  "elapsed_seconds": 122.125,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5a6fac49-3557-4ce1-979a-8fed70072644",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3281,
+    "completion_tokens": 6255,
+    "total_tokens": 9536,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5512
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1233
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-40542f7e6b9e\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source sense s002 '可能性' is a broad term for possibility; candidate maps it to WordNet belief about future (wn31:n:05953807), then display includes '预期' and usage note narrows to non-generic. This may be conditionally compatible but the mapping is not directly supported without additional context; it risks teaching 'expectation' instead of 'possibility'. Not confirmed as wrong, but evidence gap.\",\n          \"evidence_ids\": [\"wn31:n:05953807\"],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"SG25-40542f7e6b9e:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"Keep source gloss '可能性' as primary, and mark future/belief nuance as an additional condition; or hold s002 as evidence_pending until a general possibility sense is found.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source sense s001 '前景' is broad and neutral; candidate uses only 'possibility of future success' which is narrower and includes success. Candidate flags this as conditional, but it may still mislead if learned as the only meaning. There is no clear evidence for the broad neutral sense; the visual sense is separate. Not a confirmed error.\",\n          \"evidence_ids\": [\"wn31:n:14506552\"],\n          \"source_sense_ids\": [\"s001\"],\n          \"candidate_group_ref\": \"SG25-40542f7e6b9e:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"Either use a broader future outlook sense if available, or clearly separate this as a specific success nuance and keep the source '前景' as a broader headword with multiple sub-senses.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"omitted_dictionary_sense\",\n          \"reason\": \"Candidate's dictionary_additions does not include the visual percept sense from wn31:n:05941982, which is a distinct noun meaning 'view/scene' and can be useful for reading. It is not in the source Chinese, so should not be core, but should be tracked as an external candidate.\",\n          \"evidence_ids\": [\"wn31:n:05941982\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"Add dictionary_addition candidate: meaning_zh '景色，视野', evidence wn31:n:05941982, status AI_candidate_not_adopted.\"\n        }\n      ],\n      \"preferences\": [\n        \"First teach future outlook and possibility, then potential customer/person considered, then verb exploration; consider adding visual sense as a later enrichment if reading classic texts.\"\n      ],\n      \"note\": \"The candidate conservatively handles source s001/s002 with caveats, keeps s003 pending, and lists verb/person external additions. However the source glosses are broader than the specific WordNet senses used, and the visual prospect sense is missing from external tracking. Overall no confirmed core error, but evidence gaps remain.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

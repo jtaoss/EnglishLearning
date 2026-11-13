@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_002",
+  "kind": "audit",
+  "request_hash": "168643f29bab72dc87f824e1b623a23fb5fbc82c3014f534f6f54c0e0c5bb89c",
+  "input_ids": [
+    "SG25-110c08f1fbfc",
+    "SG25-275976081ce1",
+    "SG25-ce922519a3c3",
+    "SG25-7c0ea37f8baa",
+    "SG25-27747689baf9"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "66c14080-69a8-4abd-9178-f9b6f752f2a9",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-110c08f1fbfc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"双向相互作用中的互相影响\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“互相影响”，与 interact 的双向相互作用相符，未扩展为单向影响。\",\"evidence_ids\":[\"wn31:v:02382049\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"双向交互作用\",\"relation\":\"语义等价\",\"reason\":\"核心组同时收“交互作用”，与同一双向作用框架一致。\",\"evidence_ids\":[\"wn31:v:02382049\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两条近义源义由同一核心组覆盖；未发现核心范围缺口，互动/交互需双向语境。\"},{\"id\":\"SG25-275976081ce1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"对情况或刺激作出反应\",\"relation\":\"语义等价\",\"reason\":\"核心组直接对应 show a response 这一一般反应义。\",\"evidence_ids\":[\"wn31:v:00719282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"起反应（原文未明示化学，候选组按物质化学反应用）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组只连到化学“起反应”；若“起反应”泛指对刺激作出反应，则该一般范围未挂在该源义下，仅由 s001 核心覆盖。\",\"evidence_ids\":[\"wn31:v:00447840\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"一般“对刺激起反应/show a response”未作为 s002 分支保留\",\"counterexample\":\"对光或刺激起反应（show a response）\",\"counterexample_evidence_ids\":[\"wn31:v:00719282\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"反对/反抗（需 react against/negatively 类搭配）\",\"relation\":\"合理概括\",\"reason\":\"扩展组用“反对”概括 act against/in opposition，但英语单独 react 不直接等于及物“反对”，需保留 against/负面反应搭配。\",\"evidence_ids\":[\"wn31:v:02383714\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"against/negatively 搭配未在组文本中显式保留\",\"counterexample\":\"react against（反对）需带 against；单独 react 不直接带“反对”宾语\",\"counterexample_evidence_ids\":[\"wn31:v:02383714\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"范围收窄/语境缺口\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-275976081ce1:extended:1\"],\"evidence_ids\":[\"wn31:v:00447840\",\"wn31:v:00719282\"],\"reason\":\"原文“起反应”未限定物质，组只按化学义并注“物质起化学反应”，可能遗漏一般反应范围；s001核心虽保留一般反应，但 s002 自身范围未说明。\",\"repair_suggestion\":\"组文本改为“起化学反应（物质间）”，并明确一般“起反应/对刺激反应”归核心；或为 s002 增加一般反应分支/暂存说明。\"},{\"severity\":\"Minor\",\"kind\":\"搭配/语境未显式\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-275976081ce1:extended:2\"],\"evidence_ids\":[\"wn31:v:02383714\"],\"reason\":\"“反对”对应 react against/negatively，组文本未显示 against，易误用为单独及物反对。\",\"repair_suggestion\":\"组文本改“反对/反抗（react against）”，并在 note 补明搭配要求。\"}],\"note\":\"核心一般反应义清楚；化学与反对义置于扩展可理解，但 s002 化学化收窄、s003 反对搭配未显式，需修订说明。\"},{\"id\":\"SG25-ce922519a3c3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"具体买卖活动\",\"relation\":\"语义等价\",\"reason\":\"核心组“交易／买卖”直接覆盖买卖活动，未泛化为职业或事业。\",\"evidence_ids\":[\"wn31:n:01108713\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"交易活动\",\"relation\":\"语义等价\",\"reason\":\"核心组保留交易，与 transacting/commercial dealings 的词典义一致。\",\"evidence_ids\":[\"wn31:n:01108713\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"生意（限具体交易语境）\",\"relation\":\"合理概括\",\"reason\":\"核心组把“生意”限定在具体交易活动，未泛指职业/事业；符合原并列项的整体交易语境。\",\"evidence_ids\":[\"wn31:n:01108713\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三项均压缩到交易活动；“生意”已限定在具体交易语境，未错扩为职业事业。\"},{\"id\":\"SG25-7c0ea37f8baa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"使发生变化或自身改变（及物/不及物未明）\",\"relation\":\"合理概括\",\"reason\":\"核心组用“改变／修改”覆盖变化动作框架，注释提醒及物与不及物搭配需语境；未采用词网无关特定义。\",\"evidence_ids\":[\"wn31:v:00126072\",\"wn31:v:00122978\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"对事物作出修改/改动\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“修改”，与 make an alteration to 的改动义相符。\",\"evidence_ids\":[\"wn31:v:01671027\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义源义合并到核心；注释提示及物性需语境，未发现明确核心缺口。\"},{\"id\":\"SG25-27747689baf9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：可选替代项\",\"relation\":\"语义等价\",\"reason\":\"名词核心组对应 one of a number of things from which only one can be chosen 的替代选择义。\",\"evidence_ids\":[\"wn31:n:05798949\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：可供选择/可替代的\",\"relation\":\"合理概括\",\"reason\":\"形容词核心组保留“可供选择的”，对应 serving/used in place of another 的可选替代用法；名词与形容词分组，POS 未混。\",\"evidence_ids\":[\"wn31:s:01859862\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词与形容词分设核心组，词性未混；形容词证据取“用作替代”义，源译“可供选择的”可保留。\"}]}",
+  "usage": {
+    "prompt_tokens": 4690,
+    "completion_tokens": 14355,
+    "total_tokens": 19045,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12589
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2770
+  },
+  "started_utc": "2026-11-13T09:40:13.281728+00:00",
+  "completed_utc": "2026-11-13T09:41:35.149415+00:00",
+  "elapsed_seconds": 81.86,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

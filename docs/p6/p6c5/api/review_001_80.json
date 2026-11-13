@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_80",
+  "request_hash": "83f824d1a73d94a03af386c045d6c5d44b06475dc877c0fdacbaa68de4824609",
+  "started_utc": "2026-11-13T08:17:26.901579+00:00",
+  "completed_utc": "2026-11-13T08:19:45.885792+00:00",
+  "elapsed_seconds": 138.984,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "296a3609-4ed1-4b5b-8be5-55a77e489d57",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3302,
+    "completion_tokens": 7077,
+    "total_tokens": 10379,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6623
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1254
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6b428ace0262\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"missed_external_usage\",\n          \"reason\": \"WordNet synset wn31:v:02415305 includes both maintaining a property/feature and allowing someone to remain in a place or position (e.g., retain a lawyer, retain staff). The candidate core1 narrows this to '保持；维持（状态、特征）' and does not track the employ/keep-in-service sub-sense, which is a distinct usage for professional/legal contexts. Source Chinese '保持' does not clearly include this, so it likely belongs in dictionary_additions as an external candidate, not in core, but its absence leaves the coverage matrix incomplete.\",\n          \"evidence_ids\": [\"wn31:v:02415305\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"core_meanings:1\",\n          \"proposed_fix\": \"Add a dictionary_additions candidate for '留用；聘请（律师/员工）' with source_sense_ids=[], status AI_candidate_not_adopted, and note that it is not covered by s001.\"\n        }\n      ],\n      \"preferences\": [\n        \"If teaching business/legal English, plan to introduce 'retain a lawyer/staff' as a separate collocation after the core meanings; not required for general vocabulary learning.\"\n      ],\n      \"note\": \"The candidate correctly maps s001保持 to the maintain-state portion of wn31:v:02415305 and s002保留 to the keep-for-future-use sense. The extended memory sense is a plausible split of s002. s003容纳 is appropriately reserved as pending because the closest WordNet sense 02707488 ('hold back within') does not exactly match the Chinese capacity/contain meaning. The only coverage gap identified is the missed external sub-sense of employing/keeping in service from the same evidence, which should be tracked as an AI candidate not adopted.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

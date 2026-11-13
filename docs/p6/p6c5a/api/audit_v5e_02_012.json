@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_012",
+  "kind": "audit",
+  "request_hash": "71c959cfaaaeea4dd3c877591f7c334052fd0dabe259540e06812ade1c791373",
+  "input_ids": [
+    "SG25-94f2fe083e1b",
+    "SG25-46e087617851",
+    "SG25-d778b673710a",
+    "SG25-e2411f906450",
+    "SG25-3eb95cbef266"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d6c0fd26-31df-48d0-9bf2-a7659c8c8cbf",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-94f2fe083e1b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有利可图的；金钱或物质获利\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“有利可图的”，WordNet 物质获利义直接支持。\",\"evidence_ids\":[\"wn31:a:01876839\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"有益的；可指非金钱收益\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“有益的；有收获的”，与来源广义受益相符；但仅有 publisher observation 且自注需补证。\",\"evidence_ids\":[\"web:profitable\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_limitation\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-94f2fe083e1b:extended:1\"],\"evidence_ids\":[\"web:profitable\"],\"reason\":\"s002 扩展义仅依赖现有 publisher observation，且该证据自注需正规词典补证；这不构成覆盖错误，但确认前应保持待核。\",\"repair_suggestion\":\"补充独立词典或语料例证，或保留 pending 风险，不将扩展义标为已完全确认。\"}],\"note\":\"两个源义均已链接：核心保留物质获利，扩展保留非金钱受益；扩展证据仅 publisher observation 且待补证。\"},{\"id\":\"SG25-46e087617851\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有力的（源译可泛指强有力或强硬）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组仅保留“产生影响或生效”的“有力的”，注释明确不取体力强壮；相对源词可能较宽范围属于收窄。\",\"evidence_ids\":[\"wn31:s:00836323\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"源若泛指体力强壮或强硬，英语 effective 无对应，未覆盖\",\"counterexample\":\"a physically strong person 不是 effective 的“有力”义\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"有效的\",\"relation\":\"语义等价\",\"reason\":\"核心组“有效的／有效果的”保留该义，且 producing intended result 证据支持。\",\"evidence_ids\":[\"wn31:a:00837737\",\"wn31:s:00842764\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"有效果的\",\"relation\":\"语义等价\",\"reason\":\"核心组与 s002 合并展示“有效的／有效果的”，有效果义有 works well as means/remedy 证据支持。\",\"evidence_ids\":[\"wn31:a:00837737\",\"wn31:s:00842764\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_narrowing\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-46e087617851:extended:1\"],\"evidence_ids\":[\"wn31:s:00836323\"],\"reason\":\"组把“有力的”限定为产生影响或生效，避免体力强壮，这是合理的英语证据限制；但源词范围较宽，映射未明确说明剩余源范围应待核。\",\"repair_suggestion\":\"在 s001 的 source_scope/residual 中标注“源若指体力强则无对应”，保留注释，避免把 effective 当一般强壮。\"}],\"note\":\"核心合并有效／有效果；有力的在扩展并限定为产生影响，源若指体力强壮需按源范围待核。\"},{\"id\":\"SG25-d778b673710a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"小说；文学虚构作品\",\"relation\":\"语义等价\",\"reason\":\"核心组“小说”与 literary work based on imagination 证据直接对应。\",\"evidence_ids\":[\"wn31:n:06378552\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"虚构；虚假或虚构的记述\",\"relation\":\"语义等价\",\"reason\":\"核心组“虚构”与 deliberately false or improbable account 证据对应，且注释提醒不应一概解释为说谎或某本小说。\",\"evidence_ids\":[\"wn31:n:06770602\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"小说与虚构分列核心，证据分别支持文学虚构和虚假记述，未见遗漏。\"},{\"id\":\"SG25-e2411f906450\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有势力的；有能力影响他人或事情的\",\"relation\":\"语义等价\",\"reason\":\"核心组合并“有势力的／有影响的”，having or exercising influence or power 证据支持该范围。\",\"evidence_ids\":[\"wn31:a:01835852\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"有影响的\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“有影响的”，与 influential 的 influence/power 证据对应。\",\"evidence_ids\":[\"wn31:a:01835852\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"有势力与有影响合组核心，influence/power 证据支持，未默认政治权势。\"},{\"id\":\"SG25-3eb95cbef266\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形成；形成过程\",\"relation\":\"语义等价\",\"reason\":\"核心组“形成”由 act of forming/establishing 与自然形成过程两条证据支持。\",\"evidence_ids\":[\"wn31:n:00237945\",\"wn31:n:13504691\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"结构（可指空间排列，也可泛指组织或组成机制）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组仅以 a particular spatial arrangement 支持“结构”，注释限定空间排列；源“结构”一般组织或组成义未说明在别层或暂存剩余范围。\",\"evidence_ids\":[\"wn31:n:03389963\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"源“结构”若指一般组织或组成机制，英语 formation 该义未覆盖\",\"counterexample\":\"social structure（一般组织结构）\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"队形；人员或事物按单位排列的阵形\",\"relation\":\"语义等价\",\"reason\":\"扩展组“队形”与 an arrangement of people or things acting as a unit 证据对应。\",\"evidence_ids\":[\"wn31:n:08443418\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"scope_narrowing_residual_unresolved\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-3eb95cbef266:extended:1\"],\"evidence_ids\":[\"wn31:n:03389963\"],\"reason\":\"组把“结构”限于空间排列，仅保留子用法；源“结构”若含一般组织或组成机制，未说明其位于其他层或暂存剩余范围。注释有提醒但映射本身仍宽。\",\"repair_suggestion\":\"在 s002 的 source_scope/residual 中明确“一般结构或组成机制无英语 formation 对应”或暂存待核，避免把结构泛指所有组成机制。\"}],\"note\":\"形成过程在核心；结构、队形在扩展。结构与队形均按空间或人员排列限定，结构一般组织义需明确剩余范围。\"}]}",
+  "usage": {
+    "prompt_tokens": 5242,
+    "completion_tokens": 14853,
+    "total_tokens": 20095,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12965
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3322
+  },
+  "started_utc": "2026-11-13T09:43:09.022101+00:00",
+  "completed_utc": "2026-11-13T09:44:31.220828+00:00",
+  "elapsed_seconds": 82.203,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

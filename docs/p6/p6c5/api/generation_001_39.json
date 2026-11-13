@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_39",
+  "request_hash": "3fd331564b93a136f24d67a16ba11cd5526578a7921fb8ca7cfc21f41caa45e8",
+  "started_utc": "2026-11-13T08:14:59.462041+00:00",
+  "completed_utc": "2026-11-13T08:15:51.932314+00:00",
+  "elapsed_seconds": 52.469,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "1cb95294-a908-413d-a9fa-f977bc85a172",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3561,
+    "completion_tokens": 8478,
+    "total_tokens": 12039,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7859
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 745
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-96f39e3569ec\",\"core\":[[\"消耗；消费；耗费\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:01159815\",\"source:SG25-96f39e3569ec:s002\"],\"宽义使用/耗尽资源、材料、财力；s002 的经济‘购买并使用商品/服务’义仅由原中文追溯，所给定义未直接验证该购买侧。\"],[\"吃喝；进食；饮用\",\"动词\",[\"s003\"],[\"wn31:v:01159300\"],\"按固定/日常摄入食物或饮料；对应 serve oneself to or consume regularly。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"烧毁；吞噬\",\"动词\",[\"wn31:v:01568702\"],\"外部候选：火等彻底毁灭某物；原文未表达毁灭义，不并入核心。\"],[\"使全神贯注；占满（注意力/精力）\",\"动词\",[\"wn31:v:00602298\"],\"外部候选：engage fully；与‘消耗资源’的对象和结果不同，不并入核心。\"],[\"挥霍；浪费\",\"动词\",[\"wn31:v:01160479\"],\"外部候选：奢侈花费；原文‘消费’为中性宽义，不含贬义/浪费义。\"]],\"reason\":\"首记按‘用掉资源/消费’和‘吃喝’两条生活场景分开；将‘消耗’与‘消费’合并为宽义耗费资源，避免把缺乏独立证据的购买消费义单独背成已证实核心；火毁、全神贯注、挥霍仅列候选。\",\"flags\":[[\"Minor\",\"lexical_evidence_insufficient\",\"s002‘消费’的经济购买/使用商品服务义仅有原文追溯（source:SG25-96f39e3569ec:s002），所给 WordNet 01159815 只直接支持耗费资源/材料。\"]]},{\"id\":\"SG25-e1721557ff52\",\"core\":[[\"使相信；使确信\",\"动词\",[\"s001\"],[\"wn31:v:00768463\"],\"使某人采纳某立场或信念；对象为人，结果是相信。\"],[\"说服；劝说（去做/接受）\",\"动词\",[\"s002\"],[\"wn31:v:00768463\",\"wn31:v:02592213\"],\"使某人采取行动、改变立场或赞同；02592213 支持‘使赞同/影响’侧。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"首记先分‘使相信’与‘说服去做/接受’两个结果；二者虽共享‘使某人采纳立场/行动’的词典依据，但中文结果不同，故保留为两个核心组而不压成单一近义堆叠。\",\"flags\":[]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_19",
+  "request_hash": "ba3b490c8b032e953be16e4a193dec3635b9de86ffeaefdb5f8babe23bad800a",
+  "started_utc": "2026-11-13T08:14:59.080114+00:00",
+  "completed_utc": "2026-11-13T08:15:33.146640+00:00",
+  "elapsed_seconds": 34.063,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "422c10b3-8244-4d1c-9422-9c47334e1973",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3970,
+    "completion_tokens": 5627,
+    "total_tokens": 9597,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4971
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1154
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-0b514913789f\",\"word\":\"association\",\"pos\":\"名词\",\"core\":[[\"协会；学会（正式组织）\",\"名词\",[\"s001\"],[\"wn31:n:08066153\"],\"正式组织/团体，如学会、联合会。\"],[\"联系；关系（含社会/业务关系）\",\"名词\",[\"s002\"],[\"wn31:n:13804981\",\"wn31:n:13953418\"],\"由互动、依赖或社会/业务往来形成的关系；宽义‘联系’。\"],[\"联想；观念联系\",\"名词\",[\"s003\"],[\"wn31:n:05771913\",\"wn31:n:14444543\"],\"在记忆或想象中把观念、事件联系起来的过程或状态。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（化学）缔合；化合\",\"名词\",[\"wn31:n:13456325\"],\"化学域专用义，原文未列，作外部候选。\"],[\"（生态）群落\",\"名词\",[\"wn31:n:08006819\"],\"生态学群体义，原文未列，作外部候选。\"]],\"reason\":\"首屏把‘协会’作为具体组织义，把‘联系’作为关系义，把‘联想’作为心理连接义分开；三者对象/领域不同，不宜仅因中文近义而合并。\",\"flags\":[[\"Info\",\"dictionary_additions_pending\",\"化学/生态域义已列为外部候选，尚未升入核心。\"]]},{\"id\":\"SG25-fdf09cdfc26c\",\"word\":\"resolve\",\"pos\":\"名词；动词\",\"core\":[[\"解决；了结（问题、争端、方程）\",\"动词\",[\"s001\"],[\"wn31:v:00700621\",\"wn31:v:00735067\"],\"结束/了结争端或案件，或求出问题/方程的解。\"],[\"决心；决意\",\"动词\",[\"s002\"],[\"wn31:v:00701392\"],\"作出坚定决定，如 resolve never to drink again。\"],[\"决心；坚定\",\"名词\",[\"s003\"],[\"wn31:n:04868717\"],\"坚定果断的品质/决心，不是会议正式决议。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（会议通过的）决议；正式决定\",\"名词\",[\"wn31:n:06523865\"],\"原文名词只列‘决心’，词典另有正式决议义，作外部候选。\"],[\"解析；分辨（图像等）\",\"动词\",[\"wn31:v:02198058\"],\"技术域用法，原文未列，作外部候选。\"]],\"reason\":\"动词‘解决’取‘了结/求解’，动词‘决心’取‘作出坚定决定’，名词‘决心’取‘坚定品质’，按词性和对象分列，避免把正式决议义混入原文名词义。\",\"flags\":[[\"Info\",\"dictionary_additions_pending\",\"正式决议义与技术域解析义已列为外部候选，未升入核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

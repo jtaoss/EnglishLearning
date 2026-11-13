@@ -1,0 +1,1512 @@
+{
+  "protocol": "source_first_blind_review_A_v1",
+  "reviewer_config_model": "gpt-6-astra",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "edabab5d59f9f5e07a8ab51ba338e33bcfc4da436d8ae56a32fc96ff7e0f8b14",
+  "backend_snapshot": null,
+  "cost": null,
+  "priority_basis": "基于教学辨义的建议；未使用语料频率或考试官方权重。",
+  "external_access_failures": [
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/bias",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/flush",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/civilization",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/enquiry",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/appreciate",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/import",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/stewardess",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/decrease",
+      "status": 403,
+      "used_as_evidence": false
+    }
+  ],
+  "record_count": 15,
+  "records": [
+    {
+      "stable_id": "SG25-d4ab04449fe1",
+      "headword": "carve",
+      "source_hash": "e5a9970242550b2594bfd208195e0159651a68698bb1412d3d682b469253d024",
+      "original_meaning_zh": "雕刻；切开",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "雕刻",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "切开",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "雕刻",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01258721",
+            "wn31:v:01259164"
+          ],
+          "reason": "包括刻出图形和刻入表面。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "把（熟肉等）切开分片",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01258531"
+          ],
+          "reason": "分食语境中动作有切分对象，避免泛化为所有切开。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "释义过宽",
+          "observation": "单写“切开”未提示切肉分食的典型对象。",
+          "evidence_ids": [
+            "wn31:v:01258531"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先用雕刻的成形动作建立形象，再记餐桌上的切分动作。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01258721",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "form by carving; \"Carve a flower from the ice\"",
+          "selected_headwords": [
+            "carve"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01259164",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "engrave or cut by chipping away at a surface; \"carve one's name into the bark\"",
+          "selected_headwords": [
+            "carve"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01258531",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "cut to pieces; \"Father carved the ham\"",
+          "selected_headwords": [
+            "carve"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-6d1622d0f2bc",
+      "headword": "appearance",
+      "source_hash": "d50fb06d53728b1f15e2769778be6d18282a37b67493b1d09d8b50a8738f8e7c",
+      "original_meaning_zh": "外表；外貌；样子",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "外表",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "外貌",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "样子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "外表；外貌",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:04681322"
+          ],
+          "reason": "样子在这里可同时覆盖人的外貌和物的外观。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "出现；露面",
+          "evidence_ids": [
+            "wn31:n:00051015",
+            "wn31:n:07336372"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "描述人或物看起来怎样时，三个原译可用同一个问题回忆。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04681322",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "outward or visible aspect of a person or thing",
+          "selected_headwords": [
+            "appearance"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00051015",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of appearing in public view; \"the rookie made a brief appearance in the first period\"; \"it was Bernhardt's last appearance in America\"",
+          "selected_headwords": [
+            "appearance"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07336372",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the event of coming into sight",
+          "selected_headwords": [
+            "appearance"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-2e79db8f9719",
+      "headword": "jury",
+      "source_hash": "b758d8bf68a92a39ac2a8780d089335dda38ca9d00de87a6f4f047a0eb41d115",
+      "original_meaning_zh": "陪审团",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "陪审团",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "陪审团",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:08431076"
+          ],
+          "reason": "由一组人依据证据作出裁断。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "比赛的评审团",
+          "evidence_ids": [
+            "wn31:n:08431764"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "先以法庭角色定位这个集合名词。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:08431076",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a body of citizens sworn to give a true verdict according to the evidence presented in a court of law",
+          "selected_headwords": [
+            "jury"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08431764",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a committee appointed to judge a competition",
+          "selected_headwords": [
+            "jury"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-2b578cbff1f5",
+      "headword": "justify",
+      "source_hash": "957db0a7810ae50742a20e7486eed0eb3fb23be7916ca64e0e0c03e54171a5c2",
+      "original_meaning_zh": "证明合理；为……辩护",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "证明合理",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "为……辩护",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "证明……有道理；为……辩护",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00897737"
+          ],
+          "reason": "为行为或决定辩护可通过说明其合理性实现。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "用给出理由说明正当性统摄两种汉语说法。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00897737",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "show to be right by providing justification or proof; \"vindicate a claim\"",
+          "selected_headwords": [
+            "justify"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-0794afd1bc3c",
+      "headword": "apparent",
+      "source_hash": "b8cfe93b5ac6268190276f9780aaf804fbcc6e0896466cc36910fefe14b6f77d",
+      "original_meaning_zh": "明显的；显而易见的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "明显的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "显而易见的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "明显的；显而易见的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:01622528"
+          ],
+          "reason": "都指事实或特征容易看出。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "表面上的；看似如此的",
+          "evidence_ids": [
+            "wn31:s:01879953"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "源内只有可明显察觉一义，表面如此的读法另列以免误读。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:01622528",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "clearly revealed to the mind or the senses or judgment; \"the effects of the drought are apparent to anyone who sees the parched fields\"; \"evident hostility\"; \"manifest disapproval\"; \"patent advantages\"; \"made his meaning plain\"; \"it is plain that he is no reactionary\"; \"in plain view\"; \"a palpable lie\"",
+          "selected_headwords": [
+            "apparent"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01879953",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "appearing as such but not necessarily so; \"for all his apparent wealth he had no money to pay the rent\"; \"the committee investigated some apparent discrepancies\"; \"the ostensible truth of their theories\"; \"his seeming honesty\"",
+          "selected_headwords": [
+            "apparent"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-c836905751e7",
+      "headword": "recession",
+      "source_hash": "56e3528dcaece74884b854c980bff36f35f3bcd589d74154fa8e0f23b90510d8",
+      "original_meaning_zh": "不景气；经济萧条；衰退",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "不景气",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "经济萧条",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "衰退",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "经济衰退；经济不景气",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14036839"
+          ],
+          "reason": "相邻片段提供经济语境；泛称衰退时仍需看搭配。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "退去；后退",
+          "evidence_ids": [
+            "wn31:n:00058306"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "程度和范围",
+          "observation": "“经济萧条”可能暗示更深重的局面，“衰退”又省略了领域。",
+          "evidence_ids": [
+            "wn31:n:14036839"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "三个词合起来首先指经济活动衰退，不把“萧条”当作必然的严重程度。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:14036839",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the state of the economy declines; a widespread decline in the GDP and employment and trade lasting from six months to a year",
+          "selected_headwords": [
+            "recession"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00058306",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of becoming more distant",
+          "selected_headwords": [
+            "recession"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-c35a9a90c0f9",
+      "headword": "criticism",
+      "source_hash": "cfde6b9264fb223d554af881c8b27275d9bb98d9cd4083a289b2c652c5e15add",
+      "original_meaning_zh": "批评",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "批评",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "批评",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06723485"
+          ],
+          "reason": "直接覆盖对缺点表达不满的用法。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "评论；批评性分析（如文学评论）",
+          "evidence_ids": [
+            "wn31:n:05741963",
+            "wn31:n:06386210"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "先抓住指出缺点或表示不满的动作，再辨别作品评论。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06723485",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "disapproval expressed by pointing out faults or shortcomings; \"the senator received severe criticism from his opponent\"",
+          "selected_headwords": [
+            "criticism"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:05741963",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a serious examination and judgment of something; \"constructive criticism is always appreciated\"",
+          "selected_headwords": [
+            "criticism"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06386210",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a written evaluation of a work of literature",
+          "selected_headwords": [
+            "criticism"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-667937c3e7a6",
+      "headword": "regular",
+      "source_hash": "3872371a1086e558e8c6b96f99396d2a6d5b9180ac60361721b02076eab7df80",
+      "original_meaning_zh": "有规律的；定期的；普通的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "有规律的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "定期的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "普通的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 12
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "有规律的；定期的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:01966104",
+            "wn31:s:02309868",
+            "wn31:s:02375495"
+          ],
+          "reason": "定期是规律性体现在时间间隔上的用法。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "普通的；通常的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:01599894",
+            "wn31:s:02304307"
+          ],
+          "reason": "描述类型或标准时不表示发生频率。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "常客",
+          "evidence_ids": [
+            "wn31:n:10536998"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "时间上的规律与类型上的普通都能改变句义，分开记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:01966104",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "in accordance with fixed order or procedure or principle; \"his regular calls on his customers\"; \"regular meals\"; \"regular duties\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:02309868",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "occurring at fixed intervals; \"a regular beat\"; \"the even rhythm of his breathing\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:02375495",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "regularly scheduled for fixed times; \"at a regular meeting of the PTA\"; \"regular bus departures\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01599894",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "not deviating from what is normal; \"her regular bedtime\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:02304307",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "conforming to a standard or pattern; \"following the regular procedure of the legislature\"; \"a regular electrical outlet\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10536998",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a regular patron; \"an habitue of the racetrack\"; \"a bum who is a Central Park fixture\"",
+          "selected_headwords": [
+            "regular"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-aa214ea38326",
+      "headword": "transform",
+      "source_hash": "3cba4e4532579225d47ab78b312237cb7a68131b3d02fb9f61f5c91d477e4e61",
+      "original_meaning_zh": "改变；使转变",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "改变",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "使转变",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使转变；使发生显著改变",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00382272",
+            "wn31:v:00383306",
+            "wn31:v:00384213"
+          ],
+          "reason": "单用“改变”太宽，补足转变对象的外观、形式或性质。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "两段都是使对象发生形态或性质变化，强调变化的幅度。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00382272",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "change in outward structure or looks; \"He transformed into a monster\"; \"The salesman metamorphosed into an ugly beetle\"",
+          "selected_headwords": [
+            "transform"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00383306",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "change or alter in form, appearance, or nature; \"This experience transformed her completely\"; \"She transformed the clay into a beautiful sculpture\"; \"transubstantiate one element into another\"",
+          "selected_headwords": [
+            "transform"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00384213",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "change from one form or medium into another; \"Braque translated collage into oil\"",
+          "selected_headwords": [
+            "transform"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-f3e8234402a3",
+      "headword": "appreciate",
+      "source_hash": "397dcd66c8cb23eaaacbdcb8c24c62cac093dfcaf4b5a2f65cecb7629419667e",
+      "original_meaning_zh": "欣赏；感激；理解",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "欣赏",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "感激",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "理解",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "欣赏；赏识",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "collins:appreciate",
+            "wn31:v:02260917"
+          ],
+          "reason": "能看出对象的可贵之处。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "感激",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01809949",
+            "collins:appreciate"
+          ],
+          "reason": "对别人的帮助表示感谢。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "充分理解；意识到",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00593736",
+            "collins:appreciate"
+          ],
+          "reason": "用于情况或问题时强调认识到其意义。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（资产等）升值",
+          "evidence_ids": [
+            "wn31:v:00316996"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "作品、帮助和复杂情况分别引出欣赏、感激和充分理解，三者都值得单独记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "collins:appreciate",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/appreciate",
+          "observation_zh": "欣赏品质、感激帮助和充分理解情况可分别成立。",
+          "selected_headwords": [
+            "appreciate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02260917",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "hold dear; \"I prize these old photographs\"",
+          "selected_headwords": [
+            "appreciate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01809949",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "recognize with gratitude; be grateful for",
+          "selected_headwords": [
+            "appreciate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00593736",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be fully aware of; realize fully; \"Do you appreciate the full meaning of this letter?\"",
+          "selected_headwords": [
+            "appreciate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00316996",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "gain in value; \"The yen appreciated again!\"",
+          "selected_headwords": [
+            "appreciate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-0b7b13bc416f",
+      "headword": "legislation",
+      "source_hash": "ad2bc45f4520df7f370c22d4c44cca9495401fd93073d92d7b8402fbd4de2691",
+      "original_meaning_zh": "制定法律；立法",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "制定法律",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "立法",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "立法；制定法律的过程",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:01128014"
+          ],
+          "reason": "两段同指制定法律这一活动。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "法律；法规（统称）",
+          "evidence_ids": [
+            "wn31:n:06547213"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "首先把两个动词式中文片段还原成名词所指的过程。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01128014",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of making or enacting laws",
+          "selected_headwords": [
+            "legislation"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06547213",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "law enacted by a legislative body",
+          "selected_headwords": [
+            "legislation"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-53bc5c9386ea",
+      "headword": "reasonable",
+      "source_hash": "22f172ce751a0758f1cbb68a11bea26ad4267d922a4f09fd2bf401792cb7fa59",
+      "original_meaning_zh": "判断正确的；合理的；明智的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "判断正确的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "合理的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "明智的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 10,
+          "end": 13
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "合理的；明智的",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:01932628",
+            "wn31:a:01950023"
+          ],
+          "reason": "理由站得住脚或人有良好判断都可用。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "判断正确的",
+          "reason": "“判断正确”可能仅表示结果碰巧正确，不能直接拿来替代 reasonable。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "（价格、要求等）适度的；不过分的",
+          "evidence_ids": [
+            "wn31:s:01536380"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "结果与判断方式",
+          "observation": "释义强调合乎情理、具备良好判断，不能保证结论正确。",
+          "evidence_ids": [
+            "wn31:s:01932628",
+            "wn31:a:01950023"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "把评价判断是否合乎情理作为共同线索，另审“正确”的过度承诺。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:01932628",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "marked by sound judgment; \"sane nuclear policy\"",
+          "selected_headwords": [
+            "reasonable"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:01950023",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "showing reason or sound judgment; \"a sensible choice\"; \"a sensible person\"",
+          "selected_headwords": [
+            "reasonable"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01536380",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "not excessive or extreme; \"a fairish income\"; \"reasonable prices\"",
+          "selected_headwords": [
+            "reasonable"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-901ad244ed23",
+      "headword": "nuclear",
+      "source_hash": "32d909cafa3c82920b2e4399b0872febaf6c9b7a127c1a9fd12e289bba12a8fa",
+      "original_meaning_zh": "原子的；原子核的；原子武器的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "原子的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "原子核的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "原子武器的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 14
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "原子核的；核的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:02873726"
+          ],
+          "reason": "明确指向原子核。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "核武器的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:a:00612923"
+          ],
+          "reason": "与武器相关的搭配应直接识别。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "原子的",
+          "reason": "“原子的”太宽，未说明是原子核或其释放的能量。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "核能的",
+          "evidence_ids": [
+            "collins:nuclear"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "细胞核的",
+          "evidence_ids": [
+            "wn31:a:02873911"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "概念边界",
+          "observation": "笼统“原子的”会掩盖 nucleus 与 atom 的层级区别。",
+          "evidence_ids": [
+            "wn31:a:02873726",
+            "collins:nuclear"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "物理语境和武器语境各自保留，避免把核与整个原子等同。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:02873726",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of or relating to or constituting the nucleus of an atom; \"nuclear physics\"; \"nuclear fission\"; \"nuclear forces\"",
+          "selected_headwords": [
+            "nuclear"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:00612923",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(weapons) deriving destructive energy from the release of atomic energy; \"nuclear war\"; \"nuclear weapons\"; \"atomic bombs\"",
+          "selected_headwords": [
+            "nuclear"
+          ]
+        },
+        {
+          "evidence_id": "collins:nuclear",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/nuclear-engineering",
+          "observation_zh": "词条中的 nuclear 定义包含原子核及其释放的能量。",
+          "selected_headwords": [
+            "nuclear"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02873911",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of or relating to or constituting the nucleus of a cell; \"nuclear membrane\"; \"nuclear division\"",
+          "selected_headwords": [
+            "nuclear"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-ce922519a3c3",
+      "headword": "transaction",
+      "source_hash": "67e6ebe9919435f574d65e6e488ce7c5e5d021fac85207ebd01a9178094eca95",
+      "original_meaning_zh": "买卖；交易；生意",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "买卖",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "交易",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "生意",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "一笔交易；买卖",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:01108713"
+          ],
+          "reason": "做成的一笔生意可以这样说；不宜泛指经营业务。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "范围",
+          "observation": "“生意”须限制到一次商业往来。",
+          "evidence_ids": [
+            "wn31:n:01108713"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "先以一笔具体交易建立可数的记忆单位。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01108713",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of transacting within or between groups (as carrying on commercial activities); \"no transactions are possible without him\"; \"he has always been honest is his dealings with me\"",
+          "selected_headwords": [
+            "transaction"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-4721819b2bf3",
+      "headword": "competition",
+      "source_hash": "8935b7f81d0a9129fd8ea50a1c6001eec2bddac8018d8dd694732ad2833fb4c0",
+      "original_meaning_zh": "竞争；比赛",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "竞争",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "比赛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "竞争",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:01171059",
+            "wn31:n:13859208"
+          ],
+          "reason": "表示争夺利益或争取胜出的过程。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "比赛；竞赛",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07470961"
+          ],
+          "reason": "表示有参赛者和胜负的一项活动。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "竞争对手（集合称呼）",
+          "evidence_ids": [
+            "wn31:n:10552570"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "竞争关系和一场比赛的指称不同，分别保留。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01171059",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of competing as for profit or a prize; \"the teams were in fierce contention for first place\"",
+          "selected_headwords": [
+            "competition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13859208",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a business relation in which two parties compete to gain customers; \"business competition can be fiendish at times\"",
+          "selected_headwords": [
+            "competition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07470961",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an occasion on which a winner is selected from among two or more contestants",
+          "selected_headwords": [
+            "competition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10552570",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the contestant you hope to defeat; \"he had respect for his rivals\"; \"he wanted to know what the competition was doing\"",
+          "selected_headwords": [
+            "competition"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_003",
+  "kind": "audit",
+  "request_hash": "1754180017d881d8191fc9f94994bdb4937fa0854dea002c22221ccb402337c6",
+  "input_ids": [
+    "SG25-13bfaf8f3c47",
+    "SG25-40b149bf4da1",
+    "SG25-d942f6488657",
+    "SG25-48f8106bb7de",
+    "SG25-a18603086e5b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "4b7abf1f-9830-4efc-a0ba-7fcb4a521706",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-13bfaf8f3c47\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"副词：表示部分/一定程度，非全部\",\"relation\":\"语义等价\",\"reason\":\"原义'部分地'即'to some extent/not wholly'，词性与程度限定一致，单一副词组完整承接。\",\"evidence_ids\":[\"wn31:r:00008102\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一副词义'部分地'与WordNet程度义等价，核心单组覆盖，无对象或比例被擅自添加。\"},{\"id\":\"SG25-40b149bf4da1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：量之间的关系/比值\",\"relation\":\"语义等价\",\"reason\":\"核心'比例'承接量关系义，13837661比较量关系与13837954部分/整体比值共同支撑。\",\"evidence_ids\":[\"wn31:n:13837661\",\"wn31:n:13837954\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：整体中占的一份/份额\",\"relation\":\"合理概括\",\"reason\":\"'部分'作为整体中的份额可在扩展保留，注释以'不译成任意碎块'限定为必要对象条件；但所给证据13837954主为比值，份额义更贴近13837661。\",\"evidence_ids\":[\"wn31:n:13837954\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"原文'部分'可泛指碎片/片段，proportion不含该宽义\",\"counterexample\":\"a proportion of the students（整体中份额）成立，而任意 fragment/碎块义不能换成 proportion\",\"counterexample_evidence_ids\":[\"wn31:n:13837661\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_and_layer_rationale\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-40b149bf4da1:extended:1\"],\"evidence_ids\":[\"wn31:n:13837954\",\"wn31:n:13837661\"],\"reason\":\"份额/部分义更适合用13837661（整体中比较份额）作证据，现列13837954偏重部分/整体比值；且extended:1注释与core:1雷同，未单列'部分'后置的独立教学理由。\",\"repair_suggestion\":\"为extended:1补充13837661为首要证据，并加一句说明份额义后置的理由（如与比例比值框架区分）。\"}],\"note\":\"比例(s001)核心完整覆盖量关系义；部分(s002)在扩展保留份额义，但所给13837954偏比值证据、份额更近13837661，且扩展注释与核心雷同。\"},{\"id\":\"SG25-d942f6488657\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"进口/从国外购入（行为与动作，词性未定）\",\"relation\":\"语义等价\",\"reason\":\"原义'进口'词性未定，核心动词组(v:02351132)与名词行为组(collins)分别覆盖动作与行为，方向由国外购入一致。\",\"evidence_ids\":[\"wn31:v:02351132\",\"p6c3:collins:import\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"输入（宽泛，可为数据或一般输入；词性未定）\",\"relation\":\"范围收窄\",\"reason\":\"仅扩展动词组收窄为'数据导入'(v:02237504)，原词性未定下的名词'输入/input'及非数据输入未保留或暂存。\",\"evidence_ids\":[\"wn31:v:02237504\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"名词'输入/input'与一般非数据输入未覆盖\",\"counterexample\":\"data input/general input 作名词的'输入'无对应组承接\",\"counterexample_evidence_ids\":[\"wn31:v:02237504\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-d942f6488657:p6c3:extended:1\"],\"evidence_ids\":[\"wn31:v:02237504\",\"p6c3:collins:import\"],\"reason\":\"s002'输入'词性未定，仅收窄为数据动词；名词输入/一般输入既未进入核心也未明确暂存，属原片段内部残差。\",\"repair_suggestion\":\"明示'输入'名词义为待核残差或补Note暂存，避免仅以动词组视为完整覆盖。\"}],\"note\":\"进口名词+动词在核心覆盖；输入仅收窄为数据动词扩展，名词输入/一般输入为来源词性未定下的残差待核。\"},{\"id\":\"SG25-48f8106bb7de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：参加/加入活动\",\"relation\":\"语义等价\",\"reason\":\"核心合并组以become a participant/be involved in承接'参加'，属同一参与行为。\",\"evidence_ids\":[\"wn31:v:01084999\",\"wn31:v:02455121\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：参与/共享其中\",\"relation\":\"语义等价\",\"reason\":\"'参与'与share in something同义，与s001可合组，核心合并组完整覆盖。\",\"evidence_ids\":[\"wn31:v:01084999\",\"wn31:v:02455121\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"'参加/参与'语义近同可合并，核心单组完整覆盖，并提示participate in搭配。\"},{\"id\":\"SG25-a18603086e5b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"支持（名词：对事业/政策的支持；动词：赞同或精神支持）\",\"relation\":\"合理概括\",\"reason\":\"词性未定的'支持'由核心名词组(n:01215009)与非物质动词组(02459338赞同/02561834精神帮助)分别承接，覆盖非物质框架。\",\"evidence_ids\":[\"wn31:n:01215009\",\"wn31:v:02459338\",\"wn31:v:02561834\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"支撑（承受重量/实体支撑，词性未定）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组以be physical support/carry weight(v:01219607)承接'支撑'动作，但名词'支柱/支撑物'未覆盖。\",\"evidence_ids\":[\"wn31:v:01219607\"],\"context\":\"none\",\"residual_scope\":\"名词'支撑/支柱/支撑物'(n:04366676/04367588)未覆盖\",\"counterexample\":\"a shelf support（名词支柱义）无组承接\",\"counterexample_evidence_ids\":[\"wn31:n:04366676\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"供养（物质/经济供养）\",\"relation\":\"语义等价\",\"reason\":\"扩展组以support materially or financially(v:02223876)承接'供养'，语义一致，但独立义项置于扩展缺明确教学理由。\",\"evidence_ids\":[\"wn31:v:02223876\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-a18603086e5b:core:2\"],\"evidence_ids\":[\"wn31:n:04366676\",\"wn31:n:04367588\"],\"reason\":\"s002'支撑'词性未定，仅动词负重义覆盖；名词'支柱/支撑物'义既未入核心也未暂存标注，属原片段残差。\",\"repair_suggestion\":\"增加名词支撑物义的暂存/待核标注或扩展链接。\"},{\"severity\":\"Info\",\"kind\":\"layering_rationale\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-a18603086e5b:extended:1\"],\"evidence_ids\":[\"wn31:v:02223876\"],\"reason\":\"'供养'为原文单列的独立义项，后置扩展但注释未给出具体教学后置理由，易与核心支持混同。\",\"repair_suggestion\":\"在extended:1注释中补充后置的具体理由（如与精神/立场支持区分的经济供养子框架）。\"}],\"note\":\"支持名词+动词、支撑动词、供养分置三层覆盖；支撑名词义(支柱/支撑物)缺失应暂存；供养为独立义项后置扩展缺明确理由。\"}]}",
+  "usage": {
+    "prompt_tokens": 7226,
+    "completion_tokens": 6173,
+    "total_tokens": 13399,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4084
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5306
+  },
+  "started_utc": "2026-11-13T09:46:53.369746+00:00",
+  "completed_utc": "2026-11-13T09:47:25.743565+00:00",
+  "elapsed_seconds": 32.375,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

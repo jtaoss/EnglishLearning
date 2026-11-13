@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_006",
+  "kind": "audit",
+  "request_hash": "dfd3e34aac9ccdde20304f6f67b68b4342f426dfbc9697410eb918d1ba860c7f",
+  "input_ids": [
+    "SG25-ed142ddaa38e",
+    "SG25-9f7439aa4e2b",
+    "SG25-23b18e504dd4",
+    "SG25-0275fca08c21",
+    "SG25-8042c6d16511"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "bd427a57-e3da-4ec4-af3e-a999a023a66a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-ed142ddaa38e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"消失（变得看不见或不再存在）\",\"relation\":\"语义等价\",\"reason\":\"原义“消失”与核心义“消失”一致，英语证据覆盖变得不可见、停止存在或不知去向，未强行添加具体失踪事件限制。\",\"evidence_ids\":[\"wn31:v:02160976\",\"wn31:v:00428350\",\"wn31:v:00427911\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心“消失”保留原短释，覆盖不可见/不存在/不知去向，未把某一具体失踪场景当作排他限定。\"},{\"id\":\"SG25-9f7439aa4e2b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"奇怪的（异于寻常或预期）\",\"relation\":\"语义等价\",\"reason\":\"“奇怪的”对应 markedly different from usual / beyond expected，核心组用“奇怪的”保留该独立性质，未混入“特有的”。\",\"evidence_ids\":[\"wn31:s:00493135\",\"wn31:s:00971199\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"特有的（某对象或类别独有）\",\"relation\":\"语义等价\",\"reason\":\"“特有的”对应 characteristic of one only / unique or specific to，核心组单独保留“特有的”，并以注释提醒 peculiar to 的独有含义。\",\"evidence_ids\":[\"wn31:s:00358870\",\"wn31:s:01107719\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“奇怪的”和“特有的”分设核心组，词性和语义边界清楚，未把 peculiar to 的独有义误并入奇怪义。\"},{\"id\":\"SG25-23b18e504dd4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"费用（为商品或服务支付的金额）\",\"relation\":\"合理概括\",\"reason\":\"核心组将“费用／开支”合并为支出金额框架，s001“费用”被保留；词网证据支持商品服务支出与工作花费，未把牺牲/代价比喻强加为原文义。\",\"evidence_ids\":[\"wn31:n:13296518\",\"wn31:n:13298909\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"开支（工作或活动所花费的钱）\",\"relation\":\"合理概括\",\"reason\":\"s002“开支”与“费用”同属支出金额框架，合并显示合理；证据覆盖 money spent / amounts paid，核心未新增牺牲代价义。\",\"evidence_ids\":[\"wn31:n:13296518\",\"wn31:n:13298909\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“费用／开支”合为支出金额核心组，未采用 at the expense of 的牺牲义及动词 write off，符合原名词义范围。\"},{\"id\":\"SG25-0275fca08c21\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"独立的（不受外部控制）\",\"relation\":\"合理概括\",\"reason\":\"核心组把“独立的／自主的”合并为不受外部控制这一框架；s001“独立的”由 free from external control and constraint 支持，未引入政治中立名词义。\",\"evidence_ids\":[\"wn31:a:00731008\",\"wn31:s:01066082\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"自主的（自主不受外力控制）\",\"relation\":\"合理概括\",\"reason\":\"s002“自主的”与 autonomous / not controlled by outside forces 对应，和“独立的”同属不受外部控制框架，合并核心组有证据支持。\",\"evidence_ids\":[\"wn31:a:00731008\",\"wn31:s:01066082\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“独立的／自主的”合并合理，证据集中于不受外部控制；未把独立名词（无长期合同者、政治中立者）当作原形容词义。\"},{\"id\":\"SG25-8042c6d16511\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"不可缺少的（绝对必要）\",\"relation\":\"语义等价\",\"reason\":\"“不可缺少的”对应 essential / absolutely necessary / not to be dispensed with，核心组保持单一原义，未据例词数量推断考试频率。\",\"evidence_ids\":[\"wn31:a:00906890\",\"wn31:s:01584714\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心“不可缺少的”与 absolutely necessary / essential 一致，未扩展为无来源的“不可避免”等用法。\"}]}",
+  "usage": {
+    "prompt_tokens": 5045,
+    "completion_tokens": 4132,
+    "total_tokens": 9177,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2922
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3125
+  },
+  "started_utc": "2026-11-13T09:46:53.525883+00:00",
+  "completed_utc": "2026-11-13T09:47:17.066287+00:00",
+  "elapsed_seconds": 23.547,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

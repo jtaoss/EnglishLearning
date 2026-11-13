@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_010",
+  "kind": "verify",
+  "request_hash": "a777c14c91b92b0c1cb55d6b68db684fae38debd06e0fce16d12b68680d81ed0",
+  "input_ids": [
+    "SG25-d43c8bd5797a",
+    "SG25-4932c716f725"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "98820446-8e10-45bd-9a7a-b77da5d64c97",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-d43c8bd5797a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“纪律”由规则/行为规范证据 n:05670721 支持，未附加对象限制；源中文“纪律”通常指规则/纪律性，该义在证据范围内。\",\n          \"evidence_ids\": [\"wn31:n:05670721\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“学科”由知识分支证据 n:06005806 直接支持，未扩大或缩小。\",\n          \"evidence_ids\": [\"wn31:n:06005806\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组“训练”仅用 v:02559394（儿童/动物行为与自控训练）支持，未覆盖中文“训练”通用技能/体能训练；group文本未加限制，可能误示为全范围。\",\n          \"evidence_ids\": [\"wn31:v:02559394\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“管教”由 v:02559125（惩罚以控制/服从）支持，符合中文“管教”纠正性管束义；未扩展为一般指示。\",\n          \"evidence_ids\": [\"wn31:v:02559125\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_scope_narrower_than_label\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-d43c8bd5797a:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:02559394\"],\n          \"reason\": \"group显示为通用“训练”，但唯一证据限于儿童/动物行为与自控训练；中文源“训练”可指一般技能/体能训练，未被覆盖，group文本可能误导。\",\n          \"counterexample\": \"训练运动员技能常用 train/coach，不是 discipline。\",\n          \"repair_suggestion\": \"在组注释限定为“行为/自控训练”，并将一般训练范围标为源范围待核；不要用该证据支持通用训练义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"源中文“训练”范围宽于现有英语证据；一般技能/体能训练是否属于 discipline 的英语义尚未有证据，需单独核校。\",\n        \"名词“纪律”是否还包含 trait/well-behaved 义（n:04888818）未在核心体现；如原义仅指规则系统则无问题。\"\n      ],\n      \"preferences\": [\n        \"可考虑保留 n:04888818、n:01164308、n:00895516 作为名词附加词典观察，但不必进入核心。\"\n      ],\n      \"note\": \"名词纪律/学科核心覆盖正确；动词训练仅覆盖行为/自控训练，一般训练范围待核；管教有控制/惩罚证据。\"\n    },\n    {\n      \"id\": \"SG25-4932c716f725\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"裸“指”缺宾语/语境，已被 held，不能确定对应 indicate 的哪一用法，未并入任何候选组。\",\n          \"evidence_ids\": []\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心组“指出；指向（地点或对象）”包含“指向地点/对象”义，这更接近 held s001 的裸“指”，而 s002“指出”主要表示 verbal point-out；扩展组“指出；简要表达”合理，但 core:1 借用未决义。\",\n          \"evidence_ids\": [\"wn31:v:00925764\", \"wn31:v:00929986\", \"p6c3:mw:indicate\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“指示；表明（某种情况）”由 v:00774685、v:00923271 支持，注释明确非命令，与源“指示”的显示/表明义一致。\",\n          \"evidence_ids\": [\"wn31:v:00774685\", \"wn31:v:00923271\", \"p6c3:mw:indicate\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_scope_borrowing\",\n          \"source_ids\": [\"s001\", \"s002\"],\n          \"group_ids\": [\"SG25-4932c716f725:p6c3:core:1\"],\n          \"evidence_ids\": [\"wn31:v:00925764\"],\n          \"reason\": \"core:1 以 s002“指出”为源，却显示“指向（地点或对象）”；该范围更接近 held s001 的裸“指”，有将未决义借入 s002 的风险。\",\n          \"counterexample\": \"“指出事实”与“指向某地点”是不同用法；后者不能由 s002 直接证明。\",\n          \"repair_suggestion\": \"将“指向地点/对象”留在 s001 pending 或另组说明来源；s002 仅保留“指出/点明/简要表达”及对应证据。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001 裸“指”缺宾语/语境，需补充实例或明确指向/指出/指代后再映射；目前 held 合理但未覆盖。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s002/s003 的指出与表明有证据支持；s001 裸“指”仍 held，且 core:1 混入“指向”需拆清。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5400,
+    "completion_tokens": 7944,
+    "total_tokens": 13344,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6607
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3736
+  },
+  "started_utc": "2026-11-13T09:56:48.822859+00:00",
+  "completed_utc": "2026-11-13T09:58:33.744722+00:00",
+  "elapsed_seconds": 104.922,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

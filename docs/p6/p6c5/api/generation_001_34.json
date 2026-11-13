@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_34",
+  "request_hash": "974dbaaa4e50172f7cd02444b3bdb9f329b76f0dea3eb38dd80b204e46ebdb09",
+  "started_utc": "2026-11-13T08:14:59.364955+00:00",
+  "completed_utc": "2026-11-13T08:15:31.564902+00:00",
+  "elapsed_seconds": 32.203,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c51cc068-4c8e-4289-94ec-cff15bd8414d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3565,
+    "completion_tokens": 5222,
+    "total_tokens": 8787,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4547
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 749
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-b72f4a8521c3\",\"core\":[[\"区别；差异\",\"名词\",[\"s001\"],[\"wn31:n:04756794\"],\"指相似事物或人之间可辨的差异\"],[\"卓越；杰出（尤指地位、声望）\",\"名词\",[\"s002\"],[\"wn31:n:14458911\"],\"指因显著优越而显得杰出、显赫\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"区分；辨别（行为）\",\"名词\",[\"wn31:n:05756230\"],\"外部词典常用义：依据特征进行区分、辨别的行为；原文“区别”作名词更偏差异本身，未明确此行为义，候选待采用。\"],[\"荣誉；奖项；优异成绩\",\"名词\",[\"wn31:n:06719080\"],\"外部词典常用义：因成就或优越表现而授予的荣誉、奖项或优异成绩；原文未表达，候选待采用。\"]],\"reason\":\"“区别”按名词‘差异’义处理，“卓越”按‘杰出、显赫’义处理，两者对象和抽象维度不同，故分列。荣誉、区分行为等义不在原文明确范围内，只列入候选。\",\"flags\":[[\"Minor\",\"source_translation_scope_gap\",\"“卓越”对应 evidence 中 eminence/high status 时含地位、声望色彩，展示已用括号限定，不能等同于单纯‘优秀’。\"],[\"Minor\",\"core_coverage_incomplete_pending_addition_decision\",\"词典另有“区分行为”“荣誉/优异成绩”等原文未明确的用途，已列入 additions，核心未采用。\"]]},{\"id\":\"SG25-39d5ef92ac20\",\"core\":[[\"分清；区别；辨别\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:00652006\"],\"识别并把不同事物或类别区分开；对象为相似事物、类别\"],[\"看清楚；辨认出\",\"动词\",[\"s003\"],[\"wn31:v:02197640\"],\"通过感官（尤视觉）辨认出；对象为人、物或隐约可见之物\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"使有别于；作为…的特征\",\"动词\",[\"wn31:v:00653662\"],\"外部词典常用义：某特征使某人/物与其他人/物不同；原文“区别”未明确此使动/特征用法，候选待采用。\"],[\"使出众；使显著\",\"动词\",[\"wn31:v:00924409\"],\"外部词典常用义：使显得突出、值得注意；原文未明确，候选待采用。\"]],\"reason\":\"“分清”和“区别”都是把不同对象区分开的辨别用法，可同组；“看清楚”是感官辨认，单列一组。‘使有别于/使出众’不属于原文明确用法，只列候选。\",\"flags\":[[\"Minor\",\"core_coverage_incomplete_pending_addition_decision\",\"词典另有“使有别于/作为特征”“使出众/显著”等原文未明确的用途，已列入 additions，核心未采用。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

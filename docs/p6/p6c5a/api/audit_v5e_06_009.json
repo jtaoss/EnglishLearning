@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_009",
+  "kind": "audit",
+  "request_hash": "003378e4214daefd494f0eda940d99583f8b7cccdf2675870500c2f6398fc578",
+  "input_ids": [
+    "SG25-200afd0641fa",
+    "SG25-e428ee1e7df9",
+    "SG25-de0152f95277",
+    "SG25-990b23e81455",
+    "SG25-6a6ba702490a"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "350e1e62-d50a-4b94-baa1-748b59b18ab9",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-200afd0641fa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"值得的；有价值/可敬的一般评价\",\"relation\":\"语义等价\",\"reason\":\"核心组保留原文‘值得的’；a:02595419 覆盖 having worth/merit/value 及 worthy cause 的用法。\",\"evidence_ids\":[\"wn31:a:02595419\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"值得尊敬的；可敬的正面评价\",\"relation\":\"合理概括\",\"reason\":\"扩展组保留原文‘值得尊敬的’；s:01024736 支持‘值得认可/注意’，与‘尊敬’同属正面评价，但所引证据不是‘尊敬’的直接同义。\",\"evidence_ids\":[\"wn31:s:01024736\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"所引证据偏‘值得认可/注意’，‘尊敬’的具体评价需补充更直接证据\",\"counterexample\":\"worthy of attention 是‘值得关注’，不等同‘值得尊敬’\",\"counterexample_evidence_ids\":[\"wn31:s:01024736\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_mismatch\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-200afd0641fa:p6c1:extended:1\"],\"evidence_ids\":[\"wn31:s:01024736\",\"wn31:a:02595419\"],\"reason\":\"扩展‘值得尊敬的’只引 s:01024736，该证据更偏‘值得认可/注意’；同词 a:02595419 的 honorable/admirable 更贴近‘值得尊敬’。\",\"repair_suggestion\":\"给扩展组补 a:02595419，或在注释说明‘尊敬’是正面评价概括，不把 s:01024736 当唯一直接同义证据。\"}],\"note\":\"两个源义均有组；核心‘值得的’需按 worthy of/to 的搭配理解；扩展‘值得尊敬的’所引证据偏‘值得认可’，建议补 honorable/admirable 证据。\"},{\"id\":\"SG25-e428ee1e7df9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有野心的；强烈追求成功（可含贬义）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘有野心的’，并说明英文 ambition 的评价色彩依语境；a:00104850 直接支持强烈追求成功。\",\"evidence_ids\":[\"wn31:a:00104850\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"雄心勃勃的；积极追求成就\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘雄心勃勃的’，与 a:00104850 的 having strong desire for success or achievement 一致。\",\"evidence_ids\":[\"wn31:a:00104850\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义中文义合为同一核心，注释保留评价色彩差异，未把中文‘野心’的贬义强加给所有英语语境。\"},{\"id\":\"SG25-de0152f95277\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"化学（自然科学分支）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘化学’；n:06094057 正是 the science of matter 的学科义。\",\"evidence_ids\":[\"wn31:n:06094057\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心只保留源义‘化学（学科）’；‘人与人相处的默契或吸引’作为外部候选未采用，未当成原文已有。\"},{\"id\":\"SG25-990b23e81455\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"划分；分割动作/过程\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘划分’；n:00386599 是 the act or process of dividing，直接支持该动作义。\",\"evidence_ids\":[\"wn31:n:00386599\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"分歧；群体意见分裂\",\"relation\":\"合理概括\",\"reason\":\"扩展组保留‘分歧’；n:07196502 支持 discord that splits a group，属于 division 的意见分裂义。\",\"evidence_ids\":[\"wn31:n:07196502\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"部门；行政/业务单位\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘部门’；n:08237635 是 administrative unit in government or business。\",\"evidence_ids\":[\"wn31:n:08237635\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"除法；算术运算\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留‘除法’；n:00872590 是 inverse of multiplication 的算术运算义。\",\"evidence_ids\":[\"wn31:n:00872590\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个源义分别有核心/扩展链接；划分与部门在核心，除法与分歧后置有语境依据，不是覆盖缺口。\"},{\"id\":\"SG25-6a6ba702490a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"准许进入；进入许可/权利\",\"relation\":\"范围扩大\",\"reason\":\"核心组保留‘准许进入’，但并列‘入场’容易被读成实际进入；所引 n:01250738/n:05183715 是准许进入/进入权，不是单纯入场动作。\",\"evidence_ids\":[\"wn31:n:01250738\",\"wn31:n:05183715\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"额外‘入场’动作未由所引证据直接许可\",\"counterexample\":\"admission to the clinic 指获准进入/入院，不是单纯‘入场’动作\",\"counterexample_evidence_ids\":[\"wn31:n:01250738\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"入场费；进入费用\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘入场费’；n:13342517 是 the fee charged for admission，直接对应。\",\"evidence_ids\":[\"wn31:n:13342517\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"承认；承认事实/真相\",\"relation\":\"合理概括\",\"reason\":\"核心组用‘承认（事实）’区分承认义；n:07230608 支持对真相的承认，‘事实’可视为示例而非排他。\",\"evidence_ids\":[\"wn31:n:07230608\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"scope_expansion\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-6a6ba702490a:p6c4:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:01250738\",\"wn31:n:05183715\"],\"reason\":\"组显示‘准许进入；入场’可能把 admission 扩大为实际入场动作；所引证据支持准许进入和进入权，不支持单纯入场。\",\"repair_suggestion\":\"改为‘准许进入；进入权’或注明‘入场许可’，避免把‘入场’动作与 admission 的许可/权利义混同。\"}],\"note\":\"三项源义均有核心链接；‘入场费’和‘承认’对应直接，但‘准许进入；入场’的‘入场’可能被读成实际进入，建议改成许可/权利表述。\"}]}",
+  "usage": {
+    "prompt_tokens": 5580,
+    "completion_tokens": 13985,
+    "total_tokens": 19565,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12098
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3660
+  },
+  "started_utc": "2026-11-13T09:50:57.638359+00:00",
+  "completed_utc": "2026-11-13T09:52:15.443907+00:00",
+  "elapsed_seconds": 77.813,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

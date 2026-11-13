@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_22",
+  "request_hash": "d3af37a9c0099a4f33f35e0f398ce12cda37df84c1d6c4fb6ebfefc00ca3b080",
+  "started_utc": "2026-11-13T08:14:59.097931+00:00",
+  "completed_utc": "2026-11-13T08:15:35.627447+00:00",
+  "elapsed_seconds": 36.531,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "b799f4d1-a2ce-42c6-98d2-e6b57d387ddb",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3515,
+    "completion_tokens": 5442,
+    "total_tokens": 8957,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4857
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 699
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-744254211165\",\"word\":\"perspective\",\"pos\":\"名词\",\"core\":[[\"见解；观点\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:06218486\"],\"对情境或话题的看法、立场；两片段近义合并\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"透视关系；景物因距离产生的相对外观\",\"名词\",[\"wn31:n:04683665\"],\"外部独立义：视觉透视/远近外观，原文未表达；候选不采用\"]],\"reason\":\"原文“见解；观点”都指对事物或话题的看法，直接对应“a way of regarding situations or topics”；视觉透视义不属于原文，仅列为外部候选。\",\"flags\":[]},{\"id\":\"SG25-40542f7e6b9e\",\"word\":\"prospect\",\"pos\":\"名词\",\"core\":[[\"前景；前途\",\"名词\",[\"s001\"],[\"wn31:n:14506552\"],\"未来成功或发展的前景；较原文“前景”窄限于成功/前途义，按有条件兼容处理\"],[\"（未来的）可能性；预期\",\"名词\",[\"s002\"],[\"wn31:n:05953807\"],\"对未来情况的预期或可能发生的事；宽义改述，非泛指一切可能性\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s003\",\"商业销售域“潜在客户”；所给定义仅为通用候选人/被考虑者，不含客户或购买者，不能确认，保留待核\"]],\"splits\":{},\"additions\":[[\"可能的人选；候选人\",\"名词\",[\"wn31:n:09910201\"],\"外部独立义：被考虑担任职务或获奖等的人；原文仅商业“潜在客户”，候选不采用\"],[\"勘探（矿藏等）；寻找（机会/工作）\",\"动词\",[\"wn31:v:00649724\",\"wn31:v:02158610\"],\"外部独立义：动词 prospect，原文无动词用法；候选不采用\"]],\"reason\":\"原文名词义分为未来前景/可能性与商业潜在客户；前者可用未来成功及未来预期定义作有条件覆盖，后者缺少客户义直接证据而保留暂存；动词勘探/寻找义仅列外部候选。\",\"flags\":[[\"Major\",\"lexical_evidence_insufficient\",\"s003“潜在客户”缺少直接对应定义；仅通用 candidate，客户/购买者义未验证\"],[\"Minor\",\"source_scope_gap\",\"s001/s002 与“未来成功”“对未来预期”定义存在宽窄差异，已作有条件兼容\"],[\"Info\",\"addition_candidate_pending\",\"外部候选“候选人”“勘探/寻找”未采用，需人工决定是否纳入教学\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

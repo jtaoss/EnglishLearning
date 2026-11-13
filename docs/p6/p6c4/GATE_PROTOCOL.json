@@ -1,0 +1,30 @@
+{
+  "version": "P6C4_preregistered_gate_v1",
+  "fixed_before_results": true,
+  "scope": {"regression": 500, "fresh_blind": 100, "new_overlaps_existing500": 0},
+  "units": "Count findings and affected words separately. Source fragments, English uses and display groups are distinct.",
+  "definitions": {
+    "Critical": "Identity/source corruption, fabricated human approval or widespread severe semantic deception backed by concrete evidence.",
+    "Major": "Material wrong meaning/POS/merge, unsupported core addition or important independent use silently omitted. Give source/evidence and domain.",
+    "Minor": "Local evidence alignment or scope issue with limited impact; not wholesale mistranslation.",
+    "teaching_preference": "Multiple lexically defensible wordings/layerings/orders without evidence one is wrong. Not counted as error.",
+    "tracked_external_gap": "A dictionary use absent from original is explicitly listed as unadopted candidate with coverage warning. Remains unresolved adoption, not silently omitted original or automatically repaired source.",
+    "same_systematic_major": "At least 2 distinct words in the fresh100 or newly introduced regression changes exhibit the same causal Major mapping/POS/merge/omission defect. Known historical source gaps explicitly tracked are reported separately, not hidden or relabeled as passed."
+  },
+  "A_requires_all": [
+    "All 500 have explicit V4 semantic re-evaluation, all historical48 states accounted, all fresh100 independently source-first reviewed.",
+    "100% unique formal IDs, immutable original fields/spans, full source-reference coverage and valid one-to-many annotations; no invented human approval/adoption.",
+    "C3 import use/evidence correction and indicate evidence/scope correction verified in isolated candidates; management gap explicitly tracked as unadopted external candidate and incomplete coverage, not declared adopted/resolved source.",
+    "Zero unresolved confirmed Critical or current-candidate Major after independently justified corrections; no same_systematic_major.",
+    "Fresh100 initial evidence-supported current-candidate Major at most 3 and Minor at most 10; any Major has explicit correction and validation, not a risk-label downgrade.",
+    "No new confirmed loss of an originally correct use from regression changes, and no overall POS or source-mapping defect.",
+    "External additions and all unapproved data remain AI candidates. Historical unknown evidence stays pending; compression is never sufficient evidence."
+  ],
+  "B_if": "Any A requirement fails but concrete local rule/evidence/data corrections can address it, including repeated Major of one type. Incomplete evidence/review also B with explicit checkpoint/failure, not fabricated pass.",
+  "C_if": "Evidence proves a fundamental unrepairable-by-local-rule method defect: source/identity loss or systematic semantic/POS failures across at least 3 strata, and no adequate local repair while retaining meanings. Mere historical risk labels or preference differences do not establish C.",
+  "first_memory_audit": "Report average/median/max and count over3 core groups; examine all over3 individually. No hard compression gate and no arbitrary deletion to meet counts.",
+  "comparison_baseline": "Existing500 uses actual C2 candidates informed by C1 RULES_V3, including its p6c2-rules-v4 project label. Do not mislabel it as a pure V3 controlled experiment. Fresh100 has no matched V3 arm; report no invented improvement percentage.",
+  "model_identity": "Record visible configuration. Unknown backend means independent context only, not proven different model.",
+  "authorization": "No bulk4832, formal-data write, SQLite/Notion/progress/UI/Japanese modification, publication or Git mutation in this task.",
+  "freeze_method": "SHA256 of this file and RULES_V4_REVISED.md saved in PROTOCOL_SEAL.json before generation/review results; immutable thereafter."
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_88",
+  "request_hash": "0c8c3201cda0ff84870ecc42649a01b9a27027b738b1c88bff39f1e52bffd0e7",
+  "started_utc": "2026-11-13T08:17:35.228094+00:00",
+  "completed_utc": "2026-11-13T08:18:28.190301+00:00",
+  "elapsed_seconds": 52.969,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ddee8e2d-bf57-44dd-9001-afbe56c1c903",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2956,
+    "completion_tokens": 2755,
+    "total_tokens": 5711,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2571
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 908
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-d0d092b83d4a\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[\"教学上可提示“剧烈的”多用于疼痛、运动等，“强烈的”多用于情感、气味等，“极度的”多用于程度极限，但同属一个核心义，不必拆分。\",\"颜色饱和义已作为未采用候选列出，保持当前处理即可。\"],\"note\":\"三个源片段均为形容词，近义表示强度高，合并为一个核心义合适。证据 wn31:a:01513206 覆盖广泛强度用法，s:00806846 支持疼痛/刺激的严重义，二者可共同支撑。颜色义确为源外专门用法，已单独列为 dictionary addition 且未混入核心，符合规则。未发现错误。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

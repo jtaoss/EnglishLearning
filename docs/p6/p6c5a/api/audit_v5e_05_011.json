@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_011",
+  "kind": "audit",
+  "request_hash": "ff634a5ee8e12d33eeb766c1236fa3b00a1d2026a2c454cda198e3cd9653aa91",
+  "input_ids": [
+    "SG25-0b514913789f",
+    "SG25-fdf09cdfc26c",
+    "SG25-22b090dd46c7",
+    "SG25-542bce4a780c",
+    "SG25-2331eb33ce2c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c9686a7b-3662-43e2-b833-3685c7b9a36c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-0b514913789f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"协会；正式组织/团体\",\"relation\":\"语义等价\",\"reason\":\"核心组以“正式组织”义对应“协会”，词典证据支持该组织义。\",\"evidence_ids\":[\"wn31:n:08066153\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"联系；关系\",\"relation\":\"合理概括\",\"reason\":\"核心组用“联系；关系”概括互动/依赖关系及社会/业务关系，未加排他对象限制。\",\"evidence_ids\":[\"wn31:n:13804981\",\"wn31:n:13953418\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"联想；观念联系\",\"relation\":\"语义等价\",\"reason\":\"核心组对应记忆或想象中把观念、事件联系起来的过程/状态。\",\"evidence_ids\":[\"wn31:n:05771913\",\"wn31:n:14444543\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义分别落到组织、关系、心理联想三组，核心并集覆盖原文；化学缔合、生态群落仅作源外候选。\"},{\"id\":\"SG25-fdf09cdfc26c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"解决；了结问题/争端\",\"relation\":\"合理概括\",\"reason\":\"核心组用“解决；了结”概括结束争端案件及求出问题/方程解，两项均为原文“解决”的常见对象。\",\"evidence_ids\":[\"wn31:v:00700621\",\"wn31:v:00735067\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"决心；决意（动词）\",\"relation\":\"语义等价\",\"reason\":\"核心组对应作出坚定决定，词典证据直接支持动词“决心”。\",\"evidence_ids\":[\"wn31:v:00701392\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"决心；坚定（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组对应名词“决心/坚定品质”，未混入会议正式决议义。\",\"evidence_ids\":[\"wn31:n:04868717\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词解决、动词决心、名词决心按词性和对象分开，核心覆盖原文；正式决议、图像解析义保留为源外候选。\"},{\"id\":\"SG25-22b090dd46c7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"吸收（物理摄入、知识领会、并入/同化）\",\"relation\":\"合理概括\",\"reason\":\"单一来源义“吸收”由物理吸收、知识信息吸收、并入/同化三支共同覆盖，均属该中文词的常见对象扩展，未引入原文之外的独立义项。\",\"evidence_ids\":[\"wn31:v:01541851\",\"wn31:v:02771422\",\"wn31:v:00603650\",\"wn31:v:00396604\",\"wn31:v:01473153\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心三组覆盖“吸收”的物理、认知、并入用法；全神贯注、承担费用仅作源外候选，不构成原文缺口。\"},{\"id\":\"SG25-542bce4a780c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"哲学家；哲学研究者\",\"relation\":\"语义等价\",\"reason\":\"核心组直接对应哲学学科专家，词典证据支持“哲学家”这一职业/身份义。\",\"evidence_ids\":[\"wn31:n:10443334\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“哲学家”以学科专家义完整覆盖；智者/哲人义为源外候选，未挤入核心。\"},{\"id\":\"SG25-2331eb33ce2c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"哲学；哲学学科\",\"relation\":\"语义等价\",\"reason\":\"核心组对应关于存在、知识、伦理的理性研究/学科义。\",\"evidence_ids\":[\"wn31:n:06168062\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"人生观；个人生活哲学\",\"relation\":\"语义等价\",\"reason\":\"核心组对应个人关于如何生活、处事的根本看法，和学科义分开保留。\",\"evidence_ids\":[\"wn31:n:05953535\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“哲学”与“人生观”分别对应学科义和个人生活信念义；团体信条/思想体系仅作源外候选。\"}]}",
+  "usage": {
+    "prompt_tokens": 6616,
+    "completion_tokens": 4301,
+    "total_tokens": 10917,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3064
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4696
+  },
+  "started_utc": "2026-11-13T09:48:21.917228+00:00",
+  "completed_utc": "2026-11-13T09:48:45.887288+00:00",
+  "elapsed_seconds": 23.969,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_57",
+  "request_hash": "02d6bf45bb401cffaa8a43d993ee91ce401556597e8a470dd799fdb54760206a",
+  "started_utc": "2026-11-13T08:16:44.382749+00:00",
+  "completed_utc": "2026-11-13T08:17:24.011768+00:00",
+  "elapsed_seconds": 39.625,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a26f48b5-5d43-4b02-833c-c7d02ddd17d2",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2938,
+    "completion_tokens": 2174,
+    "total_tokens": 5112,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2009
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 890
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ac455671cf7f\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"教学提示：可在扩展层补充 rare sense 'formal ceremony' (pomp and circumstance) 作为文化背景，但不影响核心。\"\n      ],\n      \"note\": \"候选将三个近义名词合并为一组，证据 wn31:n:13965927 与 wn31:n:14536419 覆盖条件/事实义，符合原文。外部词典义 'consideration' 已作为候选单列未采用，处理正确。无实际翻译/POS错误或重要漏报。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

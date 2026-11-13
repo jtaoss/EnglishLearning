@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_006",
+  "kind": "audit",
+  "request_hash": "54f7080cafce44f295047fe40dd8eea90ac0068d79f0f6c81bb575925470edbc",
+  "input_ids": [
+    "SG25-6bd1454e4848",
+    "SG25-29a8825bd242",
+    "SG25-5600ae99b14e",
+    "SG25-dda18a0e21ae",
+    "SG25-28d79d50ff51"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "1e6a6e7e-f18a-4145-afea-29c450ac1758",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-6bd1454e4848\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：结合，把事物连接或混合\",\"relation\":\"语义等价\",\"reason\":\"核心组“结合／合并”保留该动词义，v00193830与v01463957支持put/add together、mix to form a whole。\",\"evidence_ids\":[\"wn31:v:00193830\",\"wn31:v:01463957\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：合并，合为一体或汇总\",\"relation\":\"语义等价\",\"reason\":\"核心同组保留“合并”，词典证据支持combine so as to form a whole及add together。\",\"evidence_ids\":[\"wn31:v:00193830\",\"wn31:v:01463957\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：联合收割机，农业机械\",\"relation\":\"语义等价\",\"reason\":\"other组“联合收割机”与n03079638的harvester定义对应，器械义独立保留。\",\"evidence_ids\":[\"wn31:n:03079638\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均覆盖：动词结合/合并入核心同组，联合收割机作专门器械义置other；未发现残余范围。\"},{\"id\":\"SG25-29a8825bd242\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：简短的（言语/文字简练；短时义待核）\",\"relation\":\"语义等价\",\"reason\":\"核心文本“简短的”保留该形容词义，s00549386支持concise/succinct；但注释把时间用法也纳入，需标来源待核。\",\"evidence_ids\":[\"wn31:s:00549386\",\"wn31:s:01445717\"],\"context\":\"none\",\"residual_scope\":\"英语brief的短时/短距离用法在原中文中未明确；注释提及需标待核\",\"counterexample\":\"n01445717支持短时/短距离，但原中文“简短的”更常指言语/文字简短。\",\"counterexample_evidence_ids\":[\"wn31:s:01445717\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"名词：概要，压缩的书面摘要\",\"relation\":\"语义等价\",\"reason\":\"extended组“概要”与n06480311的condensed written summary对应。\",\"evidence_ids\":[\"wn31:n:06480311\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：向……介绍情况，提供要点信息\",\"relation\":\"语义等价\",\"reason\":\"extended组“向……介绍情况”与v00832934的give essential information对应。\",\"evidence_ids\":[\"wn31:v:00832934\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_broadened_in_note\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-29a8825bd242:p6c1:core:1\"],\"evidence_ids\":[\"wn31:s:01445717\"],\"reason\":\"核心注释称“简短的可用于说明时间”，但原中文更常指言语/文字简短；短时义仅由英语证据支持，需标来源待核。\",\"repair_suggestion\":\"保留核心“简短的”为简练义，将短时/短距离义移至扩展或标为来源待核，不把注释的时间用法当作原文已支持。\"}],\"note\":\"形容词、名词、动词三义均有对应；核心注释涉短时义处标Minor待核，其余覆盖正常。\"},{\"id\":\"SG25-5600ae99b14e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：恶性肿瘤，恶性生长或肿瘤\",\"relation\":\"语义等价\",\"reason\":\"extended组“恶性肿瘤”与n14263400的any malignant growth or tumor定义对应。\",\"evidence_ids\":[\"wn31:n:14263400\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：癌症，恶性疾病总称\",\"relation\":\"语义等价\",\"reason\":\"core组“癌症”由同一n14263400支持，与恶性肿瘤义为近义分层展示。\",\"evidence_ids\":[\"wn31:n:14263400\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两近义源义分别置核心“癌症”与扩展“恶性肿瘤”，同一词典义支持；未发现缺失。\"},{\"id\":\"SG25-dda18a0e21ae\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：候补（可能指候选或替补，语境未定）\",\"relation\":\"无法确定\",\"reason\":\"s001仍在held；“裸候补”可能被理解为替补，n09910201只支持被考虑者，不能确定对应关系。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"候补是否等于候选人/替补未确定\",\"counterexample\":\"n09910201支持“被考虑的人/候选人”，不等于替补或候补。\",\"counterexample_evidence_ids\":[\"wn31:n:09910201\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"名词：候选人，被考虑担任职位/获奖者\",\"relation\":\"语义等价\",\"reason\":\"core组“候选人”与n09910201的someone considered for something对应。\",\"evidence_ids\":[\"wn31:n:09910201\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：竞选者，政治选举语境中的参选人\",\"relation\":\"语义等价\",\"reason\":\"extended组“竞选者”与n09909143的politician running for public office对应，政治语境为源义所需。\",\"evidence_ids\":[\"wn31:n:09909143\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"held_source_unresolved\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:09910201\"],\"reason\":\"s001“候补”未映射到任何层级，held待核；不能确认是候选人还是替补。\",\"repair_suggestion\":\"结合原文语境或更多词典证据核实“候补”；确认后再决定核心或扩展，暂不当作已覆盖。\"}],\"note\":\"候选人入核心、竞选者入扩展；候补s001仍在held，无法确定，故词状态partial，核心待核。\"},{\"id\":\"SG25-28d79d50ff51\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：碳，非金属化学元素\",\"relation\":\"语义等价\",\"reason\":\"core组“碳”与n14657384的元素定义对应；n02965287/n14821983的复写本义未采用，不影响源义。\",\"evidence_ids\":[\"wn31:n:14657384\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义“碳”由元素义词典证据充分支持；复写本等词典新增义未进入来源映射。\"}]}",
+  "usage": {
+    "prompt_tokens": 5373,
+    "completion_tokens": 9693,
+    "total_tokens": 15066,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7912
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3453
+  },
+  "started_utc": "2026-11-13T09:40:12.867827+00:00",
+  "completed_utc": "2026-11-13T09:41:07.210430+00:00",
+  "elapsed_seconds": 54.343,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}
