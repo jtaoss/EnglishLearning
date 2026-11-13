@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_82",
+  "request_hash": "fc151a33a6a34cc8fb423c3aea2bd8d11fa04cbac9cb8a051309c29e14269500",
+  "started_utc": "2026-11-13T08:17:28.661211+00:00",
+  "completed_utc": "2026-11-13T08:19:17.712202+00:00",
+  "elapsed_seconds": 109.047,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "564bf436-f82d-41ec-bd9d-df86594def51",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2869,
+    "completion_tokens": 5666,
+    "total_tokens": 8535,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5083
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 821
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-e91fadf24f78\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"important_external_use_omitted\",\n          \"reason\": \"WordNet sense wn31:n:06134474 (technology as an academic/engineering discipline) is a distinct and common use that is not present in the candidate's core or dictionary_additions. The candidate only tracks the equipment sense as an external addition, but this discipline sense is also independently valuable and should be explicitly listed as an unadopted external candidate.\",\n          \"evidence_ids\": [\n            \"wn31:n:06134474\"\n          ],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"SG25-e91fadf24f78:p6c5:dictionary_additions\",\n          \"proposed_fix\": \"Add a dictionary addition candidate for wn31:n:06134474 with meaning_zh '工程学；科技学科（作为学科/领域）', part_of_speech '名词', source_sense_ids [], status 'AI_candidate_not_adopted', human_approved false, auto_promoted_to_core false, priority_basis 'AI_teaching_suggestion_not_measured_frequency'.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source sense s002 '科技' is held in reserved_original_items as evidence pending because it is broader than the supplied WordNet definitions. This is a conservative and acceptable handling, but the sense remains unresolved and no exact WordNet evidence is tied to it.\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\n            \"s002\"\n          ],\n          \"candidate_group_ref\": \"SG25-e91fadf24f78:p6c5:reserved_original_items\",\n          \"proposed_fix\": null\n        }\n      ],\n      \"preferences\": [\n        \"If future evidence supports '科技' as a common equivalent for technology, it could be added as an extended meaning; currently pending is acceptable.\",\n        \"When adding the discipline sense as an external candidate, avoid promoting it to core without source support.\"\n      ],\n      \"note\": \"Candidate correctly maps source s001 to the application sense (wn31:n:00951435) and keeps source s002 as pending due to scope uncertainty. The main gap is the omission of the discipline/engineering sense (wn31:n:06134474) from the dictionary additions, which should be tracked as an unadopted external candidate. No confirmed wrong translation or POS error was found.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

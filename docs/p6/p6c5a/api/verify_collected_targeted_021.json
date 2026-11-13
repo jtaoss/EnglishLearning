@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_021",
+  "kind": "verify",
+  "request_hash": "adf2459421e8db295219579b3a029fd5b5025f3a90259850f9855ea5790b0cbf",
+  "input_ids": [
+    "SG25-288965a1f2c8",
+    "SG25-fc613b4dfd67"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "6c7c608e-f973-4e1f-8484-6f991d97a54d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-288965a1f2c8\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文仅给出名词“指导”，未限定语境；候选extended:1将其限定为“组织管理事务的语境”，仅wn31:n:01135602支持management/direction，缺少一般“指导”证据；来源范围待核。\",\n          \"evidence_ids\": [\"wn31:n:01135602\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文“指挥”名词未限定领域；候选extended:2限为组织管理活动，证据仅支持管理中的指挥/方向，不覆盖音乐指挥或一般指挥；来源范围待核。\",\n          \"evidence_ids\": [\"wn31:n:01135602\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1“管理”对应wn31:n:01135602 the act of managing something，且未混入管理层人群义；名词管理行为覆盖准确。\",\n          \"evidence_ids\": [\"wn31:n:01135602\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001/s002原始中文“指导/指挥”范围宽于英语management可证范围；仅wn31:n:01135602支持组织管理语境，缺少一般指导/指挥证据，需人工核来源是否泛指还是限于管理。\",\n        \"未采用候选“管理层；负责经营管理的一群人”是否应保留为另一义项，仅供教学参考，不属原文明确范围。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心管理覆盖s003无缺陷；指导/指挥在扩展层加了组织管理限定，但来源范围不确定，不应视为确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-fc613b4dfd67\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"extended:1以wn31:n:10408139“a person who has general authority over others”概括主人；覆盖主人/权威者义，虽不覆盖host义，但英语master无host证，来源gloss“主人”在此语境可接受。\",\n          \"evidence_ids\": [\"wn31:n:10408139\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"core:2仅用wn31:n:10299827“an artist of consummate skill”作证，将大师限于艺术大师；但wn31:n:10318149“an authority qualified to teach apprentices”表明一般师傅/专家义，未覆盖。\",\n          \"evidence_ids\": [\"wn31:n:10299827\", \"wn31:n:10318149\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:2用wn31:n:10318465“someone who holds a master's degree”对应硕士；在中文中硕士可指学位持有者，且note已提示学位需master's degree，该映射合理。\",\n          \"evidence_ids\": [\"wn31:n:10318465\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1用wn31:v:00598780和wn31:v:00599029覆盖掌握知识/技能；核心学习语境下可接受，但控制/支配义未覆盖，来源未明确，暂存观察。\",\n          \"evidence_ids\": [\"wn31:v:00598780\", \"wn31:v:00599029\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-fc613b4dfd67:core:2\"],\n          \"evidence_ids\": [\"wn31:n:10299827\", \"wn31:n:10318149\"],\n          \"reason\": \"core:2“大师”仅以艺术大师义（wn31:n:10299827）作证，但源“大师”可指一般专家/师傅；证据wn31:n:10318149显示非艺术大师用法，当前证据偏窄。\",\n          \"counterexample\": \"wn31:n:10318149：an authority qualified to teach apprentices（师傅/大师，非仅艺术家）\",\n          \"repair_suggestion\": \"补充一般专家/师傅义或改用wn31:n:10318149等更宽证据，避免将大师限定为艺术家。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s004“掌握”是否需覆盖控制/支配义：证据wn31:v:02545000、v:01111038存在，但未采用；来源仅一词，无法确定是否在原文范围内。\",\n        \"s003“硕士”若源指学位而非人，则裸master不等同master's degree；note已提示但未形成结构，需核来源。\"\n      ],\n      \"preferences\": [\n        \"核心动词“掌握”教学上可考虑提及控制义，但非强制；不构成缺陷。\"\n      ],\n      \"note\": \"核心掌握/大师，主人、硕士在扩展；大师证据偏窄为次要问题，硕士与掌握有未决范围，但不构成已确认Major。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5609,
+    "completion_tokens": 8366,
+    "total_tokens": 13975,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7139
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3945
+  },
+  "started_utc": "2026-11-13T09:56:49.015366+00:00",
+  "completed_utc": "2026-11-13T09:58:38.876637+00:00",
+  "elapsed_seconds": 109.859,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

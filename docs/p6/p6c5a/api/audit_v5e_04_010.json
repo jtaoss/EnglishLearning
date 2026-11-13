@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_010",
+  "kind": "audit",
+  "request_hash": "0409b4769e4e5dbf15408a3dd25c20e19f99cc1befda432b5b3fb9f32397620f",
+  "input_ids": [
+    "SG25-3f8a7e66329a",
+    "SG25-54c0bcab0e73",
+    "SG25-97a5e41b45dd",
+    "SG25-ea4b35e8f832",
+    "SG25-0b22f40bb71c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d06ba279-2cc2-48b7-877b-c7eb873eb199",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3f8a7e66329a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：多个的，表示不止一个\",\"relation\":\"合理概括\",\"reason\":\"核心组把‘多个的／多重的’两个近义形容词合并展示，原文‘多个的’被保留，未增加对象或领域限制。\",\"evidence_ids\":[\"wn31:a:02223646\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：多重的，表示多重组成或不止一种\",\"relation\":\"合理概括\",\"reason\":\"与s001同组合并，核心文本含‘多重的’；词典形容词义为多于一个部分/个体，范围一致。\",\"evidence_ids\":[\"wn31:a:02223646\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：倍数（数学）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留‘倍数’名词数学义，证据为整数乘积义，与原文一致。\",\"evidence_ids\":[\"wn31:n:05868575\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"核心保留形容词一般义（多个的/多重的），名词数学义‘倍数’在扩展层准确链接；跨词性不合并，源义均有归处。\"},{\"id\":\"SG25-54c0bcab0e73\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：令人愉快的、合意的\",\"relation\":\"语义等价\",\"reason\":\"核心文本与原文单一形容词义一致；证据支持‘带来愉悦/合意’，未添加原文没有的对象排他限制。\",\"evidence_ids\":[\"wn31:a:01805299\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一形容词义与核心文本一致；未把‘pleasant’改成‘happy person’的状态义，证据支持‘令人愉快/合意’，覆盖完整。\"},{\"id\":\"SG25-97a5e41b45dd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：申请（apply for）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘申请’对应apply for的申请义，证据明确含apply for a job/college等用法。\",\"evidence_ids\":[\"wn31:v:00767441\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：应用、使用\",\"relation\":\"语义等价\",\"reason\":\"核心组‘应用’对应put into service/employ/use evidence，保留应用/使用的动词义。\",\"evidence_ids\":[\"wn31:v:01161188\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：适用、切合\",\"relation\":\"语义等价\",\"reason\":\"核心组‘适用’对应be pertinent/relevant/applicable及be applicable to，方向与原文一致。\",\"evidence_ids\":[\"wn31:v:02682599\",\"wn31:v:02713289\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"申请、应用、适用三义分别置于核心三组，apply for与apply to的语境差异保留，未见源义缺口。\"},{\"id\":\"SG25-ea4b35e8f832\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：复杂的、由相互关联部分组成的\",\"relation\":\"语义等价\",\"reason\":\"核心组‘复杂的’与源形容词义一致，证据支持结构复杂/相互关联，未增加排他对象。\",\"evidence_ids\":[\"wn31:a:02183738\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：建筑群\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘建筑群’对应由相互关联建筑构成的整体，与源名词义一致。\",\"evidence_ids\":[\"wn31:n:02918337\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：综合体、复合整体\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘综合体’对应由复杂相关部分构成的整体，证据含建筑/设施综合体例。\",\"evidence_ids\":[\"wn31:n:05878987\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：情结（心理）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘情结’对应精神分析中被压抑但仍影响行为的情感冲动组合，与源名词义一致。\",\"evidence_ids\":[\"wn31:n:07497661\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"形容词义在核心，三个名词义（建筑群/综合体/情结）分别扩展链接；不跨词性合并，覆盖完整。\"},{\"id\":\"SG25-0b22f40bb71c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：受雇、就业状态\",\"relation\":\"语义等价\",\"reason\":\"核心组‘受雇’对应the state of being employed，保留源名词的就业状态义。\",\"evidence_ids\":[\"wn31:n:13991539\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：工作、有酬职业\",\"relation\":\"合理概括\",\"reason\":\"扩展组将‘工作’与‘职业’合并为‘工作／职业’，由有酬职业义支持；二者均为原文义，未新增原文外对象。\",\"evidence_ids\":[\"wn31:n:00585404\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：职业、从事的有酬活动\",\"relation\":\"合理概括\",\"reason\":\"与s002同组合并展示，扩展文本含‘职业’，证据为有酬职业/工作义，范围可追溯。\",\"evidence_ids\":[\"wn31:n:00585404\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"受雇状态在核心，工作/职业在扩展合并为有酬职业义；三源义均有链接，未见遗漏。\"}]}",
+  "usage": {
+    "prompt_tokens": 6113,
+    "completion_tokens": 12420,
+    "total_tokens": 18533,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10801
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4193
+  },
+  "started_utc": "2026-11-13T09:46:53.773373+00:00",
+  "completed_utc": "2026-11-13T09:48:02.995853+00:00",
+  "elapsed_seconds": 69.219,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

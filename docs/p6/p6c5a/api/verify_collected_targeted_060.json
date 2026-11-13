@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_060",
+  "kind": "verify",
+  "request_hash": "5b06a91ae6be44918c3c5b0dbddab25b7922f8f2246fbe112511045e06f7b661",
+  "input_ids": [
+    "SG25-6ca7ea2feefc",
+    "SG25-bbfcd4160a1e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c71aa8c1-9cd3-4658-9cd2-8187c109b018",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6ca7ea2feefc\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“保持”使用 wn31:v:02687605（cause to continue in a certain state, position, or activity），覆盖常见的 keep+状态/位置/活动用法，与源中文“保持”在该用途上一致。\",\n          \"evidence_ids\": [\"wn31:v:02687605\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组“保管”仅引用 wn31:v:02738997（maintain in safety from injury, harm, or danger），主要表示保护/使安全，而源中文“保管”通常还包含看管、存放、持有等义，未覆盖这些用途，也没有其他层补上。\",\n          \"evidence_ids\": [\"wn31:v:02738997\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“饲养”使用 wn31:v:02658111（raise; keep chickens/bees），与源中文“饲养动物”一致。\",\n          \"evidence_ids\": [\"wn31:v:02658111\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“继续”使用 wn31:v:02690747（continue a certain state, condition, or activity; keep on working），覆盖 keep doing/继续做某事，与源中文“继续”一致。\",\n          \"evidence_ids\": [\"wn31:v:02690747\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_evidence_gap\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-6ca7ea2feefc:p6c1:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:02738997\", \"wn31:v:02207710\"],\n          \"reason\": \"“保管”只列了保护/使安全（wn31:v:02738997），该证据偏向人身保护或使免受伤害，未体现看管、持有、存放等常见保管义；源中文未限定对象，存在覆盖偏窄。\",\n          \"counterexample\": \"wn31:v:02207710（look after; be the keeper of; have charge of）和 wn31:v:02208876（store or keep customarily）在已供证据中支持保管财物/看管，但当前组未引用。\",\n          \"repair_suggestion\": \"在扩展“保管”组中补充或替换为 wn31:v:02207710（看管/负责）和/或 wn31:v:02208876（存放），或将当前证据改为更能体现保管财物的义项；若原义确为保护，也需明确对象限制。\"\n        }\n      ],\n      \"unresolved\": [\n        \"“保管”的最佳英语证据是否应为看管/存放类（如 wn31:v:02207710、wn31:v:02208876），还是保护类（wn31:v:02738997）即可，需依据教材原始语境进一步确认。\",\n        \"源中文“保持”是否还包括 food preservation、maintain records 等对象，当前核心仅覆盖 keep+状态/活动，未列其他证据，但暂未发现足以判定缺陷的范围外反例。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心“保持/继续”与扩展“饲养”映射基本合理；“保管”证据偏保护/人身，可能未覆盖保管财物/存放，建议核对或补证；未发现Major级覆盖丢失。\"\n    },\n    {\n      \"id\": \"SG25-bbfcd4160a1e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组“情况”仅列 wn31:n:13966452（a special set of circumstances），而源中文“情况”通常还包括一般实际情况、状态（wn31:n:05825869 等），当前证据偏特殊/条件情形，未覆盖一般义。\",\n          \"evidence_ids\": [\"wn31:n:13966452\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"扩展组“案例”使用 wn31:n:07323507（an occurrence/instance），覆盖“实例/事例”类用法，与源中文“案例”的常见概括含义一致，未冒充法律案件。\",\n          \"evidence_ids\": [\"wn31:n:07323507\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心组“箱子”使用 wn31:n:02978156（a portable container for carrying several objects），是英语 case 的典型便携容器义，虽比汉语“箱子”范围窄，但作为 case 的核心义合理，未加无据排他限制。\",\n          \"evidence_ids\": [\"wn31:n:02978156\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“案件”使用 wn31:n:01185144（legal proceeding/remedy），与源中文“案件/法律诉讼”一致。\",\n          \"evidence_ids\": [\"wn31:n:01185144\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_evidence_gap\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-bbfcd4160a1e:p6c1:core:1\"],\n          \"evidence_ids\": [\"wn31:n:13966452\", \"wn31:n:05825869\"],\n          \"reason\": \"核心组“情况”只列 wn31:n:13966452（a special set of circumstances），未列 wn31:n:05825869（the actual state of things）；源“情况”未限定特殊情形，一般情况下有证据支持但未覆盖。\",\n          \"counterexample\": \"wn31:n:05825869 定义“the actual state of things”，例句“that was not the case”，这是“情况”的一般义，当前组未引用。\",\n          \"repair_suggestion\": \"在核心“情况”组的证据中补充 wn31:n:05825869（一般实际情况），或明确该组只覆盖“in that case/特殊情形”并在其他层保留一般情况；不要将一般“情况”全部显示为已核验。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原“情况”是否在教材语境中主要指一般状态/状况，还是包含特殊情形；若为一般义，当前核心证据偏窄，需补 wn31:n:05825869。\",\n        \"“案例”是否需要进一步区分法律案例、病例、客户案例等，当前用 occurrence/instance 概括可能无法回应特定语域需求，但暂无明确缺陷证据。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"箱子/案件/案例映射基本成立；“情况”证据偏特殊情形，一般实际情况缺证据，建议补充或暂存；未发现Major级覆盖丢失。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 7266,
+    "completion_tokens": 4815,
+    "total_tokens": 12081,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3194
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 5602
+  },
+  "started_utc": "2026-11-13T10:00:20.502408+00:00",
+  "completed_utc": "2026-11-13T10:01:32.777255+00:00",
+  "elapsed_seconds": 72.266,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

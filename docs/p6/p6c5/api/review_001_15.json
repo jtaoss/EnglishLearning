@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_15",
+  "request_hash": "009ed37524dcfeb2028ecb4802127573c259adf2f27b531044cdba554ca2f3c7",
+  "started_utc": "2026-11-13T08:16:13.485360+00:00",
+  "completed_utc": "2026-11-13T08:18:31.421471+00:00",
+  "elapsed_seconds": 137.937,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e6732c09-b702-4a59-a12a-f10cb4d1d8d2",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3360,
+    "completion_tokens": 7129,
+    "total_tokens": 10489,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6607
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3360
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-482a37dd98d9\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"原名词片段“代表”本身在汉语中可兼指“代表他人的人”和“典型例子”。候选将“典型例子”列为外部候选且 source_sense_ids=[]，但其注释称“可能涵盖但未明确”。若该义实为原片段已有，则溯源应挂到 s001；若视为未表达，则注释不应说“可能涵盖”。当前处理保守，未造成核心错误，但源覆盖状态含混。\",\"evidence_ids\":[\"wn31:n:05828980\"],\"source_sense_ids\":[\"s001\"],\"candidate_group_ref\":\"SG25-482a37dd98d9:p6c5:addition:1\",\"proposed_fix\":\"可考虑将 addition1 的 source_sense_ids 设为 [\\\"s001\\\"] 并加语义拆分说明，或明确该义暂视为外部，不称“可能涵盖”。\"},{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"WordNet 名词证据中尚有 wn31:n:09975260（美国众议员）和 wn31:n:10657783（代言人/提倡者）未被候选的 dictionary_additions 跟踪。这两个义项对阅读英语政治/职场材料可能有独立价值，但不确定是否必须为中文学习者首轮覆盖。属于重要外部用途缺口的待决项，不构成当前核心错误。\",\"evidence_ids\":[\"wn31:n:09975260\",\"wn31:n:10657783\"],\"source_sense_ids\":[],\"candidate_group_ref\":null,\"proposed_fix\":\"可在 dictionary_additions 中增加“（美国）众议员”和“代言人；提倡者”候选，并保持 AI_candidate_not_adopted 状态，等待人工决定。\"}],\"preferences\":[\"首次教学可先教名词“代表（人）”和形容词“有代表性的/典型的”，与候选一致。\",\"名词“典型例子”义建议作为扩展义，在语境中辨析。\"],\"note\":\"候选核心义与原文词性和基本含义匹配，证据使用恰当。名词源义因单词“代表”本身多义而存在覆盖边界不清晰，但已通过外部候选部分处理。未发现需要立即修正的错误。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_003",
+  "kind": "holdout",
+  "request_hash": "f17699d1c70c1a07315ac8955bc5fed5aae727e5302bfb04a1da5db05bedafb5",
+  "input_ids": [
+    "SG25-178b6e061a04",
+    "SG25-9b4ef3e5b7b4"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "dd81b8e7-c8a1-4aab-9c53-dc5582295074",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-178b6e061a04\",\n      \"word\": \"associate\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"动词：联系（在思想或因果上连接事物、事实等）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"将概念、事实、事件等建立逻辑或因果关联\",\n          \"evidence_ids\": [\"wn31:v:00715072\"],\n          \"uncertainty\": \"中等：原义'联系'可包括实际接触/通信，证据仅覆盖逻辑因果连接，但不排除其他；需语境确认\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"动词：交往（与某人来往、相处）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"与某人保持社交往来\",\n          \"evidence_ids\": [\"wn31:v:02595401\"],\n          \"uncertainty\": \"低：匹配明确\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"名词：同事（共同工作或活动的人）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"工作或协作场景\",\n          \"evidence_ids\": [\"wn31:n:09836176\"],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"名词：伙伴（常陪伴的朋友或同伴）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"朋友或同伴关系\",\n          \"evidence_ids\": [\"wn31:n:09965384\"],\n          \"uncertainty\": \"低\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：联系\",\n        \"动词：交往\",\n        \"名词：同事\",\n        \"名词：伙伴\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"全部原义项均由现有词典证据支持，未发现范围扩大或收窄；形容词及名词下属等词典义未采用\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"名词：从属成员（如律所中的associate）\",\n          \"evidence_ids\": [\"wn31:n:09836579\"]\n        },\n        {\n          \"text\": \"名词：伴随事件或物（如thunderous associate）\",\n          \"evidence_ids\": [\"wn31:n:07299553\"]\n        },\n        {\n          \"text\": \"形容词：副的、准的（如associate professor）\",\n          \"evidence_ids\": [\"wn31:s:00796981\"]\n        },\n        {\n          \"text\": \"名词：两年制学院学位（不相关）\",\n          \"evidence_ids\": [\"wn31:n:06710466\"]\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-9b4ef3e5b7b4\",\n      \"word\": \"station\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"名词：车站（供车辆停靠、上下客的设施）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"交通设施，如火车站、汽车站等\",\n          \"evidence_ids\": [\"wn31:n:04313218\"],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词：站（泛称，可指设施或站点）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"泛指交通或服务站点，如加油站、火车站等\",\n          \"evidence_ids\": [\"wn31:n:04313218\"],\n          \"uncertainty\": \"中等：中文'站'单独使用可泛指多种站点，英语证据对应设施型站点，可能不完全覆盖公交停靠点等简单站点\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"动词：驻扎（指派人员到某地驻守）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"军事或工作指派到岗\",\n          \"evidence_ids\": [\"wn31:v:01091334\"],\n          \"uncertainty\": \"低\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"动词：安置（安排、放置、使有位置）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"指派到某岗位或地点（原义可能更宽，如安置人员、安置物品）\",\n          \"evidence_ids\": [\"wn31:v:01091334\"],\n          \"uncertainty\": \"高：原义'安置'范围较宽，现有证据仅覆盖指派到岗位/驻地，不足以涵盖所有用途；未纳入核心\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词：车站；站\",\n        \"动词：驻扎\"\n      ],\n      \"deferred_source_ids\": [\"s004\"],\n      \"deferral_reason\": \"现有词典证据仅支持‘assign to a station’（指派到岗位），原义‘安置’可能更宽（如安顿人员、放置物品），需更多英语证据核验，暂缓纳入核心\",\n      \"note\": \"名词‘站’与‘车站’合并为核心表述，动词‘驻扎’单独保留；‘安置’待更多证据\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"名词：广播电台频率\",\n          \"evidence_ids\": [\"wn31:n:05064212\"]\n        },\n        {\n          \"text\": \"名词：哨位/岗位位置\",\n          \"evidence_ids\": [\"wn31:n:08641960\"]\n        },\n        {\n          \"text\": \"名词：（航海）舰船指定位置\",\n          \"evidence_ids\": [\"wn31:n:08674221\"]\n        },\n        {\n          \"text\": \"名词：社会地位/身份\",\n          \"evidence_ids\": [\"wn31:n:13970825\"]\n        }\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3268,
+    "completion_tokens": 5971,
+    "total_tokens": 9239,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4663
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3268
+  },
+  "started_utc": "2026-11-13T09:33:06.809365+00:00",
+  "completed_utc": "2026-11-13T09:34:29.106515+00:00",
+  "elapsed_seconds": 82.297,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

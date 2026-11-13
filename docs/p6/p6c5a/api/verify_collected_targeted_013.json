@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_013",
+  "kind": "verify",
+  "request_hash": "cd684f9a02bf98adf44f5e59ec944c8a1259dfe336226269cb165a7f66e6e14e",
+  "input_ids": [
+    "SG25-16a7b8d12931",
+    "SG25-27f576cafbb2"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "03f792e0-6eeb-4196-8cd6-dbaf4c75c877",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-16a7b8d12931\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选 core:1 以“防御”名词覆盖源义，提供动作防御与军事防御的英语证据，未新增对象限制；名词词性匹配源词性。\",\n          \"evidence_ids\": [\n            \"wn31:n:00825193\",\n            \"wn31:n:00956422\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选 core:2“辩护”与源中文一致，note 提及法律和日常论辩语境；现有证据覆盖正当理由与反驳性言语，未排除法律辩护；法律具体证据未单列，属于说明性缺口而非源义收窄。\",\n          \"evidence_ids\": [\n            \"wn31:n:06753339\",\n            \"wn31:n:07215473\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_gap\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-16a7b8d12931:core:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:01201240\"\n          ],\n          \"reason\": \"note 声称法律和日常论辩都有语境，但列出的 n06753339/n07215473 不直接支持法律被告答辩；法律辩护覆盖无法从现有证据验证。\",\n          \"counterexample\": \"wn31:n:01201240 是被告答辩或抗辩的英语证据，未链接到该组。\",\n          \"repair_suggestion\": \"将 wn31:n:01201240 加入 core:2 的 evidence_ids，或修改 note 明确法律语境为待核，避免超出证据。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"s001“防御”由行为与军事防卫证据支持；s002“辩护”文本与源一致，但法律语境证据不足；未发现源义收窄。\"\n    },\n    {\n      \"id\": \"SG25-27f576cafbb2\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"候选有动词“转移”和名词“转移（过程/事件）”，覆盖位置/时期转移的源义；因源词性未逐义标定，以概括形式保留动作与事件，未断言原书词性。\",\n          \"evidence_ids\": [\n            \"wn31:v:00556317\",\n            \"wn31:v:02236972\",\n            \"wn31:n:00316812\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源词性为 null，候选仅以动词“转让”呈现；未保留或暂存名词“所有权转让行为”（wn31:n:01109837），不能确定是否完整覆盖原义。\",\n          \"evidence_ids\": [\n            \"wn31:v:02225243\",\n            \"wn31:n:01109837\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源词性为 null，候选仅以动词“调动”呈现；现有英语证据缺少独立的“调动”动作名词，不能仅用 n10744008（被调动者）证明名词义已覆盖。\",\n          \"evidence_ids\": [\n            \"wn31:v:02398228\",\n            \"wn31:n:10744008\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_pos_unresolved\",\n          \"source_ids\": [\n            \"s002\",\n            \"s003\"\n          ],\n          \"group_ids\": [\n            \"SG25-27f576cafbb2:extended:1\",\n            \"SG25-27f576cafbb2:extended:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:01109837\",\n            \"wn31:n:10744008\"\n          ],\n          \"reason\": \"候选仅保留动词“转让/调动”，而源词性未逐义确认；s002 存在名词所有权转让证据 n01109837，s003 名词调动可能性未显式暂存，可能导致名词用法丢失。\",\n          \"counterexample\": \"wn31:n:01109837 支持名词“所有权转让行为”；wn31:n:10744008 仅指被调动者，不能覆盖动作名词。\",\n          \"repair_suggestion\": \"在 held 或扩展层补名词义项：s002 增加名词“所有权转让（行为）”使用 n01109837；s003 保留 pending 并注明缺少动作名词证据，避免仅显示动词。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002 源义项是否为名词“转让（所有权行为）”仍待确认；现有候选只提供动词，虽证据 n01109837 存在但未采用。\",\n        \"s003 源义项是否包含名词“调动（岗位调动）”仍待确认；WordNet 无直接动作名词，n10744008 只能证明人员名词。\",\n        \"转移 s001 的词性分配是否完全符合原书未逐义标签仍待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"sg transfer 的动词/名词核心区分合理，但 s002/s003 未保留名词可能，建议显式 held；s001 覆盖较完整。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5972,
+    "completion_tokens": 7399,
+    "total_tokens": 13371,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6124
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 4308
+  },
+  "started_utc": "2026-11-13T09:56:48.740009+00:00",
+  "completed_utc": "2026-11-13T09:58:31.779363+00:00",
+  "elapsed_seconds": 103.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

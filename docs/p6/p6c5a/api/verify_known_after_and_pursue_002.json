@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_after_and_pursue_002",
+  "kind": "verify",
+  "request_hash": "0eedb42545e6295b929102746d8dd59e0db111108daa0d16d221e4a4ef1e5f0a",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "539a06eb-c8ee-4537-ba08-d3d8ff16a0a0",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-093e7d5fdbaa\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源片段未单独标注词性；现有分组在名词与动词下分别覆盖“联系”的沟通/互动义，证据为 WordNet 交际互动与建立沟通，未添加原文/证据以外的对象或方向限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:07293990\",\n            \"wn31:n:00040035\",\n            \"wn31:v:00745330\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“接触”在名词下以物理触碰、紧邻、相碰，动词下以直接物理接触/相碰获得覆盖；证据支持状态与动作，未将电子触点、隐形眼镜等外部义纳入核心。\",\n          \"evidence_ids\": [\n            \"wn31:n:00125700\",\n            \"wn31:n:14442914\",\n            \"wn31:n:07353929\",\n            \"wn31:v:01208316\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001/s002 的个别词性未在原始义项内标注；当前按全局 source_pos 双词性展开，可能对非预期词性造成扩大，需教材语境确认。\",\n        \"s002 是否包含非物理的“接触/交往”义未定；现有核心仅物理接触，若原义需涵盖“与新事物/文化接触”，则可能收窄，但现有证据不足以确认。\"\n      ],\n      \"preferences\": [\n        \"外部候选触点、隐形眼镜、人脉只作词典补充未进核心，是合理的教学排序而非缺陷。\"\n      ],\n      \"note\": \"未发现已确认的覆盖缺陷；候选把两个中文片段分别建立名词/动词联系/接触，核心层级证据清楚，暂存与外部候选处理未引入核心污染。\"\n    },\n    {\n      \"id\": \"SG25-bf0bb4ee60e2\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“伸展”目标组覆盖身体/肢体及可伸展物体，证据为伸展四肢、展开桌腿/布料/天线等；未添加排他对象限制，中文‘伸展’允许及物/不及物身体和物体用法。\",\n          \"evidence_ids\": [\n            \"wn31:v:00027261\",\n            \"wn31:v:01371528\",\n            \"wn31:v:02058913\",\n            \"pub:p6c5:parent:extend\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原义“变宽”为不及物状态变化；当前无显示组覆盖，仅在 held 暂存。所给 WordNet v00541315 为及物使变宽/扩大范围，v02693758 为空间跨度，未直接证明‘become wider’。证据不足，不能确认已覆盖，但也不能断言生成器错误。\",\n          \"evidence_ids\": [\n            \"wn31:v:00541315\",\n            \"wn31:v:02693758\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“延伸”目标组覆盖空间/时间绵延、达到、向外伸出，证据为距离/空间/时间跨度；未扩大至给予、时间延长等未明说义。\",\n          \"evidence_ids\": [\n            \"wn31:v:02691775\",\n            \"wn31:v:02693758\",\n            \"wn31:v:02695935\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 变宽：无显示层覆盖；held 指出所给词典证据方向不一致（主要及物使变宽/范围扩大，未证明不及物自身变宽）。若教材实际是及物‘使范围变宽/扩大’，应将 v00541315 作为候选并再定词性；若是不及物变化，则需补充可用英语证据。\",\n        \"s001/s003 之间‘伸展’与‘延伸’在空间义上有重叠（如不及物向外延伸），当前分组按主体/方向切分，但个别例句可能跨组，教学顺序待人工确认。\"\n      ],\n      \"preferences\": [\n        \"未采用时间延长、给予/提供、扩大范围/影响作为核心，符合原文未明说的政策；只做词典补充。\",\n        \"held s002 保留待核，优于强行把及物 widen 映射为‘变宽’。\"\n      ],\n      \"note\": \"候选未将 s002 变宽纳入核心/扩展是合理的暂存，不应直接判 Major；但最终覆盖需以教材语境确认。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5640,
+    "completion_tokens": 8669,
+    "total_tokens": 14309,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7544
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 5640
+  },
+  "started_utc": "2026-11-13T09:42:30.382486+00:00",
+  "completed_utc": "2026-11-13T09:44:37.404827+00:00",
+  "elapsed_seconds": 127.016,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

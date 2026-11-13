@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_55",
+  "request_hash": "986295315bb57d50933f4a483052de3244d6db38f6b85bc63a4ece0c2ac05a8b",
+  "started_utc": "2026-11-13T08:16:41.497642+00:00",
+  "completed_utc": "2026-11-13T08:18:01.456424+00:00",
+  "elapsed_seconds": 79.968,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4f4c6a06-ab94-4f2f-8597-05bb51a9e666",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3546,
+    "completion_tokens": 4100,
+    "total_tokens": 7646,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3892
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1498
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-9b4ef3e5b7b4\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        {\n          \"kind\": \"teaching_suggestion\",\n          \"text\": \"后续可把航海/舰队驻地义（wn31:n:08674221）加入其他或扩展，但非首要学习需求。\"\n        }\n      ],\n      \"note\": \"候选已覆盖全部源名词/动词义；用宽证据兼容“车站/站”并加限定，动词按“安排到岗位/驻地”收窄，同时对“驻扎”状态义和“安置”广义明确提醒，未发现错误翻译、词性或源用法遗漏。外部广播、哨位、社会地位义已单列候选，航海义未单列但优先级低；仅作教学建议。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

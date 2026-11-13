@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_001",
+  "kind": "audit",
+  "request_hash": "5336a79e2c380be6c0dc3fc8dfc224b6532af1353444f8d9e532066250ed383a",
+  "input_ids": [
+    "SG25-563773f188ec",
+    "SG25-4194b692f578",
+    "SG25-d454bec656d3",
+    "SG25-084e990a49ba",
+    "SG25-12b821b5f6da"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "245c1d80-baa2-4c57-817b-f57bb9a43294",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-563773f188ec\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"新闻记者（报道写作职业）\",\"relation\":\"语义等价\",\"reason\":\"“新闻记者”与词网“a writer for newspapers and magazines”在职业指称上对应，核心组保留该职业框架。\",\"evidence_ids\":[\"wn31:n:10244248\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"新闻工作者（新闻采编写作职业）\",\"relation\":\"合理概括\",\"reason\":\"“新闻工作者”作为近义上位称谓与“新闻记者”合组；词网证据支持报刊杂志撰稿人，注释限定报道写作框架，未把日记作者义纳入。\",\"evidence_ids\":[\"wn31:n:10244248\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个中文近义片段均落在同一核心职业义；词网“日记作者”义仅作外部观察，未被误作原文义。\"},{\"id\":\"SG25-4194b692f578\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"反对（提出不赞同）\",\"relation\":\"语义等价\",\"reason\":\"名词“反对”对应objection的言语行为/不赞同表达，核心组保留该用法。\",\"evidence_ids\":[\"wn31:n:07222998\",\"wn31:n:07261402\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"异议（不同意见）\",\"relation\":\"合理概括\",\"reason\":\"“异议”与“反对”在提出不赞同的框架内合组，词网“speech act of objecting”支持该概括。\",\"evidence_ids\":[\"wn31:n:07222998\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"抗议（公开表达反对）\",\"relation\":\"语义等价\",\"reason\":\"“抗议”对应“public manifestation of dissent / act of protesting”，核心组保留公开抗议义。\",\"evidence_ids\":[\"wn31:n:01179523\",\"wn31:n:07261402\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义名词片段均在核心组覆盖；法庭异议的程序性词网义未被不当泛化进原文核心。\"},{\"id\":\"SG25-d454bec656d3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"目标（想要达到的目的）\",\"relation\":\"语义等价\",\"reason\":\"名词“目标”对应“the goal intended to be attained”，核心名词组保留目的义。\",\"evidence_ids\":[\"wn31:n:05990115\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"客观的（不带个人偏见、基于可观察事实）\",\"relation\":\"语义等价\",\"reason\":\"形容词“客观的”对应“undistorted by emotion or personal bias / 基于可观察现象”；艺术客观义作为同组补充。\",\"evidence_ids\":[\"wn31:a:01619332\",\"wn31:s:01940682\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“目标”与形容词“客观的”分属核心两组，词性没有互相替代；光学物镜和语法宾格义未被偷加进原文核心。\"},{\"id\":\"SG25-084e990a49ba\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"拒绝（不接受/不承认）\",\"relation\":\"语义等价\",\"reason\":\"“拒绝”对应“refuse to accept or acknowledge”，核心先记拒绝接受义。\",\"evidence_ids\":[\"wn31:v:00687584\",\"wn31:v:02242120\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"排斥（不允许纳入或生理排异）\",\"relation\":\"语义等价\",\"reason\":\"“排斥”概括不允许进入/会员排斥及生理排异，扩展组保留两个证据子用法并注明区分。\",\"evidence_ids\":[\"wn31:v:02508565\",\"wn31:v:02760892\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“拒绝”置于核心；“排斥”在扩展层保留，符合先记拒绝接受、再区分排斥/排异的AI教学排序，未遗漏有证据用途。\"},{\"id\":\"SG25-12b821b5f6da\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"证词（宣誓或第一手事实陈述）\",\"relation\":\"语义等价\",\"reason\":\"“证词”对应“solemn statement under oath / firsthand authentication of a fact”，核心组保留陈述义。\",\"evidence_ids\":[\"wn31:n:06745459\",\"wn31:n:06747216\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"证明（可作证据的事物/证言）\",\"relation\":\"合理概括\",\"reason\":\"“证明”在testimony语境下取“作为证据的事物”，扩展组保留并注明不是一般数学证明。\",\"evidence_ids\":[\"wn31:n:06660952\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"“证词”在核心，“证明”作为证据性证明放在扩展并带限制说明；原中文“证明”较宽，但英语testimony不支持数学证明动作，按来源待核处理而非判生成器错误。\"}]}",
+  "usage": {
+    "prompt_tokens": 5349,
+    "completion_tokens": 7951,
+    "total_tokens": 13300,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6538
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3429
+  },
+  "started_utc": "2026-11-13T09:44:50.460951+00:00",
+  "completed_utc": "2026-11-13T09:45:35.918769+00:00",
+  "elapsed_seconds": 45.453,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

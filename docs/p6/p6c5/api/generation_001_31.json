@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_31",
+  "request_hash": "9ba7294b55e3a6e1551b8d8cc40cebcd64fc5b614058800f33576918e6d9a082",
+  "started_utc": "2026-11-13T08:14:59.224118+00:00",
+  "completed_utc": "2026-11-13T08:15:24.255247+00:00",
+  "elapsed_seconds": 25.031,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "3d57c2a0-c370-4b37-a5d3-467a147b4cfa",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3626,
+    "completion_tokens": 3932,
+    "total_tokens": 7558,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3245
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 810
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-9b4ef3e5b7b4\",\"word\":\"station\",\"pos\":\"名词；动词\",\"core\":[[\"车站；站\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:04313218\"],\"交通站点；词典定义较宽为有专用设备/人员的设施，例证含 train station，可兼容“车站/站”，但“站”本身更宽泛。\"],[\"驻扎；安置到岗位/驻地\",\"动词\",[\"s003\",\"s004\"],[\"wn31:v:01091334\"],\"指把人/部队安排到岗位或驻地；英语 assign to a station 偏“安排驻扎”，对“驻扎”的状态义和“安置”的广义需限定理解。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"广播电台；广播站\",\"名词\",[\"wn31:n:05064212\"],\"原文无广播义；该义为独立常见设施/频道用法，作为外部候选。\"],[\"岗位；哨位\",\"名词\",[\"wn31:n:08641960\"],\"原文“站”未明确岗位/哨位；词典有独立定义，列候选。\"],[\"社会地位；身份\",\"名词\",[\"wn31:n:13970825\"],\"原文无社会等级义；与交通/驻扎义独立，列候选。\"]],\"reason\":\"首记先抓交通站点和安排驻扎两个生活/阅读功能；动词按同一“安排到岗位/驻地”用法合并，但用限定语避免把“安置”的广义硬塞给英语 station；广播、岗位、社会地位另列候选不混入核心。\",\"flags\":[[\"Major\",\"scope_gap\",\"s004“安置”广义为安顿/安排，而 v:01091334 仅支持“安排到岗位/驻地”的窄义，核心仅可按限定义理解。\"],[\"Minor\",\"direction_gap\",\"v:01091334 为及物“安排到站/岗位”，而“驻扎”常为驻守状态，需按 be stationed/garrison 的方向理解。\"],[\"Minor\",\"source_ambiguity\",\"s002“站”可指交通站、岗位、广播站等宽泛义，核心仅锁定交通站点，其余在 additions 候选。\"],[\"Info\",\"addition_candidates_pending\",\"广播电台、岗位/哨位、社会地位为原文未含的外部候选，尚未采用。\"]]},{\"id\":\"SG25-073c1634c496\",\"word\":\"status\",\"pos\":\"名词\",\"core\":[[\"地位\",\"名词\",[\"s001\"],[\"wn31:n:13968971\"],\"社会或相对身份/等级地位，与 relative position or standing in society 对应。\"],[\"状态\",\"名词\",[\"s002\"],[\"wn31:n:13943868\"],\"某时的状况/情形，与 state at a particular time 对应。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"两个原片段分别为社会地位与状况，词典证据各自直接对应，词性同为名词但语义边界清楚，故保留为两个核心组而不合并。\",\"flags\":[]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

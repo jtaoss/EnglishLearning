@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_012",
+  "kind": "audit",
+  "request_hash": "2938211cde419718816b0866a725f28a56be04d437807e425ba6f0f7a633c44b",
+  "input_ids": [
+    "SG25-c781f9e50e6d",
+    "SG25-1a1d1484d3cb",
+    "SG25-f3b96e66bb86",
+    "SG25-0734bf93ed06",
+    "SG25-190ab894c1cb"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5d4ff257-ecf6-4b4b-90ce-87d62b89b1ba",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c781f9e50e6d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"从事政治或政府事务的人，中性。\",\"relation\":\"语义等价\",\"reason\":\"核心保留中性上位词“从政者”，词典证据支持活跃于政党政治的人；未把政党活动写成排他条件。\",\"evidence_ids\":[\"wn31:n:10469877\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"政客，常带贬义的政治人物。\",\"relation\":\"范围收窄\",\"reason\":\"目标仍作“政客”，但所引证据专指狡诈钻营、以阴险手段牟利者，只覆盖贬义子类；普通贬义政客未必是schemer。\",\"evidence_ids\":[\"wn31:n:10471024\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"缺少普通贬义政客（未必狡诈钻营）的范围\",\"counterexample\":\"常受批评的党派政客可只是一般贬义政治人物，并不必然被描述为阴险钻营者。\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"政治家；从政的政治人物，原译不必褒义。\",\"relation\":\"语义等价\",\"reason\":\"词典证据为从事民政/行政的领导人物，支持中性“政治家”；注释明确不默认杰出领袖，避免把原译当褒称。\",\"evidence_ids\":[\"wn31:n:10470837\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_scope_narrowing\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-c781f9e50e6d:extended:1\"],\"evidence_ids\":[\"wn31:n:10471024\"],\"reason\":\"“政客”可泛指常含贬义的政治人物；所引词典证据专指狡诈钻营者，注释以子类代表全义，可能误导为政客必为schemer。\",\"repair_suggestion\":\"保留“政客”的宽泛贬义，将狡诈/钻营作为示例或另列；不要把它作为“政客”唯一英语依据。\"}],\"note\":\"三个原义均入层：核心用中性“从政者”，扩展保留“政客”与“政治家”；主要风险是“政客”链接证据过窄为狡诈钻营者。\"},{\"id\":\"SG25-1a1d1484d3cb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"政治；治理国家与公共事务的活动/领域。\",\"relation\":\"语义等价\",\"reason\":\"原文仅列“政治”，核心保留同级宽泛名词；词典的职业性治理与政府事务两证据支持该宽泛入口，不把学科、政见、权谋细分强加为原义。\",\"evidence_ids\":[\"wn31:n:00613259\",\"wn31:n:01126829\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文只有宽泛“政治”，核心保留单一宽泛义；词典另有政治学、政见、权谋等义仅作潜在补充，未改写成多个原义。\"},{\"id\":\"SG25-f3b96e66bb86\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"暴露；使可见、显露。\",\"relation\":\"语义等价\",\"reason\":\"核心保留“暴露”，词典证据为移除遮盖而显露于视野，支持该义；未把“揭露秘密”或“使接触”混入。\",\"evidence_ids\":[\"wn31:v:02142175\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"揭露；公开秘密或不为人知的事。\",\"relation\":\"语义等价\",\"reason\":\"词典证据为把先前少数人知道或本欲保密的信息公之于众，支持“揭露”；与可见性“暴露”分列。\",\"evidence_ids\":[\"wn31:v:00935783\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"使接触；使受到某种作用或影响。\",\"relation\":\"语义等价\",\"reason\":\"词典证据expose or make accessible to action/influence与“使接触”一致；注释保留expose to结构，属于该用法的搭配要求。\",\"evidence_ids\":[\"wn31:v:02116512\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个原义分别落在“暴露可见”“揭露秘密”“使接触影响”，核心/扩展分工与expose to结构提示清楚。\"},{\"id\":\"SG25-0734bf93ed06\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"强加；把不受欢迎的事物施加于人。\",\"relation\":\"语义等价\",\"reason\":\"词典证据为施加令人不快的事物，支持“强加”；“征收”另立，避免宾语框架混淆。\",\"evidence_ids\":[\"wn31:v:00750288\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"征收；强制收取税费、罚款等。\",\"relation\":\"语义等价\",\"reason\":\"词典证据为impose and collect/levy a fine，支持“征收”的强制收取义。\",\"evidence_ids\":[\"wn31:v:02311442\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“强加”与“征收”按动作框架分开，均保留在核心；impose on等搭配需按宾语解释的注释恰当。\"},{\"id\":\"SG25-190ab894c1cb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"假定；作为前提或设想。\",\"relation\":\"语义等价\",\"reason\":\"证据含take for granted/suppose beforehand与express a supposition，支持“假定”；未把presuppose的逻辑必然前提写成唯一义。\",\"evidence_ids\":[\"wn31:v:00718436\",\"wn31:v:00919271\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"认为；以为、相信。\",\"relation\":\"语义等价\",\"reason\":\"证据expect/believe/suppose与believe on uncertain grounds支持“认为”；与“假定”分列。\",\"evidence_ids\":[\"wn31:v:00633399\",\"wn31:v:00635105\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个原义均入核心；“be supposed to”结构保留为未采用外部候选，不冒充原文已有。\"}]}",
+  "usage": {
+    "prompt_tokens": 6065,
+    "completion_tokens": 9421,
+    "total_tokens": 15486,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7777
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4145
+  },
+  "started_utc": "2026-11-13T09:46:53.831815+00:00",
+  "completed_utc": "2026-11-13T09:47:46.380639+00:00",
+  "elapsed_seconds": 52.547,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

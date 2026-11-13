@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_13",
+  "request_hash": "6bae88fe5be34c845ca4101e8bf78b837be3e95627ebfbdba83ebc3214031273",
+  "started_utc": "2026-11-13T08:14:58.918920+00:00",
+  "completed_utc": "2026-11-13T08:15:42.544962+00:00",
+  "elapsed_seconds": 43.625,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c74158a3-c679-4cb9-bf2e-6c34a00084ce",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3770,
+    "completion_tokens": 7286,
+    "total_tokens": 11056,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6702
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 954
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-772c6953848b\",\"word\":\"observation\",\"core\":[[\"观察；察看\",\"名词\",[\"s001\"],[\"wn31:n:00881437\"],\"指有意、仔细地看或观察的行为\"],[\"评论；意见\",\"名词\",[\"s002\"],[\"wn31:n:06779826\"],\"指经过思考后发表的评论或意见\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"观察结果；观察所得\",\"名词\",[\"wn31:n:05826885\"],\"外部候选：指通过观察得到的事实或信息，原文“观察”未明确结果义，未采用。\"]],\"reason\":\"先记两个名词义：“观察行为”是核心动作名词，“评论/意见”由原文“评论”直接对应；观察结果义虽常见，但原文未明确，暂列外部候选而不挤入核心。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原文未明确“观察结果/观察所得”，已列外部候选但未采用。\"]]},{\"id\":\"SG25-74e892c91130\",\"word\":\"observe\",\"core\":[[\"观察；注视\",\"动词\",[\"s001\"],[\"wn31:v:02173796\",\"wn31:v:02460829\"],\"指有意识地仔细看或持续注意\"],[\"遵守；遵循\",\"动词\",[\"s002\"],[\"wn31:v:02584957\"],\"指按规则、约定、诺言等行事\"],[\"注意到；留意到\",\"动词\",[\"s003\"],[\"wn31:v:02123398\"],\"指把注意力放在某事物上并察觉\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"指出；评论说\",\"动词\",[\"wn31:v:01022014\"],\"外部候选：observe 可表示“说/评论指出”，原文未列，未采用。\"],[\"奉行；庆祝（节日、仪式）\",\"动词\",[\"wn31:v:02584595\"],\"外部候选：observe 可指遵守、举行宗教节日或仪式，原文“遵守”未明确此搭配，未采用。\"]],\"reason\":\"先记三个动词义：观察（仔细看）、遵守（遵循规则约定）、注意到（留意到）；三者对象和方向不同，不合并。“评论指出”和“奉行节日/仪式”作为外部候选保留，不挤入核心。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原文未列“指出/评论说”，已列外部候选但未采用。\"],[\"Info\",\"source_coverage_gap\",\"原文未列“奉行/庆祝节日或仪式”，已列外部候选但未采用。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

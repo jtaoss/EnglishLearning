@@ -1,0 +1,910 @@
+{
+  "stage": "holdout_source_first",
+  "kind": "holdout",
+  "model_requested": "deepseek-v4-pro",
+  "record_count": 12,
+  "expected_count": 24,
+  "records": [
+    {
+      "id": "SG25-c082456a7766",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "名词：媒介",
+          "recommended_pos": "名词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:n:06264605",
+            "wn31:n:06272239",
+            "wn31:n:14923303",
+            "wn31:n:06264799"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "名词：手段",
+          "recommended_pos": "名词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:n:06264799",
+            "wn31:n:14923303"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "形容词：中等的",
+          "recommended_pos": "形容词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:s:01536076"
+          ],
+          "uncertainty": "低"
+        }
+      ],
+      "proposed_core": [
+        "名词：媒介",
+        "名词：手段",
+        "形容词：中等的"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "核心基于原文明确标注的词性和释义。部分词典义项（如灵媒、绘画用液体、细菌培养基等）未采纳，因原文未包含这些特定领域用法。",
+      "unadopted_observations": [
+        {
+          "text": "灵媒（与亡者沟通的人）",
+          "evidence_ids": [
+            "wn31:n:10325946"
+          ]
+        },
+        {
+          "text": "周围环境",
+          "evidence_ids": [
+            "wn31:n:08585671"
+          ]
+        },
+        {
+          "text": "中间状态",
+          "evidence_ids": [
+            "wn31:n:13943202"
+          ]
+        },
+        {
+          "text": "细菌培养基",
+          "evidence_ids": [
+            "wn31:n:14923479"
+          ]
+        },
+        {
+          "text": "生物标本保存或展示用物质",
+          "evidence_ids": [
+            "wn31:n:14923681"
+          ]
+        },
+        {
+          "text": "画家混合颜料用液体",
+          "evidence_ids": [
+            "wn31:n:14924039"
+          ]
+        },
+        {
+          "text": "（肉）煮至中间略带粉红",
+          "evidence_ids": [
+            "wn31:s:00620371"
+          ]
+        },
+        {
+          "text": "非常适合的职业",
+          "evidence_ids": [
+            "wn31:n:00611490"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-29a8825bd242",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "形容词：简短的",
+          "recommended_pos": "形容词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:s:00549386",
+            "wn31:s:01445717"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "名词：概要",
+          "recommended_pos": "名词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:n:06480311"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "动词：向……介绍情况",
+          "recommended_pos": "动词",
+          "required_context": null,
+          "evidence_ids": [
+            "wn31:v:00832934"
+          ],
+          "uncertainty": "低"
+        }
+      ],
+      "proposed_core": [
+        "形容词：简短的",
+        "名词：概要",
+        "动词：向……介绍情况"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "核心与原文一致。词典中的法律文书（brief）和衣物极短用法未纳入核心，因其范围明显窄于原文的一般释义。",
+      "unadopted_observations": [
+        {
+          "text": "法律文件（陈述案件事实与法律要点）",
+          "evidence_ids": [
+            "wn31:n:06555772"
+          ]
+        },
+        {
+          "text": "（衣物）非常短",
+          "evidence_ids": [
+            "wn31:s:01439307"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-178b6e061a04",
+      "word": "associate",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "动词：联系（在思想或因果上连接事物、事实等）",
+          "recommended_pos": "动词",
+          "required_context": "将概念、事实、事件等建立逻辑或因果关联",
+          "evidence_ids": [
+            "wn31:v:00715072"
+          ],
+          "uncertainty": "中等：原义'联系'可包括实际接触/通信，证据仅覆盖逻辑因果连接，但不排除其他；需语境确认"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "动词：交往（与某人来往、相处）",
+          "recommended_pos": "动词",
+          "required_context": "与某人保持社交往来",
+          "evidence_ids": [
+            "wn31:v:02595401"
+          ],
+          "uncertainty": "低：匹配明确"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "名词：同事（共同工作或活动的人）",
+          "recommended_pos": "名词",
+          "required_context": "工作或协作场景",
+          "evidence_ids": [
+            "wn31:n:09836176"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s004",
+          "scope_zh": "名词：伙伴（常陪伴的朋友或同伴）",
+          "recommended_pos": "名词",
+          "required_context": "朋友或同伴关系",
+          "evidence_ids": [
+            "wn31:n:09965384"
+          ],
+          "uncertainty": "低"
+        }
+      ],
+      "proposed_core": [
+        "动词：联系",
+        "动词：交往",
+        "名词：同事",
+        "名词：伙伴"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "全部原义项均由现有词典证据支持，未发现范围扩大或收窄；形容词及名词下属等词典义未采用",
+      "unadopted_observations": [
+        {
+          "text": "名词：从属成员（如律所中的associate）",
+          "evidence_ids": [
+            "wn31:n:09836579"
+          ]
+        },
+        {
+          "text": "名词：伴随事件或物（如thunderous associate）",
+          "evidence_ids": [
+            "wn31:n:07299553"
+          ]
+        },
+        {
+          "text": "形容词：副的、准的（如associate professor）",
+          "evidence_ids": [
+            "wn31:s:00796981"
+          ]
+        },
+        {
+          "text": "名词：两年制学院学位（不相关）",
+          "evidence_ids": [
+            "wn31:n:06710466"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-9b4ef3e5b7b4",
+      "word": "station",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "名词：车站（供车辆停靠、上下客的设施）",
+          "recommended_pos": "名词",
+          "required_context": "交通设施，如火车站、汽车站等",
+          "evidence_ids": [
+            "wn31:n:04313218"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "名词：站（泛称，可指设施或站点）",
+          "recommended_pos": "名词",
+          "required_context": "泛指交通或服务站点，如加油站、火车站等",
+          "evidence_ids": [
+            "wn31:n:04313218"
+          ],
+          "uncertainty": "中等：中文'站'单独使用可泛指多种站点，英语证据对应设施型站点，可能不完全覆盖公交停靠点等简单站点"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "动词：驻扎（指派人员到某地驻守）",
+          "recommended_pos": "动词",
+          "required_context": "军事或工作指派到岗",
+          "evidence_ids": [
+            "wn31:v:01091334"
+          ],
+          "uncertainty": "低"
+        },
+        {
+          "sid": "s004",
+          "scope_zh": "动词：安置（安排、放置、使有位置）",
+          "recommended_pos": "动词",
+          "required_context": "指派到某岗位或地点（原义可能更宽，如安置人员、安置物品）",
+          "evidence_ids": [
+            "wn31:v:01091334"
+          ],
+          "uncertainty": "高：原义'安置'范围较宽，现有证据仅覆盖指派到岗位/驻地，不足以涵盖所有用途；未纳入核心"
+        }
+      ],
+      "proposed_core": [
+        "名词：车站；站",
+        "动词：驻扎"
+      ],
+      "deferred_source_ids": [
+        "s004"
+      ],
+      "deferral_reason": "现有词典证据仅支持‘assign to a station’（指派到岗位），原义‘安置’可能更宽（如安顿人员、放置物品），需更多英语证据核验，暂缓纳入核心",
+      "note": "名词‘站’与‘车站’合并为核心表述，动词‘驻扎’单独保留；‘安置’待更多证据",
+      "unadopted_observations": [
+        {
+          "text": "名词：广播电台频率",
+          "evidence_ids": [
+            "wn31:n:05064212"
+          ]
+        },
+        {
+          "text": "名词：哨位/岗位位置",
+          "evidence_ids": [
+            "wn31:n:08641960"
+          ]
+        },
+        {
+          "text": "名词：（航海）舰船指定位置",
+          "evidence_ids": [
+            "wn31:n:08674221"
+          ]
+        },
+        {
+          "text": "名词：社会地位/身份",
+          "evidence_ids": [
+            "wn31:n:13970825"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-91bb720d0df3",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "使某对象处于并继续保持某种状态、位置或活动（如保持清洁、保持原位）",
+          "recommended_pos": "动词",
+          "required_context": "宾语为状态补语或表示状态/位置/活动的名词短语",
+          "evidence_ids": [
+            "wn31:v:02687605"
+          ],
+          "uncertainty": "证据为及物动词，含使役含义，与原文匹配；但原文未限定对象类型，证据中示例含清洁、位置等，范围可能较宽，未发现非使役独立证据。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "保持（某状态、数量、记录等，一般及物）",
+          "recommended_pos": "动词",
+          "required_context": "需要宾语，宾语可为状态/数量/记录等",
+          "evidence_ids": [
+            "wn31:v:02687605"
+          ],
+          "uncertainty": "与s001高度重叠，可能为同义重复；中文‘保持’比‘使保持某状态’少显性使役，但英语证据已包含使役，未发现非使役独立证据。"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "维持（某状态、活动等，常含持续努力）",
+          "recommended_pos": "动词",
+          "required_context": "需要宾语，宾语可为状态/活动/机构等",
+          "evidence_ids": [
+            "wn31:v:02687605"
+          ],
+          "uncertainty": "与s001/s002类似，但英语证据未区分‘维持’所需的持续投入，可能过于笼统。"
+        }
+      ],
+      "proposed_core": [
+        "动词：使保持某状态；保持；维持（使某对象继续处于某种状态、位置或活动）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "三个源义项高度同义，均映射至同一个使役性状态保持证据。其他字典义（如声称、供给、记录、持有、保护等）未在源中出现，不加为核心。",
+      "unadopted_observations": [
+        {
+          "text": "声称、断言（maintain innocence）",
+          "evidence_ids": [
+            "wn31:v:01019652",
+            "wn31:v:01018787"
+          ]
+        },
+        {
+          "text": "供给必需品、赡养（sustain family）",
+          "evidence_ids": [
+            "wn31:v:01187158"
+          ]
+        },
+        {
+          "text": "通过记录保持（keep a diary）",
+          "evidence_ids": [
+            "wn31:v:01067899"
+          ]
+        },
+        {
+          "text": "为使用而保有（keep a car）",
+          "evidence_ids": [
+            "wn31:v:02207950"
+          ]
+        },
+        {
+          "text": "行使（power/authority）",
+          "evidence_ids": [
+            "wn31:v:02209346"
+          ]
+        },
+        {
+          "text": "保护以免损坏（preserve）",
+          "evidence_ids": [
+            "wn31:v:02284977"
+          ]
+        },
+        {
+          "text": "正确坚持（keep time）",
+          "evidence_ids": [
+            "wn31:v:00734575"
+          ]
+        },
+        {
+          "text": "支持反对者（uphold verdict）",
+          "evidence_ids": [
+            "wn31:v:00898147"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-3fb45623cb30",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "整体中的一个部分（可指物体部件或抽象划分）",
+          "recommended_pos": "名词",
+          "required_context": "需明确指出所属整体；可用于具体物体或抽象概念",
+          "evidence_ids": [
+            "wn31:n:04172050",
+            "wn31:n:05876035"
+          ],
+          "uncertainty": "证据分别覆盖物体部件和抽象划分，基本对应中文‘部分’；但中文‘部分’可能更广泛，如可用于人群、地区等，未在所选证据中完全体现（另有地区义等未采用）。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "书籍、文章、音乐作品等中的独立部分（章节）",
+          "recommended_pos": "名词",
+          "required_context": "指书面或音乐作品的组织部分",
+          "evidence_ids": [
+            "wn31:n:06403644"
+          ],
+          "uncertainty": "证据定义包含书面或音乐作品，中文‘章节’通常限于书籍，但范围接近，可接受。"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "大型组织中的一个专门分支（部门）",
+          "recommended_pos": "名词",
+          "required_context": "指公司、政府、机构等组织内的分支",
+          "evidence_ids": [
+            "wn31:n:08131836",
+            "wn31:n:05876035"
+          ],
+          "uncertainty": "证据中‘finance section of the company’和‘specialized division of a large organization’均支持此义，基本匹配。"
+        }
+      ],
+      "proposed_core": [
+        "名词：部分（整体中的一个部分，可指物体或抽象划分）",
+        "名词：章节（书籍、文章、音乐作品等的独立部分）",
+        "名词：部门（组织、机构中的一个专门分支）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "三个源义项分别对应证据中的一般部分、作品章节和组织部门，无覆盖缺口。其他字典义（如外科切口、警察小队、军队单位、管弦乐组、学生班级、几何截面、显微切片、土地单位、动词分割）未在源中出现，不加为核心。",
+      "unadopted_observations": [
+        {
+          "text": "外科切口（cutting of body tissues）",
+          "evidence_ids": [
+            "wn31:n:00679253"
+          ]
+        },
+        {
+          "text": "柑橘瓣（segment of citrus fruit）",
+          "evidence_ids": [
+            "wn31:n:07763431"
+          ]
+        },
+        {
+          "text": "警察小队（small team of policemen）",
+          "evidence_ids": [
+            "wn31:n:08231753"
+          ]
+        },
+        {
+          "text": "军队小队（small army unit）",
+          "evidence_ids": [
+            "wn31:n:08233716"
+          ]
+        },
+        {
+          "text": "管弦乐组（division of orchestra）",
+          "evidence_ids": [
+            "wn31:n:08233821"
+          ]
+        },
+        {
+          "text": "学生小组（small class of students）",
+          "evidence_ids": [
+            "wn31:n:08256073"
+          ]
+        },
+        {
+          "text": "几何截面（area created by plane cutting solid）",
+          "evidence_ids": [
+            "wn31:n:08665728"
+          ]
+        },
+        {
+          "text": "地区分区（distinct region/subdivision）",
+          "evidence_ids": [
+            "wn31:n:08665897"
+          ]
+        },
+        {
+          "text": "显微薄片（thin slice for microscope）",
+          "evidence_ids": [
+            "wn31:n:09451645"
+          ]
+        },
+        {
+          "text": "土地单位（land unit）",
+          "evidence_ids": [
+            "wn31:n:13634785"
+          ]
+        },
+        {
+          "text": "动词：分割（divide into segments）",
+          "evidence_ids": [
+            "wn31:v:01565786"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-32182951b85a",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "修饰人或事物，表示特定/独有，与泛指相对；可用于名词前作定语",
+          "recommended_pos": "形容词",
+          "required_context": "无强制语境；常限定名词",
+          "evidence_ids": [
+            "wn31:s:01107719",
+            "wn31:s:01108153"
+          ],
+          "uncertainty": "来源仅给出词性形容词；英语证据显示该义用于限定名词，未见其他词性用法。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "修饰事物、事件或性质，表示不普通、超乎寻常；可作前置定语或表语",
+          "recommended_pos": "形容词",
+          "required_context": "无强制语境",
+          "evidence_ids": [
+            "wn31:s:00490174"
+          ],
+          "uncertainty": "英语证据中同义 especial/exceptional，但源中文“特别的”范围可能更广；未发现排除普通强调用法。"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "修饰人，表示对细节要求严格、不易满足；常与 about + 对象连用",
+          "recommended_pos": "形容词",
+          "required_context": "对象不强制，但常由 about 引出",
+          "evidence_ids": [
+            "wn31:s:00987815"
+          ],
+          "uncertainty": "英语证据仅给出 about 句式示例；不排除其他介词或无宾语用法。"
+        }
+      ],
+      "proposed_core": [
+        "形容词：特定的",
+        "形容词：特别的",
+        "形容词：挑剔的"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "三个来源形容词义均已在核心对应；源未提供名词用法，故不把英语名词义纳入首屏。",
+      "unadopted_observations": [
+        "WordNet 名词义 a fact about some part (wn31:n:05826326) 不属于源词性，未采用；逻辑学命题 (wn31:n:06763856)、小部分 (wn31:n:13832132) 同。",
+        "形容词义 providing specific details (wn31:s:00311842) 仅部分与“特定的”重叠，未确认独立覆盖；first and most important (wn31:s:01859156) 属额外英文义，未采用。"
+      ]
+    },
+    {
+      "id": "SG25-6df24c372c04",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "及物动词，宾语为可预订的资源/服务（如座位、餐桌、机票），可为自己或他人提前安排",
+          "recommended_pos": "动词",
+          "required_context": "需要直接宾语，常为具体服务",
+          "evidence_ids": [
+            "wn31:v:00797294",
+            "wn31:v:02503969"
+          ],
+          "uncertainty": "英语证据中两个词义均支持提前预订；对象范围未穷尽，但需可约定保留的事物。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "及物动词，宾语为资源、行为或表达，表示为将来或特定目的而留存、不立即使用",
+          "recommended_pos": "动词",
+          "required_context": "需要直接宾语，常与名词性资源搭配",
+          "evidence_ids": [
+            "wn31:v:02219267"
+          ],
+          "uncertainty": "源中文“保留”范围宽于该英语词义；英语证据强调留作将来或应急，但不排除其他保存意义。"
+        },
+        {
+          "sid": "s003",
+          "scope_zh": "名词，指被留存以备将来使用的物品或资源",
+          "recommended_pos": "名词",
+          "required_context": "无强制语境，常表示具体/抽象资源",
+          "evidence_ids": [
+            "wn31:n:13389225"
+          ],
+          "uncertainty": "英语证据为可数/不可数？WordNet 未标注，但源未提供更多限制。"
+        },
+        {
+          "sid": "s004",
+          "scope_zh": "名词，指为特定目的而划出的区域（如自然/文化保护地）",
+          "recommended_pos": "名词",
+          "required_context": "无强制语境，但通常为地理区域",
+          "evidence_ids": [
+            "wn31:n:08604729"
+          ],
+          "uncertainty": "英语证据中 district 为通用词，源中文“保护区”特指保护目的，英语证据未限定保护类型。"
+        }
+      ],
+      "proposed_core": [
+        "动词：预订",
+        "动词：保留",
+        "名词：储备",
+        "名词：保护区"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "源四个义项均已映射；英语额外的军事/医疗/性格等名词义未纳入首屏。",
+      "unadopted_observations": [
+        "英语名词义 uncommunicative trait (wn31:n:04659795)、formality (wn31:n:04907298)、armed forces not active duty (wn31:n:08223381)、athlete substitute (wn31:n:10690481)、medical capacity (wn31:n:13781913) 均不在源中文范围内，未采用。",
+        "英语动词义 give or assign resource (wn31:v:00726112) 更接近 earmark/分配，与“保留”有差异，未作为核心采用。"
+      ]
+    },
+    {
+      "id": "SG25-c64bc36dfe56",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "限制（对象：范围、数量、使用等，未指定）",
+          "recommended_pos": "动词",
+          "required_context": "无特定语境；对象未限定",
+          "evidence_ids": [
+            "wn31:v:00234091"
+          ],
+          "uncertainty": "源义宽泛，证据覆盖一般限制；其余证据多为身体禁闭，不宜并入限制义。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "禁闭（剥夺自由，关押）",
+          "recommended_pos": "动词",
+          "required_context": "需指人或动物被限制自由",
+          "evidence_ids": [
+            "wn31:v:02500687",
+            "wn31:v:01349980",
+            "wn31:v:01304044"
+          ],
+          "uncertainty": "wn31:v:02716988义为包围/笼罩，可能不属于禁闭（如黑暗包围），源义未含该抽象用法，暂不采用。"
+        }
+      ],
+      "proposed_core": [
+        "动词，限制（范围、数量、使用等）",
+        "动词，禁闭（拘禁，剥夺自由）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "无",
+      "note": "两个源义均有英语证据支持；‘close in；darkness enclosed him’为词典新增义，未纳入核心，见unadopted_observations。",
+      "unadopted_observations": [
+        {
+          "text": "close in; \"darkness enclosed him\"",
+          "evidence_id": "wn31:v:02716988",
+          "reason": "源义为禁闭，未含包围/笼罩义；英语特有转义，不采用。"
+        }
+      ]
+    },
+    {
+      "id": "SG25-6df37daaa46c",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "星期（七天周期）",
+          "recommended_pos": "名词",
+          "required_context": "无特定语境；指时间段",
+          "evidence_ids": [
+            "wn31:n:15161099",
+            "wn31:n:15194920"
+          ],
+          "uncertainty": "源义未限定起始日；15161099为周日起始，中文星期可周一或周日，但两者均表示一周，不影响覆盖。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "周（七天周期）",
+          "recommended_pos": "名词",
+          "required_context": "无特定语境；指时间段",
+          "evidence_ids": [
+            "wn31:n:15161099",
+            "wn31:n:15194920"
+          ],
+          "uncertainty": "与星期义相同；源两个义项为同义，可合并。"
+        }
+      ],
+      "proposed_core": [
+        "名词，星期；周（连续七天）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "无",
+      "note": "源两个义项（星期、周）为同义，合并为一个核心义；工作周义属词典新增，未采用，保留为未采用观察。",
+      "unadopted_observations": [
+        {
+          "text": "hours or days of work in a calendar week; \"they worked a 40-hour week\"",
+          "evidence_id": "wn31:n:15160948",
+          "reason": "源义为时间周期，不包含工作周这一特定用法；英语词典有该义但中文原文未表达，不采用。"
+        }
+      ]
+    },
+    {
+      "id": "SG25-8270f2824111",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "名词；解决问题的方法/方式；对象为问题；方向为解决",
+          "recommended_pos": "名词",
+          "required_context": "问题解决语境",
+          "evidence_ids": [
+            "wn31:n:05669513"
+          ],
+          "uncertainty": "中文“办法”未区分动作/陈述等英语细分，核心取方法义。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "名词；两种或多种物质的均匀混合物，常为液体",
+          "recommended_pos": "名词",
+          "required_context": "化学或物理混合物语境",
+          "evidence_ids": [
+            "wn31:n:14613403"
+          ],
+          "uncertainty": ""
+        }
+      ],
+      "proposed_core": [
+        "名词：解决办法（解决问题的方法/方式）",
+        "名词：溶液（均匀混合物，常为液体）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "数学解（方程的值的集合）未包含在原始中文义中，作为未采用观察。英语的动作/陈述义亦未明确区分于“办法”，暂不纳入核心。",
+      "unadopted_observations": [
+        {
+          "text": "数学方程解（使方程成立的值的集合）",
+          "evidence_ids": [
+            "wn31:n:08022396"
+          ]
+        },
+        {
+          "text": "解决问题的成功行动",
+          "evidence_ids": [
+            "wn31:n:00191632"
+          ]
+        },
+        {
+          "text": "解决问题或解释如何解决的陈述",
+          "evidence_ids": [
+            "wn31:n:06756201"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG25-46023b2bfb8b",
+      "source_scopes": [
+        {
+          "sid": "s001",
+          "scope_zh": "动词；获得某物；对象不限于具体来源；通常及物",
+          "recommended_pos": "动词",
+          "required_context": "获得某物（可抽象或具体）",
+          "evidence_ids": [
+            "wn31:v:02297086"
+          ],
+          "uncertainty": "英语 derive 常含来源，但中文“获得”本身不强制来源。"
+        },
+        {
+          "sid": "s002",
+          "scope_zh": "动词；源自、来自；主语为事物/概念/人，宾语为来源/起源",
+          "recommended_pos": "动词",
+          "required_context": "A 源自 B 的语境",
+          "evidence_ids": [
+            "wn31:v:00252677",
+            "wn31:v:02743062"
+          ],
+          "uncertainty": "血统/谱系来源义有英语证据，但中文“源自”常用于一般来源，涵盖但不限于。"
+        }
+      ],
+      "proposed_core": [
+        "动词：获得（得到某物）",
+        "动词：源自（来自/起源于）"
+      ],
+      "deferred_source_ids": [],
+      "deferral_reason": "",
+      "note": "“演绎推理得出”和“从潜在状态发展而来”未包含在原始中文义中，作为未采用观察。",
+      "unadopted_observations": [
+        {
+          "text": "从潜在状态发展或演化而来",
+          "evidence_ids": [
+            "wn31:v:00252501"
+          ]
+        },
+        {
+          "text": "通过演绎推理得出",
+          "evidence_ids": [
+            "wn31:v:00638236"
+          ]
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "chunk": 7,
+      "ids": [
+        "SG25-3f8b4464a99d",
+        "SG25-b093720ae253"
+      ],
+      "error_type": "ValueError",
+      "error": "Incomplete holdout result",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 11,
+      "ids": [
+        "SG25-ec3d00212250",
+        "SG25-e830d223e2dd"
+      ],
+      "error_type": "ValueError",
+      "error": "Incomplete holdout result",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 9,
+      "ids": [
+        "SG25-480a27af1dea",
+        "SG25-eb9a7650cd53"
+      ],
+      "error_type": "ValueError",
+      "error": "Incomplete holdout result",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 4,
+      "ids": [
+        "SG25-6ca7ea2feefc",
+        "SG25-e2411f906450"
+      ],
+      "error_type": "ValueError",
+      "error": "Incomplete holdout result",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 2,
+      "ids": [
+        "SG25-c59ddd3f7ba6",
+        "SG25-c7ce66d0fb14"
+      ],
+      "error_type": "ValueError",
+      "error": "Incomplete holdout result",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 6,
+      "ids": [
+        "SG25-5c097b19679a",
+        "SG25-3d8eefab379d"
+      ],
+      "error_type": "ValueError",
+      "error": "Missing/extra/duplicate/out-of-order review IDs",
+      "status": "incomplete_not_fabricated"
+    }
+  ],
+  "input_hash": "22c27e6287441b45f08b62a30681f140c407ca7e46984d54cabec838cde0a225",
+  "response_files": [
+    {
+      "tag": "holdout_source_first_001",
+      "response_sha256": "26cd7cc33b490cc6bf8da5c4d465ba9803522e9b7eefc5d7649f80a253c6365f"
+    },
+    {
+      "tag": "holdout_source_first_003",
+      "response_sha256": "dfb94454deb765b232633afbc44d2cd90bc249b1d0d5f973f845cda76023ef78"
+    },
+    {
+      "tag": "holdout_source_first_005",
+      "response_sha256": "bec15d2aca791236d6ff52ef23c561dfb7e753093d936dfed286676b2f3201f9"
+    },
+    {
+      "tag": "holdout_source_first_008",
+      "response_sha256": "f064407e89836c7c358e302e5429410b98299a1c8c8c0b74ff529f9578246fc0"
+    },
+    {
+      "tag": "holdout_source_first_010",
+      "response_sha256": "138633515a6426a82ff32d21e36f80193f55909dbf4697187d8cf27eef7939f3"
+    },
+    {
+      "tag": "holdout_source_first_012",
+      "response_sha256": "fffcdf5e61d2788c970a4b0d34319c294c163692db8302a2c32aa884746118a4"
+    }
+  ],
+  "all_output_AI_candidate": true,
+  "human_approved": false,
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950"
+}

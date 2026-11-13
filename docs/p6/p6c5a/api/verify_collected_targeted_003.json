@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_003",
+  "kind": "verify",
+  "request_hash": "b852edf62610555920815c13010146c05b60f4ad5b38fa2bb50f99b63ac62f33",
+  "input_ids": [
+    "SG25-8975c9b4ea06",
+    "SG25-14930a90c71a"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a0be1ea1-0549-4ec2-9cce-f9a0c9495a20",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8975c9b4ea06\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原始片段“比率”可指一般比例/速率，但提供的英语证据 wn31:n:13839738 定义 percentage 为“a proportion in relation to a whole (usually amount per hundred)”，目标扩展将“比率”限制为“整体份额，常按百分数表示”，因此收窄了非按百比例的范围。\",\n          \"evidence_ids\": [\"wn31:n:13839738\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义不匹配\",\n          \"reason\": \"原始片段“百分之”不是独立名词用法，更接近 percent 的每百量表达；英语 percentage 是名词，表示百分数/占比，两者词性和功能不兼容。候选 held 待核实，未将其作为名词义展示。\",\n          \"evidence_ids\": [\"web:percent\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标核心“百分数”直接对应 wn31:n:13839738 的 proportion per hundred，符号、词性和含义匹配。\",\n          \"evidence_ids\": [\"wn31:n:13839738\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001 的“比率”在原始来源中是否包含非按百的一般比例待核；当前英语证据只支持 percentage 作占比/按百比例。\",\n        \"s002 的“百分之”是否应为独立源义待核；现有证据表明其对应 percent，而非 percentage。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"整体 partial；核心“百分数”稳定，“比率”作占比限定入扩展，“百分之”暂存合理。\"\n    },\n    {\n      \"id\": \"SG25-14930a90c71a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"目标核心文本“杰出的”与源文本一致，但当前 core:1 只链接 s:00490174，该证据仅表示超越普通/预期，未明确褒义卓越；已提供的 s:01680620 可支持但未链接到本组，故英语依据不足，映射无法确认。\",\n          \"evidence_ids\": [\"wn31:s:00490174\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"目标 core:2 将“异常的”限定为“超出通常程度”，只保留 wn31:s:01680620 的超常义；但 wn31:s:01603441 支持“偏离常态（尤其能力低于正常）”的异常用法，该子义未被核心或暂存覆盖，源义范围收窄。\",\n          \"evidence_ids\": [\"wn31:s:01680620\", \"wn31:s:01603441\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"evidence_mismatch\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-14930a90c71a:core:1\"],\n          \"evidence_ids\": [\"wn31:s:00490174\", \"wn31:s:01680620\"],\n          \"reason\": \"core:1“杰出的”只链接 s:00490174，该证据定义‘surpassing what is common or usual’不包含明确褒义，无法单独证明‘杰出的/优秀的’；已提供的 s:01680620 更有直接支持，但未链接到该组。\",\n          \"counterexample\": \"a special occasion / exceptional kindness 可表示“特别的/格外的”，不必然等于“杰出的”。\",\n          \"repair_suggestion\": \"将 core:1 的证据改为或补充 s:01680620，或在释义中注明中性超常与褒义杰出的区分。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-14930a90c71a:core:2\"],\n          \"evidence_ids\": [\"wn31:s:01680620\", \"wn31:s:01603441\"],\n          \"reason\": \"core:2将“异常的”限定为“超出通常程度”，但 s:01603441 支持“偏离常态（尤其能力低于正常）”的异常用法，该子义未被核心或暂存覆盖，导致源义范围收窄。\",\n          \"counterexample\": \"special educational provisions for exceptional children（偏离常态/能力低于正常）\",\n          \"repair_suggestion\": \"在 core:2 增加“偏离常态（含低于正常能力）”的括注或另设扩展/暂存，避免把“异常”解释为只超出通常程度。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001 的‘杰出的’是否需要独立于中性超常的证据支持；当前核心证据不足，需确认是否应调入 s:01680620。\",\n        \"s002 的‘异常’是否应细分‘超常’与‘偏离常态（低于常规）’两个教学义，原来源无上下文暂不能判定。\"\n      ],\n      \"preferences\": [\n        \"可将‘杰出的’与‘异常的’在核心分开并列，但避免把‘异常’注释为仅超常。\"\n      ],\n      \"note\": \"两义都入核心但证据选择与范围覆盖存在 Minor 缺陷；修正后不影响核心数量。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4427,
+    "completion_tokens": 8478,
+    "total_tokens": 12905,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7224
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2763
+  },
+  "started_utc": "2026-11-13T09:56:48.990346+00:00",
+  "completed_utc": "2026-11-13T09:58:44.306723+00:00",
+  "elapsed_seconds": 115.312,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

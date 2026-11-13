@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_053_repair1",
+  "kind": "verify",
+  "request_hash": "9895df7adcbe8a1f8112950d8cf15aa857ec3d4756c9ad5360851ac1c59ccf4e",
+  "input_ids": [
+    "SG25-d4ab04449fe1",
+    "SG25-a9eba7c405ea"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e9fe6466-b2c7-4a63-a8e9-980100e4ab45",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-d4ab04449fe1\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原文“雕刻”为通用词，候选核心组文本“雕刻”同形，覆盖形成性雕刻（form by carving）和刻凿表面（engrave by chipping）两类英语证据；但核心组仅链接形成性雕刻证据，未显式链接表面雕刻证据，不过文本未做限制。\",\n          \"evidence_ids\": [\"wn31:v:01258721\", \"wn31:v:01259164\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“切开”可泛指切开/打开物体；候选扩展组文本“切（肉等）”并注释限定为切割成片/块，依据英语carve的cut to pieces证据，属于基于英语证据的必要收窄。源义是否原本仅指切肉待核。\",\n          \"evidence_ids\": [\"wn31:v:01258531\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_scope_uncertain\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-d4ab04449fe1:p6c1:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:01258531\"],\n          \"reason\": \"原文“切开”宽于英语carve切肉成片/块的证据；候选已限制并加注，属于来源范围待核，不是生成器遗漏。\",\n          \"counterexample\": \"carve可切肉成片/块（Father carved the ham），但不表示任意打开物体。\",\n          \"repair_suggestion\": \"保留“切（肉等）”限制和注释，并在来源说明中标记“切开”原意待确认；若源义只指切肉则无需修改。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001核心组仅链接wn31:v:01258721，未直接链接wn31:v:01259164；建议将表面雕刻证据也加入核心组evidence_ids或加注说明同形涵盖。\",\n        \"s002原文“切开”的确切范围（任意切开/打开还是切肉成块）需要源义确认；当前英语证据仅支持切肉。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"雕刻义核心文本宽泛，基本覆盖；切开义按英语证据收窄为切肉等，源义待核。\"\n    },\n    {\n      \"id\": \"SG25-a9eba7c405ea\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原文“温柔的”对应英语gentle/affectionate证据，核心组文本相同，覆盖态度义。\",\n          \"evidence_ids\": [\"wn31:a:02457962\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文“嫩的”无对象域限制，候选核心组文本“嫩的”同形，但仅链接食物易嚼证据；无法确认原文是否涵盖幼小/植物/身体柔嫩等英语tender形容词义，故不能判定为等价或收窄。\",\n          \"evidence_ids\": [\"wn31:a:02455719\", \"wn31:a:02457239\", \"wn31:s:00710650\", \"wn31:s:01654003\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"名词“投标”由formal proposal to buy证据支持，语义吻合。\",\n          \"evidence_ids\": [\"wn31:n:07179737\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“提出”宽泛，英语tender作动词限正式提出/递交；候选已加注限定，属必要收窄，源中文过宽待核。\",\n          \"evidence_ids\": [\"wn31:v:02301576\"]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"动词“投标；提出报价”由propose a payment证据支持，语义吻合。\",\n          \"evidence_ids\": [\"wn31:v:02303593\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_scope_uncertain\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-a9eba7c405ea:p6c1:core:2\"],\n          \"evidence_ids\": [\"wn31:a:02455719\", \"wn31:a:02457239\", \"wn31:s:00710650\", \"wn31:s:01654003\"],\n          \"reason\": \"核心组仅以食物易嚼证据支持“嫩的”，但英语tender还有植物嫩、身体柔嫩等形容词义；原文中文“嫩的”范围不明确，不能确认候选存在覆盖缺陷，应记为来源待核而非生成器Major。\",\n          \"counterexample\": \"tender green shoots；tender feet\",\n          \"repair_suggestion\": \"将核心组证据链接扩展至相关嫩义，或在注释中说明本义以食物易嚼为主，其他嫩义待核/补入扩展层。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_scope_uncertainty\",\n          \"source_ids\": [\"s004\"],\n          \"group_ids\": [\"SG25-a9eba7c405ea:p6c1:other:2\"],\n          \"evidence_ids\": [\"wn31:v:02301576\"],\n          \"reason\": \"源中文“提出”宽于英语tender的正式递交/报价；候选已限制并加注，作为来源待核记录，不判生成器Major。\",\n          \"counterexample\": \"\",\n          \"repair_suggestion\": \"保留“正式提出；递交”限制，并在来源说明中标注中文过宽；不要扩成泛泛提议。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002原文“嫩的”是否仅指食物易嚼，还是涵盖植物嫩芽/身体柔嫩等英语tender形容词义；核心组文本未限制但证据仅食物，需源义范围说明。\",\n        \"s004原文“提出”是否原本仅指正式提出/递交；当前英语证据限此，候选已限定，源义宽泛待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词投标、动词投标/报价、温柔义覆盖良好；形容词“嫩的”存在来源范围不确定，不应作为确认的Major缺陷；动词“提出”已正确按英语证据限定。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 7181,
+    "completion_tokens": 7148,
+    "total_tokens": 14329,
+    "prompt_tokens_details": {
+      "cached_tokens": 5504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5633
+    },
+    "prompt_cache_hit_tokens": 5504,
+    "prompt_cache_miss_tokens": 1677
+  },
+  "started_utc": "2026-11-13T10:01:33.787426+00:00",
+  "completed_utc": "2026-11-13T10:03:13.073631+00:00",
+  "elapsed_seconds": 99.282,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

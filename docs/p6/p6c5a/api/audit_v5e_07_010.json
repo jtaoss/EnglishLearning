@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_010",
+  "kind": "audit",
+  "request_hash": "7e8c7e18b730bee83418cdef6ae2286749e4358c3cb908da371b919c9a089c4d",
+  "input_ids": [
+    "SG25-a0af3a48cfad",
+    "SG25-ab91a82d14cf",
+    "SG25-fef8f41cdcd2",
+    "SG25-000c285457fc",
+    "SG25-8e9c543a5078"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ae9880bc-f355-43c1-ae11-49c0b3bd597b",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-a0af3a48cfad\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"数词，一千\",\"relation\":\"语义等价\",\"reason\":\"原文与核心组均表示基数一千；词典以名词/形容词编码数量，属词性粒度差异，不改变数量义。\",\"evidence_ids\":[\"wn31:n:13772984\",\"wn31:s:02206421\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"一千的数量义在核心完整保留；词典名词/形容词编码与源数词标签的差异已识别，未新增其他义。\"},{\"id\":\"SG25-ab91a82d14cf\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，动物\",\"relation\":\"语义等价\",\"reason\":\"原文与核心组均为动物（名词）；词典形容词义如 animal instincts 不属源名词义，未纳入不影响覆盖。\",\"evidence_ids\":[\"wn31:n:00015568\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动物名词义在核心完整保留；形容词性“动物性的/肉欲的”属词典附加用法，不在源义范围内。\"},{\"id\":\"SG25-fef8f41cdcd2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"数词，十四\",\"relation\":\"语义等价\",\"reason\":\"原文与核心组均表示基数十四；词典名词/形容词编码与源数词标签的差异不改变数量义。\",\"evidence_ids\":[\"wn31:n:13769488\",\"wn31:s:02195338\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"十四的数量义在核心完整保留，没有需要另列的扩展义。\"},{\"id\":\"SG25-000c285457fc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，猴子\",\"relation\":\"语义等价\",\"reason\":\"原文与核心组均为猴子（动物名词）；词典另有顽童、胡闹/篡改等义，源义未涉及，不影响本义覆盖。\",\"evidence_ids\":[\"wn31:n:02486953\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"猴子动物义在核心完整保留；调皮鬼与动词义属词典附加用法，未混入源义。\"},{\"id\":\"SG25-8e9c543a5078\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，焦炭\",\"relation\":\"语义等价\",\"reason\":\"原文焦炭与核心组焦炭一致，由燃料词典义支持；未把毒品俚语义混入。\",\"evidence_ids\":[\"wn31:n:14709929\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词，口语可乐饮料义\",\"relation\":\"语义等价\",\"reason\":\"原文口语可乐义在核心组保留为饮料义；大写 Coke/小写 coke 的说明来自出版社观察，并明确不用于证明焦炭或毒品义。\",\"evidence_ids\":[\"pub:coke\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"焦炭与口语可乐饮料两个源义均保留在核心；可乐义的大小写与商标说明已注明，毒品俚语和动词义未采用。\"}]}",
+  "usage": {
+    "prompt_tokens": 4199,
+    "completion_tokens": 4696,
+    "total_tokens": 8895,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3834
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2279
+  },
+  "started_utc": "2026-11-13T09:53:08.064697+00:00",
+  "completed_utc": "2026-11-13T09:53:35.668943+00:00",
+  "elapsed_seconds": 27.593,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

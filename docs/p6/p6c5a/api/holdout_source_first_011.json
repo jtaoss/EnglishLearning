@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_011",
+  "kind": "holdout",
+  "request_hash": "a8769b5eeb244d3cba0b7007a5bb52bf71094030fabf4327920e2eaa894f1e49",
+  "input_ids": [
+    "SG25-ec3d00212250",
+    "SG25-e830d223e2dd"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e834a476-03e0-4fe3-ad0e-d0b8f5006210",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-ec3d00212250\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"名词，表示形成心理图像的能力；通用，无特定对象、方向或语境限制\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"\",\n          \"evidence_ids\": [\"wn31:n:05775730\"],\n          \"uncertainty\": \"低；源词性明确，中文词义清晰，英语对应证据直接\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"名词\",\n          \"meaning\": \"想象力；形成心理图像的能力\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"词典义项 wn31:n:05633248（形成对非真实/不在场事物的心理图像）与源义相关但侧重过程/产物，未纳入核心；词典义项 wn31:n:05641705（以智谋处理非常问题的能力，如 resourcefulness）不在源中文“想象力”范围内，视为未采用的外部义。\"\n    },\n    {\n      \"id\": \"SG25-e830d223e2dd\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"副词，表示因此、所以；用于连接原因与结果，位置可在句首或句中\",\n          \"recommended_pos\": \"副词\",\n          \"required_context\": \"需有前文原因或条件\",\n          \"evidence_ids\": [\"wn31:r:00063395\", \"wn31:r:00295773\"],\n          \"uncertainty\": \"低；两个源义近义，词典证据直接支持\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"副词，表示结果、作为结果；通常引出由前因导致的后果\",\n          \"recommended_pos\": \"副词\",\n          \"required_context\": \"需有前文原因或事件\",\n          \"evidence_ids\": [\"wn31:r:00295773\", \"wn31:r:00063395\"],\n          \"uncertainty\": \"低\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"副词\",\n          \"meaning\": \"因此；结果；作为结果（连接原因和结果）\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"两个源义（因此、结果）为近义副词，合并为一个核心义项以合理概括，均获词典证据支持。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 2291,
+    "completion_tokens": 3456,
+    "total_tokens": 5747,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2881
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2291
+  },
+  "started_utc": "2026-11-13T09:33:06.625211+00:00",
+  "completed_utc": "2026-11-13T09:33:57.987138+00:00",
+  "elapsed_seconds": 51.36,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

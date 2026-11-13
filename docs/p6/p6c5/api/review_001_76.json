@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_76",
+  "request_hash": "7ce14a0545fef9f8a6385aece85c42283a9ccb22dfb5e86f3ac705a067ebe743",
+  "started_utc": "2026-11-13T08:17:24.016116+00:00",
+  "completed_utc": "2026-11-13T08:17:58.447157+00:00",
+  "elapsed_seconds": 34.422,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4330f895-ffbb-451f-997a-6cd912751733",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3185,
+    "completion_tokens": 1775,
+    "total_tokens": 4960,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1592
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1137
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-dd9245cc1ddc\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"原文三个动词义（包含、包括、容纳）均被候选核心准确覆盖：包含/包括合并为成分/内容义，证据 wn31:v:02635616 支持；容纳单列为容器/容量义，证据 wn31:v:02706727 与 wn31:v:02707070 支持。外部候选控制/遏制已显式标记为未采用，处理正确。WordNet 另有数学义“be divisible by”未被纳入任何层级，但属于专业/技术义，不作为当前缺陷。建议后续评估其教学必要性。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

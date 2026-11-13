@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_006",
+  "kind": "audit",
+  "request_hash": "0dcad797781855fa94602336a599774d419ead8d283bc18ef3e7b8b248bd80f4",
+  "input_ids": [
+    "SG25-ed157486b875",
+    "SG25-73e4c51456c2",
+    "SG25-79e1d925e79c",
+    "SG25-dc3dd57e3c5b",
+    "SG25-925b979d6564"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "48337c88-d3b3-4722-a404-fc56d22bcc11",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-ed157486b875\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"与电有关或由电驱动\",\"relation\":\"语义等价\",\"reason\":\"核心“电的”同时对应“relating to/concerned with electricity”和“operated by electricity”，在形容词范围内保留原短释。\",\"evidence_ids\":[\"wn31:a:02837586\",\"wn31:a:02837762\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义形容词；核心“电的”覆盖与电相关及电力驱动用途，无来源剩余范围。\"},{\"id\":\"SG25-73e4c51456c2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"与电子学、电子设备或电子有关\",\"relation\":\"语义等价\",\"reason\":\"核心“电子的”对应电子学/电子设备义，也保留与电子相关的词典依据；注释中的“电子设备”可视为示例而非排他限制。\",\"evidence_ids\":[\"wn31:a:02729233\",\"wn31:a:02729455\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义形容词；核心“电子的”覆盖电子学/电子设备及与电子相关用法，与electrical区别留作教学说明。\"},{\"id\":\"SG25-79e1d925e79c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"估计（原文词性未逐项标注，可涉名词或动词）\",\"relation\":\"无法确定\",\"reason\":\"核心1将“估计”仅落到名词，但s001为unresolved_multi_pos；名词义有n:05811387支持，动词“估计”未由该ID明确承接。\",\"evidence_ids\":[\"wn31:n:05811387\"],\"context\":\"uncertain\",\"residual_scope\":\"该片段的名词/动词词性归属未确认，动词“估计”用法未由本ID明确承接\",\"counterexample\":\"英语estimate可作动词表示“估算数量/时间”（wn31:v:00674352）\",\"counterexample_evidence_ids\":[\"wn31:v:00674352\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"估算（原文词性未逐项标注，可涉名词或动词）\",\"relation\":\"无法确定\",\"reason\":\"核心2将“估算”仅落到动词，但s002为unresolved_multi_pos；动词义有v:00674352支持，名词“估算/估价”未由该ID明确承接。\",\"evidence_ids\":[\"wn31:v:00674352\"],\"context\":\"uncertain\",\"residual_scope\":\"该片段的名词/动词词性归属未确认，名词“估算/估计”用法未由本ID明确承接\",\"counterexample\":\"英语estimate可作名词表示“估算、估价”（wn31:n:05811387）\",\"counterexample_evidence_ids\":[\"wn31:n:05811387\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved_split\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-79e1d925e79c:core:1\",\"SG25-79e1d925e79c:core:2\"],\"evidence_ids\":[\"wn31:n:05811387\",\"wn31:v:00674352\"],\"reason\":\"两个原片段均为unresolved_multi_pos，核心按名词/动词拆分；注释虽说明是教学分配，但映射仍可能把未定词性当成已核验，且未明确“估计”动词、“估算”名词的残余范围。\",\"repair_suggestion\":\"将词性分配标为推荐而非源标注；在两个片段下保留名词/动词未定，或明确核心1名词“估计”与核心2动词“估算”为联合教学覆盖，并暂存未逐项核验的残余。\"}],\"note\":\"名词和动词两组均有词典支持，但源片段词性未逐项确定；拆分合理却仍应作待核，不能视为每个ID的完整核验。\"},{\"id\":\"SG25-dc3dd57e3c5b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"同等、处于同等水平\",\"relation\":\"语义等价\",\"reason\":\"扩展“同等”有n:13969940“essentially equal or equivalent; equally balanced”支持，原义未被删除，仅作后置。\",\"evidence_ids\":[\"wn31:n:13969940\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"社会地位或权利平等\",\"relation\":\"语义等价\",\"reason\":\"核心“平等”对应n:04755139中status相同这一范围，未添加无关对象领域。\",\"evidence_ids\":[\"wn31:n:04755139\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"数量、度量或价值相等\",\"relation\":\"语义等价\",\"reason\":\"核心“相等”对应n:04755139中quantity/measure/value相同这一范围，与数值/度量语境一致。\",\"evidence_ids\":[\"wn31:n:04755139\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三义均有层级覆盖；同等置扩展属教学排序而非覆盖缺口，核心分别保留平等与相等。\"},{\"id\":\"SG25-925b979d6564\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"个人或群体的道德原则/行为准则\",\"relation\":\"语义等价\",\"reason\":\"核心“道德准则”对应n:05964886（个人或群体接受的right/wrong原则）及n:06676362（道德与可接受行为的准则体系），未擅自扩为整门伦理学。\",\"evidence_ids\":[\"wn31:n:05964886\",\"wn31:n:06676362\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义名词；核心“道德准则”覆盖个人/群体行为原则，未扩大为ethics学科义。\"}]}",
+  "usage": {
+    "prompt_tokens": 4631,
+    "completion_tokens": 7623,
+    "total_tokens": 12254,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6158
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2711
+  },
+  "started_utc": "2026-11-13T09:43:09.021097+00:00",
+  "completed_utc": "2026-11-13T09:43:51.569907+00:00",
+  "elapsed_seconds": 42.547,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

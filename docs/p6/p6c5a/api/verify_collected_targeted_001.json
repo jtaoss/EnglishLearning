@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_001",
+  "kind": "verify",
+  "request_hash": "0ba2cf91be12f6e950148ce5d8b463524646954f958b596f2ee845e75e704c27",
+  "input_ids": [
+    "SG25-275976081ce1",
+    "SG25-16f5e2322d05"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "8e3305a0-403b-4e03-b8a7-9e1be2f18d76",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-275976081ce1\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"‘作出反应’直接对应 give/show a response；证据 wn31:v:00719282 支持一般反应义，无额外限制。\",\n          \"evidence_ids\": [\"wn31:v:00719282\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"在并列条目结构下，s002‘起反应’按化学义处理；证据 wn31:v:00447840 支持 undergo a chemical reaction，组文本未增加排他对象限制，note 澄清物质化学用法。\",\n          \"evidence_ids\": [\"wn31:v:00447840\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"‘反对’对应 act against/in opposition to；证据 wn31:v:02383714 支持，但英语中该义需 react against/negatively 等不及物搭配，组文本未显式保留。\",\n          \"evidence_ids\": [\"wn31:v:02383714\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"语境/搭配未显式\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-275976081ce1:extended:2\"],\n          \"evidence_ids\": [\"wn31:v:02383714\"],\n          \"reason\": \"‘反对’对应英语 react 的反对义时为不及物用法，需与 against、negatively 等搭配；候选中文注释只写‘反对’，未显示该搭配/句法要求，学习者可能误作及物动词使用。\",\n          \"counterexample\": \"I react the decision 不可接受；需 I react against/negatively to the decision。\",\n          \"repair_suggestion\": \"将组文本或 note 修订为‘反对/反抗（react against/negatively）’，明确及物与不及物边界。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原义 s002‘起反应’是否包含一般‘对刺激起反应/作出反应’义，现有材料无法完全排除；当前按并列词条结构理解为化学义，建议补充原义上下文或例句以定稿。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"候选三层划分清楚；s001 与 s003 均保留相应独立用途，s003 需补搭配说明。未发现 Major 缺陷；s002 是否化学义未最终确认，暂列 unresolved。\"\n    },\n    {\n      \"id\": \"SG25-16f5e2322d05\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"名词‘战斗’对应军事交战；证据 wn31:n:00955670 支持 hostile meeting of opposing military forces，无额外限制。\",\n          \"evidence_ids\": [\"wn31:n:00955670\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心2注释将‘斗争’限定为‘为目标的斗争’（对应 wn31:n:00790634），但原文‘斗争’还可指对立群体/个人间的公开冲突；证据 wn31:n:00961007 支持该用法，所有候选层未保留，故范围收窄。\",\n          \"evidence_ids\": [\"wn31:n:00790634\", \"wn31:n:00961007\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"动词‘奋力抗争’对应 battle/contend against；证据 wn31:v:01094777 支持，无额外限制。\",\n          \"evidence_ids\": [\"wn31:v:01094777\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"范围收窄/遗漏子义\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-16f5e2322d05:core:2\"],\n          \"evidence_ids\": [\"wn31:n:00961007\", \"wn31:n:00790634\"],\n          \"reason\": \"原文名词‘斗争’比候选注释宽；除了‘为目标的奋斗’（n00790634），还包括‘对立群体或个人间的公开冲突’（n00961007）。核心2注释明确导向目标奋斗，扩展/其他层也没有覆盖该公开冲突义。\",\n          \"counterexample\": \"公开冲突/对抗（an open clash between opposing groups or individuals），如 police tried to control the battle between the pro- and anti-abortion mobs。\",\n          \"repair_suggestion\": \"在核心2文本/注释恢复‘斗争’一般义，或另设扩展/待核余项覆盖公开冲突对抗，避免仅保留目标奋斗例示。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"军事战斗与目标奋斗分开核心可接受；唯一已确认缺口是名词‘斗争’的公开冲突子义未在任何候选层覆盖，判为 Minor。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4505,
+    "completion_tokens": 7503,
+    "total_tokens": 12008,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6334
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2841
+  },
+  "started_utc": "2026-11-13T09:56:48.562003+00:00",
+  "completed_utc": "2026-11-13T09:58:30.730424+00:00",
+  "elapsed_seconds": 102.172,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

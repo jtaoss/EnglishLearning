@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_after_evidence_reconciled_001",
+  "kind": "audit",
+  "request_hash": "c1a2130a53f3ebf2e97e597dc93581298adf703ff157c69e7d7ac30ca1afd690",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ba1a2209-f4f8-436c-963b-6aeb69a19541",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7920fdeff9c5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：仪式（一般礼仪/典礼义）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“仪式；礼仪程序（宗教或非宗教）”，与原文一般仪式义一致；词典同时有宗教仪式程序和一般惯习/礼仪实践，未将宗教程序设为唯一对象。\",\"evidence_ids\":[\"wn31:n:01029801\",\"wn31:n:01032852\",\"pub:p6c5:parent:ritual\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：惯常程序/惯例性做法\",\"relation\":\"合理概括\",\"reason\":\"核心组用“惯常做法/固定行为”概括惯例性行为，并保留“接近惯常程序”的说明；stereotyped behavior 与 customary practice 支持该范围，未把步骤清单设为排他条件。\",\"evidence_ids\":[\"wn31:n:00415803\",\"wn31:n:01029801\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：仪式的/与仪式有关的\",\"relation\":\"语义等价\",\"reason\":\"核心组覆盖社会性礼仪与宗教仪式两类形容词用法，与原文“仪式的”及两项形容词词典证据一致。\",\"evidence_ids\":[\"wn31:a:02903641\",\"wn31:a:02903908\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均有核心映射；s001/s002 名词仪式与惯例性行为分开，s003 形容词覆盖社会/宗教仪式；s002 的“程序”以“惯常做法”概括，风险低。\"},{\"id\":\"SG25-e3f48726b892\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：学习者/学习的人\",\"relation\":\"语义等价\",\"reason\":\"核心组单列“学习者”，与原文 s001 对应；WN 该义尤指从师学习者，组注已说明中文为宽义改述，未添加未许可对象限制。\",\"evidence_ids\":[\"wn31:n:10271476\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：学者（有学问的人）\",\"relation\":\"语义等价\",\"reason\":\"核心组“学者；文人”以 learned person（尤人文领域）为证据，覆盖原文“学者”；未扩大到原文未支持的奖学金获得者义。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：文人/文学人文学者\",\"relation\":\"合理概括\",\"reason\":\"“文人”并入“学者；文人”组，组注说明其侧重文学/人文学科，属 learned person 的下位用法；未把文人改写成独立且无证据的义项。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均有核心映射；s002/s003 合为“学者/文人”，s001 单列“学习者”；奖学金获得者作为未采用外部候选保留，不纳入源义覆盖。\"}]}",
+  "usage": {
+    "prompt_tokens": 3826,
+    "completion_tokens": 7483,
+    "total_tokens": 11309,
+    "prompt_tokens_details": {
+      "cached_tokens": 2432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6651
+    },
+    "prompt_cache_hit_tokens": 2432,
+    "prompt_cache_miss_tokens": 1394
+  },
+  "started_utc": "2026-11-13T09:38:39.500730+00:00",
+  "completed_utc": "2026-11-13T09:39:21.072978+00:00",
+  "elapsed_seconds": 41.563,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_72",
+  "request_hash": "a8bf76dff2c2c1baf6a32e27bd6a5fd0eae5f92903047125fc2b7a5b74679a0d",
+  "started_utc": "2026-11-13T08:17:20.606886+00:00",
+  "completed_utc": "2026-11-13T08:18:15.884363+00:00",
+  "elapsed_seconds": 55.281,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1d93f326-848c-4715-b95d-9024b5d43535",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2791,
+    "completion_tokens": 2935,
+    "total_tokens": 5726,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2648
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 743
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-27ce25259481\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"来源片段 s002 '担保' 未在所提供证据中体现。候选将其保留为 original_preserved_evidence_pending，不并入核心，处理正确，但该源义是否有对应英语用法仍待证据。\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": null\n        }\n      ],\n      \"preferences\": [\n        {\n          \"suggestion\": \"若后续获得 '担保/承诺' 义（如 assure/guarantee 的特定词典证据），可考虑作为扩展或单独暂存。教学上当前核心仅一组，合理。\"\n        }\n      ],\n      \"note\": \"候选将 s001 和 s003 合并为一组核心，语义覆盖 '使确定/确保'，与所供两个 WordNet 动词义相符。s002 无证据暂存，未错误混入承诺/担保义。无确认错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,10 @@
+{
+  "original_frozen_run_manifest_sha256": "08589b454f6d2a4b314ad045007c014b40025262ddccaa584895f06610ba921b",
+  "frozen_runner_sha256": "7bf070866a7815a5a43e822b6acbe0ea2c360f0d23e8e447ebc2df9d13611f71",
+  "adapter_sha256": "c701471c07c2ba80cb295abc9f715b469d07fbf41ffc33a99b5e5b4f98d9dda6",
+  "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+  "semantic_rules_or_models_changed": false,
+  "reason": "First-batch provider returned lowercase enum variants, input echo, and empty content. Original runner halted, no next batch started. Implements the already frozen one same-model structure-repair allowance for reviews.",
+  "no_semantic_decisions_fabricated": true,
+  "original_responses_preserved": true
+}

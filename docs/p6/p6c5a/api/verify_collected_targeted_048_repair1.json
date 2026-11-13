@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_048_repair1",
+  "kind": "verify",
+  "request_hash": "8399a70fc5a0fcabd21eb4f8672baeeb5c19e8101fbf90d38de1b1ae1bd58e21",
+  "input_ids": [
+    "SG25-040ffd5925d4",
+    "SG25-a75c433ab2ae"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "88b0e643-85ed-4100-b558-4953f8fce14a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-040ffd5925d4\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“付款”对应 the act of paying money (wn31:n:01122769)，保留支付行为义。\",\n          \"evidence_ids\": [\"wn31:n:01122769\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组仅以“特定支付语境”保留报酬，链接证据为已支付款项/清偿（wn31:n:13299398），未采用 wn31:n:01237702 的 requital 义，非货币或一般报偿范围未保留；来源范围待核。\",\n          \"evidence_ids\": [\"wn31:n:13299398\", \"web:payment\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 原文“报酬”是否仅限金钱支付语境，还是包含非金钱酬答/报偿；已供证据 wn31:n:01237702 (act of requiting) 未采用，需要原语境确认。\"\n      ],\n      \"preferences\": [\n        \"可在扩展或暂存保留“支付的款项；应付款”义（wn31:n:13299398），但属于词典补充，非来源必需。\"\n      ],\n      \"note\": \"核心覆盖付款行为；扩展对“报酬”施加支付语境限制，证据仅覆盖款项支付，一般报酬义待核。候选另有未采用“支付的款项”义，属词典补充。\"\n    },\n    {\n      \"id\": \"SG25-a75c433ab2ae\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展“定居点”对应 area where a group of families live together (wn31:n:08690300)，保留地点义。\",\n          \"evidence_ids\": [\"wn31:n:08690300\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组将一般“解决”限定为争议/和解，注释明确“不泛化为任何解决”；证据 wn31:n:07192584 为事项的 conclusive resolution，本身不限于争议，非争议事项解决未保留。\",\n          \"evidence_ids\": [\"wn31:n:07192584\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展“结算；清偿”对应所欠款项支付（web:settlement），保留财务结算义。\",\n          \"evidence_ids\": [\"web:settlement\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_narrowed\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-a75c433ab2ae:p6c1:core:1\"],\n          \"evidence_ids\": [\"wn31:n:07192584\"],\n          \"reason\": \"原文只写“解决”，核心/注释限定为争议解决/和解；证据 n:07192584 为事项的 conclusive resolution，本身不限于争议，非争议事项解决未保留。\",\n          \"counterexample\": \"settlement of a matter（matter 不必是争议，如 issue/problem settlement）\",\n          \"repair_suggestion\": \"将核心注释改为“事项/争议的解决或和解；不泛指任何问题的解决”，或记录一般解决来源待核。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002 原文“解决”是否在来源语境中专指争议解决，需原教材上下文；当前核心限制可能过窄。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"定居点与结算分别保留；核心“解决”被限定为争议/和解，证据只支持事项解决，一般解决范围待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5978,
+    "completion_tokens": 5538,
+    "total_tokens": 11516,
+    "prompt_tokens_details": {
+      "cached_tokens": 4224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4630
+    },
+    "prompt_cache_hit_tokens": 4224,
+    "prompt_cache_miss_tokens": 1754
+  },
+  "started_utc": "2026-11-13T10:00:51.582352+00:00",
+  "completed_utc": "2026-11-13T10:02:07.718779+00:00",
+  "elapsed_seconds": 76.141,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

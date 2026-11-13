@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_68",
+  "request_hash": "e61b8cdc7f5468bf0f98a9b23a59c8c7a50503ff33c6aa0545dc09b3fbc71a99",
+  "started_utc": "2026-11-13T08:17:08.957310+00:00",
+  "completed_utc": "2026-11-13T08:18:05.023035+00:00",
+  "elapsed_seconds": 56.063,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "828115fa-750d-4d66-adf0-ed7f38bf40cb",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2987,
+    "completion_tokens": 2870,
+    "total_tokens": 5857,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2709
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 939
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-fd13d46bad4b\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"原始两个动词近义片段“约束”和“限制”被候选合并为一个通用动词核心“限制；约束”，有 WordNet 定义支持（place limits on / place restrictions on）。两个更专门的义项（依法限制进入/使用、限制信息传播）已作为非来源外部候选单列，未混入核心，处理正确。未发现翻译、词性或覆盖缺陷。中文顺序调换属于教学偏好，不构成错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

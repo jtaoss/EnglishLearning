@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_06_repair1",
+  "request_hash": "5033ae5b9756a5e4c63abeb5294deab9e17dc8d81d41360da98247834a974835",
+  "started_utc": "2026-11-13T08:15:34.367106+00:00",
+  "completed_utc": "2026-11-13T08:16:13.000568+00:00",
+  "elapsed_seconds": 38.64,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "9700c4f0-a83d-4ca7-8709-eb3cb3c5572a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4616,
+    "completion_tokens": 6663,
+    "total_tokens": 11279,
+    "prompt_tokens_details": {
+      "cached_tokens": 3584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5847
+    },
+    "prompt_cache_hit_tokens": 3584,
+    "prompt_cache_miss_tokens": 1032
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-03e71c6d7dc6\",\"core\":[[\"部分；片段\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:04172050\",\"wn31:n:09452291\"],\"均指整体中的一部分：可为与其他部分组合的部件，也可为自然分出的片段，如路段、橘子瓣。\"],[\"分割；把…分成若干部分\",\"动词\",[\"s003\"],[\"wn31:v:01565786\"],\"及物用法：把整体分成若干段或若干部分，如分割橘子、切分词语。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（细胞等）分裂；分成若干部分\",\"动词\",[\"wn31:v:01561222\"],\"外部词典列有不及物/自身变化的分裂用法；原中文‘分割’通常为及物动作，方向未明确，仅作候选不采用。\"]],\"reason\":\"首记名词‘整体中的部分/片段’，两个近义名词同组；动词‘分割’为及物切分，另组。不及物‘分裂’与原中文方向不确定，仅列候选。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"不及物/自身变化‘分裂’用法仅在 additions，是否纳入核心待后续人工决定。\"]]},{\"id\":\"SG25-2161403032b8\",\"core\":[[\"年长的；年纪较大的\",\"形容词\",[\"s001\"],[\"wn31:s:01648667\"],\"指年龄较大，如 senior citizen；与‘高级/资历高’分开。\"],[\"高级的；级别或资历较高的\",\"形容词\",[\"s002\"],[\"wn31:a:02107054\"],\"指职位、级别或服务年限较高，如 senior officer；对象是等级/资历。\"],[\"高年级学生（尤指大学毕业年级）\",\"名词\",[\"s004\"],[\"wn31:n:10598514\"],\"英语名词 senior 常特指大学毕业年级学生；中文‘高年级学生’较宽，采用条件化表述。\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s003\",\"‘资深者’指资历或级别较高的人；所供名词证据仅指‘较年长的人’，形容词证据又不能直接证明名词用法，暂不并入核心。\"]],\"splits\":{},\"additions\":[[\"较年长的人；年长者\",\"名词\",[\"wn31:n:10068026\"],\"外部名词证据指比说话者年长的人；原中文‘资深者’侧重资历，不等同，仅候选。\"],[\"毕业年级的；最后一年级的\",\"形容词\",[\"wn31:s:01017278\"],\"外部形容词证据指美国高中或大学最后一年；原中文形容词片段为‘年长的/高级的’，未明确此用法，仅候选。\"]],\"reason\":\"先分形容词‘年长’与‘等级/资历较高’，再记名词‘毕业年级学生’；‘资深者’缺乏对应名词证据暂存；年长者与毕业年级形容词仅列候选。\",\"flags\":[[\"Major\",\"source_translation_uncertain\",\"s003‘资深者’侧重资历/职位，所供名词证据仅‘较年长的人’，未直接匹配，暂存。\"],[\"Major\",\"source_scope_gap\",\"s004‘高年级学生’较宽；所供名词证据主要指大学毕业年级学生，核心采用条件化表述。\"],[\"Minor\",\"lexical_evidence_insufficient\",\"s003 的资历义没有独立名词证据覆盖，仅保留原片段待核。\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"名词‘年长者’及形容词‘毕业年级的’仅在 additions，是否采用待人工决定。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

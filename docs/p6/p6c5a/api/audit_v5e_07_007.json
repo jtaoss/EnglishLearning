@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_007",
+  "kind": "audit",
+  "request_hash": "6271b2a5c0c8b50ba82e18b5d710c1885f58239dc1b0daed409959803c411bd2",
+  "input_ids": [
+    "SG25-e91c254ad588",
+    "SG25-9b2abfc29cc4",
+    "SG25-873ac9ffea4d",
+    "SG25-7499aced4386",
+    "SG25-7152e6ec048e"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ce7bb955-3862-49ba-b7cf-d8bdd5c4423e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-e91c254ad588\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"马铃薯（作为食物的块茎）\",\"relation\":\"语义等价\",\"reason\":\"原片段与核心组的“马铃薯；土豆”同指食用块茎；该组仅合并同一食物的两个中文名称，未引入其他对象。\",\"evidence_ids\":[\"wn31:n:07726361\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"土豆（马铃薯的别称）\",\"relation\":\"语义等价\",\"reason\":\"“土豆”是马铃薯的常用别称，与核心组同一食用块茎义等价；证据支持食品义。\",\"evidence_ids\":[\"wn31:n:07726361\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个中文名称同指食用块茎，核心组合并合理；词典中的植物义未进入原文，不构成本轮来源遗漏。\"},{\"id\":\"SG25-9b2abfc29cc4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"金属丝（一般线材）\",\"relation\":\"语义等价\",\"reason\":\"核心组并列“金属丝；电线”，s001对应金属丝一般线材；证据为金属线材，并未把全部金属丝等同电线。\",\"evidence_ids\":[\"wn31:n:04601545\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"电线（导电金属线）\",\"relation\":\"语义等价\",\"reason\":\"s002“电线”对应导电金属线；核心组保留电线义，并用分号与金属丝一般义区分。\",\"evidence_ids\":[\"wn31:n:04601816\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"接线/装设电路（动词）\",\"relation\":\"合理概括\",\"reason\":\"扩展组以“接线；装设线路”对应电气接线动词，证据支持装设电路/接电用途，未混入发电报义。\",\"evidence_ids\":[\"wn31:v:02359532\",\"wn31:v:00506883\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"汇款（银行/电汇转账，源中文较宽）\",\"relation\":\"合理概括\",\"reason\":\"扩展组以“电汇；汇款”后置银行转账动词，pub:wire明确电汇款项；但源中文“汇款”宽于英语wire的电汇义，需保留待核。\",\"evidence_ids\":[\"pub:wire\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"英语wire的银行义通常限电汇/电传汇款；一般邮寄汇款等广义汇款未获独立证据。\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s004\"],\"group_ids\":[\"SG25-9b2abfc29cc4:p6c4:extended_meanings:2\"],\"evidence_ids\":[\"pub:wire\"],\"reason\":\"源中文“汇款”比英语wire的银行义宽；现有出版社观察只明确电汇/银行转账，未独立证明一般汇款。\",\"repair_suggestion\":\"保留“电汇；汇款”时标注银行/电汇语境，或将展示义收为“电汇（款项）”并记录源范围待核。\"}],\"note\":\"名词两义在核心，动词接线/汇款在扩展且有教学理由；s004汇款源范围较宽，已标pending，未把一般汇款当作已证。\"},{\"id\":\"SG25-873ac9ffea4d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"奶酪（乳制食品）\",\"relation\":\"语义等价\",\"reason\":\"核心组“奶酪”直接对应乳制食品，证据仅支持食品义；其他同形词典义未进入原文。\",\"evidence_ids\":[\"wn31:n:07866305\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一食品义完整覆盖；植物/动词等同形词典义不属原文支持范围。\"},{\"id\":\"SG25-7499aced4386\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"巧克力（可可制食品）\",\"relation\":\"语义等价\",\"reason\":\"核心组“巧克力；朱古力”为同一食品义，证据支持可可食品，不把颜色或热饮义混入。\",\"evidence_ids\":[\"wn31:n:07617570\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"朱古力（巧克力别称）\",\"relation\":\"语义等价\",\"reason\":\"“朱古力”是巧克力别称，与核心组同一食品义等价；证据支持食品义。\",\"evidence_ids\":[\"wn31:n:07617570\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个中文名称同指巧克力食品，核心组合并合理；颜色/饮料义属词典补充，不反推为原文遗漏。\"},{\"id\":\"SG25-7152e6ec048e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"果酱（水果制品）\",\"relation\":\"语义等价\",\"reason\":\"核心组1只保留果酱食品义，证据为压碎水果制成的preserve；未把堵塞义混入。\",\"evidence_ids\":[\"wn31:n:07658542\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"堵塞/拥堵（名词）\",\"relation\":\"语义等价\",\"reason\":\"扩展组1保留名词“堵塞；拥堵”，pub:jam明确交通堵塞名词有支持；未用仅指人群的WordNet义替代全部堵塞。\",\"evidence_ids\":[\"pub:jam\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"堵住（通路）（动词）\",\"relation\":\"语义等价\",\"reason\":\"核心组2以“堵住（通路）”对应及物堵塞通路，证据支持block passage through；括号为对象提示，未宣布唯一对象。\",\"evidence_ids\":[\"wn31:v:01479113\",\"pub:jam\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"卡住（动词，可含使动/状态）\",\"relation\":\"语义等价\",\"reason\":\"核心组2以“（使）卡住”对应部件或自身卡住，证据支持get stuck/immobilized及部件卡住说明；未省略状态义。\",\"evidence_ids\":[\"wn31:v:01527965\",\"pub:jam\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"果酱与堵塞分开；名词堵塞在扩展保留且有出版社证据，核心保留果酱及动词堵住/卡住，未把仅指人群的义冒充全部堵塞。\"}]}",
+  "usage": {
+    "prompt_tokens": 6050,
+    "completion_tokens": 15948,
+    "total_tokens": 21998,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14198
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4130
+  },
+  "started_utc": "2026-11-13T09:53:07.908547+00:00",
+  "completed_utc": "2026-11-13T09:54:37.803957+00:00",
+  "elapsed_seconds": 89.891,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

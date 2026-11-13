@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_004",
+  "kind": "holdout",
+  "request_hash": "578f54fee481efe0ef075d71f26263b29b308eab402e49d57453cee10ef1d88e",
+  "input_ids": [
+    "SG25-6ca7ea2feefc",
+    "SG25-e2411f906450"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "3d199f8e-47e3-4a98-81e3-f6829965d23c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6ca7ea2feefc\",\n      \"word\": \"keep\",\n      \"source_pos\": \"动词\",\n      \"raw\": \"保持；保管；饲养；继续\",\n      \"source_usage_note\": \"\",\n      \"senses\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"text\": \"保持\",\n          \"part_of_speech\": \"动词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 0,\n          \"end\": 2\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"text\": \"保管\",\n          \"part_of_speech\": \"动词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 3,\n          \"end\": 5\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"text\": \"饲养\",\n          \"part_of_speech\": \"动词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 6,\n          \"end\": 8\n        },\n        {\n          \"source_sense_id\": \"s004\",\n          \"text\": \"继续\",\n          \"part_of_speech\": \"动词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 9,\n          \"end\": 11\n        }\n      ],\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"保持某状态、性质、位置或所有物，使继续存在\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为状态、属性、位置或所有物；也可接形容词/名词作补语\",\n          \"evidence_ids\": [\n            \"wn31:v:02415305\",\n            \"wn31:v:02687605\",\n            \"wn31:v:02207166\"\n          ],\n          \"uncertainty\": \"原文'保持'可涵盖多种维持类用法，上述证据均为及物用法，未覆盖不及物持续义（该义可能归入s004）\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"保管、照看或存放物品/地方\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为具体物品、场所或需照看的事物\",\n          \"evidence_ids\": [\n            \"wn31:v:02207710\",\n            \"wn31:v:02208626\",\n            \"wn31:v:02208876\"\n          ],\n          \"uncertainty\": \"未采用'保持食物不腐'等保存义，因中文'保管'通常不指防腐；证据中'look after/store'范围较宽，未排除照看人等，但源义限于物品/场所，可能存在收窄风险\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"饲养动物（家禽、蜜蜂等）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"宾语为动物\",\n          \"evidence_ids\": [\n            \"wn31:v:02658111\"\n          ],\n          \"uncertainty\": \"证据仅含禽类/蜜蜂示例，是否涵盖所有动物待核；未采用对人提供食宿义，因中文'饲养'对象为动物\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"继续某活动或状态，常接动名词或'继续做'\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"后接活动或状态，常伴随持续性表达\",\n          \"evidence_ids\": [\n            \"wn31:v:02690747\"\n          ],\n          \"uncertainty\": \"不及物持续义与s001的及物维持义有交叉，此处按源'继续'取持续进行义；未覆盖使动'使保持'等，由s001处理\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：保持（使某状态、性质、位置或所有物继续存在）\",\n        \"动词：保管（照看、存放或负责某物/场所）\",\n        \"动词：饲养（喂养并管理动物）\",\n        \"动词：继续（持续进行某活动/保持某状态）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"全部为AI提案，未经人工签审；名词性义项（如生活费用、城堡主楼）未纳入核心，因源词性为动词且原文未列出。\"\n    },\n    {\n      \"id\": \"SG25-e2411f906450\",\n      \"word\": \"influential\",\n      \"source_pos\": \"形容词\",\n      \"raw\": \"有势力的；有影响的\",\n      \"source_usage_note\": \"\",\n      \"senses\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"text\": \"有势力的\",\n          \"part_of_speech\": \"形容词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 0,\n          \"end\": 4\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"text\": \"有影响的\",\n          \"part_of_speech\": \"形容词\",\n          \"pos_evidence\": \"single_pos_field\",\n          \"start\": 5,\n          \"end\": 9\n        }\n      ],\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"具有权力、势力，能影响他人或局势\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"描述人、组织等具有权势的主体\",\n          \"evidence_ids\": [\n            \"wn31:a:01835852\"\n          ],\n          \"uncertainty\": \"证据中'influence or power'合并，未单独区分势力与一般影响；源'有势力的'可能侧重权力，但证据无法验证该侧重\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"具有影响力，能产生效果或改变\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"描述人或事物对他人/事件产生影响\",\n          \"evidence_ids\": [\n            \"wn31:a:01835852\"\n          ],\n          \"uncertainty\": \"与s001共用同一证据，边界模糊；证据未显示是否区分影响力大小或对象\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：有势力的（拥有权力或势力，能左右他人）\",\n        \"形容词：有影响的（具有影响力或效果）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"整条源词性为形容词，仅有一个英文形容词证据，两个中文义项近义；未增加名词或副词义项。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4208,
+    "completion_tokens": 4553,
+    "total_tokens": 8761,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3080
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4208
+  },
+  "started_utc": "2026-11-13T09:33:06.623578+00:00",
+  "completed_utc": "2026-11-13T09:34:11.661733+00:00",
+  "elapsed_seconds": 65.046,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

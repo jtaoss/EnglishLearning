@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_006",
+  "kind": "audit",
+  "request_hash": "d8fb712af7968db939adcc65fcd3f3dc4756806d440202d49a9e55f7c4757afe",
+  "input_ids": [
+    "SG25-d811aa2ea4fe",
+    "SG25-bcffaab67df4",
+    "SG25-d80c9bf910f1",
+    "SG25-2374d91794b7",
+    "SG25-97488fbab328"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ce306a27-c2dd-4340-ab69-f455a0a2b173",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-d811aa2ea4fe\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"广泛的（分布范围广）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“广泛的”，且 wn31:s:00543834 支持“分布范围相当大”的用法；原义未被缩窄到特定对象。\",\"evidence_ids\":[\"wn31:s:00543834\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"普遍的（广泛传播/扩散）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“普遍的”，且 wn31:s:01106569 支持“广泛传播或扩散”的用法；与原文一般义一致。\",\"evidence_ids\":[\"wn31:s:01106569\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义均为形容词，核心组合并为“广泛的；普遍的”，分别有两项词典证据支撑；未发现对象或领域被无依据收窄。\"},{\"id\":\"SG25-bcffaab67df4\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"才能（做事的能力/资质）\",\"relation\":\"语义等价\",\"reason\":\"核心组“能力；才能”直接保留“才能”，两项词典证据均围绕可完成事务的资质/能力。\",\"evidence_ids\":[\"wn31:n:05207437\",\"wn31:n:05624029\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"能力（完成事务的素质/条件）\",\"relation\":\"语义等价\",\"reason\":\"核心组“能力；才能”直接保留“能力”，词典证据支持完成或促成成就的素质。\",\"evidence_ids\":[\"wn31:n:05207437\",\"wn31:n:05624029\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"能耐（口语化的能力/本事）\",\"relation\":\"合理概括\",\"reason\":\"“能耐”未在显示文本中重复，但已通过 source_ids 纳入核心组；用“能力”作上位概括覆盖该近义表达，且原文追溯仍保留。\",\"evidence_ids\":[\"wn31:n:05207437\",\"wn31:n:05624029\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个名词近义源义合并为一组，显示用“能力；才能”，能耐保留在原文追溯中；覆盖可追溯，未见新增对象限制。\"},{\"id\":\"SG25-d80c9bf910f1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"地址（可找到人或组织、可通信/投递的地点或文字信息）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“地址”，wn31:n:08508037 支持“可找到人或组织并与之通信的地点”，wn31:n:06800007 支持书信/包裹上的书面地址；两者共同覆盖原文名词义。\",\"evidence_ids\":[\"wn31:n:08508037\",\"wn31:n:06800007\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文只有名词“地址”，核心组已用地点/书面地址两项证据覆盖；动词“处理问题、向人讲话”仅作为外部候选记录，不构成来源义缺口。\"},{\"id\":\"SG25-2374d91794b7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"取消（使安排或决定不再有效）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“取消”，wn31:v:02483178 支持取消已安排事项，wn31:v:02482757 支持宣布无效/使失效；与原文一般动词义一致。\",\"evidence_ids\":[\"wn31:v:02482757\",\"wn31:v:02483178\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"撤销（使已生效事项失效/作废）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“撤销”，wn31:v:02482757 的“宣布无效、使失效”直接支撑该义；与“取消”同组近义记忆合理。\",\"evidence_ids\":[\"wn31:v:02482757\",\"wn31:v:02483178\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个动词源义为近义关系，核心组“取消；撤销”同时覆盖；具体宾语差异属用法观察，不是来源义缺失。\"},{\"id\":\"SG25-97488fbab328\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"费用（因商品或服务被收取的款项）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“费用”由 wn31:n:13327892 “商品或服务的收费价格”支撑；原文未要求扩展到其他财务义。\",\"evidence_ids\":[\"wn31:n:13327892\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"指控（名词：断言有错/犯罪的说法或正式控告）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“指控”由 wn31:n:06743529（断言有罪/过错）和 wn31:n:06573933（刑法上的正式控告）支撑。\",\"evidence_ids\":[\"wn31:n:06743529\",\"wn31:n:06573933\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"电荷（物理学中的电荷量）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“电荷”，wn31:n:11455142 明确为物体中不平衡电的量；该义属物理领域，后置有专业语境依据。\",\"evidence_ids\":[\"wn31:n:11455142\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"收费（动词：为商品/服务索价或要求付款）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“收费；索价”由 wn31:v:00702283（设定或询问价格）和 wn31:v:02325354（要求付款）支撑。\",\"evidence_ids\":[\"wn31:v:00702283\",\"wn31:v:02325354\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s005\",\"source_scope\":\"指控（动词：指责、正式控告）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“指控”由 wn31:v:00845147（指责 wrongdoing）和 wn31:v:00871595（正式控告）支撑。\",\"evidence_ids\":[\"wn31:v:00845147\",\"wn31:v:00871595\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s006\",\"source_scope\":\"充电（给电池或设备充入电能）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“给电池等充电”由 wn31:v:00518927（通过电流给电池充电）支撑；“等”表明电池只是典型示例，不是排他对象。\",\"evidence_ids\":[\"wn31:v:00518927\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"六个源义均保留：费用、名词/动词指控、收费、充电在核心，电荷因物理领域依据放在扩展并注明专业语境；核心组数量较多但未删义，电荷后置属有依据的教学分层。\"}]}",
+  "usage": {
+    "prompt_tokens": 9216,
+    "completion_tokens": 6272,
+    "total_tokens": 15488,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4390
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 7296
+  },
+  "started_utc": "2026-11-13T09:50:57.260487+00:00",
+  "completed_utc": "2026-11-13T09:51:31.206495+00:00",
+  "elapsed_seconds": 33.953,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

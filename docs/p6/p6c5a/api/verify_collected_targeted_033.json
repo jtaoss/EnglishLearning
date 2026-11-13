@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_033",
+  "kind": "verify",
+  "request_hash": "38c8b69632b10796c8d3ec06a8b7b7a3d56ec1bf3133ac838e9e7f6ef66778b1",
+  "input_ids": [
+    "SG25-b093720ae253",
+    "SG25-16b60e9de607"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4b83611e-437d-4e3c-a9a1-f8c22aeec534",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-b093720ae253\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"source_pos\": \"名词\",\n          \"original_text\": \"症状\",\n          \"source_scope\": \"名词：症状（可指疾病表现，也可泛指迹象/征兆）\",\n          \"target_links\": [\n            {\n              \"group_id\": \"SG25-b093720ae253:core:1\",\n              \"layer\": \"core_meanings\",\n              \"pos\": \"名词\",\n              \"text\": \"症状\",\n              \"evidence_ids\": [\"wn31:n:14323139\"]\n            }\n          ],\n          \"context_requirement\": \"无\",\n          \"relation\": \"范围收窄\",\n          \"scope_risk\": \"原中文“症状”兼有医学义与泛指义；候选仅保留医学义，未覆盖泛指义。\",\n          \"reason\": \"候选核心组仅使用医学义（疾病相关的可觉察表现），而未保留泛指迹象/征兆的用法；所有层级联合下泛指义缺失。\",\n          \"evidence_ids\": [\"wn31:n:14323139\", \"wn31:n:06811045\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"范围收窄/遗漏泛指义\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-b093720ae253:core:1\"],\n          \"evidence_ids\": [\"wn31:n:06811045\"],\n          \"reason\": \"原中文“症状”可泛指事物表现出的不正常情况（如社会症状、经济衰退症状），英语一般义支持；候选仅保留医学疾病义，且无其他层保留泛指义，造成范围收窄。\",\n          \"counterexample\": \"“经济衰退的症状”需用 symptom 的一般义“anything that accompanies X... as indication”，候选医学义无法覆盖。\",\n          \"repair_suggestion\": \"在扩展/其他层补充“迹象；征兆”并链接 wn31:n:06811045；或明确标记原中文泛指义未保留并列为待核。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原中文“症状”的泛指义是否属于本项目源义范围，需要结合教材原文语境确认；若仅限医学义则无此缺口。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"原释“症状”在医学义上保留正确；泛指义缺失为待核风险。\"\n    },\n    {\n      \"id\": \"SG25-16b60e9de607\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"source_pos\": \"名词\",\n          \"original_text\": \"四分之一\",\n          \"source_scope\": \"名词：四分之一（四等份之一）\",\n          \"target_links\": [\n            {\n              \"group_id\": \"SG25-16b60e9de607:p6c1:core:1\",\n              \"layer\": \"core_meanings\",\n              \"pos\": \"名词\",\n              \"text\": \"四分之一\",\n              \"evidence_ids\": [\"wn31:n:13759620\"]\n            }\n          ],\n          \"context_requirement\": \"无\",\n          \"relation\": \"语义等价\",\n          \"scope_risk\": \"无\",\n          \"reason\": \"核心组“四分之一”直接对应 one of four equal parts，证据充分。\",\n          \"evidence_ids\": [\"wn31:n:13759620\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"source_pos\": \"名词\",\n          \"original_text\": \"一刻钟\",\n          \"source_scope\": \"名词：一刻钟（15分钟）\",\n          \"target_links\": [\n            {\n              \"group_id\": \"SG25-16b60e9de607:p6c1:core:2\",\n              \"layer\": \"core_meanings\",\n              \"pos\": \"名词\",\n              \"text\": \"一刻钟\",\n              \"evidence_ids\": [\"wn31:n:15259739\"]\n            }\n          ],\n          \"context_requirement\": \"无\",\n          \"relation\": \"语义等价\",\n          \"scope_risk\": \"无\",\n          \"reason\": \"核心组“一刻钟”对应 a unit of time equal to 15 minutes，证据充分。\",\n          \"evidence_ids\": [\"wn31:n:15259739\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"source_pos\": \"名词\",\n          \"original_text\": \"季度\",\n          \"source_scope\": \"名词：季度（一年的四分之一/三个月）\",\n          \"target_links\": [\n            {\n              \"group_id\": \"SG25-16b60e9de607:p6c1:extended:1\",\n              \"layer\": \"extended_meanings\",\n              \"pos\": \"名词\",\n              \"text\": \"季度\",\n              \"evidence_ids\": [\"wn31:n:15231386\"]\n            }\n          ],\n          \"context_requirement\": \"无\",\n          \"relation\": \"语义等价\",\n          \"scope_risk\": \"无\",\n          \"reason\": \"扩展组“季度”对应 a fourth part of a year; three months，虽在扩展层但语义完整。\",\n          \"evidence_ids\": [\"wn31:n:15231386\"]\n        },\n        {\n          \"source_sense_id\": \"s004\",\n          \"source_pos\": \"名词\",\n          \"original_text\": \"地区\",\n          \"source_scope\": \"名词：地区（区域/地带）\",\n          \"target_links\": [\n            {\n              \"group_id\": \"SG25-16b60e9de607:p6c1:other:1\",\n              \"layer\": \"other_meanings\",\n              \"pos\": \"名词\",\n              \"text\": \"（城镇的）区\",\n              \"note\": \"如旧城区；不泛指任意地区\",\n              \"evidence_ids\": [\"wn31:n:08645494\"]\n            }\n          ],\n          \"context_requirement\": \"不确定\",\n          \"relation\": \"范围收窄\",\n          \"scope_risk\": \"原中文“地区”为一般地域范围，候选仅保留城镇中的区；英语证据只支持城市内特定区，英语范围本身比中文窄。\",\n          \"reason\": \"原中文“地区”为一般地域范围，候选仅保留“城镇中的区”并明确不泛指任意地区；英语证据只支持城市内特定区，英语范围本身比中文窄。\",\n          \"evidence_ids\": [\"wn31:n:08645494\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"范围收窄/来源过宽待核\",\n          \"source_ids\": [\"s004\"],\n          \"group_ids\": [\"SG25-16b60e9de607:p6c1:other:1\"],\n          \"evidence_ids\": [\"wn31:n:08645494\"],\n          \"reason\": \"原中文“地区”是宽泛区域，候选收窄为城市中有特色的区，并声明不泛指任意地区；英语证据仅支持城镇区，因此该收窄反映英语语义范围，但原中文一般地区义未被覆盖且未明确列为待核。\",\n          \"counterexample\": \"例如“山区地区”“贫困地区”在中文里是地区，但英语 quarter 通常不用于此类泛指，候选不保留也无妨，但应说明来源过宽。\",\n          \"repair_suggestion\": \"将“（城镇的）区”标注为英语证据支持的限定用法，并将原“地区”一般范围列为待核/可能译义过宽；不要声称“地区”已被完整覆盖。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原中文“地区”在教学词表中是否意在泛指地域还是已隐含城市分区，需核实教材。\"\n      ],\n      \"preferences\": [\n        \"将“季度”放在扩展而非核心属于教学排序差异，不构成语义缺陷。\"\n      ],\n      \"note\": \"四分之一、一刻钟、季度均覆盖正确；地区仅保留城镇区，一般地区范围待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4592,
+    "completion_tokens": 5563,
+    "total_tokens": 10155,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3802
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2928
+  },
+  "started_utc": "2026-11-13T09:58:25.217460+00:00",
+  "completed_utc": "2026-11-13T09:59:35.061608+00:00",
+  "elapsed_seconds": 69.844,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

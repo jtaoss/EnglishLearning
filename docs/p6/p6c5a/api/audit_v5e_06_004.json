@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_004",
+  "kind": "audit",
+  "request_hash": "891fadab1ba8500571a7a7dcea38ef95a0f6788b480819fad36a633f4d6a6ed6",
+  "input_ids": [
+    "SG25-2b4a5bdd6f71",
+    "SG25-4c3200fefd8b",
+    "SG25-3d8eefab379d",
+    "SG25-26f1de33979d",
+    "SG25-d0d092b83d4a"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "14f09a29-47a3-4088-9e8a-eda498405f4f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-2b4a5bdd6f71\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"程度：某事物延伸所达到的点或程度\",\"relation\":\"语义等价\",\"reason\":\"核心组‘程度’与wn31:n:13964158的‘point or degree to which something extends’直接对应。\",\"evidence_ids\":[\"wn31:n:13964158\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"范围：延伸所覆盖的距离、面积或体积\",\"relation\":\"语义等价\",\"reason\":\"核心组‘范围’与wn31:n:05130681的distance/area/volume over which something extends对应。\",\"evidence_ids\":[\"wn31:n:05130681\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别由核心‘程度’和‘范围’承接，词典证据的对象范围与原文一致。\"},{\"id\":\"SG25-4c3200fefd8b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"倾向：特征性趋势/自然倾向，含心理偏好与总体走向\",\"relation\":\"语义等价\",\"reason\":\"核心‘倾向’取自然趋势义，核心‘倾向（偏好）’取心理偏好义，扩展‘趋势/动向’取发展走向义，三者共同覆盖该概括性源义。\",\"evidence_ids\":[\"wn31:n:04951225\",\"wn31:n:06206319\",\"wn31:n:08699515\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"性情：较稳定的气质或性格\",\"relation\":\"无法确定\",\"reason\":\"当前仅暂存为held；所给证据支持对某条件或结果的天然倾向，未充分证明稳定气质/性情义已落位。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"missing: 稳定气质/性格义未进入任何已链接层级\",\"counterexample\":\"tendency的natural disposition toward a condition/effect是倾向性/趋势，不等同于稳定的性情或气质\",\"counterexample_evidence_ids\":[\"wn31:n:04951225\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"意向：做某事的意愿或倾向\",\"relation\":\"语义等价\",\"reason\":\"核心组‘意向’与wn31:n:07514352的inclination to do something对应。\",\"evidence_ids\":[\"wn31:n:07514352\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"held_source_sense_unresolved\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:04951225\"],\"reason\":\"原义‘性情’被暂存而未链接到核心/扩展；现有证据主要支持自然倾向，尚不足以证明稳定气质义已覆盖，不能视为已通过。\",\"repair_suggestion\":\"保留待核状态；补充能明确支持‘性情/气质’的词典证据后再决定层级，不以一般倾向义替代。\"}],\"note\":\"s001与s003已由核心和扩展覆盖；s002‘性情’仍暂存，故整词部分完成且核心状态待核。\"},{\"id\":\"SG25-3d8eefab379d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"决定：对选择或行动作出决定\",\"relation\":\"语义等价\",\"reason\":\"核心组‘决定’与wn31:v:00699355的reach/make/come to a decision对应。\",\"evidence_ids\":[\"wn31:v:00699355\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"确定：权威地或明确地确定、规定\",\"relation\":\"语义等价\",\"reason\":\"核心组‘确定’由wn31:v:00701581与wn31:v:00949109支持，覆盖固定规则、规定参数等用法。\",\"evidence_ids\":[\"wn31:v:00701581\",\"wn31:v:00949109\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"查明：通过计算、调查或询问弄清\",\"relation\":\"语义等价\",\"reason\":\"核心组‘查明’与wn31:v:00920843、wn31:v:00922307的计算/调查/询问后弄清义对应。\",\"evidence_ids\":[\"wn31:v:00920843\",\"wn31:v:00922307\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义分别由核心‘决定/确定/查明’承接；‘决定/支配结果’仅列未采用外部候选，按规则不重复计为源义缺口。\"},{\"id\":\"SG25-26f1de33979d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"扩展：范围或适用面的扩大\",\"relation\":\"语义等价\",\"reason\":\"核心组中的‘扩展（范围）’子义由wn31:n:00368594的act of expanding in scope支持，组内另含s002子义不构成s001新增义。\",\"evidence_ids\":[\"wn31:n:00368594\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"延长：时间或长度的延长\",\"relation\":\"语义等价\",\"reason\":\"核心组中的‘延长（时间或长度）’子义由wn31:n:03286846与wn31:n:15297368支持。\",\"evidence_ids\":[\"wn31:n:03286846\",\"wn31:n:15297368\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"分机：同一电话线路上的附加电话\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘分机’由wn31:n:03311814的additional telephone set直接支持。\",\"evidence_ids\":[\"wn31:n:03311814\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001与s002虽合并为一个核心显示单元，但组内括注和注释保留两个子义并可追溯；s003分机位于扩展层，证据明确。\"},{\"id\":\"SG25-d0d092b83d4a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"剧烈的：严重、尖锐或程度高的\",\"relation\":\"语义等价\",\"reason\":\"核心组‘剧烈的’由wn31:s:00806846的extremely sharp or severe及wn31:a:01513206的高度程度义支持。\",\"evidence_ids\":[\"wn31:s:00806846\",\"wn31:a:01513206\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"强烈的：程度高、强烈\",\"relation\":\"语义等价\",\"reason\":\"核心组‘强烈的’与wn31:a:01513206的heightened degree义直接对应。\",\"evidence_ids\":[\"wn31:a:01513206\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"极度的：达到很高程度\",\"relation\":\"语义等价\",\"reason\":\"核心组‘极度的’作为程度高/强烈义的一部分，可由wn31:a:01513206的高度程度义支持。\",\"evidence_ids\":[\"wn31:a:01513206\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义源片段合并为一个核心程度义，证据覆盖严重、强烈和极度用法；颜色饱和仅列未采用外部候选，未作为源义缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 6484,
+    "completion_tokens": 13008,
+    "total_tokens": 19492,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11124
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4564
+  },
+  "started_utc": "2026-11-13T09:50:57.555799+00:00",
+  "completed_utc": "2026-11-13T09:52:11.780895+00:00",
+  "elapsed_seconds": 74.234,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

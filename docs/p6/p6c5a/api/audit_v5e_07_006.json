@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_006",
+  "kind": "audit",
+  "request_hash": "12105dc756f011588b761c173636ce012c94209552d4ab57f080b3f403d9b2fb",
+  "input_ids": [
+    "SG25-3d7eb3d3dab1",
+    "SG25-795b6904e54f",
+    "SG25-bc020a35b7f9",
+    "SG25-4945a70fa7f9",
+    "SG25-22f0b24b528b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5cbb89d0-c3cc-4c6b-bd4b-3c8d1e6a29c3",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3d7eb3d3dab1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：供人坐的椅子（家具）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘椅子’与源义一致，wn31:n:03005231 的定义即单人带靠背座椅。\",\"evidence_ids\":[\"wn31:n:03005231\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义仅为家具椅子；教授职位、会议主席/主持、电椅等属词典新增或外部候选，未进入来源核心。\"},{\"id\":\"SG25-795b6904e54f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：一般垃圾、废弃物\",\"relation\":\"范围收窄\",\"reason\":\"核心显示一般‘垃圾’，但唯一证据 wn31:n:14881302 为‘food that is discarded’（厨余丢弃食物），不能直接支撑一般废弃物的完整范围；源中文宽于英语证据，应标待核而非判生成器Major。\",\"evidence_ids\":[\"wn31:n:14881302\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般生活垃圾、非厨余废弃物等更广范围的直接词典证据；当前证据仅覆盖厨余垃圾子类。\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_range_pending\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-795b6904e54f:p6c1:core:1\"],\"evidence_ids\":[\"wn31:n:14881302\"],\"reason\":\"核心字面为一般‘垃圾’，但所用WordNet证据仅为厨余丢弃食物，无法核验一般废弃物范围；属于来源宽于英语证据时的覆盖待核。\",\"repair_suggestion\":\"补充一般废弃物义证据，或在核心注释中保留‘厨余垃圾/一般废弃物待核’说明，不把厨余证据当作一般垃圾已完全核验。\"}],\"note\":\"核心字面‘垃圾’与源一致，但证据仅厨余丢弃食物；一般废弃物范围待核。\"},{\"id\":\"SG25-bc020a35b7f9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：机械或电气装置/机器\",\"relation\":\"语义等价\",\"reason\":\"核心组‘机器’与源义一致，wn31:n:03705309 定义为传递或改变能量以完成或辅助人类任务的机械/电气装置。\",\"evidence_ids\":[\"wn31:n:03705309\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"机器’首义与源一致；汽车、政治集团、高效能者及动词加工等属词典新增或专门语境，未进入来源核心。\"},{\"id\":\"SG25-4945a70fa7f9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"比赛（源逐义词性未解析，候选按名词推荐）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:07485811 定义正式竞赛，与源‘比赛’在名词用法上一致；但源逐词POS仍为 null，推荐词性仅供展示。\",\"evidence_ids\":[\"wn31:n:07485811\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"相配、相符（源逐义词性未解析，候选按动词推荐）\",\"relation\":\"语义等价\",\"reason\":\"wn31:v:00457551 与 wn31:v:02663315 支持 be equal/harmonize 和 be compatible，与‘相配；相符’一致；但源逐词POS仍为 null，推荐词性仅供展示。\",\"evidence_ids\":[\"wn31:v:00457551\",\"wn31:v:02663315\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-4945a70fa7f9:p6c4:core_meanings:1\",\"SG25-4945a70fa7f9:p6c4:core_meanings:2\"],\"evidence_ids\":[],\"reason\":\"两个源片段的逐词词性均为 unresolved_multi_pos，候选组按词典推荐名词/动词；不能把推荐词性写成源字段已确认词性。\",\"repair_suggestion\":\"保留源字段 null，仅在组注释或展示层说明‘推荐词性据词典’，不将名词/动词视为源数据已解析。\"}],\"note\":\"两条源义分别映射‘比赛’（名）与‘相配’（动）；源逐词POS为null，候选词性只是推荐；‘火柴’为外部候选未采用。\"},{\"id\":\"SG25-22f0b24b528b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：明信片，寄递信息用的卡片\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:06640445 定义为无需信封投寄的信息卡片，与源‘明信片’一致。\",\"evidence_ids\":[\"wn31:n:06640445\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"明信片’核心义与唯一词典证据一致，无来源范围缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 6084,
+    "completion_tokens": 7156,
+    "total_tokens": 13240,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5853
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4164
+  },
+  "started_utc": "2026-11-13T09:53:07.871538+00:00",
+  "completed_utc": "2026-11-13T09:53:50.599481+00:00",
+  "elapsed_seconds": 42.734,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

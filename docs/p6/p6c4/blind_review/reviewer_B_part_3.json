@@ -1,0 +1,2006 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewer": "B",
+  "part": 3,
+  "count": 10,
+  "records": [
+    {
+      "stable_id": "SG25-370aed697dc5",
+      "headword": "greedy",
+      "source_hash": "26c97dd9448e6f5f34101280dd3d28d711e7e804c5fe9a9317aab1e32a29e988",
+      "original_meaning_zh": "贪婪的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "贪婪的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "source_part_of_speech": "形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "贪婪的；贪求的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:00030046"
+          ],
+          "usage_note": "对财富、权力等有过度获取欲望；不限定为吃东西。",
+          "semantic_roles": "人—过度想获取的对象"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "贪吃的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:00011179"
+          ],
+          "usage_note": "针对饮食，想吃喝超过合理数量，是宽泛贪婪提示的对象限定拆解。",
+          "semantic_roles": "人—过量饮食"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "渴望的；热切想要的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:s:00891770"
+          ],
+          "reason": "可强调对冒险、名望等的强烈愿望，不必都带中文贪婪的道德贬义；建议单列待采用。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "贪婪的；贪求的",
+          "semantic_roles": "人—过度想获取的对象",
+          "evidence_ids": [
+            "wn31:s:00030046"
+          ],
+          "layer": "core_meanings",
+          "display_group": "贪婪的；贪求的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "对财富、权力等有过度获取欲望；不限定为吃东西。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "贪吃的",
+          "semantic_roles": "人—过量饮食",
+          "evidence_ids": [
+            "wn31:s:00011179"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "贪吃的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "针对饮食，想吃喝超过合理数量，是宽泛贪婪提示的对象限定拆解。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "渴望的；热切想要的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:s:00891770"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "可强调对冒险、名望等的强烈愿望，不必都带中文贪婪的道德贬义；建议单列待采用。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "贪婪的",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "形容词",
+              "display_zh": "贪婪的；贪求的",
+              "evidence_ids": [
+                "wn31:s:00030046"
+              ],
+              "explanation": "对财富、权力等有过度获取欲望；不限定为吃东西。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "形容词",
+              "display_zh": "贪吃的",
+              "evidence_ids": [
+                "wn31:s:00011179"
+              ],
+              "explanation": "针对饮食，想吃喝超过合理数量，是宽泛贪婪提示的对象限定拆解。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:s:00891770"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先记财富/权力等过度欲求，食物对象的贪吃分开后学；不要把一切强烈愿望一律译成品德贬义。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:00011179",
+          "part_of_speech": "s",
+          "definition_en": "wanting to eat or drink more than one can reasonably consume; \"don't be greedy with the cookies\"",
+          "lemmas": [
+            "greedy"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00030046",
+          "part_of_speech": "s",
+          "definition_en": "immoderately desirous of acquiring e.g. wealth; \"they are avaricious and will do anything for money\"; \"casting covetous eyes on his neighbor's fields\"; \"a grasping old miser\"; \"grasping commercialism\"; \"greedy for money and power\"; \"grew richer and greedier\"; \"prehensile employers stingy with raises for their employees\"",
+          "lemmas": [
+            "avaricious",
+            "covetous",
+            "grabby",
+            "grasping",
+            "greedy",
+            "prehensile"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00891770",
+          "part_of_speech": "s",
+          "definition_en": "(often followed by `for') ardently or excessively desirous; \"avid for adventure\"; \"an avid ambition to succeed\"; \"fierce devouring affection\"; \"the esurient eyes of an avid curiosity\"; \"greedy for fame\"",
+          "lemmas": [
+            "avid",
+            "devouring",
+            "esurient",
+            "greedy"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6d0ef3950c22",
+      "headword": "toe",
+      "source_hash": "e3442bfb6db4daca751cf290aadf62d773602b43ee843c6a10dd94d333d7f6f9",
+      "original_meaning_zh": "脚趾",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "脚趾",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "脚趾",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:05585041"
+          ],
+          "usage_note": "脚上的一个趾头，非脚掌或整只脚。",
+          "semantic_roles": "人体足部末端"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "鞋头；鞋尖部",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:04451352"
+          ],
+          "reason": "鞋上包住脚趾的部分，实体是鞋的部件，不是脚趾本身。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "脚趾",
+          "semantic_roles": "人体足部末端",
+          "evidence_ids": [
+            "wn31:n:05585041"
+          ],
+          "layer": "core_meanings",
+          "display_group": "脚趾",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "脚上的一个趾头，非脚掌或整只脚。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "鞋头；鞋尖部",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:04451352"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "鞋上包住脚趾的部分，实体是鞋的部件，不是脚趾本身。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:04451352"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "以身体部位建立清楚映射；鞋头是可由词典证明的独立实体用途，保留待采用而不借身体部位自动扩张。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04451352",
+          "part_of_speech": "n",
+          "definition_en": "the part of footwear that provides a covering for the toes",
+          "lemmas": [
+            "toe"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05585041",
+          "part_of_speech": "n",
+          "definition_en": "one of the digits of the foot",
+          "lemmas": [
+            "toe"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-b111c6e1d318",
+      "headword": "statement",
+      "source_hash": "a5d5bfc8e4f4970603c83e7a573d81007d393b34f71ce06661965aa6e8d0728b",
+      "original_meaning_zh": "陈述；声明；报表",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "陈述",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "声明",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "报表",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "陈述；声明",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06735202"
+          ],
+          "usage_note": "口头或书面说明具体事实/情况的内容，声明强调对外表达但不是必须公开刊登。",
+          "semantic_roles": "被说出/写下的信息"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "账目报表；对账单",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:06528586"
+          ],
+          "usage_note": "显示收支/借贷的文件；原报表需此财务对象限制，不泛指任何报告表格。",
+          "semantic_roles": "收支账目文件"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "陈述（这一行为）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07217786"
+          ],
+          "usage_note": "作出陈述或断言的活动，和陈述内容分开。",
+          "semantic_roles": "陈述行为/过程"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（计算机）语句",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06597067"
+          ],
+          "reason": "程序中的一行代码，属于编程用途，原文未列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "表达；表态（非语言方式）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06736201"
+          ],
+          "reason": "衣着、行为等传递信息，不必说话或写声明。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "陈述；声明",
+          "semantic_roles": "被说出/写下的信息",
+          "evidence_ids": [
+            "wn31:n:06735202"
+          ],
+          "layer": "core_meanings",
+          "display_group": "陈述；声明",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "口头或书面说明具体事实/情况的内容，声明强调对外表达但不是必须公开刊登。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "账目报表；对账单",
+          "semantic_roles": "收支账目文件",
+          "evidence_ids": [
+            "wn31:n:06528586"
+          ],
+          "layer": "core_meanings",
+          "display_group": "账目报表；对账单",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "显示收支/借贷的文件；原报表需此财务对象限制，不泛指任何报告表格。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "陈述（这一行为）",
+          "semantic_roles": "陈述行为/过程",
+          "evidence_ids": [
+            "wn31:n:07217786"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "陈述（这一行为）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "作出陈述或断言的活动，和陈述内容分开。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（计算机）语句",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06597067"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "程序中的一行代码，属于编程用途，原文未列。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "表达；表态（非语言方式）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06736201"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "衣着、行为等传递信息，不必说话或写声明。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "陈述",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "陈述；声明",
+              "evidence_ids": [
+                "wn31:n:06735202"
+              ],
+              "explanation": "口头或书面说明具体事实/情况的内容，声明强调对外表达但不是必须公开刊登。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "陈述（这一行为）",
+              "evidence_ids": [
+                "wn31:n:07217786"
+              ],
+              "explanation": "作出陈述或断言的活动，和陈述内容分开。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "Minor",
+          "observation": "原“报表”很宽，现有WordNet具体定义仅显示收支账目文件；展示需带财务对象，不能把所有report表格均称statement。",
+          "evidence": [
+            "wn31:n:06528586"
+          ],
+          "source_only": true
+        },
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:06597067",
+            "wn31:n:06736201"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先分信息内容与财务文件；陈述行为另列以保留过程/结果差别。报表必须限制到证据实际支持的账目领域。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06528586",
+          "part_of_speech": "n",
+          "definition_en": "a document showing credits and debits",
+          "lemmas": [
+            "statement",
+            "financial_statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06597067",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) a line of code written as part of a computer program",
+          "lemmas": [
+            "instruction",
+            "command",
+            "statement",
+            "program_line"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06735202",
+          "part_of_speech": "n",
+          "definition_en": "a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc; \"according to his statement he was in London on that day\"",
+          "lemmas": [
+            "statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06736201",
+          "part_of_speech": "n",
+          "definition_en": "a nonverbal message; \"a Cadillac makes a statement about who you are\"; \"his tantrums are a statement of his need for attention\"",
+          "lemmas": [
+            "statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07217786",
+          "part_of_speech": "n",
+          "definition_en": "the act of affirming or asserting or stating something",
+          "lemmas": [
+            "affirmation",
+            "assertion",
+            "statement"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c5052532c220",
+      "headword": "bed",
+      "source_hash": "cf9a15e6558a85379fe97d331f5f4808444d5fe44aad10b8a8ca38b702757b2c",
+      "original_meaning_zh": "床",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "床",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "床",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:02821967"
+          ],
+          "usage_note": "供人睡觉的家具。",
+          "semantic_roles": "睡眠家具"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "河床；海床",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:09240545"
+          ],
+          "reason": "水体下面形成底面的地形，非睡眠家具。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "花坛；苗床",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:02822609"
+          ],
+          "reason": "种植植物的一块地，原文未列此用途。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（岩石等的）层",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:09240774",
+            "wn31:n:08676707"
+          ],
+          "reason": "地质岩层或可开采矿层，有地质对象限制。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "安置…就寝",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01502721"
+          ],
+          "reason": "使人上床睡觉；不能因床名词存在就自动覆盖动词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "床",
+          "semantic_roles": "睡眠家具",
+          "evidence_ids": [
+            "wn31:n:02821967"
+          ],
+          "layer": "core_meanings",
+          "display_group": "床",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "供人睡觉的家具。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "河床；海床",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:09240545"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "水体下面形成底面的地形，非睡眠家具。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "花坛；苗床",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:02822609"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "种植植物的一块地，原文未列此用途。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（岩石等的）层",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:09240774",
+            "wn31:n:08676707"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "地质岩层或可开采矿层，有地质对象限制。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "安置…就寝",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01502721"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "使人上床睡觉；不能因床名词存在就自动覆盖动词。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:02822609",
+            "wn31:n:08676707",
+            "wn31:n:09240545",
+            "wn31:n:09240774",
+            "wn31:v:01502721"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "原文只明确睡眠家具，先保留该单一核心；河海地形与种植地在阅读中有独立价值，显式候选等待采用。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:02821967",
+          "part_of_speech": "n",
+          "definition_en": "a piece of furniture that provides a place to sleep; \"he sat on the edge of the bed\"; \"the room had only a bed and chair\"",
+          "lemmas": [
+            "bed"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:02822609",
+          "part_of_speech": "n",
+          "definition_en": "a plot of ground in which plants are growing; \"the gardener planted a bed of roses\"",
+          "lemmas": [
+            "bed"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08676707",
+          "part_of_speech": "n",
+          "definition_en": "a stratum of ore or coal thick enough to be mined with profit; \"he worked in the coal beds\"",
+          "lemmas": [
+            "seam",
+            "bed"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09240545",
+          "part_of_speech": "n",
+          "definition_en": "a depression forming the ground under a body of water; \"he searched for treasure on the ocean bed\"",
+          "lemmas": [
+            "bed",
+            "bottom"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09240774",
+          "part_of_speech": "n",
+          "definition_en": "(geology) a stratum of rock (especially sedimentary rock); \"they found a bed of sandstone\"",
+          "lemmas": [
+            "bed"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01502721",
+          "part_of_speech": "v",
+          "definition_en": "put to bed; \"The children were bedded at ten o'clock\"",
+          "lemmas": [
+            "bed"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-503acf004b50",
+      "headword": "statute",
+      "source_hash": "0c61688aa92d204464eb81eaf544b9fa1b779900009431be62b663a6e10628c1",
+      "original_meaning_zh": "法规；法令",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "法规",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "法令",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "法规；法令（立法机关制定）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06576378"
+          ],
+          "usage_note": "由立法机构通过的法律，不把任何行政命令或笼统规定都算此词。",
+          "semantic_roles": "立法机构—制定的法律"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "法规；法令（立法机关制定）",
+          "semantic_roles": "立法机构—制定的法律",
+          "evidence_ids": [
+            "wn31:n:06576378"
+          ],
+          "layer": "core_meanings",
+          "display_group": "法规；法令（立法机关制定）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "由立法机构通过的法律，不把任何行政命令或笼统规定都算此词。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "Minor",
+          "observation": "“法规；法令”中文范围可能宽于statute；现有定义明确要求立法机构通过，需保留此限制。",
+          "evidence": [
+            "wn31:n:06576378"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "两个中文近义提示同组，补上制定者范围更能区分一般规则与statute；不能仅因原文两个词就声称两个法律概念。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06576378",
+          "part_of_speech": "n",
+          "definition_en": "an act passed by a legislative body",
+          "lemmas": [
+            "legislative_act",
+            "statute"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-9550e70a7c36",
+      "headword": "collision",
+      "source_hash": "3812f0b705ad25dc8b43f425b3c53725271dc5a9c597f98dad593b6c645ee6d6",
+      "original_meaning_zh": "碰撞；冲突",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "碰撞",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "冲突",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "碰撞",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07316161"
+          ],
+          "usage_note": "移动物体猛烈相撞，可构成交通等事故。",
+          "semantic_roles": "移动物体相互撞击"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "冲突",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07197660"
+          ],
+          "usage_note": "相反观点、态度或目标之间冲突；不要求物体接触。",
+          "semantic_roles": "观点/目标对立"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（物理）碰撞",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07317160"
+          ],
+          "usage_note": "两个或更多物体/粒子短时相遇接触，可交换能量或改变方向，未必是事故。",
+          "semantic_roles": "物理粒子/物体事件"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "碰撞",
+          "semantic_roles": "移动物体相互撞击",
+          "evidence_ids": [
+            "wn31:n:07316161"
+          ],
+          "layer": "core_meanings",
+          "display_group": "碰撞",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "移动物体猛烈相撞，可构成交通等事故。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "冲突",
+          "semantic_roles": "观点/目标对立",
+          "evidence_ids": [
+            "wn31:n:07197660"
+          ],
+          "layer": "core_meanings",
+          "display_group": "冲突",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "相反观点、态度或目标之间冲突；不要求物体接触。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（物理）碰撞",
+          "semantic_roles": "物理粒子/物体事件",
+          "evidence_ids": [
+            "wn31:n:07317160"
+          ],
+          "layer": "other_meanings",
+          "display_group": "（物理）碰撞",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "两个或更多物体/粒子短时相遇接触，可交换能量或改变方向，未必是事故。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "碰撞",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "碰撞",
+              "evidence_ids": [
+                "wn31:n:07316161"
+              ],
+              "explanation": "移动物体猛烈相撞，可构成交通等事故。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "（物理）碰撞",
+              "evidence_ids": [
+                "wn31:n:07317160"
+              ],
+              "explanation": "两个或更多物体/粒子短时相遇接触，可交换能量或改变方向，未必是事故。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "事故碰撞和抽象冲突分别首记，物理事件有领域限制才放其他；专业项后学并不意味着其在专业语料中低频。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07197660",
+          "part_of_speech": "n",
+          "definition_en": "a conflict of opposed ideas or attitudes or goals; \"a collision of interests\"",
+          "lemmas": [
+            "collision"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07316161",
+          "part_of_speech": "n",
+          "definition_en": "an accident resulting from violent impact of a moving object; \"three passengers were killed in the collision\"; \"the collision of the two ships resulted in a serious oil spill\"",
+          "lemmas": [
+            "collision"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07317160",
+          "part_of_speech": "n",
+          "definition_en": "(physics) a brief event in which two or more bodies come together; \"the collision of the particles resulted in an exchange of energy and a change of direction\"",
+          "lemmas": [
+            "collision",
+            "hit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-e428ee1e7df9",
+      "headword": "ambitious",
+      "source_hash": "dfe2e9f6dcd566f740368937ace48adad21397eeb92af6d6efab7b66217c7a6a",
+      "original_meaning_zh": "有野心的；雄心勃勃的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "有野心的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "雄心勃勃的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 10
+        }
+      ],
+      "source_part_of_speech": "形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "有抱负的；雄心勃勃的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:00104850"
+          ],
+          "usage_note": "人强烈希望成功或取得成就，不必含恶意或贬义的野心。",
+          "semantic_roles": "有成就愿望的人"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "（计划等）宏大的；要求很高的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:00749254"
+          ],
+          "usage_note": "计划/任务需要充分运用能力或资源；是“雄心勃勃”用于非人对象的AI拆解，不能把计划当有情感的人。",
+          "semantic_roles": "计划/任务—能力及资源要求"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "有抱负的；雄心勃勃的",
+          "semantic_roles": "有成就愿望的人",
+          "evidence_ids": [
+            "wn31:a:00104850"
+          ],
+          "layer": "core_meanings",
+          "display_group": "有抱负的；雄心勃勃的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "人强烈希望成功或取得成就，不必含恶意或贬义的野心。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "（计划等）宏大的；要求很高的",
+          "semantic_roles": "计划/任务—能力及资源要求",
+          "evidence_ids": [
+            "wn31:s:00749254"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "（计划等）宏大的；要求很高的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "计划/任务需要充分运用能力或资源；是“雄心勃勃”用于非人对象的AI拆解，不能把计划当有情感的人。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "original_text": "雄心勃勃的",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "形容词",
+              "display_zh": "有抱负的；雄心勃勃的",
+              "evidence_ids": [
+                "wn31:a:00104850"
+              ],
+              "explanation": "人强烈希望成功或取得成就，不必含恶意或贬义的野心。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "形容词",
+              "display_zh": "（计划等）宏大的；要求很高的",
+              "evidence_ids": [
+                "wn31:s:00749254"
+              ],
+              "explanation": "计划/任务需要充分运用能力或资源；是“雄心勃勃”用于非人对象的AI拆解，不能把计划当有情感的人。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "先记人的成功愿望，再辨计划要求高的对象变化；“有野心”不能被误读为词义必然贬损。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "将原“雄心勃勃”延展到任务/计划所需资源的释义范围，建议人工确认；当前明示AI拆解。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00104850",
+          "part_of_speech": "a",
+          "definition_en": "having a strong desire for success or achievement",
+          "lemmas": [
+            "ambitious"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00749254",
+          "part_of_speech": "s",
+          "definition_en": "requiring full use of your abilities or resources; \"ambitious schedule\"; \"performed the most challenging task without a mistake\"",
+          "lemmas": [
+            "ambitious",
+            "challenging"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-ebe4136fc888",
+      "headword": "slim",
+      "source_hash": "f260c1a7c8e15dfbaf80c43142e5b87d13eeea2d39b9919c8211ae4667442f60",
+      "original_meaning_zh": "苗条的；微小的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "苗条的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "微小的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "source_part_of_speech": "形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "苗条的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:00994085"
+          ],
+          "usage_note": "形容人体纤细，非一般物件尺寸微小。",
+          "semantic_roles": "人体身材"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "微小的；很小的（数量、机会等）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:01397749"
+          ],
+          "usage_note": "数量小或机会很小；不是任意物理尺寸tiny的通用替换。",
+          "semantic_roles": "数量/可能性程度"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "减肥；变瘦",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00045548"
+          ],
+          "reason": "减轻体重的动作，原文只列形容词状态。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "苗条的",
+          "semantic_roles": "人体身材",
+          "evidence_ids": [
+            "wn31:s:00994085"
+          ],
+          "layer": "core_meanings",
+          "display_group": "苗条的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "形容人体纤细，非一般物件尺寸微小。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "微小的；很小的（数量、机会等）",
+          "semantic_roles": "数量/可能性程度",
+          "evidence_ids": [
+            "wn31:s:01397749"
+          ],
+          "layer": "core_meanings",
+          "display_group": "微小的；很小的（数量、机会等）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "数量小或机会很小；不是任意物理尺寸tiny的通用替换。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "减肥；变瘦",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00045548"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "减轻体重的动作，原文只列形容词状态。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:v:00045548"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "身材与数量/机会两种对象分别首记；微小提示需有对象，避免将slim用于所有小物体。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:00994085",
+          "part_of_speech": "s",
+          "definition_en": "being of delicate or slender build; \"she was slender as a willow shoot is slender\"- Frank Norris; \"a slim girl with straight blonde hair\"; \"watched her slight figure cross the street\"",
+          "lemmas": [
+            "slender",
+            "slight",
+            "slim",
+            "svelte"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01397749",
+          "part_of_speech": "s",
+          "definition_en": "small in quantity; \"slender wages\"; \"a slim chance of winning\"; \"a small surplus\"",
+          "lemmas": [
+            "slender",
+            "slim"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00045548",
+          "part_of_speech": "v",
+          "definition_en": "take off weight",
+          "lemmas": [
+            "reduce",
+            "melt_off",
+            "slim",
+            "slenderize",
+            "thin",
+            "slim_down"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-abcd0ee1fc2c",
+      "headword": "declaration",
+      "source_hash": "729efe4cd0ef4b49ae485849a0fe82415376b69a8b4dedf505b3fd55e9db7c61",
+      "original_meaning_zh": "公告；声明；宣布",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "公告",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "声明",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "宣布",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "公告；声明",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06738907",
+            "wn31:n:06738626"
+          ],
+          "usage_note": "正式公开公告或明确有力的声明；并非所有声明都须公开发布。",
+          "semantic_roles": "宣布的内容/陈述结果",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "公告；正式公开声明",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:06738907"
+              ],
+              "usage_note": "正式向公众宣布的内容。",
+              "semantic_roles": "公开宣布结果"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "声明；明确表态",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:06738626"
+              ],
+              "usage_note": "强调而明确的口头或书面陈述，不必都面向公众。",
+              "semantic_roles": "明确陈述内容"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "宣布（这一行为）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "pub:B:declaration"
+          ],
+          "usage_note": "declaration是宣布这一行为的名词，中文“宣布”在本记录仍作名词提示，不反推英语动词。",
+          "semantic_roles": "宣布行为/过程"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "申报；申报单",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:07218770",
+            "pub:B:declaration"
+          ],
+          "reason": "税费相关货物或财产的申报，区别于一般对外公告。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（法律）未宣誓陈述",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06748966",
+            "pub:B:declaration"
+          ],
+          "reason": "在一定条件下可作为证据的陈述，有法律范围；不把所有声明视作法律证词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "公告；正式公开声明",
+          "semantic_roles": "公开宣布结果",
+          "evidence_ids": [
+            "wn31:n:06738907"
+          ],
+          "layer": "core_meanings",
+          "display_group": "公告；声明",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "正式向公众宣布的内容。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "声明；明确表态",
+          "semantic_roles": "明确陈述内容",
+          "evidence_ids": [
+            "wn31:n:06738626"
+          ],
+          "layer": "core_meanings",
+          "display_group": "公告；声明",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "强调而明确的口头或书面陈述，不必都面向公众。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "宣布（这一行为）",
+          "semantic_roles": "宣布行为/过程",
+          "evidence_ids": [
+            "pub:B:declaration"
+          ],
+          "layer": "core_meanings",
+          "display_group": "宣布（这一行为）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "declaration是宣布这一行为的名词，中文“宣布”在本记录仍作名词提示，不反推英语动词。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "申报；申报单",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:07218770",
+            "pub:B:declaration"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "税费相关货物或财产的申报，区别于一般对外公告。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（法律）未宣誓陈述",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06748966",
+            "pub:B:declaration"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "在一定条件下可作为证据的陈述，有法律范围；不把所有声明视作法律证词。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:B:declaration",
+            "wn31:n:06748966",
+            "wn31:n:07218770"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "同词性也区分公告/声明内容与宣布行为，源“宣布”不被误标成动词；税费申报等另外列候选。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:B:declaration",
+          "headword": "declaration",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/declaration",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词可指正式公告/明确声明、宣布这一行为及其宣布内容或文件；还列用于税费评估的货物等申报，以及一定条件下可采作法律证据的未宣誓陈述。保存原创概述。",
+          "pos_supported": [
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06738626",
+          "part_of_speech": "n",
+          "definition_en": "a statement that is emphatic and explicit (spoken or written)",
+          "lemmas": [
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06738907",
+          "part_of_speech": "n",
+          "definition_en": "a formal public statement; \"the government made an announcement about changes in the drug war\"; \"a declaration of independence\"",
+          "lemmas": [
+            "announcement",
+            "proclamation",
+            "annunciation",
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06748966",
+          "part_of_speech": "n",
+          "definition_en": "(law) unsworn statement that can be admitted in evidence in a legal transaction; \"his declaration of innocence\"",
+          "lemmas": [
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07218770",
+          "part_of_speech": "n",
+          "definition_en": "a statement of taxable goods or of dutiable properties",
+          "lemmas": [
+            "declaration"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-020dae383219",
+      "headword": "competitive",
+      "source_hash": "5f69198a8aa7d48297b8fd554b5de6b8e245cc16069624a99ede15227e5bb267",
+      "original_meaning_zh": "竞争的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "竞争的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "source_part_of_speech": "形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "竞争的；涉及竞争的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:00514412"
+          ],
+          "usage_note": "活动/环境涉及竞争，不自动含能胜出或好胜个性。",
+          "semantic_roles": "活动/位置中的竞争关系"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "有竞争力的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:competitive"
+          ],
+          "reason": "价格、服务等能有效参与竞争，不等于仅仅涉及竞争；职场与消费阅读有独立理解价值。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "好胜的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:competitive",
+            "wn31:s:00083473"
+          ],
+          "reason": "人的争胜倾向，是性格而非所有竞争活动共有的属性。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "竞争的；涉及竞争的",
+          "semantic_roles": "活动/位置中的竞争关系",
+          "evidence_ids": [
+            "wn31:a:00514412"
+          ],
+          "layer": "core_meanings",
+          "display_group": "竞争的；涉及竞争的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "活动/环境涉及竞争，不自动含能胜出或好胜个性。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "有竞争力的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:competitive"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "价格、服务等能有效参与竞争，不等于仅仅涉及竞争；职场与消费阅读有独立理解价值。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "好胜的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:competitive",
+            "wn31:s:00083473"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "人的争胜倾向，是性格而非所有竞争活动共有的属性。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:competitive",
+            "wn31:s:00083473"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "原文“竞争的”只明确关系形容词；竞争力与好胜方向均需独立候选，不能借宽中文暗算成已覆盖核心。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:competitive",
+          "headword": "competitive",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/competitive",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "竞争相关的形容词之外，还可指能有效竞争、有竞争力的价格或服务，以及好胜的人。词典分用法不等于各义有官方考试频率。",
+          "pos_supported": [
+            "形容词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:00514412",
+          "part_of_speech": "a",
+          "definition_en": "involving competition or competitiveness; \"competitive games\"; \"to improve one's competitive position\"",
+          "lemmas": [
+            "competitive",
+            "competitory"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00083473",
+          "part_of_speech": "s",
+          "definition_en": "showing a fighting disposition; \"highly competitive sales representative\"; \"militant in fighting for better wages for workers\"; \"his self-assertive and ubiquitous energy\"",
+          "lemmas": [
+            "competitive",
+            "militant"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "external_access_failures": [
+    {
+      "headword": "clause",
+      "url": "https://dictionary.cambridge.org/dictionary/english/clause",
+      "status": 403,
+      "observation": "web open returned 403 Forbidden; no content used."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_11",
+  "request_hash": "6c68f4a0af6703f8aa6b2d159da1bb47c55ba1bfa64fc584e49cf1923ed3a02a",
+  "started_utc": "2026-11-13T08:16:13.505954+00:00",
+  "completed_utc": "2026-11-13T08:17:47.178761+00:00",
+  "elapsed_seconds": 93.672,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b179e215-754f-4fda-af3c-c169452f206c",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3505,
+    "completion_tokens": 4933,
+    "total_tokens": 8438,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4438
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3505
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-2161403032b8\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source noun sense '资深者' (s003) lacks a matching noun evidence among supplied WordNet entries; adjective evidence wn31:a:02107054 cannot establish noun POS. Candidate correctly reserves it as original_preserved_evidence_pending; no correction is proposed until external evidence supports a noun 'veteran/senior person'.\",\n          \"evidence_ids\": [\"wn31:a:02107054\"],\n          \"source_sense_ids\": [\"s003\"],\n          \"candidate_group_ref\": \"reserved_original_items\",\n          \"proposed_fix\": \"\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source noun sense '高年级学生' (s004) may include both high school and college final-year students. Supplied noun evidence wn31:n:10598514 only defines undergraduate college senior, while adjective satellite wn31:s:01017278 covers high school but is not noun. Candidate core3 restricts to college with parenthetical note; high-school senior noun use remains unrepresented pending noun evidence.\",\n          \"evidence_ids\": [\"wn31:n:10598514\", \"wn31:s:01017278\"],\n          \"source_sense_ids\": [\"s004\"],\n          \"candidate_group_ref\": \"SG25-2161403032b8:p6c5:core_meanings:3\",\n          \"proposed_fix\": \"\"\n        }\n      ],\n      \"preferences\": [\n        \"The current separation of age-related and rank-related adjectives is pedagogically clear and well supported by the supplied evidence.\"\n      ],\n      \"note\": \"Candidate correctly separates adjective '年长的' and '高级的' with distinct evidence. Noun '高年级学生' is correctly conditioned to college senior based on available noun evidence, though the source gloss is broader. Source noun '资深者' is appropriately reserved as evidence pending because no matching noun definition was supplied. Dictionary additions are explicitly marked as not adopted, which is consistentwith the rules.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

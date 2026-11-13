@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_032",
+  "kind": "verify",
+  "request_hash": "9a6c0b33aa14f3c42cfb805246c9d3501bd77cf9d551403321a0fb2d5d211c24",
+  "input_ids": [
+    "SG25-dd2638abd6cd",
+    "SG25-715dc8493c36"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a1f32ed6-9f89-45d9-a918-6d1997c04444",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-dd2638abd6cd\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文'征服'可能指以武力征服或压服；英语suppress无领土征服证据，提供的词项仅支持权威压制/镇压（wn31:v:00463047）。候选将其置于held，未映射到任何层级，来源范围与英语证据均不足，无法确认覆盖。\",\n          \"evidence_ids\": [\"wn31:v:00463047\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心'抑制'与原文一致；证据wn31:v:00153784'减弱至停止'覆盖一般抑制行为/反应，未加对象排他限制。\",\n          \"evidence_ids\": [\"wn31:v:00153784\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文'禁止'未限对象；扩展将禁止限为阻止表达、流通或运作，仅覆盖英语suppress的部分压制/查禁义，泛禁范围未承接。\",\n          \"evidence_ids\": [\"web:suppress\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_scope_pending\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [],\n          \"evidence_ids\": [\"wn31:v:00463047\"],\n          \"reason\": \"原文'征服'未覆盖；英语证据支持权威压制/镇压，不证明领土征服，候选held但无任何层级承接，来源范围待核。\",\n          \"counterexample\": \"suppress an uprising 表示镇压起义，而非征服领土。\",\n          \"repair_suggestion\": \"保留held；若教材语境指武力/权威压制，应新增'镇压/制服'并链接wn31:v:00463047；否则标注原译不精确。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"context_limit_pending\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-dd2638abd6cd:extended:1\"],\n          \"evidence_ids\": [\"web:suppress\"],\n          \"reason\": \"扩展添加'阻止表达、流通或运作'限制，原文未限；该限制有证据但需标来源待核，不能视为完整覆盖泛禁。\",\n          \"counterexample\": \"suppress a book 表示查禁出版物，但不是一般行政禁止。\",\n          \"repair_suggestion\": \"在注释标明该语境限制来自英语用法；保留'禁止'的剩余一般范围待核，不默认已完全覆盖。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001'征服'的教材真实范围未明确；若指压制叛乱，英文suppress适用；若指占领领土，则不适用。\",\n        \"s003'禁止'的源范围是否需要泛化还是仅限阻止表达/流通等，未提供足够上下文。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s002核心'抑制'证据充分；s003扩展限缩但泛禁范围待核；s001'征服'held且未解决英语是否支持对应义，整体partial。\"\n    },\n    {\n      \"id\": \"SG25-715dc8493c36\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心'私人的'与英语private'concerning one person exclusively/deeply personal'一致；证据覆盖个人与非公开属性，无不当限制。\",\n          \"evidence_ids\": [\"wn31:s:01772598\", \"wn31:s:01773890\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"原文'私有的'指私有所有权；扩展括注'非公共、专属于个人或群体'包含private club/private discussion等非所有权的专属/非公共用法，超出严格私有范围。\",\n          \"evidence_ids\": [\"wn31:a:01864034\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-715dc8493c36:extended:1\"],\n          \"evidence_ids\": [\"wn31:a:01864034\"],\n          \"reason\": \"扩展把'私有的'释为'非公共、专属于个人或群体'，包含private property之外的非公共/专属用法；原文只含私有所有权，新增范围需标待核。\",\n          \"counterexample\": \"private club 表示专属/非公共，但不等于私有财产所有权。\",\n          \"repair_suggestion\": \"收紧为'私有的（如私有财产）'，或将'非公共/专属'标注为英语private扩展义，不并入原文'私有的'唯一范围。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002'私有的'是否需要严格财产权还是可包含专属/非公共，教材范围未明确。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001核心'私人的'证据充分；s002原文'私有的'被覆盖，但扩展括注含'非公共/专属'的轻微范围扩大，应标待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4689,
+    "completion_tokens": 6526,
+    "total_tokens": 11215,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5311
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3025
+  },
+  "started_utc": "2026-11-13T09:58:22.504656+00:00",
+  "completed_utc": "2026-11-13T09:59:47.858605+00:00",
+  "elapsed_seconds": 85.344,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

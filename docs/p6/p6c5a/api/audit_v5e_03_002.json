@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_002",
+  "kind": "audit",
+  "request_hash": "49e98d6209017b09c3f7e0e604586125b870c949be3c648615cd60bf85fba16f",
+  "input_ids": [
+    "SG25-2549c096fc69",
+    "SG25-2e79db8f9719",
+    "SG25-468c7b6449dd",
+    "SG25-a9c9cca61f97",
+    "SG25-2b578cbff1f5"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "40622ed9-180e-4713-9f36-fbd3b08d627a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-2549c096fc69\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"调整（一般性地改变或校准）\",\"relation\":\"语义等价\",\"reason\":\"原文“调整”与词典 alter/regulate 义相符，核心组未额外添加对象或领域限制。\",\"evidence_ids\":[\"wn31:v:00296959\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"适应（自身适应新条件）\",\"relation\":\"语义等价\",\"reason\":\"原文“适应”对应 adapt/conform oneself to new conditions；组注将 adjust to 说明为教学搭配示例，不是排他性语料限制。\",\"evidence_ids\":[\"wn31:v:00150107\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别由核心“调整”和“适应”覆盖；未把 align、保险理赔等词典其他义混入，覆盖完整。\"},{\"id\":\"SG25-2e79db8f9719\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"陪审团（法院中宣誓裁决事实的公民团体）\",\"relation\":\"语义等价\",\"reason\":\"与司法陪审团定义一致，核心组未混入竞赛评审团。\",\"evidence_ids\":[\"wn31:n:08431076\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"司法陪审团义完整；竞赛评审团列为未采用外部候选，不构成原文覆盖缺口。\"},{\"id\":\"SG25-468c7b6449dd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"公平（公正的品质）\",\"relation\":\"语义等价\",\"reason\":\"“公平”与 being just or fair 的品质义一致；与近义项合并展示未改变范围。\",\"evidence_ids\":[\"wn31:n:04857348\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"公正（公正的品质）\",\"relation\":\"语义等价\",\"reason\":\"“公正”与 being just or fair 的品质义一致；核心组保留公正品质范围。\",\"evidence_ids\":[\"wn31:n:04857348\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"公道（公正的品质）\",\"relation\":\"语义等价\",\"reason\":\"“公道”与 being just or fair 的品质义一致；未把法官、司法裁判义冒充原文已列。\",\"evidence_ids\":[\"wn31:n:04857348\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义源义合并为公正品质核心组，法律裁判/法官义未混入；覆盖完整。\"},{\"id\":\"SG25-a9c9cca61f97\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"判断（评估或形成判断的行为/过程）\",\"relation\":\"语义等价\",\"reason\":\"对应 act of judging/assessing 及认知判断过程；核心组未加入法律限制。\",\"evidence_ids\":[\"wn31:n:00875745\",\"wn31:n:05797437\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"判决（法院裁决或法律文书）\",\"relation\":\"语义等价\",\"reason\":\"对应法院裁决及法律文书义，法律域来自原文“判决”本身。\",\"evidence_ids\":[\"wn31:n:01190300\",\"wn31:n:06563775\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"判断与法律判决分列核心，两个源义均有对应证据；意见、判断力等词典附加义未当作原文已列。\"},{\"id\":\"SG25-2b578cbff1f5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"证明合理（提供理由证明正当）\",\"relation\":\"语义等价\",\"reason\":\"对应 show to be right by providing justification/proof；核心组保留证明正当义。\",\"evidence_ids\":[\"wn31:v:00897737\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"为……辩护（提出理由支持或申辩）\",\"relation\":\"语义等价\",\"reason\":\"英语 justify 的辩护用法要求提出理由/证明正当；组注明确不等同律师出庭代理，属必要词汇边界而非新增对象限制。\",\"evidence_ids\":[\"wn31:v:00897737\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"两个源义均保留；s002 在扩展层以“提出理由支持/申辩”限定，未把排版调整或神学称义等词典其他义混入。\"}]}",
+  "usage": {
+    "prompt_tokens": 5009,
+    "completion_tokens": 11328,
+    "total_tokens": 16337,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10085
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3089
+  },
+  "started_utc": "2026-11-13T09:44:50.822862+00:00",
+  "completed_utc": "2026-11-13T09:45:55.183487+00:00",
+  "elapsed_seconds": 64.359,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

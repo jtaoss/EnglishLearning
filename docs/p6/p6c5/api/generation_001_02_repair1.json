@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_02_repair1",
+  "request_hash": "ee9ef13d74fccbd17ad62de3a4dfaef3bc180569d6220bf46f9c18c549ca75c5",
+  "started_utc": "2026-11-13T08:15:39.269988+00:00",
+  "completed_utc": "2026-11-13T08:15:58.680100+00:00",
+  "elapsed_seconds": 19.406,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8efaaae2-9888-4702-980e-8fd77e81e772",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4144,
+    "completion_tokens": 3209,
+    "total_tokens": 7353,
+    "prompt_tokens_details": {
+      "cached_tokens": 3200
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2691
+    },
+    "prompt_cache_hit_tokens": 3200,
+    "prompt_cache_miss_tokens": 944
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-46023b2bfb8b\",\"word\":\"derive\",\"core\":[[\"从…获得；得到\",\"动词\",[\"s001\"],[\"wn31:v:02297086\"],\"及物用法：从某来源获得某物，如 derive pleasure from；对象为获得之物。\"],[\"源自；来自\",\"动词\",[\"s002\"],[\"wn31:v:00252677\"],\"不及物用法：说明名称、词语等的来源，come from。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"推导出；经推理得出\",\"动词\",[\"wn31:v:00638236\"],\"原文未列逻辑推理义；词典有独立证据，仅作外部候选，不并入核心。\"]],\"reason\":\"原中文两个动词片段分别对应及物“从来源获得”和不及物“源自”；先分立这两个方向，避免把“获得”与“来源”混为同组。推理义未在原文出现，仅列候选。\",\"flags\":[[\"Minor\",\"source_coverage_gap\",\"原中文未列“推导/推理”义，词典同词头有独立证据；已放入 additions 候选，未并入核心。\"]]},{\"id\":\"SG25-7688bd7c4272\",\"word\":\"satisfy\",\"core\":[[\"满足（需要、愿望等）\",\"动词\",[\"s001\"],[\"wn31:v:01185870\"],\"及物用法：填补需要、愿望，对象为 need/want 等。\"],[\"使满意；使感到满足\",\"动词\",[\"s001\"],[\"wn31:v:01820398\"],\"对象为人，使其满意或高兴；与满足需求的对象不同。\"],[\"符合；达到（要求、期望）\",\"动词\",[\"s002\"],[\"wn31:v:02677669\",\"wn31:v:01185870\"],\"对象为要求、期望、条件，强调达到标准。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"同一“满足”按对象拆为满足需要/愿望（01185870）与使人满意（01820398）；对象分别为需求和人的感受，证据不同。\"},\"additions\":[],\"reason\":\"“满足”按对象区分需求与人的感受，“符合”对应要求/期望的达到；保持三段以免人物对象与条件对象混同。\",\"flags\":[]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

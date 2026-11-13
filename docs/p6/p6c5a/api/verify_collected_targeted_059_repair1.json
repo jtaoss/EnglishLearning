@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_059_repair1",
+  "kind": "verify",
+  "request_hash": "64bc9e839b94059f0132372f8abc14953a78f9b695db61e0cb02f07b5ac50bc8",
+  "input_ids": [
+    "SG25-909802b269de",
+    "SG25-b6813f3af2d4"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0a5cdb45-a1be-43a6-92b5-b1a15f9ff46e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-909802b269de\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心组“传播；扩散（信息等）”将使动与自变合并为概括表达，括号内“等”表明信息仅为示例而非排他限制，未缩小源动词“传播”的一般对象范围。证据 wn31:v:00970243、wn31:v:00971905 支持信息传播，但未对其他传播对象（如疾病、文化）施加限制。\",\n          \"evidence_ids\": [\"wn31:v:00970243\", \"wn31:v:00971905\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“展开；铺开”直接对应 wn31:v:01582662 的从折叠或关闭状态打开，保留源动词“展开”的典型动作。\",\n          \"evidence_ids\": [\"wn31:v:01582662\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“传播；扩散（过程或结果）”覆盖源名词“传播”，证据 wn31:n:00368802 和 wn31:n:07460496 支持传播作为动作过程或分布结果。\",\n          \"evidence_ids\": [\"wn31:n:00368802\", \"wn31:n:07460496\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s004“范围”在候选扩展组仅引用 pub:spread，该证据 limitation 明确声明其可能包含范围评注，不是独立词典频率证据；现有 WordNet 名词义项未直接定义静态范围/覆盖广度（n:00368802 为动作，n:07460496 为过程或结果分布，n:04760114 仅价差）。因此该源义缺少可靠英语词典证据。\",\n          \"evidence_ids\": [\"pub:spread\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Moderate\",\n          \"kind\": \"evidence_insufficient\",\n          \"source_ids\": [\"s004\"],\n          \"group_ids\": [\"SG25-909802b269de:p6c4:extended_meanings:2\"],\n          \"evidence_ids\": [\"pub:spread\"],\n          \"reason\": \"s004“范围”在候选扩展组只引用 pub:spread；该证据 limitation 声明其可能含范围评注，不是独立词典频率证据，且提供的 WordNet 名词义项未直接定义静态范围/覆盖广度。因此该源义缺少可靠英语词典证据，映射无法确认。\",\n          \"counterexample\": \"\",\n          \"repair_suggestion\": \"补入独立词典中 spread 名词表 range/extent 的义项；若不能补入，应将 s004 保持“无法确定/待核”，不要将 pub:spread 当成已核验证据。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s004 的“范围/覆盖广度”是否对应英语静态 extent/scope 尚待独立词典核验；现有 WordNet 证据未直接确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"动词传播/展开及名词传播覆盖良好；名词范围因证据不足标为无法确定，但不构成已确认的范围丢失。\"\n    },\n    {\n      \"id\": \"SG25-b6813f3af2d4\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源片段 pos_evidence=unresolved_multi_pos，且词级 source_pos 为“名词；动词”，无法确定“浸”的具体词性。候选同时给出动词核心组与名词扩展组，可能覆盖两种读法，但组 POS 是推荐词性，不能证明源词性。\",\n          \"evidence_ids\": [\"wn31:v:01579924\", \"wn31:n:07379034\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源词性未定；候选仅给出动词“蘸”（wn31:v:01194845）。若原文为名词用法（如蘸料），则可能未覆盖，但现有证据不能确认名词义属于源义范围，因此无法判定等价或缺陷。\",\n          \"evidence_ids\": [\"wn31:v:01194845\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源词性未定；候选分列动词“下降（短暂地）”与名词“下降（量的减少）”，两组联合可能覆盖两种读法，但不能确认源义具体词性，故关系无法确定。\",\n          \"evidence_ids\": [\"wn31:v:00433014\", \"wn31:n:05119135\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"三个源片段 pos_evidence=unresolved_multi_pos，source_pos 为“名词；动词”，无法从原文判定每个片段具体词性；候选按动词/名词分组为推荐，不能作为源词性证明。\",\n        \"s002 仅链接动词“蘸”，若原文存在名词用法则可能未覆盖，但现有证据不能确认该用法属于源义范围。\",\n        \"s001/s003 动词与名词两读是否均属源义待核；在词性未定前不能确认语义等价。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"候选在注释中已披露逐义源词性未知；没有证据显示具体源义被遗漏或错误限定，故暂不判为已确认问题，仅保留待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 9138,
+    "completion_tokens": 6822,
+    "total_tokens": 15960,
+    "prompt_tokens_details": {
+      "cached_tokens": 7808
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5531
+    },
+    "prompt_cache_hit_tokens": 7808,
+    "prompt_cache_miss_tokens": 1330
+  },
+  "started_utc": "2026-11-13T10:03:01.167231+00:00",
+  "completed_utc": "2026-11-13T10:04:30.923226+00:00",
+  "elapsed_seconds": 89.766,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

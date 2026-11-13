@@ -1,0 +1,15 @@
+{
+  "policy": {
+    "known_before4_and_after4_plus_pursue": true,
+    "all_primary_Major_or_Critical_proposals": true,
+    "all_primary_narrowing_broadening_or_mismatch_relations": true,
+    "all24_preselected_holdouts_comparison": true,
+    "unknown_only_words": "remain explicitly pending; not all automatically re-reviewed just to erase uncertainty",
+    "no_new_IDs_or_human_approval": true
+  },
+  "script_sha256": "7e0546261bb19a4666d823bbd95fb42f7fd7af5f12b53178d589225f432ac947",
+  "original_manifest_sha256": "ee3b65f759aecd7ffc66e889a9b23c3c80c19c2008cd97cf3e85587a97ab8b7f",
+  "secondary_model": "deepseek-v4-pro",
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950",
+  "candidate_changes_allowed": false
+}

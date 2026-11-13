@@ -1,0 +1,12 @@
+{
+  "repeat_build_identical": true,
+  "before": {
+    "independent_quality_review.json": "518807c4c4f85374a9dfb5289edf693fff55cf1c8a6039179be4d5b9e5369979",
+    "REVISED_CANDIDATES.json": "0d3657a097a3e9565aed6a3876c2671af06c1c2f6be9a88a766fbac66a7397cd"
+  },
+  "after": {
+    "independent_quality_review.json": "518807c4c4f85374a9dfb5289edf693fff55cf1c8a6039179be4d5b9e5369979",
+    "REVISED_CANDIDATES.json": "0d3657a097a3e9565aed6a3876c2671af06c1c2f6be9a88a766fbac66a7397cd"
+  },
+  "model_or_network_calls_in_rebuild": 0
+}

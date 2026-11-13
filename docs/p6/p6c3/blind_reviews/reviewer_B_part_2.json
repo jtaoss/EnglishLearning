@@ -1,0 +1,1466 @@
+{
+  "part": 2,
+  "record_count": 15,
+  "input_sha256": "fcaa13db259e16251780ada08a7231cfc2799dbf5079580de80f92dff24f96cd",
+  "records": [
+    {
+      "stable_id": "SG25-fa44132b238e",
+      "headword": "discovery",
+      "source_hash": "72987777b02e7873722ffd022e29cd6eacd64a5e30505ef1ffdc11ae2b78cb04",
+      "original_meaning_zh": "发现；发觉；突破性进展",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "发现",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "发觉",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "突破性进展",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 11
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "发现、发觉这一过程",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00043933"
+          ],
+          "reason": "“发觉”突出动作过程，仍按原词的名词语法理解。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "发现的事物或成果",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07229092"
+          ],
+          "reason": "同一“发现”也能指被发现的对象，而非发现这一行动。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s003",
+          "text": "突破性进展",
+          "reason": "突破性进展可能是发现造成的结果；一般 discovery 不保证突破，也不包含一切进展。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "增加结果强度",
+          "observation": "“突破性进展”能否还原为特定发现，需要原例。",
+          "evidence_ids": [
+            "wn31:n:05816226",
+            "wn31:n:07229092"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "发现可以指发现这件事或所得结果，两种名词用法会影响量词和句意。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00043933",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of discovering something",
+          "selected_headwords": [
+            "discovery"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07229092",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "something that is discovered",
+          "selected_headwords": [
+            "discovery"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:05816226",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a productive insight",
+          "selected_headwords": [
+            "discovery"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "哪项实际发现被称作突破性进展？"
+      ],
+      "ai_semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "interpretation": "AI语义拆解",
+          "reason": "名词“发现”同时容许事件和所得事物两种解读；WordNet 分别收录行动与被发现之物，来源仍是同一个片段。"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f1f61cc7216e",
+      "headword": "adapt",
+      "source_hash": "dc412447a106d39d7d81ec4c479d670e2be525e9f51cc665592bc272fc47bdb9",
+      "original_meaning_zh": "使适应；改编；调整",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "使适应",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "改编",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "调整",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "调整，使适应（新用途或条件）",
+          "source_sense_ids": [
+            "s001",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00300361",
+            "mw:adapt"
+          ],
+          "reason": "将某物改变到适合新条件，是有方向的调整。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "改编（作品）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "ox:adapt",
+            "wn31:v:00300361"
+          ],
+          "reason": "原著改变呈现形式，是独立且可识别的使用场景。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "适应（环境、变化等），常接 to",
+          "evidence_ids": [
+            "wn31:v:00150107",
+            "mw:adapt"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "适应新需要与改编作品都值得首次记忆；笼统的“调整”须有目的。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00300361",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "make fit for, or change to suit a new purpose; \"Adapt our native cuisine to the available food resources of the new country\"",
+          "selected_headwords": [
+            "adapt"
+          ]
+        },
+        {
+          "evidence_id": "mw:adapt",
+          "publisher": "Merriam-Webster",
+          "source": "https://www.merriam-webster.com/dictionary/adapt",
+          "observation_zh": "及物用法强调修改以适合新用途，不及物用法可指适应环境。",
+          "selected_headwords": [
+            "adapt"
+          ]
+        },
+        {
+          "evidence_id": "ox:adapt",
+          "publisher": "Oxford University Press · Oxford Advanced Learner’s Dictionary",
+          "source": "https://www.oxfordlearnersdictionaries.co.uk/definition/english/adapt",
+          "observation_zh": "可把作品改变为适合另一种演出或传播媒介的形式。",
+          "selected_headwords": [
+            "adapt"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00150107",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "adapt or conform oneself to new or different conditions; \"We must adjust to the bad economic situation\"",
+          "selected_headwords": [
+            "adapt"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-7cb194d9414f",
+      "headword": "machinery",
+      "source_hash": "e247eb74730f29e8e38f6570f07437202174c896bd9991c063c2adaba180d6c0",
+      "original_meaning_zh": "机器；机械；机械装置",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "机器",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "机械",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "机械装置",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "机器设备，机械装置的总称",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:03706974"
+          ],
+          "reason": "三种中文说法在物理设备场景指向同一组概念；注意集合性。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（机构的）运作机制",
+          "evidence_ids": [
+            "wn31:n:08451039"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "这一集合名词适合用“一套机器设备”建立印象。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03706974",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "machines or machine systems collectively",
+          "selected_headwords": [
+            "machinery"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:08451039",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a system of means and activities whereby a social institution functions; \"the complex machinery of negotiation\"; \"the machinery of command labored and brought forth an order\"",
+          "selected_headwords": [
+            "machinery"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-85ca6d6d291c",
+      "headword": "conduct",
+      "source_hash": "d164d0321b9eb82a182983af625f449b883d9768f3b4869a09c98ddcdafe0287",
+      "original_meaning_zh": "名词：行为；动词：组织，指挥，传导",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "行为",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "组织",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "指挥",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "传导",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "行为，举止",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:01223473",
+            "wn31:n:04904939"
+          ],
+          "reason": "表示一个人如何行事或待人。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "组织、开展（活动）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02450374"
+          ],
+          "reason": "负责开展工作的全过程，与开展调查等搭配相容。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "指挥（音乐演奏等）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:01736802",
+            "wn31:v:01737094"
+          ],
+          "reason": "在演奏语境中由指挥引导演出。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "传导（热、电等）",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:02084180"
+          ],
+          "reason": "主语可以是作为传输介质的材料。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "表现，举止（conduct oneself）",
+          "evidence_ids": [
+            "wn31:v:02523827"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "从行为、开展活动、指挥表演和传导四种搭配区分对象，以免把所有动词义理解成“带领”。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01223473",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "manner of acting or controlling yourself",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:04904939",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(behavioral attributes) the way a person behaves toward other people",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02450374",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "direct the course of; manage or control; \"You cannot conduct business like this\"",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01736802",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "lead, as in the performance of a composition; \"conduct an orchestra; Barenboim conducted the Chicago symphony for years\"",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01737094",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "lead musicians in the performance of; \"Bernstein conducted Mahler like no other conductor\"; \"she cannot conduct modern pieces\"",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02084180",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "transmit or serve as the medium for transmission; \"Sound carries well over water\"; \"The airwaves carry the sound\"; \"Many metals conduct heat\"",
+          "selected_headwords": [
+            "conduct"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02523827",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "behave in a certain manner; \"She carried herself well\"; \"he bore himself with dignity\"; \"They conducted themselves well during these difficult times\"",
+          "selected_headwords": [
+            "conduct"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-715dc8493c36",
+      "headword": "private",
+      "source_hash": "79b53358eaf93dd46786f5ba4a51ccbc02524803a04d9ba3c289b8ed134a6220",
+      "original_meaning_zh": "私人的；私有的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "私人的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "私有的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "个人的，私人的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:01772598",
+            "wn31:s:01773890",
+            "mw:private"
+          ],
+          "reason": "修饰涉及个人的事务或生活。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "私有的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "mw:private"
+          ],
+          "reason": "指出事物属于个人或私人机构。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "不公开的，保密的",
+          "evidence_ids": [
+            "mw:private"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "个人生活与财产归属可分别造句，有助于区分私人事务和私有财产。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:01772598",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "concerning one person exclusively; \"we all have individual cars\"; \"each room has a private bath\"",
+          "selected_headwords": [
+            "private"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:01773890",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "concerning things deeply private and personal; \"intimate correspondence\"; \"private family matters\"",
+          "selected_headwords": [
+            "private"
+          ]
+        },
+        {
+          "evidence_id": "mw:private",
+          "publisher": "Merriam-Webster",
+          "source": "https://www.merriam-webster.com/dictionary/private",
+          "observation_zh": "可指归某个人或公司所有，也可指不向公众公开。",
+          "selected_headwords": [
+            "private"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-fef8f41cdcd2",
+      "headword": "fourteen",
+      "source_hash": "bb615d8efe571139321fb5a920f2242b33052c69f58d2fe163fca4cf2d8de358",
+      "original_meaning_zh": "十四",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "十四",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "数词",
+          "display_zh": "十四",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13769488",
+            "wn31:s:02195338"
+          ],
+          "reason": "基数定义与原文一致，保留教材的数词标记。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "用十加四的确定数量识记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:13769488",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the cardinal number that is the sum of thirteen and one",
+          "selected_headwords": [
+            "fourteen"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:02195338",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "being one more than thirteen",
+          "selected_headwords": [
+            "fourteen"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-f2a6aa97adb2",
+      "headword": "tomb",
+      "source_hash": "4718d3f8c1be7717fe92d1ef6446defebff9a9d928ba2653a60616858f7bf2e6",
+      "original_meaning_zh": "坟墓",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "坟墓",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "坟墓",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:03459977"
+          ],
+          "reason": "埋葬地点足以解释原义。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "原文的一项直接指安葬死者之处。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03459977",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone); \"he put flowers on his mother's grave\"",
+          "selected_headwords": [
+            "tomb"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-0d45f5fd462b",
+      "headword": "core",
+      "source_hash": "ab9e29c525033f5a59d7f1f74a3ba732e3d189e3c10c6f2a84e6405df5420d74",
+      "original_meaning_zh": "核心；果核",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "核心",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "果核",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "核心，最重要的部分",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:05929717",
+            "wn31:n:06616419"
+          ],
+          "reason": "解释问题核心、思想核心等抽象对象。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "果核（如苹果中央包着种子的部分）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "mw:core"
+          ],
+          "reason": "给出苹果语境以免误想成所有水果的硬核。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "事物关键部分与水果中央部分是两种容易从例句中识别的名词用法。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:05929717",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the choicest or most essential or most vital part of some idea or experience; \"the gist of the prosecutor's argument\"; \"the heart and soul of the Republican Party\"; \"the nub of the story\"",
+          "selected_headwords": [
+            "core"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06616419",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the central meaning or theme of a speech or literary work",
+          "selected_headwords": [
+            "core"
+          ]
+        },
+        {
+          "evidence_id": "mw:core",
+          "publisher": "Merriam-Webster",
+          "source": "https://www.merriam-webster.com/dictionary/core",
+          "observation_zh": "苹果等水果中央通常不食用的部分称为 core。",
+          "selected_headwords": [
+            "core"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-cc1d3b023484",
+      "headword": "license",
+      "source_hash": "067125f5735ab67224331355a623af68adeab4f198cb2e30117462be034d431f",
+      "original_meaning_zh": "名词：许可证；动词：批准，发许可证",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "许可证",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "批准",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "发许可证",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "许可证",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06561652"
+          ],
+          "reason": "指证明准许的文件。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "正式许可，给……发许可证",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02449527"
+          ],
+          "reason": "限定“批准”为有权机关的授权，发证为该行为的具体实现。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "正式许可，授权",
+          "evidence_ids": [
+            "wn31:n:01141515"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "凭证与正式许可的动作要区分；发证可以是实施许可的方式。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06561652",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a legal document giving official permission to do something",
+          "selected_headwords": [
+            "license"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02449527",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "authorize officially; \"I am licensed to practice law in this state\"",
+          "selected_headwords": [
+            "license"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:01141515",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of giving a formal (usually written) authorization",
+          "selected_headwords": [
+            "license"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-dda18a0e21ae",
+      "headword": "candidate",
+      "source_hash": "28305868ceabdd4b66105fd9c51b72aaac3d1c3f6a70dac512149b88a9317d0d",
+      "original_meaning_zh": "候补；候选人；竞选者",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "候补",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "候选人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "竞选者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "候选人",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:09910201"
+          ],
+          "reason": "被考虑担任职位或获奖即可。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "竞选者",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:09909143"
+          ],
+          "reason": "选举语境中的候选人正参与公职竞选。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "候补",
+          "reason": "“候补”可指后备席位或替补人选，需确认原句指被考虑的人。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "人员身份待核",
+          "observation": "候选资格和候补身份不能无条件等同。",
+          "evidence_ids": [
+            "wn31:n:09910201"
+          ],
+          "evidence_status": "uncertain"
+        }
+      ],
+      "priority_rationale": "竞选公职者属于候选人的一个明确场景；“候补”可能指替补身份。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:09910201",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "someone who is considered for something (for an office or prize or honor etc.)",
+          "selected_headwords": [
+            "candidate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:09909143",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a politician who is running for public office",
+          "selected_headwords": [
+            "candidate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "“候补”的原例是否明确表示候选资格？"
+      ],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-15152e5a6916",
+      "headword": "cure",
+      "source_hash": "de1ab6bc83eb2bd01b3d76a874d6cbe8543d1a98f380ce4d798e12726d0ae63f",
+      "original_meaning_zh": "动词：治愈；名词：疗法",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "治愈",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "疗法",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "治愈",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00081478"
+          ],
+          "reason": "突出恢复健康的结果。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "疗法，治病的办法",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:04081594"
+          ],
+          "reason": "指可起到治疗作用的手段。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "病人被治愈和一种疗法体现结果与手段的差异。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00081478",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "provide a cure for, make healthy again; \"The treatment cured the boy's acne\"; \"The quack pretended to heal patients but never managed to\"",
+          "selected_headwords": [
+            "cure"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:04081594",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a medicine or therapy that cures disease or relieve pain",
+          "selected_headwords": [
+            "cure"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-2c29d39181de",
+      "headword": "operate",
+      "source_hash": "bad40de914c054cb25d9751a3fad64bb2b054dce4220f90a7355338c52dd160b",
+      "original_meaning_zh": "操作；管理",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "操作",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "管理",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "操作（设备）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01227308"
+          ],
+          "reason": "通过控制使机器发挥功能。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "经营、管理",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02448714"
+          ],
+          "reason": "对组织或业务的运作进行控制。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "给……做手术（operate on）",
+          "evidence_ids": [
+            "wn31:v:00083562"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（机器等）运转，起作用",
+          "evidence_ids": [
+            "wn31:v:01528454"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "操作设备和经营管理机构对宾语的要求不同；医疗用法原文未列。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01227308",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "handle and cause to function; \"do not operate machinery after imbibing alcohol\"; \"control the lever\"",
+          "selected_headwords": [
+            "operate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02448714",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "direct or control; projects, businesses, etc.; \"She is running a relief operation in the Sudan\"",
+          "selected_headwords": [
+            "operate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00083562",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "perform surgery on; \"The doctors operated on the patient but failed to save his life\"",
+          "selected_headwords": [
+            "operate"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01528454",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "perform as expected when applied; \"The washing machine won't go unless it's plugged in\"; \"Does this old car still run well?\"; \"This old radio doesn't work anymore\"",
+          "selected_headwords": [
+            "operate"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-59f0db478528",
+      "headword": "forecast",
+      "source_hash": "687896908cc70d6df2ed3ea2ace63e9ac1e0a3ad863f9f02cd26171effabdb90",
+      "original_meaning_zh": "预测；预报",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "预测",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "预报",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "预测，预报（结果）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06762595"
+          ],
+          "reason": "名词可指某人对未来发展所作的预测。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "预测，预报",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00928443"
+          ],
+          "reason": "动词表示事先判断将发生什么。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Info",
+          "type": "逐义词性缺失",
+          "observation": "源词性栏列名词和动词，两个片段均未标逐义词性；分组为据词典所作的 AI 推荐。",
+          "evidence_ids": [
+            "wn31:n:06762595",
+            "wn31:v:00928443"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "中文“预测、预报”既可作行为也可指预测结果，保留两种句法入口。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06762595",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a prediction about how something (as the weather) will develop",
+          "selected_headwords": [
+            "forecast"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00928443",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "predict in advance",
+          "selected_headwords": [
+            "forecast"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "interpretation": "AI语义拆解",
+          "reason": "原文未分配逐义词性，两种句法用途分别由独立词典义项支持；保留同一原片段。"
+        },
+        {
+          "source_sense_id": "s002",
+          "interpretation": "AI语义拆解",
+          "reason": "原文未分配逐义词性，两种句法用途分别由独立词典义项支持；保留同一原片段。"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c271f2bb9318",
+      "headword": "comparison",
+      "source_hash": "28052ec825876891f628fb3298e0bf127d35fc60f248afcb4989659fa4c6c5eb",
+      "original_meaning_zh": "比较；相比",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "比较",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "相比",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "比较，对比",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00143485",
+            "wn31:n:13876005"
+          ],
+          "reason": "对照事物并考察异同。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（在比较短语中）与……相比",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:13876005"
+          ],
+          "reason": "中文“相比”宜与介词结构对应，避免当作英语动词背。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "中文句法提示不足",
+          "observation": "若只看到“相比”容易误判为动词；需保留名词词性。",
+          "evidence_ids": [
+            "wn31:n:00143485",
+            "wn31:n:13876005"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "名词表示比较的动作或关系，“相比”常在短语里才自然。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00143485",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of examining resemblances; \"they made a comparison of noise levels\"; \"the fractions selected for comparison must require pupils to consider both numerator and denominator\"",
+          "selected_headwords": [
+            "comparison"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13876005",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "relation based on similarities and differences",
+          "selected_headwords": [
+            "comparison"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-7ee162f213ce",
+      "headword": "parliament",
+      "source_hash": "b0e701e91b8363c226c550e5898f61c03cf148dfff7afe05ebc02636f21165aa",
+      "original_meaning_zh": "国会；议会",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "国会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "议会",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "议会，国会",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:08336128"
+          ],
+          "reason": "都指立法议事机构，不必按中文译名拆义。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "可用“议会”统摄国会译名，再按具体国家选择译法。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:08336128",
+          "publisher": "Princeton University · WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a legislative assembly in certain countries",
+          "selected_headwords": [
+            "parliament"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "ai_semantic_splits": []
+    }
+  ]
+}

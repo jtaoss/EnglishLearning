@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_81",
+  "request_hash": "9545d27d3d12cdbb9e7d48bd9d16309b5ff1e15c41e7699de0b806b927d946be",
+  "started_utc": "2026-11-13T08:17:27.699336+00:00",
+  "completed_utc": "2026-11-13T08:19:23.323351+00:00",
+  "elapsed_seconds": 115.625,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "86b4caa0-3945-4e80-a157-02267f330f14",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3515,
+    "completion_tokens": 6019,
+    "total_tokens": 9534,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5640
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1467
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-83e3b78f14e0\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"The source sense '技术的' (s001) may include WordNet a:02820043 (of or relating to technique or proficiency in a practical skill), but the candidate restricts this source sense to applied science/industry/machinery (usage_note of core group 1) and lists the technique sense as dictionary addition 3 with no source_sense_ids. This could be a source-supported use omitted if the source gloss is broad, but evidence is insufficient to confirm.\",\n          \"evidence_ids\": [\"wn31:a:02820043\"],\n          \"source_sense_ids\": [\"s001\"],\n          \"candidate_group_ref\": \"SG25-83e3b78f14e0:p6c5:core_meanings:1 / SG25-83e3b78f14e0:p6c5:addition:3\",\n          \"proposed_fix\": \"Optionally add s001 to addition 3 or clarify whether '技术的' covers technique/proficiency; pending source scope review.\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"Noun senses in evidence (wn31:n:00772845, wn31:n:04406404) are outside source POS adjective and correctly excluded from candidate. Core groups 1 and 2 appropriately separate applied scientific/machinery vs specialized knowledge. The only open question is whether source s001 also covers the technique/proficiency sense, which is currently treated as an external addition.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

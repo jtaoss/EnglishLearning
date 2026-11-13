@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_016",
+  "kind": "verify",
+  "request_hash": "87acfdb14ea4cc74e2d51afecc3ee2fa63ff1eea15005946c53eaa7874ae668d",
+  "input_ids": [
+    "SG25-3eb95cbef266",
+    "SG25-b308a7f43bba"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2e13e741-df48-40a7-adc0-cb799763d060",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3eb95cbef266\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“形成”对应英语 formation 的形成/建立过程义；核心组以 wn31:n:00237945 和 wn31:n:13504691 覆盖通用建立与自然形成，未发现证据支持但未覆盖的独立用途。\",\n          \"evidence_ids\": [\"wn31:n:00237945\", \"wn31:n:13504691\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“结构”在英语 formation 中指空间排列结构，扩展组以 wn31:n:03389963 支持，且注释明确不泛指所有组成机制；无证据表明源语境要求一般组织结构。\",\n          \"evidence_ids\": [\"wn31:n:03389963\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“队形”对应以单位行动的人物/事物排列，扩展组以 wn31:n:08443418 支持，匹配原文义。\",\n          \"evidence_ids\": [\"wn31:n:08443418\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        {\n          \"point\": \"s002 原始“结构”未注明是否仅指空间排列；若教材语境包括一般组成/组织机制，英语 formation 不支持该义，但当前证据和原文无上下文，无法确认遗漏。\"\n        },\n        {\n          \"point\": \"未采用的地质结构义 wn31:n:09310874 是否属于原 s002 范围尚不明确；若原“结构”含岩层结构，当前扩展组未覆盖。\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"核心组只放“形成”，结构、队形在扩展；因缺乏来源上下文，s002 的空间排列限定仅为合理解读，未视为确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-b308a7f43bba\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“程度”对应强度/数量/质量尺度上的位置，核心组以 wn31:n:05101152 覆盖，未发现证据支持但遗漏的独立程度义。\",\n          \"evidence_ids\": [\"wn31:n:05101152\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“学位”对应高校授予的学术资格，核心组以 wn31:n:06710094 覆盖。\",\n          \"evidence_ids\": [\"wn31:n:06710094\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"“度”作为单字既有角度、温度等计量单位，也可能有“烧伤度数”等严重程度义；扩展组仅选角度和温度证据，注释声明保留单位语境，是对宽泛来源范围的收窄。\",\n          \"evidence_ids\": [\"wn31:n:13632450\", \"wn31:n:13736289\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        {\n          \"point\": \"s003 原片段“度”未注明限定语境；候选扩展现仅覆盖角度/温度，其他可能英语 degree 承载的义（如严重程度 wn31:n:05101827）未被采用或标记剩余范围，但无原文上下文无法确认缺陷。\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"程度、学位在核心，度在扩展并限定角度/温度；s003 的范围收窄被注释承认，但剩余范围仍未完全确定。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4865,
+    "completion_tokens": 6926,
+    "total_tokens": 11791,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6064
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3201
+  },
+  "started_utc": "2026-11-13T09:56:49.013968+00:00",
+  "completed_utc": "2026-11-13T09:58:25.198962+00:00",
+  "elapsed_seconds": 96.188,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

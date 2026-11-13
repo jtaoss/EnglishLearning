@@ -1,0 +1,14 @@
+{
+  "observed_date": "2026-11-13",
+  "scope": "仅数据与解析契约；未运行应用、连接个人SQLite/Notion或构建Android",
+  "runs": [
+    {"command":"python -X utf8 scripts/p6c3/validate.py","exit_code":0,"result":"passed; 42+48 IDs, source/evidence/provenance/revision/preservation contracts"},
+    {"command":"python -X utf8 -m unittest discover -s test/p6c3 -p \"test_*.py\" -v","exit_code":0,"tests":13,"failures":0,"result":"passed; includes deliberately corrupted inputs rejected and deduplicated pending queue"},
+    {"command":"flutter test --no-pub --reporter expanded test/p6c2/core_meanings_500_contract_test.dart test/p6c3/core_quality_review_contract_test.dart","exit_code":0,"tests":9,"failures":0,"result":"passed; 4 existing C2 + 5 C3 Dart JSON/source contracts"},
+    {"command":"dart analyze test/p6c3/core_quality_review_contract_test.dart","exit_code":0,"result":"No issues found"}
+  ],
+  "resolved_harness_failure": "首次unittest因复用脚本的sys.path顺序导入了C2同名validate模块；已改用显式文件路径加载C3验证器。随后新增待审并集校验，最终13项测试通过。没有改写C2代码或数据。",
+  "not_established_by_tests": ["语言学准确率或记忆效果", "正式UI发布验收", "整个共享工作区其他任务代码无改动", "原生成后端与复核配置后端必然不同"],
+  "human_approval_produced": false,
+  "remaining4832_processed": false
+}

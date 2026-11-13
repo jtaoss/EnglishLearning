@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_06",
+  "request_hash": "0ecde8f60b0464b0a18a87ff11c307ef6a8f22e892ccb2f171d6ed2b683870ec",
+  "started_utc": "2026-11-13T08:16:13.303425+00:00",
+  "completed_utc": "2026-11-13T08:17:16.690502+00:00",
+  "elapsed_seconds": 63.391,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "8e3abfd1-5f82-4448-a8bd-bb80c5beeaa1",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2963,
+    "completion_tokens": 3380,
+    "total_tokens": 6343,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3084
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2963
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-e3f48726b892\",\n      \"independent_core\": [],\n      \"verdict\": \"correction_proposed\",\n      \"findings\": [\n        {\n          \"severity\": \"minor\",\n          \"kind\": \"unsupported_prioritization\",\n          \"reason\": \"候选生成理由声称“首屏先给最常用的‘学者’”，但未提供任何频率证据。根据规则，没有可靠频率依据时不得宣称唯一正确排序。\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"SG25-e3f48726b892:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"删除“最常用”这一断言，或将其改为明确的教学偏好标注，例如“先呈现核心义‘学者’（无频率依据）”。\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"候选将‘学者’与‘文人’合并为同一核心组，两者均对应 learned person，名词性、指人、方向一致，合并不构成语义错误。‘学习者’单独成组，对应 learner，且已注明宽义改述。词典外部义 scholarship holder 已作为未采纳候选列出，处理恰当。唯一问题是生成理由中存在无证据的频率优先声明。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

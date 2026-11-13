@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_25",
+  "request_hash": "08469170b402bde0d6d01acbd41f83a52dd87568aa9e948efd582616d80aed6f",
+  "started_utc": "2026-11-13T08:16:13.677412+00:00",
+  "completed_utc": "2026-11-13T08:17:20.629849+00:00",
+  "elapsed_seconds": 66.953,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "718fffd9-1e0a-458c-a2cb-d79372ba4f38",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3889,
+    "completion_tokens": 3367,
+    "total_tokens": 7256,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3104
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3889
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-6df24c372c04\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[\"可将 v:00726112（指定用途）作为核心2内的细分子义，教学时用示例区分“保留不用”与“划拨专用”。\",\"可考虑将 n:04907298（正式/矜持的举止）和 n:13781913（医学生理储备）补入 dictionary_additions，但优先级较低。\"],\"note\":\"原片段四义：动词预订/保留、名词储备/保护区均有明确源词性和词典证据支撑。候选核心1用v:00797294和v:02503969覆盖预订（为自己/为他人），核心2用v:00726112和v:02219267覆盖保留/留出，核心3用n:13389225覆盖储备物，扩展用n:08604729覆盖保护区，POS与对象正确。名词储备与保护区未被错误合并；外部义（替补、后备部队、矜持）已单列为未采纳候选。未发现源义遗漏或词性错误。教学排序未以词典顺序冒充频率，来源覆盖矩阵填写完整。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

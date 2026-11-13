@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_002",
+  "kind": "audit",
+  "request_hash": "d8dc02701fe367d577827f727e419e16f7dcca56bbe87595617b8cc98e7e3ea3",
+  "input_ids": [
+    "SG25-d78de925a878",
+    "SG25-7ee162f213ce",
+    "SG25-32182951b85a",
+    "SG25-9b828e2f3cec",
+    "SG25-a70712f49d7d"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "b58f19c3-8584-4d93-bc53-3b88aced1502",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-d78de925a878\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词，展开/铺开（原文无搭配语境）\",\"relation\":\"合理概括\",\"reason\":\"扩展层用“展开／张开”并列保留原文，以向外伸展义概括，未把详述义加入。\",\"evidence_ids\":[\"wn31:v:02081395\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词，张开（原文无搭配语境）\",\"relation\":\"合理概括\",\"reason\":\"“张开”与“展开”合组在扩展层，依据向外伸展义保留；未强行并入核心扩张。\",\"evidence_ids\":[\"wn31:v:02081395\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词，扩张（范围/规模变大）\",\"relation\":\"语义等价\",\"reason\":\"核心“扩张”直接保留原文，词典支持规模或范围变大。\",\"evidence_ids\":[\"wn31:v:00258155\",\"wn31:v:00542243\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"三义均有映射；核心仅列扩张，展开/张开在扩展层合组，属有理由后置，未混入详述义。\"},{\"id\":\"SG25-7ee162f213ce\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，国会（立法机构名称）\",\"relation\":\"合理概括\",\"reason\":\"核心“国会／议会”并列保留两个制度名称，证据为特定国家的立法议会，未声称同一组织。\",\"evidence_ids\":[\"wn31:n:08336128\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词，议会（立法机构名称）\",\"relation\":\"合理概括\",\"reason\":\"核心“国会／议会”并列保留“议会”，证据支持立法议会义，未引入纸牌义。\",\"evidence_ids\":[\"wn31:n:08336128\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两源义合组为国会／议会，证据为立法议会，未把纸牌义带入。\"},{\"id\":\"SG25-32182951b85a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词，特定的（原文无搭配语境）\",\"relation\":\"语义等价\",\"reason\":\"核心“特定的”保留原文，证据支持特定/具体指向某人某类。\",\"evidence_ids\":[\"wn31:s:01107719\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词，特别的（非一般/超出寻常）\",\"relation\":\"语义等价\",\"reason\":\"扩展“特别的”对应非一般、超出寻常义，未与“挑剔的”混并。\",\"evidence_ids\":[\"wn31:s:00490174\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词，挑剔的（对细节要求严格）\",\"relation\":\"语义等价\",\"reason\":\"扩展“挑剔的”对应exacting about details，保留与“特别”不同的要求细节义。\",\"evidence_ids\":[\"wn31:s:00987815\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"三义分别落在核心特定、扩展特别/挑剔，证据对应，未合并为单一“特别”。\"},{\"id\":\"SG25-9b828e2f3cec\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，对应的人或物（同职能/同特征）\",\"relation\":\"语义等价\",\"reason\":\"核心保留“对应的人或物”，证据支持同职能或同特征的人/物；未扩展为单纯复制品。\",\"evidence_ids\":[\"wn31:n:05703771\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“对应的人或物”保留，证据支持同职能/特征，不扩展到复制品义。\"},{\"id\":\"SG25-a70712f49d7d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词，出发（离去动作）\",\"relation\":\"合理概括\",\"reason\":\"核心“出发／离开”并列保留“出发”，证据为离去动作名词，合组不新增偏离或死亡委婉义。\",\"evidence_ids\":[\"wn31:n:00043495\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词，离开（离去动作）\",\"relation\":\"合理概括\",\"reason\":\"核心“出发／离开”并列保留“离开”，证据支持离去动作；未把偏离标准义纳入原文映射。\",\"evidence_ids\":[\"wn31:n:00043495\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"出发/离开合组为离去动作名词，证据支持，不引入死亡委婉或偏离义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5393,
+    "completion_tokens": 8828,
+    "total_tokens": 14221,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7532
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3473
+  },
+  "started_utc": "2026-11-13T09:46:53.677772+00:00",
+  "completed_utc": "2026-11-13T09:47:44.564589+00:00",
+  "elapsed_seconds": 50.891,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

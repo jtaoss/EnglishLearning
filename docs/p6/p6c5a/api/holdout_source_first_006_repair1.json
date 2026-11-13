@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_006_repair1",
+  "kind": "holdout",
+  "request_hash": "ea16da44966e66e3283610991a2dc286623bc8b238b41d2fc0fb9f462fa9b823",
+  "input_ids": [
+    "SG25-5c097b19679a",
+    "SG25-3d8eefab379d"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4df650aa-3f7d-4e82-8a74-d20b05dce259",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5c097b19679\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"构成（形成、组成）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"\",\n          \"evidence_ids\": [\"wn31:v:02626667\", \"wn31:v:02627475\"],\n          \"uncertainty\": \"low\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"设立（建立、创建，通常指机构/组织）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"\",\n          \"evidence_ids\": [\"wn31:v:01650771\"],\n          \"uncertainty\": \"low\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"动词\",\n          \"meaning\": \"构成；形成；组成\"\n        },\n        {\n          \"pos\": \"动词\",\n          \"meaning\": \"设立；建立（机构/组织）\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"词典义项 wn31:v:02401347（任命/指派）未采用，因原始中文“设立”不包含该义，保留为词典观察。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"WordNet义项: create and charge with a task or function; nominate a committee (任命/指派委员会)\",\n          \"evidence_ids\": [\"wn31:v:02401347\"]\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-3d8eefab379d\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"决定（做出决定；成为决定因素；解决）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"\",\n          \"evidence_ids\": [\"wn31:v:00699355\", \"wn31:v:00702806\", \"wn31:v:00765444\"],\n          \"uncertainty\": \"low\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"确定（明确地确定；规定；限定）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"\",\n          \"evidence_ids\": [\"wn31:v:00701581\", \"wn31:v:00702474\", \"wn31:v:00949109\"],\n          \"uncertainty\": \"low\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"查明（通过调查、计算等确定；发现）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"通常涉及调查、计算或探究\",\n          \"evidence_ids\": [\"wn31:v:00920843\", \"wn31:v:00922307\"],\n          \"uncertainty\": \"low\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"动词\",\n          \"meaning\": \"决定；做出决定；成为决定因素\"\n        },\n        {\n          \"pos\": \"动词\",\n          \"meaning\": \"确定；明确地确定；规定\"\n        },\n        {\n          \"pos\": \"动词\",\n          \"meaning\": \"查明；通过调查发现\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"\",\n      \"unadopted_observations\": []\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3760,
+    "completion_tokens": 3862,
+    "total_tokens": 7622,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3106
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 944
+  },
+  "started_utc": "2026-11-13T09:34:37.491184+00:00",
+  "completed_utc": "2026-11-13T09:35:27.109361+00:00",
+  "elapsed_seconds": 49.625,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

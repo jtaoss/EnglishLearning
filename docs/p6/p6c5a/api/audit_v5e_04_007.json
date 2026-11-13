@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_007",
+  "kind": "audit",
+  "request_hash": "9127c870effa9aff384202e954228b7ad660ea355e2025cd779151d9347139dd",
+  "input_ids": [
+    "SG25-4721819b2bf3",
+    "SG25-fbb6337a2ba7",
+    "SG25-f046cfb2d078",
+    "SG25-c21f0c94db79",
+    "SG25-3754c68d4b05"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "55cc1a40-dae0-4eec-ae35-fbb95922276e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-4721819b2bf3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"竞争（争取优势的活动或商业竞争关系）\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“竞争”这一上位表述，所引活动义与商业竞争关系均支持原文“竞争”，未把对象限死为比赛。\",\"evidence_ids\":[\"wn31:n:01171059\",\"wn31:n:13859208\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"比赛（选出胜者的场合）\",\"relation\":\"语义等价\",\"reason\":\"核心2“比赛”对应选出胜者的场合，与原文“比赛”及所引义项一致。\",\"evidence_ids\":[\"wn31:n:07470961\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001“竞争”由核心1覆盖活动/商业竞争关系；s002“比赛”由核心2覆盖选胜场合；竞争对手义未来自原释，未作缺口。\"},{\"id\":\"SG25-fbb6337a2ba7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"独立（不受控制或影响）\",\"relation\":\"合理概括\",\"reason\":\"核心1以“独立／自主”合并展示，所引 freedom from control or influence 同时支持“独立”与“自主”的抽象名词义，合并未引入原文外对象。\",\"evidence_ids\":[\"wn31:n:14017633\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"自主（自我控制、不受他人支配）\",\"relation\":\"合理概括\",\"reason\":\"核心1合并“独立／自主”有同一抽象证据支持；“自主”未被迫只归入美国革命等具体历史事件义。\",\"evidence_ids\":[\"wn31:n:14017633\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001“独立”与s002“自主”合并为核心1，由 freedom from control/influence 支持；美国革命专指义未替原抽象义。\"},{\"id\":\"SG25-f046cfb2d078\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"个性（个人心理行为特征总和）\",\"relation\":\"合理概括\",\"reason\":\"核心1将“个性／性格”合并为个人心理行为特征的上位表述，证据支持该共同范围，未加入道德尊严或名人义。\",\"evidence_ids\":[\"wn31:n:04624919\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"人格（心理/性格结构语境）\",\"relation\":\"语义等价\",\"reason\":\"扩展1保留“人格”并注明限人格结构语境，同一心理特征证据可支持；未自动扩为道德尊严等英语 personality 之外用法。\",\"evidence_ids\":[\"wn31:n:04624919\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"性格（个人行为情感特征）\",\"relation\":\"合理概括\",\"reason\":\"核心1将“性格”与“个性”合并为个人心理行为特征表述，证据覆盖该范围。\",\"evidence_ids\":[\"wn31:n:04624919\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"s001“个性”与s003“性格”核心合并；s002“人格”入扩展层，限定心理/性格结构语境，未自动扩为道德尊严；三源义均有链接。\"},{\"id\":\"SG25-c21f0c94db79\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"强调（突出重要性或额外加重）\",\"relation\":\"语义等价\",\"reason\":\"核心1“强调”同时覆盖突出重要性及对言语额外加重，均属原文动词“强调”，未混入重音发音教学义。\",\"evidence_ids\":[\"wn31:v:01015376\",\"wn31:v:01016618\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“强调”由核心1覆盖突出重要性；重音/发音教学义未混入。\"},{\"id\":\"SG25-3754c68d4b05\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"现象（可观察的状态或过程）\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“现象”的一般表述，所引可经感官认识的状态/过程证据直接支持；未把非凡事件或非凡人物义加入核心。\",\"evidence_ids\":[\"wn31:n:00034512\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“现象”由核心1覆盖可观察状态/过程；非凡人物/非凡事件义未来自原释，未作核心缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 4278,
+    "completion_tokens": 6165,
+    "total_tokens": 10443,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4922
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2358
+  },
+  "started_utc": "2026-11-13T09:46:53.612804+00:00",
+  "completed_utc": "2026-11-13T09:47:29.118894+00:00",
+  "elapsed_seconds": 35.5,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

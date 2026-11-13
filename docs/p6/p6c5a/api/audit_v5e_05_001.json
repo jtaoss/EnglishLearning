@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_001",
+  "kind": "audit",
+  "request_hash": "77edf882c74374197168f1d3872949235bcfe0588e23b07a09acf9eda7692a49",
+  "input_ids": [
+    "SG25-1f58b9145b24",
+    "SG25-8577da2ea540",
+    "SG25-909c272051bb",
+    "SG25-2269c0be009b",
+    "SG25-3c1f2776b86f"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "65dcbb75-32ec-4af8-bf3f-cdf3390130f8",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-1f58b9145b24\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"请求（源词性未定，可能为名词或动词）\",\"relation\":\"无法确定\",\"reason\":\"候选仅把“请求”链接到名词组；名词证据可支持该读法，但源片段词性为null，动词“请求”是否同属此源义未决。\",\"evidence_ids\":[\"wn31:n:06525357\",\"wn31:n:07199985\"],\"context\":\"uncertain\",\"residual_scope\":\"词性未定；动词读法未在核心/扩展中显式保留\",\"counterexample\":\"动词 request 可表示“请求某人做某事”\",\"counterexample_evidence_ids\":[\"wn31:v:00755473\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"要求（源词性未定，可能为名词或动词）\",\"relation\":\"无法确定\",\"reason\":\"候选仅把“要求”链接到动词组；源词性为null，名词“要求”（a request/demand）读法未显式保留。\",\"evidence_ids\":[\"wn31:v:00754770\",\"wn31:v:00755473\"],\"context\":\"uncertain\",\"residual_scope\":\"词性未定；名词读法未保留\",\"counterexample\":\"名词 request 可表示正式请求/要求\",\"counterexample_evidence_ids\":[\"wn31:n:06525357\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-1f58b9145b24:core:1\",\"SG25-1f58b9145b24:core:2\"],\"evidence_ids\":[\"wn31:n:06525357\",\"wn31:n:07199985\",\"wn31:v:00754770\",\"wn31:v:00755473\"],\"reason\":\"两个源片段词性均为null，候选按名词/动词各取一读法；未明确另一词性读法是否同属源义，逐义覆盖不确定。\",\"repair_suggestion\":\"在组注或暂存中说明“请求”亦可作动词、“要求”亦可作名词，不把中文标签绑定单一词性。\"}],\"note\":\"核心覆盖名词“请求”和动词“要求”，但两源片段词性未定，交叉词性读法未明确，整体暂定待核。\"},{\"id\":\"SG25-8577da2ea540\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"停止（动词，停止活动/状态）\",\"relation\":\"语义等价\",\"reason\":\"core:1“停止”与 put an end to a state or an activity 对应，保留源义。\",\"evidence_ids\":[\"wn31:v:02686624\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"离开（动词，走开/离开某处）\",\"relation\":\"语义等价\",\"reason\":\"extended:1“离开”与 go away or leave 对应，虽在扩展层但已准确保留。\",\"evidence_ids\":[\"wn31:v:02012411\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"辞职（动词，退出职位）\",\"relation\":\"语义等价\",\"reason\":\"core:2“辞职”与 give up or retire from a position 对应。\",\"evidence_ids\":[\"wn31:v:02387509\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个动词源义均在核心/扩展中有准确链接，“离开”置扩展但未丢失，联合覆盖完整。\"},{\"id\":\"SG25-909c272051bb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"根本的（形容词，根源/根本性）\",\"relation\":\"语义等价\",\"reason\":\"core:1“根本的”覆盖 root/source 与 radical change 证据中的根本、根本性改变读法。\",\"evidence_ids\":[\"wn31:s:01862742\",\"wn31:s:01647099\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"激进的（形容词，观点/行动超出常规）\",\"relation\":\"语义等价\",\"reason\":\"core:2“激进的”与 far beyond the norm 的极端、激进观点证据对应。\",\"evidence_ids\":[\"wn31:s:01539365\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"激进分子（名词，持激进观点的人）\",\"relation\":\"语义等价\",\"reason\":\"extended:1“激进分子”与 a person who has radical ideas or opinions 对应，人物名词未被形容词义替代。\",\"evidence_ids\":[\"wn31:n:10523045\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个形容词义入核心，名词人物义在扩展保留；技术名词义不属源义，未纳入不影响覆盖。\"},{\"id\":\"SG25-2269c0be009b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"范围（名词，作用/有效范围）\",\"relation\":\"语义等价\",\"reason\":\"core:1“范围”与 area in which something acts/operates、limits of effectiveness 对应。\",\"evidence_ids\":[\"wn31:n:05132642\",\"wn31:n:08646496\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"系列（名词，可选事物/多样性范围）\",\"relation\":\"合理概括\",\"reason\":\"core:2“系列”用上位表述对应 a variety of different things or activities，未加入源外对象限制。\",\"evidence_ids\":[\"wn31:n:08416543\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"在一定范围内变化（动词，随限度变动）\",\"relation\":\"语义等价\",\"reason\":\"extended:1 与 change or be different within limits 对应，动词义保留。\",\"evidence_ids\":[\"wn31:v:02732914\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“范围/系列”与动词“在一定范围内变化”均保留，动词在扩展但链接准确，无源义丢失。\"},{\"id\":\"SG25-3c1f2776b86f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"安排（动词，筹划/安排活动）\",\"relation\":\"语义等价\",\"reason\":\"core:1“安排”与 make arrangements for、plan/organize and carry out an event 对应。\",\"evidence_ids\":[\"wn31:v:01023638\",\"wn31:v:01651668\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"布置（动词，装饰性/美观地安排）\",\"relation\":\"语义等价\",\"reason\":\"extended:1“布置”与 arrange attractively 对应；证据以头发为例，但定义未把对象限为头发，也未把“空间”写成排他限制。\",\"evidence_ids\":[\"wn31:v:00038562\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"排列（动词，按顺序整理）\",\"relation\":\"语义等价\",\"reason\":\"extended:2“排列”与 put into a proper or systematic order 对应。\",\"evidence_ids\":[\"wn31:v:01466592\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“安排”入核心，“布置/排列”分置扩展且各有准确证据；源义三项均保留，核心压缩有教学理由。\"}]}",
+  "usage": {
+    "prompt_tokens": 7916,
+    "completion_tokens": 12086,
+    "total_tokens": 20002,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10174
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5996
+  },
+  "started_utc": "2026-11-13T09:48:22.134902+00:00",
+  "completed_utc": "2026-11-13T09:49:29.972598+00:00",
+  "elapsed_seconds": 67.844,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_30",
+  "request_hash": "7dbb4910a0b85b00745e53cac6ffe0840dac0132c4d75539be5815623215a473",
+  "started_utc": "2026-11-13T08:14:59.362507+00:00",
+  "completed_utc": "2026-11-13T08:15:45.800689+00:00",
+  "elapsed_seconds": 46.437,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "159f2253-74ae-48a1-9f8e-2416fb0b3235",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3680,
+    "completion_tokens": 7426,
+    "total_tokens": 11106,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6744
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 864
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-f379ccb92b91\",\"word\":\"stable\",\"pos\":\"名词；形容词\",\"core\":[[\"稳定的；不易变化的\",\"形容词\",[\"s001\"],[\"wn31:s:00349120\",\"wn31:s:02281838\",\"wn31:a:02298730\"],\"表示状态不易改变、少波动或牢固可靠；不限定专业域\"],[\"马厩\",\"名词\",[\"s002\"],[\"wn31:n:04302017\"],\"饲养马匹等牲畜的农场建筑\"]],\"extended\":[],\"other\":[[\"（化学上）稳定的；不易发生化学变化的\",\"形容词\",[\"s001\"],[\"wn31:s:01936816\"],\"仅限化学/材料语境；原文未限定专业域，属有条件专业读法\"]],\"hold\":[],\"splits\":{\"s001\":\"s001 在核心表一般‘不易变化/牢固’，在其他层表化学域‘不易发生化学变化’；化学义需专业语境，故重复引用并分层。\"},\"additions\":[[\"使（马）入厩；把马拴进马厩\",\"动词\",[\"wn31:v:02465338\"],\"词典有动词‘shelter in a stable’义；原文仅列名词马厩，故仅作外部候选\"]],\"reason\":\"首次学习先记形容词‘稳定的’这一通用属性义，再记具体名词‘马厩’；化学域读法因需专业语境单列其他层，动词入厩只作外部候选，不混入原文核心。\",\"flags\":[[\"Info\",\"domain_restricted_sense\",\"化学‘不易发生化学变化’读法需化学/材料语境，已置于其他层。\"],[\"Info\",\"source_coverage_gap\",\"原文未列动词‘使马入厩’，词典证据仅列入 additions，尚待采用决定。\"]]},{\"id\":\"SG25-7b0363b65576\",\"word\":\"assist\",\"pos\":\"动词\",\"core\":[[\"帮助；协助\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:02553283\",\"wn31:v:02419840\"],\"给予帮助或服务；‘协助’可带辅助/从属角色，不因近义文体差异另拆核心\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（体育）助攻\",\"名词\",[\"wn31:n:00559045\"],\"体育语境名词义；原文只列动词帮助/协助，属外部候选\"],[\"帮助；协助（行为）\",\"名词\",[\"wn31:n:01210099\"],\"词典有名词行为义；原文仅列动词，属外部候选，重要性待评估\"]],\"reason\":\"原文两个片段同为动词近义，合为一般‘帮助/协助’；体育名词‘助攻’等名词用法是外部候选，不混入动词核心。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原文仅列动词帮助/协助；词典名词‘助攻’及名词行为义仅列入 additions，未采用为原文义。\"],[\"Info\",\"domain_restricted_sense\",\"‘助攻’限体育语境，作为外部候选单列。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

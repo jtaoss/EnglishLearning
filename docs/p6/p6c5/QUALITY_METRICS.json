@@ -1,0 +1,261 @@
+{
+  "record_count": 700,
+  "target_count": 5332,
+  "actual_candidate_generation_complete": false,
+  "cohorts": {
+    "A": 500,
+    "B": 100,
+    "C_completed": 100,
+    "C_expected": 4732
+  },
+  "cohort_metrics": {
+    "A_original500": {
+      "record_count": 500,
+      "original_fragments": 1216,
+      "original_fragment_mean": 2.432,
+      "core_groups": 693,
+      "core_group_mean": 1.386
+    },
+    "B_blind100": {
+      "record_count": 100,
+      "original_fragments": 237,
+      "original_fragment_mean": 2.37,
+      "core_groups": 178,
+      "core_group_mean": 1.78
+    },
+    "C_new4732": {
+      "record_count": 100,
+      "original_fragments": 249,
+      "original_fragment_mean": 2.49,
+      "core_groups": 208,
+      "core_group_mean": 2.08
+    }
+  },
+  "distinct_stable_ids": 700,
+  "states": {
+    "AI_processed_needs_human_review": 674,
+    "confirmed_problem_revision_pending": 13,
+    "AI_processed_no_obvious_risk": 12,
+    "processing_failed_or_evidence_insufficient": 1
+  },
+  "risk_words": 601,
+  "AI_risk_flags_by_severity": {
+    "Info": 1071,
+    "Minor": 63,
+    "Major": 23
+  },
+  "AI_risk_words_by_max_severity": {
+    "Info": 546,
+    "none": 99,
+    "Major": 20,
+    "Minor": 35
+  },
+  "AI_second_review_proposed_findings_by_severity_NOT_confirmed_errors": {
+    "Major": 5,
+    "Info": 45,
+    "Minor": 12
+  },
+  "confirmed_historical_problem_severity": {
+    "Minor": 2,
+    "Major": 7
+  },
+  "confirmed_new_problem_severity": {
+    "Major": 2,
+    "Minor": 2
+  },
+  "confirmed_new_findings": [
+    {
+      "issue_id": "P6C5-b001-confirmed-01",
+      "stable_id": "SG25-7920fdeff9c5",
+      "headword": "ritual",
+      "severity": "Major",
+      "kind": "important_source_use_omitted",
+      "normalized_cause": "unsupported_subtype_restriction_of_source_general_use",
+      "reason": "源s001仪式被明确收窄为宗教仪式规定程序，普通非宗教正式仪式没有进入该源用法的核心/扩展/暂存。s002惯常程序的另一个名词组不能替代s001的正式仪式用法；形容词社会礼仪也不能补名词缺口。已有WordNet宽义与出版社宗教或其他仪式的定义反证该限制。",
+      "evidence_ids": [
+        "wn31:n:01029801",
+        "wn31:n:01032852",
+        "pub:p6c5:parent:ritual"
+      ],
+      "source_sense_ids": [
+        "s001"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-02",
+      "stable_id": "SG25-bf0bb4ee60e2",
+      "headword": "extend",
+      "severity": "Major",
+      "kind": "important_source_use_omitted",
+      "normalized_cause": "unsupported_subtype_restriction_of_source_general_use",
+      "reason": "源s001伸展被限定为身体部位，已提供的展开桌腿/布料/天线等非身体主动展开用法未在任何层级或暂存得到该源用法覆盖；另一不及物空间/时间延伸组不能代替此及物对象用法。问题是新增对象限制，不是要求所有词典细分都放核心。s002变宽的独立证据不足仍可保持暂存。",
+      "evidence_ids": [
+        "wn31:v:00027261",
+        "wn31:v:01371528",
+        "wn31:v:02058913",
+        "pub:p6c5:parent:extend"
+      ],
+      "source_sense_ids": [
+        "s001"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-03",
+      "stable_id": "SG25-e3f48726b892",
+      "headword": "scholar",
+      "severity": "Minor",
+      "kind": "unsupported_sense_frequency_claim",
+      "normalized_cause": "unsupported_frequency_wording",
+      "reason": "选择理由直接写最常用的学者，但没有提供义项频率证据。应改为明确的AI教学选择，原文和核心无需因此删除。",
+      "evidence_ids": [],
+      "source_sense_ids": [],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    },
+    {
+      "issue_id": "P6C5-b001-confirmed-04",
+      "stable_id": "SG25-093e7d5fdbaa",
+      "headword": "contact",
+      "severity": "Minor",
+      "kind": "causative_direction_mismatch_in_note",
+      "normalized_cause": "causative_vs_contact_state",
+      "reason": "动词接触组的注释写使某物与另一物发生物理接触，是使动结构；所引WN v01208316为直接接触/相碰的状态或动作，不能据此断言使动。核心中文接触可保留，修正对象方向注释。",
+      "evidence_ids": [
+        "wn31:v:01208316"
+      ],
+      "source_sense_ids": [
+        "s002"
+      ],
+      "adjudication": "parent compared actual original, group scope, complete frozen lexical evidence and available primary publisher observations",
+      "status": "candidate_revision_proposed_not_adopted",
+      "isolated_resolution_verified": false,
+      "human_approved": false,
+      "no_exam_or_measured_frequency_claim": true
+    }
+  ],
+  "review_preference_words_NOT_errors": 63,
+  "pure_teaching_preference_words_new_batch": 50,
+  "candidate_quarantine_words": 24,
+  "source_first_lowrisk_sampled": 2,
+  "targeted_second_reviewed": 85,
+  "source_original_fragment_total": 1702,
+  "A_original_fragment_average": 2.4314285714285715,
+  "formal5332_original_fragment_total": 11963,
+  "A_formal5332_original_fragment_average": 2.243623405851463,
+  "B_full5332_core_group_average": null,
+  "averages_denominator_actual_generated_or_reused_records": 700,
+  "core_group_total": 1079,
+  "B_first_memory_core_group_average": 1.5414285714285714,
+  "core_groups_median": 1.0,
+  "core_groups_max": 5,
+  "more_than3_core_words": 8,
+  "empty_core_evidence_insufficient_words": 0,
+  "source_fragment_evidence_pending_words": 41,
+  "second_review_failed_words": 1,
+  "new_batch_generated": 100,
+  "new_batch_different_returned_model_identifier_reviews": 87,
+  "dictionary_addition_candidates": 224,
+  "dictionary_observations_kept_separate": 126,
+  "needs_human_review_words": 688,
+  "unapproved_AI_candidates": 700,
+  "human_approved_count": 0,
+  "historical48_retained": 48,
+  "book_category_counts": {
+    "高频词": 541,
+    "中频词": 19,
+    "低频词": 13,
+    "偶考词": 32,
+    "基础词": 95
+  },
+  "actual_API_responses_saved": 151,
+  "actual_API_usage": {
+    "prompt_tokens": 535392,
+    "completion_tokens": 715388,
+    "total_tokens": 1250780,
+    "prompt_cache_hit_tokens": 273664,
+    "prompt_cache_miss_tokens": 261728,
+    "reasoning_tokens": 633801
+  },
+  "actual_API_usage_by_returned_model": {
+    "deepseek-flash": {
+      "prompt_tokens": 214026,
+      "completion_tokens": 332534,
+      "total_tokens": 546560,
+      "prompt_cache_hit_tokens": 154624,
+      "prompt_cache_miss_tokens": 59402,
+      "responses": 56
+    },
+    "deepseek-v4-pro": {
+      "prompt_tokens": 321366,
+      "completion_tokens": 382854,
+      "total_tokens": 704220,
+      "prompt_cache_hit_tokens": 119040,
+      "prompt_cache_miss_tokens": 202326,
+      "responses": 95
+    }
+  },
+  "actual_API_usage_includes_failed_or_unused_preflight_and_transport_responses": true,
+  "Codex_parent_usage_and_cost": null,
+  "actual_billed_cost_USD": null,
+  "cost_estimate_USD_range": [
+    1.1031,
+    2.206199
+  ],
+  "cost_estimate_basis": {
+    "currency": "USD",
+    "per_million_off_peak": {
+      "deepseek-v4-pro": {
+        "cached_input": 0.022,
+        "uncached_input": 0.66,
+        "output": 1.98
+      },
+      "deepseek-flash": {
+        "cached_input": 0.003,
+        "uncached_input": 0.15,
+        "output": 0.6
+      }
+    },
+    "peak_multiplier": 2,
+    "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "not_actual_invoice": true,
+    "request_timing_cache_and_billing_rounding_may_differ": true
+  },
+  "saved_failures": [
+    "batch_001_STOP.json",
+    "generation_001_02_structure.json",
+    "generation_001_06_structure.json",
+    "generation_001_33_structure.json",
+    "generation_001_36_structure.json",
+    "review_001_14_structure.json",
+    "review_001_63_structure.json"
+  ],
+  "models_requested": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "models_returned": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "different_model_identifiers_returned": true,
+  "provider_internal_weights_or_statistical_independence_verified": false,
+  "learning_effect_improvement_claimed": false,
+  "decision": "C",
+  "integrity_contracts_passed": true,
+  "full5332_quantity_acceptance_passed": false,
+  "semantic_quality_gate_passed": false,
+  "can_enter_pre_release_quality_review": false
+}

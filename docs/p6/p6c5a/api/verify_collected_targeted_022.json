@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_022",
+  "kind": "verify",
+  "request_hash": "fa4ef1ae3e59068ec624a50078988f5aba90fa53da1f9fb2a2b98bc3fb090c68",
+  "input_ids": [
+    "SG25-c44bb2fd5169",
+    "SG25-15275743f9d3"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c8a0b58f-ff0a-463b-ba84-4352fe067651",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c44bb2fd5169\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“评论／意见”为名词，证据wn31:n:06777755表示个人意见或补充信息的陈述，可覆盖名词“评论”的常见用法；源整体词性包含名词，虽逐义项词性为null，但按名词处理有词典支持。\",\n          \"evidence_ids\": [\"wn31:n:06777755\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“意见”与名词comment表示个人意见、看法的用法直接对应，证据wn31:n:06777755充分支持。\",\n          \"evidence_ids\": [\"wn31:n:06777755\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“发表评论”与动词comment表示作出评论、评论某事的用法对应，证据wn31:v:01060446支持。\",\n          \"evidence_ids\": [\"wn31:v:01060446\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001的逐义项词性为null（整体source_pos为“名词；动词”）；候选将其归入名词组，证据wn31:n:06777755支持名词“评论/意见”，但若原义为动词“评论”需另建链接，当前未显式pending。\"\n      ],\n      \"preferences\": [\n        \"未采用wn31:n:06775422的书面评注义及wn31:n:07237830的流言义，属于词典补充/教学排序，不构成覆盖缺陷。\",\n        \"合并“评论/意见”为名词核心组是教学压缩，可接受。\"\n      ],\n      \"note\": \"分层清楚地区分名词和动词；未发现确认范围内的覆盖缺陷。\"\n    },\n    {\n      \"id\": \"SG25-15275743f9d3\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选核心组“出现／显现”只使用wn31:v:00424924的“come out into view”，未覆盖emerge表示“become known/apparent”或“happen/occur as a result”的常见用法；词典证据wn31:v:00427534与wn31:v:02631097支持这些用法，但未映射到s001。\",\n          \"evidence_ids\": [\"wn31:v:00424924\", \"wn31:v:00427534\", \"wn31:v:02631097\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"“显现”通常可表示变得可见/显明，但候选只依赖wn31:v:00424924的物理进入视野义，未采用wn31:v:00427534中“become apparent”的抽象显明义，导致范围收窄。\",\n          \"evidence_ids\": [\"wn31:v:00424924\", \"wn31:v:00427534\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组限定为事实/结果变得为人所知，对应wn31:v:00427534；英语emerge无及物‘使暴露/揭露’义，源中文的及物读法不属于本词范围，因此限制不是新增语义缺陷。\",\n          \"evidence_ids\": [\"wn31:v:00427534\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_narrowing_uncovered_abstract_use\",\n          \"source_ids\": [\"s001\", \"s002\"],\n          \"group_ids\": [\"SG25-15275743f9d3:core:1\"],\n          \"evidence_ids\": [\"wn31:v:00427534\", \"wn31:v:02631097\"],\n          \"reason\": \"核心组只覆盖‘come out into view’，但原片段‘出现/显现’可表达emerge的‘变为已知/显明’或‘作为结果发生’；词典证据00427534/02631097支持这些用法，而00427534只分配给s003‘暴露’，不同source_id不能借义，故s001/s002抽象用法未覆盖。\",\n          \"counterexample\": \"“问题出现了/新证据显现”对应英语 problems emerged / new evidence emerged (became known/apparent); “Nothing emerged from the meeting”对应 happen/occur as result。\",\n          \"repair_suggestion\": \"在core或extended中增加一个组，如‘变得为人所知/作为结果发生’，链接s001/s002并引用wn31:v:00427534或wn31:v:02631097；或明确将抽象范围标为held/pending，并说明扩展‘暴露’不完全覆盖‘出现’的此用法。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003‘暴露’的及物“揭露/使暴露”读法是否在原语境中；英语emerge不支持该用法，已按英语证据排除，但仍建议在来源范围注中标明该排除以利审阅。\",\n        \"s001/s002是否包含‘发生/结果’义需由原教材语境确认；当前基于常用中文和WordNet证据认为存在覆盖缺口。\"\n      ],\n      \"preferences\": [\n        \"将‘暴露’放在extended而非core属于教学排序，证据支持，非缺陷。\",\n        \"未采用wn31:v:00530070/wn31:v:01994708的come out of/surface等细分，属于可选词汇处理。\"\n      ],\n      \"note\": \"核心“出现/显现”过窄，漏掉抽象become apparent/happen as result；s003处理合理。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4469,
+    "completion_tokens": 10156,
+    "total_tokens": 14625,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8845
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2805
+  },
+  "started_utc": "2026-11-13T09:56:48.840365+00:00",
+  "completed_utc": "2026-11-13T09:59:13.698768+00:00",
+  "elapsed_seconds": 144.86,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

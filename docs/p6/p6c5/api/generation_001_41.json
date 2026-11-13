@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_41",
+  "request_hash": "ddeb3a4753d13f098423d2b4ca2b85acdea72c96f6b4a313ab30a79b387c07e4",
+  "started_utc": "2026-11-13T08:14:59.683031+00:00",
+  "completed_utc": "2026-11-13T08:15:39.598866+00:00",
+  "elapsed_seconds": 39.922,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c5381244-0205-4edb-ab9f-751a2b2b459f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3462,
+    "completion_tokens": 6524,
+    "total_tokens": 9986,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5900
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 646
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-64e8937abc6d\",\"core\":[[\"保险；保障\",\"名词\",[\"s001\"],[\"wn31:n:13365819\",\"wn31:n:14563428\"],\"指预付保费获得损失赔付或未来损失保护的安排；两个证据分别侧重赔付承诺和保障功能，均不特指保单文件。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"保险单；保单\",\"名词\",[\"wn31:n:06535632\"],\"英语 insurance 可特指保险单/保险合同文件；原中文‘保险’通常指保障安排，文件义作为外部候选。\"]],\"reason\":\"原文只有名词‘保险’，首次记忆取最普通的保险/保障安排；‘保单’文件义未混入核心，单列候选。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原文未明确区分保险单文件义；已作为 additions 候选，未进入核心。\"]]},{\"id\":\"SG25-a919007637ab\",\"core\":[[\"附上；随附\",\"动词\",[\"s001\"],[\"wn31:v:01299048\"],\"及物：把文件、材料等附加/随附到某处或信息中；证据为宽义‘使附着’。\"],[\"连接；使相连\",\"动词\",[\"s002\"],[\"wn31:v:01299048\"],\"及物：把两个事物接在一起；与不及物状态/变化分开。\"]],\"extended\":[[\"附着；相连\",\"动词\",[\"s002\"],[\"wn31:v:01292858\",\"wn31:v:01293025\"],\"不及物状态/变化：某物附着于或连接到另一物；后学，与核心及物用法区分。\"]],\"other\":[],\"hold\":[[\"s003\",\"‘重视’通常来自短语 attach importance to；单独 attach 不直接等于‘重视’，供应证据未覆盖该搭配，暂存待核。\"]],\"splits\":{\"s002\":\"‘连接’可作及物‘使相连’（核心）与不及物‘附着/相连’（扩展），方向和句法角色不同，故有意拆分。\"},\"additions\":[[\"依法扣押；查封\",\"动词\",[\"wn31:v:02278138\"],\"法律语境中 attach 可指依法扣押/查封财产；原中文未含，作为专业候选。\"]],\"reason\":\"按方向拆分：及物‘附上/使连接’首忆；不及物‘附着/相连’后学；‘重视’依赖固定搭配且供应证据不足，暂存。\",\"flags\":[[\"Minor\",\"lexical_evidence_insufficient\",\"s003‘重视’仅能追溯到短语 attach importance to，供应 WordNet 证据未覆盖；已暂存。\"],[\"Info\",\"domain_restricted_candidate\",\"additions 中‘依法扣押/查封’属法律域，未进入核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

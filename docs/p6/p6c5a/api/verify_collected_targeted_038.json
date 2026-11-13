@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_038",
+  "kind": "verify",
+  "request_hash": "de87c7028c4a8d31727904056723e5035808415156d89fb69ff52a57538c8339",
+  "input_ids": [
+    "SG25-e830d223e2dd",
+    "SG25-772c6953848b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "efde5d24-d000-4c90-a3f7-d8f727405ca6",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-e830d223e2dd\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"来源为副词性结果连接语“因此”；核心组文本包含“因此”，且证据 wn31:r:00063395 支持 because of the reason given / sentence connector。\",\n          \"evidence_ids\": [\"wn31:r:00063395\", \"wn31:r:00295773\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"来源为副词性结果连接语“结果”；核心组文本包含“结果”，且证据 wn31:r:00295773 as a consequence 支持。\",\n          \"evidence_ids\": [\"wn31:r:00295773\", \"wn31:r:00063395\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"两个原片段均为副词性因果连接语，合并为一组保留两种中文表述，无证据显示范围收窄或扩大。\"\n    },\n    {\n      \"id\": \"SG25-772c6953848b\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“观察；察看”及注释“指有意、仔细地看或观察的行为”直接对应来源“观察”的名词动作义，证据 wn31:n:00881437 支持 act of observing。\",\n          \"evidence_ids\": [\"wn31:n:00881437\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心组显示“评论；意见”，但证据 wn31:n:06779826 仅定义 a remark expressing careful consideration，直接支持“评论/评述”，未支持泛指“意见/观点”。原“评论”仍被保留，故属轻微扩大而非缺失。\",\n          \"evidence_ids\": [\"wn31:n:06779826\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"minor_broadening\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-772c6953848b:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:n:06779826\"],\n          \"reason\": \"核心组将“评论”扩展为“评论；意见”，但证据仅支持 a remark expressing careful consideration，对应“评论/评述”，未直接支持一般性“意见/观点”。原“评论”已覆盖，不造成核心缺失，但可能让学习者误认为英语 observation 可对应泛指观点。\",\n          \"counterexample\": \"英语 observation 的该义是 remark/comment，不能直接表示一般性 opinion/view；中文“意见”可表示观点，超出该证据范围。\",\n          \"repair_suggestion\": \"将核心组显示改为“评论；评述”或删除“意见”，或将“意见”标注为近义/教学扩展，不作为直接词典对应。\"\n        }\n      ],\n      \"unresolved\": [\n        \"来源未提供语境，n:05711376（the act of noticing or paying attention）与 n:01004898（the act of making and recording a measurement）未被核心组覆盖；无法确定是否属于原“观察”的必备范围。\",\n        \"n:05826885（facts learned by observing）已列为外部候选，未进入核心；无来源证据表明必须纳入，仅作暂存。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"独立审计：核心两组分别覆盖“观察动作”与“评论”，其中“评论”组增加“意见”属轻微范围扩大；其余 WordNet 义项因缺乏原文语境暂存为未解决而非缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3275,
+    "completion_tokens": 7609,
+    "total_tokens": 10884,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6734
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 1611
+  },
+  "started_utc": "2026-11-13T09:58:33.242895+00:00",
+  "completed_utc": "2026-11-13T10:00:20.392973+00:00",
+  "elapsed_seconds": 107.156,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

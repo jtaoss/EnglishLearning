@@ -1,0 +1,41 @@
+{
+  "records": 100,
+  "context": "fresh_fork_none_source_only",
+  "different_backend_proven": false,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewers": {
+    "A": {
+      "input_sha256": "e4c67e6e73a2a72bade4c20835e7bba9c0b2b270d8ceeb0caf08502d8dfe3d38",
+      "proposal_sha256": "ac6f7ae28f2a332521591101ca35a05de53d658cfef3ee3214927e00cb50ffb7",
+      "records": 50,
+      "schema_adapter": "groups.core/extended/other + reserved -> layer view only; original bytes unchanged",
+      "model_configuration": "inherited_parent_unexposed",
+      "backend_model_id": null,
+      "files": {
+        "docs/p6/p6c4/blind_review/reviewer_A_part_1.json": "628e7e866735e081a4b526ca0f3fc33441ccddc7e19425b1779c8e45cfff3e83",
+        "docs/p6/p6c4/blind_review/reviewer_A_part_2.json": "651f26b358d13dbb2c846daaa66feca3539629a0c56116b8f94a8a80315f01e5",
+        "docs/p6/p6c4/blind_review/reviewer_A_part_3.json": "32a9067d31e6cf5b57e773b30b2d4004e779e28a3e23a33ce13a10aa58a93e2c",
+        "docs/p6/p6c4/blind_review/reviewer_A_part_4.json": "ce9888692eb600b82bcd3569cc6b0912fd2dca4d0dcf1f24e8d663aeab7b913e",
+        "docs/p6/p6c4/blind_review/reviewer_A_part_5.json": "66b2ada57c4f0bf551cb0f55ff094006ad0605834db9da86a1e5774c0bc644e7",
+        "docs/p6/p6c4/blind_review/reviewer_A.json": "ac6f7ae28f2a332521591101ca35a05de53d658cfef3ee3214927e00cb50ffb7"
+      }
+    },
+    "B": {
+      "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+      "proposal_sha256": "560ba5c6768f50348471887e5b54246559108529b5a825ffe31b5d1743c1a95c",
+      "records": 50,
+      "schema_adapter": "identity",
+      "model_configuration": "inherited_parent_unexposed",
+      "backend_model_id": null,
+      "files": {
+        "docs/p6/p6c4/blind_review/reviewer_B_part_1.json": "c41c3d13e7d2260ec6a2f72a72d82beac78b8c758f739777a7c486c53dac1e42",
+        "docs/p6/p6c4/blind_review/reviewer_B_part_2.json": "19af9069208c1d9a4d34010fc0f89cd7d976bc5beb83644e0f9c431722fd4c57",
+        "docs/p6/p6c4/blind_review/reviewer_B_part_3.json": "812af6df5a53b8b3554d82fcc209826ac812f5eaaf956454af7e0103efb82351",
+        "docs/p6/p6c4/blind_review/reviewer_B_part_4.json": "090c5367faeeb3d3403198a8b2759b797b7fa89be386ce323a530f92edba9c99",
+        "docs/p6/p6c4/blind_review/reviewer_B_part_5.json": "5ebf7998e92fc7129d342f9fffa9175fd091e0624cf65b74f76a5355e64a3316",
+        "docs/p6/p6c4/blind_review/reviewer_B.json": "560ba5c6768f50348471887e5b54246559108529b5a825ffe31b5d1743c1a95c"
+      }
+    }
+  }
+}

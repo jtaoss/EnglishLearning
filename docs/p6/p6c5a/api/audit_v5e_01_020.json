@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_020",
+  "kind": "audit",
+  "request_hash": "935cf31c15a0ff25effc5b4089dff8eb0457f314084bb68ab08c0188532d74af",
+  "input_ids": [
+    "SG25-5d2d3ceb7abe",
+    "SG25-0d45f5fd462b",
+    "SG25-97b0560280ed",
+    "SG25-d6a919ef5362",
+    "SG25-c501935a6b2b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8d849ea2-001c-4c28-9688-f7a16e6f635b",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-5d2d3ceb7abe\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：处于不受危险或伤害的安全状态\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“安全”的状态义，并用摆脱危险/伤害的词典义支撑。\",\"evidence_ids\":[\"wn31:n:14562870\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：保障/担保，使义务、生活等有保证\",\"relation\":\"合理概括\",\"reason\":\"核心组用“保障”概括担保义务与财务保障两个相近名词用法，未把证券义混入安全义。\",\"evidence_ids\":[\"wn31:n:06698499\",\"wn31:n:13365086\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：金融证券，常用复数\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留证券义并使用金融票据/投资凭证的词典证据，且注明常用复数。\",\"evidence_ids\":[\"wn31:n:13437518\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均有对应组：安全状态、保障/担保、证券；证券置于扩展层但未丢失，未把金融义混同安全。\"},{\"id\":\"SG25-0d45f5fd462b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：事物中心或最重要部分\",\"relation\":\"语义等价\",\"reason\":\"核心组用“最重要部分/中心”证据覆盖“核心”的抽象与具体中心用法。\",\"evidence_ids\":[\"wn31:n:05929717\",\"wn31:n:08541787\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：果核（可能泛指果实硬核或中央含籽部分）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组只保留苹果、梨等中央含籽部分，未说明中文“果核”是否还涵盖桃核等硬核；英语 core 不覆盖所有硬核。\",\"evidence_ids\":[\"web:core\"],\"context\":\"uncertain\",\"residual_scope\":\"missing broader 果核/硬核范围或明确来源待核\",\"counterexample\":\"桃核、枣核等硬核也可称果核，但英语 core 通常不指此类硬核\",\"counterexample_evidence_ids\":[\"web:core\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"范围收窄/来源范围待核\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-0d45f5fd462b:extended:1\"],\"evidence_ids\":[\"web:core\"],\"reason\":\"原文“果核”可泛指果实硬核或中央含籽部分，候选用括注仅保留苹果、梨等中央含籽部分，未在来源层标明剩余范围待核；web:core 也提示不能把中文果核扩大成所有硬核，说明需区分来源宽泛与英语 core 的子义。\",\"repair_suggestion\":\"保留苹果/梨核心这一有证据的子义时，在 source_scope 或 note 标明“若源词泛指硬核，则其余范围待核”，不要新增英语硬核义；若教材语境确指苹果核，可保留示例但避免写成排他唯一定义。\"}],\"note\":\"核心组保留抽象核心/中心义；果核义在扩展层但被括注收窄到苹果、梨中央含籽部分，来源宽泛性未标待核，需人工确认。\"},{\"id\":\"SG25-97b0560280ed\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：当前发生的、现时的\",\"relation\":\"语义等价\",\"reason\":\"核心组用“属于现在/当前发生”的形容词证据支撑“当前的”。\",\"evidence_ids\":[\"wn31:a:00669281\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：水流或流体流动\",\"relation\":\"语义等价\",\"reason\":\"核心组用水/流体稳定流动的词典义支撑“水流”。\",\"evidence_ids\":[\"wn31:n:07421365\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：电流\",\"relation\":\"语义等价\",\"reason\":\"扩展组用电流通过导体的词典义支撑“电流”，且与水流按物理对象区分。\",\"evidence_ids\":[\"wn31:n:11463628\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词“当前的”和名词“水流”在核心，“电流”在扩展层但未丢失；词性分开，未混同。\"},{\"id\":\"SG25-d6a919ef5362\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：就事情进行商谈/洽谈，偏正式或事务性\",\"relation\":\"合理概括\",\"reason\":\"扩展组保留“洽谈”义，用 discuss 的商谈/讨论证据支撑；注释已限定不直接等同全部商业谈判。\",\"evidence_ids\":[\"wn31:v:00815640\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：讨论、交换看法\",\"relation\":\"语义等价\",\"reason\":\"核心组用谈论/详细讨论的词典证据覆盖“讨论”。\",\"evidence_ids\":[\"wn31:v:00815640\",\"wn31:v:01036184\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：谈、谈论\",\"relation\":\"语义等价\",\"reason\":\"核心组将“谈”与“讨论”合组，并由“speak with others about”证据支撑谈论义。\",\"evidence_ids\":[\"wn31:v:00815640\",\"wn31:v:01036184\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个动词源义均保留：讨论/谈合组在核心，洽谈后置扩展并注明不等同全部商业谈判。\"},{\"id\":\"SG25-c501935a6b2b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：周期、反复出现的时间间隔\",\"relation\":\"语义等价\",\"reason\":\"核心组用反复事件发生间隔的词典义支撑“周期”。\",\"evidence_ids\":[\"wn31:n:15313066\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：循环、周期性事件序列\",\"relation\":\"语义等价\",\"reason\":\"核心组用周期性重复事件序列的词典义支撑“循环”。\",\"evidence_ids\":[\"wn31:n:07357095\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：骑自行车\",\"relation\":\"语义等价\",\"reason\":\"扩展组用 ride a bicycle 的动词义支撑“骑自行车”。\",\"evidence_ids\":[\"wn31:v:01939335\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词：循环、反复发生\",\"relation\":\"语义等价\",\"reason\":\"扩展组用 recur in repeating sequences 的动词义支撑动词“循环”。\",\"evidence_ids\":[\"wn31:v:00344425\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“周期/循环”在核心，动词“骑自行车/循环”在扩展层但均保留；词性及交通义未被抹去。\"}]}",
+  "usage": {
+    "prompt_tokens": 7144,
+    "completion_tokens": 14660,
+    "total_tokens": 21804,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12746
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5224
+  },
+  "started_utc": "2026-11-13T09:40:13.281728+00:00",
+  "completed_utc": "2026-11-13T09:41:34.477814+00:00",
+  "elapsed_seconds": 81.188,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

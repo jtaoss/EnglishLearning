@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_020",
+  "kind": "verify",
+  "request_hash": "c1956075746c4d2d44ed46e204290f422c56c4d40d312311ba9f7f5596b1ecd8",
+  "input_ids": [
+    "SG25-dffc177fd0bb",
+    "SG25-91bb720d0df3"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "08a72986-1fdf-4554-baab-18d5de9c3662",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-dffc177fd0bb\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源名词“需求”在无上下文时为一般义，可包含一般需要/要求；目标核心组仅以经济购买需求（wn31:n:13482365）作证据，未保留一般 need/requirement 范围（如 wn31:n:14472592、wn31:n:05901258），实际可推导用途被收窄。\",\n          \"evidence_ids\": [\n            \"wn31:n:13482365\",\n            \"wn31:n:14472592\",\n            \"wn31:n:05901258\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"源名词“要求”对应请求/要求义；扩展组用 urgent/peremptory request（wn31:n:07205939）覆盖，虽证据比一般“要求”略窄，但未发现该源义在其他层次丢失，可作为合理概括。\",\n          \"evidence_ids\": [\n            \"wn31:n:07205939\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源动词“强烈要求”与核心组“强烈要求”文本一致，证据 request urgently and forcefully（wn31:v:00756987）方向与强度均匹配。\",\n          \"evidence_ids\": [\n            \"wn31:v:00756987\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"residual_scope_missing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-dffc177fd0bb:core:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:13482365\",\n            \"wn31:n:14472592\",\n            \"wn31:n:05901258\"\n          ],\n          \"reason\": \"s001 一般“需求”仅由经济购买需求证据支撑，未提供一般 need/requirement 分支或明确暂存；组标签虽为“需求”，但有效证据范围被限定为经济需求，构成范围收窄。\",\n          \"counterexample\": \"there is a demand for jobs 表一般需要/需求，非经济购买需求；required activity（demands on time）亦属一般需要。\",\n          \"repair_suggestion\": \"在 core:1 保留一般需求父义并另注经济需求，或新增一般 need/requirement 分支/暂存剩余范围。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"核心“需求”证据偏经济购买，s002“要求”在扩展、s003动词核心；需补一般需要义并保留来源范围待核。\"\n    },\n    {\n      \"id\": \"SG25-91bb720d0df3\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“使保持某状态”与核心组合并文本中的同一短语及证据 cause to continue in a certain state 完全对应，无范围变化。\",\n          \"evidence_ids\": [\n            \"wn31:v:02687605\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“保持”与核心组合并文本中的“保持”一致，证据覆盖使状态持续，无丢失。\",\n          \"evidence_ids\": [\n            \"wn31:v:02687605\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源“维持”与核心组合并文本中的“维持”一致，证据覆盖持续状态，无丢失。\",\n          \"evidence_ids\": [\n            \"wn31:v:02687605\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"三个保持类短语合并为维持原状态，证据支持；外部义项已明确列为未采用候选，不构成来源覆盖缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4969,
+    "completion_tokens": 5260,
+    "total_tokens": 10229,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4304
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3305
+  },
+  "started_utc": "2026-11-13T09:56:48.897134+00:00",
+  "completed_utc": "2026-11-13T09:57:56.531079+00:00",
+  "elapsed_seconds": 67.64,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

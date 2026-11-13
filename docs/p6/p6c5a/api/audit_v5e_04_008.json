@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_008",
+  "kind": "audit",
+  "request_hash": "f7f79d2c95aa5503b369844bcf5e2ab58307926f5f10d1151b61b01d35cf7204",
+  "input_ids": [
+    "SG25-7482d5802c3c",
+    "SG25-742b27454919",
+    "SG25-5d08b02d678f",
+    "SG25-4b60d190e95e",
+    "SG25-7ab3778776cd"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d3069d1e-e13d-435d-a7d6-8e7edf0a42c6",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7482d5802c3c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：照片（人物或场景的图像，含数码形式）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“照片”与 wn31:n:03931348 的图像表示义一致；定义包含打印、幻灯片和数字格式，未把来源义限死为纸质照片。\",\"evidence_ids\":[\"wn31:n:03931348\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：拍摄照片\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“拍照”对应 wn31:v:01005294 的 record on photographic film 义，例句为拍摄场景；未见新增对象或方向限制。\",\"evidence_ids\":[\"wn31:v:01005294\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“照片”与动词“拍照”按源词性分列于核心，词典证据匹配；v:02740528“上镜/经拍摄呈现”属词典观察，未强并入源义。\"},{\"id\":\"SG25-742b27454919\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：物理学（研究物质与能量的学科）\",\"relation\":\"语义等价\",\"reason\":\"核心“物理学”与 wn31:n:06100457 的 science of matter and energy 义一致；n:06104194 的“某事物的物理特性/规律”是另一词典义，不是原文“物理学”义。\",\"evidence_ids\":[\"wn31:n:06100457\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"仅一个源义；核心保留学科义，未把“物理特性/规律”等词典增义塞入源映射。\"},{\"id\":\"SG25-5d08b02d678f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：抱怨（表达不满或委屈）\",\"relation\":\"合理概括\",\"reason\":\"核心组以“抱怨／投诉”合并表达不满；s001“抱怨”可由 wn31:n:07223368 expression of grievance or resentment 直接支持，且与 s002 共享上位表达不丢失抱怨义。\",\"evidence_ids\":[\"wn31:n:07223368\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：投诉（向有关方面表达不满或申诉）\",\"relation\":\"合理概括\",\"reason\":\"wn31:n:07223368 的 grievance/resentment 表达义可覆盖“投诉”的不满表达；但正式申诉/人际语域差异未在该证据中单列，宜在注释中明确。\",\"evidence_ids\":[\"wn31:n:07223368\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：病痛（身体不适或疾病）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“病痛”与 wn31:n:14078890 的 bodily disorder/disease、cause for complaining 义一致，独立保留。\",\"evidence_ids\":[\"wn31:n:14078890\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"layer_justification\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-5d08b02d678f:extended:1\"],\"evidence_ids\":[\"wn31:n:14078890\"],\"reason\":\"“病痛”是原文独立义项，已保留在扩展层，但说明只称“另一义，独立保留”，没有给出后置到扩展层的明确教学/语域理由；不能用义项少见或排序代替理由。\",\"repair_suggestion\":\"补充具体的AI教学理由，例如核心先呈现表达不满的交际义、病痛作为身体疾病义在扩展层独立呈现，或将该义与核心并列；保留独立分支和词典证据。\"},{\"severity\":\"Info\",\"kind\":\"note_incomplete\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-5d08b02d678f:core:1\"],\"evidence_ids\":[\"wn31:n:07223368\"],\"reason\":\"核心组注称“正式程度差异仍说明”，但注释正文没有实际说明抱怨与投诉的正式/语域差别，读者无法从现有注释获得该信息。\",\"repair_suggestion\":\"在组注中补一句语域说明，或删去“仍说明”的表述，避免声称已解释但未解释。\"}],\"note\":\"三个源义均保留：抱怨/投诉在核心合并，病痛在扩展独立；语义覆盖完整，但病痛后置理由及投诉语域说明不足，需修订注释/层级理由。\"},{\"id\":\"SG25-4b60d190e95e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：肉体的（与身体相关，相对于心智或精神）\",\"relation\":\"语义等价\",\"reason\":\"核心组“肉体的／身体的”对应 wn31:a:01782757 involving the body as distinguished from the mind or spirit；s001“肉体的”与该身体义一致。\",\"evidence_ids\":[\"wn31:a:01782757\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：身体的（与身体相关，相对于心智或精神）\",\"relation\":\"语义等价\",\"reason\":\"s002“身体的”同样由 wn31:a:01782757 的身体相对于心智/精神义支持；与“肉体的”合并为近义核心表述，未新增对象限制。\",\"evidence_ids\":[\"wn31:a:01782757\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义为近义，核心合并保留；词典中“物质的/物理学的”等义已作为外部候选，不塞入源映射。\"},{\"id\":\"SG25-7ab3778776cd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：更换/替换（用另一人或物代替原有者）\",\"relation\":\"语义等价\",\"reason\":\"核心“更换”由 wn31:v:00162496 的 substitute a person or thing for another 与 wn31:v:02262575 的 put in place of another/switch equivalent items 共同支持；未把 put back 归位义并入。\",\"evidence_ids\":[\"wn31:v:00162496\",\"wn31:v:02262575\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义“更换”保留在核心；“归还原位”属词典另一义，未强并入；“take the place of/接替”是否属于更宽“取代”需另议，不用来填补本词源义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5198,
+    "completion_tokens": 10141,
+    "total_tokens": 15339,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8470
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3278
+  },
+  "started_utc": "2026-11-13T09:46:53.808268+00:00",
+  "completed_utc": "2026-11-13T09:47:51.031247+00:00",
+  "elapsed_seconds": 57.234,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

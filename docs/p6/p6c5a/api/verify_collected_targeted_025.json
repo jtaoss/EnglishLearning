@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_025",
+  "kind": "verify",
+  "request_hash": "6e0cfd56b15e4d9463b5db1f8d36e38c697830cca791862a43ae77850e9ff397",
+  "input_ids": [
+    "SG25-363256bd1538",
+    "SG25-b38d9d168c3a"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a064de43-fc75-4b6e-9800-9e16c3b82ca6",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-363256bd1538\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“促进／推进”对应 wn31:v:02560630（contribute to the progress or growth of），保留了源义“促进”的抽象推动发展用途。\",\n          \"evidence_ids\": [\"wn31:v:02560630\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"同一核心组以“促进／推进”并列保留抽象推进义，且 wn31:v:02560630 支持 contribute to progress/growth；源片段未提供物理推动对象，不构成缺陷。\",\n          \"evidence_ids\": [\"wn31:v:02560630\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源“提升”无上下文，可能泛指提高/改善，也可能仅指职位晋升。目标扩展组只保留职位晋升（wn31:v:02402779），是否为范围收窄无法确认；需来源范围待核。\",\n          \"evidence_ids\": [\"wn31:v:02402779\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s003“提升”是否包含一般提高/改善（如提高质量、水平）未确定；若包含，则扩展组缺少对应英语证据（promote 通常不表示数量/水平提高），需在来源范围标待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"促进/推进由核心覆盖；提升按职位晋升置于扩展。产品宣传义（wn31:v:00978685）及国际象棋升变不在原中文片段中，不视为遗漏。\"\n    },\n    {\n      \"id\": \"SG25-b38d9d168c3a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心“连接”只对应 wn31:n:00146038（the act of bringing two things into contact），但源汉语名词“连接”还包含状态、连接物/连接处等词典支持的用法；这些用法在任何层级均未保留或暂存。\",\n          \"evidence_ids\": [\"wn31:n:00146038\", \"wn31:n:14442568\", \"wn31:n:03095830\", \"wn31:n:13893444\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“联系”对应 wn31:n:13813601（a relation between things or events），与源义“联系”的关系义一致；人脉/毒品供应等词典义未混入。\",\n          \"evidence_ids\": [\"wn31:n:13813601\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_gap\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-b38d9d168c3a:core:1\"],\n          \"evidence_ids\": [\"wn31:n:14442568\", \"wn31:n:03095830\", \"wn31:n:13893444\"],\n          \"reason\": \"源“连接”名词除动作外还常见状态义和连接物义；核心组仅保留动作义，且扩展/其他无相应义项或暂存说明，造成同源片段内的范围缺口。\",\n          \"counterexample\": \"例如 the connection was unstable（连接状态）或 soldered the connection（连接物/连接处）都超出了 wn31:n:00146038 的动作义。\",\n          \"repair_suggestion\": \"在核心或扩展中保留通用“连接（动作/状态）”或在扩展层析出“连接状态/连接物”并给出教学理由；至少应在注释或暂存中说明剩余范围。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002“联系”可能还含“接触/通信”义（如 keep in contact），现有核心关系义未覆盖；无上下文无法确认是否属于源范围。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"“连接”的动作义已保留，但状态/连接物等有词典依据的用法完全缺失，属可确认剩余范围缺口；“联系”的关系义覆盖良好，接触义待源范围确认。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4713,
+    "completion_tokens": 7683,
+    "total_tokens": 12396,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6688
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3049
+  },
+  "started_utc": "2026-11-13T09:57:48.438560+00:00",
+  "completed_utc": "2026-11-13T09:59:39.857059+00:00",
+  "elapsed_seconds": 111.406,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_010",
+  "kind": "audit",
+  "request_hash": "636464c8dabe7f59c4fbece521b249c8133c6a3d1bca893e2cdc10ad8ace2680",
+  "input_ids": [
+    "SG25-c125d0397b60",
+    "SG25-460ee6aa3a80",
+    "SG25-80415b2524ae",
+    "SG25-2104e56ef446",
+    "SG25-ea8b82a5c42a"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "f7d3b38e-426b-48e4-9f6a-bfbe8d65279b",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-c125d0397b60\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"接受（动词，宽泛：收受所给之物或同意提议）\",\"relation\":\"语义等价\",\"reason\":\"核心保留宽泛的“接受”，并注明可指收下所给之物或同意提议；wn31:v:02240906支持收下给予物，wn31:v:00799359支持肯定回应/同意，未把示例写成排他对象。\",\"evidence_ids\":[\"wn31:v:02240906\",\"wn31:v:00799359\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“接受”由核心宽释覆盖；证据支持收受与同意两类，未新增排他对象或领域限制。\"},{\"id\":\"SG25-460ee6aa3a80\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"捕获（源词性未定；可指捕获行为/结果）\",\"relation\":\"无法确定\",\"reason\":\"源义项s001的part_of_speech为null，核心组按名词“捕获”呈现并引wn31:n:00776783（以武力抓人的行为）；组注已说明推荐词性不等于原文核验，因此不能判为已确定的语义等价。\",\"evidence_ids\":[\"wn31:n:00776783\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；若原文s001也含动词“抓获”或泛指捕获，核心仅名词行为义未完全覆盖。\",\"counterexample\":\"同一中文“捕获”可对应动词抓获（wn31:v:01217985的catch/seize类），但该证据列在s002，不能自动借来证明s001。\",\"counterexample_evidence_ids\":[\"wn31:v:01217985\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"捕捉（源词性未定；多作动词抓取）\",\"relation\":\"无法确定\",\"reason\":\"源义项s002的part_of_speech为null，核心组按动词“捕捉”呈现并引wn31:v:01217985（追捕/抓住）；推荐有词典依据，但源词性未核，关系保持待核。\",\"evidence_ids\":[\"wn31:v:01217985\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；若原文s002也含名词“捕获物/捕获行为”，核心动词义未覆盖。\",\"counterexample\":\"名词“捕获行为”用法可由wn31:n:00776783支持，但该证据列在s001，不能自动证明s002。\",\"counterexample_evidence_ids\":[\"wn31:n:00776783\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"unresolved_source_pos_mapping\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-460ee6aa3a80:core:1\",\"SG25-460ee6aa3a80:core:2\"],\"evidence_ids\":[\"wn31:n:00776783\",\"wn31:v:01217985\"],\"reason\":\"两个源义项的part_of_speech均为null（pos_evidence=unresolved_multi_pos），核心组却分别推荐名词“捕获”与动词“捕捉”；尽管组注已说明是推荐、不冒充原文核验，映射关系仍不能按已核验词性判为语义等价，需保留待核。\",\"repair_suggestion\":\"保持源词性为未定；在映射中标注无法确定/待核，或补充分项词性与语境证据后再判断名词/动词对应。\"}],\"note\":\"捕获/捕捉两源义项词性均未定；核心分别推荐名词与动词，推荐本身透明，但映射应保持待核而非视为已核验等价。\"},{\"id\":\"SG25-80415b2524ae\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有能力的（形容词）\",\"relation\":\"语义等价\",\"reason\":\"核心保留“有能力的”；wn31:a:00307112（有才能/能力）与wn31:s:00512273（有技能胜任）支持该宽释；“capable of”仅作教学搭配示例，未成为排他条件。\",\"evidence_ids\":[\"wn31:a:00307112\",\"wn31:s:00512273\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“有能力的”由核心覆盖；capable of作为搭配示例出现，没有被写成唯一对象或唯一用法。\"},{\"id\":\"SG25-2104e56ef446\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"例外（名词：不符合规则或概括的情况）\",\"relation\":\"语义等价\",\"reason\":\"核心保留“例外”；wn31:n:05829606定义为不符合规则/概括的实例，与源义对应；未扩展成反对或批评义。\",\"evidence_ids\":[\"wn31:n:05829606\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一源义“例外”由核心覆盖；未把词典中的反对理由等非源义加入来源层。\"},{\"id\":\"SG25-ea8b82a5c42a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"临时的（形容词：非永久）\",\"relation\":\"合理概括\",\"reason\":\"核心组把“临时的／暂时的”合并为一个近义单元，保留非永久义；wn31:a:01760139支持not permanent/not lasting，合并未排除任一源表达。\",\"evidence_ids\":[\"wn31:a:01760139\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"暂时的（形容词：非永久）\",\"relation\":\"合理概括\",\"reason\":\"核心组用“临时的／暂时的”合并两个近义源表达；wn31:a:01760139支持非永久义，s002的“暂时的”仍可追溯。\",\"evidence_ids\":[\"wn31:a:01760139\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义项均为形容词且近义，核心合并为一个非永久单元并保留两个中文表达，未新增限制。\"}]}",
+  "usage": {
+    "prompt_tokens": 5975,
+    "completion_tokens": 7867,
+    "total_tokens": 13842,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6381
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4055
+  },
+  "started_utc": "2026-11-13T09:40:12.820940+00:00",
+  "completed_utc": "2026-11-13T09:40:55.699171+00:00",
+  "elapsed_seconds": 42.875,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

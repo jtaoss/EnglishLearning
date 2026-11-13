@@ -16,6 +16,7 @@ import 'package:english_learning/features/pronunciation/pronunciation_services.d
 import 'package:english_learning/integrations/notion/notion_sync_service.dart';
 import 'package:english_learning/integrations/notion/notion_sync_controller.dart';
 import 'package:english_learning/integrations/notion/events/event_sandbox_controller.dart';
+import 'package:english_learning/features/japanese/domain/japanese_controller.dart';
 
 final class EnglishLearningApp extends StatefulWidget {
   const EnglishLearningApp({
@@ -67,6 +68,7 @@ class _EnglishLearningAppState extends State<EnglishLearningApp>
               ? 'Android Keystore 加密存储'
               : 'Windows 凭据管理器',
         );
+  late final JapaneseController _japaneseController = JapaneseController();
   late final GoRouter _router = AppRouter.create(
     appSettings: _settings,
     environmentLabel: AppConfig.debugLabel(
@@ -78,6 +80,7 @@ class _EnglishLearningAppState extends State<EnglishLearningApp>
     pronunciationServices: widget.pronunciationServices,
     notionController: _notion,
     eventController: widget.eventController,
+    japaneseController: _japaneseController,
     allowCsvImport: !widget.notionMobile,
   );
   @override
@@ -86,6 +89,7 @@ class _EnglishLearningAppState extends State<EnglishLearningApp>
     WidgetsBinding.instance.addObserver(this);
     widget.logger.info('English learning shell ready');
     unawaited(_settings.restore());
+    unawaited(_japaneseController.initialize());
     if (_vocabulary != null) unawaited(_vocabulary.refresh());
     if (_notion != null) unawaited(_notion.restore());
   }
@@ -94,6 +98,7 @@ class _EnglishLearningAppState extends State<EnglishLearningApp>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _router.dispose();
+    _japaneseController.dispose();
     _vocabulary?.dispose();
     _notion?.dispose();
     _settings.dispose();

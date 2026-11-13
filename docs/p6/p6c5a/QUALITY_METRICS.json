@@ -1,0 +1,127 @@
+{
+  "schema_version": "P6C5a.quality_metrics.v1",
+  "candidate_words": 700,
+  "new_candidate_IDs": 0,
+  "source_fragments": 1702,
+  "cohorts": {
+    "reused600": {
+      "words": 600,
+      "source_fragments": 1453,
+      "primary_reviewed": 600,
+      "source_POS_unknown_fragments": 99,
+      "pending_scope_mappings": 252
+    },
+    "new100": {
+      "words": 100,
+      "source_fragments": 249,
+      "primary_reviewed": 100,
+      "source_POS_unknown_fragments": 10,
+      "pending_scope_mappings": 45
+    }
+  },
+  "primary_actual_reviewed_words": 700,
+  "primary_strict_contract_words": 699,
+  "secondary_targeted_actual_words": 124,
+  "secondary_strict_contract_words": 119,
+  "primary_AI_relations_NOT_confirmed_errors": {
+    "语义等价": 1252,
+    "合理概括": 245,
+    "范围收窄": 87,
+    "无法确定": 105,
+    "范围扩大": 9,
+    "语义不匹配": 4
+  },
+  "primary_AI_issue_proposals_NOT_confirmed": {
+    "Minor": 162,
+    "Info": 102,
+    "Major": 26
+  },
+  "secondary_AI_issue_proposals_NOT_parent_confirmed": {
+    "Minor": 55,
+    "Major": 16,
+    "Info": 7,
+    "Moderate": 1
+  },
+  "all_major_proposal_word_dispositions": 29,
+  "parent_evidence_confirmed_regression_issues": {
+    "Critical": 0,
+    "Major": 2,
+    "Minor": 6
+  },
+  "remaining_confirmed_Major_words": [
+    "determine",
+    "sensitive"
+  ],
+  "known_scope_Major_points_repaired": 2,
+  "known_Minor_annotation_points_repaired": 2,
+  "contact_prior_interpretation_refined_not_whole_word_causative_impossible": true,
+  "holdout_selected": 24,
+  "holdout_source_first_valid": 22,
+  "holdout_source_first_failed": 2,
+  "holdout_candidate_reviewed": 24,
+  "heldout_confirmed_Major_words": [
+    "determine"
+  ],
+  "heldout_confirmed_Minor_evidence_mapping_words": [
+    "abstract"
+  ],
+  "historical48_retained": 48,
+  "human_approved_count": 0,
+  "original_needs_human_review_count": 688,
+  "current_requires_human_review_count": 690,
+  "pending_scope_mapping_count": 297,
+  "actual_API_responses_saved": 253,
+  "actual_API_usage": {
+    "prompt_tokens": 1472759,
+    "completion_tokens": 2446773,
+    "total_tokens": 3919532,
+    "prompt_cache_hit_tokens": 509056,
+    "prompt_cache_miss_tokens": 963703
+  },
+  "actual_API_usage_by_returned_model": {
+    "deepseek-flash": {
+      "responses": 150,
+      "prompt_tokens": 984839,
+      "completion_tokens": 1771937,
+      "total_tokens": 2756776,
+      "prompt_cache_hit_tokens": 306304,
+      "prompt_cache_miss_tokens": 678535
+    },
+    "deepseek-v4-pro": {
+      "responses": 103,
+      "prompt_tokens": 487920,
+      "completion_tokens": 674836,
+      "total_tokens": 1162756,
+      "prompt_cache_hit_tokens": 202752,
+      "prompt_cache_miss_tokens": 285168
+    }
+  },
+  "actual_billed_cost_USD": null,
+  "Codex_parent_model_exact_version_usage_cost": null,
+  "estimated_USD_range_not_invoice": [
+    2.694708,
+    5.389416
+  ],
+  "cost_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "response_model_identifiers": [
+    "deepseek-flash",
+    "deepseek-v4-pro"
+  ],
+  "documented_versions": {
+    "deepseek-flash": "DeepSeek-V4.1-Flash-1017",
+    "deepseek-v4-pro": "DeepSeek-V4-Pro-0813"
+  },
+  "provider_internal_weights_or_statistical_independence_proven": false,
+  "population_false_positive_rate": null,
+  "population_false_negative_rate": null,
+  "known_scope_calibration_before_detected": 2,
+  "known_scope_calibration_after_still_flagged_as_narrowing": 0,
+  "known_scholar_frequency_claim_missed_by_both_semantic_models": true,
+  "frequency_advisory_detected_before": 1,
+  "frequency_advisory_detected_after": 0,
+  "new_confirmed_critical": 0,
+  "same_cause_systemic_C_threshold_proven": false,
+  "decision": "B",
+  "resume_authorized": false,
+  "release_authorized": false
+}

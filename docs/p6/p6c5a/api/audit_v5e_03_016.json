@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_016",
+  "kind": "audit",
+  "request_hash": "3e09cee897d08d8f2b2d6ad832f92dabe1e62e954a8fc6ff36a0b790d9a51c11",
+  "input_ids": [
+    "SG25-cf38d95c9c6b",
+    "SG25-808a374d0159",
+    "SG25-cf07194ee232",
+    "SG25-7e5608ab6100",
+    "SG25-12765295db4f"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "fb26ef1a-c1bb-4878-b410-bc47d7061ee1",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-cf38d95c9c6b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：可计量的数量/多少\",\"relation\":\"语义等价\",\"reason\":\"核心组“数量”与 wn31:n:00033914 的“可量化多少”一致，原文基础义有直接对应。\",\"evidence_ids\":[\"wn31:n:00033914\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：合计后的总额/金额\",\"relation\":\"语义等价\",\"reason\":\"扩展组“总额”对应合计数量或金额义，wn31:n:05869651 与 wn31:n:13352213 均支持该范围。\",\"evidence_ids\":[\"wn31:n:05869651\",\"wn31:n:13352213\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“数量”入核心，“总额”在扩展保留；两个原义均有对应链接，未见原文支持范围丢失。\"},{\"id\":\"SG25-808a374d0159\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：对疾病/感染有免疫力的\",\"relation\":\"语义等价\",\"reason\":\"核心组“免疫的”由 conferring immunity 证据直接支持；immune system 为相关形容词用法。\",\"evidence_ids\":[\"wn31:s:02372182\",\"wn31:a:02756634\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：不受某影响/作用\",\"relation\":\"语义等价\",\"reason\":\"扩展组“不受影响的”与 immune to influence 对齐；但同组还列了 immune from taxation/prosecution（免于/免受）证据，需与“不受影响”区分。\",\"evidence_ids\":[\"wn31:s:00072889\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"extra：同组证据含“免于/secure against”用法，中文只写“不受影响的”\",\"counterexample\":\"immune from taxation 是“免于纳税”，不是单纯“不受影响”。\",\"counterexample_evidence_ids\":[\"wn31:s:02374468\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_scope_mismatch\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-808a374d0159:extended:1\"],\"evidence_ids\":[\"wn31:s:02374468\"],\"reason\":\"扩展组中文为“不受影响的”，但同组证据包含 immune from taxation/prosecution 的“免于/免受”义；该义与“不受影响”不完全同义，易使学习者把 immune from 的免除义并入一般影响义。\",\"repair_suggestion\":\"把“免于/免受（如 immune from taxation）”单独列为扩展或补充说明，或从“不受影响的”组移出该证据；保留 immune to 的“不受影响”证据。\"}],\"note\":\"“免疫的”与“不受影响的”分别保留；扩展组内“免于/免受”证据与“不受影响”有轻微混同，需拆分说明。\"},{\"id\":\"SG25-cf07194ee232\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：促使/引发\",\"relation\":\"语义等价\",\"reason\":\"核心组“促使”对应 serve as inciting cause；原文促使义有直接链接。\",\"evidence_ids\":[\"wn31:v:00774006\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：提示/给（演员或背诵者）提词\",\"relation\":\"语义等价\",\"reason\":\"扩展组“提示”保留了动词提示义，wn31:v:00879379 的提词/提示证据支持该用法；组文本未把对象限死在演出。\",\"evidence_ids\":[\"wn31:v:00879379\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：迅速的/及时的\",\"relation\":\"语义等价\",\"reason\":\"核心组“迅速的”对应 prompt reply 的 quick/immediate 用法。\",\"evidence_ids\":[\"wn31:s:00981945\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：提示（提词/屏幕提示等）\",\"relation\":\"合理概括\",\"reason\":\"扩展组用“提示”概括演出提词与计算机屏幕提示两个词典用法，原文一般提示可涵盖，具体对象仍由证据区分。\",\"evidence_ids\":[\"wn31:n:06291257\",\"wn31:n:07024919\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个原义均有独立链接；动词提示与名词提示留在扩展但已保留，未发现来源范围丢失。\"},{\"id\":\"SG25-7e5608ab6100\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：移除/拿开（具体或抽象对象）\",\"relation\":\"语义等价\",\"reason\":\"核心组“移除”对应 remove concrete/abstract 的词典义。\",\"evidence_ids\":[\"wn31:v:00173351\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：脱下（衣物等）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“脱下”是 remove 的具体对象用法；词典定义含 taking off，证据支持该子用法。\",\"evidence_ids\":[\"wn31:v:00173351\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：免去/解除职务\",\"relation\":\"语义等价\",\"reason\":\"扩展组“免去”与 remove from a position or office 证据一致。\",\"evidence_ids\":[\"wn31:v:02409366\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“移除”入核心，“脱下”“免去”在扩展分别保留；三个原义均未丢失。\"},{\"id\":\"SG25-12765295db4f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：自然的/非人为的（自然形成、非人造）\",\"relation\":\"合理概括\",\"reason\":\"核心组“自然的”合并自然/非人造两个紧邻词典子义，未把例子当排他限制，原文一般义保留。\",\"evidence_ids\":[\"wn31:a:01574358\",\"wn31:a:01575285\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：天生的/生来的（才能、资质）\",\"relation\":\"语义等价\",\"reason\":\"核心组“天生的”与 natural leader/born musician/innate talent 证据对应；词典证据侧重天赋，组文本未加排他限制。\",\"evidence_ids\":[\"wn31:s:01338661\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“自然的”与“天生的”分别保留在核心；未见原支持范围被排他性限制或丢失。\"}]}",
+  "usage": {
+    "prompt_tokens": 7434,
+    "completion_tokens": 16350,
+    "total_tokens": 23784,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14560
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5514
+  },
+  "started_utc": "2026-11-13T09:44:50.518333+00:00",
+  "completed_utc": "2026-11-13T09:46:23.955879+00:00",
+  "elapsed_seconds": 93.437,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

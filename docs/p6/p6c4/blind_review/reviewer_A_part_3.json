@@ -1,0 +1,2676 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "e4c67e6e73a2a72bade4c20835e7bba9c0b2b270d8ceeb0caf08502d8dfe3d38",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "part": 3,
+  "proposal_status": "AI_candidates_not_human_or_gold_standard",
+  "records": [
+    {
+      "stable_id": "SG25-6a6ba702490a",
+      "headword": "admission",
+      "source_hash": "d78a05b458d6fbb4082a2e394f6b7c6dee0ec2f2f77fc1fa5cd6189a3632fff8",
+      "original_meaning_zh": "准许进入；入场费；承认",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "准许进入",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "入场费",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "承认",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "准许进入；进入的许可",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:01250738",
+              "wn31:n:05183715"
+            ],
+            "usage_note": "既可指让人进入的行为，也可指进入的权利；这是名词，不标作准许这个动词。",
+            "semantic_role_or_object": "既可指让人进入的行为，也可指进入的权利；这是名词，不标作准许这个动词。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "入场费",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:13342517"
+            ],
+            "usage_note": "进入某处被收取的费用，与准入本身不同。",
+            "semantic_role_or_object": "进入某处被收取的费用，与准入本身不同。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "承认；承认事实的话",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:07230608"
+            ],
+            "usage_note": "承认某事为真的言语/行为名词，不是动词admit。",
+            "semantic_role_or_object": "承认某事为真的言语/行为名词，不是动词admit。",
+            "use_id": "core_03"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "准许进入；进入的许可",
+          "semantic_role_or_object": "既可指让人进入的行为，也可指进入的权利；这是名词，不标作准许这个动词。",
+          "evidence_ids": [
+            "wn31:n:01250738",
+            "wn31:n:05183715"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "入场费",
+          "semantic_role_or_object": "进入某处被收取的费用，与准入本身不同。",
+          "evidence_ids": [
+            "wn31:n:13342517"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "承认；承认事实的话",
+          "semantic_role_or_object": "承认某事为真的言语/行为名词，不是动词admit。",
+          "evidence_ids": [
+            "wn31:n:07230608"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "准入、费用、事实承认各有独立对象，首次保留三组；不用中文动词式提示误分英语词性。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01250738",
+          "part_of_speech": "n",
+          "definition_en": "the act of admitting someone to enter; \"the surgery was performed on his second admission to the clinic\"",
+          "lemmas": [
+            "admission",
+            "admittance"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05183715",
+          "part_of_speech": "n",
+          "definition_en": "the right to enter",
+          "lemmas": [
+            "entree",
+            "access",
+            "accession",
+            "admission",
+            "admittance"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07230608",
+          "part_of_speech": "n",
+          "definition_en": "an acknowledgment of the truth of something",
+          "lemmas": [
+            "admission"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13342517",
+          "part_of_speech": "n",
+          "definition_en": "the fee charged for admission",
+          "lemmas": [
+            "entrance_fee",
+            "admission",
+            "admission_charge",
+            "admission_fee",
+            "admission_price",
+            "price_of_admission",
+            "entrance_money"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "core_03"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-0e031e954a43",
+      "headword": "could",
+      "source_hash": "50e5fc4f35507da18f90fa80da2bd88acde9fa9b06c98d9c979a0cfeebad39a5",
+      "original_meaning_zh": "能够；可能（can的过去式或委婉形式）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "能够",
+          "part_of_speech": "情态动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "可能（can的过去式或委婉形式）",
+          "part_of_speech": "情态动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 19
+        }
+      ],
+      "source_part_of_speech": "情态动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "情态动词",
+            "display_zh": "能够；能（过去能力或条件下的能力）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "pub:could",
+              "pubA:could"
+            ],
+            "usage_note": "接动词原形；过去能力和假设条件下的能力不应全当实际已发生动作。",
+            "semantic_role_or_object": "接动词原形；过去能力和假设条件下的能力不应全当实际已发生动作。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "情态动词",
+            "display_zh": "可能；有可能",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:could",
+              "pubA:could"
+            ],
+            "usage_note": "表示可能为真或可能发生；可涉及现在、将来或假设，不一概指过去。",
+            "semantic_role_or_object": "表示可能为真或可能发生；可涉及现在、将来或假设，不一概指过去。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "情态动词",
+            "display_zh": "能否……；可以……吗（委婉请求）",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:could",
+              "pubA:could"
+            ],
+            "usage_note": "疑问结构中礼貌请求他人行动或允许自己行动；非普通过去能力。",
+            "semantic_role_or_object": "疑问结构中礼貌请求他人行动或允许自己行动；非普通过去能力。",
+            "use_id": "core_03"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "情态动词",
+            "display_zh": "可以……（委婉建议或提议）",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:could",
+              "pubA:could"
+            ],
+            "usage_note": "提出一个可考虑的行动选项；与请求对方许可在语用上区分。",
+            "semantic_role_or_object": "提出一个可考虑的行动选项；与请求对方许可在语用上区分。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "情态动词",
+          "meaning_zh": "本来可能……（could have done）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pubA:could"
+          ],
+          "reason": "有时涉及未实现的过去可能，原文括注未明确完成式与现实结果关系；单列结构候选，不自动加入核心。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "能够；能（过去能力或条件下的能力）",
+          "semantic_role_or_object": "接动词原形；过去能力和假设条件下的能力不应全当实际已发生动作。",
+          "evidence_ids": [
+            "pub:could",
+            "pubA:could"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "可能；有可能",
+          "semantic_role_or_object": "表示可能为真或可能发生；可涉及现在、将来或假设，不一概指过去。",
+          "evidence_ids": [
+            "pub:could",
+            "pubA:could"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "能否……；可以……吗（委婉请求）",
+          "semantic_role_or_object": "疑问结构中礼貌请求他人行动或允许自己行动；非普通过去能力。",
+          "evidence_ids": [
+            "pub:could",
+            "pubA:could"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "可以……（委婉建议或提议）",
+          "semantic_role_or_object": "提出一个可考虑的行动选项；与请求对方许可在语用上区分。",
+          "evidence_ids": [
+            "pub:could",
+            "pubA:could"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "情态动词",
+          "meaning_zh": "本来可能……（could have done）",
+          "semantic_role_or_object": "有时涉及未实现的过去可能，原文括注未明确完成式与现实结果关系；单列结构候选，不自动加入核心。",
+          "evidence_ids": [
+            "pubA:could"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_02",
+              "part_of_speech": "情态动词",
+              "meaning_zh": "可能；有可能",
+              "semantic_role_or_object": "表示可能为真或可能发生；可涉及现在、将来或假设，不一概指过去。",
+              "evidence_ids": [
+                "pub:could",
+                "pubA:could"
+              ]
+            },
+            {
+              "use_id": "core_03",
+              "part_of_speech": "情态动词",
+              "meaning_zh": "能否……；可以……吗（委婉请求）",
+              "semantic_role_or_object": "疑问结构中礼貌请求他人行动或允许自己行动；非普通过去能力。",
+              "evidence_ids": [
+                "pub:could",
+                "pubA:could"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "情态动词",
+              "meaning_zh": "可以……（委婉建议或提议）",
+              "semantic_role_or_object": "提出一个可考虑的行动选项；与请求对方许可在语用上区分。",
+              "evidence_ids": [
+                "pub:could",
+                "pubA:could"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "Minor",
+          "evidence_ids": [
+            "pubA:could"
+          ],
+          "finding": "括注can的过去式或委婉形式容易被读成封闭范围；could也用于现在或将来的可能和条件假设。原文保留，提案明确范围。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pubA:could"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "核心先区分能力、可能性与礼貌请求三个主要功能；委婉提议随后学。原括注的委婉形式支持语用拆解，不能以过去式概括全部could。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:could",
+          "headword": "could",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/could",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "情态动词接动词原形，可表达过去能力、可能或假设；也用于委婉请求/提议，不是全部用法都指过去时间。",
+          "pos_supported": [
+            "情态动词"
+          ]
+        },
+        {
+          "evidence_id": "pubA:could",
+          "headword": "could",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/could",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "可表达过去能力、现在或将来可能、取决条件的能力与可能，以及委婉请求和建议；could have可涉及未实现的过去可能。词条并不把所有用法归为过去时间。",
+          "observed_date": "2026-11-13"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "情态动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "core_03",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-3b34c922c3f3",
+      "headword": "beloved",
+      "source_hash": "0764a5afddf4ca7e5c1e4d132b29af34b3b9b8d8ac29aaf68f6c3f61231ae2f3",
+      "original_meaning_zh": "形容词：深受喜爱的；名词：所爱的人",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "深受喜爱的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "所爱的人",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 17
+        }
+      ],
+      "source_part_of_speech": "形容词；名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "深受喜爱的",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:s:01465246"
+            ],
+            "usage_note": "被人深爱或喜爱；方向是被喜爱，不是爱别人的。",
+            "semantic_role_or_object": "被人深爱或喜爱；方向是被喜爱，不是爱别人的。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "所爱的人；爱人",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:09869006"
+            ],
+            "usage_note": "被深爱的人；名词人物用途与被喜爱的形容性质分开。",
+            "semantic_role_or_object": "被深爱的人；名词人物用途与被喜爱的形容性质分开。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "深受喜爱的",
+          "semantic_role_or_object": "被人深爱或喜爱；方向是被喜爱，不是爱别人的。",
+          "evidence_ids": [
+            "wn31:s:01465246"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "所爱的人；爱人",
+          "semantic_role_or_object": "被深爱的人；名词人物用途与被喜爱的形容性质分开。",
+          "evidence_ids": [
+            "wn31:n:09869006"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "先记被深爱的形容性质，再学指所爱之人的名词；层级为教学取舍而非词典频率。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:09869006",
+          "part_of_speech": "n",
+          "definition_en": "a beloved person; used as terms of endearment",
+          "lemmas": [
+            "beloved",
+            "dear",
+            "dearest",
+            "honey",
+            "love"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01465246",
+          "part_of_speech": "s",
+          "definition_en": "dearly loved",
+          "lemmas": [
+            "beloved",
+            "darling",
+            "dear"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-d7d5dcc36942",
+      "headword": "better",
+      "source_hash": "f85d3c1d79ac55cacbb6697c1f22016ff6429f175e61a9983826f415d14a789c",
+      "original_meaning_zh": "更好的；更好地",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "更好的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "更好地",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "source_part_of_speech": "形容词；副词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "更好的",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:a:00231927"
+            ],
+            "usage_note": "good的比较级，比较质量、合适程度等。",
+            "semantic_role_or_object": "good的比较级，比较质量、合适程度等。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "副词",
+            "display_zh": "更好地",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:r:00060145"
+            ],
+            "usage_note": "well的比较级，修饰做事的方式或效果；词性依据比较级英语证据而非片段先后。",
+            "semantic_role_or_object": "well的比较级，修饰做事的方式或效果；词性依据比较级英语证据而非片段先后。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "身体好些的；康复一些的",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:a:00233353",
+              "pubA:better"
+            ],
+            "usage_note": "病后健康或体能改善的状态；原文更好的宽提示需明确健康对象。",
+            "semantic_role_or_object": "病后健康或体能改善的状态；原文更好的宽提示需明确健康对象。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "固定结构",
+          "meaning_zh": "最好……；应该……（had better）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pubA:better"
+          ],
+          "reason": "表示建议或警告的固定结构，不是一般更好地，原文未表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "更；更喜欢（与like等连用）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pubA:better"
+          ],
+          "reason": "偏好程度增加与做得更好不同，独立候选。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "改善；使处境更好",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00206293",
+            "pubA:better"
+          ],
+          "reason": "动词施动关系原词性未列，不能把更好的直接跨配。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "超过（成绩、纪录等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01109275",
+            "pubA:better"
+          ],
+          "reason": "记录比较中的及物动词与形容词质量比较分开待审。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "更好的",
+          "semantic_role_or_object": "good的比较级，比较质量、合适程度等。",
+          "evidence_ids": [
+            "wn31:a:00231927"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "meaning_zh": "更好地",
+          "semantic_role_or_object": "well的比较级，修饰做事的方式或效果；词性依据比较级英语证据而非片段先后。",
+          "evidence_ids": [
+            "wn31:r:00060145"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "身体好些的；康复一些的",
+          "semantic_role_or_object": "病后健康或体能改善的状态；原文更好的宽提示需明确健康对象。",
+          "evidence_ids": [
+            "wn31:a:00233353",
+            "pubA:better"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "固定结构",
+          "meaning_zh": "最好……；应该……（had better）",
+          "semantic_role_or_object": "表示建议或警告的固定结构，不是一般更好地，原文未表达。",
+          "evidence_ids": [
+            "pubA:better"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "更；更喜欢（与like等连用）",
+          "semantic_role_or_object": "偏好程度增加与做得更好不同，独立候选。",
+          "evidence_ids": [
+            "pubA:better"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "改善；使处境更好",
+          "semantic_role_or_object": "动词施动关系原词性未列，不能把更好的直接跨配。",
+          "evidence_ids": [
+            "wn31:v:00206293",
+            "pubA:better"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_04",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "meaning_zh": "超过（成绩、纪录等）",
+          "semantic_role_or_object": "记录比较中的及物动词与形容词质量比较分开待审。",
+          "evidence_ids": [
+            "wn31:v:01109275",
+            "pubA:better"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "形容词",
+              "meaning_zh": "更好的",
+              "semantic_role_or_object": "good的比较级，比较质量、合适程度等。",
+              "evidence_ids": [
+                "wn31:a:00231927"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "形容词",
+              "meaning_zh": "身体好些的；康复一些的",
+              "semantic_role_or_object": "病后健康或体能改善的状态；原文更好的宽提示需明确健康对象。",
+              "evidence_ids": [
+                "wn31:a:00233353",
+                "pubA:better"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "pubA:better",
+            "wn31:a:00231927",
+            "wn31:a:00233353",
+            "wn31:r:00060145",
+            "wn31:v:00206293",
+            "wn31:v:01109275"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pubA:better",
+            "wn31:v:00206293",
+            "wn31:v:01109275"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "首次区分形容词品质比较和副词动作表现；健康好些是同一宽中文在特定状态对象上的读法，单列扩展并标拆解。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pubA:better",
+          "headword": "better",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/better",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "既有good/well比较级与病后好些的状态，也区分更喜欢的程度副词；had better用于建议或警告。动词可指超过记录或改善处境。",
+          "observed_date": "2026-11-13"
+        },
+        {
+          "evidence_id": "wn31:a:00231927",
+          "part_of_speech": "a",
+          "definition_en": "(comparative of `good') superior to another (of the same class or set or kind) in excellence or quality or desirability or suitability; more highly skilled than another; \"You're a better man than I am, Gunga Din\"; \"a better coat\"; \"a better type of car\"; \"a suit with a better fit\"; \"a better chance of success\"; \"produced a better mousetrap\"; \"she's better in math than in history\"",
+          "lemmas": [
+            "better"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:00233353",
+          "part_of_speech": "a",
+          "definition_en": "(comparative of `good') changed for the better in health or fitness; \"her health is better now\"; \"I feel better\"",
+          "lemmas": [
+            "better"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00060145",
+          "part_of_speech": "r",
+          "definition_en": "comparative of `well'; in a better or more excellent manner or more advantageously or attractively or to a greater degree etc.; \"She had never sung better\"; \"a deed better left undone\"; \"better suited to the job\"",
+          "lemmas": [
+            "better"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00206293",
+          "part_of_speech": "v",
+          "definition_en": "to make better; \"The editor improved the manuscript with his changes\"",
+          "lemmas": [
+            "better",
+            "improve",
+            "amend",
+            "ameliorate",
+            "meliorate"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01109275",
+          "part_of_speech": "v",
+          "definition_en": "surpass in excellence; \"She bettered her own record\"; \"break a record\"",
+          "lemmas": [
+            "better",
+            "break"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "副词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_02"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-6ef7c9b15ecd",
+      "headword": "high",
+      "source_hash": "b57c7d9f92480fb194b839185efa018b7a7fd27189bfd93e6375857dd5129af7",
+      "original_meaning_zh": "高的；高地",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "高的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "高地",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "形容词；副词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "高的（位置或高度）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:a:01207229",
+              "pubA:high"
+            ],
+            "usage_note": "表示垂直位置或尺寸高；不能不看对象就替换tall形容人的高个子。",
+            "semantic_role_or_object": "表示垂直位置或尺寸高；不能不看对象就替换tall形容人的高个子。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "高的（数量、程度或强度）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:a:01213526",
+              "pubA:high"
+            ],
+            "usage_note": "如价格、温度、风险等，非空间高度。",
+            "semantic_role_or_object": "如价格、温度、风险等，非空间高度。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "形容词",
+            "display_zh": "音调高的",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:a:01215869",
+              "pubA:high"
+            ],
+            "usage_note": "指声音音调而非响度；高的这个宽提示据声音证据拆解。",
+            "semantic_role_or_object": "指声音音调而非响度；高的这个宽提示据声音证据拆解。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [
+        {
+          "source_sense_id": "s002",
+          "text": "高地",
+          "reason": "中文通常指地势高的土地，也可能原作者试图用地标副词；源逐义词性未知。英语有高处副词和高处名词，但不足以确定原作者意图，暂存。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "在高处；向高处",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00358753",
+            "wn31:r:00358935",
+            "pubA:high"
+          ],
+          "reason": "英语副词用途确定，但原片段高地可能是地形名词或生硬的副词提示；先作为未采用候选等待源意图判断。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "最高点；最高水平",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05104798",
+            "pubA:high"
+          ],
+          "reason": "如达到某一最高值的独立名词，原文只列形容词、副词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "高的（位置或高度）",
+          "semantic_role_or_object": "表示垂直位置或尺寸高；不能不看对象就替换tall形容人的高个子。",
+          "evidence_ids": [
+            "wn31:a:01207229",
+            "pubA:high"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "高的（数量、程度或强度）",
+          "semantic_role_or_object": "如价格、温度、风险等，非空间高度。",
+          "evidence_ids": [
+            "wn31:a:01213526",
+            "pubA:high"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "meaning_zh": "音调高的",
+          "semantic_role_or_object": "指声音音调而非响度；高的这个宽提示据声音证据拆解。",
+          "evidence_ids": [
+            "wn31:a:01215869",
+            "pubA:high"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "meaning_zh": "在高处；向高处",
+          "semantic_role_or_object": "英语副词用途确定，但原片段高地可能是地形名词或生硬的副词提示；先作为未采用候选等待源意图判断。",
+          "evidence_ids": [
+            "wn31:r:00358753",
+            "wn31:r:00358935",
+            "pubA:high"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "最高点；最高水平",
+          "semantic_role_or_object": "如达到某一最高值的独立名词，原文只列形容词、副词。",
+          "evidence_ids": [
+            "wn31:n:05104798",
+            "pubA:high"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "reserved_01",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": null,
+          "meaning_zh": "高地",
+          "semantic_role_or_object": "中文通常指地势高的土地，也可能原作者试图用地标副词；源逐义词性未知。英语有高处副词和高处名词，但不足以确定原作者意图，暂存。",
+          "evidence_ids": [],
+          "layer": "reserved",
+          "evidence_relation": "原文保留；英语用法和逐义词性对齐未定，不能算已确认其他义。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "形容词",
+              "meaning_zh": "高的（位置或高度）",
+              "semantic_role_or_object": "表示垂直位置或尺寸高；不能不看对象就替换tall形容人的高个子。",
+              "evidence_ids": [
+                "wn31:a:01207229",
+                "pubA:high"
+              ]
+            },
+            {
+              "use_id": "core_02",
+              "part_of_speech": "形容词",
+              "meaning_zh": "高的（数量、程度或强度）",
+              "semantic_role_or_object": "如价格、温度、风险等，非空间高度。",
+              "evidence_ids": [
+                "wn31:a:01213526",
+                "pubA:high"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "形容词",
+              "meaning_zh": "音调高的",
+              "semantic_role_or_object": "指声音音调而非响度；高的这个宽提示据声音证据拆解。",
+              "evidence_ids": [
+                "wn31:a:01215869",
+                "pubA:high"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_zh_and_pos_ambiguity",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "wn31:r:00358753",
+            "wn31:n:08602145",
+            "pubA:high"
+          ],
+          "finding": "高地并非自然的孤立副词释义，且英语同时有名词和副词用法。不能根据片段顺序将其确认为副词或据中文字面改源词性。"
+        },
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "pubA:high",
+            "wn31:a:01207229",
+            "wn31:a:01213526",
+            "wn31:a:01215869",
+            "wn31:n:05104798",
+            "wn31:r:00358753",
+            "wn31:r:00358935"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pubA:high",
+            "wn31:n:05104798",
+            "wn31:r:00358753",
+            "wn31:r:00358935"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "先记空间高度与抽象程度两类对象，声音音调随后明确。原文高地的自然中文与源副词意图不确定，不按顺序强派副词。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pubA:high",
+          "headword": "high",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/high",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "形容词分别用于高度、数量程度、地位和音调；副词可描述在高处或向高处。另列达到的最高数值的名词。中文高地不足以自行确认是副词还是地形名词。",
+          "observed_date": "2026-11-13"
+        },
+        {
+          "evidence_id": "wn31:a:01207229",
+          "part_of_speech": "a",
+          "definition_en": "(literal meaning) being at or having a relatively great or specific elevation or upward extension (sometimes used in combinations like `knee-high'); \"a high mountain\"; \"high ceilings\"; \"high buildings\"; \"a high forehead\"; \"a high incline\"; \"a foot high\"",
+          "lemmas": [
+            "high"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:01213526",
+          "part_of_speech": "a",
+          "definition_en": "greater than normal in degree or intensity or amount; \"a high temperature\"; \"a high price\"; \"the high point of his career\"; \"high risks\"; \"has high hopes\"; \"the river is high\"; \"he has a high opinion of himself\"",
+          "lemmas": [
+            "high"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:01215869",
+          "part_of_speech": "a",
+          "definition_en": "used of sounds and voices; high in pitch or frequency",
+          "lemmas": [
+            "high",
+            "high-pitched"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05104798",
+          "part_of_speech": "n",
+          "definition_en": "a lofty level or position or degree; \"summer temperatures reached an all-time high\"",
+          "lemmas": [
+            "high"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08602145",
+          "part_of_speech": "n",
+          "definition_en": "a high place; \"they stood on high and observed the countryside\"; \"he doesn't like heights\"",
+          "lemmas": [
+            "high",
+            "heights"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00358753",
+          "part_of_speech": "r",
+          "definition_en": "at a great altitude; \"he climbed high on the ladder\"",
+          "lemmas": [
+            "high",
+            "high_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00358935",
+          "part_of_speech": "r",
+          "definition_en": "in or to a high position, amount, or degree; \"prices have gone up far too high\"",
+          "lemmas": [
+            "high"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "副词",
+          "status": "unresolved_source_alignment_external_candidate_exists",
+          "use_ids": [],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "英语用法存在，但与源暂存片段的对齐无法确认；源词性仍保留，未假装已经覆盖。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "高地是否原作者意在表示副词向高处/在高处，或误写了地形名词？待人工确认。",
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-e7b235014cd5",
+      "headword": "hoist",
+      "source_hash": "a502387e1624ec7b73a70ff6a7860a28d3077f9839781d71541c7e26b52cd4be",
+      "original_meaning_zh": "升起；吊起；起重装置",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "升起",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "吊起",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "起重装置",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "升起；吊起",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:v:01457813",
+              "wn31:v:01458383"
+            ],
+            "usage_note": "使旗帜或重物上升，常借机械或绳索；两个中文近义提示可并列。",
+            "semantic_role_or_object": "使旗帜或重物上升，常借机械或绳索；两个中文近义提示可并列。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "起重装置",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:n:03530254"
+            ],
+            "usage_note": "用于提起重物的设备，不是提升动作本身。",
+            "semantic_role_or_object": "用于提起重物的设备，不是提升动作本身。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "升起；吊起",
+          "semantic_role_or_object": "使旗帜或重物上升，常借机械或绳索；两个中文近义提示可并列。",
+          "evidence_ids": [
+            "wn31:v:01457813",
+            "wn31:v:01458383"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "起重装置",
+          "semantic_role_or_object": "用于提起重物的设备，不是提升动作本身。",
+          "evidence_ids": [
+            "wn31:n:03530254"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_pos_alignment",
+          "severity": "AI_risk",
+          "evidence_ids": [
+            "wn31:n:03530254",
+            "wn31:v:01457813",
+            "wn31:v:01458383"
+          ],
+          "finding": "源多词性字段未逐片段对齐。已保留null；推荐词性逐用法据英语证据提出，不能按片段位置分派。"
+        }
+      ],
+      "priority_rationale": "提升动作与起重设备分两组，推荐词性来自词典动作/装置定义；不让词头先列名词就决定第一片段词性。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03530254",
+          "part_of_speech": "n",
+          "definition_en": "lifting device for raising heavy or cumbersome objects",
+          "lemmas": [
+            "hoist"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01457813",
+          "part_of_speech": "v",
+          "definition_en": "raise or haul up with or as if with mechanical help; \"hoist the bicycle onto the roof of the car\"",
+          "lemmas": [
+            "hoist",
+            "lift",
+            "wind"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01458383",
+          "part_of_speech": "v",
+          "definition_en": "raise; \"hoist the flags\"; \"hoist a sail\"",
+          "lemmas": [
+            "hoist",
+            "run_up"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-8ac1ef5381ca",
+      "headword": "lip",
+      "source_hash": "971226d082347392376af4a322167ae8cb4243ab0cd8b81075d62a558466be60",
+      "original_meaning_zh": "嘴唇",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "嘴唇",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "嘴唇",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:05313305"
+            ],
+            "usage_note": "口部上下两片肉质组织之一。",
+            "semantic_role_or_object": "口部上下两片肉质组织之一。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（容器等的）边缘；口沿",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:02905554"
+          ],
+          "reason": "容器上缘与身体嘴唇不同，生活场景中有独立用途。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "嘴唇",
+          "semantic_role_or_object": "口部上下两片肉质组织之一。",
+          "evidence_ids": [
+            "wn31:n:05313305"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "（容器等的）边缘；口沿",
+          "semantic_role_or_object": "容器上缘与身体嘴唇不同，生活场景中有独立用途。",
+          "evidence_ids": [
+            "wn31:n:02905554"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:02905554"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "原文仅身体部位，首次一组；容器边缘是独立对象，不能用嘴唇提示直接取代。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:02905554",
+          "part_of_speech": "n",
+          "definition_en": "the top edge of a vessel or other container",
+          "lemmas": [
+            "brim",
+            "rim",
+            "lip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05313305",
+          "part_of_speech": "n",
+          "definition_en": "either of two fleshy folds of tissue that surround the mouth and play a role in speaking",
+          "lemmas": [
+            "lip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-251fecd592e5",
+      "headword": "point",
+      "source_hash": "93b53071287a93d2919cd2c7751fc4f6c261220e538bdd3cbfc861049ad0f3fc",
+      "original_meaning_zh": "名词：点，要点；动词：指向，指出",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "点",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "要点",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "指向",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "指出",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "点；小圆点",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:13934887"
+            ],
+            "usage_note": "可见的小圆形标记；不一概包含分数、目的或尖端。",
+            "semantic_role_or_object": "可见的小圆形标记；不一概包含分数、目的或尖端。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "要点；核心意思",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:06619161"
+            ],
+            "usage_note": "话语或事物的主要意思。",
+            "semantic_role_or_object": "话语或事物的主要意思。",
+            "use_id": "core_02"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "指向",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:00925764",
+              "wn31:v:02719059",
+              "pub:point"
+            ],
+            "usage_note": "用手势等指示对象/方向，或物体本身朝向某处；方向对象明确。",
+            "semantic_role_or_object": "用手势等指示对象/方向，或物体本身朝向某处；方向对象明确。",
+            "use_id": "core_03"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "指出；提醒注意（常用point out）",
+            "source_sense_ids": [
+              "s004"
+            ],
+            "evidence_ids": [
+              "pub:point"
+            ],
+            "usage_note": "使人注意某事实或问题；须保留通常与out组合的限定，不等同所有裸point。",
+            "semantic_role_or_object": "使人注意某事实或问题；须保留通常与out组合的限定，不等同所有裸point。",
+            "use_id": "core_04"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "点；地点或阶段位置",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:08637636",
+              "wn31:n:13962925",
+              "wn31:n:15205381"
+            ],
+            "usage_note": "精确空间位置、过程阶段或时间点；原中文点的宽读法与可见标记分开。",
+            "semantic_role_or_object": "精确空间位置、过程阶段或时间点；原中文点的宽读法与可见标记分开。",
+            "use_id": "extended_01"
+          },
+          {
+            "part_of_speech": "名词",
+            "display_zh": "点（几何位置）",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:05874582"
+            ],
+            "usage_note": "数学中有位置而无广延的元素，不能把小圆形物理痕迹当成严格定义。",
+            "semantic_role_or_object": "数学中有位置而无广延的元素，不能把小圆形物理痕迹当成严格定义。",
+            "use_id": "extended_02"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "分；得分单位",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:13631405"
+          ],
+          "reason": "比赛计分单位在原文点/要点中未明确，独立候选。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "意义；目的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05992951"
+          ],
+          "reason": "what is the point等所问目的不同于话语要点。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "尖端",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:03980573"
+          ],
+          "reason": "尖锐末端的实体用法不同于小圆点，原文未写。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "点；小圆点",
+          "semantic_role_or_object": "可见的小圆形标记；不一概包含分数、目的或尖端。",
+          "evidence_ids": [
+            "wn31:n:13934887"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "要点；核心意思",
+          "semantic_role_or_object": "话语或事物的主要意思。",
+          "evidence_ids": [
+            "wn31:n:06619161"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_03",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "指向",
+          "semantic_role_or_object": "用手势等指示对象/方向，或物体本身朝向某处；方向对象明确。",
+          "evidence_ids": [
+            "wn31:v:00925764",
+            "wn31:v:02719059",
+            "pub:point"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_04",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "指出；提醒注意（常用point out）",
+          "semantic_role_or_object": "使人注意某事实或问题；须保留通常与out组合的限定，不等同所有裸point。",
+          "evidence_ids": [
+            "pub:point"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "点；地点或阶段位置",
+          "semantic_role_or_object": "精确空间位置、过程阶段或时间点；原中文点的宽读法与可见标记分开。",
+          "evidence_ids": [
+            "wn31:n:08637636",
+            "wn31:n:13962925",
+            "wn31:n:15205381"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_02",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "点（几何位置）",
+          "semantic_role_or_object": "数学中有位置而无广延的元素，不能把小圆形物理痕迹当成严格定义。",
+          "evidence_ids": [
+            "wn31:n:05874582"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "分；得分单位",
+          "semantic_role_or_object": "比赛计分单位在原文点/要点中未明确，独立候选。",
+          "evidence_ids": [
+            "wn31:n:13631405"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_02",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "意义；目的",
+          "semantic_role_or_object": "what is the point等所问目的不同于话语要点。",
+          "evidence_ids": [
+            "wn31:n:05992951"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        },
+        {
+          "use_id": "addition_03",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "尖端",
+          "semantic_role_or_object": "尖锐末端的实体用法不同于小圆点，原文未写。",
+          "evidence_ids": [
+            "wn31:n:03980573"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "点；小圆点",
+              "semantic_role_or_object": "可见的小圆形标记；不一概包含分数、目的或尖端。",
+              "evidence_ids": [
+                "wn31:n:13934887"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "点；地点或阶段位置",
+              "semantic_role_or_object": "精确空间位置、过程阶段或时间点；原中文点的宽读法与可见标记分开。",
+              "evidence_ids": [
+                "wn31:n:08637636",
+                "wn31:n:13962925",
+                "wn31:n:15205381"
+              ]
+            },
+            {
+              "use_id": "extended_02",
+              "part_of_speech": "名词",
+              "meaning_zh": "点（几何位置）",
+              "semantic_role_or_object": "数学中有位置而无广延的元素，不能把小圆形物理痕迹当成严格定义。",
+              "evidence_ids": [
+                "wn31:n:05874582"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "wn31:n:03980573",
+            "wn31:n:05992951",
+            "wn31:n:13631405"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        },
+        {
+          "domain": "teaching_load",
+          "severity": "teaching_preference",
+          "evidence_ids": [
+            "pub:point",
+            "wn31:n:03980573",
+            "wn31:n:05874582",
+            "wn31:n:05992951",
+            "wn31:n:06619161",
+            "wn31:n:08637636",
+            "wn31:n:13631405",
+            "wn31:n:13934887",
+            "wn31:n:13962925",
+            "wn31:n:15205381",
+            "wn31:v:00925764",
+            "wn31:v:02719059"
+          ],
+          "finding": "核心超过3组，已逐用法检查并保留差异；需人工复核记忆负担，不以删义达到数字。"
+        }
+      ],
+      "priority_rationale": "首屏保留点的直观标记、要点和两种不同动词功能，共4组待人工负担复核。空间/阶段和几何读法后学并显式拆解宽中文。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:point",
+          "headword": "point",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/point",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "有指向某对象/方向的动词，也有引起注意/指出某事的动词用法，后者通常带out；名词另分小点/位置与观点要点等。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:03980573",
+          "part_of_speech": "n",
+          "definition_en": "sharp end; \"he stuck the point of the knife into a tree\"; \"he broke the point of his pencil\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05874582",
+          "part_of_speech": "n",
+          "definition_en": "a geometric element that has position but no extension; \"a point is defined by its coordinates\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05992951",
+          "part_of_speech": "n",
+          "definition_en": "the object of an activity; \"what is the point of discussing it?\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06619161",
+          "part_of_speech": "n",
+          "definition_en": "a brief version of the essential meaning of something; \"get to the point\"; \"he missed the point of the joke\"; \"life has lost its point\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08637636",
+          "part_of_speech": "n",
+          "definition_en": "the precise location of something; a spatially limited location; \"she walked to a point where she could survey the whole street\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13631405",
+          "part_of_speech": "n",
+          "definition_en": "the unit of counting in scoring a game or contest; \"he scored 20 points in the first half\"; \"a touchdown counts 6 points\"",
+          "lemmas": [
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13934887",
+          "part_of_speech": "n",
+          "definition_en": "a very small circular shape; \"a row of points\"; \"draw lines between the dots\"",
+          "lemmas": [
+            "point",
+            "dot"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13962925",
+          "part_of_speech": "n",
+          "definition_en": "a specific identifiable position in a continuum or series or especially in a process; \"a remarkable degree of frankness\"; \"at what stage are the social sciences?\"",
+          "lemmas": [
+            "degree",
+            "level",
+            "stage",
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15205381",
+          "part_of_speech": "n",
+          "definition_en": "an instant of time; \"at that point I had to leave\"",
+          "lemmas": [
+            "point",
+            "point_in_time"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00925764",
+          "part_of_speech": "v",
+          "definition_en": "indicate a place, direction, person, or thing; either spatially or figuratively; \"I showed the customer the glove section\"; \"He pointed to the empty parking space\"; \"he indicated his opponents\"",
+          "lemmas": [
+            "indicate",
+            "point",
+            "designate",
+            "show"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02719059",
+          "part_of_speech": "v",
+          "definition_en": "be oriented; \"The weather vane points North\"; \"the dancers toes pointed outward\"",
+          "lemmas": [
+            "orient",
+            "point"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "core_02",
+            "extended_01",
+            "extended_02"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01",
+            "addition_02",
+            "addition_03"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_03",
+            "core_04"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    },
+    {
+      "stable_id": "SG25-e91c254ad588",
+      "headword": "potato",
+      "source_hash": "80810d07c959cd13de7574caa34469584a2f9960c777bad6188b79788fe68acd",
+      "original_meaning_zh": "马铃薯；土豆",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "马铃薯",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "土豆",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "马铃薯；土豆",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:07726361"
+            ],
+            "usage_note": "日常食用的地下块茎；两中文名称为同一食物。",
+            "semantic_role_or_object": "日常食用的地下块茎；两中文名称为同一食物。",
+            "use_id": "core_01"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "马铃薯植株",
+            "source_sense_ids": [
+              "s001",
+              "s002"
+            ],
+            "evidence_ids": [
+              "wn31:n:12918253"
+            ],
+            "usage_note": "同一名称也指长出可食块茎的植物；实体对象由食物扩到植株，显式拆解同一原文名称。",
+            "semantic_role_or_object": "同一名称也指长出可食块茎的植物；实体对象由食物扩到植株，显式拆解同一原文名称。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "马铃薯；土豆",
+          "semantic_role_or_object": "日常食用的地下块茎；两中文名称为同一食物。",
+          "evidence_ids": [
+            "wn31:n:07726361"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "马铃薯植株",
+          "semantic_role_or_object": "同一名称也指长出可食块茎的植物；实体对象由食物扩到植株，显式拆解同一原文名称。",
+          "evidence_ids": [
+            "wn31:n:12918253"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "马铃薯；土豆",
+              "semantic_role_or_object": "日常食用的地下块茎；两中文名称为同一食物。",
+              "evidence_ids": [
+                "wn31:n:07726361"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "马铃薯植株",
+              "semantic_role_or_object": "同一名称也指长出可食块茎的植物；实体对象由食物扩到植株，显式拆解同一原文名称。",
+              "evidence_ids": [
+                "wn31:n:12918253"
+              ]
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI_semantic_split_not_new_source_fragment",
+          "reason": "同一宽中文片段可支持下列不同用法；保持原ID，以对象、语法功能或名词/动词方向分别核证。",
+          "uses": [
+            {
+              "use_id": "core_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "马铃薯；土豆",
+              "semantic_role_or_object": "日常食用的地下块茎；两中文名称为同一食物。",
+              "evidence_ids": [
+                "wn31:n:07726361"
+              ]
+            },
+            {
+              "use_id": "extended_01",
+              "part_of_speech": "名词",
+              "meaning_zh": "马铃薯植株",
+              "semantic_role_or_object": "同一名称也指长出可食块茎的植物；实体对象由食物扩到植株，显式拆解同一原文名称。",
+              "evidence_ids": [
+                "wn31:n:12918253"
+              ]
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "首次以食用块茎建立概念，植株对象随后学；中文同义名不人为拆成两种英语食物。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07726361",
+          "part_of_speech": "n",
+          "definition_en": "an edible tuber native to South America; a staple food of Ireland",
+          "lemmas": [
+            "potato",
+            "white_potato",
+            "Irish_potato",
+            "murphy",
+            "spud",
+            "tater"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:12918253",
+          "part_of_speech": "n",
+          "definition_en": "annual native to South America having underground stolons bearing edible starchy tubers; widely cultivated as a garden vegetable; vines are poisonous",
+          "lemmas": [
+            "potato",
+            "white_potato",
+            "white_potato_vine",
+            "Solanum_tuberosum"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": []
+    },
+    {
+      "stable_id": "SG25-d29223721312",
+      "headword": "pine",
+      "source_hash": "c4c3a0f8444b370a8fbf53ee8e111c4bc6a054f41711ce00b625ee9b86381930",
+      "original_meaning_zh": "名词：松树；动词：憔悴，苦苦思念",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "松树",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "憔悴",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "苦苦思念",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "groups": {
+        "core": [
+          {
+            "part_of_speech": "名词",
+            "display_zh": "松树",
+            "source_sense_ids": [
+              "s001"
+            ],
+            "evidence_ids": [
+              "wn31:n:11628701"
+            ],
+            "usage_note": "针叶树这一植物，不自动包含加工木材。",
+            "semantic_role_or_object": "针叶树这一植物，不自动包含加工木材。",
+            "use_id": "core_01"
+          },
+          {
+            "part_of_speech": "动词",
+            "display_zh": "苦苦思念；渴望",
+            "source_sense_ids": [
+              "s003"
+            ],
+            "evidence_ids": [
+              "wn31:v:01809651",
+              "pub:pine"
+            ],
+            "usage_note": "强烈想念不在身边的人或渴望缺少之物，常用pine for。",
+            "semantic_role_or_object": "强烈想念不在身边的人或渴望缺少之物，常用pine for。",
+            "use_id": "core_02"
+          }
+        ],
+        "extended": [
+          {
+            "part_of_speech": "动词",
+            "display_zh": "（因悲伤、思念等）日渐消瘦衰弱",
+            "source_sense_ids": [
+              "s002"
+            ],
+            "evidence_ids": [
+              "pub:pine"
+            ],
+            "usage_note": "常用pine away；原文憔悴须限定原因和过程，不能当作任意疲倦外貌。",
+            "semantic_role_or_object": "常用pine away；原文憔悴须限定原因和过程，不能当作任意疲倦外貌。",
+            "use_id": "extended_01"
+          }
+        ],
+        "other": []
+      },
+      "reserved": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "松木",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:11629336",
+            "pub:pine"
+          ],
+          "reason": "树木材料不同于活树，原文只写松树，单列候选不自动扩义。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "core_01",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "meaning_zh": "松树",
+          "semantic_role_or_object": "针叶树这一植物，不自动包含加工木材。",
+          "evidence_ids": [
+            "wn31:n:11628701"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "core_02",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "苦苦思念；渴望",
+          "semantic_role_or_object": "强烈想念不在身边的人或渴望缺少之物，常用pine for。",
+          "evidence_ids": [
+            "wn31:v:01809651",
+            "pub:pine"
+          ],
+          "layer": "core",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "extended_01",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "meaning_zh": "（因悲伤、思念等）日渐消瘦衰弱",
+          "semantic_role_or_object": "常用pine away；原文憔悴须限定原因和过程，不能当作任意疲倦外貌。",
+          "evidence_ids": [
+            "pub:pine"
+          ],
+          "layer": "extended",
+          "evidence_relation": "独立语义阅读后的兼容映射；推荐词性来自对应英语证据，原始逐义词性不改。"
+        },
+        {
+          "use_id": "addition_01",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "meaning_zh": "松木",
+          "semantic_role_or_object": "树木材料不同于活树，原文只写松树，单列候选不自动扩义。",
+          "evidence_ids": [
+            "wn31:n:11629336",
+            "pub:pine"
+          ],
+          "layer": "dictionary_additions_unadopted",
+          "evidence_relation": "原文未明确表达的外部用途；存在不等于采用或核心频率。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "Minor",
+          "evidence_ids": [
+            "pub:pine"
+          ],
+          "finding": "憔悴提示缺少因悲伤/思念而日渐消瘦的限制；出版社支持的是受限过程，提案加以限定而原文不改。"
+        },
+        {
+          "domain": "raw_source_external_coverage_gap",
+          "severity": "tracked_external_gap",
+          "evidence_ids": [
+            "pub:pine",
+            "wn31:n:11629336"
+          ],
+          "finding": "原文未明确表达的独立用途见dictionary_additions；均未采用，原文或核心覆盖的补充决策仍待审。"
+        }
+      ],
+      "priority_rationale": "先学树种与强烈思念两种独立功能；日渐消瘦用法需同时记原因、过程及常见搭配，放扩展。 此为AI教学建议，不是义项频率统计。",
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:pine",
+          "headword": "pine",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/pine",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "松树/松木名词另列；动词可强烈思念，常搭for；也可因悲伤相思等日渐消瘦衰弱，常搭away，不能把普通外貌憔悴全部等同pine。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:11628701",
+          "part_of_speech": "n",
+          "definition_en": "a coniferous tree",
+          "lemmas": [
+            "pine",
+            "pine_tree",
+            "true_pine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:11629336",
+          "part_of_speech": "n",
+          "definition_en": "straight-grained durable and often resinous white to yellowish timber of any of numerous trees of the genus Pinus",
+          "lemmas": [
+            "pine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01809651",
+          "part_of_speech": "v",
+          "definition_en": "have a desire for something or someone who is not present; \"She ached for a cigarette\"; \"I am pining for my lover\"",
+          "lemmas": [
+            "ache",
+            "yearn",
+            "yen",
+            "pine",
+            "languish"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_01"
+          ],
+          "external_candidate_use_ids": [
+            "addition_01"
+          ],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "status": "represented_in_groups",
+          "use_ids": [
+            "core_02",
+            "extended_01"
+          ],
+          "external_candidate_use_ids": [],
+          "reason": "推荐词性来自逐用法英语证据；不改变源逐义标签。"
+        }
+      ],
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "外部用途的采用与展示层级尚未决定。"
+      ]
+    }
+  ],
+  "count": 10,
+  "external_access_failures": [
+    {
+      "headword": "issue",
+      "url": "https://dictionary.cambridge.org/dictionary/english/issue",
+      "http_status": 403,
+      "observation_zh": "网页工具返回Forbidden，未获得定义；未将失败访问当作词义证据。随后另查出版社Merriam-Webster。"
+    }
+  ]
+}

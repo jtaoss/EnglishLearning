@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_019",
+  "kind": "audit",
+  "request_hash": "93fb16c99796fdba4c17f3736ca3cb129aa82d8cd63592572e2fe18fda77c3ea",
+  "input_ids": [
+    "SG25-1a7b308d8df6",
+    "SG25-3f662004cb46",
+    "SG25-b8ba2ec7e907",
+    "SG25-c4a1e6f3639a",
+    "SG25-16b60e9de607"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5779e9c8-0c13-4235-a15f-853c2a37dc4a",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-1a7b308d8df6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：数量（可计量的多少）\",\"relation\":\"语义等价\",\"reason\":\"核心组“数量”用“可计量多少”的通用名词义覆盖原义，未把例句中的“大量”固定成唯一义。\",\"evidence_ids\":[\"wn31:n:00033914\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"唯一源义“数量”由核心通用义覆盖；large amount 和数学量是词典补充，未采用也不构成源义缺口。\"},{\"id\":\"SG25-3f662004cb46\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：出版（行为/行业）\",\"relation\":\"语义等价\",\"reason\":\"核心组“出版”保留出版行为或行业的过程义，未与产物义混同。\",\"evidence_ids\":[\"wn31:n:01103863\",\"wn31:n:01105519\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：出版物（印刷/发行产物）\",\"relation\":\"语义等价\",\"reason\":\"核心组“出版物”对应可发行印刷品的产物义，与 s001 的过程义分列。\",\"evidence_ids\":[\"wn31:n:06601855\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"出版行为与出版物分列核心，过程/产物边界清楚；公开传播义属词典补充，未作为源义。\"},{\"id\":\"SG25-b8ba2ec7e907\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：没有混杂的/不含杂质\",\"relation\":\"语义等价\",\"reason\":\"核心组以“不含杂质/无外加物”覆盖“没有混杂的”，证据直接支持该一般义。\",\"evidence_ids\":[\"wn31:a:01911832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：纯的（无外加成分）\",\"relation\":\"语义等价\",\"reason\":\"核心组并列保留“纯的”，与“不含杂质”同属一般纯度义，未扩成道德或强度义。\",\"evidence_ids\":[\"wn31:a:01911832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：纯净的（水、空气等无污染物）\",\"relation\":\"语义等价\",\"reason\":\"核心组的“纯净的”与证据中的 pure air/water 等无杂质用法一致。\",\"evidence_ids\":[\"wn31:a:01911832\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义中文片段合并为一个“不含杂质/无外加物”核心义；未扩展为道德纯洁或绝对强度义。\"},{\"id\":\"SG25-c4a1e6f3639a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：共和政体的\",\"relation\":\"语义等价\",\"reason\":\"核心组形容词义对应“共和政体/共和制政府”的形容词用法，未并入美国共和党专名义。\",\"evidence_ids\":[\"wn31:s:00720336\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：共和主义者\",\"relation\":\"语义等价\",\"reason\":\"核心组名词义对应 republic 的拥护者，与形容词义分列。\",\"evidence_ids\":[\"wn31:n:10542088\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词“共和政体的”与名词“共和主义者”分列；美国共和党义未混入源义。\"},{\"id\":\"SG25-16b60e9de607\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：四分之一（四等份之一）\",\"relation\":\"语义等价\",\"reason\":\"核心组“四分之一”直接对应 one of four equal parts。\",\"evidence_ids\":[\"wn31:n:13759620\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：一刻钟（15分钟）\",\"relation\":\"语义等价\",\"reason\":\"核心组“一刻钟”对应 a unit of time equal to 15 minutes。\",\"evidence_ids\":[\"wn31:n:15259739\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：季度（一年的四分之一/三个月）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“季度”对应 a fourth part of a year; three months，语义保留。\",\"evidence_ids\":[\"wn31:n:15231386\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：地区（区域/地带）\",\"relation\":\"范围收窄\",\"reason\":\"其他层只保留“城镇中有特色的区”，并以“不泛指任意地区”限定；原文“地区”为一般地域，未见保留一般地区义或明确待核剩余。英语证据只直接支持城市区，更像来源译义过宽，不宜直接判生成器 Major。\",\"evidence_ids\":[\"wn31:n:08645494\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般地区/任意地域范围；仅保留城镇中的区\",\"counterexample\":\"所给证据支持城市中的区（如 Latin Quarter），不支持任意地区/区域\",\"counterexample_evidence_ids\":[\"wn31:n:08645494\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"范围收窄/来源过宽待核\",\"source_ids\":[\"s004\"],\"group_ids\":[\"SG25-16b60e9de607:p6c1:other:1\"],\"evidence_ids\":[\"wn31:n:08645494\"],\"reason\":\"原文“地区”是一般地域表述，候选只保留“城镇中的区”并注明不泛指任意地区；没有保留一般地区义或明确标注该来源范围待核。英语证据只直接支持城市区，因而更像来源译义过宽，不宜直接判生成器 Major。\",\"repair_suggestion\":\"将“（城镇的）区”标为英语证据支持的限定用法，同时把原“地区”一般范围列为待核/可能译义过宽；不要声称“地区”已被完整覆盖，也不要把不存在的泛地域义硬加入核心。\"}],\"note\":\"四分之一、一刻钟在核心，季度在扩展，地区仅保留“城镇中的区”；s004 的一般“地区”范围仍有待核剩余。\"}]}",
+  "usage": {
+    "prompt_tokens": 6478,
+    "completion_tokens": 10648,
+    "total_tokens": 17126,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9000
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4558
+  },
+  "started_utc": "2026-11-13T09:46:54.043333+00:00",
+  "completed_utc": "2026-11-13T09:47:55.236044+00:00",
+  "elapsed_seconds": 61.204,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

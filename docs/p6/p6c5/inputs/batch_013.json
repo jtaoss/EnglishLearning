@@ -1,0 +1,5224 @@
+{
+  "batch": 13,
+  "records": [
+    {
+      "id": "SG25-f8d807ee15e9",
+      "word": "fifty",
+      "pos": "数词",
+      "raw": "五十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "五十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13416360",
+          "pos": "n",
+          "definition": "a United States bill worth 50 dollars"
+        },
+        {
+          "id": "wn31:n:13771784",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and five"
+        },
+        {
+          "id": "wn31:s:02198871",
+          "pos": "s",
+          "definition": "being ten more than forty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9cee2304bd63",
+      "word": "forty",
+      "pos": "数词",
+      "raw": "四十",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "四十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13771667",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and four"
+        },
+        {
+          "id": "wn31:s:02197917",
+          "pos": "s",
+          "definition": "being ten more than thirty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-97fe8a374906",
+      "word": "hundred",
+      "pos": "数词",
+      "raw": "一百",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "一百",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13772555",
+          "pos": "n",
+          "definition": "ten 10s"
+        },
+        {
+          "id": "wn31:s:02203776",
+          "pos": "s",
+          "definition": "being ten more than ninety"
+        }
+      ]
+    },
+    {
+      "id": "SG25-4fdd3b6201a2",
+      "word": "less",
+      "pos": "限定词；副词",
+      "raw": "更少；较少地",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "更少",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "较少地",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00100077",
+          "pos": "r",
+          "definition": "used to form the comparative of some adjectives and adverbs; \"less interesting\"; \"less expensive\"; \"less quickly\""
+        },
+        {
+          "id": "wn31:r:00100418",
+          "pos": "r",
+          "definition": "comparative of little; \"she walks less than she should\"; \"he works less these days\""
+        },
+        {
+          "id": "wn31:a:01559809",
+          "pos": "a",
+          "definition": "(comparative of `little' usually used with mass nouns) a quantifier meaning not as great in amount or degree; \"of less importance\"; \"less time to spend with the family\"; \"a shower uses less water\"; \"less than three years old\""
+        },
+        {
+          "id": "wn31:s:01561306",
+          "pos": "s",
+          "definition": "(nonstandard in some uses but often idiomatic with measure phrases) fewer; \"less than three weeks\"; \"no less than 50 people attended\"; \"in 25 words or less\""
+        },
+        {
+          "id": "wn31:s:02355910",
+          "pos": "s",
+          "definition": "(usually preceded by `no') lower in quality; \"no less than perfect\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-9fede2030631",
+      "word": "mile",
+      "pos": "名词",
+      "raw": "英里",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "英里",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:07484465",
+          "pos": "n",
+          "definition": "a footrace extending one mile; \"he holds the record in the mile\""
+        },
+        {
+          "id": "wn31:n:13672836",
+          "pos": "n",
+          "definition": "a unit of length equal to 1,760 yards or 5,280 feet; exactly 1609.344 meters"
+        },
+        {
+          "id": "wn31:n:13676880",
+          "pos": "n",
+          "definition": "a Swedish unit of length equivalent to 10 km"
+        },
+        {
+          "id": "wn31:n:13677032",
+          "pos": "n",
+          "definition": "an ancient Roman unit of length equivalent to 1620 yards"
+        },
+        {
+          "id": "wn31:n:13682449",
+          "pos": "n",
+          "definition": "a unit of length used in navigation; exactly 1,852 meters; historically based on the distance spanned by one minute of arc in latitude"
+        },
+        {
+          "id": "wn31:n:13682724",
+          "pos": "n",
+          "definition": "a former British unit of length equivalent to 6,080 feet (1,853.184 meters); 800 feet longer than a statute mile"
+        },
+        {
+          "id": "wn31:n:13682973",
+          "pos": "n",
+          "definition": "a former British unit of length once used in navigation; equivalent to 6,000 feet (1828.8 meters)"
+        },
+        {
+          "id": "wn31:n:13798542",
+          "pos": "n",
+          "definition": "a large distance; \"he missed by a mile\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-edcd8e701a2d",
+      "word": "nine",
+      "pos": "数词",
+      "raw": "九",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "九",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03831088",
+          "pos": "n",
+          "definition": "one of four playing cards in a deck with nine pips on the face"
+        },
+        {
+          "id": "wn31:n:08096490",
+          "pos": "n",
+          "definition": "a team of professional baseball players who play and travel together; \"each club played six home games with teams in its own division\""
+        },
+        {
+          "id": "wn31:n:13767410",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of eight and one"
+        },
+        {
+          "id": "wn31:s:02194800",
+          "pos": "s",
+          "definition": "denoting a quantity consisting of one more than eight and one less than ten"
+        }
+      ]
+    },
+    {
+      "id": "SG25-521c74a4d582",
+      "word": "ninety",
+      "pos": "数词",
+      "raw": "九十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "九十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13772437",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and nine"
+        },
+        {
+          "id": "wn31:s:02202784",
+          "pos": "s",
+          "definition": "being ten more than eighty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-12886f9d0005",
+      "word": "number",
+      "pos": "名词；动词",
+      "raw": "名词：数字，号码，数量；动词：编号，总计",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "数字",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "号码",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "数量",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "编号",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "source_sense_id": "s005",
+          "text": "总计",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 18,
+          "end": 20
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03840952",
+          "pos": "n",
+          "definition": "an item of clothing; \"she preferred the black nylon number\"; \"this sweater is an all-wool number\""
+        },
+        {
+          "id": "wn31:n:05103556",
+          "pos": "n",
+          "definition": "a clothing measurement; \"a number 13 shoe\""
+        },
+        {
+          "id": "wn31:n:05128718",
+          "pos": "n",
+          "definition": "the property possessed by a sum or total or indefinite quantity of units or individuals; \"the number of parameters is small\"; \"the figure was about a thousand\""
+        },
+        {
+          "id": "wn31:n:06337519",
+          "pos": "n",
+          "definition": "the grammatical category for the forms of nouns and pronouns and verbs that are used depending on the number of entities involved (singular or dual or plural); \"in English the subject and the verb must agree in number\""
+        },
+        {
+          "id": "wn31:n:06436708",
+          "pos": "n",
+          "definition": "a numeral or string of numerals that is used for identification and may be attached to accounts, memberships, etc.; \"she refused to give them her Social Security number\""
+        },
+        {
+          "id": "wn31:n:06437781",
+          "pos": "n",
+          "definition": "the number is used in calling a particular telephone; \"he has an unlisted number\""
+        },
+        {
+          "id": "wn31:n:06609182",
+          "pos": "n",
+          "definition": "one of a series published periodically; \"she found an old issue of the magazine in her dentist's waiting room\""
+        },
+        {
+          "id": "wn31:n:06609408",
+          "pos": "n",
+          "definition": "a numbered item in a series; \"take the number 2 to the main square, then change to the number 5\""
+        },
+        {
+          "id": "wn31:n:06820056",
+          "pos": "n",
+          "definition": "a symbol used to represent a number; \"he learned to write the numerals before he went to school\""
+        },
+        {
+          "id": "wn31:n:06905066",
+          "pos": "n",
+          "definition": "a short performance that is part of a longer program; \"he did his act three times every evening\"; \"she had a catchy little routine\"; \"it was one of the best numbers he ever did\""
+        },
+        {
+          "id": "wn31:n:08497523",
+          "pos": "n",
+          "definition": "a select company of people; \"I hope to become one of their number before I die\""
+        },
+        {
+          "id": "wn31:n:13603216",
+          "pos": "n",
+          "definition": "a concept of quantity involving zero and units; \"every number has a unique position in the sequence\""
+        },
+        {
+          "id": "wn31:v:00236768",
+          "pos": "v",
+          "definition": "place a limit on the number of"
+        },
+        {
+          "id": "wn31:v:00948787",
+          "pos": "v",
+          "definition": "enumerate; \"We must number the names of the great mathematicians\""
+        },
+        {
+          "id": "wn31:v:00950103",
+          "pos": "v",
+          "definition": "determine the number or amount of; \"Can you count the books on your shelf?\"; \"Count your change\""
+        },
+        {
+          "id": "wn31:v:00950885",
+          "pos": "v",
+          "definition": "give numbers to; \"You should number the pages of the thesis\""
+        },
+        {
+          "id": "wn31:v:02651091",
+          "pos": "v",
+          "definition": "add up in number or quantity; \"The bills amounted to $2,000\"; \"The bill came to $2,000\""
+        },
+        {
+          "id": "wn31:v:02737507",
+          "pos": "v",
+          "definition": "put into a group; \"The academy counts several Nobel Prize winners among its members\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-fd86717aca41",
+      "word": "percent",
+      "pos": "名词；副词；形容词",
+      "raw": "数量表达：百分之……；名词：百分数",
+      "usage_note": "常跟在数值后表示每百份中的份数；英式也写 per cent。不同词典的词类划分有差异，不把它与 percentage 的所有用法等同。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "数量表达：百分之……",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "百分数",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 17
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13839738",
+          "pos": "n",
+          "definition": "a proportion in relation to a whole (which is usually the amount per hundred)"
+        }
+      ]
+    },
+    {
+      "id": "SG25-3ba8d02b16fd",
+      "word": "seven",
+      "pos": "数词",
+      "raw": "七",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "七",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04185123",
+          "pos": "n",
+          "definition": "one of four playing cards in a deck with seven pips on the face"
+        },
+        {
+          "id": "wn31:n:13767056",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of six and one"
+        },
+        {
+          "id": "wn31:s:02194609",
+          "pos": "s",
+          "definition": "being one more than six"
+        }
+      ]
+    },
+    {
+      "id": "SG25-2c5abdef2a0e",
+      "word": "seventeen",
+      "pos": "数词",
+      "raw": "十七",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "十七",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13769865",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of sixteen and one"
+        },
+        {
+          "id": "wn31:s:02195634",
+          "pos": "s",
+          "definition": "being one more than sixteen"
+        }
+      ]
+    },
+    {
+      "id": "SG25-ab0e4b1a7839",
+      "word": "seventy",
+      "pos": "数词",
+      "raw": "七十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "七十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13772034",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and seven"
+        },
+        {
+          "id": "wn31:s:02200780",
+          "pos": "s",
+          "definition": "being ten more than sixty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-16367aacb67a",
+      "word": "second",
+      "pos": "序数词；名词",
+      "raw": "第二；秒",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "第二",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "秒",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00725034",
+          "pos": "n",
+          "definition": "the fielding position of the player on a baseball team who is stationed near the second of the bases in the infield"
+        },
+        {
+          "id": "wn31:n:03592219",
+          "pos": "n",
+          "definition": "merchandise that has imperfections; usually sold at a reduced price without the brand name"
+        },
+        {
+          "id": "wn31:n:04171590",
+          "pos": "n",
+          "definition": "the gear that has the second lowest forward gear ratio in the gear box of a motor vehicle; \"he had to shift down into second to make the hill\""
+        },
+        {
+          "id": "wn31:n:07195032",
+          "pos": "n",
+          "definition": "a speech seconding a motion; \"do I hear a second?\""
+        },
+        {
+          "id": "wn31:n:10587511",
+          "pos": "n",
+          "definition": "the official attendant of a contestant in a duel or boxing match"
+        },
+        {
+          "id": "wn31:n:13632638",
+          "pos": "n",
+          "definition": "a 60th part of a minute of arc; \"the treasure is 2 minutes and 45 seconds south of here\""
+        },
+        {
+          "id": "wn31:n:13868743",
+          "pos": "n",
+          "definition": "following the first in an ordering or series; \"he came in a close second\""
+        },
+        {
+          "id": "wn31:n:15259923",
+          "pos": "n",
+          "definition": "1/60 of a minute; the basic unit of time adopted under the Systeme International d'Unites"
+        },
+        {
+          "id": "wn31:n:15269461",
+          "pos": "n",
+          "definition": "a particular point in time; \"the moment he arrived the party began\""
+        },
+        {
+          "id": "wn31:n:15271664",
+          "pos": "n",
+          "definition": "an indefinitely short time; \"wait just a moment\"; \"in a mo\"; \"it only takes a minute\"; \"in just a bit\""
+        },
+        {
+          "id": "wn31:v:02398446",
+          "pos": "v",
+          "definition": "transfer an employee to a different, temporary assignment; \"The officer was seconded for duty overseas\""
+        },
+        {
+          "id": "wn31:v:02562643",
+          "pos": "v",
+          "definition": "give support or one's approval to; \"I'll second that motion\"; \"I can't back this plan\"; \"endorse a new project\""
+        },
+        {
+          "id": "wn31:r:00103431",
+          "pos": "r",
+          "definition": "in the second place; \"second, we must consider the economy\""
+        },
+        {
+          "id": "wn31:a:01020028",
+          "pos": "a",
+          "definition": "a part or voice or instrument or orchestra section lower in pitch than or subordinate to the first; \"second flute\"; \"the second violins\""
+        },
+        {
+          "id": "wn31:s:02209815",
+          "pos": "s",
+          "definition": "coming next after the first in position in space or time or degree or magnitude"
+        }
+      ]
+    },
+    {
+      "id": "SG25-44778d82365e",
+      "word": "six",
+      "pos": "数词",
+      "raw": "六",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "六",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04232479",
+          "pos": "n",
+          "definition": "a playing card or domino or die whose upward face shows six pips"
+        },
+        {
+          "id": "wn31:n:13766862",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of five and one"
+        },
+        {
+          "id": "wn31:s:02194472",
+          "pos": "s",
+          "definition": "denoting a quantity consisting of six items or units"
+        }
+      ]
+    },
+    {
+      "id": "SG25-df41164e1512",
+      "word": "sixty",
+      "pos": "数词",
+      "raw": "六十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "六十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13771918",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and six"
+        },
+        {
+          "id": "wn31:s:02199823",
+          "pos": "s",
+          "definition": "being ten more than fifty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-b1e99324505b",
+      "word": "third",
+      "pos": "序数词",
+      "raw": "第三",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "第三",
+          "part_of_speech": "序数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00725419",
+          "pos": "n",
+          "definition": "the fielding position of the player on a baseball team who is stationed near the third of the bases in the infield (counting counterclockwise from home plate); \"he is playing third\""
+        },
+        {
+          "id": "wn31:n:04432939",
+          "pos": "n",
+          "definition": "the base that must be touched third by a base runner in baseball; \"he was cut down on a close play at third\""
+        },
+        {
+          "id": "wn31:n:04433112",
+          "pos": "n",
+          "definition": "the third from the lowest forward ratio gear in the gear box of a motor vehicle; \"you shouldn't try to start in third gear\""
+        },
+        {
+          "id": "wn31:n:06872554",
+          "pos": "n",
+          "definition": "the musical interval between one note and another three notes away from it; \"a simple harmony written in major thirds\""
+        },
+        {
+          "id": "wn31:n:13759330",
+          "pos": "n",
+          "definition": "one of three equal parts of a divisible whole; \"it contains approximately a third of the minimum daily requirement\""
+        },
+        {
+          "id": "wn31:n:13869097",
+          "pos": "n",
+          "definition": "following the second position in an ordering or series; \"a distant third\"; \"he answered the first question willingly, the second reluctantly, and the third with resentment\""
+        },
+        {
+          "id": "wn31:r:00103536",
+          "pos": "r",
+          "definition": "in the third place; \"third we must consider unemployment\""
+        },
+        {
+          "id": "wn31:s:02209976",
+          "pos": "s",
+          "definition": "coming next after the second and just before the fourth in position"
+        }
+      ]
+    },
+    {
+      "id": "SG25-aca5fb59db69",
+      "word": "thirty",
+      "pos": "数词",
+      "raw": "三十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "三十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13771547",
+          "pos": "n",
+          "definition": "the cardinal number that is the product of ten and three"
+        },
+        {
+          "id": "wn31:s:02196945",
+          "pos": "s",
+          "definition": "being ten more than twenty"
+        }
+      ]
+    },
+    {
+      "id": "SG25-e4432baa9081",
+      "word": "ten",
+      "pos": "数词",
+      "raw": "十",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04418277",
+          "pos": "n",
+          "definition": "one of four playing cards in a deck with ten pips on the face"
+        },
+        {
+          "id": "wn31:n:13768652",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of nine and one; the base of the decimal system"
+        },
+        {
+          "id": "wn31:s:02194935",
+          "pos": "s",
+          "definition": "being one more than nine"
+        }
+      ]
+    },
+    {
+      "id": "SG25-d1a749ad879b",
+      "word": "twelve",
+      "pos": "数词",
+      "raw": "十二",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "十二",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13768925",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of eleven and one"
+        },
+        {
+          "id": "wn31:s:02195104",
+          "pos": "s",
+          "definition": "denoting a quantity consisting of 12 items or units"
+        }
+      ]
+    },
+    {
+      "id": "SG25-7c2c4df740f7",
+      "word": "twenty",
+      "pos": "数词",
+      "raw": "二十",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "二十",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13416469",
+          "pos": "n",
+          "definition": "a United States bill worth 20 dollars"
+        },
+        {
+          "id": "wn31:n:13770268",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of nineteen and one"
+        },
+        {
+          "id": "wn31:s:02195956",
+          "pos": "s",
+          "definition": "denoting a quantity consisting of 20 items or units"
+        }
+      ]
+    },
+    {
+      "id": "SG25-dc8ffdbf2736",
+      "word": "twice",
+      "pos": "副词",
+      "raw": "两次；两倍",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "两次",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "两倍",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:r:00065694",
+          "pos": "r",
+          "definition": "two times; \"I called her twice\""
+        },
+        {
+          "id": "wn31:r:00083743",
+          "pos": "r",
+          "definition": "to double the degree; \"she was doubly rewarded\"; \"his eyes were double bright\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-67a333356cdc",
+      "word": "ant",
+      "pos": "名词",
+      "raw": "蚂蚁",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "蚂蚁",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02222138",
+          "pos": "n",
+          "definition": "social insect living in organized colonies; characteristically the males and fertile queen have wings during breeding season; wingless sterile females are the workers"
+        }
+      ]
+    },
+    {
+      "id": "SG25-7a5179eecc0f",
+      "word": "bird",
+      "pos": "名词",
+      "raw": "鸟",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鸟",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01505702",
+          "pos": "n",
+          "definition": "warm-blooded egg-laying vertebrates characterized by feathers and forelimbs modified as wings"
+        },
+        {
+          "id": "wn31:n:04219349",
+          "pos": "n",
+          "definition": "badminton equipment consisting of a ball of cork or rubber with a crown of feathers"
+        },
+        {
+          "id": "wn31:n:07138578",
+          "pos": "n",
+          "definition": "a cry or noise made to express displeasure or contempt"
+        },
+        {
+          "id": "wn31:n:07659991",
+          "pos": "n",
+          "definition": "the flesh of a bird or fowl (wild or domestic) used as food"
+        },
+        {
+          "id": "wn31:n:10008583",
+          "pos": "n",
+          "definition": "informal terms for a (young) woman"
+        },
+        {
+          "id": "wn31:v:01142291",
+          "pos": "v",
+          "definition": "watch and study birds in their natural habitat"
+        }
+      ]
+    },
+    {
+      "id": "SG25-8420c85c2aad",
+      "word": "bite",
+      "pos": "名词；动词",
+      "raw": "咬；叮；一口",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "咬",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "叮",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "一口",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00361867",
+          "pos": "n",
+          "definition": "a portion removed from the whole; \"the government's weekly bite from my paycheck\""
+        },
+        {
+          "id": "wn31:n:00840477",
+          "pos": "n",
+          "definition": "the act of gripping or chewing off with the teeth and jaws"
+        },
+        {
+          "id": "wn31:n:05000012",
+          "pos": "n",
+          "definition": "a strong odor or taste property; \"the pungency of mustard\"; \"the sulfurous bite of garlic\"; \"the sharpness of strange spices\"; \"the raciness of the wine\""
+        },
+        {
+          "id": "wn31:n:06789825",
+          "pos": "n",
+          "definition": "wit having a sharp and caustic quality; \"he commented with typical pungency\"; \"the bite of satire\""
+        },
+        {
+          "id": "wn31:n:07492553",
+          "pos": "n",
+          "definition": "(angling) an instance of a fish taking the bait; \"after fishing for an hour he still had not had a bite\""
+        },
+        {
+          "id": "wn31:n:07592939",
+          "pos": "n",
+          "definition": "a light informal meal"
+        },
+        {
+          "id": "wn31:n:07594641",
+          "pos": "n",
+          "definition": "a small amount of solid food; a mouthful; \"all they had left was a bit of bread\""
+        },
+        {
+          "id": "wn31:n:14310910",
+          "pos": "n",
+          "definition": "a wound resulting from biting by an animal or a person"
+        },
+        {
+          "id": "wn31:n:14321372",
+          "pos": "n",
+          "definition": "a painful wound caused by the thrust of an insect's stinger into skin"
+        },
+        {
+          "id": "wn31:v:01444001",
+          "pos": "v",
+          "definition": "penetrate or cut, as with a knife; \"The fork bit into the surface\""
+        },
+        {
+          "id": "wn31:v:01448026",
+          "pos": "v",
+          "definition": "deliver a sting to; \"A bee stung my arm yesterday\""
+        },
+        {
+          "id": "wn31:v:01448551",
+          "pos": "v",
+          "definition": "to grip, cut off, or tear with or as if with the teeth or jaws; \"Gunny invariably tried to bite her\""
+        },
+        {
+          "id": "wn31:v:02124916",
+          "pos": "v",
+          "definition": "cause a sharp or stinging pain or discomfort; \"The sun burned his face\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-77af778b51ab",
+      "word": "cat",
+      "pos": "名词",
+      "raw": "猫",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "猫",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02124272",
+          "pos": "n",
+          "definition": "feline mammal usually having thick soft fur and no ability to roar: domestic cats; wildcats"
+        },
+        {
+          "id": "wn31:n:02130460",
+          "pos": "n",
+          "definition": "any of several large cats typically able to roar and living in the wild"
+        },
+        {
+          "id": "wn31:n:02986962",
+          "pos": "n",
+          "definition": "a large tracked vehicle that is propelled by two endless metal belts; frequently used for moving earth in construction and farm work"
+        },
+        {
+          "id": "wn31:n:02989061",
+          "pos": "n",
+          "definition": "a whip with nine knotted cords; \"British sailors feared the cat\""
+        },
+        {
+          "id": "wn31:n:03614083",
+          "pos": "n",
+          "definition": "the leaves of the shrub Catha edulis which are chewed like tobacco or used to make tea; has the effect of a euphoric stimulant; \"in Yemen kat is used daily by 85% of adults\""
+        },
+        {
+          "id": "wn31:n:09919605",
+          "pos": "n",
+          "definition": "a spiteful woman gossip; \"what a cat she is!\""
+        },
+        {
+          "id": "wn31:n:10172934",
+          "pos": "n",
+          "definition": "an informal term for a youth or man; \"a nice guy\"; \"the guy's only doing it for some doll\"; \"the poor sod couldn't even buy a drink\""
+        },
+        {
+          "id": "wn31:v:00076153",
+          "pos": "v",
+          "definition": "eject the contents of the stomach through the mouth; \"After drinking too much, the students vomited\"; \"He purged continuously\"; \"The patient regurgitated the food we gave him last night\""
+        },
+        {
+          "id": "wn31:v:01414524",
+          "pos": "v",
+          "definition": "beat with a cat-o'-nine-tails"
+        }
+      ]
+    },
+    {
+      "id": "SG25-cd6357efdd96",
+      "word": "dog",
+      "pos": "名词",
+      "raw": "狗",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "狗",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02086723",
+          "pos": "n",
+          "definition": "a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; \"the dog barked all night\""
+        },
+        {
+          "id": "wn31:n:02712903",
+          "pos": "n",
+          "definition": "metal supports for logs in a fireplace; \"the andirons were too hot to touch\""
+        },
+        {
+          "id": "wn31:n:03907626",
+          "pos": "n",
+          "definition": "a hinged catch that fits into a notch of a ratchet to move a wheel forward or prevent it from moving backward"
+        },
+        {
+          "id": "wn31:n:07692347",
+          "pos": "n",
+          "definition": "a smooth-textured sausage of minced beef or pork usually smoked; often served on a bread roll"
+        },
+        {
+          "id": "wn31:n:09905672",
+          "pos": "n",
+          "definition": "someone who is morally reprehensible; \"you dirty dog\""
+        },
+        {
+          "id": "wn31:n:10042764",
+          "pos": "n",
+          "definition": "informal term for a man; \"you lucky dog\""
+        },
+        {
+          "id": "wn31:n:10133978",
+          "pos": "n",
+          "definition": "a dull unattractive unpleasant girl or woman; \"she got a reputation as a frump\"; \"she's a real dog\""
+        },
+        {
+          "id": "wn31:v:02005890",
+          "pos": "v",
+          "definition": "go after with the intent to catch; \"The policeman chased the mugger down the alley\"; \"the dog chased the rabbit\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-776cb326ab0c",
+      "word": "fox",
+      "pos": "名词",
+      "raw": "狐狸",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "狐狸",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02120985",
+          "pos": "n",
+          "definition": "alert carnivorous mammal with pointed muzzle and ears and a bushy tail; most are predators that do not hunt in packs"
+        },
+        {
+          "id": "wn31:n:10042484",
+          "pos": "n",
+          "definition": "a shifty deceptive person"
+        },
+        {
+          "id": "wn31:n:14789089",
+          "pos": "n",
+          "definition": "the grey or reddish-brown fur of a fox"
+        },
+        {
+          "id": "wn31:v:00511315",
+          "pos": "v",
+          "definition": "become discolored with, or as if with, mildew spots"
+        },
+        {
+          "id": "wn31:v:00623406",
+          "pos": "v",
+          "definition": "be confusing or perplexing to; cause to be unable to think clearly; \"These questions confuse even the experts\"; \"This question completely threw me\"; \"This question befuddled even the teacher\""
+        },
+        {
+          "id": "wn31:v:02581808",
+          "pos": "v",
+          "definition": "deceive somebody; \"We tricked the teacher into thinking that class would be cancelled next week\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-0b132ea2f6cd",
+      "word": "giant",
+      "pos": "名词；形容词",
+      "raw": "名词：巨人，大型事物；形容词：巨大的",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "巨人",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "大型事物",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "巨大的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01326422",
+          "pos": "n",
+          "definition": "any creature of exceptional size"
+        },
+        {
+          "id": "wn31:n:08073223",
+          "pos": "n",
+          "definition": "an unusually large enterprise; \"Walton built a retail giant\""
+        },
+        {
+          "id": "wn31:n:09311675",
+          "pos": "n",
+          "definition": "a very bright star of large diameter and low density (relative to the Sun)"
+        },
+        {
+          "id": "wn31:n:09511841",
+          "pos": "n",
+          "definition": "an imaginary figure of superhuman size and strength; appears in folklore and fairy tales"
+        },
+        {
+          "id": "wn31:n:09958449",
+          "pos": "n",
+          "definition": "a person of exceptional importance and reputation"
+        },
+        {
+          "id": "wn31:n:10148446",
+          "pos": "n",
+          "definition": "someone or something that is abnormally large and powerful"
+        },
+        {
+          "id": "wn31:n:10148670",
+          "pos": "n",
+          "definition": "a very large person; impressive in size or qualities"
+        },
+        {
+          "id": "wn31:s:01388707",
+          "pos": "s",
+          "definition": "of great mass; huge and bulky; \"a jumbo jet\"; \"jumbo shrimp\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-fd62862b6dc2",
+      "word": "horse",
+      "pos": "名词",
+      "raw": "马",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "马",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02377103",
+          "pos": "n",
+          "definition": "solid-hoofed herbivorous quadruped domesticated since prehistoric times"
+        },
+        {
+          "id": "wn31:n:03543217",
+          "pos": "n",
+          "definition": "a padded gymnastic apparatus on legs"
+        },
+        {
+          "id": "wn31:n:03629976",
+          "pos": "n",
+          "definition": "a chessman shaped to resemble the head of a horse; can move two squares horizontally and one vertically (or vice versa)"
+        },
+        {
+          "id": "wn31:n:04147696",
+          "pos": "n",
+          "definition": "a framework for holding wood that is being sawed"
+        },
+        {
+          "id": "wn31:n:08414813",
+          "pos": "n",
+          "definition": "troops trained to fight on horseback; \"500 horse led the attack\""
+        },
+        {
+          "id": "wn31:v:01186591",
+          "pos": "v",
+          "definition": "provide with a horse or horses"
+        }
+      ]
+    },
+    {
+      "id": "SG25-875f01c5306f",
+      "word": "kilometre",
+      "pos": "名词",
+      "raw": "一公里；公里；千米",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "一公里",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "公里",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "千米",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13681796",
+          "pos": "n",
+          "definition": "a metric unit of length equal to 1000 meters (or 0.621371 miles)"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9f91161f4343",
+      "word": "leaf",
+      "pos": "名词",
+      "raw": "叶子；一页",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "叶子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "一页",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03657552",
+          "pos": "n",
+          "definition": "hinged or detachable flat section (as of a table or door)"
+        },
+        {
+          "id": "wn31:n:06266806",
+          "pos": "n",
+          "definition": "a sheet of any written or printed material (especially in a manuscript or book)"
+        },
+        {
+          "id": "wn31:n:13173519",
+          "pos": "n",
+          "definition": "the main organ of photosynthesis and transpiration in higher plants"
+        },
+        {
+          "id": "wn31:v:00095501",
+          "pos": "v",
+          "definition": "produce leaves, of plants"
+        },
+        {
+          "id": "wn31:v:02094104",
+          "pos": "v",
+          "definition": "turn over pages; \"leaf through a book\"; \"leaf a manuscript\""
+        },
+        {
+          "id": "wn31:v:02157453",
+          "pos": "v",
+          "definition": "look through a book or other written material; \"He thumbed through the report\"; \"She leafed through the volume\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-0f82aca66af9",
+      "word": "length",
+      "pos": "名词",
+      "raw": "长度；时间长短",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "长度",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "时间长短",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03661557",
+          "pos": "n",
+          "definition": "a section of something that is long and narrow; \"a length of timber\"; \"a length of tubing\""
+        },
+        {
+          "id": "wn31:n:05058400",
+          "pos": "n",
+          "definition": "continuance in time; \"the ceremony was of short duration\"; \"he complained about the length of time required\""
+        },
+        {
+          "id": "wn31:n:05136466",
+          "pos": "n",
+          "definition": "the linear extent in space from one end to the other; the longest dimension of something that is fixed in place; \"the length of the table was 5 feet\""
+        },
+        {
+          "id": "wn31:n:05136830",
+          "pos": "n",
+          "definition": "size of the gap between two places; \"the distance from New York to Chicago\"; \"he determined the length of the shortest line segment joining the two points\""
+        },
+        {
+          "id": "wn31:n:05140372",
+          "pos": "n",
+          "definition": "the property of being the extent of something from beginning to end; \"the editor limited the length of my article to 500 words\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-cde4e100efd2",
+      "word": "nineteen",
+      "pos": "数词",
+      "raw": "十九",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "十九",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13770129",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of eighteen and one"
+        },
+        {
+          "id": "wn31:s:02195844",
+          "pos": "s",
+          "definition": "being one more than eighteen"
+        }
+      ]
+    },
+    {
+      "id": "SG25-82b5f7770097",
+      "word": "plenty",
+      "pos": "名词",
+      "raw": "大量；充足",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大量",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "充足",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05122868",
+          "pos": "n",
+          "definition": "a full supply; \"there was plenty of food for everyone\""
+        },
+        {
+          "id": "wn31:n:13796604",
+          "pos": "n",
+          "definition": "(often followed by `of') a large number or amount or extent; \"a batch of letters\"; \"a deal of trouble\"; \"a lot of money\"; \"he made a mint on the stock market\"; \"see the rest of the winners in our huge passel of photos\"; \"it must have cost plenty\"; \"a slew of journalists\"; \"a wad of money\""
+        },
+        {
+          "id": "wn31:r:00146749",
+          "pos": "r",
+          "definition": "as much as necessary; \"Have I eaten enough?\"; (`plenty' is nonstandard) \"I've had plenty, thanks\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-618d663af0f1",
+      "word": "rose",
+      "pos": "名词",
+      "raw": "玫瑰；蔷薇",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "玫瑰",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "蔷薇",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04978580",
+          "pos": "n",
+          "definition": "a dusty pink color"
+        },
+        {
+          "id": "wn31:n:07909228",
+          "pos": "n",
+          "definition": "pinkish table wine from red grapes whose skins were removed after fermentation began"
+        },
+        {
+          "id": "wn31:n:12640957",
+          "pos": "n",
+          "definition": "any of many shrubs of the genus Rosa that bear roses"
+        },
+        {
+          "id": "wn31:s:00383235",
+          "pos": "s",
+          "definition": "of something having a dusty purplish pink color; \"the roseate glow of dawn\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-19b25856e1c1",
+      "word": "seed",
+      "pos": "名词",
+      "raw": "种子",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "种子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05411679",
+          "pos": "n",
+          "definition": "the thick white fluid containing spermatozoa that is ejaculated by the male genital tract"
+        },
+        {
+          "id": "wn31:n:05843082",
+          "pos": "n",
+          "definition": "anything that provides inspiration for later work"
+        },
+        {
+          "id": "wn31:n:10594907",
+          "pos": "n",
+          "definition": "one of the outstanding players in a tournament"
+        },
+        {
+          "id": "wn31:n:11704458",
+          "pos": "n",
+          "definition": "a mature fertilized plant ovule consisting of an embryo and its food source and having a protective coat or testa"
+        },
+        {
+          "id": "wn31:n:13156591",
+          "pos": "n",
+          "definition": "a small hard fruit"
+        },
+        {
+          "id": "wn31:v:00179863",
+          "pos": "v",
+          "definition": "remove the seeds from; \"seed grapes\""
+        },
+        {
+          "id": "wn31:v:00188707",
+          "pos": "v",
+          "definition": "inoculate with microorganisms"
+        },
+        {
+          "id": "wn31:v:00517505",
+          "pos": "v",
+          "definition": "sprinkle with silver iodide particles to disperse and cause rain; \"seed clouds\""
+        },
+        {
+          "id": "wn31:v:00660584",
+          "pos": "v",
+          "definition": "distribute (players or teams) so that outstanding teams or players will not meet in the early rounds"
+        },
+        {
+          "id": "wn31:v:01503512",
+          "pos": "v",
+          "definition": "place (seeds) in or on the ground for future growth; \"She sowed sunflower seeds\""
+        },
+        {
+          "id": "wn31:v:01544838",
+          "pos": "v",
+          "definition": "go to seed; shed seeds; \"The dandelions went to seed\""
+        },
+        {
+          "id": "wn31:v:01655971",
+          "pos": "v",
+          "definition": "bear seeds"
+        },
+        {
+          "id": "wn31:v:02222328",
+          "pos": "v",
+          "definition": "help (an enterprise) in its early stages of development by providing seed money"
+        }
+      ]
+    },
+    {
+      "id": "SG25-5c599616ac50",
+      "word": "sheep",
+      "pos": "名词",
+      "raw": "绵羊",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "绵羊",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02414351",
+          "pos": "n",
+          "definition": "woolly usually horned ruminant mammal related to the goat"
+        },
+        {
+          "id": "wn31:n:10607302",
+          "pos": "n",
+          "definition": "a docile and vulnerable person who would rather follow than make an independent decision; \"his students followed him like sheep\""
+        },
+        {
+          "id": "wn31:n:10607482",
+          "pos": "n",
+          "definition": "a timid defenseless simpleton who is readily preyed upon"
+        }
+      ]
+    },
+    {
+      "id": "SG25-ce635c4eabff",
+      "word": "shell",
+      "pos": "名词",
+      "raw": "壳；外壳；命令解释程序（计算机）",
+      "usage_note": "此处计算机义指接收和解释命令的程序；并非所有界面外壳都应译为命令行。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "壳",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "外壳",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "命令解释程序（计算机）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 16
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01906397",
+          "pos": "n",
+          "definition": "hard outer covering or case of certain organisms such as arthropods and turtles"
+        },
+        {
+          "id": "wn31:n:01906823",
+          "pos": "n",
+          "definition": "the hard largely calcareous covering of a mollusc or a brachiopod"
+        },
+        {
+          "id": "wn31:n:03965995",
+          "pos": "n",
+          "definition": "a metal sheathing of uniform thickness (such as the shield attached to an artillery piece to protect the gunners)"
+        },
+        {
+          "id": "wn31:n:04197507",
+          "pos": "n",
+          "definition": "ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile; fired from a large gun"
+        },
+        {
+          "id": "wn31:n:04197790",
+          "pos": "n",
+          "definition": "the housing or outer covering of something; \"the clock has a walnut case\""
+        },
+        {
+          "id": "wn31:n:04198040",
+          "pos": "n",
+          "definition": "a very light narrow racing boat"
+        },
+        {
+          "id": "wn31:n:09455187",
+          "pos": "n",
+          "definition": "a rigid covering that envelops an object; \"the satellite is covered with a smooth shell of ice\""
+        },
+        {
+          "id": "wn31:n:09455334",
+          "pos": "n",
+          "definition": "the exterior covering of a bird's egg"
+        },
+        {
+          "id": "wn31:n:11704025",
+          "pos": "n",
+          "definition": "the hard usually fibrous outer layer of some fruits especially nuts"
+        },
+        {
+          "id": "wn31:n:14782715",
+          "pos": "n",
+          "definition": "the material that forms the hard outer covering of many animals"
+        },
+        {
+          "id": "wn31:v:00181403",
+          "pos": "v",
+          "definition": "remove the husks from; \"husk corn\""
+        },
+        {
+          "id": "wn31:v:00198119",
+          "pos": "v",
+          "definition": "remove from its shell or outer covering; \"shell the legumes\"; \"shell mussels\""
+        },
+        {
+          "id": "wn31:v:01104324",
+          "pos": "v",
+          "definition": "come out better in a competition, race, or conflict; \"Agassi beat Becker in the tennis championship\"; \"We beat the competition\"; \"Harvard defeated Yale in the last football game\""
+        },
+        {
+          "id": "wn31:v:01138348",
+          "pos": "v",
+          "definition": "use explosives on; \"The enemy has been shelling us all day\""
+        },
+        {
+          "id": "wn31:v:01319473",
+          "pos": "v",
+          "definition": "look for and collect shells by the seashore"
+        },
+        {
+          "id": "wn31:v:01408849",
+          "pos": "v",
+          "definition": "hit the pitches of hard and regularly; \"He shelled the pitcher for eight runs in the first inning\""
+        },
+        {
+          "id": "wn31:v:01516342",
+          "pos": "v",
+          "definition": "fall out of the pod or husk; \"The corn shelled\""
+        },
+        {
+          "id": "wn31:v:01762865",
+          "pos": "v",
+          "definition": "create by using explosives; \"blast a passage through the mountain\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-31fc15942b0c",
+      "word": "shark",
+      "pos": "名词",
+      "raw": "鲨鱼",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鲨鱼",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01484971",
+          "pos": "n",
+          "definition": "any of numerous elongate mostly marine carnivorous fishes with heterocercal caudal fins and tough skin covered with small toothlike scales"
+        },
+        {
+          "id": "wn31:n:10605965",
+          "pos": "n",
+          "definition": "a person who is unusually skilled in certain ways; \"a card shark\""
+        },
+        {
+          "id": "wn31:n:10606082",
+          "pos": "n",
+          "definition": "a person who is ruthless and greedy and dishonest"
+        },
+        {
+          "id": "wn31:v:01146080",
+          "pos": "v",
+          "definition": "hunt shark"
+        },
+        {
+          "id": "wn31:v:02579088",
+          "pos": "v",
+          "definition": "play the shark; act with trickery"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9ecc81f0a4b6",
+      "word": "thirteen",
+      "pos": "数词",
+      "raw": "十三",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "十三",
+          "part_of_speech": "数词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13769339",
+          "pos": "n",
+          "definition": "the cardinal number that is the sum of twelve and one"
+        },
+        {
+          "id": "wn31:s:02195245",
+          "pos": "s",
+          "definition": "being one more than twelve"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f15c16b99f82",
+      "word": "tiger",
+      "pos": "名词",
+      "raw": "老虎；虎",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "老虎",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "虎",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02132256",
+          "pos": "n",
+          "definition": "large feline of forests in most of Asia having a tawny coat with black stripes; endangered"
+        },
+        {
+          "id": "wn31:n:10730281",
+          "pos": "n",
+          "definition": "a fierce or audacious person; \"he's a tiger on the tennis court\"; \"it aroused the tiger in me\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-dc9c5edb8b2d",
+      "word": "tree",
+      "pos": "名词",
+      "raw": "树；树状结构",
+      "usage_note": "树状结构用于有分支的组织形式，计算机语境按上下文理解。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "树",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "树状结构",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:13124818",
+          "pos": "n",
+          "definition": "a tall perennial woody plant having a main trunk and branches forming a distinct elevated crown; includes both gymnosperms and angiosperms"
+        },
+        {
+          "id": "wn31:n:13935275",
+          "pos": "n",
+          "definition": "a figure that branches from a single root; \"genealogical tree\""
+        },
+        {
+          "id": "wn31:v:00319912",
+          "pos": "v",
+          "definition": "stretch (a shoe) on a shoetree"
+        },
+        {
+          "id": "wn31:v:01147629",
+          "pos": "v",
+          "definition": "chase an animal up a tree; \"the hunters treed the bear with dogs and killed it\"; \"her dog likes to tree squirrels\""
+        },
+        {
+          "id": "wn31:v:01619197",
+          "pos": "v",
+          "definition": "plant with trees; \"this lot should be treed so that the house will be shaded in summer\""
+        },
+        {
+          "id": "wn31:v:01938064",
+          "pos": "v",
+          "definition": "force a person or an animal into a position from which he cannot escape"
+        }
+      ]
+    },
+    {
+      "id": "SG25-99f7855eb789",
+      "word": "wood",
+      "pos": "名词",
+      "raw": "木材；树林",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "木材",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "树林",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04604393",
+          "pos": "n",
+          "definition": "a golf club with a long shaft used to hit long shots; originally made with a wooden head; \"metal woods are now standard\""
+        },
+        {
+          "id": "wn31:n:04605909",
+          "pos": "n",
+          "definition": "any wind instrument other than the brass instruments"
+        },
+        {
+          "id": "wn31:n:08455525",
+          "pos": "n",
+          "definition": "the trees and other plants in a large densely wooded area"
+        },
+        {
+          "id": "wn31:n:15122728",
+          "pos": "n",
+          "definition": "the hard fibrous lignified substance under the bark of trees"
+        }
+      ]
+    },
+    {
+      "id": "SG25-c047caef95b4",
+      "word": "wing",
+      "pos": "名词",
+      "raw": "翅膀；机翼；侧翼",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "翅膀",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "机翼",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "侧翼",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02154277",
+          "pos": "n",
+          "definition": "a movable organ for flying (one of a pair)"
+        },
+        {
+          "id": "wn31:n:02716453",
+          "pos": "n",
+          "definition": "an addition that extends a main building"
+        },
+        {
+          "id": "wn31:n:03332786",
+          "pos": "n",
+          "definition": "a barrier that surrounds the wheels of a vehicle to block splashing water or mud; \"in Britain they call a fender a wing\""
+        },
+        {
+          "id": "wn31:n:04600068",
+          "pos": "n",
+          "definition": "one of the horizontal airfoils on either side of the fuselage of an airplane"
+        },
+        {
+          "id": "wn31:n:04600289",
+          "pos": "n",
+          "definition": "a stage area out of sight of the audience"
+        },
+        {
+          "id": "wn31:n:07664158",
+          "pos": "n",
+          "definition": "the wing of a fowl; \"he preferred the drumsticks to the wings\""
+        },
+        {
+          "id": "wn31:n:08236414",
+          "pos": "n",
+          "definition": "a unit of military aircraft"
+        },
+        {
+          "id": "wn31:n:08499124",
+          "pos": "n",
+          "definition": "the side of military or naval formation; \"they attacked the enemy's right flank\""
+        },
+        {
+          "id": "wn31:n:08503316",
+          "pos": "n",
+          "definition": "a group within a political party or legislature or other organization that holds distinct views or has a particular function; \"they are the progressive wing of the Republican Party\""
+        },
+        {
+          "id": "wn31:n:08510835",
+          "pos": "n",
+          "definition": "(in flight formation) a position to the side and just to the rear of another aircraft"
+        },
+        {
+          "id": "wn31:n:10801811",
+          "pos": "n",
+          "definition": "a hockey player stationed in a forward position on either side"
+        },
+        {
+          "id": "wn31:v:01944262",
+          "pos": "v",
+          "definition": "travel through the air; be airborne; \"Man cannot fly\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-eb3cad5b7bea",
+      "word": "ape",
+      "pos": "名词",
+      "raw": "猿",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "猿",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02472956",
+          "pos": "n",
+          "definition": "any of various primates with short tails or no tail at all"
+        },
+        {
+          "id": "wn31:n:09815626",
+          "pos": "n",
+          "definition": "person who resembles a nonhuman primate"
+        },
+        {
+          "id": "wn31:n:09983941",
+          "pos": "n",
+          "definition": "someone who copies the words or behavior of another"
+        },
+        {
+          "id": "wn31:v:00851272",
+          "pos": "v",
+          "definition": "represent in or produce a caricature of; \"The drawing caricatured the President\""
+        },
+        {
+          "id": "wn31:v:02680878",
+          "pos": "v",
+          "definition": "imitate uncritically and in every aspect; \"Her little brother apes her behavior\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-62cb81b5904a",
+      "word": "bee",
+      "pos": "名词",
+      "raw": "蜂；蜜蜂",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "蜂",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "蜜蜂",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02209508",
+          "pos": "n",
+          "definition": "any of numerous hairy-bodied insects including social and solitary species"
+        },
+        {
+          "id": "wn31:n:07992356",
+          "pos": "n",
+          "definition": "a social gathering to carry out some communal task or to hold competitions"
+        }
+      ]
+    },
+    {
+      "id": "SG25-c67c12636514",
+      "word": "bull",
+      "pos": "名词",
+      "raw": "公牛",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "公牛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00076610",
+          "pos": "n",
+          "definition": "a serious and ludicrous blunder; \"he made a bad bull of the assignment\""
+        },
+        {
+          "id": "wn31:n:01890264",
+          "pos": "n",
+          "definition": "mature male of various mammals of which the female is called `cow'; e.g. whales or elephants or especially cattle"
+        },
+        {
+          "id": "wn31:n:02405977",
+          "pos": "n",
+          "definition": "uncastrated adult male of domestic cattle"
+        },
+        {
+          "id": "wn31:n:06623729",
+          "pos": "n",
+          "definition": "obscene words for unacceptable behavior; \"I put up with a lot of bullshit from that jerk\"; \"what he said was mostly bull\""
+        },
+        {
+          "id": "wn31:n:06739510",
+          "pos": "n",
+          "definition": "a formal proclamation issued by the pope (usually written in antiquated characters and sealed with a leaden bulla)"
+        },
+        {
+          "id": "wn31:n:08534727",
+          "pos": "n",
+          "definition": "the center of a target"
+        },
+        {
+          "id": "wn31:n:09898168",
+          "pos": "n",
+          "definition": "a large and strong and heavyset man; \"he was a bull of a man\"; \"a thick-skinned bruiser ready to give as good as he got\""
+        },
+        {
+          "id": "wn31:n:09898387",
+          "pos": "n",
+          "definition": "an investor with an optimistic market outlook; an investor who expects prices to rise and so buys now for resale later"
+        },
+        {
+          "id": "wn31:n:09898610",
+          "pos": "n",
+          "definition": "uncomplimentary terms for a policeman"
+        },
+        {
+          "id": "wn31:v:00155947",
+          "pos": "v",
+          "definition": "advance in price; \"stocks were bulling\""
+        },
+        {
+          "id": "wn31:v:00841205",
+          "pos": "v",
+          "definition": "speak insincerely or without regard for facts or truths; \"The politician was not well prepared for the debate and faked it\""
+        },
+        {
+          "id": "wn31:v:02277218",
+          "pos": "v",
+          "definition": "try to raise the price of stocks through speculative buying"
+        },
+        {
+          "id": "wn31:v:02379540",
+          "pos": "v",
+          "definition": "push or force; \"He bulled through his demands\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-add0b8873957",
+      "word": "cattle",
+      "pos": "名词",
+      "raw": "牛（总称）",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "牛（总称）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02405077",
+          "pos": "n",
+          "definition": "domesticated bovine animals as a group regardless of sex or age; \"so many head of cattle\"; \"wait till the cows come home\"; \"seven thin and ill-favored kine\"- Bible; \"a team of oxen\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-beb134754910",
+      "word": "cow",
+      "pos": "名词",
+      "raw": "母牛；奶牛",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "母牛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "奶牛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01890428",
+          "pos": "n",
+          "definition": "mature female of mammals of which the male is called `bull'"
+        },
+        {
+          "id": "wn31:n:02406106",
+          "pos": "n",
+          "definition": "female of domestic cattle: \"`moo-cow' is a child's term\""
+        },
+        {
+          "id": "wn31:n:09992117",
+          "pos": "n",
+          "definition": "a large unpleasant woman"
+        },
+        {
+          "id": "wn31:v:01783720",
+          "pos": "v",
+          "definition": "subdue, restrain, or overcome by affecting with a feeling of awe; frighten (as with threats)"
+        }
+      ]
+    },
+    {
+      "id": "SG25-acf5bfd986de",
+      "word": "deer",
+      "pos": "名词",
+      "raw": "鹿",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鹿",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02432691",
+          "pos": "n",
+          "definition": "distinguished from Bovidae by the male's having solid deciduous antlers"
+        }
+      ]
+    },
+    {
+      "id": "SG25-300908b9d381",
+      "word": "dinosaur",
+      "pos": "名词",
+      "raw": "恐龙",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "恐龙",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01702472",
+          "pos": "n",
+          "definition": "any of numerous extinct terrestrial reptiles of the Mesozoic era"
+        }
+      ]
+    },
+    {
+      "id": "SG25-a9c43be948c5",
+      "word": "dragon",
+      "pos": "名词",
+      "raw": "火龙；龙",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "火龙",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "龙",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01691230",
+          "pos": "n",
+          "definition": "any of several small tropical Asian lizards capable of gliding by spreading winglike membranes on each side of the body"
+        },
+        {
+          "id": "wn31:n:09517519",
+          "pos": "n",
+          "definition": "a creature of Teutonic mythology; usually represented as breathing fire and having a reptilian body and sometimes wings"
+        },
+        {
+          "id": "wn31:n:10049454",
+          "pos": "n",
+          "definition": "a fiercely vigilant and unpleasant woman"
+        }
+      ]
+    },
+    {
+      "id": "SG25-2d2370db2447",
+      "word": "duck",
+      "pos": "名词；动词",
+      "raw": "名词：鸭；动词：低头躲闪",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鸭",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "低头躲闪",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 12
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01848972",
+          "pos": "n",
+          "definition": "small wild or domesticated web-footed broad-billed swimming bird usually having a depressed body and short legs"
+        },
+        {
+          "id": "wn31:n:03257774",
+          "pos": "n",
+          "definition": "a heavy cotton fabric of plain weave; used for clothing and tents"
+        },
+        {
+          "id": "wn31:n:07662187",
+          "pos": "n",
+          "definition": "flesh of a duck (domestic or wild)"
+        },
+        {
+          "id": "wn31:n:13617087",
+          "pos": "n",
+          "definition": "(cricket) a score of nothing by a batsman"
+        },
+        {
+          "id": "wn31:v:00811316",
+          "pos": "v",
+          "definition": "avoid or try to avoid fulfilling, answering, or performing (duties, questions, or issues); \"He dodged the issue\"; \"she skirted the problem\"; \"They tend to evade their responsibilities\"; \"he evaded the questions skillfully\""
+        },
+        {
+          "id": "wn31:v:01869189",
+          "pos": "v",
+          "definition": "to move (the head or body) quickly downwards or away; \"Before he could duck, another stone struck him\""
+        },
+        {
+          "id": "wn31:v:01971799",
+          "pos": "v",
+          "definition": "submerge or plunge suddenly"
+        },
+        {
+          "id": "wn31:v:01980234",
+          "pos": "v",
+          "definition": "dip into a liquid; \"He dipped into the pool\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-cd08c4c4316d",
+      "word": "elephant",
+      "pos": "名词",
+      "raw": "大象；象",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大象",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "象",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02506148",
+          "pos": "n",
+          "definition": "five-toed pachyderm"
+        },
+        {
+          "id": "wn31:n:06894712",
+          "pos": "n",
+          "definition": "the symbol of the Republican Party; introduced in cartoons by Thomas Nast in 1874"
+        }
+      ]
+    },
+    {
+      "id": "SG25-c06b0cfe0cc5",
+      "word": "flower",
+      "pos": "名词；动词",
+      "raw": "名词：花；动词：开花",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "花",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "开花",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:11689786",
+          "pos": "n",
+          "definition": "reproductive organ of angiosperm plants especially one having showy or colorful parts"
+        },
+        {
+          "id": "wn31:n:11690372",
+          "pos": "n",
+          "definition": "a plant cultivated for its blooms or blossoms"
+        },
+        {
+          "id": "wn31:n:15320288",
+          "pos": "n",
+          "definition": "the period of greatest prosperity or productivity"
+        },
+        {
+          "id": "wn31:v:00295007",
+          "pos": "v",
+          "definition": "produce or yield flowers; \"The cherry tree bloomed\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-b474a99a2705",
+      "word": "fish",
+      "pos": "名词；动词",
+      "raw": "名词：鱼；动词：捕鱼，钓鱼",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鱼",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "捕鱼",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "钓鱼",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02514684",
+          "pos": "n",
+          "definition": "any of various mostly cold-blooded aquatic vertebrates usually having scales and breathing through gills; \"the shark is a large fish\"; \"in the living room there was a tank of colorful fish\""
+        },
+        {
+          "id": "wn31:n:07791351",
+          "pos": "n",
+          "definition": "the flesh of fish used as food; \"in Japan most fish is eaten raw\"; \"after the scare about foot-and-mouth disease a lot of people started eating fish instead of meat\"; \"they have a chef who specializes in fish\""
+        },
+        {
+          "id": "wn31:v:01143220",
+          "pos": "v",
+          "definition": "catch or try to catch fish or shellfish; \"I like to go fishing on weekends\""
+        },
+        {
+          "id": "wn31:v:01322006",
+          "pos": "v",
+          "definition": "seek indirectly; \"fish for compliments\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-5ac52c67c10a",
+      "word": "gene",
+      "pos": "名词",
+      "raw": "基因；遗传基因",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "基因",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "遗传基因",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05444328",
+          "pos": "n",
+          "definition": "(genetics) a segment of DNA that is involved in producing a polypeptide chain; it can include regions preceding and following the coding DNA as well as introns between the exons; it is considered a unit of heredity; \"genes were formerly called factors\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-74fa5327cc0f",
+      "word": "frog",
+      "pos": "名词",
+      "raw": "蛙",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "蛙",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01642406",
+          "pos": "n",
+          "definition": "any of various tailless stout-bodied amphibians with long hind limbs for leaping; semiaquatic and terrestrial species"
+        },
+        {
+          "id": "wn31:n:03403297",
+          "pos": "n",
+          "definition": "a decorative loop of braid or cord"
+        },
+        {
+          "id": "wn31:n:09728044",
+          "pos": "n",
+          "definition": "a person of French descent"
+        },
+        {
+          "id": "wn31:v:01385472",
+          "pos": "v",
+          "definition": "hunt frogs for food"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f6cc5b085b61",
+      "word": "grass",
+      "pos": "名词",
+      "raw": "草；草地",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "草",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "草地",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03997192",
+          "pos": "n",
+          "definition": "street names for marijuana"
+        },
+        {
+          "id": "wn31:n:07817067",
+          "pos": "n",
+          "definition": "bulky food like grass or hay for browsing or grazing horses or cattle"
+        },
+        {
+          "id": "wn31:n:10694920",
+          "pos": "n",
+          "definition": "a police informer who implicates many people"
+        },
+        {
+          "id": "wn31:n:12122650",
+          "pos": "n",
+          "definition": "narrow-leaved green herbage: grown as lawns; used as pasture for grazing animals; cut and dried as hay"
+        },
+        {
+          "id": "wn31:v:00843665",
+          "pos": "v",
+          "definition": "give away information about somebody; \"He told on his classmate who had cheated on the exam\""
+        },
+        {
+          "id": "wn31:v:01139481",
+          "pos": "v",
+          "definition": "shoot down, of birds"
+        },
+        {
+          "id": "wn31:v:01207201",
+          "pos": "v",
+          "definition": "feed with grass"
+        },
+        {
+          "id": "wn31:v:01211645",
+          "pos": "v",
+          "definition": "cover with grass"
+        },
+        {
+          "id": "wn31:v:01583197",
+          "pos": "v",
+          "definition": "spread out clothes on the grass to let it dry and bleach"
+        },
+        {
+          "id": "wn31:v:01605953",
+          "pos": "v",
+          "definition": "cover with grass; \"The owners decided to grass their property\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-c2d37dd05757",
+      "word": "goose",
+      "pos": "名词",
+      "raw": "鹅",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "鹅",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01858313",
+          "pos": "n",
+          "definition": "web-footed long-necked typically gregarious migratory aquatic birds usually larger and less aquatic than ducks"
+        },
+        {
+          "id": "wn31:n:07662430",
+          "pos": "n",
+          "definition": "flesh of a goose (domestic or wild)"
+        },
+        {
+          "id": "wn31:n:10177319",
+          "pos": "n",
+          "definition": "a man who is a stupid incompetent fool"
+        },
+        {
+          "id": "wn31:v:01228431",
+          "pos": "v",
+          "definition": "give a spurt of fuel to; \"goose the car\""
+        },
+        {
+          "id": "wn31:v:01233625",
+          "pos": "v",
+          "definition": "prod into action"
+        },
+        {
+          "id": "wn31:v:01459708",
+          "pos": "v",
+          "definition": "pinch in the buttocks; \"he goosed the unsuspecting girl\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-d44a08de3981",
+      "word": "hen",
+      "pos": "名词",
+      "raw": "母鸡",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "母鸡",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01323614",
+          "pos": "n",
+          "definition": "female of certain aquatic animals e.g. octopus or lobster"
+        },
+        {
+          "id": "wn31:n:01517500",
+          "pos": "n",
+          "definition": "adult female bird"
+        },
+        {
+          "id": "wn31:n:01795281",
+          "pos": "n",
+          "definition": "adult female chicken"
+        },
+        {
+          "id": "wn31:n:07661676",
+          "pos": "n",
+          "definition": "flesh of an older chicken suitable for stewing"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9d23384be3fd",
+      "word": "lamb",
+      "pos": "名词",
+      "raw": "羔羊；羊羔肉",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "羔羊",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "羊羔肉",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02415086",
+          "pos": "n",
+          "definition": "young sheep"
+        },
+        {
+          "id": "wn31:n:07682896",
+          "pos": "n",
+          "definition": "the flesh of a young domestic sheep eaten as food"
+        },
+        {
+          "id": "wn31:n:10263569",
+          "pos": "n",
+          "definition": "a sweet innocent mild-mannered person (especially a child)"
+        },
+        {
+          "id": "wn31:n:10263685",
+          "pos": "n",
+          "definition": "a person easily deceived or cheated (especially in financial matters)"
+        },
+        {
+          "id": "wn31:v:00057988",
+          "pos": "v",
+          "definition": "give birth to a lamb; \"the ewe lambed\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-fc59487712bb",
+      "word": "lion",
+      "pos": "名词",
+      "raw": "狮子",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "狮子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02131817",
+          "pos": "n",
+          "definition": "large gregarious predatory feline of Africa and India having a tawny coat with a shaggy mane in the male"
+        },
+        {
+          "id": "wn31:n:10284767",
+          "pos": "n",
+          "definition": "a celebrity who is lionized (much sought after)"
+        }
+      ]
+    },
+    {
+      "id": "SG25-47c5c28cae25",
+      "word": "mouse",
+      "pos": "名词",
+      "raw": "老鼠；鼠标",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "老鼠",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "鼠标",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02332897",
+          "pos": "n",
+          "definition": "any of numerous small rodents typically resembling diminutive rats having pointed snouts and small ears on elongated bodies with slender usually hairless tails"
+        },
+        {
+          "id": "wn31:n:03799022",
+          "pos": "n",
+          "definition": "a hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad; on the bottom of the device is a ball that rolls on the surface of the pad; \"a mouse takes much more room than a trackball\""
+        },
+        {
+          "id": "wn31:n:10355276",
+          "pos": "n",
+          "definition": "person who is quiet or timid"
+        },
+        {
+          "id": "wn31:n:14312889",
+          "pos": "n",
+          "definition": "a swollen bruise caused by a blow to the eye"
+        },
+        {
+          "id": "wn31:v:01214679",
+          "pos": "v",
+          "definition": "manipulate the mouse of a computer"
+        },
+        {
+          "id": "wn31:v:01915881",
+          "pos": "v",
+          "definition": "to go stealthily or furtively; \"..stead of sneaking around spying on the neighbor's house\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-1dd14ffc3c30",
+      "word": "ox",
+      "pos": "名词",
+      "raw": "阉牛；役牛",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "阉牛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "役牛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02404827",
+          "pos": "n",
+          "definition": "any of various wild bovines especially of the genera Bos or closely related Bibos"
+        },
+        {
+          "id": "wn31:n:02405655",
+          "pos": "n",
+          "definition": "an adult castrated bull of the genus Bos; especially Bos taurus"
+        }
+      ]
+    },
+    {
+      "id": "SG25-a7cdf5d0586b",
+      "word": "panda",
+      "pos": "名词",
+      "raw": "大熊猫；大猫熊；熊猫",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大熊猫",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "大猫熊",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "熊猫",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02512446",
+          "pos": "n",
+          "definition": "reddish-brown Old World raccoon-like carnivore; in some classifications considered unrelated to the giant pandas"
+        },
+        {
+          "id": "wn31:n:02513086",
+          "pos": "n",
+          "definition": "large black-and-white herbivorous mammal of bamboo forests of China and Tibet; in some classifications considered a member of the bear family or of a separate family Ailuropodidae"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f0b8c9d84dd2",
+      "word": "pig",
+      "pos": "名词",
+      "raw": "猪",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "猪",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02398058",
+          "pos": "n",
+          "definition": "domestic swine"
+        },
+        {
+          "id": "wn31:n:03941274",
+          "pos": "n",
+          "definition": "a crude block of metal (lead or iron) poured from a smelting furnace"
+        },
+        {
+          "id": "wn31:n:03941392",
+          "pos": "n",
+          "definition": "mold consisting of a bed of sand in which pig iron is cast"
+        },
+        {
+          "id": "wn31:n:09898610",
+          "pos": "n",
+          "definition": "uncomplimentary terms for a policeman"
+        },
+        {
+          "id": "wn31:n:10199280",
+          "pos": "n",
+          "definition": "a person regarded as greedy and pig-like"
+        },
+        {
+          "id": "wn31:n:10631726",
+          "pos": "n",
+          "definition": "a coarse obnoxious person"
+        },
+        {
+          "id": "wn31:v:00058386",
+          "pos": "v",
+          "definition": "give birth to (piglets); \"sows farrow\""
+        },
+        {
+          "id": "wn31:v:01199186",
+          "pos": "v",
+          "definition": "eat greedily; \"he devoured three sandwiches\""
+        },
+        {
+          "id": "wn31:v:02621792",
+          "pos": "v",
+          "definition": "live like a pig, in squalor"
+        }
+      ]
+    },
+    {
+      "id": "SG25-9950cec246ec",
+      "word": "rat",
+      "pos": "名词",
+      "raw": "大鼠",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大鼠",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02333698",
+          "pos": "n",
+          "definition": "any of various long-tailed rodents similar to but larger than a mouse"
+        },
+        {
+          "id": "wn31:n:04062142",
+          "pos": "n",
+          "definition": "a pad (usually made of hair) worn as part of a woman's coiffure"
+        },
+        {
+          "id": "wn31:n:10225792",
+          "pos": "n",
+          "definition": "one who reveals confidential information in return for money"
+        },
+        {
+          "id": "wn31:n:10559272",
+          "pos": "n",
+          "definition": "a person who is deemed to be despicable or contemptible; \"only a rotter would do that\"; \"kill the rat\"; \"throw the bum out\"; \"you cowardly little pukes!\"; \"the British call a contemptible person a `git'\""
+        },
+        {
+          "id": "wn31:n:10573883",
+          "pos": "n",
+          "definition": "someone who works (or provides workers) during a strike"
+        },
+        {
+          "id": "wn31:v:00843665",
+          "pos": "v",
+          "definition": "give away information about somebody; \"He told on his classmate who had cheated on the exam\""
+        },
+        {
+          "id": "wn31:v:01483271",
+          "pos": "v",
+          "definition": "catch rats, especially with dogs"
+        },
+        {
+          "id": "wn31:v:01529923",
+          "pos": "v",
+          "definition": "give (hair) the appearance of being fuller by using a rat"
+        },
+        {
+          "id": "wn31:v:02418069",
+          "pos": "v",
+          "definition": "take the place of work of someone on strike"
+        },
+        {
+          "id": "wn31:v:02418270",
+          "pos": "v",
+          "definition": "employ scabs or strike breakers in"
+        },
+        {
+          "id": "wn31:v:02590560",
+          "pos": "v",
+          "definition": "desert one's party or group of friends, for example, for one's personal advantage"
+        }
+      ]
+    },
+    {
+      "id": "SG25-d37d96b42ad4",
+      "word": "rabbit",
+      "pos": "名词",
+      "raw": "兔",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "兔",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02326697",
+          "pos": "n",
+          "definition": "any of various burrowing animals of the family Leporidae having long ears and short tails; some domesticated and raised for pets or food"
+        },
+        {
+          "id": "wn31:n:07682266",
+          "pos": "n",
+          "definition": "flesh of any of various rabbits or hares (wild or domesticated) eaten as food"
+        },
+        {
+          "id": "wn31:n:14789503",
+          "pos": "n",
+          "definition": "the fur of a rabbit"
+        },
+        {
+          "id": "wn31:v:01145227",
+          "pos": "v",
+          "definition": "hunt rabbits"
+        }
+      ]
+    },
+    {
+      "id": "SG25-4813494d137e",
+      "word": "root",
+      "pos": "名词；动词",
+      "raw": "名词：根，根源；动词：生根",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "根",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "根源",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "生根",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05315809",
+          "pos": "n",
+          "definition": "the embedded part of a bodily structure such as a tooth, nail, or hair"
+        },
+        {
+          "id": "wn31:n:06311183",
+          "pos": "n",
+          "definition": "(linguistics) the form of a word after all affixes are removed; \"thematic vowels are part of the stem\""
+        },
+        {
+          "id": "wn31:n:06311435",
+          "pos": "n",
+          "definition": "a simple form inferred as the common basis from which related words in several languages can be derived by linguistic processes"
+        },
+        {
+          "id": "wn31:n:08022396",
+          "pos": "n",
+          "definition": "the set of values that give a true statement when substituted into an equation"
+        },
+        {
+          "id": "wn31:n:08524579",
+          "pos": "n",
+          "definition": "the place where something begins, where it springs into being; \"the Italian beginning of the Renaissance\"; \"Jupiter was the origin of the radiation\"; \"Pittsburgh is the source of the Ohio River\"; \"communism's Russian root\""
+        },
+        {
+          "id": "wn31:n:09811996",
+          "pos": "n",
+          "definition": "someone from whom you are descended (but usually more remote than a grandparent)"
+        },
+        {
+          "id": "wn31:n:13145876",
+          "pos": "n",
+          "definition": "(botany) the usually underground organ that lacks buds or leaves or nodes; absorbs water and mineral salts; usually it anchors the plant to the ground"
+        },
+        {
+          "id": "wn31:n:13753809",
+          "pos": "n",
+          "definition": "a number that, when multiplied by itself some number of times, equals a given number"
+        },
+        {
+          "id": "wn31:v:00358789",
+          "pos": "v",
+          "definition": "take root and begin to grow; \"this plant roots quickly\""
+        },
+        {
+          "id": "wn31:v:00358968",
+          "pos": "v",
+          "definition": "cause to take roots"
+        },
+        {
+          "id": "wn31:v:00416323",
+          "pos": "v",
+          "definition": "become settled or established and stable in one's residence or life style; \"He finally settled down\""
+        },
+        {
+          "id": "wn31:v:01285016",
+          "pos": "v",
+          "definition": "dig with the snout; \"the pig was rooting for truffles\""
+        },
+        {
+          "id": "wn31:v:01531982",
+          "pos": "v",
+          "definition": "plant by the roots"
+        },
+        {
+          "id": "wn31:v:02562263",
+          "pos": "v",
+          "definition": "cheer for; \"She roots for the Broncos\""
+        },
+        {
+          "id": "wn31:v:02629812",
+          "pos": "v",
+          "definition": "come into existence, originate; \"The problem roots in her depression\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-538d7d9fe78e",
+      "word": "snake",
+      "pos": "名词",
+      "raw": "蛇",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "蛇",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:01729333",
+          "pos": "n",
+          "definition": "limbless scaly elongate reptile; some are venomous"
+        },
+        {
+          "id": "wn31:n:03975218",
+          "pos": "n",
+          "definition": "a long flexible steel coil for dislodging stoppages in curved pipes"
+        },
+        {
+          "id": "wn31:n:04255138",
+          "pos": "n",
+          "definition": "something long, thin, and flexible that resembles a snake"
+        },
+        {
+          "id": "wn31:n:10635218",
+          "pos": "n",
+          "definition": "a deceitful or treacherous person"
+        },
+        {
+          "id": "wn31:v:01887203",
+          "pos": "v",
+          "definition": "move along a winding path; \"The army snaked through the jungle\""
+        },
+        {
+          "id": "wn31:v:01892158",
+          "pos": "v",
+          "definition": "move smoothly and sinuously, like a snake"
+        },
+        {
+          "id": "wn31:v:02744851",
+          "pos": "v",
+          "definition": "form a snake-like pattern; \"The river snakes through the valley\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-0c62f876ef1d",
+      "word": "tail",
+      "pos": "名词",
+      "raw": "尾巴；末尾",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "尾巴",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "末尾",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02160209",
+          "pos": "n",
+          "definition": "the posterior part of the body of a vertebrate especially when elongated and extending beyond the trunk or main part of the body"
+        },
+        {
+          "id": "wn31:n:04323784",
+          "pos": "n",
+          "definition": "the rear part of a ship"
+        },
+        {
+          "id": "wn31:n:04391103",
+          "pos": "n",
+          "definition": "the rear part of an aircraft"
+        },
+        {
+          "id": "wn31:n:04391286",
+          "pos": "n",
+          "definition": "(usually plural) the reverse side of a coin that does not bear the representation of a person's head"
+        },
+        {
+          "id": "wn31:n:05566889",
+          "pos": "n",
+          "definition": "the fleshy part of the human body that you sit on; \"he deserves a good kick in the butt\"; \"are you going to sit on your fanny and do nothing?\""
+        },
+        {
+          "id": "wn31:n:10708600",
+          "pos": "n",
+          "definition": "a spy employed to follow someone and report their movements"
+        },
+        {
+          "id": "wn31:n:13941307",
+          "pos": "n",
+          "definition": "any projection that resembles the tail of an animal"
+        },
+        {
+          "id": "wn31:n:15293196",
+          "pos": "n",
+          "definition": "the time of the last part of something; \"the fag end of this crisis-ridden century\"; \"the tail of the storm\""
+        },
+        {
+          "id": "wn31:v:01324456",
+          "pos": "v",
+          "definition": "remove the stalk of fruits or berries"
+        },
+        {
+          "id": "wn31:v:01558960",
+          "pos": "v",
+          "definition": "remove or shorten the tail of an animal"
+        },
+        {
+          "id": "wn31:v:02005890",
+          "pos": "v",
+          "definition": "go after with the intent to catch; \"The policeman chased the mugger down the alley\"; \"the dog chased the rabbit\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-3e341d2d9c67",
+      "word": "trunk",
+      "pos": "名词",
+      "raw": "树干；象鼻；大箱子",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "树干",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "象鼻",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "大箱子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02455598",
+          "pos": "n",
+          "definition": "a long flexible snout as of an elephant"
+        },
+        {
+          "id": "wn31:n:03701391",
+          "pos": "n",
+          "definition": "compartment in an automobile that carries luggage or shopping or tools; \"he put his golf bag in the trunk\""
+        },
+        {
+          "id": "wn31:n:04499064",
+          "pos": "n",
+          "definition": "luggage consisting of a large strong case used when traveling or for storage"
+        },
+        {
+          "id": "wn31:n:05557463",
+          "pos": "n",
+          "definition": "the body excluding the head and neck and limbs; \"they moved their arms and legs and bodies\""
+        },
+        {
+          "id": "wn31:n:13186713",
+          "pos": "n",
+          "definition": "the main stem of a tree; usually covered with bark; the bole is usually the part that is commercially useful for lumber"
+        }
+      ]
+    },
+    {
+      "id": "SG25-f76b61b962db",
+      "word": "wolf",
+      "pos": "名词",
+      "raw": "狼",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "狼",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:02116752",
+          "pos": "n",
+          "definition": "any of various predatory carnivorous canine mammals of North America and Eurasia that usually hunt in packs"
+        },
+        {
+          "id": "wn31:n:09864997",
+          "pos": "n",
+          "definition": "a cruelly rapacious person"
+        },
+        {
+          "id": "wn31:n:10806873",
+          "pos": "n",
+          "definition": "a man who is aggressive in making amorous advances to women"
+        },
+        {
+          "id": "wn31:v:01171485",
+          "pos": "v",
+          "definition": "eat hastily; \"The teenager wolfed down the pizza\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-9fe430e52746",
+      "word": "air",
+      "pos": "名词；动词",
+      "raw": "名词：空气，空中；动词：通风，公开表达",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "空气",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "空中",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "通风",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "公开表达",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00301267",
+          "pos": "n",
+          "definition": "travel via aircraft; \"air travel involves too much waiting in airports\"; \"if you've time to spare go by air\""
+        },
+        {
+          "id": "wn31:n:04734472",
+          "pos": "n",
+          "definition": "a distinctive but intangible quality surrounding a person or thing; \"an air of mystery\"; \"the house had a neglected air\"; \"an atmosphere of defeat pervaded the candidate's headquarters\"; \"the place had an aura of romance\""
+        },
+        {
+          "id": "wn31:n:06265931",
+          "pos": "n",
+          "definition": "medium for radio and television broadcasting; \"the program was on the air from 9 til midnight\"; \"the president used the airwaves to take his message to the people\""
+        },
+        {
+          "id": "wn31:n:07041860",
+          "pos": "n",
+          "definition": "a succession of notes forming a distinctive sequence; \"she was humming an air from Beethoven\""
+        },
+        {
+          "id": "wn31:n:08516085",
+          "pos": "n",
+          "definition": "the mass of air surrounding the Earth; \"there was great heat as the comet entered the atmosphere\"; \"it was exposed to the air\""
+        },
+        {
+          "id": "wn31:n:08670889",
+          "pos": "n",
+          "definition": "the region above the ground; \"her hand stopped in mid air\"; \"he threw the ball into the air\""
+        },
+        {
+          "id": "wn31:n:11451868",
+          "pos": "n",
+          "definition": "a slight wind (usually refreshing); \"the breeze was cooled by the lake\"; \"as he waited he could feel the air on his neck\""
+        },
+        {
+          "id": "wn31:n:14865437",
+          "pos": "n",
+          "definition": "a mixture of gases (especially oxygen) required for breathing; the stuff that the wind consists of; \"air pollution\"; \"a smell of chemicals in the air\"; \"open a window and let in some air\"; \"I need some fresh air\""
+        },
+        {
+          "id": "wn31:n:14866873",
+          "pos": "n",
+          "definition": "once thought to be one of four elements composing the universe (Empedocles)"
+        },
+        {
+          "id": "wn31:v:00489706",
+          "pos": "v",
+          "definition": "expose to cool or cold air so as to cool or freshen; \"air the old winter clothes\"; \"air out the smoke-filled rooms\""
+        },
+        {
+          "id": "wn31:v:00489965",
+          "pos": "v",
+          "definition": "expose to warm or heated air, so as to dry; \"Air linen\""
+        },
+        {
+          "id": "wn31:v:00956640",
+          "pos": "v",
+          "definition": "make public; \"She aired her opinions on welfare\""
+        },
+        {
+          "id": "wn31:v:00975088",
+          "pos": "v",
+          "definition": "broadcast over the airwaves, as in radio or television; \"We cannot air this X-rated song\""
+        },
+        {
+          "id": "wn31:v:00975760",
+          "pos": "v",
+          "definition": "be broadcast; \"This show will air Saturdays at 2 P.M.\""
+        },
+        {
+          "id": "wn31:v:02117374",
+          "pos": "v",
+          "definition": "expose to fresh air; \"aerate your old sneakers\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ab36e8434472",
+      "word": "beach",
+      "pos": "名词",
+      "raw": "海滩",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "海滩",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09240137",
+          "pos": "n",
+          "definition": "an area of sand sloping down to the water of a sea or lake"
+        },
+        {
+          "id": "wn31:v:01982961",
+          "pos": "v",
+          "definition": "land on a beach; \"the ship beached near the port\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-6d114c95fbf5",
+      "word": "coal",
+      "pos": "名词",
+      "raw": "煤",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "煤",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09296036",
+          "pos": "n",
+          "definition": "a hot fragment of wood or coal that is left from a fire and is glowing or smoldering"
+        },
+        {
+          "id": "wn31:n:14838786",
+          "pos": "n",
+          "definition": "fossil fuel consisting of carbonized vegetable matter deposited in the Carboniferous period"
+        },
+        {
+          "id": "wn31:v:01602904",
+          "pos": "v",
+          "definition": "take in coal; \"The big ship coaled\""
+        },
+        {
+          "id": "wn31:v:02357700",
+          "pos": "v",
+          "definition": "supply with coal"
+        },
+        {
+          "id": "wn31:v:02777955",
+          "pos": "v",
+          "definition": "burn to charcoal; \"Without a drenching rain, the forest fire will char everything\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-ba5285161ba6",
+      "word": "environment",
+      "pos": "名词",
+      "raw": "环境",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "环境",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08584764",
+          "pos": "n",
+          "definition": "the area in which something exists or lives; \"the country--the flat agricultural surround\""
+        },
+        {
+          "id": "wn31:n:13957629",
+          "pos": "n",
+          "definition": "the totality of surrounding conditions; \"he longed for the comfortable environment of his living room\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-619a2ccf126c",
+      "word": "forest",
+      "pos": "名词",
+      "raw": "森林",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "森林",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08455525",
+          "pos": "n",
+          "definition": "the trees and other plants in a large densely wooded area"
+        },
+        {
+          "id": "wn31:n:09306921",
+          "pos": "n",
+          "definition": "land that is covered with trees and shrubs"
+        },
+        {
+          "id": "wn31:v:01570669",
+          "pos": "v",
+          "definition": "establish a forest on previously unforested land; \"afforest the mountains\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-acbe4bfc77e5",
+      "word": "fuel",
+      "pos": "名词；动词",
+      "raw": "名词：燃料；动词：为……提供燃料，助长",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "燃料",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "为……提供燃料",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 16
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "助长",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:14899228",
+          "pos": "n",
+          "definition": "a substance that can be consumed to produce energy; \"more fuel is needed during the winter months\"; \"they developed alternative fuels for aircraft\""
+        },
+        {
+          "id": "wn31:v:01766030",
+          "pos": "v",
+          "definition": "stimulate; \"fuel the debate on creationism\""
+        },
+        {
+          "id": "wn31:v:02241806",
+          "pos": "v",
+          "definition": "take in fuel, as of a ship; \"The tanker fueled in Bahrain\""
+        },
+        {
+          "id": "wn31:v:02343382",
+          "pos": "v",
+          "definition": "provide with a combustible substance that provides energy; \"fuel aircraft, ships, and cars\""
+        },
+        {
+          "id": "wn31:v:02361419",
+          "pos": "v",
+          "definition": "provide with fuel; \"Oil fires the furnace\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-23eeb69c681d",
+      "word": "garden",
+      "pos": "名词",
+      "raw": "花园；菜园",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "花园",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "菜园",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03422255",
+          "pos": "n",
+          "definition": "a plot of ground where plants are cultivated"
+        },
+        {
+          "id": "wn31:n:03422659",
+          "pos": "n",
+          "definition": "a yard or lawn adjoining a house"
+        },
+        {
+          "id": "wn31:n:08456800",
+          "pos": "n",
+          "definition": "the flowers or vegetables or fruits or herbs that are cultivated in a garden"
+        },
+        {
+          "id": "wn31:v:01744850",
+          "pos": "v",
+          "definition": "work in the garden; \"My hobby is gardening\""
+        },
+        {
+          "id": "wn31:s:00973992",
+          "pos": "s",
+          "definition": "the usual or familiar type; \"it is a common or garden sparrow\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-24d7f03d8dc3",
+      "word": "gold",
+      "pos": "名词",
+      "raw": "金；黄金；金色",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "金",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "黄金",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "金色",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04973417",
+          "pos": "n",
+          "definition": "a deep yellow color; \"an amber light illuminated the room\"; \"he admired the gold of her hair\""
+        },
+        {
+          "id": "wn31:n:05148739",
+          "pos": "n",
+          "definition": "something likened to the metal in brightness or preciousness or superiority etc.; \"the child was as good as gold\"; \"she has a heart of gold\""
+        },
+        {
+          "id": "wn31:n:13374461",
+          "pos": "n",
+          "definition": "great wealth; \"Whilst that for which all virtue now is sold, and almost every vice--almighty gold\"--Ben Jonson"
+        },
+        {
+          "id": "wn31:n:13392933",
+          "pos": "n",
+          "definition": "coins made of gold"
+        },
+        {
+          "id": "wn31:n:14662977",
+          "pos": "n",
+          "definition": "a soft yellow malleable ductile (trivalent and univalent) metallic element; occurs mainly as nuggets in rocks and alluvial deposits; does not react with most chemicals but is attacked by chlorine and aqua regia"
+        },
+        {
+          "id": "wn31:s:00371003",
+          "pos": "s",
+          "definition": "having the deep slightly brownish color of gold; \"long aureate (or golden) hair\"; \"a gold carpet\""
+        },
+        {
+          "id": "wn31:s:01532849",
+          "pos": "s",
+          "definition": "made from or covered with gold; \"gold coins\"; \"the gold dome of the Capitol\"; \"the golden calf\"; \"gilded icons\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-f77fcbb21dde",
+      "word": "hill",
+      "pos": "名词",
+      "raw": "小山；丘陵",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "小山",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "丘陵",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03797581",
+          "pos": "n",
+          "definition": "structure consisting of an artificial heap or bank usually of earth or stones; \"they built small mounds to hide behind\""
+        },
+        {
+          "id": "wn31:n:03797867",
+          "pos": "n",
+          "definition": "(baseball) the slight elevation on which the pitcher stands"
+        },
+        {
+          "id": "wn31:n:09325914",
+          "pos": "n",
+          "definition": "a local and well-defined elevation of the land; \"they loved to roam the hills of West Virginia\""
+        },
+        {
+          "id": "wn31:v:01664534",
+          "pos": "v",
+          "definition": "form into a hill"
+        }
+      ]
+    },
+    {
+      "id": "SG25-90eae63487ca",
+      "word": "land",
+      "pos": "名词；动词",
+      "raw": "名词：土地；动词：着陆，登陆",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "土地",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "着陆",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "登陆",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00454755",
+          "pos": "n",
+          "definition": "agriculture considered as an occupation or way of life; \"farming is a strenuous life\"; \"there's no work on the land any more\""
+        },
+        {
+          "id": "wn31:n:08183451",
+          "pos": "n",
+          "definition": "the people who live in a nation or country; \"a statement that sums up the nation's mood\"; \"the news was announced to the nation\"; \"the whole country worshipped him\""
+        },
+        {
+          "id": "wn31:n:08185877",
+          "pos": "n",
+          "definition": "a politically organized body of people under a single government; \"the state has elected a new president\"; \"African nations\"; \"students who had come to the nation's capitol\"; \"the country's largest manufacturer\"; \"an industrialized land\""
+        },
+        {
+          "id": "wn31:n:08562388",
+          "pos": "n",
+          "definition": "the territory occupied by a nation; \"he returned to the land of his birth\"; \"he visited several European countries\""
+        },
+        {
+          "id": "wn31:n:08574028",
+          "pos": "n",
+          "definition": "territory over which rule or control is exercised; \"his domain extended into Europe\"; \"he made it the law of the land\""
+        },
+        {
+          "id": "wn31:n:09357302",
+          "pos": "n",
+          "definition": "the solid part of the earth's surface; \"the plane turned away from the sea and moved back over land\"; \"the earth shook for several minutes\"; \"he dropped the logs on the ground\""
+        },
+        {
+          "id": "wn31:n:09358146",
+          "pos": "n",
+          "definition": "material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use); \"the land had never been plowed\"; \"good agricultural soil\""
+        },
+        {
+          "id": "wn31:n:13267561",
+          "pos": "n",
+          "definition": "extensive landed property (especially in the country) retained by the owner for his own use; \"the family owned a large estate on Long Island\""
+        },
+        {
+          "id": "wn31:n:13270947",
+          "pos": "n",
+          "definition": "the land on which real estate is located; \"he built the house on land leased from the city\""
+        },
+        {
+          "id": "wn31:n:14538407",
+          "pos": "n",
+          "definition": "a domain in which something is dominant; \"the untroubled kingdom of reason\"; \"a land of make-believe\"; \"the rise of the realm of cotton in the south\""
+        },
+        {
+          "id": "wn31:v:00135665",
+          "pos": "v",
+          "definition": "bring into a different state; \"this may land you in jail\""
+        },
+        {
+          "id": "wn31:v:01983915",
+          "pos": "v",
+          "definition": "reach or come to rest; \"The bird landed on the highest branch\"; \"The plane landed in Istanbul\""
+        },
+        {
+          "id": "wn31:v:01985050",
+          "pos": "v",
+          "definition": "cause to come to the ground; \"the pilot managed to land the airplane safely\""
+        },
+        {
+          "id": "wn31:v:01985293",
+          "pos": "v",
+          "definition": "shoot at and force to come down; \"the enemy landed several of our aircraft\""
+        },
+        {
+          "id": "wn31:v:01985450",
+          "pos": "v",
+          "definition": "arrive on shore; \"The ship landed in Pearl Harbor\""
+        },
+        {
+          "id": "wn31:v:02091423",
+          "pos": "v",
+          "definition": "bring ashore; \"The drug smugglers landed the heroin on the beach of the island\""
+        },
+        {
+          "id": "wn31:v:02363526",
+          "pos": "v",
+          "definition": "deliver (a blow); \"He landed several blows on his opponent's head\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-91ed2ef15eee",
+      "word": "jungle",
+      "pos": "名词",
+      "raw": "丛林；弱肉强食的环境",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "丛林",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "弱肉强食的环境",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 10
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08456014",
+          "pos": "n",
+          "definition": "an impenetrable equatorial forest"
+        },
+        {
+          "id": "wn31:n:08495182",
+          "pos": "n",
+          "definition": "a place where hoboes camp"
+        },
+        {
+          "id": "wn31:n:08526132",
+          "pos": "n",
+          "definition": "a location marked by an intense competition and struggle for survival"
+        }
+      ]
+    },
+    {
+      "id": "SG25-6f021f0268d5",
+      "word": "lake",
+      "pos": "名词",
+      "raw": "湖",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "湖",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09351810",
+          "pos": "n",
+          "definition": "a body of (usually fresh) water surrounded by land"
+        },
+        {
+          "id": "wn31:n:15015571",
+          "pos": "n",
+          "definition": "any of numerous bright translucent organic pigments"
+        },
+        {
+          "id": "wn31:n:15015673",
+          "pos": "n",
+          "definition": "a purplish red pigment prepared from lac or cochineal"
+        }
+      ]
+    },
+    {
+      "id": "SG25-3b80d38f7686",
+      "word": "mountain",
+      "pos": "名词",
+      "raw": "山；高山",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "山",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "高山",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09382700",
+          "pos": "n",
+          "definition": "a land mass that projects well above its surroundings; higher than a hill"
+        },
+        {
+          "id": "wn31:n:13796604",
+          "pos": "n",
+          "definition": "(often followed by `of') a large number or amount or extent; \"a batch of letters\"; \"a deal of trouble\"; \"a lot of money\"; \"he made a mint on the stock market\"; \"see the rest of the winners in our huge passel of photos\"; \"it must have cost plenty\"; \"a slew of journalists\"; \"a wad of money\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-5697abca7a31",
+      "word": "nature",
+      "pos": "名词",
+      "raw": "自然；本性",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "自然",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "本性",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04630470",
+          "pos": "n",
+          "definition": "the complex of emotional and intellectual attributes that determine a person's characteristic actions and reactions; \"it is his nature to help others\""
+        },
+        {
+          "id": "wn31:n:04733982",
+          "pos": "n",
+          "definition": "the essential qualities or characteristics by which something is recognized; \"it is the nature of fire to burn\"; \"the true nature of jealousy\""
+        },
+        {
+          "id": "wn31:n:05848940",
+          "pos": "n",
+          "definition": "a particular type of thing; \"problems of this type are very difficult to solve\"; \"he's interested in trains and things of that nature\"; \"matters of a personal nature\""
+        },
+        {
+          "id": "wn31:n:09389659",
+          "pos": "n",
+          "definition": "the natural physical world including plants and animals and landscapes etc.; \"they tried to preserve nature as they found it\""
+        },
+        {
+          "id": "wn31:n:09526814",
+          "pos": "n",
+          "definition": "a causal agent creating and controlling things in the universe; \"the laws of nature\"; \"nature has seen to it that men are stronger than women\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-47afad612b1f",
+      "word": "ocean",
+      "pos": "名词",
+      "raw": "大洋；洋；海洋",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "大洋",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "洋",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "海洋",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09399110",
+          "pos": "n",
+          "definition": "a large body of water constituting a principal part of the hydrosphere"
+        },
+        {
+          "id": "wn31:n:13799183",
+          "pos": "n",
+          "definition": "anything apparently limitless in quantity or volume"
+        }
+      ]
+    },
+    {
+      "id": "SG25-ab7902bcbd91",
+      "word": "oil",
+      "pos": "名词",
+      "raw": "油；石油",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "油",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "石油",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03848612",
+          "pos": "n",
+          "definition": "oil paint containing pigment that is used by an artist"
+        },
+        {
+          "id": "wn31:n:07689142",
+          "pos": "n",
+          "definition": "any of a group of liquid edible fats that are obtained from plants"
+        },
+        {
+          "id": "wn31:n:14991055",
+          "pos": "n",
+          "definition": "a slippery or viscous liquid or liquefiable substance not miscible with water"
+        },
+        {
+          "id": "wn31:n:15005138",
+          "pos": "n",
+          "definition": "a dark oil consisting mainly of hydrocarbons"
+        },
+        {
+          "id": "wn31:v:00085379",
+          "pos": "v",
+          "definition": "administer an oil or ointment to; often in a religious ceremony of blessing"
+        },
+        {
+          "id": "wn31:v:01271135",
+          "pos": "v",
+          "definition": "cover with oil, as if by rubbing; \"oil the wooden surface\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-27cac5503836",
+      "word": "pool",
+      "pos": "名词；动词",
+      "raw": "名词：水池，台球，共用资源；动词：汇集",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "水池",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "台球",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "共用资源",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "汇集",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00502091",
+          "pos": "n",
+          "definition": "any of various games played on a pool table having 6 pockets"
+        },
+        {
+          "id": "wn31:n:03988418",
+          "pos": "n",
+          "definition": "an excavation that is (usually) filled with water"
+        },
+        {
+          "id": "wn31:n:08253359",
+          "pos": "n",
+          "definition": "an association of companies for some definite purpose"
+        },
+        {
+          "id": "wn31:n:08498380",
+          "pos": "n",
+          "definition": "an organization of people or resources that can be shared; \"a car pool\"; \"a secretarial pool\"; \"when he was first hired he was assigned to the pool\""
+        },
+        {
+          "id": "wn31:n:08682839",
+          "pos": "n",
+          "definition": "something resembling a pool of liquid; \"he stood in a pool of light\"; \"his chair sat in a puddle of books and magazines\""
+        },
+        {
+          "id": "wn31:n:09420266",
+          "pos": "n",
+          "definition": "a small lake; \"the pond was too small for sailing\""
+        },
+        {
+          "id": "wn31:n:09420482",
+          "pos": "n",
+          "definition": "a small body of standing water (rainwater) or other liquid; \"there were puddles of muddy water in the road after the rain\"; \"the body lay in a pool of blood\""
+        },
+        {
+          "id": "wn31:n:13390647",
+          "pos": "n",
+          "definition": "the combined stakes of the betters"
+        },
+        {
+          "id": "wn31:n:13391030",
+          "pos": "n",
+          "definition": "any communal combination of funds; \"everyone contributed to the pool\""
+        },
+        {
+          "id": "wn31:v:01092518",
+          "pos": "v",
+          "definition": "join or form a pool of people"
+        },
+        {
+          "id": "wn31:v:02300803",
+          "pos": "v",
+          "definition": "combine into a common fund; \"We pooled resources\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-8fced00b6ce2",
+      "word": "rainbow",
+      "pos": "名词",
+      "raw": "彩虹；虹",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "彩虹",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "虹",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:05959849",
+          "pos": "n",
+          "definition": "an illusory hope; \"chasing rainbows\""
+        },
+        {
+          "id": "wn31:n:09426302",
+          "pos": "n",
+          "definition": "an arc of colored light in the sky caused by refraction of the sun's rays by rain"
+        }
+      ]
+    },
+    {
+      "id": "SG25-5f5a8ed8f139",
+      "word": "river",
+      "pos": "名词",
+      "raw": "河流",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "河流",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09434308",
+          "pos": "n",
+          "definition": "a large natural stream of water (larger than a creek); \"the river was navigable for 50 miles\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-350a770c0ec9",
+      "word": "rock",
+      "pos": "名词",
+      "raw": "岩石；石块",
+      "usage_note": "仅列常用义；原台账索引及正文同页文本支持，不冒充逐页人工图像终审。",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "岩石",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "石块",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00348834",
+          "pos": "n",
+          "definition": "pitching dangerously to one side"
+        },
+        {
+          "id": "wn31:n:07078755",
+          "pos": "n",
+          "definition": "a genre of popular music originating in the 1950s; a blend of black rhythm-and-blues with white country-and-western; \"rock is a generic term for the range of styles that evolved out of rock'n'roll.\""
+        },
+        {
+          "id": "wn31:n:07624692",
+          "pos": "n",
+          "definition": "hard bright-colored stick candy (typically flavored with peppermint)"
+        },
+        {
+          "id": "wn31:n:09438954",
+          "pos": "n",
+          "definition": "a lump or mass of hard consolidated mineral matter; \"he threw a rock at me\""
+        },
+        {
+          "id": "wn31:n:10554923",
+          "pos": "n",
+          "definition": "(figurative) someone who is strong and stable and dependable; \"he was her rock during the crisis\"; \"Thou art Peter, and upon this rock I will build my church\"--Gospel According to Matthew"
+        },
+        {
+          "id": "wn31:n:14720954",
+          "pos": "n",
+          "definition": "material consisting of the aggregate of minerals like those making up the Earth's crust; \"that mountain is solid rock\"; \"stone is abundant in New England and there are many quarries\""
+        },
+        {
+          "id": "wn31:v:01879288",
+          "pos": "v",
+          "definition": "move back and forth or sideways; \"the ship was rocking\"; \"the tall building swayed\"; \"She rocked back and forth on her feet\""
+        },
+        {
+          "id": "wn31:v:01880021",
+          "pos": "v",
+          "definition": "cause to move back and forth; \"rock the cradle\"; \"rock the baby\"; \"the wind swayed the trees gently\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-4a69f19c8c26",
+      "word": "sea",
+      "pos": "名词",
+      "raw": "海；大量",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "海",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "大量",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:09449666",
+          "pos": "n",
+          "definition": "a division of an ocean or a large body of salt water partially enclosed by land"
+        },
+        {
+          "id": "wn31:n:11541837",
+          "pos": "n",
+          "definition": "turbulent water with swells of considerable size; \"heavy seas\""
+        },
+        {
+          "id": "wn31:n:13799183",
+          "pos": "n",
+          "definition": "anything apparently limitless in quantity or volume"
+        }
+      ]
+    },
+    {
+      "id": "SG25-78cde64c3e47",
+      "word": "silver",
+      "pos": "名词",
+      "raw": "银；银色",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "银",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "银色",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:03366683",
+          "pos": "n",
+          "definition": "silverware eating utensils"
+        },
+        {
+          "id": "wn31:n:04227590",
+          "pos": "n",
+          "definition": "a trophy made of silver (or having the appearance of silver) that is usually awarded for winning second place in a competition"
+        },
+        {
+          "id": "wn31:n:04969239",
+          "pos": "n",
+          "definition": "a light shade of grey"
+        },
+        {
+          "id": "wn31:n:13393039",
+          "pos": "n",
+          "definition": "coins made of silver"
+        },
+        {
+          "id": "wn31:n:14679133",
+          "pos": "n",
+          "definition": "a soft white precious univalent metallic element having the highest electrical and thermal conductivity of any metal; occurs in argentite and in free form; used in coins and jewelry and tableware and photography"
+        },
+        {
+          "id": "wn31:v:00283412",
+          "pos": "v",
+          "definition": "turn silver; \"The man's hair silvered very attractively\""
+        },
+        {
+          "id": "wn31:v:00290294",
+          "pos": "v",
+          "definition": "make silver in color; \"Her worries had silvered her hair\""
+        },
+        {
+          "id": "wn31:v:01398147",
+          "pos": "v",
+          "definition": "coat with a layer of silver or a silver amalgam; \"silver the necklace\""
+        },
+        {
+          "id": "wn31:s:00151773",
+          "pos": "s",
+          "definition": "expressing yourself readily, clearly, effectively; \"able to dazzle with his facile tongue\"; \"silver speech\""
+        },
+        {
+          "id": "wn31:s:00284193",
+          "pos": "s",
+          "definition": "having the white lustrous sheen of silver; \"a land of silver (or silvern) rivers where the salmon leap\"; \"repeated scrubbings have given the wood a silvery sheen\""
+        },
+        {
+          "id": "wn31:s:00388453",
+          "pos": "s",
+          "definition": "of lustrous grey; covered with or tinged with the color of silver; \"silvery hair\""
+        },
+        {
+          "id": "wn31:s:01533172",
+          "pos": "s",
+          "definition": "made from or largely consisting of silver; \"silver bracelets\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-e93d59a02163",
+      "word": "soil",
+      "pos": "名词；动词",
+      "raw": "名词：土壤；动词：弄脏",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "土壤",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "弄脏",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:08510074",
+          "pos": "n",
+          "definition": "the geographical area under the jurisdiction of a sovereign state; \"American troops were stationed on Japanese soil\""
+        },
+        {
+          "id": "wn31:n:09358146",
+          "pos": "n",
+          "definition": "material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use); \"the land had never been plowed\"; \"good agricultural soil\""
+        },
+        {
+          "id": "wn31:n:14521680",
+          "pos": "n",
+          "definition": "the state of being covered with unclean things"
+        },
+        {
+          "id": "wn31:n:14868863",
+          "pos": "n",
+          "definition": "the part of the earth's surface consisting of humus and disintegrated rock"
+        },
+        {
+          "id": "wn31:v:01536935",
+          "pos": "v",
+          "definition": "make soiled, filthy, or dirty; \"don't soil your clothes when you play outside!\""
+        }
+      ]
+    },
+    {
+      "id": "SG25-dc3d50da8dac",
+      "word": "stone",
+      "pos": "名词",
+      "raw": "石头；石料",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "石头",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "石料",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04333222",
+          "pos": "n",
+          "definition": "building material consisting of a piece of rock hewn in a definite shape for a special purpose; \"he wanted a special stone to mark the site\""
+        },
+        {
+          "id": "wn31:n:04637315",
+          "pos": "n",
+          "definition": "a lack of feeling or expression or movement; \"he must have a heart of stone\"; \"her face was as hard as stone\""
+        },
+        {
+          "id": "wn31:n:09438954",
+          "pos": "n",
+          "definition": "a lump or mass of hard consolidated mineral matter; \"he threw a rock at me\""
+        },
+        {
+          "id": "wn31:n:11705208",
+          "pos": "n",
+          "definition": "the hard inner (usually woody) layer of the pericarp of some fruits (as peaches or plums or cherries or olives) that contains the seed; \"you should remove the stones from prunes before cooking\""
+        },
+        {
+          "id": "wn31:n:13742705",
+          "pos": "n",
+          "definition": "an avoirdupois unit used to measure the weight of a human body; equal to 14 pounds; \"a heavy chap who must have weighed more than twenty stone\""
+        },
+        {
+          "id": "wn31:n:14720954",
+          "pos": "n",
+          "definition": "material consisting of the aggregate of minerals like those making up the Earth's crust; \"that mountain is solid rock\"; \"stone is abundant in New England and there are many quarries\""
+        },
+        {
+          "id": "wn31:n:14723913",
+          "pos": "n",
+          "definition": "a crystalline rock that can be cut and polished for jewelry; \"he had the gem set in a ring for his wife\"; \"she had jewels made of all the rarest stones\""
+        },
+        {
+          "id": "wn31:v:00179712",
+          "pos": "v",
+          "definition": "remove the pits from; \"pit plums and cherries\""
+        },
+        {
+          "id": "wn31:v:01326182",
+          "pos": "v",
+          "definition": "kill by throwing stones at; \"People wanted to stone the woman who had a child out of wedlock\""
+        },
+        {
+          "id": "wn31:s:00385257",
+          "pos": "s",
+          "definition": "of any of various dull tannish or grey colors"
+        }
+      ]
+    },
+    {
+      "id": "SG25-b86262f9bc89",
+      "word": "steel",
+      "pos": "名词",
+      "raw": "钢",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "钢",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 1
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:04318042",
+          "pos": "n",
+          "definition": "knife sharpener consisting of a ridged steel rod"
+        },
+        {
+          "id": "wn31:n:04380981",
+          "pos": "n",
+          "definition": "a cutting or thrusting weapon that has a long metal blade and a hilt with a hand guard"
+        },
+        {
+          "id": "wn31:n:14826620",
+          "pos": "n",
+          "definition": "an alloy of iron with small amounts of carbon; widely used in construction; mechanical properties can be varied over a wide range"
+        },
+        {
+          "id": "wn31:v:01617811",
+          "pos": "v",
+          "definition": "cover, plate, or edge with steel"
+        },
+        {
+          "id": "wn31:v:01810238",
+          "pos": "v",
+          "definition": "get ready for something difficult or unpleasant"
+        }
+      ]
+    },
+    {
+      "id": "SG25-4b125ec99a74",
+      "word": "wave",
+      "pos": "名词；动词",
+      "raw": "名词：波浪，波动；动词：挥手",
+      "usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "波浪",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "波动",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "挥手",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00346921",
+          "pos": "n",
+          "definition": "a movement like that of a sudden occurrence or increase in a specified phenomenon; \"a wave of settlers\"; \"troops advancing in waves\""
+        },
+        {
+          "id": "wn31:n:05266723",
+          "pos": "n",
+          "definition": "a hairdo that creates undulations in the hair"
+        },
+        {
+          "id": "wn31:n:07288732",
+          "pos": "n",
+          "definition": "the act of signaling by a movement of the hand"
+        },
+        {
+          "id": "wn31:n:07360193",
+          "pos": "n",
+          "definition": "(physics) a movement up and down or back and forth"
+        },
+        {
+          "id": "wn31:n:07366790",
+          "pos": "n",
+          "definition": "one of a series of ridges that moves across the surface of a liquid (especially across a large body of water)"
+        },
+        {
+          "id": "wn31:n:07367435",
+          "pos": "n",
+          "definition": "something that rises rapidly; \"a wave of emotion swept over him\"; \"there was a sudden wave of buying before the market closed\"; \"a wave of conservatism in the country led by the hard right\""
+        },
+        {
+          "id": "wn31:n:11544884",
+          "pos": "n",
+          "definition": "a persistent and widespread unusual weather condition (especially of unusual temperatures); \"a heat wave\""
+        },
+        {
+          "id": "wn31:n:13891583",
+          "pos": "n",
+          "definition": "an undulating curve"
+        },
+        {
+          "id": "wn31:v:00039201",
+          "pos": "v",
+          "definition": "set waves in; \"she asked the hairdresser to wave her hair\""
+        },
+        {
+          "id": "wn31:v:01043287",
+          "pos": "v",
+          "definition": "signal with the hands or nod; \"She waved to her friends\"; \"He waved his hand hospitably\""
+        },
+        {
+          "id": "wn31:v:01226180",
+          "pos": "v",
+          "definition": "twist or roll into coils or ringlets; \"curl my hair, please\""
+        },
+        {
+          "id": "wn31:v:01449520",
+          "pos": "v",
+          "definition": "move or swing back and forth; \"She waved her gun\""
+        },
+        {
+          "id": "wn31:v:01905776",
+          "pos": "v",
+          "definition": "move in a wavy pattern or with a rising and falling motion; \"The curtains undulated\"; \"the waves rolled towards the beach\""
+        }
+      ]
+    }
+  ]
+}

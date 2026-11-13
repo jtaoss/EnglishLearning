@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_before_002",
+  "kind": "audit",
+  "request_hash": "543b6fb8d21aba5e0b06247df0e8044916ba213d182c3ddcda349c93419c4827",
+  "input_ids": [
+    "SG25-093e7d5fdbaa",
+    "SG25-bf0bb4ee60e2"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "6832673f-56cf-4fa9-abb2-7c71b97dad6d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-093e7d5fdbaa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"联系（源词性未定，名词/动词均可能）\",\"relation\":\"无法确定\",\"reason\":\"候选核心同时给出名词‘联系’(n07293990/n00040035)和动词‘联系’(v00745330)，均有词典依据；但源词性为null，无法确认原义要求的具体词性，故不能判为已确认的语义等价。\",\"evidence_ids\":[\"wn31:n:07293990\",\"wn31:n:00040035\",\"wn31:v:00745330\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；无明确语义遗漏\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"接触（源词性未定，名词/动词均可能）\",\"relation\":\"无法确定\",\"reason\":\"名词‘接触’有物理触碰/紧邻/相碰证据(n00125700/n14442914/n07353929)，动词‘接触’有物理接触证据(v01208316)；但源词性为null，不能确认原义要求哪一词性，故保留无法确定。\",\"evidence_ids\":[\"wn31:n:00125700\",\"wn31:n:14442914\",\"wn31:n:07353929\",\"wn31:v:01208316\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；物理接触/触碰范围已覆盖，无明确遗漏\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-093e7d5fdbaa:p6c5:core_meanings:1\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:2\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:3\",\"SG25-093e7d5fdbaa:p6c5:core_meanings:4\"],\"evidence_ids\":[],\"reason\":\"两原始片段源词性均为null；核心按名词/动词分别列出四组，虽未硬配但源词性仍未核，不能视为已确认词性覆盖。\",\"repair_suggestion\":\"保留名词/动词双候选并显式标注源词性未定；后续核对教材词性后再定核心词性展示。\"}],\"note\":\"两义均有名词/动词词典依据，核心并置；源词性为null，保留待核，未把名词或动词单一声明为源词性；电触点、隐形眼镜、人脉为外部候选未采用。\"},{\"id\":\"SG25-bf0bb4ee60e2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"伸展（动词，对象未限定）\",\"relation\":\"范围收窄\",\"reason\":\"核心仅列‘伸展（肢体/身体）’并注为对象身体部位，但源义未限定对象；词典同时支持物体/肢体向外伸展、展开（v02058913、v01371528、v00027698），候选所有层未保留这些一般物理伸展用途。\",\"evidence_ids\":[\"wn31:v:00027261\",\"wn31:v:02058913\",\"wn31:v:01371528\",\"wn31:v:00027698\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少非身体对象的伸展/展开，如 extend antenna/cloth/hand\",\"counterexample\":\"extend the TV antenna / stretch out the cloth / extend a hand\",\"counterexample_evidence_ids\":[\"wn31:v:02058913\",\"wn31:v:00027698\",\"wn31:v:01371528\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s002\",\"source_scope\":\"变宽（不及物变化义，源词性动词）\",\"relation\":\"无法确定\",\"reason\":\"所给 extend 证据多为及物‘使变宽/扩大范围’或空间跨度，未直接支持不及物‘become wider’；候选已明确暂存待核，未强行覆盖。\",\"evidence_ids\":[\"wn31:v:00541315\",\"wn31:v:02693758\"],\"context\":\"uncertain\",\"residual_scope\":\"‘变宽’（不及物）未覆盖，暂存\",\"counterexample\":\"widen the range of applications 为使范围变宽（及物），并非不及物‘变宽’\",\"counterexample_evidence_ids\":[\"wn31:v:00541315\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"延伸（空间/时间绵延、达到）\",\"relation\":\"语义等价\",\"reason\":\"核心‘延伸（空间/时间）’以 v02691775/v02693758/v02695935 支持，覆盖空间跨度、时间跨度及向外伸出；未把‘变宽’混入。\",\"evidence_ids\":[\"wn31:v:02691775\",\"wn31:v:02693758\",\"wn31:v:02695935\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"range_narrowing_unlicensed_object_limit\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-bf0bb4ee60e2:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:v:02058913\",\"wn31:v:01371528\",\"wn31:v:00027698\"],\"reason\":\"s001‘伸展’对象未限定，但核心只留肢体/身体伸展并注对象为身体部位；词典有物体/肢体向外伸展/展开的独立支持，所有层未保留或暂存该一般范围，属无来源许可的对象限制导致剩余范围缺口。\",\"repair_suggestion\":\"将核心父级改为‘伸展/伸开（对象不限于身体）’，以括注或子例保留肢体伸展；或另设核心/扩展组收录物体伸展/展开，并链接 v02058913/v01371528/v00027698。\"},{\"severity\":\"Info\",\"kind\":\"source_translation_pending\",\"source_ids\":[\"s002\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:00541315\"],\"reason\":\"‘变宽’与 extend 的及物/不及物方向证据不完全吻合，候选已暂存；这是源译待核，不按生成器Major计。\",\"repair_suggestion\":\"保留暂存并核对教材原义是否对应 widen/become wider；未确认前不并入核心。\"}],\"note\":\"s001被限为肢体伸展，缺物体伸展；s002‘变宽’暂存；s003空间/时间延伸覆盖。外部延长、给予、扩大范围未采用。\"}]}",
+  "usage": {
+    "prompt_tokens": 5764,
+    "completion_tokens": 8985,
+    "total_tokens": 14749,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7473
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 5764
+  },
+  "started_utc": "2026-11-13T09:33:06.517245+00:00",
+  "completed_utc": "2026-11-13T09:33:57.553685+00:00",
+  "elapsed_seconds": 51.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

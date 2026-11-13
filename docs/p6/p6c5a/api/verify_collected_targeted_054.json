@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_054",
+  "kind": "verify",
+  "request_hash": "850b220f4da861dae6e9db19b8104c811ae6012aabbeaf880f5ade8e28ac870a",
+  "input_ids": [
+    "SG25-8517fce0bb21",
+    "SG25-e718dfa13423"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "aac9c327-0060-4402-b0bb-77e351ee823a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8517fce0bb21\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义为形容词'粗俗的'，现代范围可涵盖不雅/无教养及下流/猥亵言语举止，但不含'日常/大众'等历史或语域义。核心文本'粗俗的'与源文本一致，未添加对象或领域排他限制；证据 s:01957020 覆盖无教养/不雅，s:00686808 覆盖粗俗言语、手势、下流用例，因此视为等价。历史/大众义排除合理。\",\n          \"evidence_ids\": [\n            \"wn31:s:01957020\",\n            \"wn31:s:00686808\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"证据 wn31:s:00686808 显示现代常用'下流/猥亵言语与手势'是具体用例；核心组文本宽且可覆盖，但未单独链接该证据或作括注，是否需补证据/拆分待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"候选核心保留宽文本'粗俗的'，未混入日常/大众义；未发现新增限制。虽未单独链接下流/猥亵证据，但宽译词仍保留语义，暂不按缺陷处理。\"\n    },\n    {\n      \"id\": \"SG25-e718dfa13423\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源义'发音'对应读出语音活动；核心1文本'发音'与证据 v:00980581 'speak, pronounce, utter in a certain way'一致，动词词性、主体活动相符，未发现限制。\",\n          \"evidence_ids\": [\n            \"wn31:v:00980581\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"源义'宣布'为一般正式/公开宣告，范围较宽；核心2将文本限定为'宣布（判断、裁定等）'，证据 v:00973682 仅支持 pronounce judgment on，因此相对源义收窄。未发现其他层保留一般宣布义；英语证据未提供一般正式宣告支持，源范围是否应保持更宽待核。\",\n          \"evidence_ids\": [\n            \"wn31:v:00973682\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源中文'宣布'明显宽于已供英语证据的'pronounce judgment on'；候选核心2以'判断、裁定等'收窄并注明不教成所有新闻发布，但是否应明确暂存一般正式宣告范围或补更宽词典证据仍待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"发音义核心1等价且覆盖充分；宣布义核心2按已供证据限定为判断/裁定，属范围收窄但未误导为一般新闻发布，不构成已确认漏义。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3722,
+    "completion_tokens": 8456,
+    "total_tokens": 12178,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7735
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2058
+  },
+  "started_utc": "2026-11-13T09:59:49.782403+00:00",
+  "completed_utc": "2026-11-13T10:01:53.079566+00:00",
+  "elapsed_seconds": 123.297,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

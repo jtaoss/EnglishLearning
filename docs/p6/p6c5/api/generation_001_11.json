@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_11",
+  "request_hash": "877048f5784b6b2f0e5b0ac38f90010429caaeed9cde2a9a706c8fd62aafcfa9",
+  "started_utc": "2026-11-13T08:14:58.789845+00:00",
+  "completed_utc": "2026-11-13T08:15:34.613843+00:00",
+  "elapsed_seconds": 35.829,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "7a49f5c2-4d5f-4d7d-8092-62ee485cbdff",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3378,
+    "completion_tokens": 5414,
+    "total_tokens": 8792,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4944
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 562
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-2d92fc5142e6\",\"core\":[[\"合适的；适宜的\",\"形容词\",[\"s001\",\"s002\"],[\"wn31:s:01024501\"],\"一般指适合某一用途、场合或目的；两个中文片段为同义改述。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（尤指作为配偶）合适的、中意的\",\"形容词\",[\"wn31:s:00855376\"],\"词典特定义，限定于婚配对象；原文未限定配偶，故仅列为外部候选，不并入核心。\"]],\"reason\":\"两个中文片段均表示一般“适合/适宜”，由同一宽义形容词证据覆盖，因此合并；配偶特定义只作候选，不挤入核心。\",\"flags\":[]},{\"id\":\"SG25-f4873b35ecfe\",\"core\":[[\"保护自然环境\",\"名词\",[\"s002\"],[\"wn31:n:00820935\"],\"指对自然环境与自然资源的保护和管理；与原文s002直接对应。\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s001\",\"原文“保护”较宽；conservation常指对自然资源/环境等的保护保存，而n:07434199侧重“防止损失/伤害的改变/事件”，与一般活动义角色不完全一致，暂不确认。\"]],\"splits\":{},\"additions\":[[\"（物理学）守恒\",\"名词\",[\"wn31:n:06113680\"],\"原文未含的专门领域用途；仅列为外部候选待审。\"]],\"reason\":\"先列直接匹配的环境保护义；宽泛“保护”因词典证据偏事件/结果且英语常用范围较窄，暂存不硬并入；物理“守恒”单列候选。\",\"flags\":[[\"Minor\",\"source_scope_or_act_event_mismatch\",\"原文s001“保护”宽于环境义，且n:07434199侧重事件/结果而非活动，已暂存而非并入核心。\"],[\"Info\",\"domain_sense_candidate\",\"n:06113680的物理“守恒”义为原文未含的专门用途，仅列入additions待审。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

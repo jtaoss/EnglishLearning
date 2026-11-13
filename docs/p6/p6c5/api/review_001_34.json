@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_34",
+  "request_hash": "2539c524f10977391e91087acc0e3d14319584e97237f790020f05fd2297c911",
+  "started_utc": "2026-11-13T08:16:13.980567+00:00",
+  "completed_utc": "2026-11-13T08:17:43.210623+00:00",
+  "elapsed_seconds": 89.234,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b5fca2ac-f9c1-4745-afc5-faa6ba5a9719",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3412,
+    "completion_tokens": 4357,
+    "total_tokens": 7769,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4069
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1364
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-22b090dd46c7\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"Keep the physical and mental absorption groups separate in teaching to avoid confusing object types.\",\n        \"When introducing the incorporation/assimilation group, include a concrete example such as 吸收新成员 or 吸收资金 to illustrate object range.\"\n      ],\n      \"note\": \"Reviewed candidate against source Chinese 吸收 (verb) and supplied WordNet evidence. The three core groups are each supported by relevant evidence: physical intake via wn31:v:01541851 and wn31:v:02771422; mental intake via wn31:v:00603650; incorporation/assimilation via wn31:v:00396604 and wn31:v:01473153. Dictionary additions for attention absorption (wn31:v:00601765) and cost absorption (wn31:v:02221342) are explicitly separated as AI_candidate_not_adopted, so no false merging or untraceable meaning. No source-supported core use appears omitted; intransitive sense wn31:v:01542421 is not clearly required by the bare Chinese source and not treated as confirmed error. No publisher observations conflicting with WordNet were provided.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

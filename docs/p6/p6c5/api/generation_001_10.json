@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_10",
+  "request_hash": "d9c665bb9a5e6df55c62ead96c7b20a4a7d4709268796090a054ce4829deaa4e",
+  "started_utc": "2026-11-13T08:14:58.788809+00:00",
+  "completed_utc": "2026-11-13T08:15:18.947061+00:00",
+  "elapsed_seconds": 20.157,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "14d6aa32-c720-4b68-8d49-e76ddf2b22a0",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3485,
+    "completion_tokens": 3135,
+    "total_tokens": 6620,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2628
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 669
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e830d223e2dd\",\"core\":[[\"因此；结果\",\"副词\",[\"s001\",\"s002\"],[\"wn31:r:00063395\",\"wn31:r:00295773\"],\"表示由前述原因导致的结果，作句子连接副词；两个中文片段均可改述为“因此/结果”。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"两个原片段都是副词性结果连接语，英语证据分别给出 accordingly/consequently 与 as a consequence，核心合并为一组；不把“结果”另作名词义，因源字段只标副词且无对应名词证据。\",\"flags\":[[\"Minor\",\"pos_ambiguity\",\"“结果”在中文也可作名词（result）；源字段标为副词，且所给证据只覆盖副词连接用法，未并入名词义。\"]]},{\"id\":\"SG25-68fcfd9b4d77\",\"core\":[[\"追求（目标、爱情、名声等）\",\"名词\",[\"s001\"],[\"wn31:n:05778388\"],\"指为达到目标或获得某物而进行的寻求/努力；对应 pursuit of love/fame/wealth。\"],[\"追赶；追捕\",\"名词\",[\"s002\"],[\"wn31:n:00320765\"],\"指为追上或抓获而追逐，如警察追捕逃犯。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"消遣；爱好\",\"名词\",[\"wn31:n:00432492\"],\"WordNet 显示 pursuit 可指占用时间与思绪的消遣/爱好；原文“追求；追赶”未明确表达此独立用法，列为外部候选，不并入核心。\"]],\"reason\":\"原两个片段分别对应“为目标的寻求”与“追逐抓捕”两个不同对象/方向的名词用法，证据分别落在 quest/pursuit of 和 overtake/capture 上，故分核心两组；消遣义是词典独立用途，只作补充候选。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"“消遣/爱好”义有独立词条证据但原文未表达，已列入 additions，采用与层级待人工决定；主记录不把它当作已覆盖核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

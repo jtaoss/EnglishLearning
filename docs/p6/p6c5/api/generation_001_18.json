@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_18",
+  "request_hash": "54704e339f96eba902833cd20ce87807c27f66882fc71e6e6a7fb80ff97d25b3",
+  "started_utc": "2026-11-13T08:14:58.990014+00:00",
+  "completed_utc": "2026-11-13T08:15:42.407871+00:00",
+  "elapsed_seconds": 43.421,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "dad294e2-ee52-400a-a5f5-ab6d78ff82c0",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3878,
+    "completion_tokens": 7312,
+    "total_tokens": 11190,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6572
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1062
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e61db885bd6e\",\"core\":[[\"重大的；重要的\",\"形容词\",[\"s003\"],[\"wn31:a:02168847\",\"wn31:s:00627729\"],\"指影响、意义或价值重大；与‘有意义的’侧重不同。\"],[\"有意义的；意味深长的\",\"形容词\",[\"s002\"],[\"wn31:s:01500681\"],\"指富含意义或暗示，如 significant silence。\"],[\"值得注意的\",\"形容词\",[\"s001\"],[\"wn31:a:02168847\"],\"指值得关注、不可忽略；按宽义‘important in effect or meaning’兼容支持。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"统计上显著的\",\"形容词\",[\"wn31:a:02173212\"],\"原文未列；统计/研究语境中 significant 表示统计显著，不等于日常‘重大’。\"]],\"reason\":\"先区分‘重大/重要’与‘有意义/意味深长’，因为前者谈影响或分量，后者谈含义或暗示；‘值得注意’保留独立轻量组，避免把‘重大’直接当成完全同义。统计显著只作外部候选，不混入原文核心。\",\"flags\":[[\"Info\",\"dictionary_addition_candidate\",\"统计显著（wn31:a:02173212）是原文未列的外部候选，未采纳进核心。\"]]},{\"id\":\"SG25-178b6e061a04\",\"core\":[[\"联系；使关联\",\"动词\",[\"s001\"],[\"wn31:v:00715072\"],\"指在思想或逻辑上把事物联系起来；对象多为事实、事件。\"],[\"交往；结伴\",\"动词\",[\"s002\"],[\"wn31:v:02595401\"],\"指与人经常来往、相处；常与 with 连用。\"],[\"同事（工作或机构中的共事者）\",\"名词\",[\"s003\"],[\"wn31:n:09836176\",\"wn31:n:09836579\"],\"指共同参与活动或机构的人；部分证据带机构内下级成员色彩，中文‘同事’为工作语境具体化。\"],[\"伙伴；同伴\",\"名词\",[\"s004\"],[\"wn31:n:09965384\"],\"指经常相伴的朋友或同伴。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"准的；副的（如 associate professor）\",\"形容词\",[\"wn31:s:00796981\"],\"原文只有名词/动词；该定语用法表示准/副级别，常见于职衔但原文未列。\"]],\"reason\":\"动词先分‘逻辑联系’与‘与人交往’，因对象和句法不同；名词按工作同事和伙伴分列，因语境和关系不同。未把‘副的/准的’等原文未列用法塞入核心。\",\"flags\":[[\"Major\",\"core_groups_over_3\",\"核心有4组（联系、交往、同事、伙伴），按规则触发额外语义复核；未为凑数合并不同对象。\"],[\"Minor\",\"source_translation_scope\",\"‘同事’由较宽的‘共同活动/机构中的人’及机构内下级成员证据支持，工作语境为中文具体化，需复核范围。\"],[\"Info\",\"dictionary_addition_candidate\",\"形容词/定语‘准的、副的’（associate professor）是原文未列的外部候选，未采纳进核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

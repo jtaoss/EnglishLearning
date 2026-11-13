@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_018",
+  "kind": "audit",
+  "request_hash": "468dfce07e5ba850a34f52cced1048dffbc2be2283d163951f983f0f1e337be4",
+  "input_ids": [
+    "SG25-db113508c7cb",
+    "SG25-bfba7033571d",
+    "SG25-c35a9a90c0f9",
+    "SG25-3bd933a3238b",
+    "SG25-26dd7517f5ec"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8e2aa94f-7b50-48b0-9d7b-42a14f8497a8",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-db113508c7cb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"作评价或批评的人（批评家）\",\"relation\":\"语义等价\",\"reason\":\"核心“批评家／评论家”保留一般评价者义；09998851支持理性评价者，09999119补充专业艺术评论语境。\",\"evidence_ids\":[\"wn31:n:09998851\",\"wn31:n:09999119\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"文学评论家（专业文学评论者）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“文学评论家”与原义一致；09999119支持专业艺术分析者。\",\"evidence_ids\":[\"wn31:n:09999119\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"评论家（作评论的人）\",\"relation\":\"语义等价\",\"reason\":\"核心“批评家／评论家”覆盖该义；09998851和09999119分别支持评价者与专业评论者。\",\"evidence_ids\":[\"wn31:n:09998851\",\"wn31:n:09999119\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个名词义均有对应：一般批评家/评论家和文学评论家分列核心与扩展；挑错义09998602未作为核心，原文未明确要求。\"},{\"id\":\"SG25-bfba7033571d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"批评的（与批评/评价相关）\",\"relation\":\"范围收窄\",\"reason\":\"核心仅以“指出不足”对应“批评的”，把原文较宽的评价义收窄为挑错子义；00650564支持该子义，但00652608、02841530显示审慎评价/批评界用法未被核心或暂存保留。\",\"evidence_ids\":[\"wn31:a:00650564\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少“审慎评价/批判性思考”及“批评界的/评论的”等一般评价范围\",\"counterexample\":\"critical 可指审慎评价或与批评界相关，并非只指指出不足\",\"counterexample_evidence_ids\":[\"wn31:a:00652608\",\"wn31:a:02841530\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"关键的（至关重要的）\",\"relation\":\"语义等价\",\"reason\":\"核心“关键的”与原义一致；00659155支持转折/危急关键点，00907116支持必要、极重要。\",\"evidence_ids\":[\"wn31:s:00659155\",\"wn31:s:00907116\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"危急的（处于危机或紧急状态）\",\"relation\":\"语义等价\",\"reason\":\"扩展“危急的”与原义一致；00653599支持处于或濒临危机/紧急状态。\",\"evidence_ids\":[\"wn31:a:00653599\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"range_narrowing\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-bfba7033571d:core:2\"],\"evidence_ids\":[\"wn31:a:00650564\",\"wn31:a:00652608\",\"wn31:a:02841530\"],\"reason\":\"s001“批评的”在核心中只保留“指出不足”子义；00650564支持挑错，但00652608与02841530支持审慎评价/批评界相关用法，未作为父级或暂存范围保留。\",\"repair_suggestion\":\"保留“批评的”一般评价父级，或将“指出不足”标为子义/例子，并把审慎评价/评论界用法放入扩展或明确暂存。\"}],\"note\":\"s002/s003分别由核心“关键的”和扩展“危急的”覆盖；s001“批评的”核心被收窄为挑错，审慎评价/评论界用法待补或明确暂存。\"},{\"id\":\"SG25-c35a9a90c0f9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"批评（评价或指出缺点）\",\"relation\":\"语义等价\",\"reason\":\"核心“批评”保留宽泛义；05741963支持认真审查/评价，06723485支持指出缺点的非难。\",\"evidence_ids\":[\"wn31:n:05741963\",\"wn31:n:06723485\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“批评”核心保留评价与指出缺点两用；文学/艺术评论义仅在外部候选，原文未给文学语境，不判漏。\"},{\"id\":\"SG25-3bd933a3238b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"批评（指出缺点/非难）\",\"relation\":\"语义等价\",\"reason\":\"核心“批评”与原义一致；00828170支持找错、表达批评、指出缺点。\",\"evidence_ids\":[\"wn31:v:00828170\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"评论（作评论/评析）\",\"relation\":\"语义等价\",\"reason\":\"扩展“评论”与原义一致；01098508支持作为评论者行事。\",\"evidence_ids\":[\"wn31:v:01098508\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"批评与评论两义分别落在核心和扩展；负面指出缺点与专业评析未混为唯一用法。\"},{\"id\":\"SG25-26dd7517f5ec\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"决定性的（关键/起决定作用）\",\"relation\":\"合理概括\",\"reason\":\"核心以“决定性的／非常重要的”并列展示；s001的决定性义可由00658802的危急转折/关键义支持。\",\"evidence_ids\":[\"wn31:a:00658802\",\"wn31:s:01279260\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"本质的（内在/根本的）\",\"relation\":\"无法确定\",\"reason\":\"现有英语证据集中在极重要、必要或危急；未找到直接支持“本质/内在根本”的可靠对应，暂存。\",\"evidence_ids\":[],\"context\":\"uncertain\",\"residual_scope\":\"未确认“本质的”是否对应 essential/内在本质；暂存\",\"counterexample\":\"crucial 现有证据指极重要、必要或危急，不直接支持“本质的”\",\"counterexample_evidence_ids\":[\"wn31:a:00658802\",\"wn31:s:01279260\",\"wn31:s:01491306\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"非常重要的（极重要）\",\"relation\":\"语义等价\",\"reason\":\"核心“非常重要的”与原义一致；00658802和01279260均支持极重要、至关重要。\",\"evidence_ids\":[\"wn31:a:00658802\",\"wn31:s:01279260\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"s001/s003合于核心“决定性的／非常重要的”，s002“本质的”明确held暂存，未当已覆盖。\"}]}",
+  "usage": {
+    "prompt_tokens": 5233,
+    "completion_tokens": 13258,
+    "total_tokens": 18491,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11463
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3313
+  },
+  "started_utc": "2026-11-13T09:40:12.985030+00:00",
+  "completed_utc": "2026-11-13T09:41:26.156739+00:00",
+  "elapsed_seconds": 73.171,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

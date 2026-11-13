@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_049",
+  "kind": "verify",
+  "request_hash": "fc27f95d7d3a96e8412800c7e631702b916ae46a0583da7d9c93058ebb974b35",
+  "input_ids": [
+    "SG25-7cd58cdd64a3",
+    "SG25-6a6ba702490a"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "fd70fd03-b60c-4b53-8a81-4d957543af45",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7cd58cdd64a3\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组仅保留物理击打（v:01412877, v:01238728），未包含‘打击敌人/目标’的军事或抽象攻击义（v:01126313）；原文动词‘打击’可涵盖该用法。\",\n          \"evidence_ids\": [\"wn31:v:01126313\", \"wn31:v:01412877\", \"wn31:v:01238728\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心‘罢工’对应 stop work in order to press demands，证据直接。\",\n          \"evidence_ids\": [\"wn31:v:02417777\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心‘（想法）突然浮现于某人脑海’对应 v:02113245（cause to experience suddenly），英语此义要求想法/刺激作主语，与原‘突然想到’的典型用法一致。\",\n          \"evidence_ids\": [\"wn31:v:02113245\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展名词‘打击’以 n:00979387（攻击）和 n:07424621（轻击）覆盖名词击打/攻击含义，未引入超出原文范围的用法。\",\n          \"evidence_ids\": [\"wn31:n:00979387\", \"wn31:n:07424621\"]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展名词‘罢工’对应 n:01246221（集体拒绝工作以抗议），直接。\",\n          \"evidence_ids\": [\"wn31:n:01246221\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"missing_source_supported_use\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-7cd58cdd64a3:p6c4:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:v:01126313\", \"wn31:v:01412877\", \"wn31:v:01238728\"],\n          \"reason\": \"原文动词‘打击’可表示‘攻击（敌人/目标）’；核心组只链接物理击打证据，未在任何层级保留 v:01126313 的军事/抽象攻击义。\",\n          \"counterexample\": \"strike the enemy/oil fields = 攻击敌人/目标（v:01126313）\",\n          \"repair_suggestion\": \"在核心组补充‘攻击；打击（敌人/目标）’或将 v:01126313 作为独立证据链接，避免丢失该动词义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原中文动词‘打击’的语境未提供例句，是否必须涵盖军事/抽象攻击义尚需教材例句确认；当前仅依据 WordNet 证据推断。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词对应和动词罢工/突然想到均有覆盖；动词打击仅保留了物理义，缺少攻击义，建议补全或暂存。\"\n    },\n    {\n      \"id\": \"SG25-6a6ba702490a\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"核心组添加了原文未出现的‘入场’，容易被理解为实际进入动作；所引证据 n:01250738/n:05183715 只支持准许进入/进入权。\",\n          \"evidence_ids\": [\"wn31:n:01250738\", \"wn31:n:05183715\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心‘入场费’对应 n:13342517（the fee charged for admission）。\",\n          \"evidence_ids\": [\"wn31:n:13342517\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"核心‘承认（事实）’用‘事实’作例子；n:07230608 支持承认真相，未排他地限定只有事实可承认。\",\n          \"evidence_ids\": [\"wn31:n:07230608\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-6a6ba702490a:p6c4:core_meanings:1\"],\n          \"evidence_ids\": [\"wn31:n:01250738\", \"wn31:n:05183715\"],\n          \"reason\": \"组显示‘准许进入；入场’中，‘入场’可能被理解为实际进入动作，但证据仅支持准许进入和进入权，不直接支持单纯入场动作。\",\n          \"counterexample\": \"admission to the clinic 指获准进入/入院，不是单纯‘入场’动作（n:01250738）\",\n          \"repair_suggestion\": \"将‘入场’改为‘进入权’或备注‘入场许可’，避免动作义扩大。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001 原文仅‘准许进入’，是否在教材中允许以‘入场’作为同义缩略需结合例句确认；但现有证据下更稳妥是保留许可/权利义。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"三项源义均有核心链接；入场费和承认对应直接；准许进入组中‘入场’建议改为进入权/入场许可，防止范围扩大。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6964,
+    "completion_tokens": 6528,
+    "total_tokens": 13492,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5237
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 5300
+  },
+  "started_utc": "2026-11-13T09:59:36.020332+00:00",
+  "completed_utc": "2026-11-13T10:00:57.057782+00:00",
+  "elapsed_seconds": 81.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_012",
+  "kind": "holdout",
+  "request_hash": "f1c9645f0175daac01a3bd2ab7e0a6248b9d0e6bfeeb46245377c626a9398c5c",
+  "input_ids": [
+    "SG25-8270f2824111",
+    "SG25-46023b2bfb8b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "9644d42f-003e-4ced-a405-1ee078178b8e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8270f2824111\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"名词；解决问题的方法/方式；对象为问题；方向为解决\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"问题解决语境\",\n          \"evidence_ids\": [\"wn31:n:05669513\"],\n          \"uncertainty\": \"中文“办法”未区分动作/陈述等英语细分，核心取方法义。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词；两种或多种物质的均匀混合物，常为液体\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"化学或物理混合物语境\",\n          \"evidence_ids\": [\"wn31:n:14613403\"],\n          \"uncertainty\": \"\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词：解决办法（解决问题的方法/方式）\",\n        \"名词：溶液（均匀混合物，常为液体）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"数学解（方程的值的集合）未包含在原始中文义中，作为未采用观察。英语的动作/陈述义亦未明确区分于“办法”，暂不纳入核心。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"数学方程解（使方程成立的值的集合）\",\n          \"evidence_ids\": [\"wn31:n:08022396\"]\n        },\n        {\n          \"text\": \"解决问题的成功行动\",\n          \"evidence_ids\": [\"wn31:n:00191632\"]\n        },\n        {\n          \"text\": \"解决问题或解释如何解决的陈述\",\n          \"evidence_ids\": [\"wn31:n:06756201\"]\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-46023b2bfb8b\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"动词；获得某物；对象不限于具体来源；通常及物\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"获得某物（可抽象或具体）\",\n          \"evidence_ids\": [\"wn31:v:02297086\"],\n          \"uncertainty\": \"英语 derive 常含来源，但中文“获得”本身不强制来源。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"动词；源自、来自；主语为事物/概念/人，宾语为来源/起源\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"A 源自 B 的语境\",\n          \"evidence_ids\": [\"wn31:v:00252677\", \"wn31:v:02743062\"],\n          \"uncertainty\": \"血统/谱系来源义有英语证据，但中文“源自”常用于一般来源，涵盖但不限于。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：获得（得到某物）\",\n        \"动词：源自（来自/起源于）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"“演绎推理得出”和“从潜在状态发展而来”未包含在原始中文义中，作为未采用观察。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"从潜在状态发展或演化而来\",\n          \"evidence_ids\": [\"wn31:v:00252501\"]\n        },\n        {\n          \"text\": \"通过演绎推理得出\",\n          \"evidence_ids\": [\"wn31:v:00638236\"]\n        }\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 2656,
+    "completion_tokens": 5393,
+    "total_tokens": 8049,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4591
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2656
+  },
+  "started_utc": "2026-11-13T09:33:06.568536+00:00",
+  "completed_utc": "2026-11-13T09:34:30.597342+00:00",
+  "elapsed_seconds": 84.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

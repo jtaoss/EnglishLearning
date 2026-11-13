@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_36",
+  "request_hash": "bd1b80857b0178728f31ae7e0d7be3887435833b01e7896088013cad46b173ed",
+  "started_utc": "2026-11-13T08:14:59.438886+00:00",
+  "completed_utc": "2026-11-13T08:15:30.134371+00:00",
+  "elapsed_seconds": 30.687,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c19f2a61-3817-491e-aa9a-f20e6bbc25e4",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3532,
+    "completion_tokens": 4874,
+    "total_tokens": 8406,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4278
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 716
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-5c097b19679a\",\"word\":\"constitute\",\"pos\":\"动词\",\"core\":[[\"构成；组成\",[\"s001\"],[\"wn31:v:02626667\",\"wn31:v:02627475\"],\"表示部分组成整体，或构成/构成某物；两个定义分别支持 form/compose 与 compose/represent。\"],[\"设立；建立\",[\"s002\"],[\"wn31:v:01650771\"],\"表示奠定基础、建立机构；与‘构成’的对象和方向不同。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"任命；委任\",\"动词\",[\"wn31:v:02401347\"],\"词典有 create and charge with task/function; nominate a committee 的用法；原文‘设立’未表达任命/委任，列为未采用候选。\"]],\"reason\":\"首记两个不同动词用法：构成/组成（部分组成整体）与设立/建立（奠定基础）；二者对象和方向不同，故分核心组。词典另有‘任命/委任’义，原文未表达，仅列候选。\",\"flags\":[]},{\"id\":\"SG25-eb9a7650cd53\",\"word\":\"constitution\",\"pos\":\"名词\",\"core\":[[\"宪法\",[\"s001\"],[\"wn31:n:06545639\"],\"指规定政府根本政治原则的根本法；法律义明确。\"],[\"构成；组成方式\",[\"s003\"],[\"wn31:n:04940721\"],\"指某物由什么组成或其构成方式；结果义，定义较宽。\"],[\"体质（身体构成/体格）\",[\"s002\"],[\"wn31:n:04940721\"],\"有条件读法：指身体/体格构成；所给定义仅为宽义 composition，未独立验证健康/体质限定。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"设立；组织；建立（行为）\",\"名词\",[\"wn31:n:00237945\"],\"词典有‘形成/设立的行为’义；原文未明确表达该行为义，作为未采用候选。\"]],\"reason\":\"首记宪法、构成方式、体质三个名词用法；宪法与构成/体质对象不同，分列。体质证据仅为宽义 composition，限定为身体构成并挂风险。\",\"flags\":[[\"Major\",\"source_scope_gap\",\"s002‘体质’是身体/体格限定用法，而所给 n:04940721 仅为宽义‘构成方式’，未独立验证体质/健康义；保留有条件读法。\"],[\"Info\",\"external_addition_candidate\",\"n:00237945 的‘设立/组织行为’义未在原文明确表达，列为未采用候选。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:english_learning/core/settings/settings_repository.dart';
 
-/// Theme selection for this process.
+enum AppLanguage {
+  english('English / 英语'),
+  japanese('日本語 / 日语');
+
+  const AppLanguage(this.label);
+  final String label;
+}
+
+/// Theme and language selection for this process.
 ///
 /// The repository is the durable copy. A read or write failure leaves the
 /// in-memory selection on the system theme or on the last choice the user made.
@@ -10,10 +18,21 @@ final class AppSettings extends ChangeNotifier {
 
   final SettingsRepository repository;
   ThemeMode _themeMode = ThemeMode.system;
+  AppLanguage _language = AppLanguage.english;
   var _userChanged = false;
   var _disposed = false;
 
   ThemeMode get themeMode => _themeMode;
+  AppLanguage get language => _language;
+
+  void setLanguage(AppLanguage language) {
+    if (_language != language) {
+      _language = language;
+      if (!_disposed) {
+        notifyListeners();
+      }
+    }
+  }
 
   Future<void> restore() async {
     ThemeMode mode = ThemeMode.system;

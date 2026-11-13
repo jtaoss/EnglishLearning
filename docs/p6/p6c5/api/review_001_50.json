@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_50",
+  "request_hash": "849dbf805ddcb987537b858b1673b2b6be552278da186f6d387dd19e923452e3",
+  "started_utc": "2026-11-13T08:16:14.237885+00:00",
+  "completed_utc": "2026-11-13T08:17:17.510073+00:00",
+  "elapsed_seconds": 63.265,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2d8851d8-0dbc-4d63-ba97-c3900d45c82b",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3294,
+    "completion_tokens": 3276,
+    "total_tokens": 6570,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3020
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1246
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-943ae60b331d\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        {\n          \"preference\": \"首次记忆可将具体“物质”作为最先记忆的义项，抽象“实质”“本旨”后置；但此仅为教学顺序建议，不代表实际频率排序。\",\n          \"type\": \"teaching_order\"\n        }\n      ],\n      \"note\": \"候选对应三个源义项，词性均为名词，证据引用合理。s001 实质映射至 WordNet 05929717（抽象本质/要点），s002 本旨映射至 05928460（意图/主旨），s003 物质映射至 00019793（物理实体），未发现错译或词性错误。源未明确表达的“财富/资产”义已作为 dictionary addition 单列，处理得当。其他 WordNet 义项（如特定种类物质、物质质地、通信主题等）与源中文片段含义重合或属较窄用法，未作为重要独立缺口强制列出。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

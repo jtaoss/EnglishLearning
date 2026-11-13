@@ -1,0 +1,2167 @@
+{
+  "protocol": "source_first_blind_review_A_v1",
+  "reviewer_config_model": "gpt-6-astra",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "edabab5d59f9f5e07a8ab51ba338e33bcfc4da436d8ae56a32fc96ff7e0f8b14",
+  "backend_snapshot": null,
+  "cost": null,
+  "priority_basis": "基于教学辨义的建议；未使用语料频率或考试官方权重。",
+  "external_access_failures": [
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/bias",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/flush",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/civilization",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/enquiry",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/appreciate",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/import",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/stewardess",
+      "status": 403,
+      "used_as_evidence": false
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/decrease",
+      "status": 403,
+      "used_as_evidence": false
+    }
+  ],
+  "record_count": 15,
+  "records": [
+    {
+      "stable_id": "SG25-9af211329b2f",
+      "headword": "account",
+      "source_hash": "095802a516f4b68ac106f250bda542447d11ee49ff2ae8ffc81a08727dfc1342",
+      "original_meaning_zh": "名词：账户，叙述；动词：解释（常用 account for）",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "账户",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "叙述",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "解释（常用 account for）",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 30
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "账户",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13952070"
+          ],
+          "reason": "指个人或机构建立的服务账户。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "叙述；记述",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06526084",
+            "wn31:n:07232584"
+          ],
+          "reason": "用文字或口头描述事情。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "解释；说明原因（account for）",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00869308",
+            "collins:account"
+          ],
+          "reason": "用短语记忆，避免把 for 漏掉。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（account for）占……的比例",
+          "evidence_ids": [
+            "collins:account"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "账户和一段叙述各指不同事物；动词的解释义连同 for 记。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:13952070",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a formal contractual relationship established to provide for regular banking or brokerage or business services; \"he asked to see the executive who handled his account\"",
+          "selected_headwords": [
+            "account"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06526084",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a record or narrative description of past events; \"a history of France\"; \"he gave an inaccurate account of the plot to kill the president\"; \"the story of exposure to lead\"",
+          "selected_headwords": [
+            "account"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07232584",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of informing by verbal report; \"he heard reports that they were causing trouble\"; \"by all accounts they were a happy couple\"",
+          "selected_headwords": [
+            "account"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00869308",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "furnish a justifying analysis or explanation; \"I can't account for the missing money\"",
+          "selected_headwords": [
+            "account"
+          ]
+        },
+        {
+          "evidence_id": "collins:account",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/account-for",
+          "observation_zh": "短语既可解释原因，也可说明某部分所占比例。",
+          "selected_headwords": [
+            "account"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-91bb720d0df3",
+      "headword": "maintain",
+      "source_hash": "f187701ed6bdb50ac6daeab3c1becf0ed602ef3e5fa4d9eab5ff5c663bfde429",
+      "original_meaning_zh": "使保持某状态；保持；维持",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "使保持某状态",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "保持",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "维持",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "保持；维持（某状态）",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02687605"
+          ],
+          "reason": "三段互释，均可指使已有状态延续。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "维护；保养（设备等）",
+          "evidence_ids": [
+            "wn31:v:02207950",
+            "wn31:v:02284977"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "坚称；主张",
+          "evidence_ids": [
+            "wn31:v:01018787",
+            "wn31:v:01019652"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "供养",
+          "evidence_ids": [
+            "wn31:v:01187158"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "把使事物持续在某一状态作为源内三段共同含义。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:02687605",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "cause to continue in a certain state, position, or activity; e.g., `keep clean'; \"hold in place\"; \"She always held herself as a lady\"; \"The students keep me on my toes\"",
+          "selected_headwords": [
+            "maintain"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02207950",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "maintain for use and service; \"I keep a car in the countryside\"; \"She keeps an apartment in Paris for her shopping trips\"",
+          "selected_headwords": [
+            "maintain"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02284977",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "keep in safety and protect from harm, decay, loss, or destruction; \"We preserve these archeological findings\"; \"The old lady could not keep up the building\"; \"children must be taught to conserve our national heritage\"; \"The museum curator conserved the ancient manuscripts\"",
+          "selected_headwords": [
+            "maintain"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01018787",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "state categorically",
+          "selected_headwords": [
+            "maintain"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01019652",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "state or assert; \"He maintained his innocence\"",
+          "selected_headwords": [
+            "maintain"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01187158",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "supply with necessities and support; \"She alone sustained her family\"; \"The money will sustain our good cause\"; \"There's little to earn and many to keep\"",
+          "selected_headwords": [
+            "maintain"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-31de312977fc",
+      "headword": "acquisition",
+      "source_hash": "a727654a0e7203953aa7aa7c0268a94ed06c08fa740ac68cbaa5c9cd582546fd",
+      "original_meaning_zh": "获得；获得物",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "获得",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "获得物",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "取得；获得（物品等）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00078239",
+            "collins:acquisition"
+          ],
+          "reason": "转移占有，强调取得某物的行为。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "习得（知识、技能）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:05760541",
+            "collins:acquisition"
+          ],
+          "reason": "语言习得等搭配描述逐步学习的过程。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "获得物；新购得的东西",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:13274154",
+            "collins:acquisition"
+          ],
+          "reason": "可数时指所得之物。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（企业）收购",
+          "evidence_ids": [
+            "collins:acquisition"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "原文“获得”能指取得物品或习得能力；“获得物”指结果而非过程。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00078239",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of contracting or assuming or acquiring possession of something; \"the acquisition of wealth\"; \"the acquisition of one company by another\"",
+          "selected_headwords": [
+            "acquisition"
+          ]
+        },
+        {
+          "evidence_id": "collins:acquisition",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/acquisition",
+          "observation_zh": "词条区分收购公司、取得东西、取得之物和习得知识或技能。",
+          "selected_headwords": [
+            "acquisition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:05760541",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the cognitive process of acquiring skill or knowledge; \"the child's acquisition of language\"",
+          "selected_headwords": [
+            "acquisition"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13274154",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "something acquired; \"a recent acquisition by the museum\"",
+          "selected_headwords": [
+            "acquisition"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI语义拆解；原文仅有一个片段",
+          "uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "取得；获得（物品等）",
+              "evidence_ids": [
+                "wn31:n:00078239",
+                "collins:acquisition"
+              ],
+              "reason": "转移占有，强调取得某物的行为。"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "习得（知识、技能）",
+              "evidence_ids": [
+                "wn31:n:05760541",
+                "collins:acquisition"
+              ],
+              "reason": "语言习得等搭配描述逐步学习的过程。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-7c7978abd4f8",
+      "headword": "enquiry",
+      "source_hash": "27cec33f9ac58db7f3f7d7b4d86ef5731ca5b4de441d403c0ce8b2de26d61165",
+      "original_meaning_zh": "审问；探问；询问",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "审问",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "探问",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "询问",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "询问；打听",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:05805605",
+            "wn31:n:07208256",
+            "collins:enquiry"
+          ],
+          "reason": "都可以表示为取得信息而发问。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "审问",
+          "reason": "审问带有强制、讯问色彩；未给出足以确认这一特定人际动作的上下文。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（正式）调查",
+          "evidence_ids": [
+            "wn31:n:00637971",
+            "collins:enquiry"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "施事与语域",
+          "observation": "正式调查可以涉及询问，但原译“审问”易误作讯问嫌疑人。",
+          "evidence_ids": [
+            "wn31:n:00637971",
+            "wn31:n:07208256",
+            "collins:enquiry"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "优先保留索取信息的询问，而“审问”需具体司法情境。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:05805605",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a search for knowledge; \"their pottery deserves more research than it has received\"",
+          "selected_headwords": [
+            "enquiry"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07208256",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an instance of questioning; \"there was a question about my training\"; \"we made inquiries of all those who were present\"",
+          "selected_headwords": [
+            "enquiry"
+          ]
+        },
+        {
+          "evidence_id": "collins:enquiry",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/inquiry",
+          "observation_zh": "收录 enquiry 拼写，区分询问信息与正式调查。",
+          "selected_headwords": [
+            "enquiry"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00637971",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a systematic investigation of a matter of public interest",
+          "selected_headwords": [
+            "enquiry"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "原“审问”是否出自司法调查的特定例句？"
+      ],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-bfba7033571d",
+      "headword": "critical",
+      "source_hash": "b03cd0b2239bd4f74e5282a4b4ae7b127c57372166b0f5cc46583d77a29c66ca",
+      "original_meaning_zh": "批评的；关键的；危急的",
+      "source_part_of_speech": "形容词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "批评的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "关键的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "危急的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "批评的；挑剔的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:00650564",
+            "wn31:a:02841530"
+          ],
+          "reason": "指责缺点时译为批评或挑剔。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "关键的；至关重要的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:00659155",
+            "wn31:s:00907116"
+          ],
+          "reason": "说明某一点对结果具有决定作用。"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "危急的；危险的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:a:00653599"
+          ],
+          "reason": "病情等接近紧急或危险状态。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "审慎评判的；批判性分析的",
+          "evidence_ids": [
+            "wn31:a:00652608"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "对人或事持批评态度、起决定作用、情况紧急是三种不同判断。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00650564",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "marked by a tendency to find and call attention to errors and flaws; \"a critical attitude\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02841530",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of or involving or characteristic of critics or criticism; \"critical acclaim\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00659155",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "forming or having the nature of a turning point or crisis; \"a critical point in the campaign\"; \"the critical test\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00907116",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "urgently needed; absolutely necessary; \"a critical element of the plan\"; \"critical medical supplies\"; \"vital for a healthy society\"; \"of vital interest\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:00653599",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "being in or verging on a state of crisis or emergency; \"a critical shortage of food\"; \"a critical illness\"; \"an illness at the critical stage\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:00652608",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "characterized by careful evaluation and judgment; \"a critical reading\"; \"a critical dissertation\"; \"a critical analysis of Melville's writings\"",
+          "selected_headwords": [
+            "critical"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-14a62b33decf",
+      "headword": "prejudice",
+      "source_hash": "ec26351ad2efa60ec64edfc2ff11e1b1cebf3ea6fef4b426c94f6cfd4a9fdc50",
+      "original_meaning_zh": "名词：偏见；动词：使产生偏见，使不利",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "偏见",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "使产生偏见",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使不利",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "偏见",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06211643"
+          ],
+          "reason": "先入为主的态度会影响公正判断。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使产生偏见",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00682064"
+          ],
+          "reason": "表示影响他人的看法。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "损害；使处于不利地位",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02519408"
+          ],
+          "reason": "着眼于对权益或机会的损害。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "名词态度与动词造成的影响分开，动词还可损害某个机会或利益。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06211643",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a partiality that prevents objective consideration of an issue or situation",
+          "selected_headwords": [
+            "prejudice"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00682064",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "influence (somebody's) opinion in advance",
+          "selected_headwords": [
+            "prejudice"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02519408",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "disadvantage by prejudice",
+          "selected_headwords": [
+            "prejudice"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-5489eb1d2a02",
+      "headword": "accident",
+      "source_hash": "f17333fc17bad08f6a5e12931d300b9e3ab4632ab66009d2f0b9a85e33407b43",
+      "original_meaning_zh": "事故；意外；灾祸",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "事故",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "意外",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "灾祸",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "事故",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07315954"
+          ],
+          "reason": "意外造成损伤或损失的事件。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "偶然的事；意外",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07315578"
+          ],
+          "reason": "可只强调出于偶然。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s003",
+          "text": "灾祸",
+          "reason": "“灾祸”范围和严重程度均不匹配，特定事故可能是灾祸。"
+        }
+      ],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Minor",
+          "type": "轻重及范围",
+          "observation": "事故不一定达到灾难程度，灾祸也不一定出于偶然。",
+          "evidence_ids": [
+            "wn31:n:07315578",
+            "wn31:n:07315954"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "从偶然发生与造成伤害两条线索分别回忆。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07315954",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an unfortunate mishap; especially one causing damage or injury",
+          "selected_headwords": [
+            "accident"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07315578",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "anything that happens suddenly or by chance without an apparent cause; \"winning the lottery was a happy accident\"; \"the pregnancy was a stroke of bad luck\"; \"it was due to an accident or fortuity\"",
+          "selected_headwords": [
+            "accident"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-d942f6488657",
+      "headword": "import",
+      "source_hash": "9530e5323e50a0b5d530c6712f8963077ea6757fec13249446bba5725730b456",
+      "original_meaning_zh": "进口；输入",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "进口",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "输入",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "进口；从国外引进",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:02351132",
+            "collins:import"
+          ],
+          "reason": "及物动词可带商品作宾语。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "进口（行为）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "collins:import"
+          ],
+          "reason": "名词可表示从国外购入之举。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "输入；导入（数据）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02237504"
+          ],
+          "reason": "以数据为对象时可解作导入；这是对原宽泛译词的一种读法。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "进口商品；进口品",
+          "evidence_ids": [
+            "wn31:n:03569847",
+            "collins:import"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "逐义词性未标",
+          "observation": "两段均无原始逐义词性；“输入”亦未说明对象。推荐标签是审者据词典作的分配。",
+          "evidence_ids": [
+            "wn31:v:02237504",
+            "wn31:v:02351132",
+            "collins:import"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "源没有分配逐义词性；贸易动作和名词化的进口行为均有词典依据，数据输入另看对象。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:02351132",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "bring in from abroad",
+          "selected_headwords": [
+            "import"
+          ]
+        },
+        {
+          "evidence_id": "collins:import",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/us/dictionary/english/import",
+          "observation_zh": "贸易动作可作动词或不可数名词；可数名词还指进口品。",
+          "selected_headwords": [
+            "import"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02237504",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "transfer (electronic data) into a database or document",
+          "selected_headwords": [
+            "import"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:03569847",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "commodities (goods or services) bought from a foreign country",
+          "selected_headwords": [
+            "import"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [
+        "“输入”原本指数据导入，还是从外部引入的宽义？"
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI语义拆解；原文仅有一个片段",
+          "uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "进口；从国外引进",
+              "evidence_ids": [
+                "wn31:v:02351132",
+                "collins:import"
+              ],
+              "reason": "及物动词可带商品作宾语。"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "进口（行为）",
+              "evidence_ids": [
+                "collins:import"
+              ],
+              "reason": "名词可表示从国外购入之举。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-c501935a6b2b",
+      "headword": "cycle",
+      "source_hash": "6ff6c5db6507203026b822f2f31ddb7cd78e560c6b84b92e9aaa7a73e9049846",
+      "original_meaning_zh": "名词：周期，循环；动词：骑自行车，循环",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "周期",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "循环",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "骑自行车",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "循环",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 17,
+          "end": 19
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "周期",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:15313066"
+          ],
+          "reason": "指一轮事件再次发生前的时间。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "循环；一轮",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07355638",
+            "wn31:n:07357095"
+          ],
+          "reason": "指反复出现的过程或其中一轮。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "骑自行车",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:01939335"
+          ],
+          "reason": "明确具体交通方式。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "循环；周而复始地发生",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:00344425",
+            "wn31:v:02055194"
+          ],
+          "reason": "描述现象重复的动作。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "自行车",
+          "evidence_ids": [
+            "wn31:n:02837983"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "名词要辨时间长度和反复的过程，动词则辨交通方式与重复发生。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:15313066",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "an interval during which a recurring sequence of events occurs; \"the never-ending cycle of the seasons\"",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07355638",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a single complete execution of a periodically repeated phenomenon; \"a year constitutes a cycle of the seasons\"",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07357095",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a periodically repeated sequence of events; \"a cycle of reprisal and retaliation\"",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:01939335",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "ride a bicycle",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00344425",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "recur in repeating sequences",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02055194",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "pass through a cycle; \"This machine automatically cycles\"",
+          "selected_headwords": [
+            "cycle"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:02837983",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a wheeled vehicle that has two wheels and is moved by foot pedals",
+          "selected_headwords": [
+            "cycle"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-076ddffcfd3e",
+      "headword": "stewardess",
+      "source_hash": "7c2187ede8cc567736eeda1a35fa1db91c17d9f1ec4be95942a02bdb3b11c29c",
+      "original_meaning_zh": "女乘务员；空中小姐（带性别色彩的旧称）",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "女乘务员",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "空中小姐（带性别色彩的旧称）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 19
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "女乘务员（旧称，尤指空中乘务员）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:10675314",
+            "collins:stewardess"
+          ],
+          "reason": "两个译名可指同一职业；较宽译法还可用于船、列车等。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "以职业和旧称语域共同记忆，航空是职业的一种具体场景。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:10675314",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a woman steward on an airplane",
+          "selected_headwords": [
+            "stewardess"
+          ]
+        },
+        {
+          "evidence_id": "collins:stewardess",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/stewardess",
+          "observation_zh": "标为旧称，女性乘务员可服务于飞机、船舶或列车。",
+          "selected_headwords": [
+            "stewardess"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-b0ad2485845e",
+      "headword": "adopt",
+      "source_hash": "c684aa0dcd992e2586b49d0dc0d0682623cf2ea6e9621f4d630e233cc5c22816",
+      "original_meaning_zh": "跟随；遵循；采用",
+      "source_part_of_speech": "动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "跟随",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "遵循",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "采用",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "采纳；采用并遵循（办法、主张等）",
+          "source_sense_ids": [
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00603217",
+            "wn31:v:02351720",
+            "wn31:v:02351891"
+          ],
+          "reason": "遵循在选择并实行某主张的范围内成立。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "跟随",
+          "reason": "“跟随”单列容易理解成跟在某人后面；需要理念、方案等对象才可能成立。"
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "收养（孩子）",
+          "evidence_ids": [
+            "wn31:v:00414120"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "core",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "限定条件遗漏",
+          "observation": "choose and follow 包含先选定再遵行，原“跟随”未传达这个条件。",
+          "evidence_ids": [
+            "wn31:v:02351891"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "采纳方案或采用方法后可按其行事，“跟随”若不加对象就会被理解成尾随。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00603217",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take up the cause, ideology, practice, method, of someone and use it as one's own; \"She embraced Catholicism\"; \"They adopted the Jewish faith\"",
+          "selected_headwords": [
+            "adopt"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02351720",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take up and practice as one's own",
+          "selected_headwords": [
+            "adopt"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02351891",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "choose and follow; as of theories, ideas, policies, strategies or plans; \"She followed the feminist movement\"; \"The candidate espouses Republican ideals\"",
+          "selected_headwords": [
+            "adopt"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00414120",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "take into one's family; \"They adopted two children from Nicaragua\"",
+          "selected_headwords": [
+            "adopt"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-b2dc971f4895",
+      "headword": "decrease",
+      "source_hash": "6c8905e8ee89781ba473224eeb65023ed0efa8fb1f787b6cc7110dab1c837085",
+      "original_meaning_zh": "减少；降低",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "减少",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "降低",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "减少；下降（数量本身变少）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00151509"
+          ],
+          "reason": "以数值或数量作主语的不及物用法。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使减少；降低",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00442400"
+          ],
+          "reason": "行动者或因素作主语，减少的量作宾语。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "减少；下降（过程或幅度）",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00352464",
+            "wn31:n:05117108",
+            "wn31:n:07370487",
+            "wn31:n:13479774"
+          ],
+          "reason": "名词可指变化事件或变化量，可接 in 短语指明指标。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Major",
+          "type": "逐义词性未标",
+          "observation": "原始两段中文既可指动作，也可作动作名词，不能据排列反推原词性。",
+          "evidence_ids": [
+            "wn31:n:00352464",
+            "wn31:n:05117108",
+            "wn31:v:00151509",
+            "wn31:v:00442400"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "数量自己变少、使数量变少和下降本身的名词用法各有句法线索。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00151509",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "decrease in size, extent, or range; \"The amount of homework decreased towards the end of the semester\"; \"The cabin pressure fell dramatically\"; \"her weight fell to under a hundred pounds\"; \"his voice fell to a whisper\"",
+          "selected_headwords": [
+            "decrease"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00442400",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "make smaller; \"He decreased his staff\"",
+          "selected_headwords": [
+            "decrease"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00352464",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the act of decreasing or reducing something",
+          "selected_headwords": [
+            "decrease"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:05117108",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "the amount by which something decreases",
+          "selected_headwords": [
+            "decrease"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07370487",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a change downward; \"there was a decrease in his temperature as the fever subsided\"; \"there was a sharp drop-off in sales\"",
+          "selected_headwords": [
+            "decrease"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13479774",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a process of becoming smaller or shorter",
+          "selected_headwords": [
+            "decrease"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "annotation": "AI语义拆解；原文仅有一个片段",
+          "uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "减少；下降（数量本身变少）",
+              "evidence_ids": [
+                "wn31:v:00151509"
+              ],
+              "reason": "以数值或数量作主语的不及物用法。"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "使减少；降低",
+              "evidence_ids": [
+                "wn31:v:00442400"
+              ],
+              "reason": "行动者或因素作主语，减少的量作宾语。"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "减少；下降（过程或幅度）",
+              "evidence_ids": [
+                "wn31:n:00352464",
+                "wn31:n:05117108",
+                "wn31:n:07370487",
+                "wn31:n:13479774"
+              ],
+              "reason": "名词可指变化事件或变化量，可接 in 短语指明指标。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI语义拆解；原文仅有一个片段",
+          "uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "减少；下降（数量本身变少）",
+              "evidence_ids": [
+                "wn31:v:00151509"
+              ],
+              "reason": "以数值或数量作主语的不及物用法。"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "使减少；降低",
+              "evidence_ids": [
+                "wn31:v:00442400"
+              ],
+              "reason": "行动者或因素作主语，减少的量作宾语。"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "减少；下降（过程或幅度）",
+              "evidence_ids": [
+                "wn31:n:00352464",
+                "wn31:n:05117108",
+                "wn31:n:07370487",
+                "wn31:n:13479774"
+              ],
+              "reason": "名词可指变化事件或变化量，可接 in 短语指明指标。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-cb5815fe5c3c",
+      "headword": "planet",
+      "source_hash": "de9bd470b8b160768293e2a88b98fe2949985dd71e0c6832c911c1c46db0c8c6",
+      "original_meaning_zh": "行星",
+      "source_part_of_speech": "名词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "行星",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "行星",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:09417539",
+            "NASA:planets"
+          ],
+          "reason": "以天体类别记忆；材料中列举九颗行星的旧定义不用于教学。"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [
+        {
+          "severity": "Info",
+          "type": "证据材料时效",
+          "observation": "原词条中文可保留；配套 WordNet 的九大行星列举已过时。",
+          "evidence_ids": [
+            "wn31:n:09416900",
+            "NASA:planets"
+          ],
+          "evidence_status": "lexically_supported"
+        }
+      ],
+      "priority_rationale": "天文名词用简洁的“行星”即可，数量和判定条件均无须写入初记释义。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:09417539",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "any celestial body (other than comets or satellites) that revolves around a star",
+          "selected_headwords": [
+            "planet"
+          ]
+        },
+        {
+          "evidence_id": "NASA:planets",
+          "publisher": "NASA",
+          "URL": "https://science.nasa.gov/solar-system/planets/",
+          "observation_zh": "太阳系有八颗行星；冥王星列为矮行星。",
+          "selected_headwords": [
+            "planet"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:09416900",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction",
+          "selected_headwords": [
+            "planet"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    },
+    {
+      "stable_id": "SG25-e97469619c0d",
+      "headword": "benefit",
+      "source_hash": "aa5d2a2b863f8bcbea02afb1d5ec7ca225dcb81c25f83f5d3385344a668e5cc0",
+      "original_meaning_zh": "名词：益处，福利；动词：使受益，得益",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "益处",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "福利",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "使受益",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "得益",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "益处；好处",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:05149888"
+          ],
+          "reason": "指产生的有利结果。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "使……受益；有益于",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02295917",
+            "collins:benefit"
+          ],
+          "reason": "及物用法把获益者放在宾语位置。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "得益；受益（benefit from）",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:02295422",
+            "collins:benefit"
+          ],
+          "reason": "不及物用法的主语是获益者。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（雇员的）福利待遇",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "collins:benefit"
+          ],
+          "reason": "职场中通常指额外提供的待遇。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（政府等发放的）福利金；补助",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:13317922",
+            "collins:benefit"
+          ],
+          "reason": "指满足条件时领取的给付。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "source_findings": [],
+      "priority_rationale": "区分给予好处和获得好处的主语；名词福利还可落到就业待遇或保障给付。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:05149888",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "something that aids or promotes well-being; \"for the benefit of all\"",
+          "selected_headwords": [
+            "benefit"
+          ]
+        },
+        {
+          "evidence_id": "collins:benefit",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/benefit",
+          "observation_zh": "词条区分一般好处、雇员福利、保障给付及两种动词结构。",
+          "selected_headwords": [
+            "benefit"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:13317922",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "financial assistance in time of need",
+          "selected_headwords": [
+            "benefit"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02295917",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "be beneficial for; \"This will do you good\"",
+          "selected_headwords": [
+            "benefit"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:02295422",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "derive a benefit from; \"She profited from his vast experience\"",
+          "selected_headwords": [
+            "benefit"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "annotation": "AI语义拆解；原文仅有一个片段",
+          "uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（雇员的）福利待遇",
+              "evidence_ids": [
+                "collins:benefit"
+              ],
+              "reason": "职场中通常指额外提供的待遇。"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（政府等发放的）福利金；补助",
+              "evidence_ids": [
+                "wn31:n:13317922",
+                "collins:benefit"
+              ],
+              "reason": "指满足条件时领取的给付。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-f56175f2116f",
+      "headword": "flush",
+      "source_hash": "6ccd3db6c6cd1b398a5570dfd6635476d669401c52946999332848659ff62378",
+      "original_meaning_zh": "动词：脸红，冲洗；名词：红晕，冲洗",
+      "source_part_of_speech": "名词；动词",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "脸红",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "冲洗",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "红晕",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "冲洗",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "脸红",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00103071"
+          ],
+          "reason": "指脸上因情绪等泛红。"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "用水冲洗；冲（马桶）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00456484",
+            "collins:flush"
+          ],
+          "reason": "指以液体清洗或冲净的动作。"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "红晕",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:00119088",
+            "wn31:n:14074353"
+          ],
+          "reason": "脸上的红色可作为名词指称。"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "冲水；一次冲洗",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:n:07454170",
+            "collins:flush"
+          ],
+          "reason": "厕所语境中的一次冲水有名词用法。"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "齐平的（与某表面平齐）",
+          "evidence_ids": [
+            "wn31:r:00087937",
+            "wn31:s:00913656"
+          ],
+          "source_sense_ids": [],
+          "suggested_layer": "extended",
+          "auto_adopt": false
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "用脸色与水流两个场景记，动词指发生或执行，名词指红色或一次冲水。",
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:00103071",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "turn red, as if in embarrassment or shame; \"The girl blushed when a young man whistled as she walked by\"",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:v:00456484",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "rinse, clean, or empty with a liquid; \"flush the wound with antibiotics\"; \"purge the old gas tank\"",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "collins:flush",
+          "publisher": "HarperCollins",
+          "URL": "https://www.collinsdictionary.com/dictionary/english/flush",
+          "observation_zh": "名词可指用水冲洗马桶的一次动作，也可指脸上泛起红色。",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00119088",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "sudden reddening of the face (as from embarrassment or guilt or shame or modesty)",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:14074353",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a rosy color (especially in the cheeks) taken as a sign of good health",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:07454170",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "a sudden rapid flow (as of water); \"he heard the flush of a toilet\"; \"there was a little gush of blood\"; \"she attacked him with an outpouring of words\"",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:r:00087937",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "in the same plane; \"set it flush with the top of the table\"",
+          "selected_headwords": [
+            "flush"
+          ]
+        },
+        {
+          "evidence_id": "wn31:s:00913656",
+          "publisher": "Princeton University, WordNet 3.1",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "definition_en": "of a surface exactly even with an adjoining one, forming the same plane; \"a door flush with the wall\"; \"the bottom of the window is flush with the floor\"",
+          "selected_headwords": [
+            "flush"
+          ]
+        }
+      ],
+      "human_approved": false,
+      "is_AI_candidate": true,
+      "unresolved_questions": [],
+      "semantic_splits": []
+    }
+  ]
+}

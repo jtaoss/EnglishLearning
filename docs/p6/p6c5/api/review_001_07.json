@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_07",
+  "request_hash": "1912de58079d1fed784ff183ddd27d5b1666f3749987517eeb5712e29d64a862",
+  "started_utc": "2026-11-13T08:16:13.434069+00:00",
+  "completed_utc": "2026-11-13T08:16:58.981017+00:00",
+  "elapsed_seconds": 45.547,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "cd6ca0a7-27b8-4f4b-bc87-a2b101207c71",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2935,
+    "completion_tokens": 2242,
+    "total_tokens": 5177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2058
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2935
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-db6e2c6375d0\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"教学提示：that 从句的感知用法在证据 wn31:a:00572854 中更贴近‘清醒/知觉’义，建议在 group1 或总注中说明，避免将其作为 s002 仅基于 of 的延展。\"\n      ],\n      \"note\": \"候选将原文两个片段分别对应清醒/知觉状态和知道/意识到某事实，均使用恰当的形容词证据；deliberate/intentional 义作为词典增收未采纳，未混入源义；未发现需修正的翻译、词性或源覆盖问题。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

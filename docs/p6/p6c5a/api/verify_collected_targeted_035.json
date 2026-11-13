@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_035",
+  "kind": "verify",
+  "request_hash": "6e721a59aa15561ceffe37c8766e6858a60eda82c95d2a08617395104791289b",
+  "input_ids": [
+    "SG25-887270d0cbc5",
+    "SG25-46023b2bfb8b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0ee973d5-96d2-4e26-8049-e3d69a93dc0e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-887270d0cbc5\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1“使变成/使成为”对应 cause to become，注释示例 render sb/sth + 形容词未增加排他限制，覆盖原义。\",\n          \"evidence_ids\": [\"wn31:v:00120483\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“提供”为一般供给义；候选核心2限定为“提供/给予（所需之物）”，并选用02332196“give something useful or necessary to”，而证据01632192“give or supply”无此限制，未保留一般供给范围。\",\n          \"evidence_ids\": [\"wn31:v:02332196\", \"wn31:v:01632192\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“呈现”为广义展示/表现；候选核心3仅保留视觉描绘（01690851），注释明确不涵盖抽象呈现，未保留演绎/翻译等广义呈现用途（01736053/00961859可见）。\",\n          \"evidence_ids\": [\"wn31:v:01690851\", \"wn31:v:01736053\", \"wn31:v:00961859\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-887270d0cbc5:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:02332196\", \"wn31:v:01632192\"],\n          \"reason\": \"添加“所需之物”限制，未保留一般 give/supply 义。\",\n          \"counterexample\": \"The estate renders some revenue for the family (01632192)\",\n          \"repair_suggestion\": \"移除/弱化“所需之物”限定，或采用01632192“give or supply”并明确该例为示例而非排他。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_missing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-887270d0cbc5:p6c5:core_meanings:3\"],\n          \"evidence_ids\": [\"wn31:v:01690851\", \"wn31:v:01736053\", \"wn31:v:00961859\"],\n          \"reason\": \"原“呈现”宽于视觉描绘；未在候选任何层保留或暂存广义呈现。\",\n          \"counterexample\": \"render a sonata / render a poem into English\",\n          \"repair_suggestion\": \"在核心3注释或 held 中明确广义呈现待核，或确认原文仅取视觉描绘并限定来源。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"render 三条源义均进入核心，但 s002 提供被限定为“所需之物”，s003 呈现被限定为视觉描绘，均造成范围收窄；其余外部义未采用，符合原文三义。整体部分覆盖。\"\n    },\n    {\n      \"id\": \"SG25-46023b2bfb8b\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1“从…获得；得到”对应 evidence 02297086 obtain，限制为从某来源获得某物属词典必要，未排他。\",\n          \"evidence_ids\": [\"wn31:v:02297086\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心2“源自；来自”对应 come from evidence 00252677；注释“名称、词语等”仅为示例，未添加排他限制。\",\n          \"evidence_ids\": [\"wn31:v:00252677\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"derive 两源义均获等价覆盖，推理义未采用符合原文。无范围缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4804,
+    "completion_tokens": 7619,
+    "total_tokens": 12423,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6635
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3140
+  },
+  "started_utc": "2026-11-13T09:58:26.944217+00:00",
+  "completed_utc": "2026-11-13T10:00:05.476957+00:00",
+  "elapsed_seconds": 98.531,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

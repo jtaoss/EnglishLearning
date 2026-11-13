@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_58",
+  "request_hash": "22348e5fffc13305da48b107b6e0ca4938661dbe10d4cdea2dde10bfc255b4bf",
+  "started_utc": "2026-11-13T08:16:49.737918+00:00",
+  "completed_utc": "2026-11-13T08:18:21.308930+00:00",
+  "elapsed_seconds": 91.562,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c61652ae-3e94-49b4-b373-41433c91036e",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3497,
+    "completion_tokens": 4825,
+    "total_tokens": 8322,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4238
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1449
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3426125bf109\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"原文词性为动词且`对比/对照`片段未标注逐义词性；候选将及物与不及物动词分离，仅把及物义放入核心，不及物义(v:02672941)置于dictionary_additions未采用。词典定义独立存在但原文片段仅提供宽义，无法确认原文是否支持不及物义，属于源范围不确定，不是确认缺陷。\",\n          \"evidence_ids\": [\"wn31:v:02672941\"],\n          \"source_sense_ids\": [\"s001\", \"s002\"],\n          \"candidate_group_ref\": \"SG25-3426125bf109:p6c5:addition:1\",\n          \"proposed_fix\": \"保留不及物候选为AI未采用并在用法覆盖矩阵中显式标注“源片段动词范围未证实”，待源逐义证据或人工决定后再确认是否核心化。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"WordNet还提供名词义wn31:n:05719031（颜色之间的视觉对比效果）和wn31:n:05756783（概念性区分/差异），候选只把摄影反差(05133627)列为外部候选，未追踪其他外部名词义；这些义项不在原始片段中，但可能对阅读理解有独立价值，缺失追踪属外部用途覆盖不完整，重要程度为教学建议。\",\n          \"evidence_ids\": [\"wn31:n:05719031\", \"wn31:n:05756783\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"在dictionary_additions中增加这两个AI候选（状态AI_candidate_not_adopted），注明外部词典义，不自动并入核心。\"\n        }\n      ],\n      \"preferences\": [\n        \"首次学习可按候选顺序：名词比较动作、名词差异、及物动词；若源文确认不及物用法，可并入核心或扩展而不必单独外部候选。\",\n        \"摄影/视觉 contrast 适合列为扩展或其他专门义，首次不优先。\"\n      ],\n      \"note\": \"候选正确区分了名词比较行为与名词差异，及物动词与外部不及物区分明确；源片段逐义词性未知未冒充已证实。主要问题为不及物动词来源覆盖不确定及外部词典名词义追踪不全，均非确认错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

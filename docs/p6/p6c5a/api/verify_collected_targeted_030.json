@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_030",
+  "kind": "verify",
+  "request_hash": "cdbb79c45039a349ca67111e02e49338af99cbe3ecc1080e9aefd98b3cde4ed1",
+  "input_ids": [
+    "SG25-d942f6488657",
+    "SG25-c3b290f1c5ba"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "ee627efb-9e6a-431d-b242-8f29df26872d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-d942f6488657\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"original_text\": \"进口\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"源片段'进口'词性未定；核心动词组(wn31:v:02351132)与核心名词行为组(p6c3:collins:import)分别覆盖从国外购入的动作与行为/业务，方向一致；来源未强制要求商品/人员名词义，故不将未选WordNet商品义视为该片段的必要覆盖。\",\n          \"evidence_ids\": [\n            \"wn31:v:02351132\",\n            \"p6c3:collins:import\"\n          ],\n          \"residual_scope\": \"\"\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"original_text\": \"输入\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"仅扩展动词组'输入；导入（数据）'承接，依据wn31:v:02237504限定为电子数据导入；原词性未定且源中文宽于该英语证据，名词'输入/input'及非数据一般输入未被任何层级或暂存承接，属于来源范围待核的剩余范围。\",\n          \"evidence_ids\": [\n            \"wn31:v:02237504\"\n          ],\n          \"residual_scope\": \"名词输入/一般非数据输入未覆盖；需明确暂存或补证。\"\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-d942f6488657:p6c3:extended:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:02237504\",\n            \"p6c3:collins:import\"\n          ],\n          \"reason\": \"s002'输入'在源词性未定下被直接收窄为电子数据动词导入；名词'输入/input'与一般非数据输入没有出现在核心、扩展或held中，且未明确暂存，构成原片段内部残差。\",\n          \"counterexample\": \"英文名词input或一般动词input（非电子数据）在所提供的候选层无对应组承接。\",\n          \"repair_suggestion\": \"在held或暂存中明确记录'输入'名词义及非数据一般输入为待核残差，或提供更明确的英语证据；避免仅以数据导入动词视为完整覆盖。\"\n        }\n      ],\n      \"unresolved\": [\n        \"源s001'进口'是否包含名词商品义（进口品/进口货）未在候选层体现，但原片段未提供语境；暂不能确认是否为覆盖缺口。\",\n        \"源s002'输入'的名词词性及非数据输入范围因原词性未定而无法确证，需额外中英语境或词典证据。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"候选通过核心动词/行为名词覆盖贸易进口，但输入义被收窄至数据导入，且未暂存剩余范围；这属于来源词性未定下的残差提示，不构成核心贸易义缺失。\"\n    },\n    {\n      \"id\": \"SG25-c3b290f1c5ba\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"original_text\": \"意味着\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组用'意味着（由此可推知）'，由逻辑后果证据wn31:v:00932561和wn31:v:02641270支撑，保留可推知含义，与源片段'意味着'在动词用法一致；未引入明确直说义。\",\n          \"evidence_ids\": [\n            \"wn31:v:00932561\",\n            \"wn31:v:02641270\"\n          ],\n          \"residual_scope\": \"\"\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"original_text\": \"意思是\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组仅保留'由此可推知'的用法，但中文'意思是'可兼指明确等同/定义；由于imply的可靠证据不支持所有明确直说义，该较宽处被注释限定，剩余范围（明确直说义）待核。\",\n          \"evidence_ids\": [\n            \"wn31:v:00932561\",\n            \"wn31:v:02641270\"\n          ],\n          \"residual_scope\": \"明确直说/定义义；来源范围待核。\"\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"original_text\": \"暗示\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组'暗示'对应间接表达证据wn31:v:00931801，保留间接表达义，与源片段'暗示'相符。\",\n          \"evidence_ids\": [\n            \"wn31:v:00931801\"\n          ],\n          \"residual_scope\": \"\"\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"源s002'意思是'是否确实包含明确直说/定义义尚不确定；若后续语境要求该义，需不将imply直接扩入核心，而另记来源不确定性。\",\n        \"wn31:v:02642216 'have as a necessary feature'未单独列出，但现有'由此可推知'可覆盖大部分推测义；是否需要单独教学待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"三个片段均有承接；'意思是'较宽处由注释限定为可推知，属来源范围待核而非已确认缺陷。未采用'暗示某人有罪'等细分义，因'暗示'一般义已覆盖。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4734,
+    "completion_tokens": 9610,
+    "total_tokens": 14344,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8308
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3070
+  },
+  "started_utc": "2026-11-13T09:58:14.141218+00:00",
+  "completed_utc": "2026-11-13T10:00:25.448599+00:00",
+  "elapsed_seconds": 131.297,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_018",
+  "kind": "audit",
+  "request_hash": "b1d2cdacd9be17793f6196e4fd00691eaf6b3a500a7d3d24ec280ec1d0e25ae1",
+  "input_ids": [
+    "SG25-96c842ee0d60",
+    "SG25-604c00db87b2",
+    "SG25-f5dbf9fe930c",
+    "SG25-0f780b5c735e",
+    "SG25-689f6a627384"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "9dd54baa-6173-4b31-8ea4-0f37beafaf9e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-96c842ee0d60\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"固有的（事物本性/本质特征）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘固有的／内在的’与证据‘essential constituent or characteristic’及‘in the nature of something’一致，表达事物本性中的固有属性。\",\"evidence_ids\":[\"wn31:s:01351376\",\"wn31:s:00945209\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"the inner room 表物理内部，不是 inherent 的固有/本性义\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"内在的（本质/本性，非物理内部）\",\"relation\":\"语义等价\",\"reason\":\"‘内在的’在此与 inherent 的本质属性义对应；组注已限定不将所有物理内部都称固有，证据支持内在本质而非空间内部。\",\"evidence_ids\":[\"wn31:s:00945209\",\"wn31:s:01351376\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"inner layer 属物理内部，不能由 inherent 覆盖\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"固有/内在合组覆盖本质属性义；两条证据匹配，核心注释明确排除物理内部，未见范围缺口。\"},{\"id\":\"SG25-604c00db87b2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"历史学家（研究并写作历史的人）\",\"relation\":\"语义等价\",\"reason\":\"证据定义为‘a person who is an authority on history and who studies it and writes about it’，与‘历史学家’直接对应。\",\"evidence_ids\":[\"wn31:n:10196781\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"历史家（历史学家的中文变体）\",\"relation\":\"语义等价\",\"reason\":\"‘历史家’与‘历史学家/史学家’同指历史研究者，证据支持同一人物称谓。\",\"evidence_ids\":[\"wn31:n:10196781\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"史学家（历史学家的中文变体）\",\"relation\":\"语义等价\",\"reason\":\"‘史学家’是历史学者的另一中文表述，与证据中研究并写作历史的人一致。\",\"evidence_ids\":[\"wn31:n:10196781\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个中文称谓为同一历史研究者义，核心合组覆盖完整，证据充分。\"},{\"id\":\"SG25-f5dbf9fe930c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"历史的（属于过去/过去重要或著名）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘历史的’对应证据‘belonging to the past; of what is important or famous in the past’，并保留 historical 与 historic 的提示。\",\"evidence_ids\":[\"wn31:s:01734292\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"历史研究的（与历史研究相关）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘历史研究的／史学的’对应证据‘of or relating to the study of history’，例证含 historical scholars/perspective。\",\"evidence_ids\":[\"wn31:a:02931434\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"史学的（历史学科/研究领域）\",\"relation\":\"语义等价\",\"reason\":\"‘史学的’与‘历史研究的’同属历史学科研究领域义，证据直接支持该研究领域用法。\",\"evidence_ids\":[\"wn31:a:02931434\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"历史过去义置核心，历史研究/史学义置扩展；三个源义均有对应，注意不与 historic 的重要历史意义混淆。\"},{\"id\":\"SG25-0f780b5c735e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"识别/辨认（确认某人或某物是什么）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘识别’由‘establish the identity of someone or something’及植物/生物识别例证支持，覆盖一般辨认义。\",\"evidence_ids\":[\"wn31:v:00620568\",\"wn31:v:00654017\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"确认身份（确定姓名或身份特征）\",\"relation\":\"语义等价\",\"reason\":\"源义与扩展组文本‘确认身份’一致；更直接证据00620568支持‘establish the identity’，但扩展组当前只引01028104，证据分配需复核。\",\"evidence_ids\":[\"wn31:v:01028104\",\"wn31:v:00620568\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"the almanac identifies the auspicious months 属‘标明/指称’，不是‘确认某人身份’\",\"counterexample_evidence_ids\":[\"wn31:v:01028104\"],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_mismatch\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-0f780b5c735e:extended:1\"],\"evidence_ids\":[\"wn31:v:01028104\",\"wn31:v:00620568\"],\"reason\":\"扩展组‘确认身份’仅引01028104（give the name/identifying characteristics，例证偏‘标明/指称’），而更直接支持‘establish the identity of someone’的00620568被放在核心‘识别’组；当前扩展组证据不足以单独证明‘确认身份’义。\",\"repair_suggestion\":\"将00620568补入扩展组‘确认身份’的直接证据，或调整组注说明01028104如何支持确认身份；核心‘识别’仍可保留00620568作为上位识别证据。\"}],\"note\":\"识别在核心，确认身份在扩展，覆盖完整；但扩展组证据01028104不如00620568直接支持确认身份，建议复核证据分配。\"},{\"id\":\"SG25-689f6a627384\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"个性（个体持续的人格/自我同一性）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘个性’由‘the distinct personality of an individual regarded as a persisting entity’支持，对应 identity 的人格同一性义。\",\"evidence_ids\":[\"wn31:n:04625427\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"特性（可辨认某人/某物的个体特征）\",\"relation\":\"合理概括\",\"reason\":\"证据‘the individual characteristics by which a thing or person is recognized or known’支持‘识别性特征’；组注已说明特性是识别相关的特点，未扩大为任意特性。\",\"evidence_ids\":[\"wn31:n:05771409\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"身份（某人/某物被辨认是谁或是什么）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘身份’由‘determine his identity’及‘identity of the gene/lover’等证据支持，对应可辨认身份/同一性。\",\"evidence_ids\":[\"wn31:n:05771409\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"身份为核心，个性与识别性特性在扩展；三层与证据对应，未将 identity 误并为单一‘人格’义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5137,
+    "completion_tokens": 13099,
+    "total_tokens": 18236,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11220
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3217
+  },
+  "started_utc": "2026-11-13T09:43:08.949028+00:00",
+  "completed_utc": "2026-11-13T09:44:20.757790+00:00",
+  "elapsed_seconds": 71.812,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

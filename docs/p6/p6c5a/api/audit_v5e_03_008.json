@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_008",
+  "kind": "audit",
+  "request_hash": "5ac1fc52e409a6a5444317b4803994b513f1f295f263bdcc4b171cea20dee77e",
+  "input_ids": [
+    "SG25-de2c2dcff9ee",
+    "SG25-f2de1346d707",
+    "SG25-d41852293ee0",
+    "SG25-f44e85c4b8ea",
+    "SG25-0dd1b6d5c52e"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "62d4fe4e-386a-4979-a9ba-c4e15ce00d88",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-de2c2dcff9ee\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"污染（污染行为/环境污染状态）\",\"relation\":\"语义等价\",\"reason\":\"原片段‘污染’为名词，核心组保留同一宽泛表达并注明可指过程或环境状态；词典证据支持污染行为及环境污染状态。\",\"evidence_ids\":[\"wn31:n:00277831\",\"wn31:n:14521988\",\"wn31:n:14540345\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_omission\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-de2c2dcff9ee:core:1\"],\"evidence_ids\":[\"wn31:n:14521988\"],\"reason\":\"核心组注释称可指状态，但组证据仅列污染行为与环境污染状态，未列一般‘被污染状态’证据；不影响文本覆盖，属证据列表完整性问题。\",\"repair_suggestion\":\"可将 wn31:n:14521988 补入核心组证据，或注明环境状态证据已足以支撑组文本。\"}],\"note\":\"原义‘污染’作为名词保留在核心，过程/状态覆盖充分；仅核心组证据列表漏列一般状态ID，属轻微证据完整性问题。\"},{\"id\":\"SG25-f2de1346d707\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"不情愿的（意愿不足）\",\"relation\":\"语义等价\",\"reason\":\"核心组包含‘不情愿的’，词典证据 not eager 支持意愿不足，未改造成其他语义框架。\",\"evidence_ids\":[\"wn31:s:00815538\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"不愿意的（不愿参与/做）\",\"relation\":\"语义等价\",\"reason\":\"核心组包含‘不愿意的’，词典证据 disinclined to become involved 与该意愿不足用法相符。\",\"evidence_ids\":[\"wn31:s:01297005\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"勉强的（意愿上勉强，如勉强的笑）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留‘勉强的’，且注释限定为意愿不足框架；词典证据 reluctant smile 支持该意愿上勉强的用法。\",\"evidence_ids\":[\"wn31:s:02577165\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_omission\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-f2de1346d707:core:1\"],\"evidence_ids\":[\"wn31:s:02577165\"],\"reason\":\"‘勉强的’的直接支持证据 wn31:s:02577165 已提供但未列入核心组证据；语义仍由组文本和注释保留，属证据列表不完整。\",\"repair_suggestion\":\"将 wn31:s:02577165 补入核心组证据，尤其是支撑‘reluctant smile/勉强的笑’这类意愿上勉强的用法。\"}],\"note\":\"三条中文近义表述合为同一意愿不足核心组，语义覆盖完整；‘勉强的’的直接词典证据未列入组证据，建议补齐。\"},{\"id\":\"SG25-d41852293ee0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"分析（细察组成或特征）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留动词‘分析’的一般义；词典证据覆盖数学/化学/语法分解与细察特征，未把精神分析专门义塞入核心。\",\"evidence_ids\":[\"wn31:v:00645135\",\"wn31:v:00646245\",\"wn31:v:00738221\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心‘分析’保留动词一般义，证据覆盖分解组成与细察；精神分析专门义未纳入，不构成来源缺口。\"},{\"id\":\"SG25-f44e85c4b8ea\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"分析（对整体部分及关系的考察）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留名词‘分析’的一般考察义；词典证据支持对整体组成部分及关系的调查/抽象分离。\",\"evidence_ids\":[\"wn31:n:00635519\",\"wn31:n:05780664\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词‘分析’核心保留一般考察义；数学分析、文学分析等专门义未自动进入，符合原文范围。\"},{\"id\":\"SG25-0dd1b6d5c52e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"永久的（持续不变）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘永久的’与词典证据 continuing or enduring without marked change 相符，保留永久持续的核心义。\",\"evidence_ids\":[\"wn31:a:01758923\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"长期的（时长长，不必然永久）\",\"relation\":\"范围收窄\",\"reason\":\"目标只保留‘持续稳定、非临时’的长期，较原文一般‘长期的’窄；英语 permanent 证据支持持续不变/不易逆转，不直接支持仅时长长的一般长期用法。\",\"evidence_ids\":[\"wn31:a:01758923\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般‘长期’（仅时长长、可变或临时）的用法；但英语 permanent 不直接支持，属来源译法偏宽待核。\",\"counterexample\":\"permanent brain damage 的不可逆用法显示 permanent 不只等于‘长期’。\",\"counterexample_evidence_ids\":[\"wn31:s:01764039\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_range_broad\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-0dd1b6d5c52e:extended:1\"],\"evidence_ids\":[\"wn31:a:01758923\",\"wn31:s:01764039\"],\"reason\":\"原片段‘长期的’宽于英语 permanent 的‘持续稳定/不易逆转’；候选已在扩展加限定且未把一般长期误并入核心，但来源范围仍待核。\",\"repair_suggestion\":\"保留扩展限定并标注来源待核；不要把‘长期但不永久’的用法归入 permanent 核心。\"}],\"note\":\"核心‘永久的’覆盖主要义；‘长期的’以‘持续稳定、非临时’限定置于扩展，处理了来源译法偏宽问题，但该来源范围仍标待核。\"}]}",
+  "usage": {
+    "prompt_tokens": 4847,
+    "completion_tokens": 10737,
+    "total_tokens": 15584,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9132
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2927
+  },
+  "started_utc": "2026-11-13T09:44:50.690391+00:00",
+  "completed_utc": "2026-11-13T09:45:52.882703+00:00",
+  "elapsed_seconds": 62.187,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

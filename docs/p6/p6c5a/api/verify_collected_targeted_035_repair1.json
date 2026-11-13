@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_035_repair1",
+  "kind": "verify",
+  "request_hash": "bb405e0e3bc72a37f8a0f223e41d0b229b577333e36d2200fcb9044046dcde3f",
+  "input_ids": [
+    "SG25-887270d0cbc5",
+    "SG25-46023b2bfb8b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "d9e339dc-dea4-46fe-86dc-443de921a294",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-887270d0cbc5\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1“使变成/使成为”对应 cause to become；注释示例 render sb/sth + 形容词未增加排他限制，覆盖原义。\",\n          \"evidence_ids\": [\"wn31:v:00120483\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“提供”为一般供给义；候选核心2限定为“提供/给予（所需之物）”，并选用 wn31:v:02332196“give something useful or necessary to”，未保留一般 give/supply 义（wn31:v:01632192）。\",\n          \"evidence_ids\": [\"wn31:v:02332196\", \"wn31:v:01632192\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“呈现”为广义展示/表现；候选核心3仅保留视觉描绘（wn31:v:01690851），注释明确不涵盖抽象呈现，未保留演绎/翻译等广义呈现用途（wn31:v:01736053/wn31:v:00961859）。\",\n          \"evidence_ids\": [\"wn31:v:01690851\", \"wn31:v:01736053\", \"wn31:v:00961859\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-887270d0cbc5:p6c5:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:02332196\", \"wn31:v:01632192\"],\n          \"reason\": \"添加“所需之物/有用或必要”限制，未保留一般 give/supply 义；原文仅“提供”，无来源依据限定。\",\n          \"counterexample\": \"The estate renders some revenue for the family (wn31:v:01632192)\",\n          \"repair_suggestion\": \"移除/弱化“所需之物”限定，或改用 wn31:v:01632192“give or supply”并明确该例为示例而非排他；若原义确指提供所需之物，需补充来源依据。\"\n        },\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_missing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-887270d0cbc5:p6c5:core_meanings:3\"],\n          \"evidence_ids\": [\"wn31:v:01690851\", \"wn31:v:01736053\", \"wn31:v:00961859\"],\n          \"reason\": \"原“呈现”宽于视觉描绘；候选未在任何层保留或暂存广义呈现（如演绎、翻译等），注释已承认不涵盖抽象呈现但未处理剩余范围。\",\n          \"counterexample\": \"render a sonata (wn31:v:01736053); render a poem into English (wn31:v:00961859)\",\n          \"repair_suggestion\": \"在核心3注释或 held 中明确“广义呈现待核/残差”，或确认原文仅取视觉描绘并限定来源；不要只列外部候选而不处理原义覆盖。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原释“提供”和“呈现”是否分别包含一般供给/广义呈现，抑或为教学上的简化？需原始语境或教材判定；暂不判 Major。\"\n      ],\n      \"preferences\": [\n        \"核心2采用 provide 近义，若只教“提供帮助/服务”等可接受，但不应写死为所需之物；这是教学偏好而非范围缺陷。\"\n      ],\n      \"note\": \"render 三条源义均进入核心，但 s002 提供被限定为“所需之物”，s003 呈现被限定为视觉描绘，均造成范围收窄；其余外部义未采用，整体部分覆盖。\"\n    },\n    {\n      \"id\": \"SG25-46023b2bfb8b\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1“从…获得；得到”对应 obtain；英语 derive 及物时通常要求来源，添加 from 来源属该词用法必要，非未许可限制。\",\n          \"evidence_ids\": [\"wn31:v:02297086\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心2“源自；来自”对应 come from；注释“名称、词语等”为示例而非排他，未限制对象。\",\n          \"evidence_ids\": [\"wn31:v:00252677\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [\n        \"核心2注释可进一步说明对象不限于词语/名称，但现有表述以‘等’表明示例，非必须修改。\"\n      ],\n      \"note\": \"derive 两源义均获等价覆盖，推理义未采用符合原文；无范围缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5987,
+    "completion_tokens": 6044,
+    "total_tokens": 12031,
+    "prompt_tokens_details": {
+      "cached_tokens": 4736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4852
+    },
+    "prompt_cache_hit_tokens": 4736,
+    "prompt_cache_miss_tokens": 1251
+  },
+  "started_utc": "2026-11-13T10:00:05.593436+00:00",
+  "completed_utc": "2026-11-13T10:01:23.994047+00:00",
+  "elapsed_seconds": 78.391,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

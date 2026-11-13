@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_007",
+  "kind": "audit",
+  "request_hash": "c5acb028b4f7329b1aa9e2ec884e2f5aa4a9ba811ecf040616f08d5e9a831665",
+  "input_ids": [
+    "SG25-3393b41eeeea",
+    "SG25-d10dd510c72e",
+    "SG25-16a7b8d12931",
+    "SG25-599fc58fd0f7",
+    "SG25-69ea741e98fd"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "cae48070-68be-4ddd-86a9-e4fae0185283",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3393b41eeeea\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：极端的（程度、立场等）\",\"relation\":\"语义等价\",\"reason\":\"core:1 与原义同为形容词“极端的”，证据 s01515272 支持最大程度/强度，s01539177 支持超出常规的观点/行动，能覆盖原文常见性质用法。\",\"evidence_ids\":[\"wn31:s:01515272\",\"wn31:s:01539177\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：极端（最高程度/极端情形）\",\"relation\":\"语义等价\",\"reason\":\"extended:1 的“极端”由 n05105361 的 furthest/highest degree 支持，与原义相合。\",\"evidence_ids\":[\"wn31:n:05105361\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：极限（最高限度/极限程度）\",\"relation\":\"语义不匹配\",\"reason\":\"extended:2 用 n08586694“离中心最远的点”支撑“极限”，该证据更接近空间端点/末端而非“最高限度”；更贴近该义的 n05105361 已用于 s002。\",\"evidence_ids\":[\"wn31:n:08586694\"],\"context\":\"uncertain\",\"residual_scope\":\"缺失“最高限度/极限程度”义，当前证据只覆盖空间端点义\",\"counterexample\":\"n05105361 的 furthest/highest degree（carried it to extremes）是支持“极限/最高程度”的用法，但当前未链到 s003。\",\"counterexample_evidence_ids\":[\"wn31:n:05105361\"],\"risk\":\"suspected_Major\"}],\"word_status\":\"partial\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"evidence_mismatch\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-3393b41eeeea:extended:2\"],\"evidence_ids\":[\"wn31:n:08586694\",\"wn31:n:05105361\"],\"reason\":\"extended:2 的“极限”以空间“点 located farthest from middle”为证据，语义偏向端点/末端；源义“极限”通常指最高限度/极限程度，证据不匹配。\",\"repair_suggestion\":\"将 s003 重链到 n05105361 的最高程度义，或把组文本改为“极端/末端”并另留“极限”待核。\"}],\"note\":\"s001 核心形容词已覆盖；s002 扩展名词“极端”由程度义证据支持；s003“极限”当前证据是空间端点义，与“最高限度”不符，需重链或改注。\"},{\"id\":\"SG25-d10dd510c72e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：不可避免的\",\"relation\":\"语义等价\",\"reason\":\"core:1 与原文同义；a00343913 直接定义 incapable of being avoided or prevented。\",\"evidence_ids\":[\"wn31:a:00343913\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"唯一源义“不可避免的”由核心形容词证据直接覆盖；名词 the inevitable 属外部同形用法，未混入源义。\"},{\"id\":\"SG25-16a7b8d12931\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：防御（抵御攻击/军事防卫）\",\"relation\":\"语义等价\",\"reason\":\"core:1 的“防御”由 n00825193（抵御攻击/伤害的行为）与 n00956422（军事防卫行动/资源）支持，覆盖原文一般防御义。\",\"evidence_ids\":[\"wn31:n:00825193\",\"wn31:n:00956422\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：辩护（为观点/行为辩解，含法律答辩语境）\",\"relation\":\"范围收窄\",\"reason\":\"core:2 文本和 note 保留“辩护”并提法律语境，但所给证据只覆盖一般正当理由与言论回应，未列 n01201240 的被告答辩/刑事辩护；对原义为子集。\",\"evidence_ids\":[\"wn31:n:06753339\",\"wn31:n:07215473\"],\"context\":\"uncertain\",\"residual_scope\":\"缺失法律被告答辩/刑事辩护语境\",\"counterexample\":\"n01201240：defendant's answer or plea denying charges（法律辩护）是原义可支持的用法，但当前证据未覆盖。\",\"counterexample_evidence_ids\":[\"wn31:n:01201240\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_gap\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-16a7b8d12931:core:2\"],\"evidence_ids\":[\"wn31:n:01201240\",\"wn31:n:06753339\",\"wn31:n:07215473\"],\"reason\":\"note 称法律和日常论辩都有语境，但 core:2 只列 justification/speech act 证据；法律被告答辩 n01201240 未列，无法验证法律辩护覆盖。\",\"repair_suggestion\":\"补 n01201240 或将 note 的法律语境降为待核/删除；若保留法律义，core:2 文本可保持“辩护”但需证据。\"}],\"note\":\"s001“防御”有行为与军事防卫证据；s002“辩护”组文本与 note 提法律，但证据只给一般正当理由/言论回应，缺 n01201240 被告答辩，需补证。\"},{\"id\":\"SG25-599fc58fd0f7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：不同（事物不一样）\",\"relation\":\"语义等价\",\"reason\":\"core:1 合并“不同／相异”，n02672316 be different 直接支持；与 s001 同义。\",\"evidence_ids\":[\"wn31:v:02672316\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：相异（事物不一样）\",\"relation\":\"语义等价\",\"reason\":\"与 s001 同义，core:1 的合并文本与 n02672316 同时覆盖“相异”。\",\"evidence_ids\":[\"wn31:v:02672316\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义源义合并为核心“不同／相异”，n02672316 直接支持；意见不同仅在注释作搭配，未冒充原文独立义。\"},{\"id\":\"SG25-69ea741e98fd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：差别（事物不一样的性质）\",\"relation\":\"语义等价\",\"reason\":\"core:1“差别”由 n04756076 the quality of being unlike/dissimilar 直接支持。\",\"evidence_ids\":[\"wn31:n:04756076\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：分歧（意见不一致）\",\"relation\":\"语义等价\",\"reason\":\"core:2“分歧”由 n07196595 disagreement/argument about something important 支持，分歧义明确。\",\"evidence_ids\":[\"wn31:n:07196595\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001“差别”由 n04756076 直接支持；s002“分歧”由 n07196595 的分歧/争执义支持，两源义分别保留于核心。\"}]}",
+  "usage": {
+    "prompt_tokens": 5719,
+    "completion_tokens": 15478,
+    "total_tokens": 21197,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 13645
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3799
+  },
+  "started_utc": "2026-11-13T09:43:09.346663+00:00",
+  "completed_utc": "2026-11-13T09:44:34.242647+00:00",
+  "elapsed_seconds": 84.891,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

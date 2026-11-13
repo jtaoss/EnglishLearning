@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_047",
+  "kind": "verify",
+  "request_hash": "4c0617af14d10f5a399aba74db67abd5d01824d8613e820c29be6230ead70f8e",
+  "input_ids": [
+    "SG25-3d8eefab379d",
+    "SG25-b2d7f24e8330"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4edf2478-8358-4129-9cfb-5eea38f41227",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3d8eefab379d\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组“决定”备注限定为“对选择或行动作出决定”，但原文只有“决定”且未限定对象；证据wn31:v:00702806支持“决定/支配（结果或发展）”的用法，未在任何层级采用。\",\n          \"evidence_ids\": [\n            \"wn31:v:00699355\",\n            \"wn31:v:00702806\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“确定”链接权威/明确确定的证据，覆盖原文动词范围。\",\n          \"evidence_ids\": [\n            \"wn31:v:00701581\",\n            \"wn31:v:00949109\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“查明”链接调查/计算弄清的用法，覆盖原文动作。\",\n          \"evidence_ids\": [\n            \"wn31:v:00920843\",\n            \"wn31:v:00922307\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-3d8eefab379d:p6c5:core_meanings:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:00702806\"\n          ],\n          \"reason\": \"原文s001仅为“决定”且未限定对象；候选核心组给其备注“对选择或行动作出决定”，排除了英语证据中“shape or influence; give direction to”所对应的“决定/支配（结果或发展）”义；没有其他层级保留这一用法。\",\n          \"counterexample\": \"experience often determines ability / 环境决定能力\",\n          \"repair_suggestion\": \"扩展核心组为一般“决定”，采用wn31:v:00702806或另建层级，不再添加无来源的对象限制。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"s002/s003覆盖可接受；s001存在无来源对象限制，导致“决定/支配结果”义遗漏。\"\n    },\n    {\n      \"id\": \"SG25-b2d7f24e8330\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“颠倒”采用wn31:v:00387636，覆盖位置/次序/关系/条件的反向；与原文动词范围相符。\",\n          \"evidence_ids\": [\n            \"wn31:v:00387636\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“倒车”由web:reverse出版方观察支持动词驾驶车辆后退；证据非WordNet独立义项，标记pending但不构成语义偏离。\",\n          \"evidence_ids\": [\n            \"web:reverse\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组“反面”唯一证据wn31:n:04092293仅指硬币/奖章非主图案面；原文“反面”未限定为硬币，一般相反面/背面/相反关系未被该证据覆盖；wn31:n:13880801可支持相反关系但未采用。\",\n          \"evidence_ids\": [\n            \"wn31:n:04092293\",\n            \"wn31:n:13880801\"\n          ]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文名词“倒退”无上下文；词典名词有方向逆转、挫折、相反关系、机械倒挡等多种可能，无法仅凭裸译选择；当前held保持。\",\n          \"evidence_ids\": [\n            \"wn31:n:00347519\",\n            \"wn31:n:07491010\",\n            \"wn31:n:13880801\"\n          ]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心形容词“相反的”链接wn31:s:00203687，覆盖相反/反向性质，与原文形容词范围一致。\",\n          \"evidence_ids\": [\n            \"wn31:s:00203687\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s003\"\n          ],\n          \"group_ids\": [\n            \"SG25-b2d7f24e8330:p6c1:extended:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:04092293\",\n            \"wn31:n:13880801\"\n          ],\n          \"reason\": \"组文本为“反面”，但唯一链接证据只覆盖硬币/奖章反面；原文名词“反面”未限定为硬币，一般相反面/背面或相反关系没有在当前层级保留。\",\n          \"counterexample\": \"the reverse was true / 相反情况成立\",\n          \"repair_suggestion\": \"为名词“反面”补一般相反/背面证据（如wn31:n:13880801或wn31:n:00347519），或将组文本明确限定为硬币/奖章反面并将一般义暂存。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"evidence_limited\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-b2d7f24e8330:p6c1:extended:1\"\n          ],\n          \"evidence_ids\": [\n            \"web:reverse\"\n          ],\n          \"reason\": \"“倒车”仅由existing_publisher_observation支持，WordNet样本无独立动词证据；当前可保留但证据强度不足，需额外独立核验。\",\n          \"repair_suggestion\": \"补可靠词典词条支持，或将该扩展项保持pending。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s004名词“倒退”的具体名词义尚未确定，held未映射，仍需原语境。\",\n        \"s002“倒车”仅由出版方观察支持，独立证据强度不足；是否应留在扩展层需额外词典核验。\",\n        \"s001“颠倒”是否还需要覆盖物理翻倒（wn31:v:00387386）仍不确定；当前核心只链接位置/顺序逆转。\"\n      ],\n      \"preferences\": [\n        \"将“倒车”和名词“反面”放在扩展层是教学排序选择，不是覆盖缺陷；若证据增强可上调。\",\n        \"核心仅保留“颠倒”和“相反的”，属于首屏简化，可接受。\"\n      ],\n      \"note\": \"s003名词存在明确范围收窄；s002证据有限；s004待定。核心动词和形容词基本可接受。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5557,
+    "completion_tokens": 10566,
+    "total_tokens": 16123,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8987
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3893
+  },
+  "started_utc": "2026-11-13T09:59:13.798977+00:00",
+  "completed_utc": "2026-11-13T10:01:41.064711+00:00",
+  "elapsed_seconds": 147.266,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

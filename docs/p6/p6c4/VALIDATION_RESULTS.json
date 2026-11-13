@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "formal5332_unchanged": true,
+  "old500_unchanged": true,
+  "regression500_reviewed": 500,
+  "fresh100_reviewed": 100,
+  "original_fragments_retained": 1453,
+  "historical48_retained": 48,
+  "extra_C3_sample48_is_distinct": true,
+  "model_and_network_calls_by_validation": 0,
+  "personal_SQLite_and_sidefiles_unchanged": true,
+  "gate": {
+    "decision": "A",
+    "criteria_sha256": "da54f56ad32b9c45a28d4a16c976520b99780286534301e452a7c331dd81c6dd",
+    "checks": {
+      "all500_semantically_reviewed_and_historical48_retained": true,
+      "fresh100_source_first_reviewed": true,
+      "identity_original_coverage_one_to_many_human_status": true,
+      "C3_corrections_verified_management_tracking_not_adoption": true,
+      "no_unresolved_current_Critical_or_Major": true,
+      "no_same_systematic_major_in_fresh_or_introduced_changes": true,
+      "fresh100_initial_Major_le3_Minor_le10": true,
+      "fresh_Major_has_content_correction_and_independent_lexical_validation": true,
+      "no_confirmed_new_regression_loss": true,
+      "no_overall_POS_or_mapping_defect": true,
+      "external_and_unapproved_data_stay_candidates": true
+    },
+    "failed_checks": [],
+    "fresh_or_introduced_Major_cause_counts": {
+      "source_subtype_misread_as_full_grammar_category": 1
+    },
+    "baseline_repeated_POS_partition_Major_not_hidden": 4,
+    "baseline_POS_partition_pattern_correction_status": "four_discovered_baseline_words_corrected_source_use_retained; C3_import_also_corrected",
+    "source_gaps_still_pending": [
+      "management人员义采用",
+      "clause语法上位概念采用"
+    ],
+    "authority": "Only suggests expanded ISOLATED processing with the same per-batch evidence/checkpoints and stop-on-failure; no publication or automatic full run.",
+    "original_4832_remainder_already_sampled": 100,
+    "actually_unprocessed_after_this_task": 4732,
+    "remaining_full_run_started": false,
+    "human_dictionary_quality_claim": false,
+    "different_backend_model_proven": false
+  }
+}

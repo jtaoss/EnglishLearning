@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_08",
+  "request_hash": "e5820795e8de61f95316d6ac2d093dc793d9df77a1ffbdbd875e8da602ecf22a",
+  "started_utc": "2026-11-13T08:14:58.738629+00:00",
+  "completed_utc": "2026-11-13T08:15:33.315803+00:00",
+  "elapsed_seconds": 34.578,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5965db92-5f04-4660-b840-4f0734825729",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3683,
+    "completion_tokens": 5573,
+    "total_tokens": 9256,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4848
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 867
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-0f571e7c2d33\",\"word\":\"pursue\",\"pos\":\"动词\",\"core\":[[\"追求；寻找\",\"动词\",[\"s001\"],[\"wn31:v:01320193\"],\"表示寻找、追求目标或事物；词典定义为搜求/猎取，中文用“追求”作宽义改述。\"],[\"追赶；追捕\",\"动词\",[\"s002\"],[\"wn31:v:02004900\"],\"表示跟随追赶某人或某物，方向是在后追随并意图抓住。\"],[\"从事；参与\",\"动词\",[\"s003\"],[\"wn31:v:02380222\"],\"表示从事或参与某项活动，对象是活动或事务。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"推进；贯彻\",\"动词\",[\"wn31:v:02381520\"],\"词典有 carry further/advance（推进事务或议程）的独立用法，原文“追求/追赶/从事”未明确表达，列为外部候选。\"]],\"reason\":\"原中文给出三个动词动作：追求、追赶、从事；三者的对象和方向不同（寻求目标、在后追赶、参与活动），因此分三组而不合并。“推进”义有词典证据但不在原文，单列候选。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"“推进；贯彻”为有证据的外部候选，尚未并入核心；核心已覆盖原文三义，但外部覆盖仍待决。\"]]},{\"id\":\"SG25-482a37dd98d9\",\"word\":\"representative\",\"pos\":\"名词；形容词\",\"core\":[[\"代表；代理人\",\"名词\",[\"s001\"],[\"wn31:n:10541628\"],\"指代表他人的人或代理人；原名词“代表”按人物义处理。\"],[\"有代表性的；典型的\",\"形容词\",[\"s002\"],[\"wn31:s:02478647\"],\"形容词，表示能代表一类特征的、典型的。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"典型例子；代表\",\"名词\",[\"wn31:n:05828980\"],\"名词另有“典型例子/信息样本”用法；原名词“代表”可能涵盖但未明确，列为候选。\"],[\"代表…的；象征…的\",\"形容词\",[\"wn31:a:01988764\"],\"形容词另有 standing for something else（象征或代表某物）用法，与“有代表性的”不同。\"],[\"代议制的\",\"形容词\",[\"wn31:s:00720006\"],\"政治制度语境下的独立形容词用法，原文未明确表达，列为领域候选。\"]],\"reason\":\"按原字段先取名词“代表他人的人/代理人”，形容词取“有代表性的/典型的”。名词“典型例子”义、形容词“象征/代表某物”义及政治制度“代议制”义另有证据，但未并入核心，保留为外部候选。\",\"flags\":[[\"Minor\",\"source_scope_ambiguous\",\"名词“代表”可指人物代表，也可指典型例子；核心暂取人物义，例示义列入外部候选。\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"“典型例子/象征/代议制”等外部候选未并入核心；核心覆盖原两片段，但外部覆盖仍待决。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

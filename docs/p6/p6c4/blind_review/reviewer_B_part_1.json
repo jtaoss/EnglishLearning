@@ -1,0 +1,3253 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewer": "B",
+  "part": 1,
+  "count": 10,
+  "records": [
+    {
+      "stable_id": "SG25-d329f11d9a60",
+      "headword": "drawer",
+      "source_hash": "58a999a3e1305c65fc04969d64845a01c7b194f22f0bd77e1cb7da69f465613c",
+      "original_meaning_zh": "抽屉",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "抽屉",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "抽屉",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:03238608"
+          ],
+          "usage_note": "家具中能抽拉的盒状容器。",
+          "semantic_roles": "实体：家具部件"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "出票人",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:10052249"
+          ],
+          "reason": "商业票据中的付款指示发出者，原文未列；专门用途候选，非首次记忆必选。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "绘图者；擅长绘画的人",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:10048793"
+          ],
+          "reason": "指有绘画技能的人，不是家具部件；是否需要收录该人员用途仍待决定。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "抽屉",
+          "semantic_roles": "实体：家具部件",
+          "evidence_ids": [
+            "wn31:n:03238608"
+          ],
+          "layer": "core_meanings",
+          "display_group": "抽屉",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "家具中能抽拉的盒状容器。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "出票人",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:10052249"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "商业票据中的付款指示发出者，原文未列；专门用途候选，非首次记忆必选。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "绘图者；擅长绘画的人",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:10048793"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "指有绘画技能的人，不是家具部件；是否需要收录该人员用途仍待决定。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:10048793",
+            "wn31:n:10052249"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "以可见家具部件建立基本记忆；绘图者和出票人不是抽屉的细分，也不能借其原片段入核心。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03238608",
+          "part_of_speech": "n",
+          "definition_en": "a boxlike container in a piece of furniture; made so as to slide in and out",
+          "lemmas": [
+            "drawer"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:10048793",
+          "part_of_speech": "n",
+          "definition_en": "an artist skilled at drawing",
+          "lemmas": [
+            "draftsman",
+            "drawer"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:10052249",
+          "part_of_speech": "n",
+          "definition_en": "the person who writes a check or draft instructing the drawee to pay someone else",
+          "lemmas": [
+            "drawer"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d80c9bf910f1",
+      "headword": "address",
+      "source_hash": "65104054b3e5581d01d51921331593f225de5a79b1af6ec91163121c84557e03",
+      "original_meaning_zh": "地址",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "地址",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "地址",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06800007",
+            "wn31:n:08508037"
+          ],
+          "usage_note": "可找到或联系个人/机构的地点及其书面地址。",
+          "semantic_roles": "地点及定位信息",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "地址（地点）",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:08508037"
+              ],
+              "usage_note": "可找到或联系个人/机构的实际地点。",
+              "semantic_roles": "地点实体"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "地址（书面定位信息）",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:06800007"
+              ],
+              "usage_note": "信件/包裹上指明投递地点的信息。",
+              "semantic_roles": "书面定位信息"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "演说；致辞",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:07253354"
+          ],
+          "reason": "面向听众的正式讲话，不是地址。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "向…讲话；向…致辞",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00899077",
+            "wn31:v:00991233"
+          ],
+          "reason": "受话人作宾语，原文仅有名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "着手处理（问题等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01163215",
+            "wn31:v:01035399"
+          ],
+          "reason": "把努力或言论指向议题，不表示已经解决；职场阅读有独立理解价值。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "称呼",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02607453"
+          ],
+          "reason": "以称谓/姓名称呼某人，与发言对象用法不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "在…上写地址",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00992844"
+          ],
+          "reason": "信封等作宾语；动作未由名词地址明确表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（计算机）地址",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06367922"
+          ],
+          "reason": "标识信息存储位置的代码；专门概念需另行采用决定。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "地址（地点）",
+          "semantic_roles": "地点实体",
+          "evidence_ids": [
+            "wn31:n:08508037"
+          ],
+          "layer": "core_meanings",
+          "display_group": "地址",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "可找到或联系个人/机构的实际地点。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "地址（书面定位信息）",
+          "semantic_roles": "书面定位信息",
+          "evidence_ids": [
+            "wn31:n:06800007"
+          ],
+          "layer": "core_meanings",
+          "display_group": "地址",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "信件/包裹上指明投递地点的信息。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "演说；致辞",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:07253354"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "面向听众的正式讲话，不是地址。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "向…讲话；向…致辞",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00899077",
+            "wn31:v:00991233"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "受话人作宾语，原文仅有名词。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "着手处理（问题等）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01163215",
+            "wn31:v:01035399"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把努力或言论指向议题，不表示已经解决；职场阅读有独立理解价值。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "称呼",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02607453"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "以称谓/姓名称呼某人，与发言对象用法不同。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "在…上写地址",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00992844"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "信封等作宾语；动作未由名词地址明确表达。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（计算机）地址",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06367922"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "标识信息存储位置的代码；专门概念需另行采用决定。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "地址",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "地址（地点）",
+              "evidence_ids": [
+                "wn31:n:08508037"
+              ],
+              "explanation": "可找到或联系个人/机构的实际地点。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "名词",
+              "display_zh": "地址（书面定位信息）",
+              "evidence_ids": [
+                "wn31:n:06800007"
+              ],
+              "explanation": "信件/包裹上指明投递地点的信息。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:06367922",
+            "wn31:n:07253354",
+            "wn31:v:00899077",
+            "wn31:v:00991233",
+            "wn31:v:00992844",
+            "wn31:v:01035399",
+            "wn31:v:01163215",
+            "wn31:v:02607453"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "首次先保留来源明确的地址；原文名词范围很窄，讲话与处理议题等独立功能必须显式列为候选。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06367922",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) the code that identifies where a piece of information is stored",
+          "lemmas": [
+            "address",
+            "computer_address",
+            "reference"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06800007",
+          "part_of_speech": "n",
+          "definition_en": "written directions for finding some location; written on letters or packages that are to be delivered to that location",
+          "lemmas": [
+            "address",
+            "destination",
+            "name_and_address"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07253354",
+          "part_of_speech": "n",
+          "definition_en": "the act of delivering a formal spoken communication to an audience; \"he listened to an address on minor Roman poets\"",
+          "lemmas": [
+            "address",
+            "speech"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08508037",
+          "part_of_speech": "n",
+          "definition_en": "the place where a person or organization can be found or communicated with",
+          "lemmas": [
+            "address"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00899077",
+          "part_of_speech": "v",
+          "definition_en": "speak to; \"He addressed the crowd outside the window\"",
+          "lemmas": [
+            "address",
+            "turn_to"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00991233",
+          "part_of_speech": "v",
+          "definition_en": "give a speech to; \"The chairman addressed the board of trustees\"",
+          "lemmas": [
+            "address",
+            "speak"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00992844",
+          "part_of_speech": "v",
+          "definition_en": "put an address on (an envelope)",
+          "lemmas": [
+            "address",
+            "direct"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01035399",
+          "part_of_speech": "v",
+          "definition_en": "act on verbally or in some form of artistic expression; \"This book deals with incest\"; \"The course covered all of Western Civilization\"; \"The new book treats the history of China\"",
+          "lemmas": [
+            "cover",
+            "treat",
+            "handle",
+            "plow",
+            "deal",
+            "address"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01163215",
+          "part_of_speech": "v",
+          "definition_en": "address or apply oneself to something, direct one's efforts towards something, such as a question",
+          "lemmas": [
+            "address"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02607453",
+          "part_of_speech": "v",
+          "definition_en": "greet, as with a prescribed form, title, or name; \"He always addresses me with `Sir'\"; \"Call me Mister\"; \"She calls him by first name\"",
+          "lemmas": [
+            "address",
+            "call"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-a467a313e8c3",
+      "headword": "intercourse",
+      "source_hash": "f61902a2abfb2a2fe08d310ba6a10e3bf2a1fe74e46f467e03929ed5674061a0",
+      "original_meaning_zh": "性交；交往（较正式或旧式用法）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "性交",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "交往（较正式或旧式用法）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 15
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "性交",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:00847184",
+            "pub:intercourse"
+          ],
+          "usage_note": "性行为义；COBUILD对此项标formal，不能把其标签转给社会交往义。",
+          "semantic_roles": "性活动"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "交往；交流（旧式用法）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07149153",
+            "pub:intercourse"
+          ],
+          "usage_note": "已应用显式勘误：COBUILD社会交往义标old-fashioned，其他分词典未统一标语体。原文“较正式或旧式”完整保存，但本次仅独立确认旧式限制。",
+          "semantic_roles": "人或群体之间交流"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "性交",
+          "semantic_roles": "性活动",
+          "evidence_ids": [
+            "wn31:n:00847184",
+            "pub:intercourse"
+          ],
+          "layer": "core_meanings",
+          "display_group": "性交",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "性行为义；COBUILD对此项标formal，不能把其标签转给社会交往义。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "交往；交流（旧式用法）",
+          "semantic_roles": "人或群体之间交流",
+          "evidence_ids": [
+            "wn31:n:07149153",
+            "pub:intercourse"
+          ],
+          "layer": "other_meanings",
+          "display_group": "交往；交流（旧式用法）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "已应用显式勘误：COBUILD社会交往义标old-fashioned，其他分词典未统一标语体。原文“较正式或旧式”完整保存，但本次仅独立确认旧式限制。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_register",
+          "severity": "Minor",
+          "observation": "原文的“较正式或旧式”中，补充包勘误仅独立确认COBUILD社会交往义的旧式标签；不以性交项formal证明交往项formal。",
+          "evidence": [
+            "pub:intercourse"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "将性交与带旧式限制的社会交往分开，避免学习者在一般交流语境直接代换communication。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "社会交往项“较正式”的来源是否另有独立证据；原文保留，待人工核定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:intercourse",
+          "headword": "intercourse",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/intercourse",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词有性交以及个人或群体间的交往/交流。COBUILD把社会交往义标为old-fashioned，性交项另标formal；不能把前一项formal标签转用于后一项。其他分词典列交往义而未同样标语体。原文交往的较正式或旧式表述保留，但本轮只独立确认该分词典的旧式提示。",
+          "pos_supported": [
+            "名词"
+          ],
+          "erratum_applied": true
+        },
+        {
+          "evidence_id": "wn31:n:00847184",
+          "part_of_speech": "n",
+          "definition_en": "sexual activity between individuals, especially the insertion of a man's penis into a woman's vagina until orgasm and ejaculation occur",
+          "lemmas": [
+            "sexual_intercourse",
+            "intercourse",
+            "sex_act",
+            "copulation",
+            "coitus",
+            "coition",
+            "sexual_congress",
+            "sexual_relation",
+            "relation",
+            "carnal_knowledge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07149153",
+          "part_of_speech": "n",
+          "definition_en": "communication between individuals",
+          "lemmas": [
+            "intercourse",
+            "social_intercourse"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-b002a634647c",
+      "headword": "classic",
+      "source_hash": "67bcc6eb027ddca20388f2603c88c5fc5ea8bee3aad8b3d8433a185f224eebea",
+      "original_meaning_zh": "形容词：经典的，典型的；名词：经典作品",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "经典的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "典型的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "经典作品",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 19
+        }
+      ],
+      "source_part_of_speech": "名词；形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "经典的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:s:02352097"
+          ],
+          "usage_note": "质量高且有持久价值；不把“古典时期的”自动混入此提示。",
+          "semantic_roles": "作品/设计等的价值"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "典型的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:02479168"
+          ],
+          "usage_note": "很能代表某一类型或特征；可指典型错误/症状。",
+          "semantic_roles": "类型代表性"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "经典作品",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:03042580"
+          ],
+          "usage_note": "优秀到可作为经典的创作，指作品实体。",
+          "semantic_roles": "创作/作品"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "经典的",
+          "semantic_roles": "作品/设计等的价值",
+          "evidence_ids": [
+            "wn31:s:02352097"
+          ],
+          "layer": "core_meanings",
+          "display_group": "经典的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "质量高且有持久价值；不把“古典时期的”自动混入此提示。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "典型的",
+          "semantic_roles": "类型代表性",
+          "evidence_ids": [
+            "wn31:s:02479168"
+          ],
+          "layer": "core_meanings",
+          "display_group": "典型的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "很能代表某一类型或特征；可指典型错误/症状。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "经典作品",
+          "semantic_roles": "创作/作品",
+          "evidence_ids": [
+            "wn31:n:03042580"
+          ],
+          "layer": "core_meanings",
+          "display_group": "经典作品",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "优秀到可作为经典的创作，指作品实体。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "三个原文明示功能均直接支撑理解：价值评价、类型代表性和作品名词；跨词性分别保留。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03042580",
+          "part_of_speech": "n",
+          "definition_en": "a creation of the highest excellence",
+          "lemmas": [
+            "classic"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:02352097",
+          "part_of_speech": "s",
+          "definition_en": "considered of the highest quality and lasting significance or worth; \"a classic car\"; \"`War and Peace' is a classic novel\"",
+          "lemmas": [
+            "classic"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:02479168",
+          "part_of_speech": "s",
+          "definition_en": "of a well-known type; remarkably typical; \"the classic struggle between good and evil\"; \"I woke up with all the classic symptoms of the flu\"; \"she made the classic mistake of choosing style over substance\"",
+          "lemmas": [
+            "classic"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-2e09d5210db8",
+      "headword": "rest",
+      "source_hash": "0b631f5456491061cd5d68c0f7252e8580ac9409c65e5e0917c32c0661cd4de0",
+      "original_meaning_zh": "名词：休息，剩余部分；动词：休息",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "休息",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "剩余部分",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "休息",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 14,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "休息",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:01066072",
+            "wn31:n:15299060"
+          ],
+          "usage_note": "停止工作或活动以放松，可指休息状态或一次休息。",
+          "semantic_roles": "活动间歇/状态"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "剩余部分",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:13833030"
+          ],
+          "usage_note": "取走部分后余下的人或物，常在the rest结构中。",
+          "semantic_roles": "整体中余下部分"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "休息",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:00781405"
+          ],
+          "usage_note": "主体暂停自己的活动以放松。",
+          "semantic_roles": "休息者自身活动"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使…休息",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00781646"
+          ],
+          "reason": "让腿、动物等休息，施事使受事休息；原文没有明示使动方向。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "把…靠放在；搁在",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01613005"
+          ],
+          "reason": "放置头、手或物体以支撑，不能与休息活动直接等同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（责任等）在于；归于",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02737265"
+          ],
+          "reason": "关系归属用途，常有rest with等结构，原文未列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "静止状态",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14035972"
+          ],
+          "reason": "物体不运动的状态可用于物理说明，与放松休息不全同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "休息",
+          "semantic_roles": "活动间歇/状态",
+          "evidence_ids": [
+            "wn31:n:01066072",
+            "wn31:n:15299060"
+          ],
+          "layer": "core_meanings",
+          "display_group": "休息",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "停止工作或活动以放松，可指休息状态或一次休息。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "剩余部分",
+          "semantic_roles": "整体中余下部分",
+          "evidence_ids": [
+            "wn31:n:13833030"
+          ],
+          "layer": "core_meanings",
+          "display_group": "剩余部分",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "取走部分后余下的人或物，常在the rest结构中。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "休息",
+          "semantic_roles": "休息者自身活动",
+          "evidence_ids": [
+            "wn31:v:00781405"
+          ],
+          "layer": "core_meanings",
+          "display_group": "休息",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "主体暂停自己的活动以放松。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "使…休息",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00781646"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "让腿、动物等休息，施事使受事休息；原文没有明示使动方向。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "把…靠放在；搁在",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01613005"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "放置头、手或物体以支撑，不能与休息活动直接等同。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "（责任等）在于；归于",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02737265"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "关系归属用途，常有rest with等结构，原文未列。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "静止状态",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14035972"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "物体不运动的状态可用于物理说明，与放松休息不全同。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:14035972",
+            "wn31:v:00781646",
+            "wn31:v:01613005",
+            "wn31:v:02737265"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "分别记休息名词、剩余整体和休息动作；支撑放置与责任归属等不能借一个休息片段视为已覆盖。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:01066072",
+          "part_of_speech": "n",
+          "definition_en": "freedom from activity (work or strain or responsibility); \"took his repose by the swimming pool\"",
+          "lemmas": [
+            "rest",
+            "ease",
+            "repose",
+            "relaxation"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13833030",
+          "part_of_speech": "n",
+          "definition_en": "something left after other parts have been taken away; \"there was no remainder\"; \"he threw away the rest\"; \"he took what he wanted and I got the balance\"",
+          "lemmas": [
+            "remainder",
+            "balance",
+            "residual",
+            "residue",
+            "residuum",
+            "rest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14035972",
+          "part_of_speech": "n",
+          "definition_en": "a state of inaction; \"a body will continue in a state of rest until acted upon\"",
+          "lemmas": [
+            "rest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15299060",
+          "part_of_speech": "n",
+          "definition_en": "a pause for relaxation; \"people actually accomplish more when they take time for short rests\"",
+          "lemmas": [
+            "respite",
+            "rest",
+            "relief",
+            "rest_period"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00781405",
+          "part_of_speech": "v",
+          "definition_en": "take a short break from one's activities in order to relax",
+          "lemmas": [
+            "rest",
+            "breathe",
+            "catch_one's_breath",
+            "take_a_breather"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00781646",
+          "part_of_speech": "v",
+          "definition_en": "give a rest to; \"He rested his bad leg\"; \"Rest the dogs for a moment\"",
+          "lemmas": [
+            "rest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01613005",
+          "part_of_speech": "v",
+          "definition_en": "put something in a resting position, as for support or steadying; \"Rest your head on my shoulder\"",
+          "lemmas": [
+            "rest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02737265",
+          "part_of_speech": "v",
+          "definition_en": "have a place in relation to something else; \"The fate of Bosnia lies in the hands of the West\"; \"The responsibility rests with the Allies\"",
+          "lemmas": [
+            "lie",
+            "rest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-d74ff0ee8da3",
+      "headword": "pass",
+      "source_hash": "e9879fa4a76db83cd5bd0c9c7c5f6a56448e26739cb7a3a2547bf8ab563c53a9",
+      "original_meaning_zh": "动词：经过，通过，传递；名词：通行证",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "经过",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "通过",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "传递",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "通行证",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "经过；穿过",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02054081",
+            "wn31:v:02055618"
+          ],
+          "usage_note": "移动主体经过某物或从一处穿行，两个原片段在空间路径上兼容。",
+          "semantic_roles": "移动主体与路径/地点",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "经过",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:02055618"
+              ],
+              "usage_note": "移动经过某人/地点。",
+              "semantic_roles": "移动者—经过对象"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "穿过；通过",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:02054081"
+              ],
+              "usage_note": "从某点跨过或穿行而过。",
+              "semantic_roles": "移动者—路径/地点"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "通过（考试、审查）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02530710",
+            "wn31:v:02529017"
+          ],
+          "usage_note": "人成功通过考试与提案获得批准分别保留语义方向；不等同替别人判及格。",
+          "semantic_roles": "应试者/受审对象",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "通过（考试）",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:02530710"
+              ],
+              "usage_note": "应试者成功经过考试或选拔。",
+              "semantic_roles": "应试者—考试"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "获通过；获批准",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:02529017"
+              ],
+              "usage_note": "法案/提案作主体获得批准，与议会主动立法分开。",
+              "semantic_roles": "受审提案—审议机构"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "递给；传递",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02235554",
+            "wn31:v:00744289",
+            "wn31:v:02236255"
+          ],
+          "usage_note": "物件交给他人、消息传达和球传给队友，动作均有接收者；不混入权利自行转移。",
+          "semantic_roles": "给予者—物/信息—接受者",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "递给；移交",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:v:02235554"
+              ],
+              "usage_note": "把物件交到另一人手中/监管下。",
+              "semantic_roles": "移交者—物件—接受者"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "传达；传递（消息）",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:v:00744289"
+              ],
+              "usage_note": "把消息告知受众。",
+              "semantic_roles": "传达者—信息—受众"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "传（球）",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:v:02236255"
+              ],
+              "usage_note": "将球传给同队球员。",
+              "semantic_roles": "球员—球—队友"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "通行证",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:n:06703153",
+            "wn31:n:06703828"
+          ],
+          "usage_note": "准许进入或前往某处的许可/凭证。",
+          "semantic_roles": "许可文件"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "通过（法案等）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02472093"
+          ],
+          "usage_note": "议会等作主语使法案生效；与法案本身获通过的方向不同。",
+          "semantic_roles": "立法者—法案"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "（时间）过去",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02076777"
+          ],
+          "reason": "时间流逝与人经过地点是不同主语结构，原文未明示。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "山口",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:09409735"
+          ],
+          "reason": "山脉中较低的通道，原文只有许可凭证名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "及格；通过",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00066395"
+          ],
+          "reason": "通过考试的结果名词，不能因动词通过就默认名词覆盖。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "经过",
+          "semantic_roles": "移动者—经过对象",
+          "evidence_ids": [
+            "wn31:v:02055618"
+          ],
+          "layer": "core_meanings",
+          "display_group": "经过；穿过",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "移动经过某人/地点。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "穿过；通过",
+          "semantic_roles": "移动者—路径/地点",
+          "evidence_ids": [
+            "wn31:v:02054081"
+          ],
+          "layer": "core_meanings",
+          "display_group": "经过；穿过",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "从某点跨过或穿行而过。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "通过（考试）",
+          "semantic_roles": "应试者—考试",
+          "evidence_ids": [
+            "wn31:v:02530710"
+          ],
+          "layer": "core_meanings",
+          "display_group": "通过（考试、审查）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "应试者成功经过考试或选拔。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "获通过；获批准",
+          "semantic_roles": "受审提案—审议机构",
+          "evidence_ids": [
+            "wn31:v:02529017"
+          ],
+          "layer": "core_meanings",
+          "display_group": "通过（考试、审查）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "法案/提案作主体获得批准，与议会主动立法分开。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "递给；移交",
+          "semantic_roles": "移交者—物件—接受者",
+          "evidence_ids": [
+            "wn31:v:02235554"
+          ],
+          "layer": "core_meanings",
+          "display_group": "递给；传递",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "把物件交到另一人手中/监管下。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "传达；传递（消息）",
+          "semantic_roles": "传达者—信息—受众",
+          "evidence_ids": [
+            "wn31:v:00744289"
+          ],
+          "layer": "core_meanings",
+          "display_group": "递给；传递",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "把消息告知受众。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "传（球）",
+          "semantic_roles": "球员—球—队友",
+          "evidence_ids": [
+            "wn31:v:02236255"
+          ],
+          "layer": "core_meanings",
+          "display_group": "递给；传递",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "将球传给同队球员。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "通行证",
+          "semantic_roles": "许可文件",
+          "evidence_ids": [
+            "wn31:n:06703153",
+            "wn31:n:06703828"
+          ],
+          "layer": "core_meanings",
+          "display_group": "通行证",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "准许进入或前往某处的许可/凭证。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "通过（法案等）",
+          "semantic_roles": "立法者—法案",
+          "evidence_ids": [
+            "wn31:v:02472093"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "通过（法案等）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "议会等作主语使法案生效；与法案本身获通过的方向不同。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "（时间）过去",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02076777"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "时间流逝与人经过地点是不同主语结构，原文未明示。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "山口",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:09409735"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "山脉中较低的通道，原文只有许可凭证名词。"
+        },
+        {
+          "use_id": "u012",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "及格；通过",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00066395"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "通过考试的结果名词，不能因动词通过就默认名词覆盖。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "original_text": "通过",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "穿过；通过",
+              "evidence_ids": [
+                "wn31:v:02054081"
+              ],
+              "explanation": "从某点跨过或穿行而过。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "动词",
+              "display_zh": "通过（考试）",
+              "evidence_ids": [
+                "wn31:v:02530710"
+              ],
+              "explanation": "应试者成功经过考试或选拔。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "动词",
+              "display_zh": "获通过；获批准",
+              "evidence_ids": [
+                "wn31:v:02529017"
+              ],
+              "explanation": "法案/提案作主体获得批准，与议会主动立法分开。"
+            },
+            {
+              "use_id": "u009",
+              "part_of_speech": "动词",
+              "display_zh": "通过（法案等）",
+              "evidence_ids": [
+                "wn31:v:02472093"
+              ],
+              "explanation": "议会等作主语使法案生效；与法案本身获通过的方向不同。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s003",
+          "original_text": "传递",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u005",
+              "part_of_speech": "动词",
+              "display_zh": "递给；移交",
+              "evidence_ids": [
+                "wn31:v:02235554"
+              ],
+              "explanation": "把物件交到另一人手中/监管下。"
+            },
+            {
+              "use_id": "u006",
+              "part_of_speech": "动词",
+              "display_zh": "传达；传递（消息）",
+              "evidence_ids": [
+                "wn31:v:00744289"
+              ],
+              "explanation": "把消息告知受众。"
+            },
+            {
+              "use_id": "u007",
+              "part_of_speech": "动词",
+              "display_zh": "传（球）",
+              "evidence_ids": [
+                "wn31:v:02236255"
+              ],
+              "explanation": "将球传给同队球员。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:00066395",
+            "wn31:n:09409735",
+            "wn31:v:02076777"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "核心四组超过通常三组：空间移动、考试审查、转交动作和名词凭证四种功能不能靠删去一项压缩；建议人工逐组复核其首屏负担。法案施动另列后学。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u008"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003",
+            "u004",
+            "u005",
+            "u006",
+            "u007",
+            "u009"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "四个核心组的首次记忆负担需人工/独立复核；不得为压到三组删除必要功能。",
+        "“通过”宽提示拆为考试/审查与立法，是否符合原词表编者意图仍待人工确认。",
+        "外部候选的采用及层级待决。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00066395",
+          "part_of_speech": "n",
+          "definition_en": "success in satisfying a test or requirement; \"his future depended on his passing that test\"; \"he got a pass in introductory chemistry\"",
+          "lemmas": [
+            "passing",
+            "pass",
+            "qualifying"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06703153",
+          "part_of_speech": "n",
+          "definition_en": "a document indicating permission to do something without restrictions; \"the media representatives had special passes\"",
+          "lemmas": [
+            "pass",
+            "laissez_passer"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06703828",
+          "part_of_speech": "n",
+          "definition_en": "any authorization to pass or go somewhere; \"the pass to visit had a strict time limit\"",
+          "lemmas": [
+            "pass",
+            "passport"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09409735",
+          "part_of_speech": "n",
+          "definition_en": "the location in a range of mountains of a geological formation that is lower than the surrounding peaks; \"we got through the pass before it started to snow\"",
+          "lemmas": [
+            "pass",
+            "mountain_pass",
+            "notch"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00744289",
+          "part_of_speech": "v",
+          "definition_en": "transmit information; \"Please communicate this message to all employees\"; \"pass along the good news\"",
+          "lemmas": [
+            "communicate",
+            "pass_on",
+            "pass",
+            "pass_along",
+            "put_across"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02054081",
+          "part_of_speech": "v",
+          "definition_en": "go across or through; \"We passed the point where the police car had parked\"; \"A terrible thought went through his mind\"",
+          "lemmas": [
+            "pass"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02055618",
+          "part_of_speech": "v",
+          "definition_en": "move past; \"A black limousine passed by when she looked out the window\"; \"He passed his professor in the hall\"; \"One line of soldiers surpassed the other\"",
+          "lemmas": [
+            "travel_by",
+            "pass_by",
+            "surpass",
+            "go_past",
+            "go_by",
+            "pass"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02076777",
+          "part_of_speech": "v",
+          "definition_en": "pass by; \"three years elapsed\"",
+          "lemmas": [
+            "elapse",
+            "lapse",
+            "pass",
+            "slip_by",
+            "glide_by",
+            "slip_away",
+            "go_by",
+            "slide_by",
+            "go_along"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02235554",
+          "part_of_speech": "v",
+          "definition_en": "place into the hands or custody of; \"hand me the spoon, please\"; \"Turn the files over to me, please\"; \"He turned over the prisoner to his lawyers\"",
+          "lemmas": [
+            "pass",
+            "hand",
+            "reach",
+            "pass_on",
+            "turn_over",
+            "give"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02236255",
+          "part_of_speech": "v",
+          "definition_en": "throw (a ball) to another player; \"Smith passed\"",
+          "lemmas": [
+            "pass"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02472093",
+          "part_of_speech": "v",
+          "definition_en": "make laws, bills, etc. or bring into effect by legislation; \"They passed the amendment\"; \"We cannot legislate how people spend their free time\"",
+          "lemmas": [
+            "legislate",
+            "pass"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02529017",
+          "part_of_speech": "v",
+          "definition_en": "go unchallenged; be approved; \"The bill cleared the House\"",
+          "lemmas": [
+            "pass",
+            "clear"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02530710",
+          "part_of_speech": "v",
+          "definition_en": "go successfully through a test or a selection process; \"She passed the new Jersey Bar Exam and can practice law now\"",
+          "lemmas": [
+            "pass",
+            "make_it"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-9b2abfc29cc4",
+      "headword": "wire",
+      "source_hash": "b6d0adbb7cd3b74d2aab9eb410ced54bacdad75efad29c802144ca9618d513e5",
+      "original_meaning_zh": "名词：金属丝，电线；动词：接线，汇款",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "金属丝",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "电线",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "接线",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "汇款",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "金属丝；电线",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:04601545",
+            "wn31:n:04601816"
+          ],
+          "usage_note": "金属丝指材料/细丝；电线强调导电用途，保留两个对象边界。",
+          "semantic_roles": "材料丝体/导电线路",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "金属丝",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:04601545"
+              ],
+              "usage_note": "金属细丝，可用于固定、围栏等。",
+              "semantic_roles": "材料丝体"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "电线",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:04601816"
+              ],
+              "usage_note": "跨距离传导电流的金属导体。",
+              "semantic_roles": "导电线路"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "接线；装设线路",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02359532"
+          ],
+          "usage_note": "给房屋等安装电路，受事是装线路的对象。",
+          "semantic_roles": "安装者—房屋/设备—电路"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "电汇（款项）",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "pub:wire"
+          ],
+          "usage_note": "给人或某地电汇款项；publisher独立支持，WordNet发电报义不能单独证明汇款。",
+          "semantic_roles": "汇款人—款项—收款方"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "电报",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06635216"
+          ],
+          "reason": "通信方式名词，不同于实体电线。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "发电报",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01009249"
+          ],
+          "reason": "传送电报消息，与银行电汇对象不同；是否需要后学由人工决定。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "金属丝",
+          "semantic_roles": "材料丝体",
+          "evidence_ids": [
+            "wn31:n:04601545"
+          ],
+          "layer": "core_meanings",
+          "display_group": "金属丝；电线",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "金属细丝，可用于固定、围栏等。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "电线",
+          "semantic_roles": "导电线路",
+          "evidence_ids": [
+            "wn31:n:04601816"
+          ],
+          "layer": "core_meanings",
+          "display_group": "金属丝；电线",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "跨距离传导电流的金属导体。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "接线；装设线路",
+          "semantic_roles": "安装者—房屋/设备—电路",
+          "evidence_ids": [
+            "wn31:v:02359532"
+          ],
+          "layer": "core_meanings",
+          "display_group": "接线；装设线路",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "给房屋等安装电路，受事是装线路的对象。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "电汇（款项）",
+          "semantic_roles": "汇款人—款项—收款方",
+          "evidence_ids": [
+            "pub:wire"
+          ],
+          "layer": "core_meanings",
+          "display_group": "电汇（款项）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "给人或某地电汇款项；publisher独立支持，WordNet发电报义不能单独证明汇款。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "电报",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06635216"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "通信方式名词，不同于实体电线。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "发电报",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01009249"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "传送电报消息，与银行电汇对象不同；是否需要后学由人工决定。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:06635216",
+            "wn31:v:01009249"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先保留材料/线路、接电路与转账三种原文功能；汇款用专门出版社证据而不借发电报同形义。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:wire",
+          "headword": "wire",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/wire",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词金属丝、电线，动词装接线路；另有给人或某地电汇款项的动词，WordNet的发电报义不能单独冒充已证明银行汇款。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:04601545",
+          "part_of_speech": "n",
+          "definition_en": "ligament made of metal and used to fasten things or make cages or fences etc",
+          "lemmas": [
+            "wire"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04601816",
+          "part_of_speech": "n",
+          "definition_en": "a metal conductor that carries electricity over a distance",
+          "lemmas": [
+            "wire",
+            "conducting_wire"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06635216",
+          "part_of_speech": "n",
+          "definition_en": "a message transmitted by telegraph",
+          "lemmas": [
+            "telegram",
+            "wire"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01009249",
+          "part_of_speech": "v",
+          "definition_en": "send cables, wires, or telegrams",
+          "lemmas": [
+            "cable",
+            "telegraph",
+            "wire"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02359532",
+          "part_of_speech": "v",
+          "definition_en": "provide with electrical circuits; \"wire the addition to the house\"",
+          "lemmas": [
+            "wire"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-2958d416d08a",
+      "headword": "object",
+      "source_hash": "96ec074f7ce4556353244822825fba9caaf6d012dd7678bb4e46e831cf0c1f68",
+      "original_meaning_zh": "物体；物品",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "物体",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "物品",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "物体；物品",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00002684"
+          ],
+          "usage_note": "有形可见的实体，两段近义中文可同组，不据两片段虚构两个英语义。",
+          "semantic_roles": "有形实体"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "反对；提出异议",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00809123",
+            "wn31:v:02759740"
+          ],
+          "reason": "常用object to，表达不赞成；原词性仅名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "对象",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05818974"
+          ],
+          "reason": "思想、感情所指向的人或事物，不限有形物品。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "目的；目标",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05990115"
+          ],
+          "reason": "意图实现的目标，与有形物体不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（语法）宾语",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06321227"
+          ],
+          "reason": "受动词作用的句法成分，属语法专门用途。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（计算机）对象",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06142175"
+          ],
+          "reason": "程序中含数据和操作的离散实体，须保留技术范围。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "物体；物品",
+          "semantic_roles": "有形实体",
+          "evidence_ids": [
+            "wn31:n:00002684"
+          ],
+          "layer": "core_meanings",
+          "display_group": "物体；物品",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "有形可见的实体，两段近义中文可同组，不据两片段虚构两个英语义。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "反对；提出异议",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00809123",
+            "wn31:v:02759740"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "常用object to，表达不赞成；原词性仅名词。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "对象",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:05818974"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "思想、感情所指向的人或事物，不限有形物品。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "目的；目标",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:05990115"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "意图实现的目标，与有形物体不同。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（语法）宾语",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06321227"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "受动词作用的句法成分，属语法专门用途。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（计算机）对象",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06142175"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "程序中含数据和操作的离散实体，须保留技术范围。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:05818974",
+            "wn31:n:05990115",
+            "wn31:n:06142175",
+            "wn31:n:06321227",
+            "wn31:v:00809123",
+            "wn31:v:02759740"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "来源中的两个中文是实体义近义提示；反对、目的及抽象对象均有独立语义价值但只能单列待采用候选。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00002684",
+          "part_of_speech": "n",
+          "definition_en": "a tangible and visible entity; an entity that can cast a shadow; \"it was full of rackets, balls and other objects\"",
+          "lemmas": [
+            "object",
+            "physical_object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05818974",
+          "part_of_speech": "n",
+          "definition_en": "the focus of cognitions or feelings; \"objects of thought\"; \"the object of my affection\"",
+          "lemmas": [
+            "object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05990115",
+          "part_of_speech": "n",
+          "definition_en": "the goal intended to be attained (and which is believed to be attainable); \"the sole object of her trip was to see her children\"",
+          "lemmas": [
+            "aim",
+            "object",
+            "objective",
+            "target"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06142175",
+          "part_of_speech": "n",
+          "definition_en": "(computing) a discrete item that provides a description of virtually anything known to a computer; \"in object-oriented programming, objects include data and define its status, its methods of operation and how it interacts with other objects\"",
+          "lemmas": [
+            "object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06321227",
+          "part_of_speech": "n",
+          "definition_en": "(grammar) a constituent that is acted upon; \"the object of the verb\"",
+          "lemmas": [
+            "object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00809123",
+          "part_of_speech": "v",
+          "definition_en": "express or raise an objection or protest or criticism or express dissent; \"She never objected to the amount of work her boss charged her with\"; \"When asked to drive the truck, she objected that she did not have a driver's license\"",
+          "lemmas": [
+            "object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02759740",
+          "part_of_speech": "v",
+          "definition_en": "be averse to or express disapproval of; \"My wife objects to modern furniture\"",
+          "lemmas": [
+            "object"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-9d96e17fd46e",
+      "headword": "clause",
+      "source_hash": "39954a64e8f0654553987a8a62beae07824b8fe699164aa3ae304ac0237e8aca",
+      "original_meaning_zh": "从句；条款",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "从句",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "条款",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "条款",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06404578"
+          ],
+          "usage_note": "合同、法律、遗嘱等文件的独立一项。",
+          "semantic_roles": "法律/正式文件分项"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [
+        {
+          "source_sense_id": "s001",
+          "text": "从句",
+          "reason": "Collins同时列main/independent与subordinate clause；仅译“从句”会把clause缩窄为其一类。WordNet片段兼容复句内成分，但不足以证明所有clause都是从句。原片段保留，待原文修订决定。",
+          "evidence_ids": [
+            "pub:B:clause",
+            "wn31:n:06325134"
+          ]
+        }
+      ],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（语法）分句（可独立或从属）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:clause"
+          ],
+          "reason": "出版社覆盖主句/独立分句和从句；这是原文范围修正候选，不自动采用或升为核心。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "条款",
+          "semantic_roles": "法律/正式文件分项",
+          "evidence_ids": [
+            "wn31:n:06404578"
+          ],
+          "layer": "core_meanings",
+          "display_group": "条款",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "合同、法律、遗嘱等文件的独立一项。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "从句",
+          "semantic_roles": "原文释义范围待核实",
+          "evidence_ids": [
+            "pub:B:clause",
+            "wn31:n:06325134"
+          ],
+          "layer": "reserved_original_items",
+          "evidence_relation": "未作已确认义采用",
+          "boundary": "Collins同时列main/independent与subordinate clause；仅译“从句”会把clause缩窄为其一类。WordNet片段兼容复句内成分，但不足以证明所有clause都是从句。原片段保留，待原文修订决定。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（语法）分句（可独立或从属）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:clause"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "出版社覆盖主句/独立分句和从句；这是原文范围修正候选，不自动采用或升为核心。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "Major",
+          "observation": "源片段“从句”只覆盖clause的从属类型，漏主句/独立分句；是源释义范围问题，不是对未知生成结果的判定。",
+          "evidence": [
+            "pub:B:clause",
+            "wn31:n:06325134"
+          ],
+          "source_only": true
+        },
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:B:clause"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "条款证据直接。语法项需要先处理“从句”过窄的问题，保留源片段并明确候选，不把尚未采用的广义翻译伪装成原文已修复。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "是否正式将语法译义修订为“分句”，需人工审定；当前原片段未改。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:B:clause",
+          "headword": "clause",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/clause",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "语法义涵盖含动词的分句；并列main、subordinate及independent clause，可构成完整简单句。因此单译从句会缩窄范围。另有法律文件中的条款。仅保存原创概述。",
+          "pos_supported": [
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:06325134",
+          "part_of_speech": "n",
+          "definition_en": "(grammar) an expression including a subject and predicate functioning as a part of a complex sentence",
+          "lemmas": [
+            "clause"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06404578",
+          "part_of_speech": "n",
+          "definition_en": "a separate section of a legal document (as a statute or contract or will)",
+          "lemmas": [
+            "article",
+            "clause"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-70ce871f8a3d",
+      "headword": "record",
+      "source_hash": "17075de1ef81642127a94eeead7676a2631c8dd8813822671cb8ac6842fde14d",
+      "original_meaning_zh": "名词：记录，唱片；动词：记录，录制",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "记录",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "唱片",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "记录",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "录制",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "记录；资料",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06649049",
+            "wn31:n:06659969",
+            "wn31:n:13424816"
+          ],
+          "usage_note": "已知事实的汇编或留存的信息/证据；不把最佳成绩自动归入此提示。",
+          "semantic_roles": "信息及持久证据"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "记录；记下",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:01002259"
+          ],
+          "usage_note": "把事实等以持久形式写下/留下，动作与记录名词分开。",
+          "semantic_roles": "记录者—信息"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "录制",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:01000444"
+          ],
+          "usage_note": "通过电子方式录下声音等；与一般记事动作边界明确。",
+          "semantic_roles": "录制者—声音/表演"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "唱片",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:03930191"
+          ],
+          "usage_note": "有沟槽、借唱针播放的声音唱片；这里不泛指任何数字录音。",
+          "semantic_roles": "声音载体"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "纪录（最佳成绩）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00063834"
+          ],
+          "reason": "已证实的极端/最佳表现，原“记录”没有明确写出成绩含义。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "业绩；过往表现",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00048486",
+            "wn31:n:13618229"
+          ],
+          "reason": "成就总和或胜负表现，用于评价而非单纯文件。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "犯罪记录；前科",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06502164"
+          ],
+          "reason": "司法范围的定罪记录，是否合并进一般记录需保留对象限制。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "记录；资料",
+          "semantic_roles": "信息及持久证据",
+          "evidence_ids": [
+            "wn31:n:06649049",
+            "wn31:n:06659969",
+            "wn31:n:13424816"
+          ],
+          "layer": "core_meanings",
+          "display_group": "记录；资料",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "已知事实的汇编或留存的信息/证据；不把最佳成绩自动归入此提示。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "记录；记下",
+          "semantic_roles": "记录者—信息",
+          "evidence_ids": [
+            "wn31:v:01002259"
+          ],
+          "layer": "core_meanings",
+          "display_group": "记录；记下",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "把事实等以持久形式写下/留下，动作与记录名词分开。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "录制",
+          "semantic_roles": "录制者—声音/表演",
+          "evidence_ids": [
+            "wn31:v:01000444"
+          ],
+          "layer": "core_meanings",
+          "display_group": "录制",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "通过电子方式录下声音等；与一般记事动作边界明确。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "唱片",
+          "semantic_roles": "声音载体",
+          "evidence_ids": [
+            "wn31:n:03930191"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "唱片",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "有沟槽、借唱针播放的声音唱片；这里不泛指任何数字录音。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "纪录（最佳成绩）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00063834"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "已证实的极端/最佳表现，原“记录”没有明确写出成绩含义。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "业绩；过往表现",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00048486",
+            "wn31:n:13618229"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "成就总和或胜负表现，用于评价而非单纯文件。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "犯罪记录；前科",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06502164"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "司法范围的定罪记录，是否合并进一般记录需保留对象限制。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:00048486",
+            "wn31:n:00063834",
+            "wn31:n:06502164",
+            "wn31:n:13618229"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先记信息名词与两类记录动作，唱片后学仅是教学安排，不声称它低频；最佳成绩与业绩等独立理解仍显式待采用。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00048486",
+          "part_of_speech": "n",
+          "definition_en": "the sum of recognized accomplishments; \"the lawyer has a good record\"; \"the track record shows that he will be a good president\"",
+          "lemmas": [
+            "record",
+            "track_record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00063834",
+          "part_of_speech": "n",
+          "definition_en": "an extreme attainment; the best (or worst) performance ever attested (as in a sport); \"he tied the Olympic record\"; \"coffee production last year broke all previous records\"; \"Chicago set the homicide record\"",
+          "lemmas": [
+            "record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:03930191",
+          "part_of_speech": "n",
+          "definition_en": "sound recording consisting of a disk with a continuous groove; used to reproduce music by rotating while a phonograph needle tracks in the groove",
+          "lemmas": [
+            "phonograph_record",
+            "phonograph_recording",
+            "record",
+            "disk",
+            "disc",
+            "platter"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06502164",
+          "part_of_speech": "n",
+          "definition_en": "a list of crimes for which an accused person has been previously convicted; \"he ruled that the criminal record of the defendant could not be disclosed to the court\"; \"the prostitute had a record a mile long\"",
+          "lemmas": [
+            "criminal_record",
+            "record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06649049",
+          "part_of_speech": "n",
+          "definition_en": "a compilation of the known facts regarding something or someone; \"Al Smith used to say, `Let's look at the record'\"; \"his name is in all the record books\"",
+          "lemmas": [
+            "record",
+            "record_book",
+            "book"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06659969",
+          "part_of_speech": "n",
+          "definition_en": "anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events; \"the film provided a valuable record of stage techniques\"",
+          "lemmas": [
+            "record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13424816",
+          "part_of_speech": "n",
+          "definition_en": "a document that can serve as legal evidence of a transaction; \"they could find no record of the purchase\"",
+          "lemmas": [
+            "record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13618229",
+          "part_of_speech": "n",
+          "definition_en": "the number of wins versus losses and ties a team has had; \"at 9-0 they have the best record in their league\"",
+          "lemmas": [
+            "record"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01000444",
+          "part_of_speech": "v",
+          "definition_en": "register electronically; \"They recorded her singing\"",
+          "lemmas": [
+            "record",
+            "tape"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01002259",
+          "part_of_speech": "v",
+          "definition_en": "make a record of; set down in permanent form",
+          "lemmas": [
+            "record",
+            "enter",
+            "put_down"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "external_access_failures": [
+    {
+      "headword": "clause",
+      "url": "https://dictionary.cambridge.org/dictionary/english/clause",
+      "status": 403,
+      "observation": "web open returned 403 Forbidden; no content used."
+    }
+  ]
+}

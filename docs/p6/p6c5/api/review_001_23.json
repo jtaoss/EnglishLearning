@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_23",
+  "request_hash": "849be31320a78bfa733f738f19cbcbe64aabbf9aaa0dd4e0bd6603250761f5ed",
+  "started_utc": "2026-11-13T08:16:13.568732+00:00",
+  "completed_utc": "2026-11-13T08:17:29.561563+00:00",
+  "elapsed_seconds": 75.984,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "792a2880-2f87-42c6-9e13-34df264b7d6f",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3508,
+    "completion_tokens": 3889,
+    "total_tokens": 7397,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3499
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3508
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-74e892c91130\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"evidence_alignment\",\n          \"reason\": \"核心义 3 使用证据 wn31:v:02123398，该证据定义偏向‘仔细观察/注意’，但原片段‘注意到’通常还包含‘察觉/发现’义，现有证据未完全覆盖这一侧面。候选释义‘注意到；留意到’本身可接受，但建议补充更精确的证据。\",\n          \"evidence_ids\": [\n            \"wn31:v:02123398\",\n            \"wn31:v:02158938\"\n          ],\n          \"source_sense_ids\": [\n            \"s003\"\n          ],\n          \"candidate_group_ref\": \"SG25-74e892c91130:p6c5:core_meanings:3\",\n          \"proposed_fix\": \"在 s003 的证据列表中加入 wn31:v:02158938（discover or determine the existence...），或调整 usage_note 明确包含‘察觉/发现’义。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学上可补充例句区分‘注意到’的‘注意/留意’与‘察觉/发现’两种读法，但无需拆分核心组。\",\n        \"保持外部候选‘指出；评论说’和‘奉行；庆祝’不提升为核心，符合原文范围。\"\n      ],\n      \"note\": \"三个源片段均为动词，候选分别对应且词性正确，无跨义合并或重要外部义擅自提升。核心义 3 的证据选择略有侧重，但不构成翻译错误，仅作为教学精化建议。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

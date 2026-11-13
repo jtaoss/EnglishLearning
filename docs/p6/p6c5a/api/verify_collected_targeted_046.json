@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_046",
+  "kind": "verify",
+  "request_hash": "b608443f50ee0282bf8bde24f1f0c8143c01ec62bffe4b8577e110a4b8b5ea67",
+  "input_ids": [
+    "SG25-6b428ace0262",
+    "SG25-c7ce66d0fb14"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "84ae4a8e-2f9c-4b82-bb5c-53d1d764f1ba",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6b428ace0262\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"保持（维持状态、性质、特征不消失）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心1以02415305的maintain property/feature覆盖‘保持’，示例镇静、衣物形状为状态/特征；未增加无来源排他限制。\",\n          \"evidence_ids\": [\"wn31:v:02415305\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"保留（继续拥有/留住/不交出；也可指记住信息）\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心2将‘保留’限定为‘以备后用’；扩展仅补记忆。一般‘继续拥有/留住（人员、律师等）’未覆盖，而02415305支持该用法；故相对源‘保留’有剩余范围。\",\n          \"evidence_ids\": [\"wn31:v:02288169\", \"wn31:v:00611564\", \"wn31:v:02415305\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"source_scope\": \"容纳（容量/接纳）\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"现有02707488为hold back within（留住/拦住），不是容量/接纳；held暂存合理，需教材语境或可靠词典义核对。\",\n          \"evidence_ids\": [\"wn31:v:02707488\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\n            \"SG25-6b428ace0262:p6c5:core_meanings:2\",\n            \"SG25-6b428ace0262:p6c5:extended_meanings:1\"\n          ],\n          \"evidence_ids\": [\"wn31:v:02415305\"],\n          \"reason\": \"s002源‘保留’可表示继续拥有/留住；核心2将‘保留’限定为以备后用，扩展仅记忆，未保留一般继续拥有/留住（如retain a lawyer/staff）的用法。\",\n          \"counterexample\": \"retain a lawyer/staff 表示继续留用/拥有，不限于备后用或记忆。\",\n          \"counterexample_evidence_ids\": [\"wn31:v:02415305\"],\n          \"repair_suggestion\": \"在核心2注释中说明‘以备后用’为示例而非排他，或另设‘继续拥有/留住（人员/服务）’分支并标注证据02415305。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003‘容纳’与现有证据 hold back within 方向不一致；需教材原文语境或可靠词典义‘容纳/容量/接纳’进一步核对，判断retain是否误收此义。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"整体：s001保持已覆盖；s002有轻微剩余范围；s003暂存待核。未发现跨词性错误或严重核心丢失。\"\n    },\n    {\n      \"id\": \"SG25-c7ce66d0fb14\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"尝试（名词/动词，中性努力做某事）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选名词core1以00787849、动词core2以02535833覆盖‘尝试’作为名词和动词的中性努力；词性未定但按保留两组，不按位置硬配。\",\n          \"evidence_ids\": [\"wn31:n:00787849\", \"wn31:v:02535833\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"企图（名词/动词，可带负面意图的尝试）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选名词/动词组都包含‘企图’并在注释说明其负面语用；英语attempt本身中性未丢失。\",\n          \"evidence_ids\": [\"wn31:n:00787849\", \"wn31:v:02535833\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"未发现语义覆盖缺口；‘企图’负面语用已说明；unadopted attack attempt 未采用正确。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4166,
+    "completion_tokens": 6757,
+    "total_tokens": 10923,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5759
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2502
+  },
+  "started_utc": "2026-11-13T09:58:44.416677+00:00",
+  "completed_utc": "2026-11-13T10:00:14.936619+00:00",
+  "elapsed_seconds": 90.516,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

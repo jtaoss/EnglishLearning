@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_29",
+  "request_hash": "c2ac7ba8c9ccd4058bdecdf1941b8020ee6e2b4eb115705fc0705859a69598f9",
+  "started_utc": "2026-11-13T08:16:13.831768+00:00",
+  "completed_utc": "2026-11-13T08:17:53.895445+00:00",
+  "elapsed_seconds": 100.063,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4fa678bf-5736-4fe2-9b74-854d54e58cbe",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3054,
+    "completion_tokens": 5362,
+    "total_tokens": 8416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4770
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3054
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-8698fb89e125\",\n      \"independent_core\": [],\n      \"verdict\": \"evidence_pending\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Source sense s003 '意义' in Chinese can denote both 'meaning' and 'significance/importance'. Candidate core group 1 maps s003 only to the meaning sense (wn31:n:06613680), while the importance sense (wn31:n:05177340) is listed as a dictionary addition with source_sense_ids=[], asserting that the source does not express that meaning. This is an unresolved source-scope question: if s003 was intended to cover importance, the addition should be tied to s003 or placed in reserved; if not, the current separation is correct.\",\n          \"evidence_ids\": [\"wn31:n:05177340\"],\n          \"source_sense_ids\": [\"s003\"],\n          \"candidate_group_ref\": \"SG25-8698fb89e125:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"Either assign source_sense_ids [\\\"s003\\\"] to the dictionary addition with a note that it is a potential sense of 意义, or explicitly mark s003 as having an unresolved secondary sense and keep the addition external with a note that source ambiguity is under review.\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unsupported_prioritization\",\n          \"reason\": \"The selection reason states that the importance sense is '英语更常见' without providing frequency evidence. This should be marked as an AI teaching suggestion, not a measured frequency claim.\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": \"SG25-8698fb89e125:p6c5:dictionary_additions:1\",\n          \"proposed_fix\": \"Reword to indicate that the importance sense may be common in usage, but this is a pedagogical suggestion pending corpus evidence, or provide frequency data if available.\"\n        }\n      ],\n      \"preferences\": [\n        \"Consider adding the importance sense to core or extended for learners, as it is a frequent meaning in English; this is a teaching suggestion.\",\n        \"Keep the distinction between 'meaning' and 'implied meaning' as separate core groups; they are pedagogically clear.\"\n      ],\n      \"note\": \"The candidate's core groups are semantically accurate for the senses they cover. The main issue is the handling of the importance sense: it is not tied to source sense s003 despite '意义' potentially carrying that meaning, and the frequency assertion lacks evidence. This is not a confirmed error but requires evidence resolution.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,62 @@
+{
+  "date_asia_shanghai": "2026-11-13",
+  "final_status": "PASS",
+  "checks": [
+    {
+      "command": "python -X utf8 scripts/p6c2/validate.py",
+      "exit_code": 0,
+      "records": 500,
+      "preserved_original_fragments": 1216,
+      "human_approved": 0
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s scripts/p6c2 -p test_contract.py",
+      "exit_code": 0,
+      "passed": 13,
+      "scope": "New data corruption, original-100 preservation and candidate/publication policy regressions"
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s scripts/p6c1 -p test_review.py",
+      "exit_code": 0,
+      "passed": 13,
+      "scope": "Existing independent-review contracts; no regeneration or database access"
+    },
+    {
+      "command": "flutter test --no-pub test/p6c2/core_meanings_500_contract_test.dart test/p6/core_meanings_pilot_test.dart --reporter compact",
+      "exit_code": 0,
+      "passed": 10,
+      "skipped": 1,
+      "skip_note": "Existing opt-in isolated preview capture test; not counted as passed"
+    },
+    {
+      "command": "flutter test --no-pub test/p6c2/core_meanings_500_contract_test.dart --reporter compact",
+      "exit_code": 0,
+      "passed": 4,
+      "skipped": 0,
+      "scope": "Final new Dart contract after explicit generic type lint correction"
+    },
+    {
+      "command": "dart analyze --fatal-infos",
+      "exit_code": 0,
+      "issues": 0
+    },
+    {
+      "command": "Two offline build.py executions with SHA-256 comparison",
+      "exit_code": 0,
+      "compiler_outputs_byte_identical": 3,
+      "protected_path_states_unchanged": 50
+    }
+  ],
+  "development_corrections": [
+    "Validator initially counted a mapping's values instead of its keys; fixed to count source IDs, then the valid fixture and all corruption tests passed.",
+    "Three strict raw generic List warnings in the new Dart test were corrected; final analysis has no issues."
+  ],
+  "not_executed": [
+    "Independent external model API calls",
+    "Human linguistic sign-off",
+    "Windows Debug/Release rebuild or formal app publication",
+    "Android build or device testing",
+    "Formal Notion or SQLite writes"
+  ],
+  "interpretation": "Contract tests do not measure semantic accuracy, teacher agreement or learning effectiveness. Counts from overlapping test runs must not be summed as distinct tests."
+}

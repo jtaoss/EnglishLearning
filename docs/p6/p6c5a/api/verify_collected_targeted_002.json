@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_002",
+  "kind": "verify",
+  "request_hash": "051e53f0b0bb389dca5d4b71d30172228c71d82a46fb84fab3897a058598c203",
+  "input_ids": [
+    "SG25-fa4824e83746",
+    "SG25-29a8825bd242"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "bf47ead2-e381-421e-841b-0b5e99579fc9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-fa4824e83746\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心层“偏见”对应 WordNet n06211643“a partiality that prevents objective consideration”，覆盖名词偏见义。\",\n          \"evidence_ids\": [\"wn31:n:06211643\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原始“偏差”未限定领域，扩展层明确限为数据/方法系统性偏向；现有证据仅有 web:bias 观察且自述非独立频率证据，无法确定原义一般偏差是否被完整覆盖或应当收窄。\",\n          \"evidence_ids\": [\"web:bias\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展层“使产生偏见”对应 WordNet v00682265“cause to be biased”，直接覆盖使动用法。\",\n          \"evidence_ids\": [\"wn31:v:00682265\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002 原始“偏差”范围不明：是否涵盖一般偏差/偏离、非数据非方法场景尚未确定；扩展层仅覆盖数据/方法系统性偏向，web:bias 为既有出版观察且非独立频率证据，无法确认该限定是否完整或排除。\",\n        \"s002 是否需纳入 WordNet n13927170 布料斜裁义？原中文未显示，暂不视为来源范围缺陷。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 偏见由核心层覆盖；s003 使产生偏见由扩展层覆盖；s002 偏差因证据不足且范围收窄，列为待核，未确认生成器缺陷。\"\n    },\n    {\n      \"id\": \"SG25-29a8825bd242\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心层“简短的”以 concise/succinct（wn31:s:00549386）与 short duration/distance（wn31:s:01445717）两义覆盖形容词用法，符合原文。\",\n          \"evidence_ids\": [\"wn31:s:00549386\", \"wn31:s:01445717\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展层“概要”对应 WordNet n06480311“a condensed written summary or abstract”，直接覆盖名词义。\",\n          \"evidence_ids\": [\"wn31:n:06480311\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展层“向……介绍情况”对应 WordNet v00832934“give essential information to someone”，覆盖动词义。\",\n          \"evidence_ids\": [\"wn31:v:00832934\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"所有原始义项在提供的各层中均有覆盖，未发现证据范围内的确认缺陷。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3997,
+    "completion_tokens": 5273,
+    "total_tokens": 9270,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4547
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2333
+  },
+  "started_utc": "2026-11-13T09:56:48.577972+00:00",
+  "completed_utc": "2026-11-13T09:57:59.802110+00:00",
+  "elapsed_seconds": 71.219,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

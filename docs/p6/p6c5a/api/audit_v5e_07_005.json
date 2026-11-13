@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_005",
+  "kind": "audit",
+  "request_hash": "37d2e811642a3579a4816fde8a832d56ec5b0e185849db4c0beaa2638159f77e",
+  "input_ids": [
+    "SG25-7062520c5a0e",
+    "SG25-0a5a9bb73d93",
+    "SG25-116f54c41d04",
+    "SG25-7a6c4fac6c5c",
+    "SG25-c5052532c220"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "1e49dda1-0162-4e53-b3f2-33204b4e10a2",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7062520c5a0e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：驾驶（操控车辆）\",\"relation\":\"语义等价\",\"reason\":\"核心组“驾驶（车辆）”与wn31:v:01934845的“operate or control a vehicle”对应；来源的“驾驶”本身即指操控车辆，未添加无来源对象限制。\",\"evidence_ids\":[\"wn31:v:01934845\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：驱动（提供动力使运转）\",\"relation\":\"语义等价\",\"reason\":\"核心组“驱动；使运作”对应wn31:v:01184038“cause to function by supplying the force or power for or by controlling”，保留来源的驱动/使运作范围。\",\"evidence_ids\":[\"wn31:v:01184038\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：驱动力（促使人行动的内在动力）\",\"relation\":\"语义等价\",\"reason\":\"核心组“驱动力；内在动力”以wn31:n:04842955“the trait of being highly motivated”对应来源的内在动力用法；机械装置另列于s004，不与人的动力混同。\",\"evidence_ids\":[\"wn31:n:04842955\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：驱动器（机械传动或计算机存储装置）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“驱动器（机械传动或计算机存储设备）”由wn31:n:03247698机械传动装置与wn31:n:03247921计算机存储设备两条证据支持，保留来源的装置义。\",\"evidence_ids\":[\"wn31:n:03247698\",\"wn31:n:03247921\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个源义分别由核心“驾驶”“驱动”“驱动力/内在动力”和扩展“驱动器”覆盖；车辆、机械动力、人的动力与装置对象区分清楚，未发现来源支持范围丢失。\"},{\"id\":\"SG25-0a5a9bb73d93\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：家具\",\"relation\":\"语义等价\",\"reason\":\"唯一核心组“家具”与wn31:n:03410635“furnishings that make a room or other area ready for occupancy”直接对应，未添加无来源限制。\",\"evidence_ids\":[\"wn31:n:03410635\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义“家具”与唯一词典证据完全对应；不把房间内各类家具拆成独立词义，覆盖完整。\"},{\"id\":\"SG25-116f54c41d04\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：火车（铁路交通工具）\",\"relation\":\"语义等价\",\"reason\":\"核心组“火车”与wn31:n:04475240“public transport provided by a line of railway cars”对应，来源词性与对象一致。\",\"evidence_ids\":[\"wn31:n:04475240\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：训练（训练他人或自身接受训练）\",\"relation\":\"合理概括\",\"reason\":\"核心组“训练他人；接受训练”合并wn31:v:00604693“create by training and teaching”与wn31:v:00604200“undergo training or instruction”，二者同属训练框架且保留施受方向，属合理概括。\",\"evidence_ids\":[\"wn31:v:00604693\",\"wn31:v:00604200\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“火车”与动词“训练”分列；训练核心组同时覆盖训练他人与自身受训两个方向，来源范围保留完整。\"},{\"id\":\"SG25-7a6c4fac6c5c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"词性未定：走/步行（可能为动词或名词）\",\"relation\":\"合理概括\",\"reason\":\"动词组以wn31:v:01908923覆盖“走/步行”，名词组以wn31:n:00284412覆盖步行动作；联合覆盖了两种可能词性，但源义项词性本身仍为null，不能确认固定词性。\",\"evidence_ids\":[\"wn31:v:01908923\",\"wn31:n:00284412\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；无法确认“走”应固定为动词还是名词\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"词性未定：散步（可能为动词或一次步行）\",\"relation\":\"合理概括\",\"reason\":\"动词组以wn31:v:01886163覆盖“walk for pleasure/散步”，名词组以wn31:n:00285642覆盖“一次散步”；联合覆盖两种可能用法，但源词性未定。\",\"evidence_ids\":[\"wn31:v:01886163\",\"wn31:n:00285642\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；散步的动词与名词边界未被原文锁定\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-7a6c4fac6c5c:p6c4:core_meanings:1\",\"SG25-7a6c4fac6c5c:p6c4:core_meanings:2\"],\"evidence_ids\":[],\"reason\":\"两个源义项的part_of_speech均为null且标记为unresolved_multi_pos；候选以动词组和名词组同时覆盖，虽可能覆盖两种词性，但不能据此视为源词性已核验。\",\"repair_suggestion\":\"保留动词/名词双组覆盖，同时在源义项上明确标注词性待核；待教材语境或可靠原文确认后再固定每个源义的词性，不要静默将null转为已知标签。\"}],\"note\":\"源义项词性未定；候选以动词“走/步行/散步”和名词“步行/一次散步”同时覆盖，可能完整但词性对应待核，故整体标为不确定。\"},{\"id\":\"SG25-c5052532c220\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：床（睡眠家具）\",\"relation\":\"语义等价\",\"reason\":\"核心组“床”与wn31:n:02821967“a piece of furniture that provides a place to sleep”直接对应；花坛、河床等未纳入来源层，符合来源仅列常用义。\",\"evidence_ids\":[\"wn31:n:02821967\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义“床”由核心组和唯一对应词典义完整覆盖；外部候选花坛、河床等未冒充来源义，未发现覆盖缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 10461,
+    "completion_tokens": 10096,
+    "total_tokens": 20557,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8338
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 8541
+  },
+  "started_utc": "2026-11-13T09:53:07.762351+00:00",
+  "completed_utc": "2026-11-13T09:54:04.246495+00:00",
+  "elapsed_seconds": 56.485,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

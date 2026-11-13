@@ -1,0 +1,4425 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewer": "B",
+  "part": 4,
+  "count": 10,
+  "records": [
+    {
+      "stable_id": "SG25-7a6c4fac6c5c",
+      "headword": "walk",
+      "source_hash": "5667a5d4cca33a4a8e69ff8afd5eed0222f9902f1aa27d1b4415669920ad85d0",
+      "original_meaning_zh": "走；散步",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "走",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "散步",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 2,
+          "end": 4
+        }
+      ],
+      "source_part_of_speech": "动词；名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "走；步行",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01908923"
+          ],
+          "usage_note": "用双脚向前移动；不直接包含使别人行走的使动方向。",
+          "semantic_roles": "步行者自身移动"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "散步",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01886163"
+          ],
+          "usage_note": "为乐趣或放松而步行，目的比一般走更具体。",
+          "semantic_roles": "散步者自身活动"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "步行；散步",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00284412",
+            "wn31:n:00285642"
+          ],
+          "usage_note": "行走活动或一次散步，名词功能由定义证明。",
+          "semantic_roles": "步行活动",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "步行（活动）",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:00284412"
+              ],
+              "usage_note": "traveling by foot这一活动；原逐义词性仍未知。",
+              "semantic_roles": "步行活动"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "一次散步",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:00285642"
+              ],
+              "usage_note": "take a walk中的一次步行/散步。",
+              "semantic_roles": "一次散步活动"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "遛（狗等）；使…行走",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01910816"
+          ],
+          "reason": "人促使动物等走，施动与自身步行不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "陪…走；步行送…",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01911069"
+          ],
+          "reason": "陪同/护送某人至车旁等，有被陪同者。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "步态",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05010255"
+          ],
+          "reason": "走路的方式，不是一次散步。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "步行道",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:04552265"
+          ],
+          "reason": "专供步行的路径，实体与步行活动不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "走；步行",
+          "semantic_roles": "步行者自身移动",
+          "evidence_ids": [
+            "wn31:v:01908923"
+          ],
+          "layer": "core_meanings",
+          "display_group": "走；步行",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "用双脚向前移动；不直接包含使别人行走的使动方向。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "散步",
+          "semantic_roles": "散步者自身活动",
+          "evidence_ids": [
+            "wn31:v:01886163"
+          ],
+          "layer": "core_meanings",
+          "display_group": "散步",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "为乐趣或放松而步行，目的比一般走更具体。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "步行（活动）",
+          "semantic_roles": "步行活动",
+          "evidence_ids": [
+            "wn31:n:00284412"
+          ],
+          "layer": "core_meanings",
+          "display_group": "步行；散步",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "traveling by foot这一活动；原逐义词性仍未知。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "一次散步",
+          "semantic_roles": "一次散步活动",
+          "evidence_ids": [
+            "wn31:n:00285642"
+          ],
+          "layer": "core_meanings",
+          "display_group": "步行；散步",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "take a walk中的一次步行/散步。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "遛（狗等）；使…行走",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01910816"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "人促使动物等走，施动与自身步行不同。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "陪…走；步行送…",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01911069"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "陪同/护送某人至车旁等，有被陪同者。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "步态",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:05010255"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "走路的方式，不是一次散步。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "步行道",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:04552265"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "专供步行的路径，实体与步行活动不同。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "走",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "动词",
+              "display_zh": "走；步行",
+              "evidence_ids": [
+                "wn31:v:01908923"
+              ],
+              "explanation": "用双脚向前移动；不直接包含使别人行走的使动方向。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "步行（活动）",
+              "evidence_ids": [
+                "wn31:n:00284412"
+              ],
+              "explanation": "traveling by foot这一活动；原逐义词性仍未知。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "original_text": "散步",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "散步",
+              "evidence_ids": [
+                "wn31:v:01886163"
+              ],
+              "explanation": "为乐趣或放松而步行，目的比一般走更具体。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "名词",
+              "display_zh": "一次散步",
+              "evidence_ids": [
+                "wn31:n:00285642"
+              ],
+              "explanation": "take a walk中的一次步行/散步。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:04552265",
+            "wn31:n:05010255",
+            "wn31:v:01910816",
+            "wn31:v:01911069"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "一般走、休闲散步和名词活动在三组内分别保留；没有根据源片段先后把走分配动词、散步分配名词。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00284412",
+          "part_of_speech": "n",
+          "definition_en": "the act of traveling by foot; \"walking is a healthy form of exercise\"",
+          "lemmas": [
+            "walk",
+            "walking"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00285642",
+          "part_of_speech": "n",
+          "definition_en": "the act of walking somewhere; \"he took a walk after lunch\"",
+          "lemmas": [
+            "walk"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04552265",
+          "part_of_speech": "n",
+          "definition_en": "a path set aside for walking; \"after the blizzard he shoveled the front walk\"",
+          "lemmas": [
+            "walk",
+            "walkway",
+            "paseo"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05010255",
+          "part_of_speech": "n",
+          "definition_en": "manner of walking; \"he had a funny walk\"",
+          "lemmas": [
+            "walk",
+            "manner_of_walking"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01886163",
+          "part_of_speech": "v",
+          "definition_en": "take a walk; go for a walk; walk for pleasure; \"The lovers held hands while walking\"; \"We like to walk every Sunday\"",
+          "lemmas": [
+            "walk",
+            "take_the_air"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01908923",
+          "part_of_speech": "v",
+          "definition_en": "use one's feet to advance; advance by steps; \"Walk, don't run!\"; \"We walked instead of driving\"; \"She walks with a slight limp\"; \"The patient cannot walk yet\"; \"Walk over to the cabinet\"",
+          "lemmas": [
+            "walk"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01910816",
+          "part_of_speech": "v",
+          "definition_en": "make walk; \"He walks the horse up the mountain\"; \"Walk the dog twice a day\"",
+          "lemmas": [
+            "walk"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01911069",
+          "part_of_speech": "v",
+          "definition_en": "accompany or escort; \"I'll walk you to your car\"",
+          "lemmas": [
+            "walk"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-6fa599fe7b02",
+      "headword": "candle",
+      "source_hash": "e594e6c194f206e040ad1f601865939cddcae0c39f6ef79f62707121e8f852d5",
+      "original_meaning_zh": "蜡烛",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "蜡烛",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "蜡烛",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:02951508"
+          ],
+          "usage_note": "中有烛芯的蜡制照明物。",
+          "semantic_roles": "照明实体"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（光度单位）坎德拉",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:13663013"
+          ],
+          "reason": "给定WordNet将其列作发光强度单位；专业计量术语及现代标准需另核，本轮不据旧定义采纳。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "照验（蛋）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02154329"
+          ],
+          "reason": "把蛋对着光以检查新鲜度；专业检查动作，不能由蜡烛实体自动推出。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "蜡烛",
+          "semantic_roles": "照明实体",
+          "evidence_ids": [
+            "wn31:n:02951508"
+          ],
+          "layer": "core_meanings",
+          "display_group": "蜡烛",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "中有烛芯的蜡制照明物。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（光度单位）坎德拉",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:13663013"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "给定WordNet将其列作发光强度单位；专业计量术语及现代标准需另核，本轮不据旧定义采纳。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "照验（蛋）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02154329"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把蛋对着光以检查新鲜度；专业检查动作，不能由蜡烛实体自动推出。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:13663013",
+            "wn31:v:02154329"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "单一明确实体足以首次记忆。给定WordNet还有光度单位和照蛋动词，但它们不能反证源蜡烛的完整性，也无必要强制全部首记。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "WordNet光度单位与照蛋动词等专业用法是否需要项目另行收录，尚未作采用决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:02951508",
+          "part_of_speech": "n",
+          "definition_en": "stick of wax with a wick in the middle",
+          "lemmas": [
+            "candle",
+            "taper",
+            "wax_light"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13663013",
+          "part_of_speech": "n",
+          "definition_en": "the basic unit of luminous intensity adopted under the Systeme International d'Unites; equal to 1/60 of the luminous intensity per square centimeter of a black body radiating at the temperature of 2,046 degrees Kelvin",
+          "lemmas": [
+            "candle",
+            "candela",
+            "cd",
+            "standard_candle"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02154329",
+          "part_of_speech": "v",
+          "definition_en": "examine eggs for freshness by holding them against a light",
+          "lemmas": [
+            "candle"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-8e9c543a5078",
+      "headword": "coke",
+      "source_hash": "11d70f154f40d2afdfec69bdea2ce1656b4ce33bd3d3bbfd2ede00e441729ed4",
+      "original_meaning_zh": "焦炭；可乐（口语）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "焦炭",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "可乐（口语）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 9
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "焦炭",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14709929"
+          ],
+          "usage_note": "煤经干馏得到的碳质燃料，与饮料名词分开。",
+          "semantic_roles": "工业燃料"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "可乐（口语；注意Coke大小写）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:coke"
+          ],
+          "usage_note": "Coke通常为可口可乐商标饮料；出版社美国分词典亦记录泛指可乐时偶用小写c-。保留小写词头，不把小写coke一般化为任意饮料。",
+          "semantic_roles": "饮料/商标范围"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "可卡因（俚语）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:03070747",
+            "pub:coke"
+          ],
+          "reason": "毒品的街头称呼，必须带俚语范围；WordNet这一定义不能作为饮料的证据。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "焦炭",
+          "semantic_roles": "工业燃料",
+          "evidence_ids": [
+            "wn31:n:14709929"
+          ],
+          "layer": "core_meanings",
+          "display_group": "焦炭",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "煤经干馏得到的碳质燃料，与饮料名词分开。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "可乐（口语；注意Coke大小写）",
+          "semantic_roles": "饮料/商标范围",
+          "evidence_ids": [
+            "pub:coke"
+          ],
+          "layer": "core_meanings",
+          "display_group": "可乐（口语；注意Coke大小写）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "Coke通常为可口可乐商标饮料；出版社美国分词典亦记录泛指可乐时偶用小写c-。保留小写词头，不把小写coke一般化为任意饮料。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "可卡因（俚语）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:03070747",
+            "pub:coke"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "毒品的街头称呼，必须带俚语范围；WordNet这一定义不能作为饮料的证据。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_spelling_scope",
+          "severity": "Minor",
+          "observation": "小写词头配“可乐（口语）”需注明Coke商标及美国分词典偶用小写的范围；原文字段不改，不能仅保留“口语”就暗示所有小写用法均是饮料。",
+          "evidence": [
+            "pub:coke"
+          ],
+          "source_only": true
+        },
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:coke",
+            "wn31:n:03070747"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "焦炭与饮料两种实体完全不同，均有独立证据；饮料的大小写与商标范围必须随提示展示，而非凭小写毒品定义推饮料。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:coke",
+          "headword": "coke",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/coke",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "区分小写coke焦炭/毒品俚称与Coke商标饮料；美国英语分词典另标泛指可乐饮料可偶用小写c-。饮料义的大小写与商标范围应注明，不能拿小写焦炭或毒品的WordNet定义证明饮料。",
+          "pos_supported": [
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:03070747",
+          "part_of_speech": "n",
+          "definition_en": "street names for cocaine",
+          "lemmas": [
+            "coke",
+            "blow",
+            "nose_candy",
+            "snow",
+            "C"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14709929",
+          "part_of_speech": "n",
+          "definition_en": "carbon fuel produced by distillation of coal",
+          "lemmas": [
+            "coke"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-dd73a2f7c798",
+      "headword": "gossip",
+      "source_hash": "766a3c3916836e4accc981c2a8b5b84b720ec33deff111c91d243df7438f24eb",
+      "original_meaning_zh": "闲谈；流言",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "闲谈",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "流言",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "闲谈",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07149788"
+          ],
+          "usage_note": "社交场合轻松非正式的交谈活动。",
+          "semantic_roles": "非正式交谈活动"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "闲谈；闲聊",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01040538"
+          ],
+          "usage_note": "主体与他人随意聊天，并不必定造谣。",
+          "semantic_roles": "交谈者—社交交谈"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "流言；闲话",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:07237830"
+          ],
+          "usage_note": "有关别人行为的传闻，常可能带恶意；不把gossip的所有闲聊都判为虚假。",
+          "semantic_roles": "关于他人的传闻内容"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "议论他人私事；传闲话",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01043826"
+          ],
+          "reason": "谈论别人隐私、透露秘密的动词；源“流言”本身是内容名词，不机械转换为传播动作。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "爱传闲话的人",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:10158867"
+          ],
+          "reason": "指人而非交谈活动或流言内容，原文未列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "闲谈",
+          "semantic_roles": "非正式交谈活动",
+          "evidence_ids": [
+            "wn31:n:07149788"
+          ],
+          "layer": "core_meanings",
+          "display_group": "闲谈",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "社交场合轻松非正式的交谈活动。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "闲谈；闲聊",
+          "semantic_roles": "交谈者—社交交谈",
+          "evidence_ids": [
+            "wn31:v:01040538"
+          ],
+          "layer": "core_meanings",
+          "display_group": "闲谈；闲聊",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "主体与他人随意聊天，并不必定造谣。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "流言；闲话",
+          "semantic_roles": "关于他人的传闻内容",
+          "evidence_ids": [
+            "wn31:n:07237830"
+          ],
+          "layer": "core_meanings",
+          "display_group": "流言；闲话",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "有关别人行为的传闻，常可能带恶意；不把gossip的所有闲聊都判为虚假。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "议论他人私事；传闲话",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01043826"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "谈论别人隐私、透露秘密的动词；源“流言”本身是内容名词，不机械转换为传播动作。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "爱传闲话的人",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:10158867"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "指人而非交谈活动或流言内容，原文未列。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "闲谈",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "闲谈",
+              "evidence_ids": [
+                "wn31:n:07149788"
+              ],
+              "explanation": "社交场合轻松非正式的交谈活动。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "闲谈；闲聊",
+              "evidence_ids": [
+                "wn31:v:01040538"
+              ],
+              "explanation": "主体与他人随意聊天，并不必定造谣。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:10158867",
+            "wn31:v:01043826"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "闲谈有名词和动词证据，可一片段两用；流言只按内容名词映射，避免每片中文与每个词性做机械组合。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:07149788",
+          "part_of_speech": "n",
+          "definition_en": "light informal conversation for social occasions",
+          "lemmas": [
+            "chitchat",
+            "chit-chat",
+            "chit_chat",
+            "small_talk",
+            "gab",
+            "gabfest",
+            "gossip",
+            "tittle-tattle",
+            "chin_wag",
+            "chin-wag",
+            "chin_wagging",
+            "chin-wagging",
+            "causerie"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07237830",
+          "part_of_speech": "n",
+          "definition_en": "a report (often malicious) about the behavior of other people; \"the divorce caused much gossip\"",
+          "lemmas": [
+            "gossip",
+            "comment",
+            "scuttlebutt"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:10158867",
+          "part_of_speech": "n",
+          "definition_en": "a person given to gossiping and divulging personal information about others",
+          "lemmas": [
+            "gossip",
+            "gossiper",
+            "gossipmonger",
+            "rumormonger",
+            "rumourmonger",
+            "newsmonger"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01040538",
+          "part_of_speech": "v",
+          "definition_en": "talk socially without exchanging too much information; \"the men were sitting in the cafe and shooting the breeze\"",
+          "lemmas": [
+            "chew_the_fat",
+            "shoot_the_breeze",
+            "chat",
+            "confabulate",
+            "confab",
+            "chitchat",
+            "chit-chat",
+            "chatter",
+            "chaffer",
+            "natter",
+            "gossip",
+            "jaw",
+            "claver",
+            "visit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01043826",
+          "part_of_speech": "v",
+          "definition_en": "wag one's tongue; speak about others and reveal secrets or intimacies; \"She won't dish the dirt\"",
+          "lemmas": [
+            "dish_the_dirt",
+            "gossip"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-97488fbab328",
+      "headword": "charge",
+      "source_hash": "497481665dc6a957afe89d165d620ca48b784c65a2c7a996a068e1ad9b192619",
+      "original_meaning_zh": "名词：费用，指控，电荷；动词：收费，指控，充电",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "费用",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "指控",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "电荷",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "收费",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "source_sense_id": "s005",
+          "text": "指控",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "source_sense_id": "s006",
+          "text": "充电",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "费用",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13327892"
+          ],
+          "usage_note": "为商品或服务所收取的价格/费用。",
+          "semantic_roles": "商品/服务的价款"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "收费；收取（款项）",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:00702283",
+            "wn31:v:02325354",
+            "wn31:v:02326026"
+          ],
+          "usage_note": "可指定价格、索要付款或记收某金额；是卖方/服务方动作，不是付款方刷卡。",
+          "semantic_roles": "收费方—顾客/款项",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "要价；收费",
+              "source_sense_ids": [
+                "s004"
+              ],
+              "evidence_ids": [
+                "wn31:v:00702283"
+              ],
+              "usage_note": "设定或要求某一价格，未必已经收款。",
+              "semantic_roles": "收费方—价格"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "向…收取；记收",
+              "source_sense_ids": [
+                "s004"
+              ],
+              "evidence_ids": [
+                "wn31:v:02325354",
+                "wn31:v:02326026"
+              ],
+              "usage_note": "向客户要求付款或在账上记一笔应收金额。",
+              "semantic_roles": "收费方—客户—金额"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "指控",
+          "source_sense_ids": [
+            "s005"
+          ],
+          "evidence_ids": [
+            "wn31:v:00845147",
+            "wn31:v:00845638",
+            "wn31:v:00871595"
+          ],
+          "usage_note": "有一般责称过错与正式刑事指控两种范围；常见charge sb with结构中人是被指控者。",
+          "semantic_roles": "指控者—被指控者—所指行为",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "指责；指控有过错",
+              "source_sense_ids": [
+                "s005"
+              ],
+              "evidence_ids": [
+                "wn31:v:00845147",
+                "wn31:v:00845638"
+              ],
+              "usage_note": "提出某人有过错的主张，不必经过正式司法程序。",
+              "semantic_roles": "提出责称者—对象—过错"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "正式指控；起诉指控",
+              "source_sense_ids": [
+                "s005"
+              ],
+              "evidence_ids": [
+                "wn31:v:00871595"
+              ],
+              "usage_note": "向某人提出正式罪名；此处不等同已定罪。",
+              "semantic_roles": "执法/控方—嫌疑人—罪名"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "指控",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06573933",
+            "wn31:n:06743529"
+          ],
+          "usage_note": "一般指控主张与刑法正式罪状分开说明；不表示罪名已获证实。",
+          "semantic_roles": "指控内容/法律文书",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "指控（一般主张）",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:06743529"
+              ],
+              "usage_note": "声称某人有错误或违法的主张。",
+              "semantic_roles": "指控内容"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（刑事）指控；罪状",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:06573933"
+              ],
+              "usage_note": "描述犯罪或违法行为的正式诉状/指控。",
+              "semantic_roles": "刑法文书"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "充电",
+          "source_sense_ids": [
+            "s006"
+          ],
+          "evidence_ids": [
+            "wn31:v:00518927"
+          ],
+          "usage_note": "把电流输入电池补充电能；不与使一般导体带净电荷自动合并。",
+          "semantic_roles": "充电者—电池"
+        }
+      ],
+      "other_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "（物理）电荷",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:11455142"
+          ],
+          "usage_note": "物体中不平衡电量，涉及正/负电荷；与费用或犯罪指控无关。",
+          "semantic_roles": "带电物体的电量"
+        }
+      ],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "负责；照管",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00831039"
+          ],
+          "reason": "负有安全照料责任的管理状态，常用于in charge等，原文未明确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "赋予…责任；委派任务",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00752538",
+            "wn31:v:02481345"
+          ],
+          "reason": "使某人承担任务，charge sb with不总是刑事指控；任务作补足内容。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "命令；指示",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00752178"
+          ],
+          "reason": "权威性地命人做某事，命令内容不同于指控某人已做错事。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "冲向；冲锋",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01124145",
+            "wn31:v:02059191"
+          ],
+          "reason": "01124145是突然攻击目标；02059191是快速猛烈移动，不要求攻击。两种子用途均未列入原文。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "冲锋；攻击",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00976848"
+          ],
+          "reason": "向目标的猛冲，是动作名词，原文没有该事件。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "刷卡支付；记账赊购",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02322269"
+          ],
+          "reason": "付款方以信用卡或记债方式付款，与收款方收费的方向相反。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "费用",
+          "semantic_roles": "商品/服务的价款",
+          "evidence_ids": [
+            "wn31:n:13327892"
+          ],
+          "layer": "core_meanings",
+          "display_group": "费用",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "为商品或服务所收取的价格/费用。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "要价；收费",
+          "semantic_roles": "收费方—价格",
+          "evidence_ids": [
+            "wn31:v:00702283"
+          ],
+          "layer": "core_meanings",
+          "display_group": "收费；收取（款项）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "设定或要求某一价格，未必已经收款。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "向…收取；记收",
+          "semantic_roles": "收费方—客户—金额",
+          "evidence_ids": [
+            "wn31:v:02325354",
+            "wn31:v:02326026"
+          ],
+          "layer": "core_meanings",
+          "display_group": "收费；收取（款项）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "向客户要求付款或在账上记一笔应收金额。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s005"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "指责；指控有过错",
+          "semantic_roles": "提出责称者—对象—过错",
+          "evidence_ids": [
+            "wn31:v:00845147",
+            "wn31:v:00845638"
+          ],
+          "layer": "core_meanings",
+          "display_group": "指控",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "提出某人有过错的主张，不必经过正式司法程序。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s005"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "正式指控；起诉指控",
+          "semantic_roles": "执法/控方—嫌疑人—罪名",
+          "evidence_ids": [
+            "wn31:v:00871595"
+          ],
+          "layer": "core_meanings",
+          "display_group": "指控",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "向某人提出正式罪名；此处不等同已定罪。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "指控（一般主张）",
+          "semantic_roles": "指控内容",
+          "evidence_ids": [
+            "wn31:n:06743529"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "指控",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "声称某人有错误或违法的主张。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（刑事）指控；罪状",
+          "semantic_roles": "刑法文书",
+          "evidence_ids": [
+            "wn31:n:06573933"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "指控",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "描述犯罪或违法行为的正式诉状/指控。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [
+            "s006"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "充电",
+          "semantic_roles": "充电者—电池",
+          "evidence_ids": [
+            "wn31:v:00518927"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "充电",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "把电流输入电池补充电能；不与使一般导体带净电荷自动合并。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（物理）电荷",
+          "semantic_roles": "带电物体的电量",
+          "evidence_ids": [
+            "wn31:n:11455142"
+          ],
+          "layer": "other_meanings",
+          "display_group": "（物理）电荷",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "物体中不平衡电量，涉及正/负电荷；与费用或犯罪指控无关。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "负责；照管",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00831039"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "负有安全照料责任的管理状态，常用于in charge等，原文未明确。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "赋予…责任；委派任务",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00752538",
+            "wn31:v:02481345"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "使某人承担任务，charge sb with不总是刑事指控；任务作补足内容。"
+        },
+        {
+          "use_id": "u012",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "命令；指示",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00752178"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "权威性地命人做某事，命令内容不同于指控某人已做错事。"
+        },
+        {
+          "use_id": "u013",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "冲向；冲锋",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01124145",
+            "wn31:v:02059191"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "01124145是突然攻击目标；02059191是快速猛烈移动，不要求攻击。两种子用途均未列入原文。"
+        },
+        {
+          "use_id": "u014",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "冲锋；攻击",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00976848"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "向目标的猛冲，是动作名词，原文没有该事件。"
+        },
+        {
+          "use_id": "u015",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "刷卡支付；记账赊购",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02322269"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "付款方以信用卡或记债方式付款，与收款方收费的方向相反。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "original_text": "指控",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u006",
+              "part_of_speech": "名词",
+              "display_zh": "指控（一般主张）",
+              "evidence_ids": [
+                "wn31:n:06743529"
+              ],
+              "explanation": "声称某人有错误或违法的主张。"
+            },
+            {
+              "use_id": "u007",
+              "part_of_speech": "名词",
+              "display_zh": "（刑事）指控；罪状",
+              "evidence_ids": [
+                "wn31:n:06573933"
+              ],
+              "explanation": "描述犯罪或违法行为的正式诉状/指控。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s004",
+          "original_text": "收费",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "要价；收费",
+              "evidence_ids": [
+                "wn31:v:00702283"
+              ],
+              "explanation": "设定或要求某一价格，未必已经收款。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "动词",
+              "display_zh": "向…收取；记收",
+              "evidence_ids": [
+                "wn31:v:02325354",
+                "wn31:v:02326026"
+              ],
+              "explanation": "向客户要求付款或在账上记一笔应收金额。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s005",
+          "original_text": "指控",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u004",
+              "part_of_speech": "动词",
+              "display_zh": "指责；指控有过错",
+              "evidence_ids": [
+                "wn31:v:00845147",
+                "wn31:v:00845638"
+              ],
+              "explanation": "提出某人有过错的主张，不必经过正式司法程序。"
+            },
+            {
+              "use_id": "u005",
+              "part_of_speech": "动词",
+              "display_zh": "正式指控；起诉指控",
+              "evidence_ids": [
+                "wn31:v:00871595"
+              ],
+              "explanation": "向某人提出正式罪名；此处不等同已定罪。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:00831039",
+            "wn31:n:00976848",
+            "wn31:v:00752178",
+            "wn31:v:00752538",
+            "wn31:v:01124145",
+            "wn31:v:02059191",
+            "wn31:v:02322269",
+            "wn31:v:02481345"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "首次用三组建立费用、收费动作与指控动作；名词指控、充电后学只是教学安排，电荷因物理范围置其他。明确收费者/付款者及指控者/被指控者，避免方向混同。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u006",
+            "u007",
+            "u009"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u002",
+            "u003",
+            "u004",
+            "u005",
+            "u008"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00831039",
+          "part_of_speech": "n",
+          "definition_en": "attention and management implying responsibility for safety; \"he is in the care of a bodyguard\"",
+          "lemmas": [
+            "care",
+            "charge",
+            "tutelage",
+            "guardianship"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:00976848",
+          "part_of_speech": "n",
+          "definition_en": "an impetuous rush toward someone or something; \"the wrestler's charge carried him past his adversary\"; \"the battle began with a cavalry charge\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06573933",
+          "part_of_speech": "n",
+          "definition_en": "(criminal law) a pleading describing some wrong or offense; \"he was arrested on a charge of larceny\"",
+          "lemmas": [
+            "charge",
+            "complaint"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06743529",
+          "part_of_speech": "n",
+          "definition_en": "an assertion that someone is guilty of a fault or offence; \"the newspaper published charges that Jones was guilty of drunken driving\"",
+          "lemmas": [
+            "accusation",
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:11455142",
+          "part_of_speech": "n",
+          "definition_en": "the quantity of unbalanced electricity in a body (either positive or negative) and construed as an excess or deficiency of electrons; \"the battery needed a fresh charge\"",
+          "lemmas": [
+            "charge",
+            "electric_charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13327892",
+          "part_of_speech": "n",
+          "definition_en": "the price charged for some article or service; \"the admission charge\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00518927",
+          "part_of_speech": "v",
+          "definition_en": "energize a battery by passing a current through it in the direction opposite to discharge; \"I need to charge my car battery\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00702283",
+          "part_of_speech": "v",
+          "definition_en": "set or ask for a certain price; \"How much do you charge for lunch?\"; \"This fellow charges $100 for a massage\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00752178",
+          "part_of_speech": "v",
+          "definition_en": "instruct or command with authority; \"The teacher charged the children to memorize the poem\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00752538",
+          "part_of_speech": "v",
+          "definition_en": "impose a task upon, assign a responsibility to; \"He charged her with cleaning up all the files over the weekend\"",
+          "lemmas": [
+            "charge",
+            "saddle",
+            "burden"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00845147",
+          "part_of_speech": "v",
+          "definition_en": "blame for, make a claim of wrongdoing or misbehavior against; \"he charged the director with indifference\"",
+          "lemmas": [
+            "charge",
+            "accuse"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00845638",
+          "part_of_speech": "v",
+          "definition_en": "make an accusatory claim; \"The defense attorney charged that the jurors were biased\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00871595",
+          "part_of_speech": "v",
+          "definition_en": "file a formal charge against; \"The suspect was charged with murdering his wife\"",
+          "lemmas": [
+            "charge",
+            "lodge",
+            "file"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01124145",
+          "part_of_speech": "v",
+          "definition_en": "to make a rush at or sudden attack upon, as in battle; \"he saw Jess charging at him with a pitchfork\"",
+          "lemmas": [
+            "charge",
+            "bear_down"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02059191",
+          "part_of_speech": "v",
+          "definition_en": "move quickly and violently; \"The car tore down the street\"; \"He came charging into my office\"",
+          "lemmas": [
+            "tear",
+            "shoot",
+            "shoot_down",
+            "charge",
+            "buck"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02322269",
+          "part_of_speech": "v",
+          "definition_en": "pay with a credit card; pay with plastic money; postpone payment by recording a purchase as a debt; \"Will you pay cash or charge the purchase?\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02325354",
+          "part_of_speech": "v",
+          "definition_en": "demand payment; \"Will I get charged for this service?\"; \"We were billed for 4 nights in the hotel, although we stayed only 3 nights\"",
+          "lemmas": [
+            "charge",
+            "bill"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02326026",
+          "part_of_speech": "v",
+          "definition_en": "enter a certain amount as a charge; \"he charged me $15\"",
+          "lemmas": [
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02481345",
+          "part_of_speech": "v",
+          "definition_en": "assign a duty, responsibility or obligation to; \"He was appointed deputy manager\"; \"She was charged with supervising the creation of a concordance\"",
+          "lemmas": [
+            "appoint",
+            "charge"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-04e9c0db87e7",
+      "headword": "iron",
+      "source_hash": "0b9d9484c9761392c979b8516a04c5adbcbcb34df2de049eb524df3b9a9eacb8",
+      "original_meaning_zh": "名词：铁，熨斗；动词：熨烫",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "铁",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "熨斗",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "熨烫",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 11,
+          "end": 13
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "铁",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:14666595"
+          ],
+          "usage_note": "一种金属元素/材料，纯态银白且易锈。",
+          "semantic_roles": "金属材料"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "熨斗",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:03589998"
+          ],
+          "usage_note": "加热平底金属面来熨平布料的器具。",
+          "semantic_roles": "家用器具"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "熨烫",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:01393487"
+          ],
+          "usage_note": "用热熨斗压平衣物；动作与器具名词分开。",
+          "semantic_roles": "使用者—衣物"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "（体质等）强健的；坚强的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:s:02046298"
+          ],
+          "reason": "给定定义是极为强壮，不能由金属名词自动扩为所有抽象铁的比喻。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "铁",
+          "semantic_roles": "金属材料",
+          "evidence_ids": [
+            "wn31:n:14666595"
+          ],
+          "layer": "core_meanings",
+          "display_group": "铁",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "一种金属元素/材料，纯态银白且易锈。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "熨斗",
+          "semantic_roles": "家用器具",
+          "evidence_ids": [
+            "wn31:n:03589998"
+          ],
+          "layer": "core_meanings",
+          "display_group": "熨斗",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "加热平底金属面来熨平布料的器具。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "熨烫",
+          "semantic_roles": "使用者—衣物",
+          "evidence_ids": [
+            "wn31:v:01393487"
+          ],
+          "layer": "core_meanings",
+          "display_group": "熨烫",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "用热熨斗压平衣物；动作与器具名词分开。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "（体质等）强健的；坚强的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:s:02046298"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "给定定义是极为强壮，不能由金属名词自动扩为所有抽象铁的比喻。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:s:02046298"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "材料、器具和使用动作三种功能各一组，源标签已明确，无需重新分配或把词性硬合成一组。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03589998",
+          "part_of_speech": "n",
+          "definition_en": "home appliance consisting of a flat metal base that is heated and used to smooth cloth",
+          "lemmas": [
+            "iron",
+            "smoothing_iron"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14666595",
+          "part_of_speech": "n",
+          "definition_en": "a heavy ductile magnetic metallic element; is silver-white in pure form but readily rusts; used in construction and tools and armament; plays a role in the transport of oxygen by the blood",
+          "lemmas": [
+            "iron",
+            "Fe",
+            "atomic_number_26"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:02046298",
+          "part_of_speech": "s",
+          "definition_en": "extremely robust; \"an iron constitution\"",
+          "lemmas": [
+            "cast-iron",
+            "iron"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01393487",
+          "part_of_speech": "v",
+          "definition_en": "press and smooth with a heated iron; \"press your shirts\"; \"she stood there ironing\"",
+          "lemmas": [
+            "iron",
+            "iron_out",
+            "press"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-909802b269de",
+      "headword": "spread",
+      "source_hash": "b8872853145d5873a42db3046725b2ae7a424f8f28583a7bb850a1b44175819a",
+      "original_meaning_zh": "动词：传播，展开；名词：传播，范围",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "传播",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "展开",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "传播",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "范围",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "传播；散播（消息等）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00970243"
+          ],
+          "usage_note": "施事使消息/传言为更多人知道。",
+          "semantic_roles": "传播者—消息—受众"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "传播；蔓延（消息、感染等）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:00971905",
+            "wn31:v:01382787"
+          ],
+          "usage_note": "消息被传开或感染等自行扩大分布，消息/感染作主语，不是人为传播者。",
+          "semantic_roles": "被传播者自身扩大",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "（消息等）传开",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:00971905"
+              ],
+              "usage_note": "消息自身成为广为人知的内容。",
+              "semantic_roles": "消息作主语"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "（感染等）蔓延",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:01382787"
+              ],
+              "usage_note": "感染或情绪成为广泛分布状态。",
+              "semantic_roles": "感染/情绪作主语"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "展开；摊开",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01582662"
+          ],
+          "usage_note": "从折叠或闭合状态打开，如展开地图、张开双臂；不与涂抹表面混为一义。",
+          "semantic_roles": "操作者—折叠物/双臂"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "传播；扩散",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:07460496",
+            "wn31:n:00368802"
+          ],
+          "usage_note": "在空间等更广范围分布扩展的过程或结果，名词不自动当作动词。",
+          "semantic_roles": "扩散过程/结果"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "范围；覆盖广度",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "pub:spread"
+          ],
+          "usage_note": "一段距离或事物覆盖的广度/种类范围，需要具体对象；这里不等于两个数字的差额。",
+          "semantic_roles": "覆盖范围/种类广度"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "把…涂抹在…上",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01614650"
+          ],
+          "reason": "被涂物作宾语，如把奶酪涂在面包上；与展开地图不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "给…涂上",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01614805"
+          ],
+          "reason": "承受涂层的表面作宾语，如给面包涂奶酪；与涂层物宾语的方向分开。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "涂抹食品；抹酱",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:07872246"
+          ],
+          "reason": "可涂在面包/饼干上的混合食品，实体并非传播事件。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "差额；价差",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:04760114"
+          ],
+          "reason": "两个数字间显著差距，借贷利率差等财经用途，原范围片段不够明确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（书刊）对开页；跨页",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06268608"
+          ],
+          "reason": "书刊相对的两页，有出版对象限制。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "传播；散播（消息等）",
+          "semantic_roles": "传播者—消息—受众",
+          "evidence_ids": [
+            "wn31:v:00970243"
+          ],
+          "layer": "core_meanings",
+          "display_group": "传播；散播（消息等）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "施事使消息/传言为更多人知道。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "（消息等）传开",
+          "semantic_roles": "消息作主语",
+          "evidence_ids": [
+            "wn31:v:00971905"
+          ],
+          "layer": "core_meanings",
+          "display_group": "传播；蔓延（消息、感染等）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "消息自身成为广为人知的内容。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "（感染等）蔓延",
+          "semantic_roles": "感染/情绪作主语",
+          "evidence_ids": [
+            "wn31:v:01382787"
+          ],
+          "layer": "core_meanings",
+          "display_group": "传播；蔓延（消息、感染等）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "感染或情绪成为广泛分布状态。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "展开；摊开",
+          "semantic_roles": "操作者—折叠物/双臂",
+          "evidence_ids": [
+            "wn31:v:01582662"
+          ],
+          "layer": "core_meanings",
+          "display_group": "展开；摊开",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "从折叠或闭合状态打开，如展开地图、张开双臂；不与涂抹表面混为一义。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "传播；扩散",
+          "semantic_roles": "扩散过程/结果",
+          "evidence_ids": [
+            "wn31:n:07460496",
+            "wn31:n:00368802"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "传播；扩散",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "在空间等更广范围分布扩展的过程或结果，名词不自动当作动词。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "范围；覆盖广度",
+          "semantic_roles": "覆盖范围/种类广度",
+          "evidence_ids": [
+            "pub:spread"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "范围；覆盖广度",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "一段距离或事物覆盖的广度/种类范围，需要具体对象；这里不等于两个数字的差额。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "把…涂抹在…上",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01614650"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "被涂物作宾语，如把奶酪涂在面包上；与展开地图不同。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "给…涂上",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01614805"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "承受涂层的表面作宾语，如给面包涂奶酪；与涂层物宾语的方向分开。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "涂抹食品；抹酱",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:07872246"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "可涂在面包/饼干上的混合食品，实体并非传播事件。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "差额；价差",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:04760114"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "两个数字间显著差距，借贷利率差等财经用途，原范围片段不够明确。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（书刊）对开页；跨页",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06268608"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "书刊相对的两页，有出版对象限制。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "传播",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "动词",
+              "display_zh": "传播；散播（消息等）",
+              "evidence_ids": [
+                "wn31:v:00970243"
+              ],
+              "explanation": "施事使消息/传言为更多人知道。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "（消息等）传开",
+              "evidence_ids": [
+                "wn31:v:00971905"
+              ],
+              "explanation": "消息自身成为广为人知的内容。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "动词",
+              "display_zh": "（感染等）蔓延",
+              "evidence_ids": [
+                "wn31:v:01382787"
+              ],
+              "explanation": "感染或情绪成为广泛分布状态。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:04760114",
+            "wn31:n:06268608",
+            "wn31:n:07872246",
+            "wn31:v:01614650",
+            "wn31:v:01614805"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先记传播施动、自行传开/蔓延、展开折叠物三组；名词过程与范围仍保存后学。不同传播方向必须在矩阵与AI拆解中可追踪。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u005",
+            "u006"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:spread",
+          "headword": "spread",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/spread",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "动词可传播或展开，名词可指传播扩展；另列一段距离/范围、事物覆盖广度或种类范围等，具体范围对象需要语境。",
+          "pos_supported": [
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:00368802",
+          "part_of_speech": "n",
+          "definition_en": "act of extending over a wider scope or expanse of space or time",
+          "lemmas": [
+            "spread",
+            "spreading"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04760114",
+          "part_of_speech": "n",
+          "definition_en": "a conspicuous disparity or difference as between two figures; \"gap between income and outgo\"; \"the spread between lending and borrowing costs\"",
+          "lemmas": [
+            "gap",
+            "spread"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06268608",
+          "part_of_speech": "n",
+          "definition_en": "two facing pages of a book or other publication",
+          "lemmas": [
+            "spread",
+            "spread_head",
+            "spreadhead",
+            "facing_pages"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07460496",
+          "part_of_speech": "n",
+          "definition_en": "process or result of distributing or extending over a wide expanse of space",
+          "lemmas": [
+            "spread",
+            "spreading"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07872246",
+          "part_of_speech": "n",
+          "definition_en": "a tasty mixture to be spread on bread or crackers or used in preparing other dishes",
+          "lemmas": [
+            "spread",
+            "paste"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00970243",
+          "part_of_speech": "v",
+          "definition_en": "cause to become widely known; \"spread information\"; \"circulate a rumor\"; \"broadcast the news\"",
+          "lemmas": [
+            "circulate",
+            "circularize",
+            "circularise",
+            "distribute",
+            "disseminate",
+            "propagate",
+            "broadcast",
+            "spread",
+            "diffuse",
+            "disperse",
+            "pass_around"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00971905",
+          "part_of_speech": "v",
+          "definition_en": "become widely known and passed on; \"the rumor spread\"; \"the story went around in the office\"",
+          "lemmas": [
+            "go_around",
+            "spread",
+            "circulate"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01382787",
+          "part_of_speech": "v",
+          "definition_en": "become distributed or widespread; \"the infection spread\"; \"Optimism spread among the population\"",
+          "lemmas": [
+            "spread",
+            "propagate"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01582662",
+          "part_of_speech": "v",
+          "definition_en": "spread out or open from a closed or folded state; \"open the map\"; \"spread your arms\"",
+          "lemmas": [
+            "unfold",
+            "spread",
+            "spread_out",
+            "open"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01614650",
+          "part_of_speech": "v",
+          "definition_en": "distribute over a surface in a layer; \"spread cheese on a piece of bread\"",
+          "lemmas": [
+            "spread"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01614805",
+          "part_of_speech": "v",
+          "definition_en": "cover by spreading something over; \"spread the bread with cheese\"",
+          "lemmas": [
+            "spread"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-116f54c41d04",
+      "headword": "train",
+      "source_hash": "2aeb7ebf768e777cfce50bf6fdc56b62e970195134511c5852a132b2d443879a",
+      "original_meaning_zh": "名词：火车；动词：训练",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "火车",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "训练",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 11
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "火车",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:04475240"
+          ],
+          "usage_note": "相连铁路车辆组成并由机车牵引的铁路交通工具。",
+          "semantic_roles": "铁路运输实体"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "训练；培养（他人或动物）",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00835381",
+            "wn31:v:02559394",
+            "wn31:v:02392176"
+          ],
+          "usage_note": "教导并监督他人、训练动物行为或为未来角色培养对象；施事使受事获得能力。",
+          "semantic_roles": "训练者—受训者—技能/行为"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "受训；练习",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00099798",
+            "wn31:v:00604200"
+          ],
+          "usage_note": "主体为比赛练习或为职业接受训练；与训练别人方向不同。",
+          "semantic_roles": "受训者自身参与",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "（为比赛等）训练；练习",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:00099798"
+              ],
+              "usage_note": "主体练习以准备赛事。",
+              "semantic_roles": "运动者自身练习"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "（为职业等）受训",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:00604200"
+              ],
+              "usage_note": "主体接受教导以准备特定角色/职业。",
+              "semantic_roles": "受训者自身接受培训"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "把…对准",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01153576"
+          ],
+          "reason": "使枪、相机等朝向目标，不是训练其能力。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "一连串；一系列",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08476659",
+            "wn31:n:07309535"
+          ],
+          "reason": "有顺序关联的事物、想法或后果，非铁路车辆。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（长裙）拖裾",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:04475711"
+          ],
+          "reason": "礼服后部拖在地面的长布料，独立实体用途。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "火车",
+          "semantic_roles": "铁路运输实体",
+          "evidence_ids": [
+            "wn31:n:04475240"
+          ],
+          "layer": "core_meanings",
+          "display_group": "火车",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "相连铁路车辆组成并由机车牵引的铁路交通工具。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "训练；培养（他人或动物）",
+          "semantic_roles": "训练者—受训者—技能/行为",
+          "evidence_ids": [
+            "wn31:v:00835381",
+            "wn31:v:02559394",
+            "wn31:v:02392176"
+          ],
+          "layer": "core_meanings",
+          "display_group": "训练；培养（他人或动物）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "教导并监督他人、训练动物行为或为未来角色培养对象；施事使受事获得能力。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "（为比赛等）训练；练习",
+          "semantic_roles": "运动者自身练习",
+          "evidence_ids": [
+            "wn31:v:00099798"
+          ],
+          "layer": "core_meanings",
+          "display_group": "受训；练习",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "主体练习以准备赛事。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "（为职业等）受训",
+          "semantic_roles": "受训者自身接受培训",
+          "evidence_ids": [
+            "wn31:v:00604200"
+          ],
+          "layer": "core_meanings",
+          "display_group": "受训；练习",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "主体接受教导以准备特定角色/职业。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "把…对准",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01153576"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "使枪、相机等朝向目标，不是训练其能力。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "一连串；一系列",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:08476659",
+            "wn31:n:07309535"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "有顺序关联的事物、想法或后果，非铁路车辆。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（长裙）拖裾",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:04475711"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "礼服后部拖在地面的长布料，独立实体用途。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s002",
+          "original_text": "训练",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "训练；培养（他人或动物）",
+              "evidence_ids": [
+                "wn31:v:00835381",
+                "wn31:v:02559394",
+                "wn31:v:02392176"
+              ],
+              "explanation": "教导并监督他人、训练动物行为或为未来角色培养对象；施事使受事获得能力。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "动词",
+              "display_zh": "（为比赛等）训练；练习",
+              "evidence_ids": [
+                "wn31:v:00099798"
+              ],
+              "explanation": "主体练习以准备赛事。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "动词",
+              "display_zh": "（为职业等）受训",
+              "evidence_ids": [
+                "wn31:v:00604200"
+              ],
+              "explanation": "主体接受教导以准备特定角色/职业。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:04475711",
+            "wn31:n:07309535",
+            "wn31:n:08476659",
+            "wn31:v:01153576"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "铁路实体与训练两个方向分别首记；一片段训练可有有证据的施动/受训拆解，但原源POS标签保持不变。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u002",
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:04475240",
+          "part_of_speech": "n",
+          "definition_en": "public transport provided by a line of railway cars coupled together and drawn by a locomotive; \"express trains don't stop at Princeton Junction\"",
+          "lemmas": [
+            "train",
+            "railroad_train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04475711",
+          "part_of_speech": "n",
+          "definition_en": "piece of cloth forming the long back section of a gown that is drawn along the floor; \"the bride's train was carried by her two young nephews\"",
+          "lemmas": [
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07309535",
+          "part_of_speech": "n",
+          "definition_en": "a series of consequences wrought by an event; \"it led to a train of disasters\"",
+          "lemmas": [
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08476659",
+          "part_of_speech": "n",
+          "definition_en": "a sequentially ordered set of things or events or ideas in which each successive member is related to the preceding; \"a string of islands\"; \"train of mourners\"; \"a train of thought\"",
+          "lemmas": [
+            "string",
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00099798",
+          "part_of_speech": "v",
+          "definition_en": "exercise in order to prepare for an event or competition; \"She is training for the Olympics\"",
+          "lemmas": [
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00604200",
+          "part_of_speech": "v",
+          "definition_en": "undergo training or instruction in preparation for a particular role, function, or profession; \"She is training to be a teacher\"; \"He trained as a legal aid\"",
+          "lemmas": [
+            "train",
+            "prepare"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00835381",
+          "part_of_speech": "v",
+          "definition_en": "teach and supervise (someone); act as a trainer or coach (to), as in sports; \"He is training our Olympic team\"; \"She is coaching the crew\"",
+          "lemmas": [
+            "coach",
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01153576",
+          "part_of_speech": "v",
+          "definition_en": "point or cause to go (blows, weapons, or objects such as photographic equipment) towards; \"Please don't aim at your little brother!\"; \"He trained his gun on the burglar\"; \"Don't train your camera on the women\"; \"Take a swipe at one's opponent\"",
+          "lemmas": [
+            "aim",
+            "take",
+            "train",
+            "take_aim",
+            "direct"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02392176",
+          "part_of_speech": "v",
+          "definition_en": "educate for a future role or function; \"He is grooming his son to become his successor\"; \"The prince was prepared to become King one day\"; \"They trained him to be a warrior\"",
+          "lemmas": [
+            "prepare",
+            "groom",
+            "train"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02559394",
+          "part_of_speech": "v",
+          "definition_en": "develop (a child's or animal's) behavior by instruction and practice; especially to teach self-control; \"Parents must discipline their children\"; \"Is this dog trained?\"",
+          "lemmas": [
+            "discipline",
+            "train",
+            "check",
+            "condition"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-7cd58cdd64a3",
+      "headword": "strike",
+      "source_hash": "dfaa7a58abe764d99fda5246e0d5f22fbbe9b1120eb282635b7e0699fc6432ae",
+      "original_meaning_zh": "动词：打击，罢工，突然想到；名词：打击，罢工",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "打击",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "罢工",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "突然想到",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 9,
+          "end": 13
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "打击",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "source_sense_id": "s005",
+          "text": "罢工",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 20,
+          "end": 22
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "打；击打",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01412877",
+            "wn31:v:01238728"
+          ],
+          "usage_note": "用手/武器打或突然接触碰撞；并非所有strike都表示主观恶意攻击。",
+          "semantic_roles": "施动者/移动物—被击对象"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "罢工",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:02417777"
+          ],
+          "usage_note": "劳动者为提出要求而停止工作。",
+          "semantic_roles": "劳动者集体行动"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "（念头等）突然出现在…脑海",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02113245"
+          ],
+          "usage_note": "念头等可作主语、想到者作宾语；It strikes sb that也表达某人突然想到，不能把sb strike an idea当成此结构。",
+          "semantic_roles": "念头/感受—突然产生体验的人"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "打击；攻击",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:n:00979387",
+            "wn31:n:07424621"
+          ],
+          "usage_note": "攻击目标的军事打击与轻击事件均属名词；必须保留范围差别。",
+          "semantic_roles": "击打/攻击事件",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（军事等）打击；攻击",
+              "source_sense_ids": [
+                "s004"
+              ],
+              "evidence_ids": [
+                "wn31:n:00979387"
+              ],
+              "usage_note": "意在夺取、损害或摧毁目标的攻击。",
+              "semantic_roles": "攻击事件—目标"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "轻击",
+              "source_sense_ids": [
+                "s004"
+              ],
+              "evidence_ids": [
+                "wn31:n:07424621"
+              ],
+              "usage_note": "轻轻的一下击打，不以军事定义证明其力度。",
+              "semantic_roles": "轻击事件"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "罢工",
+          "source_sense_ids": [
+            "s005"
+          ],
+          "evidence_ids": [
+            "wn31:n:01246221"
+          ],
+          "usage_note": "集体拒绝工作的抗议事件，名词与相应动词分开。",
+          "semantic_roles": "罢工事件"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "突然袭击；使遭受（疾病、灾害等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01211755"
+          ],
+          "reason": "事件突然造成不利影响，原打击提示未明示此自然灾害/疾病主语用途；保守单列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "给…以印象；让…觉得",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01771801"
+          ],
+          "reason": "某行为/人给体验者某种印象，常strike sb as，不等于一个念头突然出现。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "达成（平衡、协议等）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00637566"
+          ],
+          "reason": "经过考虑取得某结果，不是打击动作。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "划去；删除",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01552202"
+          ],
+          "reason": "删除文字或记录内容，原文未列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "敲响（报时）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00925593"
+          ],
+          "reason": "钟通过敲击指示时刻，原泛打击不明确表达报时功能。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "打；击打",
+          "semantic_roles": "施动者/移动物—被击对象",
+          "evidence_ids": [
+            "wn31:v:01412877",
+            "wn31:v:01238728"
+          ],
+          "layer": "core_meanings",
+          "display_group": "打；击打",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "用手/武器打或突然接触碰撞；并非所有strike都表示主观恶意攻击。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "罢工",
+          "semantic_roles": "劳动者集体行动",
+          "evidence_ids": [
+            "wn31:v:02417777"
+          ],
+          "layer": "core_meanings",
+          "display_group": "罢工",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "劳动者为提出要求而停止工作。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "（念头等）突然出现在…脑海",
+          "semantic_roles": "念头/感受—突然产生体验的人",
+          "evidence_ids": [
+            "wn31:v:02113245"
+          ],
+          "layer": "core_meanings",
+          "display_group": "（念头等）突然出现在…脑海",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "念头等可作主语、想到者作宾语；It strikes sb that也表达某人突然想到，不能把sb strike an idea当成此结构。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（军事等）打击；攻击",
+          "semantic_roles": "攻击事件—目标",
+          "evidence_ids": [
+            "wn31:n:00979387"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "打击；攻击",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "意在夺取、损害或摧毁目标的攻击。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "轻击",
+          "semantic_roles": "轻击事件",
+          "evidence_ids": [
+            "wn31:n:07424621"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "打击；攻击",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "轻轻的一下击打，不以军事定义证明其力度。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [
+            "s005"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "罢工",
+          "semantic_roles": "罢工事件",
+          "evidence_ids": [
+            "wn31:n:01246221"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "罢工",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "集体拒绝工作的抗议事件，名词与相应动词分开。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "突然袭击；使遭受（疾病、灾害等）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01211755"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "事件突然造成不利影响，原打击提示未明示此自然灾害/疾病主语用途；保守单列。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "给…以印象；让…觉得",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01771801"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "某行为/人给体验者某种印象，常strike sb as，不等于一个念头突然出现。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "达成（平衡、协议等）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00637566"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "经过考虑取得某结果，不是打击动作。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "划去；删除",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01552202"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "删除文字或记录内容，原文未列。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "敲响（报时）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00925593"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "钟通过敲击指示时刻，原泛打击不明确表达报时功能。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s004",
+          "original_text": "打击",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u004",
+              "part_of_speech": "名词",
+              "display_zh": "（军事等）打击；攻击",
+              "evidence_ids": [
+                "wn31:n:00979387"
+              ],
+              "explanation": "意在夺取、损害或摧毁目标的攻击。"
+            },
+            {
+              "use_id": "u005",
+              "part_of_speech": "名词",
+              "display_zh": "轻击",
+              "evidence_ids": [
+                "wn31:n:07424621"
+              ],
+              "explanation": "轻轻的一下击打，不以军事定义证明其力度。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:v:00637566",
+            "wn31:v:00925593",
+            "wn31:v:01211755",
+            "wn31:v:01552202",
+            "wn31:v:01771801"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先保留动作打击、罢工与突然想到三种功能，名词事件后学；突然想到必须解释英语主宾语方向，不能只给中文而让学习者反转角色。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u004",
+            "u005",
+            "u006"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00979387",
+          "part_of_speech": "n",
+          "definition_en": "an attack that is intended to seize or inflict damage on or destroy an objective; \"the strike was scheduled to begin at dawn\"",
+          "lemmas": [
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:01246221",
+          "part_of_speech": "n",
+          "definition_en": "a group's refusal to work in protest against low pay or bad work conditions; \"the strike lasted more than a month before it was settled\"",
+          "lemmas": [
+            "strike",
+            "work_stoppage"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07424621",
+          "part_of_speech": "n",
+          "definition_en": "a gentle blow",
+          "lemmas": [
+            "rap",
+            "strike",
+            "tap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00637566",
+          "part_of_speech": "v",
+          "definition_en": "arrive at after reckoning, deliberating, and weighing; \"strike a balance\"; \"strike a bargain\"",
+          "lemmas": [
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00925593",
+          "part_of_speech": "v",
+          "definition_en": "indicate (a certain time) by striking; \"The clock struck midnight\"; \"Just when I entered, the clock struck\"",
+          "lemmas": [
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01211755",
+          "part_of_speech": "v",
+          "definition_en": "affect or afflict suddenly, usually adversely; \"We were hit by really bad weather\"; \"He was stricken with cancer when he was still a teenager\"; \"The earthquake struck at midnight\"",
+          "lemmas": [
+            "hit",
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01238728",
+          "part_of_speech": "v",
+          "definition_en": "hit against; come into sudden contact with; \"The car hit a tree\"; \"He struck the table with his elbow\"",
+          "lemmas": [
+            "hit",
+            "strike",
+            "impinge_on",
+            "run_into",
+            "collide_with"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01412877",
+          "part_of_speech": "v",
+          "definition_en": "deliver a sharp blow, as with the hand, fist, or weapon; \"The teacher struck the child\"; \"the opponent refused to strike\"; \"The boxer struck the attacker dead\"",
+          "lemmas": [
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01552202",
+          "part_of_speech": "v",
+          "definition_en": "remove by erasing or crossing out or as if by drawing a line; \"Please strike this remark from the record\"; \"scratch that remark\"",
+          "lemmas": [
+            "strike",
+            "scratch",
+            "expunge",
+            "excise"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01771801",
+          "part_of_speech": "v",
+          "definition_en": "have an emotional or cognitive impact upon; \"This child impressed me as unusually mature\"; \"This behavior struck me as odd\"; \"he was dumb-struck by the news\"; \"her comments struck a sour note\"",
+          "lemmas": [
+            "affect",
+            "impress",
+            "move",
+            "strike"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02113245",
+          "part_of_speech": "v",
+          "definition_en": "cause to experience suddenly; \"Panic struck me\"; \"An interesting idea hit her\"; \"A thought came to me\"; \"The thought struck terror in our minds\"; \"They were struck with fear\"",
+          "lemmas": [
+            "hit",
+            "strike",
+            "come_to"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02417777",
+          "part_of_speech": "v",
+          "definition_en": "stop work in order to press demands; \"The auto workers are striking for higher wages\"; \"The employees walked out when their demand for better benefits was not met\"",
+          "lemmas": [
+            "strike",
+            "walk_out"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-27042f4e6eca",
+      "headword": "right",
+      "source_hash": "5fa51faaf876ab9c223c4d864ca98036ea1a498a3a0830e78d6a3fb04c7ed32a",
+      "original_meaning_zh": "正确的；向右",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "正确的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "向右",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 4,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "形容词；副词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "正确的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:00634232",
+            "wn31:a:00636250"
+          ],
+          "usage_note": "符合事实、没有错误，或人的判断正确。",
+          "semantic_roles": "事实/判断的正确性"
+        },
+        {
+          "part_of_speech": "副词",
+          "display_zh": "向右；在右边",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:r:00389732"
+          ],
+          "usage_note": "朝右方或位于右侧；这里映射副词，不能凭方向中文自动声称形容词也已涵盖。",
+          "semantic_roles": "方向/位置修饰"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "正当的；合乎道德的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:02042235"
+          ],
+          "usage_note": "正确一词可指符合正义、法律或道德，和事实答案无误分开作AI语义拆解。",
+          "semantic_roles": "行为/选择的规范评价"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "权利",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:05182180",
+            "wn31:n:13362771"
+          ],
+          "reason": "依法、传统或自然应得的权利及某项权益，原词性无名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "右边的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:a:02039393"
+          ],
+          "reason": "修饰身体或物体右侧的形容词；原“向右”只明确方向提示。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "右边；右方",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08642648"
+          ],
+          "reason": "右侧的位置/方向名词，不因副词存在就默认已收录。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "正好；恰好",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00206480"
+          ],
+          "reason": "精确强调某一位置/时点，如正是在这里，与朝右无关。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "立即；紧接着",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00105849"
+          ],
+          "reason": "表示紧随某时点发生，原文没有时间强调。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "合适的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:s:00136526",
+            "wn31:s:01665754"
+          ],
+          "reason": "适合条件、目的或时机，而非单纯事实正确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "正确地；恰当地",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:r:00205350",
+            "wn31:r:00197608"
+          ],
+          "reason": "修饰完成动作的方式；原正确的为性质提示，不机械转换词性。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "纠正",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00200023"
+          ],
+          "reason": "使错误变正确的动作，未由原形容词明确表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使扶正；把…恢复直立",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01988748"
+          ],
+          "reason": "把翻倒的船等恢复直立，动作对象及结果与纠正错误分开。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "正确的",
+          "semantic_roles": "事实/判断的正确性",
+          "evidence_ids": [
+            "wn31:a:00634232",
+            "wn31:a:00636250"
+          ],
+          "layer": "core_meanings",
+          "display_group": "正确的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "符合事实、没有错误，或人的判断正确。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "向右；在右边",
+          "semantic_roles": "方向/位置修饰",
+          "evidence_ids": [
+            "wn31:r:00389732"
+          ],
+          "layer": "core_meanings",
+          "display_group": "向右；在右边",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "朝右方或位于右侧；这里映射副词，不能凭方向中文自动声称形容词也已涵盖。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "正当的；合乎道德的",
+          "semantic_roles": "行为/选择的规范评价",
+          "evidence_ids": [
+            "wn31:a:02042235"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "正当的；合乎道德的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "正确一词可指符合正义、法律或道德，和事实答案无误分开作AI语义拆解。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "权利",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:05182180",
+            "wn31:n:13362771"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "依法、传统或自然应得的权利及某项权益，原词性无名词。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "右边的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:a:02039393"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "修饰身体或物体右侧的形容词；原“向右”只明确方向提示。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "右边；右方",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:08642648"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "右侧的位置/方向名词，不因副词存在就默认已收录。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "正好；恰好",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:r:00206480"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "精确强调某一位置/时点，如正是在这里，与朝右无关。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "立即；紧接着",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:r:00105849"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "表示紧随某时点发生，原文没有时间强调。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "合适的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:s:00136526",
+            "wn31:s:01665754"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "适合条件、目的或时机，而非单纯事实正确。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "正确地；恰当地",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:r:00205350",
+            "wn31:r:00197608"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "修饰完成动作的方式；原正确的为性质提示，不机械转换词性。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "纠正",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00200023"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "使错误变正确的动作，未由原形容词明确表达。"
+        },
+        {
+          "use_id": "u012",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "使扶正；把…恢复直立",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01988748"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把翻倒的船等恢复直立，动作对象及结果与纠正错误分开。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "正确的",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "形容词",
+              "display_zh": "正确的",
+              "evidence_ids": [
+                "wn31:a:00634232",
+                "wn31:a:00636250"
+              ],
+              "explanation": "符合事实、没有错误，或人的判断正确。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "形容词",
+              "display_zh": "正当的；合乎道德的",
+              "evidence_ids": [
+                "wn31:a:02042235"
+              ],
+              "explanation": "正确一词可指符合正义、法律或道德，和事实答案无误分开作AI语义拆解。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:a:02039393",
+            "wn31:n:05182180",
+            "wn31:n:08642648",
+            "wn31:n:13362771",
+            "wn31:r:00105849",
+            "wn31:r:00197608",
+            "wn31:r:00205350",
+            "wn31:r:00206480",
+            "wn31:s:00136526",
+            "wn31:s:01665754",
+            "wn31:v:00200023",
+            "wn31:v:01988748"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "事实正确和右向副词分别首记，道德正确单列后学；权利、适合及精确强调等不能因为多词性同形而混成原文已覆盖。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "副词",
+          "recommended_use_ids": [
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:00634232",
+          "part_of_speech": "a",
+          "definition_en": "free from error; especially conforming to fact or truth; \"the correct answer\"; \"the correct version\"; \"the right answer\"; \"took the right road\"; \"the right decision\"",
+          "lemmas": [
+            "correct",
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:00636250",
+          "part_of_speech": "a",
+          "definition_en": "correct in opinion or judgment; \"time proved him right\"",
+          "lemmas": [
+            "right",
+            "correct"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:02039393",
+          "part_of_speech": "a",
+          "definition_en": "being or located on or directed toward the side of the body to the east when facing north; \"my right hand\"; \"right center field\"; \"a right-hand turn\"; \"the right bank of a river is the bank on your right side when you are facing downstream\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:02042235",
+          "part_of_speech": "a",
+          "definition_en": "in conformance with justice or law or morality; \"do the right thing and confess\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05182180",
+          "part_of_speech": "n",
+          "definition_en": "an abstract idea of that which is due to a person or governmental body by law or tradition or nature; \"they are endowed by their Creator with certain unalienable Rights\"; \"Certain rights can never be granted to the government but must be kept in the hands of the people\"- Eleanor Roosevelt; \"a right is not something that somebody gives you; it is something that nobody can take away\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08642648",
+          "part_of_speech": "n",
+          "definition_en": "location near or direction toward the right side; i.e. the side to the south when a person or object faces east; \"he stood on the right\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13362771",
+          "part_of_speech": "n",
+          "definition_en": "(frequently plural) the interest possessed by law or custom in some intangible thing; \"mineral rights\"; \"film rights\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00105849",
+          "part_of_speech": "r",
+          "definition_en": "immediately; \"she called right after dinner\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00197608",
+          "part_of_speech": "r",
+          "definition_en": "in the right manner; correctly; suitably; \"please do your job properly!\"; \"can't you carry me decent?\"",
+          "lemmas": [
+            "properly",
+            "decently",
+            "decent",
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00205350",
+          "part_of_speech": "r",
+          "definition_en": "in an accurate manner; \"the flower had been correctly depicted by his son\"; \"he guessed right\"",
+          "lemmas": [
+            "correctly",
+            "right",
+            "aright"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00206480",
+          "part_of_speech": "r",
+          "definition_en": "precisely, exactly; \"stand right here!\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00389732",
+          "part_of_speech": "r",
+          "definition_en": "toward or on the right; also used figuratively; \"he looked right and left\"; \"the party has moved right\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00136526",
+          "part_of_speech": "s",
+          "definition_en": "appropriate for a condition or purpose or occasion or a person's character, needs; \"everything in its proper place\"; \"the right man for the job\"; \"she is not suitable for the position\"",
+          "lemmas": [
+            "proper",
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01665754",
+          "part_of_speech": "s",
+          "definition_en": "most suitable or right for a particular purpose; \"a good time to plant tomatoes\"; \"the right time to act\"; \"the time is ripe for great sociological changes\"",
+          "lemmas": [
+            "good",
+            "right",
+            "ripe"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00200023",
+          "part_of_speech": "v",
+          "definition_en": "make right or correct; \"Correct the mistakes\"; \"rectify the calculation\"",
+          "lemmas": [
+            "correct",
+            "rectify",
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01988748",
+          "part_of_speech": "v",
+          "definition_en": "put in or restore to an upright position; \"They righted the sailboat that had capsized\"",
+          "lemmas": [
+            "right"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "external_access_failures": [
+    {
+      "headword": "clause",
+      "url": "https://dictionary.cambridge.org/dictionary/english/clause",
+      "status": 403,
+      "observation": "web open returned 403 Forbidden; no content used."
+    }
+  ]
+}

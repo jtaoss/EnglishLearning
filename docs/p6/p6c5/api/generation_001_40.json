@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_40",
+  "request_hash": "46c74db73101b6644775c0097c65f045143c9ab3301899493429ee5767dbb78b",
+  "started_utc": "2026-11-13T08:14:59.568541+00:00",
+  "completed_utc": "2026-11-13T08:15:38.142943+00:00",
+  "elapsed_seconds": 38.578,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "45f81e5f-e215-455c-8c71-105c4081c63f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3602,
+    "completion_tokens": 6502,
+    "total_tokens": 10104,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6053
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 786
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-63be8044d771\",\"word\":\"assure\",\"core\":[[\"向…保证；使确信\",\"动词\",[\"s001\"],[\"wn31:v:00778313\",\"wn31:v:01770259\"],\"对象通常是人；侧重让听者相信/放心，不强调使结果必然发生。\"],[\"担保；承诺\",\"动词\",[\"s002\"],[\"wn31:v:00885532\"],\"作出承诺/保证，对象可为承诺内容；不强调实际确保结果。\"],[\"确保\",\"动词\",[\"s003\"],[\"wn31:v:00664507\",\"wn31:v:00892111\"],\"使某事确定发生或确认做到，对象多为结果、条件或情况。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"首记分三组：向人保证/使确信、承诺担保、确保结果；三者对象和方向不同，均保留原片段，不合并以免把‘担保’误当‘确保’。\",\"flags\":[]},{\"id\":\"SG25-27ce25259481\",\"word\":\"ensure\",\"core\":[[\"确保；保证（做到）\",\"动词\",[\"s001\",\"s003\"],[\"wn31:v:00664507\",\"wn31:v:00892111\"],\"使结果或情况确定发生/确认做到；与‘担保/承诺’的承诺义分开。\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s002\",\"ensure 的所供证据均为‘使确定/确保’，未见‘担保/承诺’义；原片段可能混入 assure 的承诺义，保留待核。\"]],\"splits\":{},\"additions\":[],\"reason\":\"ensure 所供证据只支持‘使确定/确保’，故核心仅一组；‘担保’无证据暂存，不强行并入。\",\"flags\":[[\"Major\",\"source_sense_unsupported\",\"原片段‘担保’在 ensure 的所供词典证据中无承诺/担保义，已暂存待核，不写入核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_003",
+  "kind": "audit",
+  "request_hash": "af3a7f796e7ff39784e7a0ff890ae561e237772f598a0d85fb27adf30efa363f",
+  "input_ids": [
+    "SG25-db2a30692ef9",
+    "SG25-da15caaee9de",
+    "SG25-04731bc4ce6b",
+    "SG25-e892aeb42e69",
+    "SG25-bfb9e6d725a0"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c59d8f08-3f29-4585-a89a-bd452f10848c",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-db2a30692ef9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"不一样的（强调差异）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“不一样的”对应 distinctly dissimilar/unlike，且该用途仍在候选层级并集中保留。\",\"evidence_ids\":[\"wn31:s:02074895\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"不同种类的（多种类别）\",\"relation\":\"合理概括\",\"reason\":\"核心组将“不同种类的”与“各式各样的”合并为多样性上位表达，保留原文两个近义源义，未增加无来源对象限制。\",\"evidence_ids\":[\"wn31:s:02075123\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"各式各样的（多种多样）\",\"relation\":\"合理概括\",\"reason\":\"核心组用“不同种类的／各式各样的”概括 many and different；该源义有对应组且可追溯。\",\"evidence_ids\":[\"wn31:s:02075123\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均有对应组：差异义在扩展，种类/各式各样在核心；无丢失，也未把词典额外义强并入核心。\"},{\"id\":\"SG25-da15caaee9de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"个人（人）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“个人”对应 a human being/person，词性与对象一致。\",\"evidence_ids\":[\"wn31:n:00007846\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"个别的（单独区分）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“个别的”对应 separate and distinct from others of the same kind，保留单独/区分义。\",\"evidence_ids\":[\"wn31:s:00732690\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"个人的（专属个人/个人相关）\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组“个人的”对应 concerning one person exclusively，符合个人专属或私人相关用法。\",\"evidence_ids\":[\"wn31:s:01772598\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“个人”和形容词“个人的”在核心，“个别的”在扩展；各源义均有准确链接，词性未混用。\"},{\"id\":\"SG25-04731bc4ce6b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"占优势的（有优势/支配力）\",\"relation\":\"合理概括\",\"reason\":\"核心组“占优势的／主导的”对应 exercising influence or control，合并两个近义源义且未纳入遗传学显性义。\",\"evidence_ids\":[\"wn31:a:00794782\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"主导的（起主导作用）\",\"relation\":\"合理概括\",\"reason\":\"核心组将“主导的”与“占优势的”合为影响/控制上位表达，源义保留且未冒充词典其他专门义。\",\"evidence_ids\":[\"wn31:a:00794782\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义合在核心“占优势/主导”组；遗传学显性等词典义未被当作原文已有义。\"},{\"id\":\"SG25-e892aeb42e69\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"占上风（取得优势）\",\"relation\":\"合理概括\",\"reason\":\"核心组“占上风／占优势”覆盖 have dominance/power to defeat over，并与“占优势”近义合组。\",\"evidence_ids\":[\"wn31:v:02545000\",\"wn31:v:02650318\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"占优势（数量/地位等占优）\",\"relation\":\"合理概括\",\"reason\":\"核心组用“占上风／占优势”概括 be larger in number/quantity/power/status/importance，源义得到保留。\",\"evidence_ids\":[\"wn31:v:02545000\",\"wn31:v:02650318\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"控制（支配）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“控制”对应 be in control，保留支配关系，且未把该义误并入核心一般优势义。\",\"evidence_ids\":[\"wn31:v:02653015\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"占上风/占优势在核心，控制在扩展；词典的俯视、意义超过等未作为源义。\"},{\"id\":\"SG25-bfb9e6d725a0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"国内的（国家内部/内政）\",\"relation\":\"语义等价\",\"reason\":\"核心组“国内的”对应 concerning internal affairs of a nation，符合国内事务义。\",\"evidence_ids\":[\"wn31:a:01041784\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"家庭的（家/家庭）\",\"relation\":\"语义等价\",\"reason\":\"核心组“家庭的”对应 of or involving the home or family，对象和词性一致。\",\"evidence_ids\":[\"wn31:a:01042490\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"家养的（驯养/家用动物等）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“家养的”对应 converted or adapted to domestic use，如 domestic animals，保留驯养/家用义。\",\"evidence_ids\":[\"wn31:s:02397489\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"国内、家庭、家养三义分别落在核心/核心/扩展，对象边界清楚，未把家庭义泛化到家养义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5767,
+    "completion_tokens": 8784,
+    "total_tokens": 14551,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7183
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3847
+  },
+  "started_utc": "2026-11-13T09:43:09.332288+00:00",
+  "completed_utc": "2026-11-13T09:43:57.999608+00:00",
+  "elapsed_seconds": 48.672,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

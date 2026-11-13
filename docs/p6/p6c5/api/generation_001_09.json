@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_09",
+  "request_hash": "64bcf49885cb15b51895fecf9f69d976668e7294518af7fefbf89ebda895b794",
+  "started_utc": "2026-11-13T08:14:58.739754+00:00",
+  "completed_utc": "2026-11-13T08:16:02.108293+00:00",
+  "elapsed_seconds": 63.359,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "f5013842-3077-4324-ad08-2a6342cdc3e0",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3609,
+    "completion_tokens": 9730,
+    "total_tokens": 13339,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9031
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 793
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-2d5e8600a4fb\",\"word\":\"sensitive\",\"pos\":\"形容词\",\"raw\":\"敏感的；体贴的\",\"usage_note\":\"\",\"core\":[[\"敏感的；易受刺激的\",\"形容词\",[\"s001\"],[\"wn31:a:02110761\",\"wn31:s:01717206\"],\"对物理刺激或变化反应强；皮肤、牙齿等可指易不适；不把机密信息义塞入此处\"],[\"体贴的；能体察他人感受的\",\"形容词\",[\"s002\"],[\"wn31:a:02113270\"],\"对他人态度或需要敏感，宽义上近于体贴；不等同于主动照顾\"]],\"extended\":[],\"other\":[[\"敏感的（涉及机密/国家安全）\",\"形容词\",[\"s001\"],[\"wn31:s:00417683\"],\"仅用于信息、事务等保密或国家安全语境，需谨慎处理\"]],\"hold\":[],\"splits\":{\"s001\":\"源片段“敏感的”同时覆盖一般物理/感官易感与机密信息专门用法；分别列入核心和其他，避免把专门义混入首记。\"},\"additions\":[],\"reason\":\"首记先分物理/感官敏感与体察他人；机密信息义语境受限放其他；“体贴”按宽义条件保留。\",\"flags\":[[\"Minor\",\"translation_scope_uncertain\",\"s002“体贴的”比证据中“对他人态度/处境敏感”更主动、更具体；已用条件式改述，待语境核验。\"],[\"Info\",\"evidence_pos_mismatch\",\"wn31:n:10325946 是名词“灵媒”义，与源形容词用法不符，未采用。\"],[\"Info\",\"lexical_evidence_insufficient\",\"情绪上易受伤/易被冒犯及“敏感话题”等常见义未由本次所给定义逐一覆盖；未单列断言。\"]]},{\"id\":\"SG25-84bb160039a7\",\"word\":\"consequence\",\"pos\":\"名词\",\"raw\":\"后果；影响；效果\",\"usage_note\":\"\",\"core\":[[\"后果；结果\",\"名词\",[\"s001\"],[\"wn31:n:07308725\",\"wn31:n:11430739\"],\"某事件或行为造成的结果，常指对个人或局面的（负面）后果\"],[\"影响；效果\",\"名词\",[\"s002\",\"s003\"],[\"wn31:n:11430739\"],\"某事物产生的作用或结果；“影响”按 impact/effect 义，不取“重要性”\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"重要性；显要\",\"名词\",[\"wn31:n:05178101\"],\"“of consequence”=重要/显要，是原文“后果/影响/效果”未表达的独立义；列为外部候选，不并入核心。\"]],\"reason\":\"首记把“后果”（事件结果）与“影响/效果”（作用）分开；“重要性/显要”仅作候选，避免把 of consequence 义误当结果义。\",\"flags\":[[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"外部候选“重要性/显要”有证据但未采用，核心未覆盖；待人工决定是否加入。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

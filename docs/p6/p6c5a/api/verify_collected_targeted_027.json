@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_027",
+  "kind": "verify",
+  "request_hash": "0eec516b1903aa281b46f29b8f5535d367488b0c33b82ca8a201f60aa838eda5",
+  "input_ids": [
+    "SG25-901ad244ed23",
+    "SG25-b0ad2485845e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "425991e7-b020-4666-a3bb-60c9e9862cc6",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-901ad244ed23\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"候选扩展层将'原子的'限定为'限核能、原子核相关语境'，原文未提供此限制；提供的WordNet证据wn31:a:02873726仅支持原子核/核物理，未支持一般原子属性，故该限制可能反映来源过宽，但相对于原文仍是收窄。\",\n          \"evidence_ids\": [\"wn31:a:02873726\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组'原子核的'与wn31:a:02873726的原子核物理义一致，对象范围匹配。\",\n          \"evidence_ids\": [\"wn31:a:02873726\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组'原子武器的'由wn31:a:00612923的核武器/原子武器义直接支持，对象范围匹配。\",\n          \"evidence_ids\": [\"wn31:a:00612923\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s001的'原子的'是否应保留一般原子属性范围，或仅限核能/原子核语境？当前提供的词典证据中没有一般atomic义，候选限制的许可依据仅在注释中，来源范围待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s002和s003均有合理对应；s001存在来源范围未定的收窄风险。\"\n    },\n    {\n      \"id\": \"SG25-b0ad2485845e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原义'跟随'仍为held且未映射到任何层级；英语adopt有抽象follow/espouse用法（wn31:v:02351891），但原文无明确语境，不能确定其指物理跟随还是抽象跟随，因此无法判定已覆盖或已排除。\",\n          \"evidence_ids\": [\"wn31:v:02351891\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组把'遵循'限定为采纳后践行/选择并追随理论政策等，未保留一般遵守规则、命令、法律的'遵循'；英语adopt证据也未覆盖该一般遵守义。\",\n          \"evidence_ids\": [\"wn31:v:02351720\", \"wn31:v:02351891\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组'采用'与adopt主要义'take up and practice as one's own'相符；虽然证据wn31:v:00603217列举方法/实践等，但组文本未附加排他限制，可概括采用义。\",\n          \"evidence_ids\": [\"wn31:v:00603217\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"source_sense_held_unresolved\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [],\n          \"evidence_ids\": [\"wn31:v:02351891\"],\n          \"reason\": \"原义'跟随'未被映射到任何层级，仅在held中。词典证据显示adopt可表示choose and follow theories/ideas/policies（wn31:v:02351891），该抽象跟随义可能属于原文；若来源无上下文也不能直接丢弃。现在该义没有在任何层显示，构成覆盖损失。\",\n          \"counterexample\": \"adopt the feminist movement = follow/espouse the movement，而非走在某人后面。\",\n          \"repair_suggestion\": \"将s001映射到抽象跟随，例如扩展层'跟随（理论/政策/运动等）'，并标注不用于物理跟随；或补来源语境后决定，但不应无后续地held。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002'遵循'是否包含一般遵守规则/命令/法律？当前候选限为采纳后践行，而原文未说明；英语adopt词典无一般遵守义，故该来源范围可能过宽，需标来源待核，不能视为生成器缺陷。\",\n        \"s003'采用'的对象范围是否包括政策/计划/技术？核心组文本为泛化'采用'，但证据wn31:v:00603217偏方法/实践；政策/计划证据wn31:v:02351891却挂在s002。是否需在s003补充链接或明确示例性质待核。\"\n      ],\n      \"preferences\": [\n        \"将'采用'置于核心、'遵循'置于扩展属于教学顺序选择；若后续确认'跟随'应展示，可加入扩展层。\"\n      ],\n      \"note\": \"s003基本等价；s002有来源范围收窄待核；s001已证实未覆盖抽象跟随，整体未通过。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5013,
+    "completion_tokens": 9964,
+    "total_tokens": 14977,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8834
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3349
+  },
+  "started_utc": "2026-11-13T09:57:58.773872+00:00",
+  "completed_utc": "2026-11-13T10:00:19.334421+00:00",
+  "elapsed_seconds": 140.562,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

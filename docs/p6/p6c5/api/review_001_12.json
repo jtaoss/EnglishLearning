@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_12",
+  "request_hash": "8d9d247bf4fd2b01f79d2b24840edb0074f25d47ccf3d6365fa4caf785803e71",
+  "started_utc": "2026-11-13T08:16:13.435475+00:00",
+  "completed_utc": "2026-11-13T08:16:41.586797+00:00",
+  "elapsed_seconds": 28.156,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "35a55649-3aeb-4f85-b814-85a2ea2e48e2",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3812,
+    "completion_tokens": 1326,
+    "total_tokens": 5138,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1158
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3812
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-3fb45623cb30\",\"independent_core\":[],\"verdict\":\"no_confirmed_problem\",\"findings\":[],\"preferences\":[\"可考虑在后续教学中引入几何剖面或动词用法作为扩展，但当前核心无需修改。\"],\"note\":\"源片段“部分；章节；部门”均为名词，候选核心分为三组，分别对应整体中的部分、作品章节、机构部门，证据引用的WordNet义项恰当，未发现词性、对象或方向错误。外部词典中的几何剖面、区域、动词用法已被显式列入dictionary_additions且状态为AI_candidate_not_adopted，未混入核心，符合双轨覆盖要求。原片段全部覆盖，源词性为名词且已表示。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

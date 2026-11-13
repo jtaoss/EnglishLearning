@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_045",
+  "kind": "verify",
+  "request_hash": "e5be7a6faed59bb4d71198ccc496c80f5b0e520931546abb7084c15a25a51341",
+  "input_ids": [
+    "SG25-a919007637ab",
+    "SG25-fca30679635b"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0e31d80b-9a10-4f87-9f00-b31c6bcb60ac",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-a919007637ab\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"wn31:v:01299048 'cause to be attached' 支持及物‘附上’；核心1用文件/材料为例非排他，未新增对象限制。\",\n          \"evidence_ids\": [\"wn31:v:01299048\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原‘连接’可及物也可不及物；核心2及物‘使相连’+扩展1不及物‘附着；相连’合起来覆盖，证据分别支持。\",\n          \"evidence_ids\": [\"wn31:v:01299048\", \"wn31:v:01292858\", \"wn31:v:01293025\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"‘重视’需搭配 attach importance to；所供证据未覆盖该搭配，单用 attach 不等于‘重视’，当前 held。\",\n          \"evidence_ids\": []\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s003 重视：原中文‘重视’通常对应短语 attach importance to；所供 WordNet 证据未覆盖该搭配，单用 attach 不能直接表示‘重视’。候选已 held，但需补充搭配证据或继续暂存。\"\n      ],\n      \"preferences\": [\n        \"core1 与 core2 均引用 wn31:v:01299048，实际教学中可合并或分列；这是教学粒度偏好，不构成语义缺口。\"\n      ],\n      \"note\": \"s001 与 s002 的及物/不及物用法已覆盖；s003 因搭配证据不足保留为 held，不判定为已覆盖。\"\n    },\n    {\n      \"id\": \"SG25-fca30679635b\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原‘攻击’在中文中常见于言论/文字批评性攻击；候选核心动词/名词组仅选用军事、人身/行为证据，未链接言语批评证据，其他层也未保留该分支。\",\n          \"evidence_ids\": [\"wn31:v:01121587\", \"wn31:v:01122487\", \"wn31:n:00775311\", \"wn31:n:00974725\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"原‘袭击’为军事/人身突然攻击；核心动词组及物袭击与核心名词组军事进攻/攻击行为均有词典证据，对象未扩大也未遗漏关键分支。\",\n          \"evidence_ids\": [\"wn31:v:01121587\", \"wn31:v:01122487\", \"wn31:n:00775311\", \"wn31:n:00974725\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源词性未定；候选仅按名词‘发作（病症等）’保留，英语证据 n:14104857 支持；动词性‘发作’未有对应英语‘attack’证据，不宜直接判为缺口。\",\n          \"evidence_ids\": [\"wn31:n:14104857\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_missing\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-fca30679635b:p6c4:core_meanings:1\", \"SG25-fca30679635b:p6c4:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:00864347\", \"wn31:n:01223108\", \"wn31:n:06724098\"],\n          \"reason\": \"原‘攻击’可涵盖言论/文字批评性攻击；所供词典证据有 v:00864347、n:01223108、n:06724098，但核心及扩展均未链接该分支，仅保留军事/人身/行为义，造成覆盖缺漏。\",\n          \"counterexample\": \"对观点/作品进行批评性攻击（如 The editors attacked the new House Speaker）。\",\n          \"repair_suggestion\": \"在动词核心组补‘言论/文字攻击’子用法并链接 v:00864347；在名词核心组补‘批评；抨击’并链接 n:01223108/n:06724098，或在扩展/暂存明确保留该剩余范围。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003 发作：源词性未定，候选仅按名词（疾病等）处理；是否需覆盖动词性‘发作’（对应英语 break out 等）未有证据，暂未判定。\"\n      ],\n      \"preferences\": [\n        \"攻击/袭击合并为一组可接受，但教学上可区分‘袭击’强调突然性；属于偏好。\"\n      ],\n      \"note\": \"s001批评性攻击缺漏记录为Minor；s002覆盖基本完整；s003仅按名词扩展，动词性发作待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 5598,
+    "completion_tokens": 10352,
+    "total_tokens": 15950,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9182
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3934
+  },
+  "started_utc": "2026-11-13T09:58:43.118478+00:00",
+  "completed_utc": "2026-11-13T10:01:07.582729+00:00",
+  "elapsed_seconds": 144.468,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

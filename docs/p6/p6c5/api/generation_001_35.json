@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_35",
+  "request_hash": "a037e8098a9c632c755dcd5a9553d1cade3b6fe85cd799c2323d67eb5977208c",
+  "started_utc": "2026-11-13T08:14:59.460855+00:00",
+  "completed_utc": "2026-11-13T08:15:46.369457+00:00",
+  "elapsed_seconds": 46.907,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a91251c1-1092-47c2-a93e-2766cc582f48",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3604,
+    "completion_tokens": 7382,
+    "total_tokens": 10986,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6695
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 788
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e62377847bbe\",\"word\":\"estate\",\"pos\":\"名词\",\"core\":[[\"财产；资产\",\"名词\",[\"s001\"],[\"wn31:n:13271829\"],\"泛指个人拥有的全部资产与负债\"]],\"extended\":[[\"地产；庄园\",\"名词\",[\"s001\"],[\"wn31:n:13267561\"],\"特指乡村大片私有土地/地产；是原“财产”宽义下的具体类型\"]],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"原“财产”为宽义；拆出“地产/庄园”这一具体财产类型，核心仍保留泛指资产义。\"},\"additions\":[[\"社会阶层；等级\",\"名词\",[\"wn31:n:08184264\"],\"外部词典有英国历史语境下的“社会阶层/等级”义，原中文未表达；仅列候选。\"]],\"reason\":\"先记直接对应“全部资产”的泛指义；“地产/庄园”是同一宽义下的具体类型，放扩展；历史社会阶层义缺原文依据，只列补充候选。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"原“财产”未明确表达“社会阶层/等级”这一外部义；已列补充候选，未采用。\"]]},{\"id\":\"SG25-ab5e345f2c28\",\"word\":\"stimulate\",\"pos\":\"动词\",\"core\":[[\"刺激；使兴奋\",\"动词\",[\"s001\"],[\"wn31:v:00022679\",\"wn31:v:00504245\"],\"使身体或精神警觉、有活力；亦兼容起兴奋剂作用\"],[\"激发；激起\",\"动词\",[\"s001\",\"s003\"],[\"wn31:v:02120601\",\"wn31:v:01765558\"],\"激起情绪、食欲、兴趣等反应；s001 在此为“刺激情绪/反应”的拆用\"],[\"促进；推动\",\"动词\",[\"s002\"],[\"wn31:v:00795741\",\"wn31:v:01648064\"],\"宽义推动发展或使更快发生；证据为“提供刺激”与“使迅速发生”，有条件支持\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"“刺激”兼有“使兴奋”与“激起情绪/反应”两类对象，分别列入核心1和核心2；对象与结果不同。\"},\"additions\":[[\"促使；诱使（某人做某事）\",\"动词\",[\"wn31:v:00772482\"],\"外部词典有“促使某人采取行动”义，原中文“促进”不等于该义；仅列候选。\"]],\"reason\":\"先记最具体的身体/精神刺激，再记情绪/食欲的激发；“促进”按宽义兼容单列并标证据限度；“促使某人做某事”不作原文义，只列候选。\",\"flags\":[[\"Minor\",\"lexical_evidence_insufficient\",\"“促进”仅由“provide the needed stimulus for”及“cause to occur rapidly”的宽义/加速义支持，缺少直接“促进发展”定义，按有条件支持。\"],[\"Info\",\"source_coverage_gap\",\"原中文未含“促使某人做某事”义，已列补充候选。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

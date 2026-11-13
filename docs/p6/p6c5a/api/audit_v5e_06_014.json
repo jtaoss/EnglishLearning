@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_014",
+  "kind": "audit",
+  "request_hash": "588064b0ce97f1b7539633b1be88fc6fab21d886bdfbfbc59dbcec8d62ac80d4",
+  "input_ids": [
+    "SG25-3424482393d1",
+    "SG25-f7fbd5853d11",
+    "SG25-945c8f9d4fe6",
+    "SG25-d4ab04449fe1",
+    "SG25-574432331453"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "85d49460-0b98-4858-a450-1469e4b4f266",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3424482393d1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"修辞（学科/有效表达技巧）\",\"relation\":\"语义等价\",\"reason\":\"核心组同时保留修辞学技巧与有效说服性语言两个英语依据，未把“空话”混入。\",\"evidence_ids\":[\"wn31:n:06180214\",\"wn31:n:07086738\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"华丽或空洞的言辞\",\"relation\":\"语义等价\",\"reason\":\"核心组对应华丽藻饰与空泛言辞两种英语依据，与原文色彩一致。\",\"evidence_ids\":[\"wn31:n:07084469\",\"wn31:n:06621856\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别由两个核心组覆盖；学科义与空话/藻饰义未混并，覆盖完整。\"},{\"id\":\"SG25-f7fbd5853d11\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"决心/决意（含坚定与作出的决定）\",\"relation\":\"语义等价\",\"reason\":\"核心组以“决心”统摄坚定特质与作出决定两类英语依据，未把“决议”混入。\",\"evidence_ids\":[\"wn31:n:00181077\",\"wn31:n:04868717\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"会议正式决定/决议\",\"relation\":\"语义等价\",\"reason\":\"核心组“决议”有会议表决正式表达依据，和源义一致。\",\"evidence_ids\":[\"wn31:n:06523865\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"分辨率（屏幕/图像等）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“分辨率”一般表述，屏幕/图像是语境示例；英语依据对应计算机显示像素分辨率。\",\"evidence_ids\":[\"wn31:n:11526370\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"解决（问题/争议等）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“解决”对应找到问题解决方案的过程，问题/争议为语境示例。\",\"evidence_ids\":[\"wn31:n:00154629\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"四个源义分别落在核心与扩展层；决心与正式决议在前，分辨率与解决后置并保留语境示例，未见漏义。\"},{\"id\":\"SG25-945c8f9d4fe6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"在头顶上方（源义项词性未定；候选推荐副词）\",\"relation\":\"语义等价\",\"reason\":\"副词组对应 above the head/over the head 与 in the sky，覆盖原文位置义；源义项POS为null，只能把组POS视为推荐。\",\"evidence_ids\":[\"wn31:r:00250926\",\"wn31:r:00251120\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"头顶上的（源义项词性未定；候选推荐形容词）\",\"relation\":\"语义等价\",\"reason\":\"形容词组对应 located/originating from above，覆盖原文修饰义；源义项POS为null，不能当作已核验源标签。\",\"evidence_ids\":[\"wn31:a:02482038\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-945c8f9d4fe6:p6c4:core_meanings:1\",\"SG25-945c8f9d4fe6:p6c4:core_meanings:2\"],\"evidence_ids\":[],\"reason\":\"原义项part_of_speech为null且pos_evidence为unresolved_multi_pos，候选将s001推荐为副词、s002推荐为形容词；组POS只是推荐，不能视为源词性已确认。\",\"repair_suggestion\":\"人工确认源义项词性，或在数据中保留“源词性未定/候选推荐”的区分；不改变现有语义覆盖。\"}],\"note\":\"两个位置义均有对应；但源义项词性未定，候选副词/形容词仅为推荐，需确认，不能当作已核验源标签。\"},{\"id\":\"SG25-d4ab04449fe1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"雕刻（形成/刻凿）\",\"relation\":\"语义等价\",\"reason\":\"核心“雕刻”覆盖形成性雕刻与刻凿表面两类英语依据，中文上位表述自然。\",\"evidence_ids\":[\"wn31:v:01258721\",\"wn31:v:01259164\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"切开/切块（原文较宽；候选限切肉等）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组只保留切割成片/块的carve用法，未保留原文“切开”若指任意切开/打开的范围；该范围英语证据不足，需源义确认。\",\"evidence_ids\":[\"wn31:v:01258531\"],\"context\":\"uncertain\",\"residual_scope\":\"原文“切开”可能包含任意切开/打开，候选未保留该范围，且carve无对应英语证据。\",\"counterexample\":\"carve可切肉成片/块（Father carved the ham），但不表示任意打开物体。\",\"counterexample_evidence_ids\":[\"wn31:v:01258531\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_uncertain\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-d4ab04449fe1:p6c1:extended:1\"],\"evidence_ids\":[\"wn31:v:01258531\"],\"reason\":\"原文“切开”宽于carve的“切割成片/块”证据，候选已限为切肉等，属于源义待核而非候选漏义；不应自动判为生成器Major。\",\"repair_suggestion\":\"保留“切开/切块”的源义待核标记，补充切割成片/块证据，避免把任意打开归入carve。\"}],\"note\":\"雕刻义核心覆盖充分；切开义只保留切肉等切割成片/块用法，需源义确认，不把任意打开当carve。\"},{\"id\":\"SG25-574432331453\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"砍（木材等）\",\"relation\":\"语义等价\",\"reason\":\"核心组“砍（木材）”对应劈砍工具与砍木材证据，木材为示例。\",\"evidence_ids\":[\"wn31:v:01259737\",\"wn31:v:01260655\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"切/切碎（食物例）\",\"relation\":\"合理概括\",\"reason\":\"与s001共用一个并列显示单元，保留切碎子义并以食物为例；食物不是排他限定，同组仍保留木材。\",\"evidence_ids\":[\"wn31:v:01260655\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"排骨（带骨肉块）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“排骨”对应带骨小肉块证据，和源名词义一致。\",\"evidence_ids\":[\"wn31:n:07669591\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"deferral_rationale_missing\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-574432331453:p6c1:extended:1\"],\"evidence_ids\":[\"wn31:n:07669591\"],\"reason\":\"名词“排骨”是独立源义，放在扩展层，但reason只解释动词合并，未给该独立名词义后置的教学理由；不是语义漏义。\",\"repair_suggestion\":\"补充“排骨”后置的具体教学理由，或重新评估是否应进核心；无需改动其语义映射。\"}],\"note\":\"动词砍/切合为一个并列显示单元且子义可追溯，名词排骨已保留在扩展层；名词后置理由不足，需补理由而非补义。\"}]}",
+  "usage": {
+    "prompt_tokens": 6765,
+    "completion_tokens": 16131,
+    "total_tokens": 22896,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14048
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4845
+  },
+  "started_utc": "2026-11-13T09:50:57.451287+00:00",
+  "completed_utc": "2026-11-13T09:52:29.421974+00:00",
+  "elapsed_seconds": 91.984,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

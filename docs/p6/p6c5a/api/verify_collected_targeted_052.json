@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_052",
+  "kind": "verify",
+  "request_hash": "611400dc608f2ebcdccc28730dd9d0411fb6cb2dacf7013af6c593b2a9760ba7",
+  "input_ids": [
+    "SG25-c082456a7766",
+    "SG25-8a741eb9c892"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2b98b79f-9100-4d66-9865-26267a5332c4",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c082456a7866\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"原文“媒介”无具体领域限制，候选核心组保留“媒介”并在注释中限定为传递信息，同时并列“实现某事的手段”，覆盖常见名词义；因原文范围未完全指定，视为合理概括而非精确等价。\",\n          \"evidence_ids\": [\"wn31:n:06264799\", \"wn31:n:14923303\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组第二子片段“实现某事的手段”与原文“手段”一致，证据 wn31:n:14923303 为“an intervening substance through which something is achieved”，对应准确。\",\n          \"evidence_ids\": [\"wn31:n:14923303\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“中等的”直接对应原文，证据 wn31:s:01536076 为“around the middle of a scale of evaluation”，且为形容词。\",\n          \"evidence_ids\": [\"wn31:s:01536076\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"原词条无上下文，“媒介”是否需覆盖“传播媒介（mass media）”或“介质（如声音传导）”等未明确；当前组合以传递信息和实现手段覆盖，未发现丢失明确源用途，但精确源范围待人工确认。\"\n      ],\n      \"preferences\": [\n        \"将名词义拆为两个核心组（媒介/手段）能提高辨析度，但当前合并且以分号并列并无错误，可作为教学偏好。\"\n      ],\n      \"note\": \"名词二义合并为同组但两个子片段均保留；形容词独立。无范围丢失或扩大；源范围略含糊，已记录待核。\"\n    },\n    {\n      \"id\": \"SG25-8a741eb9c892\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“擦亮；抛光”保留“擦亮”，证据 wn31:v:01248201 为“make (a surface) shine”，对应准确。\",\n          \"evidence_ids\": [\"wn31:v:01248201\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围扩大\",\n          \"reason\": \"候选核心组除“润色”外增加“完善（文字、表现等）”，其中“表现”等超出原文文字/作品润色范围；词典 wn31:v:00474730 支持一般完善/社交举止，但该用法未在原文中出现。\",\n          \"evidence_ids\": [\"wn31:v:00474948\", \"wn31:v:00474730\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“抛光剂”直接对应证据 wn31:n:15020587 “a preparation used in polishing”。\",\n          \"evidence_ids\": [\"wn31:n:15020587\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展组“光泽”直接对应证据 wn31:n:04962337 “the property of being smooth and shiny”。\",\n          \"evidence_ids\": [\"wn31:n:04962337\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_expansion\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-8a741eb9c892:p6c4:core_meanings:2\"],\n          \"evidence_ids\": [\"wn31:v:00474730\", \"wn31:v:00474948\"],\n          \"reason\": \"核心组将原文“润色”（通常用于文字/作品）扩大为“完善（文字、表现等）”，增加了一般表现或社交举止等对象；词典 v:00474730 的 social manners 例不属于源义范围，不能与源义等价合并。\",\n          \"counterexample\": \"润色文稿/文字（源义） vs 完善社会举止/表现（词典例，原文未支持）\",\n          \"repair_suggestion\": \"核心组保留“润色（文字/作品）”，将一般“完善”或“表现”用法移至扩展或标为词典补充，并在注释中明确超出源义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原词条未给出“润色”的具体对象范围；若教材中“润色”可扩展至表演或社交举止，则当前核心组的“完善（表现等）”并非扩大，而属源义覆盖。此依赖人工确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"物理/抽象动词分列，两个名词义进入扩展；核心 s002 存在轻度范围扩大，建议限定为文字/作品润色。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4704,
+    "completion_tokens": 7523,
+    "total_tokens": 12227,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6390
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3040
+  },
+  "started_utc": "2026-11-13T09:59:47.975561+00:00",
+  "completed_utc": "2026-11-13T10:01:28.535600+00:00",
+  "elapsed_seconds": 100.562,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

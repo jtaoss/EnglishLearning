@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_023",
+  "kind": "verify",
+  "request_hash": "a4b2239011850a9a2e33473ced0650685cb524cf78bd8432d92e7b53ab55593d",
+  "input_ids": [
+    "SG25-1caece2e3bd1",
+    "SG25-c1bb3894443f"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "57f952e6-3675-444d-8049-c7f4903c1b36",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-1caece2e3bd1\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"s001 妥协仅保留名词用法；source_pos包含动词，且有动词妥协证据 wn31:v:01037675，未链接或标记暂存。\",\n          \"evidence_ids\": [\"wn31:n:07194002\", \"wn31:v:01037675\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"s002 折中仅保留动词用法；词典有名词折中 wn31:n:01208054，未链接或标记暂存。\",\n          \"evidence_ids\": [\"wn31:v:01037252\", \"wn31:n:01208054\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"s003 使受到损害由核心组动词链接 wn31:v:01038464，覆盖使陷入危险/受损等；无已知遗漏。\",\n          \"evidence_ids\": [\"wn31:v:01038464\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_pos_coverage_gap\",\n          \"source_ids\": [\"s001\", \"s002\"],\n          \"group_ids\": [\"SG25-1caece2e3bd1:core:1\", \"SG25-1caece2e3bd1:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:01037675\", \"wn31:n:01208054\"],\n          \"reason\": \"s001仅按名词妥协挂接，s002仅按动词折中挂接；未明确保留动词妥协和名词折中。源词性未定，不能视为已完成词性覆盖。\",\n          \"counterexample\": \"wn31:v:01037675 定义动词妥协；wn31:n:01208054 定义名词折中。\",\n          \"repair_suggestion\": \"为s001补充动词妥协链接或暂存，为s002补充名词折中链接或暂存；明确源词性待核。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001与s002的原始词性未定；若source_pos要求两词性都覆盖，遗漏未补；待源语境核验。\",\n        \"折中与妥协近义但语感不同，需确认是否可分别作名词/动词教学。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"源整体为名词；动词，候选选择了名词妥协、动词折中、动词使受损；动词妥协和名词折中需补链或暂存。\"\n    },\n    {\n      \"id\": \"SG25-c1bb3894443f\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"委员会由核心组链接 committee 特殊受委派群体义，证据 n08341444 支持。\",\n          \"evidence_ids\": [\"wn31:n:08341444\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s002 考察团为 held，现有committee证据不支持一般外出考察团；未映射。\",\n          \"evidence_ids\": []\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"s003 调查团扩展为受委派调查事项的委员会，限制来源未提供；一般调查团可能更宽。\",\n          \"evidence_ids\": [\"wn31:n:08341444\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-c1bb3894443f:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:08341444\"],\n          \"reason\": \"extended:1 将调查团限定为受委派调查事项的委员会，但未标记非委员会型调查团的剩余范围；若原调查团泛指，则未覆盖。\",\n          \"counterexample\": \"committee证据不直接包含所有调查团；非委员会调查团未被暂存或链接。\",\n          \"repair_suggestion\": \"在注释注明该调查团仅限committee型，并显式暂存其他调查团词义；或补充delegation/commission证据。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002考察团是否可映射到delegation/study group仍待核；现有证据不足。\",\n        \"s003调查团的来源范围是否仅committee型，还是包括非委员会调查团，需原语境确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心委员会和扩展调查团约束合理；考察团暂存；但调查团的剩余范围没有明确标pending。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4501,
+    "completion_tokens": 8051,
+    "total_tokens": 12552,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6930
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2837
+  },
+  "started_utc": "2026-11-13T09:56:49.141802+00:00",
+  "completed_utc": "2026-11-13T09:58:38.121366+00:00",
+  "elapsed_seconds": 108.969,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

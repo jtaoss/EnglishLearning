@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_30",
+  "request_hash": "ca3ead2a7b16d48b1b36b91eab1684aa23295f4cffcaef7515d199c4bf44babf",
+  "started_utc": "2026-11-13T08:16:13.888257+00:00",
+  "completed_utc": "2026-11-13T08:18:27.106586+00:00",
+  "elapsed_seconds": 133.219,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b6e3857f-cf40-4204-a71f-864feb051f43",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3181,
+    "completion_tokens": 6661,
+    "total_tokens": 9842,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6015
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1133
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-e61db885bd6e\",\"independent_core\":[],\"verdict\":\"evidence_pending\",\"findings\":[{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"候选将源片段 s002 '有意义的' 仅对应 WordNet s:01500681（rich in significance or implication），并显示为 '有意义的；意味深长的'，用法提示收窄到'富含意义或暗示'。该源词也可能表达一般 'important/meaningful' 义（WordNet a:02168847），候选未把 s002 关联到该一般义，导致可能的源义漏配或收窄。若无更多源例证，不宜判为已确认错误；但需显式拆分或标记待证据。\",\"evidence_ids\":[\"wn31:a:02168847\",\"wn31:s:01500681\"],\"source_sense_ids\":[\"s002\"],\"candidate_group_ref\":\"SG25-e61db885bd6e:p6c5:core_meanings:2\",\"proposed_fix\":\"将 s002 拆分为一般'有意义的（重要的/有含义的）'与'意味深长的'两个用法；前者可关联 wn31:a:02168847 并与核心1或独立核心对应，后者保留为词典来源候选或标注源范围待确认；不要仅用一个窄义吞掉 s002。\"},{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"核心3 '值得注意的'仅以宽义 a:02168847 做兼容支持，候选也自注'按宽义兼容支持'；可靠词典未给出精确 'noteworthy' 独立 synset，因此该映射为近似而非完全确认。\",\"evidence_ids\":[\"wn31:a:02168847\"],\"source_sense_ids\":[\"s001\"],\"candidate_group_ref\":\"SG25-e61db885bd6e:p6c5:core_meanings:3\",\"proposed_fix\":\"保留暂存或注明证据为宽义兼容；如后续获得更精确 'noteworthy/remarkable' 义项证据，再确认；当前不作为错误。\"}],\"preferences\":[\"教学展示中明确区别 '有意义的（重要/有价值）' 与 '意味深长的（暗示/丰富含义）'，不要用分号让学习者误以为等同。\",\"不要优先宣称唯一正确顺序；若无频率数据，当前核心顺序只是教学选择。\",\"可考虑把 '统计上显著的' 作为后学扩展；与日常'重大'分开。\"],\"note\":\"目标风险词 significant。源三个形容词片段均在候选中有对应，但 s002 '有意义的' 对应证据过窄，且候选引入了未在原文出现的 '意味深长的'，该收窄或额外义需证据待确认。s003 和 s001 的映射基本合理；统计显著义已正确列为外部候选。当前无已确认的严重错误，但 s002 的源范围需要人工或进一步证据确认，故判 evidence_pending。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_24",
+  "request_hash": "1f33426a96d6e67a6fef9c1dd2e4fa8124371885045fc20433cc090414cc2f34",
+  "started_utc": "2026-11-13T08:16:13.698818+00:00",
+  "completed_utc": "2026-11-13T08:17:20.603148+00:00",
+  "elapsed_seconds": 66.906,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "b6f82f0f-f6e3-4e06-a5f5-004cb8f65465",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3641,
+    "completion_tokens": 3563,
+    "total_tokens": 7204,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3338
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3641
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-1daf82f62247\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        {\n          \"suggestion\": \"可在扩展义中考虑补充动词义“为私人狩猎或垂钓而保留（土地、森林等）”，对应 wn31:v:02688596，以显式标记该特定义而非漏掉。\",\n          \"reason\": \"该义项在WordNet中存在且属于原词条内的动词用法，但原文“保存”未明确指向此特化对象；不构成核心错误，仅作为教学扩展建议。\"\n        }\n      ],\n      \"note\": \"候选将三个源片段分别映射到保护（免受伤害）、保存（防损/留存）、保持（维持状态），词性与证据对应准确；名词义作为外部候选正确未并入核心。无实际翻译或词性错误，源动词义覆盖完整。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

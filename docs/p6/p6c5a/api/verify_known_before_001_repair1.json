@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_before_001_repair1",
+  "kind": "verify",
+  "request_hash": "dab92a7a03d6df5d727e68aef36130ea54a7d661bdf554a5d7e9c9b8382dacae",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "88639663-0c3d-4f43-ad17-492d44f72470",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7920fdeff9c5\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“仪式”为一般名词，未限定宗教；候选核心1仅保留“宗教仪式的规定程序”，缺失世俗/非宗教仪式及作为典礼事件的用法；Collins观察明确“宗教或其他仪式”，WordNet n:01029801为“any customary observance or practice”。\",\n          \"evidence_ids\": [\n            \"pub:p6c5:collins:ritual\",\n            \"wn31:n:01029801\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"原文“惯常程序”指固定的一套做法/步骤；候选“惯常做法/固定行为”是其上位表达，且注释明确不专指步骤清单，符合WordNet n:00415803和n:01029801对惯常行为的支持；未发现排他性对象限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:00415803\",\n            \"wn31:n:01029801\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"形容词“仪式的”由“仪式的/与仪式有关的”覆盖，注释同时容纳社会性礼仪与宗教仪式证据，无增减。\",\n          \"evidence_ids\": [\n            \"wn31:a:02903641\",\n            \"wn31:a:02903908\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-7920fdeff9c5:p6c5:core_meanings:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:01029801\",\n            \"pub:p6c5:collins:ritual\"\n          ],\n          \"reason\": \"候选将“仪式”限定为宗教仪式的规定程序，丢失了原文可能包括的非宗教/世俗庄重仪式及作为典礼的名词用法；证据显示ritual可指宗教或其他仪式，不限于程序或宗教。\",\n          \"counterexample\": \"The graduation ceremony is a ritual.\",\n          \"repair_suggestion\": \"将核心1改为“仪式（宗教或世俗的典礼/仪式；可指程序）”，或新增一个包含“任何惯常仪式/习俗”的义项并链接wn31:n:01029801与Collins观察；不要仅保留宗教规定程序。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002的候选“固定行为”是否超出“程序”的步骤序列要求，需更多原始语境确认；若源义必须含顺序，则属于轻微范围扩大，但现有证据不强制。\",\n        \"s001非宗教仪式是否应与s002的惯常习俗分开，还是合并为更宽义项，需教学取舍。\"\n      ],\n      \"preferences\": [\n        \"可考虑把广义“仪式”放在首屏第一组，或同时并列宗教与世俗仪式，以突显非宗教用法。\"\n      ],\n      \"note\": \"形容词义覆盖充分；s001的宗教限定为确认缺陷，s002暂按合理概括处理。\"\n    },\n    {\n      \"id\": \"SG25-e3f48726b892\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标“学习者”与源一致；WordNet注“especially a child”仅为示例偏向，中文宽义改述保留学习者本人，无对象排他。\",\n          \"evidence_ids\": [\n            \"wn31:n:10271476\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标列出“学者”，与源一致，证据为learned person，覆盖长期钻研掌握学科者。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"目标明确保留“文人”，并在注释中说明其为人文领域learned person的下位用法；证据n:10577282覆盖人文领域学者。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"“文人”合并入“学者”可能略去其作家/文人的文学创作色彩，但目前提供的词典证据仅支持learned person；若后续词典或源语境显示需要区分man of letters，建议拆分。\",\n        \"未采用的external candidate‘奖学金获得者’是否应在扩展层呈现可后续决定，不属于来源覆盖缺陷。\"\n      ],\n      \"preferences\": [\n        \"教学上可在核心1中把“文人”列为并列示例，而非完全并入学者，以保留语感差异。\"\n      ],\n      \"note\": \"未发现确认的范围缺陷；未采用外部义项不影响来源义覆盖。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4616,
+    "completion_tokens": 6149,
+    "total_tokens": 10765,
+    "prompt_tokens_details": {
+      "cached_tokens": 3200
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4975
+    },
+    "prompt_cache_hit_tokens": 3200,
+    "prompt_cache_miss_tokens": 1416
+  },
+  "started_utc": "2026-11-13T09:40:21.345350+00:00",
+  "completed_utc": "2026-11-13T09:41:42.209183+00:00",
+  "elapsed_seconds": 80.859,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

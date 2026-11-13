@@ -1,0 +1,2770 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewer": "B",
+  "part": 2,
+  "count": 10,
+  "records": [
+    {
+      "stable_id": "SG25-c082456a7766",
+      "headword": "medium",
+      "source_hash": "25baea5673f58f9f567d87e53326980fb81b31730ef5b367e666cfdb0897541e",
+      "original_meaning_zh": "名词：媒介，手段；形容词：中等的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "媒介",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "手段",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "中等的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 13,
+          "end": 16
+        }
+      ],
+      "source_part_of_speech": "名词；形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "媒介；手段",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06264799",
+            "wn31:n:14923303"
+          ],
+          "usage_note": "媒介可保存/传达信息，手段强调借其实现某事；不把一切工具或职业都等同于本义。",
+          "semantic_roles": "信息载体/实现某事的中介",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "媒介",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:06264799"
+              ],
+              "usage_note": "用于保存或传达信息的媒介/工具。",
+              "semantic_roles": "信息载体"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "手段（传达信息或借助中介材料）",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:06264799",
+                "wn31:n:14923303"
+              ],
+              "usage_note": "词典具体支持信息手段及借中介物质实现某事；不泛称任何职业或办法。",
+              "semantic_roles": "传达手段/中介材料"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "中等的",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:s:01536076"
+          ],
+          "usage_note": "评价或大小等尺度的中间程度，不是“媒介的”派生形容词。",
+          "semantic_roles": "程度/大小尺度"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "介质",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06264605"
+          ],
+          "reason": "信号传播所通过的物质，比泛称媒介的物理用途更具体；未在原文明确写出。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "培养基",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14923479"
+          ],
+          "reason": "培养微生物的营养物质，有细菌学范围。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "灵媒",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:10325946"
+          ],
+          "reason": "声称沟通生者与死者的人，不能由信息媒介推为已涵盖。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "（肉）五分熟的；中等熟度的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:s:00620371"
+          ],
+          "reason": "肉内部仍略呈粉红色的烹饪尺度，有明确食物对象。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "媒介",
+          "semantic_roles": "信息载体",
+          "evidence_ids": [
+            "wn31:n:06264799"
+          ],
+          "layer": "core_meanings",
+          "display_group": "媒介；手段",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "用于保存或传达信息的媒介/工具。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "手段（传达信息或借助中介材料）",
+          "semantic_roles": "传达手段/中介材料",
+          "evidence_ids": [
+            "wn31:n:06264799",
+            "wn31:n:14923303"
+          ],
+          "layer": "core_meanings",
+          "display_group": "媒介；手段",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "词典具体支持信息手段及借中介物质实现某事；不泛称任何职业或办法。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "中等的",
+          "semantic_roles": "程度/大小尺度",
+          "evidence_ids": [
+            "wn31:s:01536076"
+          ],
+          "layer": "core_meanings",
+          "display_group": "中等的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "评价或大小等尺度的中间程度，不是“媒介的”派生形容词。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "介质",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06264605"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "信号传播所通过的物质，比泛称媒介的物理用途更具体；未在原文明确写出。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "培养基",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14923479"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "培养微生物的营养物质，有细菌学范围。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "灵媒",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:10325946"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "声称沟通生者与死者的人，不能由信息媒介推为已涵盖。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "（肉）五分熟的；中等熟度的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:s:00620371"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "肉内部仍略呈粉红色的烹饪尺度，有明确食物对象。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:06264605",
+            "wn31:n:10325946",
+            "wn31:n:14923479",
+            "wn31:s:00620371"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "中介工具的名词与尺度形容词优先；生物培养、物理介质和灵媒有各自对象，不能靠一个媒介提示消除边界。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06264605",
+          "part_of_speech": "n",
+          "definition_en": "an intervening substance through which signals can travel as a means for communication",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06264799",
+          "part_of_speech": "n",
+          "definition_en": "a means or instrumentality for storing or communicating information",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:10325946",
+          "part_of_speech": "n",
+          "definition_en": "someone who serves as an intermediary between the living and the dead; \"he consulted several mediums\"",
+          "lemmas": [
+            "medium",
+            "spiritualist",
+            "sensitive"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14923303",
+          "part_of_speech": "n",
+          "definition_en": "an intervening substance through which something is achieved; \"the dissolving medium is called a solvent\"",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14923479",
+          "part_of_speech": "n",
+          "definition_en": "(bacteriology) a nutrient substance (solid or liquid) that is used to cultivate micro-organisms",
+          "lemmas": [
+            "culture_medium",
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:00620371",
+          "part_of_speech": "s",
+          "definition_en": "(meat) cooked until there is just a little pink meat inside",
+          "lemmas": [
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:s:01536076",
+          "part_of_speech": "s",
+          "definition_en": "around the middle of a scale of evaluation; \"an orange of average size\"; \"intermediate capacity\"; \"medium bombers\"",
+          "lemmas": [
+            "average",
+            "intermediate",
+            "medium"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-dbb3b50e59c7",
+      "headword": "ground",
+      "source_hash": "c7bf5c1ed9bb864549391575f90cd30850c2c679dcf7d1a539d171ee751ce8bb",
+      "original_meaning_zh": "地面；土地；根据",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "地面",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "土地",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "根据",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "地面；土地",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:09357302",
+            "wn31:n:09358146"
+          ],
+          "usage_note": "地面指地球固体表面；土地可强调用于种植的表层土地及质量，保留实体边界。",
+          "semantic_roles": "地表/种植用地",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "地面",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:09357302"
+              ],
+              "usage_note": "地球固体表面。",
+              "semantic_roles": "地表实体"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "土地（尤其种植用土）",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:09358146"
+              ],
+              "usage_note": "植物能生长的表层物质，可关注质量/用途；不在此证明土地所有权。",
+              "semantic_roles": "地表种植材料"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "根据；理由",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:09201896"
+          ],
+          "usage_note": "支持信念或行动的合理动因，常以grounds表达理由；与地表实体分开。",
+          "semantic_roles": "判断/行动的依据"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "以…为基础",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00638550"
+          ],
+          "reason": "某主张以观察等为基础，原文只列名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使停飞；使留在地面",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01505401"
+          ],
+          "reason": "飞机或飞行员被限制飞行，与土地名词无词性继承关系。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "接地连接",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:03467679"
+          ],
+          "reason": "电器与大导体/地之间连接，属电气用途。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使接地",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01295137"
+          ],
+          "reason": "把电路接到地上，动作不等于接地连接名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "地面",
+          "semantic_roles": "地表实体",
+          "evidence_ids": [
+            "wn31:n:09357302"
+          ],
+          "layer": "core_meanings",
+          "display_group": "地面；土地",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "地球固体表面。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "土地（尤其种植用土）",
+          "semantic_roles": "地表种植材料",
+          "evidence_ids": [
+            "wn31:n:09358146"
+          ],
+          "layer": "core_meanings",
+          "display_group": "地面；土地",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "植物能生长的表层物质，可关注质量/用途；不在此证明土地所有权。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "根据；理由",
+          "semantic_roles": "判断/行动的依据",
+          "evidence_ids": [
+            "wn31:n:09201896"
+          ],
+          "layer": "core_meanings",
+          "display_group": "根据；理由",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "支持信念或行动的合理动因，常以grounds表达理由；与地表实体分开。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "以…为基础",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00638550"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "某主张以观察等为基础，原文只列名词。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "使停飞；使留在地面",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01505401"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "飞机或飞行员被限制飞行，与土地名词无词性继承关系。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "接地连接",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:03467679"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "电器与大导体/地之间连接，属电气用途。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "使接地",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01295137"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把电路接到地上，动作不等于接地连接名词。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:03467679",
+            "wn31:v:00638550",
+            "wn31:v:01295137",
+            "wn31:v:01505401"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "地面/土地具体实体可同框，判断根据单列以防只记空间义；动词和电学功能只能单列候选。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:03467679",
+          "part_of_speech": "n",
+          "definition_en": "a connection between an electrical device and a large conducting body, such as the earth (which is taken to be at zero voltage)",
+          "lemmas": [
+            "ground",
+            "earth"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09201896",
+          "part_of_speech": "n",
+          "definition_en": "a rational motive for a belief or action; \"the reason that war was declared\"; \"the grounds for their declaration\"",
+          "lemmas": [
+            "reason",
+            "ground"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09357302",
+          "part_of_speech": "n",
+          "definition_en": "the solid part of the earth's surface; \"the plane turned away from the sea and moved back over land\"; \"the earth shook for several minutes\"; \"he dropped the logs on the ground\"",
+          "lemmas": [
+            "land",
+            "dry_land",
+            "earth",
+            "ground",
+            "solid_ground",
+            "terra_firma"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:09358146",
+          "part_of_speech": "n",
+          "definition_en": "material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use); \"the land had never been plowed\"; \"good agricultural soil\"",
+          "lemmas": [
+            "land",
+            "ground",
+            "soil"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00638550",
+          "part_of_speech": "v",
+          "definition_en": "use as a basis for; found on; \"base a claim on some observation\"",
+          "lemmas": [
+            "establish",
+            "base",
+            "ground",
+            "found"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01295137",
+          "part_of_speech": "v",
+          "definition_en": "connect to a ground; \"ground the electrical connections for safety reasons\"",
+          "lemmas": [
+            "ground"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01505401",
+          "part_of_speech": "v",
+          "definition_en": "confine or restrict to the ground; \"After the accident, they grounded the plane and the pilot\"",
+          "lemmas": [
+            "ground"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-97519f7c288b",
+      "headword": "anyway",
+      "source_hash": "93191c3e46ece6c3a6991dd70841035797184dbea06cb10f4376d5f829f951bc",
+      "original_meaning_zh": "无论如何；反正",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "无论如何",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "反正",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 5,
+          "end": 7
+        }
+      ],
+      "source_part_of_speech": "副词",
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "反正；不管怎样",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:r:00026948",
+            "pub:B:anyway"
+          ],
+          "usage_note": "补充支持前述观点，或表示前面其他情况不改变当前事实；是话语功能，不指任意空间方向。",
+          "semantic_roles": "话语关系：支持/不受其他情况影响",
+          "sub_uses": [
+            {
+              "part_of_speech": "副词",
+              "display_zh": "反正",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:r:00026948",
+                "pub:B:anyway"
+              ],
+              "usage_note": "当前陈述解释或支持前述观点。",
+              "semantic_roles": "话语支持关系"
+            },
+            {
+              "part_of_speech": "副词",
+              "display_zh": "无论如何；不管怎样",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "pub:B:anyway"
+              ],
+              "usage_note": "其他已说情况不改变当前陈述的真实性/相关性。",
+              "semantic_roles": "话语让步/不受条件影响"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "无论用什么办法",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:r:00027635"
+          ],
+          "usage_note": "该WordNet义强调采用任何可行方式；与话语中的反正分开，不据synset顺序排先后。",
+          "semantic_roles": "行动方式不受限"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "究竟（加强问句）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "reason": "追问真实情况或理由的语气功能，原文未明确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "总之（略过细节转到下一要点）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "reason": "组织叙事的转换功能，不是任意方式。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "至少（修正、限定前述说法）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "reason": "把陈述限定到确知部分；原文没有这一话语修正说明。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "反正",
+          "semantic_roles": "话语支持关系",
+          "evidence_ids": [
+            "wn31:r:00026948",
+            "pub:B:anyway"
+          ],
+          "layer": "core_meanings",
+          "display_group": "反正；不管怎样",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "当前陈述解释或支持前述观点。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "无论如何；不管怎样",
+          "semantic_roles": "话语让步/不受条件影响",
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "layer": "core_meanings",
+          "display_group": "反正；不管怎样",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "其他已说情况不改变当前陈述的真实性/相关性。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "无论用什么办法",
+          "semantic_roles": "行动方式不受限",
+          "evidence_ids": [
+            "wn31:r:00027635"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "无论用什么办法",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "该WordNet义强调采用任何可行方式；与话语中的反正分开，不据synset顺序排先后。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "究竟（加强问句）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "追问真实情况或理由的语气功能，原文未明确。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "总之（略过细节转到下一要点）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "组织叙事的转换功能，不是任意方式。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "至少（修正、限定前述说法）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:anyway"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把陈述限定到确知部分；原文没有这一话语修正说明。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "无论如何",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "副词",
+              "display_zh": "无论如何；不管怎样",
+              "evidence_ids": [
+                "pub:B:anyway"
+              ],
+              "explanation": "其他已说情况不改变当前陈述的真实性/相关性。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "副词",
+              "display_zh": "无论用什么办法",
+              "evidence_ids": [
+                "wn31:r:00027635"
+              ],
+              "explanation": "该WordNet义强调采用任何可行方式；与话语中的反正分开，不据synset顺序排先后。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:B:anyway"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先记能解释反正/不管怎样的日常话语关系；方式不受限的读法另列，避免把中文近义误当所有语用均已覆盖。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "副词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:B:anyway",
+          "headword": "anyway",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/anyway",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "副词可补充支持前述话语，或表前述其他情况不影响所说事实；还可限制修正说法、加强问句以询问真实缘由、略过细节转到下一要点。保存原创概述，不据页面频带排义。",
+          "pos_supported": [
+            "副词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:r:00026948",
+          "part_of_speech": "r",
+          "definition_en": "used to indicate that a statement explains or supports a previous statement; \"Anyhow, he is dead now\"; \"I think they're asleep; anyhow, they're quiet\"; \"I don't know what happened to it; anyway, it's gone\"; \"anyway, there is another factor to consider\"; \"I don't know how it started; in any case, there was a brief scuffle\"; \"in any event, the government faced a serious protest\"; \"but at any rate he got a knighthood for it\"",
+          "lemmas": [
+            "anyhow",
+            "anyway",
+            "anyways",
+            "in_any_case",
+            "at_any_rate",
+            "in_any_event"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00027635",
+          "part_of_speech": "r",
+          "definition_en": "in any way whatsoever; \"they came anyhow they could\"; \"get it done anyway you can\"",
+          "lemmas": [
+            "anyhow",
+            "anyway"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-3fd30542fe3f",
+      "headword": "mine",
+      "source_hash": "4a06c1c41cda4fccb058436f781447d22f0b22fa08ecc6090275db51c53429b6",
+      "original_meaning_zh": "我的；矿，地雷；开采",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "我的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "矿",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "地雷",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "source_sense_id": "s004",
+          "text": "开采",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 8,
+          "end": 10
+        }
+      ],
+      "source_part_of_speech": "代词；名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "代词",
+          "display_zh": "我的（人或东西）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "pub:mine"
+          ],
+          "usage_note": "物主代词独立指属于说话人的人或物，不像my那样普通地直接置于名词前。",
+          "semantic_roles": "所有者为说话人"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "矿井；矿场",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:03773881"
+          ],
+          "usage_note": "从地底开采矿物的场所，不是把mine当矿石材料。",
+          "semantic_roles": "开采场所"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "开采",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "evidence_ids": [
+            "wn31:v:01165936"
+          ],
+          "usage_note": "通过挖掘从地下取得矿石/金属等。",
+          "semantic_roles": "开采者—地下矿产"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "地雷",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:03773667"
+          ],
+          "usage_note": "可因接触触发的爆炸装置；原文明确的是地雷，不自动扩写全部水雷类别。",
+          "semantic_roles": "爆炸装置"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "布雷",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01128150"
+          ],
+          "reason": "在区域铺设地雷，与挖矿动作不同，未在原文列出。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "代词",
+          "display_zh": "我的（人或东西）",
+          "semantic_roles": "所有者为说话人",
+          "evidence_ids": [
+            "pub:mine"
+          ],
+          "layer": "core_meanings",
+          "display_group": "我的（人或东西）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "物主代词独立指属于说话人的人或物，不像my那样普通地直接置于名词前。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "矿井；矿场",
+          "semantic_roles": "开采场所",
+          "evidence_ids": [
+            "wn31:n:03773881"
+          ],
+          "layer": "core_meanings",
+          "display_group": "矿井；矿场",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "从地底开采矿物的场所，不是把mine当矿石材料。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s004"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "开采",
+          "semantic_roles": "开采者—地下矿产",
+          "evidence_ids": [
+            "wn31:v:01165936"
+          ],
+          "layer": "core_meanings",
+          "display_group": "开采",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "通过挖掘从地下取得矿石/金属等。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "地雷",
+          "semantic_roles": "爆炸装置",
+          "evidence_ids": [
+            "wn31:n:03773667"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "地雷",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "可因接触触发的爆炸装置；原文明确的是地雷，不自动扩写全部水雷类别。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "布雷",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01128150"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "在区域铺设地雷，与挖矿动作不同，未在原文列出。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:v:01128150"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "优先代词的独立结构、矿场名词和开采动作，地雷后学不等于低频；逐片段原词性仍为null，推荐标签来自定义与出版社。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "代词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u002",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:mine",
+          "headword": "mine",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/mine",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "代词指属于说话人的人或事物，另列矿井名词、开采动词及地雷名词等；物主代词mine不能当作普通my那样直接置于名词前。",
+          "pos_supported": [
+            "代词",
+            "名词",
+            "动词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:03773667",
+          "part_of_speech": "n",
+          "definition_en": "explosive device that explodes on contact; designed to destroy vehicles or ships or to kill or maim personnel",
+          "lemmas": [
+            "mine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:03773881",
+          "part_of_speech": "n",
+          "definition_en": "excavation in the earth from which ores and minerals are extracted",
+          "lemmas": [
+            "mine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01128150",
+          "part_of_speech": "v",
+          "definition_en": "lay mines; \"The Vietnamese mined Cambodia\"",
+          "lemmas": [
+            "mine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01165936",
+          "part_of_speech": "v",
+          "definition_en": "get from the earth by excavation; \"mine ores and metals\"",
+          "lemmas": [
+            "mine"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-a97b0931730e",
+      "headword": "round",
+      "source_hash": "f2ec85230af656549d097638bd499425cb805183c3fa3c2517267a8b794f2f2a",
+      "original_meaning_zh": "圆的；围绕",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "圆的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "围绕",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "形容词；介词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "圆的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:02048059"
+          ],
+          "usage_note": "具有圆形形状，不是名词轮次。",
+          "semantic_roles": "形状属性"
+        },
+        {
+          "part_of_speech": "介词",
+          "display_zh": "围绕；绕着",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "usage_note": "后接对象表示环绕关系，相当于相关around用法；地区和语体可有差异。",
+          "semantic_roles": "路径/位置—参照对象"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "副词",
+          "meaning_zh": "围绕；绕行",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "reason": "同类环绕含义可不带介词宾语作副词；原源词性只有形容词和介词，不能借中文围绕直接补为源副词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "一轮；回合",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:round",
+            "wn31:n:15313066"
+          ],
+          "reason": "周期性的一轮活动，与圆形形容词分开。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "绕过",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01862896"
+          ],
+          "reason": "沿弧形路径绕过弯道等，是动作而非介词关系。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "把…取整；按位四舍五入",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00145443"
+          ],
+          "reason": "数字近似化，常有round off等结构，原文未列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "圆的",
+          "semantic_roles": "形状属性",
+          "evidence_ids": [
+            "wn31:a:02048059"
+          ],
+          "layer": "core_meanings",
+          "display_group": "圆的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "具有圆形形状，不是名词轮次。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "介词",
+          "display_zh": "围绕；绕着",
+          "semantic_roles": "路径/位置—参照对象",
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "layer": "core_meanings",
+          "display_group": "围绕；绕着",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "后接对象表示环绕关系，相当于相关around用法；地区和语体可有差异。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "副词",
+          "display_zh": "围绕；绕行",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:round"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "同类环绕含义可不带介词宾语作副词；原源词性只有形容词和介词，不能借中文围绕直接补为源副词。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "一轮；回合",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:round",
+            "wn31:n:15313066"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "周期性的一轮活动，与圆形形容词分开。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "绕过",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01862896"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "沿弧形路径绕过弯道等，是动作而非介词关系。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "把…取整；按位四舍五入",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00145443"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "数字近似化，常有round off等结构，原文未列。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:round",
+            "wn31:n:15313066",
+            "wn31:v:00145443",
+            "wn31:v:01862896"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先区分形状形容词和带对象的环绕介词；其他词性均为独立候选，不按原片段位置推词性，也不做中文与词性全组合。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "介词",
+          "recommended_use_ids": [
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:round",
+          "headword": "round",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/round",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "形容词可形容圆形；介词和副词可表示围绕、环行，相当于around，使用有地区/语体差异；另有轮次等名词用法。",
+          "pos_supported": [
+            "形容词",
+            "介词",
+            "副词",
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02048059",
+          "part_of_speech": "a",
+          "definition_en": "having the shape or form of a circle",
+          "lemmas": [
+            "round",
+            "circular"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15313066",
+          "part_of_speech": "n",
+          "definition_en": "an interval during which a recurring sequence of events occurs; \"the never-ending cycle of the seasons\"",
+          "lemmas": [
+            "cycle",
+            "rhythm",
+            "round"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00145443",
+          "part_of_speech": "v",
+          "definition_en": "express as a round number; \"round off the amount\"",
+          "lemmas": [
+            "round_off",
+            "round_down",
+            "round_out",
+            "round"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01862896",
+          "part_of_speech": "v",
+          "definition_en": "wind around; move along a circular course; \"round the bend\"",
+          "lemmas": [
+            "round"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-91dc94099680",
+      "headword": "lately",
+      "source_hash": "70df3c91a5d734cade3200b8634ce97ca068b6ef342a32ca6988c33816040640",
+      "original_meaning_zh": "最近；近来",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "最近",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "近来",
+          "part_of_speech": "副词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "副词",
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "最近；近来",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:r:00108184"
+          ],
+          "usage_note": "指不久以前的一段时间，两个中文是同一时间提示，不拆成两个英语义项。",
+          "semantic_roles": "相对于现在的近过去"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "最近；近来",
+          "semantic_roles": "相对于现在的近过去",
+          "evidence_ids": [
+            "wn31:r:00108184"
+          ],
+          "layer": "core_meanings",
+          "display_group": "最近；近来",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "指不久以前的一段时间，两个中文是同一时间提示，不拆成两个英语义项。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "原文两段近义中文共同形成一个时间副词记忆单位；无需为片段数量增加义项或虚构层级差。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "副词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:r:00108184",
+          "part_of_speech": "r",
+          "definition_en": "in the recent past; \"he was in Paris recently\"; \"lately the rules have been enforced\"; \"as late as yesterday she was fine\"; \"feeling better of late\"; \"the spelling was first affected, but latterly the meaning also\"",
+          "lemmas": [
+            "recently",
+            "late",
+            "lately",
+            "of_late",
+            "latterly"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-013d426819a5",
+      "headword": "headmaster",
+      "source_hash": "1d8505548ba54df8640ffa6d92d2221bca0952b434cae8d12f1bef4d7bec2c24",
+      "original_meaning_zh": "校长（传统多指男性）",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "校长（传统多指男性）",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "校长（传统多指男性）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:10183826",
+            "pub:headmaster"
+          ],
+          "usage_note": "出版社支持英国学校男性校长及中性head teacher对照；性别与地区提示随词义保留。",
+          "semantic_roles": "学校负责人"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "校长（传统多指男性）",
+          "semantic_roles": "学校负责人",
+          "evidence_ids": [
+            "wn31:n:10183826",
+            "pub:headmaster"
+          ],
+          "layer": "core_meanings",
+          "display_group": "校长（传统多指男性）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "出版社支持英国学校男性校长及中性head teacher对照；性别与地区提示随词义保留。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "职业实体只有一个明确功能；原文性别说明有出版社支持，应与中文主体一同保留，而非当作无需理解的括号。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:headmaster",
+          "headword": "headmaster",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/headmaster",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "英国英语列男性学校校长，另给中性head teacher称呼；原文传统多指男性的提示有词典依据。",
+          "pos_supported": [
+            "名词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:n:10183826",
+          "part_of_speech": "n",
+          "definition_en": "presiding officer of a school",
+          "lemmas": [
+            "headmaster",
+            "schoolmaster",
+            "master"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-20f65c28671b",
+      "headword": "check",
+      "source_hash": "896cf36e2a845e190d6d83b5902bdf55d5ea20af5739cc1eeba9326dc665d988",
+      "original_meaning_zh": "检查；核对；支票",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "检查",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "核对",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "支票",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "检查；核对",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:00663742",
+            "wn31:v:00665271"
+          ],
+          "usage_note": "检查准确性/质量/状况；核对可咨询来源或权威，施事查看受事。",
+          "semantic_roles": "检查者—设备/信息—参照来源",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "检查",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:00663742"
+              ],
+              "usage_note": "查看以判断准确性、质量或状况。",
+              "semantic_roles": "检查者—设备/信息"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "核对",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:v:00665271"
+              ],
+              "usage_note": "查询来源或权威以核实信息。",
+              "semantic_roles": "核对者—信息—参照来源"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "检查；核对",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:00142626"
+          ],
+          "usage_note": "检查或验证这一活动/一次检查，与动词行为结构分开。",
+          "semantic_roles": "检查活动",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "检查",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:00142626"
+              ],
+              "usage_note": "检查这一活动/一次检查。",
+              "semantic_roles": "检查活动"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "核对",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:00142626"
+              ],
+              "usage_note": "验证这一活动；该定义同时包含inspecting与verifying。",
+              "semantic_roles": "验证活动"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "支票",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:13402907"
+          ],
+          "usage_note": "命令银行支付款项的书面票据。",
+          "semantic_roles": "支付凭证"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（餐馆）账单",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06529933"
+          ],
+          "reason": "请求付款的账单，与支付用支票不同；证据不在此单独证明地区标签。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "抑制；控制",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:01133899",
+            "wn31:v:02516039"
+          ],
+          "reason": "阻止扩张或控制强度，不是查看核对。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "托运（行李）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02352901"
+          ],
+          "reason": "交由运输工具运送，受事为行李等。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "寄存",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02352443"
+          ],
+          "reason": "把物件交他人暂时保管，与托运目的不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "打勾；勾选",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00664100"
+          ],
+          "reason": "在条目旁加标记；并非所有检查行为都会打勾。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "勾号",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:06831605"
+          ],
+          "reason": "完成/核实的符号，不是检查活动本身。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "检查",
+          "semantic_roles": "检查者—设备/信息",
+          "evidence_ids": [
+            "wn31:v:00663742"
+          ],
+          "layer": "core_meanings",
+          "display_group": "检查；核对",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "查看以判断准确性、质量或状况。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "核对",
+          "semantic_roles": "核对者—信息—参照来源",
+          "evidence_ids": [
+            "wn31:v:00665271"
+          ],
+          "layer": "core_meanings",
+          "display_group": "检查；核对",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "查询来源或权威以核实信息。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "检查",
+          "semantic_roles": "检查活动",
+          "evidence_ids": [
+            "wn31:n:00142626"
+          ],
+          "layer": "core_meanings",
+          "display_group": "检查；核对",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "检查这一活动/一次检查。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "核对",
+          "semantic_roles": "验证活动",
+          "evidence_ids": [
+            "wn31:n:00142626"
+          ],
+          "layer": "core_meanings",
+          "display_group": "检查；核对",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "验证这一活动；该定义同时包含inspecting与verifying。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "支票",
+          "semantic_roles": "支付凭证",
+          "evidence_ids": [
+            "wn31:n:13402907"
+          ],
+          "layer": "core_meanings",
+          "display_group": "支票",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "命令银行支付款项的书面票据。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（餐馆）账单",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06529933"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "请求付款的账单，与支付用支票不同；证据不在此单独证明地区标签。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "抑制；控制",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:01133899",
+            "wn31:v:02516039"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "阻止扩张或控制强度，不是查看核对。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "托运（行李）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02352901"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "交由运输工具运送，受事为行李等。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "寄存",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02352443"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把物件交他人暂时保管，与托运目的不同。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "打勾；勾选",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00664100"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "在条目旁加标记；并非所有检查行为都会打勾。"
+        },
+        {
+          "use_id": "u011",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "勾号",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:06831605"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "完成/核实的符号，不是检查活动本身。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "检查",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "动词",
+              "display_zh": "检查",
+              "evidence_ids": [
+                "wn31:v:00663742"
+              ],
+              "explanation": "查看以判断准确性、质量或状况。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "检查",
+              "evidence_ids": [
+                "wn31:n:00142626"
+              ],
+              "explanation": "检查这一活动/一次检查。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "original_text": "核对",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "动词",
+              "display_zh": "核对",
+              "evidence_ids": [
+                "wn31:v:00665271"
+              ],
+              "explanation": "查询来源或权威以核实信息。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "名词",
+              "display_zh": "核对",
+              "evidence_ids": [
+                "wn31:n:00142626"
+              ],
+              "explanation": "验证这一活动；该定义同时包含inspecting与verifying。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:06529933",
+            "wn31:n:06831605",
+            "wn31:v:00664100",
+            "wn31:v:01133899",
+            "wn31:v:02352443",
+            "wn31:v:02352901",
+            "wn31:v:02516039"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "源逐义词性未知不妨碍有证据的一对多：检查和核对都有名词与动词支持，分别保存；支票只映射名词，不强制组合。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u003",
+            "u004",
+            "u005"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00142626",
+          "part_of_speech": "n",
+          "definition_en": "the act of inspecting or verifying; \"they made a check of their equipment\"; \"the pilot ran through the check-out procedure\"",
+          "lemmas": [
+            "check",
+            "checkout",
+            "check-out_procedure"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06529933",
+          "part_of_speech": "n",
+          "definition_en": "the bill in a restaurant; \"he asked the waiter for the check\"",
+          "lemmas": [
+            "check",
+            "chit",
+            "tab"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06831605",
+          "part_of_speech": "n",
+          "definition_en": "a mark indicating that something has been noted or completed etc.; \"as he called the role he put a check mark by each student's name\"",
+          "lemmas": [
+            "check_mark",
+            "check",
+            "tick"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13402907",
+          "part_of_speech": "n",
+          "definition_en": "a written order directing a bank to pay money; \"he paid all his bills by check\"",
+          "lemmas": [
+            "check",
+            "bank_check",
+            "cheque"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00663742",
+          "part_of_speech": "v",
+          "definition_en": "examine so as to determine accuracy, quality, or condition; \"check the brakes\"; \"Check out the engine\"",
+          "lemmas": [
+            "check",
+            "check_up_on",
+            "look_into",
+            "check_out",
+            "suss_out",
+            "check_over",
+            "go_over",
+            "check_into"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00664100",
+          "part_of_speech": "v",
+          "definition_en": "put a check mark on or near or next to; \"Please check each name on the list\"; \"tick off the items\"; \"mark off the units\"",
+          "lemmas": [
+            "check",
+            "check_off",
+            "mark",
+            "mark_off",
+            "tick_off",
+            "tick"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00665271",
+          "part_of_speech": "v",
+          "definition_en": "verify by consulting a source or authority; \"check the spelling of this word\"; \"check your facts\"",
+          "lemmas": [
+            "check"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01133899",
+          "part_of_speech": "v",
+          "definition_en": "hold back, as of a danger or an enemy; check the expansion or influence of; \"Arrest the downward trend\"; \"Check the growth of communism in South East Asia\"; \"Contain the rebel movement\"; \"Turn back the tide of communism\"",
+          "lemmas": [
+            "check",
+            "turn_back",
+            "arrest",
+            "stop",
+            "contain",
+            "hold_back"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02352443",
+          "part_of_speech": "v",
+          "definition_en": "hand over something to somebody as for temporary safekeeping; \"Check your coat at the door\"",
+          "lemmas": [
+            "check"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02352901",
+          "part_of_speech": "v",
+          "definition_en": "consign for shipment on a vehicle; \"check your luggage before boarding\"",
+          "lemmas": [
+            "check"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02516039",
+          "part_of_speech": "v",
+          "definition_en": "lessen the intensity of; temper; hold in restraint; hold or keep within limits; \"moderate your alcohol intake\"; \"hold your tongue\"; \"hold your temper\"; \"control your anger\"",
+          "lemmas": [
+            "control",
+            "hold_in",
+            "hold",
+            "contain",
+            "check",
+            "curb",
+            "moderate"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-945c8f9d4fe6",
+      "headword": "overhead",
+      "source_hash": "be16f7609688ef09839700c3d0b94643e2e9c27cfb0298e2e8d9d3a5cd6a5103",
+      "original_meaning_zh": "在头顶上；头顶上的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "在头顶上",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "头顶上的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 5,
+          "end": 9
+        }
+      ],
+      "source_part_of_speech": "形容词；副词",
+      "core_meanings": [
+        {
+          "part_of_speech": "副词",
+          "display_zh": "在头顶上；在上空",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:r:00250926",
+            "wn31:r:00251120"
+          ],
+          "usage_note": "修饰动作或位置，可指头顶或天空中。",
+          "semantic_roles": "动作/位置相对于头顶"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "头顶上的；上方的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:02482038"
+          ],
+          "usage_note": "修饰位于上方的物，如上方通道；推荐词性来自词典，不来自片段先后。",
+          "semantic_roles": "物体位置属性"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "经常性开支；间接费用",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:overhead"
+          ],
+          "reason": "维持企业经营且难归于某单一产品的费用；职场财务用途不能由空间义覆盖。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "形容词",
+          "meaning_zh": "（费用）间接的；一般运营的",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "pub:B:overhead"
+          ],
+          "reason": "修饰overhead costs/expenses这类费用，不是“头顶费用”。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（计算机）额外开销",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:08573602",
+            "wn31:n:15323254"
+          ],
+          "reason": "定位/计时等辅助存储空间或命令执行前耗时；技术上下文需保留。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "副词",
+          "display_zh": "在头顶上；在上空",
+          "semantic_roles": "动作/位置相对于头顶",
+          "evidence_ids": [
+            "wn31:r:00250926",
+            "wn31:r:00251120"
+          ],
+          "layer": "core_meanings",
+          "display_group": "在头顶上；在上空",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "修饰动作或位置，可指头顶或天空中。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "头顶上的；上方的",
+          "semantic_roles": "物体位置属性",
+          "evidence_ids": [
+            "wn31:a:02482038"
+          ],
+          "layer": "core_meanings",
+          "display_group": "头顶上的；上方的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "修饰位于上方的物，如上方通道；推荐词性来自词典，不来自片段先后。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "经常性开支；间接费用",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:overhead"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "维持企业经营且难归于某单一产品的费用；职场财务用途不能由空间义覆盖。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "形容词",
+          "display_zh": "（费用）间接的；一般运营的",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "pub:B:overhead"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "修饰overhead costs/expenses这类费用，不是“头顶费用”。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（计算机）额外开销",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:08573602",
+            "wn31:n:15323254"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "定位/计时等辅助存储空间或命令执行前耗时；技术上下文需保留。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "pub:B:overhead",
+            "wn31:n:08573602",
+            "wn31:n:15323254"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "保留空间副词和形容词两种结构；费用/计算机开销是重要独立理解候选，不能以中文在上方偷渡到核心。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "副词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "pub:B:overhead",
+          "headword": "overhead",
+          "publisher": "HarperCollins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/overhead",
+          "access": "parsed_publisher_content_available",
+          "observation_zh": "名词有经营企业的一般固定开支，难直接归入单一产品；形容词可修饰这类费用。另列空间上位于头顶的形容词/副词。保存原创概述。",
+          "pos_supported": [
+            "名词",
+            "形容词",
+            "副词"
+          ]
+        },
+        {
+          "evidence_id": "wn31:a:02482038",
+          "part_of_speech": "a",
+          "definition_en": "located or originating from above; \"an overhead crossing\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:08573602",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) the disk space required for information that is not data but is used for location and timing",
+          "lemmas": [
+            "disk_overhead",
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:15323254",
+          "part_of_speech": "n",
+          "definition_en": "(computer science) the processing time required by a device prior to the execution of a command",
+          "lemmas": [
+            "command_processing_overhead_time",
+            "command_processing_overhead",
+            "command_overhead",
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00250926",
+          "part_of_speech": "r",
+          "definition_en": "above the head; over the head; \"bring the legs together overhead\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:r:00251120",
+          "part_of_speech": "r",
+          "definition_en": "above your head; in the sky; \"planes were flying overhead\"",
+          "lemmas": [
+            "overhead"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-31a42ea12ec1",
+      "headword": "adore",
+      "source_hash": "a06539ca87976687fa2aa1b1875bcb8018111d1f476527f0b3823aeca54c6de3",
+      "original_meaning_zh": "极喜欢",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "极喜欢",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "source_part_of_speech": "动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "极喜欢；深爱",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01781734"
+          ],
+          "usage_note": "强烈地喜爱/爱某人或某事，程度明显强于一般like；不把该定义直接解释为宗教崇拜。",
+          "semantic_roles": "情感主体—喜爱对象"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "极喜欢；深爱",
+          "semantic_roles": "情感主体—喜爱对象",
+          "evidence_ids": [
+            "wn31:v:01781734"
+          ],
+          "layer": "core_meanings",
+          "display_group": "极喜欢；深爱",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "强烈地喜爱/爱某人或某事，程度明显强于一般like；不把该定义直接解释为宗教崇拜。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "原文极喜欢与强烈地爱相容，简明提示加程度即可；不因为爱妻例子而把所有受事限定为人。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01781734",
+          "part_of_speech": "v",
+          "definition_en": "love intensely; \"he just adored his wife\"",
+          "lemmas": [
+            "adore"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "external_access_failures": [
+    {
+      "headword": "clause",
+      "url": "https://dictionary.cambridge.org/dictionary/english/clause",
+      "status": 403,
+      "observation": "web open returned 403 Forbidden; no content used."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "P6C5a-gate-v1",
+  "fixed_before_semantic_validation": true,
+  "scope": "Exactly existing700; zero new formal IDs; no next batch or release",
+  "required_checks": [
+    "700 distinct source IDs and all1702 immutable original fragments mapped",
+    "existing600 semantic content unchanged unless individually evidence-adjudicated in isolated revision",
+    "four known corrections reproduced and candidate repair actually evidence-checked",
+    "both known narrowing Major detected before repair; no unsupported widening/POS change after repair",
+    "no new confirmed unresolved Critical",
+    "no repeated unresolved confirmed Major cause after proposed corrections",
+    "at least20 holdout words independent source-first checked; no same-cause systematic confirmed defect",
+    "all historical48 and unresolved risks retained; pursue prior failure/reconciliation retained",
+    "all source, former700, checkpoints, personalDB and production code protected",
+    "detector regression tests and replay/idempotence checks pass"
+  ],
+  "holdout": {"count": 24, "cohorts": {"reused600": 12, "new100": 12}, "strata_each": 6, "selection_seed": "P6C5a_holdout_v1", "exclude_known_repair_and_calibration_words": true},
+  "decision_A": "All required checks pass. Can recommend one future isolated batch, not human dictionary approval or execution authorization.",
+  "decision_B": "Any required semantic check unfinished/uncertain, local repair unresolved, or false-positive calibration unresolved. Preserve isolated risks; no resumption.",
+  "decision_C": "Evidence-confirmed systematic strategy failure remains after generic protection, shown on >=2 heldout or >=3 regression words with the same cause and not explainable by valid source context/deferral; recommend strategy change.",
+  "risk_label_is_not_confirmed_error": true,
+  "unknown_evidence_word_may_remain_quarantined": true,
+  "sample_error_counts_are_not_population_accuracy": true,
+  "no_silent_threshold_changes": true,
+  "max_schema_repair_requests_per_call": 1,
+  "automatic_network_retries": 0,
+  "missing_model_results_never_filled_with_templates": true
+}

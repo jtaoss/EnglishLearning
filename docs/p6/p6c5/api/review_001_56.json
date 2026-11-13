@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_56",
+  "request_hash": "4f0393a368b8c7ff5b05d16414bf34006b6bae3420b90965105901d86332dd56",
+  "started_utc": "2026-11-13T08:16:41.590991+00:00",
+  "completed_utc": "2026-11-13T08:17:08.498581+00:00",
+  "elapsed_seconds": 26.907,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "609ab445-f27d-44c9-ae4e-79c227d49021",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2768,
+    "completion_tokens": 1396,
+    "total_tokens": 4164,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1271
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 720
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-a39a7ffad4a3\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"原中文两个名词义项“助手”和“助理”合并为一组核心名词用法，证据 wn31:n:09835195 支持；形容词用法已作为外部候选列入 dictionary_additions 且未混入核心，源词性仅为名词，处理正确。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

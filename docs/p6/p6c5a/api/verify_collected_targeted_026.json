@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_026",
+  "kind": "verify",
+  "request_hash": "7fcd55eca8ddea5c8286381a47086c4093eba99c37bf55926a7b699079d5f02d",
+  "input_ids": [
+    "SG25-31f61ed3e6e2",
+    "SG25-f178ad42d80e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "02e78ba7-87a5-41ce-a78f-7e075e7eb831",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-31f61ed3e6e2\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“思想”在无上下文时可包含系统化思想/意识形态、一般概念等；候选 extended:1 使用 general inclusive concept 仅覆盖概念/观念，并注释限定“思想限概念观念”，因此只保留来源子集。英语证据不支持更宽义，剩余范围需待核。\",\n          \"evidence_ids\": [\"wn31:n:05844922\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 的 vague idea/impression/belief 在无上下文的来源中可覆盖“想法”的常见用法，且 general inclusive concept 未要求必须链接到该源ID。\",\n          \"evidence_ids\": [\"wn31:n:05925333\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“构思”指一般构想/设计思路；候选 extended:2 仅以 odd/fanciful/capricious idea 支撑，注释“某个想出来的主意”未得到该证据的支持，一般构想未保留。\",\n          \"evidence_ids\": [\"wn31:n:05928143\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing_child_only\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-31f61ed3e6e2:extended:2\"],\n          \"evidence_ids\": [\"wn31:n:05928143\", \"wn31:n:05844922\", \"wn31:n:05925333\"],\n          \"reason\": \"原义“构思”指一般构想/设计思路；候选只以 odd/fanciful/capricious idea 支撑，注释虽写“某个想出来的主意”但证据不支持一般构想，且 general inclusive concept 与 vague idea 证据未链接到该源ID，导致一般构思丢失。\",\n          \"counterexample\": \"notion 可指一般概念/想法（如 general inclusive concept），不限于古怪念头；因此用 05928143 作为唯一证据是子类代替大类。\",\n          \"repair_suggestion\": \"在 extended:2 中改用或补充一般 idea/conception 证据（如 wn31:n:05844922），或明确标注‘构思’来源待核并暂存一般构思范围。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_scope_uncertainty\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-31f61ed3e6e2:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:05844922\"],\n          \"reason\": \"中文“思想”在无上下文时可包含系统化思想/意识形态，但英语 notion 证据不支持；候选已限制为概念观念，但应在来源映射中保留待核，不能视为完整覆盖。\",\n          \"counterexample\": \"\",\n          \"repair_suggestion\": \"标‘思想’来源范围待核，不把系统化思想/意识形态纳入 notion；如有后续证据再调整。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001 的‘思想’是否包含意识形态/系统化思想尚无证据，source_pos 名词但无上下文，无法确定是否应覆盖；当前限制合理但需人工确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心‘想法’明确；‘思想’已注限概念观念但来源偏宽，‘构思’仅有古怪/突发念头证据，一般构想范围需补注或暂存。\"\n    },\n    {\n      \"id\": \"SG25-f178ad42d80e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 的 announce publicly/officially 与 make known 覆盖原文“宣布”的公开/正式宣告用法。\",\n          \"evidence_ids\": [\"wn31:v:00967903\", \"wn31:v:00976399\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“表示”可指一般表达/表明，但候选 extended:1 使用 make known 并注释限为“明确使人知道某事”，仅保留来源子集；英语证据不支持更宽义，剩余范围待核。\",\n          \"evidence_ids\": [\"wn31:v:00976399\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"source_scope_uncertainty\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-f178ad42d80e:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:00976399\"],\n          \"reason\": \"中文‘表示’可指一般表达/表明，但英语 announce 证据不支持；候选已限制为明确使人知道，仍应在来源映射中标记待核。\",\n          \"counterexample\": \"\",\n          \"repair_suggestion\": \"标‘表示’来源范围待核，不把一般表达/表明并入 announce；若后续词典补充请单独记录。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002 的‘表示’是否包含一般表达/表明尚无上下文证据，当前限制为明确使人知道可能遗漏来源含义，需人工确认。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心‘宣布’覆盖公开正式宣告；‘表示’在扩展层并明确限为使人知道，源中文更宽范围待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4330,
+    "completion_tokens": 8160,
+    "total_tokens": 12490,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6869
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2666
+  },
+  "started_utc": "2026-11-13T09:57:56.632681+00:00",
+  "completed_utc": "2026-11-13T09:59:42.392829+00:00",
+  "elapsed_seconds": 105.766,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

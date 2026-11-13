@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_26",
+  "request_hash": "12aec477316ec1acb092ed5691c7446aafe654675e6a0f732fdc475bf92f1361",
+  "started_utc": "2026-11-13T08:16:13.810056+00:00",
+  "completed_utc": "2026-11-13T08:17:27.694892+00:00",
+  "elapsed_seconds": 73.891,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a0995965-501f-4736-9795-f6b70b2b5796",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3173,
+    "completion_tokens": 3950,
+    "total_tokens": 7123,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3567
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3173
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3bb61db1bc03\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"WordNet sense wn31:s:01796896 ('severely simple; a stark interior') is present in the supplied evidence but not included in candidate core, extended, other, or dictionary_additions. The original Chinese only has 严重的/严厉的, so this is an external sense outside source scope. Importance for basic learning is uncertain; it may be a specialized stylistic sense (austere, plain) that could be tracked as an AI_candidate_not_adopted addition if deemed valuable.\",\n          \"evidence_ids\": [\"wn31:s:01796896\"],\n          \"source_sense_ids\": [],\n          \"candidate_group_ref\": null,\n          \"proposed_fix\": \"Optionally add a dictionary_addition candidate for '朴素的；简朴的；无装饰的' (severely simple) with status AI_candidate_not_adopted, human_approved=false, auto_promoted_to_core=false, priority_basis=AI_teaching_suggestion_not_measured_frequency, and note that it is a separate external sense not in original.\"\n        }\n      ],\n      \"preferences\": [],\n      \"note\": \"Candidate correctly separates source adjective senses s001 (严重的) and s002 (严厉的) into two core groups with appropriate WordNet evidence. Physical strength sense (wn31:s:02330284) is correctly placed as an external dictionary addition not adopted. One WordNet sense (severely simple) is untracked; importance uncertain, flagged as Info.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

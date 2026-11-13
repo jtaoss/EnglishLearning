@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_010",
+  "kind": "holdout",
+  "request_hash": "aff497355f3c73c9065dc7f951e38154c044dd86b13bfc14b23956b56da9da17",
+  "input_ids": [
+    "SG25-c64bc36dfe56",
+    "SG25-6df37daaa46c"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "f053f5be-ea77-4a8b-aded-5a78c02e00c3",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c64bc36dfe56\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"限制（对象：范围、数量、使用等，未指定）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"无特定语境；对象未限定\",\n          \"evidence_ids\": [\"wn31:v:00234091\"],\n          \"uncertainty\": \"源义宽泛，证据覆盖一般限制；其余证据多为身体禁闭，不宜并入限制义。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"禁闭（剥夺自由，关押）\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需指人或动物被限制自由\",\n          \"evidence_ids\": [\"wn31:v:02500687\", \"wn31:v:01349980\", \"wn31:v:01304044\"],\n          \"uncertainty\": \"wn31:v:02716988义为包围/笼罩，可能不属于禁闭（如黑暗包围），源义未含该抽象用法，暂不采用。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词，限制（范围、数量、使用等）\",\n        \"动词，禁闭（拘禁，剥夺自由）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"无\",\n      \"note\": \"两个源义均有英语证据支持；‘close in；darkness enclosed him’为词典新增义，未纳入核心，见unadopted_observations。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"close in; \\\"darkness enclosed him\\\"\",\n          \"evidence_id\": \"wn31:v:02716988\",\n          \"reason\": \"源义为禁闭，未含包围/笼罩义；英语特有转义，不采用。\"\n        }\n      ]\n    },\n    {\n      \"id\": \"SG25-6df37daaa46c\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"星期（七天周期）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"无特定语境；指时间段\",\n          \"evidence_ids\": [\"wn31:n:15161099\", \"wn31:n:15194920\"],\n          \"uncertainty\": \"源义未限定起始日；15161099为周日起始，中文星期可周一或周日，但两者均表示一周，不影响覆盖。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"周（七天周期）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"无特定语境；指时间段\",\n          \"evidence_ids\": [\"wn31:n:15161099\", \"wn31:n:15194920\"],\n          \"uncertainty\": \"与星期义相同；源两个义项为同义，可合并。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词，星期；周（连续七天）\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"无\",\n      \"note\": \"源两个义项（星期、周）为同义，合并为一个核心义；工作周义属词典新增，未采用，保留为未采用观察。\",\n      \"unadopted_observations\": [\n        {\n          \"text\": \"hours or days of work in a calendar week; \\\"they worked a 40-hour week\\\"\",\n          \"evidence_id\": \"wn31:n:15160948\",\n          \"reason\": \"源义为时间周期，不包含工作周这一特定用法；英语词典有该义但中文原文未表达，不采用。\"\n        }\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 2510,
+    "completion_tokens": 3150,
+    "total_tokens": 5660,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2314
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2510
+  },
+  "started_utc": "2026-11-13T09:33:06.721423+00:00",
+  "completed_utc": "2026-11-13T09:33:51.362945+00:00",
+  "elapsed_seconds": 44.641,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

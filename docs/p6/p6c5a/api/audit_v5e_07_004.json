@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_004",
+  "kind": "audit",
+  "request_hash": "1a6674cff4509a1f9192f99fc9554785522189df68942219884ebe55707b767d",
+  "input_ids": [
+    "SG25-3171d89ad005",
+    "SG25-7ae4b7c7678e",
+    "SG25-6c86df9c018e",
+    "SG25-45e84635bc48",
+    "SG25-aa97302150fc"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "63bce645-9db4-4b61-a9e4-1c6431f5b809",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3171d89ad005\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"厨房（做饭的房间）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:03625099 定义为备餐房间，与原义'厨房'一致。\",\"evidence_ids\":[\"wn31:n:03625099\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义词，核心组直接对应备餐房间，无额外限制或缺口。\"},{\"id\":\"SG25-7ae4b7c7678e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"院子（房屋周围围起的地）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:04618236 为房屋或建筑周围的围地，与'院子'相符。\",\"evidence_ids\":[\"wn31:n:04618236\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"码（长度单位）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:13672065 明确为三英尺长度单位，对应'码'。\",\"evidence_ids\":[\"wn31:n:13672065\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别落在核心'院子'和扩展'码'；长度单位义在扩展保留，未丢源义。\"},{\"id\":\"SG25-6c86df9c018e\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"误解（错误地理解）\",\"relation\":\"语义等价\",\"reason\":\"wn31:v:00621541 为以错误方式解释/理解，和动词'误解'一致。\",\"evidence_ids\":[\"wn31:v:00621541\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义动词，核心组与错误理解义直接对应，无额外范围缺口。\"},{\"id\":\"SG25-45e84635bc48\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"帽子（中文泛指头部衣着）\",\"relation\":\"无法确定\",\"reason\":\"原文'帽子'范围较宽，而英语 cap 的词典证据仅支持贴头帽一类；中文宽泛用法不能直接等同于英语全范围。\",\"evidence_ids\":[\"wn31:n:02957776\"],\"context\":\"uncertain\",\"residual_scope\":\"中文泛指帽子；英语 cap 证据仅覆盖贴头帽，泛帽类范围待核\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"盖子（瓶盖、覆盖物）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:02958374 为瓶顶盖，wn31:n:02958501 为覆盖/保护物，均对应'盖子'。\",\"evidence_ids\":[\"wn31:n:02958374\",\"wn31:n:02958501\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"上限（允许数量的最高限度）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:06670391 明确定义为允许范围的上限，与'上限'一致。\",\"evidence_ids\":[\"wn31:n:06670391\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-45e84635bc48:p6c4:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:02957776\"],\"reason\":\"原文'帽子'是中文泛称，英语 cap 的词典证据仅为 tight-fitting headdress；当前核心组用'帽子'未限定，来源范围比英语证据宽，属来源待核而非生成器重大错误。\",\"repair_suggestion\":\"保留'帽子'作常用提示，同时标注 cap 常指便帽/贴头帽，或明确来源宽泛待核，不据此扩展为所有帽类。\"}],\"note\":\"三个源义均有对应组；'盖子'与'上限'证据直接，'帽子'相对英语 cap 偏宽，作为来源不确定性待核。\"},{\"id\":\"SG25-aa97302150fc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"计算机（自动计算的机器）\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:03086983 为自动执行计算的机器，与'计算机'一致。\",\"evidence_ids\":[\"wn31:n:03086983\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心组保留机器义；WordNet 的历史计算人员义未冒充原文已有，也未放入首屏。\"}]}",
+  "usage": {
+    "prompt_tokens": 5150,
+    "completion_tokens": 6723,
+    "total_tokens": 11873,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5534
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3230
+  },
+  "started_utc": "2026-11-13T09:53:08.165535+00:00",
+  "completed_utc": "2026-11-13T09:53:48.064516+00:00",
+  "elapsed_seconds": 39.907,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

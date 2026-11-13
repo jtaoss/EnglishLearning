@@ -1,0 +1,35 @@
+{
+  "utc": "2026-11-13T08:14:55.950771+00:00",
+  "accepted": true,
+  "accepted_model": "deepseek-flash",
+  "accepted_effort": "low",
+  "acceptance_scope": "Conditional candidate-generation workflow, not a claim of zero generator errors; source/POS mapping, risk isolation and independently identified fixture failure are validated. First100 actual new words must pass batch gate before scaling.",
+  "generation_response_sha256": "99880ed367ef76a6a3524f59bd660c02ae768653c1a28e0d2397d6a37c0b20c7",
+  "rules_hash": "0c94b56ac7bcef28dd3ccda29995ec3d61ade284c6ed95734418f2db87771dbe",
+  "generation_prompt_sha256": "894bcff48276bcf94e98d52aade27d88448971b1ce1b8c6e305b6972d58cebd3",
+  "fixture_count": 6,
+  "known_biased_hard_fixtures_not_accuracy_estimate": true,
+  "confirmed_fixture_Major": [
+    {
+      "headword": "import",
+      "type": "noun_activity_use_omitted",
+      "basis": "Collins noun activity separately from goods; actual generated noun covers goods only; parent re-read primary page and compared source/use.",
+      "treatment": "fixture result rejected for import; actual production reuses corrected immutable C4 import, never this flawed fixture; same risk always targets second review."
+    }
+  ],
+  "fixture_observations": {
+    "support": "distinct moral/physical/financial verb uses retained, noun support separate; >3 flagged",
+    "management": "activity core and people addition separated; no adoption",
+    "clause": "narrow original held, broader grammar addition unadopted",
+    "escape": "physical and avoidance uses explicit; fine-grained boundary still candidate",
+    "indicate": "pointing vs brief statement separated; signals remain unadopted/ambiguous, not claimed source-complete"
+  },
+  "prior_preflights": [
+    "v1: structure and source-boundary failures",
+    "v2/pro and flash: source scope problems; publisher constraints in transport wording were too narrow",
+    "v3: transport permits actual publisher observations, remaining known fixture omission detected by different model ID"
+  ],
+  "whole_rule_file_changed": false,
+  "human_approved": false,
+  "parent_adjudicator": "Codex current session; backend snapshot not exposed"
+}

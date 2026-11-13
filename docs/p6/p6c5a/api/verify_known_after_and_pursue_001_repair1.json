@@ -1,0 +1,33 @@
+{
+  "tag": "verify_known_after_and_pursue_001_repair1",
+  "kind": "verify",
+  "request_hash": "8207f125b50e6f49caeeeaa10fa5de10e37a9779ca370105d4c0efa5f72b3833",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1d0ae6ea-efc9-4bc7-a9ed-9d322f11e4b2",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7920fdeff9c5\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"组1使用‘仪式；礼仪程序（宗教或非宗教）’覆盖，证据wn31:n:01029801（任何惯常仪式或做法）和wn31:n:01032852（宗教仪式程序）及父级注释保留宗教与非宗教正式仪式范围，未添加排他对象限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:01029801\",\n            \"wn31:n:01032852\",\n            \"pub:p6c5:parent:ritual\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"组2以‘惯常做法/固定行为’覆盖‘惯常程序’，证据wn31:n:00415803（刻板行为）与wn31:n:01029801（惯常做法）将程序概括为行为/做法，但保留惯常反复义，未收窄。\",\n          \"evidence_ids\": [\n            \"wn31:n:00415803\",\n            \"wn31:n:01029801\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"组3以‘仪式的/与仪式有关的’覆盖形容词，证据wn31:a:02903641（社会仪式）与wn31:a:02903908（宗教仪式）分别支持两类，未超出原文范围。\",\n          \"evidence_ids\": [\n            \"wn31:a:02903641\",\n            \"wn31:a:02903908\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"三个源义均有对应覆盖；名词仪式与惯常程序、形容词仪式的均得到保留，未发现证据内的范围缺陷。\"\n    },\n    {\n      \"id\": \"SG25-e3f48726b892\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"组2使用‘学习者’覆盖，证据wn31:n:10271476定义someone who learns，虽提及尤其儿童但非排他，中文宽义可对应。\",\n          \"evidence_ids\": [\n            \"wn31:n:10271476\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"组1中‘学者’直接对应learned person，证据wn31:n:10577282定义准确，无范围变化。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"‘文人’被并入‘学者’组作为下位用法，证据wn31:n:10577282支持人文领域learned person，但未直接提供文学/文人独立义，分组保留‘文人’字样并注明下位，概括可接受。\",\n          \"evidence_ids\": [\n            \"wn31:n:10577282\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"‘文人’与‘学者’合并于同组，但‘文人’更强调文学创作/人文身份而非学术成就；当前证据wn31:n:10577282支持人文领域learned person，未直接提供‘文人’的独立义项，是否因此丢失文学身份需要专门词典补充确认。\"\n      ],\n      \"preferences\": [\n        \"建议将组1注释中‘文学/人文学科的学习者’改为‘文学/人文学科人士’，避免将‘文人’误标为学习者。\"\n      ],\n      \"note\": \"三个源义均已覆盖；学习者与学者映射等价，文人作为下位使用合并属合理概括，但专用文学义证据不足且注释表述可能误导。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4448,
+    "completion_tokens": 3849,
+    "total_tokens": 8297,
+    "prompt_tokens_details": {
+      "cached_tokens": 3456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2932
+    },
+    "prompt_cache_hit_tokens": 3456,
+    "prompt_cache_miss_tokens": 992
+  },
+  "started_utc": "2026-11-13T09:44:21.857382+00:00",
+  "completed_utc": "2026-11-13T09:45:10.092752+00:00",
+  "elapsed_seconds": 48.234,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

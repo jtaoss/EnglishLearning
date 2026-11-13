@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_044",
+  "kind": "verify",
+  "request_hash": "420c783398aabb1f4a573eaa5ea5204ac1129a8980dce5dca09d08547cf28512",
+  "input_ids": [
+    "SG25-3165df34fcec",
+    "SG25-27ce25259481"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2638f590-42a4-4ec4-b8e0-368a365feeb3",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3165df34fcec\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"原文“研究所”为具体机构类型；候选核心组保留该中文并用WordNet宽义机构定义作为上位兼容，研究机构属于促进科学/教育的组织，未丢失原义；但宽义本身为词典扩充，不宜单独教作该词唯一名词义。\",\n          \"evidence_ids\": [\"wn31:n:08424287\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"原文“学院”为具体教育机构类型；候选核心组保留该中文并同样使用宽义机构定义兼容，学院属于促进教育的组织，原义保留；宽义仅为证据说明，未单独添加。\",\n          \"evidence_ids\": [\"wn31:n:08424287\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"WordNet v:01650771 'set up or lay the groundwork for' 直接支持“建立；设立”义，对象与方向均匹配。\",\n          \"evidence_ids\": [\"wn31:v:01650771\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原“实行”义未见任何所供英语证据支持；v:01621566 为法律程序“提出/提起”，不是实施/执行；held仅暂存，未进入任何正式层级。\",\n          \"evidence_ids\": [\"wn31:v:01621566\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"held_source_sense_unresolved\",\n          \"source_ids\": [\"s004\"],\n          \"group_ids\": [],\n          \"evidence_ids\": [\"wn31:v:01621566\"],\n          \"reason\": \"原文动词义“实行”在所有层级中均未覆盖；唯一相关的所供证据 v:01621566 是法律上提出程序，不支持实施/执行义。held仅表示暂存，不能视为覆盖。\",\n          \"counterexample\": \"v:01621566 定义 'advance or set forth in court; bring charges; institute proceedings' 不包含一般‘实行/实施’对象。\",\n          \"repair_suggestion\": \"需补充 institute 表‘实施/执行’的词典证据并建立对应层级；若无该义，应明确将源义标记为待核或原中文偏差，并在审计中保留未决状态。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s004“实行”义是否属于 institute 的合法英语用法待核；现有证据只支持法律程序提出，不支持一般实施。\",\n        \"名词义 s001/s002 的宽义机构定义是否应作为核心教学义，尚需确认原教材仅要求“研究所/学院”还是允许更宽机构义。\"\n      ],\n      \"preferences\": [\n        \"可将 s001 与 s002 合并为一个名词组，显示“机构（研究所、学院）”，减少重复；但属教学偏好，不涉及覆盖缺陷。\"\n      ],\n      \"note\": \"词级覆盖因 s004 未解决而不完整；名词义和建立义有核心覆盖，但“实行”仅 held。\"\n    },\n    {\n      \"id\": \"SG25-27ce25259481\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“确保；保证（做到）”对应 WordNet make certain/ensure 义，原“保证”在该组中作为确保结果的含义保留；未采用承诺义。\",\n          \"evidence_ids\": [\"wn31:v:00664507\", \"wn31:v:00892111\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"候选未覆盖“担保/承诺”义；所供 ensure 证据只有 make certain/ensure，不包含 assure/guarantee 的承诺义，held 仅暂存。\",\n          \"evidence_ids\": []\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“确保”直接对应 WordNet make certain/ensure 义，证据与目标完全匹配。\",\n          \"evidence_ids\": [\"wn31:v:00664507\", \"wn31:v:00892111\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"held_source_sense_unresolved\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [],\n          \"evidence_ids\": [\"wn31:v:00892111\"],\n          \"reason\": \"原文动词义“担保”在所有层级中未覆盖；所供 v:00892111 仅支持 make certain/ensure，不支持担保/承诺义。held未解决。\",\n          \"counterexample\": \"v:00892111 定义 'make certain of; This nest egg will ensure a nice retirement... Preparation will guarantee success!' 不包含‘担保/承诺’的主观保证义。\",\n          \"repair_suggestion\": \"需补充 ensure 表‘担保/承诺’的词典证据；若确无该义，应确认原片段是否混入 assure/guarantee，并将 s002 保留为待核或更正原中文。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002“担保”是否应归入 ensure 的承诺义或属于 assure/guarantee 的混入，需进一步证据；现有 ensure 证据仅覆盖确保义。\",\n        \"s001“保证”的承诺义与确保义边界未经教材语境确认；当前按确保义处理，承诺义由 s002 承担但 s002 也未被支持。\"\n      ],\n      \"preferences\": [\n        \"将 s001/s003 合并为一组是合理教学压缩，但需在注释中说明“保证”不含承诺义。\"\n      ],\n      \"note\": \"核心覆盖“确保/保证做到”，但“担保”义未覆盖且 held，词级完整性待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4233,
+    "completion_tokens": 7769,
+    "total_tokens": 12002,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6389
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2569
+  },
+  "started_utc": "2026-11-13T09:58:42.922023+00:00",
+  "completed_utc": "2026-11-13T10:00:25.517605+00:00",
+  "elapsed_seconds": 102.594,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

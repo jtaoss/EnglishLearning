@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_007",
+  "kind": "audit",
+  "request_hash": "f97fb1f6373098f2412f92cb514b21dad032c3e0091b4dcb6f3f91db53712648",
+  "input_ids": [
+    "SG25-89b7505ad79a",
+    "SG25-7f0c68cb87de",
+    "SG25-6ef49cacb4c3",
+    "SG25-59f0db478528",
+    "SG25-d27d1573bfd9"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "014180f3-b5de-434b-8118-8ba47c09114f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-89b7505ad79a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"职业（具体行业/工作）\",\"relation\":\"语义等价\",\"reason\":\"扩展层以“职业”对应 occupation 的词典义，保留具体职业范围，未新增对象限制。\",\"evidence_ids\":[\"wn31:n:00584283\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"事业（工作生涯/事业成就）\",\"relation\":\"语义等价\",\"reason\":\"扩展层“事业”按工作发展历程的 career 义承接，与核心“职业生涯”同源但保留为独立中文表达。\",\"evidence_ids\":[\"wn31:n:00283457\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"职业生涯（工作/职业发展历程）\",\"relation\":\"语义等价\",\"reason\":\"核心层“职业生涯”直接对应 the general progression of working or professional life。\",\"evidence_ids\":[\"wn31:n:00283457\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义均有层级别映射；核心用“职业生涯”统摄工作发展历程，职业与事业在扩展保留，未见源支持范围丢失。\"},{\"id\":\"SG25-7f0c68cb87de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"谨慎的（行事前考虑风险）\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组“谨慎的／小心的”由 showing careful forethought 直接支持，未额外限定对象或领域。\",\"evidence_ids\":[\"wn31:a:00326179\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"小心的（避免危险/差错）\",\"relation\":\"语义等价\",\"reason\":\"“小心的”与“谨慎的”在该形容词义上合并为同一记忆单元，词典证据支持 cautious/careful 的核心范围。\",\"evidence_ids\":[\"wn31:a:00326179\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义为近义形容词，合并为一个核心组；形容词证据直接支持，未用名词或 avoiding excess 的旁证冒充源义。\"},{\"id\":\"SG25-6ef49cacb4c3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"携带（带在身上/随身带）\",\"relation\":\"语义等价\",\"reason\":\"核心“携带／搬运”覆盖随身携带；move while supporting 与 have on one's person 均支持该用途。\",\"evidence_ids\":[\"wn31:v:01452567\",\"wn31:v:02722977\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"搬运（移动并支撑物体）\",\"relation\":\"语义等价\",\"reason\":\"核心组合并“携带／搬运”，move while supporting ... in a vehicle or in one's hands or on one's body 支持移动并支撑物体的搬运范围。\",\"evidence_ids\":[\"wn31:v:01452567\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"承载（承受重量/压力/责任）\",\"relation\":\"语义等价\",\"reason\":\"扩展层“承载”对应 bear or be able to bear the weight, pressure, or responsibility，保留具体支撑/承受范围。\",\"evidence_ids\":[\"wn31:v:01220648\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心覆盖携带/搬运框架，承载重量或责任作为独立扩展组保留；三个源义均有准确证据，未把词网其他 carry 用法塞入源义。\"},{\"id\":\"SG25-59f0db478528\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"预测（源词性未定；候选按名词）\",\"relation\":\"无法确定\",\"reason\":\"源义项词性为 null，不能确认“预测”在此为名词；核心1以名词 prediction 承接，属于推荐而非源材料已定结论。\",\"evidence_ids\":[\"wn31:n:06762595\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定，可能为名词或动词；本条只体现名词读法，动词读法未在本源ID下明示承接。\",\"counterexample\":\"“预测”可作动词（predict），当前名词组不能单独证明该动词读法属于本条。\",\"counterexample_evidence_ids\":[\"wn31:v:00928443\",\"wn31:v:00713964\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"预报（源词性未定；候选按动词）\",\"relation\":\"无法确定\",\"reason\":\"源义项词性为 null，不能确认“预报”在此为动词；核心2以动词 predict 承接，属于推荐而非源材料已定结论。\",\"evidence_ids\":[\"wn31:v:00928443\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定，可能为名词或动词；本条只体现动词读法，名词读法未在本源ID下明示承接。\",\"counterexample\":\"“预报”可作名词（forecast/weather forecast），当前动词组不能单独证明该名词读法属于本条。\",\"counterexample_evidence_ids\":[\"wn31:n:06762595\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-59f0db478528:core:1\",\"SG25-59f0db478528:core:2\"],\"evidence_ids\":[\"wn31:n:06762595\",\"wn31:v:00928443\"],\"reason\":\"两个源义项的词性均为 null（unresolved_multi_pos），候选却分别以名词核心组和动词核心组固定呈现；虽有注释说明是推荐，映射仍可能把未定词性读成已定分工。\",\"repair_suggestion\":\"在映射与组展示中保留“源词性未定/推荐词性”标记，或分别列出名词、动词两种可能读法并标明待核，不要把 s001/s002 的源词性写成已确认。\"}],\"note\":\"名词“预测”与动词“预报”均有候选组承接，但两个源片段词性为 null，不能把名词/动词分工当作源材料已定；整体暂存待核。\"},{\"id\":\"SG25-d27d1573bfd9\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"发觉（意识到）\",\"relation\":\"语义等价\",\"reason\":\"核心“发觉／察觉”由 become conscious of 支持，保留意识到某事的范围。\",\"evidence_ids\":[\"wn31:v:00592914\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"察觉（意识到）\",\"relation\":\"语义等价\",\"reason\":\"“察觉”与“发觉”在此义合并，become conscious of 直接支持该核心范围。\",\"evidence_ids\":[\"wn31:v:00592914\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"感知（通过感官察觉）\",\"relation\":\"语义等价\",\"reason\":\"扩展层“感知”对应 become aware of through the senses，保留感官获得信息的独立边界。\",\"evidence_ids\":[\"wn31:v:02110960\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"核心合并发觉/察觉，感官感知作为独立扩展组；三条源义均有对应词典证据，意识和感官边界清楚。\"}]}",
+  "usage": {
+    "prompt_tokens": 7964,
+    "completion_tokens": 9641,
+    "total_tokens": 17605,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7769
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 6044
+  },
+  "started_utc": "2026-11-13T09:40:12.819178+00:00",
+  "completed_utc": "2026-11-13T09:41:05.824030+00:00",
+  "elapsed_seconds": 53.0,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_008",
+  "kind": "audit",
+  "request_hash": "2d83200f75df1c4a014102712f5387d841327f3b4d856b132f142799936ef043",
+  "input_ids": [
+    "SG25-62484e22a6a5",
+    "SG25-f9852209bcf6",
+    "SG25-758cb95fdc40",
+    "SG25-4381dc2ab142",
+    "SG25-e0c08c2b1f53"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "f5bda15b-7a8a-4814-9d11-f3b723f2f191",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-62484e22a6a5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"健康（名词，身心状态）\",\"relation\":\"语义等价\",\"reason\":\"核心组“健康；身心状态”同时覆盖一般身心状况与无病健康状态，未添加无依据的对象或领域限制。\",\"evidence_ids\":[\"wn31:n:13946812\",\"wn31:n:14471374\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"若只理解为“未生病”，会窄于证据所示的“身心状况”。\",\"counterexample_evidence_ids\":[\"wn31:n:13946812\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"健康源义已由核心组完整覆盖，证据同时支持健康状态与身心状况，无需强拆义项。\"},{\"id\":\"SG25-f9852209bcf6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"女警察（女性警务人员）\",\"relation\":\"语义等价\",\"reason\":\"核心组“女警察”与原文及唯一词典证据完全对应，保留了女性人员限定。\",\"evidence_ids\":[\"wn31:n:10468986\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"女警察源义与核心组一一对应，词头和限定均未被改写。\"},{\"id\":\"SG25-758cb95fdc40\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"裁缝（以制改衣物为业的人）\",\"relation\":\"语义等价\",\"reason\":\"核心组“裁缝”与名词证据“以制改衣物为业的人”一致，未混入动词义。\",\"evidence_ids\":[\"wn31:n:10709060\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"按特定需要专门定制或调整\",\"relation\":\"合理概括\",\"reason\":\"组以“按特定需要定制；使适合”概括动词 tailor，保留按需定制，并可涵盖适配用途，且未限定为只缝衣服。\",\"evidence_ids\":[\"wn31:v:00302443\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"若只保留“缝制衣服”，会窄于组内已概括的按需调整义。\",\"counterexample_evidence_ids\":[\"wn31:v:00302443\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词“裁缝”与动词“按需定制/使适合”分列核心，未把定制错误限死在制衣上。\"},{\"id\":\"SG25-4381dc2ab142\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"银行（金融机构）\",\"relation\":\"语义等价\",\"reason\":\"核心组“银行”对应金融机构证据，未把外部未采用的存钱动词混入原名词义。\",\"evidence_ids\":[\"wn31:n:08437235\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"河岸（水体旁斜坡）\",\"relation\":\"语义等价\",\"reason\":\"核心组“河岸”对应水边斜坡证据，与“银行”义分开保留。\",\"evidence_ids\":[\"wn31:n:09236472\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"银行与河岸两个名词源义均已核心覆盖；存钱动词仅列为外部候选，未假装原文已有。\"},{\"id\":\"SG25-e0c08c2b1f53\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"士兵（军队服役人员）\",\"relation\":\"语义等价\",\"reason\":\"核心组“士兵”对应军队入伍人员证据，未把蚁类同形义或动词义加入源义。\",\"evidence_ids\":[\"wn31:n:10641415\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"蚁类 soldier 与源义“士兵”对象错位，但组未采用该义。\",\"counterexample_evidence_ids\":[\"wn31:n:02210299\"],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"士兵源义由核心组准确覆盖，蚁类同形义和动词义未被误作原文义项。\"}]}",
+  "usage": {
+    "prompt_tokens": 5408,
+    "completion_tokens": 6606,
+    "total_tokens": 12014,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5584
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3488
+  },
+  "started_utc": "2026-11-13T09:53:08.228690+00:00",
+  "completed_utc": "2026-11-13T09:53:46.342552+00:00",
+  "elapsed_seconds": 38.109,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

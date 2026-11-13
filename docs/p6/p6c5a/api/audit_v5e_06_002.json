@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_002",
+  "kind": "audit",
+  "request_hash": "343c2cf71917ac0584d324d1944115017d600282f29d9a26e5cb47608cdda393",
+  "input_ids": [
+    "SG25-cf3c3437a865",
+    "SG25-6b428ace0262",
+    "SG25-cfacfd3ec33b",
+    "SG25-83e3b78f14e0",
+    "SG25-6cbdfcf83679"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "74769ea1-58ad-46fe-81a5-ff3971e3f9e4",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-cf3c3437a865\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"获得（取得具体事物/资格，或得到待遇/评价）\",\"relation\":\"语义等价\",\"reason\":\"核心组以“获得；得到”覆盖取得财物/资格与接受待遇/评价两个方向，与原文“获得”及两个词典证据相符。\",\"evidence_ids\":[\"wn31:v:02242867\",\"wn31:v:00523831\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“获得”已由核心宽义覆盖取得具体事物与得到待遇/评价；“存在/适用”未采用且属原文外词典用法，不影响本义覆盖。\"},{\"id\":\"SG25-6b428ace0262\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"保持（维持状态/特征）\",\"relation\":\"语义等价\",\"reason\":\"核心组“保持；维持（状态、特征）”对应allow to remain/maintain property/feature，例子为镇静、衣物保持形状，未排除其他状态保持。\",\"evidence_ids\":[\"wn31:v:02415305\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"保留（继续拥有/留存/不交出）\",\"relation\":\"范围收窄\",\"reason\":\"核心2把“保留”限定为“以备后用”，扩展仅补记忆用法；一般“继续拥有/留住”未在同一s002分支明确保留。\",\"evidence_ids\":[\"wn31:v:02288169\",\"wn31:v:00611564\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少“继续拥有/留住”的一般保留用法（如留住人员/律师）\",\"counterexample\":\"retain a lawyer/staff 表示继续留用/拥有，不限于备后用\",\"counterexample_evidence_ids\":[\"wn31:v:02415305\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"容纳（容量/接纳）\",\"relation\":\"无法确定\",\"reason\":\"现有证据hold back within指留住/拦住（水分等），与“容纳”的容量/接纳方向不完全一致；已按held暂存，不能确认。\",\"evidence_ids\":[\"wn31:v:02707488\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少容量/接纳义；现有证据仅覆盖“留住/拦住”\",\"counterexample\":\"“容纳”指容量/接纳，与“留住/拦住”方向不同\",\"counterexample_evidence_ids\":[\"wn31:v:02707488\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-6b428ace0262:p6c5:core_meanings:2\",\"SG25-6b428ace0262:p6c5:extended_meanings:1\"],\"evidence_ids\":[\"wn31:v:02415305\"],\"reason\":\"s002“保留”可指继续拥有/留住；核心2限定“以备后用”，扩展仅记忆，未明确保留一般继续拥有用法。\",\"repair_suggestion\":\"在核心2注释说明“以备后用”为示例而非排他，或补“继续拥有/留住”分支并标明与s001“保持状态”的区别。\"},{\"severity\":\"Info\",\"kind\":\"source_uncertainty_held\",\"source_ids\":[\"s003\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:v:02707488\"],\"reason\":\"“容纳”与hold back within的对象/方向不一致，held暂存合理，不宜硬判生成器错误。\",\"repair_suggestion\":\"保留待核；若教材语境确指容量/接纳，不应直接用retain覆盖。\"}],\"note\":\"s001保持状态已覆盖；s002保留以备后用+记忆已列但一般“继续拥有/留住”有轻微剩余范围；s003容纳与证据不一致，暂存待核。\"},{\"id\":\"SG25-cfacfd3ec33b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"发现（通过观察/调查确定存在或事实）\",\"relation\":\"语义等价\",\"reason\":\"核心组“发现；发觉；察觉”直接对应discover/determine existence/presence/fact，覆盖s001的发现义。\",\"evidence_ids\":[\"wn31:v:02158938\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"发觉（注意到存在/事实）\",\"relation\":\"语义等价\",\"reason\":\"同一词典义项包含注意到并确定存在/事实的用法，与“发觉”相符。\",\"evidence_ids\":[\"wn31:v:02158938\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"察觉（感知到存在/事实）\",\"relation\":\"语义等价\",\"reason\":\"discover or determine existence/presence/fact可覆盖通过注意而察觉的用法，与“察觉”相符。\",\"evidence_ids\":[\"wn31:v:02158938\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义中文片段均由同一“发现/确定存在或事实”核心覆盖，无需拆分；未发现残余范围。\"},{\"id\":\"SG25-83e3b78f14e0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"技术的（应用科学/工业实践/机械工具）\",\"relation\":\"语义等价\",\"reason\":\"核心1以“技术的；与技术有关的”覆盖应用科学组织、机械工具/技术故障等用法，与s001相符。\",\"evidence_ids\":[\"wn31:a:02820431\",\"wn31:a:02902437\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"专业的（需要专门知识/术语）\",\"relation\":\"语义等价\",\"reason\":\"核心2“专业的；专门性的”对应specialized knowledge/technical terminology，覆盖s002。\",\"evidence_ids\":[\"wn31:a:01112409\",\"wn31:s:02235691\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“技术的”与“专业的”分别由应用科技/机械工具和专门知识/术语两个核心组覆盖；法律字面、金融技术性、表现技巧等未采用且属原文外用法。\"},{\"id\":\"SG25-6cbdfcf83679\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"手法（完成具体任务的方法/技艺）\",\"relation\":\"语义等价\",\"reason\":\"核心1“手法”对应a practical method or art applied to a particular task，覆盖具体方法义。\",\"evidence_ids\":[\"wn31:n:05672990\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"技巧（练习获得的熟练度/本领）\",\"relation\":\"语义等价\",\"reason\":\"核心2“技巧；技能”对应skillfulness/proficiency，覆盖通过练习获得的熟练度。\",\"evidence_ids\":[\"wn31:n:05651035\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"技能（练习获得的熟练度/本领）\",\"relation\":\"语义等价\",\"reason\":\"同 skillfulness/proficiency 义项可覆盖“技能”作为练习所得本领的用法。\",\"evidence_ids\":[\"wn31:n:05651035\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“手法”与“技巧/技能”按具体方法vs熟练度分开，两个核心组覆盖全部原片段，未发现残余范围。\"}]}",
+  "usage": {
+    "prompt_tokens": 5620,
+    "completion_tokens": 7593,
+    "total_tokens": 13213,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5749
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3700
+  },
+  "started_utc": "2026-11-13T09:50:57.261875+00:00",
+  "completed_utc": "2026-11-13T09:51:39.472178+00:00",
+  "elapsed_seconds": 42.219,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

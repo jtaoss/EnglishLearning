@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_047_repair1",
+  "kind": "verify",
+  "request_hash": "61b6b2db9cb7d99b7bc8e3888ea99904aa63fccc9d8fc6c1ca47421b3ff275b3",
+  "input_ids": [
+    "SG25-3d8eefab379d",
+    "SG25-b2d7f24e8330"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "73fb201a-443d-4f1f-8640-1141f06c711a",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-3d8eefab379d\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文s001仅为“决定”，未限定对象；候选核心组备注“对选择或行动作出决定”排除了英语证据中“shape or influence; give direction to”所对应的“决定/支配（结果或发展）”义，且该义未在任何层级采用。\",\n          \"evidence_ids\": [\n            \"wn31:v:00699355\",\n            \"wn31:v:00702806\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“确定”链接wn31:v:00701581与wn31:v:00949109，覆盖权威/明确地确定、规定，与原文动词“确定”范围相符。\",\n          \"evidence_ids\": [\n            \"wn31:v:00701581\",\n            \"wn31:v:00949109\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“查明”链接wn31:v:00920843与wn31:v:00922307，覆盖通过计算、调查、询问弄清，与原文动词“查明”相符。\",\n          \"evidence_ids\": [\n            \"wn31:v:00920843\",\n            \"wn31:v:00922307\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s001\"\n          ],\n          \"group_ids\": [\n            \"SG25-3d8eefab379d:p6c5:core_meanings:1\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:v:00699355\",\n            \"wn31:v:00702806\"\n          ],\n          \"reason\": \"候选核心组给“决定”添加“对选择或行动作出决定”的对象限制，但原文未限定；英语证据wn31:v:00702806支持“决定/支配结果或发展”的独立用法，且未在任何层级保留，构成来源范围内遗漏。\",\n          \"counterexample\": \"experience often determines ability / 经验决定能力\",\n          \"repair_suggestion\": \"将核心组“决定”备注扩展为一般决定，采用wn31:v:00702806表示起决定作用/支配结果，或删除“对选择或行动”这一无来源限制。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002“确定”是否需覆盖wn31:v:00702474“通过划定边界/范围来确定”未明确；当前组文本广义，但证据未包含该例，需结合源语境确认是否属于原始范围。\"\n      ],\n      \"preferences\": [\n        \"将“决定/确定/查明”分列核心是教学拆分选择，可接受；但不应以无来源对象限制收窄s001。\"\n      ],\n      \"note\": \"s002/s003覆盖可接受；s001存在无来源对象限制，导致“决定/支配结果”义遗漏。\"\n    },\n    {\n      \"id\": \"SG25-b2d7f24e8330\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心动词组“颠倒”链接wn31:v:00387636，覆盖位置、次序、关系或条件的反向，与原文动词“颠倒”相符；物理翻倒义未链接，但不足以证明来源包含。\",\n          \"evidence_ids\": [\n            \"wn31:v:00387636\"\n          ]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展动词组“倒车”由web:reverse出版方观察支持驾驶车辆后退；虽非WordNet独立义项，但与原文目标一致。\",\n          \"evidence_ids\": [\n            \"web:reverse\"\n          ]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展名词组“反面”唯一链接证据wn31:n:04092293仅指硬币或奖章非主图案的一面；原文“反面”未限定为硬币/奖章，一般相反面/背面或相反关系未在任何层级保留。\",\n          \"evidence_ids\": [\n            \"wn31:n:04092293\",\n            \"wn31:n:13880801\"\n          ]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"原文名词“倒退”无上下文；词典名词有方向逆转、挫折、相反关系等多种可能，当前held保持，不能仅凭裸译选择。\",\n          \"evidence_ids\": [\n            \"wn31:n:00347519\",\n            \"wn31:n:07491010\",\n            \"wn31:n:13880801\"\n          ]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心形容词组“相反的”链接wn31:s:00203687，覆盖顺序、性质或效果上的反向，与原文形容词范围一致。\",\n          \"evidence_ids\": [\n            \"wn31:s:00203687\"\n          ]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"scope_narrowing\",\n          \"source_ids\": [\n            \"s003\"\n          ],\n          \"group_ids\": [\n            \"SG25-b2d7f24e8330:p6c1:extended:2\"\n          ],\n          \"evidence_ids\": [\n            \"wn31:n:04092293\",\n            \"wn31:n:13880801\"\n          ],\n          \"reason\": \"组文本为“反面”，但唯一链接证据只覆盖硬币/奖章反面；原文名词“反面”未限定为硬币，一般相反面/背面或相反关系没有在当前层级保留，构成来源范围内遗漏。\",\n          \"counterexample\": \"the reverse was true / 相反情况成立\",\n          \"repair_suggestion\": \"为名词“反面”补一般相反/背面证据（如wn31:n:13880801或wn31:n:00347519），或将组文本明确限定为硬币/奖章反面并将一般义暂存。\"\n        },\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"evidence_limited\",\n          \"source_ids\": [\n            \"s002\"\n          ],\n          \"group_ids\": [\n            \"SG25-b2d7f24e8330:p6c1:extended:1\"\n          ],\n          \"evidence_ids\": [\n            \"web:reverse\"\n          ],\n          \"reason\": \"“倒车”仅由existing_publisher_observation支持，WordNet样本无独立动词证据；当前可保留但证据强度不足，需额外独立核验。\",\n          \"repair_suggestion\": \"补可靠词典词条支持，或将该扩展项保持pending。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001动词“颠倒”是否需覆盖物理翻倒/上下颠倒（wn31:v:00387386）未定；当前仅链接位置/顺序/关系反转。\",\n        \"s004名词“倒退”具体义因缺语境仍held，未映射到任何层，需原语境决定。\"\n      ],\n      \"preferences\": [\n        \"将“倒车”和名词“反面”放在扩展层是教学排序选择，可接受；若证据增强可上调。\",\n        \"核心仅保留“颠倒”和“相反的”，属于首屏简化，可接受。\"\n      ],\n      \"note\": \"s003名词存在明确范围收窄；s002证据有限；s004正确held待定。核心动词和形容词基本可接受。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 7460,
+    "completion_tokens": 9404,
+    "total_tokens": 16864,
+    "prompt_tokens_details": {
+      "cached_tokens": 5504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7676
+    },
+    "prompt_cache_hit_tokens": 5504,
+    "prompt_cache_miss_tokens": 1956
+  },
+  "started_utc": "2026-11-13T10:01:41.173850+00:00",
+  "completed_utc": "2026-11-13T10:03:54.658881+00:00",
+  "elapsed_seconds": 133.484,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

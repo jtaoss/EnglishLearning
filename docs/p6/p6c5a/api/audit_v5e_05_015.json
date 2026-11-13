@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_015",
+  "kind": "audit",
+  "request_hash": "a599eb8f974f5b9c917f12143efe9a7bddaf0b3e2ef6937ec2e91da18a46dece",
+  "input_ids": [
+    "SG25-63e6ce93e1bc",
+    "SG25-3a19589098bc",
+    "SG25-5e8c03a94c78",
+    "SG25-f379ccb92b91",
+    "SG25-7b0363b65576"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "3dec3508-d26e-4f21-8da4-24bf47715705",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-63e6ce93e1bc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“距离”，未限定空间、时间或抽象域\",\"relation\":\"范围收窄\",\"reason\":\"核心保留空间间隔、扩展保留时间间隔；但来源“距离”未限定域，情感/心理距离仅列外部候选，未进入来源层或暂存，故只保留真子集。\",\"evidence_ids\":[\"wn31:n:05091408\",\"wn31:n:05136830\",\"wn31:n:15197259\"],\"context\":\"none\",\"residual_scope\":\"情感/心理距离等抽象“距离”未保留在核心/扩展/其他，仅外部候选\",\"counterexample\":\"emotional distance 表示心理距离，可与空间/时间距离区分\",\"counterexample_evidence_ids\":[\"wn31:n:07521110\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s002\",\"source_scope\":\"动词“使疏远”，使动，对象为他人或关系\",\"relation\":\"无法确定\",\"reason\":\"核心组对应 keep at a distance，但唯一证据示例为 distance oneself from，方向是自我保持距离；源义为使动、对象他人/关系的“使疏远”，直接他动用例未获证据。\",\"evidence_ids\":[\"wn31:v:02688950\"],\"context\":\"uncertain\",\"residual_scope\":\"他动“使别人疏远/离间”未证实；仅保留自反/保持距离读法\",\"counterexample\":\"distance oneself from events 是使自己与事件保持距离，不直接等于使他人疏远\",\"counterexample_evidence_ids\":[\"wn31:v:02688950\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-63e6ce93e1bc:p6c5:core_meanings:1\",\"SG25-63e6ce93e1bc:p6c5:extended_meanings:1\"],\"evidence_ids\":[\"wn31:n:07521110\"],\"reason\":\"来源名词“距离”未限定空间/时间/抽象，候选只把空间和时间放入来源层；情感/心理距离有词典证据但仅列外部候选，未作为扩展或明确暂存。\",\"repair_suggestion\":\"把情感/心理距离列入扩展或暂存待核，或在核心/扩展注明“距离”未限定空间时间，不能只用外部候选替代来源层覆盖。\"},{\"severity\":\"Minor\",\"kind\":\"direction_valency_pending\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-63e6ce93e1bc:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:v:02688950\"],\"reason\":\"核心动词组使用 keep at a distance，但证据例 distance oneself from 为自反用法；源“使疏远”为使动、对象他人/关系，方向与及物性尚未核实。\",\"repair_suggestion\":\"查证是否有 transitive/causative distance sb/sth from 的可靠用法；否则将核心动词组标为待核并说明仅 distance oneself 有直接证据。\"}],\"note\":\"名词核心空间距离、扩展时间间隔有证据，但来源“距离”宽义中的情感/心理距离仅外部候选，存在残留范围；动词“使疏远”因证据只显示自反保持距离，方向待核。整体列为部分覆盖、核心待核。\"},{\"id\":\"SG25-3a19589098bc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词“创办”，设立组织/机构\",\"relation\":\"语义等价\",\"reason\":\"核心组“创办；创立（组织、机构）”与“创办”一致，证据含 set up/found 组织或项目。\",\"evidence_ids\":[\"wn31:v:02431950\",\"wn31:v:01650771\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“创立”，设立组织/机构\",\"relation\":\"合理概括\",\"reason\":\"与“创办”合为组织/机构设立组；“创立”在此按组织性实体理解，抽象对象由核心2的“建立”联合覆盖。\",\"evidence_ids\":[\"wn31:v:02431950\",\"wn31:v:01650771\",\"wn31:v:01659048\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词“建立”，使抽象事物/制度等成立\",\"relation\":\"合理概括\",\"reason\":\"核心2以“建立（制度、关系、基础、声誉等）”概括抽象对象；证据含 build reputation、institute laws，对象示例不排他。\",\"evidence_ids\":[\"wn31:v:01659048\",\"wn31:v:00667394\",\"wn31:v:01650771\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义按组织性设立与抽象/制度性建立分为两组，均有对应词典证据；证实义仅列外部候选，未与原义混淆。\"},{\"id\":\"SG25-5e8c03a94c78\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“例子”，示例\",\"relation\":\"语义等价\",\"reason\":\"核心组“例子；实例”直接对应“例子”，证据为典型例子/同类项。\",\"evidence_ids\":[\"wn31:n:05828980\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“实例”，实际例子\",\"relation\":\"语义等价\",\"reason\":\"“实例”与“例子”近义合组，核心组文本保留“实例”，证据支持典型示例。\",\"evidence_ids\":[\"wn31:n:05828980\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“例子；实例”合为一组有典型示例证据；occurrence/事例义未采用，但原文未明确要求，不作为缺口。\"},{\"id\":\"SG25-f379ccb92b91\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词“稳定的”，状态不易变化\",\"relation\":\"合理概括\",\"reason\":\"核心保留通用“稳定的；不易变化的”，其他层保留有条件的化学稳定子义；来源未限定专业域，化学读法不作为排他核心。\",\"evidence_ids\":[\"wn31:s:00349120\",\"wn31:s:02281838\",\"wn31:a:02298730\",\"wn31:s:01936816\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“马厩”，饲养马匹等牲畜的建筑\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“马厩”与来源一致，证据为饲养马匹/牲畜的农场建筑。\",\"evidence_ids\":[\"wn31:n:04302017\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词通用稳定义入核心，化学稳定义作为有条件其他层；名词马厩直接对应。动词入厩仅外部候选，不构成来源缺口。\"},{\"id\":\"SG25-7b0363b65576\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词“帮助”，给予援助\",\"relation\":\"语义等价\",\"reason\":\"核心组“帮助；协助”直接覆盖“帮助”，证据为 give help/assistance、be of service。\",\"evidence_ids\":[\"wn31:v:02553283\",\"wn31:v:02419840\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“协助”，辅助/从属帮助\",\"relation\":\"合理概括\",\"reason\":\"“协助”与“帮助”合为一般帮助组；证据含 act as assistant in subordinate/supportive function，辅助角色可在同一组内注明而非另拆核心。\",\"evidence_ids\":[\"wn31:v:02419840\",\"wn31:v:02553283\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"帮助与协助合为一般动词组，有 help/assist 证据；体育助攻及名词帮助行为未采用，但原文为动词，不构成来源层缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 6509,
+    "completion_tokens": 11017,
+    "total_tokens": 17526,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9036
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4589
+  },
+  "started_utc": "2026-11-13T09:48:22.277140+00:00",
+  "completed_utc": "2026-11-13T09:49:26.410383+00:00",
+  "elapsed_seconds": 64.14,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

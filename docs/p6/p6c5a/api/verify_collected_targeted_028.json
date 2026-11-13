@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_028",
+  "kind": "verify",
+  "request_hash": "09e763e0a90ce7bb9abf8ff76b6ce2690693242c4cd94bcd7b54d1af386ecb0b",
+  "input_ids": [
+    "SG25-b6ad82a52d2b",
+    "SG25-6f61f46c23a6"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "5f1ad4ec-b159-4092-a598-0c6748f4c081",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-b6ad82a52d2b\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组以wn31:v:00711834（计划/指导复杂事务）与wn31:v:02453050（创建实体）覆盖中文“组织”的主要动词用法；来源为裸词条，无明确对象/领域限制，未发现已支持用途被遗漏。\",\n          \"evidence_ids\": [\"wn31:v:00711834\", \"wn31:v:02453050\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"扩展组文本“安排”仅链接wn31:v:01654986（系统筹划/联合努力），偏复杂活动；原始“安排”可能包含日常琐碎安排，但无上下文/用法说明，不能确认原来源范围包含该子用途，也无法确认已覆盖。\",\n          \"evidence_ids\": [\"wn31:v:01654986\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002“安排”是否包括日常琐碎安排（如安排时间、座位）无法从原词条确定；候选证据仅为系统筹划，未覆盖也未明确排除。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"组织核心覆盖活动/实体；安排放在扩展并限定系统筹划，但原始裸词范围不确定，暂不判为已确认缺陷。\"\n    },\n    {\n      \"id\": \"SG25-6f61f46c23a6\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心名词组“影响”链wn31:n:00158777（强烈影响/作用），该词义对应中文名词“影响”的核心范围；wn31:n:11434525强效果虽未直接用于该组，但n:00158777已覆盖影响，未丢独立用途。\",\n          \"evidence_ids\": [\"wn31:n:00158777\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展名词组“冲击”仅链wn31:n:07353152（身体/物体相撞）并注明物理场景；原始“冲击”未排除抽象强烈冲击/效果，而证据表中wn31:n:11434525（forceful consequence; strong effect）未用于该组或其他层，导致抽象范围丢失。\",\n          \"evidence_ids\": [\"wn31:n:07353152\", \"wn31:n:11434525\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心动词组“影响”链wn31:v:00137133（have an effect upon/affect），与中文动词“影响”一致。\",\n          \"evidence_ids\": [\"wn31:v:00137133\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"扩展动词组“撞击”仅以web:impact现有出版观察为证，且该观察注明非独立词典频率证据；WordNet wn31:v:01346164为压紧/挤在一起，不直接支撑碰撞义。无法确认目标覆盖是否成立。\",\n          \"evidence_ids\": [\"web:impact\", \"wn31:v:01346164\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"scope_narrowing_source_broader\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-6f61f46c23a6:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:07353152\", \"wn31:n:11434525\"],\n          \"reason\": \"候选将“冲击”限定为物理撞击，但原词条无此限制且证据表包含抽象“强烈效果/冲击”，未用于任何组；属于无依据的具体化收窄。\",\n          \"counterexample\": \"抽象冲击/强烈效果（如心灵冲击、视觉冲击）有wn31:n:11434525支持。\",\n          \"repair_suggestion\": \"在extended:1中保留物理撞击示例的同时，将抽象“强烈影响/效果”纳入该组或明确由多义词覆盖，并链接wn31:n:11434525；否则标暂存/pending。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s004动词“撞击”仅靠web:impact出版观察，未提供独立词典依据；需补充及物/不及物撞击例句，暂存为无法确定。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词/动词“影响”核心覆盖；名词“冲击”存在范围收窄，动词“撞击”证据不足待补。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4964,
+    "completion_tokens": 7308,
+    "total_tokens": 12272,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6217
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3300
+  },
+  "started_utc": "2026-11-13T09:57:59.930344+00:00",
+  "completed_utc": "2026-11-13T09:59:35.907352+00:00",
+  "elapsed_seconds": 95.984,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

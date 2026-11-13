@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_83",
+  "request_hash": "b79bc4cc3b0e25f7871ba01af3c0ee0c66fe100e1aeb9b7621cc45a2446142e7",
+  "started_utc": "2026-11-13T08:17:29.565586+00:00",
+  "completed_utc": "2026-11-13T08:18:17.305704+00:00",
+  "elapsed_seconds": 47.734,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "74b6da48-5771-4fe2-a953-8685bf52ef1d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3228,
+    "completion_tokens": 2607,
+    "total_tokens": 5835,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2308
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1180
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-4ca303a3bf7d\",\"independent_core\":[],\"verdict\":\"evidence_pending\",\"findings\":[{\"severity\":\"Info\",\"kind\":\"unresolved_evidence\",\"reason\":\"源义 s003“体系结构”本身不带领域限定，候选将其收紧为“（计算机）体系结构”，仅依赖计算机领域证据 wn31:n:04939455；若原义为一般“系统结构/组织”，则当前候选过窄。需要额外证据确认源义是否为计算机专用，否则应保持未限定并挂起一般义。\",\"evidence_ids\":[\"wn31:n:04939455\"],\"source_sense_ids\":[\"s003\"],\"candidate_group_ref\":\"SG25-4ca303a3bf7d:p6c5:other_meanings:1\",\"proposed_fix\":\"将显示改为不带领域限定的“体系结构”，在用法说明中注明当前证据仅覆盖计算机领域，一般义待证据确认；或提供一般义的可靠词典证据后拆分。\"}],\"preferences\":[],\"note\":\"核心“建筑学”正确匹配学科义证据；原文“建筑风格”无对应英语证据，已按规则保留在待定区，未用相近的建筑作品义冒充；外部职业义和建筑作品义正确列为未采用候选。s003 因领域限定存在过窄风险，列为证据待决。\"}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

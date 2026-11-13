@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_011_repair1",
+  "kind": "holdout",
+  "request_hash": "bea2bb60bfef32aa0c62ad986a4462908e341c6e2bcf6d6b8cb3cde69c11fae6",
+  "input_ids": [
+    "SG25-ec3d00212250",
+    "SG25-e830d223e2dd"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "7cd63e49-b8bb-4002-aac8-83d34f308ffc",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-ec3d00212250\",\"source_scopes\":[{\"sid\":\"s001\",\"scope_zh\":\"名词，表示形成心理图像（尤其是非现实或不在场事物）的能力；通用，无特定对象、方向或语境限制\",\"recommended_pos\":\"名词\",\"required_context\":\"\",\"evidence_ids\":[\"wn31:n:05775730\"],\"uncertainty\":\"低；源词性明确，中文词义清晰，英语证据直接对应能力义\"}],\"proposed_core\":[{\"pos\":\"名词\",\"meaning\":\"想象力；形成心理图像的能力\"}],\"deferred_source_ids\":[],\"deferral_reason\":\"\",\"note\":\"词典义项 wn31:n:05633248（形成对非真实/不在场事物的心理图像）与源义相关但侧重形成过程/产物，未纳入核心；词典义项 wn31:n:05641705（以智谋处理非常问题的能力，同 resourcefulness）不在源中文“想象力”范围内，视为未采用的外部义。\"},{\"id\":\"SG25-e830d223e2dd\",\"source_scopes\":[{\"sid\":\"s001\",\"scope_zh\":\"副词，表示“因此、所以”，用于连接原因与结果；位置可在句首或句中\",\"recommended_pos\":\"副词\",\"required_context\":\"需有前文原因或条件\",\"evidence_ids\":[\"wn31:r:00063395\",\"wn31:r:00295773\"],\"uncertainty\":\"低；两个源义近义，词典证据直接支持\"},{\"sid\":\"s002\",\"scope_zh\":\"副词，表示“结果、作为结果”，引出由前因导致的后果\",\"recommended_pos\":\"副词\",\"required_context\":\"需有前文原因或事件\",\"evidence_ids\":[\"wn31:r:00063395\",\"wn31:r:00295773\"],\"uncertainty\":\"低\"}],\"proposed_core\":[{\"pos\":\"副词\",\"meaning\":\"因此；结果；作为结果（连接原因和结果）\"}],\"deferred_source_ids\":[],\"deferral_reason\":\"\",\"note\":\"两个源义（因此、结果）为近义副词，合并为一个核心义项以合理概括，均获词典证据支持。\"}]}",
+  "usage": {
+    "prompt_tokens": 3020,
+    "completion_tokens": 3335,
+    "total_tokens": 6355,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2869
+    },
+    "prompt_cache_hit_tokens": 2176,
+    "prompt_cache_miss_tokens": 844
+  },
+  "started_utc": "2026-11-13T09:33:58.089686+00:00",
+  "completed_utc": "2026-11-13T09:34:43.304171+00:00",
+  "elapsed_seconds": 45.219,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

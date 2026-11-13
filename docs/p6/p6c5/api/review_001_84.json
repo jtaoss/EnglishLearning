@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_84",
+  "request_hash": "3aed27547235c878996999b2b3b5dad7aa08b7976bb27de4438ac29657798523",
+  "started_utc": "2026-11-13T08:17:29.590010+00:00",
+  "completed_utc": "2026-11-13T08:18:38.727465+00:00",
+  "elapsed_seconds": 69.141,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "456bd8a9-4299-4c0d-be15-5b75307f6333",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3165,
+    "completion_tokens": 3835,
+    "total_tokens": 7000,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3603
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1117
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c7ce66d0fb14\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        {\n          \"suggestion\": \"Consider adding an extension note for the verb sense 'enter upon an activity or enterprise' (wn31:v:01654835) if needed for advanced learners, as it is slightly distinct from general attempt.\",\n          \"evidence_ids\": [\"wn31:v:01654835\"]\n        }\n      ],\n      \"note\": \"The candidate correctly covers both noun and verb uses derived from the source Chinese, and appropriately uses the effort/attempt senses. The attack sense is correctly flagged as an external addition. No semantic or POS errors detected. The unresolved source POS is resolved reasonably by assigning both senses to both POS, which is acceptable given the lack of explicit mapping. The verb sense 'enter upon' is not covered by the source explicitly, but may be subsumed under general attempt; flagged as a teaching preference only.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

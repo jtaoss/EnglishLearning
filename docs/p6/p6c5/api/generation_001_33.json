@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_33",
+  "request_hash": "37d3087d02b07956f9c9b8e7a8e69eaeea76781ba92db8d553fd33a43ff7e854",
+  "started_utc": "2026-11-13T08:14:59.301136+00:00",
+  "completed_utc": "2026-11-13T08:15:50.378624+00:00",
+  "elapsed_seconds": 51.078,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "262ffa52-5cc1-4131-b7f4-71810379ec81",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3663,
+    "completion_tokens": 8597,
+    "total_tokens": 12260,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7766
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 847
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-3426125bf109\",\"core\":[[\"对比；对照（比较以显出差异的行为）\",\"名词\",[\"s001\",\"s002\"],[\"wn31:n:00653056\"],\"指比较、辨别差异的行为；不是比较后的不同本身。\"],[\"差异；不同；悬殊\",\"名词\",[\"s003\"],[\"wn31:n:13877824\",\"wn31:n:05756783\"],\"指所比较事物之间的不同或对立，不指比较动作。\"],[\"把……与……对比；对照\",\"动词\",[\"s001\",\"s002\"],[\"wn31:v:00662884\"],\"及物用法：并列两事物以突出差异。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"原片段可作名词（比较行为）和及物动词（把两者对照）；两种词性均由独立定义支持，故重复引用。\",\"s002\":\"同上：既可指名词性的对照或比较行为，也可作及物动词“对照”；不是按原字段位置分配词性。\"},\"additions\":[[\"与……形成对比；显出差异\",\"动词\",[\"wn31:v:02672941\"],\"原中文片段未明确表达不及物“be different when compared”用法；词典有独立定义，仅作外部候选。\"],[\"（摄影或电视）反差；对比度\",\"名词\",[\"wn31:n:05133627\"],\"原片段未限定技术领域；该领域用法重要但属专门义，列为候选不并入核心。\"],[\"色彩对比（并置产生的视觉效果）\",\"名词\",[\"wn31:n:05719031\"],\"视觉艺术或知觉领域的专门效果，原片段未明确限定；仅候选。\"]],\"reason\":\"先区分“比较行为或及物比较动作”与“比较后的差异”，再把名词和动词用法分开；中文“对比、对照”两个片段确可跨名动两用，故显式标注拆分。摄影、视觉和技术义不从原片段偷渡进核心。\",\"flags\":[[\"Info\",\"POS_AMBIGUITY\",\"原片段词性标为未解析的多词性；已按具体词典证据拆为名词与及物动词，并保留splits说明。\"],[\"Minor\",\"CORE_COVERAGE_INCOMPLETE_PENDING_ADDITION_DECISION\",\"不及物“形成对比或显出差异”及摄影、视觉专门义仅列入additions，尚未采用。\"],[\"Minor\",\"DOMAIN_RESTRICTED_CANDIDATE\",\"摄影或电视“反差；对比度”和色彩对比属领域限制用法，未进入核心。\"]]},{\"id\":\"SG25-cac787df74af\",\"core\":[[\"由……组成；由……构成\",\"动词\",[\"s001\"],[\"wn31:v:02639437\"],\"整体由若干部分组成；对应 consist of。\"],[\"在于；存在于；本质是\",\"动词\",[\"s002\"],[\"wn31:v:02756729\",\"wn31:v:02659476\"],\"说明本质、内容或根源所在；对应 consist in，后者定义偏来源但例句为 dwell in。\"],[\"\",\"\",[],[] ,\"\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（与……）一致；相符\",\"动词\",[\"wn31:v:02664128\"],\"原中文未表达“consist with”的相容义；属正式或较少用搭配，仅列候选。\"]],\"reason\":\"源两个片段分别对应整体组成和本质或根源所在；consist of 与 consist in 的对象和句式不同，不能合并。consist with 未在原中文出现，只作候选。\",\"flags\":[[\"Minor\",\"REGISTER_RESTRICTED_CANDIDATE\",\"“consist with（与……一致）”为正式或较少用搭配，仅列入additions，未进入核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

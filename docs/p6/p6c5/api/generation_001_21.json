@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_21",
+  "request_hash": "dca7e968fcc9a0d4523cebe47aa04c8684c34ae53d7661eb980db059eb3152fe",
+  "started_utc": "2026-11-13T08:14:58.993160+00:00",
+  "completed_utc": "2026-11-13T08:15:27.578100+00:00",
+  "elapsed_seconds": 28.593,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "42ee73d5-aeb0-49ee-b7d3-3092994adc32",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3524,
+    "completion_tokens": 4394,
+    "total_tokens": 7918,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3822
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 708
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-2331eb33ce2c\",\"word\":\"philosophy\",\"pos\":\"名词\",\"core\":[[\"哲学\",\"名词\",[\"s001\"],[\"wn31:n:06168062\"],\"指关于存在、知识、伦理等的理性研究/学科。\"],[\"人生观；人生哲学\",\"名词\",[\"s002\"],[\"wn31:n:05953535\"],\"指个人对如何生活、处事的根本看法，与学科义的哲学对象不同。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（团体/机构的）理念；信条；思想体系\",\"名词\",[\"wn31:n:05952149\"],\"外部词典列出‘被团体或学派奉为权威的信念体系’义；原文未明确这一组织/学派信念义，仅作未采用候选。\"]],\"reason\":\"先保留原有两个名词义：学科义的‘哲学’用理性研究定义独立成组；‘人生观’是个人生活信念，与学科义对象不同，不合并；团体信念体系仅作外部候选。\",\"flags\":[[\"Info\",\"dictionary_addition_candidate\",\"外部证据 wn31:n:05952149 显示团体/学派信念体系义，原文未明确，已列为未采用候选。\"]]},{\"id\":\"SG25-8270f2824111\",\"word\":\"solution\",\"pos\":\"名词\",\"core\":[[\"解决办法；解决方案\",\"名词\",[\"s001\"],[\"wn31:n:05669513\"],\"指解决问题的办法/方案，不指解答陈述或数学解。\"],[\"溶液\",\"名词\",[\"s002\"],[\"wn31:n:14613403\"],\"指两种或多种物质组成的均匀混合物，常为液体溶液。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"答案；解答\",\"名词\",[\"wn31:n:06756201\"],\"外部词典有‘解决问题的陈述/答案’义，原文‘解决办法’侧重方法而非答案，列为未采用候选。\"],[\"（数学）解；解集\",\"名词\",[\"wn31:n:08022396\"],\"外部词典有方程解集义，原文未含数学域，列为未采用候选。\"]],\"reason\":\"‘解决办法’与‘溶液’对象完全不同，分别用方法定义和混合物定义；答案与数学解是外部候选，不混入原文核心。\",\"flags\":[[\"Major\",\"core_coverage_incomplete_pending_addition_decision\",\"原文仅‘解决办法；溶液’，外部证据另有‘答案/解答’与数学‘解/解集’等常用义，已列候选未采用，核心覆盖待人工决定。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

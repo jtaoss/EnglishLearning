@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_024",
+  "kind": "verify",
+  "request_hash": "51f279a4339acd20fd3c5a53cb58945cc96212db918372ca22f26433209c1a10",
+  "input_ids": [
+    "SG25-5880072b27d4",
+    "SG25-e642b12901a6"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "81798be2-c794-49bd-bcf1-2973f3ed0201",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-5880072b27d4\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"候选核心组“解雇”直接对应 terminate employment，证据 wn31:v:02407967 支持该雇佣解除义，词性和对象一致。\",\n          \"evidence_ids\": [\"wn31:v:02407967\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组文本虽然写“解散”，但仅链接 wn31:v:00902491（结束会面让某人离开）并在注释中限定为“让人离开等场景”，未覆盖原“解散”中同样常见的正式解散议会/团体义；证据列表已有 wn31:v:00339369（declare void/dissolved parliament）却未链接，因此只保留了一个子用法。\",\n          \"evidence_ids\": [\"wn31:v:00902491\", \"wn31:v:00339369\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“不予考虑”由 wn31:v:00802592（bar from consideration）覆盖一般不考虑义，wn31:v:00803288 补充司法驳回场景，未添加排他限制。\",\n          \"evidence_ids\": [\"wn31:v:00802592\", \"wn31:v:00803288\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Major\",\n          \"kind\": \"evidence_mismatch\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-5880072b27d4:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:00902491\", \"wn31:v:00339369\"],\n          \"reason\": \"原始义“解散”支持正式解散组织/议会，候选 extended:1 虽以“解散”为文本，但链接证据 wn31:v:00902491 仅表示结束会面、让某人离开，且注释明确将其限定为人离开场景；已提供且更贴切的 wn31:v:00339369（declare void; dissolved parliament）未被链接，造成该源义只剩一个子用法。\",\n          \"counterexample\": \"wn31:v:00339369 的定义和例句“The President dissolved the parliament”证明正式解散义属于英语 dismiss 且有证据；原中文“解散”通常也包含该用法。\",\n          \"repair_suggestion\": \"将 extended:1 的解散义改为链接 wn31:v:00339369，并调整注释去掉“限让人离开”，或为“让某人离开”另设组，确保两个子用法都覆盖。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [],\n      \"note\": \"解雇与不予考虑覆盖正确；解散扩展组存在证据错配和范围收窄，需修正。\"\n    },\n    {\n      \"id\": \"SG25-e642b12901a6\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组将“形式”落实到 wn31:n:13946962 的特定运行状态/安排义，并在注释中明确排除一般外形/形状；原中文“形式”可宽指外形、格式等，但英语 mode 证据不支持这些，故属于对原范围的收窄而非完全等价。\",\n          \"evidence_ids\": [\"wn31:n:13946962\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“方式”对应 wn31:n:04936080 的 how something is done 义，词性、范围一致。\",\n          \"evidence_ids\": [\"wn31:n:04936080\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_pending\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-e642b12901a6:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:13946962\"],\n          \"reason\": \"原“形式”范围宽于扩展组“运行安排或状态”，候选只保留了有英语证据的子域，未明确暂存一般外形/格式义；注释虽提示不能与 shape 互换，但没有给出 pending 状态。\",\n          \"counterexample\": \"英语 mode 不表示物体外观形状，因此不存在可检验的反例；风险在于来源范围本身未注明待核。\",\n          \"repair_suggestion\": \"在来源范围或注释中标记待核，或保留概括性“形式/模式”并说明英语 mode 证据仅覆盖运行状态/安排，不包含一般 shape/form 外形义。\"\n        }\n      ],\n      \"unresolved\": [\"原“形式”是否包含一般外形/格式义尚不确定；当前证据仅支持运行状态/安排，需结合原教材语境进一步确认。\"],\n      \"preferences\": [\n        \"将“方式”放在核心、“形式”放在扩展是教学排序选择，不属于语义缺陷。\"\n      ],\n      \"note\": \"方式核心映射正确；形式映射有来源范围待核的轻度收窄，不构成确认的核心误漏。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4463,
+    "completion_tokens": 7191,
+    "total_tokens": 11654,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6008
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2799
+  },
+  "started_utc": "2026-11-13T09:56:49.015870+00:00",
+  "completed_utc": "2026-11-13T09:58:25.113227+00:00",
+  "elapsed_seconds": 96.094,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

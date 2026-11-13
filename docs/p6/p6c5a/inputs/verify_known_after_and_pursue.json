@@ -1,0 +1,793 @@
+{
+  "records": [
+    {
+      "id": "SG25-7920fdeff9c5",
+      "word": "ritual",
+      "source_pos": "名词；形容词",
+      "raw": "名词：仪式，惯常程序；形容词：仪式的",
+      "source_usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "仪式",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "惯常程序",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "仪式的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 15,
+          "end": 18
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00415803",
+          "pos": "n",
+          "definition": "stereotyped behavior",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:01029801",
+          "pos": "n",
+          "definition": "any customary observance or practice",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:01032852",
+          "pos": "n",
+          "definition": "the prescribed procedure for conducting religious ceremonies",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:a:02903641",
+          "pos": "a",
+          "definition": "of or relating to or employed in social rites or rituals; \"a ritual dance of Haiti\"; \"sedate little colonial tribe with its ritual tea parties\"- Nadine Gordimer",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:a:02903908",
+          "pos": "a",
+          "definition": "of or relating to or characteristic of religious rituals; \"ritual killing\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "pub:p6c5a:collins:ritual",
+          "pos": [
+            "名词",
+            "形容词"
+          ],
+          "definition": "名词可指按既定程序进行的宗教或其他仪式，也可指惯常反复行为；形容词与相应礼仪/惯例相关。",
+          "source": "https://www.collinsdictionary.com/dictionary/english/ritual",
+          "type": "fresh_primary_publisher_observation",
+          "frequency_evidence": false
+        },
+        {
+          "id": "pub:p6c5:parent:ritual",
+          "pos": [
+            "名词"
+          ],
+          "definition": "仪式义同时包括宗教与非宗教的正式仪式；惯常反复行为另列。不能以宗教仪式程序代替全部一般仪式义。",
+          "source": "https://www.collinsdictionary.com/dictionary/english/ritual",
+          "type": "existing_verified_C5_proposal_publisher_observation",
+          "origin_proposal_file": "docs/p6/p6c5/REVISED_CANDIDATES.json",
+          "origin_evidence_hash": "f2510e18ae3afd9569d4dd4b5d9b04463372e3d751699fecd50c0b3066779ee2"
+        }
+      ],
+      "groups": [
+        {
+          "id": "SG25-7920fdeff9c5:p6c5:core_meanings:1",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "仪式；礼仪程序（宗教或非宗教）",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "按既定程序进行的仪式，可属宗教或非宗教正式礼仪；与惯常反复行为的另一组分开。",
+          "evidence_ids": [
+            "wn31:n:01029801",
+            "wn31:n:01032852",
+            "pub:p6c5:parent:ritual"
+          ]
+        },
+        {
+          "id": "SG25-7920fdeff9c5:p6c5:core_meanings:2",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "惯常做法/固定行为（接近‘惯常程序’）",
+          "source_ids": [
+            "s002"
+          ],
+          "note": "固定行为或惯常做法；不专指步骤清单。",
+          "evidence_ids": [
+            "wn31:n:00415803",
+            "wn31:n:01029801"
+          ]
+        },
+        {
+          "id": "SG25-7920fdeff9c5:p6c5:core_meanings:3",
+          "layer": "core_meanings",
+          "pos": "形容词",
+          "text": "仪式的/与仪式有关的",
+          "source_ids": [
+            "s003"
+          ],
+          "note": "涵盖社会性礼仪和宗教仪式两类形容词用法。",
+          "evidence_ids": [
+            "wn31:a:02903641",
+            "wn31:a:02903908"
+          ]
+        }
+      ],
+      "held": [],
+      "reason": "ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。",
+      "unadopted_external_candidates": []
+    },
+    {
+      "id": "SG25-e3f48726b892",
+      "word": "scholar",
+      "source_pos": "名词",
+      "raw": "学习者；学者；文人",
+      "source_usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "学习者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "学者",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "文人",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 7,
+          "end": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:10271476",
+          "pos": "n",
+          "definition": "someone (especially a child) who learns (as from a teacher) or takes up knowledge or beliefs",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:10577282",
+          "pos": "n",
+          "definition": "a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:10578201",
+          "pos": "n",
+          "definition": "a student who holds a scholarship",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "groups": [
+        {
+          "id": "SG25-e3f48726b892:p6c5:core_meanings:1",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "学者；文人",
+          "source_ids": [
+            "s002",
+            "s003"
+          ],
+          "note": "learned person（尤人文领域）；文人侧重文学/人文学科的学习者，属该义的下位用法",
+          "evidence_ids": [
+            "wn31:n:10577282"
+          ]
+        },
+        {
+          "id": "SG25-e3f48726b892:p6c5:core_meanings:2",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "学习者",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "learner；该词典义尤指儿童学习者，中文‘学习者’为宽义改述",
+          "evidence_ids": [
+            "wn31:n:10271476"
+          ]
+        }
+      ],
+      "held": [],
+      "reason": "AI教学建议首屏先给‘学者’，并把同指人文学习者的‘文人’并入同组；‘学习者’义对象为学习者本人、与‘学者’的成就义不同，单列。",
+      "unadopted_external_candidates": [
+        {
+          "part_of_speech": "名词",
+          "evidence_ids": [
+            "wn31:n:10578201"
+          ],
+          "text": "奖学金获得者；领奖学金的学生"
+        }
+      ]
+    },
+    {
+      "id": "SG25-093e7d5fdbaa",
+      "word": "contact",
+      "source_pos": "名词；动词",
+      "raw": "联系；接触",
+      "source_usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "联系",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "接触",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:n:00040035",
+          "pos": "n",
+          "definition": "close interaction; \"they kept in daily contact\"; \"they claimed that they had been in contact with extraterrestrial beings\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:00125700",
+          "pos": "n",
+          "definition": "the act of touching physically; \"her fingers came in contact with the light switch\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:03098248",
+          "pos": "n",
+          "definition": "(electronics) a junction where things (as two electrical conductors) touch or are in physical contact; \"they forget to solder the contacts\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:03098615",
+          "pos": "n",
+          "definition": "a thin curved glass or plastic lens designed to fit over the cornea in order to correct vision or to deliver medication",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:06271913",
+          "pos": "n",
+          "definition": "a channel for communication between groups; \"he provided a liaison with the guerrillas\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:07293990",
+          "pos": "n",
+          "definition": "a communicative interaction; \"the pilot made contact with the base\"; \"he got in touch with his colleagues\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:07353929",
+          "pos": "n",
+          "definition": "the physical coming together of two or more things; \"contact with the pier scraped paint from the hull\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:09979596",
+          "pos": "n",
+          "definition": "a person who is in a position to give you special assistance; \"he used his business contacts to get an introduction to the governor\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:n:14442914",
+          "pos": "n",
+          "definition": "the state or condition of touching or of being in immediate proximity; \"litmus paper turns red on contact with an acid\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00745330",
+          "pos": "v",
+          "definition": "be in or establish communication with; \"Our advertisements reach millions\"; \"He never contacted his children after he emigrated to Australia\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:01208316",
+          "pos": "v",
+          "definition": "be in direct physical contact with; make contact; \"The two buildings touch\"; \"Their hands touched\"; \"The wire must not contact the metal cover\"; \"The surfaces contact at this point\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ],
+      "groups": [
+        {
+          "id": "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "联系",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "人际、群体或机构间的沟通互动/接触状态；名词用法",
+          "evidence_ids": [
+            "wn31:n:07293990",
+            "wn31:n:00040035"
+          ]
+        },
+        {
+          "id": "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+          "layer": "core_meanings",
+          "pos": "名词",
+          "text": "接触",
+          "source_ids": [
+            "s002"
+          ],
+          "note": "物理触碰、紧邻或相碰的状态/动作；名词用法",
+          "evidence_ids": [
+            "wn31:n:00125700",
+            "wn31:n:14442914",
+            "wn31:n:07353929"
+          ]
+        },
+        {
+          "id": "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "联系",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "与某人或机构建立/进行沟通；动词用法",
+          "evidence_ids": [
+            "wn31:v:00745330"
+          ]
+        },
+        {
+          "id": "SG25-093e7d5fdbaa:p6c5:core_meanings:4",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "接触",
+          "source_ids": [
+            "s002"
+          ],
+          "note": "与另一人或物直接发生物理接触；相碰。此证据为接触状态/动作，不据此断言使动。",
+          "evidence_ids": [
+            "wn31:v:01208316"
+          ]
+        }
+      ],
+      "held": [],
+      "reason": "原文两片段词性均未定；按独立证据保留名词“联系/接触”和动词“联系/接触”，不按中文片段位置硬配词性。隐形眼镜、电路触点、人脉义只作外部候选，不混入核心。",
+      "unadopted_external_candidates": [
+        {
+          "part_of_speech": "名词",
+          "evidence_ids": [
+            "wn31:n:03098248"
+          ],
+          "text": "（电）触点；接点"
+        },
+        {
+          "part_of_speech": "名词",
+          "evidence_ids": [
+            "wn31:n:03098615"
+          ],
+          "text": "隐形眼镜"
+        },
+        {
+          "part_of_speech": "名词",
+          "evidence_ids": [
+            "wn31:n:09979596"
+          ],
+          "text": "（可提供帮助的）熟人；人脉"
+        }
+      ]
+    },
+    {
+      "id": "SG25-bf0bb4ee60e2",
+      "word": "extend",
+      "source_pos": "动词",
+      "raw": "伸展；变宽；延伸",
+      "source_usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "伸展",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "变宽",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "延伸",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:00027261",
+          "pos": "v",
+          "definition": "extend one's limbs or muscles, or the entire body; \"Stretch your legs!\"; \"Extend your right arm above your head\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00027698",
+          "pos": "v",
+          "definition": "thrust or extend out; \"He held out his hand\"; \"point a finger\"; \"extend a hand\"; \"the bee exserted its sting\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00153949",
+          "pos": "v",
+          "definition": "increase in quantity or bulk by adding a cheaper substance; \"stretch the soup by adding some more cream\"; \"extend the casserole with a little rice\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00235827",
+          "pos": "v",
+          "definition": "continue or extend; \"The civil war carried into the neighboring province\"; \"The disease extended into the remote mountain provinces\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00318689",
+          "pos": "v",
+          "definition": "lengthen in time; cause to be or last longer; \"We prolonged our stay\"; \"She extended her visit by another day\"; \"The meeting was drawn out until midnight\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00319127",
+          "pos": "v",
+          "definition": "prolong the time allowed for payment of; \"extend the loan\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00541315",
+          "pos": "v",
+          "definition": "extend in scope or range or area; \"The law was extended to all citizens\"; \"widen the range of applications\"; \"broaden your horizon\"; \"Extend your backyard\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:00542026",
+          "pos": "v",
+          "definition": "expand the influence of; \"The King extended his rule to the Eastern part of the continent\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:01167895",
+          "pos": "v",
+          "definition": "use to the utmost; exert vigorously or to full capacity; \"He really extended himself when he climbed Kilimanjaro\"; \"Don't strain your mind too much\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:01371528",
+          "pos": "v",
+          "definition": "open or straighten out; unbend; \"Can we extend the legs of this dining table?\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:01964155",
+          "pos": "v",
+          "definition": "cause to move at full gallop; \"Did you gallop the horse just now?\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02058913",
+          "pos": "v",
+          "definition": "extend or stretch out to a greater or the full length; \"Unfold the newspaper\"; \"stretch out that piece of cloth\"; \"extend the TV antenna\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02302703",
+          "pos": "v",
+          "definition": "offer verbally; \"extend my greetings\"; \"He offered his sympathy\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02302909",
+          "pos": "v",
+          "definition": "make available; provide; \"extend a loan\"; \"The bank offers a good deal on new mortgages\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02691775",
+          "pos": "v",
+          "definition": "stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point; \"Service runs all the way to Cranbury\"; \"His knowledge doesn't go very far\"; \"My memory extends back to my fourth year of life\"; \"The facts extend beyond a consideration of her personal assets\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02693758",
+          "pos": "v",
+          "definition": "span an interval of distance, space or time; \"The war extended over five years\"; \"The period covered the turn of the century\"; \"My land extends over the hills on the horizon\"; \"This farm covers some 200 acres\"; \"The Archipelago continues for another 500 miles\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02695935",
+          "pos": "v",
+          "definition": "reach outward in space; \"The awning extends several feet over the sidewalk\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "pub:p6c5a:collins:extend",
+          "pos": [
+            "动词"
+          ],
+          "definition": "可把物体伸长、展开或扩大，也可说空间/时间上的延伸；家具可伸缩，伸手为身体用例。",
+          "source": "https://www.collinsdictionary.com/dictionary/english/extend",
+          "type": "fresh_primary_publisher_observation",
+          "frequency_evidence": false
+        },
+        {
+          "id": "pub:p6c5:parent:extend",
+          "pos": [
+            "动词"
+          ],
+          "definition": "伸展/展开适用于身体及非身体物体；可伸缩家具和伸出手分别成立。已提供的WordNet还直接列桌子折叠腿、布料、天线等展开对象。",
+          "source": "https://www.collinsdictionary.com/dictionary/english/extend",
+          "type": "existing_verified_C5_proposal_publisher_observation",
+          "origin_proposal_file": "docs/p6/p6c5/REVISED_CANDIDATES.json",
+          "origin_evidence_hash": "5c40dc15d309374ad46d66a74fab803c4a16bb90da6e3283ac24c1b6f32b1e28"
+        }
+      ],
+      "groups": [
+        {
+          "id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:1",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "伸展；展开（肢体或物体）",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "可指伸展肢体，也可指展开或伸出可伸展物体（如折叠桌腿、布料或天线）；与不及物空间/时间延伸分开。",
+          "evidence_ids": [
+            "wn31:v:00027261",
+            "wn31:v:01371528",
+            "wn31:v:02058913",
+            "pub:p6c5:parent:extend"
+          ]
+        },
+        {
+          "id": "SG25-bf0bb4ee60e2:p6c5:core_meanings:2",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "延伸（空间/时间）",
+          "source_ids": [
+            "s003"
+          ],
+          "note": "空间或时间上绵延、达到、向外伸出；不及物为主，不表示‘使变宽’。",
+          "evidence_ids": [
+            "wn31:v:02691775",
+            "wn31:v:02693758",
+            "wn31:v:02695935"
+          ]
+        }
+      ],
+      "held": [
+        {
+          "source_id": "s002",
+          "reason": "原文‘变宽’为不及物变化义；所给 extend 证据多为及物‘使变宽/扩大范围’（如 v00541315）或空间跨度（v02693758），未直接证明‘become wider’，暂存待核。"
+        }
+      ],
+      "reason": "先保留两个可直接改述的源义：‘伸展’取肢体主动伸展，‘延伸’取空间/时间绵延；‘变宽’因证据方向/词性不吻合而暂存。时间延长、给予/提供、扩大范围/影响是词典独立常用义，但原文未明说，只作候选。",
+      "unadopted_external_candidates": [
+        {
+          "part_of_speech": "动词",
+          "evidence_ids": [
+            "wn31:v:00318689",
+            "wn31:v:00319127"
+          ],
+          "text": "延长（时间）"
+        },
+        {
+          "part_of_speech": "动词",
+          "evidence_ids": [
+            "wn31:v:02302703",
+            "wn31:v:02302909"
+          ],
+          "text": "给予；提供"
+        },
+        {
+          "part_of_speech": "动词",
+          "evidence_ids": [
+            "wn31:v:00541315",
+            "wn31:v:00542026"
+          ],
+          "text": "扩大（范围/影响）"
+        }
+      ]
+    },
+    {
+      "id": "SG25-0f571e7c2d33",
+      "word": "pursue",
+      "source_pos": "动词",
+      "raw": "追求；追赶；从事",
+      "source_usage_note": "",
+      "senses": [
+        {
+          "source_sense_id": "s001",
+          "text": "追求",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "追赶",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "从事",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "evidence": [
+        {
+          "id": "wn31:v:01320193",
+          "pos": "v",
+          "definition": "go in search of or hunt for; \"pursue a hobby\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02004900",
+          "pos": "v",
+          "definition": "follow in or as if in pursuit; \"The police car pursued the suspected attacker\"; \"Her bad deed followed her and haunted her dreams all her life\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02380222",
+          "pos": "v",
+          "definition": "carry out or participate in an activity; be involved in; \"She pursued many activities\"; \"They engaged in a discussion\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "wn31:v:02381520",
+          "pos": "v",
+          "definition": "carry further or advance; \"Can you act on this matter soon?\"",
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "id": "pub:p6c5a:collins:pursue",
+          "pos": [
+            "动词"
+          ],
+          "definition": "可努力实现目标或结果；可在后跟随人、车或动物以追上/抓住；也可从事或持续进行活动、兴趣或计划。",
+          "source": "https://www.collinsdictionary.com/dictionary/english/pursue",
+          "type": "fresh_primary_publisher_observation",
+          "frequency_evidence": false
+        }
+      ],
+      "groups": [
+        {
+          "id": "SG25-0f571e7c2d33:p6c5:core_meanings:1",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "追求；寻找",
+          "source_ids": [
+            "s001"
+          ],
+          "note": "表示寻找、追求目标或事物；词典定义为搜求/猎取，中文用“追求”作宽义改述。",
+          "evidence_ids": [
+            "wn31:v:01320193"
+          ]
+        },
+        {
+          "id": "SG25-0f571e7c2d33:p6c5:core_meanings:2",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "追赶；追捕",
+          "source_ids": [
+            "s002"
+          ],
+          "note": "表示跟随追赶某人或某物，方向是在后追随并意图抓住。",
+          "evidence_ids": [
+            "wn31:v:02004900"
+          ]
+        },
+        {
+          "id": "SG25-0f571e7c2d33:p6c5:core_meanings:3",
+          "layer": "core_meanings",
+          "pos": "动词",
+          "text": "从事；参与",
+          "source_ids": [
+            "s003"
+          ],
+          "note": "表示从事或参与某项活动，对象是活动或事务。",
+          "evidence_ids": [
+            "wn31:v:02380222"
+          ]
+        }
+      ],
+      "held": [],
+      "reason": "原中文给出三个动词动作：追求、追赶、从事；三者的对象和方向不同（寻求目标、在后追赶、参与活动），因此分三组而不合并。“推进”义有词典证据但不在原文，单列候选。",
+      "unadopted_external_candidates": [
+        {
+          "part_of_speech": "动词",
+          "evidence_ids": [
+            "wn31:v:02381520"
+          ],
+          "text": "推进；贯彻"
+        }
+      ]
+    }
+  ],
+  "pursue_prior_failure_not_deleted": true
+}

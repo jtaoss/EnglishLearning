@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_017",
+  "kind": "audit",
+  "request_hash": "3173a6b7ae135214c6100085bfcc239ffbc4a37b2526011c3447515c5d870574",
+  "input_ids": [
+    "SG25-3426125bf109",
+    "SG25-cac787df74af",
+    "SG25-b72f4a8521c3",
+    "SG25-39d5ef92ac20",
+    "SG25-e62377847bbe"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "65a34feb-7213-4aee-b6b7-1123e2117e08",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3426125bf109\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"对比（名/动未定）\",\"relation\":\"无法确定\",\"reason\":\"源义项词性为null；候选以名词“比较行为”和动词“把……与……对比”两组合并覆盖，但无法确认原义具体词性。\",\"evidence_ids\":[\"wn31:n:00653056\",\"wn31:v:00662884\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；名词“差异/反差”未直接链接s001，仅由s003覆盖\",\"counterexample\":\"名词“对比”也可指所比较事物间的差异或反差，而不只是比较行为。\",\"counterexample_evidence_ids\":[\"wn31:n:13877824\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"对照（名/动未定）\",\"relation\":\"无法确定\",\"reason\":\"源义项词性为null；候选同时给出名词比较行为和动词对比，但不能断言原片段只属名词或动词。\",\"evidence_ids\":[\"wn31:n:00653056\",\"wn31:v:00662884\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；“对照”作名词时的差异/反差读法未直接链接s002\",\"counterexample\":\"“对照”作名词也可指对比或反差，而不只是动作。\",\"counterexample_evidence_ids\":[\"wn31:n:13877824\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"差异（名/动未定）\",\"relation\":\"无法确定\",\"reason\":\"候选核心2以名词“差异；不同”覆盖，证据支持所比较事物间的不同；但源义项词性为null，不能静默当作已确认的名词用法。\",\"evidence_ids\":[\"wn31:n:13877824\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；候选仅列名词差异义，若源为动词则无对应\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\",\"s003\"],\"group_ids\":[\"SG25-3426125bf109:p6c5:core_meanings:1\",\"SG25-3426125bf109:p6c5:core_meanings:2\",\"SG25-3426125bf109:p6c5:core_meanings:3\"],\"evidence_ids\":[],\"reason\":\"三个源义项part_of_speech均为null（unresolved_multi_pos），候选用名词和动词双组覆盖s001/s002，但源词性尚未确认；不能把任一单一名/动标签当作已核验。\",\"repair_suggestion\":\"保留双词性候选与待核标记；待源词性或语境确认后再判定s001/s002归属，不要将s003直接视为仅名词。\"},{\"severity\":\"Minor\",\"kind\":\"residual_scope_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-3426125bf109:p6c5:core_meanings:1\",\"SG25-3426125bf109:p6c5:core_meanings:2\",\"SG25-3426125bf109:p6c5:core_meanings:3\"],\"evidence_ids\":[\"wn31:n:13877824\"],\"reason\":\"s001/s002若取名词读法，也可能指“对比/反差”即差异，而候选把差异义只挂在s003；词整体有差异义，但s001/s002内部这一可能读法未直接追溯。\",\"repair_suggestion\":\"在源词性确认前保留待核；若确认s001/s002含名词差异用法，考虑将其与核心2或明确括注建立可追溯链接，而不是只靠s003覆盖。\"}],\"note\":\"候选正确区分了名词比较行为、名词差异和动词对比；但三个源义项词性均为null，且s001/s002的名词差异读法未直接链接，因此整体只能暂存待核。\"},{\"id\":\"SG25-cac787df74af\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"由……组成（整体由部分组成）\",\"relation\":\"语义等价\",\"reason\":\"候选核心1“由……组成；由……构成”对应consist of，证据为be composed of，对象和结构一致。\",\"evidence_ids\":[\"wn31:v:02639437\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"在于（本质或根源所在）\",\"relation\":\"合理概括\",\"reason\":\"候选核心2合并“consist in”的本质/内容所在义与“originate in”的来源义，中文“在于”可涵盖本质所在和根源所在，未把源义改成无关领域。\",\"evidence_ids\":[\"wn31:v:02756729\",\"wn31:v:02659476\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源片段分别对应consist of与consist in两类句式；consist with作为外部候选未采用，不影响源覆盖。\"},{\"id\":\"SG25-b72f4a8521c3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"区别（差异）\",\"relation\":\"语义等价\",\"reason\":\"候选核心1“区别；差异”对应相似事物之间可辨的差异，证据直接支持。\",\"evidence_ids\":[\"wn31:n:04756794\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"卓越（杰出、显赫）\",\"relation\":\"合理概括\",\"reason\":\"候选核心2保留“卓越；杰出”宽表述，并把“地位、声望”作为典型而非排他限制；证据n14458911支持因显著优越而显赫/高地位，但一般“卓越/优异”的直接证据偏窄。\",\"evidence_ids\":[\"wn31:n:14458911\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"一般“卓越/优异”若不含地位或声望，现有证据未直接覆盖；属来源宽于证据的待核点，不是已确认目标遗漏\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_scope_uncertain\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-b72f4a8521c3:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:n:14458911\"],\"reason\":\"源“卓越”可泛指优异/杰出；候选核心2以“尤指地位、声望”并以高地位/显赫义为主要证据，证据偏窄。该点不能自动判为生成器Major，但应保留来源待核。\",\"repair_suggestion\":\"保留“卓越；杰出”宽表述，将“地位/声望显赫”明确标为例子而非排他；若需确认一般优异义，补独立词典证据或标来源待核。\"}],\"note\":\"“区别”映射直接；“卓越”保留宽义但证据偏显赫/地位，作为来源宽于证据的待核点记录。\"},{\"id\":\"SG25-39d5ef92ac20\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"分清（辨别区分）\",\"relation\":\"语义等价\",\"reason\":\"候选核心1“分清；区别；辨别”对应把不同事物或类别区分开，证据mark as different支持。\",\"evidence_ids\":[\"wn31:v:00652006\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"区别（辨别区分）\",\"relation\":\"语义等价\",\"reason\":\"与s001同属区分相似事物/类别的辨别用法，候选合并合理，未改变对象范围。\",\"evidence_ids\":[\"wn31:v:00652006\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"看清楚（感官辨认）\",\"relation\":\"语义等价\",\"reason\":\"候选核心2“看清楚；辨认出”对应通过感官尤其视觉辨认对象，证据detect with the senses直接支持。\",\"evidence_ids\":[\"wn31:v:02197640\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“分清/区别”合并为辨别区分组，“看清楚”单列为感官辨认；使有别于/使出众等未采用外部候选不影响源覆盖。\"},{\"id\":\"SG25-e62377847bbe\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"财产（全部资产）\",\"relation\":\"合理概括\",\"reason\":\"候选核心1“财产；资产”对应全部所有物与资产，扩展1“地产；庄园”作为同一宽义下的具体类型保留；一般财产义未被删去。\",\"evidence_ids\":[\"wn31:n:13271829\",\"wn31:n:13267561\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"先保留“财产；资产”泛指义，再以扩展层列“地产；庄园”具体类型；社会阶层义缺原文依据，仅作外部候选。\"}]}",
+  "usage": {
+    "prompt_tokens": 5930,
+    "completion_tokens": 15091,
+    "total_tokens": 21021,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12925
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4010
+  },
+  "started_utc": "2026-11-13T09:48:22.327652+00:00",
+  "completed_utc": "2026-11-13T09:49:47.851838+00:00",
+  "elapsed_seconds": 85.531,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

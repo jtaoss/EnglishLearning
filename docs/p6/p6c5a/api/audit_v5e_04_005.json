@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_005",
+  "kind": "audit",
+  "request_hash": "dd8a04703bf9fb899af9b1d1011fac764ea4550353155ead1f707b0e4fd2dbf3",
+  "input_ids": [
+    "SG25-da7e2d4b40b6",
+    "SG25-d490624d0f21",
+    "SG25-80ed840f94f7",
+    "SG25-6d1622d0f2bc",
+    "SG25-c271f2bb9318"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "7583ac5d-bef3-48e8-992e-88a1d6d40b46",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-da7e2d4b40b6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：紧急请求、呼吁（请求帮助或公众支持）\",\"relation\":\"语义等价\",\"reason\":\"核心组“呼吁”对应 n07201488 的 earnest/urgent request 义，词性、对象与原义一致。\",\"evidence_ids\":[\"wn31:n:07201488\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：法律上的上诉程序\",\"relation\":\"语义等价\",\"reason\":\"扩展组“上诉”对应 n01188101 的法律复审程序义，保留原义的法律语境。\",\"evidence_ids\":[\"wn31:n:01188101\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：吸引力、引起兴趣的性质\",\"relation\":\"语义等价\",\"reason\":\"核心组“吸引力”对应 n04694682 的 attractiveness 义，覆盖原义。\",\"evidence_ids\":[\"wn31:n:04694682\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词：恳切请求、呼吁\",\"relation\":\"语义等价\",\"reason\":\"扩展组动词“呼吁”对应 v00757492 的 request earnestly 义，未与同形名词义混并。\",\"evidence_ids\":[\"wn31:v:00757492\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s005\",\"source_scope\":\"动词：将案件提交上级法院复审\",\"relation\":\"语义等价\",\"reason\":\"扩展组动词“上诉”对应 v02503235 的 take a court case to a higher court 义，方向与法律语境一致。\",\"evidence_ids\":[\"wn31:v:02503235\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"五个源义分别落在核心名词“呼吁/吸引力”、扩展名词“上诉”及扩展动词“呼吁/上诉”；词性未混，联合覆盖完整。\"},{\"id\":\"SG25-d490624d0f21\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：突然的欲望、冲动或本能驱动\",\"relation\":\"语义等价\",\"reason\":\"核心组“冲动”由 n07505719 的 sudden desire 与 n09203328 的 instinctive motive 支撑，覆盖突然欲望/本能冲动义。\",\"evidence_ids\":[\"wn31:n:07505719\",\"wn31:n:09203328\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：脉冲、短暂的电或神经信号波动\",\"relation\":\"语义等价\",\"reason\":\"扩展组“脉冲”由 n07435591 的电子瞬变波和 n07322660 的神经电信号支撑，均在 impulse 的信号义范围内。\",\"evidence_ids\":[\"wn31:n:07435591\",\"wn31:n:07322660\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“冲动”保留为突然欲望/本能动机，“脉冲”保留为信号波动；两组分属不同概念，未因同词合并而误覆盖。\"},{\"id\":\"SG25-80ed840f94f7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：分开的、不相连的\",\"relation\":\"语义等价\",\"reason\":\"核心组“分开的”由 s00162033 的 standing apart/not attached 与 s00570805 的 connection undone 支撑，符合形容词空间分离义。\",\"evidence_ids\":[\"wn31:s:00162033\",\"wn31:s:00570805\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：各自的、各自独立的\",\"relation\":\"语义等价\",\"reason\":\"扩展组“各自的”对应 a02116958 的 independent/not united or joint 义，能覆盖分属、各自独立范围。\",\"evidence_ids\":[\"wn31:a:02116958\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词“分开的”与“各自的”分列核心/扩展；动词“使分离”仅作外部未采用候选，未混入源义。\"},{\"id\":\"SG25-6d1622d0f2bc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：人或物的外表、可见方面\",\"relation\":\"语义等价\",\"reason\":\"核心组“外表”对应 n04681322 的 outward or visible aspect，覆盖原义。\",\"evidence_ids\":[\"wn31:n:04681322\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：外貌、可见形象\",\"relation\":\"语义等价\",\"reason\":\"“外貌”与核心组同属 outward/visible aspect，n04681322 可支撑。\",\"evidence_ids\":[\"wn31:n:04681322\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：样子、外观（按原词条作可见形象义）\",\"relation\":\"语义等价\",\"reason\":\"“样子”在原文“外表；外貌；样子”中作外观义，核心组 n04681322 覆盖该可见形象范围。\",\"evidence_ids\":[\"wn31:n:04681322\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个近义中文外观词合为同一核心组，均有 outward/visible aspect 证据；“出现/露面”仅作外部候选，未当作源义。\"},{\"id\":\"SG25-c271f2bb9318\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：比较行为、考察相似与差异\",\"relation\":\"语义等价\",\"reason\":\"核心组“比较”由 n00143485 的 examining resemblances 与 n13876005 的比较关系义支撑，保留名词比较行为。\",\"evidence_ids\":[\"wn31:n:00143485\",\"wn31:n:13876005\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：相比、比较关系\",\"relation\":\"语义等价\",\"reason\":\"“相比”按原名词词条落在同一比较关系组，n13876005 的关系义覆盖；不因中文“相比”的句法改判为英语动词。\",\"evidence_ids\":[\"wn31:n:13876005\",\"wn31:n:00143485\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“比较/相比”合为比较关系核心组；名词词性保持，未把中文“相比”的句法误作英语动词义。\"}]}",
+  "usage": {
+    "prompt_tokens": 7394,
+    "completion_tokens": 10714,
+    "total_tokens": 18108,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8986
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5474
+  },
+  "started_utc": "2026-11-13T09:46:53.465863+00:00",
+  "completed_utc": "2026-11-13T09:47:53.108067+00:00",
+  "elapsed_seconds": 59.641,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

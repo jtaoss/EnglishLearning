@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_47",
+  "request_hash": "b0019831414d10df9e3bafa04b97a921d5ca9dadc6543409c5fbbbceb182eaff",
+  "started_utc": "2026-11-13T08:16:14.284497+00:00",
+  "completed_utc": "2026-11-13T08:16:41.493356+00:00",
+  "elapsed_seconds": 27.204,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "dc75d5f7-f659-4f68-85b3-724a2debe2c6",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3021,
+    "completion_tokens": 1317,
+    "total_tokens": 4338,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1157
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 973
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c9195f094689\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"源三个形容词义分别对应责任/问责义（s001/s002）和因果义（s003）。候选核心组1合并s001/s002为同一用法，证据a:02003477匹配；组2单独处理因果义，证据s:00325776匹配。两者区分明确，无错误。信用评级义为外部词典候选但原文未明确，已按AI_candidate_not_adopted标记，不构成当前核心漏项。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

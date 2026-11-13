@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_46",
+  "request_hash": "59e131d3dced67aea65359c3ed4cce15c9b52bc99a88eb31aead9c69a629991b",
+  "started_utc": "2026-11-13T08:14:59.721239+00:00",
+  "completed_utc": "2026-11-13T08:15:32.706357+00:00",
+  "elapsed_seconds": 32.984,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "132f7bcf-9ed7-41e8-9a21-7810597c9b21",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3442,
+    "completion_tokens": 5289,
+    "total_tokens": 8731,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4825
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 626
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-6cbdfcf83679\",\"word\":\"technique\",\"core\":[[\"手法\",\"名词\",[\"s001\"],[\"wn31:n:05672990\"],\"指完成某项任务的具体方法或技艺\"],[\"技巧；技能\",\"名词\",[\"s002\",\"s003\"],[\"wn31:n:05651035\"],\"指通过练习获得的熟练程度或本领，不指具体方法\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"先区分“具体方法”与“练习所得熟练度”两条：手法对应 practical method/art，技巧、技能对应 skillfulness/proficiency；不把三条原中文压成一个同义堆。\",\"flags\":[]},{\"id\":\"SG25-e91fadf24f78\",\"word\":\"technology\",\"core\":[[\"技术\",\"名词\",[\"s001\"],[\"wn31:n:00951435\"],\"指应用知识、工具和技艺改造环境的应用义\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s002\",\"“科技”含科学与技术，范围宽于所给 technology 定义；是否作宽泛对译待核，不直接断言为完整同义\"]],\"splits\":{},\"additions\":[[\"技术设备；科技产品\",\"名词\",[\"wn31:n:03707142\"],\"WordNet 有“由工程/应用科学研制的机器设备”独立义，原中文未明确；列为候选不采用\"]],\"reason\":\"先记可确认的“技术=应用知识/工具改造环境”义；“科技”因范围更宽暂存待核；设备义只作外部候选，避免把技术误当设备。\",\"flags\":[[\"Major\",\"source_scope_gap\",\"“科技”通常指科学与技术，比所给 technology 应用义宽，暂存不并入核心\"],[\"Minor\",\"lexical_evidence_insufficient\",\"s002“科技”未有独立定义精确覆盖，仅暂存待核\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"技术设备/科技产品义已列为候选，核心未含，待采用决策\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

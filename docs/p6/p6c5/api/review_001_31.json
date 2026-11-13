@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_31",
+  "request_hash": "a70af0411d8a42725fa181df7d125d0f1968dbd2f2b2bf47d8af3760f818d1be",
+  "started_utc": "2026-11-13T08:16:13.832272+00:00",
+  "completed_utc": "2026-11-13T08:17:45.164393+00:00",
+  "elapsed_seconds": 91.328,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "44f13662-a4da-4da4-a390-7e9a8b966aad",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3612,
+    "completion_tokens": 4653,
+    "total_tokens": 8265,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4472
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3612
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-178b6e061a04\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"教学中可将“同事”与词典中“机构内下级成员”的细微差异作为备注，无需拆分新义项，因为源文未区分。\"\n      ],\n      \"note\": \"候选逐条对应源文四个片段：动词“联系”与“交往”分别对应逻辑关联和人际交往；名词“同事”与“伙伴”分别对应工作/机构共事者和同伴。词性与证据匹配，未发现核心义缺失、虚假合并或未溯源义。外部形容词义已作为未采用候选单列，符合双轨规则。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

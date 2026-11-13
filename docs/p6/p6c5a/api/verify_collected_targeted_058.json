@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_058",
+  "kind": "verify",
+  "request_hash": "9ea9bd511bfb353d5ac02061ccb96e1ac429008cd77c0cd0a71993f0029eeb07",
+  "input_ids": [
+    "SG25-a9491f4c1bf7",
+    "SG25-599f7703547e"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "4d04542f-36ff-472f-9678-0324bb14c8f8",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-a9491f4c1bf7\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“主题”由谈话/讨论的主题义（subject matter）直接支撑，覆盖原文名词“主题”。\",\n          \"evidence_ids\": [\"wn31:n:06612141\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“学科”由知识分支义支撑，与原文“学科”一致。\",\n          \"evidence_ids\": [\"wn31:n:06005806\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"合理概括\",\n          \"reason\": \"扩展用“（研究、描绘等的）对象”概括 subject 作为研究对象或描绘对象；“等”保留示例性，两个证据分别支持描绘对象与实验观察对象，未形成排他限制。\",\n          \"evidence_ids\": [\"wn31:n:04354303\", \"wn31:n:10688105\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"动词证据为 cause to experience/suffer/liable，与“使遭受”一致。\",\n          \"evidence_ids\": [\"wn31:v:02115410\"]\n        },\n        {\n          \"sid\": \"s005\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组“受……约束的”唯一证据 02337856 是政治臣属/受统治义；原文更一般的 subject to（受制于/易受影响/取决于）有同批证据 s00072167/s02370095 但未被承接，导致一般义丢失。\",\n          \"evidence_ids\": [\"wn31:s:02337856\", \"wn31:s:00072167\", \"wn31:s:02370095\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"证据范围不匹配\",\n          \"source_ids\": [\"s005\"],\n          \"group_ids\": [\"SG25-a9491f4c1bf7:p6c1:extended:3\"],\n          \"evidence_ids\": [\"wn31:s:02337856\", \"wn31:s:00072167\", \"wn31:s:02370095\"],\n          \"reason\": \"形容词组文本为“受……约束的”，但唯一证据是政治臣属/受统治义；原文更一般的 subject to（受制于、易受……影响、取决于）在提供的 s00072167/s02370095 有据，未被该组明确承接。\",\n          \"counterexample\": \"subject to change / subject to tax 表示受变化影响或需纳税，不限于政治臣属。\",\n          \"repair_suggestion\": \"将一般 subject to（受制于、易受影响、取决于）义补入扩展组，或至少将 s00072167/s02370095 作为证据链接；政治臣属义可保留为子义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原中文“受……约束的”是否应包含一般 subject to（受制/易受影响）仍待人工确认；现按已提供词典证据判为收窄。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心名词“主题、学科”充分；对象、动词、形容词均在扩展。形容词组证据偏政治臣属，一般 subject to 义待补。\"\n    },\n    {\n      \"id\": \"SG25-599f7703547e\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心“术语”由用于特定事物的词或表达义支撑，与原文一致。\",\n          \"evidence_ids\": [\"wn31:n:06314878\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“学期”是 term 的教育语境义；同批 15249282 的 school term 例证可补强，web 观察确认词典依据，原文范围得到覆盖。\",\n          \"evidence_ids\": [\"wn31:n:15249282\", \"web:term\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心保留“期限”，证据 15249282 支持限定持续的时间；“任期”仅是 note 中的语境化改述，不扩大涵盖范围。\",\n          \"evidence_ids\": [\"wn31:n:15249282\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"扩展“条款”由协议中要求事项的陈述义支撑，常见复数 terms，与原文“条款”一致。\",\n          \"evidence_ids\": [\"wn31:n:06783666\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"证据独立性\",\n          \"source_ids\": [\"s002\"],\n          \"group_ids\": [\"SG25-599f7703547e:p6c1:core:2\"],\n          \"evidence_ids\": [\"web:term\", \"wn31:n:15249282\"],\n          \"reason\": \"学期义仅以 publisher observation web:term 作证据；该证据不是独立词典定义，而同批 WordNet 15249282 已含 school term 例证可支撑，但未链接。\",\n          \"counterexample\": \"无（语义有据，但证据来源需更独立）\",\n          \"repair_suggestion\": \"将 wn31:n:15249282（a limited period of time; example school term）作为学期义的证据，或补充可靠词典中的学期义项；保留 web:term 仅作观察。\"\n        }\n      ],\n      \"unresolved\": [],\n      \"preferences\": [\n        \"核心期限组建议显示为“期限（如任期）”而非“期限；任期”，避免被读作两个并列核心义项；现有 note 已说明，仅为教学呈现差异。\"\n      ],\n      \"note\": \"四个原义均有链接；术语、学期、期限、条款均能对应。学期证据来源需补强；期限组“任期”为注释性示例，不是范围扩大。条款合理置于扩展。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 6326,
+    "completion_tokens": 8400,
+    "total_tokens": 14726,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7004
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 4662
+  },
+  "started_utc": "2026-11-13T10:00:15.041511+00:00",
+  "completed_utc": "2026-11-13T10:02:14.817853+00:00",
+  "elapsed_seconds": 119.782,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_33",
+  "request_hash": "7ff5111b2c8daa804acb5fd5ed2c507ad5bfbb8a03c37b6c2e1abfa5a9dbdcee",
+  "started_utc": "2026-11-13T08:16:13.810887+00:00",
+  "completed_utc": "2026-11-13T08:17:20.976884+00:00",
+  "elapsed_seconds": 67.172,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "3958e729-b15a-4a8e-b33b-7f5e8554f16b",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3477,
+    "completion_tokens": 3222,
+    "total_tokens": 6699,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2878
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3477
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-fdf09cdfc26c\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源名词‘决心’在中文中也可指‘作出的决定/打算’，但候选仅采用 trait of being resolute (wn31:n:04868717)；现有证据中没有对应的个人决定名词义，无法确认是否应纳入核心或外部候选。\",\n          \"evidence_ids\": [],\n          \"source_sense_ids\": [\"s003\"],\n          \"candidate_group_ref\": \"SG25-fdf09cdfc26c:p6c5:core_meanings:3\",\n          \"proposed_fix\": \"待审：如确认源词范围包含‘个人决定’义，可在 dictionary_additions 增加该名词义；目前不作为错误。\"\n        }\n      ],\n      \"preferences\": [\n        {\n          \"type\": \"teaching_suggestion\",\n          \"content\": \"核心1将‘解决争端/案件’与‘解方程’合并在一个提示中；教学时可分别举例，但当前不视为缺陷。\"\n        }\n      ],\n      \"note\": \"候选覆盖了源三个义项：动词解决、动词决心、名词决心；词性和证据匹配，无错误合并。外部决议义与技术解析义已显式列为未采用候选。仅名词‘决心’的可能‘个人决定’义因证据不足保留观察。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

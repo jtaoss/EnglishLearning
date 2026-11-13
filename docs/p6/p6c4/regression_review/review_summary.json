@@ -1,0 +1,291 @@
+{
+  "context": "fresh_nonblind_regression",
+  "backend_model_id": null,
+  "model_configuration": "inherited_parent_unexposed",
+  "tokens": null,
+  "cost": null,
+  "completed_at_utc": "2026-11-13T06:39:54.029827+00:00",
+  "completion_status": "completed500_semantic_re_evaluation_not_release_or_human_approval",
+  "review_independence": "Independent review context, non-blind versus existing500. Backend difference is not exposed or proven. No fresh100 blind packet or generation was read.",
+  "baseline": "Actual C2 candidates informed by C1 RULES_V3, including p6c2-rules-v4 project label; not a pure V3 controlled experiment.",
+  "stats": {
+    "completed": 500,
+    "required": 500,
+    "unique_stable_ids": 500,
+    "historical48_accounted_pending": 48,
+    "human_approved_count": 0,
+    "confirmed_findings": {
+      "Critical": 0,
+      "Major": 4,
+      "Minor": 1
+    },
+    "confirmed_affected_words": 5,
+    "new_external_candidates": 126,
+    "existing_input_external_candidates": 55,
+    "C3_additional_external_candidates": 2,
+    "dictionary_additions_adopted": 0,
+    "decisions": {
+      "keep": 469,
+      "evidence_pending": 24,
+      "propose_revision": 7
+    },
+    "first_memory_audit": {
+      "average_core_groups": 1.376,
+      "median_core_groups": 1.0,
+      "max_core_groups": 4,
+      "over3_count": 1,
+      "over3_individual_reviews": [
+        {
+          "stable_id": "SG25-2998b3232d29",
+          "headword": "get",
+          "count": 4,
+          "review_axes": {
+            "core_choice": "得到、变得、到达、理解四核心确属不同功能",
+            "POS": "均为动词，但变得是不及物状态变化",
+            "merge": "没有为压成三组假并理解与获得",
+            "ordering": "已逐一复核4组：实体获得、状态、目的地、理解都应保留",
+            "source_coverage": "四源片段均有具体定义",
+            "important_use_coverage": "取来候选已追踪；使某人做某事为原文外独立候选"
+          },
+          "retain_reason_zh": "get的获得、变得、到达、理解分别是实体占有、状态转换、目的地到达和认知功能；均有原片段及具体定义，不为三组数字而删除。"
+        }
+      ],
+      "unit": "current_baseline_core_groups_before_unadopted_proposed_repairs",
+      "counterfactual_after_explicit_proposals": {
+        "adopted": false,
+        "average_core_groups": 1.386,
+        "median_core_groups": 1,
+        "max_core_groups": 4,
+        "over3_count": 1,
+        "reason_zh": "四个源支持用法补组和indicate C3多一核心共加5组；import核心数不变。所有原正确组保留。只是提案数量，未实际采纳。"
+      }
+    },
+    "new_external_candidate_affected_words": 109,
+    "current_existing_group_wrong_POS_labels_confirmed": 0,
+    "baseline_source_POS_or_object_use_partition_Major_omissions": 4
+  },
+  "findings_interpretation_zh": "4个Major均为既有500基线中源片段跨词性/对象分配造成的重要用法缺口；已有各组POS标签本身未判错。1个Minor为stewardess现注释限制范围与已有直接词典证据冲突。每项给出保留原正确组的具体隔离修正建议；本审核文件没有实际采用建议。",
+  "gate_scope_zh": "这里只完成500回归审核；未审核fresh100，不宣称A放行。4项基线Major须经具体修正和独立验证才能关闭。其同因重复是基线发现，不伪称新回归变更制造的same_systematic_major；最终按封存Gate结合其余证据判定。",
+  "C3_verification": {
+    "indicate": {
+      "issue_ids": [
+        "C3-003"
+      ],
+      "status": "semantic_correction_verified_in_isolated_candidate_not_adopted",
+      "source_identity_unchanged": true,
+      "evidence_ids": [
+        "wn31:v:00925764",
+        "wn31:v:00774685",
+        "wn31:v:00923271",
+        "wn31:v:00929986",
+        "p6c3:mw:indicate"
+      ],
+      "rationale_zh": "四条WordNet定义及现有Merriam-Webster原创观察分别支持对象指向、信号表明、简短陈述；信号义不再用对象或陈述证据冒充。保留s001裸指暂存，s002跨组有显式AI semantic_splits；无源字段变更。核验仅隔离候选，不是人工采用。",
+      "unresolved_original_items": [
+        "s001"
+      ],
+      "human_approved": false
+    },
+    "management": {
+      "issue_ids": [
+        "C3-002"
+      ],
+      "status": "gap_detection_and_tracking_verified_adoption_unresolved",
+      "source_identity_unchanged": true,
+      "evidence_ids": [
+        "wn31:n:01135602",
+        "wn31:n:08397896",
+        "p6c3:collins:management"
+      ],
+      "rationale_zh": "01135602是管理行为，08397896是负责经营的一群人；Collins原创观察明确区分活动和管理层。C3仅追加空source_sense_ids人员候选，未改变三原片段层级；这一追踪修正成立，但采用、原文改正、覆盖完备都没有完成。",
+      "candidate_has_explicit_coverage_flag": false,
+      "required_review_coverage_status": "core_coverage_incomplete_pending_addition_decision",
+      "human_approved": false
+    },
+    "import": {
+      "issue_ids": [
+        "C3-001"
+      ],
+      "status": "source_use_POS_evidence_correction_verified_in_isolated_candidate_not_adopted",
+      "source_identity_unchanged": true,
+      "evidence_ids": [
+        "wn31:v:02351132",
+        "wn31:v:02237504",
+        "wn31:n:03569847",
+        "p6c3:collins:import"
+      ],
+      "rationale_zh": "贸易bring in from abroad动词、进口行为名词和计算机数据导入三功能分列。进口行为名词改用Collins短原创观察，而非把commodities当行为证明。s001原进口一对多有显式AI semantic_splits，原逐义POS仍未知。旧商品定义仍保存在空源ID的进口品候选，非删除正确词典用途。",
+      "goods_candidate_status": "AI_candidate_not_adopted",
+      "human_approved": false
+    }
+  },
+  "unresolved_status_zh": "历史48全部保留旧风险及人工待审；所有原暂存仍未决，外部候选只识别追踪未采用。management人员义仅缺口追踪修正，原文覆盖仍未完备。",
+  "failures": {
+    "unresolved_review_failures": [],
+    "live_publisher_access_failures": [
+      {
+        "evidence_id": "p6c4:regression:attempt:cambridge:dynamic",
+        "headword": "dynamic",
+        "publisher": "Cambridge Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/dynamic",
+        "access": "HTTP_403_no_bypass",
+        "observation_zh": "直接请求失败，未使用页面内容；改读公开可取的原出版社Merriam-Webster。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:attempt:cambridge:monitor",
+        "headword": "monitor",
+        "publisher": "Cambridge Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/monitor",
+        "access": "HTTP_403_no_bypass",
+        "observation_zh": "直接请求失败，未绕过限制或复制内容；Merriam-Webster提供直接设备义。",
+        "verbatim_text_retained": false
+      }
+    ],
+    "recovered_operational_events": [
+      "Batch03 initial checkpoint writer encountered differing group-ID key, repaired helper and reran before checkpoint completion.",
+      "A long batch02 output and indicate C3 output were truncated; missing word segment and compact indicate raw definitions were reread before completion."
+    ]
+  },
+  "actual_source_use": {
+    "licensed_WordNet31_definition_records_read": 3051,
+    "packet_sources": "private/p6c4/regression_01.json through regression_10.json; all original meanings, current group references, reserved/addition status and complete main WordNet definition clauses read. Examples were not needed for every sense; selected examples checked where object/POS mapping mattered.",
+    "WordNet_license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt",
+    "existing_publisher_evidence": "Short original observations supplied inside regression packets; inherited403/index-only states preserved, not relabeled as fresh direct retrieval.",
+    "new_direct_publisher_sources": [
+      {
+        "evidence_id": "p6c4:regression:mw:dynamic",
+        "headword": "dynamic",
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/dynamic",
+        "access": "direct_page_retrieved",
+        "locator": "adjective 1a/1b versus2a/2b",
+        "observation_zh": "形容词分别支持持续活动变化、有活力与动力学关系。一般动态变化不应只由动力学关系定义代为证明。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:mw:commit",
+        "headword": "commit",
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/commit",
+        "access": "direct_page_retrieved",
+        "locator": "transitive2a/2b; intransitive1",
+        "observation_zh": "有使承担约束、保证采取某行动或用途的动词用法；承诺/commit to可以有更直接证据，不必仅靠投身活动的宽定义。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:collins:stewardess",
+        "headword": "stewardess",
+        "publisher": "HarperCollins",
+        "url": "https://www.collinsdictionary.com/dictionary/english/stewardess",
+        "access": "direct_page_retrieved",
+        "locator": "COBUILD countable noun and British English noun",
+        "observation_zh": "旧式女性乘务称谓明确可用于船、飞机和列车，航空不是全部范围；支持修正现有注释要求仅限飞机的冲突。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:mw:monitor",
+        "headword": "monitor",
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/monitor",
+        "access": "direct_page_retrieved",
+        "locator": "noun1c(1); verb",
+        "observation_zh": "名词明确有带屏幕以显示电视或计算机信息的电子设备，动词是为特定目的跟踪观察检查；补强原WordNet显示内容定义与显示器设备的对象对齐。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:attempt:cambridge:dynamic",
+        "headword": "dynamic",
+        "publisher": "Cambridge Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/dynamic",
+        "access": "HTTP_403_no_bypass",
+        "observation_zh": "直接请求失败，未使用页面内容；改读公开可取的原出版社Merriam-Webster。",
+        "verbatim_text_retained": false
+      },
+      {
+        "evidence_id": "p6c4:regression:attempt:cambridge:monitor",
+        "headword": "monitor",
+        "publisher": "Cambridge Dictionary",
+        "url": "https://dictionary.cambridge.org/dictionary/english/monitor",
+        "access": "HTTP_403_no_bypass",
+        "observation_zh": "直接请求失败，未绕过限制或复制内容；Merriam-Webster提供直接设备义。",
+        "verbatim_text_retained": false
+      }
+    ],
+    "commercial_copying": "No commercial entry/page/example text retained; only brief original Chinese observations and URLs."
+  },
+  "input_and_output_checks": [
+    {
+      "batch": 1,
+      "count": 50,
+      "input_sha256": "21c0bbfd68c3f979bb1278e33ab8cb250f4c5059913d32ca604e4c985bca4da4",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "944e9fca5ca95ce51070f710009f4d9767986d10e388e6050d8c1d3222315b67"
+    },
+    {
+      "batch": 2,
+      "count": 50,
+      "input_sha256": "5c86059793fb547c7e09a69d56b88ce773f6dc8f986ff912958c462e12ed51c9",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "c5d54ab887e191dcf5dcf667441f6873bd12f0e8240f64f56da3b4ea7c74ffb9"
+    },
+    {
+      "batch": 3,
+      "count": 50,
+      "input_sha256": "9f6a91e23154a57febfc0ae33325bcbb7087c0f484805ac0692a09af6c8b49cd",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "a6b7fdec262d8c6b34d4ef3c2f33f82064ec067486af5852ea60d89742e61826"
+    },
+    {
+      "batch": 4,
+      "count": 50,
+      "input_sha256": "6b440c1140f20bac818b449547f36184aa31a15f294ef39e48b4dc755ac32397",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "47023d5bf17289bb9aaa95ddaf1beffb38e09bf8e4da19480669870171b16349"
+    },
+    {
+      "batch": 5,
+      "count": 50,
+      "input_sha256": "5b2745644fb9c6b25be43504acd71dedd513d0536c02079013d4ab33d715053d",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "502871a48d8346e54cae035afda5a36751747853f303c02dbfa5616955cb909f"
+    },
+    {
+      "batch": 6,
+      "count": 50,
+      "input_sha256": "5bd283893e8769c63f5f192a235defdb419944f3e48a8955b24770f7d5ad2b5d",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "5c7c4a7cd087fac503c02791ae9c0db42e9eaf2364200f6a946abb2295f3507c"
+    },
+    {
+      "batch": 7,
+      "count": 50,
+      "input_sha256": "93b5e1022a41af4b582689cd99b7830a0e65e240862392e75bc704beaea75325",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "f74b2ea22417d553d021071b9e54758cf82b134b542295de2839cb0d1962a99a"
+    },
+    {
+      "batch": 8,
+      "count": 50,
+      "input_sha256": "993f3706f8df71d118bb875b4223678bdfdbc27b3eaabea6a71cf44b60212cf5",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "4f8efb3f1e78a5aa85a4272aed1a779329a42f0b02e0cf7acd2fbedd73145583"
+    },
+    {
+      "batch": 9,
+      "count": 50,
+      "input_sha256": "114aa58b5a176bfe53cd0a9326f6292b09af6b37ecf7dddd4239fd183bede21f",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "a64e41358a16a69098b30ce937901f31e44e400378ddc60293ea2632f07c45d6"
+    },
+    {
+      "batch": 10,
+      "count": 50,
+      "input_sha256": "dcbc0fa93cc80c4bc30ce174c7551fa4e46ad875f159719c112cb9906cdd9d98",
+      "input_matches_protocol_seal": true,
+      "output_sha256": "4eddf6ca1edc18f48d92a00be60ce3c5491716d41297c68e007bb22733b2a815"
+    }
+  ],
+  "scope_constraints": "Only regression_review output and private reviewer helper paths written; no formal CSV, SQLite, Notion, UI, Japanese or Git changes. All input packet hashes still match pre-review seal.",
+  "audit_addendum_zh": "逐词新增源POS覆盖表；有对应POS只证明标签出现，不代表用法完备。knock名词已是待采用候选，不能算新静默漏报；transfer名词未曾追踪并有源支持，计当前Major。暂存语义不确定不会抹掉原已明确的POS标签。"
+}

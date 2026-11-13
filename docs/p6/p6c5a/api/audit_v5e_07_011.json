@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_011",
+  "kind": "audit",
+  "request_hash": "da6669e6c6e1a6624bb023be9e8bbdf62889f94f80b1c8cde0811c8713b9e20f",
+  "input_ids": [
+    "SG25-dbb3b50e59c7",
+    "SG25-04e9c0db87e7",
+    "SG25-3c482346f375",
+    "SG25-0e87632cd46b",
+    "SG25-6df37daaa46c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ce3f0f4a-979d-4dd0-98ce-b7db72754d6d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-dbb3b50e59c7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"具体地表面/地面\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“地面”，并由地表义证据支持；未把土壤义排他化。\",\"evidence_ids\":[\"wn31:n:09357302\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"土地/土壤\",\"relation\":\"语义等价\",\"reason\":\"核心组同时保留“土地”，证据覆盖土壤与陆地表层，未用“地面”替代土地义。\",\"evidence_ids\":[\"wn31:n:14867162\",\"wn31:n:09357302\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"根据/理由（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留“根据；理由”，证据覆盖理由/基础义；复数grounds是常见词形，不是排他限制。\",\"evidence_ids\":[\"wn31:n:09201896\",\"wn31:n:13813124\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个名词源义均保留：地面与土地同组但分开标注，根据/理由另组；无覆盖缺口。\"},{\"id\":\"SG25-04e9c0db87e7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"金属材料“铁”\",\"relation\":\"语义等价\",\"reason\":\"核心组保留材料义“铁”，证据为金属元素义；未与器具或动作混淆。\",\"evidence_ids\":[\"wn31:n:14666595\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"家用器具“熨斗”\",\"relation\":\"语义等价\",\"reason\":\"核心组保留器具义“熨斗”，证据为加热平整衣物的家电。\",\"evidence_ids\":[\"wn31:n:03589998\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词“熨烫”\",\"relation\":\"语义等价\",\"reason\":\"核心组保留动词动作义，证据为用加热熨斗压平衣物；词性未混。\",\"evidence_ids\":[\"wn31:v:01393487\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"材料、器具、动作三个源义分别保留，名词与动词分开，无覆盖缺口。\"},{\"id\":\"SG25-3c482346f375\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"身体背部\",\"relation\":\"语义等价\",\"reason\":\"核心组保留身体背部义，证据为躯干后部。\",\"evidence_ids\":[\"wn31:n:05566350\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"物体后面/后部\",\"relation\":\"语义等价\",\"reason\":\"核心组保留后面/后部义，证据为不常被看到的一侧或后侧。\",\"evidence_ids\":[\"wn31:n:04066813\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词“支持”\",\"relation\":\"语义等价\",\"reason\":\"扩展层保留动词支持义，证据覆盖赞同/支持计划；未删原文一般支持义。\",\"evidence_ids\":[\"wn31:v:02562643\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"副词“返回”\",\"relation\":\"语义等价\",\"reason\":\"核心组保留返回义，证据为回到原处；与返回原状态义不混。\",\"evidence_ids\":[\"wn31:r:00075427\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s005\",\"source_scope\":\"副词“向后”\",\"relation\":\"语义等价\",\"reason\":\"扩展层保留向后/朝后方向义，证据支持朝后方位。\",\"evidence_ids\":[\"wn31:r:00074673\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"deferral_rationale\",\"source_ids\":[\"s003\",\"s005\"],\"group_ids\":[\"SG25-3c482346f375:p6c1:extended:2\",\"SG25-3c482346f375:p6c1:extended:1\"],\"evidence_ids\":[],\"reason\":\"两个原文义项置于扩展层，但扩展组注释为空，词级reason也未说明后置教学理由；这是排序说明问题，不是覆盖缺失。\",\"repair_suggestion\":\"在扩展组或词级reason中补充后置教学理由，例如先教具体名词和返回义，避免以频率断言代替理由。\"}],\"note\":\"五个源义均有链接，背部/后部/返回在核心，支持/向后在扩展；扩展后置理由需补充说明。\"},{\"id\":\"SG25-0e87632cd46b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"日期/具体日子\",\"relation\":\"语义等价\",\"reason\":\"核心组保留日期义，证据为事件发生的特定日/月/年；未限定为单一历法格式。\",\"evidence_ids\":[\"wn31:n:15185626\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"约会（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组保留约会义，证据为预先安排的会面；未并入动词约会。\",\"evidence_ids\":[\"wn31:n:08401740\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"日期与约会两个名词源义分别保留；动词“与……约会”作为外部候选未混入源义。\"},{\"id\":\"SG25-6df37daaa46c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"星期（七天周期）\",\"relation\":\"语义等价\",\"reason\":\"核心组覆盖“星期”作为连续七天时段，未误作星期几。\",\"evidence_ids\":[\"wn31:n:15194920\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"周（七天周期）\",\"relation\":\"语义等价\",\"reason\":\"核心组合并“周”与“星期”，证据支持任意连续七天时段；同义合并未删除任一源义。\",\"evidence_ids\":[\"wn31:n:15194920\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“星期”和“周”作为七天时段同义合并，括号限定为时间段义，无覆盖缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 9554,
+    "completion_tokens": 8953,
+    "total_tokens": 18507,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7241
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 7634
+  },
+  "started_utc": "2026-11-13T09:53:08.007691+00:00",
+  "completed_utc": "2026-11-13T09:53:58.024233+00:00",
+  "elapsed_seconds": 50.016,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

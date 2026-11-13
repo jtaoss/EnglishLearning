@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_10",
+  "request_hash": "8ff8159405e76a93ce41d4576ecc457d7f139c7b54baad61ae329e08d6b17d80",
+  "started_utc": "2026-11-13T08:16:13.349771+00:00",
+  "completed_utc": "2026-11-13T08:17:31.806516+00:00",
+  "elapsed_seconds": 78.453,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "05e9db08-0b73-4830-85f6-aec1559a0966",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3126,
+    "completion_tokens": 3676,
+    "total_tokens": 6802,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3550
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3126
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-03e71c6d7dc6\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"名词‘部分/片段’同组为近义部分义，证据覆盖两种名词用法；动词‘分割’限定及物切分，外部不及物‘分裂’已明确为未采用候选。源词性均已覆盖，无翻译、词性或合并错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

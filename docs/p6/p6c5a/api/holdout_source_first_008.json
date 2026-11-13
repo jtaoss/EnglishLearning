@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_008",
+  "kind": "holdout",
+  "request_hash": "62d6f5922d2eaf286583e51541be0a81a3914fcd19bb79bafc7c67e5b08edf7c",
+  "input_ids": [
+    "SG25-32182951b85a",
+    "SG25-6df24c372c04"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "08e7c1ff-89e7-4b98-bad0-5b82766bc9b1",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-32182951b85a\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"修饰人或事物，表示特定/独有，与泛指相对；可用于名词前作定语\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"无强制语境；常限定名词\",\n          \"evidence_ids\": [\"wn31:s:01107719\", \"wn31:s:01108153\"],\n          \"uncertainty\": \"来源仅给出词性形容词；英语证据显示该义用于限定名词，未见其他词性用法。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"修饰事物、事件或性质，表示不普通、超乎寻常；可作前置定语或表语\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"无强制语境\",\n          \"evidence_ids\": [\"wn31:s:00490174\"],\n          \"uncertainty\": \"英语证据中同义 especial/exceptional，但源中文“特别的”范围可能更广；未发现排除普通强调用法。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"修饰人，表示对细节要求严格、不易满足；常与 about + 对象连用\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"对象不强制，但常由 about 引出\",\n          \"evidence_ids\": [\"wn31:s:00987815\"],\n          \"uncertainty\": \"英语证据仅给出 about 句式示例；不排除其他介词或无宾语用法。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：特定的\",\n        \"形容词：特别的\",\n        \"形容词：挑剔的\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"三个来源形容词义均已在核心对应；源未提供名词用法，故不把英语名词义纳入首屏。\",\n      \"unadopted_observations\": [\n        \"WordNet 名词义 a fact about some part (wn31:n:05826326) 不属于源词性，未采用；逻辑学命题 (wn31:n:06763856)、小部分 (wn31:n:13832132) 同。\",\n        \"形容词义 providing specific details (wn31:s:00311842) 仅部分与“特定的”重叠，未确认独立覆盖；first and most important (wn31:s:01859156) 属额外英文义，未采用。\"\n      ]\n    },\n    {\n      \"id\": \"SG25-6df24c372c04\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"及物动词，宾语为可预订的资源/服务（如座位、餐桌、机票），可为自己或他人提前安排\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要直接宾语，常为具体服务\",\n          \"evidence_ids\": [\"wn31:v:00797294\", \"wn31:v:02503969\"],\n          \"uncertainty\": \"英语证据中两个词义均支持提前预订；对象范围未穷尽，但需可约定保留的事物。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"及物动词，宾语为资源、行为或表达，表示为将来或特定目的而留存、不立即使用\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要直接宾语，常与名词性资源搭配\",\n          \"evidence_ids\": [\"wn31:v:02219267\"],\n          \"uncertainty\": \"源中文“保留”范围宽于该英语词义；英语证据强调留作将来或应急，但不排除其他保存意义。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"名词，指被留存以备将来使用的物品或资源\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"无强制语境，常表示具体/抽象资源\",\n          \"evidence_ids\": [\"wn31:n:13389225\"],\n          \"uncertainty\": \"英语证据为可数/不可数？WordNet 未标注，但源未提供更多限制。\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"名词，指为特定目的而划出的区域（如自然/文化保护地）\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"无强制语境，但通常为地理区域\",\n          \"evidence_ids\": [\"wn31:n:08604729\"],\n          \"uncertainty\": \"英语证据中 district 为通用词，源中文“保护区”特指保护目的，英语证据未限定保护类型。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"动词：预订\",\n        \"动词：保留\",\n        \"名词：储备\",\n        \"名词：保护区\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"源四个义项均已映射；英语额外的军事/医疗/性格等名词义未纳入首屏。\",\n      \"unadopted_observations\": [\n        \"英语名词义 uncommunicative trait (wn31:n:04659795)、formality (wn31:n:04907298)、armed forces not active duty (wn31:n:08223381)、athlete substitute (wn31:n:10690481)、medical capacity (wn31:n:13781913) 均不在源中文范围内，未采用。\",\n        \"英语动词义 give or assign resource (wn31:v:00726112) 更接近 earmark/分配，与“保留”有差异，未作为核心采用。\"\n      ]\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3665,
+    "completion_tokens": 4245,
+    "total_tokens": 7910,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2986
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3665
+  },
+  "started_utc": "2026-11-13T09:33:06.646693+00:00",
+  "completed_utc": "2026-11-13T09:34:06.387377+00:00",
+  "elapsed_seconds": 59.734,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

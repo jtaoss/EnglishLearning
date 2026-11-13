@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_22",
+  "request_hash": "cc5bdfbc34638be430bffbeb05655207bc04c193f16df3c97512ab4baf4a642c",
+  "started_utc": "2026-11-13T08:16:13.654940+00:00",
+  "completed_utc": "2026-11-13T08:17:38.281549+00:00",
+  "elapsed_seconds": 84.64,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "100251b2-c668-4672-840b-799e5918b548",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2910,
+    "completion_tokens": 4259,
+    "total_tokens": 7169,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3862
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2910
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-772c6953848b\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"Candidate's core group 1 for source sense s001 uses only wn31:n:00881437 ('act of observing'), but WordNet sense wn31:n:01004898 ('act of making and recording a measurement') and wn31:n:05711376 ('act of noticing or paying attention') are also plausible under Chinese '观察' and are not represented as covered or flagged. The candidate's usage note restricts to deliberate looking, so these senses may be omitted from coverage.\",\n          \"evidence_ids\": [\n            \"wn31:n:01004898\",\n            \"wn31:n:05711376\"\n          ],\n          \"source_sense_ids\": [\n            \"s001\"\n          ],\n          \"candidate_group_ref\": \"SG25-772c6953848b:p6c5:core_meanings:1\",\n          \"proposed_fix\": \"No correction required unless consistency demands explicit tracking; could optionally add these senses as extensions or dictionary_additions with source_sense_ids s001 and status AI_candidate_not_adopted.\"\n        }\n      ],\n      \"preferences\": [\n        \"When teaching 'observation' as a noun, later mention that it can also refer to scientific measurement or to being noticed (e.g., 'under observation').\"\n      ],\n      \"note\": \"Core meanings map both source senses correctly and with appropriate POS. The dictionary addition for result sense is properly separated and not adopted. The only concern is that s001 is broad and candidate's evidence/usage note narrows it, but this is not a confirmed translation error.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

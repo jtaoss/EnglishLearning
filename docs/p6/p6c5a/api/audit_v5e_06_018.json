@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_018",
+  "kind": "audit",
+  "request_hash": "bf8772669304e184a5fd234e8c84c6441aed57b2c660dae67bfaf3f669a7972f",
+  "input_ids": [
+    "SG25-d41c3421332f",
+    "SG25-dd73a2f7c798",
+    "SG25-e718dfa13423",
+    "SG25-d329f11d9a60",
+    "SG25-6fa599fe7b02"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "a6a7c1a8-e3ab-4a10-91fa-f44d1f5f5070",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-d41c3421332f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"摩天大楼（名词；高层建筑）\",\"relation\":\"语义等价\",\"reason\":\"核心1“摩天大楼”与源义一致；词典n:04240233定义为多层的极高建筑，词性和对象相符。\",\"evidence_ids\":[\"wn31:n:04240233\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义名词，核心保留“摩天大楼”，无对象或领域新增限制；同词头其他词典义未用于填充来源。\"},{\"id\":\"SG25-dd73a2f7c798\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"闲谈（源词性未定，可能名词或动词；一般社交闲谈）\",\"relation\":\"合理概括\",\"reason\":\"核心1以名词“闲谈（尤涉及他人私事、传闻）”覆盖名词面，核心3以动词“闲谈；谈论他人私事”覆盖动词面；源part_of_speech为null，未强行写成已知单性，括号“尤…”是典型示例而非排他对象限制。\",\"evidence_ids\":[\"wn31:n:07149788\",\"wn31:v:01040538\",\"wn31:v:01043826\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"流言（源词性未定，文本为名词性；关于他人的传闻）\",\"relation\":\"语义等价\",\"reason\":\"核心2“流言；关于他人的传闻”与源义一致，词典n:07237830为关于他人行为、常带恶意的传闻；候选以名词呈现，与源文本相合。\",\"evidence_ids\":[\"wn31:n:07237830\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-dd73a2f7c798:p6c4:core_meanings:1\",\"SG25-dd73a2f7c798:p6c4:core_meanings:2\",\"SG25-dd73a2f7c798:p6c4:core_meanings:3\"],\"evidence_ids\":[\"wn31:n:07149788\",\"wn31:n:07237830\",\"wn31:v:01040538\",\"wn31:v:01043826\"],\"reason\":\"两个源义的part_of_speech均为null（unresolved_multi_pos），候选分别用名词和动词组覆盖；这是推荐词性，不应写成源词性已确认。\",\"repair_suggestion\":\"保留核心1、2、3，并在词条注释中明确源词性未定，不将组词性当源标签；无需新增义项。\"}],\"note\":\"s001词性未定，候选以名词核心1和动词核心3双分支覆盖；核心1括号为典型示例。s002“流言”对应名词核心2。未见明确范围缺口，但源词性标签仍应保留为未定。\"},{\"id\":\"SG25-e718dfa13423\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"发音（动词；读出语音）\",\"relation\":\"语义等价\",\"reason\":\"核心1“发音”与源义一致；词典v:00980581为按某种方式说出、发出语音，词性和活动相符。\",\"evidence_ids\":[\"wn31:v:00980581\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"宣布（动词；正式宣告，源中文范围较宽）\",\"relation\":\"范围收窄\",\"reason\":\"核心2“宣布（判断、裁定等）”仅保留正式判断或裁定类，证据v:00973682为pronounce judgment on；源“宣布”更宽，未见一般正式宣告的独立保留或明确暂存。\",\"evidence_ids\":[\"wn31:v:00973682\"],\"context\":\"uncertain\",\"residual_scope\":\"缺失：一般性“宣布/宣告”未作为独立分支保留；额外：核心2加上“判断、裁定等”限制。证据仅支持判断/裁定类，需待核。\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-e718dfa13423:p6c4:core_meanings:2\"],\"evidence_ids\":[\"wn31:v:00973682\"],\"reason\":\"源义“宣布”广于证据v:00973682的“判定”，候选核心2以“判断、裁定等”收窄。可能属于源中文偏宽而非生成器漏义，但未明确暂存一般正式宣告范围。\",\"repair_suggestion\":\"在核心2保留“正式宣布/宣告（如判断、裁定）”或明确标记一般“宣布”范围待核；不要据未供给证据扩张为所有新闻发布。\"}],\"note\":\"发音义核心1等价；宣布义核心2限为判断/裁定，与证据一致但比源中文窄，源范围待核；未将新闻发布等未供给义塞入核心。\"},{\"id\":\"SG25-d329f11d9a60\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"抽屉（名词；家具中可抽拉的容器）\",\"relation\":\"语义等价\",\"reason\":\"核心1“抽屉”与源义一致；词典n:03238608为家具中可滑进滑出的箱状容器，对象和词性相符。\",\"evidence_ids\":[\"wn31:n:03238608\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义名词，核心保留“抽屉”；同词头“画画的人/出票人”等词典义未自动纳入来源核心，不构成来源映射缺口。\"},{\"id\":\"SG25-6fa599fe7b02\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"蜡烛（名词；照明用蜡制品）\",\"relation\":\"语义等价\",\"reason\":\"核心1“蜡烛”与源义一致；词典n:02951508为中间有烛芯的蜡棒，词性和物品相符。\",\"evidence_ids\":[\"wn31:n:02951508\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单义名词，核心保留“蜡烛”；同词头计量单位或照蛋动词义未自动纳入来源核心，不构成来源映射缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 4468,
+    "completion_tokens": 11775,
+    "total_tokens": 16243,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10209
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 2548
+  },
+  "started_utc": "2026-11-13T09:50:57.382066+00:00",
+  "completed_utc": "2026-11-13T09:52:04.947922+00:00",
+  "elapsed_seconds": 67.563,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

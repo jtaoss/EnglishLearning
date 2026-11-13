@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_007",
+  "kind": "audit",
+  "request_hash": "09085d77ee38fe2c215330f0ad9a23734304d6ce3def0d9c40ca79aef4b7db27",
+  "input_ids": [
+    "SG25-2d5e8600a4fb",
+    "SG25-84bb160039a7",
+    "SG25-e830d223e2dd",
+    "SG25-68fcfd9b4d77",
+    "SG25-2d92fc5142e6"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "3c5dffda-b333-468a-b39b-fb8a3fa9313e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-2d5e8600a4fb\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"敏感的（一般性状，未限定物理/情感/话题）\",\"relation\":\"范围收窄\",\"reason\":\"核心组1只保留物理刺激/易痛反应，其他组1只保留机密信息；未为s001保留一般情感或话题敏感（如对批评、他人感受）的父级/暂存剩余。核心组2虽涉及体察他人，但source_ids只挂s002，不能静默覆盖s001。\",\"evidence_ids\":[\"wn31:a:02110761\",\"wn31:s:01717206\",\"wn31:s:00417683\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少一般情感/批评/话题敏感；物理限定和机密限定之外无一般父级\",\"counterexample\":\"sensitive to criticism / sensitive to others’ feelings\",\"counterexample_evidence_ids\":[\"wn31:a:02113270\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s002\",\"source_scope\":\"体贴的（对他人需要/感受的关怀与体察）\",\"relation\":\"范围收窄\",\"reason\":\"核心组2把‘体贴’表述为‘能体察他人感受’，注释明确不等同主动照顾；若原文要求considerate式主动关怀，则目标只保留感知子集，属来源中文偏宽或待核缩窄。\",\"evidence_ids\":[\"wn31:a:02113270\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少主动照顾/关怀行为（若原文要求）；也可能原文中文本身偏宽\",\"counterexample\":\"主动照顾/关怀的体贴（与仅体察感受相对）\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"source_coverage_gap\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-2d5e8600a4fb:p6c5:core_meanings:1\",\"SG25-2d5e8600a4fb:p6c5:other_meanings:1\"],\"evidence_ids\":[\"wn31:a:02113270\",\"wn31:a:02110761\"],\"reason\":\"s001原文‘敏感的’为一般性状；联合候选只给出物理刺激/易痛和机密信息两个限定用途，没有保留一般情感或话题敏感的父级/剩余范围；核心组2的体察义只挂s002，不能静默借用。\",\"repair_suggestion\":\"为核心s001补一般‘敏感的（对情感、批评、话题等）’父级，或明确标暂存剩余；物理与机密义可作子用法/其他层。\"},{\"severity\":\"Info\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-2d5e8600a4fb:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:a:02113270\"],\"reason\":\"‘体贴的’可能含主动照顾，而英语证据仅支持对他人感受/需要敏感；这是来源中文偏宽/待核，不宜直接判生成器Major。\",\"repair_suggestion\":\"保留现有合格‘体察’表述并标源范围待核，不把主动照顾写成英语sensitive已证等价。\"}],\"note\":\"s001的物理/机密用途已有层级，但一般情感/话题敏感无父级，核心组2又不能自动覆盖s001，故判partial/pending；s002为待核缩窄而非确认错误。\"},{\"id\":\"SG25-84bb160039a7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"后果（事件/行为造成的结果，常带负面色彩）\",\"relation\":\"合理概括\",\"reason\":\"核心组1用‘后果；结果’概括，注释保留‘常指负面后果’，与s001‘后果’的主要范围一致；未把‘重要性’误并入结果义。\",\"evidence_ids\":[\"wn31:n:07308725\",\"wn31:n:11430739\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"影响（作用/效果义）\",\"relation\":\"合理概括\",\"reason\":\"核心组2按impact/effect处理‘影响’，未取‘影响力/重要性’义；与s002可对应的结果/作用范围相符。\",\"evidence_ids\":[\"wn31:n:11430739\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"效果（事物产生的作用/结果）\",\"relation\":\"语义等价\",\"reason\":\"核心组2的‘效果’对应由前因导致的现象/结果，覆盖s003‘效果’的用法。\",\"evidence_ids\":[\"wn31:n:11430739\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义分别由‘后果/结果’与‘影响/效果’两组覆盖；‘重要性/显要’仅列外部候选，未冒充原文义。无明显覆盖缺口。\"},{\"id\":\"SG25-e830d223e2dd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"因此（连接前述原因的结果）\",\"relation\":\"语义等价\",\"reason\":\"核心组1的‘因此/结果’连接副词义与s001‘因此’一致，英语证据覆盖 accordingly/consequently 类句子连接用法。\",\"evidence_ids\":[\"wn31:r:00063395\",\"wn31:r:00295773\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"结果（副词性连接语，表示随之发生的结果）\",\"relation\":\"语义等价\",\"reason\":\"s002在源字段中同为副词性‘结果’，核心组1以‘因此；结果’合并展示，未另造名词义，符合源词性与证据。\",\"evidence_ids\":[\"wn31:r:00063395\",\"wn31:r:00295773\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源片段均为副词性结果连接语，核心合并为一组准确覆盖；未把‘结果’误扩为名词义。\"},{\"id\":\"SG25-68fcfd9b4d77\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"追求（为达到目标或获得某物而寻求）\",\"relation\":\"语义等价\",\"reason\":\"核心组1‘追求（目标、爱情、名声等）’对应为达成目标而进行的寻求/努力，覆盖s001‘追求’的名词用法。\",\"evidence_ids\":[\"wn31:n:05778388\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"追赶（为追上或抓获而追逐）\",\"relation\":\"语义等价\",\"reason\":\"核心组2‘追赶；追捕’对应overtake/capture式追逐，覆盖s002‘追赶’。\",\"evidence_ids\":[\"wn31:n:00320765\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义分别落在‘寻求目标’与‘追逐抓捕’两组；‘消遣/爱好’是词典补充候选，不属于原片段，未误入核心。\"},{\"id\":\"SG25-2d92fc5142e6\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"合适的（适合用途、场合或目的）\",\"relation\":\"语义等价\",\"reason\":\"核心组1以一般‘合适的；适宜的’覆盖适合用途/场合的宽义，英语证据为meant/adapted for occasion or use，与s001一致。\",\"evidence_ids\":[\"wn31:s:01024501\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"适宜的（适合某一用途或场合）\",\"relation\":\"语义等价\",\"reason\":\"s002‘适宜的’与s001同义改述，核心组1合并展示并由同一宽义形容词证据覆盖。\",\"evidence_ids\":[\"wn31:s:01024501\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源片段均为一般‘适合/适宜’，合并且准确；‘配偶特定义’仅列外部候选，不影响原文覆盖。\"}]}",
+  "usage": {
+    "prompt_tokens": 5318,
+    "completion_tokens": 9138,
+    "total_tokens": 14456,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7173
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3398
+  },
+  "started_utc": "2026-11-13T09:48:22.132738+00:00",
+  "completed_utc": "2026-11-13T09:49:14.480912+00:00",
+  "elapsed_seconds": 52.344,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

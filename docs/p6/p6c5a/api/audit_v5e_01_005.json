@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_005",
+  "kind": "audit",
+  "request_hash": "f0ba43fdabea9895467e64e807c4ff3dd92709f13e7319d602f7c74b69566bcd",
+  "input_ids": [
+    "SG25-df864c0596aa",
+    "SG25-6d65ed5c7500",
+    "SG25-6f7a9000cccc",
+    "SG25-16f5e2322d05",
+    "SG25-fa4824e83746"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "368a9085-ed6a-4ba6-9583-1202bf23b0ac",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-df864c0596aa\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词“放弃”：停止坚持或索求\",\"relation\":\"语义等价\",\"reason\":\"核心1“放弃”与原文同义，v00614907/v02232523覆盖停止坚持主张、放弃索求等用法。\",\"evidence_ids\":[\"wn31:v:00614907\",\"wn31:v:02232523\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“遗弃”：抛弃/丢下\",\"relation\":\"合理概括\",\"reason\":\"核心2以“遗弃”概括，v00615748支持遗弃依赖者；注释中的“人或物”作例示，未形成明确排他限制。\",\"evidence_ids\":[\"wn31:v:00615748\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"s001 放弃由核心1覆盖；s002 遗弃由核心2覆盖，注释中的依赖者为示例，未见明确排他限制。\"},{\"id\":\"SG25-6d65ed5c7500\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“自动化”：自动控制/运行的过程或状态\",\"relation\":\"语义等价\",\"reason\":\"核心1“自动化”保留过程/状态概念，v00103277与v14598049分别支持实施自动控制和自动运行状态。\",\"evidence_ids\":[\"wn31:n:00103277\",\"wn31:n:14598049\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"唯一源义“自动化”由核心1覆盖；设备义未冒充原文已列。\"},{\"id\":\"SG25-6f7a9000cccc\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“辩论”：讨论或正式辩论\",\"relation\":\"语义等价\",\"reason\":\"核心1“辩论”与原文名词义一致，n07155686支持理由对辩，文本未排除正式辩论。\",\"evidence_ids\":[\"wn31:n:07155686\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“辩论”：争论/对辩\",\"relation\":\"语义等价\",\"reason\":\"核心2“辩论”保留动词义，v00716789支持相互争论、对辩。\",\"evidence_ids\":[\"wn31:v:00716789\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词“仔细考虑”：权衡、细想\",\"relation\":\"语义等价\",\"reason\":\"扩展1“仔细考虑”与原文对应，v00814706支持仔细思考、权衡。\",\"evidence_ids\":[\"wn31:v:00814706\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"s001/s002 辩论按名/动分列核心；s003 仔细考虑在扩展保留，未丢失。\"},{\"id\":\"SG25-16f5e2322d05\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“战斗”：军事交战\",\"relation\":\"语义等价\",\"reason\":\"核心1“战斗”对应军事敌对交战，n00955670直接支持。\",\"evidence_ids\":[\"wn31:n:00955670\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“斗争”：为目标奋斗或对抗冲突\",\"relation\":\"范围收窄\",\"reason\":\"核心2注释把“斗争”限定为“为目标的斗争”，但原文“斗争”也可指对立群体/个人间公开冲突；n00961007有该用法，未在核心/扩展/其他层出现。\",\"evidence_ids\":[\"wn31:n:00790634\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少对立群体/个人间公开冲突、对抗（n00961007）\",\"counterexample\":\"公开冲突/对抗（an open clash between opposing groups or individuals）\",\"counterexample_evidence_ids\":[\"wn31:n:00961007\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"动词“奋力抗争”：与……斗争/对抗\",\"relation\":\"语义等价\",\"reason\":\"扩展1“奋力抗争”对应动词battle/contend，v01094777支持在战斗或类似情境中对抗。\",\"evidence_ids\":[\"wn31:v:01094777\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"residual_scope\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-16f5e2322d05:core:2\"],\"evidence_ids\":[\"wn31:n:00961007\"],\"reason\":\"核心2注释将“斗争”限定为“为目标的斗争”，但原文“斗争”还可指对立群体/个人间公开冲突；n00961007支持该用法，所有候选层均未单列或暂存。\",\"repair_suggestion\":\"在核心2文本/注释保留“斗争”一般义，或另设扩展/待核余项覆盖公开冲突对抗，避免仅用目标奋斗例示。\"}],\"note\":\"s001 战斗由核心1覆盖；s002 斗争被注释窄化为目标奋斗，缺少公开冲突范围；s003 奋力抗争在扩展保留。\"},{\"id\":\"SG25-fa4824e83746\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“偏见”：不客观的偏向\",\"relation\":\"语义等价\",\"reason\":\"核心1“偏见”对应n06211643不客观偏向、妨碍客观考虑。\",\"evidence_ids\":[\"wn31:n:06211643\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“偏差”：偏向/系统性偏离（原义未明限数据方法）\",\"relation\":\"范围收窄\",\"reason\":\"扩展1把“偏差”限定为数据/方法的系统性偏向；web:bias仅作既有出版观察且自述非独立频率证据，一般偏差是否属bias待核。\",\"evidence_ids\":[\"web:bias\"],\"context\":\"uncertain\",\"residual_scope\":\"非数据/方法领域的一般“偏差/偏离”是否由英语bias支持尚未确定；当前目标只保留系统数据偏向\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"动词“使产生偏见”：使有偏向\",\"relation\":\"语义等价\",\"reason\":\"扩展2“使产生偏见”对应cause to be biased，v00682265直接支持使动用法。\",\"evidence_ids\":[\"wn31:v:00682265\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_uncertain\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-fa4824e83746:extended:1\"],\"evidence_ids\":[\"web:bias\"],\"reason\":\"原文只写“偏差”，扩展1明确限为数据/方法系统性偏向；web:bias为既有出版观察且自述非独立频率证据，不能单独证明该限定已完整覆盖或一般偏差应排除。\",\"repair_suggestion\":\"将一般偏差范围标为来源待核，或补充正规词典对bias统计学/一般偏向用法的证据；不要把数据/方法例示当成唯一对象。\"}],\"note\":\"s001 偏见由核心1覆盖；s002 偏差被扩展1限定为数据/方法系统性偏向，一般偏差范围待核；s003 使产生偏见在扩展保留。\"}]}",
+  "usage": {
+    "prompt_tokens": 6026,
+    "completion_tokens": 14808,
+    "total_tokens": 20834,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12961
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4106
+  },
+  "started_utc": "2026-11-13T09:40:13.223522+00:00",
+  "completed_utc": "2026-11-13T09:41:37.317220+00:00",
+  "elapsed_seconds": 84.094,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

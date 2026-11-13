@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_017",
+  "kind": "audit",
+  "request_hash": "315d139d3fdf1bbc9cb3fe86ba5498489bedd34fcf49a0f5954f655be7aae2ae",
+  "input_ids": [
+    "SG25-3db20e1df89a",
+    "SG25-b308a7f43bba",
+    "SG25-2cc7e7e9e251",
+    "SG25-83a2bff84b1d",
+    "SG25-a831f1ff1a6c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8c948571-ab02-403e-9b78-a33e49ac9915",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-3db20e1df89a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"代表大会（代表会议/集会义）\",\"relation\":\"语义等价\",\"reason\":\"核心组“代表大会”对应词典“a meeting of elected or appointed representatives”，会议主体和词性一致。\",\"evidence_ids\":[\"wn31:n:08325730\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"国会（国家立法机关）\",\"relation\":\"语义等价\",\"reason\":\"核心组“国会”对应词典“a national legislative assembly”，为国家立法机关义。\",\"evidence_ids\":[\"wn31:n:08335621\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个名词义均有独立核心组和直接词典证据；社交/性交集会义不在原文范围，未采用不构成缺口。\"},{\"id\":\"SG25-b308a7f43bba\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"程度（强度、数量或质量尺度上的位置）\",\"relation\":\"语义等价\",\"reason\":\"核心组“程度”对应词典“a position on a scale of intensity or amount or quality”，与原文程度义一致。\",\"evidence_ids\":[\"wn31:n:05101152\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"学位（高校授予的学术资格）\",\"relation\":\"语义等价\",\"reason\":\"核心组“学位”对应词典“an award conferred by a college or university”，为学位义。\",\"evidence_ids\":[\"wn31:n:06710094\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"度（角度、温度等计量单位；原片段较宽）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组仅以角度和温度单位证据保留“度”，相对原文单字“度”的宽泛范围是收窄；单位语境需明确。\",\"evidence_ids\":[\"wn31:n:13632450\",\"wn31:n:13736289\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"其他“度”的计量/数学等用法未列出或未明确暂存\",\"counterexample\":\"词典另有“最高次数”义（degree），但中文“度”是否承载该义未定\",\"counterexample_evidence_ids\":[\"wn31:n:05869901\"],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_scope_underdetermined\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-b308a7f43bba:extended:1\"],\"evidence_ids\":[\"wn31:n:13632450\",\"wn31:n:13736289\",\"wn31:n:05869901\"],\"reason\":\"s003原文仅为“度”，候选以角度/温度为限制度；词典另有最高次数义，但原文是否支持未定，剩余范围未明确暂存。\",\"repair_suggestion\":\"在s003的residual_scope或note中明确其他“度”用法待核，不扩为核心；如教材语境明确为角度/温度，可保留现限定。\"}],\"note\":\"程度、学位在核心，“度”在扩展并注明单位语境；s003来源范围偏宽，存在待核剩余范围。\"},{\"id\":\"SG25-2cc7e7e9e251\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"展示（把某物显示或展出给公众/观众）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组“展示”对应词典“to show, make visible or apparent”和“give an exhibition of”，动作义一致。\",\"evidence_ids\":[\"wn31:v:02144506\",\"wn31:v:02153218\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"展品（公开展示之物）\",\"relation\":\"语义等价\",\"reason\":\"核心名词组“展品”对应词典“something shown to the public”，为公开展示之物。\",\"evidence_ids\":[\"wn31:n:00522265\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"动词“展示”与名词“展品”分属不同词性，均核心保留；法律证物、炫耀性展示等词典义不在原文范围。\"},{\"id\":\"SG25-83a2bff84b1d\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"博览会（较大型公开展览/展销语境）\",\"relation\":\"语义等价\",\"reason\":\"扩展组仍用“博览会”保留原文的较大型展览语境；词典证据为公开展览集合，未单独区分规模，需靠语境限定。\",\"evidence_ids\":[\"wn31:n:08424576\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"展览会（公开展览/陈列）\",\"relation\":\"语义等价\",\"reason\":\"核心组“展览会”对应词典“a collection of things ... for public display”，为公开展览义。\",\"evidence_ids\":[\"wn31:n:08424576\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_distinction\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-83a2bff84b1d:core:1\",\"SG25-83a2bff84b1d:extended:1\"],\"evidence_ids\":[\"wn31:n:08424576\"],\"reason\":\"“展览会”和“博览会”共用同一通用词典证据；二者规模/语境区别是教学分层，不是词典独立义项。\",\"repair_suggestion\":\"保留现核心/扩展分层并注明“博览会”为较大型展览语境，不把规模区别写成词典未支持的独立义。\"}],\"note\":\"展览会为核心、博览会为扩展，覆盖两个原文名词义；规模区别目前靠语境说明而非独立词典证据。\"},{\"id\":\"SG25-a831f1ff1a6c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"栖息地（生物通常生存的环境）\",\"relation\":\"语义等价\",\"reason\":\"核心组“栖息地”对应词典“the type of environment in which an organism or group normally lives or occurs”。\",\"evidence_ids\":[\"wn31:n:08598111\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一原文义有直接词典证据并保留在核心，无来源范围缺口。\"}]}",
+  "usage": {
+    "prompt_tokens": 5163,
+    "completion_tokens": 12347,
+    "total_tokens": 17510,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10727
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3243
+  },
+  "started_utc": "2026-11-13T09:43:09.431386+00:00",
+  "completed_utc": "2026-11-13T09:44:21.017542+00:00",
+  "elapsed_seconds": 71.594,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

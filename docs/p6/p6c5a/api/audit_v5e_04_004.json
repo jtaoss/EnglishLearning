@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_004",
+  "kind": "audit",
+  "request_hash": "dbf32c42059cc81a287139c8b7b389ddc5179567aa8f4477d00e5bf7c0bd0660",
+  "input_ids": [
+    "SG25-6694ea807500",
+    "SG25-2295ff7a8bd8",
+    "SG25-76b1ee582dbd",
+    "SG25-dcd8670ae2da",
+    "SG25-0794afd1bc3c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5af13c36-483d-4a97-81ee-c1e5007eea3d",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-6694ea807500\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"原文‘运输’，源词性未定；候选核心1按名词‘运输行为’推荐\",\"relation\":\"合理概括\",\"reason\":\"wn31:n:00316812支持‘移动行为’的名词概括；但源义项part_of_speech=null，名词组只是推荐，不能当作已核验源词性。\",\"evidence_ids\":[\"wn31:n:00316812\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；名词‘运输行为’由本组承担，动词‘运送’另由s002候选覆盖\",\"counterexample\":\"动词‘运送’另有v:01957669等支持，不能由s001单独确认名词。\",\"counterexample_evidence_ids\":[\"wn31:v:01957669\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"原文‘运送’，源词性未定；候选核心2按动词‘运送’推荐\",\"relation\":\"合理概括\",\"reason\":\"wn31:v:01452567与wn31:v:01954657支持运送/运输动作概括；源词性null，动词组只是推荐。\",\"evidence_ids\":[\"wn31:v:01452567\",\"wn31:v:01954657\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；动词‘运送’由本组承担，名词‘运输行为’另由s001候选覆盖\",\"counterexample\":\"名词‘运输行为’另有n:00316812支持，不能由s002单独确认动词。\",\"counterexample_evidence_ids\":[\"wn31:n:00316812\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"原文‘交通工具’，源词性未定；候选扩展1按名词‘运输手段/工具’推荐\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:03105141‘用作运输手段之物’直接对应‘交通工具’；但源词性null，名词组仍只是推荐。\",\"evidence_ids\":[\"wn31:n:03105141\"],\"context\":\"uncertain\",\"residual_scope\":\"源词性未定；该组只覆盖具体‘交通工具/手段’，不覆盖抽象运输行为\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\",\"s003\"],\"group_ids\":[\"SG25-6694ea807500:core:1\",\"SG25-6694ea807500:core:2\",\"SG25-6694ea807500:extended:1\"],\"evidence_ids\":[],\"reason\":\"三个源义项的part_of_speech均为null且pos_evidence=unresolved_multi_pos；候选将s001/s003推荐为名词、s002推荐为动词，这只是分组建议，不能视为源词性已核验。\",\"repair_suggestion\":\"保留源词性null；在词条注释中明确名/动分工为候选推荐，待人工或上下文确认后再写入已核验结论。\"}],\"note\":\"三个源义均有候选链接，但源义项词性均为null；名/动分工和‘交通工具’扩展层只能作推荐，暂不能视为已核验。\"},{\"id\":\"SG25-2295ff7a8bd8\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘病人’，明确为需要医疗照护者\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:10425439‘a person who requires medical care’直接对应‘病人’。\",\"evidence_ids\":[\"wn31:n:10425439\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词‘有耐心的’，指能耐心忍受困难\",\"relation\":\"语义等价\",\"reason\":\"wn31:a:01739985‘enduring trying circumstances with even temper’直接对应‘有耐心的’。\",\"evidence_ids\":[\"wn31:a:01739985\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"名词‘病人’与形容词‘有耐心的’分别进入核心，证据直接，无覆盖缺口；语法角色patient的词典义未混入源义。\"},{\"id\":\"SG25-76b1ee582dbd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘激情’，强烈情感投入\",\"relation\":\"合理概括\",\"reason\":\"与s002合并为‘激情／热情’，以wn31:n:07496036‘strong feeling or emotion’作上位概括；未把性欲等词典义混入。\",\"evidence_ids\":[\"wn31:n:07496036\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘热情’，强烈情感/热忱\",\"relation\":\"合理概括\",\"reason\":\"与s001合并为‘激情／热情’，由wn31:n:07496036的强烈情感义概括；未额外限定对象或领域。\",\"evidence_ids\":[\"wn31:n:07496036\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘激情/热情’合组为强烈情感，两个源义均保留；性欲、迷恋对象等词典义未自动并入核心。\"},{\"id\":\"SG25-dcd8670ae2da\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词‘同情’，分担他人（尤指悲伤）感受\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:07568767‘sharing the feelings of others (especially sorrow)’直接对应‘同情’。\",\"evidence_ids\":[\"wn31:n:07568767\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词‘同感’，感受相通/相互理解\",\"relation\":\"合理概括\",\"reason\":\"wn31:n:13834112‘relation of affinity or harmony’支持‘同感’的概括，但证据偏亲和关系；扩展层保留。\",\"evidence_ids\":[\"wn31:n:13834112\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词‘赞同’，立场上支持或同意\",\"relation\":\"语义等价\",\"reason\":\"wn31:n:06208877‘inclination to support or agree with an opinion’直接对应‘赞同’。\",\"evidence_ids\":[\"wn31:n:06208877\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"‘同情’为核心；‘同感’和‘赞同’在扩展层保留，并按感受相通与立场支持区分，无源义丢失。\"},{\"id\":\"SG25-0794afd1bc3c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词‘明显的’，清楚显现于感官或判断\",\"relation\":\"语义等价\",\"reason\":\"wn31:s:01622528‘clearly revealed to the mind or the senses or judgment’直接对应‘明显的’。\",\"evidence_ids\":[\"wn31:s:01622528\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词‘显而易见的’，与‘明显的’同义\",\"relation\":\"语义等价\",\"reason\":\"wn31:s:01622528覆盖‘evident/manifest/plain’等‘显而易见’表达；与s001合组不改变源义。\",\"evidence_ids\":[\"wn31:s:01622528\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个同义形容词合组为核心；‘看似如此但未必真实’仅作外部候选，未混入源义。\"}]}",
+  "usage": {
+    "prompt_tokens": 5717,
+    "completion_tokens": 13293,
+    "total_tokens": 19010,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11450
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3797
+  },
+  "started_utc": "2026-11-13T09:46:53.864918+00:00",
+  "completed_utc": "2026-11-13T09:48:07.895170+00:00",
+  "elapsed_seconds": 74.031,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_04_014",
+  "kind": "audit",
+  "request_hash": "9df841d85b34c81eb0a2924494f805d75f9c257a7345521da74c826a35f34b7e",
+  "input_ids": [
+    "SG25-b5a0aa306476",
+    "SG25-4db4f7fc0507",
+    "SG25-81b6b2c874b7",
+    "SG25-2e57a032cdd1",
+    "SG25-f3e8234402a3"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "1093c695-379e-4876-bf67-3dee7ceb5dad",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-b5a0aa306476\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词“可能”，表示存在或发生的机会/可能性\",\"relation\":\"语义等价\",\"reason\":\"核心组“可能／可能性”保留一般可能性义，证据wn31:n:14505513支持“存在或发生或为真的能力”，未把“可能”误限为数值概率。\",\"evidence_ids\":[\"wn31:n:14505513\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“可能性”，同上一般可能性义\",\"relation\":\"语义等价\",\"reason\":\"与s001同组覆盖，核心组以“可能／可能性”并列展示，证据支持抽象可能性，没有额外对象或领域排他限制。\",\"evidence_ids\":[\"wn31:n:14505513\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个名词源义均为一般“可能/可能性”，核心组合并展示且证据充分；未发现支持范围丢失或新增无依据限制。\"},{\"id\":\"SG25-4db4f7fc0507\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词“拥有”，对财物或物品的所有/占有\",\"relation\":\"语义等价\",\"reason\":\"核心组“拥有／持有”对应证据wn31:v:02209474“have ownership or possession of”，覆盖所有权/占有框架。\",\"evidence_ids\":[\"wn31:v:02209474\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“持有”，持有/占有物品、财产或权利\",\"relation\":\"语义等价\",\"reason\":\"“持有”与“拥有”在占有框架合组，证据同一所有权/占有义可覆盖；未把源义扩成情感控制等无关用法。\",\"evidence_ids\":[\"wn31:v:02209474\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“拥有；持有”两个动词源义在核心组中合组，词典证据支持所有权/占有义；未把possess的情感控制或属性义强塞进源义。\"},{\"id\":\"SG25-81b6b2c874b7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词“潜在的”，可能存在但尚未实现的\",\"relation\":\"语义等价\",\"reason\":\"形容词核心组“潜在的”直接对应证据wn31:a:00044573“existing in possibility”，保留潜在/可能存在的性质，不混入名词“潜力”。\",\"evidence_ids\":[\"wn31:a:00044573\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“潜力”，内在能力或发展可能性\",\"relation\":\"语义等价\",\"reason\":\"名词核心组“潜力”对应证据wn31:n:14506204“the inherent capacity for coming into being”，覆盖内在能力/发展可能。\",\"evidence_ids\":[\"wn31:n:14506204\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词与名词两个源义分别保留在核心组，词性未混用；证据分别支持“潜在的”和“潜力”。\"},{\"id\":\"SG25-2e57a032cdd1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词“实用的”，具有实际用途的\",\"relation\":\"语义等价\",\"reason\":\"核心组“实用的／实用性的”覆盖实际用途性质，证据wn31:s:00866742支持“practical purpose or use”。\",\"evidence_ids\":[\"wn31:s:00866742\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词“实用性的”，与实际使用/实践有关的\",\"relation\":\"语义等价\",\"reason\":\"与s001合组展示，证据wn31:a:01840022“concerned with actual use or practice”支持“实用性的/实际使用的”性质。\",\"evidence_ids\":[\"wn31:a:01840022\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个形容词源义语义接近，核心组合并合理；证据覆盖实际用途/实践相关义，未见无依据的对象限制。\"},{\"id\":\"SG25-f3e8234402a3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词“欣赏”，赏识、重视或认可价值\",\"relation\":\"合理概括\",\"reason\":\"核心组“欣赏”用证据wn31:v:02260917“hold dear; prize”支持赏识/重视的一支；未把“感激”或“理解”并入此组。\",\"evidence_ids\":[\"wn31:v:02260917\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词“感激”，对他人帮助/好意表示感恩\",\"relation\":\"语义等价\",\"reason\":\"核心组“感激”对应证据wn31:v:01809949“recognize with gratitude; be grateful for”，源义与证据一致。\",\"evidence_ids\":[\"wn31:v:01809949\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词“理解”，充分意识到情况、含义或价值\",\"relation\":\"语义等价\",\"reason\":\"核心组“理解（充分意识到情况或价值）”对应证据wn31:v:00593736“be fully aware of; realize fully”，括注为证据内充分意识到义，不是无依据缩限。\",\"evidence_ids\":[\"wn31:v:00593736\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"欣赏、感激、理解三个源义分别保留为三个核心组，未把感激误并入欣赏；证据分别支持赏识/重视、感恩和充分意识三支。\"}]}",
+  "usage": {
+    "prompt_tokens": 5094,
+    "completion_tokens": 7429,
+    "total_tokens": 12523,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5962
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3174
+  },
+  "started_utc": "2026-11-13T09:46:53.652120+00:00",
+  "completed_utc": "2026-11-13T09:47:37.936286+00:00",
+  "elapsed_seconds": 44.281,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

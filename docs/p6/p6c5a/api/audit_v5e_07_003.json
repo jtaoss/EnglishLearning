@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_003",
+  "kind": "audit",
+  "request_hash": "c54e77b816c2ddd19fe2020f50818a21758cf7cb551b7f592ad428b163335c2c",
+  "input_ids": [
+    "SG25-842fcb5e6098",
+    "SG25-6d0ef3950c22",
+    "SG25-6cf382fca2a1",
+    "SG25-ebe4136fc888",
+    "SG25-6008c26f4452"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "8b8dc18d-64a4-42f3-8324-23baa2cd5855",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-842fcb5e6098\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：对物体施加压力、按下\",\"relation\":\"语义等价\",\"reason\":\"核心组“按；施压”与源义“按”对应，v:01449876 支持 press down/thumb on 的施压动作。\",\"evidence_ids\":[\"wn31:v:01449876\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：催促他人加快行动、敦促\",\"relation\":\"合理概括\",\"reason\":\"目标“催促；敦促”保留源义，但所链 v:00761702 偏“恳求/请求”；同列表 v:00767694 才明确 urge/impel，证据链需补强。\",\"evidence_ids\":[\"wn31:v:00761702\",\"wn31:v:00767694\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"更贴近“催促某人完成”的词典用法是 urge/impel，而非仅 ask earnestly\",\"counterexample_evidence_ids\":[\"wn31:v:00767694\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s003\",\"source_scope\":\"名词：新闻界、新闻媒体\",\"relation\":\"语义等价\",\"reason\":\"核心组“新闻界（尤指报刊媒体）”与源义一致，n:06274022 明确为 gathering/publishing news 的 print media；括号“尤指”为例示而非排他。\",\"evidence_ids\":[\"wn31:n:06274022\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"名词：印刷机\",\"relation\":\"语义等价\",\"reason\":\"扩展组“印刷机”与源义一致，n:04006669 为 machine used for printing；扩展层保留并有后学说明，不构成漏义。\",\"evidence_ids\":[\"wn31:n:04006669\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_mismatch\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-842fcb5e6098:p6c4:core_meanings:2\"],\"evidence_ids\":[\"wn31:v:00761702\",\"wn31:v:00767694\"],\"reason\":\"核心“催促；敦促”所链 v:00761702 是“恳求/请求”，列表中 v:00767694 明示 urge/impel，更贴合“催促”；目标中文未丢失，但证据链应补强。\",\"repair_suggestion\":\"保留“催促；敦促”，将 v:00767694 加入该组证据；必要时把 v:00761702 限定为较近的“恳求/敦促”。\"}],\"note\":\"四个源义均已映射；按、催促、新闻界在核心，印刷机在扩展并有后学说明。s002 证据链建议补入更贴合“催促”的 v:00767694。\"},{\"id\":\"SG25-6d0ef3950c22\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：脚趾\",\"relation\":\"语义等价\",\"reason\":\"核心“脚趾”对应 n:05585041 one of the digits of the foot；高尔夫球杆、钉钉等用途未入源映射。\",\"evidence_ids\":[\"wn31:n:05585041\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单源义“脚趾”在核心准确保留；专业/动作引申未强加给源义。\"},{\"id\":\"SG25-6cf382fca2a1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：一对、成对的两个\",\"relation\":\"语义等价\",\"reason\":\"核心“一对”保留成对义，n:13765745 支持 two items of the same kind；未把“夫妇”或数量结构并入。\",\"evidence_ids\":[\"wn31:n:13765745\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：夫妇、已婚配偶\",\"relation\":\"语义等价\",\"reason\":\"扩展“夫妇”与源义对应，n:08005299 的同住/已婚 couple 例证支持；证据定义略宽于“夫妇”，但不改变目标范围。\",\"evidence_ids\":[\"wn31:n:08005299\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"s001“一对”在核心，s002“夫妇”在扩展；源义均已保留。外部“a couple of/不限已婚伴侣”未入源映射，属词典或用法补充，不据此判漏。\"},{\"id\":\"SG25-ebe4136fc888\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：体形苗条、纤细\",\"relation\":\"语义等价\",\"reason\":\"核心“苗条的”对应 s:00994085 slender/delicate build；不并入“微小”数量义。\",\"evidence_ids\":[\"wn31:s:00994085\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：数量、机会等微小\",\"relation\":\"语义等价\",\"reason\":\"扩展“微小的（数量、机会等）”对应 s:01397749 small in quantity/slim chance；括号为例示，非排他限定。\",\"evidence_ids\":[\"wn31:s:01397749\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"体形苗条与数量/机会微小分列核心和扩展，未因同为形容词而合并；扩展括号为示例性说明。\"},{\"id\":\"SG25-6008c26f4452\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：街道、城市道路\",\"relation\":\"语义等价\",\"reason\":\"核心“街道”对应 n:04341737 有建筑的人行道/道路；未把居民、贫困环境等转喻并入源义。\",\"evidence_ids\":[\"wn31:n:04341737\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单源义“街道”在核心准确保留；外部转喻和机会义未强加给源义。\"}]}",
+  "usage": {
+    "prompt_tokens": 7484,
+    "completion_tokens": 10605,
+    "total_tokens": 18089,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9036
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5564
+  },
+  "started_utc": "2026-11-13T09:53:07.806088+00:00",
+  "completed_utc": "2026-11-13T09:54:05.026363+00:00",
+  "elapsed_seconds": 57.219,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

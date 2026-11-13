@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_008",
+  "kind": "audit",
+  "request_hash": "9ce34c6c3cc43a7678b530a6f3f4542d6f8541219b0c4048221f46cafbfa3319",
+  "input_ids": [
+    "SG25-763cdc62a869",
+    "SG25-ea728840d371",
+    "SG25-52367a6622b1",
+    "SG25-27f576cafbb2",
+    "SG25-92bc2e412115"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "64c7add7-b86a-43c6-add0-a832d8044164",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-763cdc62a869\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：物体外表面／二维外边界；原文未给抽象或公开露面语境\",\"relation\":\"语义等价\",\"reason\":\"核心组“表面”以 wn31:n:04369112、wn31:n:08677970 支持一般物理表面；未把动词 surface 或公开出现义加入，符合原名词义。\",\"evidence_ids\":[\"wn31:n:04369112\",\"wn31:n:08677970\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"原文仅名词“表面”，核心保留一般物理表面；抽象“表面现象”未明确展开，但原文无语境，不据此判缺。\"},{\"id\":\"SG25-ea728840d371\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：会议（协商／讨论性会面）\",\"relation\":\"合理概括\",\"reason\":\"与“讨论会”同组，由正式会议／协商讨论证据支持；核心文本仍作会议／讨论会，未泛化为任何相遇。\",\"evidence_ids\":[\"wn31:n:07157274\",\"wn31:n:08325427\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：讨论会（有议题的讨论性会面）\",\"relation\":\"合理概括\",\"reason\":\"讨论会与会议在同一正式协商／讨论事件框架内合并；不是新增体育协会等义。\",\"evidence_ids\":[\"wn31:n:07157274\",\"wn31:n:08325427\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个原义在同一正式会面框架内保留，核心短释未扩展到无关“相遇”义。\"},{\"id\":\"SG25-52367a6622b1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：提到／提及（言语指出）\",\"relation\":\"语义等价\",\"reason\":\"核心“提及”由 wn31:n:06778981 支持，保留言语指出某人某事的独立名词用法。\",\"evidence_ids\":[\"wn31:n:06778981\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：参考／查阅（参照行为）\",\"relation\":\"语义等价\",\"reason\":\"核心“参考”由 wn31:n:01266543 支持，保留参照、查阅行为；未把“参考书”直接并入。\",\"evidence_ids\":[\"wn31:n:01266543\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：推荐信（为他人提供评价的书面材料）\",\"relation\":\"语义等价\",\"reason\":\"扩展“推荐信”由 wn31:n:06707541 支持；证据中的前雇主推荐是许可子类，目标文本保持一般“推荐信”。\",\"evidence_ids\":[\"wn31:n:06707541\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个原义均有独立链接：参考／提及在核心，推荐信在扩展；推荐信未进首屏属教学分层，不是丢失；参考书作为词典补充未采用。\"},{\"id\":\"SG25-27f576cafbb2\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词／动词待核：位置或事物从一处到另一处的转移\",\"relation\":\"合理概括\",\"reason\":\"核心同时保留动词“转移”和名词“转移（过程／事件）”，由 v00556317、v02236972、n00316812 支持；未宣称原书已逐义分配词性。\",\"evidence_ids\":[\"wn31:v:00556317\",\"wn31:v:02236972\",\"wn31:n:00316812\"],\"context\":\"uncertain\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词／动词待核：所有权转让（行为或动作）\",\"relation\":\"无法确定\",\"reason\":\"扩展只保留动词“转让”（v02225243）；源义项词性为 null，未以 pending/held 保留名词“所有权转让行为”，不能静默断言源义仅为动词。\",\"evidence_ids\":[\"wn31:v:02225243\"],\"context\":\"uncertain\",\"residual_scope\":\"若源义为名词“所有权转让（行为）”，当前缺名词行为分支；wn31:n:01109837 可作核对证据\",\"counterexample\":\"名词“所有权转让行为”可由 wn31:n:01109837 支持，与仅有动词“转让”形成覆盖差异。\",\"counterexample_evidence_ids\":[\"wn31:n:01109837\"],\"risk\":\"pending\"},{\"sid\":\"s003\",\"source_scope\":\"名词／动词待核：人员岗位／工作地点调动\",\"relation\":\"无法确定\",\"reason\":\"扩展只保留动词“调动”（v02398228）；源义项词性为 null，名词“调动／岗位调动”可能性未明确暂存。\",\"evidence_ids\":[\"wn31:v:02398228\"],\"context\":\"uncertain\",\"residual_scope\":\"名词“岗位／人员调动”未保留独立分支；现有 wn31:n:10744008 仅指被调动者，不能替代行为名词\",\"counterexample\":\"wn31:n:10744008 只支持“被调动的人”，不是“调动”行为本身，不能证明名词调动已覆盖。\",\"counterexample_evidence_ids\":[\"wn31:n:10744008\"],\"risk\":\"pending\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s002\",\"s003\"],\"group_ids\":[\"SG25-27f576cafbb2:extended:1\",\"SG25-27f576cafbb2:extended:2\"],\"evidence_ids\":[\"wn31:n:01109837\",\"wn31:n:10744008\"],\"reason\":\"原词语源词性为“名词；动词”，且各原义项 part_of_speech 为 null；候选将“转让”“调动”落到动词组，未把名词转让／调动可能显式暂存，整体也未处理源词性待核。\",\"repair_suggestion\":\"将 s002、s003 的源词性标为待核；如需覆盖名词可能，补充“所有权转让行为”（n01109837）及岗位调动名词待核，不把动词推荐当作原书词性。\"}],\"note\":\"转移的核心名词／动词均有对应组，但“转让”“调动”只落动词且源词性未逐义确认；应保留 pending，不能把整个词判为已核验。\"},{\"id\":\"SG25-92bc2e412115\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：根据已知事实／推理得出结论\",\"relation\":\"语义等价\",\"reason\":\"核心“推断／推论”由 wn31:v:00638236、wn31:v:00946956 支持，保留根据推理得出结论的动作，不是无依据猜测。\",\"evidence_ids\":[\"wn31:v:00638236\",\"wn31:v:00946956\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：推论／推出结论\",\"relation\":\"语义等价\",\"reason\":\"与“推断”在同一推理结论框架内合并；目标短释未把归纳或演绎任一方向设为排他限制。\",\"evidence_ids\":[\"wn31:v:00638236\",\"wn31:v:00946956\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"推断与推论在根据证据推出结论的动词框架合并；英语 infer 的归纳用法未被文本排除，当前核心短释可涵盖，未见缺失。\"}]}",
+  "usage": {
+    "prompt_tokens": 7276,
+    "completion_tokens": 11370,
+    "total_tokens": 18646,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9511
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5356
+  },
+  "started_utc": "2026-11-13T09:43:09.432417+00:00",
+  "completed_utc": "2026-11-13T09:44:15.091100+00:00",
+  "elapsed_seconds": 65.656,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

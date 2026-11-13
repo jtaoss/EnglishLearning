@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_019",
+  "kind": "audit",
+  "request_hash": "c359fd14fc9f5958cf949eee42f2d3359d52c895a62dbbb2810a11cf1dc4a508",
+  "input_ids": [
+    "SG25-901ad244ed23",
+    "SG25-2c29d39181de",
+    "SG25-9bf5a24e4aa7",
+    "SG25-a3cca0ced5ec",
+    "SG25-771ddab9b936"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "480cf862-f4de-44cf-aabb-4fa99c75912f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-901ad244ed23\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"原子的（泛指与原子相关/原子属性）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组把‘原子的’限定为核能、原子核相关语境；来源中文更宽，英语证据 wn31:a:02873726 只直接支持原子核/核物理用法，一般‘原子的’是否属来源过宽尚待核。\",\"evidence_ids\":[\"wn31:a:02873726\"],\"context\":\"uncertain\",\"residual_scope\":\"缺少一般‘原子的/原子属性的’范围；现仅保留核能、原子核语境的子集\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"原子核的（原子核相关物理）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘原子核的’与 wn31:a:02873726 的原子核物理义一致，来源与词典对象相符。\",\"evidence_ids\":[\"wn31:a:02873726\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"原子武器的（核武器/原子武器）\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留‘原子武器的’，由 wn31:a:00612923 的核武器/原子武器义直接支持；来源本身即武器语境。\",\"evidence_ids\":[\"wn31:a:00612923\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"范围收窄/来源范围待核\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-901ad244ed23:extended:1\"],\"evidence_ids\":[\"wn31:a:02873726\"],\"reason\":\"来源‘原子的’可泛指原子属性，候选仅在扩展层保留且限定为核能/原子核语境；词典证据只直接支持核/核能用法，一般原子属性范围是否应保留或标为来源外尚未解决。\",\"repair_suggestion\":\"在 s001 映射中明示‘原子的’一般范围待核，或说明一般原子属性不在英语 nuclear 证据内并保留扩展层限制；不要把范围收窄当作已等价覆盖。\"}],\"note\":\"三项均有链接；s002 核心为原子核义，s003 扩展为原子武器义，s001 被限定在核能/原子核语境，一般‘原子的’范围待核，故整体 partial。\"},{\"id\":\"SG25-2c29d39181de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"操作（机器设备等）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘操作’对应 wn31:v:01227308 的 handle and cause to function/operate machinery，来源与词典用法相符。\",\"evidence_ids\":[\"wn31:v:01227308\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"管理（经营/业务）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘管理’对应 wn31:v:02448714 的 direct or control projects/businesses，作为独立来源义保留。\",\"evidence_ids\":[\"wn31:v:02448714\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"核心层后置理由偏弱\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-2c29d39181de:extended:1\"],\"evidence_ids\":[\"wn31:v:02448714\"],\"reason\":\"‘管理’是独立来源义，已放在扩展层而非核心；数据说明了两者分开，但未明确说明首屏后置的教学理由。\",\"repair_suggestion\":\"如保留扩展后置，补充基于搭配/使用场景的教学理由；否则考虑核心层并列展示。\"}],\"note\":\"操作与管理的来源义均有独立链接；运转/手术作为未采用外部候选保留，不冒充原文义。\"},{\"id\":\"SG25-9bf5a24e4aa7\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"操作（机器/业务等）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘操作’对应 wn31:n:00410032 的 the activity of operating something (a machine or business etc.)。\",\"evidence_ids\":[\"wn31:n:00410032\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"运作（运行/性能过程）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘运作’对应 wn31:n:13546752 的 process or manner of functioning or operating。\",\"evidence_ids\":[\"wn31:n:13546752\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"手术（医疗程序）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘手术’对应 wn31:n:00672594 的 medical procedure involving an incision with instruments。\",\"evidence_ids\":[\"wn31:n:00672594\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"操作、运作、手术三个来源义均在核心层有独立链接，未发现来源覆盖缺口。\"},{\"id\":\"SG25-a3cca0ced5ec\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"肥胖（超常脂肪状态）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘肥胖（症）’覆盖通俗‘肥胖’，与 wn31:n:05007507 的 more than average fatness 相符。\",\"evidence_ids\":[\"wn31:n:05007507\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"肥胖症（医学/状态表述）\",\"relation\":\"合理概括\",\"reason\":\"以‘肥胖（症）’合并通俗与医学中文表述，未添加临床阈值；证据只支持超常脂肪状态，故用上位表达概括，不把肥胖症扩展成独立临床定义。\",\"evidence_ids\":[\"wn31:n:05007507\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个来源标签合并为同一状态表达，保留‘症’但不推导医学诊断阈值。\"},{\"id\":\"SG25-771ddab9b936\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"不清楚的（表达/理解不清）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘不清楚的’对应 wn31:s:00432720 的 not clearly expressed or understood。\",\"evidence_ids\":[\"wn31:s:00432720\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"鲜为人知的（不出名）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘鲜为人知的’对应 wn31:s:01126357 的 not famous or acclaimed。\",\"evidence_ids\":[\"wn31:s:01126357\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"使模糊（使不清楚）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘使模糊’对应 wn31:v:00314513 与 wn31:v:00622345 的 make obscure/unclear/indistinct。\",\"evidence_ids\":[\"wn31:v:00314513\",\"wn31:v:00622345\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"核心层后置理由偏弱\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-771ddab9b936:extended:1\"],\"evidence_ids\":[\"wn31:v:00314513\",\"wn31:v:00622345\"],\"reason\":\"动词‘使模糊’是独立来源义，已放扩展层；数据说明了词性分开，但未明确说明首屏后置的教学理由。\",\"repair_suggestion\":\"如保留后置，补充基于词性/使用场景的教学理由；不改变现有覆盖。\"}],\"note\":\"两个形容词来源义在核心层，动词‘使模糊’在扩展层保留，未发现语义覆盖丢失。\"}]}",
+  "usage": {
+    "prompt_tokens": 6892,
+    "completion_tokens": 13047,
+    "total_tokens": 19939,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11005
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4972
+  },
+  "started_utc": "2026-11-13T09:44:50.622401+00:00",
+  "completed_utc": "2026-11-13T09:46:04.608369+00:00",
+  "elapsed_seconds": 73.984,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

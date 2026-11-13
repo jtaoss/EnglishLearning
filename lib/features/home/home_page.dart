@@ -39,6 +39,13 @@ final class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(AppMetadata.title),
         actions: [
+          if (MediaQuery.sizeOf(context).width > 360)
+            IconButton(
+              key: const Key('switch-to-japanese'),
+              tooltip: '日本語 / 日语',
+              onPressed: () => context.push(AppRouter.japaneseHome),
+              icon: const Icon(Icons.translate_rounded),
+            ),
           IconButton(
             key: openSettingsKey,
             tooltip: '设置',
@@ -627,6 +634,85 @@ final class HomePage extends StatelessWidget {
                                         ),
                                       ),
                                     ],
+                                  ],
+                                ),
+                              ),
+
+                              // 4. Japanese Module Entry Card
+                              const SizedBox(height: 16),
+                              SectionCard(
+                                padding: const EdgeInsets.all(20),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          padding: const EdgeInsets.all(10),
+                                          decoration: BoxDecoration(
+                                            color: scheme.primaryContainer,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
+                                          child: Icon(
+                                            Icons.translate_rounded,
+                                            color: scheme.onPrimaryContainer,
+                                            size: 20,
+                                          ),
+                                        ),
+                                        const SizedBox(width: 12),
+                                        Expanded(
+                                          child: Wrap(
+                                            spacing: 8,
+                                            runSpacing: 4,
+                                            crossAxisAlignment:
+                                                WrapCrossAlignment.center,
+                                            children: [
+                                              Text(
+                                                '日本語学習 · 日语学习模块 (J1)',
+                                                style: theme
+                                                    .textTheme
+                                                    .titleSmall
+                                                    ?.copyWith(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
+                                              ),
+                                              const StatusBadge(
+                                                label: '五十音 + Pilot100',
+                                                status: 'neutral',
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      '零基础五十音图、假名练习与 100 词试点卡片学习。与英语数据完全物理隔离。',
+                                      style: theme.textTheme.bodySmall
+                                          ?.copyWith(
+                                            color: scheme.onSurfaceVariant,
+                                          ),
+                                    ),
+                                    const SizedBox(height: 12),
+                                    Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: OutlinedButton.icon(
+                                        key: const Key(
+                                          'open-japanese-module-btn',
+                                        ),
+                                        onPressed: () => context.push(
+                                          AppRouter.japaneseHome,
+                                        ),
+                                        icon: const Icon(
+                                          Icons.arrow_forward_rounded,
+                                          size: 16,
+                                        ),
+                                        label: const Text('进入日语'),
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_02_004",
+  "kind": "audit",
+  "request_hash": "fa96f214fe0ba27fcfeee622a74e441a6f43e056d822d276d4527a8c1a48cec8",
+  "input_ids": [
+    "SG25-85ca6d6d291c",
+    "SG25-0fee7196f681",
+    "SG25-d3db5338aae1",
+    "SG25-60c394d0e768",
+    "SG25-93a80394715c"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "d954f97c-d201-4045-aa4c-a8dfb6b05601",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-85ca6d6d291c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：行为、举止\",\"relation\":\"语义等价\",\"reason\":\"核心组‘行为’与 wn31:n:01223473 ‘manner of acting/controlling yourself’ 对应；另 n:04904939 也支持待人行为，组文本未加对象排他限制。\",\"evidence_ids\":[\"wn31:n:01223473\",\"wn31:n:04904939\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：组织、管理/主持（活动、事务）\",\"relation\":\"合理概括\",\"reason\":\"核心组‘组织’由 v:02450374 ‘direct the course of; manage/control’（conduct business）支撑，覆盖组织/管理活动；文本仍作一般‘组织’，未把‘business’示例写成唯一对象。\",\"evidence_ids\":[\"wn31:v:02450374\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"动词：指挥（可含音乐指挥或一般带领/指挥）\",\"relation\":\"范围收窄\",\"reason\":\"扩展组只以音乐指挥证据 v:01736802、v:01737094 支撑‘指挥’，而源‘指挥’未限定音乐；一般‘指挥/带领’的残余范围未在 union 中明确保留或暂存。\",\"evidence_ids\":[\"wn31:v:01736802\",\"wn31:v:01737094\"],\"context\":\"uncertain\",\"residual_scope\":\"源‘指挥’若泛指非音乐的一般指挥/带领，当前仅明确保留音乐指挥。\",\"counterexample\":\"v:02450374 ‘direct the course of; manage/control’ 显示 conduct 可泛指管理/指挥事务，非仅音乐指挥。\",\"counterexample_evidence_ids\":[\"wn31:v:02450374\"],\"risk\":\"suspected_Minor\"},{\"sid\":\"s004\",\"source_scope\":\"动词：传导（热、电、声等）\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘传导’与 v:02084180 ‘transmit or serve as the medium for transmission’（heat/sound 示例）在物理传导义上对应，示例未被写成排他限制。\",\"evidence_ids\":[\"wn31:v:02084180\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"残余范围/示例排他\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-85ca6d6d291c:extended:1\"],\"evidence_ids\":[\"wn31:v:01736802\",\"wn31:v:01737094\",\"wn31:v:02450374\"],\"reason\":\"源‘指挥’未注明仅音乐，扩展组注释放到音乐指挥；现有文本仍作‘指挥’，故非Major，但需说明音乐为常见语境而非排他，并保留一般‘指挥/带领’的待核残余。\",\"repair_suggestion\":\"在扩展组注明音乐指挥为常见用例而非唯一对象，并为一般‘指挥/带领’保留待核备注；不要新增无来源证据的独立义。\"}],\"note\":\"行为名词与组织/管理动词在核心；音乐指挥、物理传导在扩展。指挥的音乐限制被标为Minor残余范围，其余映射可审计。\"},{\"id\":\"SG25-0fee7196f681\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：介绍（使人相识/使了解）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘介绍’与 v:00902866 ‘cause to come to know personally’ 对应；组文本保持一般‘介绍’，未把‘使人相识’这一典型证据写成排他对象。\",\"evidence_ids\":[\"wn31:v:00902866\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：引入（新事物、制度、产品等）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘引入’由 v:01621712 ‘bring in or establish in a new place/environment’ 与 v:01645979 ‘bring something new to an environment’ 支撑，规则、外来水果等示例非排他。\",\"evidence_ids\":[\"wn31:v:01621712\",\"wn31:v:01645979\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘介绍’与‘引入’分列核心；介绍组保留一般表述，引入组有建立新事物/新环境的词典支撑。\"},{\"id\":\"SG25-d3db5338aae1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：介绍（使人相识/使公开认识）\",\"relation\":\"语义等价\",\"reason\":\"核心组‘介绍’与 n:07232009 ‘formally making a person known to another or to the public’ 对应；组文本未排除其他介绍场景。\",\"evidence_ids\":[\"wn31:n:07232009\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：引言、开头部分\",\"relation\":\"语义等价\",\"reason\":\"核心组‘引言’与 n:06408573 ‘the first section of a communication’ 对应，对象为文章/通信开头，不是所有介绍活动。\",\"evidence_ids\":[\"wn31:n:06408573\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：引进、引入新事物\",\"relation\":\"合理概括\",\"reason\":\"扩展组‘引进’由 n:00238889 ‘act of beginning something new’ 与 n:00241051 ‘introducing something new’ 支撑，覆盖引入新事物的活动；与‘介绍人’、‘文章引言’分开。\",\"evidence_ids\":[\"wn31:n:00238889\",\"wn31:n:00241051\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"介绍、文章引言在核心，引进新事物在扩展；三类名词用法均有词典证据且未互相冒充。\"},{\"id\":\"SG25-60c394d0e768\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：有生产力的、能产出/丰产的\",\"relation\":\"语义等价\",\"reason\":\"核心组合并文本‘有生产力的／能生产的’中的‘有生产力的’由 a:01871147 ‘producing or capable of producing (especially abundantly)’ 支撑；丰产、农田等为示例而非排他。\",\"evidence_ids\":[\"wn31:a:01871147\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：能生产的、具有产出能力\",\"relation\":\"语义等价\",\"reason\":\"核心组中的‘能生产的’由 a:01873245 ‘having the ability to produce or originate’ 支撑；与 s001 同属产出能力范围，合并展示未新增对象限制。\",\"evidence_ids\":[\"wn31:a:01873245\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个近义中文片段围绕产出能力合组在核心；均有对应形容词证据，未见来源范围缺口。\"},{\"id\":\"SG25-93a80394715c\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"动词：忍受、忍耐不愉快\",\"relation\":\"语义等价\",\"reason\":\"核心组‘忍受’与 v:00670017 ‘put up with something or somebody unpleasant’ 直接对应；v:02113644 ‘undergo/be subjected to’ 提供受难受苦的邻近支撑。\",\"evidence_ids\":[\"wn31:v:00670017\",\"wn31:v:02113644\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"动词：持续存在、延续\",\"relation\":\"语义等价\",\"reason\":\"扩展组‘持续存在’与 v:02653599 ‘continue to exist’、v:02710788 ‘persist for a specified period of time’ 对应；未把‘忍受’义混入。\",\"evidence_ids\":[\"wn31:v:02653599\",\"wn31:v:02710788\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"‘忍受’与‘持续存在’分属核心/扩展，词性和对象范围区分清楚，未发生互相借义覆盖。\"}]}",
+  "usage": {
+    "prompt_tokens": 6868,
+    "completion_tokens": 9676,
+    "total_tokens": 16544,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7610
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4948
+  },
+  "started_utc": "2026-11-13T09:43:09.184066+00:00",
+  "completed_utc": "2026-11-13T09:44:04.418945+00:00",
+  "elapsed_seconds": 55.234,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

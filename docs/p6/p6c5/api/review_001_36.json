@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_36",
+  "request_hash": "babc8fa83a557fe3a53ec8900d6ad3b1ea06474529d099adf6d0be4ec58ca53c",
+  "started_utc": "2026-11-13T08:16:13.921131+00:00",
+  "completed_utc": "2026-11-13T08:17:02.595567+00:00",
+  "elapsed_seconds": 48.688,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "1be602b1-9fcc-4909-9385-0af28e84ddb4",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2925,
+    "completion_tokens": 2452,
+    "total_tokens": 5377,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2244
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2925
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-2331eb33ce2c\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"Source has two noun senses: 哲学 and 人生观. Candidate core correctly maps 哲学 to WordNet wn31:n:06168062 (rational investigation of existence/knowledge/ethics) and 人生观 to wn31:n:05953535 (personal belief about how to live). Both are noun and match source POS. The additional WordNet sense wn31:n:05952149 (group/school belief system) is not represented in source text and is correctly placed as a dictionary addition with status AI_candidate_not_adopted; this does not contaminate the core. No source sense is omitted, no unsupported meaning is introduced, and no part-of-speech or directional mismatch is found.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

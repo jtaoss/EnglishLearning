@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_69",
+  "request_hash": "34e3cde051c35fd4dea4f3fca86304158526f4bbdf5d2fdd76d06939d3581d3f",
+  "started_utc": "2026-11-13T08:17:09.376574+00:00",
+  "completed_utc": "2026-11-13T08:18:18.360005+00:00",
+  "elapsed_seconds": 68.985,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c40dfc0b-d017-4880-8f3f-0fb6faf1269d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3290,
+    "completion_tokens": 3933,
+    "total_tokens": 7223,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3588
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1242
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-49a25f9feefa\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [\n        {\n          \"severity\": \"Info\",\n          \"kind\": \"unresolved_evidence\",\n          \"reason\": \"源片段“存储空间”常指抽象容量（如手机/电脑的存储空间），但候选核心组2的唯一证据 wn31:n:04336328 仅支持实体存放场所（仓库类），未单独验证抽象容量义；候选已备注但未将该义分离为暂存或独立候选。\",\n          \"evidence_ids\": [\"wn31:n:04336328\"],\n          \"source_sense_ids\": [\"s002\"],\n          \"candidate_group_ref\": \"SG25-49a25f9feefa:p6c5:core_meanings:2\",\n          \"proposed_fix\": \"可将抽象容量义标记为待验证或在 dictionary_additions 中单列，同时保留实体存放场所义；或补充支持容量义的证据。\"\n        }\n      ],\n      \"preferences\": [\n        \"教学上可优先呈现‘存储空间’的计算设备容量义，但在未有可靠频率证据前仅作为教学建议，不影响当前核心。\"\n      ],\n      \"note\": \"候选核心组1对“储存”的动作与状态处理基本合理，证据覆盖活动名词；核心组2覆盖了源片段字面，但抽象容量义的证据缺口已被候选备注，不构成当前翻译错误，仅属于待补强的证据不确定性。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

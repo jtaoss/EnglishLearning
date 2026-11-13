@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_042",
+  "kind": "verify",
+  "request_hash": "76a441edbcb12b85667374145ac5c3f4079a34a53dfdc312196206cc29952432",
+  "input_ids": [
+    "SG25-b111c6e1d318",
+    "SG25-9b4ef3e5b7b4"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "3c38eff0-035c-4a61-8f91-24e8443f5840",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-b111c6e1d318\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“陈述；声明”同时覆盖陈述内容和陈述行为；证据 wn31:n:06735202 表示被陈述/声明的消息，wn31:n:07217786 表示断言/陈述行为，二者合一覆盖原名词性“陈述”，未加额外限制。\",\n          \"evidence_ids\": [\"wn31:n:06735202\", \"wn31:n:07217786\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组包含“声明”，并由同一组证据中的 stated or declared message 及陈述行为覆盖；声明作为正式表述的名词用法可被该证据支持。\",\n          \"evidence_ids\": [\"wn31:n:06735202\", \"wn31:n:07217786\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组将“报表”限定为“收支等财务数据”的财务对账单/报表，仅使用 wn31:n:06528586（showing credits and debits）。该证据只支持财务单据子义；若原文“报表”泛指一般报表/统计表，则缺失此范围。目前无证据显示英文 statement 覆盖一般报表，故记为来源范围待核而非确认缺失。\",\n          \"evidence_ids\": [\"wn31:n:06528586\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"source_scope_pending\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-b111c6e1d318:p6c4:extended_meanings:1\"],\n          \"evidence_ids\": [\"wn31:n:06528586\"],\n          \"reason\": \"原中文“报表”通常不限于财务，目标组加入“收支等财务数据”形成事实上的财务化限制；但现有词典证据仅支持财务单据，未证明英文 statement 有一般报表义，不能视为已覆盖一般报表，需待核。\",\n          \"counterexample\": \"例如“统计报表/生产报表”属于中文“报表”，但现有英语证据未支持 statement 表示此类非财务报告；若源义包含这些，当前扩展组会窄化。\",\n          \"repair_suggestion\": \"在扩展组注释或 held 中明确：该义仅按现有英语证据的财务对账单/收支报表处理；一般报表义暂存待核，不静默等同为财务义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s003 源义“报表”是否仅指财务报表，还是包含一般统计/生产报表等，当前词典证据不足，需人工或更广泛词典核验。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"陈述/声明核心覆盖合理；报表按财务单据保留在扩展是正确的英语子义，但“报表”被财务化收窄是来源范围风险，已标 Minor，不上升到 Major。\"\n    },\n    {\n      \"id\": \"SG25-9b4ef3e5b7b4\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“车站；站”使用证据 wn31:n:04313218，其定义包含 train station 例证，且 broad facility 定义可覆盖交通站点，未添加排他限制。\",\n          \"evidence_ids\": [\"wn31:n:04313218\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“站”作为“车站”的同义/缩略表达，在源词性名词下指交通或专用设施站；目标组文本包含“车站；站”，证据 broad facility 定义同样覆盖，未因“站”字更宽而误加限制。\",\n          \"evidence_ids\": [\"wn31:n:04313218\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源“驻扎”可能包含状态义（部队驻扎在某地），目标动词组使用 wn31:v:01091334 assign to a station，该证据为及物“安排到岗位/驻地”，状态义仅能通过被动表达，未被独立覆盖；注释虽提示“限定理解”，但不足以确认为语义等价或明确收窄。\",\n          \"evidence_ids\": [\"wn31:v:01091334\"]\n        },\n        {\n          \"sid\": \"s004\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"源“安置”本身较宽，可泛指放置、安排；目标组将其限定为“安置到岗位/驻地”，仅证据 assign to a station 支持该狭窄义。注释承认“安置的广义需限定理解”，但缺少证据证明英文 station 能覆盖一般安置，故暂无法确定源义边界。\",\n          \"evidence_ids\": [\"wn31:v:01091334\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002“站”是否只指交通站点还是包含其他专用设施站（如广播站、加油站）在原文语境未明确；当前核心组使用 broad facility evidence，可兼容多数 station，但未单独保留非交通站义。\",\n        \"s003/s004 动词源义是否包含状态义（驻扎）和一般安置义；当前 evidence 仅 assign to a station，目标组用限定语提示限制，但状态/一般义未独立覆盖。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"名词覆盖充分；动词核心以 assign to a station 合并驻扎/安置，教学上合理且注释透明，但动词的状态/广义存在未决风险，不判 Major。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4284,
+    "completion_tokens": 8926,
+    "total_tokens": 13210,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7615
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2620
+  },
+  "started_utc": "2026-11-13T09:58:39.907529+00:00",
+  "completed_utc": "2026-11-13T10:00:44.109183+00:00",
+  "elapsed_seconds": 124.204,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

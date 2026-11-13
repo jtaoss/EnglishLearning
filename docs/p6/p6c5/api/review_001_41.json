@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_41",
+  "request_hash": "700d271d1ac5d4c560c5c81240e1a7d8dcdbd40644ce992ab3e748849ceeaa1d",
+  "started_utc": "2026-11-13T08:16:14.064800+00:00",
+  "completed_utc": "2026-11-13T08:17:21.718378+00:00",
+  "elapsed_seconds": 67.656,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "fdaaa6f6-3e16-4cb0-8f45-e53c98ba06d7",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3366,
+    "completion_tokens": 3511,
+    "total_tokens": 6877,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3302
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1318
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-982776aa0b87\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"教学提示：第二组动词核心将‘认为可能’（v:00923043）与‘认为有罪’（v:00926844）合并展示；两者同属正向怀疑，但为初学者可再细分为两个子用法。当前用法说明已区分，无需调整。\"\n      ],\n      \"note\": \"候选正确覆盖原中文动词和名词：动词拆为不信任（v:00689827）与认为可能/有罪（v:00923043,v:00926844），名词使用‘处于被怀疑状态的人’（n:10700830）。形容词和法律被告义作为 dictionary_additions 未并入核心，符合原中文范围；无确认错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

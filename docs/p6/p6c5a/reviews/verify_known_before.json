@@ -1,0 +1,35 @@
+{
+  "stage": "verify_known_before",
+  "kind": "verify",
+  "model_requested": "deepseek-v4-pro",
+  "record_count": 0,
+  "expected_count": 4,
+  "records": [],
+  "failures": [
+    {
+      "chunk": 1,
+      "ids": [
+        "SG25-7920fdeff9c5",
+        "SG25-e3f48726b892"
+      ],
+      "error_type": "KeyError",
+      "error": "'sid'",
+      "status": "incomplete_not_fabricated"
+    },
+    {
+      "chunk": 2,
+      "ids": [
+        "SG25-093e7d5fdbaa",
+        "SG25-bf0bb4ee60e2"
+      ],
+      "error_type": "ValueError",
+      "error": "Missing independent issue contrast",
+      "status": "incomplete_not_fabricated"
+    }
+  ],
+  "input_hash": "6c5ed7d7fe157d9633d2c012748fc234f0b9ec261acbe8959b083e6049978f08",
+  "response_files": [],
+  "all_output_AI_candidate": true,
+  "human_approved": false,
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950"
+}

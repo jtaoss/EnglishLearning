@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_54",
+  "request_hash": "e9311584a16861851ef47a2fd0fa5766c49f1970184239a2d11de6986929a800",
+  "started_utc": "2026-11-13T08:16:41.307467+00:00",
+  "completed_utc": "2026-11-13T08:17:08.953610+00:00",
+  "elapsed_seconds": 27.656,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "c30d5594-8cff-4a0c-8418-bb8aba1e8391",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3088,
+    "completion_tokens": 1502,
+    "total_tokens": 4590,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1378
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 1040
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-7b0363b65576\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"原文两个片段均为动词近义，候选合并为一组核心并提供动词证据，用法说明中区分了帮助与协助的辅助/从属角色。名词义（体育助攻、帮助行为）作为外部候选正确未采纳，未混入核心。无确认问题。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

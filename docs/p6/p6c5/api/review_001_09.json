@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_09",
+  "request_hash": "f4d56c53b6a626219e3b70a1f9f9d0b49ec9c2b06c7af6e0f51a7d65fd62b1d8",
+  "started_utc": "2026-11-13T08:16:13.281453+00:00",
+  "completed_utc": "2026-11-13T08:17:28.657782+00:00",
+  "elapsed_seconds": 75.375,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "08f5ff56-db95-46da-ad60-ee9db2e4c4af",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2950,
+    "completion_tokens": 3775,
+    "total_tokens": 6725,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3502
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2950
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-63ebfab6ce4e\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        {\n          \"scope\": \"teaching\",\n          \"suggestion\": \"核心合并符合首次学习需求；保留‘收集’待审可接受，后续如有英语证据支持物品收集，可考虑列入扩展。\"\n        }\n      ],\n      \"note\": \"核心组将s001 '拼凑' 与s003 '组合' 合并，证据wn31:v:01660471 'create by putting components or members together' 同时支持两者，词性与对象方向一致，合并合理。s002 '收集' 因词典证据仅涉及人群聚集或使人群聚集，与中文通常指收集物品/资料的对象不匹配，候选将其置于reserved_original_items并标记证据待审，处理正确。外部词典新增 '集合；聚集；使聚集' 未采用为源外候选，状态AI_candidate_not_adopted，未偷渡新义。source_POS_coverage字段为粗粒度标记，reserved_original_items已显式记录pending，不影响语义正确性。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

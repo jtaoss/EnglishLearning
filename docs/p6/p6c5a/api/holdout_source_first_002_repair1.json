@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_002_repair1",
+  "kind": "holdout",
+  "request_hash": "af466ef95d832f7281594697cf1060b7bb31343c821f1c83e0d8bd07e8d0ded4",
+  "input_ids": [
+    "SG25-c59ddd3f7ba6",
+    "SG25-c7ce66d0fb14"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "97b50c02-2031-49ea-8e96-7f00819b6457",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c59ddd3f7ba6\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"形容词，表示抽象的、非具体的；可用于概念、思想、性质等，也可指抽象艺术等，但来源未限定对象。\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"修饰名词，无特定对象限制；英语证据包含一般抽象、抽象思维、抽象艺术等子类，但来源仅为一般义。\",\n          \"evidence_ids\": [\n            \"wn31:a:00011776\",\n            \"wn31:s:00865713\",\n            \"wn31:s:01987622\"\n          ],\n          \"uncertainty\": \"低；来源范围宽泛，英语证据均属其子集，保留一般义不排除子类。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词，对文章、论点等主要内容所作的简要概括。\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"通常以文本、论述为对象，来源未附加其他限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:06480622\"\n          ],\n          \"uncertainty\": \"低；英语证据与中文“摘要”基本一致。\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"动词，表示从某物中提取、分离出来；但英语证据中无对应义项。\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"需要宾语，但无法确定其准确英语对应；暂不纳入核心。\",\n          \"evidence_ids\": [],\n          \"uncertainty\": \"高；提供的WordNet动词义不含extract/remove，可能缺失或不适用。\"\n        },\n        {\n          \"sid\": \"s004\",\n          \"scope_zh\": \"动词，对内容进行概括、总结；对象常为文本、理论等。\",\n          \"recommended_pos\": \"动词\",\n          \"required_context\": \"通常以文本、理论等为对象，无额外限制。\",\n          \"evidence_ids\": [\n            \"wn31:v:01010315\"\n          ],\n          \"uncertainty\": \"低；与“give an abstract (of)”一致。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"形容词：抽象的\",\n        \"名词：摘要\",\n        \"动词：概括\"\n      ],\n      \"deferred_source_ids\": [\n        \"s003\"\n      ],\n      \"deferral_reason\": \"动词“提取”在提供的英语词典证据中无对应义项，暂不纳入核心。\",\n      \"note\": \"未采用词典中“make off with belongings of others”（偷窃）及“consider abstractly”等动词义，因其不在来源范围；s003待核。\"\n    },\n    {\n      \"id\": \"SG25-c7ce66d0fb14\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"名词或动词，指尝试、努力做某事；词性由上下文决定。\",\n          \"recommended_pos\": \"名词/动词\",\n          \"required_context\": \"作名词时如“一次尝试”，作动词时如“尝试做某事”；无对象限制。\",\n          \"evidence_ids\": [\n            \"wn31:n:00787849\",\n            \"wn31:v:02535833\"\n          ],\n          \"uncertainty\": \"低；来源未指定词性，英语证据区分名词和动词，需保留两者。\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"名词或动词，指企图（带有意图的努力或尝试）；不额外添加负面色彩。\",\n          \"recommended_pos\": \"名词/动词\",\n          \"required_context\": \"作名词或动词均可，上下文决定词性；来源未标明贬义，保留中性尝试义。\",\n          \"evidence_ids\": [\n            \"wn31:n:00787849\",\n            \"wn31:v:02535833\"\n          ],\n          \"uncertainty\": \"中；中文“企图”有时含计划或不良意图色彩，但来源未注明，故保持中性。\"\n        }\n      ],\n      \"proposed_core\": [\n        \"名词/动词：尝试\",\n        \"名词/动词：企图\"\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"未采用名词义“act of attacking”（wn31:n:00775311），因不在来源范围；s001和s002均未指定词性，上下文决定名词或动词。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4179,
+    "completion_tokens": 3870,
+    "total_tokens": 8049,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2860
+    },
+    "prompt_cache_hit_tokens": 2944,
+    "prompt_cache_miss_tokens": 1235
+  },
+  "started_utc": "2026-11-13T09:34:15.186417+00:00",
+  "completed_utc": "2026-11-13T09:35:08.878055+00:00",
+  "elapsed_seconds": 53.703,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

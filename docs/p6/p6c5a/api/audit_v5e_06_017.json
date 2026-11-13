@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_06_017",
+  "kind": "audit",
+  "request_hash": "21ab75faa4ac2a4474c802c1dcc57c9aaf5a82a6af2a8072acb535f55c2ee472",
+  "input_ids": [
+    "SG25-a9eba7c405ea",
+    "SG25-2920981fe765",
+    "SG25-370aed697dc5",
+    "SG25-0145be012aa0",
+    "SG25-8517fce0bb21"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "5ad2d842-ac12-4cf6-8aaa-eed0b4350d95",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-a9eba7c405ea\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：温柔亲切的\",\"relation\":\"语义等价\",\"reason\":\"核心“温柔的”由 affection/gentleness 证据支持，保留原文态度义。\",\"evidence_ids\":[\"wn31:a:02457962\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：嫩的（食物易嚼/幼嫩柔弱）\",\"relation\":\"范围收窄\",\"reason\":\"核心仅以 easy to cut or chew 支持食物嫩，未保留幼小、植物嫩芽、身体柔弱等原文可涵盖范围。\",\"evidence_ids\":[\"wn31:a:02455719\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"缺幼嫩/植物嫩芽/身体柔弱等范围\",\"counterexample\":\"tender age；tender green shoots；tender feet\",\"counterexample_evidence_ids\":[\"wn31:s:01654003\",\"wn31:s:00710650\",\"wn31:a:02457239\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s003\",\"source_scope\":\"名词：投标/正式出价\",\"relation\":\"合理概括\",\"reason\":\"核心外“投标”由 formal proposal to buy at specified price 概括支持，商务/招投标语境已注。\",\"evidence_ids\":[\"wn31:n:07179737\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"动词：提出（宽泛）\",\"relation\":\"范围收窄\",\"reason\":\"英语 tender 限正式提出/递交（报价、辞呈等），候选已加注；源中文“提出”本身过宽，属来源待核而非泛化覆盖。\",\"evidence_ids\":[\"wn31:v:02301576\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"源中文宽于英语，泛泛“提出建议”等不由该词覆盖\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"},{\"sid\":\"s005\",\"source_scope\":\"动词：投标/提出报价\",\"relation\":\"合理概括\",\"reason\":\"由 propose payment/offer 支持商务投标报价；与名词投标分列不同词性。\",\"evidence_ids\":[\"wn31:v:02303593\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"scope_narrowing\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-a9eba7c405ea:p6c1:core:2\"],\"evidence_ids\":[\"wn31:s:01654003\",\"wn31:s:00710650\",\"wn31:a:02457239\"],\"reason\":\"核心只保留食物易嚼义，未把“幼小/植物嫩芽/身体柔弱”等有词典证据且中文“嫩的”可涵盖的用途放入任一层或明确暂存。\",\"repair_suggestion\":\"将核心改为带限制的“（食物）嫩的；易嚼的”，把“幼嫩的；柔弱的”补入扩展或明确列为待核剩余范围。\"},{\"severity\":\"Info\",\"kind\":\"source_scope_uncertainty\",\"source_ids\":[\"s004\"],\"group_ids\":[\"SG25-a9eba7c405ea:p6c1:other:2\"],\"evidence_ids\":[\"wn31:v:02301576\"],\"reason\":\"源中文“提出”宽于英语 tender 的正式递交/报价；候选已限制并加注，作为来源待核记录，不判生成器 Major。\",\"repair_suggestion\":\"保留“正式提出；递交”限制，并在来源说明中标注中文过宽；不要扩成泛泛提议。\"}],\"note\":\"核心保留“温柔”和食物“嫩”，但“嫩的”仅覆盖易嚼义，缺幼嫩/柔弱分支；动词“提出”已正确限定为正式递交，源中文偏宽留待核。\"},{\"id\":\"SG25-2920981fe765\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：令人烦恼的\",\"relation\":\"语义等价\",\"reason\":\"WordNet 定义含 causing annoyance，核心合并义保留该感受提示。\",\"evidence_ids\":[\"wn31:s:00752408\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"形容词：难处理的\",\"relation\":\"语义等价\",\"reason\":\"同一证据含 causing difficulty，核心合并义保留难度提示。\",\"evidence_ids\":[\"wn31:s:00752408\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个中文提示同属“造成困难/烦恼”的性质框架，已合并为单一核心组并保留两项感受/难度提示，无残余范围。\"},{\"id\":\"SG25-370aed697dc5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：贪婪的（过度渴求）\",\"relation\":\"合理概括\",\"reason\":\"核心以 avaricious/excessively desirous 证据概括过度获取/渴求，并用“财物等”说明典型对象，不把正常追求称贪婪。\",\"evidence_ids\":[\"wn31:s:00030046\",\"wn31:s:00891770\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“贪婪的”已保留过度渴求财物/名声的核心性质，并排除正常积极追求；贪吃义属词典补充，未强并入原文。\"},{\"id\":\"SG25-0145be012aa0\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：林中小径\",\"relation\":\"语义等价\",\"reason\":\"other“林中小径”由 long narrow passage (as in woods) 支持，虽后置但未丢失。\",\"evidence_ids\":[\"wn31:n:02697041\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：狭长通道\",\"relation\":\"语义等价\",\"reason\":\"core“狭长通道”由 long narrow passage 支持，与“过道”并列为通道大类。\",\"evidence_ids\":[\"wn31:n:02697041\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：过道\",\"relation\":\"语义等价\",\"reason\":\"“过道”由 passageway between seating/shelves 支持。\",\"evidence_ids\":[\"wn31:n:02696719\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"座位/货架间过道与狭长通道在核心并列，林中狭长通道有词典依据并留在 other；三层级联合覆盖三个源义项，无缺口。\"},{\"id\":\"SG25-8517fce0bb21\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：粗俗的（无教养/不雅，含下流言语举止）\",\"relation\":\"范围收窄\",\"reason\":\"核心仅链接 lacking refinement/cultivation/taste 的无教养义，未明确覆盖言语/手势下流或猥亵义。\",\"evidence_ids\":[\"wn31:s:01957020\"],\"context\":\"uncertain\",\"residual_scope\":\"缺粗俗言语/手势/猥亵义\",\"counterexample\":\"vulgar gesture；coarse language\",\"counterexample_evidence_ids\":[\"wn31:s:00686808\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"missing_subuse_evidence\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-8517fce0bb21:p6c1:core:1\"],\"evidence_ids\":[\"wn31:s:00686808\"],\"reason\":\"“粗俗的”现代常用范围包含下流言语/手势，核心只给无教养/不雅一义证据，未拆分或暂存。\",\"repair_suggestion\":\"在核心组补入 s:00686808 作为言语/手势下流义证据，或拆分“无教养/不雅”与“下流/猥亵”并明确层级；不要把日常/大众义混入。\"}],\"note\":\"核心保留“无教养/不雅”的可靠证据，但未明确覆盖言语/手势下流义；日常/大众义按理由未混入，作为来源待核。\"}]}",
+  "usage": {
+    "prompt_tokens": 6021,
+    "completion_tokens": 12851,
+    "total_tokens": 18872,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10846
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4101
+  },
+  "started_utc": "2026-11-13T09:50:57.347444+00:00",
+  "completed_utc": "2026-11-13T09:52:07.733827+00:00",
+  "elapsed_seconds": 70.375,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

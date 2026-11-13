@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_034",
+  "kind": "verify",
+  "request_hash": "c1e3d27de95ed1e01ff80e2ba9e0ba45a029aefe696df5afd036956992887556",
+  "input_ids": [
+    "SG25-4bab36ce40d3",
+    "SG25-77ede212aeb4"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "2016041f-d568-4c44-a903-b7af3b1522c4",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-4bab36ce40d3\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"僵硬的（物理上不易弯曲/僵硬）\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组保留不易弯曲义，证据 wn31:s:01027321 直接支持；固定不动义证据另见 unresolved。\",\n          \"evidence_ids\": [\"wn31:s:01027321\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"严格的（规则/标准要求严，或不可妥协的严格）\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组限定在缺乏灵活性/不可妥协语境；英语 rigid 的严格义证据仅支持该子集，一般严格是否在源范围仍待核。\",\n          \"evidence_ids\": [\"wn31:s:02446199\", \"wn31:s:01032766\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"wn31:s:01568996（fixed and unmoving）未被任何组采用；原文 '僵硬的' 可能包含该义，但缺乏语境不足以确认遗漏。\",\n        \"s002 一般严格（stringent rules/standards）可能宽于英语 rigid 证据，属来源范围待核，不宜直接判为生成器缺陷。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心物理义合理；严格义在扩展中限定正确。无已确认漏义。\"\n    },\n    {\n      \"id\": \"SG25-77ede212aeb4\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"source_scope\": \"调节数值、程度或速率\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组以“调节”对应 adjust/fix time, amount, degree, or rate，原文“调节”在该英语词义内得到保留。\",\n          \"evidence_ids\": [\"wn31:v:00300122\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"source_scope\": \"管理（宽泛）\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"原文“管理”可泛指组织管理，但英语 regulate 的已给证据仅支持按规则约束/使合规；扩展组限定正确，但宽泛来源范围仍属来源待核。\",\n          \"evidence_ids\": [\"wn31:v:02517217\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"source_scope\": \"控制（宽泛）\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"扩展组只保留“按规则约束或使合规”的控制，而原文“控制”还可涵盖对排放、声音、液体等的抑制；已提供 wn31:v:00235689 支持后一范围，却未被任何组保留或显式暂存。\",\n          \"evidence_ids\": [\"wn31:v:02517217\", \"wn31:v:00235689\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope_missing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-77ede212aeb4:extended:1\"],\n          \"evidence_ids\": [\"wn31:v:00235689\"],\n          \"reason\": \"来源 s003 '控制' 还包括对声音、液体、排放等的抑制；已提供证据 wn31:v:00235689 明确支持该义，但所有层级均未保留或暂存。\",\n          \"counterexample\": \"regulate emissions / regulate the flow (控制排放/流量)\",\n          \"repair_suggestion\": \"在扩展或暂存中增加 '控制（抑制声音/流体/排放等）'，或说明原文只取规则合规控制并保留来源待核。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s002 '管理' 宽于英语 regulate 的规则管控义；来源范围待核，非生成器 Major。\",\n        \"已供证据 wn31:v:00702806（shape/influence/direct）可能对应 '控制' 的引导/影响义，未采用且无源语境；是否需要保留待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"s001 调节等价；s003 控制缺抑制排放/声音等义，建议补充或暂存；s002 管理宽泛为来源待核。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4357,
+    "completion_tokens": 6073,
+    "total_tokens": 10430,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5064
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2693
+  },
+  "started_utc": "2026-11-13T09:58:25.304817+00:00",
+  "completed_utc": "2026-11-13T09:59:48.237212+00:00",
+  "elapsed_seconds": 82.938,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

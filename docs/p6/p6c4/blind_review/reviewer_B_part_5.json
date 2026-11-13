@@ -1,0 +1,2642 @@
+{
+  "protocol": "source_first_blind_review_v4_1",
+  "context": "fresh_fork_none_source_only",
+  "input_sha256": "d5baa0688b4b7e21021f87d0a8aff719588519cdec66dba6fedf52b5345a8d07",
+  "model_configuration": "inherited_parent_unexposed",
+  "backend_model_id": null,
+  "actual_tokens": null,
+  "actual_cost": null,
+  "reviewer": "B",
+  "part": 5,
+  "count": 10,
+  "records": [
+    {
+      "stable_id": "SG25-3424482393d1",
+      "headword": "rhetoric",
+      "source_hash": "e19d13693a6dacccf78a27ea3991c9f6a5147e25a9ade1d7dd376b7ef7b5819f",
+      "original_meaning_zh": "修辞；华丽或空洞的言辞",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "修辞",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "华丽或空洞的言辞",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 11
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "修辞；有效表达的技巧",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:07086738"
+          ],
+          "usage_note": "有效使用语言以取悦或说服，不要求言辞空洞或花哨。",
+          "semantic_roles": "语言运用技巧/活动"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "华丽或空洞的言辞",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:06621856",
+            "wn31:n:07084469"
+          ],
+          "usage_note": "“或”表示不同评价侧面：辞藻过度装饰与空洞大话不强制同时成立。",
+          "semantic_roles": "表达风格/言辞内容",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "空洞的大话",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:06621856"
+              ],
+              "usage_note": "声音大而混乱、缺内容的言谈；是评价性用法。",
+              "semantic_roles": "空洞言辞"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "浮夸的辞藻；过度华丽的表达",
+              "source_sense_ids": [
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:07084469"
+              ],
+              "usage_note": "高调华美、过度装饰语言的风格，不自动等于所有修辞技巧。",
+              "semantic_roles": "过度装饰的表达风格"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "修辞学",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06180214"
+          ],
+          "usage_note": "研究有效语言使用规则和技术的学科，与实际使用技巧的活动分开。",
+          "semantic_roles": "研究语言技巧的学科"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "修辞；有效表达的技巧",
+          "semantic_roles": "语言运用技巧/活动",
+          "evidence_ids": [
+            "wn31:n:07086738"
+          ],
+          "layer": "core_meanings",
+          "display_group": "修辞；有效表达的技巧",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "有效使用语言以取悦或说服，不要求言辞空洞或花哨。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "空洞的大话",
+          "semantic_roles": "空洞言辞",
+          "evidence_ids": [
+            "wn31:n:06621856"
+          ],
+          "layer": "core_meanings",
+          "display_group": "华丽或空洞的言辞",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "声音大而混乱、缺内容的言谈；是评价性用法。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "浮夸的辞藻；过度华丽的表达",
+          "semantic_roles": "过度装饰的表达风格",
+          "evidence_ids": [
+            "wn31:n:07084469"
+          ],
+          "layer": "core_meanings",
+          "display_group": "华丽或空洞的言辞",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "高调华美、过度装饰语言的风格，不自动等于所有修辞技巧。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "修辞学",
+          "semantic_roles": "研究语言技巧的学科",
+          "evidence_ids": [
+            "wn31:n:06180214"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "修辞学",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "研究有效语言使用规则和技术的学科，与实际使用技巧的活动分开。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "修辞",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "修辞；有效表达的技巧",
+              "evidence_ids": [
+                "wn31:n:07086738"
+              ],
+              "explanation": "有效使用语言以取悦或说服，不要求言辞空洞或花哨。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "名词",
+              "display_zh": "修辞学",
+              "evidence_ids": [
+                "wn31:n:06180214"
+              ],
+              "explanation": "研究有效语言使用规则和技术的学科，与实际使用技巧的活动分开。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s002",
+          "original_text": "华丽或空洞的言辞",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "名词",
+              "display_zh": "空洞的大话",
+              "evidence_ids": [
+                "wn31:n:06621856"
+              ],
+              "explanation": "声音大而混乱、缺内容的言谈；是评价性用法。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "浮夸的辞藻；过度华丽的表达",
+              "evidence_ids": [
+                "wn31:n:07084469"
+              ],
+              "explanation": "高调华美、过度装饰语言的风格，不自动等于所有修辞技巧。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "中性的表达技巧与评价性的空话/辞藻分别首记，研究学科后学；不把同一原片段“华丽或空洞”误压成必须既华丽又空洞。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06180214",
+          "part_of_speech": "n",
+          "definition_en": "study of the technique and rules for using language effectively (especially in public speaking)",
+          "lemmas": [
+            "rhetoric"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06621856",
+          "part_of_speech": "n",
+          "definition_en": "loud and confused and empty talk; \"mere rhetoric\"",
+          "lemmas": [
+            "palaver",
+            "hot_air",
+            "empty_words",
+            "empty_talk",
+            "rhetoric"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07084469",
+          "part_of_speech": "n",
+          "definition_en": "high-flown style; excessive use of verbal ornamentation; \"the grandiosity of his prose\"; \"an excessive ornateness of language\"",
+          "lemmas": [
+            "grandiosity",
+            "magniloquence",
+            "ornateness",
+            "grandiloquence",
+            "rhetoric"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07086738",
+          "part_of_speech": "n",
+          "definition_en": "using language effectively to please or persuade",
+          "lemmas": [
+            "rhetoric"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-2920981fe765",
+      "headword": "troublesome",
+      "source_hash": "f95e25cc9c7a36005c9ecf64a89c4e4a880885089f6a4919765f41f0c46618c9",
+      "original_meaning_zh": "令人烦恼的；难处理的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "令人烦恼的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "难处理的",
+          "part_of_speech": "形容词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 10
+        }
+      ],
+      "source_part_of_speech": "形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "令人烦恼的；难处理的",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:s:00752408"
+          ],
+          "usage_note": "会引起困难或烦扰，修饰感染、情况等；不是感到烦恼的人自身情绪。",
+          "semantic_roles": "造成困难/烦扰的对象"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "令人烦恼的；难处理的",
+          "semantic_roles": "造成困难/烦扰的对象",
+          "evidence_ids": [
+            "wn31:s:00752408"
+          ],
+          "layer": "core_meanings",
+          "display_group": "令人烦恼的；难处理的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "会引起困难或烦扰，修饰感染、情况等；不是感到烦恼的人自身情绪。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "两段分别突出difficulty与annoyance，可合在一个使人遇到麻烦的形容词功能里；保留造成者方向即足够清楚。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:s:00752408",
+          "part_of_speech": "s",
+          "definition_en": "causing difficulty or annoyance; \"a troublesome infection\"; \"a troublesome situation\"",
+          "lemmas": [
+            "troublesome"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-ca00fccfb408",
+      "headword": "error",
+      "source_hash": "ee2c849318b2a217a0b311309beeaf80a43cec55d49e4b4f2ff733f92bda7bdf",
+      "original_meaning_zh": "失误；弄错；错误",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "失误",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "弄错",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "错误",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "错误；失误",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:00071785",
+            "wn31:n:04809878",
+            "wn31:n:06782183"
+          ],
+          "usage_note": "行为失误、非故意的错误状态及陈述中错处均属名词；中文“弄错”不据字形反推英语动词。",
+          "semantic_roles": "错误行为/状态/内容",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "失误；弄错（名词提示）",
+              "source_sense_ids": [
+                "s001",
+                "s002"
+              ],
+              "evidence_ids": [
+                "wn31:n:00071785"
+              ],
+              "usage_note": "因判断失当、无知或疏忽而产生的错误行为。",
+              "semantic_roles": "错误行为"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "错误（非故意不正确）",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:n:04809878"
+              ],
+              "usage_note": "非故意的差错状态。",
+              "semantic_roles": "不正确状态"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（陈述中的）错误；错处",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:n:06782183"
+              ],
+              "usage_note": "陈述或文字中不正确的部分。",
+              "semantic_roles": "信息中错处"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "错误认识；误解",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:05904072"
+          ],
+          "usage_note": "因错误信息形成的错误观念，区别于陈述文本中的错误部分。",
+          "semantic_roles": "认知内容"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "失误；弄错（名词提示）",
+          "semantic_roles": "错误行为",
+          "evidence_ids": [
+            "wn31:n:00071785"
+          ],
+          "layer": "core_meanings",
+          "display_group": "错误；失误",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "因判断失当、无知或疏忽而产生的错误行为。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "错误（非故意不正确）",
+          "semantic_roles": "不正确状态",
+          "evidence_ids": [
+            "wn31:n:04809878"
+          ],
+          "layer": "core_meanings",
+          "display_group": "错误；失误",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "非故意的差错状态。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（陈述中的）错误；错处",
+          "semantic_roles": "信息中错处",
+          "evidence_ids": [
+            "wn31:n:06782183"
+          ],
+          "layer": "core_meanings",
+          "display_group": "错误；失误",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "陈述或文字中不正确的部分。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "错误认识；误解",
+          "semantic_roles": "认知内容",
+          "evidence_ids": [
+            "wn31:n:05904072"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "错误认识；误解",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "因错误信息形成的错误观念，区别于陈述文本中的错误部分。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s003",
+          "original_text": "错误",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u002",
+              "part_of_speech": "名词",
+              "display_zh": "错误（非故意不正确）",
+              "evidence_ids": [
+                "wn31:n:04809878"
+              ],
+              "explanation": "非故意的差错状态。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "（陈述中的）错误；错处",
+              "evidence_ids": [
+                "wn31:n:06782183"
+              ],
+              "explanation": "陈述或文字中不正确的部分。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "名词",
+              "display_zh": "错误认识；误解",
+              "evidence_ids": [
+                "wn31:n:05904072"
+              ],
+              "explanation": "因错误信息形成的错误观念，区别于陈述文本中的错误部分。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [],
+      "priority_rationale": "首记通用错误/失误，同时在矩阵保留行为、状态和错误内容；错误认识后学。源字段明确名词，“弄错”的中文动词外形不改变英语词性。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00071785",
+          "part_of_speech": "n",
+          "definition_en": "a wrong action attributable to bad judgment or ignorance or inattention; \"he made a bad mistake\"; \"she was quick to point out my errors\"; \"I could understand his English in spite of his grammatical faults\"",
+          "lemmas": [
+            "mistake",
+            "error",
+            "fault"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04809878",
+          "part_of_speech": "n",
+          "definition_en": "inadvertent incorrectness",
+          "lemmas": [
+            "erroneousness",
+            "error"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:05904072",
+          "part_of_speech": "n",
+          "definition_en": "a misconception resulting from incorrect information",
+          "lemmas": [
+            "error",
+            "erroneous_belief"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06782183",
+          "part_of_speech": "n",
+          "definition_en": "part of a statement that is not correct; \"the book was full of errors\"",
+          "lemmas": [
+            "error",
+            "mistake"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-45e84635bc48",
+      "headword": "cap",
+      "source_hash": "a195dd24289d4e166eef94ca90d36aa8c3984b79f1d447d0b6096eac396603e4",
+      "original_meaning_zh": "帽子；盖子；上限",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "帽子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "盖子",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "上限",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "帽子（贴头式）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:02957776"
+          ],
+          "usage_note": "贴合头部的帽饰；不把所有帽型都作为该定义同样支持。",
+          "semantic_roles": "头部衣饰"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "盖子；罩",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:02958374",
+            "wn31:n:02958501"
+          ],
+          "usage_note": "瓶等物体顶部的盖子，或起覆盖保护作用的罩。",
+          "semantic_roles": "覆盖/保护实体"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "上限",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:06670391"
+          ],
+          "usage_note": "准许数量、价格等达到的最高限度。",
+          "semantic_roles": "数量/价格限制"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "给…设上限；限制",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00236954"
+          ],
+          "reason": "限制人数或金额，原文只明确名词上限，动作需另列。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "覆盖…的顶部",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02699010"
+          ],
+          "reason": "雪等位于山顶作覆盖物，主语是覆盖物，不是盖帽的施事。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（牙科）牙冠",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:03143740"
+          ],
+          "reason": "用于破损或龋坏牙齿的人工冠，专业实体不能由普通盖子自动收录。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "帽子（贴头式）",
+          "semantic_roles": "头部衣饰",
+          "evidence_ids": [
+            "wn31:n:02957776"
+          ],
+          "layer": "core_meanings",
+          "display_group": "帽子（贴头式）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "贴合头部的帽饰；不把所有帽型都作为该定义同样支持。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "盖子；罩",
+          "semantic_roles": "覆盖/保护实体",
+          "evidence_ids": [
+            "wn31:n:02958374",
+            "wn31:n:02958501"
+          ],
+          "layer": "core_meanings",
+          "display_group": "盖子；罩",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "瓶等物体顶部的盖子，或起覆盖保护作用的罩。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "上限",
+          "semantic_roles": "数量/价格限制",
+          "evidence_ids": [
+            "wn31:n:06670391"
+          ],
+          "layer": "core_meanings",
+          "display_group": "上限",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "准许数量、价格等达到的最高限度。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "给…设上限；限制",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00236954"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "限制人数或金额，原文只明确名词上限，动作需另列。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "覆盖…的顶部",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02699010"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "雪等位于山顶作覆盖物，主语是覆盖物，不是盖帽的施事。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（牙科）牙冠",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:03143740"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "用于破损或龋坏牙齿的人工冠，专业实体不能由普通盖子自动收录。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:03143740",
+            "wn31:v:00236954",
+            "wn31:v:02699010"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "衣饰、覆盖物与数量限制三组均有独立源片段；帽子需带形状范围，上限名词与设限动作分开。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:02957776",
+          "part_of_speech": "n",
+          "definition_en": "a tight-fitting headdress",
+          "lemmas": [
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:02958374",
+          "part_of_speech": "n",
+          "definition_en": "a top (as for a bottle)",
+          "lemmas": [
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:02958501",
+          "part_of_speech": "n",
+          "definition_en": "something serving as a cover or protection",
+          "lemmas": [
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:03143740",
+          "part_of_speech": "n",
+          "definition_en": "(dentistry) dental appliance consisting of an artificial crown for a broken or decayed tooth; \"tomorrow my dentist will fit me for a crown\"",
+          "lemmas": [
+            "crown",
+            "crownwork",
+            "jacket",
+            "jacket_crown",
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:06670391",
+          "part_of_speech": "n",
+          "definition_en": "an upper limit on what is allowed; \"he put a ceiling on the number of women who worked for him\"; \"there was a roof on salaries\"; \"they established a cap for prices\"",
+          "lemmas": [
+            "ceiling",
+            "roof",
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00236954",
+          "part_of_speech": "v",
+          "definition_en": "restrict the number or amount of; \"We had to cap the number of people we can accept into our club\"",
+          "lemmas": [
+            "cap"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02699010",
+          "part_of_speech": "v",
+          "definition_en": "lie at the top of; \"Snow capped the mountains\"",
+          "lemmas": [
+            "cap",
+            "crest"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-de0152f95277",
+      "headword": "chemistry",
+      "source_hash": "6a9797707071589a8606be26352fb31654aa0b90ad04b14fd7103b5258bc3a5f",
+      "original_meaning_zh": "化学",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "化学",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "化学",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06094057"
+          ],
+          "usage_note": "研究物质组成、性质与反应的自然科学分支。",
+          "semantic_roles": "学科"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "化学成分；化学性质",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14604732"
+          ],
+          "reason": "某物质/物体本身的组成与性质，和研究它的学科区分；原单一化学未明确。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（人际）合拍程度；相互吸引",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:13863157"
+          ],
+          "reason": "两人相处的关系特性，可有好坏；不只指正面默契，也不是学科隐喻已在源片段明确表达。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "化学",
+          "semantic_roles": "学科",
+          "evidence_ids": [
+            "wn31:n:06094057"
+          ],
+          "layer": "core_meanings",
+          "display_group": "化学",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "研究物质组成、性质与反应的自然科学分支。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "化学成分；化学性质",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14604732"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "某物质/物体本身的组成与性质，和研究它的学科区分；原单一化学未明确。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（人际）合拍程度；相互吸引",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:13863157"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "两人相处的关系特性，可有好坏；不只指正面默契，也不是学科隐喻已在源片段明确表达。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:13863157",
+            "wn31:n:14604732"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "来源只明确学科，先保留一个清晰核心；成分性质与两人相处是否合拍均是不同对象，作为候选公开待采用。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06094057",
+          "part_of_speech": "n",
+          "definition_en": "the science of matter; the branch of the natural sciences dealing with the composition of substances and their properties and reactions",
+          "lemmas": [
+            "chemistry",
+            "chemical_science"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13863157",
+          "part_of_speech": "n",
+          "definition_en": "the way two individuals relate to each other; \"their chemistry was wrong from the beginning -- they hated each other\"; \"a mysterious alchemy brought them together\"",
+          "lemmas": [
+            "chemistry",
+            "interpersonal_chemistry",
+            "alchemy"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14604732",
+          "part_of_speech": "n",
+          "definition_en": "the chemical composition and properties of a substance or object; \"the chemistry of soil\"",
+          "lemmas": [
+            "chemistry"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-22f0b24b528b",
+      "headword": "postcard",
+      "source_hash": "8c36ef054bc9741c7c6c4f04eb3f8f2651e0d113bb03c46b45c9d75071abaa2f",
+      "original_meaning_zh": "明信片",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "明信片",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 3
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "明信片",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:06640445"
+          ],
+          "usage_note": "不用信封、可直接邮寄写信的卡片。",
+          "semantic_roles": "邮寄卡片"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "明信片",
+          "semantic_roles": "邮寄卡片",
+          "evidence_ids": [
+            "wn31:n:06640445"
+          ],
+          "layer": "core_meanings",
+          "display_group": "明信片",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "不用信封、可直接邮寄写信的卡片。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "单一明确实体即可，无需为了多层结构添加不在来源中的贺卡或任何普通图片卡片。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:06640445",
+          "part_of_speech": "n",
+          "definition_en": "a card for sending messages by post without an envelope",
+          "lemmas": [
+            "postcard",
+            "post_card",
+            "postal_card",
+            "mailing-card"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-da4270e3735a",
+      "headword": "fit",
+      "source_hash": "7d31e9f91c9d45f50e51ec3754ffe1022a094d6a5f18366148233467894f7f86",
+      "original_meaning_zh": "合适；健康的",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "合适",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "健康的",
+          "part_of_speech": null,
+          "pos_evidence": "unresolved_multi_pos",
+          "start": 3,
+          "end": 6
+        }
+      ],
+      "source_part_of_speech": "动词；形容词",
+      "core_meanings": [
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "合适的；适用的",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:a:01024009"
+          ],
+          "usage_note": "达到特定目的所需标准，常由for/to等交代用途。",
+          "semantic_roles": "对象—用途/标准"
+        },
+        {
+          "part_of_speech": "形容词",
+          "display_zh": "健康的；身体健壮的",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:a:01020753"
+          ],
+          "usage_note": "身心健全/健康的状态；不根据第二个中文片段位置推词性。",
+          "semantic_roles": "人的健康状况"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "合适；合身；符合需要",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:02665841",
+            "wn31:v:02741628",
+            "wn31:v:02708690",
+            "wn31:v:01185870"
+          ],
+          "usage_note": "尺寸/形状合适及符合需要两种对象维度均有动词定义；原“合适”可跨动词、形容词作AI拆解。",
+          "semantic_roles": "物—尺寸/形状/需要",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "合身；大小形状合适",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:02665841",
+                "wn31:v:02741628"
+              ],
+              "usage_note": "衣物、拼图块等形状尺寸正合适，主体是合适之物。",
+              "semantic_roles": "物体—空间/穿着者"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "符合；适合（需要等）",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:v:02708690",
+                "wn31:v:01185870"
+              ],
+              "usage_note": "物事满足需要或符合条件，未必涉及尺寸。",
+              "semantic_roles": "物事—需要/限制"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "装入；安放",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00300894"
+          ],
+          "reason": "把物件装入空间或调整人/物的位置，是施事使受事适配的动作。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "使合身；调整到合适",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:00301318"
+          ],
+          "reason": "调整衣物等使其适合，和物本来合身方向不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "动词",
+          "meaning_zh": "为…配备",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:v:02344409"
+          ],
+          "reason": "为特定目的提供所需装备，原合适未明确表达给予装备。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "合身程度",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:04937484"
+          ],
+          "reason": "衣物等合身的方式/程度，源词性没有名词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（咳嗽等）一阵发作",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14106270"
+          ],
+          "reason": "突然难以控制的一阵发作，不是健康形容词。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "发脾气",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14429707"
+          ],
+          "reason": "情绪爆发事件，与健康/合身功能不同。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "合适的；适用的",
+          "semantic_roles": "对象—用途/标准",
+          "evidence_ids": [
+            "wn31:a:01024009"
+          ],
+          "layer": "core_meanings",
+          "display_group": "合适的；适用的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "达到特定目的所需标准，常由for/to等交代用途。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "形容词",
+          "display_zh": "健康的；身体健壮的",
+          "semantic_roles": "人的健康状况",
+          "evidence_ids": [
+            "wn31:a:01020753"
+          ],
+          "layer": "core_meanings",
+          "display_group": "健康的；身体健壮的",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "身心健全/健康的状态；不根据第二个中文片段位置推词性。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "合身；大小形状合适",
+          "semantic_roles": "物体—空间/穿着者",
+          "evidence_ids": [
+            "wn31:v:02665841",
+            "wn31:v:02741628"
+          ],
+          "layer": "core_meanings",
+          "display_group": "合适；合身；符合需要",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "衣物、拼图块等形状尺寸正合适，主体是合适之物。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "符合；适合（需要等）",
+          "semantic_roles": "物事—需要/限制",
+          "evidence_ids": [
+            "wn31:v:02708690",
+            "wn31:v:01185870"
+          ],
+          "layer": "core_meanings",
+          "display_group": "合适；合身；符合需要",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "物事满足需要或符合条件，未必涉及尺寸。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "装入；安放",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00300894"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把物件装入空间或调整人/物的位置，是施事使受事适配的动作。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "使合身；调整到合适",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:00301318"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "调整衣物等使其适合，和物本来合身方向不同。"
+        },
+        {
+          "use_id": "u007",
+          "source_sense_ids": [],
+          "part_of_speech": "动词",
+          "display_zh": "为…配备",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:v:02344409"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "为特定目的提供所需装备，原合适未明确表达给予装备。"
+        },
+        {
+          "use_id": "u008",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "合身程度",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:04937484"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "衣物等合身的方式/程度，源词性没有名词。"
+        },
+        {
+          "use_id": "u009",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（咳嗽等）一阵发作",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14106270"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "突然难以控制的一阵发作，不是健康形容词。"
+        },
+        {
+          "use_id": "u010",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "发脾气",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14429707"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "情绪爆发事件，与健康/合身功能不同。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "合适",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "形容词",
+              "display_zh": "合适的；适用的",
+              "evidence_ids": [
+                "wn31:a:01024009"
+              ],
+              "explanation": "达到特定目的所需标准，常由for/to等交代用途。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "动词",
+              "display_zh": "合身；大小形状合适",
+              "evidence_ids": [
+                "wn31:v:02665841",
+                "wn31:v:02741628"
+              ],
+              "explanation": "衣物、拼图块等形状尺寸正合适，主体是合适之物。"
+            },
+            {
+              "use_id": "u004",
+              "part_of_speech": "动词",
+              "display_zh": "符合；适合（需要等）",
+              "evidence_ids": [
+                "wn31:v:02708690",
+                "wn31:v:01185870"
+              ],
+              "explanation": "物事满足需要或符合条件，未必涉及尺寸。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:04937484",
+            "wn31:n:14106270",
+            "wn31:n:14429707",
+            "wn31:v:00300894",
+            "wn31:v:00301318",
+            "wn31:v:02344409"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "合适的性质、健康状态与合适的动词功能三组首记；同一合适片段通过具体定义支撑跨词性拆解，不机械给健康的也生成动词。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u003",
+            "u004"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "形容词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:a:01020753",
+          "part_of_speech": "a",
+          "definition_en": "physically and mentally sound or healthy; \"felt relaxed and fit after their holiday\"; \"keeps fit with diet and exercise\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:a:01024009",
+          "part_of_speech": "a",
+          "definition_en": "meeting adequate standards for a purpose; \"a fit subject for discussion\"; \"it is fit and proper that you be there\"; \"water fit to drink\"; \"fit for duty\"; \"do as you see fit to\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:04937484",
+          "part_of_speech": "n",
+          "definition_en": "the manner in which something fits; \"I admired the fit of her coat\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14106270",
+          "part_of_speech": "n",
+          "definition_en": "a sudden uncontrollable attack; \"a paroxysm of giggling\"; \"a fit of coughing\"; \"convulsions of laughter\"",
+          "lemmas": [
+            "paroxysm",
+            "fit",
+            "convulsion"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14429707",
+          "part_of_speech": "n",
+          "definition_en": "a display of bad temper; \"he had a fit\"; \"she threw a tantrum\"; \"he made a scene\"",
+          "lemmas": [
+            "fit",
+            "tantrum",
+            "scene",
+            "conniption"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00300894",
+          "part_of_speech": "v",
+          "definition_en": "insert or adjust several objects or people; \"Can you fit the toy into the box?\"; \"This man can't fit himself into our work environment\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:00301318",
+          "part_of_speech": "v",
+          "definition_en": "make fit; \"fit a dress\"; \"He fitted other pieces of paper to his cut-out\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01185870",
+          "part_of_speech": "v",
+          "definition_en": "fill, satisfy or meet a want or need or condtion ro restriction; \"does this paper meet the requirements for the degree?\"; \"This job doesn't match my dreams\"; \"meet a need\"",
+          "lemmas": [
+            "fit",
+            "conform_to",
+            "meet",
+            "satisfy",
+            "fill",
+            "fulfill",
+            "fulfil"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02344409",
+          "part_of_speech": "v",
+          "definition_en": "provide with (something) usually for a specific purpose; \"The expedition was equipped with proper clothing, food, and other necessities\"",
+          "lemmas": [
+            "equip",
+            "fit",
+            "fit_out",
+            "outfit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02665841",
+          "part_of_speech": "v",
+          "definition_en": "be the right size or shape; fit correctly or as desired; \"This piece won't fit into the puzzle\"",
+          "lemmas": [
+            "fit",
+            "go"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02708690",
+          "part_of_speech": "v",
+          "definition_en": "be agreeable or acceptable to; \"This suits my needs\"",
+          "lemmas": [
+            "suit",
+            "accommodate",
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02741628",
+          "part_of_speech": "v",
+          "definition_en": "conform to some shape or size; \"How does this shirt fit?\"",
+          "lemmas": [
+            "fit"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-80c1018a4c8f",
+      "headword": "curve",
+      "source_hash": "aac885bd182fa66d071008e4494d854ecf1fcf4ea3e7a8a36a16b6b7bb0a5a83",
+      "original_meaning_zh": "名词：曲线，弯道；动词：弯曲",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "曲线",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "弯道",
+          "part_of_speech": "名词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "弯曲",
+          "part_of_speech": "动词",
+          "pos_evidence": "explicit_gloss_label",
+          "start": 12,
+          "end": 14
+        }
+      ],
+      "source_part_of_speech": "名词；动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "曲线",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:n:13890262",
+            "wn31:n:07013729"
+          ],
+          "usage_note": "弯曲轨迹及图表中的数据线均保留；图表线不必被理解成道路弯道。",
+          "semantic_roles": "几何轨迹/数据表达",
+          "sub_uses": [
+            {
+              "part_of_speech": "名词",
+              "display_zh": "曲线；弧形线",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:13890262"
+              ],
+              "usage_note": "运动方向变化的点所形成的轨迹。",
+              "semantic_roles": "几何轨迹"
+            },
+            {
+              "part_of_speech": "名词",
+              "display_zh": "（图表）曲线",
+              "source_sense_ids": [
+                "s001"
+              ],
+              "evidence_ids": [
+                "wn31:n:07013729"
+              ],
+              "usage_note": "表示数据的一条图表线。",
+              "semantic_roles": "数据表示"
+            }
+          ]
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "弯道",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:n:02832880"
+          ],
+          "usage_note": "道路、河流或铁路等弯曲的一段。",
+          "semantic_roles": "道路/河道等实体段"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "弯曲；使弯曲",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:v:02038516"
+          ],
+          "usage_note": "定义直接同时支持自身弯曲与使物弯曲，须保存方向而不另造源片段。",
+          "semantic_roles": "弯曲主体/使动者—受事",
+          "sub_uses": [
+            {
+              "part_of_speech": "动词",
+              "display_zh": "弯曲",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:v:02038516"
+              ],
+              "usage_note": "物体或道路自身呈弯曲/变弯。",
+              "semantic_roles": "弯曲主体自身"
+            },
+            {
+              "part_of_speech": "动词",
+              "display_zh": "使弯曲",
+              "source_sense_ids": [
+                "s003"
+              ],
+              "evidence_ids": [
+                "wn31:v:02038516"
+              ],
+              "usage_note": "使手指等受事变弯，施事与受事分开。",
+              "semantic_roles": "使动者—受事"
+            }
+          ]
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（棒球）曲球",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00108695"
+          ],
+          "reason": "带旋转、接近击球员时轨迹弯曲的投球，不能由曲线图形直接视作已收录。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "曲线；弧形线",
+          "semantic_roles": "几何轨迹",
+          "evidence_ids": [
+            "wn31:n:13890262"
+          ],
+          "layer": "core_meanings",
+          "display_group": "曲线",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "运动方向变化的点所形成的轨迹。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "（图表）曲线",
+          "semantic_roles": "数据表示",
+          "evidence_ids": [
+            "wn31:n:07013729"
+          ],
+          "layer": "core_meanings",
+          "display_group": "曲线",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "表示数据的一条图表线。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "弯道",
+          "semantic_roles": "道路/河道等实体段",
+          "evidence_ids": [
+            "wn31:n:02832880"
+          ],
+          "layer": "core_meanings",
+          "display_group": "弯道",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "道路、河流或铁路等弯曲的一段。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "弯曲",
+          "semantic_roles": "弯曲主体自身",
+          "evidence_ids": [
+            "wn31:v:02038516"
+          ],
+          "layer": "core_meanings",
+          "display_group": "弯曲；使弯曲",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "物体或道路自身呈弯曲/变弯。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "使弯曲",
+          "semantic_roles": "使动者—受事",
+          "evidence_ids": [
+            "wn31:v:02038516"
+          ],
+          "layer": "core_meanings",
+          "display_group": "弯曲；使弯曲",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "使手指等受事变弯，施事与受事分开。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（棒球）曲球",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00108695"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "带旋转、接近击球员时轨迹弯曲的投球，不能由曲线图形直接视作已收录。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s001",
+          "original_text": "曲线",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "曲线；弧形线",
+              "evidence_ids": [
+                "wn31:n:13890262"
+              ],
+              "explanation": "运动方向变化的点所形成的轨迹。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "名词",
+              "display_zh": "（图表）曲线",
+              "evidence_ids": [
+                "wn31:n:07013729"
+              ],
+              "explanation": "表示数据的一条图表线。"
+            }
+          ]
+        },
+        {
+          "source_sense_id": "s003",
+          "original_text": "弯曲",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u004",
+              "part_of_speech": "动词",
+              "display_zh": "弯曲",
+              "evidence_ids": [
+                "wn31:v:02038516"
+              ],
+              "explanation": "物体或道路自身呈弯曲/变弯。"
+            },
+            {
+              "use_id": "u005",
+              "part_of_speech": "动词",
+              "display_zh": "使弯曲",
+              "evidence_ids": [
+                "wn31:v:02038516"
+              ],
+              "explanation": "使手指等受事变弯，施事与受事分开。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:00108695"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "图形线、实体弯道与弯曲动作三组首记；曲线和弯曲内部的用途/方向另存逐用法证据，既不丢区别也不强制增加首屏组数。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        },
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u004",
+            "u005"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00108695",
+          "part_of_speech": "n",
+          "definition_en": "a pitch of a baseball that is thrown with spin so that its path curves as it approaches the batter",
+          "lemmas": [
+            "curve",
+            "curve_ball",
+            "breaking_ball",
+            "bender"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:02832880",
+          "part_of_speech": "n",
+          "definition_en": "curved segment (of a road or river or railroad track etc.)",
+          "lemmas": [
+            "bend",
+            "curve"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:07013729",
+          "part_of_speech": "n",
+          "definition_en": "a line on a graph representing data",
+          "lemmas": [
+            "curve"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:13890262",
+          "part_of_speech": "n",
+          "definition_en": "the trace of a point whose direction of motion changes",
+          "lemmas": [
+            "curve",
+            "curved_shape"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:02038516",
+          "part_of_speech": "v",
+          "definition_en": "bend or cause to bend; \"He crooked his index finger\"; \"the road curved sharply\"",
+          "lemmas": [
+            "crook",
+            "curve"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-1431179c8c61",
+      "headword": "propel",
+      "source_hash": "f208b3068a321fe5417452e2598068d0615ae7c9dc7be4b53a5110c7e7865297",
+      "original_meaning_zh": "推动；驱使",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "推动",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "驱使",
+          "part_of_speech": "动词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        }
+      ],
+      "source_part_of_speech": "动词",
+      "core_meanings": [
+        {
+          "part_of_speech": "动词",
+          "display_zh": "推动（使向前运动）",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "evidence_ids": [
+            "wn31:v:01514338"
+          ],
+          "usage_note": "力或动力使物体向前移动。",
+          "semantic_roles": "动力/施力者—物体运动"
+        },
+        {
+          "part_of_speech": "动词",
+          "display_zh": "驱使；促使",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "evidence_ids": [
+            "wn31:v:01653541"
+          ],
+          "usage_note": "给予行动动机，使人采取行动，不必真有物理推力。",
+          "semantic_roles": "动机—采取行动的人"
+        }
+      ],
+      "extended_meanings": [],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "推动（使向前运动）",
+          "semantic_roles": "动力/施力者—物体运动",
+          "evidence_ids": [
+            "wn31:v:01514338"
+          ],
+          "layer": "core_meanings",
+          "display_group": "推动（使向前运动）",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "力或动力使物体向前移动。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s002"
+          ],
+          "part_of_speech": "动词",
+          "display_zh": "驱使；促使",
+          "semantic_roles": "动机—采取行动的人",
+          "evidence_ids": [
+            "wn31:v:01653541"
+          ],
+          "layer": "core_meanings",
+          "display_group": "驱使；促使",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "给予行动动机，使人采取行动，不必真有物理推力。"
+        }
+      ],
+      "semantic_splits": [],
+      "source_findings": [],
+      "priority_rationale": "物理推动与行为动机对象不同，两组能直接解释原文；驱使不必只理解成暴力强迫。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": false,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "动词",
+          "recommended_use_ids": [
+            "u001",
+            "u002"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:v:01514338",
+          "part_of_speech": "v",
+          "definition_en": "cause to move forward with force; \"Steam propels this ship\"",
+          "lemmas": [
+            "propel",
+            "impel"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:v:01653541",
+          "part_of_speech": "v",
+          "definition_en": "give an incentive for action; \"This moved me to sacrifice my career\"",
+          "lemmas": [
+            "motivate",
+            "actuate",
+            "propel",
+            "move",
+            "prompt",
+            "incite"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "stable_id": "SG25-4ae1b844e0e9",
+      "headword": "tension",
+      "source_hash": "a5c1a6bacec699d72f365efb3d77ac5c81df0c463da885d148fb9491730e83c1",
+      "original_meaning_zh": "不安；压力；紧张",
+      "original_meanings": [
+        {
+          "source_sense_id": "s001",
+          "text": "不安",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "source_sense_id": "s002",
+          "text": "压力",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "source_sense_id": "s003",
+          "text": "紧张",
+          "part_of_speech": "名词",
+          "pos_evidence": "single_pos_field",
+          "start": 6,
+          "end": 8
+        }
+      ],
+      "source_part_of_speech": "名词",
+      "core_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "心理紧张；不安；压力",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14399593"
+          ],
+          "usage_note": "精神/情绪承受负担或悬念的状态；压力在此限心理，不充作物理压强。",
+          "semantic_roles": "人的心理/情绪状态"
+        },
+        {
+          "part_of_speech": "名词",
+          "display_zh": "紧张关系",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14004081"
+          ],
+          "usage_note": "人或群体间潜在敌意/对立，如国际关系紧张，不等同一个人的焦虑。",
+          "semantic_roles": "人/群体之间关系"
+        }
+      ],
+      "extended_meanings": [
+        {
+          "part_of_speech": "名词",
+          "display_zh": "身体紧绷；紧张状态",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "evidence_ids": [
+            "wn31:n:14567937"
+          ],
+          "usage_note": "身体或肌肉被拉紧、紧绷的状态；与心理感受区分。",
+          "semantic_roles": "身体/肌肉的受力状态"
+        }
+      ],
+      "other_meanings": [],
+      "reserved_original_items": [],
+      "dictionary_additions": [
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（物理）张力；拉力",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:11535484"
+          ],
+          "reason": "使弹性体伸长的应力；不能把源“压力”直接证明为压强或压缩方向。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "（艺术、思想等）张力",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:14025966"
+          ],
+          "reason": "相反因素/趋势间的相互制衡，不一定是心理焦虑或敌对关系。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        },
+        {
+          "part_of_speech": "名词",
+          "meaning_zh": "拉紧；张紧（动作）",
+          "source_sense_ids": [],
+          "evidence_ids": [
+            "wn31:n:00367501"
+          ],
+          "reason": "把物件拉紧的动作，区别于物体已绷紧的状态。",
+          "status": "AI_candidate_not_adopted",
+          "auto_promoted_to_core": false
+        }
+      ],
+      "usage_coverage_matrix": [
+        {
+          "use_id": "u001",
+          "source_sense_ids": [
+            "s001",
+            "s002",
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "心理紧张；不安；压力",
+          "semantic_roles": "人的心理/情绪状态",
+          "evidence_ids": [
+            "wn31:n:14399593"
+          ],
+          "layer": "core_meanings",
+          "display_group": "心理紧张；不安；压力",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "精神/情绪承受负担或悬念的状态；压力在此限心理，不充作物理压强。"
+        },
+        {
+          "use_id": "u002",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "紧张关系",
+          "semantic_roles": "人/群体之间关系",
+          "evidence_ids": [
+            "wn31:n:14004081"
+          ],
+          "layer": "core_meanings",
+          "display_group": "紧张关系",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "人或群体间潜在敌意/对立，如国际关系紧张，不等同一个人的焦虑。"
+        },
+        {
+          "use_id": "u003",
+          "source_sense_ids": [
+            "s003"
+          ],
+          "part_of_speech": "名词",
+          "display_zh": "身体紧绷；紧张状态",
+          "semantic_roles": "身体/肌肉的受力状态",
+          "evidence_ids": [
+            "wn31:n:14567937"
+          ],
+          "layer": "extended_meanings",
+          "display_group": "身体紧绷；紧张状态",
+          "evidence_relation": "具体定义支持的AI中文改述；原片段不等同英语义项数",
+          "boundary": "身体或肌肉被拉紧、紧绷的状态；与心理感受区分。"
+        },
+        {
+          "use_id": "u004",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（物理）张力；拉力",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:11535484"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "使弹性体伸长的应力；不能把源“压力”直接证明为压强或压缩方向。"
+        },
+        {
+          "use_id": "u005",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "（艺术、思想等）张力",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:14025966"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "相反因素/趋势间的相互制衡，不一定是心理焦虑或敌对关系。"
+        },
+        {
+          "use_id": "u006",
+          "source_sense_ids": [],
+          "part_of_speech": "名词",
+          "display_zh": "拉紧；张紧（动作）",
+          "semantic_roles": "原文外独立用途候选",
+          "evidence_ids": [
+            "wn31:n:00367501"
+          ],
+          "layer": "dictionary_additions",
+          "evidence_relation": "词典证明存在，不证明频率/采用/核心层",
+          "boundary": "把物件拉紧的动作，区别于物体已绷紧的状态。"
+        }
+      ],
+      "semantic_splits": [
+        {
+          "source_sense_id": "s003",
+          "original_text": "紧张",
+          "annotation": "AI_semantic_split_not_new_original_fragment",
+          "reason": "该中文片段在证据支持下按实际用途分开；不改变原文逐义词性未知状态。",
+          "uses": [
+            {
+              "use_id": "u001",
+              "part_of_speech": "名词",
+              "display_zh": "心理紧张；不安；压力",
+              "evidence_ids": [
+                "wn31:n:14399593"
+              ],
+              "explanation": "精神/情绪承受负担或悬念的状态；压力在此限心理，不充作物理压强。"
+            },
+            {
+              "use_id": "u002",
+              "part_of_speech": "名词",
+              "display_zh": "紧张关系",
+              "evidence_ids": [
+                "wn31:n:14004081"
+              ],
+              "explanation": "人或群体间潜在敌意/对立，如国际关系紧张，不等同一个人的焦虑。"
+            },
+            {
+              "use_id": "u003",
+              "part_of_speech": "名词",
+              "display_zh": "身体紧绷；紧张状态",
+              "evidence_ids": [
+                "wn31:n:14567937"
+              ],
+              "explanation": "身体或肌肉被拉紧、紧绷的状态；与心理感受区分。"
+            }
+          ]
+        }
+      ],
+      "source_findings": [
+        {
+          "domain": "raw_source_scope",
+          "severity": "AI_risk",
+          "observation": "源“压力”若不限定对象，容易被误读成物理压强；本提案仅映射心理负担，物理张力单列未采用候选。",
+          "evidence": [
+            "wn31:n:14399593",
+            "wn31:n:11535484"
+          ],
+          "source_only": true
+        },
+        {
+          "domain": "raw_source_dictionary_gap",
+          "severity": "AI_risk",
+          "observation": "原文未明确表达的独立用途已单列为未采用候选；其存在、教学优先级与采用是不同判断，不能视为主记录已覆盖。",
+          "evidence": [
+            "wn31:n:00367501",
+            "wn31:n:11535484",
+            "wn31:n:14025966"
+          ],
+          "source_only": true
+        }
+      ],
+      "priority_rationale": "先分心理紧张与关系对立，身体紧绷后学；同一紧张片段按对象与状态拆解。物理拉伸应力另列候选，不能由中文压力吞并方向差别。 分层是首次学习的AI建议，不是官方义项频率或语料排名。",
+      "core_coverage_incomplete_pending_addition_decision": true,
+      "source_pos_coverage": [
+        {
+          "source_part_of_speech": "名词",
+          "recommended_use_ids": [
+            "u001",
+            "u002",
+            "u003"
+          ],
+          "status": "dictionary_evidenced_recommendations_preserve_original_fragment_pos",
+          "note": "逐义POS原值保持不变；此处按证据说明源总词性覆盖，不按片段序号分配。"
+        }
+      ],
+      "human_approved": false,
+      "needs_human_review": true,
+      "unresolved_questions": [
+        "原文外候选是否采用及采用后的层级，仍需人工决定。"
+      ],
+      "evidence_sources": [
+        {
+          "evidence_id": "wn31:n:00367501",
+          "part_of_speech": "n",
+          "definition_en": "the action of stretching something tight; \"tension holds the belt in the pulleys\"",
+          "lemmas": [
+            "tension"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:11535484",
+          "part_of_speech": "n",
+          "definition_en": "(physics) a stress that produces an elongation of an elastic physical body; \"the direction of maximum tension moves asymptotically toward the direction of the shear\"",
+          "lemmas": [
+            "tension"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14004081",
+          "part_of_speech": "n",
+          "definition_en": "feelings of hostility that are not manifest; \"he could sense her latent hostility to him\"; \"the diplomats' first concern was to reduce international tensions\"",
+          "lemmas": [
+            "latent_hostility",
+            "tension"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14025966",
+          "part_of_speech": "n",
+          "definition_en": "a balance between and interplay of opposing elements or tendencies (especially in art or literature); \"there is a tension created between narrative time and movie time\"; \"there is a tension between these approaches to understanding history\"",
+          "lemmas": [
+            "tension"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14399593",
+          "part_of_speech": "n",
+          "definition_en": "(psychology) a state of mental or emotional strain or suspense; \"he suffered from fatigue and emotional tension\"; \"stress is a vasoconstrictor\"",
+          "lemmas": [
+            "tension",
+            "tenseness",
+            "stress"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        },
+        {
+          "evidence_id": "wn31:n:14567937",
+          "part_of_speech": "n",
+          "definition_en": "the physical condition of being stretched or strained; \"it places great tension on the leg muscles\"; \"he could feel the tenseness of her body\"",
+          "lemmas": [
+            "tension",
+            "tensity",
+            "tenseness",
+            "tautness"
+          ],
+          "source": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+          "license": "assets/vocabulary/WORDNET_3_1_LICENSE.txt"
+        }
+      ]
+    }
+  ],
+  "external_access_failures": [
+    {
+      "headword": "clause",
+      "url": "https://dictionary.cambridge.org/dictionary/english/clause",
+      "status": 403,
+      "observation": "web open returned 403 Forbidden; no content used."
+    }
+  ]
+}

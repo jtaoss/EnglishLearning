@@ -1,0 +1,33 @@
+{
+  "tag": "calibration_before_001",
+  "kind": "audit",
+  "request_hash": "668785d9db0bc9528bd9f639c2a049069276900450cd91ea51872162ce72d923",
+  "input_ids": [
+    "SG25-7920fdeff9c5",
+    "SG25-e3f48726b892"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ff9e9039-e407-4b57-b4d1-a3623ab6496e",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7920fdeff9c5\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：仪式，可泛指宗教或社交典礼\",\"relation\":\"范围收窄\",\"reason\":\"组1只保留‘宗教仪式所规定的程序’，原文‘仪式’未限定宗教；无一般/社交仪式名词分支，联合覆盖不足以覆盖原文一般义。\",\"evidence_ids\":[\"wn31:n:01032852\"],\"context\":\"unlicensed_limit\",\"residual_scope\":\"缺少非宗教/社交典礼等一般仪式范围；额外增加‘宗教规定程序’限制。\",\"counterexample\":\"如毕业典礼、社交典礼等非宗教仪式；Collins 也列‘宗教或其他仪式’。\",\"counterexample_evidence_ids\":[\"wn31:n:01029801\",\"pub:p6c5a:collins:ritual\"],\"risk\":\"suspected_Major\"},{\"sid\":\"s002\",\"source_scope\":\"名词：惯常程序/固定做法\",\"relation\":\"合理概括\",\"reason\":\"组2以‘惯常做法/固定行为’概括，词典有 stereotyped behavior 与 customary observance/practice 支持；未引入明显新对象。\",\"evidence_ids\":[\"wn31:n:00415803\",\"wn31:n:01029801\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"形容词：仪式的/与仪式有关的\",\"relation\":\"语义等价\",\"reason\":\"组3保留社会性礼仪与宗教仪式两类形容词用法，与原文宽义一致。\",\"evidence_ids\":[\"wn31:a:02903641\",\"wn31:a:02903908\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"范围收窄/剩余范围未覆盖\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-7920fdeff9c5:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:01032852\",\"wn31:n:01029801\",\"pub:p6c5a:collins:ritual\"],\"reason\":\"原文名词‘仪式’未限定宗教，组1却只列宗教仪式规定程序并注明窄于广义典礼；其余核心组不具备一般/社交仪式名词义，扩展/其他/held为空，未显式暂存剩余范围。\",\"repair_suggestion\":\"将组1改为一般‘仪式/典礼’（可用括注给宗教规定程序为例），或另设一般/社交仪式名词义；不要把宗教作为唯一排他对象。\"}],\"note\":\"名词s001被收窄为宗教规定程序，缺少非宗教/社交仪式且无暂存；s002‘惯常程序’用固定行为概括基本可行；形容词覆盖社会/宗教两类。核心需待决。\"},{\"id\":\"SG25-e3f48726b892\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"名词：学习者/学习的人\",\"relation\":\"语义等价\",\"reason\":\"组2保留‘学习者’，证据虽有‘尤指儿童’说明，但组文未施加儿童限制，覆盖原文宽义。\",\"evidence_ids\":[\"wn31:n:10271476\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：学者（有学问的人）\",\"relation\":\"语义等价\",\"reason\":\"组1以 learned person（尤人文）对应‘学者’，证据直接支持。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"名词：文人/文学人文人士\",\"relation\":\"合理概括\",\"reason\":\"组1把‘文人’并入 learned person（尤人文领域），并注明其为下位用法；文学/人文身份可由该证据涵盖。\",\"evidence_ids\":[\"wn31:n:10577282\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"注释措辞/下位关系\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-e3f48726b892:p6c5:core_meanings:1\"],\"evidence_ids\":[\"wn31:n:10577282\"],\"reason\":\"组1注释把‘文人’说成‘文学/人文学科的学习者’，但s003与证据均指有学问/人文学者，非学习者；虽未造成义项丢失，可能误导下位定位。\",\"repair_suggestion\":\"改为‘文人指文学/人文学科的读书人、学者或文士’，与 learned person 证据一致。\"}],\"note\":\"三义均保留：学习者单列，学者/文人合并为 learned person（尤人文）；‘奖学金获得者’作为外部候选未采用，符合非原文义；仅合并注释对‘文人=学习者’的措辞需微调。\"}]}",
+  "usage": {
+    "prompt_tokens": 3642,
+    "completion_tokens": 8178,
+    "total_tokens": 11820,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7036
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3642
+  },
+  "started_utc": "2026-11-13T09:33:06.553674+00:00",
+  "completed_utc": "2026-11-13T09:33:52.429534+00:00",
+  "elapsed_seconds": 45.875,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_49",
+  "request_hash": "6f6327f1ac1ba99d471095917c6a9066f4574448a23d5ceee8d4f33b894f3169",
+  "started_utc": "2026-11-13T08:16:14.328102+00:00",
+  "completed_utc": "2026-11-13T08:16:21.902147+00:00",
+  "elapsed_seconds": 7.563,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "64777de0-05a1-4cd7-aff7-5ae8a26a80bc",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2245,
+    "completion_tokens": 374,
+    "total_tokens": 2619,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 272
+    },
+    "prompt_cache_hit_tokens": 2048,
+    "prompt_cache_miss_tokens": 197
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-815fbec040e3\",\n      \"independent_core\": [\n        \"名词：配偶；婚姻中的伴侣\"\n      ],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"源词性为名词，片段“配偶”直接对应 WordNet 婚姻伴侣义，无需补充或修正。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

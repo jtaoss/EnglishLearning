@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_008",
+  "kind": "audit",
+  "request_hash": "68cb654416ba7751e6b43d349134cb7db94a65ac51653053f8c6495dac63af51",
+  "input_ids": [
+    "SG25-f4873b35ecfe",
+    "SG25-c152d5bbb379",
+    "SG25-9cda38ea3a2b",
+    "SG25-772c6953848b",
+    "SG25-74e892c91130"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "00e1511f-b122-433b-8587-0ccd00e5afed",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-f4873b35ecfe\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"宽泛的“保护”，对象和领域未限定\",\"relation\":\"无法确定\",\"reason\":\"候选核心只保留自然环境保护子义；s001仍为held，物理守恒及防损失事件义也未确立为原义。\",\"evidence_ids\":[\"wn31:n:00820935\",\"wn31:n:07434199\"],\"context\":\"uncertain\",\"residual_scope\":\"泛“保护”义未覆盖，仅保留自然环境子义\",\"counterexample\":\"conservation of natural resources 只是较窄的环境/资源保护用法。\",\"counterexample_evidence_ids\":[\"wn31:n:00820935\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"保护自然环境/资源\",\"relation\":\"语义等价\",\"reason\":\"核心组与s002直接对应；n:00820935界定为环境和自然资源保护管理。\",\"evidence_ids\":[\"wn31:n:00820935\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"partial\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_sense_pending\",\"source_ids\":[\"s001\"],\"group_ids\":[],\"evidence_ids\":[\"wn31:n:00820935\",\"wn31:n:07434199\"],\"reason\":\"s001宽泛“保护”未通过，核心只收s002环境子义；这是明确待核的来源范围，不是已覆盖。\",\"repair_suggestion\":\"保留待核；若确认泛保护义，应补父级/一般分支，否则维持s001未决。\"}],\"note\":\"s002自然环境保护已在核心；s001泛“保护”仍待核，物理守恒仅外部候选。\"},{\"id\":\"SG25-c152d5bbb379\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词“保守的”，可涉及观念作风或审慎估计等\",\"relation\":\"合理概括\",\"reason\":\"核心“保守的；守旧的”覆盖态度/作风，扩展“审慎偏低的”覆盖估计预测等受限语境；未将一般形容词限定为单一对象。\",\"evidence_ids\":[\"wn31:a:00576723\",\"wn31:s:02037690\",\"wn31:s:00261646\",\"wn31:s:00610033\",\"wn31:s:01536268\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词“保守主义者”，不愿接受变化/新观念的人\",\"relation\":\"语义等价\",\"reason\":\"核心名词组与s002一致；n:09976635定义吻合。\",\"evidence_ids\":[\"wn31:n:09976635\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词语义由核心态度义与扩展估计义联合覆盖；名词指人义直接对应。\"},{\"id\":\"SG25-9cda38ea3a2b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"按顺序连续出现的一组事物/事件，非数学级数\",\"relation\":\"语义等价\",\"reason\":\"核心“序列；一系列”对应n:08474987；数学级数未采用。\",\"evidence_ids\":[\"wn31:n:08474987\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"电视/广播连续播出的系列节目\",\"relation\":\"语义等价\",\"reason\":\"核心组与s002一致；n:06633954为serialized set of programs。\",\"evidence_ids\":[\"wn31:n:06633954\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个源义均有直接核心组；体育系列赛、电路串联仅外部候选。\"},{\"id\":\"SG25-772c6953848b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有意、仔细看或观察的行为\",\"relation\":\"语义等价\",\"reason\":\"核心动作名词匹配n:00881437；观察结果义未由原文明示，未纳入核心。\",\"evidence_ids\":[\"wn31:n:00881437\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"评论/评述\",\"relation\":\"范围扩大\",\"reason\":\"核心组保留“评论”但显示加“意见”；n:06779826仅是经过思考的remark/评论，不直接等于意见。\",\"evidence_ids\":[\"wn31:n:06779826\"],\"context\":\"none\",\"residual_scope\":\"额外加入“意见”，证据仅直接支持评论/评述\",\"counterexample\":\"an observation 指 carefully considered remark，而非泛指 opinion。\",\"counterexample_evidence_ids\":[\"wn31:n:06779826\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"minor_broadening\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-772c6953848b:p6c5:core_meanings:2\"],\"evidence_ids\":[\"wn31:n:06779826\"],\"reason\":\"组内“意见”超出证据的remark；评论义本身已覆盖。\",\"repair_suggestion\":\"显示改为“评论；评述”或注明“意见”为近义引申，不把意见当直接证据。\"}],\"note\":\"观察行为与评论义均已在核心；评论组中“意见”略宽，观察结果义为外部候选。\"},{\"id\":\"SG25-74e892c91130\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"有意识地仔细看/持续注意\",\"relation\":\"语义等价\",\"reason\":\"核心1匹配watch attentively/follow with eyes or mind。\",\"evidence_ids\":[\"wn31:v:02173796\",\"wn31:v:02460829\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"遵守/遵循规则、约定、诺言等\",\"relation\":\"语义等价\",\"reason\":\"核心2匹配conform action/practice to。\",\"evidence_ids\":[\"wn31:v:02584957\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"注意到/察觉（不一定持续观察）\",\"relation\":\"语义等价\",\"reason\":\"核心3文本与s003相符；更贴切证据v:02158938（察觉/发现）在供给证据中，但组内仅引v:02123398（留意/密切注意），证据引用需修正。\",\"evidence_ids\":[\"wn31:v:02158938\",\"wn31:v:02123398\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"v:02123398偏“留意”，v:02158938才是“察觉/发现”。\",\"counterexample_evidence_ids\":[\"wn31:v:02123398\",\"wn31:v:02158938\"],\"risk\":\"suspected_Minor\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Minor\",\"kind\":\"evidence_selection\",\"source_ids\":[\"s003\"],\"group_ids\":[\"SG25-74e892c91130:p6c5:core_meanings:3\"],\"evidence_ids\":[\"wn31:v:02123398\",\"wn31:v:02158938\"],\"reason\":\"组内仅引“pay close attention”证据，不能直接支持“注意到/察觉”；供给证据v:02158938更贴切但未链接。\",\"repair_suggestion\":\"在core3 evidence_ids补充v:02158938，或把显示改为“留意；密切注意”。\"}],\"note\":\"观察、遵守、注意到三义均有核心组；“指出/评论说”和“节日仪式奉行”为外部候选，注意到组的证据引用需微调。\"}]}",
+  "usage": {
+    "prompt_tokens": 6367,
+    "completion_tokens": 12397,
+    "total_tokens": 18764,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10578
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 4447
+  },
+  "started_utc": "2026-11-13T09:48:22.341983+00:00",
+  "completed_utc": "2026-11-13T09:49:31.250699+00:00",
+  "elapsed_seconds": 68.922,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

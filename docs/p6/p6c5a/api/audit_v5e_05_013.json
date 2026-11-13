@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_05_013",
+  "kind": "audit",
+  "request_hash": "669c5eacaf0ccad75d32402dac9a478628c0784ed000bf9c84c7cef17f467c8b",
+  "input_ids": [
+    "SG25-5d3082f6a1fd",
+    "SG25-ace72b3572c1",
+    "SG25-54b759dba2de",
+    "SG25-bfd5a8ed7357",
+    "SG25-f54d93092fae"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "68acecf3-4e58-4d39-bc12-fedc607225d8",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-5d3082f6a1fd\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"绝望的；失去希望\",\"relation\":\"语义等价\",\"reason\":\"核心1保留“绝望的”并对应失去希望/绝望的形容词用法；“人”为典型示例，不构成排他限制。\",\"evidence_ids\":[\"wn31:s:01232699\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"不顾一切的；拼命的\",\"relation\":\"合理概括\",\"reason\":\"核心2用“不顾一切的；拼命的”概括因紧急/绝望而不顾后果的用法，未限定暴力，符合同一源片段的概括范围。\",\"evidence_ids\":[\"wn31:s:01997589\",\"wn31:s:02067030\",\"wn31:s:00264329\"],\"context\":\"example_not_exclusive\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"极度渴望的；迫切的\",\"relation\":\"语义等价\",\"reason\":\"核心3“极度渴望的；迫切的”与证据中极强需求/欲望的紧迫用法对应。\",\"evidence_ids\":[\"wn31:s:00716816\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源片段分别由核心1-3覆盖；危急局势义作为外部候选未并入，符合原片段未明示危险/局势的边界。\"},{\"id\":\"SG25-ace72b3572c1\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"专家；某一职业或学科领域专家\",\"relation\":\"语义等价\",\"reason\":\"核心1“专家”对应某一职业/学科领域专家，未把医疗专科医生这一更具体用法误作源义。\",\"evidence_ids\":[\"wn31:n:10651303\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"源义“专家”由核心1覆盖；“专科医生”未在原片段明示，保留为外部候选。\"},{\"id\":\"SG25-54b759dba2de\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"具体的；明确详细的\",\"relation\":\"语义等价\",\"reason\":\"核心1以“具体的”对应明确、详细陈述的形容词用法，未并入“特定”源义。\",\"evidence_ids\":[\"wn31:s:01103644\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"特定的；专指某一对象的\",\"relation\":\"语义等价\",\"reason\":\"核心2以“特定的”对应专指/区分某一对象的形容词用法。\",\"evidence_ids\":[\"wn31:a:01106714\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"两个形容词源义分别由核心1（明确详细）和核心2（特定对象）覆盖；名词/分类学用法为外部候选。\"},{\"id\":\"SG25-bfd5a8ed7357\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"周围环境；周围影响\",\"relation\":\"语义等价\",\"reason\":\"核心1“周围环境”对应周围环境/影响义；未把独立的气氛/氛围义并入，符合源片段边界。\",\"evidence_ids\":[\"wn31:n:14548451\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"大气；地球周围空气层\",\"relation\":\"语义等价\",\"reason\":\"核心2“大气”对应地球周围的大团空气。\",\"evidence_ids\":[\"wn31:n:08516085\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"大气圈；天体气体包层\",\"relation\":\"语义等价\",\"reason\":\"核心3“大气圈”对应包裹天体的气体层。\",\"evidence_ids\":[\"wn31:n:09233511\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个名词源义分别由核心1-3覆盖；气氛和压力单位未在原片段中明示，保留外部候选。\"},{\"id\":\"SG25-f54d93092fae\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"景气；经济繁荣状态\",\"relation\":\"语义等价\",\"reason\":\"核心1“景气”对应经济增长、利润上升、充分就业的经济状态。\",\"evidence_ids\":[\"wn31:n:14513283\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"繁荣；兴旺顺利状况\",\"relation\":\"语义等价\",\"reason\":\"核心2“繁荣”对应兴旺、顺利的较宽泛状态。\",\"evidence_ids\":[\"wn31:n:14497636\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"“景气”与“繁荣”分别由核心1经济状态和核心2宽泛兴旺覆盖；无外部候选。\"}]}",
+  "usage": {
+    "prompt_tokens": 5913,
+    "completion_tokens": 9214,
+    "total_tokens": 15127,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7942
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3993
+  },
+  "started_utc": "2026-11-13T09:48:22.223881+00:00",
+  "completed_utc": "2026-11-13T09:49:12.638524+00:00",
+  "elapsed_seconds": 50.406,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

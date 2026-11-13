@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_006",
+  "kind": "verify",
+  "request_hash": "18e4d085e65e2bb717b0ab539036f7343277edde15b7a1c054db740947ff0c5a",
+  "input_ids": [
+    "SG25-6e5f6170d4e1",
+    "SG25-6b15713240e8"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "0ab455f7-3093-47f6-9164-86beaea1c34d",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-6e5f6170d4e1\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“公民”与证据 wn31:n:09943131 的“native or naturalized member of a state or political community”一致。\",\n          \"evidence_ids\": [\"wn31:n:09943131\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"“国民”同样为国家/政治共同体成员，证据一致。\",\n          \"evidence_ids\": [\"wn31:n:09943131\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"“市民”在扩展组中保留，但所配证据仅政治共同体成员，注释又排除所有居民；一般城市居民义未覆盖且无证据，范围被收窄。\",\n          \"evidence_ids\": [\"wn31:n:09943131\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_narrowing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-6e5f6170d4e1:extended:1\"],\n          \"evidence_ids\": [\"wn31:n:09943131\"],\n          \"reason\": \"源文“市民”通常指城市居民，而政治共同体成员证据仅覆盖国家/政治共同体公民，注释明确“不能等同所有居民”，使一般城市居民义被排除且无证据支持。\",\n          \"counterexample\": \"普通城市居民未必是政治共同体成员，但中文“市民”常可指一般居民。\",\n          \"repair_suggestion\": \"为“市民”补充城市居民/市民义证据；若源义确为城市政治成员，应明确标注并暂存一般城市居民义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"原文未给“市民”语境，无法确定是否仅指城市政治成员；是否需要保留一般居民义待核。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心公民/国民证据充分；扩展“市民”证据不匹配，需补证据或界定范围。\"\n    },\n    {\n      \"id\": \"SG25-6b15713240e8\",\n      \"scope_checks\": [\n        {\n          \"sid\": \"s001\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"“教化”被 held 暂存；供应证据 n:04819244（修养品质）与 n:13470143（社会文明化过程）均不能无歧义对应裸译“教化”，个人训导/社会过程待核。\",\n          \"evidence_ids\": [\"wn31:n:04819244\", \"wn31:n:13470143\"]\n        },\n        {\n          \"sid\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"核心组“文明”以 n:08128749 社会发展状态义覆盖原文文明的一个主要用法；无证据表明该源义更广且未被其他层覆盖。\",\n          \"evidence_ids\": [\"wn31:n:08128749\"]\n        },\n        {\n          \"sid\": \"s003\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"核心组“文明社会”链接 n:08304765 特定社会/文明，证据仅指特定时空的具体社会；一般“文明社会/发达社会”义未覆盖，且 n:08128749 已存在可用于该义。\",\n          \"evidence_ids\": [\"wn31:n:08304765\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"range_narrowing\",\n          \"source_ids\": [\"s003\"],\n          \"group_ids\": [\"SG25-6b15713240e8:core:2\"],\n          \"evidence_ids\": [\"wn31:n:08304765\"],\n          \"reason\": \"“文明社会”通常指发达/有文明的社会，而 n:08304765 定义为“a particular society at a particular time and place”，仅覆盖特定文明/社会，一般义未在候选层保留。\",\n          \"counterexample\": \"早期玛雅文明是特定文明，不等于一般“文明社会”。\",\n          \"repair_suggestion\": \"将“文明社会”链接到 n:08128749（发达社会义），或将 n:08304765 明确标为“特定文明”，并区分两个义项。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001“教化”待核：需澄清是个人教养/训导还是社会文明化过程；当前 held 未覆盖。\",\n        \"s002“文明”可能还包含文化/修养义，但该义项未在任何层级明确保留；证据 n:04819244 存在但未采用。\"\n      ],\n      \"preferences\": [],\n      \"note\": \"核心“文明”与“文明社会”存在“发展状态 vs 特定社会”的区分，但“文明社会”所配证据偏窄；s001已显式暂存。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4155,
+    "completion_tokens": 7993,
+    "total_tokens": 12148,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6850
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 2491
+  },
+  "started_utc": "2026-11-13T09:56:48.822859+00:00",
+  "completed_utc": "2026-11-13T09:58:33.136920+00:00",
+  "elapsed_seconds": 104.312,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

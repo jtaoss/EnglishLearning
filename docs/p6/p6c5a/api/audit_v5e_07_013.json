@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_07_013",
+  "kind": "audit",
+  "request_hash": "cc76544ef82a6d88b25319a9b065c56fd95cfd08f4c69e7fc0e930bdf98f95de",
+  "input_ids": [
+    "SG25-50f7becde477",
+    "SG25-14ebe56a5008",
+    "SG25-da4270e3735a",
+    "SG25-94d5c9d96025",
+    "SG25-d74ff0ee8da3"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "73be1521-fa98-4010-aea6-44a76b88f648",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-50f7becde477\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"画（用笔等绘制图像）\",\"relation\":\"语义等价\",\"reason\":\"原文‘画’指绘制图像，core:1‘画；绘制’由 01694189（represent by making a drawing）支撑，词性、对象、方向一致。\",\"evidence_ids\":[\"wn31:v:01694189\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"拉（牵引物体）\",\"relation\":\"语义等价\",\"reason\":\"原文‘拉’为牵引物体，core:2‘拉；牵引’由 01450719（cause to move by pulling）支撑，未混入‘画’。\",\"evidence_ids\":[\"wn31:v:01450719\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"画与拉分为两组，各自由专义动词证据支撑，来源两义均覆盖；吸引/推导作为来源外候选另列，未强塞入来源映射。\"},{\"id\":\"SG25-14ebe56a5008\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"打破/使破裂（词性原为null，未判定）\",\"relation\":\"语义等价\",\"reason\":\"原文‘打破’为及物使破裂，core:1‘打破；使破裂’由 00335806（destroy the integrity… cause to separate）支撑；源词性null，组推荐词性仅为建议，未当作已核验源标签。\",\"evidence_ids\":[\"wn31:v:00335806\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"休息（名词/动词原均未定）\",\"relation\":\"合理概括\",\"reason\":\"原文‘休息’跨名词与动词，core:2（名词‘休息；间歇’，01064921）与 extended:1（动词‘暂时停止活动’，00781106）合并覆盖两层，语境仍可追溯；仅一个子用法在核心，动词层后置有教学说明。\",\"evidence_ids\":[\"wn31:n:01064921\",\"wn31:v:00781106\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-14ebe56a5008:p6c4:core_meanings:1\",\"SG25-14ebe56a5008:p6c4:core_meanings:2\",\"SG25-14ebe56a5008:p6c4:extended_meanings:1\"],\"evidence_ids\":[],\"reason\":\"两源片段pos_evidence均为unresolved_multi_pos，候选组给出的动词/名词为推荐词性，并非已核验来源标签；记录待核但不构成范围缺陷。\",\"repair_suggestion\":\"保留源词性null记录，教学展示可标注推荐词性来源为词典而非原文。\"}],\"note\":\"打破（及物）与休息（名/动）分列并覆盖完整，休息动作用法虽在扩展层但已明确保留；源词性null未被当作已核验。\"},{\"id\":\"SG25-da4270e3735a\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"合适/适合（动词或形容词，原未定）\",\"relation\":\"合理概括\",\"reason\":\"原文‘合适’可作动词（合身/适合需求，02708690）与形容词（适于某目的，a:01024009），core:1与core:2合一覆盖两词性，均属来源许可范围。\",\"evidence_ids\":[\"wn31:v:02708690\",\"wn31:a:01024009\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"健康的\",\"relation\":\"语义等价\",\"reason\":\"原文‘健康的’对应形容词健康义，core:3由 a:01020753（physically and mentally sound or healthy）支撑。\",\"evidence_ids\":[\"wn31:a:01020753\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\",\"s002\"],\"group_ids\":[\"SG25-da4270e3735a:p6c4:core_meanings:1\",\"SG25-da4270e3735a:p6c4:core_meanings:2\",\"SG25-da4270e3735a:p6c4:core_meanings:3\"],\"evidence_ids\":[],\"reason\":\"源片段为unresolved_multi_pos，动词/形容词的拆分来自词典推荐而非原文标签；范围为合规覆盖，仅标注待核。\",\"repair_suggestion\":\"保留源词性null，展示时可注明词性依词典推荐。\"}],\"note\":\"合适按词典拆为动词(合身)与形容词(适于目的)两层并存于核心，健康义单独成组，覆盖完整。\"},{\"id\":\"SG25-94d5c9d96025\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"同意（意见一致）\",\"relation\":\"语义等价\",\"reason\":\"原文‘同意’为认同/一致，core:1由 00807038（be in accord; be in agreement）支撑，方向与词性一致；‘一致；相符’作为来源外补充另列。\",\"evidence_ids\":[\"wn31:v:00807038\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"单一‘同意’义干净保留于核心，事实相符义作为外部候选未强并入来源映射。\"},{\"id\":\"SG25-d74ff0ee8da3\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"经过（路径上通过某处）\",\"relation\":\"语义等价\",\"reason\":\"原文‘经过’为路径穿越，core:1由 02053645（travel past）与 02054081（go across or through）支撑。\",\"evidence_ids\":[\"wn31:v:02053645\",\"wn31:v:02054081\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"通过（穿越某处或达到合格）\",\"relation\":\"合理概括\",\"reason\":\"原文‘通过’兼涉穿越某处与考试审核合格两端，core:1覆盖穿越义、core:2覆盖考试/审核合格义（02530710、02529017），两端均保留。\",\"evidence_ids\":[\"wn31:v:02054081\",\"wn31:v:02530710\",\"wn31:v:02529017\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"传递（物品或信息）\",\"relation\":\"语义等价\",\"reason\":\"原文‘传递’含移交物品与传达信息，core:3由 02235554（place into hands/custody）与 00744289（transmit information）支撑。\",\"evidence_ids\":[\"wn31:v:02235554\",\"wn31:v:00744289\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s004\",\"source_scope\":\"通行证\",\"relation\":\"语义等价\",\"reason\":\"原文‘通行证’为许可文件，core:4由 06703153（document indicating permission）与 06703828（authorization to pass）支撑，名词一致。\",\"evidence_ids\":[\"wn31:n:06703153\",\"wn31:n:06703828\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"经过、通过（穿越/考试两端）、传递、通行证四义分别有组对应，‘通过’两端均未丢；时间流逝作为外部候选另列，未强塞来源。\"}]}",
+  "usage": {
+    "prompt_tokens": 19235,
+    "completion_tokens": 4767,
+    "total_tokens": 24002,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2844
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 17315
+  },
+  "started_utc": "2026-11-13T09:53:08.165026+00:00",
+  "completed_utc": "2026-11-13T09:53:30.941927+00:00",
+  "elapsed_seconds": 22.782,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_28",
+  "request_hash": "584b072e751304168d0dbf09e7f28889466b472d1861553951839e428dbc8e77",
+  "started_utc": "2026-11-13T08:16:13.762209+00:00",
+  "completed_utc": "2026-11-13T08:17:42.268483+00:00",
+  "elapsed_seconds": 88.516,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "e2ba09e0-7fd4-4e5d-a371-b4ef4d22bd20",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4038,
+    "completion_tokens": 4625,
+    "total_tokens": 8663,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4328
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4038
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-a77de8a6daa1\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [\n        \"For teaching clarity, consider separating the noun sense group for 设计 into process (wn31:n:00929892) and result/plan (wn31:n:03183984) if learners confuse activity vs. product; current combined group with usage note is acceptable.\",\n        \"Consider adding the use 'be designed for something' (wn31:v:00711454) as an extension or usage note for the source fragment 设计, since it is common but not currently shown.\"\n      ],\n      \"note\": \"Candidate maps all three source fragments to appropriate POS and evidence: 设计 as verb (核心1) and noun (核心2), 图案 as noun (核心3), 计划 as noun (核心4) and verb (扩展1). The process/result distinction for noun 设计 is acknowledged in the usage note; merging with a note is acceptable for first learning. The dictionary addition for noun '意图/目的' (wn31:n:05991037) is correctly left unadopted because it is not expressed by the original Chinese fragments. No untraceable meanings, false merges across POS, or unsupported prioritization found.\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

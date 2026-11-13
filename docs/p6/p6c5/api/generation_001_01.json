@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_01",
+  "request_hash": "5557f7e8ca56cae76025f08298be98a73e0008415e8b10dccddfe44f71e0feee",
+  "started_utc": "2026-11-13T08:14:58.550133+00:00",
+  "completed_utc": "2026-11-13T08:15:37.061487+00:00",
+  "elapsed_seconds": 38.5,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "ce35e87f-bc13-4e5a-bc44-3437c1e2a247",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 4025,
+    "completion_tokens": 6481,
+    "total_tokens": 10506,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5690
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 1209
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-887270d0cbc5\",\"word\":\"render\",\"pos\":\"动词\",\"core\":[[\"使变成/使成为\",\"动词\",[\"s001\"],[\"wn31:v:00120483\"],\"使某人/某物进入某状态，如 render sb/sth + 形容词\"],[\"提供/给予（所需之物）\",\"动词\",[\"s002\"],[\"wn31:v:02332196\"],\"提供有用或必要之物，与 provide 近义\"],[\"呈现/描绘\",\"动词\",[\"s003\"],[\"wn31:v:01690851\"],\"以图像或画面表现、描绘；不涵盖所有抽象‘呈现’\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"翻译/把……译成\",\"动词\",[\"wn31:v:00961859\"],\"render 可表示翻译/口译，原文三义未覆盖。\"],[\"演奏/演绎\",\"动词\",[\"wn31:v:01736053\"],\"render 可表示对乐曲的演绎，原文未覆盖。\"],[\"给予/致以（感谢、敬意等）\",\"动词\",[\"wn31:v:01062618\"],\"render thanks/homage 的礼节性给予义，原文‘提供’不涵盖。\"],[\"宣布/下达（判决等）\",\"动词\",[\"wn31:v:01064275\"],\"render a verdict 的常见法律搭配，原文未覆盖。\"],[\"交出/让与\",\"动词\",[\"wn31:v:02298282\"],\"render up prisoners/town 的让渡义，原文未覆盖。\"]],\"reason\":\"render 首记按原文三动词义分别对应‘使变成’、‘提供’、‘呈现/描绘’；其余常见义如翻译、演奏、法律宣布等仅作外部候选，不偷渡进原文核心。\",\"flags\":[[\"Minor\",\"scope_gap\",\"s003 的独立证据为‘以图像/画面表现、描绘’，原文‘呈现’更宽；组内已限定，不宣称覆盖所有抽象呈现。\"],[\"Minor\",\"core_coverage_incomplete_pending_addition_decision\",\"原文未列翻译、演奏、法律宣布等常见引申；已单列 additions，未并入核心。\"]]},{\"id\":\"SG25-7920fdeff9c5\",\"word\":\"ritual\",\"pos\":\"名词；形容词\",\"core\":[[\"仪式（宗教仪式的规定程序）\",\"名词\",[\"s001\"],[\"wn31:n:01032852\"],\"宗教仪式所规定的程序；比广义‘典礼’窄。\"],[\"惯常做法/固定行为（接近‘惯常程序’）\",\"名词\",[\"s002\"],[\"wn31:n:00415803\",\"wn31:n:01029801\"],\"固定行为或惯常做法；不专指步骤清单。\"],[\"仪式的/与仪式有关的\",\"形容词\",[\"s003\"],[\"wn31:a:02903641\",\"wn31:a:02903908\"],\"涵盖社会性礼仪和宗教仪式两类形容词用法。\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"ritual 首记按原文名词两义（仪式/惯常做法）和形容词一义分组；名词证据较原文窄处用限定说明并标风险，不把词典细分全部并入核心。\",\"flags\":[[\"Minor\",\"scope_gap\",\"s001 证据特指宗教仪式的规定程序，原文‘仪式’可更广义；已用限定展示。\"],[\"Minor\",\"scope_gap\",\"s002 证据为刻板行为/惯常做法，原文‘惯常程序’更强调程序步骤；匹配有条件。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

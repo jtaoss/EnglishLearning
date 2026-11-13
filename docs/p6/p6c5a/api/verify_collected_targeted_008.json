@@ -1,0 +1,33 @@
+{
+  "tag": "verify_collected_targeted_008",
+  "kind": "verify",
+  "request_hash": "f8689e83691d03a8b2b37974c4ae7d0a3e3aad27dcc9270e6b7fd821940b19fb",
+  "input_ids": [
+    "SG25-c3ccedf562d9",
+    "SG25-2f1fd9f37ede"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "a5159ea2-cf24-4ca2-acfb-9d9fec7562cb",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-c3ccedf562d9\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"core:2 显示“粗糙的”，但其注释和证据 wn31:s:02237329 实际只覆盖“制作粗糙/工艺不佳”。原中文“粗糙的”可能还包含表面质地、粗略未修饰等更宽范围；现有层级未保留或暂存这些剩余范围。\",\n          \"evidence_ids\": [\"wn31:s:02237329\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 用“未经加工的”对应 wn31:s:00418723 和 wn31:a:01960289 的 not processed/not refined or processed，词性与对象范围一致，覆盖原义。\",\n          \"evidence_ids\": [\"wn31:s:00418723\", \"wn31:a:01960289\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"extended:1 名词“原油”对应 wn31:n:15005138 的 a dark oil consisting mainly of hydrocarbons，词性与对象一致。\",\n          \"evidence_ids\": [\"wn31:n:15005138\"]\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [\n        {\n          \"severity\": \"Minor\",\n          \"kind\": \"residual_scope\",\n          \"source_ids\": [\"s001\"],\n          \"group_ids\": [\"SG25-c3ccedf562d9:core:2\"],\n          \"evidence_ids\": [\"wn31:s:02237329\"],\n          \"reason\": \"core:2 实际限制为“制作粗糙”，但原中文“粗糙的”可能更宽（如表面质地、粗略未修饰）。提供的证据中没有对应这些更宽义项的映射，也没有 held 或暂存记录，因此该原始义项的一部分范围未在所有层级中保留。\",\n          \"counterexample\": \"\",\n          \"repair_suggestion\": \"在 core:2 注释中明确覆盖的是“制作粗糙”，并把表面质地、粗略未修饰等剩余范围标为来源范围待核，避免读者误解为全部“粗糙”义。\"\n        }\n      ],\n      \"unresolved\": [\n        \"s001“粗糙的”的原始范围是否包含表面质地或粗略未修饰等义，以及这些是否需要由现有证据（如 wn31:s:00559107）覆盖。\"\n      ],\n      \"preferences\": [\n        \"名词义“原油”置于扩展层而非核心，属于教学排序差异，不构成语义缺陷。\"\n      ],\n      \"note\": \"三个源义项均有对应组；s002 与 s003 覆盖准确，s001 仅明确覆盖制作粗糙，更宽范围待核，整体未发现其他受证据支持的确证缺口。\"\n    },\n    {\n      \"id\": \"SG25-2f1fd9f37ede\",\n      \"scope_checks\": [\n        {\n          \"source_sense_id\": \"s001\",\n          \"relation\": \"语义等价\",\n          \"reason\": \"core:1 显示“培养”，证据 wn31:v:01746607 foster the growth of 覆盖能力/品质的发展；注释将对象限制为能力或品质，但原中文在此词条中的语境显然指人的培养而非农业，因此该限制不构成范围收窄。\",\n          \"evidence_ids\": [\"wn31:v:01746607\"]\n        },\n        {\n          \"source_sense_id\": \"s002\",\n          \"relation\": \"范围收窄\",\n          \"reason\": \"extended:1 显示“教育”，但注释和证据 wn31:v:02393545 将其限定为 teach or refine to be discriminative in taste or judgment（培养品味/判断力）。原中文“教育”一词通常更宽，可能包含普通学校教育；提供的英语证据不支持一般教育义，因此剩余范围未保留且来源范围未确认。\",\n          \"evidence_ids\": [\"wn31:v:02393545\"]\n        },\n        {\n          \"source_sense_id\": \"s003\",\n          \"relation\": \"无法确定\",\n          \"reason\": \"s003“磨炼”处于 held 状态，没有任何组覆盖；现有证据也不能直接对应该义，最接近的 wn31:v:02393545 仅涉及品味/判断力的培养，不涵盖一般意志磨炼。\",\n          \"evidence_ids\": []\n        }\n      ],\n      \"confirmed_within_supplied_evidence\": [],\n      \"unresolved\": [\n        \"s002“教育”的原始范围是否仅为修养/鉴赏力培养，还是包含一般学校教育；现有英语证据仅支持前者。\",\n        \"s003“磨炼”是否在英语中有可对应且需要覆盖的独立义项，目前暂存，待提供证据后再判断是否为覆盖缺口。\"\n      ],\n      \"preferences\": [\n        \"耕作/耕种义（cultivate land）出现在 unadopted_external_candidates 中，未映射到原始中文义项；由于源词条上下文为人的发展与教育，不纳入本源义范围是合理的教学选择。\"\n      ],\n      \"note\": \"s001 覆盖充分；s002 证据支持的范围比原中文“教育”窄，但来源范围待核，不构成确证缺陷；s003 暂存待证据，未发现确证漏义。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 4795,
+    "completion_tokens": 6307,
+    "total_tokens": 11102,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5116
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 3131
+  },
+  "started_utc": "2026-11-13T09:56:49.225446+00:00",
+  "completed_utc": "2026-11-13T09:58:18.498796+00:00",
+  "elapsed_seconds": 89.266,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

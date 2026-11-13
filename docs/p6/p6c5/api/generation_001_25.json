@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_25",
+  "request_hash": "56ac3266854f7716ba0264a828d98bd49845b0821dbc7476e473ea1105a9e77f",
+  "started_utc": "2026-11-13T08:14:59.158094+00:00",
+  "completed_utc": "2026-11-13T08:15:26.631785+00:00",
+  "elapsed_seconds": 27.469,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c818d2c6-b4e6-4698-89e8-ab5ee3c10adb",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3763,
+    "completion_tokens": 4334,
+    "total_tokens": 8097,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3752
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 947
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-54b759dba2de\",\"word\":\"specific\",\"core\":[[\"具体的\",\"形容词\",[\"s001\"],[\"wn31:s:01103644\"],\"明确、详细，不是笼统的\"],[\"特定的\",\"形容词\",[\"s002\"],[\"wn31:a:01106714\"],\"专指某一对象或独特范围\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"特效药\",\"名词\",[\"wn31:n:04278750\"],\"原文仅形容词；词典名词义指对特定疾病有缓解作用的药物，作为外部候选待审\"],[\"物种的；分类学上的\",\"形容词\",[\"wn31:a:03000784\"],\"原文未列生物学分类用法；作为领域候选待审\"]],\"reason\":\"两个原片段分别对应“明确详细”和“专指某一对象”，均为形容词但证据不同，故分两组核心；名词及生物分类等专门用法不并入核心。\",\"flags\":[[\"Info\",\"pos_ambiguity\",\"原词性仅形容词；词典另列名词 specific（特效药），未并入核心。\"],[\"Info\",\"source_coverage_gap\",\"医学/染色与分类学专门形容词义原文未列，已选择性列入 additions 待审。\"]]},{\"id\":\"SG25-bfd5a8ed7357\",\"word\":\"atmosphere\",\"core\":[[\"周围环境\",\"名词\",[\"s001\"],[\"wn31:n:14548451\"],\"指周围的环境或影响，不取“气氛/氛围”专义\"],[\"大气\",\"名词\",[\"s002\"],[\"wn31:n:08516085\"],\"地球周围的大团空气\"],[\"大气圈\",\"名词\",[\"s003\"],[\"wn31:n:09233511\"],\"包裹天体的气体层\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"气氛；氛围\",\"名词\",[\"wn31:n:04734472\"],\"原文“周围环境”不直接等同 intangible quality；词典有气氛/氛围义，作为外部候选待审\"],[\"大气压（单位）\",\"名词\",[\"wn31:n:13733165\"],\"原文未列压力单位义；科技阅读常见，作为外部候选待审\"]],\"reason\":\"三个原片段分别对应周围影响环境、地球空气层和天体气体包层，证据不同，保留三组核心；气氛和压力单位为外部候选。\",\"flags\":[[\"Info\",\"source_coverage_gap\",\"词典列气氛/氛围与大气压单位义，原文未列，已列入 additions 待审。\"],[\"Info\",\"domain_restricted\",\"大气压为单位义，属科技/计量语境；未混入核心。\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

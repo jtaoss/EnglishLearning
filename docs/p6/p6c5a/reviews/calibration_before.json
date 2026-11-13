@@ -1,0 +1,319 @@
+{
+  "stage": "calibration_before",
+  "kind": "audit",
+  "model_requested": "deepseek-flash",
+  "record_count": 4,
+  "expected_count": 4,
+  "records": [
+    {
+      "id": "SG25-7920fdeff9c5",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：仪式，可泛指宗教或社交典礼",
+          "relation": "范围收窄",
+          "reason": "组1只保留‘宗教仪式所规定的程序’，原文‘仪式’未限定宗教；无一般/社交仪式名词分支，联合覆盖不足以覆盖原文一般义。",
+          "evidence_ids": [
+            "wn31:n:01032852"
+          ],
+          "context": "unlicensed_limit",
+          "residual_scope": "缺少非宗教/社交典礼等一般仪式范围；额外增加‘宗教规定程序’限制。",
+          "counterexample": "如毕业典礼、社交典礼等非宗教仪式；Collins 也列‘宗教或其他仪式’。",
+          "counterexample_evidence_ids": [
+            "wn31:n:01029801",
+            "pub:p6c5a:collins:ritual"
+          ],
+          "risk": "suspected_Major"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：惯常程序/固定做法",
+          "relation": "合理概括",
+          "reason": "组2以‘惯常做法/固定行为’概括，词典有 stereotyped behavior 与 customary observance/practice 支持；未引入明显新对象。",
+          "evidence_ids": [
+            "wn31:n:00415803",
+            "wn31:n:01029801"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "形容词：仪式的/与仪式有关的",
+          "relation": "语义等价",
+          "reason": "组3保留社会性礼仪与宗教仪式两类形容词用法，与原文宽义一致。",
+          "evidence_ids": [
+            "wn31:a:02903641",
+            "wn31:a:02903908"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "范围收窄/剩余范围未覆盖",
+          "source_ids": [
+            "s001"
+          ],
+          "group_ids": [
+            "SG25-7920fdeff9c5:p6c5:core_meanings:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:01032852",
+            "wn31:n:01029801",
+            "pub:p6c5a:collins:ritual"
+          ],
+          "reason": "原文名词‘仪式’未限定宗教，组1却只列宗教仪式规定程序并注明窄于广义典礼；其余核心组不具备一般/社交仪式名词义，扩展/其他/held为空，未显式暂存剩余范围。",
+          "repair_suggestion": "将组1改为一般‘仪式/典礼’（可用括注给宗教规定程序为例），或另设一般/社交仪式名词义；不要把宗教作为唯一排他对象。"
+        }
+      ],
+      "note": "名词s001被收窄为宗教规定程序，缺少非宗教/社交仪式且无暂存；s002‘惯常程序’用固定行为概括基本可行；形容词覆盖社会/宗教两类。核心需待决。"
+    },
+    {
+      "id": "SG25-e3f48726b892",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "名词：学习者/学习的人",
+          "relation": "语义等价",
+          "reason": "组2保留‘学习者’，证据虽有‘尤指儿童’说明，但组文未施加儿童限制，覆盖原文宽义。",
+          "evidence_ids": [
+            "wn31:n:10271476"
+          ],
+          "context": "example_not_exclusive",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "名词：学者（有学问的人）",
+          "relation": "语义等价",
+          "reason": "组1以 learned person（尤人文）对应‘学者’，证据直接支持。",
+          "evidence_ids": [
+            "wn31:n:10577282"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "名词：文人/文学人文人士",
+          "relation": "合理概括",
+          "reason": "组1把‘文人’并入 learned person（尤人文领域），并注明其为下位用法；文学/人文身份可由该证据涵盖。",
+          "evidence_ids": [
+            "wn31:n:10577282"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "complete",
+      "core_status": "adequate",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "注释措辞/下位关系",
+          "source_ids": [
+            "s003"
+          ],
+          "group_ids": [
+            "SG25-e3f48726b892:p6c5:core_meanings:1"
+          ],
+          "evidence_ids": [
+            "wn31:n:10577282"
+          ],
+          "reason": "组1注释把‘文人’说成‘文学/人文学科的学习者’，但s003与证据均指有学问/人文学者，非学习者；虽未造成义项丢失，可能误导下位定位。",
+          "repair_suggestion": "改为‘文人指文学/人文学科的读书人、学者或文士’，与 learned person 证据一致。"
+        }
+      ],
+      "note": "三义均保留：学习者单列，学者/文人合并为 learned person（尤人文）；‘奖学金获得者’作为外部候选未采用，符合非原文义；仅合并注释对‘文人=学习者’的措辞需微调。"
+    },
+    {
+      "id": "SG25-093e7d5fdbaa",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "联系（源词性未定，名词/动词均可能）",
+          "relation": "无法确定",
+          "reason": "候选核心同时给出名词‘联系’(n07293990/n00040035)和动词‘联系’(v00745330)，均有词典依据；但源词性为null，无法确认原义要求的具体词性，故不能判为已确认的语义等价。",
+          "evidence_ids": [
+            "wn31:n:07293990",
+            "wn31:n:00040035",
+            "wn31:v:00745330"
+          ],
+          "context": "uncertain",
+          "residual_scope": "源词性未定；无明确语义遗漏",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "pending"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "接触（源词性未定，名词/动词均可能）",
+          "relation": "无法确定",
+          "reason": "名词‘接触’有物理触碰/紧邻/相碰证据(n00125700/n14442914/n07353929)，动词‘接触’有物理接触证据(v01208316)；但源词性为null，不能确认原义要求哪一词性，故保留无法确定。",
+          "evidence_ids": [
+            "wn31:n:00125700",
+            "wn31:n:14442914",
+            "wn31:n:07353929",
+            "wn31:v:01208316"
+          ],
+          "context": "uncertain",
+          "residual_scope": "源词性未定；物理接触/触碰范围已覆盖，无明确遗漏",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "pending"
+        }
+      ],
+      "word_status": "uncertain",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Minor",
+          "kind": "source_pos_unresolved",
+          "source_ids": [
+            "s001",
+            "s002"
+          ],
+          "group_ids": [
+            "SG25-093e7d5fdbaa:p6c5:core_meanings:1",
+            "SG25-093e7d5fdbaa:p6c5:core_meanings:2",
+            "SG25-093e7d5fdbaa:p6c5:core_meanings:3",
+            "SG25-093e7d5fdbaa:p6c5:core_meanings:4"
+          ],
+          "evidence_ids": [],
+          "reason": "两原始片段源词性均为null；核心按名词/动词分别列出四组，虽未硬配但源词性仍未核，不能视为已确认词性覆盖。",
+          "repair_suggestion": "保留名词/动词双候选并显式标注源词性未定；后续核对教材词性后再定核心词性展示。"
+        }
+      ],
+      "note": "两义均有名词/动词词典依据，核心并置；源词性为null，保留待核，未把名词或动词单一声明为源词性；电触点、隐形眼镜、人脉为外部候选未采用。"
+    },
+    {
+      "id": "SG25-bf0bb4ee60e2",
+      "mappings": [
+        {
+          "sid": "s001",
+          "source_scope": "伸展（动词，对象未限定）",
+          "relation": "范围收窄",
+          "reason": "核心仅列‘伸展（肢体/身体）’并注为对象身体部位，但源义未限定对象；词典同时支持物体/肢体向外伸展、展开（v02058913、v01371528、v00027698），候选所有层未保留这些一般物理伸展用途。",
+          "evidence_ids": [
+            "wn31:v:00027261",
+            "wn31:v:02058913",
+            "wn31:v:01371528",
+            "wn31:v:00027698"
+          ],
+          "context": "unlicensed_limit",
+          "residual_scope": "缺少非身体对象的伸展/展开，如 extend antenna/cloth/hand",
+          "counterexample": "extend the TV antenna / stretch out the cloth / extend a hand",
+          "counterexample_evidence_ids": [
+            "wn31:v:02058913",
+            "wn31:v:00027698",
+            "wn31:v:01371528"
+          ],
+          "risk": "suspected_Major"
+        },
+        {
+          "sid": "s002",
+          "source_scope": "变宽（不及物变化义，源词性动词）",
+          "relation": "无法确定",
+          "reason": "所给 extend 证据多为及物‘使变宽/扩大范围’或空间跨度，未直接支持不及物‘become wider’；候选已明确暂存待核，未强行覆盖。",
+          "evidence_ids": [
+            "wn31:v:00541315",
+            "wn31:v:02693758"
+          ],
+          "context": "uncertain",
+          "residual_scope": "‘变宽’（不及物）未覆盖，暂存",
+          "counterexample": "widen the range of applications 为使范围变宽（及物），并非不及物‘变宽’",
+          "counterexample_evidence_ids": [
+            "wn31:v:00541315"
+          ],
+          "risk": "pending"
+        },
+        {
+          "sid": "s003",
+          "source_scope": "延伸（空间/时间绵延、达到）",
+          "relation": "语义等价",
+          "reason": "核心‘延伸（空间/时间）’以 v02691775/v02693758/v02695935 支持，覆盖空间跨度、时间跨度及向外伸出；未把‘变宽’混入。",
+          "evidence_ids": [
+            "wn31:v:02691775",
+            "wn31:v:02693758",
+            "wn31:v:02695935"
+          ],
+          "context": "none",
+          "residual_scope": "",
+          "counterexample": "",
+          "counterexample_evidence_ids": [],
+          "risk": "none"
+        }
+      ],
+      "word_status": "partial",
+      "core_status": "pending",
+      "issues": [
+        {
+          "severity": "Major",
+          "kind": "range_narrowing_unlicensed_object_limit",
+          "source_ids": [
+            "s001"
+          ],
+          "group_ids": [
+            "SG25-bf0bb4ee60e2:p6c5:core_meanings:1"
+          ],
+          "evidence_ids": [
+            "wn31:v:02058913",
+            "wn31:v:01371528",
+            "wn31:v:00027698"
+          ],
+          "reason": "s001‘伸展’对象未限定，但核心只留肢体/身体伸展并注对象为身体部位；词典有物体/肢体向外伸展/展开的独立支持，所有层未保留或暂存该一般范围，属无来源许可的对象限制导致剩余范围缺口。",
+          "repair_suggestion": "将核心父级改为‘伸展/伸开（对象不限于身体）’，以括注或子例保留肢体伸展；或另设核心/扩展组收录物体伸展/展开，并链接 v02058913/v01371528/v00027698。"
+        },
+        {
+          "severity": "Info",
+          "kind": "source_translation_pending",
+          "source_ids": [
+            "s002"
+          ],
+          "group_ids": [],
+          "evidence_ids": [
+            "wn31:v:00541315"
+          ],
+          "reason": "‘变宽’与 extend 的及物/不及物方向证据不完全吻合，候选已暂存；这是源译待核，不按生成器Major计。",
+          "repair_suggestion": "保留暂存并核对教材原义是否对应 widen/become wider；未确认前不并入核心。"
+        }
+      ],
+      "note": "s001被限为肢体伸展，缺物体伸展；s002‘变宽’暂存；s003空间/时间延伸覆盖。外部延长、给予、扩大范围未采用。"
+    }
+  ],
+  "failures": [],
+  "input_hash": "6c5ed7d7fe157d9633d2c012748fc234f0b9ec261acbe8959b083e6049978f08",
+  "response_files": [
+    {
+      "tag": "calibration_before_001",
+      "response_sha256": "84fc3723d35e46ad85394917eb3f08d35e9bbfb08022da3403fbead67849181f"
+    },
+    {
+      "tag": "calibration_before_002",
+      "response_sha256": "0d215f2f55964ce2211bf95873251ed2cc36eb5f21647deee769058cc8115c2f"
+    }
+  ],
+  "all_output_AI_candidate": true,
+  "human_approved": false,
+  "rules_hash": "dfd139af49e5af3b321a587de6115364125e99fea4bb8b1f68c9d07314585950"
+}

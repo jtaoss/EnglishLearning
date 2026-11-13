@@ -1,0 +1,33 @@
+{
+  "tag": "holdout_source_first_009_repair1",
+  "kind": "holdout",
+  "request_hash": "abd661c5a98c109c3608de243991c2450cbc71260fcf2db2c887b15aa478fa5c",
+  "input_ids": [
+    "SG25-480a27af1dea",
+    "SG25-eb9a7650cd53"
+  ],
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "aa2e3bf2-ba6c-4cde-8d4a-abf4fb05cac9",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-480a27af1dea\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"一般怀疑态度，不轻信；可修饰人或态度等（原中文未限定）\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"无严格限制；适用于表达对信息、主张等的不确定或不信\",\n          \"evidence_ids\": [\"wn31:s:02473075\"],\n          \"uncertainty\": \"来源未提供搭配；英语证据为一般怀疑，匹配度高；注意拼写变体 sceptical/skeptical\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"具有怀疑性质，修饰事物或行为（如态度、语气）；与'怀疑的'近义\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"用于说明事物具有怀疑特点\",\n          \"evidence_ids\": [\"wn31:s:02473075\"],\n          \"uncertainty\": \"该中文形式可能仅为同义变体，无独立限制；词典无对应复合词证据\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"怀疑论的（哲学/宗教上质疑教条或信仰体系）\",\n          \"recommended_pos\": \"形容词\",\n          \"required_context\": \"讨论宗教信仰、哲学观点或公认真理时使用\",\n          \"evidence_ids\": [\"wn31:s:00650269\"],\n          \"uncertainty\": \"中文'怀疑论的'可能涵盖更广，英语证据侧重宗教/教条；范围或需补充哲学义\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"形容词\",\n          \"meaning\": \"怀疑的/怀疑性的；表示不轻易相信或有疑问（一般语境）\"\n        },\n        {\n          \"pos\": \"形容词\",\n          \"meaning\": \"怀疑论的；质疑教条或信仰体系的（哲学/宗教语境）\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"s001与s002语义接近，合并为一条核心；s003保留单独义项。未采用词典中未见的新义项。\"\n    },\n    {\n      \"id\": \"SG25-eb9a7650cd53\",\n      \"source_scopes\": [\n        {\n          \"sid\": \"s001\",\n          \"scope_zh\": \"国家/政府的根本法律，规定基本政治原则\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"法律、政治语境；通常指正式宪法文件\",\n          \"evidence_ids\": [\"wn31:n:06545639\"],\n          \"uncertainty\": \"证据明确，范围匹配\"\n        },\n        {\n          \"sid\": \"s002\",\n          \"scope_zh\": \"人或事物的组成方式/状态，可指身体体质或结构\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"描述个体或事物的构成状态；中文'体质'可能侧重健康，需语境\",\n          \"evidence_ids\": [\"wn31:n:04940721\"],\n          \"uncertainty\": \"英语证据较宽泛（the way... composed），未明确限定为健康/身体；是否完全覆盖中文'体质'的常见健康义有待补充词典\"\n        },\n        {\n          \"sid\": \"s003\",\n          \"scope_zh\": \"建立、形成的行为或过程\",\n          \"recommended_pos\": \"名词\",\n          \"required_context\": \"提及组建、成立、构成的动作或过程\",\n          \"evidence_ids\": [\"wn31:n:00237945\"],\n          \"uncertainty\": \"证据明确，范围匹配\"\n        }\n      ],\n      \"proposed_core\": [\n        {\n          \"pos\": \"名词\",\n          \"meaning\": \"宪法（国家根本大法）\"\n        },\n        {\n          \"pos\": \"名词\",\n          \"meaning\": \"体质/构成方式（人或事物的组成状态）\"\n        },\n        {\n          \"pos\": \"名词\",\n          \"meaning\": \"构成/建立（形成某事物的行为或过程）\"\n        }\n      ],\n      \"deferred_source_ids\": [],\n      \"deferral_reason\": \"\",\n      \"note\": \"三个义项分别对应三个不同证据，未合并。s002的'体质'健康义依赖语境，英语证据宽泛，已标不确定性。\"\n    }\n  ]\n}",
+  "usage": {
+    "prompt_tokens": 3500,
+    "completion_tokens": 3043,
+    "total_tokens": 6543,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2094
+    },
+    "prompt_cache_hit_tokens": 2304,
+    "prompt_cache_miss_tokens": 1196
+  },
+  "started_utc": "2026-11-13T09:34:12.220105+00:00",
+  "completed_utc": "2026-11-13T09:34:51.837328+00:00",
+  "elapsed_seconds": 39.609,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

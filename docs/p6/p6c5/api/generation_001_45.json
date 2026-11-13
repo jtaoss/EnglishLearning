@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_45",
+  "request_hash": "95eeb9925cf5752d20081ca5715ccddb4ead05e2c4f39cfcb148ce7c16ad48cd",
+  "started_utc": "2026-11-13T08:14:59.719867+00:00",
+  "completed_utc": "2026-11-13T08:15:22.066311+00:00",
+  "elapsed_seconds": 22.344,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c76661c7-c60d-426e-ab58-4af36dbb1907",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3718,
+    "completion_tokens": 3422,
+    "total_tokens": 7140,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2919
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 902
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-cfacfd3ec33b\",\"core\":[[\"发现；发觉；察觉\",\"动词\",[\"s001\",\"s002\",\"s003\"],[\"wn31:v:02158938\"],\"通过观察、调查或注意而发现/确定存在、出现或事实\"]] ,\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[],\"reason\":\"三个原中文片段都是同一类动词性近义表达，核心义为发现或察觉事实/存在；单一词典义项直接覆盖，无需拆分。\",\"flags\":[]},{\"id\":\"SG25-83e3b78f14e0\",\"core\":[[\"技术的；与技术有关的\",\"形容词\",[\"s001\"],[\"wn31:a:02820431\",\"wn31:a:02902437\"],\"涉及科学技术、工业实践或机械工具等应用领域\"],[\"专业的；专门性的\",\"形容词\",[\"s002\"],[\"wn31:a:01112409\",\"wn31:s:02235691\"],\"需要专门知识或技能，或属于专门领域/术语\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（法律、规则等）严格字面解释的\",\"形容词\",[\"wn31:a:02820296\"],\"词典形容词义项，原文两个宽泛义项未明确表达，作为外部候选\"],[\"（金融）技术性的（如技术性反弹/修正）\",\"形容词\",[\"wn31:s:00486058\"],\"金融领域的独立用法，原文未明确表达，作为外部候选\"],[\"技巧性的；表现技巧的\",\"形容词\",[\"wn31:a:02820043\"],\"与技巧或实践技能表现有关的用法，原文‘技术的’未明确限定，作为外部候选\"]],\"reason\":\"原文‘技术的’偏应用科技/工业实践，‘专业的’偏专门知识或术语要求，二者对象和用法不同，故分为两个核心组；其余形容词用法作为外部候选，不挤入核心。\",\"flags\":[[\"Minor\",\"evidence_noise\",\"提供的名词义项（篮球技术犯规、武装皮卡）与源词形容词义无关，未采用\"],[\"Info\",\"core_coverage_incomplete_pending_addition_decision\",\"原文未明确覆盖法律严格解释、金融技术性等独立形容词用法，已列入 additions 待决\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

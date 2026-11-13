@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_03",
+  "request_hash": "0114e466342ff6021f94882eaa758941a6edb41906485bd1fa947daf9ef55ca0",
+  "started_utc": "2026-11-13T08:14:58.586373+00:00",
+  "completed_utc": "2026-11-13T08:15:26.341601+00:00",
+  "elapsed_seconds": 27.75,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "0c4774ea-1d29-4b3d-b190-6a0b5edee68f",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3514,
+    "completion_tokens": 4432,
+    "total_tokens": 7946,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3873
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 698
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-bce2966c0b0d\",\"word\":\"satisfaction\",\"core\":[[\"满意；满足感\",\"名词\",[\"s001\"],[\"wn31:n:07546643\",\"wn31:n:14010164\"],\"因愿望、需要或期待实现而内心感到满意或满足的状态\"],[\"满足（需求或愿望得到实现）\",\"名词\",[\"s002\"],[\"wn31:n:01074489\"],\"使愿望、需要或要求得到实现的行为或实现过程\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"赔偿；补偿（因过错或伤害而给予的补偿）\",\"名词\",[\"wn31:n:13313810\"],\"WordNet有独立义项；原文未表达，作为未采用外部候选\"],[\"（法律）债务清偿；义务履行\",\"名词\",[\"wn31:n:13371012\"],\"专业法律义；原文未表达，作为未采用外部候选\"]],\"reason\":\"首次记忆先区分“满意感”与“需求或愿望的实现”两个名词用法：前者对应心理状态，后者对应实现过程；不把法律清偿、赔偿等原文未表达的专门义塞进核心。\",\"flags\":[[\"Info\",\"external_use_candidate_pending\",\"原文未含“赔偿或补偿”及“法律债务清偿或义务履行”义，已单列为未采用候选，不能视为已覆盖或已人工采用\"]]},{\"id\":\"SG25-480a27af1dea\",\"word\":\"sceptical\",\"core\":[[\"怀疑的；持怀疑态度的\",\"形容词\",[\"s001\",\"s002\"],[\"wn31:s:02473075\"],\"对某事物感到不确定，倾向于质疑或持怀疑态度\"]],\"extended\":[],\"other\":[],\"hold\":[[\"s003\",\"“怀疑论的”可能指哲学怀疑论或对宗教教义的怀疑；所给wn31:s:00650269仅明确“否认或质疑（尤指宗教）教义”，范围不能无保留等同，暂存待核。\"]],\"splits\":{},\"additions\":[],\"reason\":\"s001与s002都落在“marked by or given to doubt”这一形容词用法，可合并；s003涉及“怀疑论或宗教教义”专门范围，证据范围不完全吻合，保留暂存而非硬归核心。\",\"flags\":[[\"Minor\",\"lexical_evidence_insufficient\",\"s003“怀疑论的”缺乏范围完全吻合的独立定义；现有证据只支持对（尤指宗教）教义的质疑或否认，不能直接等同一般哲学怀疑论\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_01_016",
+  "kind": "audit",
+  "request_hash": "ce8fb47a675c54f6a7cd9a925c21c2b9219d921de52273b520afc746c3f87953",
+  "input_ids": [
+    "SG25-65a07093bf15",
+    "SG25-112d85721372",
+    "SG25-35443277fe29",
+    "SG25-9af211329b2f",
+    "SG25-5b90071aea26"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "2fecfd32-22ec-45d3-aac0-7c3995b1bda8",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-65a07093bf15\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"公司\",\"relation\":\"语义等价\",\"reason\":\"核心组用“公司”对应商业公司义，词典商业公司释义与源义一致。\",\"evidence_ids\":[\"wn31:n:08076248\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"法人团体\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“法人团体（依法作为独立主体）”，与源义对应；但现有独立词典证据仅出版方观察。\",\"evidence_ids\":[\"web:corporation\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"WordNet商业公司释义较窄，未直接覆盖法人团体义\",\"counterexample_evidence_ids\":[\"wn31:n:08076248\"],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[{\"severity\":\"Info\",\"kind\":\"evidence_limitation\",\"source_ids\":[\"s002\"],\"group_ids\":[\"SG25-65a07093bf15:extended:1\"],\"evidence_ids\":[\"web:corporation\",\"wn31:n:08076248\"],\"reason\":\"法人团体义依赖既有出版方观察，WordNet只列商业公司，独立词典证据不足。\",\"repair_suggestion\":\"补充独立词典对corporation=法人团体的释义；人工审核前保持pending。\"}],\"note\":\"两个源义均已映射；公司义核心充分，法人团体义在扩展且证据需补强。\"},{\"id\":\"SG25-112d85721372\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"形容词：相反的\",\"relation\":\"语义等价\",\"reason\":\"核心形容词组用“相反的”，词典有方向相反和性质相反证据。\",\"evidence_ids\":[\"wn31:s:00999030\",\"wn31:s:02073362\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"名词：相反的事物\",\"relation\":\"语义等价\",\"reason\":\"扩展名词组保留“相反的事物”，词典有exact/direct opposition及to the contrary用法。\",\"evidence_ids\":[\"wn31:n:13880467\",\"wn31:n:13880801\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"形容词核心，名词扩展；两义均有对应，未发现范围缺口。\"},{\"id\":\"SG25-35443277fe29\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"排斥\",\"relation\":\"语义等价\",\"reason\":\"核心组“排斥／排除”含排斥，词典prevent from being included/keep out支持。\",\"evidence_ids\":[\"wn31:v:00617464\",\"wn31:v:00798250\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"排除\",\"relation\":\"语义等价\",\"reason\":\"同一核心组含排除，与prevent from being included/entering一致。\",\"evidence_ids\":[\"wn31:v:00617464\",\"wn31:v:00798250\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"省略\",\"relation\":\"语义等价\",\"reason\":\"扩展组保留“省略”，词典lack/fail to include及leave off支持未纳入/略去；注释已限定不等同主动删文。\",\"evidence_ids\":[\"wn31:v:02639795\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"justified_deferred\",\"issues\":[],\"note\":\"排斥/排除核心，省略扩展；省略已注明为未纳入/略去而非主动删文。\"},{\"id\":\"SG25-9af211329b2f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"账户\",\"relation\":\"语义等价\",\"reason\":\"核心账户组对应银行/业务账户关系；源义账户获支持。\",\"evidence_ids\":[\"wn31:n:13952070\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"叙述\",\"relation\":\"语义等价\",\"reason\":\"核心叙述组对应narrative/record of past events。\",\"evidence_ids\":[\"wn31:n:06526084\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"解释（account for）\",\"relation\":\"语义等价\",\"reason\":\"核心动词组对应furnish explanation；account for结构需保留。\",\"evidence_ids\":[\"wn31:v:00869308\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"账户、叙述、解释三义均入核心；account for搭配已保留，占份额义仅作未采用词典补充。\"},{\"id\":\"SG25-5b90071aea26\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"发现\",\"relation\":\"语义等价\",\"reason\":\"核心发现组有see for first time/make a discovery及determine existence证据。\",\"evidence_ids\":[\"wn31:v:02132531\",\"wn31:v:02158938\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"发觉\",\"relation\":\"语义等价\",\"reason\":\"核心发觉/察觉组有become aware of/learn证据。\",\"evidence_ids\":[\"wn31:v:00600349\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"察觉\",\"relation\":\"语义等价\",\"reason\":\"同一组become aware支持察觉；与发觉合并但情境差别保留。\",\"evidence_ids\":[\"wn31:v:00600349\"],\"context\":\"none\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三义均核心：发现为首次发现/查明，发觉与察觉合并为意识到事实。\"}]}",
+  "usage": {
+    "prompt_tokens": 7292,
+    "completion_tokens": 13278,
+    "total_tokens": 20570,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11799
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 5372
+  },
+  "started_utc": "2026-11-13T09:40:13.018699+00:00",
+  "completed_utc": "2026-11-13T09:41:23.656905+00:00",
+  "elapsed_seconds": 70.64,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}

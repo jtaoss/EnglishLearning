@@ -1,0 +1,29 @@
+{
+  "tag": "generation_001_12",
+  "request_hash": "2345f1437b05233b80fdc0e11dd2bebfea232a87ebbe6bba4ae5b8eab281ce64",
+  "started_utc": "2026-11-13T08:14:58.789845+00:00",
+  "completed_utc": "2026-11-13T08:15:44.411655+00:00",
+  "elapsed_seconds": 45.625,
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c6dc3569-80b3-4375-b181-33f4736cc7e9",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 3696,
+    "completion_tokens": 7205,
+    "total_tokens": 10901,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6598
+    },
+    "prompt_cache_hit_tokens": 2816,
+    "prompt_cache_miss_tokens": 880
+  },
+  "content": "{\"records\":[{\"id\":\"SG25-c152d5bbb379\",\"word\":\"conservative\",\"core\":[[\"保守的；守旧的\",\"形容词\",[\"s001\"],[\"wn31:a:00576723\",\"wn31:s:02037690\",\"wn31:s:00261646\",\"wn31:s:00610033\"],\"政治/社会观念或作风上抗拒变化、遵循传统；宽义改述，具体对象随语境\"],[\"保守主义者\",\"名词\",[\"s002\"],[\"wn31:n:09976635\"],\"不愿接受变化和新观念的人\"]],\"extended\":[[\"保守的；审慎偏低的\",\"形容词\",[\"s001\"],[\"wn31:s:01536268\"],\"用于估计、预测等，避免过高或过度；对象受限\"]],\"other\":[],\"hold\":[],\"splits\":{\"s001\":\"同一中文形容词在核心指政治/社会/作风上抗拒变化或遵循传统，在扩展指估计、预测等数值上避免过度；对象和语境不同，故重复使用并分列。\"},\"additions\":[],\"reason\":\"首记政治/社会态度形容词与指人名词；‘保守的估计’等对象受限用法后置，避免用宽形容词掩盖对象差异。\",\"flags\":[[\"Minor\",\"source_scope_ambiguous\",\"形容词‘保守的’未限定对象，可能覆盖政治/社会态度、传统作风及审慎估计；已按证据拆分，原文意图仍需复核\"]]},{\"id\":\"SG25-9cda38ea3a2b\",\"word\":\"series\",\"core\":[[\"序列；一系列\",\"名词\",[\"s001\"],[\"wn31:n:08474987\"],\"按顺序连续出现的一组事物或事件；宽义改述，不采用数学级数定义\"],[\"电视系列节目\",\"名词\",[\"s002\"],[\"wn31:n:06633954\"],\"电视/广播连续播出的系列节目\"]],\"extended\":[],\"other\":[],\"hold\":[],\"splits\":{},\"additions\":[[\"（体育）系列赛\",\"名词\",[\"wn31:n:07480588\"],\"原文未含同一两队连续多场比赛义；词典有独立体育域定义，作为外部候选不并入核心\"],[\"（电路）串联\",\"名词\",[\"wn31:n:13814122\"],\"原文未含电子元件依次连接义；专业域独立，作为外部候选\"]],\"reason\":\"首记原文两个片段：连续成组事物/事件和电视系列节目；领域专门义只作为候选，避免把词典细分误当原文核心。\",\"flags\":[[\"Minor\",\"source_coverage_gap\",\"原文仅列‘序列；电视系列节目’，词典另有体育系列赛、电路串联、数学级数、期刊丛刊等专业用法；本轮仅将体育系列赛与电路串联列为外部候选，其余专业细分未展开，需复核取舍\"]]}]}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

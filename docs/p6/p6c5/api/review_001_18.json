@@ -1,0 +1,29 @@
+{
+  "tag": "review_001_18",
+  "request_hash": "d0fd13d189794d4a7b5f03a309b38e2508b85885db747978f6f65720374092a4",
+  "started_utc": "2026-11-13T08:16:13.613616+00:00",
+  "completed_utc": "2026-11-13T08:16:41.303477+00:00",
+  "elapsed_seconds": 27.687,
+  "requested_model": "deepseek-v4-pro",
+  "response_model": "deepseek-v4-pro",
+  "response_id": "86434241-7d65-4f8e-83f6-8601c9545496",
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2780,
+    "completion_tokens": 1371,
+    "total_tokens": 4151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1251
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2780
+  },
+  "content": "{\n  \"records\": [\n    {\n      \"id\": \"SG25-2d92fc5142e6\",\n      \"independent_core\": [],\n      \"verdict\": \"no_confirmed_problem\",\n      \"findings\": [],\n      \"preferences\": [],\n      \"note\": \"候选将两个同义形容词片段合并为一个一般“适合/适宜”的核心义，证据 wn31:s:01024501 覆盖恰当；配偶特定义作为外部候选单列且未并入核心，未发现原文遗漏或词性错误。\"\n    }\n  ]\n}",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "credentials_in_file": false,
+  "reasoning_content_persisted": false
+}

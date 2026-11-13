@@ -1,0 +1,36 @@
+{
+  "tag": "audit_v5e_03_011",
+  "kind": "audit",
+  "request_hash": "3f1cf0de6875c8fdcef01a12bc1c28b698c73f432e3eb24c8a09171fe355b72b",
+  "input_ids": [
+    "SG25-7cb194d9414f",
+    "SG25-c44bb2fd5169",
+    "SG25-251ce3daf88f",
+    "SG25-a82ce870f999",
+    "SG25-d01acdec3a3b"
+  ],
+  "requested_model": "deepseek-flash",
+  "response_model": "deepseek-flash",
+  "response_id": "c925b73e-7ec9-4a2c-b73c-610426a50b17",
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6",
+  "finish_reason": "stop",
+  "content": "{\"records\":[{\"id\":\"SG25-7cb194d9414f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"机器（总称/设备）\",\"relation\":\"合理概括\",\"reason\":\"核心组用“机械设备（集合称呼）”概括“机器”，与WordNet“machines or machine systems collectively”一致；machinery通常作不可数集合名词，单台机器不是该词常规用法。\",\"evidence_ids\":[\"wn31:n:03706974\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"源中文“机器”可能被读作单台机器；该单数具体设备义不在machinery常规集合义内，组注已说明。\",\"counterexample\":\"单台设备通常说 a machine，而不是 a machinery\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"机械（总称）\",\"relation\":\"语义等价\",\"reason\":\"“机械”在此与集合名词machinery的机械设备总称义对应，核心组保留该总称范围。\",\"evidence_ids\":[\"wn31:n:03706974\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"机械装置（设备/机械系统）\",\"relation\":\"合理概括\",\"reason\":\"“机械装置”可由核心组“机械设备（集合称呼）”概括；英语证据支持机器或机器系统的集合，不把单台装置误当作machinery。\",\"evidence_ids\":[\"wn31:n:03706974\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"单台机械装置的具体义不在machinery常规集合义内，组注已说明。\",\"counterexample\":\"单台机械装置通常用 a device/a machine，而非 a machinery\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个源义合并为核心集合名词义；组注已处理不可数与单台机器混淆，英语证据支持集合/系统义，抽象“机构机制”义未进入来源层。\"},{\"id\":\"SG25-c44bb2fd5169\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"评论（源词性未定）\",\"relation\":\"无法确定\",\"reason\":\"原文片段词性为null，候选仅把“评论”链接到名词组；若按名词“评论”可部分对应，但源词性未解决，不能视为已核验。\",\"evidence_ids\":[\"wn31:n:06777755\",\"wn31:v:01060446\"],\"context\":\"uncertain\",\"residual_scope\":\"若“评论”为动词，需要动词组或扩展覆盖“评论/发表评论”；当前s001未明确链接动词读法。\",\"counterexample\":\"动词评论：he commented on the paper（由core:2覆盖，但s001未明确归入）\",\"counterexample_evidence_ids\":[\"wn31:v:01060446\"],\"risk\":\"pending\"},{\"sid\":\"s002\",\"source_scope\":\"意见/看法（名词）\",\"relation\":\"语义等价\",\"reason\":\"核心组“评论／意见”与名词comment表示个人意见或补充信息的用法对应。\",\"evidence_ids\":[\"wn31:n:06777755\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"发表评论/作出评论（动词）\",\"relation\":\"语义等价\",\"reason\":\"动词核心组“发表评论”与comment表示作出评论、评论某事的用法对应。\",\"evidence_ids\":[\"wn31:v:01060446\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"uncertain\",\"core_status\":\"pending\",\"issues\":[{\"severity\":\"Major\",\"kind\":\"source_pos_unresolved\",\"source_ids\":[\"s001\"],\"group_ids\":[\"SG25-c44bb2fd5169:core:1\"],\"evidence_ids\":[\"wn31:n:06777755\",\"wn31:v:01060446\"],\"reason\":\"s001词性为null，候选仅链接名词组“评论／意见”，未显式保留动词读法，属于把未解决源词性标为名词的风险。\",\"repair_suggestion\":\"在映射或组注中标记s001词性待核，或将名词“评论”与动词“评论/发表评论”分别链接并保留pending，不把null静默当作名词通过。\"}],\"note\":\"名词评论/意见与动词发表评论分列；s001词性null仅接名词组，需pending，不能视为已完整核验。\"},{\"id\":\"SG25-251ce3daf88f\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"立即的/即刻的（时间）\",\"relation\":\"语义等价\",\"reason\":\"核心组“立即的”与immediate表示几乎不拖延、即刻发生的用法对应。\",\"evidence_ids\":[\"wn31:s:00981945\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"直接的/无中间环节的\",\"relation\":\"语义等价\",\"reason\":\"核心组“直接的”与immediate表示无中间媒介、直接作用的用法对应。\",\"evidence_ids\":[\"wn31:a:00773875\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s003\",\"source_scope\":\"紧邻的/靠近的（空间或次序）\",\"relation\":\"语义等价\",\"reason\":\"扩展组“紧邻的”与immediate表示空间或时间上非常接近、紧接的用法对应。\",\"evidence_ids\":[\"wn31:s:00451113\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"三个形容词义分别对应立即、直接无中间环节、紧邻；紧邻置扩展可接受，核心两义与证据匹配。\"},{\"id\":\"SG25-a82ce870f999\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"药/治疗物质\",\"relation\":\"语义等价\",\"reason\":\"核心组“药”与medicine表示治疗或预防疾病症状的物质用法对应。\",\"evidence_ids\":[\"wn31:n:03745652\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"医学（学科/职业）\",\"relation\":\"合理概括\",\"reason\":\"核心组“医学”概括医学学科与医学职业，与medicine表示医学专业或医学分支的用法一致。\",\"evidence_ids\":[\"wn31:n:00613447\",\"wn31:n:06052606\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"药与医学分列核心，证据匹配；惩罚义与动词义未采用，不属原文来源层。\"},{\"id\":\"SG25-d01acdec3a3b\",\"mappings\":[{\"sid\":\"s001\",\"source_scope\":\"商业的/商务的\",\"relation\":\"语义等价\",\"reason\":\"核心组“商业的”与commercial表示与商业、商务有关的形容词用法对应。\",\"evidence_ids\":[\"wn31:a:00485135\"],\"context\":\"required_from_source\",\"residual_scope\":\"\",\"counterexample\":\"\",\"counterexample_evidence_ids\":[],\"risk\":\"none\"},{\"sid\":\"s002\",\"source_scope\":\"商业广告（可泛指；英语名词多指广播电视广告）\",\"relation\":\"合理概括\",\"reason\":\"扩展组保留“商业广告”，词网证据主要支持广播电视赞助广告；组注已提示媒介范围需结合语境，属于来源宽于英语证据的待核点。\",\"evidence_ids\":[\"wn31:n:07264702\"],\"context\":\"required_for_lexical_use\",\"residual_scope\":\"英语名词commercial通常限于广播电视广告，平面或一般广告不一定用该词。\",\"counterexample\":\"报纸上的广告通常说 ad/advertisement，而非 a commercial\",\"counterexample_evidence_ids\":[],\"risk\":\"pending\"}],\"word_status\":\"complete\",\"core_status\":\"adequate\",\"issues\":[],\"note\":\"形容词商业的置核心，名词商业广告置扩展并提示广播电视媒介限制；来源比英语名词宽，待核但不判生成器Major。\"}]}",
+  "usage": {
+    "prompt_tokens": 5519,
+    "completion_tokens": 9520,
+    "total_tokens": 15039,
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7622
+    },
+    "prompt_cache_hit_tokens": 1920,
+    "prompt_cache_miss_tokens": 3599
+  },
+  "started_utc": "2026-11-13T09:44:50.599121+00:00",
+  "completed_utc": "2026-11-13T09:45:44.887682+00:00",
+  "elapsed_seconds": 54.281,
+  "reasoning_content_saved": false,
+  "credentials_saved": false
+}
