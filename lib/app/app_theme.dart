@@ -19,6 +19,10 @@ abstract final class AppTheme {
 
   static const List<String> _fontFallback = <String>[
     'Segoe UI',
+    'Yu Gothic UI',
+    'Meiryo',
+    'MS Gothic',
+    'Hiragino Sans',
     'Microsoft YaHei UI',
     'Microsoft YaHei',
     'PingFang SC',
